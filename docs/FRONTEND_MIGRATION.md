@@ -17,13 +17,13 @@ Sökvägarna är oförändrade i den nya appen, så omdirigeringarna behöver ba
 
 ## ⚠️ Måldomänen är inte bekräftad
 
-Redirectarna i `vercel.json` och `VITE_EUDRONEPARTS_URL` pekar tills vidare på
+Redirectarna i `vercel.json` och `VITE_EUDRONECOMPANY_URL` pekar tills vidare på
 `https://eurodroneparts.se`. **Bekräfta domänen innan deploy** — sätter du upp den nya
 frontenden på något annat (t.ex. `dronare.eurodroneparts.se` eller en egen Vercel-domän)
 måste båda ställena ändras:
 
 - `vercel.json` → `redirects[].destination`
-- Miljövariabeln `VITE_EUDRONEPARTS_URL` i digitalsignals Vercel-projekt
+- Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt
 
 ## Varumärkesfrågan
 
@@ -86,7 +86,7 @@ efter cutover:
 ## Checklista vid cutover
 
 1. Deploya eudroneparts-frontenden och bekräfta att alla 45 sökvägar svarar 200.
-2. Sätt `VITE_EUDRONEPARTS_URL` i digitalsignals Vercel-projekt.
+2. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
 3. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.
 4. Verifiera 301 på ett par sökvägar.
 5. Lämna in den nya sajtens sitemap i Search Console och bevaka indexeringen.

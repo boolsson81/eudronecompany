@@ -178,11 +178,11 @@ eudroneparts fick en egen Vite/React-frontend. Detaljer och cutover-checklista:
 
 Ändrat här: 26 filer borttagna, rutterna ur `src/App.tsx`, drönargenereringen ur
 `scripts/generate-sitemap.ts` (45 URL:er försvann ur sitemapen), 301-omdirigeringar i
-`vercel.json`, och ActionKing-värdarna skickas vidare via `VITE_EUDRONEPARTS_URL`.
+`vercel.json`, och ActionKing-värdarna skickas vidare via `VITE_EUDRONECOMPANY_URL`.
 
 **Två saker är inte avgjorda:**
 
-1. **Måldomänen.** `vercel.json` och `VITE_EUDRONEPARTS_URL` pekar tills vidare på
+1. **Måldomänen.** `vercel.json` och `VITE_EUDRONECOMPANY_URL` pekar tills vidare på
    `https://eurodroneparts.se`. Bekräfta innan deploy.
 2. **Varumärket.** Sidorna är ActionKing-brandade (`EnterpriseNav` renderar "ActionKing
    Enterprise"). Innehållet flyttades oförändrat — antingen skrivs det om, eller så bör
