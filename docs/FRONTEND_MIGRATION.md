@@ -15,22 +15,20 @@
 
 Sökvägarna är oförändrade i den nya appen, så omdirigeringarna behöver bara byta domän.
 
-## ⚠️ Måldomänen är inte bekräftad
+## Måldomän
 
-Redirectarna i `vercel.json` och `VITE_EUDRONECOMPANY_URL` pekar tills vidare på
-`https://eurodroneparts.se`. **Bekräfta domänen innan deploy** — sätter du upp den nya
-frontenden på något annat (t.ex. `dronare.eurodroneparts.se` eller en egen Vercel-domän)
-måste båda ställena ändras:
+`https://eudronecompany.com` — bolaget och domänen heter numera EU Drone Company, inte
+EuroDroneParts. Domänen står på två ställen och båda måste peka åt samma håll:
 
-- `vercel.json` → `redirects[].destination`
-- Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt
+- `vercel.json` → `redirects[].destination` (301:orna från `app.digitalsignal.io`)
+- Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt (fallback i
+  koden är samma domän, så variabeln behövs bara om ni testar mot något annat)
 
 ## Varumärkesfrågan
 
 Sidorna är **ActionKing**-brandade: `EnterpriseNav` renderar "ActionKing Enterprise" och
 FAQ-texterna säger "Vilka drönare säljer ActionKing?". De flyttades enligt beslut, men
-innehållet behöver antingen skrivas om till EuroDroneParts eller så bör sajten ligga kvar
-på en ActionKing-domän. Ingen text har ändrats i flytten.
+innehållet behöver skrivas om till EU Drone Company. Ingen text har ändrats i flytten.
 
 ## 45 indexerade URL:er som behöver 301
 
