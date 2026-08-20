@@ -1,6 +1,6 @@
 # Extraktionsmanifest — EU Drone Company
 
-Genererat av `scripts/extract-eudroneparts.mjs`. Mål: `/home/user/eudroneparts`
+Genererat av `scripts/extract-eudroneparts.mjs`. Mål: `/home/user/eudroneparts-stage`
 
 ## Edge functions som flyttas (19)
 - edp-launch-prep
@@ -253,4 +253,4 @@ Genererat av `scripts/extract-eudroneparts.mjs`. Mål: `/home/user/eudroneparts`
 
 ## Skript (126) · src-moduler (11) · kataloger (theme, shopify-theme, data)
 
-Totalt kopierade sökvägar: 384
+Totalt kopierade sökvägar: 380
