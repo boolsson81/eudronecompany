@@ -164,18 +164,41 @@ Sunsky-, leverantörs- och GEO-funktioner som stannade kvar. **DigitalSignal är
 Ändras någon av dem ska ändringen speglas; `npm run check:shared` i eudroneparts-repot
 jämför dem. Om Sunsky senare flyttar med krymper listan till ungefär sju.
 
-## 8. Kvar att göra
+## 8. Frontend-flytt (steg 5, genomförd)
 
-1. **Frontend.** Admin-UI:t för Shopify Cloner (`src/pages/ShopifyCloner.tsx`,
-   `src/pages/admin/ShopifyDroneClone.tsx`) och produktcompliance
-   (`src/pages/admin/ProductCompliance.tsx`) ligger kvar här och anropar funktioner som nu
-   ägs av eudroneparts-repot. Det fungerar — funktionerna är deployade mot samma Supabase —
-   men UI:t bör flytta när eudroneparts får en egen frontend.
-2. **Publika drönarsidor.** `/kommersiella-dronare/*` (14 sidor) ligger kvar i SPA:n.
-   Att flytta dem kräver egen hosting, sitemap och redirects.
-3. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
+eudroneparts fick en egen Vite/React-frontend. Detaljer och cutover-checklista:
+`docs/FRONTEND_MIGRATION.md`.
+
+| Flyttat | Detalj |
+|---|---|
+| Driftsvyer | `/admin/shopify-cloner`, `/admin/shopify-drone-clone`, `/admin/product-compliance` |
+| Publika drönarsidor | `/kommersiella-dronare/*` — 14 sidkomponenter |
+| Stödfiler | 9 komponenter/datafiler som blev föräldralösa här (`EnterpriseNav`, `DroneAccessories`, `commercialDroneIndustries` m.fl.) |
+| Nytt i eudroneparts | Slimmad `useAuth`/`useTenant`, `AdminLayout` med rollguard, `Login`, otypad Supabase-klient |
+
+Ändrat här: 26 filer borttagna, rutterna ur `src/App.tsx`, drönargenereringen ur
+`scripts/generate-sitemap.ts` (45 URL:er försvann ur sitemapen), 301-omdirigeringar i
+`vercel.json`, och ActionKing-värdarna skickas vidare via `VITE_EUDRONEPARTS_URL`.
+
+**Två saker är inte avgjorda:**
+
+1. **Måldomänen.** `vercel.json` och `VITE_EUDRONEPARTS_URL` pekar tills vidare på
+   `https://eurodroneparts.se`. Bekräfta innan deploy.
+2. **Varumärket.** Sidorna är ActionKing-brandade (`EnterpriseNav` renderar "ActionKing
+   Enterprise"). Innehållet flyttades oförändrat — antingen skrivs det om, eller så bör
+   sajten ligga på en ActionKing-domän.
+
+`src/data/droneRegulations.ts` finns nu i båda repona eftersom
+`src/pages/admin/AdminDroneRegulations.tsx` stannade här. Den ingår i drift-kontrollen
+(`npm run check:shared`).
+
+## 9. Kvar att göra
+
+1. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
    `src/lib/service-portal/constants.ts` är hårdkodade mot EuroDroneParts. Ska portalen
    säljas till fler kunder behöver det bli tenant-styrt.
-4. **`docs/go-live/`** blandar plattformsmigrering och EDP-drift och är inte uppdelad.
-5. **Deploy.** `.github/workflows/deploy-functions.yml` i eudroneparts-repot behöver
+2. **`docs/go-live/`** blandar plattformsmigrering och EDP-drift och är inte uppdelad.
+3. **Deploy.** `.github/workflows/deploy-functions.yml` i eudroneparts-repot behöver
    hemligheterna `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF`.
+4. **`AdminDroneRegulations`** ligger kvar här och redigerar innehåll som drönarsidorna
+   visar. Antingen följer den med, eller så accepteras `droneRegulations.ts` som speglad.

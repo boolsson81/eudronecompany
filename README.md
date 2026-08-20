@@ -9,6 +9,7 @@ Utbrutet ur [`boolsson81/digitalsignal`](https://github.com/boolsson81/digitalsi
 
 | Katalog | Vad |
 |---|---|
+| `src/` | Frontend (Vite + React + Tailwind): publika drönarsidor och driftsvyer |
 | `theme/` | EuroDroneParts Shopify-tema (Dawn 15.4.1 + `edp-*`-anpassningar) |
 | `shopify-theme/edp/` | Tema-sektioner för FAQ, jämförelser och industrisidor |
 | `shopify-theme/eurodroneparts/` | Header, mega-meny och drawer |
@@ -33,16 +34,38 @@ SHOPIFY_STORE_DOMAIN=ya1xhg-x6.myshopify.com
 SHOPIFY_ADMIN_TOKEN=
 ```
 
+## Frontend
+
+| Rutt | Vad |
+|---|---|
+| `/kommersiella-dronare/*` | Publika drönarsidor (14 sidor) — samma sökvägar som tidigare på `app.digitalsignal.io` |
+| `/admin/shopify-cloner` | Shopify Cloner |
+| `/admin/shopify-drone-clone` | Drone Clone |
+| `/admin/product-compliance` | Produktcompliance (IOSS/GPSR/CE/HS) |
+| `/login` | Inloggning med DigitalSignal-kontot |
+
+Driftsvyerna kräver rollen `admin` eller `global_admin`. Rollerna kommer från samma
+databas som DigitalSignal, så inga nya konton behöver skapas.
+
+Innan cutover: läs [`docs/FRONTEND_MIGRATION.md`](docs/FRONTEND_MIGRATION.md) — måldomänen
+för 301-omdirigeringarna är inte bekräftad än.
+
 ## Vanliga kommandon
 
 ```sh
-npm install                     # bara @supabase/supabase-js och pg
+npm install
+npm run dev                     # Vite på http://localhost:8080
+npm run build
+npm run typecheck
 npm test                        # vitest över scripts/__tests__
+npm run check:shared            # jämför speglade filer mot ../digitalsignal
 npx supabase functions deploy <namn> --project-ref <ref>
 node scripts/push-edp-theme.mjs        # publicera temat
 node scripts/verify-edp-theme-menus.mjs
-node scripts/audit-edp-storefront-seo.mjs
 ```
+
+Kopiera `.env.example` till `.env.local` och fyll i `VITE_SUPABASE_URL` och
+`VITE_SUPABASE_PUBLISHABLE_KEY` innan `npm run dev`.
 
 ## Speglade moduler
 

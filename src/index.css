@@ -1,0 +1,470 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DigitalSignal Design System — dark-first */
+
+@layer base {
+  /* Light theme */
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    --primary: 221 83% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    --call-action: 221 83% 53%;
+    --call-action-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222 47% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222 47% 11.2%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 71% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
+
+    --radius: 0.5rem;
+
+    /* SEO Status Colors */
+    --seo-green: 142 76% 36%;
+    --seo-light-green: 142 60% 45%;
+    --seo-yellow: 45 93% 47%;
+    --seo-red: 0 84% 60%;
+    --seo-green-bg: 142 76% 95%;
+    --seo-light-green-bg: 142 60% 92%;
+    --seo-yellow-bg: 45 93% 95%;
+    --seo-red-bg: 0 84% 97%;
+
+    /* Chart palette */
+    --chart-1: 221 83% 53%;
+    --chart-2: 0 84% 60%;
+    --chart-3: 142 76% 36%;
+    --chart-4: 38 92% 50%;
+    --chart-5: 262 83% 58%;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 5% 26%;
+    --sidebar-primary: 221 83% 53%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 240 6% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 221 83% 53%;
+  }
+
+  /* Dark theme — polished dashboard aesthetic */
+  .dark {
+    --background: 225 35% 5.5%;
+    --foreground: 210 40% 96%;
+
+    --card: 225 30% 8%;
+    --card-foreground: 210 40% 96%;
+
+    --popover: 225 30% 8%;
+    --popover-foreground: 210 40% 96%;
+
+    --primary: 221 83% 56%;
+    --primary-foreground: 210 40% 98%;
+
+    --call-action: 221 83% 56%;
+    --call-action-foreground: 210 40% 98%;
+
+    --secondary: 222 25% 14%;
+    --secondary-foreground: 210 40% 96%;
+
+    --muted: 222 25% 14%;
+    --muted-foreground: 215 18% 58%;
+
+    --accent: 222 25% 14%;
+    --accent-foreground: 210 40% 96%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 65% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 95% 55%;
+    --warning-foreground: 0 0% 10%;
+
+    --border: 222 20% 14%;
+    --input: 222 20% 16%;
+    --ring: 221 83% 56%;
+
+    /* SEO Status Colors (dark) */
+    --seo-green: 142 76% 46%;
+    --seo-light-green: 142 60% 55%;
+    --seo-yellow: 45 93% 57%;
+    --seo-red: 0 84% 60%;
+    --seo-green-bg: 142 50% 12%;
+    --seo-light-green-bg: 142 40% 14%;
+    --seo-yellow-bg: 45 60% 12%;
+    --seo-red-bg: 0 50% 12%;
+
+    /* Chart palette (dark) */
+    --chart-1: 221 83% 60%;
+    --chart-2: 0 84% 65%;
+    --chart-3: 142 70% 50%;
+    --chart-4: 38 92% 60%;
+    --chart-5: 262 83% 65%;
+
+    --sidebar-background: 225 35% 6.5%;
+    --sidebar-foreground: 210 30% 85%;
+    --sidebar-primary: 221 83% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 25% 12%;
+    --sidebar-accent-foreground: 210 30% 90%;
+    --sidebar-border: 222 20% 12%;
+    --sidebar-ring: 221 83% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  /* Responsive headings */
+  h1 {
+    @apply text-xl md:text-3xl;
+  }
+  h2 {
+    @apply text-lg md:text-2xl;
+  }
+
+  /* Hide scrollbar for tab lists */
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Mobile-compact spacing */
+  @media (max-width: 767px) {
+    .space-y-6 > * + * {
+      margin-top: 0.625rem;
+    }
+    .space-y-4 > * + * {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+/* Touch feedback for interactive cards and list items */
+@layer components {
+  .touch-card {
+    @apply transition-all duration-100 cursor-pointer;
+  }
+  .touch-card:active {
+    @apply scale-[0.98] opacity-90;
+  }
+  @media (hover: hover) {
+    .touch-card:hover {
+      @apply bg-accent/50;
+    }
+  }
+
+  .touch-list-item {
+    @apply transition-all duration-75 cursor-pointer;
+  }
+  .touch-list-item:active {
+    @apply bg-accent/70 scale-[0.99];
+  }
+  @media (hover: hover) {
+    .touch-list-item:hover {
+      @apply bg-accent/40;
+    }
+  }
+}
+
+@layer utilities {
+  .seo-score-green {
+    @apply bg-[hsl(var(--seo-green-bg))] text-[hsl(var(--seo-green))];
+  }
+  .seo-score-light-green {
+    @apply bg-[hsl(var(--seo-light-green-bg))] text-[hsl(var(--seo-light-green))];
+  }
+  .seo-score-yellow {
+    @apply bg-[hsl(var(--seo-yellow-bg))] text-[hsl(var(--seo-yellow))];
+  }
+  .seo-score-red {
+    @apply bg-[hsl(var(--seo-red-bg))] text-[hsl(var(--seo-red))];
+  }
+  .text-seo-light-green {
+    @apply text-[hsl(var(--seo-light-green))];
+  }
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+/* WMS label printing: when body has .printing-labels, hide everything except the active dialog and only render the label grid full-bleed. */
+@media print {
+  body.printing-labels > *:not([data-radix-portal]):not([data-radix-popper-content-wrapper]) {
+    display: none !important;
+  }
+  body.printing-labels [role="dialog"] {
+    position: static !important;
+    transform: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    background: white !important;
+    color: black !important;
+    padding: 0 !important;
+  }
+  body.printing-labels .print\:hidden { display: none !important; }
+  body.printing-labels [data-radix-scroll-area-viewport] {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  body.printing-labels .label-card {
+    border: 1px solid black !important;
+    color: black !important;
+    background: white !important;
+    page-break-inside: avoid;
+  }
+  body.printing-labels .print-label-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 4mm !important;
+  }
+}
+
+/* Print styles for FeaturesOnePager PDF export */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    color: #1a1a2e !important;
+    font-size: 11pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* ── Force light mode on the dark OnePager ── */
+  .features-print-dark {
+    background: white !important;
+    color: #1a1a2e !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide non-content elements */
+  .features-print-dark nav,
+  .features-print-dark .print\:hidden,
+  .features-print-dark footer,
+  .features-print-dark dialog,
+  .features-print-dark [role="dialog"] {
+    display: none !important;
+  }
+
+  /* Kill decorative blurs and orbs */
+  .features-print-dark .blur-\[120px\],
+  .features-print-dark .blur-\[100px\],
+  .features-print-dark .blur-\[140px\],
+  .features-print-dark .blur-\[80px\],
+  .features-print-dark .blur-xl,
+  .features-print-dark .blur-3xl,
+  .features-print-dark .animate-pulse {
+    display: none !important;
+  }
+
+  /* Remove all animations — show everything fully visible */
+  .features-print-dark *,
+  .features-print-dark [style*="opacity"],
+  .features-print-dark [style*="transform"] {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Ensure nothing is clipped */
+  .features-print-dark,
+  .features-print-dark section,
+  .features-print-dark div {
+    overflow: visible !important;
+  }
+
+  /* ── Typography: override dark-mode colors to black/dark ── */
+  .features-print-dark h1,
+  .features-print-dark h2,
+  .features-print-dark h3,
+  .features-print-dark span,
+  .features-print-dark p,
+  .features-print-dark li,
+  .features-print-dark a {
+    color: #1a1a2e !important;
+  }
+
+  /* Fix gradient text — make it solid dark */
+  .features-print-dark .bg-clip-text {
+    -webkit-text-fill-color: initial !important;
+    background: none !important;
+    color: #1a1a2e !important;
+  }
+
+  /* Accent-colored text (subtitles, badges) — use a readable blue */
+  .features-print-dark .text-blue-300,
+  .features-print-dark .text-blue-400,
+  .features-print-dark .text-violet-400,
+  .features-print-dark .text-emerald-400,
+  .features-print-dark .text-orange-400,
+  .features-print-dark .text-cyan-400,
+  .features-print-dark .text-amber-400,
+  .features-print-dark .text-pink-400,
+  .features-print-dark .text-rose-400,
+  .features-print-dark .text-indigo-400 {
+    color: #2563eb !important;
+  }
+
+  /* Muted text */
+  .features-print-dark .text-gray-400,
+  .features-print-dark .text-gray-500,
+  .features-print-dark .text-gray-600,
+  .features-print-dark .text-gray-700 {
+    color: #4b5563 !important;
+  }
+
+  /* White text on dark module icons — keep readable */
+  .features-print-dark .text-white {
+    color: #1a1a2e !important;
+  }
+
+  /* ── Backgrounds: force white/light ── */
+  .features-print-dark .bg-\[\#060a14\],
+  .features-print-dark .bg-\[\#0d1117\],
+  .features-print-dark .bg-\[\#0a0f1a\],
+  .features-print-dark .bg-\[\#0a1020\],
+  .features-print-dark .bg-\[\#0d1424\] {
+    background: white !important;
+  }
+
+  .features-print-dark .bg-white\/\[0\.03\],
+  .features-print-dark .bg-white\/\[0\.04\] {
+    background: #f5f7fa !important;
+  }
+
+  /* ── Borders: visible light borders ── */
+  .features-print-dark .border-white\/\[0\.06\],
+  .features-print-dark .border-white\/\[0\.08\],
+  .features-print-dark .border-white\/\[0\.1\],
+  .features-print-dark .border-white\/\[0\.12\] {
+    border-color: #e2e8f0 !important;
+  }
+
+  /* ── Module icon gradient backgrounds — use light fills ── */
+  .features-print-dark .bg-gradient-to-br,
+  .features-print-dark .bg-gradient-to-r {
+    background: #eef2ff !important;
+  }
+
+  /* ── Images ── */
+  .features-print-dark img {
+    max-width: 100% !important;
+    border-radius: 8px !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  /* Hide browser chrome bars on screenshots */
+  .features-print-dark .bg-\[\#0a0f1a\] {
+    display: none !important;
+  }
+
+  /* ── Spacing: compact for A4 ── */
+  .features-print-dark section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    page-break-inside: avoid;
+  }
+
+  .features-print-dark .space-y-20 > * + *,
+  .features-print-dark .space-y-40 > * + * {
+    margin-top: 2rem !important;
+  }
+
+  .features-print-dark .py-28,
+  .features-print-dark .py-32 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .features-print-dark .pt-16,
+  .features-print-dark .pt-36 {
+    padding-top: 1.5rem !important;
+  }
+
+  .features-print-dark .pb-16,
+  .features-print-dark .pb-28 {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .features-print-dark .mb-12,
+  .features-print-dark .mb-20 {
+    margin-bottom: 1rem !important;
+  }
+
+  /* ── Grid layout for print ── */
+  .features-print-dark .grid {
+    page-break-inside: avoid;
+  }
+
+  /* Feature cards: ensure images don't get too large */
+  .features-print-dark .grid.md\:grid-cols-2 img {
+    max-height: 200px !important;
+    object-fit: cover !important;
+  }
+
+  /* ── CheckCircle icons — use dark ── */
+  .features-print-dark svg {
+    color: #2563eb !important;
+    stroke: #2563eb !important;
+  }
+
+  /* ── Divider lines ── */
+  .features-print-dark .h-px {
+    background: #e2e8f0 !important;
+  }
+}

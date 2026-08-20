@@ -17,6 +17,10 @@ import { dirname, join, resolve } from "node:path";
 const HERE = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const OTHER = resolve(process.argv[2] ?? join(HERE, "../digitalsignal"));
 
+// Filer utanför _shared som också speglas. `droneRegulations` används av
+// `src/pages/admin/AdminDroneRegulations.tsx` som stannade i DigitalSignal.
+const SRC_MIRRORED = ["src/data/droneRegulations.ts"];
+
 const MIRRORED = [
   "cloner-shopify-access.ts",
   "compliance-sync.ts",
@@ -43,20 +47,22 @@ if (!existsSync(OTHER)) {
   process.exit(2);
 }
 
+const paths = [...MIRRORED.map((rel) => `supabase/functions/_shared/${rel}`), ...SRC_MIRRORED];
+
 let drift = 0;
-for (const rel of MIRRORED) {
-  const mine = digest(join(HERE, "supabase/functions/_shared", rel));
-  const theirs = digest(join(OTHER, "supabase/functions/_shared", rel));
+for (const rel of paths) {
+  const mine = digest(join(HERE, rel));
+  const theirs = digest(join(OTHER, rel));
   if (mine === theirs) continue;
   drift++;
-  if (mine === null) console.log(`SAKNAS HÄR      _shared/${rel}`);
-  else if (theirs === null) console.log(`SAKNAS I DS     _shared/${rel}`);
-  else console.log(`SKILJER SIG     _shared/${rel}`);
+  if (mine === null) console.log(`SAKNAS HÄR      ${rel}`);
+  else if (theirs === null) console.log(`SAKNAS I DS     ${rel}`);
+  else console.log(`SKILJER SIG     ${rel}`);
 }
 
 console.log(
   drift === 0
-    ? `Alla ${MIRRORED.length} speglade moduler är identiska.`
-    : `\n${drift} av ${MIRRORED.length} moduler har glidit isär. DigitalSignal är källan.`,
+    ? `Alla ${paths.length} speglade filer är identiska.`
+    : `\n${drift} av ${paths.length} filer har glidit isär. DigitalSignal är källan.`,
 );
 process.exit(drift === 0 ? 0 : 1);
