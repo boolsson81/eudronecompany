@@ -211,12 +211,17 @@ olika tidpunkter:
 
 | Migrering | Innehåll | Körbar |
 |---|---|---|
-| `20260820130000_edp_service_contact_rename.sql` | Portalkonfiguration (returföretag, returmejl) och publika FAQ-svar | **Nu** — `service@eudronecompany.com` finns |
+| `20260820101644_edp_service_contact_rename.sql` | Portalkonfiguration (returföretag, returmejl) och publika FAQ-svar | ✅ **Applicerad** i digitalsignal-prod 2026-08-20 |
 | `20260820140000_edp_single_domain_markets.sql` | `shop_domains` och GSC-datasetet | **Först efter** att Shopify Markets lagts om till underkataloger |
 
 Kör inte del 2 för tidigt: `shop_domains` beskriver hur butiken ser ut utåt, och
 SEO-modulerna (hreflang-validering, canonicals, GSC-routing) skulle då arbeta mot en
 domänuppsättning som ännu inte finns.
+
+Del 1 kördes direkt mot databasen och registrerades som version `20260820101644`.
+Filnamnet är satt till samma version så att `supabase db push` ser den som körd.
+Observera att `20260820120000_sunsky_orphan_backfill_resume_watchdog_cron.sql` ännu
+**inte** är applicerad — nästa `db push` kommer att köra den.
 
 **Detta döptes medvetet INTE om**, eftersom det är identifierare och inte varumärke:
 
