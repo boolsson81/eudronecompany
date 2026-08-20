@@ -206,8 +206,17 @@ engelska som rotmarknad utan `/en/`.
 | GSC-dataset | `searchconsole_eurodroneparts` → `searchconsole_eudronecompany` |
 | Marknadsföringstexter och tema | Innehållsbundlarna i eudroneparts-repot, temats kommentarer |
 
-Databasen ändras av `supabase/migrations/20260820100000_rename_eurodroneparts_to_eudronecompany.sql`
-(portalkonfiguration, FAQ-svar, `shop_domains`, GSC-dataset).
+Databasen ändras av två migreringar, medvetet separerade eftersom de blir körbara vid
+olika tidpunkter:
+
+| Migrering | Innehåll | Körbar |
+|---|---|---|
+| `20260820130000_edp_service_contact_rename.sql` | Portalkonfiguration (returföretag, returmejl) och publika FAQ-svar | **Nu** — `service@eudronecompany.com` finns |
+| `20260820140000_edp_single_domain_markets.sql` | `shop_domains` och GSC-datasetet | **Först efter** att Shopify Markets lagts om till underkataloger |
+
+Kör inte del 2 för tidigt: `shop_domains` beskriver hur butiken ser ut utåt, och
+SEO-modulerna (hreflang-validering, canonicals, GSC-routing) skulle då arbeta mot en
+domänuppsättning som ännu inte finns.
 
 **Detta döptes medvetet INTE om**, eftersom det är identifierare och inte varumärke:
 
