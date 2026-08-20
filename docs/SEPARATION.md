@@ -1,6 +1,6 @@
 # Separation av EU Drone Company från DigitalSignal
 
-**Status:** Underlag för beslut — ingen kod flyttad ännu
+**Status:** Steg 1–4 genomförda — se § 7
 **Datum:** 2026-08-20
 **Syfte:** Kartlägga vad i `boolsson81/digitalsignal` som är exklusivt för EU Drone Company
 (EuroDroneParts, EDP) och beskriva hur det kan brytas ut till ett eget projekt.
@@ -124,11 +124,58 @@ Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudroneparts/`, `p
 
 ---
 
-## 6. Öppna frågor
+## 6. Fattade beslut
 
-1. Ska EDP ha **egen Supabase** eller dela DigitalSignals? *(avgör alt. 1 vs 2)*
-2. Följer **Service Management Portal** med EDP, eller ska den produktifieras i DigitalSignal?
-3. Ska **Shopify Cloner** arkiveras (migreringen är klar) eller behållas som verktyg?
-4. Är **compliance/HS-kod och leverantörs-/lagerflödet** EDP-drift eller SaaS-moduler?
-5. Ska de publika drönarsidorna på `digitalsignal`-domänen finnas kvar, eller bara på
-   eurodroneparts-domänerna?
+| Fråga | Beslut |
+|---|---|
+| Målbild | **Alternativ 1** — eget repo, delad Supabase |
+| Service Management Portal (SMP) | Stannar i DigitalSignal som SaaS-modul |
+| Shopify Cloner | Följer med EU Drone Company |
+| Compliance / HS-kod / GPSR | Följer med EU Drone Company |
+| Sunsky-dropship | Stannar i DigitalSignal |
+| Lager + leverantörs-FTP (Boston) | Stannar i DigitalSignal |
+
+Följdregel för dokumentationen: **den som äger koden äger rapporterna.** Därför följer
+`SUNSKY_*`, `BOSTON_*`, `INVENTORY_*` och servicportalens rapporter med DigitalSignal,
+medan tema-, meny-, kollektions-, cloner- och compliancerapporterna flyttar.
+
+## 7. Genomfört
+
+Utfört av `scripts/extract-eudroneparts.mjs` (kör med `--prune` för att också ta bort ur
+det här repot). Exakt innehåll: `docs/eudroneparts-extraction-manifest.md`.
+
+| Flyttat till `eudroneparts` | Antal |
+|---|---|
+| `theme/` + `shopify-theme/` (Shopify-tema och sektioner) | 473 filer |
+| `data/edp-*.json` | 26 |
+| Edge functions (cloner, edp-launch, meny-/migreringspass, compliance) | 19 |
+| Delade moduler som flyttades helt | 30 |
+| Drift- och migreringsskript (inkl. `scripts/lib`, `scripts/executors`) | 142 |
+| Innehållsmoduler under `src/data` och `src/lib` | 11 |
+| Rapporter och revisioner (repo-roten → `docs/reports/`) | 156 |
+| `[functions.*]`-block i `supabase/config.toml` | 12 |
+
+**Speglade moduler (16).** `cloner-shopify-access`, `compliance-sync`, `dji-compatibility`,
+`edp-launch/config`, `missing-product-type-report`, `origin-compliance`,
+`product-compliance`, `product-compliance-shopify`, `product-draft-safety`, `shopify-auth`,
+`shopify-client`, `shopify-product-feed`, `shopify-product-templates`,
+`suggest-product-type`, `sunsky-product-map`, `sunsky-stock` — de används fortfarande av
+Sunsky-, leverantörs- och GEO-funktioner som stannade kvar. **DigitalSignal är källan.**
+Ändras någon av dem ska ändringen speglas; `npm run check:shared` i eudroneparts-repot
+jämför dem. Om Sunsky senare flyttar med krymper listan till ungefär sju.
+
+## 8. Kvar att göra
+
+1. **Frontend.** Admin-UI:t för Shopify Cloner (`src/pages/ShopifyCloner.tsx`,
+   `src/pages/admin/ShopifyDroneClone.tsx`) och produktcompliance
+   (`src/pages/admin/ProductCompliance.tsx`) ligger kvar här och anropar funktioner som nu
+   ägs av eudroneparts-repot. Det fungerar — funktionerna är deployade mot samma Supabase —
+   men UI:t bör flytta när eudroneparts får en egen frontend.
+2. **Publika drönarsidor.** `/kommersiella-dronare/*` (14 sidor) ligger kvar i SPA:n.
+   Att flytta dem kräver egen hosting, sitemap och redirects.
+3. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
+   `src/lib/service-portal/constants.ts` är hårdkodade mot EuroDroneParts. Ska portalen
+   säljas till fler kunder behöver det bli tenant-styrt.
+4. **`docs/go-live/`** blandar plattformsmigrering och EDP-drift och är inte uppdelad.
+5. **Deploy.** `.github/workflows/deploy-functions.yml` i eudroneparts-repot behöver
+   hemligheterna `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF`.
