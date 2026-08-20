@@ -1,0 +1,223 @@
+{
+  "version": "3.5",
+  "rules": {
+    "reparation-dji-neo-reservdelar": {
+      "label": "DJI Neo Service",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Neo"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "reparation"
+        }
+      ],
+      "projected_count": 229,
+      "action": "create_page_update_collection"
+    },
+    "enterprise-service-dronare": {
+      "label": "Mavic Enterprise Service",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3 Enterprise"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Software"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Care"
+        }
+      ],
+      "projected_count": 6,
+      "action": "create_page_update_collection"
+    },
+    "dronare-efter-krasch": {
+      "label": "Drönare efter krasch",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "reparation"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "repair"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "krasch"
+        },
+        {
+          "column": "TYPE",
+          "relation": "CONTAINS",
+          "condition": "Reservdel"
+        }
+      ],
+      "projected_count": 439,
+      "action": "create_page_and_collection"
+    },
+    "armbyte": {
+      "label": "Armbyte",
+      "appliedDisjunctively": false,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "arm"
+        },
+        {
+          "column": "TYPE",
+          "relation": "CONTAINS",
+          "condition": "Reservdel"
+        }
+      ],
+      "projected_count": 57,
+      "action": "create_page_and_collection"
+    },
+    "kamerabyte": {
+      "label": "Kamerabyte",
+      "appliedDisjunctively": false,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "kamera"
+        },
+        {
+          "column": "TYPE",
+          "relation": "CONTAINS",
+          "condition": "Reservdel"
+        }
+      ],
+      "projected_count": 57,
+      "action": "create_page_and_collection"
+    },
+    "esc-service": {
+      "label": "ESC",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "ESC"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "speed controller"
+        }
+      ],
+      "projected_count": 33,
+      "action": "create_page_and_collection"
+    },
+    "gps-service": {
+      "label": "GPS",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "GPS"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "GNSS"
+        }
+      ],
+      "projected_count": 27,
+      "action": "create_page_and_collection"
+    },
+    "kompass-service": {
+      "label": "Kompass",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "kompass"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "compass"
+        }
+      ],
+      "projected_count": 14,
+      "action": "create_page_and_collection"
+    },
+    "sensorer-service": {
+      "label": "Sensorer",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "sensor"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "IMU"
+        }
+      ],
+      "projected_count": 28,
+      "action": "create_page_and_collection"
+    },
+    "agras-sprutsystem": {
+      "label": "Sprutsystem",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "spray"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "munstycke"
+        }
+      ],
+      "projected_count": 4,
+      "action": "create_page_and_collection"
+    },
+    "dji-dock-service": {
+      "label": "DJI Dock Service",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Dock"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "dock"
+        }
+      ],
+      "projected_count": 8,
+      "action": "create_page_and_collection"
+    }
+  }
+}

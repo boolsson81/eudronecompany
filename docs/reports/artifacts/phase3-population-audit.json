@@ -1,0 +1,3028 @@
+{
+  "generated_at": "2026-06-13T10:09:43.978Z",
+  "mode": "apply",
+  "product_catalog_size": 9389,
+  "collections_in_scope": 33,
+  "projected_populated": 33,
+  "projected_empty": 0,
+  "results": [
+    {
+      "handle": "dji-matrice-4-serie",
+      "group": "enterprise_dji",
+      "label": "Matrice 4",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 4"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 4TD"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4 Series"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4T"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 22,
+      "post_apply_count": 22,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 4TD"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4 Series"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4T"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-matrice-3-serien",
+      "group": "enterprise_dji",
+      "label": "Matrice 4 Series hub",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 4"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4 Series"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 22,
+      "post_apply_count": 22,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 400"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4 Series"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "group": "enterprise_dji",
+      "label": "Matrice 30",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 30"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 30T"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 9,
+      "post_apply_count": 9,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 30"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 30"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 30T"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "group": "enterprise_dji",
+      "label": "Matrice 350 RTK",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 350"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M350"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M300"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 350 RTK"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 350 RTK"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 300 RTK"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 8,
+      "post_apply_count": 8,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 350 RTK"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 350"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M350"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M300"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 350 RTK"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 350 RTK"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 300 RTK"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-matrice-400-serien",
+      "group": "enterprise_dji",
+      "label": "Matrice 400",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 400"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M400"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 9,
+      "post_apply_count": 9,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 400"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 400"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M400"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-matrice-serien",
+      "group": "enterprise_dji",
+      "label": "Matrice family hub",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 4"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 350 RTK"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 350 RTK"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 3D"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 3TD"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 32,
+      "post_apply_count": 32,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 4"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 350 RTK"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 350 RTK"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 3D"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 3TD"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-mavic-3-enterprise",
+      "group": "enterprise_dji",
+      "label": "Mavic Enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3 Enterprise"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3E"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Mavic 3 Enterprise"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Mavic 3 Enterprise"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 5,
+      "post_apply_count": 5,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3 Enterprise"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3 Enterprise"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3E"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3 Enterprise"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Mavic 3 Enterprise"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-mavic-serien-enterprise",
+      "group": "enterprise_dji",
+      "label": "Mavic Enterprise series",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3 Enterprise"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3M"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3T"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Mavic 3 Enterprise"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Mavic 3 Enterprise Series"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Mavic 3 Enterprise"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 11,
+      "post_apply_count": 11,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3 Enterprise"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3M"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3T"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3 Enterprise"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3 Enterprise Series"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Mavic 3 Enterprise"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "group": "enterprise_dji",
+      "label": "Mavic 3M multispectral",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3M"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Multispectral"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Mavic 3 Multispectral Edition"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 5,
+      "post_apply_count": 5,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3M"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3M"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Multispectral"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Mavic 3 Multispectral Edition"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "dji-agras-dronare",
+      "group": "enterprise_dji",
+      "label": "Agras",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Agras"
+        },
+        {
+          "column": "TYPE",
+          "relation": "CONTAINS",
+          "condition": "Jordbruks"
+        }
+      ],
+      "exists": true,
+      "current_count": 4,
+      "projected_count": 4,
+      "post_apply_count": 4,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Agras"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Jordbruks"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Agras"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Jordbruks"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 4
+      }
+    },
+    {
+      "handle": "enterprise-dronare",
+      "group": "enterprise_dji",
+      "label": "Enterprise hub",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Drönare"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Drönare för företag"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Jordbruksdrönare"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Enterprise Drönare"
+        }
+      ],
+      "exists": true,
+      "current_count": 19,
+      "projected_count": 18,
+      "post_apply_count": 19,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Jordbruksdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Jordbruksdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 19
+      }
+    },
+    {
+      "handle": "enterprise-tillbehor",
+      "group": "enterprise_dji",
+      "label": "Enterprise accessories hub",
+      "appliedDisjunctively": false,
+      "rules": [
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Tillbehör"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "enterprise"
+        }
+      ],
+      "exists": true,
+      "current_count": 32,
+      "projected_count": 31,
+      "post_apply_count": 32,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 32
+      }
+    },
+    {
+      "handle": "enterprise-dronartillbehor",
+      "group": "enterprise_dji",
+      "label": "enterprise-dronartillbehor",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Tillbehör"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Enterprise Tillbehör"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Enterprise tillbehör"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Enterprise tillbehör_drönare"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Enterprise tillbehör"
+        }
+      ],
+      "exists": true,
+      "current_count": 11,
+      "projected_count": 77,
+      "post_apply_count": 77,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "tillbehör"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Enterprise tillbehör"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Enterprise tillbehör_drönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Enterprise tillbehör"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 11
+      }
+    },
+    {
+      "handle": "enterprise-propellrar",
+      "group": "enterprise_dji",
+      "label": "enterprise-propellrar",
+      "appliedDisjunctively": false,
+      "rules": [
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Propellrar"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "enterprise"
+        }
+      ],
+      "exists": true,
+      "current_count": 1,
+      "projected_count": 1,
+      "post_apply_count": 1,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Propellrar"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Propellrar"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "enterprise"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 1
+      }
+    },
+    {
+      "handle": "dji-enterprise-fjarrkontroller",
+      "group": "enterprise_dji",
+      "label": "dji-enterprise-fjarrkontroller",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "RC Plus"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Enterprise"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Fjärrkontroll Enterprise"
+        }
+      ],
+      "exists": true,
+      "current_count": 22,
+      "projected_count": 22,
+      "post_apply_count": 22,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "RC Plus"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Enterprise"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Fjärrkontroll Enterprise"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "RC Plus"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Enterprise"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Fjärrkontroll Enterprise"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 22
+      }
+    },
+    {
+      "handle": "dji-marvic-enterprise",
+      "group": "enterprise_dji",
+      "label": "dji-marvic-enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Marvic"
+        }
+      ],
+      "exists": true,
+      "current_count": 1,
+      "projected_count": 1,
+      "post_apply_count": 1,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Marvic"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Marvic"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 1
+      }
+    },
+    {
+      "handle": "dji-matrice-4-tillbehor",
+      "group": "enterprise_dji",
+      "label": "dji-matrice-4-tillbehor",
+      "appliedDisjunctively": false,
+      "rules": [
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Tillbehör"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 4"
+        }
+      ],
+      "exists": true,
+      "current_count": 15,
+      "projected_count": 15,
+      "post_apply_count": 15,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Tillbehör"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 15
+      }
+    },
+    {
+      "handle": "enterprise-belysning",
+      "group": "enterprise_dji",
+      "label": "Searchlights",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "spotlight"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "searchlight"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Drönar belysning"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "GL60"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "AL1"
+        }
+      ],
+      "exists": true,
+      "current_count": 13,
+      "projected_count": 13,
+      "post_apply_count": 13,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "spotlight"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "searchlight"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Drönar belysning"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GL60"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "AL1"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "spotlight"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "searchlight"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Drönar belysning"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GL60"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "AL1"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 13
+      }
+    },
+    {
+      "handle": "enterprise-hogtalarsystem",
+      "group": "enterprise_dji",
+      "label": "Speakers",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "speaker"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "högtalare"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "megaphone"
+        }
+      ],
+      "exists": true,
+      "current_count": 23,
+      "projected_count": 23,
+      "post_apply_count": 23,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "speaker"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "högtalare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "megaphone"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "speaker"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "högtalare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "megaphone"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 23
+      }
+    },
+    {
+      "handle": "enterprise-lyftsystem",
+      "group": "enterprise_dji",
+      "label": "Parachute / lift systems",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "parachute"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "fallskärm"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "winch"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "lyft"
+        }
+      ],
+      "exists": true,
+      "current_count": 5,
+      "projected_count": 5,
+      "post_apply_count": 5,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "parachute"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "fallskärm"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "winch"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "lyft"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "parachute"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "fallskärm"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "winch"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "lyft"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 5
+      }
+    },
+    {
+      "handle": "enterprise-service-dronare",
+      "group": "enterprise_dji",
+      "label": "enterprise-service-dronare",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "service"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Software"
+        }
+      ],
+      "exists": true,
+      "current_count": 4,
+      "projected_count": 4,
+      "post_apply_count": 4,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "service"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Software"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "service"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Software"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 4
+      }
+    },
+    {
+      "handle": "dji-flycart-serien",
+      "group": "flycart",
+      "label": "FlyCart Series",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI FlyCart"
+        }
+      ],
+      "exists": true,
+      "current_count": 2,
+      "projected_count": 2,
+      "post_apply_count": 2,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI FlyCart"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI FlyCart"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 2
+      }
+    },
+    {
+      "handle": "dji-flycart-100-lastdronare",
+      "group": "flycart",
+      "label": "FlyCart 100",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart 100"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI FlyCart 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "FlyCart 30"
+        }
+      ],
+      "notes": "Catalog has FlyCart 30 today; rule includes 30 until FlyCart 100 SKUs arrive",
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 2,
+      "post_apply_count": 2,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI FlyCart 100"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Drönare för företag"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart 100"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI FlyCart 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "FlyCart 30"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "enterprise-sensorer",
+      "group": "sensors_payloads",
+      "label": "Zenmuse + LiDAR + enterprise sensors",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Zenmuse"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "LiDAR"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "LIDAR"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "LiDAR"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Sensorer"
+        },
+        {
+          "column": "TYPE",
+          "relation": "EQUALS",
+          "condition": "Enterprise Payload"
+        }
+      ],
+      "exists": true,
+      "current_count": 20,
+      "projected_count": 20,
+      "post_apply_count": 20,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Zenmuse"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "LiDAR"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "LIDAR"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "LiDAR"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Sensorer"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Payload"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Zenmuse"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "LiDAR"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "LIDAR"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "LiDAR"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Sensorer"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Payload"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 20
+      }
+    },
+    {
+      "handle": "dronare-med-varmekamera",
+      "group": "sensors_payloads",
+      "label": "Thermal Cameras",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "thermal"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "värmekamera"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "varmekamera"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3T"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "H30T"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "värmekamera"
+        }
+      ],
+      "exists": true,
+      "current_count": 30,
+      "projected_count": 29,
+      "post_apply_count": 30,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "thermal"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "värmekamera"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "varmekamera"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3T"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "H30T"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "värmekamera"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "thermal"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "värmekamera"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "varmekamera"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3T"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "H30T"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "värmekamera"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 30
+      }
+    },
+    {
+      "handle": "airdrop-system",
+      "group": "sensors_payloads",
+      "label": "Airdrop Systems",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "airdrop"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "drop system"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "airdrop system"
+        }
+      ],
+      "exists": true,
+      "current_count": 24,
+      "projected_count": 24,
+      "post_apply_count": 24,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "airdrop"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "drop system"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "airdrop system"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "airdrop"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "drop system"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "airdrop system"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 24
+      }
+    },
+    {
+      "handle": "inspektionsdronare",
+      "group": "industry_solutions",
+      "label": "Inspection + Public Safety interim",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Inspektionsdrönare"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Industriell Inspektion"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "inspection"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "inspektion"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "public safety"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "search and rescue"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "räddning"
+        }
+      ],
+      "exists": true,
+      "current_count": 0,
+      "projected_count": 4,
+      "post_apply_count": 4,
+      "current_rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Inspektionsdrönare"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Drönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Inspektionsdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Industriell Inspektion"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "inspection"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "inspektion"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "public safety"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "search and rescue"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "räddning"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 0
+      }
+    },
+    {
+      "handle": "energi-infrastruktur",
+      "group": "industry_solutions",
+      "label": "Energy & Infrastructure",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "infrastruktur"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "kraftledning"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "wind turbine"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Industriell Inspektion"
+        }
+      ],
+      "exists": true,
+      "current_count": 2,
+      "projected_count": 2,
+      "post_apply_count": 2,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "infrastruktur"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kraftledning"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "wind turbine"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Industriell Inspektion"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "infrastruktur"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kraftledning"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "wind turbine"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Industriell Inspektion"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 2
+      }
+    },
+    {
+      "handle": "jordbruksdronare",
+      "group": "industry_solutions",
+      "label": "Agriculture",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "jordbruk"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Jordbruksdrönare"
+        },
+        {
+          "column": "TYPE",
+          "relation": "CONTAINS",
+          "condition": "Jordbruks"
+        }
+      ],
+      "exists": true,
+      "current_count": 4,
+      "projected_count": 4,
+      "post_apply_count": 4,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "jordbruk"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Jordbruksdrönare"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Jordbruks"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "jordbruk"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Jordbruksdrönare"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Jordbruks"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 4
+      }
+    },
+    {
+      "handle": "skogsbruksdronare",
+      "group": "industry_solutions",
+      "label": "Forestry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "skogs"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "forestry"
+        }
+      ],
+      "exists": true,
+      "current_count": 1,
+      "projected_count": 1,
+      "post_apply_count": 1,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "skogs"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "forestry"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "skogs"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "forestry"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 1
+      }
+    },
+    {
+      "handle": "kartlaggnings-och-matdronare",
+      "group": "industry_solutions",
+      "label": "Surveying & Mapping",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Kartläggningsdrönare"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "mätdrönare"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "survey"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "mapping"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "kartlägg"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "RTK"
+        }
+      ],
+      "exists": true,
+      "current_count": 26,
+      "projected_count": 26,
+      "post_apply_count": 26,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Kartläggningsdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "mätdrönare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "survey"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "mapping"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kartlägg"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "RTK"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Kartläggningsdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "mätdrönare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "survey"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "mapping"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kartlägg"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "RTK"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 26
+      }
+    },
+    {
+      "handle": "transport-logistik",
+      "group": "industry_solutions",
+      "label": "Transport & Logistics",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Transportdrönare"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "transportdrönare"
+        }
+      ],
+      "exists": true,
+      "current_count": 2,
+      "projected_count": 2,
+      "post_apply_count": 2,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Transportdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "transportdrönare"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Transportdrönare"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "transportdrönare"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 2
+      }
+    },
+    {
+      "handle": "last-och-transportdronare",
+      "group": "industry_solutions",
+      "label": "last-och-transportdronare",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "transportdrönare"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "transport"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart"
+        }
+      ],
+      "exists": true,
+      "current_count": 54,
+      "projected_count": 54,
+      "post_apply_count": 54,
+      "current_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "transportdrönare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "transport"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          }
+        ]
+      },
+      "proposed_rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "transportdrönare"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "transport"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          }
+        ]
+      },
+      "apply": {
+        "ok": true,
+        "errors": [],
+        "count": 54
+      }
+    }
+  ],
+  "menu_readiness": [
+    {
+      "menu": "main-menu",
+      "title": "Drönare",
+      "collection": "dji-dronare",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Mini",
+      "collection": "dji-mini-4-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Air",
+      "collection": "dji-air-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Mavic",
+      "collection": "dji-mavic-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Avata",
+      "collection": "dji-avata-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Neo",
+      "collection": "dji-neo",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Flip",
+      "collection": "dji-flip-dronare",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Alla konsumentdrönare",
+      "collection": "dji-dronare",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Enterprise Drönare",
+      "collection": "enterprise-dronare",
+      "product_count": 19,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Enterprise översikt",
+      "collection": "enterprise-dronare",
+      "product_count": 19,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Matrice",
+      "collection": "dji-matrice-serien",
+      "product_count": 32,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Mavic Enterprise",
+      "collection": "dji-mavic-serien-enterprise",
+      "product_count": 11,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "DJI Agras",
+      "collection": "dji-agras-dronare",
+      "product_count": 4,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Sensors & Payloads",
+      "collection": "enterprise-sensorer",
+      "product_count": 20,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Enterprise tillbehör",
+      "collection": "enterprise-tillbehor",
+      "product_count": 32,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "FlyCart",
+      "collection": "dji-flycart-serien",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "FlyCart 100",
+      "collection": "dji-flycart-100-lastdronare",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "FlyCart serie",
+      "collection": "dji-flycart-serien",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Branschlösningar",
+      "collection": "inspektionsdronare",
+      "product_count": 4,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Inspektion",
+      "collection": "inspektionsdronare",
+      "product_count": 4,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Energi & Infrastruktur",
+      "collection": "energi-infrastruktur",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Jordbruk",
+      "collection": "jordbruksdronare",
+      "product_count": 4,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Skogsbruk",
+      "collection": "skogsbruksdronare",
+      "product_count": 1,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Kartläggning",
+      "collection": "kartlaggnings-och-matdronare",
+      "product_count": 26,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Transport & Logistik",
+      "collection": "transport-logistik",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Reservdelar",
+      "collection": "dji-dronar-reservdelar",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Gimbal & motorer",
+      "collection": "reservdelar-gimbal-dronare-motorer",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Elektronik & flight components",
+      "collection": "dronarelektronik-flight-components",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Neo reservdelar",
+      "collection": "reparation-dji-neo-reservdelar",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Tillbehör",
+      "collection": "dronartillbehor-kop",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Propellrar",
+      "collection": "dronare-propeller-tillbehor",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Filter",
+      "collection": "filter-till-dronare",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Batterier",
+      "collection": "batterier",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Väskor & cases",
+      "collection": "dronarryggsack-vaskor",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Fjärrkontroller",
+      "collection": "fjarrkontroll-dronare",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "PolarPro",
+      "collection": "polarpro",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Legacy DJI",
+      "collection": "dji-phantom-3-se",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Phantom",
+      "collection": "dji-phantom-3-se",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Air 2 / Air 2S",
+      "collection": "dji-air-2-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Mini 2",
+      "collection": "tillbehor-dji-mini-2-2-se",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "main-menu",
+      "title": "Mavic 2",
+      "collection": "dji-mavic-2-serien",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "footer",
+      "title": "Alla produkter",
+      "collection": "alla-produkter",
+      "product_count": null,
+      "in_phase3_scope": false,
+      "status": "not_in_scope"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Enterprise drönare",
+      "collection": "enterprise-dronare",
+      "product_count": 19,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Matrice",
+      "collection": "dji-matrice-serien",
+      "product_count": 32,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Mavic Enterprise",
+      "collection": "dji-mavic-3-enterprise",
+      "product_count": 5,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Agras",
+      "collection": "dji-agras-dronare",
+      "product_count": 4,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "FlyCart",
+      "collection": "dji-flycart-serien",
+      "product_count": 2,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Värmekamera",
+      "collection": "dronare-med-varmekamera",
+      "product_count": 30,
+      "in_phase3_scope": true,
+      "status": "populated"
+    },
+    {
+      "menu": "enterprise-dr-nare",
+      "title": "Airdrop",
+      "collection": "airdrop-system",
+      "product_count": 24,
+      "in_phase3_scope": true,
+      "status": "populated"
+    }
+  ],
+  "empty_collections": [],
+  "menu_empty_refs": []
+}

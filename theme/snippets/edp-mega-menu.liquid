@@ -1,0 +1,143 @@
+{% comment %}
+  EuroDroneCompany mega menu with Consumer / Enterprise segment support.
+
+  Accepts:
+  - menu: {Linklist}
+  - segment_id: {String} consumer | enterprise
+  - menu_color_scheme: {String}
+  - blocks: {Array} section.blocks for promo panels
+{% endcomment %}
+
+{%- liquid
+  assign active_segment = active_segment | default: 'consumer'
+-%}
+{%- if menu != blank and menu.links.size > 0 -%}
+<nav
+  class="header__inline-menu edp-header-menu"
+  data-edp-segment-panel="{{ segment_id }}"
+  {% unless segment_id == active_segment %}
+    hidden
+  {% endunless %}
+  aria-label="{{ 'edp.header.main_nav' | t }} — {{ segment_id }}"
+>
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- for link in menu.links -%}
+      <li>
+        {%- if link.links != blank -%}
+          <header-menu>
+            <details id="Details-EdpMenu-{{ segment_id }}-{{ forloop.index }}" class="mega-menu">
+              <summary
+                id="EdpMenu-{{ segment_id }}-{{ link.handle }}"
+                class="header__menu-item list-menu__item link focus-inset"
+              >
+                <span{% if link.child_active %} class="header__active-menu-item"{% endif %}>
+                  {{- link.title | escape -}}
+                </span>
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </summary>
+              <div
+                id="EdpMegaMenu-{{ segment_id }}-{{ forloop.index }}"
+                class="mega-menu__content color-{{ menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                tabindex="-1"
+              >
+                <div class="page-width edp-mega-menu__content-inner">
+                  <ul
+                    class="mega-menu__list mega-menu__list--edp{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                    role="list"
+                  >
+                    {%- for childlink in link.links -%}
+                      <li>
+                        <a
+                          id="EdpMenu-{{ segment_id }}-{{ link.handle }}-{{ childlink.handle }}"
+                          href="{{ childlink.url }}"
+                          class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                          {% if childlink.current %}
+                            aria-current="page"
+                          {% endif %}
+                        >
+                          {{ childlink.title | escape }}
+                        </a>
+                        {%- if childlink.links != blank -%}
+                          <ul class="list-unstyled" role="list">
+                            {%- for grandchildlink in childlink.links -%}
+                              <li>
+                                <a
+                                  id="EdpMenu-{{ segment_id }}-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                  href="{{ grandchildlink.url }}"
+                                  class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                  {% if grandchildlink.current %}
+                                    aria-current="page"
+                                  {% endif %}
+                                >
+                                  {{ grandchildlink.title | escape }}
+                                </a>
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        {%- endif -%}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+
+                  {%- assign promo_block = nil -%}
+                  {%- for block in blocks -%}
+                    {%- if block.type == 'mega_promo'
+                      and block.settings.segment == segment_id
+                      and block.settings.parent_handle == link.handle
+                    -%}
+                      {%- assign promo_block = block -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+
+                  {%- if promo_block -%}
+                    <aside class="edp-mega-menu__promo" {{ promo_block.shopify_attributes }}>
+                      {%- if promo_block.settings.image != blank -%}
+                        <a href="{{ promo_block.settings.link | default: link.url }}">
+                          {{
+                            promo_block.settings.image
+                            | image_url: width: 400
+                            | image_tag:
+                              class: 'edp-mega-menu__promo-image',
+                              loading: 'lazy',
+                              widths: '200, 300, 400',
+                              alt: promo_block.settings.heading
+                          }}
+                        </a>
+                      {%- endif -%}
+                      {%- if promo_block.settings.heading != blank -%}
+                        <p class="edp-mega-menu__promo-heading">{{ promo_block.settings.heading | escape }}</p>
+                      {%- endif -%}
+                      {%- if promo_block.settings.text != blank -%}
+                        <p class="edp-mega-menu__promo-text">{{ promo_block.settings.text | escape }}</p>
+                      {%- endif -%}
+                      {%- if promo_block.settings.link_label != blank -%}
+                        <a href="{{ promo_block.settings.link | default: link.url }}" class="edp-utility-bar__link edp-utility-bar__link--accent">
+                          {{ promo_block.settings.link_label | escape }}
+                        </a>
+                      {%- endif -%}
+                    </aside>
+                  {%- endif -%}
+                </div>
+              </div>
+            </details>
+          </header-menu>
+        {%- else -%}
+          <a
+            id="EdpMenu-{{ segment_id }}-{{ link.handle }}"
+            href="{{ link.url }}"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+          >
+            <span{% if link.current %} class="header__active-menu-item"{% endif %}>
+              {{- link.title | escape -}}
+            </span>
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>
+{%- endif -%}

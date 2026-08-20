@@ -1,0 +1,140 @@
+resource_type,current_handle,proposed_handle,current_url,new_url,redirect_required,swedish_detected,title,execute_phase,internal_references_impacted
+blog,nyheter,news,/blogs/nyheter,/blogs/news,YES,YES,Nyheter,5,
+article,nyheter/kop-dronare-med-kamera,news/kop-drones-med-kamera,/blogs/nyheter/kop-dronare-med-kamera,/blogs/news/kop-drones-med-kamera,YES,YES,Bästa köp drönare med kamera – en komplett köpguide,5,
+article,nyheter/fpv-drone-kit,news/fpv-drone-kit,/blogs/nyheter/fpv-drone-kit,/blogs/news/fpv-drone-kit,YES,YES,Hitta rätt FPV drone kit för din första flygning,5,
+article,nyheter/gopro-hero-11-black,news/gopro-hero-11-black,/blogs/nyheter/gopro-hero-11-black,/blogs/news/gopro-hero-11-black,YES,YES,Den ultimata guiden till din GoPro Hero11 Black,5,
+article,nyheter/dji-mini-se,news/dji-mini-se,/blogs/nyheter/dji-mini-se,/blogs/news/dji-mini-se,YES,YES,Flyga DJI Mini SE i Sverige en komplett nybörjarguide,5,
+article,nyheter/dji-flip-lilla-dronaren,news/dji-flip-lilla-dronesn,/blogs/nyheter/dji-flip-lilla-dronaren,/blogs/news/dji-flip-lilla-dronesn,YES,YES,DJI Flip – Den lilla drönaren med stora möjligheter,5,
+article,nyheter/dronare-regler,news/drones-regulations,/blogs/nyheter/dronare-regler,/blogs/news/drones-regulations,YES,YES,Drönare regler i Sverige förklarade enkelt,5,
+article,nyheter/laddningsbara-batterier-aaa,news/rechargeable-batteryer-aaa,/blogs/nyheter/laddningsbara-batterier-aaa,/blogs/news/rechargeable-batteryer-aaa,YES,YES,Den kompletta guiden till laddningsbara batterier AAA,5,
+article,nyheter/kamera-for-youtube,news/kamera-for-youtube,/blogs/nyheter/kamera-for-youtube,/blogs/news/kamera-for-youtube,YES,YES,Upptäck kamera för youtube – vår guide till bästa utrustningen,5,
+article,nyheter/powerbank-usb-c,news/powerbank-usb-c,/blogs/nyheter/powerbank-usb-c,/blogs/news/powerbank-usb-c,YES,YES,Så väljer du rätt powerbank usb c för dina behov,5,
+article,nyheter/mikrofon-mygga-tradlos,news/microphone-mygga-wireless,/blogs/nyheter/mikrofon-mygga-tradlos,/blogs/news/microphone-mygga-wireless,YES,YES,Mikrofon mygga trådlös en komplett guide till perfekt ljud,5,
+article,nyheter/mikrofon-till-mobil,news/microphone-till-mobil,/blogs/nyheter/mikrofon-till-mobil,/blogs/news/microphone-till-mobil,YES,YES,"Mikrofon till mobil: Så väljer du rätt för vlogg, intervjuer och musik",5,
+article,nyheter/minneskort-micro-sd,news/memory-cards-micro-sd,/blogs/nyheter/minneskort-micro-sd,/blogs/news/memory-cards-micro-sd,YES,YES,Så väljer du rätt minneskort micro sd för din actionkamera och drönare,5,
+article,nyheter/uppladdningsbara-batterier-laddare,news/upprechargeable-batteryer-charger,/blogs/nyheter/uppladdningsbara-batterier-laddare,/blogs/news/upprechargeable-batteryer-charger,YES,YES,Så väljer du rätt uppladdningsbara batterier laddare,5,
+article,nyheter/micro-usb-laddare,news/micro-usb-charger,/blogs/nyheter/micro-usb-laddare,/blogs/news/micro-usb-charger,YES,YES,Den ultimata guiden till din micro usb laddare,5,
+article,nyheter/spela-in-ljud,news/spela-in-audio,/blogs/nyheter/spela-in-ljud,/blogs/news/spela-in-audio,YES,YES,Spela in ljud med actionkamera som ett proffs,5,
+article,nyheter/ficklampa,news/flashlight,/blogs/nyheter/ficklampa,/blogs/news/flashlight,YES,YES,Så väljer du rätt ficklampa för dina äventyr,5,
+article,nyheter/powerbank,news/powerbank,/blogs/nyheter/powerbank,/blogs/news/powerbank,YES,YES,Så väljer du rätt powerbank för dina äventyr utomhus,5,
+article,nyheter/reservdelar-dronare,news/spare-parts-drones,/blogs/nyheter/reservdelar-dronare,/blogs/news/spare-parts-drones,YES,YES,Reservdelar drönare för underhåll och reparationer,5,
+article,nyheter/gimbal,news/gimbal,/blogs/nyheter/gimbal,/blogs/news/gimbal,YES,YES,Skapa filmiska videor med en gimbal,5,
+article,nyheter/sd-kort-till-kamera,news/sd-kort-till-kamera,/blogs/nyheter/sd-kort-till-kamera,/blogs/news/sd-kort-till-kamera,YES,YES,Sd kort till kamera: Köpguide för bästa minneskort,5,
+article,nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,/blogs/nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,/blogs/news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,YES,YES,Upptäck DJI Osmo Action 6 – Actionkamerans nya mästerverk,5,
+article,nyheter/dji-mini-5-pro,news/dji-mini-5-pro,/blogs/nyheter/dji-mini-5-pro,/blogs/news/dji-mini-5-pro,YES,YES,Allt du behöver veta om DJI Mini 5 Pro i Sverige,5,
+article,nyheter/insta-360,news/insta-360,/blogs/nyheter/insta-360,/blogs/news/insta-360,YES,YES,Upptäck insta 360 din guide till 360kameror,5,
+article,nyheter/stormkok,news/stormkok,/blogs/nyheter/stormkok,/blogs/news/stormkok,YES,YES,Stormkök bäst i test hitta rätt för ditt äventyr,5,
+article,nyheter/nitecore-emr25-myggavskrackaren,news/nitecore-emr25-myggavskrackaren,/blogs/nyheter/nitecore-emr25-myggavskrackaren,/blogs/news/nitecore-emr25-myggavskrackaren,YES,YES,Nitecore EMR25 – Den smarta myggavskräckaren med powerbank för sommarens alla äventyr,5,
+article,nyheter/nitecore,news/nitecore,/blogs/nyheter/nitecore,/blogs/news/nitecore,YES,YES,Den ultimata guiden till Nitecore utrustning,5,
+article,nyheter/gopro-hero-12,news/gopro-hero-12,/blogs/nyheter/gopro-hero-12,/blogs/news/gopro-hero-12,YES,YES,GoPro Hero 12 komplett guide för svenska äventyrare,5,
+article,nyheter/dronare,news/drones,/blogs/nyheter/dronare,/blogs/news/drones,YES,YES,Drönare från grunden en komplett guide,5,
+article,nyheter/kamerastativ,news/kamerastativ,/blogs/nyheter/kamerastativ,/blogs/news/kamerastativ,YES,YES,En komplett guide för stadigare foton,5,
+article,nyheter/dronare-bast-i-test-budget,news/drones-bast-i-test-budget,/blogs/nyheter/dronare-bast-i-test-budget,/blogs/news/drones-bast-i-test-budget,YES,YES,Drönare bäst i test budget 2024 års köpguide,5,
+article,nyheter/dji-osmo,news/dji-osmo,/blogs/nyheter/dji-osmo,/blogs/news/dji-osmo,YES,YES,DJI Osmo: Din guide till perfekt stabiliserad video,5,
+article,nyheter/mic,news/mic,/blogs/nyheter/mic,/blogs/news/mic,YES,YES,Hitta rätt mic till din actionkamera,5,
+article,nyheter/dykutrustning,news/diving-equipment,/blogs/nyheter/dykutrustning,/blogs/news/diving-equipment,YES,YES,Dykutrustning för svenska vatten,5,
+article,nyheter/actionkamera-bast-i-test,news/actionkamera-bast-i-test,/blogs/nyheter/actionkamera-bast-i-test,/blogs/news/actionkamera-bast-i-test,YES,YES,Actionkamera bäst i test 2025 – Hitta rätt modell,5,
+article,nyheter/test-av-kameror,news/test-av-cameras,/blogs/nyheter/test-av-kameror,/blogs/news/test-av-cameras,YES,YES,Bästa actionkamera test av kameror 2024,5,
+article,nyheter/vandringsutrustning,news/hiking-equipment,/blogs/nyheter/vandringsutrustning,/blogs/news/hiking-equipment,YES,YES,Vandringsutrustning för nybörjare och proffs,5,
+article,nyheter/mavic-3-pro,news/mavic-3-pro,/blogs/nyheter/mavic-3-pro,/blogs/news/mavic-3-pro,YES,YES,Mavic 3 Pro: En guide för fotografer i Sverige,5,
+article,nyheter/campingutrustning,news/camping-equipment,/blogs/nyheter/campingutrustning,/blogs/news/camping-equipment,YES,YES,Välj rätt campingutrustning för ditt äventyr,5,
+article,nyheter/fly-dji-drone,news/fly-dji-drone,/blogs/nyheter/fly-dji-drone,/blogs/news/fly-dji-drone,YES,YES,En komplett guide för dig som flyger DJI,5,
+article,nyheter/basta-powerbanken,news/best-powerbanken,/blogs/nyheter/basta-powerbanken,/blogs/news/best-powerbanken,YES,YES,Vilken är den bästa powerbanken?,5,
+article,nyheter/gopro-tillbehor-batterier-filter,news/gopro-accessories-batteryer-filter,/blogs/nyheter/gopro-tillbehor-batterier-filter,/blogs/news/gopro-accessories-batteryer-filter,YES,YES,Tillbehör till GoPro – optimera varje äventyr,5,
+article,nyheter/dji-mini-4pro-fragor-svar,news/dji-mini-4pro-fragor-svar,/blogs/nyheter/dji-mini-4pro-fragor-svar,/blogs/news/dji-mini-4pro-fragor-svar,YES,YES,DJI Mini 4 Pro – FAQ: Vanliga frågor och svar,5,
+article,nyheter/tradlos-mikrofon-bluetooth,news/wireless-microphone-bluetooth,/blogs/nyheter/tradlos-mikrofon-bluetooth,/blogs/news/wireless-microphone-bluetooth,YES,YES,Trådlös mikrofon bluetooth guide för perfekt ljud,5,
+article,nyheter/campingkok,news/campingkok,/blogs/nyheter/campingkok,/blogs/news/campingkok,YES,YES,Campingkök: Din guide till rätt kök för friluftsliv,5,
+article,nyheter/vevradio,news/vevradio,/blogs/nyheter/vevradio,/blogs/news/vevradio,YES,YES,Vevradio för nybörjare en komplett guide,5,
+article,nyheter/overlevnadsutrustning,news/survival-equipment,/blogs/nyheter/overlevnadsutrustning,/blogs/news/survival-equipment,YES,YES,Överlevnadsutrustning din kompletta guide,5,
+article,nyheter/nodfilt,news/nodfilt,/blogs/nyheter/nodfilt,/blogs/news/nodfilt,YES,YES,Nödfilt: Överlevnadsguiden för kris och äventyr,5,
+article,nyheter/dji-pocket-2,news/dji-pocket-2,/blogs/nyheter/dji-pocket-2,/blogs/news/dji-pocket-2,YES,YES,DJI Pocket 2 Din guide för perfekta videor,5,
+article,nyheter/bast-i-test-actionkamera,news/bast-i-test-actionkamera,/blogs/nyheter/bast-i-test-actionkamera,/blogs/news/bast-i-test-actionkamera,YES,YES,Bäst i test actionkamera för dina äventyr,5,
+article,nyheter/far-man-flyga-dronare-over-annans-tomt,news/far-man-flyga-drones-over-annans-tomt,/blogs/nyheter/far-man-flyga-dronare-over-annans-tomt,/blogs/news/far-man-flyga-drones-over-annans-tomt,YES,YES,Får man flyga drönare över annans tomt? Regler 2024,5,
+article,nyheter/dronare-for-nyborjare,news/drones-for-nyborjare,/blogs/nyheter/dronare-for-nyborjare,/blogs/news/drones-for-nyborjare,YES,YES,Drönare för nybörjare: Enkel guide till din första drönare,5,
+article,nyheter/portabla-solceller,news/portabla-solceller,/blogs/nyheter/portabla-solceller,/blogs/news/portabla-solceller,YES,YES,Portabla solceller en komplett guide,5,
+article,nyheter/dronare-med-kamera,news/drones-med-kamera,/blogs/nyheter/dronare-med-kamera,/blogs/news/drones-med-kamera,YES,YES,Välj rätt drönare med kamera för fantastiska bilder,5,
+article,nyheter/regler-for-dronare,news/regulations-for-drones,/blogs/nyheter/regler-for-dronare,/blogs/news/regulations-for-drones,YES,YES,Regler för drönare en komplett guide,5,
+article,nyheter/kopa-dronare-med-kamera,news/kopa-drones-med-kamera,/blogs/nyheter/kopa-dronare-med-kamera,/blogs/news/kopa-drones-med-kamera,YES,YES,Köpa drönare med kamera – din guide till det perfekta valet,5,
+article,nyheter/upptack-din-varld-i-360-grader-med-gopro,news/upptack-din-varld-i-360-grader-med-gopro,/blogs/nyheter/upptack-din-varld-i-360-grader-med-gopro,/blogs/news/upptack-din-varld-i-360-grader-med-gopro,YES,YES,Upptäck din värld i 360° med GoPro,5,
+article,nyheter/actionkamera,news/actionkamera,/blogs/nyheter/actionkamera,/blogs/news/actionkamera,YES,YES,Välj rätt actionkamera för dina äventyr,5,
+article,nyheter/dji-reservdelar,news/dji-spare-parts,/blogs/nyheter/dji-reservdelar,/blogs/news/dji-spare-parts,YES,YES,Hitta rätt DJI reservdelar för din drönare,5,
+article,nyheter/gopro-reservdelar,news/gopro-spare-parts,/blogs/nyheter/gopro-reservdelar,/blogs/news/gopro-spare-parts,YES,YES,En komplett guide till gopro reservdelar,5,
+article,nyheter/led-lampa-pa-batteri,news/led-lampa-pa-battery,/blogs/nyheter/led-lampa-pa-batteri,/blogs/news/led-lampa-pa-battery,YES,YES,Så väljer du rätt LED-Lampa,5,
+article,nyheter/gopro-tillbehor,news/gopro-accessories,/blogs/nyheter/gopro-tillbehor,/blogs/news/gopro-accessories,YES,YES,Välj rätt gopro tillbehör för ditt nästa äventyr,5,
+article,nyheter/stativ-till-mobil-for-att-filma,news/stativ-till-mobil-for-att-filma,/blogs/nyheter/stativ-till-mobil-for-att-filma,/blogs/news/stativ-till-mobil-for-att-filma,YES,YES,Välj rätt stativ till mobil för att filma,5,
+article,nyheter/time-lapse-kamera,news/time-lapse-kamera,/blogs/nyheter/time-lapse-kamera,/blogs/news/time-lapse-kamera,YES,YES,Bemästra din time lapse kamera från grunden,5,
+article,nyheter/dji-osmo-tillbehor,news/dji-osmo-accessories,/blogs/nyheter/dji-osmo-tillbehor,/blogs/news/dji-osmo-accessories,YES,YES,Så väljer du rätt dji osmo tillbehör för bättre filmer,5,
+article,nyheter/krislada,news/krislada,/blogs/nyheter/krislada,/blogs/news/krislada,YES,YES,Så bygger du en komplett krislåda för din hemberedskap,5,
+article,nyheter/krisberedskap-hemma,news/krisberedskap-hemma,/blogs/nyheter/krisberedskap-hemma,/blogs/news/krisberedskap-hemma,YES,YES,Krisberedskap hemma som faktiskt fungerar i praktiken,5,
+article,nyheter/karbinhake,news/karbinhake,/blogs/nyheter/karbinhake,/blogs/news/karbinhake,YES,YES,Karbinhake: Hur du väljer rätt karbin och säkrar klättringen (karbinhake),5,
+article,nyheter/tradlos-mygga-mikrofon,news/wireless-mygga-microphone,/blogs/nyheter/tradlos-mygga-mikrofon,/blogs/news/wireless-mygga-microphone,YES,YES,Komplett guide till trådlös mygga mikrofon,5,
+resource_type,current_handle,proposed_handle,action,current_url,proposed_url,title
+blog,nyheter,news,RENAME,/blogs/nyheter,/blogs/news,Nyheter
+article,nyheter/kop-dronare-med-kamera,news/kop-drones-med-kamera,RENAME,/blogs/nyheter/kop-dronare-med-kamera,/blogs/news/kop-drones-med-kamera,Bästa köp drönare med kamera – en komplett köpguide
+article,nyheter/fpv-drone-kit,news/fpv-drone-kit,RENAME,/blogs/nyheter/fpv-drone-kit,/blogs/news/fpv-drone-kit,Hitta rätt FPV drone kit för din första flygning
+article,nyheter/gopro-hero-11-black,news/gopro-hero-11-black,RENAME,/blogs/nyheter/gopro-hero-11-black,/blogs/news/gopro-hero-11-black,Den ultimata guiden till din GoPro Hero11 Black
+article,nyheter/dji-mini-se,news/dji-mini-se,RENAME,/blogs/nyheter/dji-mini-se,/blogs/news/dji-mini-se,Flyga DJI Mini SE i Sverige en komplett nybörjarguide
+article,nyheter/dji-flip-lilla-dronaren,news/dji-flip-lilla-dronesn,RENAME,/blogs/nyheter/dji-flip-lilla-dronaren,/blogs/news/dji-flip-lilla-dronesn,DJI Flip – Den lilla drönaren med stora möjligheter
+article,nyheter/dronare-regler,news/drones-regulations,RENAME,/blogs/nyheter/dronare-regler,/blogs/news/drones-regulations,Drönare regler i Sverige förklarade enkelt
+article,nyheter/laddningsbara-batterier-aaa,news/rechargeable-batteryer-aaa,RENAME,/blogs/nyheter/laddningsbara-batterier-aaa,/blogs/news/rechargeable-batteryer-aaa,Den kompletta guiden till laddningsbara batterier AAA
+article,nyheter/kamera-for-youtube,news/kamera-for-youtube,RENAME,/blogs/nyheter/kamera-for-youtube,/blogs/news/kamera-for-youtube,Upptäck kamera för youtube – vår guide till bästa utrustningen
+article,nyheter/powerbank-usb-c,news/powerbank-usb-c,RENAME,/blogs/nyheter/powerbank-usb-c,/blogs/news/powerbank-usb-c,Så väljer du rätt powerbank usb c för dina behov
+article,nyheter/mikrofon-mygga-tradlos,news/microphone-mygga-wireless,RENAME,/blogs/nyheter/mikrofon-mygga-tradlos,/blogs/news/microphone-mygga-wireless,Mikrofon mygga trådlös en komplett guide till perfekt ljud
+article,nyheter/mikrofon-till-mobil,news/microphone-till-mobil,RENAME,/blogs/nyheter/mikrofon-till-mobil,/blogs/news/microphone-till-mobil,"Mikrofon till mobil: Så väljer du rätt för vlogg, intervjuer och musik"
+article,nyheter/minneskort-micro-sd,news/memory-cards-micro-sd,RENAME,/blogs/nyheter/minneskort-micro-sd,/blogs/news/memory-cards-micro-sd,Så väljer du rätt minneskort micro sd för din actionkamera och drönare
+article,nyheter/uppladdningsbara-batterier-laddare,news/upprechargeable-batteryer-charger,RENAME,/blogs/nyheter/uppladdningsbara-batterier-laddare,/blogs/news/upprechargeable-batteryer-charger,Så väljer du rätt uppladdningsbara batterier laddare
+article,nyheter/micro-usb-laddare,news/micro-usb-charger,RENAME,/blogs/nyheter/micro-usb-laddare,/blogs/news/micro-usb-charger,Den ultimata guiden till din micro usb laddare
+article,nyheter/spela-in-ljud,news/spela-in-audio,RENAME,/blogs/nyheter/spela-in-ljud,/blogs/news/spela-in-audio,Spela in ljud med actionkamera som ett proffs
+article,nyheter/ficklampa,news/flashlight,RENAME,/blogs/nyheter/ficklampa,/blogs/news/flashlight,Så väljer du rätt ficklampa för dina äventyr
+article,nyheter/powerbank,news/powerbank,RENAME,/blogs/nyheter/powerbank,/blogs/news/powerbank,Så väljer du rätt powerbank för dina äventyr utomhus
+article,nyheter/reservdelar-dronare,news/spare-parts-drones,RENAME,/blogs/nyheter/reservdelar-dronare,/blogs/news/spare-parts-drones,Reservdelar drönare för underhåll och reparationer
+article,nyheter/gimbal,news/gimbal,RENAME,/blogs/nyheter/gimbal,/blogs/news/gimbal,Skapa filmiska videor med en gimbal
+article,nyheter/sd-kort-till-kamera,news/sd-kort-till-kamera,RENAME,/blogs/nyheter/sd-kort-till-kamera,/blogs/news/sd-kort-till-kamera,Sd kort till kamera: Köpguide för bästa minneskort
+article,nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,RENAME,/blogs/nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,/blogs/news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,Upptäck DJI Osmo Action 6 – Actionkamerans nya mästerverk
+article,nyheter/dji-mini-5-pro,news/dji-mini-5-pro,RENAME,/blogs/nyheter/dji-mini-5-pro,/blogs/news/dji-mini-5-pro,Allt du behöver veta om DJI Mini 5 Pro i Sverige
+article,nyheter/insta-360,news/insta-360,RENAME,/blogs/nyheter/insta-360,/blogs/news/insta-360,Upptäck insta 360 din guide till 360kameror
+article,nyheter/stormkok,news/stormkok,RENAME,/blogs/nyheter/stormkok,/blogs/news/stormkok,Stormkök bäst i test hitta rätt för ditt äventyr
+article,nyheter/nitecore-emr25-myggavskrackaren,news/nitecore-emr25-myggavskrackaren,RENAME,/blogs/nyheter/nitecore-emr25-myggavskrackaren,/blogs/news/nitecore-emr25-myggavskrackaren,Nitecore EMR25 – Den smarta myggavskräckaren med powerbank för sommarens alla äventyr
+article,nyheter/nitecore,news/nitecore,RENAME,/blogs/nyheter/nitecore,/blogs/news/nitecore,Den ultimata guiden till Nitecore utrustning
+article,nyheter/gopro-hero-12,news/gopro-hero-12,RENAME,/blogs/nyheter/gopro-hero-12,/blogs/news/gopro-hero-12,GoPro Hero 12 komplett guide för svenska äventyrare
+article,nyheter/dronare,news/drones,RENAME,/blogs/nyheter/dronare,/blogs/news/drones,Drönare från grunden en komplett guide
+article,nyheter/kamerastativ,news/kamerastativ,RENAME,/blogs/nyheter/kamerastativ,/blogs/news/kamerastativ,En komplett guide för stadigare foton
+article,nyheter/dronare-bast-i-test-budget,news/drones-bast-i-test-budget,RENAME,/blogs/nyheter/dronare-bast-i-test-budget,/blogs/news/drones-bast-i-test-budget,Drönare bäst i test budget 2024 års köpguide
+article,nyheter/dji-osmo,news/dji-osmo,RENAME,/blogs/nyheter/dji-osmo,/blogs/news/dji-osmo,DJI Osmo: Din guide till perfekt stabiliserad video
+article,nyheter/mic,news/mic,RENAME,/blogs/nyheter/mic,/blogs/news/mic,Hitta rätt mic till din actionkamera
+article,nyheter/dykutrustning,news/diving-equipment,RENAME,/blogs/nyheter/dykutrustning,/blogs/news/diving-equipment,Dykutrustning för svenska vatten
+article,nyheter/actionkamera-bast-i-test,news/actionkamera-bast-i-test,RENAME,/blogs/nyheter/actionkamera-bast-i-test,/blogs/news/actionkamera-bast-i-test,Actionkamera bäst i test 2025 – Hitta rätt modell
+article,nyheter/test-av-kameror,news/test-av-cameras,RENAME,/blogs/nyheter/test-av-kameror,/blogs/news/test-av-cameras,Bästa actionkamera test av kameror 2024
+article,nyheter/vandringsutrustning,news/hiking-equipment,RENAME,/blogs/nyheter/vandringsutrustning,/blogs/news/hiking-equipment,Vandringsutrustning för nybörjare och proffs
+article,nyheter/mavic-3-pro,news/mavic-3-pro,RENAME,/blogs/nyheter/mavic-3-pro,/blogs/news/mavic-3-pro,Mavic 3 Pro: En guide för fotografer i Sverige
+article,nyheter/campingutrustning,news/camping-equipment,RENAME,/blogs/nyheter/campingutrustning,/blogs/news/camping-equipment,Välj rätt campingutrustning för ditt äventyr
+article,nyheter/fly-dji-drone,news/fly-dji-drone,RENAME,/blogs/nyheter/fly-dji-drone,/blogs/news/fly-dji-drone,En komplett guide för dig som flyger DJI
+article,nyheter/basta-powerbanken,news/best-powerbanken,RENAME,/blogs/nyheter/basta-powerbanken,/blogs/news/best-powerbanken,Vilken är den bästa powerbanken?
+article,nyheter/gopro-tillbehor-batterier-filter,news/gopro-accessories-batteryer-filter,RENAME,/blogs/nyheter/gopro-tillbehor-batterier-filter,/blogs/news/gopro-accessories-batteryer-filter,Tillbehör till GoPro – optimera varje äventyr
+article,nyheter/dji-mini-4pro-fragor-svar,news/dji-mini-4pro-fragor-svar,RENAME,/blogs/nyheter/dji-mini-4pro-fragor-svar,/blogs/news/dji-mini-4pro-fragor-svar,DJI Mini 4 Pro – FAQ: Vanliga frågor och svar
+article,nyheter/tradlos-mikrofon-bluetooth,news/wireless-microphone-bluetooth,RENAME,/blogs/nyheter/tradlos-mikrofon-bluetooth,/blogs/news/wireless-microphone-bluetooth,Trådlös mikrofon bluetooth guide för perfekt ljud
+article,nyheter/campingkok,news/campingkok,RENAME,/blogs/nyheter/campingkok,/blogs/news/campingkok,Campingkök: Din guide till rätt kök för friluftsliv
+article,nyheter/vevradio,news/vevradio,RENAME,/blogs/nyheter/vevradio,/blogs/news/vevradio,Vevradio för nybörjare en komplett guide
+article,nyheter/overlevnadsutrustning,news/survival-equipment,RENAME,/blogs/nyheter/overlevnadsutrustning,/blogs/news/survival-equipment,Överlevnadsutrustning din kompletta guide
+article,nyheter/nodfilt,news/nodfilt,RENAME,/blogs/nyheter/nodfilt,/blogs/news/nodfilt,Nödfilt: Överlevnadsguiden för kris och äventyr
+article,nyheter/dji-pocket-2,news/dji-pocket-2,RENAME,/blogs/nyheter/dji-pocket-2,/blogs/news/dji-pocket-2,DJI Pocket 2 Din guide för perfekta videor
+article,nyheter/bast-i-test-actionkamera,news/bast-i-test-actionkamera,RENAME,/blogs/nyheter/bast-i-test-actionkamera,/blogs/news/bast-i-test-actionkamera,Bäst i test actionkamera för dina äventyr
+article,nyheter/far-man-flyga-dronare-over-annans-tomt,news/far-man-flyga-drones-over-annans-tomt,RENAME,/blogs/nyheter/far-man-flyga-dronare-over-annans-tomt,/blogs/news/far-man-flyga-drones-over-annans-tomt,Får man flyga drönare över annans tomt? Regler 2024
+article,nyheter/dronare-for-nyborjare,news/drones-for-nyborjare,RENAME,/blogs/nyheter/dronare-for-nyborjare,/blogs/news/drones-for-nyborjare,Drönare för nybörjare: Enkel guide till din första drönare
+article,nyheter/portabla-solceller,news/portabla-solceller,RENAME,/blogs/nyheter/portabla-solceller,/blogs/news/portabla-solceller,Portabla solceller en komplett guide
+article,nyheter/dronare-med-kamera,news/drones-med-kamera,RENAME,/blogs/nyheter/dronare-med-kamera,/blogs/news/drones-med-kamera,Välj rätt drönare med kamera för fantastiska bilder
+article,nyheter/regler-for-dronare,news/regulations-for-drones,RENAME,/blogs/nyheter/regler-for-dronare,/blogs/news/regulations-for-drones,Regler för drönare en komplett guide
+article,nyheter/kopa-dronare-med-kamera,news/kopa-drones-med-kamera,RENAME,/blogs/nyheter/kopa-dronare-med-kamera,/blogs/news/kopa-drones-med-kamera,Köpa drönare med kamera – din guide till det perfekta valet
+article,nyheter/upptack-din-varld-i-360-grader-med-gopro,news/upptack-din-varld-i-360-grader-med-gopro,RENAME,/blogs/nyheter/upptack-din-varld-i-360-grader-med-gopro,/blogs/news/upptack-din-varld-i-360-grader-med-gopro,Upptäck din värld i 360° med GoPro
+article,nyheter/actionkamera,news/actionkamera,RENAME,/blogs/nyheter/actionkamera,/blogs/news/actionkamera,Välj rätt actionkamera för dina äventyr
+article,nyheter/dji-reservdelar,news/dji-spare-parts,RENAME,/blogs/nyheter/dji-reservdelar,/blogs/news/dji-spare-parts,Hitta rätt DJI reservdelar för din drönare
+article,nyheter/gopro-reservdelar,news/gopro-spare-parts,RENAME,/blogs/nyheter/gopro-reservdelar,/blogs/news/gopro-spare-parts,En komplett guide till gopro reservdelar
+article,nyheter/led-lampa-pa-batteri,news/led-lampa-pa-battery,RENAME,/blogs/nyheter/led-lampa-pa-batteri,/blogs/news/led-lampa-pa-battery,Så väljer du rätt LED-Lampa
+article,nyheter/gopro-tillbehor,news/gopro-accessories,RENAME,/blogs/nyheter/gopro-tillbehor,/blogs/news/gopro-accessories,Välj rätt gopro tillbehör för ditt nästa äventyr
+article,nyheter/stativ-till-mobil-for-att-filma,news/stativ-till-mobil-for-att-filma,RENAME,/blogs/nyheter/stativ-till-mobil-for-att-filma,/blogs/news/stativ-till-mobil-for-att-filma,Välj rätt stativ till mobil för att filma
+article,nyheter/time-lapse-kamera,news/time-lapse-kamera,RENAME,/blogs/nyheter/time-lapse-kamera,/blogs/news/time-lapse-kamera,Bemästra din time lapse kamera från grunden
+article,nyheter/dji-osmo-tillbehor,news/dji-osmo-accessories,RENAME,/blogs/nyheter/dji-osmo-tillbehor,/blogs/news/dji-osmo-accessories,Så väljer du rätt dji osmo tillbehör för bättre filmer
+article,nyheter/krislada,news/krislada,RENAME,/blogs/nyheter/krislada,/blogs/news/krislada,Så bygger du en komplett krislåda för din hemberedskap
+article,nyheter/krisberedskap-hemma,news/krisberedskap-hemma,RENAME,/blogs/nyheter/krisberedskap-hemma,/blogs/news/krisberedskap-hemma,Krisberedskap hemma som faktiskt fungerar i praktiken
+article,nyheter/karbinhake,news/karbinhake,RENAME,/blogs/nyheter/karbinhake,/blogs/news/karbinhake,Karbinhake: Hur du väljer rätt karbin och säkrar klättringen (karbinhake)
+article,nyheter/tradlos-mygga-mikrofon,news/wireless-mygga-microphone,RENAME,/blogs/nyheter/tradlos-mygga-mikrofon,/blogs/news/wireless-mygga-microphone,Komplett guide till trådlös mygga mikrofon

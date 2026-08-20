@@ -1,0 +1,49 @@
+{%- comment -%}
+  BreadcrumbList JSON-LD for product, collection, article, page and blog.
+{%- endcomment -%}
+{%- assign pos = 0 -%}
+{%- assign pos = pos | plus: 1 -%}
+{%- capture home_crumb -%}{"@type":"ListItem","position":{{ pos }},"name":{{ shop.name | json }},"item":{{ request.origin | json }}}{%- endcapture -%}
+{%- assign crumbs = home_crumb -%}
+
+{%- if request.page_type == 'article' -%}
+  {%- assign pos = pos | plus: 1 -%}
+  {%- capture blog_crumb -%},{"@type":"ListItem","position":{{ pos }},"name":{{ blog.title | json }},"item":{{ blog.url | prepend: request.origin | json }}}{%- endcapture -%}
+  {%- assign crumbs = crumbs | append: blog_crumb -%}
+{%- endif -%}
+
+{%- liquid
+  if request.page_type == 'product'
+    assign leaf_name = product.title
+    assign leaf_url = product.url | prepend: request.origin
+  elsif request.page_type == 'collection'
+    assign leaf_name = collection.title
+    assign leaf_url = collection.url | prepend: request.origin
+  elsif request.page_type == 'article'
+    assign leaf_name = article.title
+    assign leaf_url = article.url | prepend: request.origin
+  elsif request.page_type == 'page'
+    assign leaf_name = page.title
+    assign leaf_url = page.url | prepend: request.origin
+  elsif request.page_type == 'blog'
+    assign leaf_name = blog.title
+    assign leaf_url = blog.url | prepend: request.origin
+  else
+    assign leaf_name = ''
+    assign leaf_url = ''
+  endif
+-%}
+
+{%- if leaf_name != blank -%}
+  {%- assign pos = pos | plus: 1 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{ crumbs }},
+        {"@type":"ListItem","position":{{ pos }},"name":{{ leaf_name | json }},"item":{{ leaf_url | json }}}
+      ]
+    }
+  </script>
+{%- endif -%}

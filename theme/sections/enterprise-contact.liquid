@@ -1,0 +1,105 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="edp-enterprise__cta{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {%- unless section.settings.title == blank -%}
+        <h2 class="edp-enterprise__cta-title h2">{{ section.settings.title | escape }}</h2>
+      {%- endunless -%}
+      {%- unless section.settings.text == blank -%}
+        <p class="edp-enterprise__cta-text">{{ section.settings.text | escape }}</p>
+      {%- endunless -%}
+      <div class="edp-enterprise__cta-actions">
+        {%- if section.settings.button_label_1 != blank -%}
+          <a
+            href="{{ section.settings.button_link_1 | default: '/pages/contact-quote' }}"
+            class="edp-enterprise__btn edp-enterprise__btn--primary"
+          >
+            {{ section.settings.button_label_1 | escape }}
+          </a>
+        {%- endif -%}
+        {%- if section.settings.button_label_2 != blank -%}
+          <a
+            href="{{ section.settings.button_link_2 | default: 'tel:' }}"
+            class="edp-enterprise__btn edp-enterprise__btn--outline"
+          >
+            {{ section.settings.button_label_2 | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-contact.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "t:sections.enterprise-contact.settings.title.label",
+      "default": "Behöver du hjälp att välja rätt lösning?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-contact.settings.text.label",
+      "default": "Vårt enterprise-team hjälper dig med offert, projektering, utbildning och löpande support."
+    },
+    {
+      "type": "text",
+      "id": "button_label_1",
+      "label": "t:sections.enterprise-contact.settings.button_label_1.label",
+      "default": "Skicka offertförfrågan"
+    },
+    { "type": "url", "id": "button_link_1", "label": "t:sections.enterprise-contact.settings.button_link_1.label" },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "t:sections.enterprise-contact.settings.button_label_2.label",
+      "default": "Ring oss"
+    },
+    { "type": "url", "id": "button_link_2", "label": "t:sections.enterprise-contact.settings.button_link_2.label" },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 48
+    }
+  ],
+  "presets": [{ "name": "t:sections.enterprise-contact.presets.name" }]
+}
+{% endschema %}

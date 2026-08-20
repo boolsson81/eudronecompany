@@ -1,0 +1,16 @@
+{{ 'edp-industry.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+  <div class="rte">
+    {{ page.content }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "EDP Page Content",
+  "tag": "section",
+  "class": "section-edp-page-content",
+  "settings": []
+}
+{% endschema %}

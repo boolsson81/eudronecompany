@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Ledningsinspektion",
+            "text": "Automatiserad inspektion av kraftledningar med zoom och termisk kamera — utan helikopter eller klättring i master."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Transformatorinspektion",
+            "text": "Termisk drönarinspektion identifierar hotspots och anomalier i transformatorer och ställverk innan haveri."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Solparksinspektion",
+            "text": "Storskalig termisk analys av solcellsparker för att hitta defekta moduler och maximera energiproduktion."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Vindkraftsinspektion",
+            "text": "Bladinspektion med AI-analys och automatiserad rapportering — minskar stilleståndstid och kostnader."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Inspektera utan driftstopp och utan att klättra i master" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Identifiera termiska anomalier innan de orsakar haveri" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Automatiserade inspektionsrutter med repeterbara resultat" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Drastiskt minskade inspektionskostnader jämfört med helikopter" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Energi & Infrastruktur",
+        "title": "Drönare för Energi & Infrastruktur",
+        "text": "Inspektera kraftledningar, transformatorstationer och energiinfrastruktur säkert och effektivt utan driftstopp.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp att välja rätt energilösning?",
+        "text": "Vårt enterprise-team hjälper dig med offert, projektering och löpande support för energi- och infrastrukturprojekt.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

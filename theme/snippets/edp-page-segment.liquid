@@ -1,0 +1,47 @@
+{%- liquid
+  assign edp_resolved_segment = ''
+
+  if request.page_type == 'page'
+    assign edp_page_suffix = page.template_suffix
+    if edp_page_suffix == 'consumer'
+      assign edp_resolved_segment = 'consumer'
+    elsif edp_page_suffix == 'enterprise' or edp_page_suffix == 'contact-quote'
+      assign edp_resolved_segment = 'enterprise'
+    elsif edp_page_suffix == 'jordbruk' or edp_page_suffix == 'energi-infrastruktur' or edp_page_suffix == 'gis-kartlaggning' or edp_page_suffix == 'raddningstjanst' or edp_page_suffix == 'skogsbruk' or edp_page_suffix == 'bygg-anlaggning'
+      assign edp_resolved_segment = 'enterprise'
+    elsif page.handle == 'consumer'
+      assign edp_resolved_segment = 'consumer'
+    elsif page.handle == 'enterprise'
+      assign edp_resolved_segment = 'enterprise'
+    endif
+  elsif request.page_type == 'collection'
+    assign edp_collection_handle = collection.handle | downcase
+    if edp_collection_handle contains 'enterprise' or edp_collection_handle contains 'matrice' or edp_collection_handle contains 'zenmuse' or edp_collection_handle contains 'dji-dock'
+      assign edp_resolved_segment = 'enterprise'
+    elsif edp_collection_handle contains 'consumer' or edp_collection_handle contains 'starter-kit'
+      assign edp_resolved_segment = 'consumer'
+    endif
+  elsif request.page_type == 'product'
+    if collection != blank
+      assign edp_collection_handle = collection.handle | downcase
+      if edp_collection_handle contains 'enterprise' or edp_collection_handle contains 'matrice' or edp_collection_handle contains 'zenmuse' or edp_collection_handle contains 'dji-dock'
+        assign edp_resolved_segment = 'enterprise'
+      elsif edp_collection_handle contains 'consumer' or edp_collection_handle contains 'starter-kit'
+        assign edp_resolved_segment = 'consumer'
+      endif
+    endif
+
+    if edp_resolved_segment == blank
+      for product_collection in product.collections
+        assign edp_collection_handle = product_collection.handle | downcase
+        if edp_collection_handle contains 'enterprise' or edp_collection_handle contains 'matrice' or edp_collection_handle contains 'zenmuse' or edp_collection_handle contains 'dji-dock'
+          assign edp_resolved_segment = 'enterprise'
+          break
+        elsif edp_collection_handle contains 'consumer' or edp_collection_handle contains 'starter-kit'
+          assign edp_resolved_segment = 'consumer'
+          break
+        endif
+      endfor
+    endif
+  endif
+-%}{{- edp_resolved_segment -}}

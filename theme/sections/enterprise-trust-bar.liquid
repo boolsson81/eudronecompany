@@ -1,0 +1,93 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="edp-enterprise__trust-bar section-{{ section.id }}-padding">
+    <div class="page-width">
+      {%- if section.blocks.size > 0 -%}
+        <ul class="edp-enterprise__trust-list" role="list">
+          {%- for block in section.blocks -%}
+            <li class="edp-enterprise__trust-item" {{ block.shopify_attributes }}>
+              <span class="edp-enterprise__trust-check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+              </span>
+              <span class="edp-enterprise__trust-text">{{ block.settings.text | escape }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-trust-bar.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "t:sections.enterprise-trust-bar.blocks.trust_item.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.enterprise-trust-bar.blocks.trust_item.settings.text.label",
+          "default": "Förtroendepunkt"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-trust-bar.presets.name",
+      "blocks": [
+        { "type": "trust_item", "settings": { "text": "Auktoriserade leverantörer" } },
+        { "type": "trust_item", "settings": { "text": "Service och support i Sverige" } },
+        { "type": "trust_item", "settings": { "text": "Enterprise-specialister" } },
+        { "type": "trust_item", "settings": { "text": "Offert inom 24 timmar" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

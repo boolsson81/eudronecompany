@@ -1,0 +1,241 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid{% if section.blocks.size > 4 %} edp-enterprise__grid--6{% else %} edp-enterprise__grid--4{% endif %}" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card {% render 'edp-enterprise-card-alignment-classes', block: block, section: section %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="edp-enterprise__card-image-wrap">
+                {{
+                  block.settings.image
+                  | image_url: width: 400
+                  | image_tag: class: 'edp-enterprise__card-image', loading: 'lazy', widths: '200, 300, 400', alt: block.settings.title
+                }}
+              </div>
+            {%- else -%}
+              <div class="edp-enterprise__card-icon-fallback" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                  <path d="M9 22V12h6v10"/>
+                </svg>
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-payloads.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.enterprise-payloads.settings.heading.label",
+      "default": "Enterprise-sensorplattformar"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-payloads.settings.text.label",
+      "default": "Vanliga nyttolaster för Matrice-plattformarna — Zenmuse-sensorer för inspektion, kartläggning och säkerhet."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "Textjustering (standard för alla kort)" },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Rubrik (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_text_alignment",
+      "label": "Beskrivning (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_link_alignment",
+      "label": "Länketikett (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "payload",
+      "name": "t:sections.enterprise-payloads.blocks.payload.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "display_style",
+          "label": "t:sections.enterprise-payloads.blocks.payload.settings.display_style.label",
+          "options": [
+            { "value": "compact", "label": "t:sections.enterprise-payloads.blocks.payload.settings.display_style.options__1.label" },
+            { "value": "featured", "label": "t:sections.enterprise-payloads.blocks.payload.settings.display_style.options__2.label" }
+          ],
+          "default": "compact"
+        },
+        {
+          "type": "select",
+          "id": "series_icon",
+          "label": "t:sections.enterprise-payloads.blocks.payload.settings.series_icon.label",
+          "options": [
+            { "value": "camera", "label": "t:sections.enterprise-payloads.blocks.payload.settings.series_icon.options__1.label" },
+            { "value": "lidar", "label": "t:sections.enterprise-payloads.blocks.payload.settings.series_icon.options__2.label" },
+            { "value": "photogrammetry", "label": "t:sections.enterprise-payloads.blocks.payload.settings.series_icon.options__3.label" },
+            { "value": "utility", "label": "t:sections.enterprise-payloads.blocks.payload.settings.series_icon.options__4.label" }
+          ],
+          "default": "camera"
+        },
+        { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-payloads.blocks.payload.settings.image.label" },
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-payloads.blocks.payload.settings.title.label", "default": "Nyttolast" },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Rubrikjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-payloads.blocks.payload.settings.text.label", "default": "Beskrivning." },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Beskrivningsjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "text", "id": "link_label", "label": "t:sections.enterprise-payloads.blocks.payload.settings.link_label.label", "default": "Läs mer" },
+        {
+          "type": "select",
+          "id": "link_alignment",
+          "label": "Länketikettjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "url", "id": "link", "label": "t:sections.enterprise-payloads.blocks.payload.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-payloads.presets.name",
+      "blocks": [
+        { "type": "payload", "settings": { "display_style": "compact", "series_icon": "camera", "title": "DJI Zenmuse H30T", "text": "Hybrid multisensor med termisk kamera, 40× zoom och laseravståndsmätare.", "link_label": "Se H30T", "link": "/collections/zenmuse-h30" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse H30", "text": "Hybrid multisensor med 40× optisk zoom och laseravståndsmätare.", "link_label": "Se H30", "link": "/collections/zenmuse-h30" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse L2", "text": "Högupplöst LiDAR för kartläggning, volymberäkning och skogsinventering.", "link_label": "Se L2", "link": "/collections/zenmuse-l2" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse L3", "text": "LiDAR-sensor för precisionkartläggning och 3D-modellering.", "link_label": "Se L3", "link": "/collections/enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse P1", "text": "Fullformat fotogrammetri-kamera för precisionsmätning och 3D-modellering.", "link_label": "Se P1", "link": "/collections/zenmuse-p1" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse V1", "text": "Röstförstärkare och kommunikationspayload för räddning och säkerhet.", "link_label": "Se V1", "link": "/collections/enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse S1", "text": "Sökljus-payload med LED och IR-belysning för nattinsatser.", "link_label": "Se S1", "link": "/collections/enterprise-sensors" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

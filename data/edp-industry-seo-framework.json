@@ -1,0 +1,1589 @@
+{
+  "version": "2.0",
+  "markets": [
+    "SE",
+    "DE",
+    "NL",
+    "FR",
+    "EU"
+  ],
+  "pages": [
+    {
+      "handle": "dji-matrice-4-serie",
+      "label": "Matrice 4 Series",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 4 Series | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 4 series solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts",
+        "dji-matrice-30-serie-tillbehor"
+      ]
+    },
+    {
+      "handle": "matrice-4e",
+      "label": "Matrice 4E",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 4E | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 4e solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts",
+        "dji-matrice-30-serie-tillbehor"
+      ]
+    },
+    {
+      "handle": "matrice-4t",
+      "label": "Matrice 4T",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 4T | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 4t solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts",
+        "dji-matrice-30-serie-tillbehor"
+      ]
+    },
+    {
+      "handle": "dji-matrice-4-tillbehor",
+      "label": "Matrice 4 Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 4 Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 4 accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "matrice-4-spare-parts",
+        "dji-matrice-30-serie-tillbehor"
+      ]
+    },
+    {
+      "handle": "matrice-4-spare-parts",
+      "label": "Matrice 4 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 4 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 4 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "dji-matrice-30-serie-tillbehor"
+      ]
+    },
+    {
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "label": "Matrice 30",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 30 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 30 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-30t",
+      "label": "Matrice 30T",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 30T | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 30t solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-30-accessories",
+      "label": "Matrice 30 Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 30 Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 30 accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-30-spare-parts",
+      "label": "Matrice 30 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 30 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 30 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-300-rtk",
+      "label": "Matrice 300 RTK",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 300 RTK | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 300 rtk solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-300-batteries",
+      "label": "Matrice 300 Batteries",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 300 Batteries | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 300 batteries solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-300-propellers",
+      "label": "Matrice 300 Propellers",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 300 Propellers | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 300 propellers solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-300-spare-parts",
+      "label": "Matrice 300 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 300 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 300 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "zenmuse-h20",
+      "label": "Zenmuse H20",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse H20 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse h20 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "zenmuse-h20t",
+      "label": "Zenmuse H20T",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse H20T | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse h20t solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "zenmuse-p1",
+      "label": "Zenmuse P1",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse P1 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse p1 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "zenmuse-l1",
+      "label": "Zenmuse L1",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse L1 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse l1 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "label": "Matrice 350 RTK",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 350 RTK | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 350 rtk solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-350-batteries",
+      "label": "Matrice 350 Batteries",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 350 Batteries | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 350 batteries solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-350-propellers",
+      "label": "Matrice 350 Propellers",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 350 Propellers | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 350 propellers solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-350-spare-parts",
+      "label": "Matrice 350 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 350 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 350 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-matrice-400-serien",
+      "label": "Matrice 400",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 400 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 400 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-400-accessories",
+      "label": "Matrice 400 Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 400 Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 400 accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-400-spare-parts",
+      "label": "Matrice 400 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 400 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 400 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-3-series",
+      "label": "Matrice 3 Series",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 3 Series | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 3 series solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-3d",
+      "label": "Matrice 3D",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 3D | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 3d solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-3td",
+      "label": "Matrice 3TD",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 3TD | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 3td solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-dock-2",
+      "label": "DJI Dock 2",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "DJI Dock 2 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional dji dock 2 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-3-accessories",
+      "label": "Matrice 3 Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 3 Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 3 accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "matrice-3-spare-parts",
+      "label": "Matrice 3 Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Matrice 3 Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional matrice 3 spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-mavic-3-enterprise",
+      "label": "Mavic 3 Enterprise",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Mavic 3 Enterprise | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional mavic 3 enterprise solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "mavic-3-thermal",
+      "label": "Mavic 3 Thermal",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Mavic 3 Thermal | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional mavic 3 thermal solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-mavic-serien-enterprise",
+      "label": "Mavic Enterprise Series",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Mavic Enterprise Series | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional mavic enterprise series solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "label": "Mavic Enterprise Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Mavic Enterprise Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional mavic enterprise accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-agras-dronare",
+      "label": "Agras Series",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Agras Series | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional agras series solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "agras-t25",
+      "label": "Agras T25",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Agras T25 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional agras t25 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "agras-t50",
+      "label": "Agras T50",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Agras T50 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional agras t50 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "agras-accessories",
+      "label": "Agras Accessories",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Agras Accessories | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional agras accessories solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "enterprise-dronare",
+      "label": "Enterprise Drones Hub",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Enterprise Drones Hub | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional enterprise drones hub solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-matrice-4-serie",
+        "matrice-4e",
+        "matrice-4t",
+        "dji-matrice-4-tillbehor",
+        "matrice-4-spare-parts"
+      ]
+    },
+    {
+      "handle": "dji-flycart-serien",
+      "label": "FlyCart Series",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart Series | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart series solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "flycart-30",
+        "dji-flycart-100-lastdronare",
+        "flycart-batteries",
+        "flycart-spare-parts",
+        "flycart-payload-systems"
+      ]
+    },
+    {
+      "handle": "flycart-30",
+      "label": "FlyCart 30",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart 30 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart 30 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-flycart-serien",
+        "dji-flycart-100-lastdronare",
+        "flycart-batteries",
+        "flycart-spare-parts",
+        "flycart-payload-systems"
+      ]
+    },
+    {
+      "handle": "dji-flycart-100-lastdronare",
+      "label": "FlyCart 100",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart 100 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart 100 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-flycart-serien",
+        "flycart-30",
+        "flycart-batteries",
+        "flycart-spare-parts",
+        "flycart-payload-systems"
+      ]
+    },
+    {
+      "handle": "flycart-batteries",
+      "label": "FlyCart Batteries",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart Batteries | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart batteries solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-flycart-serien",
+        "flycart-30",
+        "dji-flycart-100-lastdronare",
+        "flycart-spare-parts",
+        "flycart-payload-systems"
+      ]
+    },
+    {
+      "handle": "flycart-spare-parts",
+      "label": "FlyCart Spare Parts",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart Spare Parts | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart spare parts solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-flycart-serien",
+        "flycart-30",
+        "dji-flycart-100-lastdronare",
+        "flycart-batteries",
+        "flycart-payload-systems"
+      ]
+    },
+    {
+      "handle": "flycart-payload-systems",
+      "label": "FlyCart Payload Systems",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "FlyCart Payload Systems | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flycart payload systems solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "dji-flycart-serien",
+        "flycart-30",
+        "dji-flycart-100-lastdronare",
+        "flycart-batteries",
+        "flycart-spare-parts"
+      ]
+    },
+    {
+      "handle": "lidar-mapping",
+      "label": "LiDAR & Mapping",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "LiDAR & Mapping | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional lidar & mapping solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar",
+        "dronare-med-varmekamera"
+      ]
+    },
+    {
+      "handle": "lidar-sensors",
+      "label": "LiDAR Sensors",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "LiDAR Sensors | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional lidar sensors solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar",
+        "dronare-med-varmekamera"
+      ]
+    },
+    {
+      "handle": "zenmuse-l2",
+      "label": "Zenmuse L2",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse L2 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse l2 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l1-payload",
+        "livox-lidar",
+        "dronare-med-varmekamera"
+      ]
+    },
+    {
+      "handle": "zenmuse-l1-payload",
+      "label": "Zenmuse L1",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse L1 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse l1 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "livox-lidar",
+        "dronare-med-varmekamera"
+      ]
+    },
+    {
+      "handle": "livox-lidar",
+      "label": "Livox",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Livox | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional livox solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "dronare-med-varmekamera"
+      ]
+    },
+    {
+      "handle": "dronare-med-varmekamera",
+      "label": "Thermal Cameras",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Thermal Cameras | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional thermal cameras solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "zenmuse-h20t-payload",
+      "label": "Zenmuse H20T",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse H20T | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse h20t solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "zenmuse-h30t",
+      "label": "Zenmuse H30T",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse H30T | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse h30t solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "survey-payloads",
+      "label": "Survey Payloads",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Survey Payloads | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional survey payloads solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "zenmuse-p1-payload",
+      "label": "Zenmuse P1",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Zenmuse P1 | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional zenmuse p1 solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "mapping-cameras",
+      "label": "Mapping Cameras",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Mapping Cameras | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional mapping cameras solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "enterprise-belysning",
+      "label": "Searchlights",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Searchlights | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional searchlights solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "enterprise-hogtalarsystem",
+      "label": "Speakers",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Speakers | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional speakers solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "thermal-systems-sar",
+      "label": "Thermal Systems (SAR)",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Thermal Systems (SAR) | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional thermal systems (sar) solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "airdrop-system",
+      "label": "Airdrop Systems",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Airdrop Systems | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional airdrop systems solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "enterprise-lyftsystem",
+      "label": "Winch Systems",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Winch Systems | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional winch systems solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "parachute-systems",
+      "label": "Parachute Systems",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Parachute Systems | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional parachute systems solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "flight-safety-systems",
+      "label": "Flight Safety Systems",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Flight Safety Systems | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional flight safety systems solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "lidar-mapping",
+        "lidar-sensors",
+        "zenmuse-l2",
+        "zenmuse-l1-payload",
+        "livox-lidar"
+      ]
+    },
+    {
+      "handle": "inspection-drones",
+      "label": "Inspection",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Inspection | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional inspection solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "energy-infrastructure-drones",
+        "agriculture-drones",
+        "forestry-drones",
+        "surveying-mapping-drones",
+        "transport-logistics-drones"
+      ]
+    },
+    {
+      "handle": "energy-infrastructure-drones",
+      "label": "Energy & Infrastructure",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Energy & Infrastructure | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional energy & infrastructure solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "agriculture-drones",
+        "forestry-drones",
+        "surveying-mapping-drones",
+        "transport-logistics-drones"
+      ]
+    },
+    {
+      "handle": "agriculture-drones",
+      "label": "Agriculture",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Agriculture | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional agriculture solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "energy-infrastructure-drones",
+        "forestry-drones",
+        "surveying-mapping-drones",
+        "transport-logistics-drones"
+      ]
+    },
+    {
+      "handle": "forestry-drones",
+      "label": "Forestry",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Forestry | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional forestry solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "energy-infrastructure-drones",
+        "agriculture-drones",
+        "surveying-mapping-drones",
+        "transport-logistics-drones"
+      ]
+    },
+    {
+      "handle": "surveying-mapping-drones",
+      "label": "Surveying & Mapping",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Surveying & Mapping | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional surveying & mapping solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "energy-infrastructure-drones",
+        "agriculture-drones",
+        "forestry-drones",
+        "transport-logistics-drones"
+      ]
+    },
+    {
+      "handle": "transport-logistics-drones",
+      "label": "Transport & Logistics",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Transport & Logistics | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional transport & logistics solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "energy-infrastructure-drones",
+        "agriculture-drones",
+        "forestry-drones",
+        "surveying-mapping-drones"
+      ]
+    },
+    {
+      "handle": "public-safety-drones",
+      "label": "Public Safety & Rescue",
+      "type": "collection",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR",
+        "EU"
+      ],
+      "seo_title": "Public Safety & Rescue | DJI Enterprise | EuroDroneParts",
+      "seo_description": "Professional public safety & rescue solutions for European enterprise drone operations. DJI authorized specialist.",
+      "internal_links": [
+        "inspection-drones",
+        "energy-infrastructure-drones",
+        "agriculture-drones",
+        "forestry-drones",
+        "surveying-mapping-drones"
+      ]
+    }
+  ]
+}
+}
+  "version": "1.0",
+  "status": "proposed",
+  "template": {
+    "seo_title_pattern": "{Vertical} Drönare | DJI Enterprise | EuroDroneParts",
+    "seo_description_pattern": "{value_prop}. DJI Matrice, Mavic Enterprise, sensorer och tillbehör för {vertical_lower}.",
+    "description_html_pattern": "<p><strong>{headline}</strong> — {intro}. Utforska enterprise-drönare, sensorer och tillbehör för {vertical_lower}.</p><h2>Rekommenderade plattformar</h2><ul>{platform_list}</ul><h2>Relaterade kategorier</h2><ul>{related_collections}</ul>",
+    "sections": ["hero", "recommended_platforms", "payloads", "related_collections", "cta_enterprise_hub"]
+  },
+  "verticals": {
+    "inspection": {
+      "collection_handle": "inspektionsdronare",
+      "url": "/collections/inspektionsdronare",
+      "status": "live",
+      "seo_title": "Inspektionsdrönare | Industri & Infrastruktur | EuroDroneParts",
+      "seo_description": "Professionella inspektionsdrönare för industri, byggnader och infrastruktur. DJI Matrice, Mavic Enterprise och värmekameror.",
+      "headline": "Inspektionsdrönare för professionella uppdrag",
+      "intro": "Säker och effektiv inspektion av infrastruktur, byggnader, broar och industriella anläggningar",
+      "recommended_platforms": ["dji-matrice-serien", "dji-mavic-3-enterprise", "dronare-med-varmekamera"],
+      "recommended_payloads": ["enterprise-sensorer", "dronare-med-varmekamera"],
+      "related_collections": ["enterprise-dronare", "enterprise-tillbehor", "energi-infrastruktur"],
+      "menu_placement": ["main-menu > Branschlösningar", "enterprise-dr-nare"]
+    },
+    "energy_infrastructure": {
+      "collection_handle": "energi-infrastruktur",
+      "url": "/collections/energi-infrastruktur",
+      "status": "live",
+      "seo_title": "Energi & Infrastruktur Drönare | EuroDroneParts",
+      "seo_description": "Drönarlösningar för kraftledningar, vindkraft, solparker och kritisk infrastruktur. DJI Enterprise.",
+      "headline": "Drönare för energi och infrastruktur",
+      "intro": "Termisk inspektion och närbildsanalys av kraftverk, vindkraftverk, pipelines och transformatorstationer",
+      "recommended_platforms": ["dji-matrice-350-rtk-tillbehor", "dji-matrice-serien", "dronare-med-varmekamera"],
+      "recommended_payloads": ["enterprise-sensorer", "dronare-med-varmekamera"],
+      "related_collections": ["inspektionsdronare", "enterprise-dronare"],
+      "menu_placement": ["main-menu > Branschlösningar"]
+    },
+    "agriculture": {
+      "collection_handle": "jordbruksdronare",
+      "url": "/collections/jordbruksdronare",
+      "status": "live",
+      "seo_title": "Jordbruksdrönare | DJI Agras | EuroDroneParts",
+      "seo_description": "Precisionsjordbruksdrönare för sprutning, analys och multispektral kartläggning. DJI Agras och Mavic 3M.",
+      "headline": "Jordbruksdrönare för precisionsodling",
+      "intro": "Effektiv sprutning, multispektral analys och fältkartläggning med DJI Agras och enterprise-sensorer",
+      "recommended_platforms": ["dji-agras-dronare", "dji-mavic-3m-dronare-tillbehor"],
+      "recommended_payloads": ["enterprise-sensorer"],
+      "related_collections": ["kartlaggnings-och-matdronare", "enterprise-dronare"],
+      "menu_placement": ["main-menu > Branschlösningar"]
+    },
+    "forestry": {
+      "collection_handle": "skogsbruksdronare",
+      "url": "/collections/skogsbruksdronare",
+      "status": "live",
+      "seo_title": "Skogsbruksdrönare | Kartläggning & Inventering | EuroDroneParts",
+      "seo_description": "Drönarlösningar för skogsbruk, inventering och miljöövervakning med DJI Enterprise.",
+      "headline": "Skogsbruksdrönare för inventering och övervakning",
+      "intro": "LiDAR, multispektral och visuell kartläggning av skogsresurser",
+      "recommended_platforms": ["dji-matrice-serien", "dji-mavic-3m-dronare-tillbehor"],
+      "recommended_payloads": ["enterprise-sensorer"],
+      "related_collections": ["kartlaggnings-och-matdronare", "inspektionsdronare"],
+      "menu_placement": ["main-menu > Branschlösningar"]
+    },
+    "surveying_mapping": {
+      "collection_handle": "kartlaggnings-och-matdronare",
+      "url": "/collections/kartlaggnings-och-matdronare",
+      "status": "live",
+      "seo_title": "Kartläggnings- & Mätdrönare | RTK & LiDAR | EuroDroneParts",
+      "seo_description": "Professionella kartläggnings- och mätdrönare med RTK, LiDAR och multispektral sensorik.",
+      "headline": "Kartläggnings- och mätdrönare",
+      "intro": "Högprecision för surveying, BIM, geodesi och ortofoto med RTK och LiDAR-payloads",
+      "recommended_platforms": ["dji-matrice-350-rtk-tillbehor", "dji-mavic-3-enterprise", "dji-mavic-3m-dronare-tillbehor"],
+      "recommended_payloads": ["enterprise-sensorer"],
+      "related_collections": ["enterprise-dronare", "inspektionsdronare"],
+      "menu_placement": ["main-menu > Branschlösningar"]
+    },
+    "transport_logistics": {
+      "collection_handle": "transport-logistik",
+      "url": "/collections/transport-logistik",
+      "status": "live",
+      "seo_title": "Transport & Logistik Drönare | FlyCart | EuroDroneParts",
+      "seo_description": "Last- och transportdrönare för logistik, inklusive DJI FlyCart 100.",
+      "headline": "Transport & logistik med drönare",
+      "intro": "Lastdrönare och logistiklösningar för medellånga transportuppdrag",
+      "recommended_platforms": ["dji-flycart-serien", "dji-flycart-100-lastdronare", "last-och-transportdronare"],
+      "recommended_payloads": ["airdrop-system", "enterprise-lyftsystem"],
+      "related_collections": ["dji-flycart-serien", "enterprise-dronare"],
+      "menu_placement": ["main-menu > Branschlösningar", "main-menu > FlyCart"]
+    },
+    "public_safety_rescue": {
+      "collection_handle": null,
+      "planned_handle": "public-safety-raddning",
+      "url": null,
+      "status": "framework_only",
+      "notes": "No dedicated collection exists. Do NOT create in Phase 2. Use cross-links until collection is approved.",
+      "interim_collections": ["inspektionsdronare", "dronare-med-varmekamera", "enterprise-dronare", "airdrop-system"],
+      "seo_title": "Public Safety & Rescue Drönare | S&R | EuroDroneParts",
+      "seo_description": "Sök- och räddningsdrönare med värmekamera, högtalare och airdrop för räddningstjänst och public safety.",
+      "headline": "Public Safety & Rescue — drönarlösningar",
+      "intro": "Termisk sökning, kommunikation och lastleverans för räddningstjänst, polis och civilförsvar",
+      "recommended_platforms": ["dji-matrice-serien", "dji-mavic-3-enterprise", "dronare-med-varmekamera"],
+      "recommended_payloads": ["dronare-med-varmekamera", "enterprise-hogtalarsystem", "airdrop-system", "enterprise-belysning"],
+      "related_collections": ["inspektionsdronare", "enterprise-dronare", "enterprise-sensorer"],
+      "menu_placement_proposed": ["main-menu > Branschlösningar > Public Safety & Rescue (when collection created)"],
+      "page_option": "Consider Shopify Page at /pages/public-safety-raddning as interim SEO landing (no collection URL change)"
+    }
+  }
+}

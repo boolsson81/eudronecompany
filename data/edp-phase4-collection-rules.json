@@ -1,0 +1,735 @@
+{
+  "version": "4.0",
+  "deploy_only": {
+    "dji-matrice-3-serie": {
+      "label": "Matrice 3 Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 3D"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 3TD"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 3D"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 3TD"
+        }
+      ],
+      "projected_count": 2
+    },
+    "dji-matrice-30-serie": {
+      "label": "Matrice 30 Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 30"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 30T"
+        }
+      ],
+      "projected_count": 9
+    },
+    "dji-matrice-300-rtk-serie": {
+      "label": "Matrice 300 RTK Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 300"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M300"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 300 RTK"
+        }
+      ],
+      "projected_count": 4
+    },
+    "dji-matrice-350-rtk-serie": {
+      "label": "Matrice 350 RTK Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 350"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M350"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Matrice 350 RTK"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Matrice 350 RTK"
+        }
+      ],
+      "projected_count": 6
+    },
+    "dji-matrice-400-serie": {
+      "label": "Matrice 400 Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Matrice 400"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "M400"
+        }
+      ],
+      "projected_count": 9
+    },
+    "dji-dock-serien": {
+      "label": "DJI Dock Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "DJI Dock"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Dock 2"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Dock 3"
+        }
+      ],
+      "projected_count": 3
+    },
+    "dji-dock-2": {
+      "label": "DJI Dock 2",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Dock 2"
+        }
+      ],
+      "projected_count": 1
+    },
+    "dji-dock-3": {
+      "label": "DJI Dock 3",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Dock 3"
+        }
+      ],
+      "projected_count": 1
+    },
+    "dji-mavic-3-thermal": {
+      "label": "Mavic 3 Thermal",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3T"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3 Thermal"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "värmekamera"
+        }
+      ],
+      "projected_count": 8
+    },
+    "dji-mavic-enterprise-serien": {
+      "label": "Mavic Enterprise Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3 Enterprise"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Mavic 3M"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Mavic 3 Enterprise"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Mavic 3 Enterprise"
+        }
+      ],
+      "projected_count": 4
+    },
+    "dji-agras-serien": {
+      "label": "Agras Series",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI Agras"
+        }
+      ],
+      "projected_count": 4
+    },
+    "dji-agras-t50": {
+      "label": "Agras T50",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras T50"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "T50"
+        }
+      ],
+      "projected_count": 3
+    },
+    "dji-agras-t40": {
+      "label": "Agras T40",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Agras T40"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "T40"
+        }
+      ],
+      "projected_count": 2
+    },
+    "dji-flycart-30": {
+      "label": "FlyCart 30",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI FlyCart 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "FlyCart 30"
+        }
+      ],
+      "projected_count": 2
+    },
+    "dji-flycart-100": {
+      "label": "FlyCart 100",
+      "part": "enterprise",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart 100"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "FlyCart 30"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "DJI FlyCart 30"
+        }
+      ],
+      "projected_count": 2
+    },
+    "zenmuse-h30": {
+      "label": "Zenmuse H30",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Zenmuse H30"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "H30"
+        }
+      ],
+      "projected_count": 2
+    },
+    "zenmuse-h30t": {
+      "label": "Zenmuse H30T",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "H30T"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Zenmuse H30T"
+        }
+      ],
+      "projected_count": 1
+    },
+    "zenmuse-l2": {
+      "label": "Zenmuse L2",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Zenmuse L2"
+        }
+      ],
+      "projected_count": 1
+    },
+    "livox": {
+      "label": "Livox",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Livox"
+        },
+        {
+          "column": "VENDOR",
+          "relation": "CONTAINS",
+          "condition": "Livox"
+        }
+      ],
+      "projected_count": 1
+    },
+    "livox-hap": {
+      "label": "Livox HAP",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "Livox HAP"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "HAP"
+        }
+      ],
+      "projected_count": 13
+    },
+    "lidar-system": {
+      "label": "LiDAR Systems",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "LiDAR"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "LIDAR"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "LiDAR"
+        }
+      ],
+      "projected_count": 4
+    },
+    "fotogrammetri-system": {
+      "label": "Fotogrammetri",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "P1"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "photogrammetry"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "fotogrammetri"
+        }
+      ],
+      "projected_count": 21
+    },
+    "termisk-inspektion": {
+      "label": "Termisk Inspektion",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "thermal"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "värmekamera"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "H30T"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "H20T"
+        }
+      ],
+      "projected_count": 26
+    },
+    "spotlight-system": {
+      "label": "Spotlight Systems",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "spotlight"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "searchlight"
+        },
+        {
+          "column": "TAG",
+          "relation": "EQUALS",
+          "condition": "Drönar belysning"
+        }
+      ],
+      "projected_count": 10
+    },
+    "hogtalarsystem": {
+      "label": "Högtalarsystem",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "speaker"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "högtalare"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "megaphone"
+        }
+      ],
+      "projected_count": 23
+    },
+    "fallskarmssystem": {
+      "label": "Fallskärmssystem",
+      "part": "payloads",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "parachute"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "fallskärm"
+        }
+      ],
+      "projected_count": 2
+    },
+    "polis-raddningstjanst": {
+      "label": "Public Safety",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "public safety"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "räddning"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "polis"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "search and rescue"
+        }
+      ],
+      "projected_count": 1
+    },
+    "forsvar-sakerhet": {
+      "label": "Defense",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "defense"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "försvar"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "military"
+        }
+      ],
+      "projected_count": 1
+    },
+    "telekom-inspektion": {
+      "label": "Telecom",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "telecom"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "telekom"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "antenna"
+        }
+      ],
+      "projected_count": 1
+    },
+    "vindkraftsinspektion": {
+      "label": "Wind Power",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "wind turbine"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "vindkraft"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "wind"
+        }
+      ],
+      "projected_count": 20
+    },
+    "solenergi-inspektion": {
+      "label": "Solar",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "solar"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "solenergi"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "photovoltaic"
+        }
+      ],
+      "projected_count": 19
+    },
+    "jarnvagsinspektion": {
+      "label": "Rail",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "rail"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "järnväg"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "railway"
+        }
+      ],
+      "projected_count": 8
+    },
+    "broar-tunnlar-infrastruktur": {
+      "label": "Infrastructure",
+      "part": "industry",
+      "appliedDisjunctively": true,
+      "rules": [
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "bridge"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "tunnel"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "bro"
+        },
+        {
+          "column": "TITLE",
+          "relation": "CONTAINS",
+          "condition": "infrastruktur"
+        }
+      ],
+      "projected_count": 30
+    }
+  },
+  "deferred": [
+    "dji-agras-t25",
+    "zenmuse-h20",
+    "zenmuse-h20t",
+    "zenmuse-p1",
+    "zenmuse-l1",
+    "zenmuse-v1",
+    "zenmuse-s1",
+    "livox-mid-360",
+    "livox-mid-70"
+  ]
+}

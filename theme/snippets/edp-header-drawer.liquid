@@ -1,0 +1,160 @@
+{% comment %}
+  EuroDroneCompany mobile drawer with Consumer / Enterprise navigation.
+
+  Requires section.settings.menu_consumer and menu_enterprise (or menu fallback).
+{% endcomment %}
+
+{%- liquid
+  assign menu_consumer = blank
+  if section.settings.menu_consumer != blank
+    assign menu_consumer = linklists[section.settings.menu_consumer]
+  endif
+  if menu_consumer == blank
+    assign menu_consumer = linklists[section.settings.menu]
+  endif
+
+  assign menu_enterprise = blank
+  if section.settings.menu_enterprise != blank
+    assign menu_enterprise = linklists[section.settings.menu_enterprise]
+  endif
+  if menu_enterprise == blank
+    assign menu_enterprise = linklists[section.settings.menu]
+  endif
+
+  assign has_menus = false
+  if menu_consumer != blank or menu_enterprise != blank
+    assign has_menus = true
+  endif
+
+  capture edp_page_segment
+    render 'edp-page-segment'
+  endcapture
+  assign edp_page_segment = edp_page_segment | strip
+  assign edp_initial_segment = edp_page_segment | default: 'consumer'
+-%}
+
+{%- if has_menus -%}
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container">
+    <summary
+      class="header__icon header__icon--menu header__icon--summary link focus-inset"
+      aria-label="{{ 'sections.header.menu' | t }}"
+    >
+      <span>
+        {{- 'icon-hamburger.svg' | inline_asset_content -}}
+        {{- 'icon-close.svg' | inline_asset_content -}}
+      </span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container">
+          <nav class="menu-drawer__navigation edp-drawer-panel" data-edp-segment-panel="consumer"{% if edp_initial_segment != 'consumer' %} hidden{% endif %} aria-label="{{ 'edp.header.main_nav' | t }} — consumer">
+            {%- render 'edp-menu-drawer-panel', menu: menu_consumer, segment_id: 'consumer', menu_color_scheme: section.settings.menu_color_scheme -%}
+          </nav>
+
+          <nav class="menu-drawer__navigation edp-drawer-panel" data-edp-segment-panel="enterprise"{% if edp_initial_segment != 'enterprise' %} hidden{% endif %} aria-label="{{ 'edp.header.main_nav' | t }} — enterprise">
+            {%- render 'edp-menu-drawer-panel', menu: menu_enterprise, segment_id: 'enterprise', menu_color_scheme: section.settings.menu_color_scheme -%}
+          </nav>
+
+          <div class="menu-drawer__utility-links">
+            {%- if shop.customer_accounts_enabled -%}
+              <a
+                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+                rel="nofollow"
+              >
+                {%- if section.settings.enable_customer_avatar -%}
+                  <account-icon>
+                    {%- if customer and customer.has_avatar? -%}
+                      {{ customer | avatar }}
+                    {%- else -%}
+                      <span class="svg-wrapper">{{- 'icon-account.svg' | inline_asset_content -}}</span>
+                    {%- endif -%}
+                  </account-icon>
+                {%- else -%}
+                  <span class="svg-wrapper">{{- 'icon-account.svg' | inline_asset_content -}}</span>
+                {%- endif -%}
+                {%- liquid
+                  if customer
+                    echo 'customer.account_fallback' | t
+                  else
+                    echo 'customer.log_in' | t
+                  endif
+                -%}
+              </a>
+            {%- endif -%}
+
+            {%- if localization.available_countries or localization.available_languages -%}
+              <div class="menu-drawer__localization header-localization">
+                {%- if localization.available_countries and localization.available_countries.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderCountryMobileLabel">
+                          {{ 'localization.country_label' | t }}
+                        </h2>
+                        {%- render 'country-localization', localPosition: 'HeaderCountryMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {% endif %}
+
+                {%- if localization.available_languages and localization.available_languages.size > 1 -%}
+                  <localization-form>
+                    {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
+                      <div>
+                        <h2 class="visually-hidden" id="HeaderLanguageMobileLabel">
+                          {{ 'localization.language_label' | t }}
+                        </h2>
+                        {%- render 'language-localization', localPosition: 'HeaderLanguageMobile' -%}
+                      </div>
+                    {%- endform -%}
+                  </localization-form>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            <ul class="list list-social list-unstyled" role="list">
+              {%- if settings.social_twitter_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+                    <span class="svg-wrapper">{{- 'icon-twitter.svg' | inline_asset_content -}}</span>
+                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
+                    <span class="svg-wrapper">{{- 'icon-instagram.svg' | inline_asset_content -}}</span>
+                    <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </div>
+
+          {%- if section.settings.drawer_quote_link != blank or section.settings.drawer_phone != blank -%}
+            <div class="edp-drawer-footer">
+              {%- if section.settings.drawer_quote_link != blank -%}
+                <a class="edp-drawer-footer__cta edp-drawer-footer__cta--primary" href="{{ section.settings.drawer_quote_link }}">
+                  {%- if section.settings.drawer_quote_label != blank -%}
+                    {{ section.settings.drawer_quote_label }}
+                  {%- else -%}
+                    {{ 'edp.header.quote' | t }}
+                  {%- endif -%}
+                </a>
+              {%- endif -%}
+              {%- if section.settings.drawer_phone != blank -%}
+                <a class="edp-drawer-footer__cta edp-drawer-footer__cta--secondary" href="tel:{{ section.settings.drawer_phone | replace: ' ', '' }}">
+                  {{ 'edp.header.call_us' | t }}: {{ section.settings.drawer_phone }}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>
+{%- endif -%}

@@ -1,0 +1,323 @@
+from_path,to_path,resource_type,reason,dry_run_action,status
+/collections/amagisn-kameratillbehor-and-dronarutrustning,/collections/amagisn-camera-accessories-and-drone-equipment,collection,collection_rename,CREATE,PENDING
+/en/collections/amagisn-kameratillbehor-and-dronarutrustning,/collections/amagisn-camera-accessories-and-drone-equipment,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/bandverktyg,/collections/precision-tools,collection,collection_rename,CREATE,PENDING
+/en/collections/bandverktyg,/collections/precision-tools,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/belysning-for-drones,/collections/drone-lighting,collection,collection_rename,CREATE,PENDING
+/en/collections/belysning-for-drones,/collections/drone-lighting,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dij-air-3-series,/collections/dji-air-3-series,collection,collection_merge,CREATE,PENDING
+/en/collections/dij-air-3-series,/collections/dji-air-3-series,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/dji,/collections/dji-drones,collection,collection_merge,CREATE,PENDING
+/en/collections/dji,/collections/dji-drones,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-antenner,/collections/dji-air-3-antennas,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-antenner,/collections/dji-air-3-antennas,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-armar,/collections/dji-air-3-arms,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-armar,/collections/dji-air-3-arms,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-kablar,/collections/dji-air-3-cables,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-kablar,/collections/dji-air-3-cables,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-kameror,/collections/dji-air-3-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-kameror,/collections/dji-air-3-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-landningsstall,/collections/dji-air-3-landing-gear,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-landningsstall,/collections/dji-air-3-landing-gear,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-motorer,/collections/dji-air-3-motors,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-motorer,/collections/dji-air-3-motors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-sensorer,/collections/dji-air-3-sensors,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-sensorer,/collections/dji-air-3-sensors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-air-3-skal,/collections/dji-air-3-shell,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-air-3-skal,/collections/dji-air-3-shell,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-drones-fjarrkontroller,/collections/dji-drones-remote-controls,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-drones-fjarrkontroller,/collections/dji-drones-remote-controls,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-enterprise-fjarrkontroller,/collections/dji-enterprise-remote-controls,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-enterprise-fjarrkontroller,/collections/dji-enterprise-remote-controls,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-flycart-100-lastdronare,/collections/dji-flycart-100-cargo-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-flycart-100-lastdronare,/collections/dji-flycart-100-cargo-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-30-serie-accessories,/collections/dji-matrice-30-series-accessories,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-matrice-30-serie-accessories,/collections/dji-matrice-30-series-accessories,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-350-rtk-antenner,/collections/dji-matrice-350-rtk-antennas,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-matrice-350-rtk-antenner,/collections/dji-matrice-350-rtk-antennas,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-350-rtk-rtk,/collections/dji-matrice-350-rtk,collection,collection_merge,CREATE,PENDING
+/en/collections/dji-matrice-350-rtk-rtk,/collections/dji-matrice-350-rtk,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-4-kablar,/collections/dji-matrice-4-cables,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-matrice-4-kablar,/collections/dji-matrice-4-cables,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-4-kameror,/collections/dji-matrice-4-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-matrice-4-kameror,/collections/dji-matrice-4-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-matrice-4-serie,/collections/dji-matrice-4-series,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-matrice-4-serie,/collections/dji-matrice-4-series,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mavic-3-enterprise-kameror,/collections/dji-mavic-3-enterprise-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mavic-3-enterprise-kameror,/collections/dji-mavic-3-enterprise-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mavic-3-enterprise-skal,/collections/dji-mavic-3-enterprise-shell,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mavic-3-enterprise-skal,/collections/dji-mavic-3-enterprise-shell,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-antenner,/collections/dji-mini-4-pro-antennas,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-antenner,/collections/dji-mini-4-pro-antennas,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-armar,/collections/dji-mini-4-pro-arms,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-armar,/collections/dji-mini-4-pro-arms,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-kablar,/collections/dji-mini-4-pro-cables,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-kablar,/collections/dji-mini-4-pro-cables,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-kameror,/collections/dji-mini-4-pro-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-kameror,/collections/dji-mini-4-pro-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-landningsstall,/collections/dji-mini-4-pro-landing-gear,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-landningsstall,/collections/dji-mini-4-pro-landing-gear,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-motorer,/collections/dji-mini-4-pro-motors,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-motorer,/collections/dji-mini-4-pro-motors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-sensorer,/collections/dji-mini-4-pro-sensors,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-sensorer,/collections/dji-mini-4-pro-sensors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-mini-4-pro-skal,/collections/dji-mini-4-pro-shell,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-mini-4-pro-skal,/collections/dji-mini-4-pro-shell,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dji-rc-fjarrkontroller,/collections/dji-rc-remote-controls,collection,collection_rename,CREATE,PENDING
+/en/collections/dji-rc-fjarrkontroller,/collections/dji-rc-remote-controls,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dronarelektronik-flight-components,/collections/drone-electronics-flight-components,collection,collection_rename,CREATE,PENDING
+/en/collections/dronarelektronik-flight-components,/collections/drone-electronics-flight-components,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/dronarmatta-landning-protection,/collections/drone-mat-landing-protection,collection,collection_rename,CREATE,PENDING
+/en/collections/dronarmatta-landning-protection,/collections/drone-mat-landing-protection,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/drone-accessories-buy,/collections/drone-accessories,collection,collection_merge,CREATE,PENDING
+/en/collections/drone-accessories-buy,/collections/drone-accessories,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/drone-accessories-drone,/collections/drone-accessories,collection,collection_merge,CREATE,PENDING
+/en/collections/drone-accessories-drone,/collections/drone-accessories,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/drone-fjarrkontrollstillbehor,/collections/drone-remote-control-accessories,collection,collection_rename,CREATE,PENDING
+/en/collections/drone-fjarrkontrollstillbehor,/collections/drone-remote-control-accessories,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/drone-kameror,/collections/drone-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/drone-kameror,/collections/drone-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/drones-with-varmekamera,/collections/drones-with-thermal-camera,collection,collection_rename,CREATE,PENDING
+/en/collections/drones-with-varmekamera,/collections/drones-with-thermal-camera,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/enterprise-belysning,/collections/enterprise-lighting,collection,collection_rename,CREATE,PENDING
+/en/collections/enterprise-belysning,/collections/enterprise-lighting,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/enterprise-drones,/collections/enterprise,collection,collection_rename,CREATE,PENDING
+/en/collections/enterprise-drones,/collections/enterprise,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/enterprise-hogtalarsystem,/collections/enterprise-speaker-systems,collection,collection_rename,CREATE,PENDING
+/en/collections/enterprise-hogtalarsystem,/collections/enterprise-speaker-systems,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/enterprise-lyftsystem,/collections/enterprise-lifting-systems,collection,collection_rename,CREATE,PENDING
+/en/collections/enterprise-lyftsystem,/collections/enterprise-lifting-systems,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/enterprise-sensorer,/collections/enterprise-sensors,collection,collection_rename,CREATE,PENDING
+/en/collections/enterprise-sensorer,/collections/enterprise-sensors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/filter-drones-lins,/collections/drone-filters,collection,collection_merge,CREATE,PENDING
+/en/collections/filter-drones-lins,/collections/drone-filters,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/filters-for-drones,/collections/drone-filters,collection,collection_merge,CREATE,PENDING
+/en/collections/filters-for-drones,/collections/drone-filters,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/fjarrkontroll-drones,/collections/remote-control-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/fjarrkontroll-drones,/collections/remote-control-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/gopro-accessories-vendors,/collections/gopro-accessories,collection,collection_rename,CREATE,PENDING
+/en/collections/gopro-accessories-vendors,/collections/gopro-accessories,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/inspektionsdronare,/collections/inspection-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/inspektionsdronare,/collections/inspection-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/jordbruksdronare,/collections/agriculture-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/jordbruksdronare,/collections/agriculture-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/kapor-for-drones,/collections/drone-covers,collection,collection_rename,CREATE,PENDING
+/en/collections/kapor-for-drones,/collections/drone-covers,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/kartlaggnings-and-matdronare,/collections/mapping-survey-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/kartlaggnings-and-matdronare,/collections/mapping-survey-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/landningsstall-drones,/collections/landing-gear-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/landningsstall-drones,/collections/landing-gear-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/last-and-transportdronare,/collections/cargo-transport-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/last-and-transportdronare,/collections/cargo-transport-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/mounts-adaptrar-action-cameras,/collections/mounts-adapters-action-cameras,collection,collection_rename,CREATE,PENDING
+/en/collections/mounts-adaptrar-action-cameras,/collections/mounts-adapters-action-cameras,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/multiverktyg-friluftsliv,/collections/outdoor-multi-tools,collection,collection_rename,CREATE,PENDING
+/en/collections/multiverktyg-friluftsliv,/collections/outdoor-multi-tools,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/protection-drones,/collections/drone-protection,collection,collection_rename,CREATE,PENDING
+/en/collections/protection-drones,/collections/drone-protection,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/repair-dji-neo-spare-parts,/collections/dji-neo-spare-parts,collection,collection_merge,CREATE,PENDING
+/en/collections/repair-dji-neo-spare-parts,/collections/dji-neo-spare-parts,collection,collection_merge (legacy /en prefix),CREATE,PENDING
+/collections/reparera-precisionsverktyg-elektronik,/collections/repair-precision-tools,collection,collection_rename,CREATE,PENDING
+/en/collections/reparera-precisionsverktyg-elektronik,/collections/repair-precision-tools,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/skogsbruksdronare,/collections/forestry-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/skogsbruksdronare,/collections/forestry-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/skruvmejsel-set,/collections/screwdriver-sets,collection,collection_rename,CREATE,PENDING
+/en/collections/skruvmejsel-set,/collections/screwdriver-sets,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/spare-parts-gimbal-drones-motorer,/collections/spare-parts-gimbal-drones-motors,collection,collection_rename,CREATE,PENDING
+/en/collections/spare-parts-gimbal-drones-motorer,/collections/spare-parts-gimbal-drones-motors,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/tillbehorskablar-drones,/collections/accessory-cables-drones,collection,collection_rename,CREATE,PENDING
+/en/collections/tillbehorskablar-drones,/collections/accessory-cables-drones,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/usb-kablar-usb-c-for-usb-c,/collections/usb-cables-usb-c-for-usb-c,collection,collection_rename,CREATE,PENDING
+/en/collections/usb-kablar-usb-c-for-usb-c,/collections/usb-cables-usb-c-for-usb-c,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/vendors-q-sunnylife,/collections/sunnylife,collection,collection_rename,CREATE,PENDING
+/en/collections/vendors-q-sunnylife,/collections/sunnylife,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/collections/waterproof-kameraskydd,/collections/waterproof-camera-protection,collection,collection_rename,CREATE,PENDING
+/en/collections/waterproof-kameraskydd,/collections/waterproof-camera-protection,collection,collection_rename (legacy /en prefix),CREATE,PENDING
+/pages/contact,/pages/contact-us,page,page_rename,CREATE,PENDING
+/en/pages/contact,/pages/contact-us,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/vara-varumarken,/pages/brands,page,page_rename,CREATE,PENDING
+/en/pages/vara-varumarken,/pages/brands,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/gopro-faste,/pages/gopro-mount,page,page_rename,CREATE,PENDING
+/en/pages/gopro-faste,/pages/gopro-mount,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/retur-reklamation,/pages/retur-claims,page,page_rename,CREATE,PENDING
+/en/pages/retur-reklamation,/pages/retur-claims,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/rekalamtioner-aterkop,/pages/claims-buyback,page,page_rename,CREATE,PENDING
+/en/pages/rekalamtioner-aterkop,/pages/claims-buyback,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/gimbal-and-stabilisering,/pages/gimbal-and-stabilization,page,page_rename,CREATE,PENDING
+/en/pages/gimbal-and-stabilisering,/pages/gimbal-and-stabilization,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/kopvillkor,/pages/terms-of-sale,page,page_rename,CREATE,PENDING
+/en/pages/kopvillkor,/pages/terms-of-sale,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/vilken-bilkamera-ar-bast,/pages/which-dash-cam-is-best,page,page_rename,CREATE,PENDING
+/en/pages/vilken-bilkamera-ar-bast,/pages/which-dash-cam-is-best,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/samarbeta-with-oss,/pages/partner-with-us,page,page_rename,CREATE,PENDING
+/en/pages/samarbeta-with-oss,/pages/partner-with-us,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/kablar,/pages/cables,page,page_rename,CREATE,PENDING
+/en/pages/kablar,/pages/cables,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/ljud,/pages/audio,page,page_rename,CREATE,PENDING
+/en/pages/ljud,/pages/audio,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/basta-myggskyddet,/pages/best-mosquito-repellent,page,page_rename,CREATE,PENDING
+/en/pages/basta-myggskyddet,/pages/best-mosquito-repellent,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/repair,/pages/repairs,page,page_rename,CREATE,PENDING
+/en/pages/repair,/pages/repairs,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/enterprise-account,/pages/business-account,page,page_rename,CREATE,PENDING
+/en/pages/enterprise-account,/pages/business-account,page,page_rename (legacy /en prefix),CREATE,PENDING
+/pages/quote-request,/pages/request-a-quote,page,page_rename,CREATE,PENDING
+/en/pages/quote-request,/pages/request-a-quote,page,page_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter,/blogs/news,blog,blog_rename,CREATE,PENDING
+/en/blogs/nyheter,/blogs/news,blog,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/kop-dronare-med-kamera,/blogs/news/kop-drones-med-kamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/kop-dronare-med-kamera,/blogs/news/kop-drones-med-kamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/fpv-drone-kit,/blogs/news/fpv-drone-kit,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/fpv-drone-kit,/blogs/news/fpv-drone-kit,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gopro-hero-11-black,/blogs/news/gopro-hero-11-black,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gopro-hero-11-black,/blogs/news/gopro-hero-11-black,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-mini-se,/blogs/news/dji-mini-se,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-mini-se,/blogs/news/dji-mini-se,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-flip-lilla-dronaren,/blogs/news/dji-flip-lilla-dronesn,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-flip-lilla-dronaren,/blogs/news/dji-flip-lilla-dronesn,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dronare-regler,/blogs/news/drones-regulations,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dronare-regler,/blogs/news/drones-regulations,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/laddningsbara-batterier-aaa,/blogs/news/rechargeable-batteryer-aaa,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/laddningsbara-batterier-aaa,/blogs/news/rechargeable-batteryer-aaa,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/kamera-for-youtube,/blogs/news/kamera-for-youtube,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/kamera-for-youtube,/blogs/news/kamera-for-youtube,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/powerbank-usb-c,/blogs/news/powerbank-usb-c,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/powerbank-usb-c,/blogs/news/powerbank-usb-c,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/mikrofon-mygga-tradlos,/blogs/news/microphone-mygga-wireless,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/mikrofon-mygga-tradlos,/blogs/news/microphone-mygga-wireless,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/mikrofon-till-mobil,/blogs/news/microphone-till-mobil,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/mikrofon-till-mobil,/blogs/news/microphone-till-mobil,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/minneskort-micro-sd,/blogs/news/memory-cards-micro-sd,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/minneskort-micro-sd,/blogs/news/memory-cards-micro-sd,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/uppladdningsbara-batterier-laddare,/blogs/news/upprechargeable-batteryer-charger,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/uppladdningsbara-batterier-laddare,/blogs/news/upprechargeable-batteryer-charger,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/micro-usb-laddare,/blogs/news/micro-usb-charger,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/micro-usb-laddare,/blogs/news/micro-usb-charger,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/spela-in-ljud,/blogs/news/spela-in-audio,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/spela-in-ljud,/blogs/news/spela-in-audio,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/ficklampa,/blogs/news/flashlight,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/ficklampa,/blogs/news/flashlight,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/powerbank,/blogs/news/powerbank,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/powerbank,/blogs/news/powerbank,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/reservdelar-dronare,/blogs/news/spare-parts-drones,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/reservdelar-dronare,/blogs/news/spare-parts-drones,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gimbal,/blogs/news/gimbal,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gimbal,/blogs/news/gimbal,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/sd-kort-till-kamera,/blogs/news/sd-kort-till-kamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/sd-kort-till-kamera,/blogs/news/sd-kort-till-kamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,/blogs/news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,/blogs/news/upptack-dji-osmo-action-6-actionkamerans-nya-masterverk,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-mini-5-pro,/blogs/news/dji-mini-5-pro,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-mini-5-pro,/blogs/news/dji-mini-5-pro,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/insta-360,/blogs/news/insta-360,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/insta-360,/blogs/news/insta-360,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/stormkok,/blogs/news/stormkok,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/stormkok,/blogs/news/stormkok,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/nitecore-emr25-myggavskrackaren,/blogs/news/nitecore-emr25-myggavskrackaren,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/nitecore-emr25-myggavskrackaren,/blogs/news/nitecore-emr25-myggavskrackaren,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/nitecore,/blogs/news/nitecore,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/nitecore,/blogs/news/nitecore,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gopro-hero-12,/blogs/news/gopro-hero-12,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gopro-hero-12,/blogs/news/gopro-hero-12,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dronare,/blogs/news/drones,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dronare,/blogs/news/drones,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/kamerastativ,/blogs/news/kamerastativ,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/kamerastativ,/blogs/news/kamerastativ,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dronare-bast-i-test-budget,/blogs/news/drones-bast-i-test-budget,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dronare-bast-i-test-budget,/blogs/news/drones-bast-i-test-budget,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-osmo,/blogs/news/dji-osmo,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-osmo,/blogs/news/dji-osmo,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/mic,/blogs/news/mic,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/mic,/blogs/news/mic,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dykutrustning,/blogs/news/diving-equipment,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dykutrustning,/blogs/news/diving-equipment,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/actionkamera-bast-i-test,/blogs/news/actionkamera-bast-i-test,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/actionkamera-bast-i-test,/blogs/news/actionkamera-bast-i-test,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/test-av-kameror,/blogs/news/test-av-cameras,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/test-av-kameror,/blogs/news/test-av-cameras,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/vandringsutrustning,/blogs/news/hiking-equipment,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/vandringsutrustning,/blogs/news/hiking-equipment,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/mavic-3-pro,/blogs/news/mavic-3-pro,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/mavic-3-pro,/blogs/news/mavic-3-pro,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/campingutrustning,/blogs/news/camping-equipment,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/campingutrustning,/blogs/news/camping-equipment,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/fly-dji-drone,/blogs/news/fly-dji-drone,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/fly-dji-drone,/blogs/news/fly-dji-drone,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/basta-powerbanken,/blogs/news/best-powerbanken,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/basta-powerbanken,/blogs/news/best-powerbanken,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gopro-tillbehor-batterier-filter,/blogs/news/gopro-accessories-batteryer-filter,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gopro-tillbehor-batterier-filter,/blogs/news/gopro-accessories-batteryer-filter,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-mini-4pro-fragor-svar,/blogs/news/dji-mini-4pro-fragor-svar,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-mini-4pro-fragor-svar,/blogs/news/dji-mini-4pro-fragor-svar,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/tradlos-mikrofon-bluetooth,/blogs/news/wireless-microphone-bluetooth,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/tradlos-mikrofon-bluetooth,/blogs/news/wireless-microphone-bluetooth,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/campingkok,/blogs/news/campingkok,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/campingkok,/blogs/news/campingkok,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/vevradio,/blogs/news/vevradio,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/vevradio,/blogs/news/vevradio,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/overlevnadsutrustning,/blogs/news/survival-equipment,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/overlevnadsutrustning,/blogs/news/survival-equipment,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/nodfilt,/blogs/news/nodfilt,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/nodfilt,/blogs/news/nodfilt,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-pocket-2,/blogs/news/dji-pocket-2,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-pocket-2,/blogs/news/dji-pocket-2,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/bast-i-test-actionkamera,/blogs/news/bast-i-test-actionkamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/bast-i-test-actionkamera,/blogs/news/bast-i-test-actionkamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/far-man-flyga-dronare-over-annans-tomt,/blogs/news/far-man-flyga-drones-over-annans-tomt,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/far-man-flyga-dronare-over-annans-tomt,/blogs/news/far-man-flyga-drones-over-annans-tomt,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dronare-for-nyborjare,/blogs/news/drones-for-nyborjare,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dronare-for-nyborjare,/blogs/news/drones-for-nyborjare,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/portabla-solceller,/blogs/news/portabla-solceller,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/portabla-solceller,/blogs/news/portabla-solceller,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dronare-med-kamera,/blogs/news/drones-med-kamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dronare-med-kamera,/blogs/news/drones-med-kamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/regler-for-dronare,/blogs/news/regulations-for-drones,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/regler-for-dronare,/blogs/news/regulations-for-drones,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/kopa-dronare-med-kamera,/blogs/news/kopa-drones-med-kamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/kopa-dronare-med-kamera,/blogs/news/kopa-drones-med-kamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/upptack-din-varld-i-360-grader-med-gopro,/blogs/news/upptack-din-varld-i-360-grader-med-gopro,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/upptack-din-varld-i-360-grader-med-gopro,/blogs/news/upptack-din-varld-i-360-grader-med-gopro,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/actionkamera,/blogs/news/actionkamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/actionkamera,/blogs/news/actionkamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-reservdelar,/blogs/news/dji-spare-parts,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-reservdelar,/blogs/news/dji-spare-parts,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gopro-reservdelar,/blogs/news/gopro-spare-parts,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gopro-reservdelar,/blogs/news/gopro-spare-parts,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/led-lampa-pa-batteri,/blogs/news/led-lampa-pa-battery,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/led-lampa-pa-batteri,/blogs/news/led-lampa-pa-battery,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/gopro-tillbehor,/blogs/news/gopro-accessories,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/gopro-tillbehor,/blogs/news/gopro-accessories,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/stativ-till-mobil-for-att-filma,/blogs/news/stativ-till-mobil-for-att-filma,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/stativ-till-mobil-for-att-filma,/blogs/news/stativ-till-mobil-for-att-filma,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/time-lapse-kamera,/blogs/news/time-lapse-kamera,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/time-lapse-kamera,/blogs/news/time-lapse-kamera,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/dji-osmo-tillbehor,/blogs/news/dji-osmo-accessories,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/dji-osmo-tillbehor,/blogs/news/dji-osmo-accessories,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/krislada,/blogs/news/krislada,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/krislada,/blogs/news/krislada,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/krisberedskap-hemma,/blogs/news/krisberedskap-hemma,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/krisberedskap-hemma,/blogs/news/krisberedskap-hemma,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/karbinhake,/blogs/news/karbinhake,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/karbinhake,/blogs/news/karbinhake,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/blogs/nyheter/tradlos-mygga-mikrofon,/blogs/news/wireless-mygga-microphone,article,blog_rename,CREATE,PENDING
+/en/blogs/nyheter/tradlos-mygga-mikrofon,/blogs/news/wireless-mygga-microphone,article,blog_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-energi-infrastruktur,/pages/industry-energy-infrastructure,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-energi-infrastruktur,/pages/industry-energy-infrastructure,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-vindkraft,/pages/industry-wind-power,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-vindkraft,/pages/industry-wind-power,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-solparker,/pages/industry-solar-parks,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-solparker,/pages/industry-solar-parks,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-kraftnat,/pages/industry-power-grid,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-kraftnat,/pages/industry-power-grid,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-skogsbruk,/pages/industry-forestry,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-skogsbruk,/pages/industry-forestry,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-jordbruk,/pages/industry-agriculture,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-jordbruk,/pages/industry-agriculture,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-kartlaggning,/pages/industry-mapping,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-kartlaggning,/pages/industry-mapping,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-bygg-anlaggning,/pages/industry-construction,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-bygg-anlaggning,/pages/industry-construction,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-sakerhet-raddning,/pages/industry-security-rescue,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-sakerhet-raddning,/pages/industry-security-rescue,page,business_page_rename (legacy /en prefix),CREATE,PENDING
+/pages/bransch-transport-logistik,/pages/industry-transport-logistics,page,business_page_rename,CREATE,PENDING
+/en/pages/bransch-transport-logistik,/pages/industry-transport-logistics,page,business_page_rename (legacy /en prefix),CREATE,PENDING

@@ -1,0 +1,4535 @@
+{
+  "generated_at": "2026-06-13T10:54:34.572Z",
+  "store": "ya1xhg-x6.myshopify.com",
+  "mode": "read_only",
+  "overview": {
+    "products": {
+      "total": 9389,
+      "active": 0,
+      "draft": 9389,
+      "archived": 0
+    },
+    "collections": {
+      "total": 150,
+      "smart": 139,
+      "manual": 11
+    },
+    "pages": 61,
+    "blogs": 1,
+    "articles": 68,
+    "menus": 80,
+    "markets": [
+      {
+        "name": "Danmark",
+        "enabled": false,
+        "primary": false
+      },
+      {
+        "name": "Finland",
+        "enabled": false,
+        "primary": false
+      },
+      {
+        "name": "Frankrike",
+        "enabled": false,
+        "primary": false
+      },
+      {
+        "name": "Italien",
+        "enabled": false,
+        "primary": false
+      },
+      {
+        "name": "Sverige",
+        "enabled": true,
+        "primary": true
+      },
+      {
+        "name": "Tyskland",
+        "enabled": false,
+        "primary": false
+      }
+    ],
+    "locales": {
+      "total": 21,
+      "published": [
+        {
+          "locale": "sv",
+          "name": "Swedish",
+          "primary": true,
+          "published": true
+        }
+      ]
+    }
+  },
+  "grouped_collections": {
+    "Enterprise DJI": [
+      {
+        "name": "Enterprise Drönare för Industri och Inspektion",
+        "handle": "enterprise-dronare",
+        "product_count": 19,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "main-menu",
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Enterprise Drönare | DJI Matrice, Mavic Enterprise & Agras | EuroDroneParts",
+        "seo_description": "Professionella enterprise-drönare för industri, inspektion och jordbruk. DJI Matrice, Mavic 3 Enterprise, Agras och tillbehör.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Matrice-serien – Professionella Enterprise-drönare",
+        "handle": "dji-matrice-serien",
+        "product_count": 32,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Matrice-serien | Enterprise-drönare | EuroDroneParts",
+        "seo_description": "DJI Matrice enterprise-drönare för professionella inspektions- och kartläggningsuppdrag. Reservdelar och tillbehör.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Matrice 4 Serien",
+        "handle": "dji-matrice-3-serien",
+        "product_count": 22,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Matrice 4-serien | Enterprise | EuroDroneParts",
+        "seo_description": "DJI Matrice 4 enterprise-drönare och tillbehör för avancerade professionella uppdrag.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Matrice 400 Serien för Professionella Uppdrag",
+        "handle": "dji-matrice-400-serien",
+        "product_count": 9,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Matrice 400-serien | Enterprise | EuroDroneParts",
+        "seo_description": "DJI Matrice 400 för tunga enterprise-uppdrag. Tillbehör och reservdelar.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Marvic Enterprise",
+        "handle": "dji-marvic-enterprise",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Marvic Enterprise | EuroDroneParts",
+        "seo_description": "DJI Marvic Enterprise-drönare och tillbehör för professionella uppdrag.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Agras Drönare för Precisionsjordbruk",
+        "handle": "dji-agras-dronare",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Agras | Precisionsjordbruksdrönare | EuroDroneParts",
+        "seo_description": "DJI Agras drönare för precisionsjordbruk, sprutning och jordbruksanalys.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "dji matrice 4 Serie",
+        "handle": "dji-matrice-4-serie",
+        "product_count": 22,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Matrice 4 | Enterprise-drönare | EuroDroneParts",
+        "seo_description": "DJI Matrice 4 enterprise-drönare, tillbehör och reservdelar.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3 Enterprise - Kvalitet &",
+        "handle": "dji-mavic-3-enterprise",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Enterprise | EuroDroneParts",
+        "seo_description": "DJI Mavic 3 Enterprise (3E) för professionell kartläggning och inspektion. Tillbehör och reservdelar.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Professionella Fjärrkontroller för DJI Enterprise",
+        "handle": "dji-enterprise-fjarrkontroller",
+        "product_count": 22,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Fjärrkontroller | DJI | EuroDroneParts",
+        "seo_description": "Professionella fjärrkontroller för DJI enterprise-drönare.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Service för Företagsdrönare",
+        "handle": "enterprise-service-dronare",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Service | Drönare | EuroDroneParts",
+        "seo_description": "Service och support för DJI enterprise-drönare.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Högtalarsystem",
+        "handle": "enterprise-hogtalarsystem",
+        "product_count": 23,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Högtalarsystem | Drönare | EuroDroneParts",
+        "seo_description": "Högtalarsystem och kommunikationsutrustning för enterprise-drönare.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise belysning",
+        "handle": "enterprise-belysning",
+        "product_count": 13,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Belysning | Drönare | EuroDroneParts",
+        "seo_description": "Professionell belysning för enterprise-drönare och inspektionsuppdrag.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Propellrar",
+        "handle": "enterprise-propellrar",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Propellrar | DJI | EuroDroneParts",
+        "seo_description": "Propellrar för DJI enterprise-drönare — Matrice, Mavic Enterprise och Agras.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic Serien enterprise",
+        "handle": "dji-mavic-serien-enterprise",
+        "product_count": 11,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Mavic Enterprise-serien | EuroDroneParts",
+        "seo_description": "DJI Mavic Enterprise-drönare och tillbehör för professionella uppdrag.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Lyftsystem",
+        "handle": "enterprise-lyftsystem",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Enterprise Lyftsystem | Drönare | EuroDroneParts",
+        "seo_description": "Lyftsystem och lasthantering för enterprise-drönare.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Sensorer",
+        "handle": "enterprise-sensorer",
+        "product_count": 20,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Enterprise Sensorer | DJI | EuroDroneParts",
+        "seo_description": "Enterprise-sensorer, värmekameror, multispektrala och LiDAR-payloads för DJI-drönare.",
+        "group": "Enterprise DJI",
+        "empty": false
+      },
+      {
+        "name": "Jordbruksdrönare",
+        "handle": "jordbruksdronare",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Jordbruksdrönare | DJI Agras | EuroDroneParts",
+        "seo_description": "Jordbruksdrönare för precisionsodling, sprutning och multispektral analys.",
+        "group": "Enterprise DJI",
+        "empty": false
+      }
+    ],
+    "FlyCart": [
+      {
+        "name": "DJI FlyCart Serien",
+        "handle": "dji-flycart-serien",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "main-menu",
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI FlyCart | Lastdrönare | EuroDroneParts",
+        "seo_description": "DJI FlyCart last- och transportdrönare för logistik och tunga lyft. Tillbehör och reservdelar.",
+        "group": "FlyCart",
+        "empty": false
+      },
+      {
+        "name": "DJI FlyCart 100: Lastdrönare för Tunga Lyft",
+        "handle": "dji-flycart-100-lastdronare",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI FlyCart 100 | Lastdrönare | EuroDroneParts",
+        "seo_description": "DJI FlyCart 100 lastdrönare för tunga lyft och transportlogistik.",
+        "group": "FlyCart",
+        "empty": false
+      }
+    ],
+    "Consumer DJI": [
+      {
+        "name": "DJI Inspire Serien",
+        "handle": "dji-inspire-serien",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Mavic 3 Pro: Avancerad Drönarteknik",
+        "handle": "dji-mavic-3-pro-avancerad-dronarteknik",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Pro: Avancerad – Premium Tillbehör",
+        "seo_description": "Upplev DJI Mavic 3 Pro: Avancerad – oöverträffad flygprestanda med DJI Mavic 3 Pro. Denna avancerade drönare med trippelkamera och Hasselblad-optik levererar.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Air 2S",
+        "handle": "dji-air-2s",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 2S – 5.4K drönare med 1\" sensor & MasterShots | ActionKing",
+        "seo_description": "DJI Air 2S med 1-tums sensor, 5.4K-video och smarta flyglägen. Kompakt drönare med kraftfull prestanda. Fri frakt & snabba leveranser hos ActionKing.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Flip: Kompakta Vikbara Drönare",
+        "handle": "dji-flip-dronare",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Flip Drönare Kompakt Vikbar med 2.7K – Premium Tillbehör",
+        "seo_description": "Upptäck DJI Flip, en innovativ och vikbar drönare med 2.7K-kamera för fantastiska flygbilder. Enkel att använda för både nybörjare och erfarna piloter.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Filter till Drönare för Optimal Bildkvalitet",
+        "handle": "filter-till-dronare",
+        "product_count": 252,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Filter Drönare Förbättra Dina Flygfoton och Filmer",
+        "seo_description": "Upptäck vårt sortiment av filter till drönare för skarpa bilder och professionella filmer. Optimera din drönares kamera i alla ljusförhållanden.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Drönare med kamera",
+        "handle": "dronare-med-kamera",
+        "product_count": 47,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönare med kamera - stort utbud & snabba leveranser",
+        "seo_description": "Upptäck drönare med kamera hos ActionKing - stort utbud från ledande varumärken, snabba leveranser och produkter för alla nivåer.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 4 Tillbehör",
+        "handle": "dji-mavic-4-pro",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör DJI Mavic 4 Pro – ActionKing",
+        "seo_description": "DJI Mavic 4 Pro, lanserad den 13 maj 2025, representerar en ny era inom drönarfotografi och -videografi.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör DJI Mavic 3 Classic",
+        "handle": "dji-mavic-3-classic",
+        "product_count": 15,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Classic – Proffsdrönare med Hasselbladkamera – ActionKing",
+        "seo_description": "DJI Mavic 3 Classic med 4/3 CMOS Hasselbladkamera, 46 min flygtid och avancerad obstacle sensing. Hitta även tillbehör och reservdelar hos oss.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI AIR 3",
+        "handle": "dji-air-3",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 3 – Dubbla kameror, 46 min flygtid & 4K-video | ActionKing",
+        "seo_description": "DJI Air 3 med vidvinkel & 3x zoom, 48 MP bilder, 4K/60fps video & 46 min flygtid. Rundstrålande sensorer & O4-videoöverföring. Köp hos ActionKing!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic-Serien",
+        "handle": "dji-mavic-serien",
+        "product_count": 6,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic-serien – Drönare med kamera för alla nivåer | ActionKing",
+        "seo_description": "Upptäck DJI Mavic-serien – smarta, hopfällbara drönare med kraftfull kamera, lång flygtid och avancerad hinderavkänning. Perfekt för kreatörer och proffs.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Avata-Serien",
+        "handle": "dji-avata-serien",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Avata-serien – FPV-drönare med DJI Goggles | ActionKing",
+        "seo_description": "DJI Avata-serien – FPV-drönare med 4K-video, Motion Controller och skyddad design. Upplev action och cinematic flygning. Köp med snabb leverans på ActionKing.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Upptäck DJI Mavic 4-serien för exceptionell flygfotografering",
+        "handle": "dji-mavic-4-serien",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 4-serien: Avancerade drönare för kreatörer",
+        "seo_description": "Utforska DJI Mavic 4-serien för professionell flygfotografering och videografi. Upptäck innovation och prestanda i varje drönare. Se hela sortimentet.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3-serien: Proffsens val av drönare",
+        "handle": "dji-mavic-3-serien",
+        "product_count": 11,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3-serien: Avancerade drönare för proffs",
+        "seo_description": "Utforska DJI Mavic 3-serien för enastående flygupplevelser och professionell fotografering. Upptäck kraftfulla DJI drönare och tillbehör. Se hela sortimentet.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 2-serien: Avancerade Drönare",
+        "handle": "dji-mavic-2-serien",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 2-serien: Drönare och Tillbehör – Fri Frakt",
+        "seo_description": "Utforska DJI Mavic 2-serien med avancerade drönare och nödvändiga tillbehör. Hitta allt för din flygupplevelse med Mavic 2 Pro och Zoom. Upptäck mer!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "dji mavic pro batteri väska - DJI Mavic Pro Batteriväska och Tillbehör",
+        "handle": "dji-mavic-pro-batteri-vaska",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "dji mavic pro väska din Actionkamera – Premium Tillbehör",
+        "seo_description": "Skydda dji mavic pro batteri väska – ditt dji mavic pro batteri med våra hållbara väskor. Perfekt för säker transport och förvaring av dina drönarbatterier.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI RC – Smart fjärrkontroll",
+        "handle": "dji-rc-fjarrkontroller",
+        "product_count": 7,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI RC – smart fjärrkontroll med inbyggd skärm 🚀",
+        "seo_description": "Upplev enklare flygning med DJI RC. Ljusstark skärm, lång batteritid och smidig design. Kompatibel med Mini 3 Pro & Mavic 3. Läs mer på ActionKing!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 4-Serien",
+        "handle": "dji-mini-4-serien",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 4-serien – Lätta & kraftfulla drönare | ActionKing.se",
+        "seo_description": "Upptäck DJI Mini 4-serien – kompakta drönare med 4K-video, lång flygtid och avancerade funktioner. Fri frakt & snabba leveranser från ActionKing.se.a tillbehör till DJI Mini 4-serien – allt för att hålla dig i luften längre och flyga tryggt.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 3-Serien",
+        "handle": "dji-mini-3-serien",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 3-serien – Kompakta drönare med 4K och smart teknik",
+        "seo_description": "Upptäck DJI Mini 3-serien – lätta drönare med 4K-video, lång flygtid och smarta funktioner. Perfekt för nybörjare och kreativa filmskapare.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 2-Serien",
+        "handle": "dji-mini-2-serien",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 2-serien – Kompakt drönare med 4K & lång flygtid - ActionKing",
+        "seo_description": "Upptäck DJI Mini 2-serien – lätta drönare med 4K-video, lång flygtid och smarta funktioner. Perfekt för resor, foto och video. Snabb leverans!",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Air 3-Serien för Professionell Flygfotografering",
+        "handle": "dij-air-3-serien",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 3-Serien Avancerade Drönare – Premium Tillbehör",
+        "seo_description": "Utforska DJI Air 3-Serien med dubbla kameror och lång flygtid. Hitta alla tillbehör och drönare för professionell fotografering här. Beställ hos oss idag!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Air 2 Serien: Drönare och Tillbehör",
+        "handle": "dji-air-2-serien",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 2 Serien Drönare – Premium Tillbehör – Hög Kvalitet",
+        "seo_description": "Utforska DJI Air 2 Serien med drönare och tillbehör för en optimerad flygupplevelse. Hitta allt för din dji Air 2S och Mavic Air 2. Hög.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3 Cine: Ultimata Drönaren för Filmskapare",
+        "handle": "dji-mavic-3-cine-dronare",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Cine Professionell Drönare med Hasselblad",
+        "seo_description": "Upptäck DJI Mavic 3 Cine, drönaren för filmskapare med ProRes, 1TB SSD och Hasselblad-kamera. Fånga fantastiska bilder och video i högsta.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 2 Pro",
+        "handle": "dji-mavic-2-pro",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 2 Pro – Professionell drönare - ActionKing",
+        "seo_description": "Upptäck DJI Mavic 2 Pro hos ActionKing – professionell drönare med Hasselblad-kamera. Snabb leverans, tillbehör och reservdelar",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Master Airscrew DJI propellrar – Tysta & Effektiva",
+        "handle": "master-airscrew-dji-propellrar",
+        "product_count": 42,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Master Airscrew DJI propellrar – Maxa din drönare!",
+        "seo_description": "Uppgradera din drönare med Master Airscrew DJI propellrar! Få tystare flygning, längre flygtid och maximal prestanda. Köp nu!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Fjärrkontroller och Tillbehör för DJI Drönare",
+        "handle": "dji-dronare-fjarrkontroller",
+        "product_count": 7,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Drönare Fjärrkontroller & Tillbehör – Fri Frakt",
+        "seo_description": "Hitta rätt DJI fjärrkontroll för din drönare. Utforska vårt sortiment av drönarkontroller och tillbehör för DJI drönare. Upptäck mer!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI: Innovation inom Drönarteknik",
+        "handle": "dji",
+        "product_count": 84,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Drönare & Tillbehör - Utforska Sortimentet",
+        "seo_description": "Hitta avancerade DJI drönare och tillbehör för professionell användning. Upptäck banbrytande DJI produkter med högkvalitativa kameror. Se hela sortimentet.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Skydd till drönare: Propeller, Gimbal & Skal – Skydda din drönare!",
+        "handle": "skydd-dronare",
+        "product_count": 53,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Skydd till drönare – Håll din drönare säker & intakt!",
+        "seo_description": "Skydda din investering! Hitta premium skydd till drönare, propellerskydd och mer. Bevara din drönare i toppskick. Handla nu!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Landningsställ till drönare – Stabil och säker landning",
+        "handle": "landningsstall-dronare",
+        "product_count": 42,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Landningsställ till drönare – Stabilisera din flygning!",
+        "seo_description": "Skydda din drönare! Köp Landningsställ till drönare av hög kvalitet. Hitta reservdelar och DJI tillbehör här. Beställ idag!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 5-Serien",
+        "handle": "dji-mini-5-serien",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 5 Pro – Kraftfull prestanda i kompakt format - Actionking",
+        "seo_description": "Upptäck DJI Mini 5 Pro – drönaren som kombinerar 4K-video, 47 minuters flygtid och 360° hinderavkänning i en ultralätt design under 249 gram.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 5 Pro filter",
+        "handle": "ji-mini-5-pro-filter",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 5 Pro Filter | EuroDroneParts",
+        "seo_description": "Filter för DJI Mini 5 Pro — ND, CPL och polariserande filter för professionellt flygfoto.",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Mini 4 Pro – Frihet, precision och kreativ kontroll i miniformat",
+        "handle": "dji-mini-4-pro",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 4 Pro – Professionell drönare under 249 g med 4K HDR",
+        "seo_description": "Upptäck DJI Mini 4 Pro – ultralätt drönare med 4K HDR, 48 MP kamera, 360° sensorer och avancerade flyglägen. Frihet i miniformat!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 3 Drönare för Professionellt Flygfoto",
+        "handle": "dji-mini-3",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 3 Drönare: Kompakt och Kraftfull Flygfoto",
+        "seo_description": "Upptäck DJI Mini 3, en lätt och kompakt drönare perfekt för flygfoto och video. Utforska dess funktioner och möjligheter för imponerande resultat. Se hela sorti",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Fjärrkontroll drönare: Precision & kontroll för din flygning",
+        "handle": "fjarrkontroll-dronare",
+        "product_count": 10,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Fjärrkontroll drönare - Optimal kontroll för din flygning",
+        "seo_description": "Hitta din perfekta fjärrkontroll drönare! Handkontroller för DJI och mer. Upplev precision och frihet. Köp din nya drönarkontroll idag!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Drönare",
+        "handle": "dji-dronare",
+        "product_count": 22,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Drönare – Mini, Air & Mavic Serier | ActionKing",
+        "seo_description": "Upptäck stort utbud av DJI-drönare och tillbehör hos ActionKing - snabba leveranser, bra priser och produkter för både nybörjare och proffs.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Air 3S",
+        "handle": "dji-air-3s",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 3S – Kraftfull drönare med dubbelkamera - ActionKing",
+        "seo_description": "DJI Air 3S med dubbelkamera, 45 min flygtid och avancerade funktioner. Handla tillbehör och reservdelar hos ActionKing.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Avata Pro FPV-Drönare – Nästa Generations Flygning",
+        "handle": "dji-avata-pro-fpv-dronare",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Avata Pro FPV-Drönare Upplev Nästa – Premium Tillbehör",
+        "seo_description": "Upptäck DJI Avata Pro, en banbrytande FPV-drönare för filmare och entusiaster. Perfekt för snabba flygningar och imponerande videor med avancerad teknik.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Phantom 4 Pro Drönare för Professionella",
+        "handle": "dji-phantom-4-pro-dronare",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Phantom 4 Pro Drönare – Professionell Flygfotografering",
+        "seo_description": "Utforska DJI Phantom 4 Pro, en kraftfull drönare med imponerande 4K-kamera och avancerad teknik. Upplev professionell flygfotografering. Se hela sortimentet.",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Phantom 3 Pro v1 Drönare och Tillbehör",
+        "handle": "dji-phantom-3-pro-v1",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Phantom 3 Pro v1 Drönare & Tillbehör – Fri Frakt",
+        "seo_description": "Utforska vårt sortiment av DJI Phantom 3 Pro v1 drönare och tillbehör. Hitta reservdelar och uppgradera din flygupplevelse med högkvalitativa produkter. Se hela",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Phantom 3 SE Drönare med Kamera",
+        "handle": "dji-phantom-3-se",
+        "product_count": 43,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Phantom 3 SE Drönare – Kraftfull och Användarvänlig",
+        "seo_description": "Upptäck DJI Phantom 3 SE drönaren för fantastiska flygvyer. En pålitlig SE drönare med kamera för både nybörjare och erfarna piloter. Läs mer här.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Inspire Serien Professionella Drönare för Kreatörer",
+        "handle": "dji-inspire",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Inspire Drönare: Professionell Flygfotografering",
+        "seo_description": "Utforska DJI Inspire-serien, den ultimata professionella drönaren för film och foto. Upplev oöverträffad bildkvalitet och stabilitet. Se hela sortimentet.",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "DJI Phantom Serien",
+        "handle": "dji-phantom-serien",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Consumer DJI",
+        "empty": true
+      },
+      {
+        "name": "Last- och transportdrönare",
+        "handle": "last-och-transportdronare",
+        "product_count": 54,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Last- & Transportdrönare | EuroDroneParts",
+        "seo_description": "Last- och transportdrönare för professionell logistik.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Skogsbruksdrönare",
+        "handle": "skogsbruksdronare",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Skogsbruksdrönare | EuroDroneParts",
+        "seo_description": "Drönarlösningar för skogsbruk, inventering och miljöövervakning.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI Neo",
+        "handle": "dji-neo",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Neo – Ultralätt 4K-drönare - ActionKing",
+        "seo_description": "DJI Neo är en ultralätt 4K-drönare med 22GB minne, enkel handstart och smarta tillbehör. Köp din drönare med snabb leverans hos ActionKing.",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "DJI AIR-serien",
+        "handle": "dji-air-serien",
+        "product_count": 6,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air-serien – Air 3, 3S, 2S och tillbehör | ActionKing.se",
+        "seo_description": "Upptäck DJI Air 3, Air 3S, Air 2S och tillbehör. Kompakta drönare med proffsprestanda. Snabb leverans från Sverige – bara på ActionKing.se!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Högkvalitativa Kåpor till Drönare",
+        "handle": "kapor-till-dronare",
+        "product_count": 158,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Kåpor Drönare och Förbättrad Prestanda – Premium Tillbehör",
+        "seo_description": "Upptäck vårt sortiment av högkvalitativa kåpor till drönare. Skydda din utrustning effektivt och förbättra dess aerodynamik. Hitta den perfekta kåpan idag!",
+        "group": "Consumer DJI",
+        "empty": false
+      },
+      {
+        "name": "Filter drönare: Skydda din lins med premium glasfilter",
+        "handle": "filter-dronare-lins",
+        "product_count": 261,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Filter drönare: Skydda din lins & optimera bilder!",
+        "seo_description": "Optimera dina drönarbilder med filter drönare. Skydda linsen och förbättra kvaliteten. Köp drönartillbehör av hög kvalitet nu!",
+        "group": "Consumer DJI",
+        "empty": false
+      }
+    ],
+    "Accessories": [
+      {
+        "name": "DJI RC Pro Tillbehör – Optimera Din Fjärrkontroll",
+        "handle": "dji-rc-pro-tillbehor",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Fjärrkontroll drönare proffs: DJI RC Pro Tillbehör",
+        "seo_description": "Optimera din fjärrkontroll drönare proffs! Köp DJI RC Pro tillbehör, skydd & reservdelar för överlägsen prestanda. Upptäck mer nu!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Neo tillbehör – Batteri & mer för optimal flygning",
+        "handle": "tillbehor-dji-neo",
+        "product_count": 20,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Neo Tillbehör: Maximera Din Flygupplevelse & Köp Här!",
+        "seo_description": "Hitta dji neo tillbehör för din drönare. Förläng flygtiden med dji batteri och mer. Maximera din upplevelse redan idag!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Drönartillbehör: Filter för bättre flygfotografering",
+        "handle": "dronartillbehor-kop",
+        "product_count": 615,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönartillbehör: Köp bästa tillbehören till din drönare!",
+        "seo_description": "Uppgradera din drönare! Hitta drönartillbehör som batterier, propellrar & DJI-tillbehör. Förbättra flygningen idag!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Kompletta BRDRC Tillbehör för Din Utrustning",
+        "handle": "brdrc-tillbehor",
+        "product_count": 134,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "BRDRC Tillbehör för Drönare och Kameror – Fri Frakt",
+        "seo_description": "Utforska ett brett sortiment av BRDRC tillbehör för att optimera din drönar- och kamerautrustning. Hitta allt från reservdelar till praktiska accessoarer.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Avata Tillbehör",
+        "handle": "dji-avata-tillbehor",
+        "product_count": 6,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Avata Tillbehör – batterier, filter & skydd | ActionKing",
+        "seo_description": "Upptäck tillbehör till DJI Avata: batterier, propellrar, filter, väskor och skydd. Förläng flygtiden och optimera din FPV-upplevelse.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör till DJI AIR 3-Serien",
+        "handle": "tillbehor-till-dji-air-3-serien",
+        "product_count": 14,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör till DJI AIR 3-Serien: Optimerad Utrustning",
+        "seo_description": "Tillbehör till DJI AIR 3-Serien: Hitta högkvalitativa tillbehör för din DJI AIR 3-Serien drönare. Förbättra din flygupplevelse med smarta lösningar. Upptäck sor",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Optimala DJI Flip tillbehör – Maxa din drönarupplevelse!",
+        "handle": "dji-flip-batteri-tillbehor",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Flip tillbehör - Maxa din drönare!",
+        "seo_description": "Maxa din DJI Flip! Upptäck vårt utbud av DJI Flip tillbehör för bättre flyg och skydd. Köp nu!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3 Pro tillbehör – Drönartillbehör för proffs",
+        "handle": "dji-mavic-3-pro-tillbehor",
+        "product_count": 11,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Pro tillbehör – Maxa din drönare!",
+        "seo_description": "Hitta dina **DJI Mavic 3 Pro tillbehör**! Extra batterier, ND-filter, skydd och mer för din drönare. Förbättra flygupplevelsen – Köp nu!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör DJI Mavic 3 Cine för optimal prestanda",
+        "handle": "tillbehor-dji-mavic-3-cine",
+        "product_count": 10,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör DJI Mavic 3 Cine - Utöka din utrustning",
+        "seo_description": "Tillbehör DJI Mavic 3 Cine: Hitta högkvalitativa tillbehör för din DJI Mavic 3 Cine. Förbättra din flygupplevelse med det perfekta tillbehöret för din drönare.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini Tillbehör för Din Drönare",
+        "handle": "dji-mini-tillbehor",
+        "product_count": 7,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini Tillbehör Optimera Din Drönare – Premium Tillbehör",
+        "seo_description": "Upptäck vårt stora sortiment av DJI Mini tillbehör för att förbättra din drönarupplevelse. Hitta batterier, propellrar och skydd för säkrare flygning.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör till DJI Mini 4-serien – Maxa din drönarupplevelse!",
+        "handle": "tillbehor-dji-mini-4-serien",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör till DJI Mini 4-serien – Maxa Din Flygning!",
+        "seo_description": "Tillbehör till DJI Mini 4-serien. Maximera din flygupplevelse med proppar, batterier & Mini 4 Pro skydd. Köp dina DJI Mini 4 tillbehör idag!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör till DJI Air-Serien – Uppgradera din drönare idag!",
+        "handle": "tillbehor-dji-air-serien",
+        "product_count": 12,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör till DJI Air-Serien – Maxa Din Drönare!",
+        "seo_description": "Optimerade Tillbehör till DJI Air-Serien. Hitta filter, batterier och mer för din drönare. Förbättra din flygning idag!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "kameratillbehör - AMagisn Tillbehör för Kamera och Drönare",
+        "handle": "amagisn-kameratillbehor-och-dronarutrustning",
+        "product_count": 149,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "AMagisn Kameratillbehör Drönarutrustning Hög – Hög Kvalitet",
+        "seo_description": "Upptäck kameratillbehör – AMagisn tillbehör för actionkameror och drönare. Förbättra din utrustning med högkvalitativa fästen och smarta lösningar.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Pgytech Tillbehör för Kreativa Skapare",
+        "handle": "pgytech-tillbehor",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Pgytech Tillbehör för Drönare och Kameror – Fri Frakt",
+        "seo_description": "Utforska ett brett sortiment av Pgytech tillbehör som förbättrar din drönar- och actionkameraupplevelse. Hitta högkvalitativa Pgytech Sverige-produkter här.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "dji mavic 3e - Tillbehör för DJI Mavic Drönare",
+        "handle": "tillbehor-dji-mavic-dronare",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "dji mavic 3e Tillbehör Maxa Högsta – Premium Tillbehör",
+        "seo_description": "Upptäck dji mavic 3e – premium tillbehör för din DJI Mavic drönare. Förbättra flygning, filmning och säkerhet med specialanpassad utrustning. Maxa.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Avata tillbehör: FPV-drönarutrustning för proffs & nybörjare",
+        "handle": "tillbehor-dji-avata-serien",
+        "product_count": 14,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Avata tillbehör - FPV Drönare Tillbehör & Utrustning",
+        "seo_description": "Hitta de bästa DJI Avata tillbehör för din FPV-drönare. Utforska vårt utbud av FPV-utrustning för längre flygtid och bättre bild. Köp nu!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Kablar till drönare",
+        "handle": "tillbehorskablar-dronare",
+        "product_count": 10,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehörskablar till drönare – USB, HDMI & laddkablar",
+        "seo_description": "Stort utbud av tillbehörskablar till drönare: USB-C, Lightning, HDMI, OTG & laddkablar. Hög kvalitet.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Drönar - fjärrkontrollstillbehör",
+        "handle": "dronar-fjarrkontrollstillbehor",
+        "product_count": 32,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Fjärrkontrollstillbehör till DJI Drönare | ActionKing",
+        "seo_description": "Upptäck fjärrkontrollstillbehör till DJI-drönare. Förbättra grepp, signal och ergonomi med hållare, antenner, solskydd och skyddsfodral.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Dji Mavic Tillbehör för Förbättrad Flygning",
+        "handle": "dji-mavic-tillbehor",
+        "product_count": 9,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Dji Mavic Tillbehör Optimerad Flygning och din Actionkamera",
+        "seo_description": "Maximera din drönarupplevelse med våra Dji Mavic tillbehör. Förbättra prestanda, flygtid och bildkvalitet för en enastående flygning. Upptäck vårt sortiment!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Drönartillbehör Dronar för Optimal Flygning",
+        "handle": "dronartillbehor-dronar",
+        "product_count": 374,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönartillbehör Dronar Utrustning Flygande – Hög Kvalitet",
+        "seo_description": "Upptäck vårt breda sortiment av drönartillbehör dronar för att optimera din flygupplevelse. Hitta reservdelar, uppgraderingar och praktiska tillbehör här.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3 Tillbehör för Optimal Prestanda",
+        "handle": "dji-mavic-3-tillbehor",
+        "product_count": 66,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic 3 Tillbehör & Utrustning Online – Fri Frakt",
+        "seo_description": "Hitta högkvalitativa DJI Mavic 3 tillbehör för din drönare. Förbättra din flygupplevelse med batterier, laddare, väskor och filter. Se hela sortimentet.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör DJI Mavic 2: Utrustning för din drönare",
+        "handle": "tillbehor-dji-mavic-2",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör DJI Mavic 2: Utrustning & Reservdelar",
+        "seo_description": "Utforska ett brett sortiment av Tillbehör DJI Mavic 2, inklusive DJI Mavic 2 Pro tillbehör och Mavic 2 Zoom reservdelar. Förbättra din drönarupplevelse idag.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Omfattande DJI Mavic Pro Tillbehör",
+        "handle": "dji-mavic-pro-tillbehor",
+        "product_count": 46,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic Pro Tillbehör & Utrustning – Fri Frakt",
+        "seo_description": "Hitta högkvalitativa DJI Mavic Pro tillbehör för din drönare. Förbättra din flygupplevelse med nya delar och utrustning. Se hela sortimentet.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör DJI Air 3S - Tillbehör för DJI Air 3S: Komplettera din dröna",
+        "handle": "tillbehor-dji-air-3s",
+        "product_count": 13,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör DJI Air 3S: Optimerat för din drönare",
+        "seo_description": "Tillbehör DJI Air 3S: Hitta högkvalitativa tillbehör för din DJI Air 3S hos oss. Förbättra din flygupplevelse med allt från batterier till skydd. Upptäck hela s",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Air 2S Tillbehör – Optimerad Flygning",
+        "handle": "dji-air-2s-tillbehor",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Air 2S Tillbehör Förbättra – Premium Tillbehör",
+        "seo_description": "Utforska vårt breda sortiment av DJI Air 2S tillbehör för att optimera din drönare. Hitta reservdelar, utrustning och smarta prylar för bättre flygning.",
+        "group": "Accessories",
+        "empty": true
+      },
+      {
+        "name": "Komplett utbud av DJI Mavic Air Tillbehör",
+        "handle": "dji-mavic-air-tillbehor",
+        "product_count": 39,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mavic Air Tillbehör för din drönare – Fri Frakt",
+        "seo_description": "Hitta högkvalitativa DJI Mavic Air tillbehör för att förbättra din drönarupplevelse. Upptäck allt från batterier till skydd. Se hela sortimentet.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Dji FPV Tillbehör – Optimera Din Flygning Med Kvalitet",
+        "handle": "dji-fpv-tillbehor",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Köp DJI FPV Tillbehör Online – Snabb Leverans!",
+        "seo_description": "Upptäck oumbärliga **dji fpv tillbehör** för din drönare! Förbättra flygupplevelsen med vårt breda utbud. Köp nu och ta din DJI FPV till nya höjder!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 4 Pro",
+        "handle": "dji-mini-4-pro-tillbehor",
+        "product_count": 14,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör till DJI Mini 4 Pro – Skydd, batterier & filter",
+        "seo_description": "DJI Mini 4 Pro – lätt drönare med 4K HDR-video och smarta funktioner. Hitta tillbehör, reservdelar och expertstöd hos ActionKing.se!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 3 Tillbehör: Utforska drönarens fulla potential",
+        "handle": "tillbehor-dji-mini-4",
+        "product_count": 18,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Mini 3 Tillbehör – Batteri, Propeller & Mer!",
+        "seo_description": "Hitta DJI Mini 3 tillbehör för din drönare. Förläng flygtiden med nytt batteri eller skydda med propeller. Köp nu!",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Tillbehör DJI Mini 2 / 2 SE - Tillbehör för DJI Mini",
+        "handle": "tillbehor-dji-mini-2-2-se",
+        "product_count": 47,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tillbehör DJI Mini 2 2 SE Förbättra Din din Actionkamera",
+        "seo_description": "Upptäck Tillbehör DJI Mini 2 / 2 SE. Maximera din flygupplevelse med vårt breda utbud av tillbehör till DJI Mini 2 och 2 SE. Hitta batterier, propellrar.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Matrice 350 RTK Tillbehör och Skydd",
+        "handle": "dji-matrice-350-rtk-tillbehor",
+        "product_count": 8,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Matrice 350 RTK Tillbehör | EuroDroneParts",
+        "seo_description": "Tillbehör och skydd för DJI Matrice 350 RTK enterprise-drönare.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "dji arm - DJI Matrice 30 Serie Tillbehör",
+        "handle": "dji-matrice-30-serie-tillbehor",
+        "product_count": 9,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Matrice 30 Tillbehör | EuroDroneParts",
+        "seo_description": "Tillbehör för DJI Matrice 30 enterprise-serien.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mavic 3M Drönare och Tillbehör",
+        "handle": "dji-mavic-3m-dronare-tillbehor",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Mavic 3M Tillbehör | Multispektral | EuroDroneParts",
+        "seo_description": "Tillbehör för DJI Mavic 3M multispektral enterprise-drönare.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Matrice 4 Tillbehör för Professionella Drönare",
+        "handle": "dji-matrice-4-tillbehor",
+        "product_count": 15,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "DJI Matrice 4 Tillbehör | EuroDroneParts",
+        "seo_description": "Professionella tillbehör för DJI Matrice 4 enterprise-drönare.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Professionella Enterprise drönartillbehör",
+        "handle": "enterprise-dronartillbehor",
+        "product_count": 77,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Enterprise Drönartillbehör | EuroDroneParts",
+        "seo_description": "Professionella tillbehör för enterprise-drönare — DJI Matrice, Mavic Enterprise och Agras.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Enterprise Tillbehör",
+        "handle": "enterprise-tillbehor",
+        "product_count": 32,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Enterprise Tillbehör | DJI | EuroDroneParts",
+        "seo_description": "Professionella enterprise-tillbehör för DJI Matrice, Mavic Enterprise och Agras.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Drönare Propeller Tillbehör för Optimal Flygning",
+        "handle": "dronare-propeller-tillbehor",
+        "product_count": 366,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönare Propeller Tillbehör DJI Mini Serie Mer",
+        "seo_description": "Upptäck vårt breda sortiment av drönare propeller tillbehör för DJI Mini 4, Mini 2 och Mini SE. Förbättra din flygupplevelse med nya propellrar.",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Neo Tillbehör – Batteri & mer för din drönare",
+        "handle": "dji-neo-tillbehor",
+        "product_count": 129,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Inspire Tillbehör",
+        "handle": "tillbehor-dji-inspire",
+        "product_count": 0,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": true
+      },
+      {
+        "name": "Högkvalitativa DJI Air 2 Tillbehör för Drönare",
+        "handle": "dji-air-2-tillbehor",
+        "product_count": 0,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": true
+      },
+      {
+        "name": "DJI Avata 2 tillbehör – Skydd & batterier till din drönare",
+        "handle": "dji-avata-2-tillbehor",
+        "product_count": 51,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Flip™ tillbehör – Optimal utrustning till din drönare",
+        "handle": "dji-flip-tillbehor",
+        "product_count": 63,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Mini 3 Tillbehör",
+        "handle": "dji-mini-3-tillbehor",
+        "product_count": 43,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "Omfattande Sortiment av DJI Air 3 Tillbehör",
+        "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+        "product_count": 66,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      },
+      {
+        "name": "DJI Neo 2 Tillbehör för din Drönare",
+        "handle": "dji-neo-2-tillbehor",
+        "product_count": 54,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Accessories",
+        "empty": false
+      }
+    ],
+    "Other": [
+      {
+        "name": "Robust drönarryggsäck för säker transport av din drönare",
+        "handle": "dronarryggsack-vaskor",
+        "product_count": 203,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönarryggsäck: Skydda Din Drönare Perfekt!",
+        "seo_description": "Skydda din drönare! Hitta din idealiska **drönarryggsäck** eller väska för säker transport. Handla smart idag!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Hållbara drönarpropellrar för optimal flygning och prestanda",
+        "handle": "dronarpropellrar-tysta",
+        "product_count": 128,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Köp drönarpropellrar online – Hög kvalitet & urval",
+        "seo_description": "Hitta perfekta drönarpropellrar för din drönare. Välj bland DJI m.fl. för bättre flygtid & prestanda. Köp drönarpropellrar nu!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Skruvmejsel Set – Precisionsverktyg för Alla Behov",
+        "handle": "skruvmejsel-set",
+        "product_count": 6,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Skruvmejsel Set – Precisionsverktyg för Alla Behov!",
+        "seo_description": "Hitta ditt perfekta skruvmejsel set för alla precisionsarbeten. Brett urval av högkvalitativa mejselsatser. Handla nu hos ActionKing!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Multiverktyg friluftsliv: Kompakt & Mångsidigt Äventyrsverktyg",
+        "handle": "multiverktyg-friluftsliv",
+        "product_count": 14,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Köp Multiverktyg Friluftsliv – Smart & Kompakt!",
+        "seo_description": "Hitta ditt multiverktyg friluftsliv för camping och äventyr. Mångsidiga verktyg med flera funktioner. Köp ditt verktyg idag!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Bändverktyg för Precisionsreparationer",
+        "handle": "bandverktyg",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Bändverktyg Elektronikreparation – Premium Tillbehör",
+        "seo_description": "Upptäck vårt utbud av bändverktyg, perfekta för elektronikreparationer av drönare, smartphones och actionkameror. Skonsamma och hållbara verktyg.",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Polarpro",
+        "handle": "polarpro",
+        "product_count": 428,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "PolarPro Filter & Tillbehör | ActionKing",
+        "seo_description": "Upptäck PolarPro filter & tillbehör för drönare, GoPro & kameror. Förbättra färg, kontrast & bildkvalitet med premiumglas från PolarPro.",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Landningsmattor Drönare – Säker & Stabil Flygning",
+        "handle": "dronarmatta-landning-skydd",
+        "product_count": 21,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönarmatta – Säker & Stabil Landning för Din Drönare",
+        "seo_description": "Skydda din drönare! Hitta stabila landningsmattor drönare för DJI Mini/Mavic, m.fl. Hopfällbara för säkra flygningar. Köp din drönarmatta idag!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Batterier och laddare",
+        "handle": "batterier",
+        "product_count": 64,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Batterier & laddare för Drönare, Actionkameror & Äventyr - ActionKing",
+        "seo_description": "Högkvalitativa batterier till drönare, kameror & teknikprylar. Förläng inspelningstiden & håll dig redo. Snabba leveranser från ActionKing.se!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Vattentätt kameraskydd för kamera & drönare",
+        "handle": "vattentatt-kameraskydd",
+        "product_count": 141,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Vattentätt kameraskydd – Skydda din utrustning nu!",
+        "seo_description": "Skydda din kamera med ett vattentätt kameraskydd! Perfekt för äventyr och tuffa miljöer. Håll din utrustning säker – köp ditt vattentäta kameraskydd idag!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Minneskort & Lagring",
+        "handle": "minneskort-lagring",
+        "product_count": 0,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Minneskort & Lagring | Drönare & Kamera | EuroDroneParts",
+        "seo_description": "Minneskort och lagringslösningar för drönare, actionkameror och professionell video.",
+        "group": "Other",
+        "empty": true
+      },
+      {
+        "name": "Professionella Drönar kameror för Flygfoto",
+        "handle": "dronar-kameror",
+        "product_count": 3,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönar Professionella Drönare – Premium Tillbehör",
+        "seo_description": "Hitta högkvalitativa drönar kameror för fantastiska flygbilder. Vi erbjuder stabila kameror med hög upplösning för alla typer av drönar. Se utbudet här!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Robusta Propellerskydd för Säkrare Drönarflygning",
+        "handle": "propellerskydd-1",
+        "product_count": 56,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Propellerskydd Drönare – Premium Tillbehör – Hög Kvalitet",
+        "seo_description": "Hitta högkvalitativa propellerskydd som skyddar din drönare och omgivning vid kollisioner. Enkel montering och hållbar design för säkrare flygning idag!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Kraftfulla USB-kablar USB-C till USB-C",
+        "handle": "usb-kablar-usb-c-till-usb-c",
+        "product_count": 23,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "USB-kablar USB-C Snabbladdning och Data – Premium Tillbehör",
+        "seo_description": "Hitta högkvalitativa USB-kablar USB-C till USB-C för snabb laddning och stabil dataöverföring. Vi har slitstarka kablar för alla dina behov. Se mer här!",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Transport & Logistik",
+        "handle": "transport-logistik",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Transport & Logistik Drönare | EuroDroneParts",
+        "seo_description": "Last- och transportdrönare för logistik, inklusive DJI FlyCart.",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Alla produkter Drönare",
+        "handle": "alla-produkter",
+        "product_count": 841,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "footer"
+        ],
+        "page_referenced": false,
+        "seo_status": "Critical",
+        "seo_title": "",
+        "seo_description": "",
+        "group": "Other",
+        "empty": false
+      },
+      {
+        "name": "Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ",
+        "handle": "kamerastativ-tripod",
+        "product_count": 0,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Kamerastativ & Tripod | EuroDroneParts",
+        "seo_description": "Stabila kamerastativ och tripods för mobil, kamera och actionkamera.",
+        "group": "Other",
+        "empty": true
+      }
+    ],
+    "Legacy DJI": [
+      {
+        "name": "Tänger Action: Precision och Styrka",
+        "handle": "tanger-actionking",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Tänger Action Precisionsverktyg Alla Uppgifter",
+        "seo_description": "Upptäck vårt breda sortiment av tänger action för precision och styrka i alla projekt. Välj bland robusta tänger och multitänger för professionella resultat.",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Rengörning för elektronik",
+        "handle": "rengoringsprodukter-actionking",
+        "product_count": 18,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Rengöringsprodukter för drönare, kameror & elektronik - ActionKing",
+        "seo_description": "Håll din drönare, kamera och elektronik i toppskick med professionella rengöringsprodukter. Mikrofiberdukar, dammblåsare, rengöringsvätska och mer – snabb leverans!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Pincetter",
+        "handle": "pincetter-actionking",
+        "product_count": 1,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Pincetter för Drönare & Elektronik – ESD-säkra - ActionKing",
+        "seo_description": "Köp pincetter för drönare, kameror & elektronik. Antistatiska & högprecision – perfekta för smådelar & känslig montering. Snabb leverans!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Drönare",
+        "handle": "dronare-actionking",
+        "product_count": 47,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönare – DJI Mini, Air, Mavic, Avata & Flip - ActionKing",
+        "seo_description": "Köp drönare från DJI hos ActionKing – Mini, Air, Mavic, Avata & Flip. Snabb leverans från Sverige, tillbehör & reservdelar för alla modeller.",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Sunnylife: Köp vattentäta kameraskydd & actionkamera tillbehör",
+        "handle": "vendors-q-sunnylife",
+        "product_count": 377,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Sunnylife: Kameraskydd & Sommarprodukter – Köp Nu!",
+        "seo_description": "Upptäck Sunnylife kameratillbehör! Skydda din actionkamera med vattentäta hus, drönartillbehör & fästen. Köp dina Sunnylife-produkter idag!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Hitta pålitliga GoPro tillbehör vendors här",
+        "handle": "gopro-tillbehor-vendors",
+        "product_count": 228,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "GoPro tillbehör vendors: Hitta rätt utrustning",
+        "seo_description": "Hitta de bästa GoPro tillbehör vendors för din actionkamera. Vi erbjuder ett brett sortiment av GoPro utrustning och kameratillbehör GoPro. Upptäck mer!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Universal Fästen och Adaptrar till actionkameror",
+        "handle": "fasten-adaptrar-actionkameror",
+        "product_count": 5,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Fästen och adaptrar till actionkameror – Stort utbud!",
+        "seo_description": "Hitta Fästen och adaptrar till actionkameror som GoPro och DJI. Köp hjälm fäste kamera och fäste cykel kamera för alla äventyr. Se vårt utbud!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "Kamerakablar för Optimal Prestanda",
+        "handle": "kamerakablar-actionking",
+        "product_count": 12,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Kamerakablar Brett Sortiment Alla Dina Behov – Hög Kvalitet",
+        "seo_description": "Upptäck vårt stora utbud av Kamerakablar för actionkameror, drönare och mobiler. Hitta rätt USB-kablar, HDMI-kablar och laddkablar idag!",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "GoPro Hero13 Black skydd - Skydda din GoPro Hero13 Black med rätt skyd",
+        "handle": "gopro-hero13-black-skydd",
+        "product_count": 476,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "GoPro Hero13 Black skydd: Fodral & Tillbehör – Fri Frakt",
+        "seo_description": "Hitta det perfekta GoPro Hero13 Black skyddet för din actionkamera. Utforska vårt sortiment av fodral och tillbehör som skyddar din utrustning. Se hela sortimen",
+        "group": "Legacy DJI",
+        "empty": false
+      },
+      {
+        "name": "GoPro Hero13 väska – Skydda din actionkamera tryggt",
+        "handle": "gopro-hero13-vaska",
+        "product_count": 610,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "GoPro Hero13 Väska – Skydda Din Kamera Nu!",
+        "seo_description": "Skydda din kamera! Hitta den perfekta GoPro Hero13 väska som är vattentät, stötsäker och flexibel. Säker förvaring för din Hero13. Köp nu!",
+        "group": "Legacy DJI",
+        "empty": false
+      }
+    ],
+    "Spare Parts": [
+      {
+        "name": "Hitta DJI-drönar reservdelar av hög kvalitet",
+        "handle": "dji-dronar-reservdelar",
+        "product_count": 16,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI-drönar reservdelar för din drönare – Hitta delar här",
+        "seo_description": "Behöver du DJI-drönar reservdelar? Vi erbjuder ett brett sortiment av originaldelar för att hålla din drönare flygande. Se hela sortimentet.",
+        "group": "Spare Parts",
+        "empty": false
+      },
+      {
+        "name": "DJI Phantom Tillbehör för Optimal Prestanda",
+        "handle": "dji-phantom-tillbehor-vaska-reservdelar",
+        "product_count": 0,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "DJI Phantom Tillbehör Väskor, Reservdelar din Actionkamera",
+        "seo_description": "Upptäck vårt sortiment av DJI Phantom tillbehör. Här hittar du robusta väskor, viktiga reservdelar och smarta förvaringslösningar för din drönare.",
+        "group": "Spare Parts",
+        "empty": true
+      },
+      {
+        "name": "Reparation DJI Neo – Fixa din drönare snabbt och enkelt!",
+        "handle": "reparation-dji-neo-reservdelar",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Reparation DJI Neo – Originaldelar & Reservdelar Snabbt",
+        "seo_description": "Experter på **Reparation DJI Neo**! Hitta originaldelar & fixa din drönare. Snabbt, enkelt & tryggt. Handla nu!",
+        "group": "Spare Parts",
+        "empty": false
+      },
+      {
+        "name": "Precisionsverktyg Elektronik: Reparera kamera & drönare enkelt",
+        "handle": "reparera-precisionsverktyg-elektronik",
+        "product_count": 36,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Precisionsverktyg Elektronik – Gör Jobbet Rätt!",
+        "seo_description": "Behöver du **verktyg elektronik**? Hitta precisionsverktyg & servicekit för reparationer av DJI/GoPro/drönare m.m. Köp nu för att reparera elektronik!",
+        "group": "Spare Parts",
+        "empty": false
+      },
+      {
+        "name": "Reservdelar Gimbal Drönare: Gimbalmotorer för Optimal Stabilisering",
+        "handle": "reservdelar-gimbal-dronare-motorer",
+        "product_count": 171,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Reservdelar gimbal drönare – Hitta din gimbalmotor här!",
+        "seo_description": "Hitta reservdelar gimbal drönare! Kvalitativa gimbalmotorer för stabilisering av drönarkamera. Uppgradera din drönare, handla nu!",
+        "group": "Spare Parts",
+        "empty": false
+      },
+      {
+        "name": "Reservdelar & Komponenter för DJI & FPV",
+        "handle": "dronarelektronik-flight-components",
+        "product_count": 175,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönarelektronik & Reservdelar – DJI & FPV",
+        "seo_description": "Hitta Drönarelektronik och reservdelar för din drönare. Reparera eller uppgradera med högkvalitativa komponenter. Köp din drönarelektronik idag!",
+        "group": "Spare Parts",
+        "empty": false
+      },
+      {
+        "name": "Drönare reservdelar: Allt för din drönarreparation",
+        "handle": "dronare-reservdelar-ovriga",
+        "product_count": 0,
+        "type": "Manual",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Drönare Reservdelar | Alla modeller | EuroDroneParts",
+        "seo_description": "Reservdelar för alla drönarmodeller — motorer, gimbal, propellrar och elektronik.",
+        "group": "Spare Parts",
+        "empty": true
+      }
+    ],
+    "Sensors & Payloads": [
+      {
+        "name": "Belysning till drönare",
+        "handle": "belysning-till-dronare",
+        "product_count": 28,
+        "type": "Smart",
+        "menu_referenced": false,
+        "menu_refs": [],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Belysning till drönare – Synbarhet, säkerhet & ljus | ActionKing",
+        "seo_description": "Utforska belysning till drönare – strobe, flood och spotlampor för synbarhet, säkerhet och film. Testat för DJI Mini, Mavic, Air & Avata.",
+        "group": "Sensors & Payloads",
+        "empty": false
+      },
+      {
+        "name": "Airdrop System",
+        "handle": "airdrop-system",
+        "product_count": 24,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Airdrop System | Drönare | EuroDroneParts",
+        "seo_description": "Airdrop- och släppsystem för enterprise-drönare.",
+        "group": "Sensors & Payloads",
+        "empty": false
+      },
+      {
+        "name": "Drönare med värmekamera",
+        "handle": "dronare-med-varmekamera",
+        "product_count": 30,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "enterprise-dr-nare"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Drönare med Värmekamera | EuroDroneParts",
+        "seo_description": "Drönare och värmekameror för inspektion, säkerhet och sök- och räddning.",
+        "group": "Sensors & Payloads",
+        "empty": false
+      }
+    ],
+    "Industry Solutions": [
+      {
+        "name": "Inspektionsdrönare",
+        "handle": "inspektionsdronare",
+        "product_count": 4,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu",
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "OK",
+        "seo_title": "Inspektionsdrönare | Industri & Infrastruktur | EuroDroneParts",
+        "seo_description": "Professionella inspektionsdrönare för industri, energi och infrastruktur. DJI Enterprise-lösningar.",
+        "group": "Industry Solutions",
+        "empty": false
+      },
+      {
+        "name": "Kartläggnings- och mätdrönare",
+        "handle": "kartlaggnings-och-matdronare",
+        "product_count": 26,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Kartläggnings- & Mätdrönare | EuroDroneParts",
+        "seo_description": "Professionella kartläggnings- och mätdrönare med RTK och LiDAR.",
+        "group": "Industry Solutions",
+        "empty": false
+      },
+      {
+        "name": "Energi & Infrastruktur",
+        "handle": "energi-infrastruktur",
+        "product_count": 2,
+        "type": "Smart",
+        "menu_referenced": true,
+        "menu_refs": [
+          "main-menu"
+        ],
+        "page_referenced": false,
+        "seo_status": "Needs improvement",
+        "seo_title": "Energi & Infrastruktur Drönare | EuroDroneParts",
+        "seo_description": "Drönarlösningar för energi, kraftverk, vindkraft och infrastrukturinspektion.",
+        "group": "Industry Solutions",
+        "empty": false
+      }
+    ]
+  },
+  "empty_collections": [
+    {
+      "name": "DJI Inspire Serien",
+      "handle": "dji-inspire-serien",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Mini 2-Serien",
+      "handle": "dji-mini-2-serien",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Mini 2-serien – Kompakt drönare med 4K & lång flygtid - ActionKing",
+      "seo_description": "Upptäck DJI Mini 2-serien – lätta drönare med 4K-video, lång flygtid och smarta funktioner. Perfekt för resor, foto och video. Snabb leverans!",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Phantom Tillbehör för Optimal Prestanda",
+      "handle": "dji-phantom-tillbehor-vaska-reservdelar",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Phantom Tillbehör Väskor, Reservdelar din Actionkamera",
+      "seo_description": "Upptäck vårt sortiment av DJI Phantom tillbehör. Här hittar du robusta väskor, viktiga reservdelar och smarta förvaringslösningar för din drönare.",
+      "group": "Spare Parts",
+      "empty": true
+    },
+    {
+      "name": "DJI Mini 5 Pro filter",
+      "handle": "ji-mini-5-pro-filter",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Mini 5 Pro Filter | EuroDroneParts",
+      "seo_description": "Filter för DJI Mini 5 Pro — ND, CPL och polariserande filter för professionellt flygfoto.",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Air 2S Tillbehör – Optimerad Flygning",
+      "handle": "dji-air-2s-tillbehor",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Air 2S Tillbehör Förbättra – Premium Tillbehör",
+      "seo_description": "Utforska vårt breda sortiment av DJI Air 2S tillbehör för att optimera din drönare. Hitta reservdelar, utrustning och smarta prylar för bättre flygning.",
+      "group": "Accessories",
+      "empty": true
+    },
+    {
+      "name": "DJI Phantom 4 Pro Drönare för Professionella",
+      "handle": "dji-phantom-4-pro-dronare",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Phantom 4 Pro Drönare – Professionell Flygfotografering",
+      "seo_description": "Utforska DJI Phantom 4 Pro, en kraftfull drönare med imponerande 4K-kamera och avancerad teknik. Upplev professionell flygfotografering. Se hela sortimentet.",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Phantom 3 Pro v1 Drönare och Tillbehör",
+      "handle": "dji-phantom-3-pro-v1",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Phantom 3 Pro v1 Drönare & Tillbehör – Fri Frakt",
+      "seo_description": "Utforska vårt sortiment av DJI Phantom 3 Pro v1 drönare och tillbehör. Hitta reservdelar och uppgradera din flygupplevelse med högkvalitativa produkter. Se hela",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Inspire Serien Professionella Drönare för Kreatörer",
+      "handle": "dji-inspire",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "DJI Inspire Drönare: Professionell Flygfotografering",
+      "seo_description": "Utforska DJI Inspire-serien, den ultimata professionella drönaren för film och foto. Upplev oöverträffad bildkvalitet och stabilitet. Se hela sortimentet.",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "Minneskort & Lagring",
+      "handle": "minneskort-lagring",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "Minneskort & Lagring | Drönare & Kamera | EuroDroneParts",
+      "seo_description": "Minneskort och lagringslösningar för drönare, actionkameror och professionell video.",
+      "group": "Other",
+      "empty": true
+    },
+    {
+      "name": "DJI Phantom Serien",
+      "handle": "dji-phantom-serien",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ",
+      "handle": "kamerastativ-tripod",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Kamerastativ & Tripod | EuroDroneParts",
+      "seo_description": "Stabila kamerastativ och tripods för mobil, kamera och actionkamera.",
+      "group": "Other",
+      "empty": true
+    },
+    {
+      "name": "DJI Inspire Tillbehör",
+      "handle": "tillbehor-dji-inspire",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": true
+    },
+    {
+      "name": "Högkvalitativa DJI Air 2 Tillbehör för Drönare",
+      "handle": "dji-air-2-tillbehor",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": true
+    },
+    {
+      "name": "Drönare reservdelar: Allt för din drönarreparation",
+      "handle": "dronare-reservdelar-ovriga",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "OK",
+      "seo_title": "Drönare Reservdelar | Alla modeller | EuroDroneParts",
+      "seo_description": "Reservdelar för alla drönarmodeller — motorer, gimbal, propellrar och elektronik.",
+      "group": "Spare Parts",
+      "empty": true
+    }
+  ],
+  "duplicate_groups": [
+    {
+      "root": "dji-inspire",
+      "handles": [
+        "dji-inspire-serien",
+        "dji-inspire"
+      ]
+    },
+    {
+      "root": "dji-air-2s",
+      "handles": [
+        "dji-air-2s",
+        "dji-air-2s-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-avata",
+      "handles": [
+        "dji-avata-tillbehor",
+        "dji-avata-serien"
+      ]
+    },
+    {
+      "root": "dji-mavic",
+      "handles": [
+        "dji-mavic-serien",
+        "dji-mavic-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-mavic-3",
+      "handles": [
+        "dji-mavic-3-serien",
+        "dji-mavic-3-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-mini-3",
+      "handles": [
+        "dji-mini-3-serien",
+        "dji-mini-3",
+        "dji-mini-3-tillbehor"
+      ]
+    },
+    {
+      "root": "tillbehor-dji-mini-4",
+      "handles": [
+        "tillbehor-dji-mini-4-serien",
+        "tillbehor-dji-mini-4"
+      ]
+    },
+    {
+      "root": "dji-air-2",
+      "handles": [
+        "dji-air-2-serien",
+        "dji-air-2-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-mini-4-pro",
+      "handles": [
+        "dji-mini-4-pro",
+        "dji-mini-4-pro-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-matrice-4",
+      "handles": [
+        "dji-matrice-4-serie",
+        "dji-matrice-4-tillbehor"
+      ]
+    },
+    {
+      "root": "dji-neo",
+      "handles": [
+        "dji-neo",
+        "dji-neo-tillbehor"
+      ]
+    }
+  ],
+  "seo_issues": [
+    {
+      "name": "DJI Matrice 400 Serien för Professionella Uppdrag",
+      "handle": "dji-matrice-400-serien",
+      "product_count": 9,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Matrice 400-serien | Enterprise | EuroDroneParts",
+      "seo_description": "DJI Matrice 400 för tunga enterprise-uppdrag. Tillbehör och reservdelar.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "DJI Marvic Enterprise",
+      "handle": "dji-marvic-enterprise",
+      "product_count": 1,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Marvic Enterprise | EuroDroneParts",
+      "seo_description": "DJI Marvic Enterprise-drönare och tillbehör för professionella uppdrag.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "DJI Inspire Serien",
+      "handle": "dji-inspire-serien",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "Airdrop System",
+      "handle": "airdrop-system",
+      "product_count": 24,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "enterprise-dr-nare"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Airdrop System | Drönare | EuroDroneParts",
+      "seo_description": "Airdrop- och släppsystem för enterprise-drönare.",
+      "group": "Sensors & Payloads",
+      "empty": false
+    },
+    {
+      "name": "DJI Agras Drönare för Precisionsjordbruk",
+      "handle": "dji-agras-dronare",
+      "product_count": 4,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu",
+        "enterprise-dr-nare"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Agras | Precisionsjordbruksdrönare | EuroDroneParts",
+      "seo_description": "DJI Agras drönare för precisionsjordbruk, sprutning och jordbruksanalys.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "dji matrice 4 Serie",
+      "handle": "dji-matrice-4-serie",
+      "product_count": 22,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Matrice 4 | Enterprise-drönare | EuroDroneParts",
+      "seo_description": "DJI Matrice 4 enterprise-drönare, tillbehör och reservdelar.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "DJI Matrice 350 RTK Tillbehör och Skydd",
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "product_count": 8,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Matrice 350 RTK Tillbehör | EuroDroneParts",
+      "seo_description": "Tillbehör och skydd för DJI Matrice 350 RTK enterprise-drönare.",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "dji arm - DJI Matrice 30 Serie Tillbehör",
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "product_count": 9,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Matrice 30 Tillbehör | EuroDroneParts",
+      "seo_description": "Tillbehör för DJI Matrice 30 enterprise-serien.",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI Mavic 3M Drönare och Tillbehör",
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "product_count": 5,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Mavic 3M Tillbehör | Multispektral | EuroDroneParts",
+      "seo_description": "Tillbehör för DJI Mavic 3M multispektral enterprise-drönare.",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI FlyCart 100: Lastdrönare för Tunga Lyft",
+      "handle": "dji-flycart-100-lastdronare",
+      "product_count": 2,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI FlyCart 100 | Lastdrönare | EuroDroneParts",
+      "seo_description": "DJI FlyCart 100 lastdrönare för tunga lyft och transportlogistik.",
+      "group": "FlyCart",
+      "empty": false
+    },
+    {
+      "name": "DJI Matrice 4 Tillbehör för Professionella Drönare",
+      "handle": "dji-matrice-4-tillbehor",
+      "product_count": 15,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Matrice 4 Tillbehör | EuroDroneParts",
+      "seo_description": "Professionella tillbehör för DJI Matrice 4 enterprise-drönare.",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "Professionella Fjärrkontroller för DJI Enterprise",
+      "handle": "dji-enterprise-fjarrkontroller",
+      "product_count": 22,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Fjärrkontroller | DJI | EuroDroneParts",
+      "seo_description": "Professionella fjärrkontroller för DJI enterprise-drönare.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Enterprise Service för Företagsdrönare",
+      "handle": "enterprise-service-dronare",
+      "product_count": 4,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Service | Drönare | EuroDroneParts",
+      "seo_description": "Service och support för DJI enterprise-drönare.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Enterprise Högtalarsystem",
+      "handle": "enterprise-hogtalarsystem",
+      "product_count": 23,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Högtalarsystem | Drönare | EuroDroneParts",
+      "seo_description": "Högtalarsystem och kommunikationsutrustning för enterprise-drönare.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Enterprise belysning",
+      "handle": "enterprise-belysning",
+      "product_count": 13,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Belysning | Drönare | EuroDroneParts",
+      "seo_description": "Professionell belysning för enterprise-drönare och inspektionsuppdrag.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Enterprise Propellrar",
+      "handle": "enterprise-propellrar",
+      "product_count": 1,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Propellrar | DJI | EuroDroneParts",
+      "seo_description": "Propellrar för DJI enterprise-drönare — Matrice, Mavic Enterprise och Agras.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "DJI Phantom Serien",
+      "handle": "dji-phantom-serien",
+      "product_count": 0,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Consumer DJI",
+      "empty": true
+    },
+    {
+      "name": "DJI Mavic Serien enterprise",
+      "handle": "dji-mavic-serien-enterprise",
+      "product_count": 11,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "DJI Mavic Enterprise-serien | EuroDroneParts",
+      "seo_description": "DJI Mavic Enterprise-drönare och tillbehör för professionella uppdrag.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Enterprise Lyftsystem",
+      "handle": "enterprise-lyftsystem",
+      "product_count": 5,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Enterprise Lyftsystem | Drönare | EuroDroneParts",
+      "seo_description": "Lyftsystem och lasthantering för enterprise-drönare.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Kartläggnings- och mätdrönare",
+      "handle": "kartlaggnings-och-matdronare",
+      "product_count": 26,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Kartläggnings- & Mätdrönare | EuroDroneParts",
+      "seo_description": "Professionella kartläggnings- och mätdrönare med RTK och LiDAR.",
+      "group": "Industry Solutions",
+      "empty": false
+    },
+    {
+      "name": "Drönare med värmekamera",
+      "handle": "dronare-med-varmekamera",
+      "product_count": 30,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "enterprise-dr-nare"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Drönare med Värmekamera | EuroDroneParts",
+      "seo_description": "Drönare och värmekameror för inspektion, säkerhet och sök- och räddning.",
+      "group": "Sensors & Payloads",
+      "empty": false
+    },
+    {
+      "name": "Last- och transportdrönare",
+      "handle": "last-och-transportdronare",
+      "product_count": 54,
+      "type": "Smart",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Last- & Transportdrönare | EuroDroneParts",
+      "seo_description": "Last- och transportdrönare för professionell logistik.",
+      "group": "Consumer DJI",
+      "empty": false
+    },
+    {
+      "name": "Skogsbruksdrönare",
+      "handle": "skogsbruksdronare",
+      "product_count": 1,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Skogsbruksdrönare | EuroDroneParts",
+      "seo_description": "Drönarlösningar för skogsbruk, inventering och miljöövervakning.",
+      "group": "Consumer DJI",
+      "empty": false
+    },
+    {
+      "name": "Jordbruksdrönare",
+      "handle": "jordbruksdronare",
+      "product_count": 4,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Jordbruksdrönare | DJI Agras | EuroDroneParts",
+      "seo_description": "Jordbruksdrönare för precisionsodling, sprutning och multispektral analys.",
+      "group": "Enterprise DJI",
+      "empty": false
+    },
+    {
+      "name": "Energi & Infrastruktur",
+      "handle": "energi-infrastruktur",
+      "product_count": 2,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Energi & Infrastruktur Drönare | EuroDroneParts",
+      "seo_description": "Drönarlösningar för energi, kraftverk, vindkraft och infrastrukturinspektion.",
+      "group": "Industry Solutions",
+      "empty": false
+    },
+    {
+      "name": "Transport & Logistik",
+      "handle": "transport-logistik",
+      "product_count": 2,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "main-menu"
+      ],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Transport & Logistik Drönare | EuroDroneParts",
+      "seo_description": "Last- och transportdrönare för logistik, inklusive DJI FlyCart.",
+      "group": "Other",
+      "empty": false
+    },
+    {
+      "name": "Alla produkter Drönare",
+      "handle": "alla-produkter",
+      "product_count": 841,
+      "type": "Smart",
+      "menu_referenced": true,
+      "menu_refs": [
+        "footer"
+      ],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Other",
+      "empty": false
+    },
+    {
+      "name": "Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ",
+      "handle": "kamerastativ-tripod",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Needs improvement",
+      "seo_title": "Kamerastativ & Tripod | EuroDroneParts",
+      "seo_description": "Stabila kamerastativ och tripods för mobil, kamera och actionkamera.",
+      "group": "Other",
+      "empty": true
+    },
+    {
+      "name": "DJI Neo Tillbehör – Batteri & mer för din drönare",
+      "handle": "dji-neo-tillbehor",
+      "product_count": 129,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI Inspire Tillbehör",
+      "handle": "tillbehor-dji-inspire",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": true
+    },
+    {
+      "name": "Högkvalitativa DJI Air 2 Tillbehör för Drönare",
+      "handle": "dji-air-2-tillbehor",
+      "product_count": 0,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": true
+    },
+    {
+      "name": "DJI Avata 2 tillbehör – Skydd & batterier till din drönare",
+      "handle": "dji-avata-2-tillbehor",
+      "product_count": 51,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI Flip™ tillbehör – Optimal utrustning till din drönare",
+      "handle": "dji-flip-tillbehor",
+      "product_count": 63,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI Mini 3 Tillbehör",
+      "handle": "dji-mini-3-tillbehor",
+      "product_count": 43,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "Omfattande Sortiment av DJI Air 3 Tillbehör",
+      "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+      "product_count": 66,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    },
+    {
+      "name": "DJI Neo 2 Tillbehör för din Drönare",
+      "handle": "dji-neo-2-tillbehor",
+      "product_count": 54,
+      "type": "Manual",
+      "menu_referenced": false,
+      "menu_refs": [],
+      "page_referenced": false,
+      "seo_status": "Critical",
+      "seo_title": "",
+      "seo_description": "",
+      "group": "Accessories",
+      "empty": false
+    }
+  ],
+  "menu_audit": [
+    {
+      "name": "Huvudmeny",
+      "handle": "main-menu",
+      "is_default": true,
+      "item_count": 41,
+      "theme_referenced": "likely",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": [
+        {
+          "title": "Drönare",
+          "url": "/collections/dji-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Mini",
+          "url": "/collections/dji-mini-4-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Air",
+          "url": "/collections/dji-air-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Mavic",
+          "url": "/collections/dji-mavic-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Avata",
+          "url": "/collections/dji-avata-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Neo",
+          "url": "/collections/dji-neo",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Flip",
+          "url": "/collections/dji-flip-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Alla konsumentdrönare",
+          "url": "/collections/dji-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Enterprise Drönare",
+          "url": "/collections/enterprise-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Enterprise översikt",
+          "url": "/collections/enterprise-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Matrice",
+          "url": "/collections/dji-matrice-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "Mavic Enterprise",
+          "url": "/collections/dji-mavic-serien-enterprise",
+          "type": "HTTP"
+        },
+        {
+          "title": "DJI Agras",
+          "url": "/collections/dji-agras-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Sensors & Payloads",
+          "url": "/collections/enterprise-sensorer",
+          "type": "HTTP"
+        },
+        {
+          "title": "Enterprise tillbehör",
+          "url": "/collections/enterprise-tillbehor",
+          "type": "HTTP"
+        },
+        {
+          "title": "FlyCart",
+          "url": "/collections/dji-flycart-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "FlyCart 100",
+          "url": "/collections/dji-flycart-100-lastdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "FlyCart serie",
+          "url": "/collections/dji-flycart-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "Branschlösningar",
+          "url": "/collections/inspektionsdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Inspektion",
+          "url": "/collections/inspektionsdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Energi & Infrastruktur",
+          "url": "/collections/energi-infrastruktur",
+          "type": "HTTP"
+        },
+        {
+          "title": "Jordbruk",
+          "url": "/collections/jordbruksdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Skogsbruk",
+          "url": "/collections/skogsbruksdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Kartläggning",
+          "url": "/collections/kartlaggnings-och-matdronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Transport & Logistik",
+          "url": "/collections/transport-logistik",
+          "type": "HTTP"
+        },
+        {
+          "title": "Reservdelar",
+          "url": "/collections/dji-dronar-reservdelar",
+          "type": "HTTP"
+        },
+        {
+          "title": "Gimbal & motorer",
+          "url": "/collections/reservdelar-gimbal-dronare-motorer",
+          "type": "HTTP"
+        },
+        {
+          "title": "Elektronik & flight components",
+          "url": "/collections/dronarelektronik-flight-components",
+          "type": "HTTP"
+        },
+        {
+          "title": "Neo reservdelar",
+          "url": "/collections/reparation-dji-neo-reservdelar",
+          "type": "HTTP"
+        },
+        {
+          "title": "Tillbehör",
+          "url": "/collections/dronartillbehor-kop",
+          "type": "HTTP"
+        },
+        {
+          "title": "Propellrar",
+          "url": "/collections/dronare-propeller-tillbehor",
+          "type": "HTTP"
+        },
+        {
+          "title": "Filter",
+          "url": "/collections/filter-till-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Batterier",
+          "url": "/collections/batterier",
+          "type": "HTTP"
+        },
+        {
+          "title": "Väskor & cases",
+          "url": "/collections/dronarryggsack-vaskor",
+          "type": "HTTP"
+        },
+        {
+          "title": "Fjärrkontroller",
+          "url": "/collections/fjarrkontroll-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "PolarPro",
+          "url": "/collections/polarpro",
+          "type": "HTTP"
+        },
+        {
+          "title": "Legacy DJI",
+          "url": "/collections/dji-phantom-3-se",
+          "type": "HTTP"
+        },
+        {
+          "title": "Phantom",
+          "url": "/collections/dji-phantom-3-se",
+          "type": "HTTP"
+        },
+        {
+          "title": "Air 2 / Air 2S",
+          "url": "/collections/dji-air-2-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "Mini 2",
+          "url": "/collections/tillbehor-dji-mini-2-2-se",
+          "type": "HTTP"
+        },
+        {
+          "title": "Mavic 2",
+          "url": "/collections/dji-mavic-2-serien",
+          "type": "HTTP"
+        }
+      ]
+    },
+    {
+      "name": "Sidfotsmeny",
+      "handle": "footer",
+      "is_default": true,
+      "item_count": 1,
+      "theme_referenced": "likely",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": [
+        {
+          "title": "Alla produkter",
+          "url": "/collections/alla-produkter",
+          "type": "HTTP"
+        }
+      ]
+    },
+    {
+      "name": "Huvudmeny för kundkonto",
+      "handle": "customer-account-main-menu",
+      "is_default": true,
+      "item_count": 2,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": [
+        {
+          "title": "Ordrar",
+          "url": "https://shopify.com/96890749256/account/orders",
+          "type": "CUSTOMER_ACCOUNT_PAGE"
+        },
+        {
+          "title": "Profil",
+          "url": "https://shopify.com/96890749256/account/profile",
+          "type": "CUSTOMER_ACCOUNT_PAGE"
+        }
+      ]
+    },
+    {
+      "name": "Enterprise Drönare",
+      "handle": "enterprise-dr-nare",
+      "is_default": false,
+      "item_count": 7,
+      "theme_referenced": "likely",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": [
+        {
+          "title": "Enterprise drönare",
+          "url": "/collections/enterprise-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "Matrice",
+          "url": "/collections/dji-matrice-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "Mavic Enterprise",
+          "url": "/collections/dji-mavic-3-enterprise",
+          "type": "HTTP"
+        },
+        {
+          "title": "Agras",
+          "url": "/collections/dji-agras-dronare",
+          "type": "HTTP"
+        },
+        {
+          "title": "FlyCart",
+          "url": "/collections/dji-flycart-serien",
+          "type": "HTTP"
+        },
+        {
+          "title": "Värmekamera",
+          "url": "/collections/dronare-med-varmekamera",
+          "type": "HTTP"
+        },
+        {
+          "title": "Airdrop",
+          "url": "/collections/airdrop-system",
+          "type": "HTTP"
+        }
+      ]
+    },
+    {
+      "name": "Huvudmeny",
+      "handle": "meny",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "likely",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-1",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-1",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-1",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-2",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-2",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-2",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-3",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-3",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-3",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-4",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-4",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-4",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-5",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-5",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-5",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-6",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-6",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-6",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-7",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-7",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-7",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-8",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-8",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-8",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-9",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-9",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-9",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-10",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-10",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-10",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-11",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-11",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-11",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-12",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-12",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-12",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-13",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-13",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-13",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-14",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-14",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-14",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-15",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-15",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-15",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-16",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-16",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-16",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-17",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-17",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-17",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-18",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-18",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-18",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-19",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-19",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-19",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-20",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-20",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-20",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-21",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-21",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-21",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-22",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-22",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-22",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-23",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-23",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-23",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Actionkameror",
+      "handle": "actionkameror-24",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Drönare",
+      "handle": "dronare-24",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    },
+    {
+      "name": "Partnership",
+      "handle": "partnership-24",
+      "is_default": false,
+      "item_count": 0,
+      "theme_referenced": "unverified",
+      "shopify_referenced": true,
+      "broken_links": [],
+      "missing_collections": [],
+      "missing_pages": [],
+      "items": []
+    }
+  ],
+  "broken_menu_links": [],
+  "empty_menus": 76,
+  "duplicate_menu_titles": 4,
+  "enterprise_readiness": [
+    {
+      "name": "Matrice 4",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-4-serie",
+      "products_assigned": 22,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "Matrice 30",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-30-serie-tillbehor",
+      "products_assigned": 9,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "Matrice 300 RTK",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-350-rtk-tillbehor",
+      "products_assigned": 8,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "Matrice 350 RTK",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-350-rtk-tillbehor",
+      "products_assigned": 8,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "Matrice 400",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-400-serien",
+      "products_assigned": 9,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "Matrice 3D / 3TD",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-3-serien",
+      "products_assigned": 22,
+      "seo_page_exists": true,
+      "menu_link_exists": false,
+      "service_page_exists": false,
+      "score": 75
+    },
+    {
+      "name": "DJI Dock",
+      "collection_exists": true,
+      "collection_handle": "enterprise-dronare",
+      "products_assigned": 19,
+      "seo_page_exists": true,
+      "menu_link_exists": true,
+      "service_page_exists": false,
+      "score": 100
+    },
+    {
+      "name": "Mavic Enterprise",
+      "collection_exists": true,
+      "collection_handle": "dji-mavic-serien-enterprise",
+      "products_assigned": 11,
+      "seo_page_exists": true,
+      "menu_link_exists": true,
+      "service_page_exists": false,
+      "score": 100
+    },
+    {
+      "name": "Agras",
+      "collection_exists": true,
+      "collection_handle": "dji-agras-dronare",
+      "products_assigned": 4,
+      "seo_page_exists": true,
+      "menu_link_exists": true,
+      "service_page_exists": false,
+      "score": 100
+    },
+    {
+      "name": "FlyCart",
+      "collection_exists": true,
+      "collection_handle": "dji-flycart-serien",
+      "products_assigned": 2,
+      "seo_page_exists": true,
+      "menu_link_exists": true,
+      "service_page_exists": false,
+      "score": 100
+    }
+  ],
+  "service_readiness": {
+    "service": {
+      "live": 0,
+      "total": 3,
+      "pct": 0
+    },
+    "repair": {
+      "live": 0,
+      "total": 7,
+      "pct": 0
+    },
+    "calibration": {
+      "live": 0,
+      "total": 7,
+      "pct": 0
+    },
+    "support": {
+      "live": 0,
+      "total": 6,
+      "pct": 0
+    },
+    "warranty": {
+      "live": 0,
+      "total": 4,
+      "pct": 0
+    },
+    "booking": {
+      "live": 0,
+      "total": 3,
+      "pct": 0
+    }
+  },
+  "b2b": {
+    "quote_request": false,
+    "company_accounts": false,
+    "vat_handling": true,
+    "invoice_payments": false,
+    "peppol_ready": false,
+    "partner_portal": true,
+    "reseller_support": false
+  },
+  "documentation": {
+    "manuals": {
+      "live": 0,
+      "total": 6,
+      "pct": 0
+    },
+    "datasheets": {
+      "live": 0,
+      "total": 3,
+      "pct": 0
+    },
+    "certifications": {
+      "live": 0,
+      "total": 3,
+      "pct": 0
+    },
+    "firmware": {
+      "live": 0,
+      "total": 4,
+      "pct": 0
+    },
+    "support_docs": {
+      "live": 0,
+      "total": 2,
+      "pct": 0
+    }
+  },
+  "product_quality": {
+    "missing_images": 290,
+    "missing_descriptions": 89,
+    "missing_vendor": 0,
+    "missing_product_type": 462,
+    "missing_tags": 3589,
+    "short_descriptions": 0,
+    "total": 9389
+  },
+  "eu_readiness": [
+    {
+      "country": "Sweden",
+      "language_ready": true,
+      "tax_ready": true,
+      "shipping_ready": true,
+      "seo_ready": true,
+      "market_enabled": true
+    },
+    {
+      "country": "Germany",
+      "language_ready": false,
+      "tax_ready": false,
+      "shipping_ready": false,
+      "seo_ready": false,
+      "market_enabled": false
+    },
+    {
+      "country": "Netherlands",
+      "language_ready": false,
+      "tax_ready": false,
+      "shipping_ready": false,
+      "seo_ready": false,
+      "market_enabled": false
+    },
+    {
+      "country": "Denmark",
+      "language_ready": false,
+      "tax_ready": false,
+      "shipping_ready": false,
+      "seo_ready": false,
+      "market_enabled": false
+    },
+    {
+      "country": "Finland",
+      "language_ready": false,
+      "tax_ready": false,
+      "shipping_ready": false,
+      "seo_ready": false,
+      "market_enabled": false
+    },
+    {
+      "country": "France",
+      "language_ready": false,
+      "tax_ready": false,
+      "shipping_ready": false,
+      "seo_ready": false,
+      "market_enabled": false
+    }
+  ],
+  "overall_pct": 62
+}

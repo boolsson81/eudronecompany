@@ -1,0 +1,1713 @@
+{
+  "generated_at": "2026-06-13T09:29:49.612Z",
+  "store": "ya1xhg-x6.myshopify.com",
+  "migration_id": "3d9876af-885c-49e9-a4b0-c4943c06112f",
+  "product_count": 9389,
+  "page_count": 61,
+  "pages": [
+    {
+      "handle": "360-kamera",
+      "title": "360-kamera - stort utbud av kameror och tillbehör online"
+    },
+    {
+      "handle": "actionking-student",
+      "title": "ActionKing söker drivna studenter – SEO, Webbutveckling, Content & Marknadsföring"
+    },
+    {
+      "handle": "alla-produkter-actionking",
+      "title": "Alla produkter"
+    },
+    {
+      "handle": "basta-myggskyddet",
+      "title": "Bästa myggskyddet"
+    },
+    {
+      "handle": "batterier-och-laddare-till-gopro",
+      "title": "Batterier och laddare till GoPro"
+    },
+    {
+      "handle": "contact",
+      "title": "Kontakta oss"
+    },
+    {
+      "handle": "cookies-actionking",
+      "title": "Cookies hos ActionKing"
+    },
+    {
+      "handle": "dji-air-serien",
+      "title": "DJI Air-serien"
+    },
+    {
+      "handle": "dji-avata-serien",
+      "title": "DJI Avata-serien"
+    },
+    {
+      "handle": "dji-dronare",
+      "title": "DJI-Drönare"
+    },
+    {
+      "handle": "dji-flip",
+      "title": "DJI Flip"
+    },
+    {
+      "handle": "dji-flip-faq",
+      "title": "DJI Flip Frågor och svar FAQ"
+    },
+    {
+      "handle": "dji-mavic-3-classic",
+      "title": "DJI Mavic 3 Classic"
+    },
+    {
+      "handle": "dji-mavic-3-serien",
+      "title": "DJI Mavic 3-serien"
+    },
+    {
+      "handle": "dji-mavic-serien",
+      "title": "DJI Mavic-serien"
+    },
+    {
+      "handle": "dji-mic-mini-faq",
+      "title": "DJI Mic Mini Frågor och svar FAQ"
+    },
+    {
+      "handle": "dji-mini-serien",
+      "title": "DJI Mini-serien"
+    },
+    {
+      "handle": "dji-neo",
+      "title": "DJI Neo"
+    },
+    {
+      "handle": "dji-neo-faq",
+      "title": "DJI Neo Frågor och svar FAQ"
+    },
+    {
+      "handle": "dji-osmo",
+      "title": "DJI Osmo-kameror och tillbehör för film och äventyr"
+    },
+    {
+      "handle": "dji-tillbehor",
+      "title": "DJI-tillbehör för drönare - stort utbud för alla modeller"
+    },
+    {
+      "handle": "dronare-action-king",
+      "title": "Drönare"
+    },
+    {
+      "handle": "dronartillbehor-dji-m3pro",
+      "title": "Drönartillbehör för DJI Mavic 3 Pro – Höj din flygning!"
+    },
+    {
+      "handle": "faq",
+      "title": "Välkommen till ActionKings FAQ!"
+    },
+    {
+      "handle": "faq-motorola-t82-extreme",
+      "title": "Motorola T82 Extreme Frågor och Svar FAQ"
+    },
+    {
+      "handle": "faq-motorola-t92",
+      "title": "Motorola T92 Frågor och Svar FAQ"
+    },
+    {
+      "handle": "feedback",
+      "title": "Feedback"
+    },
+    {
+      "handle": "filter-action-king",
+      "title": "Filter"
+    },
+    {
+      "handle": "gimbal-och-stabilisering",
+      "title": "Gimbal och stabilisering för mobil, kamera och actionkamera"
+    },
+    {
+      "handle": "gopro-faste",
+      "title": "GoPro-fäste för actionkamera - flexibla och säkra monteringslösningar"
+    },
+    {
+      "handle": "gopro-tillbehor-och-reservdelar",
+      "title": "GoPro Tillbehör och reservdelar allt till din kamera."
+    },
+    {
+      "handle": "goulet-ul-gear",
+      "title": "Goulet UL Gear"
+    },
+    {
+      "handle": "gunter-andreasson-ultracyklist",
+      "title": "Günter Andréasson – Ultracyklist, äventyrare och inspiratör"
+    },
+    {
+      "handle": "hemberedskap-utrustning",
+      "title": "Hemberedskap: Utrustning för kris, elavbrott och vardagssäkerhet"
+    },
+    {
+      "handle": "hoverair-dronare",
+      "title": "HoverAir-Drönare"
+    },
+    {
+      "handle": "hoverair-dronartillbehor",
+      "title": "HoverAir-Drönartillbehör"
+    },
+    {
+      "handle": "kablar",
+      "title": "Kablar"
+    },
+    {
+      "handle": "kamerastativ",
+      "title": "Kamerastativ för actionkameror och drönare - stort utbud online"
+    },
+    {
+      "handle": "kopvillkor",
+      "title": "Köpvillkor"
+    },
+    {
+      "handle": "laddare-dji-batterier",
+      "title": "Laddare för DJI batterier"
+    },
+    {
+      "handle": "ljud",
+      "title": "Ljud"
+    },
+    {
+      "handle": "minneskort-lagring",
+      "title": "Minneskort & Lagring"
+    },
+    {
+      "handle": "minneskort-till-gopro",
+      "title": "Minneskort till GoPro"
+    },
+    {
+      "handle": "nackrem-till-dronare",
+      "title": "Nackrem till drönare"
+    },
+    {
+      "handle": "nitecore-innovation-prestanda",
+      "title": "Nitecore"
+    },
+    {
+      "handle": "om-actionking-se",
+      "title": "Om ActionKing"
+    },
+    {
+      "handle": "propeller-till-dronare",
+      "title": "Propeller till drönare"
+    },
+    {
+      "handle": "rekalamtioner-aterkop",
+      "title": "Reklamationer & Återköp"
+    },
+    {
+      "handle": "reservdelar",
+      "title": "Reservdelar till actionkameror"
+    },
+    {
+      "handle": "retur-reklamation",
+      "title": "Retur & Reklamation"
+    },
+    {
+      "handle": "samarbeta-med-actionking",
+      "title": "Samarbeta med ActionKing"
+    },
+    {
+      "handle": "samarbeta-med-oss",
+      "title": "Samarbeta med oss"
+    },
+    {
+      "handle": "skydd",
+      "title": "Skydd"
+    },
+    {
+      "handle": "stativ",
+      "title": "Stativ"
+    },
+    {
+      "handle": "tillbehor-till-dji-dronare",
+      "title": "Tillbehör till DJI-Drönare"
+    },
+    {
+      "handle": "tillbehor-till-gopro",
+      "title": "Tillbehör till GoPro"
+    },
+    {
+      "handle": "vara-varumarken",
+      "title": "Våra Varumärken"
+    },
+    {
+      "handle": "vaska-till-gopro",
+      "title": "Väska till GoPro"
+    },
+    {
+      "handle": "vattentat-ficklampa",
+      "title": "Vattentät ficklampa för friluftsliv och äventyr - stort utbud online"
+    },
+    {
+      "handle": "vi-koper-dronare-actionking",
+      "title": "Vi köper din drönare – Snabbt, enkelt och tryggt"
+    },
+    {
+      "handle": "vilken-bilkamera-ar-bast",
+      "title": "Vilken bilkamera är bäst?"
+    }
+  ],
+  "menu_count": 29,
+  "collections": {
+    "total": 157,
+    "keep": 146,
+    "merge": 1,
+    "delete": 10,
+    "protected": 34,
+    "projected_after_cleanup": 136
+  },
+  "taxonomy_counts": {
+    "Enterprise DJI": 20,
+    "FlyCart": 2,
+    "Legacy DJI models": 26,
+    "Consumer DJI": 53,
+    "Accessories": 32,
+    "Spare Parts": 4,
+    "Sensors & Payloads": 3,
+    "Industry Solutions": 7
+  },
+  "keep": [
+    {
+      "handle": "alla-produkter",
+      "title": "Alla produkter Drönare",
+      "products": 841,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronartillbehor-kop",
+      "title": "Drönartillbehör: Filter för bättre flygfotografering",
+      "products": 615,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "gopro-hero13-vaska",
+      "title": "GoPro Hero13 väska – Skydda din actionkamera tryggt",
+      "products": 610,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "gopro-hero13-black-skydd",
+      "title": "GoPro Hero13 Black skydd - Skydda din GoPro Hero13 Black med rätt skyd",
+      "products": 476,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "polarpro",
+      "title": "Polarpro",
+      "products": 428,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "vendors-q-sunnylife",
+      "title": "Sunnylife: Köp vattentäta kameraskydd & actionkamera tillbehör",
+      "products": 377,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dronartillbehor-dronar",
+      "title": "Drönartillbehör Dronar för Optimal Flygning",
+      "products": 374,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronare-propeller-tillbehor",
+      "title": "Drönare Propeller Tillbehör för Optimal Flygning",
+      "products": 366,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "filter-dronare-lins",
+      "title": "Filter drönare: Skydda din lins med premium glasfilter",
+      "products": 261,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "filter-till-dronare",
+      "title": "Filter till Drönare för Optimal Bildkvalitet",
+      "products": 252,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "gopro-tillbehor-vendors",
+      "title": "Hitta pålitliga GoPro tillbehör vendors här",
+      "products": 228,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dronarryggsack-vaskor",
+      "title": "Robust drönarryggsäck för säker transport av din drönare",
+      "products": 203,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronarelektronik-flight-components",
+      "title": "Reservdelar & Komponenter för DJI & FPV",
+      "products": 175,
+      "taxonomy": "Spare Parts"
+    },
+    {
+      "handle": "reservdelar-gimbal-dronare-motorer",
+      "title": "Reservdelar Gimbal Drönare: Gimbalmotorer för Optimal Stabilisering",
+      "products": 171,
+      "taxonomy": "Spare Parts"
+    },
+    {
+      "handle": "kapor-till-dronare",
+      "title": "Högkvalitativa Kåpor till Drönare",
+      "products": 158,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "amagisn-kameratillbehor-och-dronarutrustning",
+      "title": "kameratillbehör - AMagisn Tillbehör för Kamera och Drönare",
+      "products": 149,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "vattentatt-kameraskydd",
+      "title": "Vattentätt kameraskydd för kamera & drönare",
+      "products": 141,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "brdrc-tillbehor",
+      "title": "Kompletta BRDRC Tillbehör för Din Utrustning",
+      "products": 134,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-neo-tillbehor",
+      "title": "DJI Neo Tillbehör – Batteri & mer för din drönare",
+      "products": 129,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dronarpropellrar-tysta",
+      "title": "Hållbara drönarpropellrar för optimal flygning och prestanda",
+      "products": 128,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji",
+      "title": "DJI: Innovation inom Drönarteknik",
+      "products": 84,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-3-tillbehor",
+      "title": "DJI Mavic 3 Tillbehör för Optimal Prestanda",
+      "products": 66,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+      "title": "Omfattande Sortiment av DJI Air 3 Tillbehör",
+      "products": 66,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "batterier",
+      "title": "Batterier och laddare",
+      "products": 64,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-flip-tillbehor",
+      "title": "DJI Flip™ tillbehör – Optimal utrustning till din drönare",
+      "products": 63,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "propellerskydd-1",
+      "title": "Robusta Propellerskydd för Säkrare Drönarflygning",
+      "products": 56,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-neo-2-tillbehor",
+      "title": "DJI Neo 2 Tillbehör för din Drönare",
+      "products": 54,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "skydd-dronare",
+      "title": "Skydd till drönare: Propeller, Gimbal & Skal – Skydda din drönare!",
+      "products": 53,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-avata-2-tillbehor",
+      "title": "DJI Avata 2 tillbehör – Skydd & batterier till din drönare",
+      "products": 51,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dronare-med-kamera",
+      "title": "Drönare med kamera",
+      "products": 47,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dronare-actionking",
+      "title": "Drönare",
+      "products": 47,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "tillbehor-dji-mini-2-2-se",
+      "title": "Tillbehör DJI Mini 2 / 2 SE - Tillbehör för DJI Mini",
+      "products": 47,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mavic-pro-tillbehor",
+      "title": "Omfattande DJI Mavic Pro Tillbehör",
+      "products": 46,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-phantom-3-se",
+      "title": "DJI Phantom 3 SE Drönare med Kamera",
+      "products": 43,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mini-3-tillbehor",
+      "title": "DJI Mini 3 Tillbehör",
+      "products": 43,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "master-airscrew-dji-propellrar",
+      "title": "Master Airscrew DJI propellrar – Tysta & Effektiva",
+      "products": 42,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "landningsstall-dronare",
+      "title": "Landningsställ till drönare – Stabil och säker landning",
+      "products": 42,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-mavic-air-tillbehor",
+      "title": "Komplett utbud av DJI Mavic Air Tillbehör",
+      "products": 39,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "reparera-precisionsverktyg-elektronik",
+      "title": "Precisionsverktyg Elektronik: Reparera kamera & drönare enkelt",
+      "products": 36,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronar-fjarrkontrollstillbehor",
+      "title": "Drönar - fjärrkontrollstillbehör",
+      "products": 32,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "belysning-till-dronare",
+      "title": "Belysning till drönare",
+      "products": 28,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "enterprise-tillbehor",
+      "title": "Enterprise Tillbehör",
+      "products": 26,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "usb-kablar-usb-c-till-usb-c",
+      "title": "Kraftfulla USB-kablar USB-C till USB-C",
+      "products": 23,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "airdrop-system",
+      "title": "Airdrop System",
+      "products": 22,
+      "taxonomy": "Sensors & Payloads"
+    },
+    {
+      "handle": "dji-dronare",
+      "title": "DJI Drönare",
+      "products": 22,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronarmatta-landning-skydd",
+      "title": "Landningsmattor Drönare – Säker & Stabil Flygning",
+      "products": 21,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "tillbehor-dji-neo",
+      "title": "DJI Neo tillbehör – Batteri & mer för optimal flygning",
+      "products": 20,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "rengoringsprodukter-actionking",
+      "title": "Rengörning för elektronik",
+      "products": 18,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "tillbehor-dji-mini-4",
+      "title": "DJI Mini 3 Tillbehör: Utforska drönarens fulla potential",
+      "products": 18,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-dronar-reservdelar",
+      "title": "Hitta DJI-drönar reservdelar av hög kvalitet",
+      "products": 16,
+      "taxonomy": "Spare Parts"
+    },
+    {
+      "handle": "dji-mavic-3-classic",
+      "title": "Tillbehör DJI Mavic 3 Classic",
+      "products": 15,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehor-till-dji-air-3-serien",
+      "title": "Tillbehör till DJI AIR 3-Serien",
+      "products": 14,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "multiverktyg-friluftsliv",
+      "title": "Multiverktyg friluftsliv: Kompakt & Mångsidigt Äventyrsverktyg",
+      "products": 14,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "tillbehor-dji-avata-serien",
+      "title": "DJI Avata tillbehör: FPV-drönarutrustning för proffs & nybörjare",
+      "products": 14,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-4-pro-tillbehor",
+      "title": "DJI Mini 4 Pro",
+      "products": 14,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehor-dji-air-3s",
+      "title": "Tillbehör DJI Air 3S - Tillbehör för DJI Air 3S: Komplettera din dröna",
+      "products": 13,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehor-dji-air-serien",
+      "title": "Tillbehör till DJI Air-Serien – Uppgradera din drönare idag!",
+      "products": 12,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "kamerakablar-actionking",
+      "title": "Kamerakablar för Optimal Prestanda",
+      "products": 12,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "enterprise-dronare",
+      "title": "Enterprise Drönare för Industri och Inspektion",
+      "products": 11,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-mavic-3-pro-tillbehor",
+      "title": "DJI Mavic 3 Pro tillbehör – Drönartillbehör för proffs",
+      "products": 11,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-3-serien",
+      "title": "DJI Mavic 3-serien: Proffsens val av drönare",
+      "products": 11,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "enterprise-dronartillbehor",
+      "title": "Professionella Enterprise drönartillbehör",
+      "products": 11,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "tillbehor-dji-mavic-3-cine",
+      "title": "Tillbehör DJI Mavic 3 Cine för optimal prestanda",
+      "products": 10,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehorskablar-dronare",
+      "title": "Kablar till drönare",
+      "products": 10,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "fjarrkontroll-dronare",
+      "title": "Fjärrkontroll drönare: Precision & kontroll för din flygning",
+      "products": 10,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-mavic-tillbehor",
+      "title": "Dji Mavic Tillbehör för Förbättrad Flygning",
+      "products": 9,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-tillbehor",
+      "title": "DJI Mini Tillbehör för Din Drönare",
+      "products": 7,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-rc-fjarrkontroller",
+      "title": "DJI RC – Smart fjärrkontroll",
+      "products": 7,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-dronare-fjarrkontroller",
+      "title": "Fjärrkontroller och Tillbehör för DJI Drönare",
+      "products": 7,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-avata-tillbehor",
+      "title": "DJI Avata Tillbehör",
+      "products": 6,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "skruvmejsel-set",
+      "title": "Skruvmejsel Set – Precisionsverktyg för Alla Behov",
+      "products": 6,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-mavic-serien",
+      "title": "DJI Mavic-Serien",
+      "products": 6,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-air-serien",
+      "title": "DJI AIR-serien",
+      "products": 6,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-3-pro-avancerad-dronarteknik",
+      "title": "DJI Mavic 3 Pro: Avancerad Drönarteknik",
+      "products": 5,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-rc-pro-tillbehor",
+      "title": "DJI RC Pro Tillbehör – Optimera Din Fjärrkontroll",
+      "products": 5,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-pro-batteri-vaska",
+      "title": "dji mavic pro batteri väska - DJI Mavic Pro Batteriväska och Tillbehör",
+      "products": 5,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-3-serien",
+      "title": "DJI Mini 3-Serien",
+      "products": 5,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-3",
+      "title": "DJI Mini 3 Drönare för Professionellt Flygfoto",
+      "products": 5,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "fasten-adaptrar-actionkameror",
+      "title": "Universal Fästen och Adaptrar till actionkameror",
+      "products": 5,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "reparation-dji-neo-reservdelar",
+      "title": "Reparation DJI Neo – Fixa din drönare snabbt och enkelt!",
+      "products": 4,
+      "taxonomy": "Spare Parts"
+    },
+    {
+      "handle": "tillbehor-dji-mavic-2",
+      "title": "Tillbehör DJI Mavic 2: Utrustning för din drönare",
+      "products": 4,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-flip-dronare",
+      "title": "DJI Flip: Kompakta Vikbara Drönare",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-flip-batteri-tillbehor",
+      "title": "Optimala DJI Flip tillbehör – Maxa din drönarupplevelse!",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-4-pro",
+      "title": "DJI Mavic 4 Tillbehör",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-air-3",
+      "title": "DJI AIR 3",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-4-serien",
+      "title": "Upptäck DJI Mavic 4-serien för exceptionell flygfotografering",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehor-dji-mini-4-serien",
+      "title": "Tillbehör till DJI Mini 4-serien – Maxa din drönarupplevelse!",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dij-air-3-serien",
+      "title": "DJI Air 3-Serien för Professionell Flygfotografering",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "pgytech-tillbehor",
+      "title": "Pgytech Tillbehör för Kreativa Skapare",
+      "products": 3,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-enterprise-fjarrkontroller",
+      "title": "Professionella Fjärrkontroller för DJI Enterprise",
+      "products": 3,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dronar-kameror",
+      "title": "Professionella Drönar kameror för Flygfoto",
+      "products": 3,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-neo",
+      "title": "DJI Neo",
+      "products": 3,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "bandverktyg",
+      "title": "Bändverktyg för Precisionsreparationer",
+      "products": 2,
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "dji-avata-serien",
+      "title": "DJI Avata-Serien",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-2-serien",
+      "title": "DJI Mavic 2-serien: Avancerade Drönare",
+      "products": 2,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mini-4-serien",
+      "title": "DJI Mini 4-Serien",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "tillbehor-dji-mavic-dronare",
+      "title": "dji mavic 3e - Tillbehör för DJI Mavic Drönare",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-5-serien",
+      "title": "DJI Mini 5-Serien",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-air-3s",
+      "title": "DJI Air 3S",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-avata-pro-fpv-dronare",
+      "title": "Avata Pro FPV-Drönare – Nästa Generations Flygning",
+      "products": 2,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "last-och-transportdronare",
+      "title": "Last- och transportdrönare",
+      "products": 2,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "dji-air-2s",
+      "title": "DJI Air 2S",
+      "products": 1,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "tanger-actionking",
+      "title": "Tänger Action: Precision och Styrka",
+      "products": 1,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "pincetter-actionking",
+      "title": "Pincetter",
+      "products": 1,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-air-2-serien",
+      "title": "DJI Air 2 Serien: Drönare och Tillbehör",
+      "products": 1,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mavic-3-cine-dronare",
+      "title": "DJI Mavic 3 Cine: Ultimata Drönaren för Filmskapare",
+      "products": 1,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mavic-2-pro",
+      "title": "DJI Mavic 2 Pro",
+      "products": 1,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mini-4-pro",
+      "title": "DJI Mini 4 Pro – Frihet, precision och kreativ kontroll i miniformat",
+      "products": 1,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-fpv-tillbehor",
+      "title": "Dji FPV Tillbehör – Optimera Din Flygning Med Kvalitet",
+      "products": 1,
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-agras-dronare",
+      "title": "DJI Agras Drönare för Precisionsjordbruk",
+      "products": 1,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-propellrar",
+      "title": "Enterprise Propellrar",
+      "products": 1,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dronare-med-varmekamera",
+      "title": "Drönare med värmekamera",
+      "products": 1,
+      "taxonomy": "Sensors & Payloads"
+    },
+    {
+      "handle": "dji-matrice-serien",
+      "title": "DJI Matrice-serien – Professionella Enterprise-drönare",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-matrice-3-serien",
+      "title": "DJI Matrice 4 Serien",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-matrice-400-serien",
+      "title": "DJI Matrice 400 Serien för Professionella Uppdrag",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-flycart-serien",
+      "title": "DJI FlyCart Serien",
+      "products": 0,
+      "taxonomy": "FlyCart"
+    },
+    {
+      "handle": "dji-inspire-serien",
+      "title": "DJI Inspire Serien",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mini-2-serien",
+      "title": "DJI Mini 2-Serien",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-phantom-tillbehor-vaska-reservdelar",
+      "title": "DJI Phantom Tillbehör för Optimal Prestanda",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-air-2s-tillbehor",
+      "title": "DJI Air 2S Tillbehör – Optimerad Flygning",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-phantom-4-pro-dronare",
+      "title": "DJI Phantom 4 Pro Drönare för Professionella",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-phantom-3-pro-v1",
+      "title": "DJI Phantom 3 Pro v1 Drönare och Tillbehör",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-inspire",
+      "title": "DJI Inspire Serien Professionella Drönare för Kreatörer",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-matrice-4-serie",
+      "title": "dji matrice 4 Serie",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-mavic-3-enterprise",
+      "title": "DJI Mavic 3 Enterprise - Kvalitet &",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "title": "DJI Matrice 350 RTK Tillbehör och Skydd",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "title": "dji arm - DJI Matrice 30 Serie Tillbehör",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "title": "DJI Mavic 3M Drönare och Tillbehör",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-flycart-100-lastdronare",
+      "title": "DJI FlyCart 100: Lastdrönare för Tunga Lyft",
+      "products": 0,
+      "taxonomy": "FlyCart"
+    },
+    {
+      "handle": "dji-matrice-4-tillbehor",
+      "title": "DJI Matrice 4 Tillbehör för Professionella Drönare",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-service-dronare",
+      "title": "Enterprise Service för Företagsdrönare",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-hogtalarsystem",
+      "title": "Enterprise Högtalarsystem",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-belysning",
+      "title": "Enterprise belysning",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "dji-phantom-serien",
+      "title": "DJI Phantom Serien",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-mavic-serien-enterprise",
+      "title": "DJI Mavic Serien enterprise",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-lyftsystem",
+      "title": "Enterprise Lyftsystem",
+      "products": 0,
+      "taxonomy": "Enterprise DJI"
+    },
+    {
+      "handle": "enterprise-sensorer",
+      "title": "Enterprise Sensorer",
+      "products": 0,
+      "taxonomy": "Sensors & Payloads"
+    },
+    {
+      "handle": "inspektionsdronare",
+      "title": "Inspektionsdrönare",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "kartlaggnings-och-matdronare",
+      "title": "Kartläggnings- och mätdrönare",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "skogsbruksdronare",
+      "title": "Skogsbruksdrönare",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "jordbruksdronare",
+      "title": "Jordbruksdrönare",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "energi-infrastruktur",
+      "title": "Energi & Infrastruktur",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "transport-logistik",
+      "title": "Transport & Logistik",
+      "products": 0,
+      "taxonomy": "Industry Solutions"
+    },
+    {
+      "handle": "tillbehor-dji-inspire",
+      "title": "DJI Inspire Tillbehör",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-air-2-tillbehor",
+      "title": "Högkvalitativa DJI Air 2 Tillbehör för Drönare",
+      "products": 0,
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "dji-marvic-enterprise",
+      "title": "DJI Marvic Enterprise",
+      "products": -2,
+      "taxonomy": "Enterprise DJI"
+    }
+  ],
+  "merge": [
+    {
+      "source": "dji-mavic-3-classic-1",
+      "target": "dji-mavic-3-classic",
+      "products": 2
+    }
+  ],
+  "delete": [
+    {
+      "handle": "dji-air-3-serien",
+      "title": "DJI Air 3 Serien",
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-avata",
+      "title": "DJI Avata: Framtidens FPV Drönare",
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dji-mini-3-pro-dronare-set",
+      "title": "Komplett Set DJI Mini 3 Pro",
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "dronare-reservdelar-ovriga",
+      "title": "Drönare reservdelar: Allt för din drönarreparation",
+      "taxonomy": "Spare Parts"
+    },
+    {
+      "handle": "gopro-batterier",
+      "title": "GoPro Batterier för Längre Filmning",
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "ji-mini-5-pro-filter",
+      "title": "DJI Mini 5 Pro filter",
+      "taxonomy": "Consumer DJI"
+    },
+    {
+      "handle": "kamerastativ-tripod",
+      "title": "Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ",
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "minneskort-lagring",
+      "title": "Minneskort & Lagring",
+      "taxonomy": "Accessories"
+    },
+    {
+      "handle": "osmo-action-6-tillbehor",
+      "title": "Osmo Action 6 tillbehör: Komplett utbud för din actionkamera",
+      "taxonomy": "Legacy DJI models"
+    },
+    {
+      "handle": "ringlampa",
+      "title": "ringlampa - Ringlampor för Professionell Belysning",
+      "taxonomy": "Accessories"
+    }
+  ],
+  "redirects": [
+    {
+      "from": "dji-mavic-3-classic-1",
+      "to": "dji-mavic-3-classic",
+      "reason": "MERGE duplicate",
+      "type": "301"
+    },
+    {
+      "from": "dji-air-3-serien",
+      "to": "dji-dronare",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "ji-mini-5-pro-filter",
+      "to": "dji-dronare",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "dji-avata",
+      "to": "dji-dronare",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "dji-mini-3-pro-dronare-set",
+      "to": "dji-dronare",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "minneskort-lagring",
+      "to": "dronartillbehor-kop",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "gopro-batterier",
+      "to": "alla-produkter",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "ringlampa",
+      "to": "dronartillbehor-kop",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "kamerastativ-tripod",
+      "to": "dronartillbehor-kop",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "osmo-action-6-tillbehor",
+      "to": "alla-produkter",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    },
+    {
+      "from": "dronare-reservdelar-ovriga",
+      "to": "dji-dronar-reservdelar",
+      "reason": "DELETE empty orphan",
+      "type": "301"
+    }
+  ],
+  "migration_plan": [
+    {
+      "source": "dji-mavic-3-classic-1",
+      "target": "dji-mavic-3-classic",
+      "products": 2,
+      "action": "Reassign smart-collection rules / manual product tags to canonical handle"
+    },
+    {
+      "source": "dji-matrice-serien",
+      "target": "dji-matrice-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-matrice-3-serien",
+      "target": "dji-matrice-3-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-matrice-400-serien",
+      "target": "dji-matrice-400-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-flycart-serien",
+      "target": "dji-flycart-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (FlyCart) — do not delete"
+    },
+    {
+      "source": "dji-inspire-serien",
+      "target": "dji-inspire-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-mini-2-serien",
+      "target": "dji-mini-2-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-phantom-tillbehor-vaska-reservdelar",
+      "target": "dji-phantom-tillbehor-vaska-reservdelar",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-air-2s-tillbehor",
+      "target": "dji-air-2s-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-phantom-4-pro-dronare",
+      "target": "dji-phantom-4-pro-dronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-phantom-3-pro-v1",
+      "target": "dji-phantom-3-pro-v1",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-inspire",
+      "target": "dji-inspire",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-matrice-4-serie",
+      "target": "dji-matrice-4-serie",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-mavic-3-enterprise",
+      "target": "dji-mavic-3-enterprise",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-matrice-350-rtk-tillbehor",
+      "target": "dji-matrice-350-rtk-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-matrice-30-serie-tillbehor",
+      "target": "dji-matrice-30-serie-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-mavic-3m-dronare-tillbehor",
+      "target": "dji-mavic-3m-dronare-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-flycart-100-lastdronare",
+      "target": "dji-flycart-100-lastdronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (FlyCart) — do not delete"
+    },
+    {
+      "source": "dji-matrice-4-tillbehor",
+      "target": "dji-matrice-4-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "enterprise-service-dronare",
+      "target": "enterprise-service-dronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "enterprise-hogtalarsystem",
+      "target": "enterprise-hogtalarsystem",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "enterprise-belysning",
+      "target": "enterprise-belysning",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "dji-phantom-serien",
+      "target": "dji-phantom-serien",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-mavic-serien-enterprise",
+      "target": "dji-mavic-serien-enterprise",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "enterprise-lyftsystem",
+      "target": "enterprise-lyftsystem",
+      "products": 0,
+      "action": "Populate from related taxonomy (Enterprise DJI) — do not delete"
+    },
+    {
+      "source": "enterprise-sensorer",
+      "target": "enterprise-sensorer",
+      "products": 0,
+      "action": "Populate from related taxonomy (Sensors & Payloads) — do not delete"
+    },
+    {
+      "source": "inspektionsdronare",
+      "target": "inspektionsdronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "kartlaggnings-och-matdronare",
+      "target": "kartlaggnings-och-matdronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "skogsbruksdronare",
+      "target": "skogsbruksdronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "jordbruksdronare",
+      "target": "jordbruksdronare",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "energi-infrastruktur",
+      "target": "energi-infrastruktur",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "transport-logistik",
+      "target": "transport-logistik",
+      "products": 0,
+      "action": "Populate from related taxonomy (Industry Solutions) — do not delete"
+    },
+    {
+      "source": "tillbehor-dji-inspire",
+      "target": "tillbehor-dji-inspire",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    },
+    {
+      "source": "dji-air-2-tillbehor",
+      "target": "dji-air-2-tillbehor",
+      "products": 0,
+      "action": "Populate from related taxonomy (Legacy DJI models) — do not delete"
+    }
+  ],
+  "proposed_menus": [
+    {
+      "handle": "main-menu",
+      "title": "Huvudmeny",
+      "items": [
+        {
+          "title": "Drönare",
+          "children": [
+            {
+              "title": "DJI Mini",
+              "url": "/collections/dji-mini-4-serien"
+            },
+            {
+              "title": "DJI Air",
+              "url": "/collections/dji-air-serien"
+            },
+            {
+              "title": "DJI Mavic",
+              "url": "/collections/dji-mavic-serien"
+            },
+            {
+              "title": "DJI Avata",
+              "url": "/collections/dji-avata-serien"
+            },
+            {
+              "title": "DJI Neo",
+              "url": "/collections/dji-neo"
+            },
+            {
+              "title": "DJI Flip",
+              "url": "/collections/dji-flip-dronare"
+            },
+            {
+              "title": "Alla konsumentdrönare",
+              "url": "/collections/dji-dronare"
+            }
+          ]
+        },
+        {
+          "title": "Enterprise Drönare",
+          "children": [
+            {
+              "title": "Enterprise översikt",
+              "url": "/collections/enterprise-dronare"
+            },
+            {
+              "title": "DJI Matrice",
+              "url": "/collections/dji-matrice-serien"
+            },
+            {
+              "title": "Mavic Enterprise",
+              "url": "/collections/dji-mavic-serien-enterprise"
+            },
+            {
+              "title": "DJI Agras",
+              "url": "/collections/dji-agras-dronare"
+            },
+            {
+              "title": "Sensors & Payloads",
+              "url": "/collections/enterprise-sensorer"
+            },
+            {
+              "title": "Enterprise tillbehör",
+              "url": "/collections/enterprise-tillbehor"
+            }
+          ]
+        },
+        {
+          "title": "FlyCart",
+          "children": [
+            {
+              "title": "FlyCart 100",
+              "url": "/collections/dji-flycart-100-lastdronare"
+            },
+            {
+              "title": "FlyCart serie",
+              "url": "/collections/dji-flycart-serien"
+            }
+          ]
+        },
+        {
+          "title": "Branschlösningar",
+          "children": [
+            {
+              "title": "Inspektion",
+              "url": "/collections/inspektionsdronare"
+            },
+            {
+              "title": "Energi & Infrastruktur",
+              "url": "/collections/energi-infrastruktur"
+            },
+            {
+              "title": "Jordbruk",
+              "url": "/collections/jordbruksdronare"
+            },
+            {
+              "title": "Skogsbruk",
+              "url": "/collections/skogsbruksdronare"
+            },
+            {
+              "title": "Kartläggning",
+              "url": "/collections/kartlaggnings-och-matdronare"
+            },
+            {
+              "title": "Transport & Logistik",
+              "url": "/collections/transport-logistik"
+            }
+          ]
+        },
+        {
+          "title": "Reservdelar",
+          "url": "/collections/dji-dronar-reservdelar",
+          "children": [
+            {
+              "title": "Gimbal & motorer",
+              "url": "/collections/reservdelar-gimbal-dronare-motorer"
+            },
+            {
+              "title": "Elektronik & flight components",
+              "url": "/collections/dronarelektronik-flight-components"
+            },
+            {
+              "title": "Neo reservdelar",
+              "url": "/collections/reparation-dji-neo-reservdelar"
+            }
+          ]
+        },
+        {
+          "title": "Tillbehör",
+          "url": "/collections/dronartillbehor-kop",
+          "children": [
+            {
+              "title": "Propellrar",
+              "url": "/collections/dronare-propeller-tillbehor"
+            },
+            {
+              "title": "Filter",
+              "url": "/collections/filter-till-dronare"
+            },
+            {
+              "title": "Batterier",
+              "url": "/collections/batterier"
+            },
+            {
+              "title": "Väskor & cases",
+              "url": "/collections/dronarryggsack-vaskor"
+            },
+            {
+              "title": "Fjärrkontroller",
+              "url": "/collections/fjarrkontroll-dronare"
+            },
+            {
+              "title": "PolarPro",
+              "url": "/collections/polarpro"
+            }
+          ]
+        },
+        {
+          "title": "Legacy DJI",
+          "children": [
+            {
+              "title": "Phantom",
+              "url": "/collections/dji-phantom-3-se"
+            },
+            {
+              "title": "Air 2 / Air 2S",
+              "url": "/collections/dji-air-2-serien"
+            },
+            {
+              "title": "Mini 2",
+              "url": "/collections/tillbehor-dji-mini-2-2-se"
+            },
+            {
+              "title": "Mavic 2",
+              "url": "/collections/dji-mavic-2-serien"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handle": "enterprise-dr-nare",
+      "title": "Enterprise Drönare",
+      "items": [
+        {
+          "title": "Enterprise drönare",
+          "url": "/collections/enterprise-dronare"
+        },
+        {
+          "title": "Matrice",
+          "url": "/collections/dji-matrice-serien"
+        },
+        {
+          "title": "Mavic Enterprise",
+          "url": "/collections/dji-mavic-3-enterprise"
+        },
+        {
+          "title": "Agras",
+          "url": "/collections/dji-agras-dronare"
+        },
+        {
+          "title": "FlyCart",
+          "url": "/collections/dji-flycart-serien"
+        },
+        {
+          "title": "Värmekamera",
+          "url": "/collections/dronare-med-varmekamera"
+        },
+        {
+          "title": "Airdrop",
+          "url": "/collections/airdrop-system"
+        }
+      ]
+    },
+    {
+      "handle": "footer",
+      "title": "Sidfot",
+      "items": [
+        {
+          "title": "Alla produkter",
+          "url": "/collections/alla-produkter"
+        }
+      ]
+    },
+    {
+      "handle": "customer-account-main-menu",
+      "title": "Kundkonto",
+      "items": []
+    }
+  ]
+}

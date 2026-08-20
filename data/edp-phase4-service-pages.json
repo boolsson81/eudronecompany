@@ -1,0 +1,130 @@
+{
+  "version": "4.0",
+  "pages": [
+    {
+      "handle": "dronarreparation",
+      "title": "Drönarreparation",
+      "group": "repair"
+    },
+    {
+      "handle": "dji-reparation",
+      "title": "DJI reparation",
+      "group": "repair"
+    },
+    {
+      "handle": "enterprise-reparation",
+      "title": "Enterprise reparation",
+      "group": "repair"
+    },
+    {
+      "handle": "flycart-service",
+      "title": "FlyCart service",
+      "group": "repair"
+    },
+    {
+      "handle": "agras-service",
+      "title": "Agras service",
+      "group": "repair"
+    },
+    {
+      "handle": "dronarkalibrering",
+      "title": "Drönarkalibrering",
+      "group": "calibration"
+    },
+    {
+      "handle": "imu-kalibrering",
+      "title": "IMU-kalibrering",
+      "group": "calibration"
+    },
+    {
+      "handle": "rtk-kalibrering",
+      "title": "RTK-kalibrering",
+      "group": "calibration"
+    },
+    {
+      "handle": "sensor-kalibrering",
+      "title": "Sensor-kalibrering",
+      "group": "calibration"
+    },
+    {
+      "handle": "serviceavtal",
+      "title": "Serviceavtal",
+      "group": "support"
+    },
+    {
+      "handle": "supportavtal",
+      "title": "Supportavtal",
+      "group": "support"
+    },
+    {
+      "handle": "forebyggande-underhall",
+      "title": "Förebyggande underhåll",
+      "group": "support"
+    },
+    {
+      "handle": "dji-service",
+      "title": "DJI Service",
+      "group": "service"
+    },
+    {
+      "handle": "dji-enterprise-service",
+      "title": "DJI Enterprise Service",
+      "group": "service"
+    },
+    {
+      "handle": "dji-flycart-service",
+      "title": "DJI FlyCart Service",
+      "group": "service"
+    },
+    {
+      "handle": "dji-agras-service",
+      "title": "DJI Agras Service",
+      "group": "service"
+    },
+    {
+      "handle": "dji-dock-service",
+      "title": "DJI Dock Service",
+      "group": "service"
+    },
+    {
+      "handle": "gimbalreparation",
+      "title": "Gimbalreparation",
+      "group": "repair"
+    },
+    {
+      "handle": "kamerareparation",
+      "title": "Kamerareparation",
+      "group": "repair"
+    },
+    {
+      "handle": "motorbyte",
+      "title": "Motorbyte",
+      "group": "repair"
+    },
+    {
+      "handle": "esc-reparation",
+      "title": "ESC-reparation",
+      "group": "repair"
+    },
+    {
+      "handle": "kompasskalibrering",
+      "title": "Kompasskalibrering",
+      "group": "calibration"
+    },
+    {
+      "handle": "sensorvalidering",
+      "title": "Sensorvalidering",
+      "group": "calibration"
+    },
+    {
+      "handle": "arlig-kontroll",
+      "title": "Årlig kontroll",
+      "group": "maintenance"
+    },
+    {
+      "handle": "enterprise-support",
+      "title": "Enterprise Support",
+      "group": "maintenance"
+    }
+  ]
+}

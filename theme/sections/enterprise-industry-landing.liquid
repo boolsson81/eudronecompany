@@ -1,0 +1,256 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- if section.settings.show_breadcrumb -%}
+      <a class="edp-enterprise__breadcrumb" href="{{ section.settings.breadcrumb_link | default: '/pages/enterprise' }}">
+        ← {{ section.settings.breadcrumb_label | default: 'Enterprise' | escape }}
+        &larr; {{ section.settings.breadcrumb_label | default: 'Enterprise' | escape }}
+      </a>
+    {%- endif -%}
+
+    <div class="edp-enterprise__industry-hero edp-enterprise__hero{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <div class="edp-enterprise__hero-content">
+        {%- unless section.settings.eyebrow == blank -%}
+          <p class="edp-enterprise__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endunless -%}
+        {%- unless section.settings.title == blank -%}
+          <h1 class="edp-enterprise__hero-title {{ section.settings.heading_size }}">
+            {{ section.settings.title | escape }}
+          </h1>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__hero-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+      <div class="edp-enterprise__hero-media">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1200
+            | image_tag:
+              class: 'edp-enterprise__hero-image',
+              loading: 'eager',
+              fetchpriority: 'high',
+              widths: '550, 750, 1100, 1200',
+              sizes: '(min-width: 750px) 50vw, 100vw',
+              alt: section.settings.image.alt | default: section.settings.title
+          }}
+        {%- else -%}
+          <div class="edp-enterprise__hero-placeholder" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- assign solution_blocks = section.blocks | where: 'type', 'solution' -%}
+    {%- if solution_blocks.size > 0 -%}
+      {%- unless section.settings.solutions_heading == blank -%}
+        <div class="edp-enterprise__subhead{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+          <h2 class="edp-enterprise__subhead-title h2">{{ section.settings.solutions_heading | escape }}</h2>
+        </div>
+      {%- endunless -%}
+      <ul class="edp-enterprise__grid edp-enterprise__grid--3" role="list">
+        {%- for block in solution_blocks -%}
+          <li class="edp-enterprise__card {% render 'edp-enterprise-card-alignment-classes', block: block, section: section %}" {{ block.shopify_attributes }}>
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- assign benefit_blocks = section.blocks | where: 'type', 'benefit' -%}
+    {%- if benefit_blocks.size > 0 -%}
+      {%- unless section.settings.benefits_heading == blank -%}
+        <div class="edp-enterprise__subhead{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+          <h2 class="edp-enterprise__subhead-title h2">{{ section.settings.benefits_heading | escape }}</h2>
+        </div>
+      {%- endunless -%}
+      <ul class="edp-enterprise__benefit-list" role="list">
+        {%- for block in benefit_blocks -%}
+          <li class="edp-enterprise__benefit-item" {{ block.shopify_attributes }}>
+            <span class="edp-enterprise__benefit-check" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </span>
+            <span>{{ block.settings.text | escape }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-industry-landing.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumb",
+      "label": "t:sections.enterprise-industry-landing.settings.show_breadcrumb.label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "breadcrumb_label",
+      "label": "t:sections.enterprise-industry-landing.settings.breadcrumb_label.label",
+      "default": "Enterprise"
+    },
+    { "type": "url", "id": "breadcrumb_link", "label": "t:sections.enterprise-industry-landing.settings.breadcrumb_link.label" },
+    { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-industry-landing.settings.image.label" },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "t:sections.enterprise-industry-landing.settings.eyebrow.label",
+      "default": "Enterprise"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.enterprise-industry-landing.settings.title.label",
+      "default": "Branschlösning"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-industry-landing.settings.text.label",
+      "default": "Professionella drönarlösningar anpassade för din bransch."
+    },
+    {
+      "type": "text",
+      "id": "solutions_heading",
+      "label": "t:sections.enterprise-industry-landing.settings.solutions_heading.label",
+      "default": "Lösningar"
+    },
+    {
+      "type": "text",
+      "id": "benefits_heading",
+      "label": "t:sections.enterprise-industry-landing.settings.benefits_heading.label",
+      "default": "Fördelar"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "Textjustering (standard för alla kort)" },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Rubrik (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_text_alignment",
+      "label": "Beskrivning (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 24
+    }
+  ],
+  "blocks": [
+    {
+      "type": "solution",
+      "name": "t:sections.enterprise-industry-landing.blocks.solution.name",
+      "settings": [
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-industry-landing.blocks.solution.settings.title.label", "default": "Lösning" },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Rubrikjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.solution.settings.text.label", "default": "Beskrivning av lösningen." },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Beskrivningsjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        }
+      ]
+    },
+    {
+      "type": "benefit",
+      "name": "t:sections.enterprise-industry-landing.blocks.benefit.name",
+      "settings": [
+        { "type": "text", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.benefit.settings.text.label", "default": "Fördel med drönarteknik." }
+      ]
+    }
+  ],
+  "presets": [{ "name": "t:sections.enterprise-industry-landing.presets.name" }]
+}
+{% endschema %}

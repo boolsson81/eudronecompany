@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-06-13T09:37:32.669Z",
+  "mode": "live",
+  "updates": [
+    {
+      "handle": "main-menu",
+      "id": "gid://shopify/Menu/299485036872",
+      "result": "updated",
+      "errors": []
+    },
+    {
+      "handle": "enterprise-dr-nare",
+      "id": "gid://shopify/Menu/299900567880",
+      "result": "updated",
+      "errors": []
+    },
+    {
+      "handle": "footer",
+      "id": "gid://shopify/Menu/299485069640",
+      "result": "updated",
+      "errors": []
+    }
+  ],
+  "deletes": [
+    {
+      "handle": "actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-1",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-1",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-1",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-2",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-2",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-2",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-3",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-3",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-3",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-4",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-4",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-4",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-5",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-5",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-5",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-6",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-6",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-6",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-7",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-7",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-7",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-8",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-8",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-8",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-9",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-9",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-9",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-10",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-10",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-10",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-11",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-11",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-11",
+      "result": "deleted",
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "generated_at": "2026-06-13T11:14:11.344Z",
+  "store": "ya1xhg-x6.myshopify.com",
+  "mode": "read_only",
+  "publication": {
+    "total": 9389,
+    "status": {
+      "DRAFT": 9389,
+      "ACTIVE": 0,
+      "ARCHIVED": 0
+    },
+    "eligible": 9098,
+    "blocked": 291,
+    "blocker_counts": {
+      "missing_image": 290,
+      "missing_price": 42,
+      "missing_description": 17
+    }
+  },
+  "menus": {
+    "total": 101,
+    "empty": 97,
+    "to_remove": 95,
+    "duplicates": 4
+  },
+  "collections": {
+    "total": 150,
+    "empty": 14,
+    "duplicates": 11
+  },
+  "enterprise_gaps": [
+    {
+      "group": "Matrice",
+      "name": "Matrice 3D",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Matrice 3D (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 3TD",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Matrice 3TD (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 30",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-30-serie-tillbehor",
+      "product_count": 9,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 300 RTK",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Matrice 300 RTK (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 350 RTK",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-350-rtk-tillbehor",
+      "product_count": 8,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 400",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-400-serien",
+      "product_count": 9,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "Matrice",
+      "name": "Matrice 4",
+      "collection_exists": true,
+      "collection_handle": "dji-matrice-4-serie",
+      "product_count": 22,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "Mavic Enterprise",
+      "name": "Mavic 3 Enterprise",
+      "collection_exists": true,
+      "collection_handle": "dji-mavic-3-enterprise",
+      "product_count": 5,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "Mavic Enterprise",
+      "name": "Mavic 3 Thermal",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Mavic 3 Thermal (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Agras",
+      "name": "T25",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for T25 (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Agras",
+      "name": "T40",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for T40 (recommendation only — do not deploy)"
+    },
+    {
+      "group": "Agras",
+      "name": "T50",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for T50 (recommendation only — do not deploy)"
+    },
+    {
+      "group": "FlyCart",
+      "name": "FlyCart 30",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for FlyCart 30 (recommendation only — do not deploy)"
+    },
+    {
+      "group": "FlyCart",
+      "name": "FlyCart 100",
+      "collection_exists": true,
+      "collection_handle": "dji-flycart-100-lastdronare",
+      "product_count": 2,
+      "status": "populated",
+      "handle_mismatch": false,
+      "recommendation": null
+    },
+    {
+      "group": "DJI Dock",
+      "name": "Dock 2",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Dock 2 (recommendation only — do not deploy)"
+    },
+    {
+      "group": "DJI Dock",
+      "name": "Dock 3",
+      "collection_exists": false,
+      "collection_handle": null,
+      "product_count": 0,
+      "status": "missing",
+      "handle_mismatch": false,
+      "recommendation": "Create collection for Dock 3 (recommendation only — do not deploy)"
+    }
+  ],
+  "seo_gaps": {
+    "critical": 22,
+    "high": 4,
+    "medium": 0
+  },
+  "quality": {
+    "total": 9389,
+    "missing_images": 290,
+    "missing_descriptions": 89,
+    "missing_vendor": 0,
+    "missing_price": 42,
+    "missing_product_type": 462,
+    "missing_tags": 3589,
+    "missing_specs": 9160,
+    "missing_compatibility": 9389
+  },
+  "launch_scores": {
+    "catalog": 97,
+    "navigation": 67,
+    "enterprise": 38,
+    "seo": 93,
+    "product_quality": 97,
+    "spare_parts": 30,
+    "b2b_foundation": 10
+  },
+  "overall_score": 62,
+  "actions": [
+    {
+      "priority": 1,
+      "action": "Publish 9,098 eligible products (291 blocked)",
+      "area": "Catalog"
+    },
+    {
+      "priority": 1,
+      "action": "Remove 95 empty/legacy menus (70+ target)",
+      "area": "Navigation"
+    },
+    {
+      "priority": 1,
+      "action": "Fix broken menu references in canonical menus",
+      "area": "Navigation"
+    },
+    {
+      "priority": 1,
+      "action": "22 collections missing critical SEO metadata",
+      "area": "SEO"
+    },
+    {
+      "priority": 1,
+      "action": "14 empty collections need population or consolidation",
+      "area": "Collections"
+    },
+    {
+      "priority": 1,
+      "action": "10 missing enterprise collections (recommendations in ENTERPRISE_GAP_REPORT)",
+      "area": "Enterprise"
+    },
+    {
+      "priority": 1,
+      "action": "290 products missing images — block publication",
+      "area": "Data Quality"
+    },
+    {
+      "priority": 2,
+      "action": "Deploy Phase 4 enterprise collection expansion (33 collections)",
+      "area": "Enterprise"
+    },
+    {
+      "priority": 2,
+      "action": "Deploy Phase 5 Service & Support pages",
+      "area": "Service"
+    },
+    {
+      "priority": 2,
+      "action": "Populate enterprise-specific spare parts collections",
+      "area": "Spare Parts"
+    },
+    {
+      "priority": 2,
+      "action": "Add collection descriptions to high-traffic enterprise collections",
+      "area": "SEO"
+    },
+    {
+      "priority": 2,
+      "action": "Remove 12 legacy ActionKing pages",
+      "area": "Content"
+    },
+    {
+      "priority": 2,
+      "action": "Standardize product tags (38% missing tags)",
+      "area": "Data Quality"
+    },
+    {
+      "priority": 2,
+      "action": "Create B2B quote request page",
+      "area": "B2B"
+    },
+    {
+      "priority": 3,
+      "action": "Enable European markets (DE, DK, FI, FR, NL)",
+      "area": "Expansion"
+    },
+    {
+      "priority": 3,
+      "action": "Documentation Center deployment",
+      "area": "Documentation"
+    },
+    {
+      "priority": 3,
+      "action": "Knowledge Center article content",
+      "area": "Content"
+    },
+    {
+      "priority": 3,
+      "action": "PEPPOL procurement workflow",
+      "area": "B2B"
+    },
+    {
+      "priority": 3,
+      "action": "Schema markup theme audit",
+      "area": "SEO"
+    },
+    {
+      "priority": 3,
+      "action": "Compatibility metafields for spare parts",
+      "area": "Data Quality"
+    }
+  ]
+}

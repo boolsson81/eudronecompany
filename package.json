@@ -1,0 +1,23 @@
+{
+  "name": "eudroneparts",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "EU Drone Company — Shopify-tema, butiksdrift och migreringsverktyg för EuroDroneParts",
+  "scripts": {
+    "test": "vitest run",
+    "check:shared": "node scripts/check-shared-drift.mjs",
+    "theme:push": "node scripts/push-edp-theme.mjs",
+    "theme:verify": "node scripts/verify-edp-theme-deploy.mjs",
+    "audit:seo": "node scripts/audit-edp-storefront-seo.mjs",
+    "audit:menus": "node scripts/verify-edp-theme-menus.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.6"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Perimetersäkerhet",
+            "text": "Automatiserade bevakningsrutter med realtidsvideo och termisk detektion dygnet runt."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Räddningsinsatser",
+            "text": "Snabb uppsikt vid olyckor, bränder och eftersökning med termisk kamera och realtidsvideo."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Eventbevakning",
+            "text": "Överblick vid stora evenemang och folksamlingar med livestreaming till kontrollcentral."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Industriell säkerhet",
+            "text": "Gasläckedetektion och säkerhetsinspektion i farliga miljöer utan att utsätta personal."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Täck stora områden snabbt med realtidsöverblick" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Termisk detektion dygnet runt, oavsett ljusförhållanden" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Minska behovet av fysisk patrullering" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Snabb deployment — flygklar på under 60 sekunder" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Räddningstjänst",
+        "title": "Drönare för Räddningstjänst",
+        "text": "Förbättra säkerheten med drönarbaserad övervakning, perimeterskydd och snabb insats vid incidenter.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp att välja rätt räddningslösning?",
+        "text": "Vårt enterprise-team hjälper räddningstjänst och säkerhetsorganisationer med offert, utbildning och support.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

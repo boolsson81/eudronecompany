@@ -1,0 +1,110 @@
+{{ 'edp-faq.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .footer .shop-follow-button {
+    display: none !important;
+  }
+{%- endstyle -%}
+
+{%- paginate blog.articles by 12 -%}
+  <div class="edp-faq-blog color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width section-{{ section.id }}-padding">
+      <header class="edp-faq-blog__header">
+        {%- unless section.settings.eyebrow == blank -%}
+          <p class="edp-faq-blog__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endunless -%}
+        <h1 class="edp-faq-blog__title">{{ blog.title | escape }}</h1>
+        {%- unless section.settings.description == blank -%}
+          <p class="edp-faq-blog__desc">{{ section.settings.description | escape }}</p>
+        {%- else -%}
+          <p class="edp-faq-blog__desc">Svar på vanliga frågor om enterprise-drönare, Zenmuse-kameror och professionella payloads.</p>
+        {%- endunless -%}
+      </header>
+
+      <div class="edp-faq-blog__grid">
+        {%- for article in blog.articles -%}
+          <a href="{{ article.url }}" class="edp-faq-blog__card">
+            <div class="edp-faq-blog__card-body">
+              {%- if article.tags.size > 0 -%}
+                <span class="edp-faq-blog__card-tag">{{ article.tags.first | escape }}</span>
+              {%- endif -%}
+              <h2 class="edp-faq-blog__card-title">{{ article.title | escape }}</h2>
+              {%- if article.excerpt.size > 0 -%}
+                <p class="edp-faq-blog__card-excerpt">{{ article.excerpt | strip_html | truncate: 140 }}</p>
+              {%- endif -%}
+              <span class="edp-faq-blog__card-link">Läs svaren →</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    </div>
+  </div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "EDP FAQ blogg",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett",
+      "default": "Enterprise & kameror"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Beskrivning",
+      "default": "Svar på vanliga frågor om DJI Enterprise-drönare, Zenmuse-payloads, certifiering och branschlösningar."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Färgschema",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Avstånd"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding topp",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding botten",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

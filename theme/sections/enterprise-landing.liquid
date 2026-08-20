@@ -1,0 +1,686 @@
+{{ 'section-enterprise-landing.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign hero_block = nil
+  assign quote_block = nil
+  assign industries_heading = nil
+  assign services_heading = nil
+  assign benefits_heading = nil
+
+  for block in section.blocks
+    case block.type
+      when 'hero'
+        if hero_block == nil
+          assign hero_block = block
+        endif
+      when 'quote'
+        if quote_block == nil
+          assign quote_block = block
+        endif
+      when 'heading'
+        if block.settings.group == 'industries' and industries_heading == nil
+          assign industries_heading = block
+        elsif block.settings.group == 'services' and services_heading == nil
+          assign services_heading = block
+        elsif block.settings.group == 'benefits' and benefits_heading == nil
+          assign benefits_heading = block
+        endif
+    endcase
+  endfor
+-%}
+
+<div class="enterprise-landing color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- if hero_block -%}
+      <div
+        class="enterprise-landing__hero{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
+        {{ hero_block.shopify_attributes }}
+      >
+        <div class="enterprise-landing__hero-content">
+          {%- unless hero_block.settings.eyebrow == blank -%}
+            <p class="enterprise-landing__eyebrow">{{ hero_block.settings.eyebrow | escape }}</p>
+          {%- endunless -%}
+          {%- unless hero_block.settings.title == blank -%}
+            <h1 class="enterprise-landing__hero-title {{ hero_block.settings.heading_size }}">
+              {{ hero_block.settings.title | escape }}
+            </h1>
+          {%- endunless -%}
+          {%- unless hero_block.settings.text == blank -%}
+            <p class="enterprise-landing__hero-text">{{ hero_block.settings.text | escape }}</p>
+          {%- endunless -%}
+          <div class="enterprise-landing__hero-actions">
+            {%- if hero_block.settings.button_label_1 != blank -%}
+              <a
+                href="{{ hero_block.settings.button_link_1 | default: '#' }}"
+                class="enterprise-landing__btn enterprise-landing__btn--primary"
+              >
+                {{ hero_block.settings.button_label_1 | escape }}
+              </a>
+            {%- endif -%}
+            {%- if hero_block.settings.button_label_2 != blank -%}
+              <a
+                href="{{ hero_block.settings.button_link_2 | default: '#' }}"
+                class="enterprise-landing__btn enterprise-landing__btn--secondary"
+              >
+                {{ hero_block.settings.button_label_2 | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="enterprise-landing__hero-media">
+          {%- if hero_block.settings.image != blank -%}
+            {{
+              hero_block.settings.image
+              | image_url: width: 1200
+              | image_tag:
+                class: 'enterprise-landing__hero-image',
+                loading: 'eager',
+                fetchpriority: 'high',
+                widths: '550, 750, 1100, 1200',
+                sizes: '(min-width: 750px) 50vw, 100vw',
+                alt: hero_block.settings.image.alt | default: hero_block.settings.title
+            }}
+          {%- else -%}
+            <div class="enterprise-landing__hero-placeholder" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+              </svg>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- assign industry_count = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'industry' -%}
+        {%- assign industry_count = industry_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if industry_count > 0 -%}
+      {%- if industries_heading -%}
+        <div class="enterprise-landing__subhead" {{ industries_heading.shopify_attributes }}>
+          {%- unless industries_heading.settings.title == blank -%}
+            <h2 class="enterprise-landing__subhead-title {{ industries_heading.settings.heading_size }}">
+              {{ industries_heading.settings.title | escape }}
+            </h2>
+          {%- endunless -%}
+          {%- unless industries_heading.settings.text == blank -%}
+            <p class="enterprise-landing__subhead-text">{{ industries_heading.settings.text | escape }}</p>
+          {%- endunless -%}
+        </div>
+      {%- endif -%}
+      <ul class="enterprise-landing__grid enterprise-landing__grid--6" role="list">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'industry' -%}
+            <li class="enterprise-landing__card" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 160
+                  | image_tag: class: 'enterprise-landing__card-icon', loading: 'lazy', widths: '80, 120, 160', alt: block.settings.title
+                }}
+              {%- else -%}
+                <div class="enterprise-landing__card-icon-fallback" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </div>
+              {%- endif -%}
+              {%- unless block.settings.title == blank -%}
+                <h3 class="enterprise-landing__card-title">{{ block.settings.title | escape }}</h3>
+              {%- endunless -%}
+              {%- unless block.settings.text == blank -%}
+                <p class="enterprise-landing__card-text">{{ block.settings.text | escape }}</p>
+              {%- endunless -%}
+              {%- if block.settings.link_label != blank -%}
+                <a class="enterprise-landing__card-link" href="{{ block.settings.link | default: '#' }}">
+                  {{ block.settings.link_label | escape }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- assign service_count = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'service' -%}
+        {%- assign service_count = service_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if service_count > 0 -%}
+      {%- if services_heading -%}
+        <div class="enterprise-landing__subhead" {{ services_heading.shopify_attributes }}>
+          {%- unless services_heading.settings.title == blank -%}
+            <h2 class="enterprise-landing__subhead-title {{ services_heading.settings.heading_size }}">
+              {{ services_heading.settings.title | escape }}
+            </h2>
+          {%- endunless -%}
+          {%- unless services_heading.settings.text == blank -%}
+            <p class="enterprise-landing__subhead-text">{{ services_heading.settings.text | escape }}</p>
+          {%- endunless -%}
+        </div>
+      {%- endif -%}
+      <ul class="enterprise-landing__grid enterprise-landing__grid--3" role="list">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'service' -%}
+            <li class="enterprise-landing__card" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 160
+                  | image_tag: class: 'enterprise-landing__card-icon', loading: 'lazy', widths: '80, 120, 160', alt: block.settings.title
+                }}
+              {%- else -%}
+                <div class="enterprise-landing__card-icon-fallback" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+              {%- endif -%}
+              {%- unless block.settings.title == blank -%}
+                <h3 class="enterprise-landing__card-title">{{ block.settings.title | escape }}</h3>
+              {%- endunless -%}
+              {%- unless block.settings.text == blank -%}
+                <p class="enterprise-landing__card-text">{{ block.settings.text | escape }}</p>
+              {%- endunless -%}
+              {%- if block.settings.link_label != blank -%}
+                <a class="enterprise-landing__card-link" href="{{ block.settings.link | default: '#' }}">
+                  {{ block.settings.link_label | escape }}
+                </a>
+              {%- endif -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- assign benefit_count = 0 -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'benefit' -%}
+        {%- assign benefit_count = benefit_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if benefit_count > 0 -%}
+      {%- if benefits_heading -%}
+        <div class="enterprise-landing__subhead" {{ benefits_heading.shopify_attributes }}>
+          {%- unless benefits_heading.settings.title == blank -%}
+            <h2 class="enterprise-landing__subhead-title {{ benefits_heading.settings.heading_size }}">
+              {{ benefits_heading.settings.title | escape }}
+            </h2>
+          {%- endunless -%}
+        </div>
+      {%- endif -%}
+      <ul class="enterprise-landing__benefits" role="list">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'benefit' -%}
+            <li class="enterprise-landing__benefit" {{ block.shopify_attributes }}>
+              {{ block.settings.text | escape }}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if quote_block -%}
+      <div class="enterprise-landing__quote" {{ quote_block.shopify_attributes }}>
+        {%- unless quote_block.settings.title == blank -%}
+          <h2 class="enterprise-landing__quote-title h2">{{ quote_block.settings.title | escape }}</h2>
+        {%- endunless -%}
+        {%- unless quote_block.settings.text == blank -%}
+          <p class="enterprise-landing__quote-text">{{ quote_block.settings.text | escape }}</p>
+        {%- endunless -%}
+        <div class="enterprise-landing__quote-actions">
+          {%- if quote_block.settings.button_label_1 != blank -%}
+            <a
+              href="{{ quote_block.settings.button_link_1 | default: '/pages/contact-quote' }}"
+              class="enterprise-landing__btn enterprise-landing__btn--primary"
+            >
+              {{ quote_block.settings.button_label_1 | escape }}
+            </a>
+          {%- endif -%}
+          {%- if quote_block.settings.button_label_2 != blank -%}
+            <a
+              href="{{ quote_block.settings.button_link_2 | default: 'tel:' }}"
+              class="enterprise-landing__btn enterprise-landing__btn--outline"
+            >
+              {{ quote_block.settings.button_label_2 | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-landing.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "hero",
+      "name": "t:sections.enterprise-landing.blocks.hero.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "eyebrow",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.eyebrow.label",
+          "default": "Företag & organisationer"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.title.label",
+          "default": "Drönarlösningar för professionella verksamheter"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+            { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" },
+            { "value": "h0", "label": "t:sections.all.heading_size.options__3.label" }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.text.label",
+          "default": "Vi hjälper företag, myndigheter och organisationer att välja, implementera och drifta UAV-lösningar — från Matrice och Dock till utbildning och support."
+        },
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.button_label_1.label",
+          "default": "Begär offert"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.button_link_1.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.button_label_2.label",
+          "default": "Boka rådgivning"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "t:sections.enterprise-landing.blocks.hero.settings.button_link_2.label"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "t:sections.enterprise-landing.blocks.heading.name",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "select",
+          "id": "group",
+          "label": "t:sections.enterprise-landing.blocks.heading.settings.group.label",
+          "options": [
+            { "value": "industries", "label": "t:sections.enterprise-landing.blocks.heading.settings.group.options__1.label" },
+            { "value": "services", "label": "t:sections.enterprise-landing.blocks.heading.settings.group.options__2.label" },
+            { "value": "benefits", "label": "t:sections.enterprise-landing.blocks.heading.settings.group.options__3.label" }
+          ],
+          "default": "industries"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "t:sections.enterprise-landing.blocks.heading.settings.title.label",
+          "default": "Rubrik"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+            { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+          ],
+          "default": "h2",
+          "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.heading.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "industry",
+      "name": "t:sections.enterprise-landing.blocks.industry.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.enterprise-landing.blocks.industry.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.enterprise-landing.blocks.industry.settings.title.label",
+          "default": "Bransch"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.industry.settings.text.label",
+          "default": "Kort beskrivning av användningsområdet."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.enterprise-landing.blocks.industry.settings.link_label.label",
+          "default": "Läs mer"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.enterprise-landing.blocks.industry.settings.link.label"
+        }
+      ]
+    },
+    {
+      "type": "service",
+      "name": "t:sections.enterprise-landing.blocks.service.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.enterprise-landing.blocks.service.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.enterprise-landing.blocks.service.settings.title.label",
+          "default": "Tjänst"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.service.settings.text.label",
+          "default": "Beskrivning av tjänsten."
+        },
+        {
+          "type": "text",
+          "id": "link_label",
+          "label": "t:sections.enterprise-landing.blocks.service.settings.link_label.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.enterprise-landing.blocks.service.settings.link.label"
+        }
+      ]
+    },
+    {
+      "type": "benefit",
+      "name": "t:sections.enterprise-landing.blocks.benefit.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.benefit.settings.text.label",
+          "default": "Fördel"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "name": "t:sections.enterprise-landing.blocks.quote.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.title.label",
+          "default": "Behöver du hjälp att välja rätt lösning?"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.text.label",
+          "default": "Vårt enterprise-team hjälper dig med offert, projektering, utbildning och löpande support."
+        },
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.button_label_1.label",
+          "default": "Skicka offertförfrågan"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.button_link_1.label"
+        },
+        {
+          "type": "text",
+          "id": "button_label_2",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.button_label_2.label",
+          "default": "Ring oss"
+        },
+        {
+          "type": "url",
+          "id": "button_link_2",
+          "label": "t:sections.enterprise-landing.blocks.quote.settings.button_link_2.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-landing.presets.name",
+      "blocks": [
+        {
+          "type": "hero",
+          "settings": {
+            "eyebrow": "Företag & organisationer",
+            "title": "Drönarlösningar för professionella verksamheter",
+            "text": "Vi hjälper företag, myndigheter och organisationer att välja, implementera och drifta UAV-lösningar — från Matrice och Dock till utbildning och support.",
+            "button_label_1": "Begär offert",
+            "button_link_1": "/pages/contact-quote",
+            "button_label_2": "Boka rådgivning",
+            "button_link_2": "/pages/contact-quote"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "group": "industries",
+            "title": "Lösningar per bransch",
+            "text": "Effektivisera arbetsflöden med drönarteknik anpassad för din sektor."
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Energi & Infrastruktur",
+            "text": "Inspektion av kraftledningar, vindkraft och anläggningar med termisk och visuell data.",
+            "link_label": "Lösningar för energi",
+            "link": "/pages/energi-infrastruktur"
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Kartläggning & GIS",
+            "text": "Snabbare och noggrannare insamling av geodata för mätning, modellering och GIS-arbetsflöden.",
+            "link_label": "Lösningar för kartläggning",
+            "link": "/pages/kartlaggning-gis"
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Räddningstjänst",
+            "text": "Situational awareness, sök- och räddningsinsatser samt krisledning med UAV i fält.",
+            "link_label": "Lösningar för räddningstjänst",
+            "link": "/pages/raddningstjanst"
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Skogsbruk",
+            "text": "Inventering, plantageuppföljning och skogsvård med UAV och LiDAR.",
+            "link_label": "Lösningar för skog",
+            "link": "/pages/skogsbruk"
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Bygg & Anläggning",
+            "text": "Övervakning av byggarbetsplatser, volymberäkningar och dokumentation av framdrift.",
+            "link_label": "Lösningar för bygg",
+            "link": "/pages/bygg-anlaggning"
+          }
+        },
+        {
+          "type": "industry",
+          "settings": {
+            "title": "Jordbruk",
+            "text": "Precisionsspridning, grödansalys och fältövervakning för effektivare lantbruk.",
+            "link_label": "Lösningar för jordbruk",
+            "link": "/pages/jordbruk"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "group": "services",
+            "title": "Företagstjänster",
+            "text": "Mer än produkter — vi stöttar hela vägen från behov till drift."
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Färdiga drönarpaket",
+            "text": "Kompletta paket med drönare, tillbehör och mjukvara för snabb start i fält.",
+            "link_label": "Se paket",
+            "link": "/collections/enterprise-packages"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Utbildning & certifiering",
+            "text": "Drönarkort A1/A3+A2, företagsutbildning och operatörsprogram för enterprise.",
+            "link_label": "Utbildningar",
+            "link": "/pages/training"
+          }
+        },
+        {
+          "type": "service",
+          "settings": {
+            "title": "Support & underhåll",
+            "text": "DJI Care Enterprise, reservdelar, reparation och teknisk rådgivning.",
+            "link_label": "Support",
+            "link": "/pages/support"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "group": "benefits",
+            "title": "Därför EuroDroneCompany Enterprise"
+          }
+        },
+        {
+          "type": "benefit",
+          "settings": { "text": "Auktoriserad DJI-partner" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "text": "Offert & faktura för företag" }
+        },
+        {
+          "type": "benefit",
+          "settings": { "text": "Teknisk rådgivning på svenska" }
+        },
+        {
+          "type": "quote",
+          "settings": {
+            "title": "Behöver du hjälp att välja rätt lösning?",
+            "text": "Vårt enterprise-team hjälper dig med offert, projektering, utbildning och löpande support.",
+            "button_label_1": "Skicka offertförfrågan",
+            "button_link_1": "/pages/contact-quote",
+            "button_label_2": "Ring oss",
+            "button_link_2": "tel:+4612345678"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

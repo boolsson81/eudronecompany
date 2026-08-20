@@ -1,0 +1,159 @@
+{
+  "sections": {
+    "hero": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Europe Drone Company",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mission & vision",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vi är Nordens DJI-specialist — här berättar vi varför vi finns och vart vi är på väg.</p>"
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 24
+      }
+    },
+    "mission": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vår mission",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Att göra professionell drönarteknik tillgänglig för alla i Norden — från första köpet till avancerade företagslösningar.</p><p>Vi hjälper privatpersoner, företag och organisationer att välja rätt utrustning, komma igång säkert och få ut maximalt värde av sina drönare. Med auktoriserade produkter, svensk support och djup produktkunskap vill vi vara den partner du kan lita på i varje steg.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "vision": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vår vision",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Att vara Nordens ledande drönarpartner — inte bara som återförsäljare, utan som experter på produkter, tillämpningar och support.</p><p>Vi ser en framtid där drönare är en naturlig del av vardagen: för kreatörer som filmar sina äventyr, för företag som effektiviserar inspektion och kartläggning, och för samhällsviktiga insatser där tekniken gör skillnad. Vi vill ligga i framkant med rätt produkter, utbildning och service så att våra kunder kan flyga tryggt och lagligt.</p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "values": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Det vi står för",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li><strong>Auktoriserad expertis</strong> — originalprodukter och djup kunskap om DJI:s sortiment.</li><li><strong>Kundfokus</strong> — svensk support och rådgivning anpassad efter dina behov.</li><li><strong>Helhetslösningar</strong> — drönare, tillbehör, reservdelar, utbildning och företagsservice.</li><li><strong>Trygghet</strong> — hjälp med garanti, service och laglig flygning i Sverige och Norden.</li></ul>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vill du veta mer?",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kontakta oss om du har frågor om produkter, företagslösningar eller samarbeten.</p>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label_1": "Kontakta oss",
+            "button_link_1": "/pages/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "Om oss",
+            "button_link_2": "/pages/about",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "mission", "vision", "values", "cta"]
+}

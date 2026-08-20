@@ -1,0 +1,341 @@
+# P1 Rules Recovery Report
+
+**Executed:** 2026-06-13T19:42:39.843Z
+**Store:** Europe Drone Parts
+
+## Summary
+
+| Phase | Result |
+|---|---|
+| Converted custom → smart | 65 |
+| Created missing smart | 33 |
+| Skipped (already smart) | 45 |
+| Failed | 0 |
+| Menus deleted | 5 |
+| Menus remaining | 9 |
+
+### Remaining menus
+
+- `actionkameror`
+- `business`
+- `customer-account-main-menu`
+- `enterprise`
+- `footer`
+- `main-menu`
+- `partnership`
+- `service-support`
+- `spare-parts`
+
+## Log
+
+- SMART `dji-mini-4-pro-spare-parts` skipped (3 rules, 127 products)
+- SMART `dji-mini-4-pro-propellers` skipped (4 rules, 320 products)
+- SMART `dji-mini-4-pro-batteries` skipped (4 rules, 480 products)
+- SMART `dji-mini-4-pro-motors` skipped (3 rules, 241 products)
+- SMART `dji-mini-4-pro-arms` skipped (4 rules, 264 products)
+- SMART `dji-mini-4-pro-cameras` skipped (4 rules, 1165 products)
+- SMART `dji-mini-4-pro-gimbal` skipped (3 rules, 323 products)
+- SMART `dji-mini-4-pro-shell` skipped (4 rules, 342 products)
+- SMART `dji-mini-4-pro-landing-gear` skipped (4 rules, 159 products)
+- SMART `dji-mini-4-pro-cables` skipped (4 rules, 715 products)
+- SMART `dji-mini-4-pro-antennas` skipped (4 rules, 130 products)
+- SMART `dji-mini-4-pro-sensors` skipped (4 rules, 144 products)
+- SMART `dji-mini-4-pro-accessories` skipped (2 rules, 14 products)
+- SMART `dji-air-3-spare-parts` skipped (2 rules, 6 products)
+- SMART `dji-air-3-propellers` skipped (3 rules, 327 products)
+- SMART `dji-air-3-batteries` skipped (3 rules, 482 products)
+- SMART `dji-air-3-motors` skipped (2 rules, 245 products)
+- SMART `dji-air-3-arms` skipped (3 rules, 267 products)
+- SMART `dji-air-3-cameras` skipped (3 rules, 1165 products)
+- SMART `dji-air-3-gimbal` skipped (2 rules, 323 products)
+- SMART `dji-air-3-shell` skipped (3 rules, 345 products)
+- SMART `dji-air-3-landing-gear` skipped (3 rules, 160 products)
+- SMART `dji-air-3-cables` skipped (3 rules, 713 products)
+- SMART `dji-air-3-antennas` skipped (3 rules, 131 products)
+- SMART `dji-air-3-sensors` skipped (3 rules, 147 products)
+- SMART `dji-air-3-accessories` skipped (3 rules, 201 products)
+- DELETE custom `dji-air-3s-spare-parts`
+- CREATE smart `dji-air-3s-spare-parts` → 8 rules
+- SMART `dji-air-3s-spare-parts` converted (8 rules, 122 products)
+- DELETE custom `dji-air-3s-propellers`
+- CREATE smart `dji-air-3s-propellers` → 7 rules
+- SMART `dji-air-3s-propellers` converted (7 rules, 263 products)
+- DELETE custom `dji-air-3s-batteries`
+- CREATE smart `dji-air-3s-batteries` → 7 rules
+- SMART `dji-air-3s-batteries` converted (7 rules, 407 products)
+- DELETE custom `dji-air-3s-motors`
+- CREATE smart `dji-air-3s-motors` → 7 rules
+- SMART `dji-air-3s-motors` converted (7 rules, 169 products)
+- DELETE custom `dji-air-3s-arms`
+- CREATE smart `dji-air-3s-arms` → 8 rules
+- SMART `dji-air-3s-arms` converted (8 rules, 191 products)
+- DELETE custom `dji-air-3s-cameras`
+- CREATE smart `dji-air-3s-cameras` → 8 rules
+- SMART `dji-air-3s-cameras` converted (8 rules, 500 products)
+- DELETE custom `dji-air-3s-gimbal`
+- CREATE smart `dji-air-3s-gimbal` → 7 rules
+- SMART `dji-air-3s-gimbal` converted (7 rules, 252 products)
+- DELETE custom `dji-air-3s-shell`
+- CREATE smart `dji-air-3s-shell` → 9 rules
+- SMART `dji-air-3s-shell` converted (9 rules, 363 products)
+- DELETE custom `dji-air-3s-landing-gear`
+- CREATE smart `dji-air-3s-landing-gear` → 8 rules
+- SMART `dji-air-3s-landing-gear` converted (8 rules, 101 products)
+- DELETE custom `dji-air-3s-cables`
+- CREATE smart `dji-air-3s-cables` → 8 rules
+- SMART `dji-air-3s-cables` converted (8 rules, 500 products)
+- DELETE custom `dji-air-3s-antennas`
+- CREATE smart `dji-air-3s-antennas` → 8 rules
+- SMART `dji-air-3s-antennas` converted (8 rules, 58 products)
+- DELETE custom `dji-air-3s-sensors`
+- CREATE smart `dji-air-3s-sensors` → 8 rules
+- SMART `dji-air-3s-sensors` converted (8 rules, 81 products)
+- DELETE custom `dji-air-3s-accessories`
+- CREATE smart `dji-air-3s-accessories` → 9 rules
+- SMART `dji-air-3s-accessories` converted (9 rules, 505 products)
+- DELETE custom `dji-neo-spare-parts`
+- CREATE smart `dji-neo-spare-parts` → 7 rules
+- SMART `dji-neo-spare-parts` converted (7 rules, 265 products)
+- DELETE custom `dji-neo-propellers`
+- CREATE smart `dji-neo-propellers` → 6 rules
+- SMART `dji-neo-propellers` converted (6 rules, 388 products)
+- DELETE custom `dji-neo-batteries`
+- CREATE smart `dji-neo-batteries` → 6 rules
+- SMART `dji-neo-batteries` converted (6 rules, 539 products)
+- DELETE custom `dji-neo-motors`
+- CREATE smart `dji-neo-motors` → 6 rules
+- SMART `dji-neo-motors` converted (6 rules, 314 products)
+- DELETE custom `dji-neo-arms`
+- CREATE smart `dji-neo-arms` → 7 rules
+- SMART `dji-neo-arms` converted (7 rules, 336 products)
+- DELETE custom `dji-neo-cameras`
+- CREATE smart `dji-neo-cameras` → 7 rules
+- SMART `dji-neo-cameras` converted (7 rules, 700 products)
+- DELETE custom `dji-neo-gimbal`
+- CREATE smart `dji-neo-gimbal` → 6 rules
+- SMART `dji-neo-gimbal` converted (6 rules, 395 products)
+- DELETE custom `dji-neo-shell`
+- CREATE smart `dji-neo-shell` → 8 rules
+- SMART `dji-neo-shell` converted (8 rules, 505 products)
+- DELETE custom `dji-neo-landing-gear`
+- CREATE smart `dji-neo-landing-gear` → 7 rules
+- SMART `dji-neo-landing-gear` converted (7 rules, 238 products)
+- DELETE custom `dji-neo-cables`
+- CREATE smart `dji-neo-cables` → 7 rules
+- SMART `dji-neo-cables` converted (7 rules, 789 products)
+- DELETE custom `dji-neo-antennas`
+- CREATE smart `dji-neo-antennas` → 7 rules
+- SMART `dji-neo-antennas` converted (7 rules, 203 products)
+- DELETE custom `dji-neo-sensors`
+- CREATE smart `dji-neo-sensors` → 7 rules
+- SMART `dji-neo-sensors` converted (7 rules, 225 products)
+- DELETE custom `dji-neo-accessories`
+- CREATE smart `dji-neo-accessories` → 8 rules
+- SMART `dji-neo-accessories` converted (8 rules, 644 products)
+- DELETE custom `dji-flip-spare-parts`
+- CREATE smart `dji-flip-spare-parts` → 7 rules
+- SMART `dji-flip-spare-parts` converted (7 rules, 162 products)
+- DELETE custom `dji-flip-propellers`
+- CREATE smart `dji-flip-propellers` → 6 rules
+- SMART `dji-flip-propellers` converted (6 rules, 299 products)
+- DELETE custom `dji-flip-batteries`
+- CREATE smart `dji-flip-batteries` → 6 rules
+- SMART `dji-flip-batteries` converted (6 rules, 445 products)
+- DELETE custom `dji-flip-motors`
+- CREATE smart `dji-flip-motors` → 6 rules
+- SMART `dji-flip-motors` converted (6 rules, 207 products)
+- DELETE custom `dji-flip-arms`
+- CREATE smart `dji-flip-arms` → 7 rules
+- SMART `dji-flip-arms` converted (7 rules, 233 products)
+- DELETE custom `dji-flip-cameras`
+- CREATE smart `dji-flip-cameras` → 7 rules
+- SMART `dji-flip-cameras` converted (7 rules, 1200 products)
+- DELETE custom `dji-flip-gimbal`
+- CREATE smart `dji-flip-gimbal` → 6 rules
+- SMART `dji-flip-gimbal` converted (6 rules, 297 products)
+- DELETE custom `dji-flip-shell`
+- CREATE smart `dji-flip-shell` → 8 rules
+- SMART `dji-flip-shell` converted (8 rules, 404 products)
+- DELETE custom `dji-flip-landing-gear`
+- CREATE smart `dji-flip-landing-gear` → 7 rules
+- SMART `dji-flip-landing-gear` converted (7 rules, 140 products)
+- DELETE custom `dji-flip-cables`
+- CREATE smart `dji-flip-cables` → 7 rules
+- SMART `dji-flip-cables` converted (7 rules, 684 products)
+- DELETE custom `dji-flip-antennas`
+- CREATE smart `dji-flip-antennas` → 7 rules
+- SMART `dji-flip-antennas` converted (7 rules, 99 products)
+- DELETE custom `dji-flip-sensors`
+- CREATE smart `dji-flip-sensors` → 7 rules
+- SMART `dji-flip-sensors` converted (7 rules, 122 products)
+- DELETE custom `dji-flip-accessories`
+- CREATE smart `dji-flip-accessories` → 8 rules
+- SMART `dji-flip-accessories` converted (8 rules, 545 products)
+- DELETE custom `dji-avata-2-spare-parts`
+- CREATE smart `dji-avata-2-spare-parts` → 8 rules
+- SMART `dji-avata-2-spare-parts` converted (8 rules, 155 products)
+- DELETE custom `dji-avata-2-propellers`
+- CREATE smart `dji-avata-2-propellers` → 7 rules
+- SMART `dji-avata-2-propellers` converted (7 rules, 284 products)
+- DELETE custom `dji-avata-2-batteries`
+- CREATE smart `dji-avata-2-batteries` → 7 rules
+- SMART `dji-avata-2-batteries` converted (7 rules, 438 products)
+- DELETE custom `dji-avata-2-motors`
+- CREATE smart `dji-avata-2-motors` → 7 rules
+- SMART `dji-avata-2-motors` converted (7 rules, 199 products)
+- DELETE custom `dji-avata-2-arms`
+- CREATE smart `dji-avata-2-arms` → 8 rules
+- SMART `dji-avata-2-arms` converted (8 rules, 224 products)
+- DELETE custom `dji-avata-2-cameras`
+- CREATE smart `dji-avata-2-cameras` → 8 rules
+- SMART `dji-avata-2-cameras` converted (8 rules, 800 products)
+- DELETE custom `dji-avata-2-gimbal`
+- CREATE smart `dji-avata-2-gimbal` → 7 rules
+- SMART `dji-avata-2-gimbal` converted (7 rules, 286 products)
+- DELETE custom `dji-avata-2-shell`
+- CREATE smart `dji-avata-2-shell` → 9 rules
+- SMART `dji-avata-2-shell` converted (9 rules, 394 products)
+- DELETE custom `dji-avata-2-landing-gear`
+- CREATE smart `dji-avata-2-landing-gear` → 8 rules
+- SMART `dji-avata-2-landing-gear` converted (8 rules, 132 products)
+- DELETE custom `dji-avata-2-cables`
+- CREATE smart `dji-avata-2-cables` → 8 rules
+- SMART `dji-avata-2-cables` converted (8 rules, 677 products)
+- DELETE custom `dji-avata-2-antennas`
+- CREATE smart `dji-avata-2-antennas` → 8 rules
+- SMART `dji-avata-2-antennas` converted (8 rules, 90 products)
+- DELETE custom `dji-avata-2-sensors`
+- CREATE smart `dji-avata-2-sensors` → 8 rules
+- SMART `dji-avata-2-sensors` converted (8 rules, 111 products)
+- DELETE custom `dji-avata-2-accessories`
+- CREATE smart `dji-avata-2-accessories` → 9 rules
+- SMART `dji-avata-2-accessories` converted (9 rules, 533 products)
+- SMART `dji-mavic-3-enterprise-spare-parts` skipped (4 rules, 5 products)
+- CREATE smart `dji-mavic-3-enterprise-propellers` → 7 rules
+- SMART `dji-mavic-3-enterprise-propellers` created (7 rules, 227 products)
+- SMART `dji-mavic-3-enterprise-batteries` skipped (5 rules, 372 products)
+- CREATE smart `dji-mavic-3-enterprise-motors` → 7 rules
+- SMART `dji-mavic-3-enterprise-motors` created (7 rules, 132 products)
+- CREATE smart `dji-mavic-3-enterprise-arms` → 8 rules
+- SMART `dji-mavic-3-enterprise-arms` created (8 rules, 155 products)
+- SMART `dji-mavic-3-enterprise-cameras` skipped (5 rules, 1057 products)
+- SMART `dji-mavic-3-enterprise-gimbal` skipped (4 rules, 218 products)
+- SMART `dji-mavic-3-enterprise-shell` skipped (5 rules, 230 products)
+- CREATE smart `dji-mavic-3-enterprise-landing-gear` → 8 rules
+- SMART `dji-mavic-3-enterprise-landing-gear` created (8 rules, 63 products)
+- CREATE smart `dji-mavic-3-enterprise-cables` → 8 rules
+- SMART `dji-mavic-3-enterprise-cables` created (8 rules, 608 products)
+- CREATE smart `dji-mavic-3-enterprise-antennas` → 8 rules
+- SMART `dji-mavic-3-enterprise-antennas` created (8 rules, 20 products)
+- CREATE smart `dji-mavic-3-enterprise-sensors` → 8 rules
+- SMART `dji-mavic-3-enterprise-sensors` created (8 rules, 43 products)
+- SMART `dji-mavic-3-enterprise-accessories` skipped (5 rules, 85 products)
+- SMART `dji-matrice-4-spare-parts` skipped (4 rules, 21 products)
+- SMART `dji-matrice-4-propellers` skipped (5 rules, 242 products)
+- SMART `dji-matrice-4-batteries` skipped (5 rules, 387 products)
+- CREATE smart `dji-matrice-4-motors` → 8 rules
+- SMART `dji-matrice-4-motors` created (8 rules, 150 products)
+- CREATE smart `dji-matrice-4-arms` → 9 rules
+- SMART `dji-matrice-4-arms` created (9 rules, 173 products)
+- SMART `dji-matrice-4-cameras` skipped (5 rules, 1075 products)
+- SMART `dji-matrice-4-gimbal` skipped (4 rules, 233 products)
+- CREATE smart `dji-matrice-4-shell` → 10 rules
+- SMART `dji-matrice-4-shell` created (10 rules, 343 products)
+- CREATE smart `dji-matrice-4-landing-gear` → 9 rules
+- SMART `dji-matrice-4-landing-gear` created (9 rules, 81 products)
+- SMART `dji-matrice-4-cables` skipped (5 rules, 618 products)
+- CREATE smart `dji-matrice-4-antennas` → 9 rules
+- SMART `dji-matrice-4-antennas` created (9 rules, 38 products)
+- CREATE smart `dji-matrice-4-sensors` → 9 rules
+- SMART `dji-matrice-4-sensors` created (9 rules, 61 products)
+- SMART `dji-matrice-4-accessories` skipped (2 rules, 15 products)
+- DELETE custom `dji-matrice-30-spare-parts`
+- CREATE smart `dji-matrice-30-spare-parts` → 8 rules
+- SMART `dji-matrice-30-spare-parts` converted (8 rules, 91 products)
+- DELETE custom `dji-matrice-30-propellers`
+- CREATE smart `dji-matrice-30-propellers` → 7 rules
+- SMART `dji-matrice-30-propellers` converted (7 rules, 231 products)
+- DELETE custom `dji-matrice-30-batteries`
+- CREATE smart `dji-matrice-30-batteries` → 7 rules
+- SMART `dji-matrice-30-batteries` converted (7 rules, 377 products)
+- DELETE custom `dji-matrice-30-motors`
+- CREATE smart `dji-matrice-30-motors` → 7 rules
+- SMART `dji-matrice-30-motors` converted (7 rules, 137 products)
+- DELETE custom `dji-matrice-30-arms`
+- CREATE smart `dji-matrice-30-arms` → 8 rules
+- SMART `dji-matrice-30-arms` converted (8 rules, 160 products)
+- DELETE custom `dji-matrice-30-cameras`
+- CREATE smart `dji-matrice-30-cameras` → 8 rules
+- SMART `dji-matrice-30-cameras` converted (8 rules, 600 products)
+- DELETE custom `dji-matrice-30-gimbal`
+- CREATE smart `dji-matrice-30-gimbal` → 7 rules
+- SMART `dji-matrice-30-gimbal` converted (7 rules, 225 products)
+- DELETE custom `dji-matrice-30-shell`
+- CREATE smart `dji-matrice-30-shell` → 9 rules
+- SMART `dji-matrice-30-shell` converted (9 rules, 330 products)
+- DELETE custom `dji-matrice-30-landing-gear`
+- CREATE smart `dji-matrice-30-landing-gear` → 8 rules
+- SMART `dji-matrice-30-landing-gear` converted (8 rules, 68 products)
+- DELETE custom `dji-matrice-30-cables`
+- CREATE smart `dji-matrice-30-cables` → 8 rules
+- SMART `dji-matrice-30-cables` converted (8 rules, 613 products)
+- DELETE custom `dji-matrice-30-antennas`
+- CREATE smart `dji-matrice-30-antennas` → 8 rules
+- SMART `dji-matrice-30-antennas` converted (8 rules, 24 products)
+- DELETE custom `dji-matrice-30-sensors`
+- CREATE smart `dji-matrice-30-sensors` → 8 rules
+- SMART `dji-matrice-30-sensors` converted (8 rules, 48 products)
+- DELETE custom `dji-matrice-30-accessories`
+- CREATE smart `dji-matrice-30-accessories` → 9 rules
+- SMART `dji-matrice-30-accessories` converted (9 rules, 473 products)
+- SMART `dji-matrice-350-rtk-spare-parts` skipped (8 rules, 88 products)
+- CREATE smart `dji-matrice-350-rtk-propellers` → 7 rules
+- SMART `dji-matrice-350-rtk-propellers` created (7 rules, 229 products)
+- SMART `dji-matrice-350-rtk-batteries` skipped (4 rules, 374 products)
+- CREATE smart `dji-matrice-350-rtk-motors` → 7 rules
+- SMART `dji-matrice-350-rtk-motors` created (7 rules, 134 products)
+- CREATE smart `dji-matrice-350-rtk-arms` → 8 rules
+- SMART `dji-matrice-350-rtk-arms` created (8 rules, 157 products)
+- CREATE smart `dji-matrice-350-rtk-cameras` → 8 rules
+- SMART `dji-matrice-350-rtk-cameras` created (8 rules, 800 products)
+- CREATE smart `dji-matrice-350-rtk-gimbal` → 7 rules
+- SMART `dji-matrice-350-rtk-gimbal` created (7 rules, 222 products)
+- CREATE smart `dji-matrice-350-rtk-shell` → 9 rules
+- SMART `dji-matrice-350-rtk-shell` created (9 rules, 327 products)
+- CREATE smart `dji-matrice-350-rtk-landing-gear` → 8 rules
+- SMART `dji-matrice-350-rtk-landing-gear` created (8 rules, 65 products)
+- CREATE smart `dji-matrice-350-rtk-cables` → 8 rules
+- SMART `dji-matrice-350-rtk-cables` created (8 rules, 610 products)
+- SMART `dji-matrice-350-rtk-antennas` skipped (4 rules, 17 products)
+- CREATE smart `dji-matrice-350-rtk-sensors` → 8 rules
+- SMART `dji-matrice-350-rtk-sensors` created (8 rules, 45 products)
+- SMART `dji-matrice-350-rtk-accessories` skipped (6 rules, 8 products)
+- SMART `dji-flycart-30-spare-parts` skipped (8 rules, 85 products)
+- CREATE smart `dji-flycart-30-propellers` → 7 rules
+- SMART `dji-flycart-30-propellers` created (7 rules, 226 products)
+- SMART `dji-flycart-30-batteries` skipped (3 rules, 370 products)
+- CREATE smart `dji-flycart-30-motors` → 7 rules
+- SMART `dji-flycart-30-motors` created (7 rules, 131 products)
+- CREATE smart `dji-flycart-30-arms` → 8 rules
+- SMART `dji-flycart-30-arms` created (8 rules, 154 products)
+- CREATE smart `dji-flycart-30-cameras` → 8 rules
+- SMART `dji-flycart-30-cameras` created (8 rules, 0 products)
+- CREATE smart `dji-flycart-30-gimbal` → 7 rules
+- SMART `dji-flycart-30-gimbal` created (7 rules, 0 products)
+- CREATE smart `dji-flycart-30-shell` → 9 rules
+- SMART `dji-flycart-30-shell` created (9 rules, 324 products)
+- CREATE smart `dji-flycart-30-landing-gear` → 8 rules
+- SMART `dji-flycart-30-landing-gear` created (8 rules, 62 products)
+- CREATE smart `dji-flycart-30-cables` → 8 rules
+- SMART `dji-flycart-30-cables` created (8 rules, 607 products)
+- CREATE smart `dji-flycart-30-antennas` → 8 rules
+- SMART `dji-flycart-30-antennas` created (8 rules, 19 products)
+- CREATE smart `dji-flycart-30-sensors` → 8 rules
+- SMART `dji-flycart-30-sensors` created (8 rules, 42 products)
+- CREATE smart `dji-flycart-30-accessories` → 9 rules
+- SMART `dji-flycart-30-accessories` created (9 rules, 468 products)
+- DELETE menu `actionkameror-1`
+- DELETE menu `dronare-2`
+- DELETE menu `actionkameror-2`
+- DELETE menu `dronare`
+- DELETE menu `actionkameror-3`

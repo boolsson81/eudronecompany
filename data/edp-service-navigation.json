@@ -1,0 +1,43 @@
+{
+  "version": "3.5",
+  "menu_handle": "service-reparationer",
+  "title": "Service & Reparationer",
+  "items": [
+    {
+      "title": "Konsumentdrönare",
+      "url": "/pages/dji-konsument-service"
+    },
+    {
+      "title": "Enterprisedrönare",
+      "url": "/pages/dji-enterprise-service"
+    },
+    {
+      "title": "FlyCart",
+      "url": "/pages/flycart-service"
+    },
+    {
+      "title": "Agras",
+      "url": "/pages/agras-service"
+    },
+    {
+      "title": "DJI Dock",
+      "url": "/pages/dji-dock"
+    },
+    {
+      "title": "Kalibrering",
+      "url": "/pages/kalibrering"
+    },
+    {
+      "title": "Serviceavtal",
+      "url": "/pages/serviceavtal"
+    },
+    {
+      "title": "Felsökning",
+      "url": "/pages/felsokning"
+    },
+    {
+      "title": "Skadeanmälan",
+      "url": "/pages/skadeanmalan"
+    }
+  ]
+}

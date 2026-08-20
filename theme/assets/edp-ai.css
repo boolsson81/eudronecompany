@@ -1,0 +1,88 @@
+.edp-ai {
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.edp-ai__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(var(--color-foreground), 0.55);
+  margin: 0 0 0.5rem;
+}
+
+.edp-ai__heading {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.edp-ai__answer {
+  padding: 1rem 1.1rem;
+  border: 1px solid rgba(var(--color-foreground), 0.12);
+  border-radius: 0.75rem;
+  background: rgba(var(--color-foreground), 0.03);
+}
+
+.edp-ai__answer-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.edp-ai__spec-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.edp-ai__faq-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.edp-ai__faq-item {
+  border: 1px solid rgba(var(--color-foreground), 0.1);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.edp-ai__faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.edp-ai__faq-item p {
+  margin: 0 0 0.75rem;
+  line-height: 1.55;
+  color: rgba(var(--color-foreground), 0.82);
+}
+
+.edp-ai__related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.edp-ai__related-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--color-foreground), 0.14);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.edp-ai__related-link:hover {
+  background: rgba(var(--color-foreground), 0.05);
+}
+
+.edp-llms {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  white-space: pre-wrap;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 2rem 0;
+}

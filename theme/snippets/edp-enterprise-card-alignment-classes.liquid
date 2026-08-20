@@ -1,0 +1,16 @@
+{%- liquid
+  assign title_align = block.settings.title_alignment
+  if title_align == blank
+    assign title_align = section.settings.card_title_alignment | default: 'left'
+  endif
+
+  assign text_align = block.settings.text_alignment
+  if text_align == blank
+    assign text_align = section.settings.card_text_alignment | default: 'left'
+  endif
+
+  assign link_align = block.settings.link_alignment
+  if link_align == blank
+    assign link_align = section.settings.card_link_alignment | default: 'left'
+  endif
+-%}edp-enterprise__card--title-align-{{ title_align }} edp-enterprise__card--text-align-{{ text_align }} edp-enterprise__card--link-align-{{ link_align }}

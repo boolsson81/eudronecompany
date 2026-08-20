@@ -1,0 +1,282 @@
+{
+  "version": "5.0",
+  "note": "Additive only — does NOT modify Phase 3 main-menu or enterprise-dr-nare",
+  "menus": {
+    "service-support": {
+      "title": "Service & Support",
+      "url": "/pages/service-support",
+      "items": [
+        {
+          "title": "DJI Consumer Service",
+          "items": [
+            {
+              "title": "DJI Mini",
+              "url": "/pages/dji-mini-service"
+            },
+            {
+              "title": "DJI Air",
+              "url": "/pages/dji-air-service"
+            },
+            {
+              "title": "DJI Mavic",
+              "url": "/pages/dji-mavic-service"
+            },
+            {
+              "title": "DJI Avata",
+              "url": "/pages/dji-avata-service"
+            },
+            {
+              "title": "DJI Neo",
+              "url": "/pages/dji-neo-service"
+            },
+            {
+              "title": "DJI Flip",
+              "url": "/pages/dji-flip-service"
+            }
+          ]
+        },
+        {
+          "title": "DJI Enterprise Service",
+          "items": [
+            {
+              "title": "Matrice 4",
+              "url": "/pages/matrice-4-service"
+            },
+            {
+              "title": "Matrice 30",
+              "url": "/pages/matrice-30-service"
+            },
+            {
+              "title": "Matrice 300 RTK",
+              "url": "/pages/matrice-300-rtk-service"
+            },
+            {
+              "title": "Matrice 350 RTK",
+              "url": "/pages/matrice-350-rtk-service"
+            },
+            {
+              "title": "Matrice 400",
+              "url": "/pages/matrice-400-service"
+            },
+            {
+              "title": "Mavic Enterprise",
+              "url": "/pages/mavic-enterprise-service"
+            },
+            {
+              "title": "Agras",
+              "url": "/pages/agras-service"
+            },
+            {
+              "title": "FlyCart",
+              "url": "/pages/flycart-service"
+            },
+            {
+              "title": "DJI Dock",
+              "url": "/pages/dji-dock-service"
+            }
+          ]
+        },
+        {
+          "title": "Repairs",
+          "items": [
+            {
+              "title": "Drone Repair",
+              "url": "/pages/dronarreparation"
+            },
+            {
+              "title": "Crash Damage",
+              "url": "/pages/krockskador-reparation"
+            },
+            {
+              "title": "Gimbal Repair",
+              "url": "/pages/gimbalreparation"
+            },
+            {
+              "title": "Camera Repair",
+              "url": "/pages/kamerareparation"
+            },
+            {
+              "title": "Motor Replacement",
+              "url": "/pages/motorbyte"
+            },
+            {
+              "title": "ESC Repair",
+              "url": "/pages/esc-reparation"
+            }
+          ]
+        },
+        {
+          "title": "Calibration",
+          "items": [
+            {
+              "title": "IMU",
+              "url": "/pages/imu-kalibrering"
+            },
+            {
+              "title": "Compass",
+              "url": "/pages/kompasskalibrering"
+            },
+            {
+              "title": "RTK",
+              "url": "/pages/rtk-kalibrering"
+            },
+            {
+              "title": "Sensor",
+              "url": "/pages/sensor-kalibrering"
+            },
+            {
+              "title": "Camera",
+              "url": "/pages/kamera-kalibrering"
+            },
+            {
+              "title": "Thermal",
+              "url": "/pages/varmekamera-validering"
+            }
+          ]
+        },
+        {
+          "title": "Warranty",
+          "items": [
+            {
+              "title": "Warranty Claims",
+              "url": "/pages/garantiansokan"
+            },
+            {
+              "title": "Service Request",
+              "url": "/pages/serviceforfragan"
+            },
+            {
+              "title": "Return Request",
+              "url": "/pages/returforfragan"
+            },
+            {
+              "title": "Technical Support",
+              "url": "/pages/teknisk-support"
+            }
+          ]
+        },
+        {
+          "title": "Service Agreements",
+          "items": [
+            {
+              "title": "Basic",
+              "url": "/pages/serviceavtal-basic"
+            },
+            {
+              "title": "Professional",
+              "url": "/pages/serviceavtal-professional"
+            },
+            {
+              "title": "Enterprise",
+              "url": "/pages/serviceavtal-enterprise"
+            }
+          ]
+        }
+      ]
+    },
+    "documentation-center": {
+      "title": "Documentation Center",
+      "url": "/pages/dokumentation",
+      "items": [
+        {
+          "title": "Manuals",
+          "url": "/pages/manualer-dji-enterprise"
+        },
+        {
+          "title": "Firmware",
+          "url": "/pages/firmware-flygplan"
+        },
+        {
+          "title": "Datasheets",
+          "url": "/pages/datablad-specifikationer"
+        },
+        {
+          "title": "Compliance",
+          "url": "/pages/ce-dokument"
+        }
+      ]
+    },
+    "knowledge-center": {
+      "title": "Knowledge Center",
+      "url": "/pages/kunskapscenter",
+      "items": [
+        {
+          "title": "Drone Technology",
+          "url": "/pages/vad-ar-rtk"
+        },
+        {
+          "title": "Enterprise DJI",
+          "url": "/pages/guide-matrice-4"
+        },
+        {
+          "title": "Payloads",
+          "url": "/pages/guide-zenmuse-l2"
+        }
+      ]
+    },
+    "b2b-platform": {
+      "title": "B2B",
+      "items": [
+        {
+          "title": "Request Quote",
+          "url": "/pages/request-quote"
+        },
+        {
+          "title": "Enterprise Consultation",
+          "url": "/pages/enterprise-consultation"
+        },
+        {
+          "title": "Public Sector",
+          "url": "/pages/offentlig-sektor"
+        },
+        {
+          "title": "Payment Options",
+          "url": "/pages/betalningsalternativ"
+        }
+      ]
+    },
+    "support-center-menu": {
+      "title": "Support Center",
+      "url": "/pages/support-center",
+      "items": [
+        {
+          "title": "Contact",
+          "url": "/pages/kontakta-support"
+        },
+        {
+          "title": "Submit Ticket",
+          "url": "/pages/skicka-arende"
+        },
+        {
+          "title": "FAQ",
+          "url": "/pages/vanliga-fragor"
+        },
+        {
+          "title": "Troubleshooting",
+          "url": "/pages/felsokning"
+        }
+      ]
+    },
+    "footer-addon-v5": {
+      "title": "Footer links (additive)",
+      "items": [
+        {
+          "title": "Service & Support",
+          "url": "/pages/service-support"
+        },
+        {
+          "title": "Documentation",
+          "url": "/pages/dokumentation"
+        },
+        {
+          "title": "Knowledge Center",
+          "url": "/pages/kunskapscenter"
+        },
+        {
+          "title": "Request Quote",
+          "url": "/pages/request-quote"
+        }
+      ]
+    }
+  }
+}

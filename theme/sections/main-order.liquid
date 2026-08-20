@@ -1,0 +1,531 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .order-delivery-chat {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    max-width: 40rem;
+  }
+  .order-delivery-chat__messages {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 20rem;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+  }
+  .order-delivery-chat__message {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    max-width: 85%;
+  }
+  .order-delivery-chat__message--user {
+    align-self: flex-end;
+    background: rgba(0, 0, 0, 0.06);
+  }
+  .order-delivery-chat__message--assistant {
+    align-self: flex-start;
+    background: rgba(0, 100, 255, 0.08);
+  }
+  .order-delivery-chat__form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .order-delivery-chat__form input {
+    flex: 1;
+  }
+  .order-delivery-chat__status {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    opacity: 0.75;
+  }
+{%- endstyle -%}
+
+<div class="customer order section-{{ section.id }}-padding">
+  <div>
+    <h1 class="customer__title">{{ 'customer.account.title' | t }}</h1>
+    <a href="{{ routes.account_url }}">{{ 'customer.account.return' | t }}</a>
+  </div>
+
+  <div>
+    <div>
+      <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
+      {%- assign order_date = order.created_at | time_tag: format: 'date_at_time' -%}
+      <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
+      {%- if order.cancelled -%}
+        {%- assign cancelled_at = order.cancelled_at | time_tag: format: 'date_at_time' -%}
+        <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
+        <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+      {%- endif -%}
+
+      <table role="table" class="order-details">
+        <caption class="visually-hidden">
+          {{ 'customer.order.title' | t: name: order.name }}
+        </caption>
+        <thead role="rowgroup">
+          <tr role="row">
+            <th id="ColumnProduct" scope="col" role="columnheader">{{ 'customer.order.product' | t }}</th>
+            <th id="ColumnSku" scope="col" role="columnheader">{{ 'customer.order.sku' | t }}</th>
+            <th id="ColumnPrice" scope="col" role="columnheader">{{ 'customer.order.price' | t }}</th>
+            <th id="ColumnQuantity" scope="col" role="columnheader">{{ 'customer.order.quantity' | t }}</th>
+            <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.order.total' | t }}</th>
+          </tr>
+        </thead>
+        <tbody role="rowgroup">
+          {%- for line_item in order.line_items -%}
+            <tr role="row">
+              <td
+                id="Row{{ line_item.key }}"
+                headers="ColumnProduct"
+                role="rowheader"
+                scope="row"
+                data-label="{{ 'customer.order.product' | t }}"
+              >
+                <div>
+                  {%- if line_item.url != blank -%}
+                    <a href="{{ line_item.url }}">{{ line_item.title | escape }}</a>
+                  {%- else -%}
+                    <p>{{ line_item.title | escape }}</p>
+                  {%- endif -%}
+                  {%- assign property_size = line_item.properties | size -%}
+                  {%- unless line_item.selling_plan_allocation == null and property_size == 0 -%}
+                    <div class="properties">
+                      {%- unless line_item.product.has_only_default_variant -%}
+                        <span>
+                          {{ line_item.variant.title | escape }}
+                        </span>
+                      {%- endunless -%}
+                      {%- unless line_item.selling_plan_allocation == null -%}
+                        <span>
+                          {{ line_item.selling_plan_allocation.selling_plan.name }}
+                        </span>
+                      {%- endunless -%}
+                      {%- if property_size != 0 -%}
+                        {%- for property in line_item.properties -%}
+                          {% assign property_first_char = property.first | slice: 0 %}
+                          {%- if property.last != blank and property_first_char != '_' -%}
+                            <span>{{ property.first }}:</span>
+                            <span>
+                              {%- if property.last contains '/uploads/' -%}
+                                <a href="{{ property.last }}">{{ property.last | split: '/' | last }}</a>
+                              {%- else -%}
+                                {{ property.last }}
+                              {%- endif -%}
+                            </span>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endif -%}
+                    </div>
+                  {%- endunless -%}
+
+                  {%- if line_item.line_level_discount_allocations != blank -%}
+                    <ul role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                      {%- for discount_allocation in line_item.line_level_discount_allocations -%}
+                        <li>
+                          <span class="svg-wrapper">
+                            {{- 'icon-discount.svg' | inline_asset_content -}}
+                          </span>
+                          {{- discount_allocation.discount_application.title | escape }} (-
+                          {{- discount_allocation.amount | money -}}
+                          )
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+
+                  {%- if line_item.fulfillment -%}
+                    <div class="fulfillment">
+                      {%- assign created_at = line_item.fulfillment.created_at | time_tag: format: 'date' -%}
+                      <span>{{ 'customer.order.fulfilled_at_html' | t: date: created_at }}</span>
+
+                      {%- if line_item.fulfillment.tracking_url -%}
+                        <a href="{{ line_item.fulfillment.tracking_url }}">
+                          {{ 'customer.order.track_shipment' | t }}
+                        </a>
+                      {%- endif -%}
+                      <span>
+                        {{ line_item.fulfillment.tracking_company }}
+                        {%- if line_item.fulfillment.tracking_number -%}
+                          #{{ line_item.fulfillment.tracking_number }}
+                        {%- endif -%}
+                      </span>
+                    </div>
+                  {%- endif -%}
+                </div>
+              </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnSku"
+                role="cell"
+                data-label="{{ 'customer.order.sku' | t }}"
+              >
+                {{ line_item.sku }}
+              </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnPrice"
+                role="cell"
+                data-label="{{ 'customer.order.price' | t }}"
+              >
+                {%- if line_item.original_price != line_item.final_price or line_item.unit_price_measurement -%}
+                  <dl>
+                    {%- if line_item.original_price != line_item.final_price -%}
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+                      </dt>
+                      <dd class="regular-price">
+                        <s>{{ line_item.original_price | money }}</s>
+                      </dd>
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+                      </dt>
+                      <dd>
+                        <span>{{ line_item.final_price | money }}</span>
+                      </dd>
+                    {%- else -%}
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+                      </dt>
+                      <dd>
+                        {{ line_item.original_price | money }}
+                      </dd>
+                    {%- endif -%}
+                    {%- if line_item.unit_price_measurement -%}
+                      <dt>
+                        <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                      </dt>
+                      <dd class="unit-price">
+                        {% render 'unit-price', price: line_item.unit_price, measurement: line_item.unit_price_measurement, hide_accessibility_label: true %}
+                      </dd>
+                    {%- endif -%}
+                  </dl>
+                {%- else -%}
+                  <span>{{ line_item.final_price | money }}</span>
+                {%- endif -%}
+              </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnQuantity"
+                role="cell"
+                data-label="{{ 'customer.order.quantity' | t }}"
+              >
+                {{ line_item.quantity }}
+              </td>
+              <td
+                headers="Row{{ line_item.key }} ColumnTotal"
+                role="cell"
+                data-label="{{ 'customer.order.total' | t }}"
+              >
+                {%- if line_item.original_line_price != line_item.final_line_price -%}
+                  <dl>
+                    <dt>
+                      <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
+                    </dt>
+                    <dd class="regular-price">
+                      <s>{{ line_item.original_line_price | money }}</s>
+                    </dd>
+                    <dt>
+                      <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
+                    </dt>
+                    <dd>
+                      <span>{{ line_item.final_line_price | money }}</span>
+                    </dd>
+                  </dl>
+                {%- else -%}
+                  {{ line_item.original_line_price | money }}
+                {%- endif -%}
+              </td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+        <tfoot role="rowgroup">
+          <tr role="row">
+            <td id="RowSubtotal" role="rowheader" scope="row" colspan="4">
+              {{ 'customer.order.subtotal' | t }}
+            </td>
+            <td headers="RowSubtotal" role="cell" data-label="{{ 'customer.order.subtotal' | t }}">
+              {{ order.line_items_subtotal_price | money }}
+            </td>
+          </tr>
+          {%- if order.cart_level_discount_applications != blank -%}
+            <tr role="row">
+              {%- for discount_application in order.cart_level_discount_applications -%}
+                <td id="RowDiscount" role="rowheader" scope="row" colspan="4">
+                  {{ 'customer.order.discount' | t }}
+                  <span class="cart-discount">
+                    <span class="svg-wrapper">
+                      {{- 'icon-discount.svg' | inline_asset_content -}}
+                    </span>
+                    {{- discount_application.title | escape -}}
+                  </span>
+                </td>
+                <td headers="RowDiscount" role="cell" data-label="{{ 'customer.order.discount' | t }}">
+                  <div>
+                    <span>-{{ discount_application.total_allocated_amount | money }}</span>
+                    <span class="cart-discount">
+                      <span class="svg-wrapper">
+                        {{- 'icon-discount.svg' | inline_asset_content -}}
+                      </span>
+                      {{- discount_application.title | escape -}}
+                    </span>
+                  </div>
+                </td>
+              {%- endfor -%}
+            </tr>
+          {%- endif -%}
+          {%- for shipping_method in order.shipping_methods -%}
+            <tr role="row">
+              <td id="RowShipping" role="rowheader" scope="row" colspan="4">
+                {{ 'customer.order.shipping' | t }} ({{ shipping_method.title | escape }})
+              </td>
+              <td
+                headers="RowShipping"
+                role="cell"
+                data-label="{{ 'customer.order.shipping' | t }} ({{ shipping_method.title | escape }})"
+              >
+                {{ shipping_method.price | money }}
+              </td>
+            </tr>
+          {%- endfor -%}
+          {%- for tax_line in order.tax_lines -%}
+            <tr role="row">
+              <td id="RowTax" role="rowheader" scope="row" colspan="4">
+                {{ 'customer.order.tax' | t }} ({{ tax_line.title | escape }}
+                {{ tax_line.rate | times: 100 }}%)
+              </td>
+              <td
+                headers="RowTax"
+                role="cell"
+                data-label="{{ 'customer.order.tax' | t }} ({{ tax_line.title | escape }} {{ tax_line.rate | times: 100 }}%)"
+              >
+                {{ tax_line.price | money }}
+              </td>
+            </tr>
+          {%- endfor -%}
+          {%- if order.total_duties -%}
+            <tr role="row">
+              <td id="RowDuties" role="rowheader" scope="row" colspan="4">{{ 'customer.order.total_duties' | t }}</td>
+              <td headers="RowDuties" role="cell" data-label="{{ 'customer.order.total_duties' | t }}">
+                {{ order.total_duties | money }}
+              </td>
+            </tr>
+          {%- endif -%}
+          {%- if order.total_refunded_amount > 0 -%}
+            <tr role="row">
+              <td id="RowTotalRefund" role="rowheader" scope="row" colspan="3">
+                {{ 'customer.order.total_refunded' | t }}
+              </td>
+              <td
+                headers="RowTotalRefund"
+                role="cell"
+                colspan="2"
+                data-label="{{ 'customer.order.total_refunded' | t }}"
+              >
+                -{{ order.total_refunded_amount | money_with_currency }}
+              </td>
+            </tr>
+          {%- endif -%}
+          <tr role="row">
+            <td id="RowTotal" role="rowheader" scope="row" colspan="3">{{ 'customer.order.total' | t }}</td>
+            <td headers="RowTotal" role="cell" colspan="2" data-label="{{ 'customer.order.total' | t }}">
+              {{ order.total_net_amount | money_with_currency }}
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div>
+      <div>
+        <h2>{{ 'customer.order.billing_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.payment_status' | t }}:</strong>
+          {{ order.financial_status_label }}
+        </p>
+        {{ order.billing_address | format_address }}
+      </div>
+      <div>
+        <h2>{{ 'customer.order.shipping_address' | t }}</h2>
+        <p>
+          <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong>
+          {{ order.fulfillment_status_label }}
+        </p>
+        {{ order.shipping_address | format_address }}
+      </div>
+    </div>
+
+    {%- assign chat_token = order.metafields.custom.delivery_chat_token -%}
+    {%- if chat_token != blank -%}
+      {%- comment -%}
+        Text is hardcoded here (not routed through locale files / | t) and the
+        API URL falls back to a hardcoded default: this theme's push pipeline
+        (scripts/push-edp-theme.mjs) skips config/settings_schema.json for
+        legacy Horizon themes, and separately, unrelated pre-existing Liquid/
+        JSON errors elsewhere in theme/ knock out whole upload batches
+        (Shopify's themeFilesUpsert rejects a batch as a unit), which happened
+        to include locales/sv.json and locales/en.default.json. Keeping this
+        section self-contained means the widget still works regardless of
+        those pre-existing, unrelated theme issues. settings.delivery_chat_api_url
+        still overrides the default if that setting ever does get pushed.
+      {%- endcomment -%}
+      {%- assign dc_is_english = false -%}
+      {%- if request.locale.iso_code == 'en' -%}
+        {%- assign dc_is_english = true -%}
+      {%- endif -%}
+      {%- if dc_is_english -%}
+        {%- assign dc_title = 'Ask about your delivery' -%}
+        {%- assign dc_input_label = 'Your question' -%}
+        {%- assign dc_placeholder = 'E.g. When will my order arrive?' -%}
+        {%- assign dc_send = 'Send' -%}
+        {%- assign dc_thinking = 'Thinking...' -%}
+        {%- assign dc_error = 'Something went wrong. Please try again shortly.' -%}
+        {%- assign dc_escalate = 'Want to talk to a human? Contact us via the contact page.' -%}
+      {%- else -%}
+        {%- assign dc_title = 'Fråga om din leverans' -%}
+        {%- assign dc_input_label = 'Din fråga' -%}
+        {%- assign dc_placeholder = 'T.ex. När kommer min order?' -%}
+        {%- assign dc_send = 'Skicka' -%}
+        {%- assign dc_thinking = 'Skriver...' -%}
+        {%- assign dc_error = 'Något gick fel. Försök igen om en stund.' -%}
+        {%- assign dc_escalate = 'Vill du prata med kundtjänst? Kontakta oss via kontaktsidan.' -%}
+      {%- endif -%}
+      <div
+        class="order-delivery-chat"
+        id="OrderDeliveryChat-{{ section.id }}"
+        data-token="{{ chat_token }}"
+        data-api-url="{{ settings.delivery_chat_api_url | default: 'https://jzqgwsryxmgzcbjjddic.supabase.co/functions/v1/order-delivery-chat' }}"
+      >
+        <h2>{{ dc_title }}</h2>
+        <div
+          class="order-delivery-chat__messages"
+          id="OrderDeliveryChatMessages-{{ section.id }}"
+          role="log"
+          aria-live="polite"
+        ></div>
+        <form class="order-delivery-chat__form" id="OrderDeliveryChatForm-{{ section.id }}">
+          <label class="visually-hidden" for="OrderDeliveryChatInput-{{ section.id }}">
+            {{ dc_input_label }}
+          </label>
+          <input
+            type="text"
+            id="OrderDeliveryChatInput-{{ section.id }}"
+            placeholder="{{ dc_placeholder }}"
+            autocomplete="off"
+            maxlength="2000"
+          >
+          <button type="submit">{{ dc_send }}</button>
+        </form>
+        <p
+          class="order-delivery-chat__status"
+          id="OrderDeliveryChatStatus-{{ section.id }}"
+          aria-live="polite"
+        ></p>
+      </div>
+      <script>
+        (function () {
+          var root = document.getElementById('OrderDeliveryChat-{{ section.id }}');
+          if (!root) return;
+          var token = root.dataset.token;
+          var apiUrl = root.dataset.apiUrl;
+          var messagesEl = document.getElementById('OrderDeliveryChatMessages-{{ section.id }}');
+          var formEl = document.getElementById('OrderDeliveryChatForm-{{ section.id }}');
+          var inputEl = document.getElementById('OrderDeliveryChatInput-{{ section.id }}');
+          var statusEl = document.getElementById('OrderDeliveryChatStatus-{{ section.id }}');
+          var history = [];
+
+          function addMessage(role, text) {
+            var p = document.createElement('p');
+            p.className = 'order-delivery-chat__message order-delivery-chat__message--' + role;
+            p.textContent = text;
+            messagesEl.appendChild(p);
+            messagesEl.scrollTop = messagesEl.scrollHeight;
+          }
+
+          if (!token || !apiUrl) return;
+
+          formEl.addEventListener('submit', function (evt) {
+            evt.preventDefault();
+            var message = inputEl.value.trim();
+            if (!message) return;
+
+            addMessage('user', message);
+            var sentHistory = history.slice();
+            history.push({ role: 'user', content: message });
+            inputEl.value = '';
+            inputEl.disabled = true;
+            statusEl.textContent = {{ dc_thinking | json }};
+
+            fetch(apiUrl, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ token: token, message: message, history: sentHistory }),
+            })
+              .then(function (res) { return res.json(); })
+              .then(function (data) {
+                statusEl.textContent = '';
+                inputEl.disabled = false;
+                inputEl.focus();
+                if (data.error) {
+                  addMessage('assistant', {{ dc_error | json }});
+                  return;
+                }
+                addMessage('assistant', data.reply);
+                history.push({ role: 'assistant', content: data.reply });
+                if (data.escalate) {
+                  statusEl.textContent = {{ dc_escalate | json }};
+                }
+              })
+              .catch(function () {
+                statusEl.textContent = '';
+                inputEl.disabled = false;
+                addMessage('assistant', {{ dc_error | json }});
+              });
+          });
+        })();
+      </script>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-order.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

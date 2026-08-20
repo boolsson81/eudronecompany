@@ -1,0 +1,216 @@
+{
+  "version": "3.5",
+  "pages": [
+    {
+      "handle": "dji-reparation",
+      "title": "DJI reparation",
+      "keyword": "DJI reparation",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI reparation | EuroDroneParts",
+      "seo_description": "Professionell dji reparation för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-dronarservice",
+      "title": "DJI drönarservice",
+      "keyword": "DJI drönarservice",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI drönarservice | EuroDroneParts",
+      "seo_description": "Professionell dji drönarservice för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-enterprise-service",
+      "title": "DJI Enterprise service",
+      "keyword": "DJI Enterprise service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI Enterprise service | EuroDroneParts",
+      "seo_description": "Professionell dji enterprise service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "matrice-350-reparation",
+      "title": "Matrice 350 reparation",
+      "keyword": "Matrice 350 reparation",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Matrice 350 reparation | EuroDroneParts",
+      "seo_description": "Professionell matrice 350 reparation för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "matrice-4-service",
+      "title": "Matrice 4 service",
+      "keyword": "Matrice 4 service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "Matrice 4 service | EuroDroneParts",
+      "seo_description": "Professionell matrice 4 service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "flycart-service",
+      "title": "FlyCart service",
+      "keyword": "FlyCart service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "FlyCart service | EuroDroneParts",
+      "seo_description": "Professionell flycart service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "agras-service",
+      "title": "Agras service",
+      "keyword": "Agras service",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Agras service | EuroDroneParts",
+      "seo_description": "Professionell agras service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-dock-service",
+      "title": "DJI Dock service",
+      "keyword": "DJI Dock service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI Dock service | EuroDroneParts",
+      "seo_description": "Professionell dji dock service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dronarreparation-sverige",
+      "title": "Drönarreparation Sverige",
+      "keyword": "drönarreparation Sverige",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Drönarreparation Sverige | EuroDroneParts",
+      "seo_description": "Professionell drönarreparation sverige för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-reservdelar-och-service",
+      "title": "DJI reservdelar och service",
+      "keyword": "DJI reservdelar service",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI reservdelar och service | EuroDroneParts",
+      "seo_description": "Professionell dji reservdelar service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-batteriservice",
+      "title": "DJI batteriservice",
+      "keyword": "DJI batteriservice",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI batteriservice | EuroDroneParts",
+      "seo_description": "Professionell dji batteriservice för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "gimbalreparation-dji",
+      "title": "Gimbalreparation DJI",
+      "keyword": "gimbalreparation DJI",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Gimbalreparation DJI | EuroDroneParts",
+      "seo_description": "Professionell gimbalreparation dji för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "hub": {
+    "handle": "dokumentation",
+    "title": "Documentation Center",
+    "url": "/pages/dokumentation"
+  },
+  "excluded": [
+    "CAD libraries",
+    "BIM repositories",
+    "3D model repositories"
+  ],
+  "sections": {
+    "manuals": {
+      "title": "Manuals",
+      "categories": [
+        {
+          "handle": "manualer-dji-enterprise",
+          "label": "DJI Enterprise",
+          "related_collections": [
+            "enterprise-dronare",
+            "dji-matrice-serien"
+          ]
+        },
+        {
+          "handle": "manualer-dji-konsument",
+          "label": "DJI Consumer",
+          "related_collections": [
+            "dji-mini-3-serien",
+            "dji-mavic-3-serien",
+            "dji-air-serien"
+          ]
+        },
+        {
+          "handle": "manualer-flycart",
+          "label": "FlyCart",
+          "related_collections": [
+            "dji-flycart-serien"
+          ]
+        },
+        {
+          "handle": "manualer-agras",
+          "label": "Agras",
+          "related_collections": [
+            "dji-agras-dronare"
+          ]
+        },
+        {
+          "handle": "manualer-dock",
+          "label": "Dock",
+          "related_collections": [
+            "enterprise-dronare"
+          ]
+        },
+        {
+          "handle": "manualer-payloads",
+          "label": "Payloads",
+          "related_collections": [
+            "enterprise-sensorer",
+            "dronare-med-varmekamera"
+          ]
+        }
+      ]
+    },
+    "firmware": {
+      "title": "Firmware",
+      "categories": [
+        {
+          "handle": "firmware-flygplan",
+          "label": "Aircraft"
+        },
+        {
+          "handle": "firmware-fjarrkontroller",
+          "label": "Controllers",
+          "related_collections": [
+            "dji-enterprise-fjarrkontroller"
+          ]
+        },
+        {
+          "handle": "firmware-payloads",
+          "label": "Payloads",
+          "related_collections": [
+            "enterprise-sensorer"
+          ]
+        },
+        {
+          "handle": "firmware-dock",
+          "label": "Dock Systems"
+        }
+      ]
+    },
+    "datasheets": {
+      "title": "Product Datasheets",
+      "categories": [
+        {
+          "handle": "datablad-specifikationer",
+          "label": "Specifications"
+        },
+        {
+          "handle": "datablad-kompatibilitet",
+          "label": "Compatibility"
+        },
+        {
+          "handle": "datablad-certifieringar",
+          "label": "Certifications"
+        }
+      ]
+    },
+    "compliance": {
+      "title": "Compliance",
+      "categories": [
+        {
+          "handle": "ce-dokument",
+          "label": "CE Documents"
+        },
+        {
+          "handle": "produktcertifieringar",
+          "label": "Product Certifications"
+        },
+        {
+          "handle": "sakerhetsdokumentation",
+          "label": "Safety Documentation"
+        }
+      ]
+    }
+  }
+}

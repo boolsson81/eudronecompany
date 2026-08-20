@@ -1,0 +1,2539 @@
+{
+  "generated_at": "2026-06-13T09:01:13.740Z",
+  "mode": "live",
+  "menus_before": 366,
+  "delete_requested": 361,
+  "deleted": 361,
+  "would_delete": 0,
+  "failed": [],
+  "not_found": [],
+  "results": [
+    {
+      "handle": "actionkameror",
+      "id": "gid://shopify/Menu/300343984456",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-1",
+      "id": "gid://shopify/Menu/300344082760",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-2",
+      "id": "gid://shopify/Menu/300344181064",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-3",
+      "id": "gid://shopify/Menu/300344312136",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-4",
+      "id": "gid://shopify/Menu/300344410440",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-5",
+      "id": "gid://shopify/Menu/300344508744",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-6",
+      "id": "gid://shopify/Menu/300344607048",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-7",
+      "id": "gid://shopify/Menu/300344770888",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-8",
+      "id": "gid://shopify/Menu/300345000264",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-9",
+      "id": "gid://shopify/Menu/300345098568",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-10",
+      "id": "gid://shopify/Menu/300345196872",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-11",
+      "id": "gid://shopify/Menu/300345590088",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-12",
+      "id": "gid://shopify/Menu/300345885000",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-13",
+      "id": "gid://shopify/Menu/300346081608",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-14",
+      "id": "gid://shopify/Menu/300346179912",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-15",
+      "id": "gid://shopify/Menu/300346278216",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "actionkameror-16",
+      "id": "gid://shopify/Menu/300346704200",
+      "title": "Actionkameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "customer-account-main-menu-1",
+      "id": "gid://shopify/Menu/299900338504",
+      "title": "Customer account main menu",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "customer-account-main-menu-2",
+      "id": "gid://shopify/Menu/300118442312",
+      "title": "Customer account main menu",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "customer-account-main-menu-3",
+      "id": "gid://shopify/Menu/300118606152",
+      "title": "Customer account main menu",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare",
+      "id": "gid://shopify/Menu/300344049992",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-1",
+      "id": "gid://shopify/Menu/300344148296",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-2",
+      "id": "gid://shopify/Menu/300344246600",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-3",
+      "id": "gid://shopify/Menu/300344377672",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-4",
+      "id": "gid://shopify/Menu/300344475976",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-5",
+      "id": "gid://shopify/Menu/300344574280",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-6",
+      "id": "gid://shopify/Menu/300344672584",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-7",
+      "id": "gid://shopify/Menu/300344934728",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-8",
+      "id": "gid://shopify/Menu/300345065800",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-9",
+      "id": "gid://shopify/Menu/300345164104",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-10",
+      "id": "gid://shopify/Menu/300345262408",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-11",
+      "id": "gid://shopify/Menu/300345655624",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-12",
+      "id": "gid://shopify/Menu/300345950536",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-13",
+      "id": "gid://shopify/Menu/300346147144",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-14",
+      "id": "gid://shopify/Menu/300346245448",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-15",
+      "id": "gid://shopify/Menu/300346343752",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "dronare-16",
+      "id": "gid://shopify/Menu/300346769736",
+      "title": "Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "enterprise-dr-nare-1",
+      "id": "gid://shopify/Menu/300122669384",
+      "title": "Enterprise Drönare",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "footer-1",
+      "id": "gid://shopify/Menu/299900469576",
+      "title": "Footer menu",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "footer-2",
+      "id": "gid://shopify/Menu/300122276168",
+      "title": "Footer menu",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "gimbal",
+      "id": "gid://shopify/Menu/299900535112",
+      "title": "Gimbal",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "kameror",
+      "id": "gid://shopify/Menu/300120605000",
+      "title": "Kameror",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "main-menu-1",
+      "id": "gid://shopify/Menu/299900305736",
+      "title": "Meny",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "main-menu-2",
+      "id": "gid://shopify/Menu/300118278472",
+      "title": "Meny",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "meny-1",
+      "id": "gid://shopify/Menu/300122898760",
+      "title": "Huvudmeny",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership",
+      "id": "gid://shopify/Menu/300091769160",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-1",
+      "id": "gid://shopify/Menu/300134007112",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-2",
+      "id": "gid://shopify/Menu/300134203720",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-3",
+      "id": "gid://shopify/Menu/300134334792",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-4",
+      "id": "gid://shopify/Menu/300134564168",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-5",
+      "id": "gid://shopify/Menu/300134695240",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-6",
+      "id": "gid://shopify/Menu/300134793544",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-7",
+      "id": "gid://shopify/Menu/300134891848",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-8",
+      "id": "gid://shopify/Menu/300134990152",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-9",
+      "id": "gid://shopify/Menu/300135088456",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-10",
+      "id": "gid://shopify/Menu/300135383368",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-11",
+      "id": "gid://shopify/Menu/300135776584",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-12",
+      "id": "gid://shopify/Menu/300136104264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-13",
+      "id": "gid://shopify/Menu/300136300872",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-14",
+      "id": "gid://shopify/Menu/300136399176",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-15",
+      "id": "gid://shopify/Menu/300136530248",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-16",
+      "id": "gid://shopify/Menu/300136759624",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-17",
+      "id": "gid://shopify/Menu/300137054536",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-18",
+      "id": "gid://shopify/Menu/300137382216",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-19",
+      "id": "gid://shopify/Menu/300137709896",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-20",
+      "id": "gid://shopify/Menu/300137939272",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-21",
+      "id": "gid://shopify/Menu/300138266952",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-22",
+      "id": "gid://shopify/Menu/300138496328",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-23",
+      "id": "gid://shopify/Menu/300138791240",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-24",
+      "id": "gid://shopify/Menu/300138987848",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-25",
+      "id": "gid://shopify/Menu/300139184456",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-26",
+      "id": "gid://shopify/Menu/300139282760",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-27",
+      "id": "gid://shopify/Menu/300139577672",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-28",
+      "id": "gid://shopify/Menu/300139807048",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-29",
+      "id": "gid://shopify/Menu/300139905352",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-30",
+      "id": "gid://shopify/Menu/300140101960",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-31",
+      "id": "gid://shopify/Menu/300140200264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-32",
+      "id": "gid://shopify/Menu/300140298568",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-33",
+      "id": "gid://shopify/Menu/300140396872",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-34",
+      "id": "gid://shopify/Menu/300140593480",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-35",
+      "id": "gid://shopify/Menu/300140921160",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-36",
+      "id": "gid://shopify/Menu/300141216072",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-37",
+      "id": "gid://shopify/Menu/300141510984",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-38",
+      "id": "gid://shopify/Menu/300141609288",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-39",
+      "id": "gid://shopify/Menu/300141936968",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-40",
+      "id": "gid://shopify/Menu/300142264648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-41",
+      "id": "gid://shopify/Menu/300142657864",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-42",
+      "id": "gid://shopify/Menu/300142854472",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-43",
+      "id": "gid://shopify/Menu/300143247688",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-44",
+      "id": "gid://shopify/Menu/300143378760",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-45",
+      "id": "gid://shopify/Menu/300143477064",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-46",
+      "id": "gid://shopify/Menu/300143673672",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-47",
+      "id": "gid://shopify/Menu/300143771976",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-48",
+      "id": "gid://shopify/Menu/300146295112",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-49",
+      "id": "gid://shopify/Menu/300150522184",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-50",
+      "id": "gid://shopify/Menu/300150620488",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-51",
+      "id": "gid://shopify/Menu/300150817096",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-52",
+      "id": "gid://shopify/Menu/300150948168",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-53",
+      "id": "gid://shopify/Menu/300151177544",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-54",
+      "id": "gid://shopify/Menu/300151701832",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-55",
+      "id": "gid://shopify/Menu/300151800136",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-56",
+      "id": "gid://shopify/Menu/300152226120",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-57",
+      "id": "gid://shopify/Menu/300152521032",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-58",
+      "id": "gid://shopify/Menu/300152815944",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-59",
+      "id": "gid://shopify/Menu/300152914248",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-60",
+      "id": "gid://shopify/Menu/300153012552",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-61",
+      "id": "gid://shopify/Menu/300153143624",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-62",
+      "id": "gid://shopify/Menu/300153241928",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-63",
+      "id": "gid://shopify/Menu/300153438536",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-64",
+      "id": "gid://shopify/Menu/300153536840",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-65",
+      "id": "gid://shopify/Menu/300153635144",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-66",
+      "id": "gid://shopify/Menu/300153831752",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-67",
+      "id": "gid://shopify/Menu/300153930056",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-68",
+      "id": "gid://shopify/Menu/300154224968",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-69",
+      "id": "gid://shopify/Menu/300154519880",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-70",
+      "id": "gid://shopify/Menu/300154716488",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-71",
+      "id": "gid://shopify/Menu/300154913096",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-72",
+      "id": "gid://shopify/Menu/300155011400",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-73",
+      "id": "gid://shopify/Menu/300155208008",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-74",
+      "id": "gid://shopify/Menu/300155732296",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-75",
+      "id": "gid://shopify/Menu/300155896136",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-76",
+      "id": "gid://shopify/Menu/300155994440",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-77",
+      "id": "gid://shopify/Menu/300156092744",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-78",
+      "id": "gid://shopify/Menu/300156223816",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-79",
+      "id": "gid://shopify/Menu/300156420424",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-80",
+      "id": "gid://shopify/Menu/300156617032",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-81",
+      "id": "gid://shopify/Menu/300156715336",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-82",
+      "id": "gid://shopify/Menu/300156846408",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-83",
+      "id": "gid://shopify/Menu/300156944712",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-84",
+      "id": "gid://shopify/Menu/300157174088",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-85",
+      "id": "gid://shopify/Menu/300157272392",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-86",
+      "id": "gid://shopify/Menu/300157698376",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-87",
+      "id": "gid://shopify/Menu/300158058824",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-88",
+      "id": "gid://shopify/Menu/300158255432",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-89",
+      "id": "gid://shopify/Menu/300158353736",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-90",
+      "id": "gid://shopify/Menu/300158484808",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-91",
+      "id": "gid://shopify/Menu/300158681416",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-92",
+      "id": "gid://shopify/Menu/300158878024",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-93",
+      "id": "gid://shopify/Menu/300159107400",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-94",
+      "id": "gid://shopify/Menu/300159205704",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-95",
+      "id": "gid://shopify/Menu/300159402312",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-96",
+      "id": "gid://shopify/Menu/300159697224",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-97",
+      "id": "gid://shopify/Menu/300159795528",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-98",
+      "id": "gid://shopify/Menu/300160024904",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-99",
+      "id": "gid://shopify/Menu/300160123208",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-100",
+      "id": "gid://shopify/Menu/300160319816",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-101",
+      "id": "gid://shopify/Menu/300160680264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-102",
+      "id": "gid://shopify/Menu/300161139016",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-103",
+      "id": "gid://shopify/Menu/300161335624",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-104",
+      "id": "gid://shopify/Menu/300161466696",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-105",
+      "id": "gid://shopify/Menu/300161597768",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-106",
+      "id": "gid://shopify/Menu/300161696072",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-107",
+      "id": "gid://shopify/Menu/300162154824",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-108",
+      "id": "gid://shopify/Menu/300162416968",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-109",
+      "id": "gid://shopify/Menu/300162744648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-110",
+      "id": "gid://shopify/Menu/300162908488",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-111",
+      "id": "gid://shopify/Menu/300163268936",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-112",
+      "id": "gid://shopify/Menu/300163301704",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-113",
+      "id": "gid://shopify/Menu/300163498312",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-114",
+      "id": "gid://shopify/Menu/300163596616",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-115",
+      "id": "gid://shopify/Menu/300165071176",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-116",
+      "id": "gid://shopify/Menu/300165169480",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-117",
+      "id": "gid://shopify/Menu/300165759304",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-118",
+      "id": "gid://shopify/Menu/300166152520",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-119",
+      "id": "gid://shopify/Menu/300166480200",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-120",
+      "id": "gid://shopify/Menu/300167004488",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-121",
+      "id": "gid://shopify/Menu/300167102792",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-122",
+      "id": "gid://shopify/Menu/300167299400",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-123",
+      "id": "gid://shopify/Menu/300167594312",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-124",
+      "id": "gid://shopify/Menu/300167692616",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-125",
+      "id": "gid://shopify/Menu/300167889224",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-126",
+      "id": "gid://shopify/Menu/300167987528",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-127",
+      "id": "gid://shopify/Menu/300168282440",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-128",
+      "id": "gid://shopify/Menu/300168675656",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-129",
+      "id": "gid://shopify/Menu/300168872264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-130",
+      "id": "gid://shopify/Menu/300168970568",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-131",
+      "id": "gid://shopify/Menu/300169068872",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-132",
+      "id": "gid://shopify/Menu/300169363784",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-133",
+      "id": "gid://shopify/Menu/300169757000",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-134",
+      "id": "gid://shopify/Menu/300169855304",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-135",
+      "id": "gid://shopify/Menu/300169953608",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-136",
+      "id": "gid://shopify/Menu/300170346824",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-137",
+      "id": "gid://shopify/Menu/300170445128",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-138",
+      "id": "gid://shopify/Menu/300170543432",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-139",
+      "id": "gid://shopify/Menu/300170740040",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-140",
+      "id": "gid://shopify/Menu/300170838344",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-141",
+      "id": "gid://shopify/Menu/300170936648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-142",
+      "id": "gid://shopify/Menu/300171034952",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-143",
+      "id": "gid://shopify/Menu/300171329864",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-144",
+      "id": "gid://shopify/Menu/300171526472",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-145",
+      "id": "gid://shopify/Menu/300171723080",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-146",
+      "id": "gid://shopify/Menu/300172017992",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-147",
+      "id": "gid://shopify/Menu/300172116296",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-148",
+      "id": "gid://shopify/Menu/300172509512",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-149",
+      "id": "gid://shopify/Menu/300172804424",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-150",
+      "id": "gid://shopify/Menu/300173001032",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-151",
+      "id": "gid://shopify/Menu/300173197640",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-152",
+      "id": "gid://shopify/Menu/300173295944",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-153",
+      "id": "gid://shopify/Menu/300173525320",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-154",
+      "id": "gid://shopify/Menu/300173721928",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-155",
+      "id": "gid://shopify/Menu/300173820232",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-156",
+      "id": "gid://shopify/Menu/300174115144",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-157",
+      "id": "gid://shopify/Menu/300174311752",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-158",
+      "id": "gid://shopify/Menu/300174410056",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-159",
+      "id": "gid://shopify/Menu/300174606664",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-160",
+      "id": "gid://shopify/Menu/300174999880",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-161",
+      "id": "gid://shopify/Menu/300175196488",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-162",
+      "id": "gid://shopify/Menu/300175491400",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-163",
+      "id": "gid://shopify/Menu/300175720776",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-164",
+      "id": "gid://shopify/Menu/300176212296",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-165",
+      "id": "gid://shopify/Menu/300176441672",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-166",
+      "id": "gid://shopify/Menu/300176834888",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-167",
+      "id": "gid://shopify/Menu/300177293640",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-168",
+      "id": "gid://shopify/Menu/300177391944",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-169",
+      "id": "gid://shopify/Menu/300177490248",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-170",
+      "id": "gid://shopify/Menu/300177686856",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-171",
+      "id": "gid://shopify/Menu/300177785160",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-172",
+      "id": "gid://shopify/Menu/300177883464",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-173",
+      "id": "gid://shopify/Menu/300178047304",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-174",
+      "id": "gid://shopify/Menu/300178145608",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-175",
+      "id": "gid://shopify/Menu/300178538824",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-176",
+      "id": "gid://shopify/Menu/300178637128",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-177",
+      "id": "gid://shopify/Menu/300178932040",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-178",
+      "id": "gid://shopify/Menu/300179128648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-179",
+      "id": "gid://shopify/Menu/300179489096",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-180",
+      "id": "gid://shopify/Menu/300179915080",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-181",
+      "id": "gid://shopify/Menu/300180013384",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-182",
+      "id": "gid://shopify/Menu/300180111688",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-183",
+      "id": "gid://shopify/Menu/300180439368",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-184",
+      "id": "gid://shopify/Menu/300180734280",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-185",
+      "id": "gid://shopify/Menu/300180930888",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-186",
+      "id": "gid://shopify/Menu/300181127496",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-187",
+      "id": "gid://shopify/Menu/300181520712",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-188",
+      "id": "gid://shopify/Menu/300181750088",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-189",
+      "id": "gid://shopify/Menu/300182176072",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-190",
+      "id": "gid://shopify/Menu/300182241608",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-191",
+      "id": "gid://shopify/Menu/300182438216",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-192",
+      "id": "gid://shopify/Menu/300182929736",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-193",
+      "id": "gid://shopify/Menu/300183028040",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-194",
+      "id": "gid://shopify/Menu/300183126344",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-195",
+      "id": "gid://shopify/Menu/300183322952",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-196",
+      "id": "gid://shopify/Menu/300183519560",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-197",
+      "id": "gid://shopify/Menu/300183912776",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-198",
+      "id": "gid://shopify/Menu/300184043848",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-199",
+      "id": "gid://shopify/Menu/300184338760",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-200",
+      "id": "gid://shopify/Menu/300184600904",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-201",
+      "id": "gid://shopify/Menu/300184797512",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-202",
+      "id": "gid://shopify/Menu/300185190728",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-203",
+      "id": "gid://shopify/Menu/300185551176",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-204",
+      "id": "gid://shopify/Menu/300185944392",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-205",
+      "id": "gid://shopify/Menu/300186534216",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-206",
+      "id": "gid://shopify/Menu/300186763592",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-207",
+      "id": "gid://shopify/Menu/300187320648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-208",
+      "id": "gid://shopify/Menu/300187451720",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-209",
+      "id": "gid://shopify/Menu/300187615560",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-210",
+      "id": "gid://shopify/Menu/300187746632",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-211",
+      "id": "gid://shopify/Menu/300187910472",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-212",
+      "id": "gid://shopify/Menu/300188205384",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-213",
+      "id": "gid://shopify/Menu/300188336456",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-214",
+      "id": "gid://shopify/Menu/300188467528",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-215",
+      "id": "gid://shopify/Menu/300188664136",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-216",
+      "id": "gid://shopify/Menu/300188959048",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-217",
+      "id": "gid://shopify/Menu/300189352264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-218",
+      "id": "gid://shopify/Menu/300189548872",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-219",
+      "id": "gid://shopify/Menu/300189942088",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-220",
+      "id": "gid://shopify/Menu/300190040392",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-221",
+      "id": "gid://shopify/Menu/300190237000",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-222",
+      "id": "gid://shopify/Menu/300190564680",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-223",
+      "id": "gid://shopify/Menu/300190695752",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-224",
+      "id": "gid://shopify/Menu/300190925128",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-225",
+      "id": "gid://shopify/Menu/300191023432",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-226",
+      "id": "gid://shopify/Menu/300191318344",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-227",
+      "id": "gid://shopify/Menu/300191514952",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-228",
+      "id": "gid://shopify/Menu/300191711560",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-229",
+      "id": "gid://shopify/Menu/300191809864",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-230",
+      "id": "gid://shopify/Menu/300192006472",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-231",
+      "id": "gid://shopify/Menu/300192334152",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-232",
+      "id": "gid://shopify/Menu/300192432456",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-233",
+      "id": "gid://shopify/Menu/300192563528",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-234",
+      "id": "gid://shopify/Menu/300192760136",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-235",
+      "id": "gid://shopify/Menu/300193055048",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-236",
+      "id": "gid://shopify/Menu/300193448264",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-237",
+      "id": "gid://shopify/Menu/300193743176",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-238",
+      "id": "gid://shopify/Menu/300193841480",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-239",
+      "id": "gid://shopify/Menu/300193939784",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-240",
+      "id": "gid://shopify/Menu/300194333000",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-241",
+      "id": "gid://shopify/Menu/300194431304",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-242",
+      "id": "gid://shopify/Menu/300194529608",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-243",
+      "id": "gid://shopify/Menu/300194627912",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-244",
+      "id": "gid://shopify/Menu/300194726216",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-245",
+      "id": "gid://shopify/Menu/300194922824",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-246",
+      "id": "gid://shopify/Menu/300195119432",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-247",
+      "id": "gid://shopify/Menu/300195512648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-248",
+      "id": "gid://shopify/Menu/300195807560",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-249",
+      "id": "gid://shopify/Menu/300196135240",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-250",
+      "id": "gid://shopify/Menu/300196364616",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-251",
+      "id": "gid://shopify/Menu/300196462920",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-252",
+      "id": "gid://shopify/Menu/300196757832",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-253",
+      "id": "gid://shopify/Menu/300196954440",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-254",
+      "id": "gid://shopify/Menu/300197052744",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-255",
+      "id": "gid://shopify/Menu/300197216584",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-256",
+      "id": "gid://shopify/Menu/300197314888",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-257",
+      "id": "gid://shopify/Menu/300197708104",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-258",
+      "id": "gid://shopify/Menu/300197806408",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-259",
+      "id": "gid://shopify/Menu/300198101320",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-260",
+      "id": "gid://shopify/Menu/300198297928",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-261",
+      "id": "gid://shopify/Menu/300198527304",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-262",
+      "id": "gid://shopify/Menu/300198723912",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-263",
+      "id": "gid://shopify/Menu/300198822216",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-264",
+      "id": "gid://shopify/Menu/300198920520",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-265",
+      "id": "gid://shopify/Menu/300199117128",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-266",
+      "id": "gid://shopify/Menu/300199313736",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-267",
+      "id": "gid://shopify/Menu/300199608648",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-268",
+      "id": "gid://shopify/Menu/300199706952",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-269",
+      "id": "gid://shopify/Menu/300199903560",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-270",
+      "id": "gid://shopify/Menu/300200001864",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-271",
+      "id": "gid://shopify/Menu/300200100168",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-272",
+      "id": "gid://shopify/Menu/300200198472",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-273",
+      "id": "gid://shopify/Menu/300200329544",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-274",
+      "id": "gid://shopify/Menu/300200427848",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-275",
+      "id": "gid://shopify/Menu/300200526152",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-276",
+      "id": "gid://shopify/Menu/300200624456",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-277",
+      "id": "gid://shopify/Menu/300200821064",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-278",
+      "id": "gid://shopify/Menu/300200919368",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-279",
+      "id": "gid://shopify/Menu/300201115976",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-280",
+      "id": "gid://shopify/Menu/300201214280",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-281",
+      "id": "gid://shopify/Menu/300201410888",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-282",
+      "id": "gid://shopify/Menu/300201509192",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-283",
+      "id": "gid://shopify/Menu/300201607496",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-284",
+      "id": "gid://shopify/Menu/300201804104",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-285",
+      "id": "gid://shopify/Menu/300202000712",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-286",
+      "id": "gid://shopify/Menu/300202197320",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-287",
+      "id": "gid://shopify/Menu/300202459464",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-288",
+      "id": "gid://shopify/Menu/300202557768",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-289",
+      "id": "gid://shopify/Menu/300202656072",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-290",
+      "id": "gid://shopify/Menu/300202754376",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-291",
+      "id": "gid://shopify/Menu/300203049288",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-292",
+      "id": "gid://shopify/Menu/300203147592",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-293",
+      "id": "gid://shopify/Menu/300203245896",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-294",
+      "id": "gid://shopify/Menu/300203344200",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-295",
+      "id": "gid://shopify/Menu/300203442504",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-296",
+      "id": "gid://shopify/Menu/300203573576",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-297",
+      "id": "gid://shopify/Menu/300282609992",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-298",
+      "id": "gid://shopify/Menu/300344017224",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-299",
+      "id": "gid://shopify/Menu/300344115528",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-300",
+      "id": "gid://shopify/Menu/300344213832",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-301",
+      "id": "gid://shopify/Menu/300344344904",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-302",
+      "id": "gid://shopify/Menu/300344443208",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-303",
+      "id": "gid://shopify/Menu/300344541512",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-304",
+      "id": "gid://shopify/Menu/300344639816",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-305",
+      "id": "gid://shopify/Menu/300344869192",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-306",
+      "id": "gid://shopify/Menu/300345033032",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-307",
+      "id": "gid://shopify/Menu/300345131336",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-308",
+      "id": "gid://shopify/Menu/300345229640",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-309",
+      "id": "gid://shopify/Menu/300345622856",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-310",
+      "id": "gid://shopify/Menu/300345917768",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-311",
+      "id": "gid://shopify/Menu/300346114376",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-312",
+      "id": "gid://shopify/Menu/300346212680",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-313",
+      "id": "gid://shopify/Menu/300346310984",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "partnership-314",
+      "id": "gid://shopify/Menu/300346736968",
+      "title": "Partnership",
+      "result": "deleted",
+      "errors": []
+    },
+    {
+      "handle": "shop-by-activity",
+      "id": "gid://shopify/Menu/299900502344",
+      "title": "Shop by Activity",
+      "result": "deleted",
+      "errors": []
+    }
+  ]
+}

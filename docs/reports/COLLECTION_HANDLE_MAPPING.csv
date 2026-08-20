@@ -1,0 +1,410 @@
+current_handle,proposed_handle,current_url,new_url,redirect_required,swedish_detected,title,products_count,execute_phase,internal_references_impacted
+_test-collection-delete-me,_test-collection-delete-me,/collections/_test-collection-delete-me,/collections/_test-collection-delete-me,NO,NO,TEST Collection Delete Me,0,SKIP,
+accessories-dji-air-3s,accessories-dji-air-3s,/collections/accessories-dji-air-3s,/collections/accessories-dji-air-3s,NO,NO,Tillbehör DJI Air 3S - Tillbehör för DJI Air 3S: Komplettera din dröna,13,SKIP,
+accessories-dji-air-series,accessories-dji-air-series,/collections/accessories-dji-air-series,/collections/accessories-dji-air-series,NO,NO,Tillbehör till DJI Air-Serien – Uppgradera din drönare idag!,12,SKIP,
+accessories-dji-avata-series,accessories-dji-avata-series,/collections/accessories-dji-avata-series,/collections/accessories-dji-avata-series,NO,NO,DJI Avata tillbehör: FPV-drönarutrustning för proffs & nybörjare,14,SKIP,
+accessories-dji-inspire,accessories-dji-inspire,/collections/accessories-dji-inspire,/collections/accessories-dji-inspire,NO,NO,DJI Inspire Tillbehör,0,SKIP,
+accessories-dji-mavic-2,accessories-dji-mavic-2,/collections/accessories-dji-mavic-2,/collections/accessories-dji-mavic-2,NO,NO,Tillbehör DJI Mavic 2: Utrustning för din drönare,4,SKIP,
+accessories-dji-mavic-3-cine,accessories-dji-mavic-3-cine,/collections/accessories-dji-mavic-3-cine,/collections/accessories-dji-mavic-3-cine,NO,NO,Tillbehör DJI Mavic 3 Cine för optimal prestanda,10,SKIP,
+accessories-dji-mavic-drones,accessories-dji-mavic-drones,/collections/accessories-dji-mavic-drones,/collections/accessories-dji-mavic-drones,NO,NO,dji mavic 3e - Tillbehör för DJI Mavic Drönare,2,SKIP,
+accessories-dji-mini-2-2-se,accessories-dji-mini-2-2-se,/collections/accessories-dji-mini-2-2-se,/collections/accessories-dji-mini-2-2-se,NO,NO,Tillbehör DJI Mini 2 / 2 SE - Tillbehör för DJI Mini,47,SKIP,
+accessories-dji-mini-4,accessories-dji-mini-4,/collections/accessories-dji-mini-4,/collections/accessories-dji-mini-4,NO,NO,DJI Mini 3 Tillbehör: Utforska drönarens fulla potential,18,SKIP,
+accessories-dji-mini-4-series,accessories-dji-mini-4-series,/collections/accessories-dji-mini-4-series,/collections/accessories-dji-mini-4-series,NO,NO,Tillbehör till DJI Mini 4-serien – Maxa din drönarupplevelse!,3,SKIP,
+accessories-dji-neo,accessories-dji-neo,/collections/accessories-dji-neo,/collections/accessories-dji-neo,NO,NO,DJI Neo tillbehör – Batteri & mer för optimal flygning,20,SKIP,
+accessories-for-dji-air-3-series,accessories-for-dji-air-3-series,/collections/accessories-for-dji-air-3-series,/collections/accessories-for-dji-air-3-series,NO,NO,Tillbehör till DJI AIR 3-Serien,14,SKIP,
+airdrop-system,airdrop-system,/collections/airdrop-system,/collections/airdrop-system,NO,NO,Airdrop System,24,SKIP,enterprise-dr-nare → Airdrop; enterprise-dr-nare → :[];Airdrop
+all-products,all-products,/collections/all-products,/collections/all-products,NO,NO,Alla produkter Drönare,841,SKIP,
+amagisn-kameratillbehor-and-dronarutrustning,amagisn-camera-accessories-and-drone-equipment,/collections/amagisn-kameratillbehor-and-dronarutrustning,/collections/amagisn-camera-accessories-and-drone-equipment,YES,YES,kameratillbehör - AMagisn Tillbehör för Kamera och Drönare,149,3,
+bandverktyg,pliers,/collections/bandverktyg,/collections/pliers,YES,YES,Bändverktyg för Precisionsreparationer,2,3,
+batteries,batteries,/collections/batteries,/collections/batteries,NO,NO,Batterier och laddare,64,SKIP,
+belysning-for-drones,lighting-for-drones,/collections/belysning-for-drones,/collections/lighting-for-drones,YES,YES,Belysning till drönare,28,3,
+brdrc-accessories,brdrc-accessories,/collections/brdrc-accessories,/collections/brdrc-accessories,NO,NO,Kompletta BRDRC Tillbehör för Din Utrustning,134,SKIP,
+camera-tripod-stand,camera-tripod-stand,/collections/camera-tripod-stand,/collections/camera-tripod-stand,NO,NO,Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ,86,SKIP,
+cleaning-products-actionking,cleaning-products-actionking,/collections/cleaning-products-actionking,/collections/cleaning-products-actionking,NO,NO,Rengörning för elektronik,18,SKIP,
+dij-air-3-series,dij-air-3-series,/collections/dij-air-3-series,/collections/dij-air-3-series,NO,NO,DJI Air 3-Serien för Professionell Flygfotografering,3,SKIP,
+dji,dji,/collections/dji,/collections/dji,NO,NO,DJI: Innovation inom Drönarteknik,84,SKIP,
+dji-agras-drones,dji-agras-drones,/collections/dji-agras-drones,/collections/dji-agras-drones,NO,NO,DJI Agras Drönare för Precisionsjordbruk,4,SKIP,
+dji-agras-t40,dji-agras-t40,/collections/dji-agras-t40,/collections/dji-agras-t40,NO,NO,DJI Agras T40,2,SKIP,enterprise-expansion-deploy → :[];Agras T40
+dji-agras-t50,dji-agras-t50,/collections/dji-agras-t50,/collections/dji-agras-t50,NO,NO,DJI Agras T50,3,SKIP,enterprise-expansion-deploy → :[];Agras T50
+dji-air-2-accessories,dji-air-2-accessories,/collections/dji-air-2-accessories,/collections/dji-air-2-accessories,NO,NO,Högkvalitativa DJI Air 2 Tillbehör för Drönare,3,SKIP,
+dji-air-2-series,dji-air-2-series,/collections/dji-air-2-series,/collections/dji-air-2-series,NO,NO,DJI Air 2 Serien: Drönare och Tillbehör,1,SKIP,
+dji-air-2s,dji-air-2s,/collections/dji-air-2s,/collections/dji-air-2s,NO,NO,DJI Air 2S,1,SKIP,
+dji-air-2s-accessories,dji-air-2s-accessories,/collections/dji-air-2s-accessories,/collections/dji-air-2s-accessories,NO,NO,DJI Air 2S Tillbehör – Optimerad Flygning,0,SKIP,
+dji-air-3,dji-air-3,/collections/dji-air-3,/collections/dji-air-3,NO,NO,DJI AIR 3,3,SKIP,
+dji-air-3-accessories,dji-air-3-accessories,/collections/dji-air-3-accessories,/collections/dji-air-3-accessories,NO,NO,DJI Air 3 — Tillbehör,201,SKIP,
+dji-air-3-accessories-comprehensive-range,dji-air-3-accessories-comprehensive-range,/collections/dji-air-3-accessories-comprehensive-range,/collections/dji-air-3-accessories-comprehensive-range,NO,NO,Omfattande Sortiment av DJI Air 3 Tillbehör,66,SKIP,
+dji-air-3-antenner,dji-air-3-antennas,/collections/dji-air-3-antenner,/collections/dji-air-3-antennas,YES,YES,DJI Air 3 — Antenner,131,3,spare-parts-deploy → :[];Antenner
+dji-air-3-armar,dji-air-3-arms,/collections/dji-air-3-armar,/collections/dji-air-3-arms,YES,YES,DJI Air 3 — Armar,267,3,spare-parts-deploy → :[];Armar
+dji-air-3-batteries,dji-air-3-batteries,/collections/dji-air-3-batteries,/collections/dji-air-3-batteries,NO,NO,DJI Air 3 — Batterier,482,SKIP,
+dji-air-3-gimbal,dji-air-3-gimbal,/collections/dji-air-3-gimbal,/collections/dji-air-3-gimbal,NO,NO,DJI Air 3 — Gimbal,323,SKIP,spare-parts-deploy → :[];Gimbal
+dji-air-3-kablar,dji-air-3-cables,/collections/dji-air-3-kablar,/collections/dji-air-3-cables,YES,YES,DJI Air 3 — Kablar,713,3,spare-parts-deploy → :[];Kablar
+dji-air-3-kameror,dji-air-3-cameras,/collections/dji-air-3-kameror,/collections/dji-air-3-cameras,YES,YES,DJI Air 3 — Kameror,1165,3,spare-parts-deploy → :[];Kameror
+dji-air-3-landningsstall,dji-air-3-landing-gear,/collections/dji-air-3-landningsstall,/collections/dji-air-3-landing-gear,YES,YES,DJI Air 3 — Landningsställ,160,3,spare-parts-deploy → :[];Landningsställ
+dji-air-3-motorer,dji-air-3-motors,/collections/dji-air-3-motorer,/collections/dji-air-3-motors,YES,YES,DJI Air 3 — Motorer,245,3,spare-parts-deploy → :[];Motorer
+dji-air-3-propellers,dji-air-3-propellers,/collections/dji-air-3-propellers,/collections/dji-air-3-propellers,NO,NO,DJI Air 3 — Propellrar,327,SKIP,
+dji-air-3-sensorer,dji-air-3-sensors,/collections/dji-air-3-sensorer,/collections/dji-air-3-sensors,YES,YES,DJI Air 3 — Sensorer,147,3,spare-parts-deploy → :[];Sensorer
+dji-air-3-skal,dji-air-3-shell,/collections/dji-air-3-skal,/collections/dji-air-3-shell,YES,YES,DJI Air 3 — Skal,345,3,spare-parts-deploy → :[];Skal
+dji-air-3-spare-parts,dji-air-3-spare-parts,/collections/dji-air-3-spare-parts,/collections/dji-air-3-spare-parts,NO,NO,DJI Air 3 — Reservdelar,127,SKIP,
+dji-air-3s,dji-air-3s,/collections/dji-air-3s,/collections/dji-air-3s,NO,NO,DJI Air 3S,2,SKIP,
+dji-air-series,dji-air-series,/collections/dji-air-series,/collections/dji-air-series,NO,NO,DJI AIR-serien,6,SKIP,
+dji-avata-2-accessories,dji-avata-2-accessories,/collections/dji-avata-2-accessories,/collections/dji-avata-2-accessories,NO,NO,DJI Avata 2 tillbehör – Skydd & batterier till din drönare,51,SKIP,
+dji-avata-accessories,dji-avata-accessories,/collections/dji-avata-accessories,/collections/dji-avata-accessories,NO,NO,DJI Avata Tillbehör,6,SKIP,
+dji-avata-pro-fpv-drones,dji-avata-pro-fpv-drones,/collections/dji-avata-pro-fpv-drones,/collections/dji-avata-pro-fpv-drones,NO,NO,Avata Pro FPV-Drönare – Nästa Generations Flygning,2,SKIP,
+dji-avata-series,dji-avata-series,/collections/dji-avata-series,/collections/dji-avata-series,NO,NO,DJI Avata-Serien,2,SKIP,
+dji-dock-2,dji-dock-2,/collections/dji-dock-2,/collections/dji-dock-2,NO,NO,DJI Dock 2,1,SKIP,enterprise-expansion-deploy → :[];Dock 2
+dji-dock-3,dji-dock-3,/collections/dji-dock-3,/collections/dji-dock-3,NO,NO,DJI Dock 3,1,SKIP,enterprise-expansion-deploy → :[];Dock 3
+dji-drone-spare-parts,dji-drone-spare-parts,/collections/dji-drone-spare-parts,/collections/dji-drone-spare-parts,NO,NO,Hitta DJI-drönar reservdelar av hög kvalitet,16,SKIP,
+dji-drones,dji-drones,/collections/dji-drones,/collections/dji-drones,NO,NO,DJI Drönare,22,SKIP,
+dji-drones-fjarrkontroller,dji-drones-remote-controls,/collections/dji-drones-fjarrkontroller,/collections/dji-drones-remote-controls,YES,YES,Fjärrkontroller och Tillbehör för DJI Drönare,7,3,
+dji-enterprise-fjarrkontroller,dji-enterprise-remote-controls,/collections/dji-enterprise-fjarrkontroller,/collections/dji-enterprise-remote-controls,YES,YES,Professionella Fjärrkontroller för DJI Enterprise,22,3,
+dji-flip-accessories,dji-flip-accessories,/collections/dji-flip-accessories,/collections/dji-flip-accessories,NO,NO,DJI Flip™ tillbehör – Optimal utrustning till din drönare,63,SKIP,
+dji-flip-battery-accessories,dji-flip-battery-accessories,/collections/dji-flip-battery-accessories,/collections/dji-flip-battery-accessories,NO,NO,Optimala DJI Flip tillbehör – Maxa din drönarupplevelse!,3,SKIP,
+dji-flip-drones,dji-flip-drones,/collections/dji-flip-drones,/collections/dji-flip-drones,NO,NO,DJI Flip: Kompakta Vikbara Drönare,3,SKIP,
+dji-flycart-100-lastdronare,dji-flycart-100-cargo-drones,/collections/dji-flycart-100-lastdronare,/collections/dji-flycart-100-cargo-drones,YES,YES,DJI FlyCart 100: Lastdrönare för Tunga Lyft,2,3,main-menu → FlyCart 100; main-menu → :[FlyCart 100
+dji-flycart-30,dji-flycart-30,/collections/dji-flycart-30,/collections/dji-flycart-30,NO,NO,DJI FlyCart 30,2,SKIP,enterprise-expansion-deploy → :[];FlyCart 30
+dji-flycart-30-batteries,dji-flycart-30-batteries,/collections/dji-flycart-30-batteries,/collections/dji-flycart-30-batteries,NO,NO,DJI FlyCart 30 — Batterier,370,SKIP,
+dji-flycart-30-spare-parts,dji-flycart-30-spare-parts,/collections/dji-flycart-30-spare-parts,/collections/dji-flycart-30-spare-parts,NO,NO,DJI FlyCart 30 — Reservdelar,2,SKIP,
+dji-flycart-series,dji-flycart-series,/collections/dji-flycart-series,/collections/dji-flycart-series,NO,NO,DJI FlyCart Serien,2,SKIP,
+dji-fpv-accessories,dji-fpv-accessories,/collections/dji-fpv-accessories,/collections/dji-fpv-accessories,NO,NO,Dji FPV Tillbehör – Optimera Din Flygning Med Kvalitet,1,SKIP,
+dji-inspire,dji-inspire,/collections/dji-inspire,/collections/dji-inspire,NO,NO,DJI Inspire Serien Professionella Drönare för Kreatörer,0,SKIP,
+dji-inspire-series,dji-inspire-series,/collections/dji-inspire-series,/collections/dji-inspire-series,NO,NO,DJI Inspire Serien,0,SKIP,
+dji-marvic-enterprise,dji-marvic-enterprise,/collections/dji-marvic-enterprise,/collections/dji-marvic-enterprise,NO,NO,DJI Marvic Enterprise,1,SKIP,
+dji-matrice-3-series,dji-matrice-3-series,/collections/dji-matrice-3-series,/collections/dji-matrice-3-series,NO,NO,DJI Matrice 4 Serien,22,SKIP,
+dji-matrice-30-serie-accessories,dji-matrice-30-series-accessories,/collections/dji-matrice-30-serie-accessories,/collections/dji-matrice-30-series-accessories,YES,YES,dji arm - DJI Matrice 30 Serie Tillbehör,9,3,
+dji-matrice-300-rtk,dji-matrice-300-rtk,/collections/dji-matrice-300-rtk,/collections/dji-matrice-300-rtk,NO,NO,DJI Matrice 300 RTK,2,SKIP,enterprise-expansion-deploy → Matrice 300 RTK
+dji-matrice-350-rtk-accessories,dji-matrice-350-rtk-accessories,/collections/dji-matrice-350-rtk-accessories,/collections/dji-matrice-350-rtk-accessories,NO,NO,DJI Matrice 350 RTK Tillbehör och Skydd,8,SKIP,
+dji-matrice-350-rtk-antenner,dji-matrice-350-rtk-antennas,/collections/dji-matrice-350-rtk-antenner,/collections/dji-matrice-350-rtk-antennas,YES,YES,DJI Matrice 350 RTK — Antenner,17,3,spare-parts-deploy → :[];Antenner
+dji-matrice-350-rtk-batteries,dji-matrice-350-rtk-batteries,/collections/dji-matrice-350-rtk-batteries,/collections/dji-matrice-350-rtk-batteries,NO,NO,DJI Matrice 350 RTK — Batterier,374,SKIP,
+dji-matrice-350-rtk-rtk,dji-matrice-350-rtk-rtk,/collections/dji-matrice-350-rtk-rtk,/collections/dji-matrice-350-rtk-rtk,NO,NO,DJI Matrice 350 RTK — RTK,28,SKIP,spare-parts-deploy → :[];RTK
+dji-matrice-350-rtk-spare-parts,dji-matrice-350-rtk-spare-parts,/collections/dji-matrice-350-rtk-spare-parts,/collections/dji-matrice-350-rtk-spare-parts,NO,NO,DJI Matrice 350 RTK — Reservdelar,5,SKIP,
+dji-matrice-3d,dji-matrice-3d,/collections/dji-matrice-3d,/collections/dji-matrice-3d,NO,NO,DJI Matrice 3D,2,SKIP,enterprise-expansion-deploy → :[];Matrice 3D
+dji-matrice-3td,dji-matrice-3td,/collections/dji-matrice-3td,/collections/dji-matrice-3td,NO,NO,DJI Matrice 3TD,1,SKIP,enterprise-expansion-deploy → :[];Matrice 3TD
+dji-matrice-4-accessories,dji-matrice-4-accessories,/collections/dji-matrice-4-accessories,/collections/dji-matrice-4-accessories,NO,NO,DJI Matrice 4 Tillbehör för Professionella Drönare,15,SKIP,
+dji-matrice-4-batteries,dji-matrice-4-batteries,/collections/dji-matrice-4-batteries,/collections/dji-matrice-4-batteries,NO,NO,DJI Matrice 4 — Batterier,387,SKIP,
+dji-matrice-4-gimbal,dji-matrice-4-gimbal,/collections/dji-matrice-4-gimbal,/collections/dji-matrice-4-gimbal,NO,NO,DJI Matrice 4 — Gimbal,233,SKIP,spare-parts-deploy → :[];Gimbal
+dji-matrice-4-kablar,dji-matrice-4-cables,/collections/dji-matrice-4-kablar,/collections/dji-matrice-4-cables,YES,YES,DJI Matrice 4 — Kablar,618,3,spare-parts-deploy → :[];Kablar
+dji-matrice-4-kameror,dji-matrice-4-cameras,/collections/dji-matrice-4-kameror,/collections/dji-matrice-4-cameras,YES,YES,DJI Matrice 4 — Kameror,1075,3,spare-parts-deploy → :[];Kameror
+dji-matrice-4-propellers,dji-matrice-4-propellers,/collections/dji-matrice-4-propellers,/collections/dji-matrice-4-propellers,NO,NO,DJI Matrice 4 — Propellrar,242,SKIP,
+dji-matrice-4-rtk,dji-matrice-4-rtk,/collections/dji-matrice-4-rtk,/collections/dji-matrice-4-rtk,NO,NO,DJI Matrice 4 — RTK,47,SKIP,spare-parts-deploy → :[];RTK
+dji-matrice-4-serie,dji-matrice-4-series,/collections/dji-matrice-4-serie,/collections/dji-matrice-4-series,YES,YES,dji matrice 4 Serie,22,3,
+dji-matrice-4-spare-parts,dji-matrice-4-spare-parts,/collections/dji-matrice-4-spare-parts,/collections/dji-matrice-4-spare-parts,NO,NO,DJI Matrice 4 — Reservdelar,21,SKIP,
+dji-matrice-400-series,dji-matrice-400-series,/collections/dji-matrice-400-series,/collections/dji-matrice-400-series,NO,NO,DJI Matrice 400 Serien för Professionella Uppdrag,9,SKIP,
+dji-matrice-series,dji-matrice-series,/collections/dji-matrice-series,/collections/dji-matrice-series,NO,NO,DJI Matrice-serien – Professionella Enterprise-drönare,32,SKIP,
+dji-mavic-2-pro,dji-mavic-2-pro,/collections/dji-mavic-2-pro,/collections/dji-mavic-2-pro,NO,NO,DJI Mavic 2 Pro,1,SKIP,
+dji-mavic-2-series,dji-mavic-2-series,/collections/dji-mavic-2-series,/collections/dji-mavic-2-series,NO,NO,DJI Mavic 2-serien: Avancerade Drönare,2,SKIP,
+dji-mavic-3-accessories,dji-mavic-3-accessories,/collections/dji-mavic-3-accessories,/collections/dji-mavic-3-accessories,NO,NO,DJI Mavic 3 Tillbehör för Optimal Prestanda,66,SKIP,
+dji-mavic-3-cine-drones,dji-mavic-3-cine-drones,/collections/dji-mavic-3-cine-drones,/collections/dji-mavic-3-cine-drones,NO,NO,DJI Mavic 3 Cine: Ultimata Drönaren för Filmskapare,1,SKIP,
+dji-mavic-3-classic,dji-mavic-3-classic,/collections/dji-mavic-3-classic,/collections/dji-mavic-3-classic,NO,NO,Tillbehör DJI Mavic 3 Classic,15,SKIP,
+dji-mavic-3-enterprise,dji-mavic-3-enterprise,/collections/dji-mavic-3-enterprise,/collections/dji-mavic-3-enterprise,NO,NO,DJI Mavic 3 Enterprise - Kvalitet &,5,SKIP,enterprise-dr-nare → Mavic Enterprise; enterprise-dr-nare → :[];Mavic Enterprise
+dji-mavic-3-enterprise-accessories,dji-mavic-3-enterprise-accessories,/collections/dji-mavic-3-enterprise-accessories,/collections/dji-mavic-3-enterprise-accessories,NO,NO,DJI Mavic 3 Enterprise — Tillbehör,85,SKIP,
+dji-mavic-3-enterprise-batteries,dji-mavic-3-enterprise-batteries,/collections/dji-mavic-3-enterprise-batteries,/collections/dji-mavic-3-enterprise-batteries,NO,NO,DJI Mavic 3 Enterprise — Batterier,372,SKIP,
+dji-mavic-3-enterprise-gimbal,dji-mavic-3-enterprise-gimbal,/collections/dji-mavic-3-enterprise-gimbal,/collections/dji-mavic-3-enterprise-gimbal,NO,NO,DJI Mavic 3 Enterprise — Gimbal,218,SKIP,spare-parts-deploy → :[];Gimbal
+dji-mavic-3-enterprise-kameror,dji-mavic-3-enterprise-cameras,/collections/dji-mavic-3-enterprise-kameror,/collections/dji-mavic-3-enterprise-cameras,YES,YES,DJI Mavic 3 Enterprise — Kameror,1057,3,spare-parts-deploy → :[];Kameror
+dji-mavic-3-enterprise-skal,dji-mavic-3-enterprise-shell,/collections/dji-mavic-3-enterprise-skal,/collections/dji-mavic-3-enterprise-shell,YES,YES,DJI Mavic 3 Enterprise — Skal,230,3,spare-parts-deploy → :[];Skal
+dji-mavic-3-enterprise-spare-parts,dji-mavic-3-enterprise-spare-parts,/collections/dji-mavic-3-enterprise-spare-parts,/collections/dji-mavic-3-enterprise-spare-parts,NO,NO,DJI Mavic 3 Enterprise — Reservdelar,5,SKIP,
+dji-mavic-3-pro-accessories,dji-mavic-3-pro-accessories,/collections/dji-mavic-3-pro-accessories,/collections/dji-mavic-3-pro-accessories,NO,NO,DJI Mavic 3 Pro tillbehör – Drönartillbehör för proffs,11,SKIP,
+dji-mavic-3-pro-advanced-drone-tech,dji-mavic-3-pro-advanced-drone-tech,/collections/dji-mavic-3-pro-advanced-drone-tech,/collections/dji-mavic-3-pro-advanced-drone-tech,NO,NO,DJI Mavic 3 Pro: Avancerad Drönarteknik,5,SKIP,
+dji-mavic-3-series,dji-mavic-3-series,/collections/dji-mavic-3-series,/collections/dji-mavic-3-series,NO,NO,DJI Mavic 3-serien: Proffsens val av drönare,11,SKIP,
+dji-mavic-3-thermal,dji-mavic-3-thermal,/collections/dji-mavic-3-thermal,/collections/dji-mavic-3-thermal,NO,NO,DJI Mavic 3 Thermal,8,SKIP,enterprise-expansion-deploy → :[];Mavic 3 Thermal
+dji-mavic-3m-drones-accessories,dji-mavic-3m-drones-accessories,/collections/dji-mavic-3m-drones-accessories,/collections/dji-mavic-3m-drones-accessories,NO,NO,DJI Mavic 3M Drönare och Tillbehör,5,SKIP,
+dji-mavic-4-pro,dji-mavic-4-pro,/collections/dji-mavic-4-pro,/collections/dji-mavic-4-pro,NO,NO,DJI Mavic 4 Tillbehör,3,SKIP,
+dji-mavic-4-series,dji-mavic-4-series,/collections/dji-mavic-4-series,/collections/dji-mavic-4-series,NO,NO,Upptäck DJI Mavic 4-serien för exceptionell flygfotografering,3,SKIP,
+dji-mavic-accessories,dji-mavic-accessories,/collections/dji-mavic-accessories,/collections/dji-mavic-accessories,NO,NO,Dji Mavic Tillbehör för Förbättrad Flygning,9,SKIP,
+dji-mavic-air-accessories,dji-mavic-air-accessories,/collections/dji-mavic-air-accessories,/collections/dji-mavic-air-accessories,NO,NO,Komplett utbud av DJI Mavic Air Tillbehör,39,SKIP,
+dji-mavic-pro-accessories,dji-mavic-pro-accessories,/collections/dji-mavic-pro-accessories,/collections/dji-mavic-pro-accessories,NO,NO,Omfattande DJI Mavic Pro Tillbehör,46,SKIP,
+dji-mavic-pro-battery-bag,dji-mavic-pro-battery-bag,/collections/dji-mavic-pro-battery-bag,/collections/dji-mavic-pro-battery-bag,NO,NO,dji mavic pro batteri väska - DJI Mavic Pro Batteriväska och Tillbehör,5,SKIP,
+dji-mavic-series,dji-mavic-series,/collections/dji-mavic-series,/collections/dji-mavic-series,NO,NO,DJI Mavic-Serien,6,SKIP,
+dji-mavic-series-enterprise,dji-mavic-series-enterprise,/collections/dji-mavic-series-enterprise,/collections/dji-mavic-series-enterprise,NO,NO,DJI Mavic Serien enterprise,11,SKIP,
+dji-mini-2-series,dji-mini-2-series,/collections/dji-mini-2-series,/collections/dji-mini-2-series,NO,NO,DJI Mini 2-Serien,0,SKIP,
+dji-mini-3,dji-mini-3,/collections/dji-mini-3,/collections/dji-mini-3,NO,NO,DJI Mini 3 Drönare för Professionellt Flygfoto,5,SKIP,
+dji-mini-3-accessories,dji-mini-3-accessories,/collections/dji-mini-3-accessories,/collections/dji-mini-3-accessories,NO,NO,DJI Mini 3 Tillbehör,43,SKIP,
+dji-mini-3-series,dji-mini-3-series,/collections/dji-mini-3-series,/collections/dji-mini-3-series,NO,NO,DJI Mini 3-Serien,5,SKIP,
+dji-mini-4-pro,dji-mini-4-pro,/collections/dji-mini-4-pro,/collections/dji-mini-4-pro,NO,NO,"DJI Mini 4 Pro – Frihet, precision och kreativ kontroll i miniformat",1,SKIP,
+dji-mini-4-pro-accessories,dji-mini-4-pro-accessories,/collections/dji-mini-4-pro-accessories,/collections/dji-mini-4-pro-accessories,NO,NO,DJI Mini 4 Pro,14,SKIP,
+dji-mini-4-pro-antenner,dji-mini-4-pro-antennas,/collections/dji-mini-4-pro-antenner,/collections/dji-mini-4-pro-antennas,YES,YES,DJI Mini 4 Pro — Antenner,130,3,spare-parts-deploy → :[];Antenner
+dji-mini-4-pro-armar,dji-mini-4-pro-arms,/collections/dji-mini-4-pro-armar,/collections/dji-mini-4-pro-arms,YES,YES,DJI Mini 4 Pro — Armar,264,3,spare-parts-deploy → :[];Armar
+dji-mini-4-pro-batteries,dji-mini-4-pro-batteries,/collections/dji-mini-4-pro-batteries,/collections/dji-mini-4-pro-batteries,NO,NO,DJI Mini 4 Pro — Batterier,480,SKIP,
+dji-mini-4-pro-gimbal,dji-mini-4-pro-gimbal,/collections/dji-mini-4-pro-gimbal,/collections/dji-mini-4-pro-gimbal,NO,NO,DJI Mini 4 Pro — Gimbal,323,SKIP,spare-parts-deploy → :[];Gimbal
+dji-mini-4-pro-kablar,dji-mini-4-pro-cables,/collections/dji-mini-4-pro-kablar,/collections/dji-mini-4-pro-cables,YES,YES,DJI Mini 4 Pro — Kablar,715,3,spare-parts-deploy → :[];Kablar
+dji-mini-4-pro-kameror,dji-mini-4-pro-cameras,/collections/dji-mini-4-pro-kameror,/collections/dji-mini-4-pro-cameras,YES,YES,DJI Mini 4 Pro — Kameror,1165,3,spare-parts-deploy → :[];Kameror
+dji-mini-4-pro-landningsstall,dji-mini-4-pro-landing-gear,/collections/dji-mini-4-pro-landningsstall,/collections/dji-mini-4-pro-landing-gear,YES,YES,DJI Mini 4 Pro — Landningsställ,159,3,spare-parts-deploy → :[];Landningsställ
+dji-mini-4-pro-motorer,dji-mini-4-pro-motors,/collections/dji-mini-4-pro-motorer,/collections/dji-mini-4-pro-motors,YES,YES,DJI Mini 4 Pro — Motorer,241,3,spare-parts-deploy → :[];Motorer
+dji-mini-4-pro-propellers,dji-mini-4-pro-propellers,/collections/dji-mini-4-pro-propellers,/collections/dji-mini-4-pro-propellers,NO,NO,DJI Mini 4 Pro — Propellrar,320,SKIP,
+dji-mini-4-pro-sensorer,dji-mini-4-pro-sensors,/collections/dji-mini-4-pro-sensorer,/collections/dji-mini-4-pro-sensors,YES,YES,DJI Mini 4 Pro — Sensorer,144,3,spare-parts-deploy → :[];Sensorer
+dji-mini-4-pro-skal,dji-mini-4-pro-shell,/collections/dji-mini-4-pro-skal,/collections/dji-mini-4-pro-shell,YES,YES,DJI Mini 4 Pro — Skal,342,3,spare-parts-deploy → :[];Skal
+dji-mini-4-pro-spare-parts,dji-mini-4-pro-spare-parts,/collections/dji-mini-4-pro-spare-parts,/collections/dji-mini-4-pro-spare-parts,NO,NO,DJI Mini 4 Pro — Reservdelar,127,SKIP,
+dji-mini-4-series,dji-mini-4-series,/collections/dji-mini-4-series,/collections/dji-mini-4-series,NO,NO,DJI Mini 4-Serien,2,SKIP,
+dji-mini-5-series,dji-mini-5-series,/collections/dji-mini-5-series,/collections/dji-mini-5-series,NO,NO,DJI Mini 5-Serien,2,SKIP,
+dji-mini-accessories,dji-mini-accessories,/collections/dji-mini-accessories,/collections/dji-mini-accessories,NO,NO,DJI Mini Tillbehör för Din Drönare,7,SKIP,
+dji-neo,dji-neo,/collections/dji-neo,/collections/dji-neo,NO,NO,DJI Neo,3,SKIP,main-menu → DJI Neo; main-menu → :[];DJI Neo
+dji-neo-2-accessories,dji-neo-2-accessories,/collections/dji-neo-2-accessories,/collections/dji-neo-2-accessories,NO,NO,DJI Neo 2 Tillbehör för din Drönare,54,SKIP,
+dji-neo-accessories,dji-neo-accessories,/collections/dji-neo-accessories,/collections/dji-neo-accessories,NO,NO,DJI Neo Tillbehör – Batteri & mer för din drönare,129,SKIP,
+dji-phantom-3-pro-v1,dji-phantom-3-pro-v1,/collections/dji-phantom-3-pro-v1,/collections/dji-phantom-3-pro-v1,NO,NO,DJI Phantom 3 Pro v1 Drönare och Tillbehör,0,SKIP,
+dji-phantom-3-se,dji-phantom-3-se,/collections/dji-phantom-3-se,/collections/dji-phantom-3-se,NO,NO,DJI Phantom 3 SE Drönare med Kamera,43,SKIP,main-menu → Legacy DJI; main-menu → Phantom; main-menu → :[]];Legacy DJI; main-menu → :[Phantom
+dji-phantom-4-pro-drones,dji-phantom-4-pro-drones,/collections/dji-phantom-4-pro-drones,/collections/dji-phantom-4-pro-drones,NO,NO,DJI Phantom 4 Pro Drönare för Professionella,0,SKIP,
+dji-phantom-accessories-bag-spare-parts,dji-phantom-accessories-bag-spare-parts,/collections/dji-phantom-accessories-bag-spare-parts,/collections/dji-phantom-accessories-bag-spare-parts,NO,NO,DJI Phantom Tillbehör för Optimal Prestanda,0,SKIP,
+dji-phantom-series,dji-phantom-series,/collections/dji-phantom-series,/collections/dji-phantom-series,NO,NO,DJI Phantom Serien,0,SKIP,
+dji-rc-fjarrkontroller,dji-rc-remote-controls,/collections/dji-rc-fjarrkontroller,/collections/dji-rc-remote-controls,YES,YES,DJI RC – Smart fjärrkontroll,7,3,
+dji-rc-pro-accessories,dji-rc-pro-accessories,/collections/dji-rc-pro-accessories,/collections/dji-rc-pro-accessories,NO,NO,DJI RC Pro Tillbehör – Optimera Din Fjärrkontroll,5,SKIP,
+dronarelektronik-flight-components,drone-electronics-flight-components,/collections/dronarelektronik-flight-components,/collections/drone-electronics-flight-components,YES,YES,Reservdelar & Komponenter för DJI & FPV,175,3,main-menu → Elektronik & flight components; main-menu → :[];Elektronik & flight components
+dronarmatta-landning-protection,drone-mat-landing-protection,/collections/dronarmatta-landning-protection,/collections/drone-mat-landing-protection,YES,YES,Landningsmattor Drönare – Säker & Stabil Flygning,21,3,
+drone-accessories-buy,drone-accessories-buy,/collections/drone-accessories-buy,/collections/drone-accessories-buy,NO,NO,Drönartillbehör: Filter för bättre flygfotografering,615,SKIP,
+drone-accessories-drone,drone-accessories-drone,/collections/drone-accessories-drone,/collections/drone-accessories-drone,NO,NO,Drönartillbehör Dronar för Optimal Flygning,374,SKIP,
+drone-backpack-bags,drone-backpack-bags,/collections/drone-backpack-bags,/collections/drone-backpack-bags,NO,NO,Robust drönarryggsäck för säker transport av din drönare,203,SKIP,
+drone-fjarrkontrollstillbehor,drone-remote-control-accessories,/collections/drone-fjarrkontrollstillbehor,/collections/drone-remote-control-accessories,YES,YES,Drönar - fjärrkontrollstillbehör,32,3,
+drone-kameror,drone-cameras,/collections/drone-kameror,/collections/drone-cameras,YES,YES,Professionella Drönar kameror för Flygfoto,3,3,
+drone-propellers-quiet,drone-propellers-quiet,/collections/drone-propellers-quiet,/collections/drone-propellers-quiet,NO,NO,Hållbara drönarpropellrar för optimal flygning och prestanda,128,SKIP,
+drone-spare-parts-other,drone-spare-parts-other,/collections/drone-spare-parts-other,/collections/drone-spare-parts-other,NO,NO,Drönare reservdelar: Allt för din drönarreparation,5,SKIP,
+drones-actionking,drones-actionking,/collections/drones-actionking,/collections/drones-actionking,NO,NO,Drönare,47,SKIP,
+drones-propellers-accessories,drones-propellers-accessories,/collections/drones-propellers-accessories,/collections/drones-propellers-accessories,NO,NO,Drönare Propeller Tillbehör för Optimal Flygning,366,SKIP,
+drones-with-camera,drones-with-camera,/collections/drones-with-camera,/collections/drones-with-camera,NO,NO,Drönare med kamera,47,SKIP,
+drones-with-varmekamera,drones-with-thermal-camera,/collections/drones-with-varmekamera,/collections/drones-with-thermal-camera,YES,YES,Drönare med värmekamera,30,3,
+energy-infrastructure,energy-infrastructure,/collections/energy-infrastructure,/collections/energy-infrastructure,NO,NO,Energi & Infrastruktur,2,SKIP,
+enterprise-accessories,enterprise-accessories,/collections/enterprise-accessories,/collections/enterprise-accessories,NO,NO,Enterprise Tillbehör,32,SKIP,
+enterprise-belysning,enterprise-lighting,/collections/enterprise-belysning,/collections/enterprise-lighting,YES,YES,Enterprise belysning,13,3,
+enterprise-drone-accessories,enterprise-drone-accessories,/collections/enterprise-drone-accessories,/collections/enterprise-drone-accessories,NO,NO,Professionella Enterprise drönartillbehör,77,SKIP,
+enterprise-drones,enterprise-drones,/collections/enterprise-drones,/collections/enterprise-drones,NO,NO,Enterprise Drönare för Industri och Inspektion,19,SKIP,
+enterprise-hogtalarsystem,enterprise-speaker-systems,/collections/enterprise-hogtalarsystem,/collections/enterprise-speaker-systems,YES,YES,Enterprise Högtalarsystem,23,3,
+enterprise-lyftsystem,enterprise-lifting-systems,/collections/enterprise-lyftsystem,/collections/enterprise-lifting-systems,YES,YES,Enterprise Lyftsystem,5,3,
+enterprise-propellers,enterprise-propellers,/collections/enterprise-propellers,/collections/enterprise-propellers,NO,NO,Enterprise Propellrar,1,SKIP,
+enterprise-sensorer,enterprise-sensors,/collections/enterprise-sensorer,/collections/enterprise-sensors,YES,YES,Enterprise Sensorer,20,3,main-menu → Sensors & Payloads; main-menu → :[];Sensors & Payloads
+enterprise-service-drones,enterprise-service-drones,/collections/enterprise-service-drones,/collections/enterprise-service-drones,NO,NO,Enterprise Service för Företagsdrönare,4,SKIP,
+filter-drones-lins,filter-drones-lins,/collections/filter-drones-lins,/collections/filter-drones-lins,NO,NO,Filter drönare: Skydda din lins med premium glasfilter,261,SKIP,
+filters-for-drones,filters-for-drones,/collections/filters-for-drones,/collections/filters-for-drones,NO,NO,Filter till Drönare för Optimal Bildkvalitet,252,SKIP,
+fjarrkontroll-drones,remote-control-drones,/collections/fjarrkontroll-drones,/collections/remote-control-drones,YES,YES,Fjärrkontroll drönare: Precision & kontroll för din flygning,10,3,
+gopro-accessories-vendors,gopro-accessories-vendors,/collections/gopro-accessories-vendors,/collections/gopro-accessories-vendors,NO,NO,Hitta pålitliga GoPro tillbehör vendors här,228,SKIP,
+gopro-hero13-bag,gopro-hero13-bag,/collections/gopro-hero13-bag,/collections/gopro-hero13-bag,NO,NO,GoPro Hero13 väska – Skydda din actionkamera tryggt,610,SKIP,
+gopro-hero13-black-protection,gopro-hero13-black-protection,/collections/gopro-hero13-black-protection,/collections/gopro-hero13-black-protection,NO,NO,GoPro Hero13 Black skydd - Skydda din GoPro Hero13 Black med rätt skyd,476,SKIP,
+inspektionsdronare,inspection-drones,/collections/inspektionsdronare,/collections/inspection-drones,YES,YES,Inspektionsdrönare,4,3,main-menu → Branschlösningar; main-menu → Inspektion; main-menu → :[]];Branschlösningar; main-menu → :[Inspektion
+ji-mini-5-pro-filter,ji-mini-5-pro-filter,/collections/ji-mini-5-pro-filter,/collections/ji-mini-5-pro-filter,NO,NO,DJI Mini 5 Pro filter,0,SKIP,
+jordbruksdronare,agriculture-drones,/collections/jordbruksdronare,/collections/agriculture-drones,YES,YES,Jordbruksdrönare,4,3,main-menu → Jordbruk; main-menu → :[];Jordbruk
+kamerakablar-actionking,kameracables-actionking,/collections/kamerakablar-actionking,/collections/kameracables-actionking,YES,YES,Kamerakablar för Optimal Prestanda,12,3,
+kapor-for-drones,covers-for-drones,/collections/kapor-for-drones,/collections/covers-for-drones,YES,YES,Högkvalitativa Kåpor till Drönare,158,3,
+kartlaggnings-and-matdronare,mapping-survey-drones,/collections/kartlaggnings-and-matdronare,/collections/mapping-survey-drones,YES,YES,Kartläggnings- och mätdrönare,26,3,
+landningsstall-drones,landing-gear-drones,/collections/landningsstall-drones,/collections/landing-gear-drones,YES,YES,Landningsställ till drönare – Stabil och säker landning,42,3,
+last-and-transportdronare,cargo-transport-drones,/collections/last-and-transportdronare,/collections/cargo-transport-drones,YES,YES,Last- och transportdrönare,54,3,
+master-airscrew-dji-propellers,master-airscrew-dji-propellers,/collections/master-airscrew-dji-propellers,/collections/master-airscrew-dji-propellers,NO,NO,Master Airscrew DJI propellrar – Tysta & Effektiva,42,SKIP,
+memory-card-storage,memory-card-storage,/collections/memory-card-storage,/collections/memory-card-storage,NO,NO,Minneskort & Lagring,0,SKIP,
+mounts-adaptrar-action-cameras,mounts-adapters-action-cameras,/collections/mounts-adaptrar-action-cameras,/collections/mounts-adapters-action-cameras,YES,YES,Universal Fästen och Adaptrar till actionkameror,5,3,
+multiverktyg-friluftsliv,multi-tools-outdoor,/collections/multiverktyg-friluftsliv,/collections/multi-tools-outdoor,YES,YES,Multiverktyg friluftsliv: Kompakt & Mångsidigt Äventyrsverktyg,14,3,
+pgytech-accessories,pgytech-accessories,/collections/pgytech-accessories,/collections/pgytech-accessories,NO,NO,Pgytech Tillbehör för Kreativa Skapare,3,SKIP,
+pincetter-actionking,tweezers-actionking,/collections/pincetter-actionking,/collections/tweezers-actionking,YES,YES,Pincetter,1,3,
+polarpro,polarpro,/collections/polarpro,/collections/polarpro,NO,NO,Polarpro,428,SKIP,main-menu → PolarPro; main-menu → :[];PolarPro
+propeller-guard-1,propeller-guard-1,/collections/propeller-guard-1,/collections/propeller-guard-1,NO,NO,Robusta Propellerskydd för Säkrare Drönarflygning,56,SKIP,
+protection-drones,protection-drones,/collections/protection-drones,/collections/protection-drones,NO,NO,"Skydd till drönare: Propeller, Gimbal & Skal – Skydda din drönare!",53,SKIP,
+repair-dji-neo-spare-parts,repair-dji-neo-spare-parts,/collections/repair-dji-neo-spare-parts,/collections/repair-dji-neo-spare-parts,NO,NO,Reparation DJI Neo – Fixa din drönare snabbt och enkelt!,4,SKIP,
+reparera-precisionsverktyg-elektronik,repair-precision-tools-electronics,/collections/reparera-precisionsverktyg-elektronik,/collections/repair-precision-tools-electronics,YES,YES,Precisionsverktyg Elektronik: Reparera kamera & drönare enkelt,36,3,
+skogsbruksdronare,forestry-drones,/collections/skogsbruksdronare,/collections/forestry-drones,YES,YES,Skogsbruksdrönare,1,3,main-menu → Skogsbruk; main-menu → :[];Skogsbruk
+skruvmejsel-set,screwdriver-set,/collections/skruvmejsel-set,/collections/screwdriver-set,YES,YES,Skruvmejsel Set – Precisionsverktyg för Alla Behov,6,3,
+spare-parts-gimbal-drones-motorer,spare-parts-gimbal-drones-motors,/collections/spare-parts-gimbal-drones-motorer,/collections/spare-parts-gimbal-drones-motors,YES,YES,Reservdelar Gimbal Drönare: Gimbalmotorer för Optimal Stabilisering,171,3,
+tanger-actionking,pliers-actionking,/collections/tanger-actionking,/collections/pliers-actionking,YES,YES,Tänger Action: Precision och Styrka,1,3,
+tillbehorskablar-drones,accessory-cables-drones,/collections/tillbehorskablar-drones,/collections/accessory-cables-drones,YES,YES,Kablar till drönare,10,3,
+transport-logistics,transport-logistics,/collections/transport-logistics,/collections/transport-logistics,NO,NO,Transport & Logistik,2,SKIP,
+usb-kablar-usb-c-for-usb-c,usb-cables-usb-c-for-usb-c,/collections/usb-kablar-usb-c-for-usb-c,/collections/usb-cables-usb-c-for-usb-c,YES,YES,Kraftfulla USB-kablar USB-C till USB-C,23,3,
+vendors-q-sunnylife,vendors-q-sunnylife,/collections/vendors-q-sunnylife,/collections/vendors-q-sunnylife,NO,NO,Sunnylife: Köp vattentäta kameraskydd & actionkamera tillbehör,377,SKIP,
+waterproof-kameraskydd,waterproof-camera-protection,/collections/waterproof-kameraskydd,/collections/waterproof-camera-protection,YES,YES,Vattentätt kameraskydd för kamera & drönare,141,3,
+current_handle,proposed_handle,taxonomy_pillar,action,merge_into,products_count,swedish_detected,current_url,proposed_url,title
+_test-collection-delete-me,(exclude),Support,EXCLUDE,,0,NO,/collections/_test-collection-delete-me,(exclude),TEST Collection Delete Me
+accessories-dji-air-3s,accessories-dji-air-3s,Accessories,KEEP,,13,NO,/collections/accessories-dji-air-3s,/collections/accessories-dji-air-3s,Tillbehör DJI Air 3S - Tillbehör för DJI Air 3S: Komplettera din dröna
+accessories-dji-air-series,accessories-dji-air-series,Accessories,KEEP,,12,NO,/collections/accessories-dji-air-series,/collections/accessories-dji-air-series,Tillbehör till DJI Air-Serien – Uppgradera din drönare idag!
+accessories-dji-avata-series,accessories-dji-avata-series,Accessories,KEEP,,14,NO,/collections/accessories-dji-avata-series,/collections/accessories-dji-avata-series,DJI Avata tillbehör: FPV-drönarutrustning för proffs & nybörjare
+accessories-dji-inspire,accessories-dji-inspire,Accessories,KEEP,,0,NO,/collections/accessories-dji-inspire,/collections/accessories-dji-inspire,DJI Inspire Tillbehör
+accessories-dji-mavic-2,accessories-dji-mavic-2,Accessories,KEEP,,4,NO,/collections/accessories-dji-mavic-2,/collections/accessories-dji-mavic-2,Tillbehör DJI Mavic 2: Utrustning för din drönare
+accessories-dji-mavic-3-cine,accessories-dji-mavic-3-cine,Accessories,KEEP,,10,NO,/collections/accessories-dji-mavic-3-cine,/collections/accessories-dji-mavic-3-cine,Tillbehör DJI Mavic 3 Cine för optimal prestanda
+accessories-dji-mavic-drones,accessories-dji-mavic-drones,Accessories,KEEP,,2,NO,/collections/accessories-dji-mavic-drones,/collections/accessories-dji-mavic-drones,dji mavic 3e - Tillbehör för DJI Mavic Drönare
+accessories-dji-mini-2-2-se,accessories-dji-mini-2-2-se,Accessories,KEEP,,47,NO,/collections/accessories-dji-mini-2-2-se,/collections/accessories-dji-mini-2-2-se,Tillbehör DJI Mini 2 / 2 SE - Tillbehör för DJI Mini
+accessories-dji-mini-4,accessories-dji-mini-4,Accessories,KEEP,,18,NO,/collections/accessories-dji-mini-4,/collections/accessories-dji-mini-4,DJI Mini 3 Tillbehör: Utforska drönarens fulla potential
+accessories-dji-mini-4-series,accessories-dji-mini-4-series,Accessories,KEEP,,3,NO,/collections/accessories-dji-mini-4-series,/collections/accessories-dji-mini-4-series,Tillbehör till DJI Mini 4-serien – Maxa din drönarupplevelse!
+accessories-dji-neo,accessories-dji-neo,Accessories,KEEP,,20,NO,/collections/accessories-dji-neo,/collections/accessories-dji-neo,DJI Neo tillbehör – Batteri & mer för optimal flygning
+accessories-for-dji-air-3-series,accessories-for-dji-air-3-series,Accessories,KEEP,,14,NO,/collections/accessories-for-dji-air-3-series,/collections/accessories-for-dji-air-3-series,Tillbehör till DJI AIR 3-Serien
+airdrop-system,airdrop-system,Accessories,KEEP,,24,NO,/collections/airdrop-system,/collections/airdrop-system,Airdrop System
+all-products,all-products,Drones,KEEP,,841,NO,/collections/all-products,/collections/all-products,Alla produkter Drönare
+amagisn-kameratillbehor-and-dronarutrustning,amagisn-camera-accessories-and-drone-equipment,Brands,RENAME,,149,YES,/collections/amagisn-kameratillbehor-and-dronarutrustning,/collections/amagisn-camera-accessories-and-drone-equipment,kameratillbehör - AMagisn Tillbehör för Kamera och Drönare
+bandverktyg,precision-tools,Spare Parts,RENAME,,2,YES,/collections/bandverktyg,/collections/precision-tools,Bändverktyg för Precisionsreparationer
+batteries,batteries,Accessories,KEEP,,64,NO,/collections/batteries,/collections/batteries,Batterier och laddare
+belysning-for-drones,drone-lighting,Accessories,RENAME,,28,YES,/collections/belysning-for-drones,/collections/drone-lighting,Belysning till drönare
+brdrc-accessories,brdrc-accessories,Brands,KEEP,,134,NO,/collections/brdrc-accessories,/collections/brdrc-accessories,Kompletta BRDRC Tillbehör för Din Utrustning
+camera-tripod-stand,camera-tripod-stand,Accessories,KEEP,,86,NO,/collections/camera-tripod-stand,/collections/camera-tripod-stand,Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ
+cleaning-products-actionking,(exclude),Support,EXCLUDE,,18,NO,/collections/cleaning-products-actionking,(exclude),Rengörning för elektronik
+dij-air-3-series,dji-air-3-series,Drones,MERGE,dji-air-3-series,3,NO,/collections/dij-air-3-series,/collections/dji-air-3-series,DJI Air 3-Serien för Professionell Flygfotografering
+dji,dji-drones,Drones,MERGE,dji-drones,84,NO,/collections/dji,/collections/dji-drones,DJI: Innovation inom Drönarteknik
+dji-agras-drones,dji-agras-drones,Enterprise,KEEP,,4,NO,/collections/dji-agras-drones,/collections/dji-agras-drones,DJI Agras Drönare för Precisionsjordbruk
+dji-agras-t40,dji-agras-t40,Enterprise,KEEP,,2,NO,/collections/dji-agras-t40,/collections/dji-agras-t40,DJI Agras T40
+dji-agras-t50,dji-agras-t50,Enterprise,KEEP,,3,NO,/collections/dji-agras-t50,/collections/dji-agras-t50,DJI Agras T50
+dji-air-2-accessories,dji-air-2-accessories,Accessories,KEEP,,3,NO,/collections/dji-air-2-accessories,/collections/dji-air-2-accessories,Högkvalitativa DJI Air 2 Tillbehör för Drönare
+dji-air-2-series,dji-air-2-series,Drones,KEEP,,1,NO,/collections/dji-air-2-series,/collections/dji-air-2-series,DJI Air 2 Serien: Drönare och Tillbehör
+dji-air-2s,dji-air-2s,Drones,KEEP,,1,NO,/collections/dji-air-2s,/collections/dji-air-2s,DJI Air 2S
+dji-air-2s-accessories,dji-air-2s-accessories,Accessories,KEEP,,0,NO,/collections/dji-air-2s-accessories,/collections/dji-air-2s-accessories,DJI Air 2S Tillbehör – Optimerad Flygning
+dji-air-3,dji-air-3,Drones,KEEP,,3,NO,/collections/dji-air-3,/collections/dji-air-3,DJI AIR 3
+dji-air-3-accessories,dji-air-3-accessories,Accessories,KEEP,,201,NO,/collections/dji-air-3-accessories,/collections/dji-air-3-accessories,DJI Air 3 — Tillbehör
+dji-air-3-accessories-comprehensive-range,dji-air-3-accessories-comprehensive-range,Accessories,KEEP,,66,NO,/collections/dji-air-3-accessories-comprehensive-range,/collections/dji-air-3-accessories-comprehensive-range,Omfattande Sortiment av DJI Air 3 Tillbehör
+dji-air-3-antenner,dji-air-3-antennas,Spare Parts,RENAME,,131,YES,/collections/dji-air-3-antenner,/collections/dji-air-3-antennas,DJI Air 3 — Antenner
+dji-air-3-armar,dji-air-3-arms,Spare Parts,RENAME,,267,YES,/collections/dji-air-3-armar,/collections/dji-air-3-arms,DJI Air 3 — Armar
+dji-air-3-batteries,dji-air-3-batteries,Spare Parts,KEEP,,482,NO,/collections/dji-air-3-batteries,/collections/dji-air-3-batteries,DJI Air 3 — Batterier
+dji-air-3-gimbal,dji-air-3-gimbal,Spare Parts,KEEP,,323,NO,/collections/dji-air-3-gimbal,/collections/dji-air-3-gimbal,DJI Air 3 — Gimbal
+dji-air-3-kablar,dji-air-3-cables,Spare Parts,RENAME,,713,YES,/collections/dji-air-3-kablar,/collections/dji-air-3-cables,DJI Air 3 — Kablar
+dji-air-3-kameror,dji-air-3-cameras,Spare Parts,RENAME,,1165,YES,/collections/dji-air-3-kameror,/collections/dji-air-3-cameras,DJI Air 3 — Kameror
+dji-air-3-landningsstall,dji-air-3-landing-gear,Spare Parts,RENAME,,160,YES,/collections/dji-air-3-landningsstall,/collections/dji-air-3-landing-gear,DJI Air 3 — Landningsställ
+dji-air-3-motorer,dji-air-3-motors,Spare Parts,RENAME,,245,YES,/collections/dji-air-3-motorer,/collections/dji-air-3-motors,DJI Air 3 — Motorer
+dji-air-3-propellers,dji-air-3-propellers,Spare Parts,KEEP,,327,NO,/collections/dji-air-3-propellers,/collections/dji-air-3-propellers,DJI Air 3 — Propellrar
+dji-air-3-sensorer,dji-air-3-sensors,Drones,RENAME,,147,YES,/collections/dji-air-3-sensorer,/collections/dji-air-3-sensors,DJI Air 3 — Sensorer
+dji-air-3-skal,dji-air-3-shell,Spare Parts,RENAME,,345,YES,/collections/dji-air-3-skal,/collections/dji-air-3-shell,DJI Air 3 — Skal
+dji-air-3-spare-parts,dji-air-3-spare-parts,Drones,KEEP,,127,NO,/collections/dji-air-3-spare-parts,/collections/dji-air-3-spare-parts,DJI Air 3 — Reservdelar
+dji-air-3s,dji-air-3s,Drones,KEEP,,2,NO,/collections/dji-air-3s,/collections/dji-air-3s,DJI Air 3S
+dji-air-series,dji-air-series,Drones,KEEP,,6,NO,/collections/dji-air-series,/collections/dji-air-series,DJI AIR-serien
+dji-avata-2-accessories,dji-avata-2-accessories,Accessories,KEEP,,51,NO,/collections/dji-avata-2-accessories,/collections/dji-avata-2-accessories,DJI Avata 2 tillbehör – Skydd & batterier till din drönare
+dji-avata-accessories,dji-avata-accessories,Accessories,KEEP,,6,NO,/collections/dji-avata-accessories,/collections/dji-avata-accessories,DJI Avata Tillbehör
+dji-avata-pro-fpv-drones,dji-avata-pro-fpv-drones,Drones,KEEP,,2,NO,/collections/dji-avata-pro-fpv-drones,/collections/dji-avata-pro-fpv-drones,Avata Pro FPV-Drönare – Nästa Generations Flygning
+dji-avata-series,dji-avata-series,Drones,KEEP,,2,NO,/collections/dji-avata-series,/collections/dji-avata-series,DJI Avata-Serien
+dji-dock-2,dji-dock-2,Enterprise,KEEP,,1,NO,/collections/dji-dock-2,/collections/dji-dock-2,DJI Dock 2
+dji-dock-3,dji-dock-3,Enterprise,KEEP,,1,NO,/collections/dji-dock-3,/collections/dji-dock-3,DJI Dock 3
+dji-drone-spare-parts,dji-drone-spare-parts,Drones,KEEP,,16,NO,/collections/dji-drone-spare-parts,/collections/dji-drone-spare-parts,Hitta DJI-drönar reservdelar av hög kvalitet
+dji-drones,dji-drones,Drones,KEEP,,22,NO,/collections/dji-drones,/collections/dji-drones,DJI Drönare
+dji-drones-fjarrkontroller,dji-drones-remote-controls,Drones,RENAME,,7,YES,/collections/dji-drones-fjarrkontroller,/collections/dji-drones-remote-controls,Fjärrkontroller och Tillbehör för DJI Drönare
+dji-enterprise-fjarrkontroller,dji-enterprise-remote-controls,Enterprise,RENAME,,22,YES,/collections/dji-enterprise-fjarrkontroller,/collections/dji-enterprise-remote-controls,Professionella Fjärrkontroller för DJI Enterprise
+dji-flip-accessories,dji-flip-accessories,Accessories,KEEP,,63,NO,/collections/dji-flip-accessories,/collections/dji-flip-accessories,DJI Flip™ tillbehör – Optimal utrustning till din drönare
+dji-flip-battery-accessories,dji-flip-battery-accessories,Accessories,KEEP,,3,NO,/collections/dji-flip-battery-accessories,/collections/dji-flip-battery-accessories,Optimala DJI Flip tillbehör – Maxa din drönarupplevelse!
+dji-flip-drones,dji-flip-drones,Drones,KEEP,,3,NO,/collections/dji-flip-drones,/collections/dji-flip-drones,DJI Flip: Kompakta Vikbara Drönare
+dji-flycart-100-lastdronare,dji-flycart-100-cargo-drones,Enterprise,RENAME,,2,YES,/collections/dji-flycart-100-lastdronare,/collections/dji-flycart-100-cargo-drones,DJI FlyCart 100: Lastdrönare för Tunga Lyft
+dji-flycart-30,dji-flycart-30,Enterprise,KEEP,,2,NO,/collections/dji-flycart-30,/collections/dji-flycart-30,DJI FlyCart 30
+dji-flycart-30-batteries,dji-flycart-30-batteries,Spare Parts,KEEP,,370,NO,/collections/dji-flycart-30-batteries,/collections/dji-flycart-30-batteries,DJI FlyCart 30 — Batterier
+dji-flycart-30-spare-parts,dji-flycart-30-spare-parts,Enterprise,KEEP,,2,NO,/collections/dji-flycart-30-spare-parts,/collections/dji-flycart-30-spare-parts,DJI FlyCart 30 — Reservdelar
+dji-flycart-series,dji-flycart-series,Enterprise,KEEP,,2,NO,/collections/dji-flycart-series,/collections/dji-flycart-series,DJI FlyCart Serien
+dji-fpv-accessories,dji-fpv-accessories,Accessories,KEEP,,1,NO,/collections/dji-fpv-accessories,/collections/dji-fpv-accessories,Dji FPV Tillbehör – Optimera Din Flygning Med Kvalitet
+dji-inspire,dji-inspire,Enterprise,KEEP,,0,NO,/collections/dji-inspire,/collections/dji-inspire,DJI Inspire Serien Professionella Drönare för Kreatörer
+dji-inspire-series,dji-inspire-series,Enterprise,KEEP,,0,NO,/collections/dji-inspire-series,/collections/dji-inspire-series,DJI Inspire Serien
+dji-marvic-enterprise,dji-marvic-enterprise,Enterprise,KEEP,,1,NO,/collections/dji-marvic-enterprise,/collections/dji-marvic-enterprise,DJI Marvic Enterprise
+dji-matrice-3-series,dji-matrice-3-series,Enterprise,KEEP,,22,NO,/collections/dji-matrice-3-series,/collections/dji-matrice-3-series,DJI Matrice 4 Serien
+dji-matrice-30-serie-accessories,dji-matrice-30-series-accessories,Accessories,RENAME,,9,YES,/collections/dji-matrice-30-serie-accessories,/collections/dji-matrice-30-series-accessories,dji arm - DJI Matrice 30 Serie Tillbehör
+dji-matrice-300-rtk,dji-matrice-300-rtk,Enterprise,KEEP,,2,NO,/collections/dji-matrice-300-rtk,/collections/dji-matrice-300-rtk,DJI Matrice 300 RTK
+dji-matrice-350-rtk-accessories,dji-matrice-350-rtk-accessories,Accessories,KEEP,,8,NO,/collections/dji-matrice-350-rtk-accessories,/collections/dji-matrice-350-rtk-accessories,DJI Matrice 350 RTK Tillbehör och Skydd
+dji-matrice-350-rtk-antenner,dji-matrice-350-rtk-antennas,Spare Parts,RENAME,,17,YES,/collections/dji-matrice-350-rtk-antenner,/collections/dji-matrice-350-rtk-antennas,DJI Matrice 350 RTK — Antenner
+dji-matrice-350-rtk-batteries,dji-matrice-350-rtk-batteries,Spare Parts,KEEP,,374,NO,/collections/dji-matrice-350-rtk-batteries,/collections/dji-matrice-350-rtk-batteries,DJI Matrice 350 RTK — Batterier
+dji-matrice-350-rtk-rtk,dji-matrice-350-rtk,Enterprise,MERGE,dji-matrice-350-rtk,28,NO,/collections/dji-matrice-350-rtk-rtk,/collections/dji-matrice-350-rtk,DJI Matrice 350 RTK — RTK
+dji-matrice-350-rtk-spare-parts,dji-matrice-350-rtk-spare-parts,Enterprise,KEEP,,5,NO,/collections/dji-matrice-350-rtk-spare-parts,/collections/dji-matrice-350-rtk-spare-parts,DJI Matrice 350 RTK — Reservdelar
+dji-matrice-3d,dji-matrice-3d,Enterprise,KEEP,,2,NO,/collections/dji-matrice-3d,/collections/dji-matrice-3d,DJI Matrice 3D
+dji-matrice-3td,dji-matrice-3td,Enterprise,KEEP,,1,NO,/collections/dji-matrice-3td,/collections/dji-matrice-3td,DJI Matrice 3TD
+dji-matrice-4-accessories,dji-matrice-4-accessories,Accessories,KEEP,,15,NO,/collections/dji-matrice-4-accessories,/collections/dji-matrice-4-accessories,DJI Matrice 4 Tillbehör för Professionella Drönare
+dji-matrice-4-batteries,dji-matrice-4-batteries,Spare Parts,KEEP,,387,NO,/collections/dji-matrice-4-batteries,/collections/dji-matrice-4-batteries,DJI Matrice 4 — Batterier
+dji-matrice-4-gimbal,dji-matrice-4-gimbal,Spare Parts,KEEP,,233,NO,/collections/dji-matrice-4-gimbal,/collections/dji-matrice-4-gimbal,DJI Matrice 4 — Gimbal
+dji-matrice-4-kablar,dji-matrice-4-cables,Spare Parts,RENAME,,618,YES,/collections/dji-matrice-4-kablar,/collections/dji-matrice-4-cables,DJI Matrice 4 — Kablar
+dji-matrice-4-kameror,dji-matrice-4-cameras,Spare Parts,RENAME,,1075,YES,/collections/dji-matrice-4-kameror,/collections/dji-matrice-4-cameras,DJI Matrice 4 — Kameror
+dji-matrice-4-propellers,dji-matrice-4-propellers,Spare Parts,KEEP,,242,NO,/collections/dji-matrice-4-propellers,/collections/dji-matrice-4-propellers,DJI Matrice 4 — Propellrar
+dji-matrice-4-rtk,dji-matrice-4-rtk,Enterprise,KEEP,,47,NO,/collections/dji-matrice-4-rtk,/collections/dji-matrice-4-rtk,DJI Matrice 4 — RTK
+dji-matrice-4-serie,dji-matrice-4-series,Enterprise,RENAME,,22,YES,/collections/dji-matrice-4-serie,/collections/dji-matrice-4-series,dji matrice 4 Serie
+dji-matrice-4-spare-parts,dji-matrice-4-spare-parts,Enterprise,KEEP,,21,NO,/collections/dji-matrice-4-spare-parts,/collections/dji-matrice-4-spare-parts,DJI Matrice 4 — Reservdelar
+dji-matrice-400-series,dji-matrice-400-series,Enterprise,KEEP,,9,NO,/collections/dji-matrice-400-series,/collections/dji-matrice-400-series,DJI Matrice 400 Serien för Professionella Uppdrag
+dji-matrice-series,dji-matrice-series,Enterprise,KEEP,,32,NO,/collections/dji-matrice-series,/collections/dji-matrice-series,DJI Matrice-serien – Professionella Enterprise-drönare
+dji-mavic-2-pro,dji-mavic-2-pro,Drones,KEEP,,1,NO,/collections/dji-mavic-2-pro,/collections/dji-mavic-2-pro,DJI Mavic 2 Pro
+dji-mavic-2-series,dji-mavic-2-series,Drones,KEEP,,2,NO,/collections/dji-mavic-2-series,/collections/dji-mavic-2-series,DJI Mavic 2-serien: Avancerade Drönare
+dji-mavic-3-accessories,dji-mavic-3-accessories,Accessories,KEEP,,66,NO,/collections/dji-mavic-3-accessories,/collections/dji-mavic-3-accessories,DJI Mavic 3 Tillbehör för Optimal Prestanda
+dji-mavic-3-cine-drones,dji-mavic-3-cine-drones,Drones,KEEP,,1,NO,/collections/dji-mavic-3-cine-drones,/collections/dji-mavic-3-cine-drones,DJI Mavic 3 Cine: Ultimata Drönaren för Filmskapare
+dji-mavic-3-classic,dji-mavic-3-classic,Drones,KEEP,,15,NO,/collections/dji-mavic-3-classic,/collections/dji-mavic-3-classic,Tillbehör DJI Mavic 3 Classic
+dji-mavic-3-enterprise,dji-mavic-3-enterprise,Enterprise,KEEP,,5,NO,/collections/dji-mavic-3-enterprise,/collections/dji-mavic-3-enterprise,DJI Mavic 3 Enterprise - Kvalitet &
+dji-mavic-3-enterprise-accessories,dji-mavic-3-enterprise-accessories,Accessories,KEEP,,85,NO,/collections/dji-mavic-3-enterprise-accessories,/collections/dji-mavic-3-enterprise-accessories,DJI Mavic 3 Enterprise — Tillbehör
+dji-mavic-3-enterprise-batteries,dji-mavic-3-enterprise-batteries,Spare Parts,KEEP,,372,NO,/collections/dji-mavic-3-enterprise-batteries,/collections/dji-mavic-3-enterprise-batteries,DJI Mavic 3 Enterprise — Batterier
+dji-mavic-3-enterprise-gimbal,dji-mavic-3-enterprise-gimbal,Spare Parts,KEEP,,218,NO,/collections/dji-mavic-3-enterprise-gimbal,/collections/dji-mavic-3-enterprise-gimbal,DJI Mavic 3 Enterprise — Gimbal
+dji-mavic-3-enterprise-kameror,dji-mavic-3-enterprise-cameras,Spare Parts,RENAME,,1057,YES,/collections/dji-mavic-3-enterprise-kameror,/collections/dji-mavic-3-enterprise-cameras,DJI Mavic 3 Enterprise — Kameror
+dji-mavic-3-enterprise-skal,dji-mavic-3-enterprise-shell,Spare Parts,RENAME,,230,YES,/collections/dji-mavic-3-enterprise-skal,/collections/dji-mavic-3-enterprise-shell,DJI Mavic 3 Enterprise — Skal
+dji-mavic-3-enterprise-spare-parts,dji-mavic-3-enterprise-spare-parts,Enterprise,KEEP,,5,NO,/collections/dji-mavic-3-enterprise-spare-parts,/collections/dji-mavic-3-enterprise-spare-parts,DJI Mavic 3 Enterprise — Reservdelar
+dji-mavic-3-pro-accessories,dji-mavic-3-pro-accessories,Accessories,KEEP,,11,NO,/collections/dji-mavic-3-pro-accessories,/collections/dji-mavic-3-pro-accessories,DJI Mavic 3 Pro tillbehör – Drönartillbehör för proffs
+dji-mavic-3-pro-advanced-drone-tech,dji-mavic-3-pro-advanced-drone-tech,Drones,KEEP,,5,NO,/collections/dji-mavic-3-pro-advanced-drone-tech,/collections/dji-mavic-3-pro-advanced-drone-tech,DJI Mavic 3 Pro: Avancerad Drönarteknik
+dji-mavic-3-series,dji-mavic-3-series,Drones,KEEP,,11,NO,/collections/dji-mavic-3-series,/collections/dji-mavic-3-series,DJI Mavic 3-serien: Proffsens val av drönare
+dji-mavic-3-thermal,dji-mavic-3-thermal,Payloads & Sensors,KEEP,,8,NO,/collections/dji-mavic-3-thermal,/collections/dji-mavic-3-thermal,DJI Mavic 3 Thermal
+dji-mavic-3m-drones-accessories,dji-mavic-3m-drones-accessories,Accessories,KEEP,,5,NO,/collections/dji-mavic-3m-drones-accessories,/collections/dji-mavic-3m-drones-accessories,DJI Mavic 3M Drönare och Tillbehör
+dji-mavic-4-pro,dji-mavic-4-pro,Drones,KEEP,,3,NO,/collections/dji-mavic-4-pro,/collections/dji-mavic-4-pro,DJI Mavic 4 Tillbehör
+dji-mavic-4-series,dji-mavic-4-series,Drones,KEEP,,3,NO,/collections/dji-mavic-4-series,/collections/dji-mavic-4-series,Upptäck DJI Mavic 4-serien för exceptionell flygfotografering
+dji-mavic-accessories,dji-mavic-accessories,Accessories,KEEP,,9,NO,/collections/dji-mavic-accessories,/collections/dji-mavic-accessories,Dji Mavic Tillbehör för Förbättrad Flygning
+dji-mavic-air-accessories,dji-mavic-air-accessories,Accessories,KEEP,,39,NO,/collections/dji-mavic-air-accessories,/collections/dji-mavic-air-accessories,Komplett utbud av DJI Mavic Air Tillbehör
+dji-mavic-pro-accessories,dji-mavic-pro-accessories,Accessories,KEEP,,46,NO,/collections/dji-mavic-pro-accessories,/collections/dji-mavic-pro-accessories,Omfattande DJI Mavic Pro Tillbehör
+dji-mavic-pro-battery-bag,dji-mavic-pro-battery-bag,Accessories,KEEP,,5,NO,/collections/dji-mavic-pro-battery-bag,/collections/dji-mavic-pro-battery-bag,dji mavic pro batteri väska - DJI Mavic Pro Batteriväska och Tillbehör
+dji-mavic-series,dji-mavic-series,Drones,KEEP,,6,NO,/collections/dji-mavic-series,/collections/dji-mavic-series,DJI Mavic-Serien
+dji-mavic-series-enterprise,dji-mavic-series-enterprise,Enterprise,KEEP,,11,NO,/collections/dji-mavic-series-enterprise,/collections/dji-mavic-series-enterprise,DJI Mavic Serien enterprise
+dji-mini-2-series,dji-mini-2-series,Drones,KEEP,,0,NO,/collections/dji-mini-2-series,/collections/dji-mini-2-series,DJI Mini 2-Serien
+dji-mini-3,dji-mini-3,Drones,KEEP,,5,NO,/collections/dji-mini-3,/collections/dji-mini-3,DJI Mini 3 Drönare för Professionellt Flygfoto
+dji-mini-3-accessories,dji-mini-3-accessories,Accessories,KEEP,,43,NO,/collections/dji-mini-3-accessories,/collections/dji-mini-3-accessories,DJI Mini 3 Tillbehör
+dji-mini-3-series,dji-mini-3-series,Drones,KEEP,,5,NO,/collections/dji-mini-3-series,/collections/dji-mini-3-series,DJI Mini 3-Serien
+dji-mini-4-pro,dji-mini-4-pro,Drones,KEEP,,1,NO,/collections/dji-mini-4-pro,/collections/dji-mini-4-pro,"DJI Mini 4 Pro – Frihet, precision och kreativ kontroll i miniformat"
+dji-mini-4-pro-accessories,dji-mini-4-pro-accessories,Accessories,KEEP,,14,NO,/collections/dji-mini-4-pro-accessories,/collections/dji-mini-4-pro-accessories,DJI Mini 4 Pro
+dji-mini-4-pro-antenner,dji-mini-4-pro-antennas,Spare Parts,RENAME,,130,YES,/collections/dji-mini-4-pro-antenner,/collections/dji-mini-4-pro-antennas,DJI Mini 4 Pro — Antenner
+dji-mini-4-pro-armar,dji-mini-4-pro-arms,Spare Parts,RENAME,,264,YES,/collections/dji-mini-4-pro-armar,/collections/dji-mini-4-pro-arms,DJI Mini 4 Pro — Armar
+dji-mini-4-pro-batteries,dji-mini-4-pro-batteries,Spare Parts,KEEP,,480,NO,/collections/dji-mini-4-pro-batteries,/collections/dji-mini-4-pro-batteries,DJI Mini 4 Pro — Batterier
+dji-mini-4-pro-gimbal,dji-mini-4-pro-gimbal,Spare Parts,KEEP,,323,NO,/collections/dji-mini-4-pro-gimbal,/collections/dji-mini-4-pro-gimbal,DJI Mini 4 Pro — Gimbal
+dji-mini-4-pro-kablar,dji-mini-4-pro-cables,Spare Parts,RENAME,,715,YES,/collections/dji-mini-4-pro-kablar,/collections/dji-mini-4-pro-cables,DJI Mini 4 Pro — Kablar
+dji-mini-4-pro-kameror,dji-mini-4-pro-cameras,Spare Parts,RENAME,,1165,YES,/collections/dji-mini-4-pro-kameror,/collections/dji-mini-4-pro-cameras,DJI Mini 4 Pro — Kameror
+dji-mini-4-pro-landningsstall,dji-mini-4-pro-landing-gear,Spare Parts,RENAME,,159,YES,/collections/dji-mini-4-pro-landningsstall,/collections/dji-mini-4-pro-landing-gear,DJI Mini 4 Pro — Landningsställ
+dji-mini-4-pro-motorer,dji-mini-4-pro-motors,Spare Parts,RENAME,,241,YES,/collections/dji-mini-4-pro-motorer,/collections/dji-mini-4-pro-motors,DJI Mini 4 Pro — Motorer
+dji-mini-4-pro-propellers,dji-mini-4-pro-propellers,Spare Parts,KEEP,,320,NO,/collections/dji-mini-4-pro-propellers,/collections/dji-mini-4-pro-propellers,DJI Mini 4 Pro — Propellrar
+dji-mini-4-pro-sensorer,dji-mini-4-pro-sensors,Drones,RENAME,,144,YES,/collections/dji-mini-4-pro-sensorer,/collections/dji-mini-4-pro-sensors,DJI Mini 4 Pro — Sensorer
+dji-mini-4-pro-skal,dji-mini-4-pro-shell,Spare Parts,RENAME,,342,YES,/collections/dji-mini-4-pro-skal,/collections/dji-mini-4-pro-shell,DJI Mini 4 Pro — Skal
+dji-mini-4-pro-spare-parts,dji-mini-4-pro-spare-parts,Drones,KEEP,,127,NO,/collections/dji-mini-4-pro-spare-parts,/collections/dji-mini-4-pro-spare-parts,DJI Mini 4 Pro — Reservdelar
+dji-mini-4-series,dji-mini-4-series,Drones,KEEP,,2,NO,/collections/dji-mini-4-series,/collections/dji-mini-4-series,DJI Mini 4-Serien
+dji-mini-5-series,dji-mini-5-series,Drones,KEEP,,2,NO,/collections/dji-mini-5-series,/collections/dji-mini-5-series,DJI Mini 5-Serien
+dji-mini-accessories,dji-mini-accessories,Accessories,KEEP,,7,NO,/collections/dji-mini-accessories,/collections/dji-mini-accessories,DJI Mini Tillbehör för Din Drönare
+dji-neo,dji-neo,Drones,KEEP,,3,NO,/collections/dji-neo,/collections/dji-neo,DJI Neo
+dji-neo-2-accessories,dji-neo-2-accessories,Accessories,KEEP,,54,NO,/collections/dji-neo-2-accessories,/collections/dji-neo-2-accessories,DJI Neo 2 Tillbehör för din Drönare
+dji-neo-accessories,dji-neo-accessories,Accessories,KEEP,,129,NO,/collections/dji-neo-accessories,/collections/dji-neo-accessories,DJI Neo Tillbehör – Batteri & mer för din drönare
+dji-phantom-3-pro-v1,dji-phantom-3-pro-v1,Enterprise,KEEP,,0,NO,/collections/dji-phantom-3-pro-v1,/collections/dji-phantom-3-pro-v1,DJI Phantom 3 Pro v1 Drönare och Tillbehör
+dji-phantom-3-se,dji-phantom-3-se,Enterprise,KEEP,,43,NO,/collections/dji-phantom-3-se,/collections/dji-phantom-3-se,DJI Phantom 3 SE Drönare med Kamera
+dji-phantom-4-pro-drones,dji-phantom-4-pro-drones,Enterprise,KEEP,,0,NO,/collections/dji-phantom-4-pro-drones,/collections/dji-phantom-4-pro-drones,DJI Phantom 4 Pro Drönare för Professionella
+dji-phantom-accessories-bag-spare-parts,dji-phantom-accessories-bag-spare-parts,Accessories,KEEP,,0,NO,/collections/dji-phantom-accessories-bag-spare-parts,/collections/dji-phantom-accessories-bag-spare-parts,DJI Phantom Tillbehör för Optimal Prestanda
+dji-phantom-series,dji-phantom-series,Enterprise,KEEP,,0,NO,/collections/dji-phantom-series,/collections/dji-phantom-series,DJI Phantom Serien
+dji-rc-fjarrkontroller,dji-rc-remote-controls,Drones,RENAME,,7,YES,/collections/dji-rc-fjarrkontroller,/collections/dji-rc-remote-controls,DJI RC – Smart fjärrkontroll
+dji-rc-pro-accessories,dji-rc-pro-accessories,Accessories,KEEP,,5,NO,/collections/dji-rc-pro-accessories,/collections/dji-rc-pro-accessories,DJI RC Pro Tillbehör – Optimera Din Fjärrkontroll
+dronarelektronik-flight-components,drone-electronics-flight-components,Accessories,RENAME,,175,YES,/collections/dronarelektronik-flight-components,/collections/drone-electronics-flight-components,Reservdelar & Komponenter för DJI & FPV
+dronarmatta-landning-protection,drone-mat-landing-protection,Accessories,RENAME,,21,YES,/collections/dronarmatta-landning-protection,/collections/drone-mat-landing-protection,Landningsmattor Drönare – Säker & Stabil Flygning
+drone-accessories-buy,drone-accessories,Accessories,MERGE,drone-accessories,615,NO,/collections/drone-accessories-buy,/collections/drone-accessories,Drönartillbehör: Filter för bättre flygfotografering
+drone-accessories-drone,drone-accessories,Accessories,MERGE,drone-accessories,374,NO,/collections/drone-accessories-drone,/collections/drone-accessories,Drönartillbehör Dronar för Optimal Flygning
+drone-backpack-bags,drone-backpack-bags,Accessories,KEEP,,203,NO,/collections/drone-backpack-bags,/collections/drone-backpack-bags,Robust drönarryggsäck för säker transport av din drönare
+drone-fjarrkontrollstillbehor,drone-remote-control-accessories,Accessories,RENAME,,32,YES,/collections/drone-fjarrkontrollstillbehor,/collections/drone-remote-control-accessories,Drönar - fjärrkontrollstillbehör
+drone-kameror,drone-cameras,Spare Parts,RENAME,,3,YES,/collections/drone-kameror,/collections/drone-cameras,Professionella Drönar kameror för Flygfoto
+drone-propellers-quiet,drone-propellers-quiet,Spare Parts,KEEP,,128,NO,/collections/drone-propellers-quiet,/collections/drone-propellers-quiet,Hållbara drönarpropellrar för optimal flygning och prestanda
+drone-spare-parts-other,drone-spare-parts-other,Drones,KEEP,,5,NO,/collections/drone-spare-parts-other,/collections/drone-spare-parts-other,Drönare reservdelar: Allt för din drönarreparation
+drones-actionking,(exclude),Support,EXCLUDE,,47,NO,/collections/drones-actionking,(exclude),Drönare
+drones-propellers-accessories,drones-propellers-accessories,Spare Parts,KEEP,,366,NO,/collections/drones-propellers-accessories,/collections/drones-propellers-accessories,Drönare Propeller Tillbehör för Optimal Flygning
+drones-with-camera,drones-with-camera,Drones,KEEP,,47,NO,/collections/drones-with-camera,/collections/drones-with-camera,Drönare med kamera
+drones-with-varmekamera,drones-with-thermal-camera,Payloads & Sensors,RENAME,,30,YES,/collections/drones-with-varmekamera,/collections/drones-with-thermal-camera,Drönare med värmekamera
+energy-infrastructure,energy-infrastructure,Enterprise,KEEP,,2,NO,/collections/energy-infrastructure,/collections/energy-infrastructure,Energi & Infrastruktur
+enterprise-accessories,enterprise-accessories,Accessories,KEEP,,32,NO,/collections/enterprise-accessories,/collections/enterprise-accessories,Enterprise Tillbehör
+enterprise-belysning,enterprise-lighting,Accessories,RENAME,,13,YES,/collections/enterprise-belysning,/collections/enterprise-lighting,Enterprise belysning
+enterprise-drone-accessories,enterprise-drone-accessories,Accessories,KEEP,,77,NO,/collections/enterprise-drone-accessories,/collections/enterprise-drone-accessories,Professionella Enterprise drönartillbehör
+enterprise-drones,enterprise-drones,Enterprise,KEEP,,19,NO,/collections/enterprise-drones,/collections/enterprise-drones,Enterprise Drönare för Industri och Inspektion
+enterprise-hogtalarsystem,enterprise-speaker-systems,Payloads & Sensors,RENAME,,23,YES,/collections/enterprise-hogtalarsystem,/collections/enterprise-speaker-systems,Enterprise Högtalarsystem
+enterprise-lyftsystem,enterprise-lifting-systems,Payloads & Sensors,RENAME,,5,YES,/collections/enterprise-lyftsystem,/collections/enterprise-lifting-systems,Enterprise Lyftsystem
+enterprise-propellers,enterprise-propellers,Spare Parts,KEEP,,1,NO,/collections/enterprise-propellers,/collections/enterprise-propellers,Enterprise Propellrar
+enterprise-sensorer,enterprise-sensors,Payloads & Sensors,RENAME,,20,YES,/collections/enterprise-sensorer,/collections/enterprise-sensors,Enterprise Sensorer
+enterprise-service-drones,enterprise-service-drones,Enterprise,KEEP,,4,NO,/collections/enterprise-service-drones,/collections/enterprise-service-drones,Enterprise Service för Företagsdrönare
+filter-drones-lins,drone-filters,Accessories,MERGE,drone-filters,261,NO,/collections/filter-drones-lins,/collections/drone-filters,Filter drönare: Skydda din lins med premium glasfilter
+filters-for-drones,drone-filters,Accessories,MERGE,drone-filters,252,NO,/collections/filters-for-drones,/collections/drone-filters,Filter till Drönare för Optimal Bildkvalitet
+fjarrkontroll-drones,remote-control-drones,Drones,RENAME,,10,YES,/collections/fjarrkontroll-drones,/collections/remote-control-drones,Fjärrkontroll drönare: Precision & kontroll för din flygning
+gopro-accessories-vendors,gopro-accessories,Brands,RENAME,,228,NO,/collections/gopro-accessories-vendors,/collections/gopro-accessories,Hitta pålitliga GoPro tillbehör vendors här
+gopro-hero13-bag,gopro-hero13-bag,Brands,KEEP,,610,NO,/collections/gopro-hero13-bag,/collections/gopro-hero13-bag,GoPro Hero13 väska – Skydda din actionkamera tryggt
+gopro-hero13-black-protection,gopro-hero13-black-protection,Brands,KEEP,,476,NO,/collections/gopro-hero13-black-protection,/collections/gopro-hero13-black-protection,GoPro Hero13 Black skydd - Skydda din GoPro Hero13 Black med rätt skyd
+inspektionsdronare,inspection-drones,Accessories,RENAME,,4,YES,/collections/inspektionsdronare,/collections/inspection-drones,Inspektionsdrönare
+ji-mini-5-pro-filter,ji-mini-5-pro-filter,Accessories,KEEP,,0,NO,/collections/ji-mini-5-pro-filter,/collections/ji-mini-5-pro-filter,DJI Mini 5 Pro filter
+jordbruksdronare,agriculture-drones,Accessories,RENAME,,4,YES,/collections/jordbruksdronare,/collections/agriculture-drones,Jordbruksdrönare
+kamerakablar-actionking,(exclude),Support,EXCLUDE,,12,YES,/collections/kamerakablar-actionking,(exclude),Kamerakablar för Optimal Prestanda
+kapor-for-drones,drone-covers,Drones,RENAME,,158,YES,/collections/kapor-for-drones,/collections/drone-covers,Högkvalitativa Kåpor till Drönare
+kartlaggnings-and-matdronare,mapping-survey-drones,Accessories,RENAME,,26,YES,/collections/kartlaggnings-and-matdronare,/collections/mapping-survey-drones,Kartläggnings- och mätdrönare
+landningsstall-drones,landing-gear-drones,Drones,RENAME,,42,YES,/collections/landningsstall-drones,/collections/landing-gear-drones,Landningsställ till drönare – Stabil och säker landning
+last-and-transportdronare,cargo-transport-drones,Accessories,RENAME,,54,YES,/collections/last-and-transportdronare,/collections/cargo-transport-drones,Last- och transportdrönare
+master-airscrew-dji-propellers,master-airscrew-dji-propellers,Brands,KEEP,,42,NO,/collections/master-airscrew-dji-propellers,/collections/master-airscrew-dji-propellers,Master Airscrew DJI propellrar – Tysta & Effektiva
+memory-card-storage,memory-card-storage,Accessories,KEEP,,0,NO,/collections/memory-card-storage,/collections/memory-card-storage,Minneskort & Lagring
+mounts-adaptrar-action-cameras,mounts-adapters-action-cameras,Spare Parts,RENAME,,5,YES,/collections/mounts-adaptrar-action-cameras,/collections/mounts-adapters-action-cameras,Universal Fästen och Adaptrar till actionkameror
+multiverktyg-friluftsliv,outdoor-multi-tools,Accessories,RENAME,,14,YES,/collections/multiverktyg-friluftsliv,/collections/outdoor-multi-tools,Multiverktyg friluftsliv: Kompakt & Mångsidigt Äventyrsverktyg
+pgytech-accessories,pgytech-accessories,Brands,KEEP,,3,NO,/collections/pgytech-accessories,/collections/pgytech-accessories,Pgytech Tillbehör för Kreativa Skapare
+pincetter-actionking,(exclude),Support,EXCLUDE,,1,YES,/collections/pincetter-actionking,(exclude),Pincetter
+polarpro,polarpro,Brands,KEEP,,428,NO,/collections/polarpro,/collections/polarpro,Polarpro
+propeller-guard-1,propeller-guard-1,Accessories,KEEP,,56,NO,/collections/propeller-guard-1,/collections/propeller-guard-1,Robusta Propellerskydd för Säkrare Drönarflygning
+protection-drones,drone-protection,Accessories,RENAME,,53,NO,/collections/protection-drones,/collections/drone-protection,"Skydd till drönare: Propeller, Gimbal & Skal – Skydda din drönare!"
+repair-dji-neo-spare-parts,repair-dji-neo-spare-parts,Spare Parts,KEEP,,4,NO,/collections/repair-dji-neo-spare-parts,/collections/repair-dji-neo-spare-parts,Reparation DJI Neo – Fixa din drönare snabbt och enkelt!
+reparera-precisionsverktyg-elektronik,repair-precision-tools,Spare Parts,RENAME,,36,YES,/collections/reparera-precisionsverktyg-elektronik,/collections/repair-precision-tools,Precisionsverktyg Elektronik: Reparera kamera & drönare enkelt
+skogsbruksdronare,forestry-drones,Accessories,RENAME,,1,YES,/collections/skogsbruksdronare,/collections/forestry-drones,Skogsbruksdrönare
+skruvmejsel-set,screwdriver-sets,Spare Parts,RENAME,,6,YES,/collections/skruvmejsel-set,/collections/screwdriver-sets,Skruvmejsel Set – Precisionsverktyg för Alla Behov
+spare-parts-gimbal-drones-motorer,spare-parts-gimbal-drones-motors,Spare Parts,RENAME,,171,YES,/collections/spare-parts-gimbal-drones-motorer,/collections/spare-parts-gimbal-drones-motors,Reservdelar Gimbal Drönare: Gimbalmotorer för Optimal Stabilisering
+tanger-actionking,(exclude),Support,EXCLUDE,,1,YES,/collections/tanger-actionking,(exclude),Tänger Action: Precision och Styrka
+tillbehorskablar-drones,accessory-cables-drones,Accessories,RENAME,,10,YES,/collections/tillbehorskablar-drones,/collections/accessory-cables-drones,Kablar till drönare
+transport-logistics,transport-logistics,Enterprise,KEEP,,2,NO,/collections/transport-logistics,/collections/transport-logistics,Transport & Logistik
+usb-kablar-usb-c-for-usb-c,usb-cables-usb-c-for-usb-c,Spare Parts,RENAME,,23,YES,/collections/usb-kablar-usb-c-for-usb-c,/collections/usb-cables-usb-c-for-usb-c,Kraftfulla USB-kablar USB-C till USB-C
+vendors-q-sunnylife,sunnylife,Brands,RENAME,,377,NO,/collections/vendors-q-sunnylife,/collections/sunnylife,Sunnylife: Köp vattentäta kameraskydd & actionkamera tillbehör
+waterproof-kameraskydd,waterproof-camera-protection,Accessories,RENAME,,141,YES,/collections/waterproof-kameraskydd,/collections/waterproof-camera-protection,Vattentätt kameraskydd för kamera & drönare

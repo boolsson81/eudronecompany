@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "main": {
+      "type": "edp-page-content",
+      "settings": {}
+    }
+  },
+  "order": ["main"]
+}

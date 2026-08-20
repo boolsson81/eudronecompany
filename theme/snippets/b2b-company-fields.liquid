@@ -1,0 +1,98 @@
+{%- comment -%}
+  Customer type + company/public sector fields.
+  Parameters:
+    - id_prefix, show_po, show_public_sector_fields, default_type (b2c|b2b|public_sector)
+{%- endcomment -%}
+
+{%- assign prefix = id_prefix | default: 'B2B' -%}
+{%- assign default_type = default_type | default: 'b2c' -%}
+
+<div class="b2b-customer-type b2b-customer-type--3" role="radiogroup" aria-label="Kundtyp">
+  <div class="b2b-customer-type__option">
+    <input type="radio" name="b2b_customer_type" id="{{ prefix }}-type-b2c" value="b2c"
+      {% if default_type == 'b2c' or default_type == 'consumer' %}checked{% endif %}>
+    <label class="b2b-customer-type__label" for="{{ prefix }}-type-b2c">Privatperson</label>
+  </div>
+  <div class="b2b-customer-type__option">
+    <input type="radio" name="b2b_customer_type" id="{{ prefix }}-type-b2b" value="b2b"
+      {% if default_type == 'b2b' or default_type == 'business' %}checked{% endif %}>
+    <label class="b2b-customer-type__label" for="{{ prefix }}-type-b2b">Företag</label>
+  </div>
+  <div class="b2b-customer-type__option">
+    <input type="radio" name="b2b_customer_type" id="{{ prefix }}-type-public" value="public_sector"
+      {% if default_type == 'public_sector' %}checked{% endif %}>
+    <label class="b2b-customer-type__label" for="{{ prefix }}-type-public">Myndighet</label>
+  </div>
+</div>
+
+<div class="b2b-company-fields{% if default_type == 'b2b' or default_type == 'business' %} is-visible{% endif %}" data-b2b-company-fields data-b2b-field-group="b2b">
+  <div class="field">
+    <input type="text" id="{{ prefix }}-company-name" data-b2b-field="company_name" data-b2b-required-b2b="true" autocomplete="organization" placeholder="Företagsnamn">
+    <label for="{{ prefix }}-company-name">Företagsnamn *</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-org-number" data-b2b-field="organization_number" data-b2b-required-b2b="true" autocomplete="off" placeholder="XXXXXX-XXXX">
+    <label for="{{ prefix }}-org-number">Organisationsnummer *</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-vat-number" data-b2b-field="vat_number" autocomplete="off" placeholder="SE999999999901">
+    <label for="{{ prefix }}-vat-number">VAT-nummer (valfritt)</label>
+    <p class="b2b-field-hint">Genereras automatiskt från org.nr om tomt</p>
+  </div>
+  {%- if show_po -%}
+    <div class="field">
+      <input type="text" id="{{ prefix }}-po-number" data-b2b-field="po_number" autocomplete="off" placeholder="PO-12345">
+      <label for="{{ prefix }}-po-number">Inköpsordernummer (valfritt)</label>
+    </div>
+  {%- endif -%}
+</div>
+
+<div class="b2b-company-fields{% if default_type == 'public_sector' %} is-visible{% endif %}" data-b2b-company-fields data-b2b-field-group="public_sector">
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-company" data-b2b-field="company_name" data-b2b-required-public="true" autocomplete="organization" placeholder="Myndighet / organisation">
+    <label for="{{ prefix }}-ps-company">Organisation *</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-org" data-b2b-field="organization_number" data-b2b-required-public="true" placeholder="XXXXXX-XXXX">
+    <label for="{{ prefix }}-ps-org">Organisationsnummer *</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-gln" data-b2b-field="gln" maxlength="13" placeholder="7312345678901">
+    <label for="{{ prefix }}-ps-gln">GLN (13 siffror)</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-peppol" data-b2b-field="peppol_id" placeholder="0007:5561234567">
+    <label for="{{ prefix }}-ps-peppol">Peppol-ID</label>
+    <p class="b2b-field-hint">Genereras från org.nr om tomt (0007:xxxxxxxxxx)</p>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-invoice-ref" data-b2b-field="invoice_reference" placeholder="Fakturareferens">
+    <label for="{{ prefix }}-ps-invoice-ref">Fakturareferens</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-cost-center" data-b2b-field="cost_center" placeholder="Kostnadsställe">
+    <label for="{{ prefix }}-ps-cost-center">Kostnadsställe</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-po" data-b2b-field="po_number" placeholder="PO-12345">
+    <label for="{{ prefix }}-ps-po">PO-nummer</label>
+  </div>
+  <div class="field">
+    <input type="text" id="{{ prefix }}-ps-payment-terms" data-b2b-field="payment_terms" placeholder="30" value="30">
+    <label for="{{ prefix }}-ps-payment-terms">Betalningsvillkor (dagar)</label>
+  </div>
+  <div class="field">
+    <select id="{{ prefix }}-ps-procurement" data-b2b-field="procurement_system">
+      <option value="">Välj inköpssystem</option>
+      <option value="Proceedo">Proceedo</option>
+      <option value="Visma Proceedo">Visma Proceedo</option>
+      <option value="Mercell">Mercell</option>
+      <option value="Kommers">Kommers</option>
+      <option value="TendSign">TendSign</option>
+      <option value="Unit4">Unit4</option>
+      <option value="Raindance">Raindance</option>
+      <option value="Annat">Annat</option>
+    </select>
+    <label for="{{ prefix }}-ps-procurement">Inköpssystem</label>
+  </div>
+</div>

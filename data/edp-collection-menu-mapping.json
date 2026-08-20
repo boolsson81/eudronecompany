@@ -1,0 +1,593 @@
+{
+  "version": "2.0",
+  "mappings": [
+    {
+      "menu_item": "Mini",
+      "collection_handle": "dji-mini-3-serien",
+      "status": "PASS",
+      "projected_count": 5
+    },
+    {
+      "menu_item": "Air",
+      "collection_handle": "dji-air-serien",
+      "status": "PASS",
+      "projected_count": 6
+    },
+    {
+      "menu_item": "Mavic",
+      "collection_handle": "dji-mavic-3-serien",
+      "status": "PASS",
+      "projected_count": 11
+    },
+    {
+      "menu_item": "Avata",
+      "collection_handle": "dji-avata-serien",
+      "status": "PASS",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "Neo",
+      "collection_handle": "dji-neo",
+      "status": "PASS",
+      "projected_count": 3
+    },
+    {
+      "menu_item": "Flip",
+      "collection_handle": "dji-flip-dronare",
+      "status": "PASS",
+      "projected_count": 3
+    },
+    {
+      "menu_item": "Matrice 4",
+      "collection_handle": "dji-matrice-4-serie",
+      "status": "PASS",
+      "projected_count": 22
+    },
+    {
+      "menu_item": "Matrice 30",
+      "collection_handle": "dji-matrice-30-serie-tillbehor",
+      "status": "PASS",
+      "projected_count": 9
+    },
+    {
+      "menu_item": "Matrice 300",
+      "collection_handle": "matrice-300-rtk",
+      "status": "PENDING_CREATE",
+      "projected_count": 1
+    },
+    {
+      "menu_item": "Matrice 350",
+      "collection_handle": "dji-matrice-350-rtk-tillbehor",
+      "status": "PASS",
+      "projected_count": 8
+    },
+    {
+      "menu_item": "Matrice 400",
+      "collection_handle": "dji-matrice-400-serien",
+      "status": "PASS",
+      "projected_count": 9
+    },
+    {
+      "menu_item": "Matrice 3",
+      "collection_handle": "matrice-3-series",
+      "status": "PENDING_CREATE",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "Mavic Enterprise",
+      "collection_handle": "dji-mavic-serien-enterprise",
+      "status": "PASS",
+      "projected_count": 11
+    },
+    {
+      "menu_item": "Agras",
+      "collection_handle": "dji-agras-dronare",
+      "status": "PASS",
+      "projected_count": 4
+    },
+    {
+      "menu_item": "FlyCart 30",
+      "collection_handle": "flycart-30",
+      "status": "PENDING_CREATE",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "FlyCart 100",
+      "collection_handle": "dji-flycart-100-lastdronare",
+      "status": "PASS",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "LiDAR",
+      "collection_handle": "lidar-sensors",
+      "status": "PENDING_CREATE",
+      "projected_count": 4
+    },
+    {
+      "menu_item": "Thermal",
+      "collection_handle": "dronare-med-varmekamera",
+      "status": "PASS",
+      "projected_count": 29
+    },
+    {
+      "menu_item": "Mapping",
+      "collection_handle": "kartlaggnings-och-matdronare",
+      "status": "PASS",
+      "projected_count": 26
+    },
+    {
+      "menu_item": "Airdrop",
+      "collection_handle": "airdrop-system",
+      "status": "PASS",
+      "projected_count": 24
+    },
+    {
+      "menu_item": "Searchlight",
+      "collection_handle": "enterprise-belysning",
+      "status": "PASS",
+      "projected_count": 13
+    },
+    {
+      "menu_item": "Speakers",
+      "collection_handle": "enterprise-hogtalarsystem",
+      "status": "PASS",
+      "projected_count": 23
+    },
+    {
+      "menu_item": "Inspection",
+      "collection_handle": "inspektionsdronare",
+      "status": "PASS",
+      "projected_count": 4
+    },
+    {
+      "menu_item": "Energy",
+      "collection_handle": "energi-infrastruktur",
+      "status": "PASS",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "Agriculture",
+      "collection_handle": "jordbruksdronare",
+      "status": "PASS",
+      "projected_count": 4
+    },
+    {
+      "menu_item": "Forestry",
+      "collection_handle": "skogsbruksdronare",
+      "status": "PASS",
+      "projected_count": 1
+    },
+    {
+      "menu_item": "Surveying",
+      "collection_handle": "kartlaggnings-och-matdronare",
+      "status": "PASS",
+      "projected_count": 26
+    },
+    {
+      "menu_item": "Logistics",
+      "collection_handle": "transport-logistik",
+      "status": "PASS",
+      "projected_count": 2
+    },
+    {
+      "menu_item": "Public Safety",
+      "collection_handle": "inspektionsdronare",
+      "status": "PASS",
+      "projected_count": 4
+    },
+    {
+      "menu_item": "Reservdelar",
+      "collection_handle": "dji-dronar-reservdelar",
+      "status": "PASS",
+      "projected_count": 16
+    },
+    {
+      "menu_item": "Tillbehör",
+      "collection_handle": "dronartillbehor-kop",
+      "status": "PASS",
+      "projected_count": 944
+    },
+    {
+      "menu_item": "Legacy DJI",
+      "collection_handle": "dji-mavic-2-serien",
+      "status": "PASS",
+      "projected_count": 2
+    }
+  ]
+  "generated_at": "2026-06-13T09:47:00.856Z",
+  "mappings": [
+    {
+      "collection_handle": "airdrop-system",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Sensors & Payloads › Airdrop",
+      "url": "/collections/airdrop-system",
+      "note": null
+    },
+    {
+      "collection_handle": "alla-produkter",
+      "menu_handle": "footer",
+      "menu_path": "Alla produkter",
+      "url": "/collections/alla-produkter",
+      "note": null
+    },
+    {
+      "collection_handle": "batterier",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Batterier",
+      "url": "/collections/batterier",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-agras-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Enterprise Drönare › DJI Agras",
+      "url": "/collections/dji-agras-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-air-2-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Legacy DJI › Air 2 / Air 2S",
+      "url": "/collections/dji-air-2-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-air-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Air",
+      "url": "/collections/dji-air-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-avata-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Avata",
+      "url": "/collections/dji-avata-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-dronar-reservdelar",
+      "menu_handle": "main-menu",
+      "menu_path": "Reservdelar",
+      "url": "/collections/dji-dronar-reservdelar",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › Alla konsumentdrönare",
+      "url": "/collections/dji-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-enterprise-fjarrkontroller",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Fjärrkontroller",
+      "url": "/collections/dji-enterprise-fjarrkontroller",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-flip-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Flip",
+      "url": "/collections/dji-flip-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-flycart-100-lastdronare",
+      "menu_handle": "main-menu",
+      "menu_path": "FlyCart › FlyCart 100",
+      "url": "/collections/dji-flycart-100-lastdronare",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-flycart-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "FlyCart › FlyCart serie",
+      "url": "/collections/dji-flycart-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-marvic-enterprise",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Marvic",
+      "url": "/collections/dji-marvic-enterprise",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-30-serie-tillbehor",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Matrice › Matrice 30 tillbehör",
+      "url": "/collections/dji-matrice-30-serie-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-350-rtk-tillbehor",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Matrice › Matrice 350 RTK tillbehör",
+      "url": "/collections/dji-matrice-350-rtk-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-4-serie",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Matrice › Matrice 4",
+      "url": "/collections/dji-matrice-4-serie",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-4-tillbehor",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Matrice › Matrice 4 tillbehör",
+      "url": "/collections/dji-matrice-4-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-400-serien",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "DJI Matrice › Matrice 400",
+      "url": "/collections/dji-matrice-400-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-matrice-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Enterprise Drönare › DJI Matrice",
+      "url": "/collections/dji-matrice-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mavic-2-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Legacy DJI › Mavic 2",
+      "url": "/collections/dji-mavic-2-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mavic-3-enterprise",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Mavic Enterprise",
+      "url": "/collections/dji-mavic-3-enterprise",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mavic-3m-dronare-tillbehor",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Mavic Enterprise › Mavic 3M",
+      "url": "/collections/dji-mavic-3m-dronare-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mavic-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Mavic",
+      "url": "/collections/dji-mavic-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mavic-serien-enterprise",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Mavic Enterprise › Mavic Enterprise serie",
+      "url": "/collections/dji-mavic-serien-enterprise",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-mini-4-serien",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Mini",
+      "url": "/collections/dji-mini-4-serien",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-neo",
+      "menu_handle": "main-menu",
+      "menu_path": "Drönare › DJI Neo",
+      "url": "/collections/dji-neo",
+      "note": null
+    },
+    {
+      "collection_handle": "dji-phantom-3-se",
+      "menu_handle": "main-menu",
+      "menu_path": "Legacy DJI › Phantom",
+      "url": "/collections/dji-phantom-3-se",
+      "note": null
+    },
+    {
+      "collection_handle": "dronare-med-varmekamera",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Sensors & Payloads › Värmekamera",
+      "url": "/collections/dronare-med-varmekamera",
+      "note": null
+    },
+    {
+      "collection_handle": "dronare-propeller-tillbehor",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Propellrar",
+      "url": "/collections/dronare-propeller-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "dronare-reservdelar-ovriga",
+      "menu_handle": "main-menu",
+      "menu_path": "Reservdelar › Övriga reservdelar",
+      "url": "/collections/dronare-reservdelar-ovriga",
+      "note": null
+    },
+    {
+      "collection_handle": "dronarelektronik-flight-components",
+      "menu_handle": "main-menu",
+      "menu_path": "Reservdelar › Elektronik & flight components",
+      "url": "/collections/dronarelektronik-flight-components",
+      "note": null
+    },
+    {
+      "collection_handle": "dronarryggsack-vaskor",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Väskor & cases",
+      "url": "/collections/dronarryggsack-vaskor",
+      "note": null
+    },
+    {
+      "collection_handle": "dronartillbehor-kop",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör",
+      "url": "/collections/dronartillbehor-kop",
+      "note": null
+    },
+    {
+      "collection_handle": "energi-infrastruktur",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Energi & Infrastruktur",
+      "url": "/collections/energi-infrastruktur",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-belysning",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Belysning",
+      "url": "/collections/enterprise-belysning",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Enterprise Drönare › Enterprise översikt",
+      "url": "/collections/enterprise-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-dronartillbehor",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Drönartillbehör",
+      "url": "/collections/enterprise-dronartillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-hogtalarsystem",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Högtalarsystem",
+      "url": "/collections/enterprise-hogtalarsystem",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-lyftsystem",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Lyftsystem",
+      "url": "/collections/enterprise-lyftsystem",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-propellrar",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise tillbehör › Propellrar",
+      "url": "/collections/enterprise-propellrar",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-sensorer",
+      "menu_handle": "main-menu",
+      "menu_path": "Enterprise Drönare › Sensors & Payloads",
+      "url": "/collections/enterprise-sensorer",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-service-dronare",
+      "menu_handle": "enterprise-dr-nare",
+      "menu_path": "Enterprise Service",
+      "url": "/collections/enterprise-service-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "enterprise-tillbehor",
+      "menu_handle": "main-menu",
+      "menu_path": "Enterprise Drönare › Enterprise tillbehör",
+      "url": "/collections/enterprise-tillbehor",
+      "note": null
+    },
+    {
+      "collection_handle": "filter-till-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Filter",
+      "url": "/collections/filter-till-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "fjarrkontroll-dronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Fjärrkontroller",
+      "url": "/collections/fjarrkontroll-dronare",
+      "note": null
+    },
+    {
+      "collection_handle": "inspektionsdronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Public Safety & Rescue",
+      "url": "/collections/inspektionsdronare",
+      "note": "Interim — links to inspection hub until public-safety-raddning collection approved"
+    },
+    {
+      "collection_handle": "jordbruksdronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Jordbruk",
+      "url": "/collections/jordbruksdronare",
+      "note": null
+    },
+    {
+      "collection_handle": "kartlaggnings-och-matdronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Kartläggning",
+      "url": "/collections/kartlaggnings-och-matdronare",
+      "note": null
+    },
+    {
+      "collection_handle": "minneskort-lagring",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › Minneskort",
+      "url": "/collections/minneskort-lagring",
+      "note": null
+    },
+    {
+      "collection_handle": "polarpro",
+      "menu_handle": "main-menu",
+      "menu_path": "Tillbehör › PolarPro",
+      "url": "/collections/polarpro",
+      "note": null
+    },
+    {
+      "collection_handle": "reparation-dji-neo-reservdelar",
+      "menu_handle": "main-menu",
+      "menu_path": "Reservdelar › Neo reservdelar",
+      "url": "/collections/reparation-dji-neo-reservdelar",
+      "note": null
+    },
+    {
+      "collection_handle": "reservdelar-gimbal-dronare-motorer",
+      "menu_handle": "main-menu",
+      "menu_path": "Reservdelar › Gimbal & motorer",
+      "url": "/collections/reservdelar-gimbal-dronare-motorer",
+      "note": null
+    },
+    {
+      "collection_handle": "skogsbruksdronare",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Skogsbruk",
+      "url": "/collections/skogsbruksdronare",
+      "note": null
+    },
+    {
+      "collection_handle": "tillbehor-dji-mini-2-2-se",
+      "menu_handle": "main-menu",
+      "menu_path": "Legacy DJI › Mini 2",
+      "url": "/collections/tillbehor-dji-mini-2-2-se",
+      "note": null
+    },
+    {
+      "collection_handle": "transport-logistik",
+      "menu_handle": "main-menu",
+      "menu_path": "Branschlösningar › Transport & Logistik",
+      "url": "/collections/transport-logistik",
+      "note": null
+    }
+  ],
+  "total": 56
+}

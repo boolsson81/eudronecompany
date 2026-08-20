@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Skogsinventering",
+            "text": "Kartlägg bestånd, trädslag och volym med UAV och LiDAR för effektiv skogsplanering och avverkningsunderlag."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "LiDAR-kartläggning",
+            "text": "Högupplösta punktmoln för terrängmodeller, höjdkurvor och exakt volymberäkning i skogsmiljö."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Stockmätning",
+            "text": "Automatiserad volymberäkning av stockhögar och virkesupplag med drönarbaserad fotogrammetri."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Skogsvård & uppföljning",
+            "text": "Övervaka planteringar, stormskador och skogsvårdsåtgärder med regelbundna flygningar och jämförelse över tid."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Täck stora skogsarealer snabbt utan markstörning" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Exakta volym- och beståndsdata med LiDAR och RTK" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Minska manuell fältinventering och markgång" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Exporterbara data till GIS och skogsbruksprogram" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Skogsbruk",
+        "title": "Drönare för Skogsbruk",
+        "text": "Effektivisera skogsinventering, kartläggning och skogsvård med professionella UAV-lösningar och LiDAR-sensorer.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp med skogsbrukslösningar?",
+        "text": "Vårt enterprise-team hjälper skogsbolag och entreprenörer med rätt utrustning, utbildning och support.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

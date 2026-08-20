@@ -1,0 +1,208 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid{% if section.blocks.size > 3 %} edp-enterprise__grid--6{% else %} edp-enterprise__grid--3{% endif %}" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card {% render 'edp-enterprise-card-alignment-classes', block: block, section: section %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="edp-enterprise__card-image-wrap">
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag: class: 'edp-enterprise__card-image', loading: 'lazy', widths: '300, 450, 600', alt: block.settings.title
+                }}
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-platforms.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.enterprise-platforms.settings.heading.label",
+      "default": "Enterprise-plattformar"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-platforms.settings.text.label",
+      "default": "Skalbara DJI-plattformar för autonoma operationer, lång räckvidd och tung last."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "Textjustering (standard för alla kort)" },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Rubrik (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_text_alignment",
+      "label": "Beskrivning (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_link_alignment",
+      "label": "Länketikett (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "platform",
+      "name": "t:sections.enterprise-platforms.blocks.platform.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-platforms.blocks.platform.settings.image.label" },
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-platforms.blocks.platform.settings.title.label", "default": "Plattform" },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Rubrikjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-platforms.blocks.platform.settings.text.label", "default": "Beskrivning av plattformen." },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Beskrivningsjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "text", "id": "link_label", "label": "t:sections.enterprise-platforms.blocks.platform.settings.link_label.label", "default": "Utforska" },
+        {
+          "type": "select",
+          "id": "link_alignment",
+          "label": "Länketikettjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "url", "id": "link", "label": "t:sections.enterprise-platforms.blocks.platform.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-platforms.presets.name",
+      "blocks": [
+        { "type": "platform", "settings": { "title": "DJI Mavic 3 Enterprise/Thermal", "text": "Lättvikts enterprise med termisk kamera, RTK och 45 min flygtid — smidigt format för fältarbete.", "link_label": "Se Mavic 3 Enterprise", "link": "/collections/dji-mavic-3-enterprise" } },
+        { "type": "platform", "settings": { "title": "DJI FlyCart 30", "text": "Lastdrönare för transport och logistik — upp till 30 kg nyttolast.", "link_label": "Se FlyCart 30", "link": "/collections/dji-flycart-series" } },
+        { "type": "platform", "settings": { "title": "DJI Agras T-serien", "text": "Precisionsspruta för jordbruk med stora tankar och centimeterprecision.", "link_label": "Se Agras T-serien", "link": "/collections/dji-agras-drones" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

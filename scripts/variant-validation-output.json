@@ -1,0 +1,618 @@
+{
+  "generated_at": "2026-06-08T08:18:15.452Z",
+  "source": "supabase sunsky-sync (search-products + get-product-detail)",
+  "mapper_version": "PR-V0 fixed key/value parser",
+  "product_count": 20,
+  "variant_family_count": 14,
+  "multi_model_family_count": 13,
+  "group_item_no_populated": 20,
+  "model_list_populated": 18,
+  "option_list_populated": 1,
+  "missing_or_failed": 0,
+  "products": [
+    {
+      "item_no": "EDA002324802E",
+      "title": "20W PD USB-C / Type-C to 8 Pin Data Cable, Cable Length: 1m(Yellow)",
+      "group_item_no": "EDA002324802",
+      "model_label": "Color",
+      "model_list_count": 5,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA002324802A",
+          "label": "Pink"
+        },
+        {
+          "itemNo": "EDA002324802B",
+          "label": "Green"
+        },
+        {
+          "itemNo": "EDA002324802C",
+          "label": "Blue"
+        }
+      ],
+      "option_list_count": 2,
+      "option_list_display": "text",
+      "option_list_sample": [
+        {
+          "itemNo": "EDA002324801E",
+          "keywords": "12W"
+        },
+        {
+          "itemNo": "EDA002324802E",
+          "keywords": "20W"
+        }
+      ],
+      "raw_modelList_len": 5,
+      "raw_optionList_len": 2,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": true,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "TBD0601904301A",
+      "title": "5 PCS D2 LED Flashing Finger Light Stage Small Magic Ball Flash(White)",
+      "group_item_no": "TBD0601904301",
+      "model_label": "Light color",
+      "model_list_count": 6,
+      "model_list_sample": [
+        {
+          "itemNo": "TBD0601904301A",
+          "label": "White"
+        },
+        {
+          "itemNo": "TBD0601904301B",
+          "label": "Yellow"
+        },
+        {
+          "itemNo": "TBD0601904301C",
+          "label": "Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 6,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA007823201D",
+      "title": "For Honor ROSSINI 2i Electroplated TPU Full Coverage Watch Protective Case(Silver)",
+      "group_item_no": "EDA0078232",
+      "model_label": "Color",
+      "model_list_count": 4,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA007823201A",
+          "label": "Black"
+        },
+        {
+          "itemNo": "EDA007823201B",
+          "label": "Gold"
+        },
+        {
+          "itemNo": "EDA007823201C",
+          "label": "Transparent"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 4,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA007823201C",
+      "title": "For Honor ROSSINI 2i Electroplated TPU Full Coverage Watch Protective Case(Transparent)",
+      "group_item_no": "EDA0078232",
+      "model_label": "Color",
+      "model_list_count": 4,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA007823201A",
+          "label": "Black"
+        },
+        {
+          "itemNo": "EDA007823201B",
+          "label": "Gold"
+        },
+        {
+          "itemNo": "EDA007823201C",
+          "label": "Transparent"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 4,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "CA3220J",
+      "title": "For Amazfit GTR 3 / GTR 3 Pro Full Coverage TPU Electroplating Watch Case(Gold)",
+      "group_item_no": "CA3220",
+      "model_label": "Color",
+      "model_list_count": 7,
+      "model_list_sample": [
+        {
+          "itemNo": "CA3220B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "CA3220H",
+          "label": "Grey"
+        },
+        {
+          "itemNo": "CA3220J",
+          "label": "Gold"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 7,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA002556701L",
+      "title": "For iPad 10.2 2021 / 2020 / 2019 Silicone + PC Tablet Case with Shoulder Strap(Purple+Blac",
+      "group_item_no": "EDA002556701",
+      "model_label": "Color",
+      "model_list_count": 18,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA002556701A",
+          "label": "Orange+Black"
+        },
+        {
+          "itemNo": "EDA002556701B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "EDA002556701C",
+          "label": "Red+Black"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 18,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA004652222A",
+      "title": "For Honor X50 GT TPU Phone Case(Black)",
+      "group_item_no": "EDA0046522",
+      "model_label": null,
+      "model_list_count": 0,
+      "model_list_sample": [],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 0,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": false,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "single_sku"
+    },
+    {
+      "item_no": "EDA004652215A",
+      "title": "For Honor 100 Pro TPU Phone Case(Black)",
+      "group_item_no": "EDA0046522",
+      "model_label": null,
+      "model_list_count": 0,
+      "model_list_sample": [],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 0,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": false,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "single_sku"
+    },
+    {
+      "item_no": "EDA006783201I",
+      "title": "For Samsung Galaxy Watch FE 40mm Full Coverage Electroplated TPU Watch Protective Case(Tra",
+      "group_item_no": "EDA0067832",
+      "model_label": "Color",
+      "model_list_count": 12,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA006783201A",
+          "label": "Cyan"
+        },
+        {
+          "itemNo": "EDA006783201B",
+          "label": "Pink"
+        },
+        {
+          "itemNo": "EDA006783201C",
+          "label": "Green"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 12,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA006833501B",
+      "title": "For Honor Magic V Flip Three Parts PU Leather Black Frame Full Coverage Phone Case(Black)",
+      "group_item_no": "EDA0068335",
+      "model_label": "Color",
+      "model_list_count": 11,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA006833501A",
+          "label": "Orange"
+        },
+        {
+          "itemNo": "EDA006833501B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "EDA006833501C",
+          "label": "Gold"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 11,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA006898901D",
+      "title": "For Google Pixel 9 Pro Fold Diamond Frame Edge Full Coverage Phone Case(Rainbow Diamond)",
+      "group_item_no": "EDA0068989",
+      "model_label": "Color",
+      "model_list_count": 4,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA006898901A",
+          "label": "Jewel Black"
+        },
+        {
+          "itemNo": "EDA006898901B",
+          "label": "Jewel Silver"
+        },
+        {
+          "itemNo": "EDA006898901C",
+          "label": "Sapphire Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 4,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA007734701F",
+      "title": "For Apple Watch Ultra / Ultra 2 49mm Stainless Steel Buckle Fluororubber Watch Band(Orange",
+      "group_item_no": "EDA0077347",
+      "model_label": "Color",
+      "model_list_count": 10,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA007734701A",
+          "label": "Orange Black"
+        },
+        {
+          "itemNo": "EDA007734701B",
+          "label": "Black Black"
+        },
+        {
+          "itemNo": "EDA007734701C",
+          "label": "Grey Black"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 10,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "EDA007775001D",
+      "title": "For Apple Watch 46mm / 49mm / 45mm / 44mm Kalebol High Stretch Silicone Armor Watch Band(B",
+      "group_item_no": "EDA0077750",
+      "model_label": "Color",
+      "model_list_count": 8,
+      "model_list_sample": [
+        {
+          "itemNo": "EDA007775001A",
+          "label": "Black"
+        },
+        {
+          "itemNo": "EDA007775001B",
+          "label": "Black Grey"
+        },
+        {
+          "itemNo": "EDA007775001C",
+          "label": "Black Orange"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 8,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "IP6D0894F",
+      "title": "For Huawei Freebuds 4 Full Coverage Waterproof Silicone Wireless Earphone Protective Case ",
+      "group_item_no": "IP6D0894",
+      "model_label": "Color",
+      "model_list_count": 6,
+      "model_list_sample": [
+        {
+          "itemNo": "IP6D0894B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "IP6D0894CW",
+          "label": "Clear White"
+        },
+        {
+          "itemNo": "IP6D0894D",
+          "label": "Dark Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 6,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "IP6D0894TT",
+      "title": "For Huawei Freebuds 4 Full Coverage Waterproof Silicone Wireless Earphone Protective Case ",
+      "group_item_no": "IP6D0894",
+      "model_label": "Color",
+      "model_list_count": 6,
+      "model_list_sample": [
+        {
+          "itemNo": "IP6D0894B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "IP6D0894CW",
+          "label": "Clear White"
+        },
+        {
+          "itemNo": "IP6D0894D",
+          "label": "Dark Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 6,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "IP6D0894D",
+      "title": "For Huawei Freebuds 4 Full Coverage Waterproof Silicone Wireless Earphone Protective Case ",
+      "group_item_no": "IP6D0894",
+      "model_label": "Color",
+      "model_list_count": 6,
+      "model_list_sample": [
+        {
+          "itemNo": "IP6D0894B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "IP6D0894CW",
+          "label": "Clear White"
+        },
+        {
+          "itemNo": "IP6D0894D",
+          "label": "Dark Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 6,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "IP6D0894CW",
+      "title": "For Huawei Freebuds 4 Full Coverage Waterproof Silicone Wireless Earphone Protective Case ",
+      "group_item_no": "IP6D0894",
+      "model_label": "Color",
+      "model_list_count": 6,
+      "model_list_sample": [
+        {
+          "itemNo": "IP6D0894B",
+          "label": "Black"
+        },
+        {
+          "itemNo": "IP6D0894CW",
+          "label": "Clear White"
+        },
+        {
+          "itemNo": "IP6D0894D",
+          "label": "Dark Blue"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 6,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "TBD048885101G",
+      "title": "6 PCS/Set Travel Bag ClothesLuggage Organizer High Capacity Mesh Packing Cubes(Rose red)",
+      "group_item_no": "TBD048885101",
+      "model_label": "Color",
+      "model_list_count": 8,
+      "model_list_sample": [
+        {
+          "itemNo": "TBD048885101A",
+          "label": "Wine red"
+        },
+        {
+          "itemNo": "TBD048885101B",
+          "label": "Gray"
+        },
+        {
+          "itemNo": "TBD048885101C",
+          "label": "Green"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 8,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "TBD049838601J",
+      "title": "Winter Touch Screen Gloves Women Men Warm Stretch Knit Mittens Imitation Wool Thicken Full",
+      "group_item_no": "TBD049838601",
+      "model_label": "Color:",
+      "model_list_count": 22,
+      "model_list_sample": [
+        {
+          "itemNo": "TBD049838601A",
+          "label": "White"
+        },
+        {
+          "itemNo": "TBD049838601B",
+          "label": "Grey"
+        },
+        {
+          "itemNo": "TBD049838601C",
+          "label": "Black"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 22,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    },
+    {
+      "item_no": "TBD049838601Q",
+      "title": "Winter Touch Screen Gloves Women Men Warm Stretch Knit Mittens Imitation Wool Thicken Full",
+      "group_item_no": "TBD049838601",
+      "model_label": "Color:",
+      "model_list_count": 22,
+      "model_list_sample": [
+        {
+          "itemNo": "TBD049838601A",
+          "label": "White"
+        },
+        {
+          "itemNo": "TBD049838601B",
+          "label": "Grey"
+        },
+        {
+          "itemNo": "TBD049838601C",
+          "label": "Black"
+        }
+      ],
+      "option_list_count": 0,
+      "option_list_display": null,
+      "option_list_sample": [],
+      "raw_modelList_len": 22,
+      "raw_optionList_len": 0,
+      "hasGroup": true,
+      "hasModels": true,
+      "hasOptions": false,
+      "parseFailure": false,
+      "familyType": "multi_model"
+    }
+  ],
+  "missing_products": []
+}

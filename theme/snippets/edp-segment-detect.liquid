@@ -1,0 +1,29 @@
+{% comment %}
+  Detect consumer vs enterprise navigation segment from the current page.
+  Sets: edp_segment ('consumer' | 'enterprise')
+{% endcomment %}
+{%- liquid
+  assign edp_segment = 'consumer'
+
+  if template.suffix == 'enterprise'
+    assign edp_segment = 'enterprise'
+  elsif template.suffix == 'consumer'
+    assign edp_segment = 'consumer'
+  elsif request.page_type == 'page'
+    assign page_handle = page.handle | downcase
+    if page_handle == 'enterprise'
+      assign edp_segment = 'enterprise'
+    elsif page_handle == 'consumer'
+      assign edp_segment = 'consumer'
+    elsif page_handle contains 'energi' or page_handle contains 'infrastruktur' or page_handle contains 'gis' or page_handle contains 'kartlaggning' or page_handle contains 'raddning' or page_handle contains 'skogsbruk' or page_handle contains 'bygg' or page_handle contains 'jordbruk' or page_handle contains 'service' or page_handle contains 'quote' or page_handle contains 'b2b' or page_handle contains 'partnership'
+      assign edp_segment = 'enterprise'
+    endif
+  elsif request.page_type == 'collection' and collection != blank
+    assign coll_handle = collection.handle | downcase
+    if coll_handle contains 'enterprise' or coll_handle contains 'matrice' or coll_handle contains 'zenmuse' or coll_handle contains 'agras' or coll_handle contains 'dock' or coll_handle contains 'inspection' or coll_handle contains 'agricultural' or coll_handle contains 'wingtra' or coll_handle contains 'livox'
+      assign edp_segment = 'enterprise'
+    elsif coll_handle contains 'consumer' or coll_handle contains 'dji-mini' or coll_handle contains 'dji-air' or coll_handle contains 'dji-mavic' or coll_handle contains 'dji-avata' or coll_handle contains 'starter-kit' or coll_handle contains 'dji-neo' or coll_handle contains 'dji-flip'
+      assign edp_segment = 'consumer'
+    endif
+  endif
+-%}

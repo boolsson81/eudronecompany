@@ -1,0 +1,45 @@
+{%- comment -%}
+  FAQPage JSON-LD from seo.faq_json metafield (array of {question, answer}).
+  Supports product, page, collection and article resources.
+{%- endcomment -%}
+{%- liquid
+  assign faq_raw = nil
+  if request.page_type == 'product'
+    assign faq_raw = product.metafields.seo.faq_json.value
+  elsif request.page_type == 'page'
+    assign faq_raw = page.metafields.seo.faq_json.value
+  elsif request.page_type == 'collection'
+    assign faq_raw = collection.metafields.seo.faq_json.value
+  elsif request.page_type == 'article'
+    assign faq_raw = article.metafields.seo.faq_json.value
+  endif
+-%}
+
+{%- if faq_raw != blank and faq_raw.size > 0 -%}
+  {%- capture main_entity -%}
+    {%- for item in faq_raw -%}
+      {%- assign question = item.question | default: item.q | strip_html | strip -%}
+      {%- assign answer = item.answer | default: item.a | strip_html | strip -%}
+      {%- if question != blank and answer != blank -%}
+        {%- unless forloop.first -%},{%- endunless -%}
+        {
+          "@type": "Question",
+          "name": {{ question | json }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ answer | json }}
+          }
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if main_entity != blank -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{{ main_entity }}]
+      }
+    </script>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,215 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid edp-enterprise__grid--6" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card {% render 'edp-enterprise-card-alignment-classes', block: block, section: section %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              {{
+                block.settings.image
+                | image_url: width: 160
+                | image_tag: class: 'edp-enterprise__card-icon', loading: 'lazy', widths: '80, 120, 160', alt: block.settings.title
+              }}
+            {%- else -%}
+              <div class="edp-enterprise__card-icon-fallback" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-industries.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.enterprise-industries.settings.heading.label",
+      "default": "Lösningar per bransch"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-industries.settings.text.label",
+      "default": "Effektivisera arbetsflöden med drönarteknik anpassad för din sektor."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "Textjustering (standard för alla kort)" },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Rubrik (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_text_alignment",
+      "label": "Beskrivning (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "card_link_alignment",
+      "label": "Länketikett (standard)",
+      "options": [
+        { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+        { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+        { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+      ],
+      "default": "left"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "industry",
+      "name": "t:sections.enterprise-industries.blocks.industry.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-industries.blocks.industry.settings.image.label" },
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-industries.blocks.industry.settings.title.label", "default": "Bransch" },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Rubrikjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-industries.blocks.industry.settings.text.label", "default": "Kort beskrivning." },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Beskrivningsjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "text", "id": "link_label", "label": "t:sections.enterprise-industries.blocks.industry.settings.link_label.label", "default": "Läs mer" },
+        {
+          "type": "select",
+          "id": "link_alignment",
+          "label": "Länketikettjustering",
+          "options": [
+            { "value": "", "label": "Standard (sektion)" },
+            { "value": "left", "label": "t:settings_schema.global.settings.text_alignment.options__1.label" },
+            { "value": "center", "label": "t:settings_schema.global.settings.text_alignment.options__2.label" },
+            { "value": "right", "label": "t:settings_schema.global.settings.text_alignment.options__3.label" }
+          ],
+          "default": ""
+        },
+        { "type": "url", "id": "link", "label": "t:sections.enterprise-industries.blocks.industry.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-industries.presets.name",
+      "blocks": [
+        { "type": "industry", "settings": { "title": "Energi & Infrastruktur", "text": "Inspektion av kraftledningar, vindkraft och anläggningar.", "link_label": "Läs mer", "link": "/pages/energi-infrastruktur" } },
+        { "type": "industry", "settings": { "title": "Kartläggning & GIS", "text": "Geodata, mätning och GIS-arbetsflöden med UAV.", "link_label": "Läs mer", "link": "/pages/gis-kartlaggning" } },
+        { "type": "industry", "settings": { "title": "Räddningstjänst", "text": "Sök- och räddningsinsatser samt krisledning.", "link_label": "Läs mer", "link": "/pages/raddningstjanst" } },
+        { "type": "industry", "settings": { "title": "Skogsbruk", "text": "Inventering och skogsvård med UAV och LiDAR.", "link_label": "Läs mer", "link": "/pages/skogsbruk" } },
+        { "type": "industry", "settings": { "title": "Bygg & Anläggning", "text": "Övervakning av byggarbetsplatser och dokumentation.", "link_label": "Läs mer", "link": "/pages/bygg-anlaggning" } },
+        { "type": "industry", "settings": { "title": "Jordbruk", "text": "Precisionsspridning, grödansalys och fältövervakning.", "link_label": "Läs mer", "link": "/pages/jordbruk" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

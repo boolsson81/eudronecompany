@@ -1,0 +1,35 @@
+{% comment %}
+  Map legacy Horizon theme settings to Dawn layout variables when the preview
+  theme still carries Horizon settings_data.json after a Dawn code push.
+{% endcomment %}
+{%- liquid
+  assign edp_body_scale = settings.body_scale | plus: 0
+  if edp_body_scale == 0
+    assign edp_body_scale = 100
+  endif
+
+  assign edp_heading_scale = settings.heading_scale | plus: 0
+  if edp_heading_scale == 0
+    assign edp_heading_scale = 100
+  endif
+
+  assign edp_page_width_label = settings.page_width | append: ''
+  if edp_page_width_label == 'narrow' or edp_page_width_label == '' or edp_page_width_label == '0'
+    assign edp_page_width_num = 1200
+  elsif edp_page_width_label == 'wide' or edp_page_width_label == 'full'
+    assign edp_page_width_num = 1600
+  else
+    assign edp_page_width_num = settings.page_width | plus: 0
+    if edp_page_width_num == 0
+      assign edp_page_width_num = 1200
+    endif
+  endif
+
+  assign edp_header_font = settings.type_header_font
+  if edp_header_font == blank and settings.type_heading_font != blank
+    assign edp_header_font = settings.type_heading_font
+  endif
+  if edp_header_font == blank
+    assign edp_header_font = settings.type_body_font
+  endif
+-%}

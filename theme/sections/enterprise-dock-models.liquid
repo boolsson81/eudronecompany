@@ -1,0 +1,139 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid edp-enterprise__grid--4" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="edp-enterprise__card-image-wrap">
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag: class: 'edp-enterprise__card-image', loading: 'lazy', widths: '300, 450, 600', alt: block.settings.title
+                }}
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-dock-models.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.enterprise-dock-models.settings.heading.label",
+      "default": "Dock-specifika modeller"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-dock-models.settings.text.label",
+      "default": "Drönare optimerade för DJI Dock — autonom start, landning och laddning dygnet runt."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dock_model",
+      "name": "t:sections.enterprise-dock-models.blocks.dock_model.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.image.label" },
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.title.label", "default": "DJI Matrice" },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.text.label", "default": "Dock-kompatibel enterprise-drönare." },
+        { "type": "text", "id": "link_label", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.link_label.label", "default": "Se modellen" },
+        { "type": "url", "id": "link", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-dock-models.presets.name",
+      "blocks": [
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 4D", "text": "Dock-kompatibel Matrice 4-plattform för autonom inspektion och kartläggning.", "link_label": "Se Matrice 4D", "link": "/collections/matrice-4" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 4TD", "text": "Termisk dock-kompatibel modell för inspektion, räddning och säkerhet.", "link_label": "Se Matrice 4TD", "link": "/collections/matrice-4" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 3D", "text": "Kompakt dock-kompatibel drönare för autonom drift med DJI Dock 2.", "link_label": "Se Matrice 3D", "link": "/collections/dji-dock" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 3TD", "text": "Termisk dock-kompatibel modell baserad på Matrice 30-plattformen.", "link_label": "Se Matrice 3TD", "link": "/collections/dji-dock" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

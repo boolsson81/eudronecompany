@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "3D-modellering",
+            "text": "Fotogrammetri med centimeterprecision för byggdokumentation, arkitektur och kulturarvsinventering."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Volymberäkning",
+            "text": "Mät stockhögar, gravar och materialvolymer med drönare istället för tidskrävande manuell mätning."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Terrängmodeller",
+            "text": "Digitala terrängmodeller (DTM/DSM) för markplanering, infrastrukturprojekt och hydrologisk analys."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "BIM-integration",
+            "text": "Exportera drönardata direkt till BIM-system för byggprojektsuppföljning och avvikelseanalys."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "90% tidsbesparing jämfört med traditionell landmätning" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Centimeterprecision med RTK-positionering" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Automatisk generering av ortomosaiker och 3D-modeller" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Sömlös integration med CAD och BIM-system" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Kartläggning & GIS",
+        "title": "Drönare för Kartläggning & GIS",
+        "text": "Skapa exakta 3D-modeller, ortomosaiker och volymberäkningar med RTK-precision för bygg, gruva och planering.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp med kartläggning och GIS?",
+        "text": "Vårt enterprise-team hjälper dig välja rätt sensorer, mjukvara och arbetsflöden för ditt kartläggningsprojekt.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

@@ -1,0 +1,315 @@
+# P1 Build Report
+
+**Executed:** 2026-06-13T19:33:39.681Z
+**Store:** Europe Drone Parts
+
+## Summary
+
+| Phase | Result |
+|---|---|
+| Smart collection rules | 2 applied, 65 failed |
+| Enterprise Software page | UPDATED |
+| Menu cleanup phase 2 | 232 deleted |
+
+## Log
+
+- RULES FAIL `dji-air-3s-spare-parts`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-propellers`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-batteries`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-motors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-arms`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-cameras`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-gimbal`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-shell`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-landing-gear`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-cables`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-antennas`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-sensors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-air-3s-accessories`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-spare-parts`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-propellers`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-batteries`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-motors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-arms`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-cameras`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-gimbal`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-shell`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-landing-gear`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-cables`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-antennas`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-sensors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-neo-accessories`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-spare-parts`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-propellers`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-batteries`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-motors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-arms`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-cameras`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-gimbal`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-shell`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-landing-gear`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-cables`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-antennas`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-sensors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-flip-accessories`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-spare-parts`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-propellers`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-batteries`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-motors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-arms`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-cameras`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-gimbal`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-shell`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-landing-gear`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-cables`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-antennas`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-sensors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-avata-2-accessories`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-spare-parts`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-propellers`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-batteries`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-motors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-arms`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-cameras`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-gimbal`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-shell`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-landing-gear`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-cables`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-antennas`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-sensors`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES FAIL `dji-matrice-30-accessories`: collectionUpdate: Cannot update rule set of a custom collection
+- RULES `dji-matrice-350-rtk-spare-parts` → 8 rules, 0 products
+- RULES `dji-flycart-30-spare-parts` → 8 rules, 0 products
+- PAGE updated `enterprise-software`
+- DELETE menu `dronare`
+- DELETE menu `partnership-122`
+- DELETE menu `actionkameror-122`
+- DELETE menu `dronare-122`
+- DELETE menu `partnership-123`
+- DELETE menu `actionkameror-123`
+- DELETE menu `dronare-123`
+- DELETE menu `partnership-124`
+- DELETE menu `actionkameror-124`
+- DELETE menu `dronare-124`
+- DELETE menu `partnership-125`
+- DELETE menu `actionkameror-125`
+- DELETE menu `dronare-125`
+- DELETE menu `partnership-126`
+- DELETE menu `actionkameror-126`
+- DELETE menu `dronare-126`
+- DELETE menu `partnership-127`
+- DELETE menu `actionkameror-127`
+- DELETE menu `dronare-127`
+- DELETE menu `partnership-128`
+- DELETE menu `actionkameror-128`
+- DELETE menu `dronare-128`
+- DELETE menu `partnership-129`
+- DELETE menu `actionkameror-129`
+- DELETE menu `dronare-129`
+- DELETE menu `partnership-130`
+- DELETE menu `actionkameror-130`
+- DELETE menu `dronare-130`
+- DELETE menu `partnership-131`
+- DELETE menu `actionkameror-131`
+- DELETE menu `dronare-131`
+- DELETE menu `partnership-132`
+- DELETE menu `actionkameror-132`
+- DELETE menu `dronare-132`
+- DELETE menu `partnership-133`
+- DELETE menu `actionkameror-133`
+- DELETE menu `dronare-133`
+- DELETE menu `partnership-134`
+- DELETE menu `actionkameror-134`
+- DELETE menu `dronare-134`
+- DELETE menu `partnership-135`
+- DELETE menu `actionkameror-135`
+- DELETE menu `dronare-135`
+- DELETE menu `partnership-136`
+- DELETE menu `actionkameror-136`
+- DELETE menu `dronare-136`
+- DELETE menu `actionkameror-137`
+- DELETE menu `dronare-137`
+- DELETE menu `partnership-137`
+- DELETE menu `actionkameror-138`
+- DELETE menu `dronare-138`
+- DELETE menu `partnership-138`
+- DELETE menu `actionkameror-139`
+- DELETE menu `dronare-139`
+- DELETE menu `partnership-139`
+- DELETE menu `actionkameror-140`
+- DELETE menu `dronare-140`
+- DELETE menu `partnership-140`
+- DELETE menu `actionkameror-141`
+- DELETE menu `dronare-141`
+- DELETE menu `partnership-141`
+- DELETE menu `actionkameror-142`
+- DELETE menu `dronare-142`
+- DELETE menu `partnership-142`
+- DELETE menu `actionkameror-143`
+- DELETE menu `dronare-143`
+- DELETE menu `partnership-143`
+- DELETE menu `dronare-144`
+- DELETE menu `partnership-144`
+- DELETE menu `actionkameror-144`
+- DELETE menu `dronare-145`
+- DELETE menu `partnership-145`
+- DELETE menu `actionkameror-145`
+- DELETE menu `dronare-146`
+- DELETE menu `partnership-146`
+- DELETE menu `actionkameror-146`
+- DELETE menu `dronare-147`
+- DELETE menu `partnership-147`
+- DELETE menu `actionkameror-147`
+- DELETE menu `dronare-148`
+- DELETE menu `partnership-148`
+- DELETE menu `actionkameror-148`
+- DELETE menu `dronare-149`
+- DELETE menu `partnership-149`
+- DELETE menu `actionkameror-149`
+- DELETE menu `dronare-150`
+- DELETE menu `partnership-150`
+- DELETE menu `actionkameror-150`
+- DELETE menu `dronare-151`
+- DELETE menu `partnership-151`
+- DELETE menu `actionkameror-151`
+- DELETE menu `dronare-152`
+- DELETE menu `partnership-152`
+- DELETE menu `actionkameror-152`
+- DELETE menu `dronare-153`
+- DELETE menu `partnership-153`
+- DELETE menu `actionkameror-153`
+- DELETE menu `dronare-154`
+- DELETE menu `partnership-154`
+- DELETE menu `actionkameror-154`
+- DELETE menu `dronare-155`
+- DELETE menu `partnership-155`
+- DELETE menu `actionkameror-155`
+- DELETE menu `dronare-156`
+- DELETE menu `partnership-156`
+- DELETE menu `actionkameror-156`
+- DELETE menu `dronare-157`
+- DELETE menu `partnership-157`
+- DELETE menu `actionkameror-157`
+- DELETE menu `dronare-158`
+- DELETE menu `partnership-158`
+- DELETE menu `actionkameror-158`
+- DELETE menu `dronare-159`
+- DELETE menu `partnership-159`
+- DELETE menu `actionkameror-159`
+- DELETE menu `dronare-160`
+- DELETE menu `partnership-160`
+- DELETE menu `actionkameror-160`
+- DELETE menu `dronare-161`
+- DELETE menu `partnership-161`
+- DELETE menu `actionkameror-161`
+- DELETE menu `dronare-162`
+- DELETE menu `partnership-162`
+- DELETE menu `actionkameror-162`
+- DELETE menu `dronare-163`
+- DELETE menu `partnership-163`
+- DELETE menu `actionkameror-163`
+- DELETE menu `dronare-164`
+- DELETE menu `partnership-164`
+- DELETE menu `actionkameror-164`
+- DELETE menu `dronare-165`
+- DELETE menu `partnership-165`
+- DELETE menu `actionkameror-165`
+- DELETE menu `dronare-166`
+- DELETE menu `partnership-166`
+- DELETE menu `actionkameror-166`
+- DELETE menu `dronare-167`
+- DELETE menu `partnership-167`
+- DELETE menu `actionkameror-167`
+- DELETE menu `dronare-168`
+- DELETE menu `partnership-168`
+- DELETE menu `actionkameror-168`
+- DELETE menu `dronare-169`
+- DELETE menu `partnership-169`
+- DELETE menu `actionkameror-169`
+- DELETE menu `dronare-170`
+- DELETE menu `partnership-170`
+- DELETE menu `actionkameror-170`
+- DELETE menu `dronare-171`
+- DELETE menu `partnership-171`
+- DELETE menu `actionkameror-171`
+- DELETE menu `dronare-172`
+- DELETE menu `partnership-172`
+- DELETE menu `actionkameror-172`
+- DELETE menu `dronare-173`
+- DELETE menu `partnership-173`
+- DELETE menu `actionkameror-173`
+- DELETE menu `dronare-174`
+- DELETE menu `partnership-174`
+- DELETE menu `actionkameror-174`
+- DELETE menu `dronare-175`
+- DELETE menu `partnership-175`
+- DELETE menu `actionkameror-175`
+- DELETE menu `dronare-176`
+- DELETE menu `partnership-176`
+- DELETE menu `actionkameror-176`
+- DELETE menu `dronare-177`
+- DELETE menu `partnership-177`
+- DELETE menu `actionkameror-177`
+- DELETE menu `dronare-178`
+- DELETE menu `partnership-178`
+- DELETE menu `actionkameror-178`
+- DELETE menu `dronare-179`
+- DELETE menu `partnership-179`
+- DELETE menu `actionkameror-179`
+- DELETE menu `dronare-180`
+- DELETE menu `partnership-180`
+- DELETE menu `actionkameror-180`
+- DELETE menu `dronare-181`
+- DELETE menu `partnership-181`
+- DELETE menu `actionkameror-181`
+- DELETE menu `dronare-182`
+- DELETE menu `partnership-182`
+- DELETE menu `actionkameror-182`
+- DELETE menu `dronare-183`
+- DELETE menu `partnership-183`
+- DELETE menu `actionkameror-183`
+- DELETE menu `dronare-184`
+- DELETE menu `partnership-184`
+- DELETE menu `actionkameror-184`
+- DELETE menu `dronare-185`
+- DELETE menu `partnership-185`
+- DELETE menu `actionkameror-185`
+- DELETE menu `dronare-186`
+- DELETE menu `partnership-186`
+- DELETE menu `actionkameror-186`
+- DELETE menu `dronare-187`
+- DELETE menu `partnership-187`
+- DELETE menu `actionkameror-187`
+- DELETE menu `dronare-188`
+- DELETE menu `partnership-188`
+- DELETE menu `actionkameror-188`
+- DELETE menu `dronare-189`
+- DELETE menu `partnership-189`
+- DELETE menu `actionkameror-189`
+- DELETE menu `dronare-190`
+- DELETE menu `partnership-190`
+- DELETE menu `actionkameror-190`
+- DELETE menu `dronare-191`
+- DELETE menu `partnership-191`
+- DELETE menu `actionkameror-191`
+- DELETE menu `dronare-192`
+- DELETE menu `partnership-192`
+- DELETE menu `actionkameror-192`
+- DELETE menu `dronare-193`
+- DELETE menu `partnership-193`
+- DELETE menu `actionkameror-193`
+- DELETE menu `dronare-194`
+- DELETE menu `partnership-194`
+- DELETE menu `actionkameror-194`
+- DELETE menu `dronare-1`
+- DELETE menu `partnership-195`
+- DELETE menu `actionkameror-1`
+- DELETE menu `dronare-2`
+- DELETE menu `partnership-1`
+- DELETE menu `actionkameror-2`
+- DELETE menu `dronare-3`
+- DELETE menu `partnership-2`
+- DELETE menu `actionkameror-3`
+- DELETE menu `dronare-4`
+- DELETE menu `partnership-3`
+- DELETE menu `actionkameror-4`

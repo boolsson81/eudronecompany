@@ -1,0 +1,1982 @@
+{
+  "generated_at": "2026-06-13T10:44:13.388Z",
+  "mode": "report_only",
+  "store": "ya1xhg-x6.myshopify.com",
+  "total_pages": 98,
+  "pages_to_create": 98,
+  "pages_existing": 0,
+  "menu_refs": 53,
+  "menu_broken": 0,
+  "collection_refs": 27,
+  "b2b_workflow_count": 5,
+  "validation_pass": true,
+  "excluded_checks": {
+    "no_cad_bim_3d": true,
+    "no_defense": true,
+    "no_collection_changes": true,
+    "no_url_changes": true,
+    "no_seo_changes": true
+  },
+  "page_inventory": [
+    {
+      "type": "page",
+      "handle": "service-support",
+      "title": "Service & Support",
+      "url": "/pages/service-support",
+      "section": "hub",
+      "seo_index": true,
+      "role": "top_level_hub",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-konsument-service",
+      "title": "DJI Konsument Service",
+      "url": "/pages/dji-konsument-service",
+      "section": "consumer_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-mini-service",
+      "title": "DJI Mini Service",
+      "url": "/pages/dji-mini-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "dji-mini-3-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-air-service",
+      "title": "DJI Air Service",
+      "url": "/pages/dji-air-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "dji-air-3-tillbehor-omfattande-sortiment",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-mavic-service",
+      "title": "DJI Mavic Service",
+      "url": "/pages/dji-mavic-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "dji-mavic-3-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-avata-service",
+      "title": "DJI Avata Service",
+      "url": "/pages/dji-avata-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "dji-avata-2-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-neo-service",
+      "title": "DJI Neo Service",
+      "url": "/pages/dji-neo-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "reparation-dji-neo-reservdelar",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-flip-service",
+      "title": "DJI Flip Service",
+      "url": "/pages/dji-flip-service",
+      "section": "consumer",
+      "seo_index": true,
+      "related_collection": "dji-flip-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-enterprise-service",
+      "title": "DJI Enterprise Service",
+      "url": "/pages/dji-enterprise-service",
+      "section": "enterprise_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "matrice-4-service",
+      "title": "Matrice 4 Service",
+      "url": "/pages/matrice-4-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-matrice-4-serie",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "matrice-30-service",
+      "title": "Matrice 30 Service",
+      "url": "/pages/matrice-30-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-matrice-30-serie-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "matrice-300-rtk-service",
+      "title": "Matrice 300 RTK Service",
+      "url": "/pages/matrice-300-rtk-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-matrice-350-rtk-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "matrice-350-rtk-service",
+      "title": "Matrice 350 RTK Service",
+      "url": "/pages/matrice-350-rtk-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-matrice-350-rtk-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "matrice-400-service",
+      "title": "Matrice 400 Service",
+      "url": "/pages/matrice-400-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-matrice-400-serien",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "mavic-enterprise-service",
+      "title": "Mavic Enterprise Service",
+      "url": "/pages/mavic-enterprise-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-mavic-serien-enterprise",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "agras-service",
+      "title": "Agras Service",
+      "url": "/pages/agras-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-agras-dronare",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "flycart-service",
+      "title": "FlyCart Service",
+      "url": "/pages/flycart-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "dji-flycart-serien",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dji-dock-service",
+      "title": "DJI Dock Service",
+      "url": "/pages/dji-dock-service",
+      "section": "enterprise",
+      "seo_index": true,
+      "related_collection": "enterprise-dronare",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dronarreparation",
+      "title": "Drönarreparation",
+      "url": "/pages/dronarreparation",
+      "section": "repair",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "krockskador-reparation",
+      "title": "Crash Damage Repair",
+      "url": "/pages/krockskador-reparation",
+      "section": "repair",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "gimbalreparation",
+      "title": "Gimbal Repair",
+      "url": "/pages/gimbalreparation",
+      "section": "repair",
+      "seo_index": true,
+      "related_collection": "reservdelar-gimbal-dronare-motorer",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kamerareparation",
+      "title": "Camera Repair",
+      "url": "/pages/kamerareparation",
+      "section": "repair",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "motorbyte",
+      "title": "Motor Replacement",
+      "url": "/pages/motorbyte",
+      "section": "repair",
+      "seo_index": true,
+      "related_collection": "reservdelar-gimbal-dronare-motorer",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "esc-reparation",
+      "title": "ESC Repair",
+      "url": "/pages/esc-reparation",
+      "section": "repair",
+      "seo_index": true,
+      "related_collection": "dronarelektronik-flight-components",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "elektronisk-felsokning",
+      "title": "Electronic Troubleshooting",
+      "url": "/pages/elektronisk-felsokning",
+      "section": "repair",
+      "seo_index": true,
+      "related_collection": "dronarelektronik-flight-components",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kalibrering",
+      "title": "Calibration Services",
+      "url": "/pages/kalibrering",
+      "section": "calibration_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "imu-kalibrering",
+      "title": "IMU Calibration",
+      "url": "/pages/imu-kalibrering",
+      "section": "calibration",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kompasskalibrering",
+      "title": "Compass Calibration",
+      "url": "/pages/kompasskalibrering",
+      "section": "calibration",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "rtk-kalibrering",
+      "title": "RTK Validation",
+      "url": "/pages/rtk-kalibrering",
+      "section": "calibration",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "sensor-kalibrering",
+      "title": "Sensor Calibration",
+      "url": "/pages/sensor-kalibrering",
+      "section": "calibration",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kamera-kalibrering",
+      "title": "Camera Calibration",
+      "url": "/pages/kamera-kalibrering",
+      "section": "calibration",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "varmekamera-validering",
+      "title": "Thermal Camera Validation",
+      "url": "/pages/varmekamera-validering",
+      "section": "calibration",
+      "seo_index": true,
+      "related_collection": "dronare-med-varmekamera",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "garantiansokan",
+      "title": "Warranty Claims",
+      "url": "/pages/garantiansokan",
+      "section": "warranty",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "serviceforfragan",
+      "title": "Service Request",
+      "url": "/pages/serviceforfragan",
+      "section": "warranty",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "returforfragan",
+      "title": "Return Request",
+      "url": "/pages/returforfragan",
+      "section": "warranty",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "teknisk-support",
+      "title": "Technical Support",
+      "url": "/pages/teknisk-support",
+      "section": "warranty",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "serviceavtal-basic",
+      "title": "Service Agreement — Basic",
+      "url": "/pages/serviceavtal-basic",
+      "section": "service_agreement",
+      "seo_index": true,
+      "tier": "basic",
+      "includes": [
+        "Annual inspection",
+        "Firmware review",
+        "Flight log review"
+      ],
+      "cta": "/pages/serviceforfragan",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "serviceavtal-professional",
+      "title": "Service Agreement — Professional",
+      "url": "/pages/serviceavtal-professional",
+      "section": "service_agreement",
+      "seo_index": true,
+      "tier": "professional",
+      "includes": [
+        "Preventive maintenance",
+        "Calibration validation",
+        "Priority support"
+      ],
+      "cta": "/pages/request-quote",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "serviceavtal-enterprise",
+      "title": "Service Agreement — Enterprise",
+      "url": "/pages/serviceavtal-enterprise",
+      "section": "service_agreement",
+      "seo_index": true,
+      "tier": "enterprise",
+      "includes": [
+        "Dedicated support",
+        "Fleet maintenance",
+        "Annual inspections",
+        "Calibration services",
+        "Priority turnaround"
+      ],
+      "cta": "/pages/enterprise-consultation",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dokumentation",
+      "title": "Documentation Center",
+      "url": "/pages/dokumentation",
+      "section": "documentation_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-dji-enterprise",
+      "title": "Manuals — DJI Enterprise",
+      "url": "/pages/manualer-dji-enterprise",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "enterprise-dronare",
+        "dji-matrice-serien"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-dji-konsument",
+      "title": "Manuals — DJI Consumer",
+      "url": "/pages/manualer-dji-konsument",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "dji-mini-3-serien",
+        "dji-mavic-3-serien",
+        "dji-air-serien"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-flycart",
+      "title": "Manuals — FlyCart",
+      "url": "/pages/manualer-flycart",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "dji-flycart-serien"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-agras",
+      "title": "Manuals — Agras",
+      "url": "/pages/manualer-agras",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "dji-agras-dronare"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-dock",
+      "title": "Manuals — Dock",
+      "url": "/pages/manualer-dock",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "enterprise-dronare"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "manualer-payloads",
+      "title": "Manuals — Payloads",
+      "url": "/pages/manualer-payloads",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "manuals",
+      "related_collections": [
+        "enterprise-sensorer",
+        "dronare-med-varmekamera"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "firmware-flygplan",
+      "title": "Firmware — Aircraft",
+      "url": "/pages/firmware-flygplan",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "firmware",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "firmware-fjarrkontroller",
+      "title": "Firmware — Controllers",
+      "url": "/pages/firmware-fjarrkontroller",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "firmware",
+      "related_collections": [
+        "dji-enterprise-fjarrkontroller"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "firmware-payloads",
+      "title": "Firmware — Payloads",
+      "url": "/pages/firmware-payloads",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "firmware",
+      "related_collections": [
+        "enterprise-sensorer"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "firmware-dock",
+      "title": "Firmware — Dock Systems",
+      "url": "/pages/firmware-dock",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "firmware",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "datablad-specifikationer",
+      "title": "Product Datasheets — Specifications",
+      "url": "/pages/datablad-specifikationer",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "datasheets",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "datablad-kompatibilitet",
+      "title": "Product Datasheets — Compatibility",
+      "url": "/pages/datablad-kompatibilitet",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "datasheets",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "datablad-certifieringar",
+      "title": "Product Datasheets — Certifications",
+      "url": "/pages/datablad-certifieringar",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "datasheets",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "ce-dokument",
+      "title": "Compliance — CE Documents",
+      "url": "/pages/ce-dokument",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "compliance",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "produktcertifieringar",
+      "title": "Compliance — Product Certifications",
+      "url": "/pages/produktcertifieringar",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "compliance",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "sakerhetsdokumentation",
+      "title": "Compliance — Safety Documentation",
+      "url": "/pages/sakerhetsdokumentation",
+      "section": "documentation",
+      "seo_index": true,
+      "doc_section": "compliance",
+      "related_collections": [],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kunskapscenter",
+      "title": "Knowledge Center",
+      "url": "/pages/kunskapscenter",
+      "section": "knowledge_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "vad-ar-rtk",
+      "title": "What is RTK?",
+      "url": "/pages/vad-ar-rtk",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "vad-ar-lidar",
+      "title": "What is LiDAR?",
+      "url": "/pages/vad-ar-lidar",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "varmebild",
+      "title": "Thermal Imaging",
+      "url": "/pages/varmebild",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "fotogrammetri",
+      "title": "Photogrammetry",
+      "url": "/pages/fotogrammetri",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "drönarkartlaggning",
+      "title": "Drone Mapping",
+      "url": "/pages/drönarkartlaggning",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "bvlos",
+      "title": "BVLOS Operations",
+      "url": "/pages/bvlos",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "dronarsakerhet",
+      "title": "Drone Safety",
+      "url": "/pages/dronarsakerhet",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": null,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-matrice-4",
+      "title": "Matrice 4 Guide",
+      "url": "/pages/guide-matrice-4",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dji-matrice-4-serie",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-matrice-350",
+      "title": "Matrice 350 Guide",
+      "url": "/pages/guide-matrice-350",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dji-matrice-350-rtk-tillbehor",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-matrice-400",
+      "title": "Matrice 400 Guide",
+      "url": "/pages/guide-matrice-400",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dji-matrice-400-serien",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-mavic-enterprise",
+      "title": "Mavic Enterprise Guide",
+      "url": "/pages/guide-mavic-enterprise",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dji-mavic-serien-enterprise",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-flycart",
+      "title": "FlyCart Guide",
+      "url": "/pages/guide-flycart",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dji-flycart-serien",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-dji-dock",
+      "title": "DJI Dock Guide",
+      "url": "/pages/guide-dji-dock",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "enterprise-dronare",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-zenmuse-l2",
+      "title": "Zenmuse L2 Guide",
+      "url": "/pages/guide-zenmuse-l2",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "enterprise-sensorer",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "guide-zenmuse-h30t",
+      "title": "Zenmuse H30T Guide",
+      "url": "/pages/guide-zenmuse-h30t",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dronare-med-varmekamera",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "lidar-jamforelse",
+      "title": "LiDAR Comparison",
+      "url": "/pages/lidar-jamforelse",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "enterprise-sensorer",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "varmekamera-jamforelse",
+      "title": "Thermal Camera Comparison",
+      "url": "/pages/varmekamera-jamforelse",
+      "section": "knowledge",
+      "seo_index": true,
+      "content_status": "framework",
+      "related_collection": "dronare-med-varmekamera",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "request-quote",
+      "title": "Request Quote",
+      "url": "/pages/request-quote",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "enterprise-consultation",
+      "title": "Enterprise Consultation",
+      "url": "/pages/enterprise-consultation",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "boka-konsultation",
+      "title": "Book Consultation",
+      "url": "/pages/boka-konsultation",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "projektgranskning",
+      "title": "Project Review",
+      "url": "/pages/projektgranskning",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "produktrekommendation",
+      "title": "Product Recommendation",
+      "url": "/pages/produktrekommendation",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "offentlig-sektor",
+      "title": "Public Sector",
+      "url": "/pages/offentlig-sektor",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "betalningsalternativ",
+      "title": "Payment Options",
+      "url": "/pages/betalningsalternativ",
+      "section": "b2b",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-dji",
+      "title": "DJI",
+      "url": "/pages/tillverkare-dji",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "DJI",
+      "related_collections": [
+        "enterprise-dronare",
+        "dji-matrice-serien",
+        "dji-agras-dronare"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-livox",
+      "title": "Livox",
+      "url": "/pages/tillverkare-livox",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "Livox",
+      "related_collections": [
+        "enterprise-sensorer"
+      ],
+      "note": "Expand when Livox SKUs indexed",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-czi",
+      "title": "CZI",
+      "url": "/pages/tillverkare-czi",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "CZI",
+      "related_collections": [
+        "enterprise-belysning",
+        "enterprise-hogtalarsystem"
+      ],
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-avss",
+      "title": "AVSS",
+      "url": "/pages/tillverkare-avss",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "AVSS",
+      "related_collections": [
+        "fallskarmssystem"
+      ],
+      "note": "Landing page — catalog expansion pending",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-dronavia",
+      "title": "Dronavia",
+      "url": "/pages/tillverkare-dronavia",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "Dronavia",
+      "related_collections": [],
+      "note": "Landing page — catalog expansion pending",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "tillverkare-wisson",
+      "title": "Wisson Robotics",
+      "url": "/pages/tillverkare-wisson",
+      "section": "manufacturer",
+      "seo_index": true,
+      "vendor": "Wisson",
+      "related_collections": [],
+      "note": "Landing page — catalog expansion pending",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "support-center",
+      "title": "Support Center",
+      "url": "/pages/support-center",
+      "section": "support_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "kontakta-support",
+      "title": "Contact Support",
+      "url": "/pages/kontakta-support",
+      "section": "support",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "skicka-arende",
+      "title": "Submit Ticket",
+      "url": "/pages/skicka-arende",
+      "section": "support",
+      "seo_index": true,
+      "workflow": "ticket",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "servicestatus",
+      "title": "Service Status",
+      "url": "/pages/servicestatus",
+      "section": "support",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "vanliga-fragor",
+      "title": "FAQ",
+      "url": "/pages/vanliga-fragor",
+      "section": "support",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning",
+      "title": "Troubleshooting",
+      "url": "/pages/felsokning",
+      "section": "troubleshooting_hub",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning-dronare",
+      "title": "Drone Issues",
+      "url": "/pages/felsokning-dronare",
+      "section": "troubleshooting",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning-batteri",
+      "title": "Battery Issues",
+      "url": "/pages/felsokning-batteri",
+      "section": "troubleshooting",
+      "seo_index": true,
+      "related_collection": "batterier",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning-rtk",
+      "title": "RTK Issues",
+      "url": "/pages/felsokning-rtk",
+      "section": "troubleshooting",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning-payload",
+      "title": "Payload Issues",
+      "url": "/pages/felsokning-payload",
+      "section": "troubleshooting",
+      "seo_index": true,
+      "related_collection": "enterprise-sensorer",
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    },
+    {
+      "type": "page",
+      "handle": "felsokning-dock",
+      "title": "Dock Issues",
+      "url": "/pages/felsokning-dock",
+      "section": "troubleshooting",
+      "seo_index": true,
+      "exists_live": false,
+      "action": "create_page",
+      "seo_change": false
+    }
+  ],
+  "menu_validation": [
+    {
+      "menu": "service-support",
+      "title": "DJI Mini",
+      "url": "/pages/dji-mini-service",
+      "handle": "dji-mini-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Air",
+      "url": "/pages/dji-air-service",
+      "handle": "dji-air-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Mavic",
+      "url": "/pages/dji-mavic-service",
+      "handle": "dji-mavic-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Avata",
+      "url": "/pages/dji-avata-service",
+      "handle": "dji-avata-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Neo",
+      "url": "/pages/dji-neo-service",
+      "handle": "dji-neo-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Flip",
+      "url": "/pages/dji-flip-service",
+      "handle": "dji-flip-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Matrice 4",
+      "url": "/pages/matrice-4-service",
+      "handle": "matrice-4-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Matrice 30",
+      "url": "/pages/matrice-30-service",
+      "handle": "matrice-30-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Matrice 300 RTK",
+      "url": "/pages/matrice-300-rtk-service",
+      "handle": "matrice-300-rtk-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Matrice 350 RTK",
+      "url": "/pages/matrice-350-rtk-service",
+      "handle": "matrice-350-rtk-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Matrice 400",
+      "url": "/pages/matrice-400-service",
+      "handle": "matrice-400-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Mavic Enterprise",
+      "url": "/pages/mavic-enterprise-service",
+      "handle": "mavic-enterprise-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Agras",
+      "url": "/pages/agras-service",
+      "handle": "agras-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "FlyCart",
+      "url": "/pages/flycart-service",
+      "handle": "flycart-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "DJI Dock",
+      "url": "/pages/dji-dock-service",
+      "handle": "dji-dock-service",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Drone Repair",
+      "url": "/pages/dronarreparation",
+      "handle": "dronarreparation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Crash Damage",
+      "url": "/pages/krockskador-reparation",
+      "handle": "krockskador-reparation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Gimbal Repair",
+      "url": "/pages/gimbalreparation",
+      "handle": "gimbalreparation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Camera Repair",
+      "url": "/pages/kamerareparation",
+      "handle": "kamerareparation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Motor Replacement",
+      "url": "/pages/motorbyte",
+      "handle": "motorbyte",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "ESC Repair",
+      "url": "/pages/esc-reparation",
+      "handle": "esc-reparation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "IMU",
+      "url": "/pages/imu-kalibrering",
+      "handle": "imu-kalibrering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Compass",
+      "url": "/pages/kompasskalibrering",
+      "handle": "kompasskalibrering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "RTK",
+      "url": "/pages/rtk-kalibrering",
+      "handle": "rtk-kalibrering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Sensor",
+      "url": "/pages/sensor-kalibrering",
+      "handle": "sensor-kalibrering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Camera",
+      "url": "/pages/kamera-kalibrering",
+      "handle": "kamera-kalibrering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Thermal",
+      "url": "/pages/varmekamera-validering",
+      "handle": "varmekamera-validering",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Warranty Claims",
+      "url": "/pages/garantiansokan",
+      "handle": "garantiansokan",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Service Request",
+      "url": "/pages/serviceforfragan",
+      "handle": "serviceforfragan",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Return Request",
+      "url": "/pages/returforfragan",
+      "handle": "returforfragan",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Technical Support",
+      "url": "/pages/teknisk-support",
+      "handle": "teknisk-support",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Basic",
+      "url": "/pages/serviceavtal-basic",
+      "handle": "serviceavtal-basic",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Professional",
+      "url": "/pages/serviceavtal-professional",
+      "handle": "serviceavtal-professional",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "service-support",
+      "title": "Enterprise",
+      "url": "/pages/serviceavtal-enterprise",
+      "handle": "serviceavtal-enterprise",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "documentation-center",
+      "title": "Manuals",
+      "url": "/pages/manualer-dji-enterprise",
+      "handle": "manualer-dji-enterprise",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "documentation-center",
+      "title": "Firmware",
+      "url": "/pages/firmware-flygplan",
+      "handle": "firmware-flygplan",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "documentation-center",
+      "title": "Datasheets",
+      "url": "/pages/datablad-specifikationer",
+      "handle": "datablad-specifikationer",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "documentation-center",
+      "title": "Compliance",
+      "url": "/pages/ce-dokument",
+      "handle": "ce-dokument",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "knowledge-center",
+      "title": "Drone Technology",
+      "url": "/pages/vad-ar-rtk",
+      "handle": "vad-ar-rtk",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "knowledge-center",
+      "title": "Enterprise DJI",
+      "url": "/pages/guide-matrice-4",
+      "handle": "guide-matrice-4",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "knowledge-center",
+      "title": "Payloads",
+      "url": "/pages/guide-zenmuse-l2",
+      "handle": "guide-zenmuse-l2",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "b2b-platform",
+      "title": "Request Quote",
+      "url": "/pages/request-quote",
+      "handle": "request-quote",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "b2b-platform",
+      "title": "Enterprise Consultation",
+      "url": "/pages/enterprise-consultation",
+      "handle": "enterprise-consultation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "b2b-platform",
+      "title": "Public Sector",
+      "url": "/pages/offentlig-sektor",
+      "handle": "offentlig-sektor",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "b2b-platform",
+      "title": "Payment Options",
+      "url": "/pages/betalningsalternativ",
+      "handle": "betalningsalternativ",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "support-center-menu",
+      "title": "Contact",
+      "url": "/pages/kontakta-support",
+      "handle": "kontakta-support",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "support-center-menu",
+      "title": "Submit Ticket",
+      "url": "/pages/skicka-arende",
+      "handle": "skicka-arende",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "support-center-menu",
+      "title": "FAQ",
+      "url": "/pages/vanliga-fragor",
+      "handle": "vanliga-fragor",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "support-center-menu",
+      "title": "Troubleshooting",
+      "url": "/pages/felsokning",
+      "handle": "felsokning",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "footer-addon-v5",
+      "title": "Service & Support",
+      "url": "/pages/service-support",
+      "handle": "service-support",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "footer-addon-v5",
+      "title": "Documentation",
+      "url": "/pages/dokumentation",
+      "handle": "dokumentation",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "footer-addon-v5",
+      "title": "Knowledge Center",
+      "url": "/pages/kunskapscenter",
+      "handle": "kunskapscenter",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    },
+    {
+      "menu": "footer-addon-v5",
+      "title": "Request Quote",
+      "url": "/pages/request-quote",
+      "handle": "request-quote",
+      "in_spec": true,
+      "exists_live": false,
+      "status": "pending_create"
+    }
+  ],
+  "collection_validation": [
+    {
+      "handle": "dji-mini-3-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-mini-3-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+      "exists": true,
+      "url": "/collections/dji-air-3-tillbehor-omfattande-sortiment",
+      "modified": false
+    },
+    {
+      "handle": "dji-mavic-3-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-mavic-3-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "dji-avata-2-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-avata-2-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "reparation-dji-neo-reservdelar",
+      "exists": true,
+      "url": "/collections/reparation-dji-neo-reservdelar",
+      "modified": false
+    },
+    {
+      "handle": "dji-flip-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-flip-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "dji-matrice-4-serie",
+      "exists": true,
+      "url": "/collections/dji-matrice-4-serie",
+      "modified": false
+    },
+    {
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-matrice-30-serie-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "exists": true,
+      "url": "/collections/dji-matrice-350-rtk-tillbehor",
+      "modified": false
+    },
+    {
+      "handle": "dji-matrice-400-serien",
+      "exists": true,
+      "url": "/collections/dji-matrice-400-serien",
+      "modified": false
+    },
+    {
+      "handle": "dji-mavic-serien-enterprise",
+      "exists": true,
+      "url": "/collections/dji-mavic-serien-enterprise",
+      "modified": false
+    },
+    {
+      "handle": "dji-agras-dronare",
+      "exists": true,
+      "url": "/collections/dji-agras-dronare",
+      "modified": false
+    },
+    {
+      "handle": "dji-flycart-serien",
+      "exists": true,
+      "url": "/collections/dji-flycart-serien",
+      "modified": false
+    },
+    {
+      "handle": "enterprise-dronare",
+      "exists": true,
+      "url": "/collections/enterprise-dronare",
+      "modified": false
+    },
+    {
+      "handle": "reservdelar-gimbal-dronare-motorer",
+      "exists": true,
+      "url": "/collections/reservdelar-gimbal-dronare-motorer",
+      "modified": false
+    },
+    {
+      "handle": "dronarelektronik-flight-components",
+      "exists": true,
+      "url": "/collections/dronarelektronik-flight-components",
+      "modified": false
+    },
+    {
+      "handle": "dronare-med-varmekamera",
+      "exists": true,
+      "url": "/collections/dronare-med-varmekamera",
+      "modified": false
+    },
+    {
+      "handle": "dji-matrice-serien",
+      "exists": true,
+      "url": "/collections/dji-matrice-serien",
+      "modified": false
+    },
+    {
+      "handle": "dji-mini-3-serien",
+      "exists": true,
+      "url": "/collections/dji-mini-3-serien",
+      "modified": false
+    },
+    {
+      "handle": "dji-mavic-3-serien",
+      "exists": true,
+      "url": "/collections/dji-mavic-3-serien",
+      "modified": false
+    },
+    {
+      "handle": "dji-air-serien",
+      "exists": true,
+      "url": "/collections/dji-air-serien",
+      "modified": false
+    },
+    {
+      "handle": "enterprise-sensorer",
+      "exists": true,
+      "url": "/collections/enterprise-sensorer",
+      "modified": false
+    },
+    {
+      "handle": "dji-enterprise-fjarrkontroller",
+      "exists": true,
+      "url": "/collections/dji-enterprise-fjarrkontroller",
+      "modified": false
+    },
+    {
+      "handle": "enterprise-belysning",
+      "exists": true,
+      "url": "/collections/enterprise-belysning",
+      "modified": false
+    },
+    {
+      "handle": "enterprise-hogtalarsystem",
+      "exists": true,
+      "url": "/collections/enterprise-hogtalarsystem",
+      "modified": false
+    },
+    {
+      "handle": "fallskarmssystem",
+      "exists": false,
+      "url": "/collections/fallskarmssystem",
+      "modified": false
+    },
+    {
+      "handle": "batterier",
+      "exists": true,
+      "url": "/collections/batterier",
+      "modified": false
+    }
+  ],
+  "b2b_workflows": [
+    {
+      "id": "quote",
+      "entry": "/pages/request-quote",
+      "connects_to": [
+        "serviceforfragan",
+        "enterprise-consultation"
+      ]
+    },
+    {
+      "id": "ticket",
+      "entry": "/pages/skicka-arende",
+      "connects_to": [
+        "kontakta-support",
+        "teknisk-support"
+      ]
+    },
+    {
+      "id": "warranty",
+      "entry": "/pages/garantiansokan",
+      "connects_to": [
+        "returforfragan",
+        "serviceforfragan"
+      ]
+    },
+    {
+      "id": "public_sector",
+      "entry": "/pages/offentlig-sektor",
+      "connects_to": [
+        "request-quote",
+        "enterprise-consultation"
+      ]
+    },
+    {
+      "id": "peppol",
+      "entry": "/pages/betalningsalternativ",
+      "connects_to": [
+        "request-quote",
+        "offentlig-sektor"
+      ]
+    }
+  ],
+  "service_agreements": [
+    {
+      "handle": "serviceavtal-basic",
+      "title": "Service Agreement — Basic",
+      "tier": "basic",
+      "includes": [
+        "Annual inspection",
+        "Firmware review",
+        "Flight log review"
+      ],
+      "cta": "/pages/serviceforfragan"
+    },
+    {
+      "handle": "serviceavtal-professional",
+      "title": "Service Agreement — Professional",
+      "tier": "professional",
+      "includes": [
+        "Preventive maintenance",
+        "Calibration validation",
+        "Priority support"
+      ],
+      "cta": "/pages/request-quote"
+    },
+    {
+      "handle": "serviceavtal-enterprise",
+      "title": "Service Agreement — Enterprise",
+      "tier": "enterprise",
+      "includes": [
+        "Dedicated support",
+        "Fleet maintenance",
+        "Annual inspections",
+        "Calibration services",
+        "Priority turnaround"
+      ],
+      "cta": "/pages/enterprise-consultation"
+    }
+  ]
+}

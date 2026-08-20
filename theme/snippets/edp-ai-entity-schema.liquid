@@ -1,0 +1,72 @@
+{%- comment -%}
+  Enhanced entity schema for AI search engines (ChatGPT, Perplexity, Google AI Overviews).
+{%- endcomment -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Organization", "Store"],
+    "@id": {{ shop.url | append: '/#organization' | json }},
+    "name": {{ shop.name | json }},
+    "url": {{ shop.url | json }},
+    "description": {{ shop.description | default: "DJI-specialist i Norden — drönare, tillbehör, reservdelar och företagslösningar för professionell användning." | strip_html | json }},
+    "slogan": "DJI-specialist i Norden",
+    "areaServed": [
+      { "@type": "Country", "name": "Sweden" },
+      { "@type": "Country", "name": "Denmark" },
+      { "@type": "Country", "name": "Germany" },
+      { "@type": "Country", "name": "Norway" },
+      { "@type": "Country", "name": "Finland" }
+    ],
+    "knowsAbout": [
+      "DJI drones",
+      "Enterprise drones",
+      "Drone spare parts",
+      "Zenmuse cameras",
+      "Thermal drone cameras",
+      "LiDAR mapping sensors",
+      "Agricultural drones",
+      "Inspection drones",
+      "Drone accessories"
+    ],
+    "brand": {
+      "@type": "Brand",
+      "name": "Europe Drone Company"
+    },
+    "sameAs": [
+      {%- liquid
+        assign social_urls = ''
+        if settings.social_twitter_link != blank
+          assign social_urls = social_urls | append: settings.social_twitter_link | append: '||'
+        endif
+        if settings.social_facebook_link != blank
+          assign social_urls = social_urls | append: settings.social_facebook_link | append: '||'
+        endif
+        if settings.social_instagram_link != blank
+          assign social_urls = social_urls | append: settings.social_instagram_link | append: '||'
+        endif
+        if settings.social_youtube_link != blank
+          assign social_urls = social_urls | append: settings.social_youtube_link | append: '||'
+        endif
+        assign social_list = social_urls | split: '||'
+      -%}
+      {%- for link in social_list -%}
+        {%- if link != blank -%}
+          {{ link | json }}{% unless forloop.last %},{% endunless %}
+        {%- endif -%}
+      {%- endfor -%}
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "DJI drönare och tillbehör",
+      "itemListElement": [
+        { "@type": "OfferCatalog", "name": "Enterprise drönare" },
+        { "@type": "OfferCatalog", "name": "Konsumentdrönare" },
+        { "@type": "OfferCatalog", "name": "Reservdelar" },
+        { "@type": "OfferCatalog", "name": "Zenmuse-sensorer" }
+      ]
+    }
+    {%- if settings.logo -%}
+      ,"logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }}
+    {%- endif -%}
+  }
+</script>

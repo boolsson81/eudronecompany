@@ -1,0 +1,375 @@
+{
+  "version": "4a",
+  "collections": [
+    {
+      "handle": "dji-matrice-300-rtk",
+      "title": "DJI Matrice 300 RTK",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 300 RTK"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 300"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M300 RTK"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Matrice 300 RTK"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 2,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 300 RTK"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-matrice-300-rtk"
+    },
+    {
+      "handle": "dji-matrice-3d",
+      "title": "DJI Matrice 3D",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 3D"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 3D"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "M3D"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 3D"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 2,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 3D"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-matrice-3d"
+    },
+    {
+      "handle": "dji-matrice-3td",
+      "title": "DJI Matrice 3TD",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 3TD"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 3TD"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "3TD"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Matrice 3TD"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 1,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Matrice 3TD"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-matrice-3td"
+    },
+    {
+      "handle": "dji-mavic-3-thermal",
+      "title": "DJI Mavic 3 Thermal",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Mavic 3 Thermal"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3T"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3 Thermal"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Mavic 3T"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 8,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Mavic 3 Thermal"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-mavic-3-thermal"
+    },
+    {
+      "handle": "dji-agras-t25",
+      "title": "DJI Agras T25",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T25"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras T25"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "T25"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Agras T25"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 0,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T25"
+      },
+      "validation": "defer_no_products",
+      "action": "defer",
+      "url": "/collections/dji-agras-t25"
+    },
+    {
+      "handle": "dji-agras-t40",
+      "title": "DJI Agras T40",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T40"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras T40"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "T40"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Agras T40"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 2,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T40"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-agras-t40"
+    },
+    {
+      "handle": "dji-agras-t50",
+      "title": "DJI Agras T50",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T50"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras T50"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "T50"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "Agras T50"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 3,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Agras T50"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-agras-t50"
+    },
+    {
+      "handle": "dji-flycart-30",
+      "title": "DJI FlyCart 30",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "FlyCart 30"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "FlyCart 30"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI FlyCart 30"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 2,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "FlyCart 30"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-flycart-30"
+    },
+    {
+      "handle": "dji-dock-2",
+      "title": "DJI Dock 2",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Dock 2"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Dock 2"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Dock 2"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 1,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Dock 2"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-dock-2"
+    },
+    {
+      "handle": "dji-dock-3",
+      "title": "DJI Dock 3",
+      "menu": {
+        "parent": "enterprise-dr-nare",
+        "label": "Dock 3"
+      },
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Dock 3"
+          },
+          {
+            "column": "TAG",
+            "relation": "EQUALS",
+            "condition": "DJI Dock 3"
+          }
+        ]
+      },
+      "exists": false,
+      "projected_count": 1,
+      "menu_referenced": false,
+      "menu_placement": {
+        "parent": "enterprise-dr-nare",
+        "label": "Dock 3"
+      },
+      "validation": "ready_create",
+      "action": "create_collection",
+      "url": "/collections/dji-dock-3"
+    }
+  ]
+}

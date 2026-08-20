@@ -1,0 +1,134 @@
+# Separation av EU Drone Company från DigitalSignal
+
+**Status:** Underlag för beslut — ingen kod flyttad ännu
+**Datum:** 2026-08-20
+**Syfte:** Kartlägga vad i `boolsson81/digitalsignal` som är exklusivt för EU Drone Company
+(EuroDroneParts, EDP) och beskriva hur det kan brytas ut till ett eget projekt.
+
+---
+
+## 1. Sammanfattning
+
+Repot innehåller idag två i praktiken olika produkter som delar kodbas, databas och deploy:
+
+| | DigitalSignal | EU Drone Company |
+|---|---|---|
+| Vad | Multi-tenant SaaS för marknad/SEO/ekonomi | Egen e-handel (eurodroneparts.com/.se/.de/.dk) + serviceverksamhet |
+| Kunder | Flera tenants | En (oss själva) |
+| Kod | `src/pages/*` (SEO, ads, GEO, Fortnox, sälj), `supabase/functions/shopify-app-*` | Shopify-tema, Sunsky-dropship, cloner, servicportal, compliance, ~136 rapportfiler i repo-roten |
+
+Kopplingen mellan dem är inte arkitektonisk utan historisk: EDP byggdes *i* DigitalSignal-repot
+för att verktygen fanns där. Det finns i dag **inga importer från DigitalSignal-moduler till
+EDP-koden som inte kan brytas** — bindningarna är i stället hårdkodade id:n, delad Supabase och
+delad deploy-pipeline.
+
+---
+
+## 2. Inventering
+
+### 2.1 Entydigt EU Drone Company (kategori A)
+
+Detta har inget värde för någon annan tenant och kan flyttas rakt av.
+
+| Yta | Omfattning | Kommentar |
+|---|---|---|
+| `theme/` | 451 filer | Hela EuroDroneParts Shopify-tema (Dawn 15.4.1 + `edp-*`) |
+| `shopify-theme/edp/`, `shopify-theme/eurodroneparts/` | 22 filer | Tema-sektioner för FAQ/jämförelse/industri/header |
+| `data/edp-*.json` | 26 filer | Kollektions-, meny-, taxonomi- och fas-arkitektur för EDP |
+| `src/data/edp*.ts`, `src/lib/edp*.ts` | 9 filer | Innehållsbundlar + HTML/CSS-generatorer för EDP-sidor |
+| `src/lib/edp-hreflang.ts` | 1 fil | Domänmappning eurodroneparts.com/.de/.dk/.se |
+| `src/pages/Commercial*.tsx`, `src/pages/Drone*.tsx` | 14 sidor | Publik drönarmarknadsföring (`/kommersiella-dronare/*`) |
+| `supabase/functions/_shared/edp-launch/` | 10 filer | Launch-orkestrering |
+| `supabase/functions/edp-launch-prep`, `eudroneparts-set-token`, `eudroneparts-token-binding-probe` | 3 functions | EDP-specifik tokenhantering |
+| `supabase/functions/*sunsky*` | 13 functions | Sunsky = EDP:s dropship-leverantör |
+| `scripts/*edp*`, `*sunsky*`, `*boston*`, `*english*`, `*collection*`, `*menu*` | ~78 av 199 skript | Engångs- och driftskript för EDP-butiken |
+| Repo-roten: `EURODRONEPARTS_*.md`, `SUNSKY_*`, `EDP_*`, `DJI_*`, `*_HANDLE_MAPPING.csv` m.fl. | ~136 av 195 rotfiler | Rapporter/planer/CSV från EDP-migreringar |
+
+### 2.2 Gränsfall — kräver beslut (kategori B)
+
+Dessa är byggda *för* EDP men är generiska nog att kunna säljas som DigitalSignal-moduler.
+Vilken väg de tar avgör hur stor separationen blir.
+
+| Modul | Var | Idag | Frågan |
+|---|---|---|---|
+| **Service Management Portal (SMP)** | `src/pages/service-portal/` (22 filer), `src/components/service-portal/` (7), 7 edge functions | Hårdkodad EuroDroneParts-branding (`SMP_BRAND`, `service@eurodroneparts.se`, `EDP_SHOP_ID`) | EDP-verktyg eller SaaS-modul för fler kunder? |
+| **Shopify Cloner** | `src/pages/ShopifyCloner.tsx`, `src/pages/admin/ShopifyDroneClone.tsx`, 9 `shopify-cloner-*`/`cloner-*` functions | Byggd för migreringen ActionKing → EuroDroneParts; jobbet är gjort | Engångsverktyg (kan arkiveras) eller produktifieras? |
+| **Compliance / HS-kod / GPSR** | `_shared/compliance-engine.ts`, `compliance-sync`, `dji-compatibility.ts`, `product-compliance` | Dokumenterat som "dropshipping Kina → EU" — dvs EDP:s inköpsflöde | Generell EU-importmodul eller EDP-drift? |
+| **Lager/inventory + leverantörs-FTP** | 8 `inventory-*`, 7 `*supplier*` functions, `supplier_ftp_*`-migreringar | Boston/Sunsky-leverantörer, EDP-katalog | Följer med EDP eller stannar som SaaS-modul? |
+
+### 2.3 Entydigt DigitalSignal (kategori C)
+
+Stannar: SEO-wizard, Google/Meta Ads, GEO/AI-visibility, Intelligence Engine, Fortnox-bokföring
+(65 functions), sälj/CRM, telefoni, samt den **publika Shopify-appen** (`shopify-app-*`, 20+
+functions) som är DigitalSignals produkt — inte att förväxla med EDP:s butiksdrift.
+
+---
+
+## 3. Hårda kopplingar som måste hanteras
+
+1. **Delad Supabase-instans.** Ett hostat projekt, 1 105 migreringar, RLS via
+   `tenant_id = get_user_tenant_id()`. EDP är i praktiken en tenant + ett `shop_id`.
+2. **Hårdkodade id:n.** `EDP_SHOP_ID = "e6ad2afc-…"` finns i minst tre filer
+   (`src/lib/service-portal/constants.ts`, `src/pages/admin/ShopifyDroneClone.tsx`,
+   `_shared/shop-seo-connect.ts`). 49 filer/functions nämner EDP explicit.
+3. **Delad SPA + routing.** `src/App.tsx` (492 rutter) blandar `/kommersiella-dronare/*`,
+   `/service/*` och `/admin/*` i samma bundle, med värdbaserad routing (`isActionKingHost`).
+4. **Delad deploy.** Samma Vercel-projekt, samma edge-function-namnrymd (878 functions),
+   samma cron-jobb.
+5. **Seedade migreringar.** Flera migreringar seedar EDP-data direkt
+   (`20260722130000_seed_edp_public_service_faq.sql`, Boston-FTP-migreringarna m.fl.) —
+   de kan inte bara raderas ur historiken.
+
+---
+
+## 4. Tre vägar framåt
+
+### Alternativ 1 — Eget repo, delad databas *(rekommenderas)*
+
+Nytt repo `boolsson81/eudroneparts` (eller liknande) med tema, EDP-sidor, EDP-skript, rapporter
+och EDP-specifika edge functions. Supabase-projektet delas fortfarande, men EDP-koden deployas
+separat och har egen backlog.
+
+- **Fördel:** Snabbast till "egna uppdateringar i eget projekt". Ingen datamigrering. DigitalSignal-repot krymper rejält (≈600 filer bort direkt bara på kategori A).
+- **Nackdel:** Databasen är fortfarande gemensam — migreringar måste fortsatt koordineras.
+- **Insats:** Mellan. Kan göras stegvis (tema och rapporter först, kod sedan).
+
+### Alternativ 2 — Eget repo *och* egen Supabase
+
+Full separation: eget Supabase-projekt, egna secrets (Shopify, Sunsky, Fortnox), egna cron.
+
+- **Fördel:** Verklig isolering — inget i DigitalSignal kan gå sönder av EDP-arbete.
+- **Nackdel:** Datamigrering av EDP-tabeller, dubbla Fortnox-/Shopify-kopplingar, dubbla kostnader.
+- **Insats:** Stor.
+
+### Alternativ 3 — Monorepo med tydliga gränser
+
+Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudroneparts/`, `packages/shared/`.
+
+- **Fördel:** Ingen delad-databas-problematik, gemensamma beroenden.
+- **Nackdel:** Löser inte "eget projekt" i praktiken — samma PR-flöde, samma CI, samma risk.
+- **Insats:** Mellan, men lägre utdelning.
+
+---
+
+## 5. Föreslagen ordning (om alternativ 1 väljs)
+
+| Steg | Innehåll | Risk |
+|---|---|---|
+| 1 | Nytt repo + flytta `theme/`, `shopify-theme/`, `data/edp-*` | Ingen — inget kod-beroende |
+| 2 | Flytta ~136 rapport-/CSV-filer från repo-roten till nya repots `docs/` | Ingen |
+| 3 | Flytta EDP-skript (`scripts/*edp*`, `*sunsky*`, `*boston*`) | Låg — fristående `.mjs` |
+| 4 | Flytta EDP-edge functions (sunsky, edp-launch, eudroneparts-token) | Mellan — kräver deploy till samma Supabase från nytt repo |
+| 5 | Bryt ut publika drönarsidor (`/kommersiella-dronare/*`) till egen frontend | Mellan — SEO/rutter/sitemap måste följa med |
+| 6 | Beslut om kategori B (SMP, cloner, compliance, inventory) | — |
+
+---
+
+## 6. Öppna frågor
+
+1. Ska EDP ha **egen Supabase** eller dela DigitalSignals? *(avgör alt. 1 vs 2)*
+2. Följer **Service Management Portal** med EDP, eller ska den produktifieras i DigitalSignal?
+3. Ska **Shopify Cloner** arkiveras (migreringen är klar) eller behållas som verktyg?
+4. Är **compliance/HS-kod och leverantörs-/lagerflödet** EDP-drift eller SaaS-moduler?
+5. Ska de publika drönarsidorna på `digitalsignal`-domänen finnas kvar, eller bara på
+   eurodroneparts-domänerna?

@@ -1,0 +1,474 @@
+{
+  "sections": {
+    "enterprise_hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Företag & organisationer",
+        "title": "Drönarlösningar för professionella verksamheter",
+        "text": "Vi hjälper företag, myndigheter och organisationer att välja, implementera och drifta UAV-lösningar — från Matrice och Dock till utbildning och support.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Boka rådgivning",
+        "button_link_2": "/pages/contact-quote",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": { "text": "Auktoriserade leverantörer" }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": { "text": "Service och support i Sverige" }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": { "text": "Enterprise-specialister" }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": { "text": "Offert inom 24 timmar" }
+        }
+      },
+      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "enterprise_industries": {
+      "type": "enterprise-industries",
+      "blocks": {
+        "industry_1": {
+          "type": "industry",
+          "settings": {
+            "title": "Energi & Infrastruktur",
+            "text": "Inspektion av kraftledningar, vindkraft och anläggningar.",
+            "link_label": "Läs mer",
+            "link": "/pages/energi-infrastruktur"
+          }
+        },
+        "industry_2": {
+          "type": "industry",
+          "settings": {
+            "title": "Kartläggning & GIS",
+            "text": "Geodata, mätning och GIS-arbetsflöden med UAV.",
+            "link_label": "Läs mer",
+            "link": "/pages/gis-kartlaggning"
+          }
+        },
+        "industry_3": {
+          "type": "industry",
+          "settings": {
+            "title": "Räddningstjänst",
+            "text": "Sök- och räddningsinsatser samt krisledning med UAV.",
+            "link_label": "Läs mer",
+            "link": "/pages/raddningstjanst"
+          }
+        },
+        "industry_4": {
+          "type": "industry",
+          "settings": {
+            "title": "Skogsbruk",
+            "text": "Inventering och skogsvård med UAV och LiDAR.",
+            "link_label": "Läs mer",
+            "link": "/pages/skogsbruk"
+          }
+        },
+        "industry_5": {
+          "type": "industry",
+          "settings": {
+            "title": "Bygg & Anläggning",
+            "text": "Övervakning av byggarbetsplatser och dokumentation av framdrift.",
+            "link_label": "Läs mer",
+            "link": "/pages/bygg-anlaggning"
+          }
+        },
+        "industry_6": {
+          "type": "industry",
+          "settings": {
+            "title": "Jordbruk",
+            "text": "Precisionsspridning, grödansalys och fältövervakning.",
+            "link_label": "Läs mer",
+            "link": "/pages/jordbruk"
+          }
+        }
+      },
+      "block_order": [
+        "industry_1",
+        "industry_2",
+        "industry_3",
+        "industry_4",
+        "industry_5",
+        "industry_6"
+      ],
+      "settings": {
+        "heading": "Lösningar per bransch",
+        "text": "Effektivisera arbetsflöden med drönarteknik anpassad för din sektor.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_platforms": {
+      "type": "enterprise-platforms",
+      "blocks": {
+        "platform_1": {
+          "type": "platform",
+          "settings": {
+            "title": "DJI Mavic 3 Enterprise/Thermal",
+            "text": "Lättvikts enterprise med termisk kamera, RTK och 45 min flygtid — smidigt format för fältarbete.",
+            "link_label": "Se Mavic 3 Enterprise",
+            "link": "/collections/dji-mavic-3-enterprise"
+          }
+        },
+        "platform_2": {
+          "type": "platform",
+          "settings": {
+            "title": "DJI FlyCart 30",
+            "text": "Lastdrönare för transport och logistik — upp till 30 kg nyttolast.",
+            "link_label": "Se FlyCart 30",
+            "link": "/collections/dji-flycart-series"
+          }
+        },
+        "platform_3": {
+          "type": "platform",
+          "settings": {
+            "title": "DJI Agras T-serien",
+            "text": "Precisionsspruta för jordbruk med stora tankar och centimeterprecision.",
+            "link_label": "Se Agras T-serien",
+            "link": "/collections/dji-agras-drones"
+          }
+        }
+      },
+      "block_order": ["platform_1", "platform_2", "platform_3"],
+      "settings": {
+        "heading": "Enterprise-plattformar",
+        "text": "Övriga DJI Enterprise-plattformar — kompakt, jordbruk och lasttransport.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_matrice_models": {
+      "type": "enterprise-matrice-models",
+      "blocks": {
+        "model_1": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 400",
+            "text": "DJI:s nuvarande flaggskeppsplattform för tunga sensorer, LiDAR och avancerade inspektionsuppdrag. Upp till 6 kg nyttolast.",
+            "link_label": "Se Matrice 400",
+            "link": "/collections/matrice-400"
+          }
+        },
+        "model_2": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 350 RTK",
+            "text": "Robust arbetsplattform för Zenmuse H30, L2, P1 m.fl.",
+            "link_label": "Se Matrice 350 RTK",
+            "link": "/collections/dji-matrice-series"
+          }
+        },
+        "model_3": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 30",
+            "text": "Kompakt inspektionsdrönare.",
+            "link_label": "Se Matrice 30",
+            "link": "/collections/dji-matrice-series"
+          }
+        },
+        "model_4": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 30T",
+            "text": "Termisk version av M30.",
+            "link_label": "Se Matrice 30T",
+            "link": "/collections/dji-matrice-series"
+          }
+        },
+        "model_5": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 4E",
+            "text": "Mätning, kartläggning och GIS.",
+            "link_label": "Se Matrice 4E",
+            "link": "/collections/matrice-4"
+          }
+        },
+        "model_6": {
+          "type": "model",
+          "settings": {
+            "title": "DJI Matrice 4T",
+            "text": "Termisk modell för inspektion, räddningstjänst och säkerhet.",
+            "link_label": "Se Matrice 4T",
+            "link": "/collections/matrice-4"
+          }
+        }
+      },
+      "block_order": ["model_1", "model_2", "model_3", "model_4", "model_5", "model_6"],
+      "settings": {
+        "heading": "Aktuella modeller",
+        "text": "DJI Matrice-serien — aktuella enterprise-drönare för inspektion, kartläggning och säkerhet.",
+        "color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_docks": {
+      "type": "enterprise-docks",
+      "blocks": {
+        "dock_1": {
+          "type": "dock",
+          "settings": {
+            "title": "DJI Dock",
+            "text": "Automatiserad drönarhangare för obemannade operationer och schemalagda flygningar.",
+            "link_label": "Se Dock",
+            "link": "/collections/dji-dock"
+          }
+        },
+        "dock_2": {
+          "type": "dock",
+          "settings": {
+            "title": "DJI Dock 2",
+            "text": "Kompakt, väderskyddad dockningsstation med automatisk laddning och start.",
+            "link_label": "Se Dock 2",
+            "link": "/collections/dji-dock"
+          }
+        },
+        "dock_3": {
+          "type": "dock",
+          "settings": {
+            "title": "DJI Dock 3",
+            "text": "Nästa generations drönare-i-box för autonom drift dygnet runt.",
+            "link_label": "Se Dock 3",
+            "link": "/collections/dji-dock"
+          }
+        }
+      },
+      "block_order": ["dock_1", "dock_2", "dock_3"],
+      "settings": {
+        "heading": "DJI Dock-serien",
+        "text": "Drönare-i-box — automatiserade hangarlösningar för fjärrstyrda och schemalagda flygningar dygnet runt.",
+        "color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_dock_models": {
+      "type": "enterprise-dock-models",
+      "blocks": {
+        "dock_model_1": {
+          "type": "dock_model",
+          "settings": {
+            "title": "DJI Matrice 4D",
+            "text": "Dock-kompatibel Matrice 4-plattform för autonom inspektion och kartläggning.",
+            "link_label": "Se Matrice 4D",
+            "link": "/collections/matrice-4"
+          }
+        },
+        "dock_model_2": {
+          "type": "dock_model",
+          "settings": {
+            "title": "DJI Matrice 4TD",
+            "text": "Termisk dock-kompatibel modell för inspektion, räddning och säkerhet.",
+            "link_label": "Se Matrice 4TD",
+            "link": "/collections/matrice-4"
+          }
+        },
+        "dock_model_3": {
+          "type": "dock_model",
+          "settings": {
+            "title": "DJI Matrice 3D",
+            "text": "Kompakt dock-kompatibel drönare för autonom drift med DJI Dock 2.",
+            "link_label": "Se Matrice 3D",
+            "link": "/collections/dji-dock"
+          }
+        },
+        "dock_model_4": {
+          "type": "dock_model",
+          "settings": {
+            "title": "DJI Matrice 3TD",
+            "text": "Termisk dock-kompatibel modell baserad på Matrice 30-plattformen.",
+            "link_label": "Se Matrice 3TD",
+            "link": "/collections/dji-dock"
+          }
+        }
+      },
+      "block_order": ["dock_model_1", "dock_model_2", "dock_model_3", "dock_model_4"],
+      "settings": {
+        "heading": "Dock-specifika modeller",
+        "text": "Drönare optimerade för DJI Dock — autonom start, landning och laddning dygnet runt.",
+        "color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_products": {
+      "type": "enterprise-products",
+      "blocks": {
+        "product_1": {
+          "type": "product",
+          "settings": {
+            "title": "Enterprise-drönare",
+            "text": "Matrice-serien och professionella flygplattformar.",
+            "link_label": "Se drönare",
+            "link": "/collections/enterprise-drones"
+          }
+        },
+        "product_2": {
+          "type": "product",
+          "settings": {
+            "title": "Färdiga paket",
+            "text": "Kompletta lösningar med drönare, tillbehör och mjukvara.",
+            "link_label": "Se paket",
+            "link": "/collections/enterprise-packages"
+          }
+        },
+        "product_3": {
+          "type": "product",
+          "settings": {
+            "title": "Tillbehör & reservdelar",
+            "text": "Batterier, propellrar och originaldelar för enterprise-flottan.",
+            "link_label": "Se tillbehör",
+            "link": "/collections/enterprise-accessories"
+          }
+        }
+      },
+      "block_order": ["product_1", "product_2", "product_3"],
+      "settings": {
+        "heading": "Enterprise-produkter",
+        "text": "Drönare, tillbehör och kompletta paket för professionell användning.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_payloads": {
+      "type": "enterprise-payloads",
+      "blocks": {
+        "payload_1": {
+          "type": "payload",
+          "settings": {
+            "display_style": "compact",
+            "series_icon": "camera",
+            "title": "DJI Zenmuse H30T",
+            "text": "Hybrid multisensor med termisk kamera, 40× zoom och laseravståndsmätare.",
+            "link_label": "Se H30T",
+            "link": "/collections/zenmuse-h30"
+          }
+        },
+        "payload_2": {
+          "type": "payload",
+          "settings": {
+            "display_style": "compact",
+            "series_icon": "camera",
+            "title": "DJI Zenmuse H30",
+            "text": "Hybrid multisensor med 40× optisk zoom och laseravståndsmätare.",
+            "link_label": "Se H30",
+            "link": "/collections/zenmuse-h30"
+          }
+        },
+        "payload_3": {
+          "type": "payload",
+          "settings": {
+            "display_style": "featured",
+            "series_icon": "lidar",
+            "title": "DJI Zenmuse L2",
+            "text": "Högupplöst LiDAR för kartläggning, volymberäkning och skogsinventering.",
+            "link_label": "Se L2",
+            "link": "/collections/zenmuse-l2"
+          }
+        },
+        "payload_4": {
+          "type": "payload",
+          "settings": {
+            "title": "DJI Zenmuse L3",
+            "text": "LiDAR-sensor för precisionkartläggning och 3D-modellering.",
+            "link_label": "Se L3",
+            "link": "/collections/enterprise-sensors"
+          }
+        },
+        "payload_5": {
+          "type": "payload",
+          "settings": {
+            "display_style": "featured",
+            "series_icon": "photogrammetry",
+            "title": "DJI Zenmuse P1",
+            "text": "Fullformat fotogrammetri-kamera för precisionsmätning och 3D-modellering.",
+            "link_label": "Se P1",
+            "link": "/collections/zenmuse-p1"
+          }
+        },
+        "payload_6": {
+          "type": "payload",
+          "settings": {
+            "title": "DJI Zenmuse V1",
+            "text": "Röstförstärkare och kommunikationspayload för räddning och säkerhet.",
+            "link_label": "Se V1",
+            "link": "/collections/enterprise-sensors"
+          }
+        },
+        "payload_7": {
+          "type": "payload",
+          "settings": {
+            "title": "DJI Zenmuse S1",
+            "text": "Sökljus-payload med LED och IR-belysning för nattinsatser.",
+            "link_label": "Se S1",
+            "link": "/collections/enterprise-sensors"
+          }
+        }
+      },
+      "block_order": [
+        "payload_1",
+        "payload_2",
+        "payload_3",
+        "payload_4",
+        "payload_5",
+        "payload_6",
+        "payload_7"
+      ],
+      "settings": {
+        "heading": "Enterprise-sensorplattformar",
+        "text": "Vanliga nyttolaster för Matrice-plattformarna — Zenmuse-sensorer för inspektion, kartläggning och säkerhet.",
+        "color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp att välja rätt lösning?",
+        "text": "Vårt enterprise-team hjälper dig med offert, projektering, utbildning och löpande support.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "enterprise_hero",
+    "enterprise_trust_bar",
+    "enterprise_industries",
+    "enterprise_platforms",
+    "enterprise_matrice_models",
+    "enterprise_docks",
+    "enterprise_dock_models",
+    "enterprise_products",
+    "enterprise_payloads",
+    "enterprise_contact"
+  ]
+}

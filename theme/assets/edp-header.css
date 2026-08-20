@@ -1,0 +1,435 @@
+/* EuroDroneParts — Phase 1 header */
+
+:root {
+  --edp-utility-height: 3.6rem;
+  --edp-accent: 0, 163, 224;
+  --edp-slate: 26, 35, 50;
+}
+
+/* Sticky header group — utility bar, announcement and main nav as one fixed unit */
+#shopify-section-group-header-group,
+.shopify-section-group.shopify-section-group-header-group {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+body.edp-header-fixed #MainContent {
+  /* Fallback height until JS measures the fixed header group */
+  padding-top: var(--header-height, 12rem);
+  flex: 1 0 auto;
+}
+
+/* Fixed header is out of flow — flex layout avoids an empty 1fr grid row */
+body.edp-header-fixed {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body.edp-header-fixed > .shopify-section-group-header-group {
+  flex: 0 0 0;
+  height: 0;
+  overflow: visible;
+}
+
+body.edp-header-fixed > .shopify-section-group-footer-group {
+  flex: 0 0 auto;
+  margin-top: auto;
+}
+
+/* Opaque section backgrounds inside the fixed header (fixed + background-attachment:fixed breaks on mobile) */
+#shopify-section-group-header-group .gradient,
+.shopify-section-group-header-group .gradient {
+  background-attachment: scroll;
+}
+
+#shopify-section-group-header-group .edp-utility-bar,
+#shopify-section-group-header-group .utility-bar,
+#shopify-section-group-header-group .header-wrapper,
+.shopify-section-group-header-group .edp-utility-bar,
+.shopify-section-group-header-group .utility-bar,
+.shopify-section-group-header-group .header-wrapper {
+  background-color: rgb(var(--color-background));
+}
+
+#shopify-section-group-header-group,
+.shopify-section-group-header-group {
+  isolation: isolate;
+}
+
+html.shopify-design-mode #shopify-section-group-header-group,
+html.shopify-design-mode .shopify-section-group.shopify-section-group-header-group {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  width: auto;
+  z-index: auto;
+}
+
+html.shopify-design-mode body.edp-header-fixed #MainContent {
+  padding-top: 0;
+}
+
+#shopify-section-group-header-group .shopify-section,
+#shopify-section-group-header-group .section-header,
+#shopify-section-group-header-group .section-header.shopify-section-header-sticky,
+.shopify-section-group.shopify-section-group-header-group .shopify-section,
+.shopify-section-group.shopify-section-group-header-group .section-header,
+.shopify-section-group.shopify-section-group-header-group .section-header.shopify-section-header-sticky {
+  position: static;
+  top: auto;
+  margin-bottom: 0;
+}
+
+#shopify-section-group-header-group .header-wrapper,
+.shopify-section-group.shopify-section-group-header-group .header-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+/* Premium dark header chrome — same on every page as the homepage */
+#shopify-section-group-header-group,
+.shopify-section-group.shopify-section-group-header-group {
+  background: #000;
+  background-color: #000;
+}
+
+#shopify-section-group-header-group .edp-utility-bar,
+#shopify-section-group-header-group .utility-bar,
+#shopify-section-group-header-group .announcement-bar,
+#shopify-section-group-header-group .header-wrapper,
+.shopify-section-group.shopify-section-group-header-group .edp-utility-bar,
+.shopify-section-group.shopify-section-group-header-group .utility-bar,
+.shopify-section-group.shopify-section-group-header-group .announcement-bar,
+.shopify-section-group.shopify-section-group-header-group .header-wrapper {
+  --gradient-background: #000;
+  background: #000;
+  background-color: #000;
+  color: #fff;
+}
+
+#shopify-section-group-header-group .header__heading-link,
+#shopify-section-group-header-group .header__shop-name,
+#shopify-section-group-header-group .announcement-bar__message,
+.shopify-section-group.shopify-section-group-header-group .header__heading-link,
+.shopify-section-group.shopify-section-group-header-group .header__shop-name,
+.shopify-section-group.shopify-section-group-header-group .announcement-bar__message {
+  color: #fff;
+}
+
+#shopify-section-group-header-group .header__icon .icon,
+#shopify-section-group-header-group .header__icon--menu .icon,
+.shopify-section-group.shopify-section-group-header-group .header__icon .icon,
+.shopify-section-group.shopify-section-group-header-group .header__icon--menu .icon {
+  color: rgb(var(--edp-accent));
+}
+
+/* Utility bar */
+.edp-utility-bar {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  z-index: 4;
+}
+
+.edp-utility-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+  min-height: var(--edp-utility-height);
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+@media screen and (max-width: 749px) {
+  .edp-utility-bar__inner {
+    justify-content: center;
+  }
+}
+
+.edp-utility-bar__segment {
+  display: inline-flex;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  flex-shrink: 0;
+}
+
+.edp-utility-bar__segment-btn {
+  display: inline-flex;
+  align-items: center;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: rgba(var(--color-foreground), 0.75);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.edp-utility-bar__segment-btn:hover {
+  color: rgb(var(--color-foreground));
+}
+
+.edp-utility-bar__segment-btn.is-active {
+  background: rgb(var(--edp-slate));
+  color: #fff;
+}
+
+.edp-utility-bar__segment-btn:focus-visible {
+  outline: 0.2rem solid rgb(var(--edp-accent));
+  outline-offset: 0.2rem;
+}
+
+.edp-utility-bar__links {
+  display: none;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 750px) {
+  .edp-utility-bar__links {
+    display: flex;
+  }
+}
+
+.edp-utility-bar__link {
+  color: rgba(var(--color-foreground), 0.75);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.edp-utility-bar__link:hover {
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+}
+
+.edp-utility-bar__link--accent {
+  color: rgb(var(--edp-accent));
+  font-weight: 600;
+}
+
+/* EDP mega menu extensions */
+.edp-mega-menu__content-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+}
+
+@media screen and (min-width: 990px) {
+  .edp-mega-menu__content-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+  }
+}
+
+.edp-mega-menu__promo {
+  display: none;
+  min-width: 22rem;
+  max-width: 28rem;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  background: rgba(var(--color-foreground), 0.04);
+}
+
+@media screen and (min-width: 990px) {
+  .edp-mega-menu__promo {
+    display: block;
+  }
+}
+
+.edp-mega-menu__promo-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.edp-mega-menu__promo-heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.edp-mega-menu__promo-text {
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.edp-mega-menu__list--edp {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media screen and (max-width: 989px) {
+  .edp-mega-menu__list--edp {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.edp-drawer-panel[hidden] {
+  display: none !important;
+}
+
+.edp-drawer-footer {
+  padding: 1.6rem 2rem 2rem;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.edp-drawer-footer__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4.4rem;
+  padding: 0 1.6rem;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+}
+
+.edp-drawer-footer__cta--primary {
+  background: rgb(var(--edp-accent));
+  color: #fff;
+}
+
+.edp-drawer-footer__cta--secondary {
+  background: transparent;
+  color: rgb(var(--color-foreground));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+}
+
+/* Hide inactive segment menus on desktop */
+.edp-header-menu[hidden] {
+  display: none !important;
+}
+
+/* Mobile text logo — prevent "Europe / Drone / Parts" vertical stacking */
+@media screen and (max-width: 749px) {
+  .header--has-menu {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    column-gap: 0.8rem;
+  }
+
+  .header__heading-link {
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+    padding: 0.6rem 0.4rem;
+    max-width: 100%;
+  }
+
+  .header__heading-link .header__shop-name {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1.1rem, 3.6vw, 1.5rem);
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+  }
+
+  .header--mobile-left .header__heading,
+  .header--mobile-left .header__heading-link {
+    justify-self: start;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .header--mobile-center .header__heading-link .header__shop-name {
+    text-align: center;
+  }
+}
+
+/* Theme editor — EuroDroneParts-navigation help panel */
+.edp-header-editor-panel {
+  display: none;
+  position: relative;
+  z-index: 20;
+  margin: 0 1.6rem 1.2rem;
+  padding: 1.4rem 1.6rem;
+  border: 0.15rem solid rgba(0, 163, 224, 0.55);
+  border-radius: 0.8rem;
+  background: rgba(0, 163, 224, 0.12);
+  pointer-events: auto;
+}
+
+.header-wrapper--design-mode .edp-header-editor-panel,
+html.shopify-design-mode .edp-header-editor-panel {
+  display: block;
+}
+
+.edp-header-editor-panel__title {
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.edp-header-editor-panel__text {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.edp-header-editor-panel__menus {
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.edp-header-editor-panel__menus li {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.edp-header-editor-panel__menu-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+.edp-header-editor-panel__menu-handle {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  background: rgba(var(--color-foreground), 0.08);
+  font-size: 1.2rem;
+}
+
+.edp-header-editor-panel__menu-count {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.edp-header-editor-panel__note {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.45;
+  text-align: center;
+  opacity: 0.9;
+}
+
+html.shopify-design-mode .edp-utility-bar__segment-btn {
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}

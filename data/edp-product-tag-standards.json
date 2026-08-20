@@ -1,0 +1,160 @@
+{
+  "version": "2.0",
+  "note": "Reference standard — products NOT modified in this phase. Apply via future tagging pass.",
+  "dimensions": {
+    "brand": [
+      "brand:dji"
+    ],
+    "manufacturer": [
+      "manufacturer:dji"
+    ],
+    "family": [
+      "family:matrice",
+      "family:mavic-enterprise",
+      "family:flycart",
+      "family:agras",
+      "family:neo",
+      "family:mini",
+      "family:air",
+      "family:avata"
+    ],
+    "model": [
+      "model:matrice-350",
+      "model:matrice-400",
+      "model:flycart-30",
+      "model:flycart-100"
+    ],
+    "payload": [
+      "payload:lidar",
+      "payload:thermal",
+      "payload:mapping",
+      "payload:airdrop",
+      "payload:speaker",
+      "payload:searchlight"
+    ],
+    "industry": [
+      "industry:inspection",
+      "industry:energy",
+      "industry:agriculture",
+      "industry:forestry",
+      "industry:mapping",
+      "industry:logistics",
+      "industry:public-safety"
+    ],
+    "compat": "compat:[model] — one tag per compatible airframe"
+  }
+}
+}
+  "version": "1.0",
+  "status": "proposed",
+  "scope": "EuroDroneParts enterprise + industry taxonomy",
+  "notes": [
+    "Tags are additive — products may carry multiple tags.",
+    "Use lowercase kebab-case for machine tags; display labels may differ.",
+    "Do NOT bulk-retag products in Phase 2 — standards are for future catalog governance.",
+    "Shopify smart collections can match TAG column until metafields are introduced."
+  ],
+  "dimensions": {
+    "brand": {
+      "description": "Commercial brand sold on storefront",
+      "format": "kebab-case",
+      "required": true,
+      "examples": ["dji", "polarpro", "pgytech", "czi", "brdrc", "master-airscrew"],
+      "shopify_mapping": "vendor (normalized) OR tag brand:<value>"
+    },
+    "manufacturer": {
+      "description": "OEM / actual manufacturer when different from brand",
+      "format": "kebab-case",
+      "required": false,
+      "examples": ["dji", "walkera", "czi", "livox"],
+      "shopify_mapping": "tag manufacturer:<value>"
+    },
+    "drone_family": {
+      "description": "Platform family for compatibility grouping",
+      "format": "kebab-case",
+      "required_for": ["enterprise", "flycart", "consumer-dji"],
+      "values": {
+        "consumer": ["mini", "air", "mavic", "avata", "neo", "flip", "fpv"],
+        "enterprise": ["matrice", "mavic-enterprise", "agras", "marvic", "flycart"],
+        "legacy": ["phantom", "inspire", "mavic-2", "air-2", "mini-2"]
+      },
+      "shopify_mapping": "tag family:<value>"
+    },
+    "drone_model": {
+      "description": "Specific model line for parts/accessory matching",
+      "format": "kebab-case",
+      "required_for": ["spare-parts", "model-specific-accessories"],
+      "examples": [
+        "matrice-4", "matrice-400", "matrice-350-rtk", "matrice-30",
+        "mavic-3-enterprise", "mavic-3m", "agras-t50", "flycart-100", "flycart-30",
+        "mini-4-pro", "air-3s", "avata-2"
+      ],
+      "shopify_mapping": "tag model:<value> OR dji.compatible_models metafield"
+    },
+    "payload_type": {
+      "description": "Sensor, speaker, spotlight, drop system, etc.",
+      "format": "kebab-case",
+      "values": [
+        "thermal", "multispectral", "lidar", "zoom-camera", "speaker",
+        "spotlight", "airdrop", "mapping-camera", "gas-detector", "rtk-module"
+      ],
+      "shopify_mapping": "tag payload:<value>"
+    },
+    "industry": {
+      "description": "Vertical / use-case for Industry Solutions landing pages",
+      "format": "kebab-case",
+      "values": [
+        "inspection", "energy-infrastructure", "agriculture", "forestry",
+        "surveying-mapping", "transport-logistics", "public-safety-rescue"
+      ],
+      "shopify_mapping": "tag industry:<value>"
+    },
+    "compatibility": {
+      "description": "Compatible platform(s) — multi-value",
+      "format": "kebab-case",
+      "examples": [
+        "matrice-350-rtk", "matrice-30", "matrice-4", "mavic-3-enterprise",
+        "mavic-3m", "agras-t40", "flycart-100"
+      ],
+      "shopify_mapping": "tag compat:<value> OR dji.compatible_models metafield list"
+    }
+  },
+  "product_type_standards": {
+    "enterprise_drone": "Enterprise Drönare",
+    "enterprise_drone_alt": "Drönare för företag",
+    "enterprise_accessory": "Enterprise Tillbehör",
+    "enterprise_propeller": "Propellrar",
+    "flycart": "Enterprise Drönare",
+    "sensor_payload": "Enterprise Tillbehör",
+    "spare_part": "Reservdelar",
+    "consumer_drone": "Drönare",
+    "consumer_accessory": "Drönartillbehör"
+  },
+  "tagging_examples": [
+    {
+      "product": "DJI Matrice 4 Enterprise Battery",
+      "tags": ["brand:dji", "family:matrice", "model:matrice-4", "industry:inspection", "compat:matrice-4"],
+      "product_type": "Enterprise Tillbehör"
+    },
+    {
+      "product": "Zenmuse H30T Thermal Payload",
+      "tags": ["brand:dji", "payload:thermal", "payload:zoom-camera", "family:matrice", "compat:matrice-350-rtk", "compat:matrice-4"],
+      "product_type": "Enterprise Tillbehör"
+    },
+    {
+      "product": "DJI FlyCart 100",
+      "tags": ["brand:dji", "family:flycart", "model:flycart-100", "industry:transport-logistics"],
+      "product_type": "Enterprise Drönare"
+    },
+    {
+      "product": "Search & Rescue Thermal Kit",
+      "tags": ["payload:thermal", "industry:public-safety-rescue", "industry:inspection", "compat:mavic-3-enterprise"],
+      "product_type": "Enterprise Tillbehör"
+    }
+  ],
+  "migration_phases": {
+    "phase_2": "Document standards only — no product changes",
+    "phase_3": "Apply tags on new imports + gradual backfill via catalog_field_audit",
+    "phase_4": "Switch smart collections from legacy Swedish tags to standardized tags"
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "generated_at": "2026-06-13T10:25:19.965Z",
+  "collections": [
+    {
+      "handle": "dji-matrice-4-serie",
+      "url": "/collections/dji-matrice-4-serie",
+      "projected": 22
+    },
+    {
+      "handle": "matrice-4e",
+      "url": "/collections/matrice-4e",
+      "projected": 1
+    },
+    {
+      "handle": "matrice-4t",
+      "url": "/collections/matrice-4t",
+      "projected": 6
+    },
+    {
+      "handle": "dji-matrice-4-tillbehor",
+      "url": "/collections/dji-matrice-4-tillbehor",
+      "projected": 15
+    },
+    {
+      "handle": "matrice-4-spare-parts",
+      "url": "/collections/matrice-4-spare-parts",
+      "projected": 1
+    },
+    {
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "url": "/collections/dji-matrice-30-serie-tillbehor",
+      "projected": 9
+    },
+    {
+      "handle": "matrice-30t",
+      "url": "/collections/matrice-30t",
+      "projected": 2
+    },
+    {
+      "handle": "matrice-300-rtk",
+      "url": "/collections/matrice-300-rtk",
+      "projected": 1
+    },
+    {
+      "handle": "zenmuse-p1",
+      "url": "/collections/zenmuse-p1",
+      "projected": 20
+    },
+    {
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "url": "/collections/dji-matrice-350-rtk-tillbehor",
+      "projected": 8
+    },
+    {
+      "handle": "dji-matrice-400-serien",
+      "url": "/collections/dji-matrice-400-serien",
+      "projected": 9
+    },
+    {
+      "handle": "matrice-400-accessories",
+      "url": "/collections/matrice-400-accessories",
+      "projected": 5
+    },
+    {
+      "handle": "matrice-3-series",
+      "url": "/collections/matrice-3-series",
+      "projected": 2
+    },
+    {
+      "handle": "matrice-3d",
+      "url": "/collections/matrice-3d",
+      "projected": 2
+    },
+    {
+      "handle": "matrice-3td",
+      "url": "/collections/matrice-3td",
+      "projected": 1
+    },
+    {
+      "handle": "dji-dock-2",
+      "url": "/collections/dji-dock-2",
+      "projected": 3
+    },
+    {
+      "handle": "matrice-3-accessories",
+      "url": "/collections/matrice-3-accessories",
+      "projected": 2
+    },
+    {
+      "handle": "dji-mavic-3-enterprise",
+      "url": "/collections/dji-mavic-3-enterprise",
+      "projected": 5
+    },
+    {
+      "handle": "mavic-3-thermal",
+      "url": "/collections/mavic-3-thermal",
+      "projected": 8
+    },
+    {
+      "handle": "dji-mavic-serien-enterprise",
+      "url": "/collections/dji-mavic-serien-enterprise",
+      "projected": 11
+    },
+    {
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "url": "/collections/dji-mavic-3m-dronare-tillbehor",
+      "projected": 5
+    },
+    {
+      "handle": "dji-agras-dronare",
+      "url": "/collections/dji-agras-dronare",
+      "projected": 4
+    },
+    {
+      "handle": "agras-t50",
+      "url": "/collections/agras-t50",
+      "projected": 3
+    },
+    {
+      "handle": "agras-accessories",
+      "url": "/collections/agras-accessories",
+      "projected": 1
+    },
+    {
+      "handle": "enterprise-dronare",
+      "url": "/collections/enterprise-dronare",
+      "projected": 18
+    },
+    {
+      "handle": "dji-flycart-serien",
+      "url": "/collections/dji-flycart-serien",
+      "projected": 2
+    },
+    {
+      "handle": "flycart-30",
+      "url": "/collections/flycart-30",
+      "projected": 2
+    },
+    {
+      "handle": "dji-flycart-100-lastdronare",
+      "url": "/collections/dji-flycart-100-lastdronare",
+      "projected": 2
+    },
+    {
+      "handle": "flycart-batteries",
+      "url": "/collections/flycart-batteries",
+      "projected": 1
+    },
+    {
+      "handle": "flycart-payload-systems",
+      "url": "/collections/flycart-payload-systems",
+      "projected": 3
+    },
+    {
+      "handle": "lidar-mapping",
+      "url": "/collections/lidar-mapping",
+      "projected": 4
+    },
+    {
+      "handle": "lidar-sensors",
+      "url": "/collections/lidar-sensors",
+      "projected": 4
+    },
+    {
+      "handle": "zenmuse-l2",
+      "url": "/collections/zenmuse-l2",
+      "projected": 11
+    },
+    {
+      "handle": "livox-lidar",
+      "url": "/collections/livox-lidar",
+      "projected": 1
+    },
+    {
+      "handle": "dronare-med-varmekamera",
+      "url": "/collections/dronare-med-varmekamera",
+      "projected": 29
+    },
+    {
+      "handle": "zenmuse-h30t",
+      "url": "/collections/zenmuse-h30t",
+      "projected": 1
+    },
+    {
+      "handle": "enterprise-belysning",
+      "url": "/collections/enterprise-belysning",
+      "projected": 13
+    },
+    {
+      "handle": "enterprise-hogtalarsystem",
+      "url": "/collections/enterprise-hogtalarsystem",
+      "projected": 23
+    },
+    {
+      "handle": "thermal-systems-sar",
+      "url": "/collections/thermal-systems-sar",
+      "projected": 26
+    },
+    {
+      "handle": "airdrop-system",
+      "url": "/collections/airdrop-system",
+      "projected": 24
+    },
+    {
+      "handle": "enterprise-lyftsystem",
+      "url": "/collections/enterprise-lyftsystem",
+      "projected": 5
+    },
+    {
+      "handle": "parachute-systems",
+      "url": "/collections/parachute-systems",
+      "projected": 2
+    },
+    {
+      "handle": "flight-safety-systems",
+      "url": "/collections/flight-safety-systems",
+      "projected": 11
+    },
+    {
+      "handle": "inspection-drones",
+      "url": "/collections/inspection-drones",
+      "projected": 25
+    },
+    {
+      "handle": "energy-infrastructure-drones",
+      "url": "/collections/energy-infrastructure-drones",
+      "projected": 9
+    },
+    {
+      "handle": "agriculture-drones",
+      "url": "/collections/agriculture-drones",
+      "projected": 4
+    },
+    {
+      "handle": "forestry-drones",
+      "url": "/collections/forestry-drones",
+      "projected": 12
+    },
+    {
+      "handle": "surveying-mapping-drones",
+      "url": "/collections/surveying-mapping-drones",
+      "projected": 69
+    },
+    {
+      "handle": "transport-logistics-drones",
+      "url": "/collections/transport-logistics-drones",
+      "projected": 3
+    },
+    {
+      "handle": "public-safety-drones",
+      "url": "/collections/public-safety-drones",
+      "projected": 38
+    },
+    {
+      "handle": "reservdelar-dji-enterprise",
+      "url": "/collections/reservdelar-dji-enterprise",
+      "projected": 490
+    },
+    {
+      "handle": "matrice-spare-parts-hub",
+      "url": "/collections/matrice-spare-parts-hub",
+      "projected": 2
+    },
+    {
+      "handle": "dji-mini-3-tillbehor",
+      "url": "/collections/dji-mini-3-tillbehor",
+      "projected": 1122
+    },
+    {
+      "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+      "url": "/collections/dji-air-3-tillbehor-omfattande-sortiment",
+      "projected": 518
+    },
+    {
+      "handle": "dji-mavic-3-tillbehor",
+      "url": "/collections/dji-mavic-3-tillbehor",
+      "projected": 759
+    },
+    {
+      "handle": "dji-avata-2-tillbehor",
+      "url": "/collections/dji-avata-2-tillbehor",
+      "projected": 525
+    },
+    {
+      "handle": "reparation-dji-neo-reservdelar",
+      "url": "/collections/reparation-dji-neo-reservdelar",
+      "projected": 595
+    },
+    {
+      "handle": "dji-flip-tillbehor",
+      "url": "/collections/dji-flip-tillbehor",
+      "projected": 495
+    },
+    {
+      "handle": "drone-batteries-spare-parts",
+      "url": "/collections/drone-batteries-spare-parts",
+      "projected": 12
+    },
+    {
+      "handle": "dronare-propeller-tillbehor",
+      "url": "/collections/dronare-propeller-tillbehor",
+      "projected": 366
+    },
+    {
+      "handle": "reservdelar-gimbal-dronare-motorer",
+      "url": "/collections/reservdelar-gimbal-dronare-motorer",
+      "projected": 233
+    },
+    {
+      "handle": "drone-motors-spare-parts",
+      "url": "/collections/drone-motors-spare-parts",
+      "projected": 154
+    },
+    {
+      "handle": "dronarelektronik-flight-components",
+      "url": "/collections/dronarelektronik-flight-components",
+      "projected": 175
+    },
+    {
+      "handle": "batterier",
+      "url": "/collections/batterier",
+      "projected": 399
+    },
+    {
+      "handle": "dji-batteries",
+      "url": "/collections/dji-batteries",
+      "projected": 60
+    },
+    {
+      "handle": "enterprise-batteries",
+      "url": "/collections/enterprise-batteries",
+      "projected": 1
+    },
+    {
+      "handle": "flycart-batteries-acc",
+      "url": "/collections/flycart-batteries-acc",
+      "projected": 1
+    },
+    {
+      "handle": "charging-hubs",
+      "url": "/collections/charging-hubs",
+      "projected": 20
+    },
+    {
+      "handle": "batterier",
+      "url": "/collections/batterier",
+      "projected": 190
+    },
+    {
+      "handle": "filter-till-dronare",
+      "url": "/collections/filter-till-dronare",
+      "projected": 1034
+    },
+    {
+      "handle": "dronarryggsack-vaskor",
+      "url": "/collections/dronarryggsack-vaskor",
+      "projected": 1005
+    },
+    {
+      "handle": "dji-enterprise-fjarrkontroller",
+      "url": "/collections/dji-enterprise-fjarrkontroller",
+      "projected": 22
+    },
+    {
+      "handle": "enterprise-tillbehor",
+      "url": "/collections/enterprise-tillbehor",
+      "projected": 31
+    },
+    {
+      "handle": "dronartillbehor-kop",
+      "url": "/collections/dronartillbehor-kop",
+      "projected": 944
+    }
+  ],
+  "pages": []
+}

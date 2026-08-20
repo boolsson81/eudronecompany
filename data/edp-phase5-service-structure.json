@@ -1,0 +1,686 @@
+{
+  "hub": {
+    "handle": "service-support",
+    "title": "Service & Support",
+    "url": "/pages/service-support"
+  },
+  "sections": [
+    {
+      "key": "dji-service",
+      "title": "DJI Service",
+      "hub": {
+        "handle": "dji-service",
+        "title": "DJI Service",
+        "url": "/pages/dji-service"
+      }
+    },
+    {
+      "key": "dji-enterprise-service",
+      "title": "DJI Enterprise Service",
+      "hub": {
+        "handle": "dji-enterprise-service",
+        "title": "DJI Enterprise Service",
+        "url": "/pages/dji-enterprise-service"
+      }
+    },
+    {
+      "key": "flycart-service",
+      "title": "FlyCart Service",
+      "hub": {
+        "handle": "flycart-service",
+        "title": "FlyCart Service",
+        "url": "/pages/flycart-service"
+      }
+    },
+    {
+      "key": "matrice-service",
+      "title": "Matrice Service",
+      "hub": {
+        "handle": "matrice-service",
+        "title": "Matrice Service",
+        "url": "/pages/matrice-service"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "handle": "felsokning",
+      "title": "Felsökning",
+      "section": "core",
+      "url": "/pages/felsokning",
+      "exists": false
+    },
+    {
+      "handle": "reparation",
+      "title": "Reparation",
+      "section": "core",
+      "url": "/pages/reparation",
+      "exists": false
+    },
+    {
+      "handle": "kalibrering",
+      "title": "Kalibrering",
+      "section": "core",
+      "url": "/pages/kalibrering",
+      "exists": false
+    },
+    {
+      "handle": "firmwareuppdatering",
+      "title": "Firmwareuppdatering",
+      "section": "core",
+      "url": "/pages/firmwareuppdatering",
+      "exists": false
+    },
+    {
+      "handle": "batteritest",
+      "title": "Batteritest",
+      "section": "core",
+      "url": "/pages/batteritest",
+      "exists": false
+    },
+    {
+      "handle": "flygsakerhetskontroll",
+      "title": "Flygsäkerhetskontroll",
+      "section": "core",
+      "url": "/pages/flygsakerhetskontroll",
+      "exists": false
+    },
+    {
+      "handle": "garantihantering",
+      "title": "Garantihantering",
+      "section": "core",
+      "url": "/pages/garantihantering",
+      "exists": false
+    },
+    {
+      "handle": "rma",
+      "title": "RMA",
+      "section": "core",
+      "url": "/pages/rma",
+      "exists": false
+    },
+    {
+      "handle": "serviceanmalan",
+      "title": "Serviceanmälan",
+      "section": "core",
+      "url": "/pages/serviceanmalan",
+      "exists": false
+    },
+    {
+      "handle": "support",
+      "title": "Support",
+      "section": "core",
+      "url": "/pages/support",
+      "exists": false
+    },
+    {
+      "handle": "dock-service",
+      "title": "Dock Service",
+      "section": "enterprise",
+      "url": "/pages/dock-service",
+      "exists": false
+    },
+    {
+      "handle": "rtk-kalibrering",
+      "title": "RTK Kalibrering",
+      "section": "enterprise",
+      "url": "/pages/rtk-kalibrering",
+      "exists": false
+    },
+    {
+      "handle": "payload-service",
+      "title": "Payload Service",
+      "section": "enterprise",
+      "url": "/pages/payload-service",
+      "exists": false
+    },
+    {
+      "handle": "sensor-service",
+      "title": "Sensor Service",
+      "section": "enterprise",
+      "url": "/pages/sensor-service",
+      "exists": false
+    }
+  ],
+  "menu": {
+    "handle": "service-support-v6",
+    "title": "Service & Support",
+    "note": "Additive menu — does not modify main-menu or enterprise-dr-nare",
+    "items": [
+      {
+        "title": "Service & Support",
+        "url": "/pages/service-support"
+      },
+      {
+        "title": "DJI Service",
+        "url": "/pages/dji-service",
+        "items": [
+          {
+            "title": "Felsökning",
+            "url": "/pages/felsokning"
+          },
+          {
+            "title": "Reparation",
+            "url": "/pages/reparation"
+          },
+          {
+            "title": "Kalibrering",
+            "url": "/pages/kalibrering"
+          },
+          {
+            "title": "Firmwareuppdatering",
+            "url": "/pages/firmwareuppdatering"
+          },
+          {
+            "title": "Batteritest",
+            "url": "/pages/batteritest"
+          },
+          {
+            "title": "Flygsäkerhetskontroll",
+            "url": "/pages/flygsakerhetskontroll"
+          },
+          {
+            "title": "Garantihantering",
+            "url": "/pages/garantihantering"
+          },
+          {
+            "title": "RMA",
+            "url": "/pages/rma"
+          },
+          {
+            "title": "Serviceanmälan",
+            "url": "/pages/serviceanmalan"
+          },
+          {
+            "title": "Support",
+            "url": "/pages/support"
+          }
+        ]
+      },
+      {
+        "title": "DJI Enterprise Service",
+        "url": "/pages/dji-enterprise-service",
+        "items": [
+          {
+            "title": "Felsökning",
+            "url": "/pages/felsokning"
+          },
+          {
+            "title": "Reparation",
+            "url": "/pages/reparation"
+          },
+          {
+            "title": "Kalibrering",
+            "url": "/pages/kalibrering"
+          },
+          {
+            "title": "Firmwareuppdatering",
+            "url": "/pages/firmwareuppdatering"
+          },
+          {
+            "title": "Batteritest",
+            "url": "/pages/batteritest"
+          },
+          {
+            "title": "Flygsäkerhetskontroll",
+            "url": "/pages/flygsakerhetskontroll"
+          },
+          {
+            "title": "Garantihantering",
+            "url": "/pages/garantihantering"
+          },
+          {
+            "title": "RMA",
+            "url": "/pages/rma"
+          },
+          {
+            "title": "Serviceanmälan",
+            "url": "/pages/serviceanmalan"
+          },
+          {
+            "title": "Support",
+            "url": "/pages/support"
+          },
+          {
+            "title": "Dock Service",
+            "url": "/pages/dock-service"
+          },
+          {
+            "title": "RTK Kalibrering",
+            "url": "/pages/rtk-kalibrering"
+          },
+          {
+            "title": "Payload Service",
+            "url": "/pages/payload-service"
+          },
+          {
+            "title": "Sensor Service",
+            "url": "/pages/sensor-service"
+          }
+        ]
+      },
+      {
+        "title": "FlyCart Service",
+        "url": "/pages/flycart-service",
+        "items": [
+          {
+            "title": "Felsökning",
+            "url": "/pages/felsokning"
+          },
+          {
+            "title": "Reparation",
+            "url": "/pages/reparation"
+          },
+          {
+            "title": "Kalibrering",
+            "url": "/pages/kalibrering"
+          },
+          {
+            "title": "Firmwareuppdatering",
+            "url": "/pages/firmwareuppdatering"
+          },
+          {
+            "title": "Batteritest",
+            "url": "/pages/batteritest"
+          },
+          {
+            "title": "Flygsäkerhetskontroll",
+            "url": "/pages/flygsakerhetskontroll"
+          },
+          {
+            "title": "Garantihantering",
+            "url": "/pages/garantihantering"
+          },
+          {
+            "title": "RMA",
+            "url": "/pages/rma"
+          },
+          {
+            "title": "Serviceanmälan",
+            "url": "/pages/serviceanmalan"
+          },
+          {
+            "title": "Support",
+            "url": "/pages/support"
+          }
+        ]
+      },
+      {
+        "title": "Matrice Service",
+        "url": "/pages/matrice-service",
+        "items": [
+          {
+            "title": "Felsökning",
+            "url": "/pages/felsokning"
+          },
+          {
+            "title": "Reparation",
+            "url": "/pages/reparation"
+          },
+          {
+            "title": "Kalibrering",
+            "url": "/pages/kalibrering"
+          },
+          {
+            "title": "Firmwareuppdatering",
+            "url": "/pages/firmwareuppdatering"
+          },
+          {
+            "title": "Batteritest",
+            "url": "/pages/batteritest"
+          },
+          {
+            "title": "Flygsäkerhetskontroll",
+            "url": "/pages/flygsakerhetskontroll"
+          },
+          {
+            "title": "Garantihantering",
+            "url": "/pages/garantihantering"
+          },
+          {
+            "title": "RMA",
+            "url": "/pages/rma"
+          },
+          {
+            "title": "Serviceanmälan",
+            "url": "/pages/serviceanmalan"
+          },
+          {
+            "title": "Support",
+            "url": "/pages/support"
+          },
+          {
+            "title": "Dock Service",
+            "url": "/pages/dock-service"
+          },
+          {
+            "title": "RTK Kalibrering",
+            "url": "/pages/rtk-kalibrering"
+          },
+          {
+            "title": "Payload Service",
+            "url": "/pages/payload-service"
+          },
+          {
+            "title": "Sensor Service",
+            "url": "/pages/sensor-service"
+          }
+        ]
+      }
+    ]
+  },
+  "links": [
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/felsokning"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/felsokning"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/felsokning"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/felsokning"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/felsokning"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/reparation"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/reparation"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/reparation"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/reparation"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/reparation"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/kalibrering"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/kalibrering"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/kalibrering"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/kalibrering"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/kalibrering"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/firmwareuppdatering"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/firmwareuppdatering"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/firmwareuppdatering"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/firmwareuppdatering"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/firmwareuppdatering"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/batteritest"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/batteritest"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/batteritest"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/batteritest"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/batteritest"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/flygsakerhetskontroll"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/flygsakerhetskontroll"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/flygsakerhetskontroll"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/flygsakerhetskontroll"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/flygsakerhetskontroll"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/garantihantering"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/garantihantering"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/garantihantering"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/garantihantering"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/garantihantering"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/rma"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/rma"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/rma"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/rma"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/rma"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/serviceanmalan"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/serviceanmalan"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/serviceanmalan"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/serviceanmalan"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/serviceanmalan"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/support"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/support"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/support"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/support"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/support"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/dock-service"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/rtk-kalibrering"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/payload-service"
+    },
+    {
+      "from": "/pages/service-support",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/dji-service",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/flycart-service",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/dji-enterprise-service",
+      "to": "/pages/sensor-service"
+    },
+    {
+      "from": "/pages/matrice-service",
+      "to": "/pages/sensor-service"
+    }
+  ]
+}

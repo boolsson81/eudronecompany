@@ -1,0 +1,201 @@
+{{ 'edp-header.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'edp-header.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- capture edp_page_segment -%}{% render 'edp-page-segment' %}{%- endcapture -%}
+{%- assign edp_page_segment = edp_page_segment | strip -%}
+{%- assign edp_initial_segment = edp_page_segment | default: 'consumer' -%}
+
+<div class="edp-utility-bar color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+  <div class="page-width edp-utility-bar__inner">
+    <div
+      class="edp-utility-bar__segment"
+      role="group"
+      aria-label="{{ 'edp.header.segment_label' | t }}"
+    >
+      <a
+        href="{{ section.settings.consumer_link | default: '/pages/consumer' }}"
+        class="edp-utility-bar__segment-btn{% if edp_initial_segment == 'consumer' %} is-active{% endif %}"
+        {% if edp_initial_segment == 'consumer' %}aria-current="page"{% endif %}
+      >
+        {%- if section.settings.consumer_label != blank -%}
+          {{ section.settings.consumer_label }}
+        {%- else -%}
+          {{ 'edp.header.segment_consumer' | t }}
+        {%- endif -%}
+      </a>
+      <a
+        href="{{ section.settings.enterprise_link | default: '/pages/enterprise' }}"
+        class="edp-utility-bar__segment-btn{% if edp_initial_segment == 'enterprise' %} is-active{% endif %}"
+        {% if edp_initial_segment == 'enterprise' %}aria-current="page"{% endif %}
+      >
+        {%- if section.settings.enterprise_label != blank -%}
+          {{ section.settings.enterprise_label }}
+        {%- else -%}
+          {{ 'edp.header.segment_enterprise' | t }}
+        {%- endif -%}
+      </a>
+    </div>
+
+    <ul class="edp-utility-bar__links">
+      {%- if shop.customer_accounts_enabled -%}
+        <li>
+          <a
+            class="edp-utility-bar__link"
+            href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+            rel="nofollow"
+          >
+            {%- if customer -%}
+              {{ 'customer.account_fallback' | t }}
+            {%- else -%}
+              {{ 'customer.log_in' | t }}
+            {%- endif -%}
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- if section.settings.quote_link != blank -%}
+        <li>
+          <a class="edp-utility-bar__link edp-utility-bar__link--accent" href="{{ section.settings.quote_link }}">
+            {%- if section.settings.quote_label != blank -%}
+              {{ section.settings.quote_label }}
+            {%- else -%}
+              {{ 'edp.header.quote' | t }}
+            {%- endif -%}
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- if section.settings.support_link != blank -%}
+        <li>
+          <a class="edp-utility-bar__link" href="{{ section.settings.support_link }}">
+            {%- if section.settings.support_label != blank -%}
+              {{ section.settings.support_label }}
+            {%- else -%}
+              {{ 'edp.header.support' | t }}
+            {%- endif -%}
+          </a>
+        </li>
+      {%- endif -%}
+
+      {%- if section.settings.phone != blank -%}
+        <li>
+          <a class="edp-utility-bar__link" href="tel:{{ section.settings.phone | replace: ' ', '' }}">
+            {{ section.settings.phone }}
+          </a>
+        </li>
+      {%- endif -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.edp-utility-bar.name",
+  "class": "edp-utility-bar-section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.edp-utility-bar.settings.segment_header.content"
+    },
+    {
+      "type": "text",
+      "id": "consumer_label",
+      "label": "t:sections.edp-utility-bar.settings.consumer_label.label",
+      "default": "Privat"
+    },
+    {
+      "type": "url",
+      "id": "consumer_link",
+      "label": "Länk för Privat",
+      "info": "Standard: /pages/consumer"
+    },
+    {
+      "type": "text",
+      "id": "enterprise_label",
+      "label": "t:sections.edp-utility-bar.settings.enterprise_label.label",
+      "default": "Företag"
+    },
+    {
+      "type": "url",
+      "id": "enterprise_link",
+      "label": "Länk för Företag",
+      "info": "Standard: /pages/enterprise"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.edp-utility-bar.settings.links_header.content"
+    },
+    {
+      "type": "url",
+      "id": "quote_link",
+      "label": "t:sections.edp-utility-bar.settings.quote_link.label"
+    },
+    {
+      "type": "text",
+      "id": "quote_label",
+      "label": "t:sections.edp-utility-bar.settings.quote_label.label",
+      "default": "Offertförfrågan"
+    },
+    {
+      "type": "url",
+      "id": "support_link",
+      "label": "t:sections.edp-utility-bar.settings.support_link.label"
+    },
+    {
+      "type": "text",
+      "id": "support_label",
+      "label": "t:sections.edp-utility-bar.settings.support_label.label",
+      "default": "Support"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "t:sections.edp-utility-bar.settings.phone.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 0
+    }
+  ]
+}
+{% endschema %}

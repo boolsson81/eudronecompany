@@ -1,0 +1,35 @@
+[functions.shopify-cloner-worker]
+verify_jwt = false
+
+[functions.shopify-cloner-scan]
+verify_jwt = false
+
+[functions.shopify-cloner-publish]
+verify_jwt = false
+
+[functions.shopify-cloner-smoke-batch]
+verify_jwt = false
+
+[functions.shopify-cloner-transform]
+verify_jwt = false
+
+[functions.shopify-cloner-connect]
+verify_jwt = false
+
+[functions.shopify-cloner-import-connected]
+verify_jwt = false
+
+[functions.eudroneparts-set-token]
+verify_jwt = false
+
+[functions.cloner-token-and-taxonomy-sync]
+verify_jwt = false
+
+[functions.cloner-fix-collections-and-menus]
+verify_jwt = false
+
+[functions.compliance-setup-metafields]
+verify_jwt = false
+
+[functions.compliance-sync]
+verify_jwt = false

@@ -1,0 +1,28 @@
+{%- liquid
+  assign speakable_text = nil
+  if request.page_type == 'product'
+    assign speakable_text = product.metafields.seo.kort_text_150.value | default: product.description | strip_html | truncate: 300
+    assign speakable_url = product.url | prepend: request.origin | append: '#edp-ai-answer'
+  elsif request.page_type == 'collection'
+    assign speakable_text = collection.description | strip_html | truncate: 300
+    assign speakable_url = collection.url | prepend: request.origin
+  elsif request.page_type == 'page'
+    assign speakable_text = page.content | strip_html | truncate: 300
+    assign speakable_url = page.url | prepend: request.origin
+  endif
+-%}
+
+{%- if speakable_text != blank -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#edp-ai-answer", "h1", ".collection-hero__description", ".rte"]
+      },
+      "url": {{ speakable_url | json }},
+      "description": {{ speakable_text | json }}
+    }
+  </script>
+{%- endif -%}

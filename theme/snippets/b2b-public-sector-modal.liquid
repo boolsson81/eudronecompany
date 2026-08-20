@@ -1,0 +1,40 @@
+{%- comment -%} Public sector order modal — cart summary + authority form {%- endcomment -%}
+
+<div id="b2b-public-sector-modal" class="b2b-ps-modal" hidden aria-hidden="true">
+  <div class="b2b-ps-modal__backdrop" data-b2b-ps-close></div>
+  <div class="b2b-ps-modal__dialog" role="dialog" aria-labelledby="b2b-ps-modal-title" aria-modal="true">
+    <button type="button" class="b2b-ps-modal__close" data-b2b-ps-close aria-label="Stäng">&times;</button>
+    <h2 id="b2b-ps-modal-title" class="b2b-ps-modal__title">Beställ som myndighet</h2>
+    <p class="b2b-ps-modal__intro">Fakturabeställning utan kortbetalning. Vi skickar orderbekräftelse och faktura enligt era inköpsrutiner.</p>
+
+    <div data-b2b-ps-cart-summary class="b2b-ps-cart-summary"></div>
+
+    <form id="b2b-public-sector-form" class="b2b-ps-form" novalidate>
+      <div class="field">
+        <input type="text" id="ps-contact-name" name="contact_name" required placeholder="För- och efternamn">
+        <label for="ps-contact-name">Kontaktperson *</label>
+      </div>
+      <div class="field">
+        <input type="email" id="ps-contact-email" name="contact_email" required placeholder="namn@myndighet.se">
+        <label for="ps-contact-email">E-post *</label>
+      </div>
+      <div class="field">
+        <input type="tel" id="ps-contact-phone" name="contact_phone" placeholder="08-123 45 67">
+        <label for="ps-contact-phone">Telefon</label>
+      </div>
+
+      {% render 'b2b-company-fields', id_prefix: 'PSModal', default_type: 'public_sector' %}
+
+      <div class="field">
+        <textarea id="ps-notes" name="notes" rows="3" placeholder="Övriga uppgifter för fakturering"></textarea>
+        <label for="ps-notes">Meddelande (valfritt)</label>
+      </div>
+
+      <p class="b2b-ps-form__error" data-b2b-ps-error hidden></p>
+      <p class="b2b-ps-form__success" data-b2b-ps-success hidden></p>
+
+      <button type="submit" class="button button--primary b2b-ps-submit">Skicka beställning (faktura)</button>
+      <p class="b2b-field-hint">Kortbetalning krävs inte. Valfri betalning via fakturalänk om ni vill betala direkt.</p>
+    </form>
+  </div>
+</div>

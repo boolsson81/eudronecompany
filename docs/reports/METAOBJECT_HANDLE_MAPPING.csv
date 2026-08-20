@@ -1,0 +1,9 @@
+resource_kind,current_handle,proposed_handle,action,note
+menu,main-menu,main-menu,KEEP,English canonical menu handle
+menu,enterprise-expansion-deploy,enterprise,RENAME,English canonical menu handle
+menu,spare-parts-deploy,spare-parts,RENAME,English canonical menu handle
+menu,service-support-deploy,service-support,RENAME,English canonical menu handle
+menu,b2b-enterprise-deploy,business,RENAME,English canonical menu handle
+menu,footer,footer,KEEP,English canonical menu handle
+menu,partnership,partnership,KEEP,English canonical menu handle
+metaobject_definition,dji_drone_model,dji-drone-model,KEEP,Planned — English canonical (architecture spec)

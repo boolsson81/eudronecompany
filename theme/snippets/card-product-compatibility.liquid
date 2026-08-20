@@ -1,0 +1,14 @@
+{% comment %}
+  Renders DJI compatibility line from dji.compatible_models_display metafield.
+  Accepts:
+  - product: {Object} Product Liquid object
+{% endcomment %}
+{%- assign compat_models = product.metafields.dji.compatible_models_display.value -%}
+{%- if compat_models != blank -%}
+  <p class="caption light card__compatibility">
+    <span class="card__compatibility-label">{{ 'products.product.compatibility_label' | t }}</span>
+    {%- for model in compat_models -%}
+      {{- model | escape -}}{%- unless forloop.last -%}, {% endunless -%}
+    {%- endfor -%}
+  </p>
+{%- endif -%}

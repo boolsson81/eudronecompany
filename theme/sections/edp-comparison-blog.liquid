@@ -1,0 +1,120 @@
+{{ 'edp-comparison.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  /* Hide Shopify Follow on Shop purple button — inconsistent with EDP branding */
+  .footer .shop-follow-button {
+    display: none !important;
+  }
+{%- endstyle -%}
+
+{%- paginate blog.articles by 12 -%}
+  <div class="edp-jamforer-blog color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width section-{{ section.id }}-padding">
+      <header class="edp-jamforer-blog__header">
+        {%- unless section.settings.eyebrow == blank -%}
+          <p class="edp-jamforer-blog__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endunless -%}
+        <h1 class="edp-jamforer-blog__title">{{ blog.title | escape }}</h1>
+        {%- unless section.settings.description == blank -%}
+          <p class="edp-jamforer-blog__desc">{{ section.settings.description | escape }}</p>
+        {%- else -%}
+          <p class="edp-jamforer-blog__desc">Jämför professionella drönarkameror och Zenmuse-sensorer sida vid sida.</p>
+        {%- endunless -%}
+      </header>
+
+      <div class="edp-jamforer-blog__grid">
+        {%- for article in blog.articles -%}
+          <a href="{{ article.url }}" class="edp-jamforer-blog__card">
+            {%- if article.image -%}
+              <div class="edp-jamforer-blog__card-image">
+                {{
+                  article.image
+                  | image_url: width: 600
+                  | image_tag: loading: 'lazy', widths: '300, 400, 600', alt: article.title
+                }}
+              </div>
+            {%- endif -%}
+            <div class="edp-jamforer-blog__card-body">
+              {%- if article.tags.size > 0 -%}
+                <span class="edp-jamforer-blog__card-tag">{{ article.tags.first | escape }}</span>
+              {%- endif -%}
+              <h2 class="edp-jamforer-blog__card-title">{{ article.title | escape }}</h2>
+              {%- if article.excerpt.size > 0 -%}
+                <p class="edp-jamforer-blog__card-excerpt">{{ article.excerpt | strip_html | truncate: 140 }}</p>
+              {%- endif -%}
+              <span class="edp-jamforer-blog__card-link">Läs jämförelsen →</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+
+      {%- if paginate.pages > 1 -%}
+        {%- render 'pagination', paginate: paginate -%}
+      {%- endif -%}
+    </div>
+  </div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "EDP Jämförer blogg",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etikett",
+      "default": "Drönarkameror"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Beskrivning",
+      "default": "Jämför Zenmuse-kameror och payloads för inspektion, termisk avbildning, LiDAR och fotogrammetri."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Färgschema",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Avstånd"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding topp",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding botten",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

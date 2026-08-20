@@ -1,0 +1,9 @@
+merge_from_handle,merge_into_handle,canonical_handle,canonical_url,products_count,action
+dij-air-3-series,dji-air-3-series,dji-air-3-series,/collections/dji-air-3-series,3,MERGE_THEN_REDIRECT
+dji,dji-drones,dji-drones,/collections/dji-drones,84,MERGE_THEN_REDIRECT
+dji-matrice-350-rtk-rtk,dji-matrice-350-rtk,dji-matrice-350-rtk,/collections/dji-matrice-350-rtk,28,MERGE_THEN_REDIRECT
+drone-accessories-buy,drone-accessories,drone-accessories,/collections/drone-accessories,615,MERGE_THEN_REDIRECT
+drone-accessories-drone,drone-accessories,drone-accessories,/collections/drone-accessories,374,MERGE_THEN_REDIRECT
+filter-drones-lins,drone-filters,drone-filters,/collections/drone-filters,261,MERGE_THEN_REDIRECT
+filters-for-drones,drone-filters,drone-filters,/collections/drone-filters,252,MERGE_THEN_REDIRECT
+repair-dji-neo-spare-parts,dji-neo-spare-parts,dji-neo-spare-parts,/collections/dji-neo-spare-parts,4,MERGE_THEN_REDIRECT

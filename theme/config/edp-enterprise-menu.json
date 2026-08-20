@@ -1,0 +1,47 @@
+{
+  "_comment": "Shopify admin setup spec — menus cannot be created from theme files. Create Navigation menu with handle 'enterprise-menu'.",
+  "handle": "enterprise-menu",
+  "title": "Enterprise navigation",
+  "items": [
+    {
+      "title": "Enterprise",
+      "url": "/pages/enterprise",
+      "children": []
+    },
+    {
+      "title": "Energi & Infrastruktur",
+      "url": "/pages/energi-infrastruktur",
+      "children": []
+    },
+    {
+      "title": "Kartläggning & GIS",
+      "url": "/pages/gis-kartlaggning",
+      "children": []
+    },
+    {
+      "title": "Räddningstjänst",
+      "url": "/pages/raddningstjanst",
+      "children": []
+    },
+    {
+      "title": "Skogsbruk",
+      "url": "/pages/skogsbruk",
+      "children": []
+    },
+    {
+      "title": "Bygg & Anläggning",
+      "url": "/pages/bygg-anlaggning",
+      "children": []
+    },
+    {
+      "title": "Jordbruk",
+      "url": "/pages/jordbruk",
+      "children": []
+    },
+    {
+      "title": "Begär offert",
+      "url": "/pages/contact-quote",
+      "children": []
+    }
+  ]
+}

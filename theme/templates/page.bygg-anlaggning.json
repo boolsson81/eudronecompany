@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Takinspektion",
+            "text": "Dokumentera skador och slitage utan byggnadsställning. Spara tid och minska risker."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Fasadinspektion",
+            "text": "Detaljerade bilder av fasader och konstruktioner med zoom- och termisk kamera."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Byggdokumentation",
+            "text": "Tidslaps och projektuppföljning från luften genom hela byggprocessen med ortomosaiker och 3D-modeller."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Byggplatsövervakning",
+            "text": "Övervaka framdrift, logistik och säkerhet på byggarbetsplatser med regelbundna flygningar."
+          }
+        },
+        "solution_5": {
+          "type": "solution",
+          "settings": {
+            "title": "Taktvätt",
+            "text": "Rengör takytor från luften utan ställning och manuellt höjdarbete. Ta bort mossa, alg och smuts effektivt och säkert."
+          }
+        },
+        "solution_6": {
+          "type": "solution",
+          "settings": {
+            "title": "Fasadtvätt",
+            "text": "Skonsam fasadrengöring på höga byggnader utan lift eller ställning. Nå svårtillgängliga ytor snabbt med drönarbaserad rengöring."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "80% snabbare inspektioner jämfört med traditionella metoder" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Eliminerar behov av byggnadsställning och klättring" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Dokumentation med termisk och visuell data i hög upplösning" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "AI-assisterad analys och automatiserad rapportgenerering" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "solution_5", "solution_6", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Bygg & Anläggning",
+        "title": "Drönare för Bygg & Anläggning",
+        "text": "Inspektera tak, fasader och byggarbetsplatser snabbare, säkrare och billigare med professionella drönare.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp med bygg- och anläggningslösningar?",
+        "text": "Vårt enterprise-team hjälper byggbolag och fastighetsägare med offert, projektering och löpande support.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+4612345678",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

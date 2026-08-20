@@ -1,0 +1,40 @@
+{
+  "version": "3.5",
+  "services": [
+    {
+      "handle": "serviceavtal",
+      "title": "Serviceavtal",
+      "audience": "kommuner, energibolag, skogsbolag, entreprenörer"
+    },
+    {
+      "handle": "underhallsavtal",
+      "title": "Underhållsavtal",
+      "audience": "enterprise fleet operators"
+    },
+    {
+      "handle": "arlig-kontroll",
+      "title": "Årlig kontroll",
+      "audience": "regulated operators"
+    },
+    {
+      "handle": "prioriterad-support",
+      "title": "Prioriterad support",
+      "audience": "enterprise SLA customers"
+    },
+    {
+      "handle": "reservdelslager",
+      "title": "Reservdelslager",
+      "audience": "fleet operators"
+    },
+    {
+      "handle": "fjarrsupport",
+      "title": "Fjärrsupport",
+      "audience": "remote operations"
+    },
+    {
+      "handle": "utbytesenheter",
+      "title": "Utbytesenheter",
+      "audience": "mission-critical operators"
+    }
+  ]
+}

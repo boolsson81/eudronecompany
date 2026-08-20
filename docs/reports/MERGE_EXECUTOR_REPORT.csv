@@ -1,0 +1,7 @@
+canonical_handle,canonical_exists,canonical_live_handle,canonical_id,primary_rename_from,source_count,sum_source_products,union_unique_products,overlap_products,canonical_current_products,expected_after_merge,products_would_lose,verification,action_plan,sources
+dji-air-3-series,YES,dij-air-3-series,gid://shopify/Collection/664616632648,,1,3,3,0,3,3,0,PASS,Rename `dij-air-3-series` → `dji-air-3-series`; Delete none merged sources,dij-air-3-series
+dji-drones,YES,dji-drones,gid://shopify/Collection/664621351240,,1,84,87,-3,22,87,0,PASS,Add 65 products to `dji-drones`; Delete dji merged sources,dji
+dji-matrice-350-rtk,YES,dji-matrice-350-rtk-rtk,gid://shopify/Collection/664994054472,,1,28,28,0,28,28,0,PASS,Rename `dji-matrice-350-rtk-rtk` → `dji-matrice-350-rtk`; Delete none merged sources,dji-matrice-350-rtk-rtk
+drone-accessories,YES,drone-accessories-buy,gid://shopify/Collection/664613519688,,2,989,809,180,615,809,0,PASS,Rename `drone-accessories-buy` → `drone-accessories`; Add 194 products to `drone-accessories`; Delete drone-accessories-drone merged sources,drone-accessories-buy; drone-accessories-drone
+drone-filters,YES,filter-drones-lins,gid://shopify/Collection/664638193992,,2,513,261,252,261,261,0,PASS,Rename `filter-drones-lins` → `drone-filters`; Delete filters-for-drones merged sources,filter-drones-lins; filters-for-drones
+dji-neo-spare-parts,YES,repair-dji-neo-spare-parts,gid://shopify/Collection/664617419080,,1,4,4,0,4,4,0,PASS,Rename `repair-dji-neo-spare-parts` → `dji-neo-spare-parts`; Delete none merged sources,repair-dji-neo-spare-parts

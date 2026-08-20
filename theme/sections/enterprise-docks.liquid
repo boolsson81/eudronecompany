@@ -1,0 +1,138 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid edp-enterprise__grid--3" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="edp-enterprise__card-image-wrap">
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag: class: 'edp-enterprise__card-image', loading: 'lazy', widths: '300, 450, 600', alt: block.settings.title
+                }}
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-docks.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.enterprise-docks.settings.heading.label",
+      "default": "DJI Dock-serien"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-docks.settings.text.label",
+      "default": "Drönare-i-box — automatiserade hangarlösningar för fjärrstyrda och schemalagda flygningar dygnet runt."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "dock",
+      "name": "t:sections.enterprise-docks.blocks.dock.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-docks.blocks.dock.settings.image.label" },
+        { "type": "text", "id": "title", "label": "t:sections.enterprise-docks.blocks.dock.settings.title.label", "default": "DJI Dock" },
+        { "type": "textarea", "id": "text", "label": "t:sections.enterprise-docks.blocks.dock.settings.text.label", "default": "Automatiserad drönarhangare för obemannade operationer." },
+        { "type": "text", "id": "link_label", "label": "t:sections.enterprise-docks.blocks.dock.settings.link_label.label", "default": "Se Dock" },
+        { "type": "url", "id": "link", "label": "t:sections.enterprise-docks.blocks.dock.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.enterprise-docks.presets.name",
+      "blocks": [
+        { "type": "dock", "settings": { "title": "DJI Dock", "text": "Automatiserad drönarhangare för obemannade operationer och schemalagda flygningar.", "link_label": "Se Dock", "link": "/collections/dji-dock" } },
+        { "type": "dock", "settings": { "title": "DJI Dock 2", "text": "Kompakt, väderskyddad dockningsstation med automatisk laddning och start.", "link_label": "Se Dock 2", "link": "/collections/dji-dock" } },
+        { "type": "dock", "settings": { "title": "DJI Dock 3", "text": "Nästa generations drönare-i-box för autonom drift dygnet runt.", "link_label": "Se Dock 3", "link": "/collections/dji-dock" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

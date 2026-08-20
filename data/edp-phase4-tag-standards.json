@@ -1,0 +1,38 @@
+{
+  "version": "4.0",
+  "note": "Reference only — products not modified in Phase 4",
+  "family": [
+    "matrice",
+    "m300",
+    "m350",
+    "m400",
+    "mavic-enterprise",
+    "agras",
+    "flycart",
+    "dock"
+  ],
+  "payload": [
+    "lidar",
+    "thermal",
+    "speaker",
+    "spotlight",
+    "airdrop",
+    "parachute"
+  ],
+  "service": [
+    "repair",
+    "calibration",
+    "maintenance"
+  ],
+  "industry": [
+    "inspection",
+    "mapping",
+    "public-safety",
+    "defense",
+    "telecom",
+    "energy",
+    "forestry",
+    "agriculture",
+    "logistics"
+  ]
+}

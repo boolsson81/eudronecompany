@@ -1,0 +1,326 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width page-width--narrow section-{{ section.id }}-padding isolate">
+    <div class="edp-enterprise__quote-layout{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <div class="edp-enterprise__quote-intro">
+        {%- unless section.settings.title == blank -%}
+          <h1 class="edp-enterprise__quote-intro-title h1">{{ section.settings.title | escape }}</h1>
+        {%- endunless -%}
+        {%- unless section.settings.intro == blank -%}
+          <p class="edp-enterprise__quote-intro-text">{{ section.settings.intro | escape }}</p>
+        {%- endunless -%}
+        {%- if section.settings.phone != blank or section.settings.email != blank -%}
+          <ul class="edp-enterprise__quote-contact" role="list">
+            {%- if section.settings.phone != blank -%}
+              <li>
+                <a href="tel:{{ section.settings.phone | replace: ' ', '' | replace: '-', '' }}">
+                  {{ section.settings.phone | escape }}
+                </a>
+              </li>
+            {%- endif -%}
+            {%- if section.settings.email != blank -%}
+              <li>
+                <a href="mailto:{{ section.settings.email | escape }}">
+                  {{ section.settings.email | escape }}
+                </a>
+              </li>
+            {%- endif -%}
+          </ul>
+        {%- endif -%}
+      </div>
+
+      <div class="edp-enterprise__quote-form-card">
+        {%- liquid
+          assign quote_form_class = 'edp-enterprise__quote-form'
+          if settings.animations_reveal_on_scroll
+            assign quote_form_class = quote_form_class | append: ' scroll-trigger animate--slide-in'
+          endif
+        -%}
+        {%- form 'contact', id: 'EnterpriseQuoteForm', class: quote_form_class -%}
+          <input type="hidden" name="contact[form_type]" value="enterprise_quote">
+
+          {%- if form.posted_successfully? -%}
+            <div class="edp-enterprise__quote-success" tabindex="-1" autofocus>
+              <h2 class="h3">{{ 'sections.enterprise-quote-form.success' | t }}</h2>
+              <p>{{ 'sections.enterprise-quote-form.success_detail' | t }}</p>
+            </div>
+          {%- else -%}
+            {%- if form.errors -%}
+              <div class="form__message" role="alert">
+                <h2 class="form-status caption-large text-body" tabindex="-1" autofocus>
+                  {{- 'icon-error.svg' | inline_asset_content -}}
+                  {{ 'sections.enterprise-quote-form.error_heading' | t }}
+                </h2>
+              </div>
+              <ul class="form-status-list caption-large" role="list">
+                {%- for field in form.errors -%}
+                  <li>
+                    <a href="#EnterpriseQuoteForm-email" class="link">
+                      {{ form.errors.messages[field] }}
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+
+            <div class="edp-enterprise__field-row edp-enterprise__field-row--2">
+              <div class="field">
+                <input
+                  class="field__input"
+                  type="text"
+                  id="EnterpriseQuoteForm-name"
+                  name="contact[Namn]"
+                  autocomplete="name"
+                  required
+                  placeholder="{{ 'sections.enterprise-quote-form.name' | t }}"
+                >
+                <label class="field__label" for="EnterpriseQuoteForm-name">
+                  {{ 'sections.enterprise-quote-form.name' | t }}
+                  <span aria-hidden="true">*</span>
+                </label>
+              </div>
+              <div class="field">
+                <input
+                  class="field__input"
+                  type="text"
+                  id="EnterpriseQuoteForm-company"
+                  name="contact[Företag]"
+                  autocomplete="organization"
+                  required
+                  placeholder="{{ 'sections.enterprise-quote-form.company' | t }}"
+                >
+                <label class="field__label" for="EnterpriseQuoteForm-company">
+                  {{ 'sections.enterprise-quote-form.company' | t }}
+                  <span aria-hidden="true">*</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="edp-enterprise__field-row edp-enterprise__field-row--2">
+              <div class="field field--with-error">
+                <input
+                  class="field__input"
+                  type="email"
+                  id="EnterpriseQuoteForm-email"
+                  name="contact[email]"
+                  autocomplete="email"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  required
+                  aria-required="true"
+                  {% if form.errors contains 'email' %}
+                    aria-invalid="true"
+                  {% endif %}
+                  placeholder="{{ 'sections.enterprise-quote-form.email' | t }}"
+                >
+                <label class="field__label" for="EnterpriseQuoteForm-email">
+                  {{ 'sections.enterprise-quote-form.email' | t }}
+                  <span aria-hidden="true">*</span>
+                </label>
+              </div>
+              <div class="field">
+                <input
+                  class="field__input"
+                  type="tel"
+                  id="EnterpriseQuoteForm-phone"
+                  name="contact[Telefon]"
+                  autocomplete="tel"
+                  required
+                  placeholder="{{ 'sections.enterprise-quote-form.phone' | t }}"
+                >
+                <label class="field__label" for="EnterpriseQuoteForm-phone">
+                  {{ 'sections.enterprise-quote-form.phone' | t }}
+                  <span aria-hidden="true">*</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="form__label" for="EnterpriseQuoteForm-industry">
+                {{ 'sections.enterprise-quote-form.industry' | t }}
+                <span aria-hidden="true">*</span>
+              </label>
+              <div class="select">
+                <select
+                  id="EnterpriseQuoteForm-industry"
+                  class="select__select"
+                  name="contact[Bransch]"
+                  required
+                >
+                  <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_energy' | t }}">{{ 'sections.enterprise-quote-form.industry_energy' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_gis' | t }}">{{ 'sections.enterprise-quote-form.industry_gis' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_rescue' | t }}">{{ 'sections.enterprise-quote-form.industry_rescue' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_forestry' | t }}">{{ 'sections.enterprise-quote-form.industry_forestry' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_construction' | t }}">{{ 'sections.enterprise-quote-form.industry_construction' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_agriculture' | t }}">{{ 'sections.enterprise-quote-form.industry_agriculture' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.industry_other' | t }}">{{ 'sections.enterprise-quote-form.industry_other' | t }}</option>
+                </select>
+                <span class="svg-wrapper">
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="form__label" for="EnterpriseQuoteForm-need">
+                {{ 'sections.enterprise-quote-form.need' | t }}
+                <span aria-hidden="true">*</span>
+              </label>
+              <div class="select">
+                <select
+                  id="EnterpriseQuoteForm-need"
+                  class="select__select"
+                  name="contact[Behov]"
+                  required
+                >
+                  <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_drone' | t }}">{{ 'sections.enterprise-quote-form.need_drone' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_package' | t }}">{{ 'sections.enterprise-quote-form.need_package' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_payload' | t }}">{{ 'sections.enterprise-quote-form.need_payload' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_training' | t }}">{{ 'sections.enterprise-quote-form.need_training' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_support' | t }}">{{ 'sections.enterprise-quote-form.need_support' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.need_consulting' | t }}">{{ 'sections.enterprise-quote-form.need_consulting' | t }}</option>
+                </select>
+                <span class="svg-wrapper">
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="form__label" for="EnterpriseQuoteForm-type">
+                {{ 'sections.enterprise-quote-form.request_type' | t }}
+                <span aria-hidden="true">*</span>
+              </label>
+              <div class="select">
+                <select
+                  id="EnterpriseQuoteForm-type"
+                  class="select__select"
+                  name="contact[Typ]"
+                  required
+                >
+                  <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.type_quote' | t }}">{{ 'sections.enterprise-quote-form.type_quote' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.type_demo' | t }}">{{ 'sections.enterprise-quote-form.type_demo' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.type_advisory' | t }}">{{ 'sections.enterprise-quote-form.type_advisory' | t }}</option>
+                  <option value="{{ 'sections.enterprise-quote-form.type_info' | t }}">{{ 'sections.enterprise-quote-form.type_info' | t }}</option>
+                </select>
+                <span class="svg-wrapper">
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </span>
+              </div>
+            </div>
+
+            <div class="field">
+              <textarea
+                rows="5"
+                id="EnterpriseQuoteForm-message"
+                class="text-area field__input"
+                name="contact[Meddelande]"
+                placeholder="{{ 'sections.enterprise-quote-form.message' | t }}"
+              >{{- form.body -}}</textarea>
+              <label class="field__label" for="EnterpriseQuoteForm-message">
+                {{ 'sections.enterprise-quote-form.message' | t }}
+              </label>
+            </div>
+
+            <div class="edp-enterprise__consent">
+              <input
+                type="checkbox"
+                id="EnterpriseQuoteForm-consent"
+                name="contact[Samtycke]"
+                value="{{ 'sections.enterprise-quote-form.consent_value' | t }}"
+                required
+              >
+              <label for="EnterpriseQuoteForm-consent">
+                {{ 'sections.enterprise-quote-form.consent' | t }}
+              </label>
+            </div>
+
+            <div class="edp-enterprise__honeypot" aria-hidden="true">
+              <label for="EnterpriseQuoteForm-website">Website</label>
+              <input type="text" id="EnterpriseQuoteForm-website" name="contact[website]" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="button edp-enterprise__submit">
+              {{ 'sections.enterprise-quote-form.submit' | t }}
+            </button>
+          {%- endif -%}
+        {%- endform -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-quote-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.enterprise-quote-form.settings.title.label",
+      "default": "Begär offert"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "t:sections.enterprise-quote-form.settings.intro.label",
+      "default": "Berätta om ditt projekt så återkommer vårt enterprise-team inom 24 timmar med en skräddarsydd offert."
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "t:sections.enterprise-quote-form.settings.phone.label",
+      "default": "+46 8 123 45 67"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "t:sections.enterprise-quote-form.settings.email.label",
+      "default": "enterprise@eudroneparts.se"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 48
+    }
+  ],
+  "presets": [{ "name": "t:sections.enterprise-quote-form.presets.name" }]
+}
+{% endschema %}

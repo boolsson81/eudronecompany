@@ -1,0 +1,176 @@
+{
+  "version": "4.0",
+  "note": "Additive menus only — Phase 3 main-menu and enterprise-dr-nare are NOT modified",
+  "menus": {
+    "service-support": {
+      "title": "Service & Support",
+      "items": [
+        {
+          "title": "DJI Service",
+          "items": [
+            {
+              "title": "DJI Service",
+              "url": "/pages/dji-service"
+            },
+            {
+              "title": "DJI Enterprise Service",
+              "url": "/pages/dji-enterprise-service"
+            },
+            {
+              "title": "DJI FlyCart Service",
+              "url": "/pages/dji-flycart-service"
+            },
+            {
+              "title": "DJI Agras Service",
+              "url": "/pages/dji-agras-service"
+            },
+            {
+              "title": "DJI Dock Service",
+              "url": "/pages/dji-dock-service"
+            }
+          ]
+        },
+        {
+          "title": "Repairs",
+          "items": [
+            {
+              "title": "Drönarreparation",
+              "url": "/pages/dronarreparation"
+            },
+            {
+              "title": "Gimbalreparation",
+              "url": "/pages/gimbalreparation"
+            },
+            {
+              "title": "Kamerareparation",
+              "url": "/pages/kamerareparation"
+            },
+            {
+              "title": "Motorbyte",
+              "url": "/pages/motorbyte"
+            },
+            {
+              "title": "ESC-reparation",
+              "url": "/pages/esc-reparation"
+            }
+          ]
+        },
+        {
+          "title": "Calibration",
+          "items": [
+            {
+              "title": "IMU-kalibrering",
+              "url": "/pages/imu-kalibrering"
+            },
+            {
+              "title": "Kompasskalibrering",
+              "url": "/pages/kompasskalibrering"
+            },
+            {
+              "title": "RTK-kalibrering",
+              "url": "/pages/rtk-kalibrering"
+            },
+            {
+              "title": "Sensorvalidering",
+              "url": "/pages/sensorvalidering"
+            }
+          ]
+        },
+        {
+          "title": "Maintenance",
+          "items": [
+            {
+              "title": "Serviceavtal",
+              "url": "/pages/serviceavtal"
+            },
+            {
+              "title": "Årlig kontroll",
+              "url": "/pages/arlig-kontroll"
+            },
+            {
+              "title": "Enterprise Support",
+              "url": "/pages/enterprise-support"
+            }
+          ]
+        }
+      ]
+    },
+    "enterprise-menu-v4": {
+      "title": "Enterprise (Phase 4 expansion)",
+      "note": "Supplement to enterprise-dr-nare — new granular links",
+      "items": [
+        {
+          "title": "Matrice",
+          "items": [
+            {
+              "title": "Matrice 3",
+              "url": "/collections/dji-matrice-3-serie"
+            },
+            {
+              "title": "Matrice 30",
+              "url": "/collections/dji-matrice-30-serie"
+            },
+            {
+              "title": "Matrice 300 RTK",
+              "url": "/collections/dji-matrice-300-rtk-serie"
+            },
+            {
+              "title": "Matrice 350 RTK",
+              "url": "/collections/dji-matrice-350-rtk-serie"
+            },
+            {
+              "title": "Matrice 400",
+              "url": "/collections/dji-matrice-400-serie"
+            },
+            {
+              "title": "Matrice 4",
+              "url": "/collections/dji-matrice-4-serie"
+            }
+          ]
+        },
+        {
+          "title": "Mavic Enterprise",
+          "url": "/collections/dji-mavic-enterprise-serien"
+        },
+        {
+          "title": "Agras",
+          "url": "/collections/dji-agras-serien"
+        },
+        {
+          "title": "FlyCart",
+          "url": "/collections/dji-flycart-serien"
+        },
+        {
+          "title": "Dock",
+          "url": "/collections/dji-dock-serien"
+        },
+        {
+          "title": "Zenmuse",
+          "url": "/collections/zenmuse-l2"
+        },
+        {
+          "title": "Livox",
+          "url": "/collections/livox"
+        },
+        {
+          "title": "Service",
+          "url": "/pages/dji-enterprise-service"
+        }
+      ]
+    },
+    "main-menu-v4-addon": {
+      "title": "Main Menu additions (do not replace Phase 3)",
+      "items": [
+        {
+          "title": "Service & Support",
+          "url": "/pages/dji-service",
+          "menu": "service-support"
+        },
+        {
+          "title": "Industry Solutions",
+          "url": "/collections/inspektionsdronare"
+        }
+      ]
+    }
+  }
+}

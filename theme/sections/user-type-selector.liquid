@@ -1,0 +1,590 @@
+{{ 'section-user-type-selector.css' | asset_url | stylesheet_tag }}
+{%- if request.design_mode -%}
+  <script src="{{ 'section-user-type-selector.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{%- liquid
+  assign section_appearance = section.settings.appearance | default: 'standard'
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  {%- if section_appearance == 'premium-dark' and section.settings.remove_image_background -%}
+  .user-type-selector--premium .user-type-card__image--dark-bg:not(.user-type-card__image--processed) {
+    -webkit-filter: url(#EdpKnockout-{{ section.id }});
+    filter: url(#EdpKnockout-{{ section.id }});
+    mix-blend-mode: multiply;
+  }
+  {%- endif -%}
+{%- endstyle -%}
+
+{%- if section_appearance == 'premium-dark' and section.settings.remove_image_background -%}
+  <svg
+    aria-hidden="true"
+    focusable="false"
+    xmlns="http://www.w3.org/2000/svg"
+    style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none"
+  >
+    <defs>
+      <filter id="EdpKnockout-{{ section.id }}" color-interpolation-filters="sRGB">
+        <feColorMatrix
+          in="SourceGraphic"
+          type="matrix"
+          values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -1 -1 -1 0 2.65"
+        />
+      </filter>
+    </defs>
+  </svg>
+{%- endif -%}
+
+<div
+  class="user-type-selector color-{{ section.settings.color_scheme }} gradient{% if section_appearance == 'premium-dark' %} user-type-selector--premium{% endif %}{% if request.design_mode %} user-type-selector--design-mode{% endif %}"
+  data-remove-background="{% if section.settings.remove_image_background %}true{% else %}false{% endif %}"
+>
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- liquid
+      assign heading_alignment = section.settings.heading_alignment | default: 'center'
+      assign subheading_alignment = section.settings.subheading_alignment | default: 'center'
+      assign default_card_title_alignment = section.settings.card_title_alignment | default: 'center'
+      assign default_card_text_alignment = section.settings.card_text_alignment | default: 'center'
+
+      assign section_has_custom_bg_images = false
+      for block in section.blocks
+        assign scan_block_remove_bg = true
+        if block.settings.remove_image_background == false
+          assign scan_block_remove_bg = false
+        endif
+        assign scan_bundled_asset = blank
+        if block.settings.use_bundled_transparent_image != false
+          if block.settings.card_type == 'consumer'
+            assign scan_bundled_asset = 'edp-home-user-type-consumer-transparent.png'
+          elsif block.settings.card_type == 'enterprise'
+            assign scan_bundled_asset = 'edp-home-user-type-enterprise-transparent.png'
+          endif
+        endif
+        assign scan_use_bundled = false
+        if scan_bundled_asset != blank and section.settings.remove_image_background and scan_block_remove_bg and section_appearance == 'premium-dark'
+          assign scan_use_bundled = true
+        endif
+        if section.settings.remove_image_background and scan_block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true and scan_use_bundled == false
+          assign section_has_custom_bg_images = true
+        endif
+      endfor
+    -%}
+    {%- unless section.settings.heading == blank and section.settings.subheading == blank -%}
+      <div class="user-type-selector__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="user-type-selector__heading user-type-selector__heading--align-{{ heading_alignment }} {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.subheading == blank -%}
+          <p class="user-type-selector__subheading user-type-selector__subheading--align-{{ subheading_alignment }}">
+            {{ section.settings.subheading | escape }}
+          </p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if request.design_mode -%}
+      <div class="user-type-selector__editor-panel" role="region" aria-label="Bildbakgrund i temaredigeraren">
+        <p class="user-type-selector__editor-panel-title">Bildbakgrund</p>
+        <p class="user-type-selector__editor-panel-text">
+          {%- if section.settings.remove_image_background -%}
+            Standardkort använder förberedda transparenta PNG-bilder. Knappen nedan gäller endast egna uppladdade bilder.
+          {%- else -%}
+            Avstängt. Aktivera <strong>Ta bort bildbakgrund</strong> i inställningspanelen till höger under rubriken <strong>Bildbakgrund</strong>.
+          {%- endif -%}
+        </p>
+        <div class="user-type-selector__editor-actions">
+          {%- if section_has_custom_bg_images -%}
+            <button
+              type="button"
+              class="user-type-selector__editor-btn"
+              data-edp-bg-refresh
+              {% unless section.settings.remove_image_background %}disabled{% endunless %}
+              onclick="if(window.edpUserTypeSelector){window.edpUserTypeSelector.onButtonClick(this);} event.preventDefault(); event.stopPropagation(); return false;"
+            >
+              Ta bort bakgrund (egna bilder)
+            </button>
+          {%- else -%}
+            <p class="user-type-selector__editor-panel-note">
+              Standardkorten använder redan transparenta temabilder — ingen åtgärd krävs.
+            </p>
+          {%- endif -%}
+        </div>
+        <p class="user-type-selector__editor-status" data-edp-bg-status hidden></p>
+      </div>
+    {%- endif -%}
+
+    <ul class="user-type-selector__grid" role="list">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign card_modifier = 'user-type-card--consumer'
+          if block.settings.card_type == 'enterprise'
+            assign card_modifier = 'user-type-card--enterprise'
+          endif
+
+          assign card_title_alignment = block.settings.title_alignment
+          if card_title_alignment == blank
+            assign card_title_alignment = default_card_title_alignment
+          endif
+
+          assign card_text_alignment = block.settings.text_alignment
+          if card_text_alignment == blank
+            assign card_text_alignment = default_card_text_alignment
+          endif
+
+          assign example_lines = block.settings.examples | newline_to_br | split: '<br />'
+
+          assign block_remove_bg = true
+          if block.settings.remove_image_background == false
+            assign block_remove_bg = false
+          endif
+
+          assign bundled_asset = blank
+          if block.settings.use_bundled_transparent_image != false
+            if block.settings.card_type == 'consumer'
+              assign bundled_asset = 'edp-home-user-type-consumer-transparent.png'
+            elsif block.settings.card_type == 'enterprise'
+              assign bundled_asset = 'edp-home-user-type-enterprise-transparent.png'
+            endif
+          endif
+
+          assign use_bundled_asset = false
+          if bundled_asset != blank and section.settings.remove_image_background and block_remove_bg and section_appearance == 'premium-dark'
+            assign use_bundled_asset = true
+          endif
+
+          assign use_dark_image_filter = false
+          if section.settings.remove_image_background and block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true and use_bundled_asset == false
+            assign use_dark_image_filter = true
+          endif
+
+          assign has_card_image = false
+          if use_bundled_asset or block.settings.image != blank
+            assign has_card_image = true
+          endif
+        -%}
+        <li
+          id="UserTypeCard-{{ section.id }}-{{ block.id }}"
+          class="user-type-card {{ card_modifier }} user-type-card--title-align-{{ card_title_alignment }} user-type-card--text-align-{{ card_text_alignment }}"
+          {{ block.shopify_attributes }}
+        >
+          <div class="user-type-card__media{% if use_dark_image_filter or use_bundled_asset %} user-type-card__media--dark-image{% endif %}">
+            {%- if request.design_mode and has_card_image -%}
+              <div class="user-type-card__editor-badge" aria-hidden="true">
+                {%- if use_bundled_asset -%}
+                  <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--transparent">Transparent PNG (tema)</span>
+                {%- elsif block.settings.image_has_transparency -%}
+                  <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--transparent">PNG utan bakgrund</span>
+                {%- elsif use_dark_image_filter -%}
+                  <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--active">Bakgrund tas bort</span>
+                {%- elsif section.settings.remove_image_background == false or block_remove_bg == false -%}
+                  <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--off">Bakgrundsborttagning av</span>
+                {%- else -%}
+                  <span class="user-type-card__editor-badge-pill">Ingen bearbetning</span>
+                {%- endif -%}
+                {%- if use_dark_image_filter -%}
+                  <button
+                    type="button"
+                    class="user-type-card__editor-refresh"
+                    data-edp-bg-refresh-card
+                    aria-label="Ta bort bakgrund för {{ block.settings.title | escape }}"
+                    onclick="if(window.edpUserTypeSelector){window.edpUserTypeSelector.onButtonClick(this);} event.preventDefault(); event.stopPropagation(); return false;"
+                  >
+                    Ta bort bakgrund
+                  </button>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+            {%- if use_bundled_asset -%}
+              <img
+                src="{{ bundled_asset | asset_url }}"
+                class="user-type-card__image user-type-card__image--bundled-transparent"
+                loading="eager"
+                fetchpriority="high"
+                width="600"
+                height="600"
+                alt="{{ block.settings.title | escape }}"
+              >
+            {%- elsif block.settings.image != blank -%}
+              {%- if use_dark_image_filter -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 800
+                  | image_tag:
+                    class: 'user-type-card__image user-type-card__image--dark-bg',
+                    loading: 'lazy',
+                    widths: '375, 550, 750, 800',
+                    sizes: '(min-width: 750px) 50vw, 100vw',
+                    alt: block.settings.image.alt | default: block.settings.title,
+                    crossorigin: 'anonymous'
+                }}
+              {%- else -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 800
+                  | image_tag:
+                    class: 'user-type-card__image',
+                    loading: 'lazy',
+                    widths: '375, 550, 750, 800',
+                    sizes: '(min-width: 750px) 50vw, 100vw',
+                    alt: block.settings.image.alt | default: block.settings.title
+                }}
+              {%- endif -%}
+            {%- else -%}
+              <div class="user-type-card__icon" aria-hidden="true">
+                {%- if block.settings.card_type == 'enterprise' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/>
+                  </svg>
+                {%- else -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                  </svg>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          </div>
+
+          <div class="user-type-card__body{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+              style="--animation-order: {{ forloop.index }};"
+            {% endif %}
+          >
+            {%- unless block.settings.title == blank -%}
+              <h3 class="user-type-card__title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+
+            {%- unless block.settings.description == blank -%}
+              <p class="user-type-card__description">
+                {{ block.settings.description | escape }}
+              </p>
+            {%- endunless -%}
+
+            {%- if block.settings.examples != blank -%}
+              <ul class="user-type-card__examples">
+                {%- for line in example_lines -%}
+                  {%- assign item = line | strip -%}
+                  {%- if item != blank -%}
+                    <li>{{ item | escape }}</li>
+                  {%- endif -%}
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+
+            {%- if block.settings.button_label != blank -%}
+              <a
+                href="{{ block.settings.button_link | default: '#' }}"
+                class="button user-type-card__cta"
+              >
+                {{ block.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+  </div>
+</div>
+
+{%- if request.design_mode -%}
+<script>
+  (function () {
+    var sectionId = {{ section.id | json }};
+
+    function wireSection(root) {
+      if (!root || !window.edpUserTypeSelector) return;
+      window.edpUserTypeSelector.wireEditorButtons(root);
+    }
+
+    wireSection(document.getElementById('shopify-section-' + sectionId));
+
+    document.addEventListener('shopify:section:load', function (event) {
+      if (!event.detail || String(event.detail.sectionId) !== String(sectionId)) return;
+      wireSection(event.target);
+    });
+  })();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.user-type-selector.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.user-type-selector.settings.heading.label",
+      "default": "Välj din väg in"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "t:sections.user-type-selector.settings.subheading.label",
+      "default": "Hitta rätt drönarlösning — oavsett om du flyger privat eller driver verksamhet."
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" },
+        { "value": "h0", "label": "t:sections.all.heading_size.options__3.label" }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Rubrikjustering (sektion)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "center", "label": "Centrerad" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "subheading_alignment",
+      "label": "Underrubrikjustering (sektion)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "center", "label": "Centrerad" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Standard för alla kort"
+    },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Kortrubrik (standard)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "center", "label": "Centrerad" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "card_text_alignment",
+      "label": "Korttext (standard)",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "center", "label": "Centrerad" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "appearance",
+      "label": "Utseende",
+      "options": [
+        { "value": "standard", "label": "Standard" },
+        { "value": "premium-dark", "label": "Premium mörk" }
+      ],
+      "default": "standard"
+    },
+    {
+      "type": "header",
+      "content": "Bildbakgrund på kortbilder"
+    },
+    {
+      "type": "checkbox",
+      "id": "remove_image_background",
+      "label": "Ta bort bildbakgrund",
+      "default": true,
+      "info": "Standardkort (konsument/företag) använder förberedda transparenta PNG i temat. Egna uppladdade bilder använder SVG-filter; canvas-förhandsvisning finns i temaredigeraren."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "t:sections.user-type-selector.blocks.card.name",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "select",
+          "id": "card_type",
+          "label": "t:sections.user-type-selector.blocks.card.settings.card_type.label",
+          "options": [
+            {
+              "value": "consumer",
+              "label": "t:sections.user-type-selector.blocks.card.settings.card_type.options__1.label"
+            },
+            {
+              "value": "enterprise",
+              "label": "t:sections.user-type-selector.blocks.card.settings.card_type.options__2.label"
+            }
+          ],
+          "default": "consumer"
+        },
+        {
+          "type": "checkbox",
+          "id": "use_bundled_transparent_image",
+          "label": "Använd transparent temabild",
+          "default": true,
+          "info": "Använder förberedd PNG utan bakgrund för konsument- och företagskort. Stäng av om du vill visa din egen uppladdade bild."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.user-type-selector.blocks.card.settings.image.label",
+          "info": "Används när transparent temabild är av. Premium mörk: bäst resultat med PNG utan bakgrund."
+        },
+        {
+          "type": "checkbox",
+          "id": "remove_image_background",
+          "label": "Ta bort bildbakgrund",
+          "default": true,
+          "info": "Tar bort vit eller enfärgad bakgrund på denna kortbild. Kräver att samma inställning är på i sektionen."
+        },
+        {
+          "type": "checkbox",
+          "id": "image_has_transparency",
+          "label": "PNG utan bakgrund",
+          "default": false,
+          "info": "Kryssa i om bilden redan har transparent bakgrund — då används inget filter."
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.user-type-selector.blocks.card.settings.title.label",
+          "default": "Korttitel"
+        },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Rubrikjustering",
+          "options": [
+            { "value": "left", "label": "Vänster" },
+            { "value": "center", "label": "Centrerad" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "t:sections.user-type-selector.blocks.card.settings.description.label",
+          "default": "Kort beskrivning av målgruppen."
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Brödtextjustering",
+          "options": [
+            { "value": "left", "label": "Vänster" },
+            { "value": "center", "label": "Centrerad" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "textarea",
+          "id": "examples",
+          "label": "t:sections.user-type-selector.blocks.card.settings.examples.label",
+          "info": "t:sections.user-type-selector.blocks.card.settings.examples.info",
+          "default": "Exempel 1\nExempel 2\nExempel 3"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.user-type-selector.blocks.card.settings.button_label.label",
+          "default": "Utforska"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.user-type-selector.blocks.card.settings.button_link.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.user-type-selector.presets.name",
+      "blocks": [
+        {
+          "type": "card",
+          "settings": {
+            "card_type": "consumer",
+            "title": "Konsumentdrönare",
+            "description": "Drönare och tillbehör för privat bruk, foto, video och fritidsflygning.",
+            "examples": "DJI Mini & Air-serien\nTillbehör & reservdelar\nKom igång-paket",
+            "button_label": "Utforska konsument",
+            "button_link": "/pages/consumer",
+            "title_alignment": "center",
+            "text_alignment": "center"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "card_type": "enterprise",
+            "title": "Enterprise & Företag",
+            "description": "Professionella UAV-lösningar för mätning, inspektion, säkerhet och offentlig sektor.",
+            "examples": "DJI Matrice & Dock\nBranschpaket & utbildning\nOffert & rådgivning",
+            "button_label": "Företagslösningar",
+            "button_link": "/pages/enterprise",
+            "title_alignment": "center",
+            "text_alignment": "center"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

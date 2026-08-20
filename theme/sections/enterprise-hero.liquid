@@ -1,0 +1,149 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    <div class="edp-enterprise__hero{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      <div class="edp-enterprise__hero-content">
+        {%- unless section.settings.eyebrow == blank -%}
+          <p class="edp-enterprise__eyebrow">{{ section.settings.eyebrow | escape }}</p>
+        {%- endunless -%}
+        {%- unless section.settings.title == blank -%}
+          <h1 class="edp-enterprise__hero-title {{ section.settings.heading_size }}">
+            {{ section.settings.title | escape }}
+          </h1>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__hero-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+        <div class="edp-enterprise__hero-actions">
+          {%- if section.settings.button_label_1 != blank -%}
+            <a href="{{ section.settings.button_link_1 | default: '#' }}" class="edp-enterprise__btn edp-enterprise__btn--primary">
+              {{ section.settings.button_label_1 | escape }}
+            </a>
+          {%- endif -%}
+          {%- if section.settings.button_label_2 != blank -%}
+            <a href="{{ section.settings.button_link_2 | default: '#' }}" class="edp-enterprise__btn edp-enterprise__btn--secondary">
+              {{ section.settings.button_label_2 | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="edp-enterprise__hero-media">
+        {%- if section.settings.image != blank -%}
+          {{
+            section.settings.image
+            | image_url: width: 1200
+            | image_tag:
+              class: 'edp-enterprise__hero-image',
+              loading: 'eager',
+              fetchpriority: 'high',
+              widths: '550, 750, 1100, 1200',
+              sizes: '(min-width: 750px) 50vw, 100vw',
+              alt: section.settings.image.alt | default: section.settings.title
+          }}
+        {%- else -%}
+          <div class="edp-enterprise__hero-placeholder" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+            </svg>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.enterprise-hero.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.enterprise-hero.settings.image.label"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "t:sections.enterprise-hero.settings.eyebrow.label",
+      "default": "Företag & organisationer"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "t:sections.enterprise-hero.settings.title.label",
+      "default": "Drönarlösningar för professionella verksamheter"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" },
+        { "value": "h0", "label": "t:sections.all.heading_size.options__3.label" }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "t:sections.enterprise-hero.settings.text.label",
+      "default": "Vi hjälper företag, myndigheter och organisationer att välja, implementera och drifta UAV-lösningar — från Matrice och Dock till utbildning och support."
+    },
+    {
+      "type": "text",
+      "id": "button_label_1",
+      "label": "t:sections.enterprise-hero.settings.button_label_1.label",
+      "default": "Begär offert"
+    },
+    { "type": "url", "id": "button_link_1", "label": "t:sections.enterprise-hero.settings.button_link_1.label" },
+    {
+      "type": "text",
+      "id": "button_label_2",
+      "label": "t:sections.enterprise-hero.settings.button_label_2.label",
+      "default": "Boka rådgivning"
+    },
+    { "type": "url", "id": "button_link_2", "label": "t:sections.enterprise-hero.settings.button_link_2.label" },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [{ "name": "t:sections.enterprise-hero.presets.name" }]
+}
+{% endschema %}

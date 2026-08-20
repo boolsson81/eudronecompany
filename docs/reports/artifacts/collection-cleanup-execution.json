@@ -1,0 +1,133 @@
+{
+  "generated_at": "2026-06-13T09:37:04.641Z",
+  "mode": "live",
+  "kept_seo_handles": [
+    "dronare-reservdelar-ovriga",
+    "ji-mini-5-pro-filter",
+    "minneskort-lagring",
+    "kamerastativ-tripod"
+  ],
+  "redirects": [
+    {
+      "from": "dji-mavic-3-classic-1",
+      "to": "dji-mavic-3-classic",
+      "reason": "MERGE",
+      "path": "/collections/dji-mavic-3-classic-1",
+      "target": "/collections/dji-mavic-3-classic",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582247240"
+    },
+    {
+      "from": "dji-air-3-serien",
+      "to": "dij-air-3-serien",
+      "reason": "DELETE → active Air 3 hub",
+      "path": "/collections/dji-air-3-serien",
+      "target": "/collections/dij-air-3-serien",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582280008"
+    },
+    {
+      "from": "dji-avata",
+      "to": "dji-avata-serien",
+      "reason": "DELETE → active Avata hub",
+      "path": "/collections/dji-avata",
+      "target": "/collections/dji-avata-serien",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582312776"
+    },
+    {
+      "from": "dji-mini-3-pro-dronare-set",
+      "to": "dji-mini-3-serien",
+      "reason": "DELETE → Mini 3 hub",
+      "path": "/collections/dji-mini-3-pro-dronare-set",
+      "target": "/collections/dji-mini-3-serien",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582345544"
+    },
+    {
+      "from": "gopro-batterier",
+      "to": "gopro-tillbehor-vendors",
+      "reason": "DELETE → GoPro accessories",
+      "path": "/collections/gopro-batterier",
+      "target": "/collections/gopro-tillbehor-vendors",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582378312"
+    },
+    {
+      "from": "osmo-action-6-tillbehor",
+      "to": "alla-produkter",
+      "reason": "DELETE → catalog",
+      "path": "/collections/osmo-action-6-tillbehor",
+      "target": "/collections/alla-produkter",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582411080"
+    },
+    {
+      "from": "ringlampa",
+      "to": "belysning-till-dronare",
+      "reason": "DELETE → drone lighting",
+      "path": "/collections/ringlampa",
+      "target": "/collections/belysning-till-dronare",
+      "result": "created",
+      "errors": [],
+      "id": "gid://shopify/UrlRedirect/995582443848"
+    }
+  ],
+  "deletes": [
+    {
+      "handle": "dji-air-3-serien",
+      "id": "gid://shopify/Collection/664616698184",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664616698184"
+    },
+    {
+      "handle": "dji-avata",
+      "id": "gid://shopify/Collection/664623415624",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664623415624"
+    },
+    {
+      "handle": "dji-mini-3-pro-dronare-set",
+      "id": "gid://shopify/Collection/664623513928",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664623513928"
+    },
+    {
+      "handle": "gopro-batterier",
+      "id": "gid://shopify/Collection/664630427976",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664630427976"
+    },
+    {
+      "handle": "osmo-action-6-tillbehor",
+      "id": "gid://shopify/Collection/664914919752",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664914919752"
+    },
+    {
+      "handle": "ringlampa",
+      "id": "gid://shopify/Collection/664630624584",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664630624584"
+    },
+    {
+      "handle": "dji-mavic-3-classic-1",
+      "id": "gid://shopify/Collection/664616763720",
+      "result": "deleted",
+      "errors": [],
+      "deletedId": "gid://shopify/Collection/664616763720"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "handle": "b2b-enterprise-v6",
+  "title": "Enterprise & B2B",
+  "note": "Additive — Defense/Försvar excluded per platform policy",
+  "industries": [
+    {
+      "handle": "bransch-energi-infrastruktur",
+      "title": "Energi & Infrastruktur",
+      "url": "/pages/bransch-energi-infrastruktur",
+      "exists": false
+    },
+    {
+      "handle": "bransch-kraftnat",
+      "title": "Kraftnät",
+      "url": "/pages/bransch-kraftnat",
+      "exists": false
+    },
+    {
+      "handle": "bransch-solparker",
+      "title": "Solparker",
+      "url": "/pages/bransch-solparker",
+      "exists": false
+    },
+    {
+      "handle": "bransch-vindkraft",
+      "title": "Vindkraft",
+      "url": "/pages/bransch-vindkraft",
+      "exists": false
+    },
+    {
+      "handle": "bransch-skogsbruk",
+      "title": "Skogsbruk",
+      "url": "/pages/bransch-skogsbruk",
+      "exists": false
+    },
+    {
+      "handle": "bransch-jordbruk",
+      "title": "Jordbruk",
+      "url": "/pages/bransch-jordbruk",
+      "exists": false
+    },
+    {
+      "handle": "bransch-kartlaggning-matning",
+      "title": "Kartläggning & Mätning",
+      "url": "/pages/bransch-kartlaggning-matning",
+      "exists": false
+    },
+    {
+      "handle": "bransch-bygg-anlaggning",
+      "title": "Bygg & Anläggning",
+      "url": "/pages/bransch-bygg-anlaggning",
+      "exists": false
+    },
+    {
+      "handle": "bransch-sakerhet-raddning",
+      "title": "Säkerhet & Räddning",
+      "url": "/pages/bransch-sakerhet-raddning",
+      "exists": false
+    },
+    {
+      "handle": "bransch-polis",
+      "title": "Polis",
+      "url": "/pages/bransch-polis",
+      "exists": false
+    },
+    {
+      "handle": "bransch-transport-logistik",
+      "title": "Transport & Logistik",
+      "url": "/pages/bransch-transport-logistik",
+      "exists": false
+    }
+  ],
+  "services": [
+    {
+      "handle": "foretagskonto",
+      "title": "Företagskonto",
+      "url": "/pages/foretagskonto",
+      "exists": false
+    },
+    {
+      "handle": "offertforfragan",
+      "title": "Offertförfrågan",
+      "url": "/pages/offertforfragan",
+      "exists": false
+    },
+    {
+      "handle": "leasing",
+      "title": "Leasing",
+      "url": "/pages/leasing",
+      "exists": false
+    },
+    {
+      "handle": "finansiering",
+      "title": "Finansiering",
+      "url": "/pages/finansiering",
+      "exists": false
+    },
+    {
+      "handle": "serviceavtal",
+      "title": "Serviceavtal",
+      "url": "/pages/serviceavtal",
+      "exists": false
+    },
+    {
+      "handle": "supportavtal",
+      "title": "Supportavtal",
+      "url": "/pages/supportavtal",
+      "exists": false
+    },
+    {
+      "handle": "utbildning",
+      "title": "Utbildning",
+      "url": "/pages/utbildning",
+      "exists": false
+    },
+    {
+      "handle": "partnerprogram",
+      "title": "Partnerprogram",
+      "url": "/pages/partnerprogram",
+      "exists": false
+    }
+  ]
+}

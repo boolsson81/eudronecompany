@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "consumer_landing": {
+      "type": "consumer-landing",
+      "blocks": {
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "eyebrow": "Konsumentdrönare",
+            "title": "Drönare för foto, video och äventyr",
+            "text": "Utforska DJI Mini, Air och Mavic — plus tillbehör, reservdelar och kom igång-paket för privat bruk.",
+            "button_label_1": "Handla drönare",
+            "button_link_1": "/collections/consumer-drones",
+            "button_label_2": "Se kom igång-paket",
+            "button_link_2": "/collections/starter-kits"
+          }
+        },
+        "heading_categories": {
+          "type": "heading",
+          "settings": {
+            "group": "categories",
+            "title": "Hitta rätt drönare",
+            "text": "Oavsett om du filmar resor, fångar action eller vill komma igång — vi har modellen för dig."
+          }
+        },
+        "category_1": {
+          "type": "category",
+          "settings": {
+            "title": "Resa & vlog",
+            "text": "Lätta och portabla drönare som DJI Mini och Flip.",
+            "link_label": "Utforska",
+            "link": "/collections/mini-flip"
+          }
+        },
+        "category_2": {
+          "type": "category",
+          "settings": {
+            "title": "Foto & video",
+            "text": "Högre bildkvalitet med DJI Air och Mavic.",
+            "link_label": "Utforska",
+            "link": "/collections/air-mavic"
+          }
+        },
+        "category_3": {
+          "type": "category",
+          "settings": {
+            "title": "FPV & action",
+            "text": "Immersiv flygning med FPV-glasögon.",
+            "link_label": "Utforska",
+            "link": "/collections/fpv"
+          }
+        },
+        "category_4": {
+          "type": "category",
+          "settings": {
+            "title": "Tillbehör & reservdelar",
+            "text": "Batterier, propellrar, filter och mer.",
+            "link_label": "Utforska",
+            "link": "/collections/accessories"
+          }
+        },
+        "heading_features": {
+          "type": "heading",
+          "settings": {
+            "group": "features",
+            "title": "Mer än bara produkter",
+            "text": "Vi hjälper dig hela vägen från första köpet till säker flygning."
+          }
+        },
+        "feature_1": {
+          "type": "feature",
+          "settings": {
+            "title": "Kom igång-paket",
+            "text": "Kompletta paket redo att flyga.",
+            "link_label": "Se paket",
+            "link": "/collections/starter-kits"
+          }
+        },
+        "feature_2": {
+          "type": "feature",
+          "settings": {
+            "title": "Drönarkort & utbildning",
+            "text": "Certifiering och guider för laglig flygning.",
+            "link_label": "Utbildningar",
+            "link": "/pages/training"
+          }
+        },
+        "feature_3": {
+          "type": "feature",
+          "settings": {
+            "title": "Support & garanti",
+            "text": "DJI Care Refresh och svensk kundsupport.",
+            "link_label": "Support",
+            "link": "/pages/support"
+          }
+        },
+        "heading_benefits": {
+          "type": "heading",
+          "settings": {
+            "group": "benefits",
+            "title": "Därför handla hos EuroDroneCompany"
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": { "text": "Auktoriserad DJI-återförsäljare" }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": { "text": "Snabb leverans i Sverige" }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": { "text": "Svensk kundsupport" }
+        },
+        "cta": {
+          "type": "cta",
+          "settings": {
+            "title": "Redo att börja flyga?",
+            "text": "Hitta rätt drönare, tillbehör och utbildning — allt på ett ställe.",
+            "button_label_1": "Handla alla drönare",
+            "button_link_1": "/collections/consumer-drones",
+            "button_label_2": "Se tillbehör",
+            "button_link_2": "/collections/accessories"
+          }
+        }
+      },
+      "block_order": [
+        "hero",
+        "heading_categories",
+        "category_1",
+        "category_2",
+        "category_3",
+        "category_4",
+        "heading_features",
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "heading_benefits",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "cta"
+      ],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "consumer_landing"
+  ]
+}

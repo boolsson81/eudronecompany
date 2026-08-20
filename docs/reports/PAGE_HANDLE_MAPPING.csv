@@ -1,0 +1,190 @@
+current_handle,proposed_handle,current_url,new_url,redirect_required,swedish_detected,title,execute_phase,internal_references_impacted
+contact,contact-us,/pages/contact,/pages/contact-us,YES,YES,Kontakta oss,4,
+actionking-student,(exclude),/pages/actionking-student,(exclude),EXCLUDE,LEGACY,"ActionKing söker drivna studenter – SEO, Webbutveckling, Content & Marknadsföring",EXCLUDE,
+360-camera,360-camera,/pages/360-camera,/pages/360-camera,NO,NO,360-kamera - stort utbud av kameror och tillbehör online,SKIP,
+vara-varumarken,brands,/pages/vara-varumarken,/pages/brands,YES,YES,Våra Varumärken,4,
+dji-neo,dji-neo,/pages/dji-neo,/pages/dji-neo,NO,NO,DJI Neo,SKIP,main-menu → DJI Neo; main-menu → :[];DJI Neo
+filter-action-king,(exclude),/pages/filter-action-king,(exclude),EXCLUDE,LEGACY,Filter,EXCLUDE,
+faq,faq,/pages/faq,/pages/faq,NO,NO,Välkommen till ActionKings FAQ!,SKIP,
+dji-osmo,dji-osmo,/pages/dji-osmo,/pages/dji-osmo,NO,NO,DJI Osmo-kameror och tillbehör för film och äventyr,SKIP,
+dji-accessories,dji-accessories,/pages/dji-accessories,/pages/dji-accessories,NO,NO,DJI-tillbehör för drönare - stort utbud för alla modeller,SKIP,
+gopro-faste,gopro-mount,/pages/gopro-faste,/pages/gopro-mount,YES,YES,GoPro-fäste för actionkamera - flexibla och säkra monteringslösningar,4,
+home-preparedness-equipment,home-preparedness-equipment,/pages/home-preparedness-equipment,/pages/home-preparedness-equipment,NO,NO,"Hemberedskap: Utrustning för kris, elavbrott och vardagssäkerhet",SKIP,
+camera-tripod,camera-tripod,/pages/camera-tripod,/pages/camera-tripod,NO,NO,Kamerastativ för actionkameror och drönare - stort utbud online,SKIP,
+waterproof-flashlight,waterproof-flashlight,/pages/waterproof-flashlight,/pages/waterproof-flashlight,NO,NO,Vattentät ficklampa för friluftsliv och äventyr - stort utbud online,SKIP,
+retur-reklamation,retur-claims,/pages/retur-reklamation,/pages/retur-claims,YES,YES,Retur & Reklamation,4,
+rekalamtioner-aterkop,claims-buyback,/pages/rekalamtioner-aterkop,/pages/claims-buyback,YES,YES,Reklamationer & Återköp,4,
+gimbal-and-stabilisering,gimbal-and-stabilization,/pages/gimbal-and-stabilisering,/pages/gimbal-and-stabilization,YES,YES,"Gimbal och stabilisering för mobil, kamera och actionkamera",4,
+drone-accessories-dji-m3pro,drone-accessories-dji-m3pro,/pages/drone-accessories-dji-m3pro,/pages/drone-accessories-dji-m3pro,NO,NO,Drönartillbehör för DJI Mavic 3 Pro – Höj din flygning!,SKIP,
+drones-action-king,(exclude),/pages/drones-action-king,(exclude),EXCLUDE,LEGACY,Drönare,EXCLUDE,
+protection,protection,/pages/protection,/pages/protection,NO,NO,Skydd,SKIP,
+dji-avata-series,dji-avata-series,/pages/dji-avata-series,/pages/dji-avata-series,NO,NO,DJI Avata-serien,SKIP,
+dji-mini-series,dji-mini-series,/pages/dji-mini-series,/pages/dji-mini-series,NO,NO,DJI Mini-serien,SKIP,
+dji-mavic-series,dji-mavic-series,/pages/dji-mavic-series,/pages/dji-mavic-series,NO,NO,DJI Mavic-serien,SKIP,
+dji-drones,dji-drones,/pages/dji-drones,/pages/dji-drones,NO,NO,DJI-Drönare,SKIP,
+hoverair-drones,hoverair-drones,/pages/hoverair-drones,/pages/hoverair-drones,NO,NO,HoverAir-Drönare,SKIP,
+hoverair-drone-accessories,hoverair-drone-accessories,/pages/hoverair-drone-accessories,/pages/hoverair-drone-accessories,NO,NO,HoverAir-Drönartillbehör,SKIP,
+dji-mavic-3-series,dji-mavic-3-series,/pages/dji-mavic-3-series,/pages/dji-mavic-3-series,NO,NO,DJI Mavic 3-serien,SKIP,
+tripod,tripod,/pages/tripod,/pages/tripod,NO,NO,Stativ,SKIP,
+spare-parts,spare-parts,/pages/spare-parts,/pages/spare-parts,NO,NO,Reservdelar till actionkameror,SKIP,
+kopvillkor,terms-of-sale,/pages/kopvillkor,/pages/terms-of-sale,YES,YES,Köpvillkor,4,
+om-actionking-se,(exclude),/pages/om-actionking-se,(exclude),EXCLUDE,LEGACY,Om ActionKing,EXCLUDE,
+gopro-accessories-and-spare-parts,gopro-accessories-and-spare-parts,/pages/gopro-accessories-and-spare-parts,/pages/gopro-accessories-and-spare-parts,NO,NO,GoPro Tillbehör och reservdelar allt till din kamera.,SKIP,
+accessories-for-dji-drones,accessories-for-dji-drones,/pages/accessories-for-dji-drones,/pages/accessories-for-dji-drones,NO,NO,Tillbehör till DJI-Drönare,SKIP,
+chargers-dji-batteries,chargers-dji-batteries,/pages/chargers-dji-batteries,/pages/chargers-dji-batteries,NO,NO,Laddare för DJI batterier,SKIP,
+vilken-bilkamera-ar-bast,which-dash-cam-is-best,/pages/vilken-bilkamera-ar-bast,/pages/which-dash-cam-is-best,YES,YES,Vilken bilkamera är bäst?,4,
+neck-strap-for-drones,neck-strap-for-drones,/pages/neck-strap-for-drones,/pages/neck-strap-for-drones,NO,NO,Nackrem till drönare,SKIP,
+propellers-for-drones,propellers-for-drones,/pages/propellers-for-drones,/pages/propellers-for-drones,NO,NO,Propeller till drönare,SKIP,
+bag-for-gopro,bag-for-gopro,/pages/bag-for-gopro,/pages/bag-for-gopro,NO,NO,Väska till GoPro,SKIP,
+memory-cards-for-gopro,memory-cards-for-gopro,/pages/memory-cards-for-gopro,/pages/memory-cards-for-gopro,NO,NO,Minneskort till GoPro,SKIP,
+batteries-and-chargers-for-gopro,batteries-and-chargers-for-gopro,/pages/batteries-and-chargers-for-gopro,/pages/batteries-and-chargers-for-gopro,NO,NO,Batterier och laddare till GoPro,SKIP,
+accessories-for-gopro,accessories-for-gopro,/pages/accessories-for-gopro,/pages/accessories-for-gopro,NO,NO,Tillbehör till GoPro,SKIP,
+faq-motorola-t92,faq-motorola-t92,/pages/faq-motorola-t92,/pages/faq-motorola-t92,NO,NO,Motorola T92 Frågor och Svar FAQ,SKIP,
+dji-mic-mini-faq,dji-mic-mini-faq,/pages/dji-mic-mini-faq,/pages/dji-mic-mini-faq,NO,NO,DJI Mic Mini Frågor och svar FAQ,SKIP,
+dji-flip-faq,dji-flip-faq,/pages/dji-flip-faq,/pages/dji-flip-faq,NO,NO,DJI Flip Frågor och svar FAQ,SKIP,
+nitecore-innovation-prestanda,nitecore-innovation-prestanda,/pages/nitecore-innovation-prestanda,/pages/nitecore-innovation-prestanda,NO,NO,Nitecore,SKIP,
+dji-air-series,dji-air-series,/pages/dji-air-series,/pages/dji-air-series,NO,NO,DJI Air-serien,SKIP,
+samarbeta-with-actionking,(exclude),/pages/samarbeta-with-actionking,(exclude),EXCLUDE,LEGACY,Samarbeta med ActionKing,EXCLUDE,
+goulet-ul-gear,goulet-ul-gear,/pages/goulet-ul-gear,/pages/goulet-ul-gear,NO,NO,Goulet UL Gear,SKIP,
+gunter-andreasson-ultracyklist,gunter-andreasson-ultracyklist,/pages/gunter-andreasson-ultracyklist,/pages/gunter-andreasson-ultracyklist,NO,NO,"Günter Andréasson – Ultracyklist, äventyrare och inspiratör",SKIP,
+samarbeta-with-oss,partner-with-us,/pages/samarbeta-with-oss,/pages/partner-with-us,YES,YES,Samarbeta med oss,4,
+we-buy-drones-actionking,(exclude),/pages/we-buy-drones-actionking,(exclude),EXCLUDE,LEGACY,"Vi köper din drönare – Snabbt, enkelt och tryggt",EXCLUDE,
+dji-neo-faq,dji-neo-faq,/pages/dji-neo-faq,/pages/dji-neo-faq,NO,NO,DJI Neo Frågor och svar FAQ,SKIP,
+feedback,feedback,/pages/feedback,/pages/feedback,NO,NO,Feedback,SKIP,
+kablar,cables,/pages/kablar,/pages/cables,YES,YES,Kablar,4,
+ljud,audio,/pages/ljud,/pages/audio,YES,YES,Ljud,4,
+memory-card-storage,memory-card-storage,/pages/memory-card-storage,/pages/memory-card-storage,NO,NO,Minneskort & Lagring,SKIP,
+faq-motorola-t82-extreme,faq-motorola-t82-extreme,/pages/faq-motorola-t82-extreme,/pages/faq-motorola-t82-extreme,NO,NO,Motorola T82 Extreme Frågor och Svar FAQ,SKIP,
+dji-flip,dji-flip,/pages/dji-flip,/pages/dji-flip,NO,NO,DJI Flip,SKIP,
+dji-mavic-3-classic,dji-mavic-3-classic,/pages/dji-mavic-3-classic,/pages/dji-mavic-3-classic,NO,NO,DJI Mavic 3 Classic,SKIP,
+cookies-actionking,(exclude),/pages/cookies-actionking,(exclude),EXCLUDE,LEGACY,Cookies hos ActionKing,EXCLUDE,
+basta-myggskyddet,best-mosquito-repellent,/pages/basta-myggskyddet,/pages/best-mosquito-repellent,YES,YES,Bästa myggskyddet,4,
+all-products-actionking,(exclude),/pages/all-products-actionking,(exclude),EXCLUDE,LEGACY,Alla produkter,EXCLUDE,
+_test-deploy-delete-me,(exclude),/pages/_test-deploy-delete-me,(exclude),EXCLUDE,LEGACY,TEST DELETE,EXCLUDE,
+service-support,service-support,/pages/service-support,/pages/service-support,NO,NO,Service & Support,SKIP,service-support-deploy → Service & Support
+dji-service,dji-service,/pages/dji-service,/pages/dji-service,NO,NO,DJI Service,SKIP,service-support-deploy → :[];DJI Service
+dji-enterprise-service,dji-enterprise-service,/pages/dji-enterprise-service,/pages/dji-enterprise-service,NO,NO,Enterprise Service,SKIP,service-support-deploy → :[]];Enterprise Service
+flycart-service,flycart-service,/pages/flycart-service,/pages/flycart-service,NO,NO,FlyCart Service,SKIP,service-support-deploy → :[];FlyCart Service
+matrice-service,matrice-service,/pages/matrice-service,/pages/matrice-service,NO,NO,Matrice Service,SKIP,service-support-deploy → :[];Matrice Service
+troubleshooting,troubleshooting,/pages/troubleshooting,/pages/troubleshooting,NO,NO,Felsökning,SKIP,
+repair,repairs,/pages/repair,/pages/repairs,YES,YES,Reparation,4,
+calibration,calibration,/pages/calibration,/pages/calibration,NO,NO,Kalibrering,SKIP,
+battery-test,battery-test,/pages/battery-test,/pages/battery-test,NO,NO,Batteritest,SKIP,
+firmware-update,firmware-update,/pages/firmware-update,/pages/firmware-update,NO,NO,Firmwareuppdatering,SKIP,
+warranty-management,warranty-management,/pages/warranty-management,/pages/warranty-management,NO,NO,Garantihantering,SKIP,
+rma,rma,/pages/rma,/pages/rma,NO,NO,RMA,SKIP,service-support-deploy → :[];RMA
+service-request,service-request,/pages/service-request,/pages/service-request,NO,NO,Serviceanmälan,SKIP,
+support,support,/pages/support,/pages/support,NO,NO,Support,SKIP,service-support-deploy → :[];Support
+enterprise-account,business-account,/pages/enterprise-account,/pages/business-account,YES,YES,Företagskonto,4,
+quote-request,request-a-quote,/pages/quote-request,/pages/request-a-quote,YES,YES,Offertförfrågan,4,
+leasing,leasing,/pages/leasing,/pages/leasing,NO,NO,Leasing,SKIP,b2b-enterprise-deploy → :[];Leasing
+financing,financing,/pages/financing,/pages/financing,NO,NO,Finansiering,SKIP,
+service-agreement,service-agreement,/pages/service-agreement,/pages/service-agreement,NO,NO,Serviceavtal,SKIP,
+support-agreement,support-agreement,/pages/support-agreement,/pages/support-agreement,NO,NO,Supportavtal,SKIP,
+training,training,/pages/training,/pages/training,NO,NO,Utbildning,SKIP,
+partner-program,partner-program,/pages/partner-program,/pages/partner-program,NO,NO,Partnerprogram,SKIP,
+industry-energy-infrastructure,industry-energy-infrastructure,/pages/industry-energy-infrastructure,/pages/industry-energy-infrastructure,NO,NO,Energi & Infrastruktur,SKIP,
+industry-wind-power,industry-wind-power,/pages/industry-wind-power,/pages/industry-wind-power,NO,NO,Vindkraft,SKIP,
+industry-solar-parks,industry-solar-parks,/pages/industry-solar-parks,/pages/industry-solar-parks,NO,NO,Solparker,SKIP,
+industry-power-grid,industry-power-grid,/pages/industry-power-grid,/pages/industry-power-grid,NO,NO,Kraftnät,SKIP,
+industry-forestry,industry-forestry,/pages/industry-forestry,/pages/industry-forestry,NO,NO,Skogsbruk,SKIP,
+industry-agriculture,industry-agriculture,/pages/industry-agriculture,/pages/industry-agriculture,NO,NO,Jordbruk,SKIP,
+industry-mapping,industry-mapping,/pages/industry-mapping,/pages/industry-mapping,NO,NO,Kartläggning,SKIP,
+industry-construction,industry-construction,/pages/industry-construction,/pages/industry-construction,NO,NO,Bygg & Anläggning,SKIP,
+industry-security-rescue,industry-security-rescue,/pages/industry-security-rescue,/pages/industry-security-rescue,NO,NO,Säkerhet & Räddning,SKIP,
+industry-transport-logistics,industry-transport-logistics,/pages/industry-transport-logistics,/pages/industry-transport-logistics,NO,NO,Transport & Logistik,SKIP,
+current_handle,proposed_handle,taxonomy_pillar,action,swedish_detected,current_url,proposed_url,title
+contact,contact-us,Support,RENAME,YES,/pages/contact,/pages/contact-us,Kontakta oss
+actionking-student,(exclude),Support,EXCLUDE,LEGACY,/pages/actionking-student,(exclude),"ActionKing söker drivna studenter – SEO, Webbutveckling, Content & Marknadsföring"
+360-camera,360-camera,Support,KEEP,NO,/pages/360-camera,/pages/360-camera,360-kamera - stort utbud av kameror och tillbehör online
+vara-varumarken,brands,Brands,RENAME,YES,/pages/vara-varumarken,/pages/brands,Våra Varumärken
+dji-neo,dji-neo,Drones,KEEP,NO,/pages/dji-neo,/pages/dji-neo,DJI Neo
+filter-action-king,(exclude),Support,EXCLUDE,LEGACY,/pages/filter-action-king,(exclude),Filter
+faq,faq,Support,KEEP,NO,/pages/faq,/pages/faq,Välkommen till ActionKings FAQ!
+dji-osmo,dji-osmo,Accessories,KEEP,NO,/pages/dji-osmo,/pages/dji-osmo,DJI Osmo-kameror och tillbehör för film och äventyr
+dji-accessories,dji-accessories,Accessories,KEEP,NO,/pages/dji-accessories,/pages/dji-accessories,DJI-tillbehör för drönare - stort utbud för alla modeller
+gopro-faste,gopro-mount,Accessories,RENAME,YES,/pages/gopro-faste,/pages/gopro-mount,GoPro-fäste för actionkamera - flexibla och säkra monteringslösningar
+home-preparedness-equipment,home-preparedness-equipment,Support,KEEP,NO,/pages/home-preparedness-equipment,/pages/home-preparedness-equipment,"Hemberedskap: Utrustning för kris, elavbrott och vardagssäkerhet"
+camera-tripod,camera-tripod,Accessories,KEEP,NO,/pages/camera-tripod,/pages/camera-tripod,Kamerastativ för actionkameror och drönare - stort utbud online
+waterproof-flashlight,waterproof-flashlight,Support,KEEP,NO,/pages/waterproof-flashlight,/pages/waterproof-flashlight,Vattentät ficklampa för friluftsliv och äventyr - stort utbud online
+retur-reklamation,retur-claims,Support,RENAME,YES,/pages/retur-reklamation,/pages/retur-claims,Retur & Reklamation
+rekalamtioner-aterkop,claims-buyback,Support,RENAME,YES,/pages/rekalamtioner-aterkop,/pages/claims-buyback,Reklamationer & Återköp
+gimbal-and-stabilisering,gimbal-and-stabilization,Accessories,RENAME,YES,/pages/gimbal-and-stabilisering,/pages/gimbal-and-stabilization,"Gimbal och stabilisering för mobil, kamera och actionkamera"
+drone-accessories-dji-m3pro,drone-accessories-dji-m3pro,Accessories,KEEP,NO,/pages/drone-accessories-dji-m3pro,/pages/drone-accessories-dji-m3pro,Drönartillbehör för DJI Mavic 3 Pro – Höj din flygning!
+drones-action-king,(exclude),Support,EXCLUDE,LEGACY,/pages/drones-action-king,(exclude),Drönare
+protection,protection,Accessories,KEEP,NO,/pages/protection,/pages/protection,Skydd
+dji-avata-series,dji-avata-series,Drones,KEEP,NO,/pages/dji-avata-series,/pages/dji-avata-series,DJI Avata-serien
+dji-mini-series,dji-mini-series,Drones,KEEP,NO,/pages/dji-mini-series,/pages/dji-mini-series,DJI Mini-serien
+dji-mavic-series,dji-mavic-series,Drones,KEEP,NO,/pages/dji-mavic-series,/pages/dji-mavic-series,DJI Mavic-serien
+dji-drones,dji-drones,Drones,KEEP,NO,/pages/dji-drones,/pages/dji-drones,DJI-Drönare
+hoverair-drones,hoverair-drones,Drones,KEEP,NO,/pages/hoverair-drones,/pages/hoverair-drones,HoverAir-Drönare
+hoverair-drone-accessories,hoverair-drone-accessories,Drones,KEEP,NO,/pages/hoverair-drone-accessories,/pages/hoverair-drone-accessories,HoverAir-Drönartillbehör
+dji-mavic-3-series,dji-mavic-3-series,Drones,KEEP,NO,/pages/dji-mavic-3-series,/pages/dji-mavic-3-series,DJI Mavic 3-serien
+tripod,tripod,Accessories,KEEP,NO,/pages/tripod,/pages/tripod,Stativ
+spare-parts,spare-parts,Support,KEEP,NO,/pages/spare-parts,/pages/spare-parts,Reservdelar till actionkameror
+kopvillkor,terms-of-sale,Support,RENAME,YES,/pages/kopvillkor,/pages/terms-of-sale,Köpvillkor
+om-actionking-se,(exclude),Support,EXCLUDE,LEGACY,/pages/om-actionking-se,(exclude),Om ActionKing
+gopro-accessories-and-spare-parts,gopro-accessories-and-spare-parts,Accessories,KEEP,NO,/pages/gopro-accessories-and-spare-parts,/pages/gopro-accessories-and-spare-parts,GoPro Tillbehör och reservdelar allt till din kamera.
+accessories-for-dji-drones,accessories-for-dji-drones,Drones,KEEP,NO,/pages/accessories-for-dji-drones,/pages/accessories-for-dji-drones,Tillbehör till DJI-Drönare
+chargers-dji-batteries,chargers-dji-batteries,Support,KEEP,NO,/pages/chargers-dji-batteries,/pages/chargers-dji-batteries,Laddare för DJI batterier
+vilken-bilkamera-ar-bast,which-dash-cam-is-best,Support,RENAME,YES,/pages/vilken-bilkamera-ar-bast,/pages/which-dash-cam-is-best,Vilken bilkamera är bäst?
+neck-strap-for-drones,neck-strap-for-drones,Support,KEEP,NO,/pages/neck-strap-for-drones,/pages/neck-strap-for-drones,Nackrem till drönare
+propellers-for-drones,propellers-for-drones,Accessories,KEEP,NO,/pages/propellers-for-drones,/pages/propellers-for-drones,Propeller till drönare
+bag-for-gopro,bag-for-gopro,Accessories,KEEP,NO,/pages/bag-for-gopro,/pages/bag-for-gopro,Väska till GoPro
+memory-cards-for-gopro,memory-cards-for-gopro,Accessories,KEEP,NO,/pages/memory-cards-for-gopro,/pages/memory-cards-for-gopro,Minneskort till GoPro
+batteries-and-chargers-for-gopro,batteries-and-chargers-for-gopro,Accessories,KEEP,NO,/pages/batteries-and-chargers-for-gopro,/pages/batteries-and-chargers-for-gopro,Batterier och laddare till GoPro
+accessories-for-gopro,accessories-for-gopro,Accessories,KEEP,NO,/pages/accessories-for-gopro,/pages/accessories-for-gopro,Tillbehör till GoPro
+faq-motorola-t92,faq-motorola-t92,Support,KEEP,NO,/pages/faq-motorola-t92,/pages/faq-motorola-t92,Motorola T92 Frågor och Svar FAQ
+dji-mic-mini-faq,dji-mic-mini-faq,Support,KEEP,NO,/pages/dji-mic-mini-faq,/pages/dji-mic-mini-faq,DJI Mic Mini Frågor och svar FAQ
+dji-flip-faq,dji-flip-faq,Drones,KEEP,NO,/pages/dji-flip-faq,/pages/dji-flip-faq,DJI Flip Frågor och svar FAQ
+nitecore-innovation-prestanda,nitecore-innovation-prestanda,Brands,KEEP,NO,/pages/nitecore-innovation-prestanda,/pages/nitecore-innovation-prestanda,Nitecore
+dji-air-series,dji-air-series,Drones,KEEP,NO,/pages/dji-air-series,/pages/dji-air-series,DJI Air-serien
+samarbeta-with-actionking,(exclude),Support,EXCLUDE,LEGACY,/pages/samarbeta-with-actionking,(exclude),Samarbeta med ActionKing
+goulet-ul-gear,goulet-ul-gear,Support,KEEP,NO,/pages/goulet-ul-gear,/pages/goulet-ul-gear,Goulet UL Gear
+gunter-andreasson-ultracyklist,gunter-andreasson-ultracyklist,Support,KEEP,NO,/pages/gunter-andreasson-ultracyklist,/pages/gunter-andreasson-ultracyklist,"Günter Andréasson – Ultracyklist, äventyrare och inspiratör"
+samarbeta-with-oss,partner-with-us,Support,RENAME,YES,/pages/samarbeta-with-oss,/pages/partner-with-us,Samarbeta med oss
+we-buy-drones-actionking,(exclude),Support,EXCLUDE,LEGACY,/pages/we-buy-drones-actionking,(exclude),"Vi köper din drönare – Snabbt, enkelt och tryggt"
+dji-neo-faq,dji-neo-faq,Drones,KEEP,NO,/pages/dji-neo-faq,/pages/dji-neo-faq,DJI Neo Frågor och svar FAQ
+feedback,feedback,Support,KEEP,NO,/pages/feedback,/pages/feedback,Feedback
+kablar,cables,Accessories,RENAME,YES,/pages/kablar,/pages/cables,Kablar
+ljud,audio,Accessories,RENAME,YES,/pages/ljud,/pages/audio,Ljud
+memory-card-storage,memory-card-storage,Accessories,KEEP,NO,/pages/memory-card-storage,/pages/memory-card-storage,Minneskort & Lagring
+faq-motorola-t82-extreme,faq-motorola-t82-extreme,Support,KEEP,NO,/pages/faq-motorola-t82-extreme,/pages/faq-motorola-t82-extreme,Motorola T82 Extreme Frågor och Svar FAQ
+dji-flip,dji-flip,Drones,KEEP,NO,/pages/dji-flip,/pages/dji-flip,DJI Flip
+dji-mavic-3-classic,dji-mavic-3-classic,Support,KEEP,NO,/pages/dji-mavic-3-classic,/pages/dji-mavic-3-classic,DJI Mavic 3 Classic
+cookies-actionking,(exclude),Support,EXCLUDE,LEGACY,/pages/cookies-actionking,(exclude),Cookies hos ActionKing
+basta-myggskyddet,best-mosquito-repellent,Support,RENAME,YES,/pages/basta-myggskyddet,/pages/best-mosquito-repellent,Bästa myggskyddet
+all-products-actionking,(exclude),Support,EXCLUDE,LEGACY,/pages/all-products-actionking,(exclude),Alla produkter
+_test-deploy-delete-me,(exclude),Support,EXCLUDE,LEGACY,/pages/_test-deploy-delete-me,(exclude),TEST DELETE
+service-support,service-support,Support,KEEP,NO,/pages/service-support,/pages/service-support,Service & Support
+dji-service,dji-service,Support,KEEP,NO,/pages/dji-service,/pages/dji-service,DJI Service
+dji-enterprise-service,dji-enterprise-service,Support,KEEP,NO,/pages/dji-enterprise-service,/pages/dji-enterprise-service,Enterprise Service
+flycart-service,flycart-service,Support,KEEP,NO,/pages/flycart-service,/pages/flycart-service,FlyCart Service
+matrice-service,matrice-service,Support,KEEP,NO,/pages/matrice-service,/pages/matrice-service,Matrice Service
+troubleshooting,troubleshooting,Support,KEEP,NO,/pages/troubleshooting,/pages/troubleshooting,Felsökning
+repair,repairs,Support,RENAME,YES,/pages/repair,/pages/repairs,Reparation
+calibration,calibration,Support,KEEP,NO,/pages/calibration,/pages/calibration,Kalibrering
+battery-test,battery-test,Accessories,KEEP,NO,/pages/battery-test,/pages/battery-test,Batteritest
+firmware-update,firmware-update,Support,KEEP,NO,/pages/firmware-update,/pages/firmware-update,Firmwareuppdatering
+warranty-management,warranty-management,Support,KEEP,NO,/pages/warranty-management,/pages/warranty-management,Garantihantering
+rma,rma,Support,KEEP,NO,/pages/rma,/pages/rma,RMA
+service-request,service-request,Support,KEEP,NO,/pages/service-request,/pages/service-request,Serviceanmälan
+support,support,Support,KEEP,NO,/pages/support,/pages/support,Support
+enterprise-account,business-account,Support,RENAME,YES,/pages/enterprise-account,/pages/business-account,Företagskonto
+quote-request,request-a-quote,Support,RENAME,YES,/pages/quote-request,/pages/request-a-quote,Offertförfrågan
+leasing,leasing,Support,KEEP,NO,/pages/leasing,/pages/leasing,Leasing
+financing,financing,Support,KEEP,NO,/pages/financing,/pages/financing,Finansiering
+service-agreement,service-agreement,Support,KEEP,NO,/pages/service-agreement,/pages/service-agreement,Serviceavtal
+support-agreement,support-agreement,Support,KEEP,NO,/pages/support-agreement,/pages/support-agreement,Supportavtal
+training,training,Support,KEEP,NO,/pages/training,/pages/training,Utbildning
+partner-program,partner-program,Support,KEEP,NO,/pages/partner-program,/pages/partner-program,Partnerprogram
+industry-energy-infrastructure,industry-energy-infrastructure,Enterprise,KEEP,NO,/pages/industry-energy-infrastructure,/pages/industry-energy-infrastructure,Energi & Infrastruktur
+industry-wind-power,industry-wind-power,Enterprise,KEEP,NO,/pages/industry-wind-power,/pages/industry-wind-power,Vindkraft
+industry-solar-parks,industry-solar-parks,Enterprise,KEEP,NO,/pages/industry-solar-parks,/pages/industry-solar-parks,Solparker
+industry-power-grid,industry-power-grid,Enterprise,KEEP,NO,/pages/industry-power-grid,/pages/industry-power-grid,Kraftnät
+industry-forestry,industry-forestry,Enterprise,KEEP,NO,/pages/industry-forestry,/pages/industry-forestry,Skogsbruk
+industry-agriculture,industry-agriculture,Enterprise,KEEP,NO,/pages/industry-agriculture,/pages/industry-agriculture,Jordbruk
+industry-mapping,industry-mapping,Enterprise,KEEP,NO,/pages/industry-mapping,/pages/industry-mapping,Kartläggning
+industry-construction,industry-construction,Enterprise,KEEP,NO,/pages/industry-construction,/pages/industry-construction,Bygg & Anläggning
+industry-security-rescue,industry-security-rescue,Enterprise,KEEP,NO,/pages/industry-security-rescue,/pages/industry-security-rescue,Säkerhet & Räddning
+industry-transport-logistics,industry-transport-logistics,Enterprise,KEEP,NO,/pages/industry-transport-logistics,/pages/industry-transport-logistics,Transport & Logistik

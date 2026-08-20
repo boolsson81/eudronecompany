@@ -1,0 +1,32 @@
+{
+  "mode": "DRY_RUN",
+  "shop": "Europe Drone Parts",
+  "domain": "ya1xhg-x6.myshopify.com",
+  "generated_at": "2026-06-13T17:55:52.566Z",
+  "total_rules": 322,
+  "by_type": {
+    "collection": 134,
+    "page": 50,
+    "blog": 2,
+    "article": 136
+  },
+  "validation": {
+    "total": 322,
+    "unique_from": 322,
+    "loops": 0,
+    "loop_samples": [],
+    "duplicates": 0,
+    "duplicate_samples": [],
+    "pass": true
+  },
+  "live_check": {
+    "checked": 161,
+    "would_create": 161,
+    "existing_ok": 0,
+    "conflicts": []
+  },
+  "would_create": 322,
+  "already_exists": 0,
+  "conflicts": [],
+  "pass": true
+}

@@ -1,0 +1,241 @@
+/* EuroDroneParts — light homepage polish */
+
+.template-index .collection__title .title {
+  letter-spacing: -0.02em;
+}
+
+.template-index .product-card-wrapper .card--standard .card__inner,
+.template-index .product-card-wrapper .card--card {
+  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  box-shadow: 0 0.8rem 2.4rem rgba(var(--color-shadow), 0.08);
+}
+
+.template-index .collection__view-all .button--secondary {
+  border-color: rgba(var(--color-foreground), 0.2);
+}
+
+.template-index .collection__view-all .button--secondary:hover {
+  border-color: rgba(var(--color-foreground), 0.35);
+}
+
+/* Homepage inherits unified dark theme from edp-store.css */
+
+.user-type-selector--premium.gradient {
+  background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a1a1a 0%, #0a0a0a 55%);
+  background-color: #0a0a0a;
+}
+
+/* EuroDroneParts — premium black theme (homepage + collection) */
+
+/* Unified pure-black header — one shade (#000) across all header layers */
+.edp-premium #shopify-section-group-header-group,
+.edp-premium .shopify-section-group-header-group,
+.edp-premium #shopify-section-group-header-group .shopify-section,
+.edp-premium .shopify-section-group-header-group .shopify-section,
+.edp-premium #shopify-section-group-header-group .gradient,
+.edp-premium .shopify-section-group-header-group .gradient,
+.edp-premium #shopify-section-group-header-group .edp-utility-bar,
+.edp-premium #shopify-section-group-header-group .utility-bar,
+.edp-premium #shopify-section-group-header-group .header-wrapper,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar,
+.edp-premium .shopify-section-group-header-group .utility-bar,
+.edp-premium .shopify-section-group-header-group .header-wrapper {
+  --color-background: 0, 0, 0;
+  --gradient-background: #000;
+  --color-foreground: 255, 255, 255;
+  background: #000;
+  background-color: #000;
+  background-attachment: scroll;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar,
+.edp-premium #shopify-section-group-header-group .utility-bar,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar,
+.edp-premium .shopify-section-group-header-group .utility-bar {
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.08);
+}
+
+.edp-premium #shopify-section-group-header-group .header-wrapper--border-bottom,
+.edp-premium .shopify-section-group-header-group .header-wrapper--border-bottom {
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.edp-premium #shopify-section-group-header-group .announcement-bar,
+.edp-premium #shopify-section-group-header-group .announcement-bar__message,
+.edp-premium #shopify-section-group-header-group .announcement-bar__link,
+.edp-premium .shopify-section-group-header-group .announcement-bar,
+.edp-premium .shopify-section-group-header-group .announcement-bar__message {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar__segment,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar__segment {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar__segment-btn,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar__segment-btn {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar__segment-btn:hover,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar__segment-btn:hover {
+  color: #fff;
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar__segment-btn.is-active,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar__segment-btn.is-active {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
+
+.edp-premium #shopify-section-group-header-group .edp-utility-bar__link,
+.edp-premium .shopify-section-group-header-group .edp-utility-bar__link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edp-premium #shopify-section-group-header-group .header__heading-link .header__shop-name,
+.edp-premium #shopify-section-group-header-group .header__heading-link .h2,
+.edp-premium #shopify-section-group-header-group .header__icon,
+.edp-premium .shopify-section-group-header-group .header__heading-link .header__shop-name,
+.edp-premium .shopify-section-group-header-group .header__heading-link .h2,
+.edp-premium .shopify-section-group-header-group .header__icon {
+  color: #fff;
+}
+
+.edp-premium #shopify-section-group-header-group .header__icon .icon,
+.edp-premium .shopify-section-group-header-group .header__icon .icon {
+  fill: #fff;
+}
+
+.edp-premium.gradient {
+  background: #000;
+  background-color: #000;
+  background-attachment: scroll;
+  color: #fff;
+}
+
+.edp-premium .content-for-layout,
+.edp-premium #MainContent > .shopify-section {
+  background-color: #000;
+}
+
+.edp-premium .color-scheme-4.gradient,
+.edp-premium .collection.color-scheme-4,
+.edp-premium .collection-hero.color-scheme-4 {
+  background: #000;
+  background-color: #000;
+}
+
+.edp-premium .collection__title .title,
+.edp-premium .collection-hero__title {
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.edp-premium .collection__description,
+.edp-premium .collection-hero__description {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+/* Collection filters & empty state */
+.edp-premium .facets__heading,
+.edp-premium .facets__summary-label,
+.edp-premium .facet-filters__label,
+.edp-premium .product-count__text,
+.edp-premium .mobile-facets__open-label,
+.edp-premium .mobile-facets__count {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.edp-premium .facets__summary .icon-caret,
+.edp-premium .mobile-facets__open .svg-wrapper {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edp-premium .mobile-facets__open line,
+.edp-premium .mobile-facets__open circle {
+  stroke: rgba(255, 255, 255, 0.75);
+}
+
+.edp-premium .collection--empty .title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.edp-premium .collection--empty .underlined-link {
+  color: #fff;
+}
+
+.edp-premium .active-facets__button-inner {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Product cards */
+.edp-premium .product-card-wrapper .card--standard .card__inner {
+  background: #111;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.45);
+}
+
+.edp-premium .product-card-wrapper .card--card {
+  background: #111;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.45);
+}
+
+.edp-premium .card__heading,
+.edp-premium .card__heading a,
+.edp-premium .card-information__text {
+  color: #fff;
+}
+
+.edp-premium .price {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.edp-premium .price--on-sale .price-item--regular {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.edp-premium .badge {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.edp-premium .collection__view-all .button--secondary {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.edp-premium .collection__view-all .button--secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.edp-premium .collection__view-all .link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.edp-premium .slider-button {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.edp-premium .slider-counter {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.edp-premium .quick-add__submit {
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.edp-premium .quick-add__submit:hover {
+  background: rgba(255, 255, 255, 0.12);
+}

@@ -1,0 +1,840 @@
+{
+  "blog": {
+    "handle": "vanliga-fragor",
+    "title": "Vanliga frågor",
+    "metaTitle": "FAQ — enterprise-drönare & drönarkameror | EuroDroneParts",
+    "metaDescription": "Svar på vanliga frågor om professionella DJI Enterprise-drönare, Zenmuse-kameror, payloads, certifiering och branschlösningar.",
+    "templateSuffix": "vanliga-fragor"
+  },
+  "articles": [
+    {
+      "handle": "enterprise-dronare-kop-support",
+      "title": "Vanliga frågor om köp av enterprise-drönare",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — köp av enterprise-drönare | EuroDroneParts",
+      "metaDescription": "Svar på frågor om pris, leverans, garanti, utbildning och finansiering av DJI Enterprise-drönare i Sverige.",
+      "excerpt": "Leverans, garanti, utbildning och finansiering — svar på de vanligaste frågorna när du köper professionella drönare från EuroDroneParts.",
+      "tags": [
+        "faq",
+        "köp",
+        "enterprise",
+        "support"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Köp &amp; support</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Att investera i enterprise-drönare innebär mer än att välja modell — leverans, support, utbildning och certifiering påverkar hur snabbt ni får värde av investeringen.</p>\n    <p>Här samlar vi de vanligaste frågorna från företag som köper DJI Enterprise-utrustning via EuroDroneParts.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vilka enterprise-drönare säljer EuroDroneParts?</summary>\n      <p>Vi är auktoriserad DJI Enterprise-partner och erbjuder hela sortimentet — bland annat Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vad kostar en professionell enterprise-drönare?</summary>\n      <p>Priset varierar beroende på modell och sensorpaket. DJI Mavic 3 Enterprise börjar runt 30 000 kr, medan DJI Matrice 350 RTK med payload ofta ligger från ca 100 000 kr och uppåt. Kontakta oss för offert anpassad efter ert uppdrag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur lång tid tar leveransen?</summary>\n      <p>De flesta produkter levereras inom 2–5 arbetsdagar från beställning. Specialkonfigurationer eller beställningsvaror kan ta något längre — vi meddelar alltid förväntad leveranstid vid offert.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Ingår utbildning vid köp?</summary>\n      <p>Vi erbjuder skräddarsydd utbildning anpassad efter er bransch och tillämpning. Vi kan även förmedla kontakt med certifierade operatörer och hjälpa med tillståndsansökningar enligt EASA.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Erbjuder ni leasing eller finansiering?</summary>\n      <p>Ja, vi erbjuder flera finansieringsalternativ inklusive leasing och avbetalning. Kontakta vårt B2B-team för ett upplägg som passar ert företag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken support ingår efter köpet?</summary>\n      <p>Alla köp inkluderar DJI Enterprise-garanti, teknisk support och tillgång till vår serviceverkstad. Vi erbjuder även DJI Care Enterprise för utökat skydd och snabbare reparation.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/collections/enterprise-drones\" class=\"edp-faq__related-link\">Enterprise-drönare</a>\n        <a href=\"/pages/b2b\" class=\"edp-faq__related-link\">B2B-offert</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilka enterprise-drönare säljer EuroDroneParts?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vi är auktoriserad DJI Enterprise-partner och erbjuder hela sortimentet — bland annat Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör.\"}},{\"@type\":\"Question\",\"name\":\"Vad kostar en professionell enterprise-drönare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Priset varierar beroende på modell och sensorpaket. DJI Mavic 3 Enterprise börjar runt 30 000 kr, medan DJI Matrice 350 RTK med payload ofta ligger från ca 100 000 kr och uppåt. Kontakta oss för offert anpassad efter ert uppdrag.\"}},{\"@type\":\"Question\",\"name\":\"Hur lång tid tar leveransen?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De flesta produkter levereras inom 2–5 arbetsdagar från beställning. Specialkonfigurationer eller beställningsvaror kan ta något längre — vi meddelar alltid förväntad leveranstid vid offert.\"}},{\"@type\":\"Question\",\"name\":\"Ingår utbildning vid köp?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vi erbjuder skräddarsydd utbildning anpassad efter er bransch och tillämpning. Vi kan även förmedla kontakt med certifierade operatörer och hjälpa med tillståndsansökningar enligt EASA.\"}},{\"@type\":\"Question\",\"name\":\"Erbjuder ni leasing eller finansiering?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, vi erbjuder flera finansieringsalternativ inklusive leasing och avbetalning. Kontakta vårt B2B-team för ett upplägg som passar ert företag.\"}},{\"@type\":\"Question\",\"name\":\"Vilken support ingår efter köpet?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Alla köp inkluderar DJI Enterprise-garanti, teknisk support och tillgång till vår serviceverkstad. Vi erbjuder även DJI Care Enterprise för utökat skydd och snabbare reparation.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vilka enterprise-drönare säljer EuroDroneParts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela sortimentet — bland annat Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad kostar en professionell enterprise-drönare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Priset varierar beroende på modell och sensorpaket. DJI Mavic 3 Enterprise börjar runt 30 000 kr, medan DJI Matrice 350 RTK med payload ofta ligger från ca 100 000 kr och uppåt. Kontakta oss för offert anpassad efter ert uppdrag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur lång tid tar leveransen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De flesta produkter levereras inom 2–5 arbetsdagar från beställning. Specialkonfigurationer eller beställningsvaror kan ta något längre — vi meddelar alltid förväntad leveranstid vid offert."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ingår utbildning vid köp?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vi erbjuder skräddarsydd utbildning anpassad efter er bransch och tillämpning. Vi kan även förmedla kontakt med certifierade operatörer och hjälpa med tillståndsansökningar enligt EASA."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Erbjuder ni leasing eller finansiering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, vi erbjuder flera finansieringsalternativ inklusive leasing och avbetalning. Kontakta vårt B2B-team för ett upplägg som passar ert företag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken support ingår efter köpet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Alla köp inkluderar DJI Enterprise-garanti, teknisk support och tillgång till vår serviceverkstad. Vi erbjuder även DJI Care Enterprise för utökat skydd och snabbare reparation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "dronarkameror-val",
+      "title": "Vanliga frågor om val av drönarkamera",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — välja drönarkamera | EuroDroneParts",
+      "metaDescription": "Svar på frågor om Zenmuse-kameror, H30, H20T, P1 och L2. Vilken payload passar inspektion, kartläggning och termisk avbildning?",
+      "excerpt": "Hur väljer du rätt Zenmuse-payload? Översikt över inspektion, termisk, fotogrammetri och LiDAR — och vilka plattformar de passar.",
+      "tags": [
+        "faq",
+        "kameror",
+        "zenmuse",
+        "payload"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Drönarkameror</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Val av drönarkamera avgörs av uppdragstyp — inspektion kräver annan sensor än kartläggning eller räddningsinsats.</p>\n    <p>Här besvarar vi de vanligaste frågorna om Zenmuse-payloads och hur du matchar kamera med plattform och användningsområde.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vilken Zenmuse-kamera passar bäst för inspektion?</summary>\n      <p>För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 40× optisk zoom och förbättrad bildkvalitet jämfört med H20T.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vad är skillnaden mellan H30 och H30T?</summary>\n      <p>Zenmuse H30T har en integrerad termisk sensor (1280×1024) utöver vidvinkel- och zoomkamerorna. H30 har samma optiska zoom och laser-avståndsmätare men saknar termisk kamera — vilket gör den något lättare och mer prisvärd.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Behöver jag P1 eller L2 för kartläggning?</summary>\n      <p>Zenmuse P1 är bäst för fotogrammetri och ortofoton med 45 MP fullformats-sensor. Zenmuse L2 är rätt val om du behöver LiDAR-punktmoln, till exempel för skogskartläggning eller terrängmodeller genom vegetation.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilka drönare är kamerorna kompatibla med?</summary>\n      <p>De flesta Zenmuse-kameror monteras på DJI Matrice 300 RTK och Matrice 350 RTK. H30-serien stöds även på Matrice 400 RTK. Mavic 3 Enterprise har integrerade sensorer. Kontakta oss om du är osäker på kompatibilitet.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag byta kamera mellan olika uppdrag?</summary>\n      <p>Ja, Zenmuse-payloads är utbytbara på Matrice-plattformarna. Många kunder har en inspektionskamera (H30T) och en kartläggningspayload (P1 eller L2) som de växlar mellan beroende på uppdrag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Var hittar jag jämförelser mellan kameror?</summary>\n      <p>I vår blogg Jämförer kan du jämföra Zenmuse-kameror sida vid sida med specifikationstabeller — till exempel H30T vs H30, P1 vs L2 och fler.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer\" class=\"edp-faq__related-link\">Jämför kameror</a>\n        <a href=\"/collections/dronar-kameror\" class=\"edp-faq__related-link\">Drönarkameror</a>\n        <a href=\"/blogs/jamforer/zenmuse-h30t-vs-h30\" class=\"edp-faq__related-link\">Zenmuse H30T vs H30</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilken Zenmuse-kamera passar bäst för inspektion?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 40× optisk zoom och förbättrad bildkvalitet jämfört med H20T.\"}},{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan H30 och H30T?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zenmuse H30T har en integrerad termisk sensor (1280×1024) utöver vidvinkel- och zoomkamerorna. H30 har samma optiska zoom och laser-avståndsmätare men saknar termisk kamera — vilket gör den något lättare och mer prisvärd.\"}},{\"@type\":\"Question\",\"name\":\"Behöver jag P1 eller L2 för kartläggning?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zenmuse P1 är bäst för fotogrammetri och ortofoton med 45 MP fullformats-sensor. Zenmuse L2 är rätt val om du behöver LiDAR-punktmoln, till exempel för skogskartläggning eller terrängmodeller genom vegetation.\"}},{\"@type\":\"Question\",\"name\":\"Vilka drönare är kamerorna kompatibla med?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De flesta Zenmuse-kameror monteras på DJI Matrice 300 RTK och Matrice 350 RTK. H30-serien stöds även på Matrice 400 RTK. Mavic 3 Enterprise har integrerade sensorer. Kontakta oss om du är osäker på kompatibilitet.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag byta kamera mellan olika uppdrag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, Zenmuse-payloads är utbytbara på Matrice-plattformarna. Många kunder har en inspektionskamera (H30T) och en kartläggningspayload (P1 eller L2) som de växlar mellan beroende på uppdrag.\"}},{\"@type\":\"Question\",\"name\":\"Var hittar jag jämförelser mellan kameror?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"I vår blogg Jämförer kan du jämföra Zenmuse-kameror sida vid sida med specifikationstabeller — till exempel H30T vs H30, P1 vs L2 och fler.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vilken Zenmuse-kamera passar bäst för inspektion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 40× optisk zoom och förbättrad bildkvalitet jämfört med H20T."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad är skillnaden mellan H30 och H30T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zenmuse H30T har en integrerad termisk sensor (1280×1024) utöver vidvinkel- och zoomkamerorna. H30 har samma optiska zoom och laser-avståndsmätare men saknar termisk kamera — vilket gör den något lättare och mer prisvärd."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Behöver jag P1 eller L2 för kartläggning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zenmuse P1 är bäst för fotogrammetri och ortofoton med 45 MP fullformats-sensor. Zenmuse L2 är rätt val om du behöver LiDAR-punktmoln, till exempel för skogskartläggning eller terrängmodeller genom vegetation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka drönare är kamerorna kompatibla med?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De flesta Zenmuse-kameror monteras på DJI Matrice 300 RTK och Matrice 350 RTK. H30-serien stöds även på Matrice 400 RTK. Mavic 3 Enterprise har integrerade sensorer. Kontakta oss om du är osäker på kompatibilitet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag byta kamera mellan olika uppdrag?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, Zenmuse-payloads är utbytbara på Matrice-plattformarna. Många kunder har en inspektionskamera (H30T) och en kartläggningspayload (P1 eller L2) som de växlar mellan beroende på uppdrag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Var hittar jag jämförelser mellan kameror?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I vår blogg Jämförer kan du jämföra Zenmuse-kameror sida vid sida med specifikationstabeller — till exempel H30T vs H30, P1 vs L2 och fler."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "zenmuse-h30-serien",
+      "title": "Vanliga frågor om Zenmuse H30 & H30T",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — Zenmuse H30 & H30T | EuroDroneParts",
+      "metaDescription": "Svar på frågor om Zenmuse H30 och H30T: termisk sensor, zoom, vikt, uppgradering från H20T och Matrice-kompatibilitet.",
+      "excerpt": "Frågor om DJI:s senaste inspektionspayload — 40× zoom, termisk sensor, laser-avståndsmätare och kompatibilitet med Matrice.",
+      "tags": [
+        "faq",
+        "zenmuse",
+        "h30",
+        "inspektion"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Zenmuse H30</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Zenmuse H30-serien är DJI:s senaste generation av hybridpayloads med 40× optisk zoom och förbättrad laser-avståndsmätare.</p>\n    <p>H30T lägger till en radiometrisk termisk sensor med 1280×1024 upplösning — ett stort steg framåt jämfört med H20T.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Kan jag uppgradera från H30 till H30T senare?</summary>\n      <p>Ja, båda monteras på samma Matrice-plattformar. Många operatörer börjar med H30 och kompletterar med H30T när termiska uppdrag tillkommer.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur mycket tyngre är H30T än H30?</summary>\n      <p>H30T väger cirka 60 g mer än H30 (ca 920 g vs 860 g) på grund av den integrerade termiska sensorn.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Är H30T värt uppgraderingen från H20T?</summary>\n      <p>Om du regelbundet inspekterar på långt avstånd, behöver skarpare termiska bilder (1280×1024 vs 640×512) eller mäter avstånd över 1200 meter — ja. H20T är fortfarande kapabelt vid begränsad budget.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilka Matrice-modeller stöder H30-serien?</summary>\n      <p>Zenmuse H30 och H30T fungerar på Matrice 300 RTK, Matrice 350 RTK och Matrice 400 RTK.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Har H30 laser-avståndsmätare?</summary>\n      <p>Ja, både H30 och H30T har integrerad laser-avståndsmätare (LRF) med räckvidd 3–3000 meter — väsentligt längre än H20T:s 1200 meter.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/zenmuse-h30t-vs-h30\" class=\"edp-faq__related-link\">H30T vs H30</a>\n        <a href=\"/blogs/jamforer/zenmuse-h30t-vs-h20t\" class=\"edp-faq__related-link\">H30T vs H20T</a>\n        <a href=\"/collections/zenmuse-h30\" class=\"edp-faq__related-link\">Zenmuse H30</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Kan jag uppgradera från H30 till H30T senare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, båda monteras på samma Matrice-plattformar. Många operatörer börjar med H30 och kompletterar med H30T när termiska uppdrag tillkommer.\"}},{\"@type\":\"Question\",\"name\":\"Hur mycket tyngre är H30T än H30?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"H30T väger cirka 60 g mer än H30 (ca 920 g vs 860 g) på grund av den integrerade termiska sensorn.\"}},{\"@type\":\"Question\",\"name\":\"Är H30T värt uppgraderingen från H20T?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Om du regelbundet inspekterar på långt avstånd, behöver skarpare termiska bilder (1280×1024 vs 640×512) eller mäter avstånd över 1200 meter — ja. H20T är fortfarande kapabelt vid begränsad budget.\"}},{\"@type\":\"Question\",\"name\":\"Vilka Matrice-modeller stöder H30-serien?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zenmuse H30 och H30T fungerar på Matrice 300 RTK, Matrice 350 RTK och Matrice 400 RTK.\"}},{\"@type\":\"Question\",\"name\":\"Har H30 laser-avståndsmätare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, både H30 och H30T har integrerad laser-avståndsmätare (LRF) med räckvidd 3–3000 meter — väsentligt längre än H20T:s 1200 meter.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kan jag uppgradera från H30 till H30T senare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, båda monteras på samma Matrice-plattformar. Många operatörer börjar med H30 och kompletterar med H30T när termiska uppdrag tillkommer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur mycket tyngre är H30T än H30?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H30T väger cirka 60 g mer än H30 (ca 920 g vs 860 g) på grund av den integrerade termiska sensorn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Är H30T värt uppgraderingen från H20T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Om du regelbundet inspekterar på långt avstånd, behöver skarpare termiska bilder (1280×1024 vs 640×512) eller mäter avstånd över 1200 meter — ja. H20T är fortfarande kapabelt vid begränsad budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka Matrice-modeller stöder H30-serien?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zenmuse H30 och H30T fungerar på Matrice 300 RTK, Matrice 350 RTK och Matrice 400 RTK."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Har H30 laser-avståndsmätare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, både H30 och H30T har integrerad laser-avståndsmätare (LRF) med räckvidd 3–3000 meter — väsentligt längre än H20T:s 1200 meter."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "zenmuse-h20-serien",
+      "title": "Vanliga frågor om Zenmuse H20, H20T & H20N",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — Zenmuse H20-serien | EuroDroneParts",
+      "metaDescription": "Svar på frågor om Zenmuse H20, H20T och H20N — termisk inspektion, nattläge, zoom och skillnader mot H30-serien.",
+      "excerpt": "Etablerade inspektionspayloads med zoom och termisk sensor. När passar H20-serien och hur skiljer den sig från H30?",
+      "tags": [
+        "faq",
+        "zenmuse",
+        "h20",
+        "termisk"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Zenmuse H20</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Zenmuse H20-serien har varit branschstandard för termisk drönarinspektion i flera år. Serien omfattar H20 (visuell), H20T (termisk + zoom) och H20N (nattförbättrad termisk).</p>\n    <p>Här besvarar vi vanliga frågor om när H20-serien fortfarande är rätt val — och när det är dags att titta på H30.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vad är skillnaden mellan H20, H20T och H20N?</summary>\n      <p>H20 har vidvinkel och zoom utan termisk sensor. H20T kombinerar zoom med termisk kamera (640×512). H20N har förbättrad natttermisk med starlight-sensor för mörker och svagt ljus.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Fungerar H20T på samma drönare som H30T?</summary>\n      <p>Ja, båda fungerar på Matrice 300 RTK och Matrice 350 RTK. H30T stöds även på Matrice 400 RTK.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>När ska jag välja H20T istället för H30T?</summary>\n      <p>H20T är ett kostnadseffektivt val om dina inspektionsuppdrag inte kräver 40× zoom, högre termisk upplösning eller längre laser-räckvidd. Många energibolag använder fortfarande H20T framgångsrikt.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vad är H20N:s starlight-sensor?</summary>\n      <p>H20N har en termisk sensor optimerad för svagt ljus och nattinspektion. Den passar säkerhetsövervakning och räddningsinsatser där vanlig termisk kamera inte räcker till.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag mäta temperatur med H20T?</summary>\n      <p>Ja, H20T har radiometrisk termisk kamera som mäter yttemperatur. För energiinspektion rekommenderas kalibrering och rätt flyghöjd för tillförlitliga mätningar.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/zenmuse-h20t-vs-h20n\" class=\"edp-faq__related-link\">H20T vs H20N</a>\n        <a href=\"/blogs/jamforer/zenmuse-h20-vs-h20t\" class=\"edp-faq__related-link\">H20 vs H20T</a>\n        <a href=\"/blogs/jamforer/jamfor-termiska-kameror\" class=\"edp-faq__related-link\">Termisk översikt</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan H20, H20T och H20N?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"H20 har vidvinkel och zoom utan termisk sensor. H20T kombinerar zoom med termisk kamera (640×512). H20N har förbättrad natttermisk med starlight-sensor för mörker och svagt ljus.\"}},{\"@type\":\"Question\",\"name\":\"Fungerar H20T på samma drönare som H30T?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, båda fungerar på Matrice 300 RTK och Matrice 350 RTK. H30T stöds även på Matrice 400 RTK.\"}},{\"@type\":\"Question\",\"name\":\"När ska jag välja H20T istället för H30T?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"H20T är ett kostnadseffektivt val om dina inspektionsuppdrag inte kräver 40× zoom, högre termisk upplösning eller längre laser-räckvidd. Många energibolag använder fortfarande H20T framgångsrikt.\"}},{\"@type\":\"Question\",\"name\":\"Vad är H20N:s starlight-sensor?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"H20N har en termisk sensor optimerad för svagt ljus och nattinspektion. Den passar säkerhetsövervakning och räddningsinsatser där vanlig termisk kamera inte räcker till.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag mäta temperatur med H20T?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, H20T har radiometrisk termisk kamera som mäter yttemperatur. För energiinspektion rekommenderas kalibrering och rätt flyghöjd för tillförlitliga mätningar.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vad är skillnaden mellan H20, H20T och H20N?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H20 har vidvinkel och zoom utan termisk sensor. H20T kombinerar zoom med termisk kamera (640×512). H20N har förbättrad natttermisk med starlight-sensor för mörker och svagt ljus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fungerar H20T på samma drönare som H30T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, båda fungerar på Matrice 300 RTK och Matrice 350 RTK. H30T stöds även på Matrice 400 RTK."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "När ska jag välja H20T istället för H30T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H20T är ett kostnadseffektivt val om dina inspektionsuppdrag inte kräver 40× zoom, högre termisk upplösning eller längre laser-räckvidd. Många energibolag använder fortfarande H20T framgångsrikt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad är H20N:s starlight-sensor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "H20N har en termisk sensor optimerad för svagt ljus och nattinspektion. Den passar säkerhetsövervakning och räddningsinsatser där vanlig termisk kamera inte räcker till."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag mäta temperatur med H20T?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, H20T har radiometrisk termisk kamera som mäter yttemperatur. För energiinspektion rekommenderas kalibrering och rätt flyghöjd för tillförlitliga mätningar."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "fotogrammetri-och-lidar",
+      "title": "Vanliga frågor om fotogrammetri & LiDAR",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — fotogrammetri & LiDAR | EuroDroneParts",
+      "metaDescription": "Svar på frågor om Zenmuse P1, L1, L2 och L3. Fotogrammetri vs LiDAR, noggrannhet, filformat och GIS-arbetsflöden.",
+      "excerpt": "Zenmuse P1, L1, L2 och L3 — när ska du välja fotogrammetri, när LiDAR, och vilken noggrannhet kan du förvänta dig?",
+      "tags": [
+        "faq",
+        "lidar",
+        "fotogrammetri",
+        "gis",
+        "p1",
+        "l2"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Kartläggning</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Professionell kartläggning med enterprise-drönare bygger på antingen fotogrammetri (bildbaserad 3D) eller LiDAR (laserbaserade punktmoln).</p>\n    <p>Båda metoderna har sina styrkor — här besvarar vi de vanligaste frågorna om Zenmuse P1, L1, L2 och L3.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vad är skillnaden mellan fotogrammetri och LiDAR?</summary>\n      <p>Fotogrammetri skapar 3D-modeller från överlappande bilder — kostnadseffektivt och fotorealistiskt. LiDAR mäter avstånd med laser och fungerar genom vegetation och i mörker, men ger inte färgade texturer.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag använda både P1 och L2?</summary>\n      <p>Ja — payloads byts snabbt på Matrice-plattformarna. Många kartläggningsföretag har båda och väljer payload per uppdrag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken ger bäst noggrannhet?</summary>\n      <p>P1 med RTK ger centimeterprecision i fotogrammetri. L2 levererar upp till 5 cm vertikal noggrannhet med LiDAR, särskilt genom vegetation där fotogrammetri har begränsningar.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vad är skillnaden mellan L1, L2 och L3?</summary>\n      <p>L1 var DJI:s första integrerade LiDAR-payload. L2 förbättrar noggrannhet, punkt densitet och har integrerad RGB-kamera. L3 är senaste generationen med ännu högre prestanda för professionell kartläggning.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilka filformat kan jag exportera till?</summary>\n      <p>Branschstandarder inkluderar GeoTIFF, LAS/LAZ (punktmoln), OBJ/FBX (3D-modeller), DXF/DWG (CAD) och IFC (BIM). Data bearbetas i Pix4D, DJI Terra eller Agisoft Metashape.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Behöver jag RTK-basstation?</summary>\n      <p>För mätningskvalitet rekommenderas RTK. DJI D-RTK 2 basstation ger centimeterprecision. Många operatörer använder även nätverks-RTK (NTRIP/SWEPOS).</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/zenmuse-p1-vs-l2\" class=\"edp-faq__related-link\">P1 vs L2</a>\n        <a href=\"/blogs/jamforer/zenmuse-l1-vs-l2\" class=\"edp-faq__related-link\">L1 vs L2</a>\n        <a href=\"/blogs/jamforer/jamfor-lidar-sensorer\" class=\"edp-faq__related-link\">LiDAR-översikt</a>\n        <a href=\"/pages/gis-kartlaggning\" class=\"edp-faq__related-link\">GIS &amp; kartläggning</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan fotogrammetri och LiDAR?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Fotogrammetri skapar 3D-modeller från överlappande bilder — kostnadseffektivt och fotorealistiskt. LiDAR mäter avstånd med laser och fungerar genom vegetation och i mörker, men ger inte färgade texturer.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag använda både P1 och L2?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja — payloads byts snabbt på Matrice-plattformarna. Många kartläggningsföretag har båda och väljer payload per uppdrag.\"}},{\"@type\":\"Question\",\"name\":\"Vilken ger bäst noggrannhet?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"P1 med RTK ger centimeterprecision i fotogrammetri. L2 levererar upp till 5 cm vertikal noggrannhet med LiDAR, särskilt genom vegetation där fotogrammetri har begränsningar.\"}},{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan L1, L2 och L3?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"L1 var DJI:s första integrerade LiDAR-payload. L2 förbättrar noggrannhet, punkt densitet och har integrerad RGB-kamera. L3 är senaste generationen med ännu högre prestanda för professionell kartläggning.\"}},{\"@type\":\"Question\",\"name\":\"Vilka filformat kan jag exportera till?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Branschstandarder inkluderar GeoTIFF, LAS/LAZ (punktmoln), OBJ/FBX (3D-modeller), DXF/DWG (CAD) och IFC (BIM). Data bearbetas i Pix4D, DJI Terra eller Agisoft Metashape.\"}},{\"@type\":\"Question\",\"name\":\"Behöver jag RTK-basstation?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För mätningskvalitet rekommenderas RTK. DJI D-RTK 2 basstation ger centimeterprecision. Många operatörer använder även nätverks-RTK (NTRIP/SWEPOS).\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vad är skillnaden mellan fotogrammetri och LiDAR?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fotogrammetri skapar 3D-modeller från överlappande bilder — kostnadseffektivt och fotorealistiskt. LiDAR mäter avstånd med laser och fungerar genom vegetation och i mörker, men ger inte färgade texturer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag använda både P1 och L2?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja — payloads byts snabbt på Matrice-plattformarna. Många kartläggningsföretag har båda och väljer payload per uppdrag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken ger bäst noggrannhet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "P1 med RTK ger centimeterprecision i fotogrammetri. L2 levererar upp till 5 cm vertikal noggrannhet med LiDAR, särskilt genom vegetation där fotogrammetri har begränsningar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad är skillnaden mellan L1, L2 och L3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "L1 var DJI:s första integrerade LiDAR-payload. L2 förbättrar noggrannhet, punkt densitet och har integrerad RGB-kamera. L3 är senaste generationen med ännu högre prestanda för professionell kartläggning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka filformat kan jag exportera till?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Branschstandarder inkluderar GeoTIFF, LAS/LAZ (punktmoln), OBJ/FBX (3D-modeller), DXF/DWG (CAD) och IFC (BIM). Data bearbetas i Pix4D, DJI Terra eller Agisoft Metashape."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Behöver jag RTK-basstation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "För mätningskvalitet rekommenderas RTK. DJI D-RTK 2 basstation ger centimeterprecision. Många operatörer använder även nätverks-RTK (NTRIP/SWEPOS)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "matrice-vs-mavic-enterprise",
+      "title": "Vanliga frågor — Matrice vs Mavic Enterprise",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — Matrice vs Mavic Enterprise | EuroDroneParts",
+      "metaDescription": "Svar på frågor om DJI Matrice 350 RTK vs Mavic 3 Enterprise. Payloads, flygtid, portabilitet och vilken plattform som passar ditt företag.",
+      "excerpt": "När räcker Mavic 3 Enterprise och när behöver du Matrice 350 RTK? Jämför flygtid, payloads, portabilitet och pris.",
+      "tags": [
+        "faq",
+        "matrice",
+        "mavic",
+        "plattformar"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Plattformar</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>DJI erbjuder två huvudsakliga enterprise-plattformar: kompakta Mavic 3 Enterprise för snabba uppdrag och tunga Matrice-serien för utbytbara payloads.</p>\n    <p>Valet beror på uppdragstyp, sensorbehov och hur ofta ni byter mellan olika kameror.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>När räcker Mavic 3 Enterprise?</summary>\n      <p>Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (&lt; 60 sekunder) är viktigast. Integrerad termisk kamera ingår.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>När behöver jag Matrice 350 RTK?</summary>\n      <p>Välj Matrice när du behöver utbytbara Zenmuse-payloads (H30T, P1, L2), längre flygtid (55 min), IP55-väderskydd eller tyngre sensorpaket. Matrice är standard för professionell inspektion och kartläggning.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan Mavic 3 Enterprise använda Zenmuse-kameror?</summary>\n      <p>Nej, Mavic 3 Enterprise har integrerade sensorer och stöder inte utbytbara Zenmuse-payloads. För H30T, P1 eller L2 krävs Matrice-plattform.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken har längst flygtid?</summary>\n      <p>Matrice 350 RTK erbjuder upp till 55 minuters flygtid beroende på payload. Mavic 3 Enterprise ger upp till 45 minuter — fortfarande marknadsledande i sin klass.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag börja med Mavic och uppgradera till Matrice?</summary>\n      <p>Ja, det är en vanlig väg. Många organisationer börjar med Mavic 3 Enterprise för att validera drönararbetsflöden och investerar i Matrice när payload-behovet växer.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/mavic-3e-vs-mavic-3t\" class=\"edp-faq__related-link\">Mavic 3E vs 3T</a>\n        <a href=\"/blogs/jamforer/h30-vs-mavic-3e\" class=\"edp-faq__related-link\">H30 vs Mavic 3E</a>\n        <a href=\"/collections/dji-matrice-series\" class=\"edp-faq__related-link\">Matrice-serien</a>\n        <a href=\"/collections/dji-mavic-enterprise-series\" class=\"edp-faq__related-link\">Mavic Enterprise</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"När räcker Mavic 3 Enterprise?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Integrerad termisk kamera ingår.\"}},{\"@type\":\"Question\",\"name\":\"När behöver jag Matrice 350 RTK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Välj Matrice när du behöver utbytbara Zenmuse-payloads (H30T, P1, L2), längre flygtid (55 min), IP55-väderskydd eller tyngre sensorpaket. Matrice är standard för professionell inspektion och kartläggning.\"}},{\"@type\":\"Question\",\"name\":\"Kan Mavic 3 Enterprise använda Zenmuse-kameror?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Nej, Mavic 3 Enterprise har integrerade sensorer och stöder inte utbytbara Zenmuse-payloads. För H30T, P1 eller L2 krävs Matrice-plattform.\"}},{\"@type\":\"Question\",\"name\":\"Vilken har längst flygtid?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Matrice 350 RTK erbjuder upp till 55 minuters flygtid beroende på payload. Mavic 3 Enterprise ger upp till 45 minuter — fortfarande marknadsledande i sin klass.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag börja med Mavic och uppgradera till Matrice?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, det är en vanlig väg. Många organisationer börjar med Mavic 3 Enterprise för att validera drönararbetsflöden och investerar i Matrice när payload-behovet växer.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "När räcker Mavic 3 Enterprise?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Integrerad termisk kamera ingår."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "När behöver jag Matrice 350 RTK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Välj Matrice när du behöver utbytbara Zenmuse-payloads (H30T, P1, L2), längre flygtid (55 min), IP55-väderskydd eller tyngre sensorpaket. Matrice är standard för professionell inspektion och kartläggning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan Mavic 3 Enterprise använda Zenmuse-kameror?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nej, Mavic 3 Enterprise har integrerade sensorer och stöder inte utbytbara Zenmuse-payloads. För H30T, P1 eller L2 krävs Matrice-plattform."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken har längst flygtid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Matrice 350 RTK erbjuder upp till 55 minuters flygtid beroende på payload. Mavic 3 Enterprise ger upp till 45 minuter — fortfarande marknadsledande i sin klass."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag börja med Mavic och uppgradera till Matrice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, det är en vanlig väg. Många organisationer börjar med Mavic 3 Enterprise för att validera drönararbetsflöden och investerar i Matrice när payload-behovet växer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "termiska-kameror-inspektion",
+      "title": "Vanliga frågor om termiska drönarkameror",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — termiska drönarkameror | EuroDroneParts",
+      "metaDescription": "Svar på frågor om termisk drönarinspektion: H30T, H20T, H20N, radiometri, energiinspektion och persondetektion.",
+      "excerpt": "Hur fungerar termisk inspektion med drönare? Sensorupplösning, radiometri, energiinspektion och räddningstjänst.",
+      "tags": [
+        "faq",
+        "termisk",
+        "inspektion",
+        "h30t"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Termisk avbildning</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Termisk avbildning med drönare har blivit standard inom energiinspektion, räddningstjänst och säkerhetsövervakning.</p>\n    <p>Här besvarar vi frågor om hur termiska sensorer fungerar, vilken upplösning som krävs och vilka payloads som passar olika uppdrag.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vad är radiometrisk termisk kamera?</summary>\n      <p>En radiometrisk termisk sensor mäter faktisk yttemperatur i varje pixel, inte bara visar värmeskillnader. Det krävs för energiinspektion där exakta temperaturvärden dokumenteras.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken termisk upplösning behöver jag?</summary>\n      <p>640×512 (H20T) räcker för många inspektioner. 1280×1024 (H30T) ger fyrdubblad pixeldensitet och gör det enklare att hitta mindre temperaturavvikelser på avstånd.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Fungerar termisk kamera i rök och mörker?</summary>\n      <p>Ja. Termisk kamera detekterar värmesignaturer oberoende av synligt ljus. I rök identifierar den hotspots och personer som inte syns med vanlig kamera.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken payload passar energiinspektion?</summary>\n      <p>Zenmuse H30T är branschledande med 1280×1024 termisk sensor och 40× zoom. H20T är ett kostnadseffektivt alternativ för enklare inspektioner. Mavic 3T passar snabba kontroller.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan termisk kamera hitta dolda fel i transformatorer?</summary>\n      <p>Ja. Termisk drönarinspektion avslöjar överbelastade komponenter, dåliga anslutningar och isolationsfel som inte syns visuellt — ofta månader innan haveri.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/jamfor-termiska-kameror\" class=\"edp-faq__related-link\">Termisk översikt</a>\n        <a href=\"/blogs/jamforer/zenmuse-h30t-vs-h20n\" class=\"edp-faq__related-link\">H30T vs H20N</a>\n        <a href=\"/pages/energi-infrastruktur\" class=\"edp-faq__related-link\">Energi &amp; infrastruktur</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vad är radiometrisk termisk kamera?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En radiometrisk termisk sensor mäter faktisk yttemperatur i varje pixel, inte bara visar värmeskillnader. Det krävs för energiinspektion där exakta temperaturvärden dokumenteras.\"}},{\"@type\":\"Question\",\"name\":\"Vilken termisk upplösning behöver jag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"640×512 (H20T) räcker för många inspektioner. 1280×1024 (H30T) ger fyrdubblad pixeldensitet och gör det enklare att hitta mindre temperaturavvikelser på avstånd.\"}},{\"@type\":\"Question\",\"name\":\"Fungerar termisk kamera i rök och mörker?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Termisk kamera detekterar värmesignaturer oberoende av synligt ljus. I rök identifierar den hotspots och personer som inte syns med vanlig kamera.\"}},{\"@type\":\"Question\",\"name\":\"Vilken payload passar energiinspektion?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zenmuse H30T är branschledande med 1280×1024 termisk sensor och 40× zoom. H20T är ett kostnadseffektivt alternativ för enklare inspektioner. Mavic 3T passar snabba kontroller.\"}},{\"@type\":\"Question\",\"name\":\"Kan termisk kamera hitta dolda fel i transformatorer?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Termisk drönarinspektion avslöjar överbelastade komponenter, dåliga anslutningar och isolationsfel som inte syns visuellt — ofta månader innan haveri.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vad är radiometrisk termisk kamera?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En radiometrisk termisk sensor mäter faktisk yttemperatur i varje pixel, inte bara visar värmeskillnader. Det krävs för energiinspektion där exakta temperaturvärden dokumenteras."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken termisk upplösning behöver jag?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "640×512 (H20T) räcker för många inspektioner. 1280×1024 (H30T) ger fyrdubblad pixeldensitet och gör det enklare att hitta mindre temperaturavvikelser på avstånd."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fungerar termisk kamera i rök och mörker?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Termisk kamera detekterar värmesignaturer oberoende av synligt ljus. I rök identifierar den hotspots och personer som inte syns med vanlig kamera."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken payload passar energiinspektion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zenmuse H30T är branschledande med 1280×1024 termisk sensor och 40× zoom. H20T är ett kostnadseffektivt alternativ för enklare inspektioner. Mavic 3T passar snabba kontroller."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan termisk kamera hitta dolda fel i transformatorer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Termisk drönarinspektion avslöjar överbelastade komponenter, dåliga anslutningar och isolationsfel som inte syns visuellt — ofta månader innan haveri."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "inspektionskameror-zoom",
+      "title": "Vanliga frågor om inspektionskameror & zoom",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — inspektionskameror & zoom | EuroDroneParts",
+      "metaDescription": "Svar på frågor om optisk zoom, hybridzoom och laser-avståndsmätare för drönarbaserad infrastrukturinspektion.",
+      "excerpt": "Optisk zoom, hybridzoom och laser-avståndsmätare — vad betyder det i praktiken vid kraftlednings- och infrastrukturinspektion?",
+      "tags": [
+        "faq",
+        "inspektion",
+        "zoom",
+        "lrf"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Inspektion</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Infrastrukturinspektion med drönare kräver ofta detaljbilder på hundratals meters avstånd — utan att flyga nära objektet.</p>\n    <p>Optisk zoom, hybridzoom och laser-avståndsmätare (LRF) är centrala verktyg. Här förklarar vi vad de betyder i praktiken.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vad är skillnaden på optisk och digital zoom?</summary>\n      <p>Optisk zoom använder linsrörelse och behåller bildkvalitet. Digital (hybrid) zoom beskär och förstorar — kvaliteten minskar. H30-serien erbjuder 40× optisk och upp till 200× hybrid.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vad används laser-avståndsmätaren till?</summary>\n      <p>LRF (Laser Range Finder) mäter exakt avstånd till ett objekt. Vid kraftledningsinspektion identifierar den vilken ledning eller isolator som avses, och koordinater kan dokumenteras i rapporten.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur nära behöver jag flyga vid 40× zoom?</summary>\n      <p>Med 40× optisk zoom kan du inspektera detaljer på kraftledningar och master på säkert avstånd — ofta 50–100 meter — utan att exponera drönaren för elektromagnetiska fält eller fallrisk.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken kamera har bäst zoom för inspektion?</summary>\n      <p>Zenmuse H30 och H30T erbjuder 40× optisk zoom — marknadsledande bland DJI-payloads. H20T erbjuder 23× optisk zoom, vilket fortfarande räcker för många uppdrag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag inspektera vindkraftverk med zoomkamera?</summary>\n      <p>Ja. Automatiserade flygmönster runt turbinblad med zoomkamera och AI-assisterad skadeklassificering minskar stilleståndstid och eliminerar repelling.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/jamfor-inspektionskameror\" class=\"edp-faq__related-link\">Inspektionsöversikt</a>\n        <a href=\"/blogs/jamforer/zenmuse-h30t-vs-h30\" class=\"edp-faq__related-link\">H30T vs H30</a>\n        <a href=\"/collections/enterprise-sensors\" class=\"edp-faq__related-link\">Enterprise-sensorer</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vad är skillnaden på optisk och digital zoom?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Optisk zoom använder linsrörelse och behåller bildkvalitet. Digital (hybrid) zoom beskär och förstorar — kvaliteten minskar. H30-serien erbjuder 40× optisk och upp till 200× hybrid.\"}},{\"@type\":\"Question\",\"name\":\"Vad används laser-avståndsmätaren till?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"LRF (Laser Range Finder) mäter exakt avstånd till ett objekt. Vid kraftledningsinspektion identifierar den vilken ledning eller isolator som avses, och koordinater kan dokumenteras i rapporten.\"}},{\"@type\":\"Question\",\"name\":\"Hur nära behöver jag flyga vid 40× zoom?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Med 40× optisk zoom kan du inspektera detaljer på kraftledningar och master på säkert avstånd — ofta 50–100 meter — utan att exponera drönaren för elektromagnetiska fält eller fallrisk.\"}},{\"@type\":\"Question\",\"name\":\"Vilken kamera har bäst zoom för inspektion?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Zenmuse H30 och H30T erbjuder 40× optisk zoom — marknadsledande bland DJI-payloads. H20T erbjuder 23× optisk zoom, vilket fortfarande räcker för många uppdrag.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag inspektera vindkraftverk med zoomkamera?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Automatiserade flygmönster runt turbinblad med zoomkamera och AI-assisterad skadeklassificering minskar stilleståndstid och eliminerar repelling.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vad är skillnaden på optisk och digital zoom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optisk zoom använder linsrörelse och behåller bildkvalitet. Digital (hybrid) zoom beskär och förstorar — kvaliteten minskar. H30-serien erbjuder 40× optisk och upp till 200× hybrid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vad används laser-avståndsmätaren till?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "LRF (Laser Range Finder) mäter exakt avstånd till ett objekt. Vid kraftledningsinspektion identifierar den vilken ledning eller isolator som avses, och koordinater kan dokumenteras i rapporten."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur nära behöver jag flyga vid 40× zoom?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med 40× optisk zoom kan du inspektera detaljer på kraftledningar och master på säkert avstånd — ofta 50–100 meter — utan att exponera drönaren för elektromagnetiska fält eller fallrisk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken kamera har bäst zoom för inspektion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zenmuse H30 och H30T erbjuder 40× optisk zoom — marknadsledande bland DJI-payloads. H20T erbjuder 23× optisk zoom, vilket fortfarande räcker för många uppdrag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag inspektera vindkraftverk med zoomkamera?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Automatiserade flygmönster runt turbinblad med zoomkamera och AI-assisterad skadeklassificering minskar stilleståndstid och eliminerar repelling."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "energi-infrastruktur-faq",
+      "title": "Vanliga frågor — drönare för energi & infrastruktur",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — drönare för energi & infrastruktur | EuroDroneParts",
+      "metaDescription": "Svar på frågor om drönarinspektion av kraftledningar, transformatorer, vindkraft och solparker. Termisk kamera, RTK och regelverk.",
+      "excerpt": "Kraftledningar, transformatorer, vindkraft och solparker — svar på frågor om termisk inspektion och enterprise-utrustning.",
+      "tags": [
+        "faq",
+        "energi",
+        "infrastruktur",
+        "termisk"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Energi &amp; infrastruktur</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Energisektorn är en av de största användarna av enterprise-drönare — termisk inspektion av kraftledningar och transformatorer sparar miljoner i förebyggande underhåll.</p>\n    <p>Här besvarar vi de vanligaste frågorna från energibolag och infrastrukturägare.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Kan drönare inspektera kraftledningar under drift?</summary>\n      <p>Ja. En av de största fördelarna är att inspektionen kan ske utan driftstopp. Med rätt utrustning och certifierad operatör flyger drönaren säkert i närheten av ledningar.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken drönare passar bäst för energiinspektion?</summary>\n      <p>DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur ofta bör energiinfrastruktur inspekteras med drönare?</summary>\n      <p>Vi rekommenderar årlig inspektion av kraftledningar och transformatorer, med extra flygning efter stormar, extrema väderförhållanden eller vid misstanke om skada.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilka regelverk gäller vid energianläggningar?</summary>\n      <p>I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EuroDroneParts hjälper er med rätt utrustning och kan förmedla certifierade operatörer.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur mycket billigare är drönare än helikopter?</summary>\n      <p>Drönarinspektion kostar typiskt 70–80 % mindre än helikopterinspektion per kilometer ledning, med kortare planeringstid och bättre repeatability via RTK-rutter.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/pages/energi-infrastruktur\" class=\"edp-faq__related-link\">Energi &amp; infrastruktur</a>\n        <a href=\"/collections/dji-matrice-series\" class=\"edp-faq__related-link\">Matrice-serien</a>\n        <a href=\"/collections/zenmuse-h30\" class=\"edp-faq__related-link\">Zenmuse H30T</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Kan drönare inspektera kraftledningar under drift?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. En av de största fördelarna är att inspektionen kan ske utan driftstopp. Med rätt utrustning och certifierad operatör flyger drönaren säkert i närheten av ledningar.\"}},{\"@type\":\"Question\",\"name\":\"Vilken drönare passar bäst för energiinspektion?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera.\"}},{\"@type\":\"Question\",\"name\":\"Hur ofta bör energiinfrastruktur inspekteras med drönare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vi rekommenderar årlig inspektion av kraftledningar och transformatorer, med extra flygning efter stormar, extrema väderförhållanden eller vid misstanke om skada.\"}},{\"@type\":\"Question\",\"name\":\"Vilka regelverk gäller vid energianläggningar?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EuroDroneParts hjälper er med rätt utrustning och kan förmedla certifierade operatörer.\"}},{\"@type\":\"Question\",\"name\":\"Hur mycket billigare är drönare än helikopter?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Drönarinspektion kostar typiskt 70–80 % mindre än helikopterinspektion per kilometer ledning, med kortare planeringstid och bättre repeatability via RTK-rutter.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Kan drönare inspektera kraftledningar under drift?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. En av de största fördelarna är att inspektionen kan ske utan driftstopp. Med rätt utrustning och certifierad operatör flyger drönaren säkert i närheten av ledningar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken drönare passar bäst för energiinspektion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur ofta bör energiinfrastruktur inspekteras med drönare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vi rekommenderar årlig inspektion av kraftledningar och transformatorer, med extra flygning efter stormar, extrema väderförhållanden eller vid misstanke om skada."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka regelverk gäller vid energianläggningar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EuroDroneParts hjälper er med rätt utrustning och kan förmedla certifierade operatörer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur mycket billigare är drönare än helikopter?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Drönarinspektion kostar typiskt 70–80 % mindre än helikopterinspektion per kilometer ledning, med kortare planeringstid och bättre repeatability via RTK-rutter."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "gis-kartlaggning-faq",
+      "title": "Vanliga frågor — drönare för GIS & kartläggning",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — drönare för GIS & kartläggning | EuroDroneParts",
+      "metaDescription": "Svar på frågor om drönarbaserad kartläggning: noggrannhet, fotogrammetri, LiDAR, RTK och export till GIS.",
+      "excerpt": "Noggrannhet, filformat, RTK och mjukvaruintegration — svar på frågor om professionell drönarkartläggning.",
+      "tags": [
+        "faq",
+        "gis",
+        "kartläggning",
+        "lidar"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">GIS &amp; kartläggning</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Drönarbaserad kartläggning har revolutionerat hur geodata samlas in — med centimeterprecision och bråkdelen av tiden jämfört med traditionell landmätning.</p>\n    <p>Här besvarar vi frågor om noggrannhet, metoder och arbetsflöden för GIS-professionella.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Hur exakt är drönarbaserad kartläggning?</summary>\n      <p>Med RTK-positionering uppnås centimeterprecision (1–3 cm) horisontellt och vertikalt. Med LiDAR (Zenmuse L2) kan vertikal noggrannhet ner till 5 cm uppnås, även genom vegetation.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan drönardata ersätta traditionell landmätning?</summary>\n      <p>För topografikartor, volymberäkningar och terrängmodeller — ja. För juridiskt bindande gränsmätning krävs fortfarande auktoriserad lantmätare, men drönardata är utmärkt som underlag.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur mycket area kan jag kartlägga per dag?</summary>\n      <p>Med Matrice 350 RTK och P1 kan du typiskt kartlägga 50–100 hektar per dag beroende på önskad upplösning (GSD) och terräng.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken mjukvara behöver jag?</summary>\n      <p>Pix4Dmapper, DJI Terra och Agisoft Metashape är de vanligaste bearbetningsverktygen. Data exporteras till ArcGIS, QGIS och CAD-system.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Fotogrammetri eller LiDAR — vad ska jag välja?</summary>\n      <p>Fotogrammetri (P1) för ortofoton och 3D-modeller med färg. LiDAR (L2/L3) för punktmoln genom vegetation, skog och i skuggade områden. Många företag har båda.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/pages/gis-kartlaggning\" class=\"edp-faq__related-link\">GIS &amp; kartläggning</a>\n        <a href=\"/blogs/jamforer/jamfor-kartlaggningskameror\" class=\"edp-faq__related-link\">Kartläggningsöversikt</a>\n        <a href=\"/collections/mapping-survey-drones\" class=\"edp-faq__related-link\">Kartläggningsdrönare</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Hur exakt är drönarbaserad kartläggning?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Med RTK-positionering uppnås centimeterprecision (1–3 cm) horisontellt och vertikalt. Med LiDAR (Zenmuse L2) kan vertikal noggrannhet ner till 5 cm uppnås, även genom vegetation.\"}},{\"@type\":\"Question\",\"name\":\"Kan drönardata ersätta traditionell landmätning?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För topografikartor, volymberäkningar och terrängmodeller — ja. För juridiskt bindande gränsmätning krävs fortfarande auktoriserad lantmätare, men drönardata är utmärkt som underlag.\"}},{\"@type\":\"Question\",\"name\":\"Hur mycket area kan jag kartlägga per dag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Med Matrice 350 RTK och P1 kan du typiskt kartlägga 50–100 hektar per dag beroende på önskad upplösning (GSD) och terräng.\"}},{\"@type\":\"Question\",\"name\":\"Vilken mjukvara behöver jag?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pix4Dmapper, DJI Terra och Agisoft Metashape är de vanligaste bearbetningsverktygen. Data exporteras till ArcGIS, QGIS och CAD-system.\"}},{\"@type\":\"Question\",\"name\":\"Fotogrammetri eller LiDAR — vad ska jag välja?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Fotogrammetri (P1) för ortofoton och 3D-modeller med färg. LiDAR (L2/L3) för punktmoln genom vegetation, skog och i skuggade områden. Många företag har båda.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hur exakt är drönarbaserad kartläggning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med RTK-positionering uppnås centimeterprecision (1–3 cm) horisontellt och vertikalt. Med LiDAR (Zenmuse L2) kan vertikal noggrannhet ner till 5 cm uppnås, även genom vegetation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan drönardata ersätta traditionell landmätning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "För topografikartor, volymberäkningar och terrängmodeller — ja. För juridiskt bindande gränsmätning krävs fortfarande auktoriserad lantmätare, men drönardata är utmärkt som underlag."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur mycket area kan jag kartlägga per dag?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med Matrice 350 RTK och P1 kan du typiskt kartlägga 50–100 hektar per dag beroende på önskad upplösning (GSD) och terräng."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken mjukvara behöver jag?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pix4Dmapper, DJI Terra och Agisoft Metashape är de vanligaste bearbetningsverktygen. Data exporteras till ArcGIS, QGIS och CAD-system."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fotogrammetri eller LiDAR — vad ska jag välja?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fotogrammetri (P1) för ortofoton och 3D-modeller med färg. LiDAR (L2/L3) för punktmoln genom vegetation, skog och i skuggade områden. Många företag har båda."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "raddningstjanst-faq",
+      "title": "Vanliga frågor — drönare för räddningstjänst",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — drönare för räddningstjänst | EuroDroneParts",
+      "metaDescription": "Svar på frågor om enterprise-drönare för räddningstjänst, SAR, brand och krisledning. Termisk kamera, utryckningstid och regelverk.",
+      "excerpt": "Sök- och räddningsinsatser, brand, termisk detektion och snabb utryckning — svar för räddningstjänst och krisledning.",
+      "tags": [
+        "faq",
+        "räddningstjänst",
+        "sar",
+        "termisk"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Räddningstjänst</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Vid räddningsinsatser räknas varje sekund. Enterprise-drönare ger insatsledningen realtidsöverblick, termisk persondetektion och kommunikation via högtalare.</p>\n    <p>Här besvarar vi frågor från räddningstjänst, polis och krisledning.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Hur snabbt kan en räddningsdrönare vara i luften?</summary>\n      <p>Med DJI Mavic 3 Enterprise kan du vara flygklar på under 60 sekunder. Med DJI Dock 2 kan drönaren lyfta automatiskt vid larm på under 30 sekunder.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Fungerar termisk kamera vid sök- och räddningsinsats?</summary>\n      <p>Ja. Termisk kamera hittar personer i mörker, tät vegetation och vatten. Täck stora sökområden på bråkdelen av tiden jämfört med markpatrull.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan drönaren kommunicera med personer på marken?</summary>\n      <p>Ja. DJI Mavic 3 Enterprise Speaker och Matrice-serien med CZI-högtalare möjliggör livekommunikation och förinspelade meddelanden under pågående insats.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilka regelverk gäller för räddningstjänstens drönarflygning?</summary>\n      <p>Räddningstjänst kan ofta flyga under Specific-kategori med förenklat tillstånd vid akuta insatser. Krav på operatörsutbildning och registrering gäller fortfarande.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken drönare rekommenderas för räddningstjänst?</summary>\n      <p>Mavic 3 Enterprise för snabb utryckning och portabilitet. Matrice 350 RTK med H30T för längre flygtid, kraftfullare termisk sensor och utbytbara tillbehör (spotlight, högtalare).</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/pages/raddningstjanst\" class=\"edp-faq__related-link\">Räddningstjänst</a>\n        <a href=\"/collections/dji-mavic-enterprise-series\" class=\"edp-faq__related-link\">Mavic 3 Enterprise</a>\n        <a href=\"/collections/enterprise-sensors\" class=\"edp-faq__related-link\">Termiska sensorer</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Hur snabbt kan en räddningsdrönare vara i luften?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Med DJI Mavic 3 Enterprise kan du vara flygklar på under 60 sekunder. Med DJI Dock 2 kan drönaren lyfta automatiskt vid larm på under 30 sekunder.\"}},{\"@type\":\"Question\",\"name\":\"Fungerar termisk kamera vid sök- och räddningsinsats?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Termisk kamera hittar personer i mörker, tät vegetation och vatten. Täck stora sökområden på bråkdelen av tiden jämfört med markpatrull.\"}},{\"@type\":\"Question\",\"name\":\"Kan drönaren kommunicera med personer på marken?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. DJI Mavic 3 Enterprise Speaker och Matrice-serien med CZI-högtalare möjliggör livekommunikation och förinspelade meddelanden under pågående insats.\"}},{\"@type\":\"Question\",\"name\":\"Vilka regelverk gäller för räddningstjänstens drönarflygning?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Räddningstjänst kan ofta flyga under Specific-kategori med förenklat tillstånd vid akuta insatser. Krav på operatörsutbildning och registrering gäller fortfarande.\"}},{\"@type\":\"Question\",\"name\":\"Vilken drönare rekommenderas för räddningstjänst?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Mavic 3 Enterprise för snabb utryckning och portabilitet. Matrice 350 RTK med H30T för längre flygtid, kraftfullare termisk sensor och utbytbara tillbehör (spotlight, högtalare).\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Hur snabbt kan en räddningsdrönare vara i luften?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med DJI Mavic 3 Enterprise kan du vara flygklar på under 60 sekunder. Med DJI Dock 2 kan drönaren lyfta automatiskt vid larm på under 30 sekunder."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fungerar termisk kamera vid sök- och räddningsinsats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Termisk kamera hittar personer i mörker, tät vegetation och vatten. Täck stora sökområden på bråkdelen av tiden jämfört med markpatrull."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan drönaren kommunicera med personer på marken?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. DJI Mavic 3 Enterprise Speaker och Matrice-serien med CZI-högtalare möjliggör livekommunikation och förinspelade meddelanden under pågående insats."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilka regelverk gäller för räddningstjänstens drönarflygning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Räddningstjänst kan ofta flyga under Specific-kategori med förenklat tillstånd vid akuta insatser. Krav på operatörsutbildning och registrering gäller fortfarande."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken drönare rekommenderas för räddningstjänst?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mavic 3 Enterprise för snabb utryckning och portabilitet. Matrice 350 RTK med H30T för längre flygtid, kraftfullare termisk sensor och utbytbara tillbehör (spotlight, högtalare)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "certifiering-och-regelverk",
+      "title": "Vanliga frågor om certifiering & regelverk",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — certifiering & drönarregelverk | EuroDroneParts",
+      "metaDescription": "Svar på frågor om EASA-regelverk, operatörsregistrering, flygcertifikat och tillstånd för professionella drönare i Sverige.",
+      "excerpt": "Open, Specific och Certified — vad gäller för enterprise-drönare i Sverige? Operatörsregistrering, tillstånd och utbildning.",
+      "tags": [
+        "faq",
+        "regelverk",
+        "easa",
+        "certifiering"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Regelverk &amp; EASA</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>Professionell drönarverksamhet i EU regleras av EASA med nationell tillämpning via Transportstyrelsen i Sverige.</p>\n    <p>Enterprise-drönare används nästan alltid i Specific-kategorin — här besvarar vi de vanligaste frågorna om certifiering och tillstånd.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vilken EASA-kategori gäller för enterprise-drönare?</summary>\n      <p>De flesta professionella uppdrag (inspektion, kartläggning, energi) faller under Specific-kategorin. Open-kategorin räcker sällan på grund av vikt, avstånd eller överflygning av otillåtna områden.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Behöver jag operatörsregistrering?</summary>\n      <p>Ja, alla kommersiella operatörer måste registrera sig hos Transportstyrelsen och ha en operatörs-ID (ORG-nummer) synligt på drönaren.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Vilken utbildning krävs?</summary>\n      <p>För Specific-kategori krävs vanligtvis A1/A3-kunskapsprov plus STS-utbildning (Standard Scenario) eller SORA-baserat tillstånd. EuroDroneParts kan förmedla kontakt med certifierade utbildningspartners.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag flyga BVLOS (bortom synhåll)?</summary>\n      <p>BVLOS kräver särskilt tillstånd från Transportstyrelsen. Med DJI Dock 2 och godkänd operatör kan automatiserade BVLOS-uppdrag genomföras inom godkända korridorer.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Gäller andra regler vid energi- och räddningsinsatser?</summary>\n      <p>Ja. Räddningstjänst kan få förenklat tillstånd vid akuta insatser. Energianläggningar kräver ofta tillstånd från nätägare utöver EASA-regelverket.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hjälper EuroDroneParts med tillståndsansökan?</summary>\n      <p>Vi rådgiver om rätt utrustning och dokumentation för er ansökan. Vi kan förmedla kontakt med certifierade operatörer och konsulter som hanterar SORA och tillståndsprocessen.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/collections/enterprise-drones\" class=\"edp-faq__related-link\">Enterprise-drönare</a>\n        <a href=\"/pages/b2b\" class=\"edp-faq__related-link\">B2B-rådgivning</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilken EASA-kategori gäller för enterprise-drönare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De flesta professionella uppdrag (inspektion, kartläggning, energi) faller under Specific-kategorin. Open-kategorin räcker sällan på grund av vikt, avstånd eller överflygning av otillåtna områden.\"}},{\"@type\":\"Question\",\"name\":\"Behöver jag operatörsregistrering?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, alla kommersiella operatörer måste registrera sig hos Transportstyrelsen och ha en operatörs-ID (ORG-nummer) synligt på drönaren.\"}},{\"@type\":\"Question\",\"name\":\"Vilken utbildning krävs?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För Specific-kategori krävs vanligtvis A1/A3-kunskapsprov plus STS-utbildning (Standard Scenario) eller SORA-baserat tillstånd. EuroDroneParts kan förmedla kontakt med certifierade utbildningspartners.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag flyga BVLOS (bortom synhåll)?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"BVLOS kräver särskilt tillstånd från Transportstyrelsen. Med DJI Dock 2 och godkänd operatör kan automatiserade BVLOS-uppdrag genomföras inom godkända korridorer.\"}},{\"@type\":\"Question\",\"name\":\"Gäller andra regler vid energi- och räddningsinsatser?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja. Räddningstjänst kan få förenklat tillstånd vid akuta insatser. Energianläggningar kräver ofta tillstånd från nätägare utöver EASA-regelverket.\"}},{\"@type\":\"Question\",\"name\":\"Hjälper EuroDroneParts med tillståndsansökan?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Vi rådgiver om rätt utrustning och dokumentation för er ansökan. Vi kan förmedla kontakt med certifierade operatörer och konsulter som hanterar SORA och tillståndsprocessen.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vilken EASA-kategori gäller för enterprise-drönare?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De flesta professionella uppdrag (inspektion, kartläggning, energi) faller under Specific-kategorin. Open-kategorin räcker sällan på grund av vikt, avstånd eller överflygning av otillåtna områden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Behöver jag operatörsregistrering?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, alla kommersiella operatörer måste registrera sig hos Transportstyrelsen och ha en operatörs-ID (ORG-nummer) synligt på drönaren."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vilken utbildning krävs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "För Specific-kategori krävs vanligtvis A1/A3-kunskapsprov plus STS-utbildning (Standard Scenario) eller SORA-baserat tillstånd. EuroDroneParts kan förmedla kontakt med certifierade utbildningspartners."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag flyga BVLOS (bortom synhåll)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "BVLOS kräver särskilt tillstånd från Transportstyrelsen. Med DJI Dock 2 och godkänd operatör kan automatiserade BVLOS-uppdrag genomföras inom godkända korridorer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gäller andra regler vid energi- och räddningsinsatser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. Räddningstjänst kan få förenklat tillstånd vid akuta insatser. Energianläggningar kräver ofta tillstånd från nätägare utöver EASA-regelverket."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hjälper EuroDroneParts med tillståndsansökan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Vi rådgiver om rätt utrustning och dokumentation för er ansökan. Vi kan förmedla kontakt med certifierade operatörer och konsulter som hanterar SORA och tillståndsprocessen."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "handle": "payload-kompatibilitet",
+      "title": "Vanliga frågor om payload-kompatibilitet",
+      "templateSuffix": "vanliga-fragor",
+      "metaTitle": "FAQ — payload-kompatibilitet | EuroDroneParts",
+      "metaDescription": "Svar på frågor om Zenmuse-kompatibilitet med Matrice 300, 350 och 400 RTK. Payload-byte, vikt och adapter.",
+      "excerpt": "Vilka Zenmuse-kameror passar vilken Matrice? Adapter, viktgränser och snabb payload-byte mellan uppdrag.",
+      "tags": [
+        "faq",
+        "kompatibilitet",
+        "payload",
+        "matrice"
+      ],
+      "bodyHtml": "<style>\n.edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n</style>\n<div class=\"edp-faq-page\">\n  <p class=\"edp-faq__eyebrow\">Kompatibilitet</p>\n\n  <section class=\"edp-faq__intro\">\n    <p>En av fördelarna med Matrice-plattformen är utbytbara payloads — men inte alla kombinationer stöds.</p>\n    <p>Här besvarar vi frågor om vilka Zenmuse-kameror och sensorer som fungerar med vilken drönare.</p>\n  </section>\n\n  <h2>Vanliga frågor</h2>\n  <div class=\"edp-faq__list\">\n    \n    <details class=\"edp-faq__item\">\n      <summary>Vilka payloads passar Matrice 350 RTK?</summary>\n      <p>Matrice 350 RTK stöder hela Zenmuse-sortimentet: H30/H30T, H20-serien, P1, L1/L2/L3, och tredjepartstillbehör via SkyPort. Max nyttolast beror på konfiguration och flygtid.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Fungerar H30T på Matrice 300 RTK?</summary>\n      <p>Ja, Zenmuse H30T är kompatibel med Matrice 300 RTK och Matrice 350 RTK. Kontrollera att du har senaste firmware på både drönare och payload.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Stöder Matrice 400 RTK fler payloads?</summary>\n      <p>Matrice 400 RTK är DJI:s senaste tunga plattform med utökat stöd för H30-serien och tyngre sensorpaket. Kontakta oss för aktuell kompatibilitetsmatris.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Hur lång tid tar det att byta payload?</summary>\n      <p>Med SkyPort V2 går byte på under 2 minuter — skruva loss, byt gimbal, kalibrera. Erfarna operatörer byter payload mellan uppdrag på plats.</p>\n    </details>\n\n    <details class=\"edp-faq__item\">\n      <summary>Kan jag använda äldre Zenmuse-kameror på ny Matrice?</summary>\n      <p>De flesta Zenmuse XT2, H20 och P1 fungerar på Matrice 350 RTK. Kontrollera alltid DJI:s kompatibilitetslista och firmware-versioner innan köp.</p>\n    </details>\n  </div>\n\n  <section class=\"edp-faq__related\">\n    <h2>Läs mer</h2>\n    <div class=\"edp-faq__related-links\">\n        <a href=\"/blogs/jamforer/jamfor-alla-zenmuse-kameror\" class=\"edp-faq__related-link\">Alla Zenmuse-översikt</a>\n        <a href=\"/collections/enterprise-sensors\" class=\"edp-faq__related-link\">Enterprise-sensorer</a>\n        <a href=\"/collections/dji-matrice-series\" class=\"edp-faq__related-link\">Matrice-serien</a>\n    </div>\n  </section>\n\n  <section class=\"edp-faq__cta\">\n    <h2>Hittade du inte svaret?</h2>\n    <p>Kontakta vårt B2B-team för personlig rådgivning kring enterprise-drönare och Zenmuse-kameror.</p>\n    <div class=\"edp-faq__cta-buttons\">\n      <a href=\"/pages/b2b\" class=\"edp-faq__cta-primary\">Begär offert</a>\n      <a href=\"/collections/enterprise-drones\" class=\"edp-faq__cta-secondary\">Se enterprise-drönare</a>\n    </div>\n  </section>\n</div>\n<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilka payloads passar Matrice 350 RTK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Matrice 350 RTK stöder hela Zenmuse-sortimentet: H30/H30T, H20-serien, P1, L1/L2/L3, och tredjepartstillbehör via SkyPort. Max nyttolast beror på konfiguration och flygtid.\"}},{\"@type\":\"Question\",\"name\":\"Fungerar H30T på Matrice 300 RTK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, Zenmuse H30T är kompatibel med Matrice 300 RTK och Matrice 350 RTK. Kontrollera att du har senaste firmware på både drönare och payload.\"}},{\"@type\":\"Question\",\"name\":\"Stöder Matrice 400 RTK fler payloads?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Matrice 400 RTK är DJI:s senaste tunga plattform med utökat stöd för H30-serien och tyngre sensorpaket. Kontakta oss för aktuell kompatibilitetsmatris.\"}},{\"@type\":\"Question\",\"name\":\"Hur lång tid tar det att byta payload?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Med SkyPort V2 går byte på under 2 minuter — skruva loss, byt gimbal, kalibrera. Erfarna operatörer byter payload mellan uppdrag på plats.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag använda äldre Zenmuse-kameror på ny Matrice?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"De flesta Zenmuse XT2, H20 och P1 fungerar på Matrice 350 RTK. Kontrollera alltid DJI:s kompatibilitetslista och firmware-versioner innan köp.\"}}]}</script>",
+      "faqJsonLd": {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vilka payloads passar Matrice 350 RTK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Matrice 350 RTK stöder hela Zenmuse-sortimentet: H30/H30T, H20-serien, P1, L1/L2/L3, och tredjepartstillbehör via SkyPort. Max nyttolast beror på konfiguration och flygtid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Fungerar H30T på Matrice 300 RTK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja, Zenmuse H30T är kompatibel med Matrice 300 RTK och Matrice 350 RTK. Kontrollera att du har senaste firmware på både drönare och payload."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Stöder Matrice 400 RTK fler payloads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Matrice 400 RTK är DJI:s senaste tunga plattform med utökat stöd för H30-serien och tyngre sensorpaket. Kontakta oss för aktuell kompatibilitetsmatris."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur lång tid tar det att byta payload?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Med SkyPort V2 går byte på under 2 minuter — skruva loss, byt gimbal, kalibrera. Erfarna operatörer byter payload mellan uppdrag på plats."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan jag använda äldre Zenmuse-kameror på ny Matrice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "De flesta Zenmuse XT2, H20 och P1 fungerar på Matrice 350 RTK. Kontrollera alltid DJI:s kompatibilitetslista och firmware-versioner innan köp."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "themeCss": ".edp-faq-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  max-width: 800px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-faq-page h2 {\n  font-size: clamp(1.15rem, 3vw, 1.35rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n  color: var(--edp-text);\n  line-height: 1.2;\n}\n.edp-faq-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-faq__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-faq__intro p:last-child { margin-bottom: 0; }\n.edp-faq__list { margin: 1rem 0 2rem; }\n.edp-faq__item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-faq__item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n  list-style: none;\n}\n.edp-faq__item summary::-webkit-details-marker { display: none; }\n.edp-faq__item[open] summary { color: var(--edp-accent); }\n.edp-faq__item p { padding-bottom: 1rem; margin: 0; color: var(--edp-muted); }\n.edp-faq__related {\n  padding: 1.25rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n}\n.edp-faq__related h2 { margin-top: 0; font-size: 1rem; }\n.edp-faq__related-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 0.75rem;\n}\n.edp-faq__related-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-faq__related-link:hover {\n  border-color: var(--edp-accent);\n  background: rgba(0, 102, 204, 0.06);\n}\n.edp-faq__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-faq__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-faq__cta-primary,\n.edp-faq__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-faq__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-faq__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n\n/* Blog listing */\n.edp-faq-blog {\n  --edp-accent: #0066cc;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n}\n.edp-faq-blog__header { margin-bottom: 2rem; }\n.edp-faq-blog__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.5rem;\n}\n.edp-faq-blog__title {\n  font-size: clamp(1.75rem, 4vw, 2.5rem);\n  font-weight: 700;\n  color: var(--edp-text);\n  margin: 0 0 0.75rem;\n}\n.edp-faq-blog__desc {\n  color: var(--edp-muted);\n  max-width: 40rem;\n  font-size: 1.05rem;\n  margin: 0;\n}\n.edp-faq-blog__grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 1.25rem;\n}\n.edp-faq-blog__card {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  background: #fff;\n  overflow: hidden;\n  text-decoration: none;\n  color: inherit;\n  transition: border-color 0.15s, box-shadow 0.15s;\n}\n.edp-faq-blog__card:hover {\n  border-color: var(--edp-accent);\n  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.1);\n}\n.edp-faq-blog__card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }\n.edp-faq-blog__card-tag {\n  display: inline-block;\n  font-size: 0.7rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  color: var(--edp-accent);\n  margin-bottom: 0.5rem;\n}\n.edp-faq-blog__card-title {\n  font-size: 1.05rem;\n  font-weight: 600;\n  color: var(--edp-text);\n  margin: 0 0 0.5rem;\n  line-height: 1.3;\n}\n.edp-faq-blog__card-excerpt {\n  font-size: 0.875rem;\n  color: var(--edp-muted);\n  margin: 0 0 1rem;\n  flex: 1;\n}\n.edp-faq-blog__card-link {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n}\n\n.template-article\\.vanliga-fragor .shop-follow-button,\n.template-blog\\.vanliga-fragor .shop-follow-button {\n  display: none !important;\n}\n\n.edp-faq-article__header {\n  margin-bottom: 2rem;\n  padding-bottom: 1.5rem;\n  border-bottom: 1px solid var(--edp-border, #e5e7eb);\n}\n.edp-faq-article__title {\n  font-size: clamp(1.5rem, 4vw, 2.25rem);\n  font-weight: 700;\n  color: var(--edp-text, #1a1a1a);\n  margin: 0 0 0.75rem;\n  line-height: 1.2;\n}\n.edp-faq-article__meta {\n  font-size: 0.85rem;\n  color: var(--edp-muted, #5c5c5c);\n}\n.edp-faq-article__back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.35rem;\n  margin-top: 2.5rem;\n  font-size: 0.9rem;\n  font-weight: 600;\n  color: #0066cc;\n  text-decoration: none;\n}\n.edp-faq-article__back:hover { text-decoration: underline; }\n",
+  "generatedAt": "2026-06-14T20:42:24.865Z"
+}

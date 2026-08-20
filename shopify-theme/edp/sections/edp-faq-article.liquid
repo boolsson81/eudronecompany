@@ -1,0 +1,80 @@
+{{ 'edp-faq.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .footer .shop-follow-button {
+    display: none !important;
+  }
+{%- endstyle -%}
+
+<article class="edp-faq-article color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    <header class="edp-faq-article__header">
+      <h1 class="edp-faq-article__title">{{ article.title | escape }}</h1>
+      <p class="edp-faq-article__meta">
+        <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+          {{- article.published_at | time_tag: format: 'date' -}}
+        </time>
+      </p>
+    </header>
+
+    <div class="rte edp-faq-article__content">
+      {{ article.content }}
+    </div>
+
+    <a href="{{ blog.url }}" class="edp-faq-article__back">
+      ← Tillbaka till {{ blog.title | escape }}
+    </a>
+  </div>
+</article>
+
+{% schema %}
+{
+  "name": "EDP FAQ artikel",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Färgschema",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Avstånd"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding topp",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding botten",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

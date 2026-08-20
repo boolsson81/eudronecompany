@@ -1,0 +1,67 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "edp-utility-bar": {
+      "type": "edp-utility-bar",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "consumer_label": "Privat",
+        "enterprise_label": "Företag",
+        "quote_label": "Offertförfrågan",
+        "quote_link": "/pages/contact-quote",
+        "support_label": "Support",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "show_line_separator": false
+      },
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Fri frakt över 999 kr — DJI-specialist i Norden",
+            "text_alignment": "center",
+            "color_scheme": "scheme-edp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ]
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_consumer": "main-menu",
+        "menu_enterprise": "enterprise",
+        "menu_color_scheme": "scheme-edp",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16,
+        "drawer_quote_link": "/pages/contact-quote",
+        "drawer_quote_label": "Offertförfrågan"
+      }
+    }
+  },
+  "order": [
+    "edp-utility-bar",
+    "announcement-bar",
+    "header"
+  ]
+}

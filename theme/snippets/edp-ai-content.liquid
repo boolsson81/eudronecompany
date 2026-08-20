@@ -1,0 +1,92 @@
+{{ 'edp-ai.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign ai_answer = nil
+  assign ai_spec = nil
+  assign ai_faq = nil
+  assign ai_related_products = nil
+  assign ai_related_collections = nil
+
+  if resource == blank
+    if request.page_type == 'product'
+      assign resource = product
+    elsif request.page_type == 'collection'
+      assign resource = collection
+    elsif request.page_type == 'page'
+      assign resource = page
+    elsif request.page_type == 'article'
+      assign resource = article
+    endif
+  endif
+
+  if resource
+    assign ai_answer = resource.metafields.seo.kort_text_150.value
+    assign ai_spec = resource.metafields.seo.specification.value
+    assign ai_faq = resource.metafields.seo.faq_json.value
+    assign ai_related_products = resource.metafields.seo.related_products.value
+    assign ai_related_collections = resource.metafields.seo.related_collections.value
+  endif
+
+  assign has_ai_content = false
+  if ai_answer != blank or ai_spec != blank or ai_faq != blank
+    assign has_ai_content = true
+  endif
+-%}
+
+{%- if has_ai_content -%}
+  <aside class="edp-ai" data-edp-ai-content>
+    {%- if ai_answer != blank -%}
+      <section class="edp-ai__answer" id="edp-ai-answer" data-speakable>
+        <p class="edp-ai__label">Snabbt svar</p>
+        <p class="edp-ai__answer-text">{{ ai_answer | strip_html }}</p>
+      </section>
+    {%- endif -%}
+
+    {%- if ai_spec != blank -%}
+      <section class="edp-ai__spec">
+        <h2 class="edp-ai__heading">Specifikation</h2>
+        <div class="edp-ai__spec-body rte">{{ ai_spec }}</div>
+      </section>
+    {%- endif -%}
+
+    {%- if ai_faq != blank and ai_faq.size > 0 -%}
+      <section class="edp-ai__faq" id="edp-ai-faq">
+        <h2 class="edp-ai__heading">Vanliga frågor</h2>
+        <div class="edp-ai__faq-list">
+          {%- for item in ai_faq -%}
+            {%- assign question = item.question | default: item.q | strip_html | strip -%}
+            {%- assign answer = item.answer | default: item.a | strip_html | strip -%}
+            {%- if question != blank and answer != blank -%}
+              <details class="edp-ai__faq-item">
+                <summary>{{ question | escape }}</summary>
+                <p>{{ answer | escape }}</p>
+              </details>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if ai_related_collections != blank or ai_related_products != blank -%}
+      <section class="edp-ai__related">
+        <h2 class="edp-ai__heading">Relaterat</h2>
+        <div class="edp-ai__related-links">
+          {%- if ai_related_collections != blank -%}
+            {%- for coll in ai_related_collections -%}
+              {%- if coll.url -%}
+                <a href="{{ coll.url }}" class="edp-ai__related-link">{{ coll.title | default: coll.handle | escape }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+          {%- if ai_related_products != blank -%}
+            {%- for rel in ai_related_products -%}
+              {%- if rel.url -%}
+                <a href="{{ rel.url }}" class="edp-ai__related-link">{{ rel.title | default: rel.handle | escape }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endif -%}
+        </div>
+      </section>
+    {%- endif -%}
+  </aside>
+{%- endif -%}

@@ -1,0 +1,13 @@
+{%- comment -%}
+  Central SEO structured data for Europe Drone Company storefront.
+  Product/Article native schema is output in their sections; this adds
+  breadcrumbs, collection pages and FAQ metafields without duplication.
+{%- endcomment -%}
+{%- unless request.page_type == 'password' or request.page_type == 'gift_card' -%}
+  {% render 'edp-ai-entity-schema' %}
+  {% render 'edp-seo-breadcrumbs' %}
+  {% render 'edp-seo-collection' %}
+  {% render 'edp-ai-itemlist' %}
+  {% render 'edp-seo-faq' %}
+  {% render 'edp-ai-speakable' %}
+{%- endunless -%}

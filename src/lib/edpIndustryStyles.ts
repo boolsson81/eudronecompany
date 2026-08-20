@@ -1,0 +1,166 @@
+/** Shared CSS for EDP industry/enterprise Shopify pages */
+export const EDP_INDUSTRY_CSS = `
+.edp-industry-page {
+  --edp-accent: #0066cc;
+  --edp-accent-hover: #0052a3;
+  --edp-text: #1a1a1a;
+  --edp-muted: #5c5c5c;
+  --edp-border: #e5e7eb;
+  --edp-bg: #f8fafc;
+  --edp-radius: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  color: var(--edp-text);
+  font-family: inherit;
+  line-height: 1.6;
+}
+.edp-industry-page h1,
+.edp-industry-page h2,
+.edp-industry-page h3 {
+  line-height: 1.2;
+  margin: 0 0 0.75rem;
+}
+.edp-industry-page h1 { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; }
+.edp-industry-page h2 { font-size: clamp(1.25rem, 3vw, 1.75rem); font-weight: 600; margin-bottom: 1.25rem; }
+.edp-industry-page h3 { font-size: 1.1rem; font-weight: 600; }
+.edp-industry-page p { margin: 0 0 1rem; color: var(--edp-muted); }
+.edp-industry-page ul { margin: 0; padding-left: 1.25rem; }
+.edp-industry-page li { margin-bottom: 0.35rem; color: var(--edp-muted); }
+.edp-industry__hero { margin-bottom: 2.5rem; }
+.edp-industry__eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--edp-accent);
+  margin-bottom: 0.75rem;
+}
+.edp-industry__lead { font-size: 1.125rem; max-width: 42rem; }
+.edp-industry-page section { margin-bottom: 3rem; }
+.edp-industry__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+.edp-industry__application,
+.edp-industry__product {
+  padding: 1.5rem;
+  border: 1px solid var(--edp-border);
+  border-radius: var(--edp-radius);
+  background: #fff;
+}
+.edp-industry__product-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--edp-accent);
+  margin-bottom: 0.5rem;
+}
+.edp-industry__link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--edp-accent);
+  text-decoration: none;
+}
+.edp-industry__link:hover { color: var(--edp-accent-hover); text-decoration: underline; }
+.edp-industry__benefits ul { list-style: none; padding: 0; display: grid; gap: 0.75rem; }
+.edp-industry__benefits li {
+  padding: 0.875rem 1rem 0.875rem 2.5rem;
+  background: var(--edp-bg);
+  border-radius: var(--edp-radius);
+  position: relative;
+  color: var(--edp-text);
+}
+.edp-industry__benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 1rem;
+  color: var(--edp-accent);
+  font-weight: 700;
+}
+.edp-industry__faq-item {
+  border: 1px solid var(--edp-border);
+  border-radius: var(--edp-radius);
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+  background: #fff;
+}
+.edp-industry__faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 1rem 0;
+  color: var(--edp-text);
+}
+.edp-industry__faq-item p { padding-bottom: 1rem; margin: 0; }
+.edp-industry__related-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.edp-industry__related-link {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--edp-border);
+  border-radius: 999px;
+  font-size: 0.875rem;
+  color: var(--edp-text);
+  text-decoration: none;
+  background: #fff;
+}
+.edp-industry__related-link:hover { border-color: var(--edp-accent); color: var(--edp-accent); }
+.edp-industry__cta {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: var(--edp-bg);
+  border-radius: var(--edp-radius);
+}
+.edp-industry__cta h2 { margin-bottom: 0.5rem; }
+.edp-industry__cta-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: 1.5rem; }
+.edp-industry__cta-primary,
+.edp-industry__cta-secondary {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.edp-industry__cta-primary { background: var(--edp-accent); color: #fff; }
+.edp-industry__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }
+.edp-industry__cta-secondary { background: #fff; color: var(--edp-text); border: 1px solid var(--edp-border); }
+.edp-industry__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }
+/* Enterprise hub industry cards */
+.edp-enterprise__industries { margin: 2rem 0 3rem; }
+.edp-enterprise__industries h2 { margin-bottom: 0.5rem; }
+.edp-enterprise__subtitle { color: var(--edp-muted); margin-bottom: 1.5rem; }
+.edp-enterprise__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+.edp-enterprise__card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--edp-border);
+  border-radius: var(--edp-radius);
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.edp-enterprise__card:hover {
+  border-color: var(--edp-accent);
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.1);
+}
+.edp-enterprise__card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(0, 102, 204, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.edp-enterprise__card h3 { color: var(--edp-text); margin-bottom: 0.5rem; }
+.edp-enterprise__card p { font-size: 0.9rem; margin-bottom: 0.75rem; }
+.edp-enterprise__card-link { font-size: 0.875rem; font-weight: 600; color: var(--edp-accent); }
+`.trim();

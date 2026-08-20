@@ -1,0 +1,5984 @@
+{
+  "consumer": [
+    {
+      "tier": "consumer",
+      "platform": "DJI Neo",
+      "slug": "dji-neo",
+      "main": {
+        "handle": "dji-neo-reservdelar",
+        "exists": false,
+        "projected_count": 144,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "DJI Neo"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Neo "
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "DJI Neo"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-neo-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 22,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 19,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 8,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 108,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Neo"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo "
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 85,
+      "existing_subs": 1,
+      "missing_subs": 10
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Neo 2",
+      "slug": "dji-neo-2",
+      "main": {
+        "handle": "dji-neo-2-reservdelar",
+        "exists": false,
+        "projected_count": 49,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Neo 2"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Neo2"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Neo 2"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-neo-2-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-2-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-2-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-2-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-2-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-neo-2-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-neo-2-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 39,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Neo2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 46,
+      "existing_subs": 1,
+      "missing_subs": 5
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Flip",
+      "slug": "dji-flip",
+      "main": {
+        "handle": "dji-flip-reservdelar",
+        "exists": false,
+        "projected_count": 87,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "DJI Flip"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Flip"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "DJI Flip"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-flip-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 8,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flip-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flip-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flip-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flip-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flip-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 36,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "DJI Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Flip"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 69,
+      "existing_subs": 1,
+      "missing_subs": 8
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Mini 3",
+      "slug": "dji-mini-3",
+      "main": {
+        "handle": "dji-mini-3-reservdelar",
+        "exists": false,
+        "projected_count": 154,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Mini 3"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Mini 3"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-mini-3-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 25,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 10,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 11,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 17,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 8,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mini-3-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-3-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 50,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 92,
+      "existing_subs": 1,
+      "missing_subs": 11
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Mini 4 Pro",
+      "slug": "dji-mini-4-pro",
+      "main": {
+        "handle": "dji-mini-4-pro-reservdelar",
+        "exists": false,
+        "projected_count": 147,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Mini 4 Pro"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Mini 4"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Mini 4 Pro"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-mini-4-pro-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 29,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 10,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 11,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 11,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mini-4-pro-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mini-4-pro-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 76,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4 Pro"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mini 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 92,
+      "existing_subs": 1,
+      "missing_subs": 11
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Air 3",
+      "slug": "dji-air-3",
+      "main": {
+        "handle": "dji-air-3-reservdelar",
+        "exists": false,
+        "projected_count": 93,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Air 3"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Air 3"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-air-3-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 15,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 55,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        }
+      ],
+      "coverage_pct": 92,
+      "existing_subs": 0,
+      "missing_subs": 12
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Air 3S",
+      "slug": "dji-air-3s",
+      "main": {
+        "handle": "dji-air-3s-reservdelar",
+        "exists": false,
+        "projected_count": 58,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Air 3S"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Air 3S"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-air-3s-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3s-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3s-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-air-3s-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3s-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3s-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-air-3s-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 24,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Air 3S"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        }
+      ],
+      "coverage_pct": 62,
+      "existing_subs": 0,
+      "missing_subs": 8
+    },
+    {
+      "tier": "consumer",
+      "platform": "DJI Avata 2",
+      "slug": "dji-avata-2",
+      "main": {
+        "handle": "dji-avata-2-reservdelar",
+        "exists": false,
+        "projected_count": 74,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Avata 2"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Avata 2"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-avata-2-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 15,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 6,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-avata-2-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-avata-2-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-avata-2-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 29,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Avata 2"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 85,
+      "existing_subs": 1,
+      "missing_subs": 10
+    }
+  ],
+  "enterprise": [
+    {
+      "tier": "enterprise",
+      "platform": "DJI Matrice 4",
+      "slug": "dji-matrice-4",
+      "main": {
+        "handle": "dji-matrice-4-reservdelar",
+        "exists": false,
+        "projected_count": 22,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Matrice 4"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M4E"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M4T"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Matrice 4"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-matrice-4-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-4-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-4-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 13,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 4"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M4T"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 54,
+      "existing_subs": 1,
+      "missing_subs": 6
+    },
+    {
+      "tier": "enterprise",
+      "platform": "DJI Matrice 30",
+      "slug": "dji-matrice-30",
+      "main": {
+        "handle": "dji-matrice-30-reservdelar",
+        "exists": false,
+        "projected_count": 10,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Matrice 30"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M30"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Matrice 30"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-matrice-30-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-30-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-30-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-30-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-30-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-30-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-30-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        }
+      ],
+      "coverage_pct": 46,
+      "existing_subs": 0,
+      "missing_subs": 6
+    },
+    {
+      "tier": "enterprise",
+      "platform": "DJI Matrice 350 RTK",
+      "slug": "dji-matrice-350-rtk",
+      "main": {
+        "handle": "dji-matrice-350-rtk-reservdelar",
+        "exists": false,
+        "projected_count": 7,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Matrice 350"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M350"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Matrice 350"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-matrice-350-rtk-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 5,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-350-rtk-tillbehor",
+          "label": "Tillbehör",
+          "exists": true,
+          "projected_count": 3,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M350"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "populated"
+        }
+      ],
+      "coverage_pct": 31,
+      "existing_subs": 1,
+      "missing_subs": 3
+    },
+    {
+      "tier": "enterprise",
+      "platform": "DJI Matrice 400",
+      "slug": "dji-matrice-400",
+      "main": {
+        "handle": "dji-matrice-400-reservdelar",
+        "exists": false,
+        "projected_count": 9,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Matrice 400"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M400"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Matrice 400"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-matrice-400-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-400-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-matrice-400-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-matrice-400-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 4,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Matrice 400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M400"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        }
+      ],
+      "coverage_pct": 23,
+      "existing_subs": 0,
+      "missing_subs": 3
+    },
+    {
+      "tier": "enterprise",
+      "platform": "DJI Mavic 3 Enterprise",
+      "slug": "dji-mavic-3-enterprise",
+      "main": {
+        "handle": "dji-mavic-3-enterprise-reservdelar",
+        "exists": false,
+        "projected_count": 11,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Mavic 3 Enterprise"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "Mavic 3E"
+            },
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "M3E"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "Mavic 3 Enterprise"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-mavic-3-enterprise-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 2,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-mavic-3-enterprise-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 7,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3 Enterprise"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "Mavic 3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "M3E"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        }
+      ],
+      "coverage_pct": 38,
+      "existing_subs": 0,
+      "missing_subs": 5
+    },
+    {
+      "tier": "enterprise",
+      "platform": "DJI FlyCart 30",
+      "slug": "dji-flycart-30",
+      "main": {
+        "handle": "dji-flycart-30-reservdelar",
+        "exists": false,
+        "projected_count": 2,
+        "status": "recommend_create",
+        "rules": {
+          "appliedDisjunctively": true,
+          "rules": [
+            {
+              "column": "TITLE",
+              "relation": "CONTAINS",
+              "condition": "FlyCart 30"
+            },
+            {
+              "column": "TAG",
+              "relation": "EQUALS",
+              "condition": "FlyCart 30"
+            }
+          ]
+        }
+      },
+      "subs": [
+        {
+          "handle": "dji-flycart-30-propellrar",
+          "label": "Propellrar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propeller"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "propell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-batterier",
+          "label": "Batterier",
+          "exists": false,
+          "projected_count": 1,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "batteri"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "battery"
+              }
+            ]
+          },
+          "status": "recommend_create"
+        },
+        {
+          "handle": "dji-flycart-30-motorer",
+          "label": "Motorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "motor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-armar",
+          "label": "Armar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "arm"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "frame arm"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-kameror",
+          "label": "Kameror",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kamera"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "camera"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-gimbal",
+          "label": "Gimbal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gimbal"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-skal",
+          "label": "Skal",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "skal"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "shell"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-landningsstall",
+          "label": "Landningsställ",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landningsställ"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "landing gear"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-kablar",
+          "label": "Kablar",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "kabel"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "cable"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-antenner",
+          "label": "Antenner",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenn"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "antenna"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-rtk",
+          "label": "RTK",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "rtk"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "gnss"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-sensorer",
+          "label": "Sensorer",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "sensor"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "imu"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        },
+        {
+          "handle": "dji-flycart-30-tillbehor",
+          "label": "Tillbehör",
+          "exists": false,
+          "projected_count": 0,
+          "rules": {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "FlyCart 30"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehör"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "tillbehor"
+              }
+            ]
+          },
+          "status": "recommend_defer"
+        }
+      ],
+      "coverage_pct": 8,
+      "existing_subs": 0,
+      "missing_subs": 1
+    }
+  ]
+}

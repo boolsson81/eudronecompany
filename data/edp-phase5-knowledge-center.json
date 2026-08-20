@@ -1,0 +1,101 @@
+{
+  "hub": {
+    "handle": "kunskapscenter",
+    "title": "Knowledge Center",
+    "url": "/pages/kunskapscenter"
+  },
+  "note": "Content framework only — articles not generated in Phase 5",
+  "categories": {
+    "drone_technology": [
+      {
+        "handle": "vad-ar-rtk",
+        "title": "What is RTK?",
+        "status": "framework"
+      },
+      {
+        "handle": "vad-ar-lidar",
+        "title": "What is LiDAR?",
+        "status": "framework"
+      },
+      {
+        "handle": "varmebild",
+        "title": "Thermal Imaging",
+        "status": "framework"
+      },
+      {
+        "handle": "fotogrammetri",
+        "title": "Photogrammetry",
+        "status": "framework"
+      },
+      {
+        "handle": "drönarkartlaggning",
+        "title": "Drone Mapping",
+        "status": "framework"
+      },
+      {
+        "handle": "bvlos",
+        "title": "BVLOS Operations",
+        "status": "framework"
+      },
+      {
+        "handle": "dronarsakerhet",
+        "title": "Drone Safety",
+        "status": "framework"
+      }
+    ],
+    "enterprise_dji": [
+      {
+        "handle": "guide-matrice-4",
+        "title": "Matrice 4 Guide",
+        "related_collection": "dji-matrice-4-serie"
+      },
+      {
+        "handle": "guide-matrice-350",
+        "title": "Matrice 350 Guide",
+        "related_collection": "dji-matrice-350-rtk-tillbehor"
+      },
+      {
+        "handle": "guide-matrice-400",
+        "title": "Matrice 400 Guide",
+        "related_collection": "dji-matrice-400-serien"
+      },
+      {
+        "handle": "guide-mavic-enterprise",
+        "title": "Mavic Enterprise Guide",
+        "related_collection": "dji-mavic-serien-enterprise"
+      },
+      {
+        "handle": "guide-flycart",
+        "title": "FlyCart Guide",
+        "related_collection": "dji-flycart-serien"
+      },
+      {
+        "handle": "guide-dji-dock",
+        "title": "DJI Dock Guide",
+        "related_collection": "enterprise-dronare"
+      }
+    ],
+    "payloads": [
+      {
+        "handle": "guide-zenmuse-l2",
+        "title": "Zenmuse L2 Guide",
+        "related_collection": "enterprise-sensorer"
+      },
+      {
+        "handle": "guide-zenmuse-h30t",
+        "title": "Zenmuse H30T Guide",
+        "related_collection": "dronare-med-varmekamera"
+      },
+      {
+        "handle": "lidar-jamforelse",
+        "title": "LiDAR Comparison",
+        "related_collection": "enterprise-sensorer"
+      },
+      {
+        "handle": "varmekamera-jamforelse",
+        "title": "Thermal Camera Comparison",
+        "related_collection": "dronare-med-varmekamera"
+      }
+    ]
+  }
+}

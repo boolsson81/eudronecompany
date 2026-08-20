@@ -1,0 +1,23 @@
+{%- comment -%}
+  CollectionPage JSON-LD for collection templates.
+{%- endcomment -%}
+{%- if request.page_type == 'collection' and collection -%}
+  {%- liquid
+    assign collection_description = collection.description | strip_html | strip
+    if collection_description == blank
+      assign collection_description = collection.title
+    endif
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": {{ collection.title | json }},
+      "description": {{ collection_description | truncate: 500 | json }},
+      "url": {{ collection.url | prepend: request.origin | json }}
+      {%- if collection.image -%}
+        ,"image": {{ collection.image | image_url: width: 1200 | prepend: 'https:' | json }}
+      {%- endif -%}
+    }
+  </script>
+{%- endif -%}

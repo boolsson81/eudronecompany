@@ -1,0 +1,909 @@
+{
+  "version": "3.5",
+  "nodes": [
+    {
+      "id": "service-hub",
+      "section": "hub",
+      "label": "Service & Reparationer",
+      "type": "page",
+      "handle": "service-reparationer"
+    },
+    {
+      "id": "dji-konsument-service",
+      "section": "consumer",
+      "label": "DJI Konsument",
+      "type": "page",
+      "handle": "dji-konsument-service",
+      "parent": "service-hub"
+    },
+    {
+      "id": "dji-mini-service",
+      "section": "consumer",
+      "label": "DJI Mini Service",
+      "type": "page",
+      "handle": "dji-mini-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-mini-3-tillbehor"
+    },
+    {
+      "id": "dji-air-service",
+      "section": "consumer",
+      "label": "DJI Air Service",
+      "type": "page",
+      "handle": "dji-air-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-air-3-tillbehor-omfattande-sortiment"
+    },
+    {
+      "id": "dji-mavic-service",
+      "section": "consumer",
+      "label": "DJI Mavic Service",
+      "type": "page",
+      "handle": "dji-mavic-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-mavic-3-tillbehor"
+    },
+    {
+      "id": "dji-avata-service",
+      "section": "consumer",
+      "label": "DJI Avata Service",
+      "type": "page",
+      "handle": "dji-avata-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-avata-2-tillbehor"
+    },
+    {
+      "id": "dji-neo-service",
+      "section": "consumer",
+      "label": "DJI Neo Service",
+      "type": "hybrid",
+      "handle": "dji-neo-service",
+      "parent": "dji-konsument-service",
+      "existing": "reparation-dji-neo-reservdelar",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Neo"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "reparation"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dji-flip-service",
+      "section": "consumer",
+      "label": "DJI Flip Service",
+      "type": "page",
+      "handle": "dji-flip-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-flip-tillbehor"
+    },
+    {
+      "id": "dji-enterprise-service",
+      "section": "enterprise",
+      "label": "DJI Enterprise",
+      "type": "page",
+      "handle": "dji-enterprise-service",
+      "parent": "service-hub"
+    },
+    {
+      "id": "matrice-4-service",
+      "section": "enterprise",
+      "label": "Matrice 4 Service",
+      "type": "hybrid",
+      "handle": "matrice-4-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "matrice-30-service",
+      "section": "enterprise",
+      "label": "Matrice 30 Service",
+      "type": "hybrid",
+      "handle": "matrice-30-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 30"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "matrice-350-service",
+      "section": "enterprise",
+      "label": "Matrice 350 Service",
+      "type": "hybrid",
+      "handle": "matrice-350-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 350"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "matrice-400-service",
+      "section": "enterprise",
+      "label": "Matrice 400 Service",
+      "type": "hybrid",
+      "handle": "matrice-400-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 400"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "mavic-enterprise-service",
+      "section": "enterprise",
+      "label": "Mavic Enterprise Service",
+      "type": "hybrid",
+      "handle": "mavic-enterprise-service",
+      "parent": "dji-enterprise-service",
+      "existing": "enterprise-service-dronare",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3 Enterprise"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Software"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Care"
+          }
+        ]
+      }
+    },
+    {
+      "id": "agras-service",
+      "section": "enterprise",
+      "label": "Agras Service",
+      "type": "hybrid",
+      "handle": "agras-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "underhåll"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "flycart-service",
+      "section": "enterprise",
+      "label": "FlyCart Service",
+      "type": "hybrid",
+      "handle": "flycart-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "inspektion"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "reparationer-hub",
+      "section": "repairs",
+      "label": "Reparationer",
+      "type": "page",
+      "handle": "reparationer",
+      "parent": "service-hub"
+    },
+    {
+      "id": "krockskador",
+      "section": "repairs",
+      "label": "Krockskador",
+      "type": "page",
+      "handle": "krockskador",
+      "parent": "reparationer-hub"
+    },
+    {
+      "id": "dronare-efter-krasch",
+      "section": "repairs",
+      "label": "Drönare efter krasch",
+      "type": "hybrid",
+      "handle": "dronare-efter-krasch",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "reparation"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "repair"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "krasch"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "armbyte",
+      "section": "repairs",
+      "label": "Armbyte",
+      "type": "hybrid",
+      "handle": "armbyte",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "arm"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "motorbyte",
+      "section": "repairs",
+      "label": "Motorbyte",
+      "type": "hybrid",
+      "handle": "motorbyte",
+      "parent": "krockskador",
+      "existing": "reservdelar-gimbal-dronare-motorer",
+      "keepCurrent": true
+    },
+    {
+      "id": "gimbalreparation",
+      "section": "repairs",
+      "label": "Gimbalreparation",
+      "type": "page",
+      "handle": "gimbalreparation",
+      "parent": "krockskador",
+      "related_collection": "reservdelar-gimbal-dronare-motorer"
+    },
+    {
+      "id": "kamerabyte",
+      "section": "repairs",
+      "label": "Kamerabyte",
+      "type": "hybrid",
+      "handle": "kamerabyte",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kamera"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      }
+    },
+    {
+      "id": "elektronik-reparation",
+      "section": "repairs",
+      "label": "Elektronik",
+      "type": "page",
+      "handle": "elektronik-reparation",
+      "parent": "reparationer-hub"
+    },
+    {
+      "id": "kretskort",
+      "section": "repairs",
+      "label": "Kretskort",
+      "type": "page",
+      "handle": "kretskort-service",
+      "parent": "elektronik-reparation",
+      "related_collection": "dronarelektronik-flight-components"
+    },
+    {
+      "id": "esc-service",
+      "section": "repairs",
+      "label": "ESC",
+      "type": "hybrid",
+      "handle": "esc-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "ESC"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "speed controller"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gps-service",
+      "section": "repairs",
+      "label": "GPS",
+      "type": "hybrid",
+      "handle": "gps-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GPS"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GNSS"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kompass-service",
+      "section": "repairs",
+      "label": "Kompass",
+      "type": "hybrid",
+      "handle": "kompass-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kompass"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "compass"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sensorer-service",
+      "section": "repairs",
+      "label": "Sensorer",
+      "type": "hybrid",
+      "handle": "sensorer-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "sensor"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "IMU"
+          }
+        ]
+      }
+    },
+    {
+      "id": "gimbal-kamera-hub",
+      "section": "repairs",
+      "label": "Gimbal & Kamera",
+      "type": "page",
+      "handle": "gimbal-kamera-service",
+      "parent": "reparationer-hub"
+    },
+    {
+      "id": "gimbalkalibrering",
+      "section": "repairs",
+      "label": "Gimbalkalibrering",
+      "type": "page",
+      "handle": "gimbalkalibrering",
+      "parent": "gimbal-kamera-hub"
+    },
+    {
+      "id": "fokusproblem",
+      "section": "repairs",
+      "label": "Fokusproblem",
+      "type": "page",
+      "handle": "fokusproblem",
+      "parent": "gimbal-kamera-hub"
+    },
+    {
+      "id": "bildproblem",
+      "section": "repairs",
+      "label": "Bildproblem",
+      "type": "page",
+      "handle": "bildproblem",
+      "parent": "gimbal-kamera-hub"
+    },
+    {
+      "id": "batteriservice-hub",
+      "section": "repairs",
+      "label": "Batteriservice",
+      "type": "page",
+      "handle": "batteriservice",
+      "parent": "reparationer-hub"
+    },
+    {
+      "id": "batteritest",
+      "section": "repairs",
+      "label": "Batteritest",
+      "type": "page",
+      "handle": "batteritest",
+      "parent": "batteriservice-hub"
+    },
+    {
+      "id": "batteribyte",
+      "section": "repairs",
+      "label": "Batteribyte",
+      "type": "page",
+      "handle": "batteribyte",
+      "parent": "batteriservice-hub",
+      "related_collection": "batterier"
+    },
+    {
+      "id": "batterikontroll",
+      "section": "repairs",
+      "label": "Batterikontroll",
+      "type": "page",
+      "handle": "batterikontroll",
+      "parent": "batteriservice-hub"
+    },
+    {
+      "id": "foretagstjanster-hub",
+      "section": "b2b",
+      "label": "Företagstjänster",
+      "type": "page",
+      "handle": "foretagstjanster",
+      "parent": "service-hub"
+    },
+    {
+      "id": "enterprise-support",
+      "section": "b2b",
+      "label": "Enterprise Support",
+      "type": "page",
+      "handle": "enterprise-support",
+      "parent": "foretagstjanster-hub"
+    },
+    {
+      "id": "felsokning",
+      "section": "b2b",
+      "label": "Felsökning",
+      "type": "page",
+      "handle": "felsokning",
+      "parent": "foretagstjanster-hub"
+    },
+    {
+      "id": "underhallsavtal",
+      "section": "b2b",
+      "label": "Underhållsavtal",
+      "type": "page",
+      "handle": "underhallsavtal",
+      "parent": "foretagstjanster-hub"
+    },
+    {
+      "id": "serviceavtal",
+      "section": "b2b",
+      "label": "Serviceavtal",
+      "type": "page",
+      "handle": "serviceavtal",
+      "parent": "foretagstjanster-hub"
+    },
+    {
+      "id": "supportavtal",
+      "section": "b2b",
+      "label": "Supportavtal",
+      "type": "page",
+      "handle": "supportavtal",
+      "parent": "foretagstjanster-hub"
+    },
+    {
+      "id": "flycart-inspektion",
+      "section": "b2b",
+      "label": "FlyCart Inspektion",
+      "type": "page",
+      "handle": "flycart-inspektion",
+      "parent": "flycart-service"
+    },
+    {
+      "id": "flycart-underhall",
+      "section": "b2b",
+      "label": "FlyCart Underhåll",
+      "type": "page",
+      "handle": "flycart-underhall",
+      "parent": "flycart-service"
+    },
+    {
+      "id": "agras-sprutsystem",
+      "section": "b2b",
+      "label": "Sprutsystem",
+      "type": "hybrid",
+      "handle": "agras-sprutsystem",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "spray"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "munstycke"
+          }
+        ]
+      }
+    },
+    {
+      "id": "agras-pumpar",
+      "section": "b2b",
+      "label": "Pumpar",
+      "type": "hybrid",
+      "handle": "agras-pumpar",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "pump"
+          }
+        ]
+      }
+    },
+    {
+      "id": "agras-munstycken",
+      "section": "b2b",
+      "label": "Munstycken",
+      "type": "hybrid",
+      "handle": "agras-munstycken",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "nozzle"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dji-dock-hub",
+      "section": "dock",
+      "label": "DJI Dock",
+      "type": "page",
+      "handle": "dji-dock",
+      "parent": "service-hub"
+    },
+    {
+      "id": "dji-dock-installation",
+      "section": "dock",
+      "label": "DJI Dock Installation",
+      "type": "page",
+      "handle": "dji-dock-installation",
+      "parent": "dji-dock-hub"
+    },
+    {
+      "id": "dji-dock-service",
+      "section": "dock",
+      "label": "DJI Dock Service",
+      "type": "hybrid",
+      "handle": "dji-dock-service",
+      "parent": "dji-dock-hub",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Dock"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "dock"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dji-dock-support",
+      "section": "dock",
+      "label": "DJI Dock Support",
+      "type": "page",
+      "handle": "dji-dock-support",
+      "parent": "dji-dock-hub"
+    },
+    {
+      "id": "dji-dock-underhall",
+      "section": "dock",
+      "label": "DJI Dock Underhåll",
+      "type": "page",
+      "handle": "dji-dock-underhall",
+      "parent": "dji-dock-hub"
+    },
+    {
+      "id": "kalibrering-hub",
+      "section": "calibration",
+      "label": "Kalibrering",
+      "type": "page",
+      "handle": "kalibrering",
+      "parent": "service-hub"
+    },
+    {
+      "id": "imu-kalibrering",
+      "section": "calibration",
+      "label": "IMU",
+      "type": "page",
+      "handle": "imu-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "kompass-kalibrering",
+      "section": "calibration",
+      "label": "Kompass",
+      "type": "page",
+      "handle": "kompass-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "rtk-kalibrering",
+      "section": "calibration",
+      "label": "RTK",
+      "type": "page",
+      "handle": "rtk-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "gimbal-kalibrering",
+      "section": "calibration",
+      "label": "Gimbal",
+      "type": "page",
+      "handle": "gimbal-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "kamera-kalibrering",
+      "section": "calibration",
+      "label": "Kamera",
+      "type": "page",
+      "handle": "kamera-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "flygsystem-kalibrering",
+      "section": "calibration",
+      "label": "Flygsystem",
+      "type": "page",
+      "handle": "flygsystem-kalibrering",
+      "parent": "kalibrering-hub"
+    },
+    {
+      "id": "besiktning-hub",
+      "section": "inspection",
+      "label": "Besiktning & Certifiering",
+      "type": "page",
+      "handle": "besiktning-certifiering",
+      "parent": "service-hub"
+    },
+    {
+      "id": "leveranskontroll",
+      "section": "inspection",
+      "label": "Leveranskontroll",
+      "type": "page",
+      "handle": "leveranskontroll",
+      "parent": "besiktning-hub"
+    },
+    {
+      "id": "arlig-genomgang",
+      "section": "inspection",
+      "label": "Årlig genomgång",
+      "type": "page",
+      "handle": "arlig-genomgang",
+      "parent": "besiktning-hub"
+    },
+    {
+      "id": "flygsakerhetskontroll",
+      "section": "inspection",
+      "label": "Flygsäkerhetskontroll",
+      "type": "page",
+      "handle": "flygsakerhetskontroll",
+      "parent": "besiktning-hub"
+    },
+    {
+      "id": "dokumentation",
+      "section": "inspection",
+      "label": "Dokumentation",
+      "type": "page",
+      "handle": "service-dokumentation",
+      "parent": "besiktning-hub"
+    },
+    {
+      "id": "skadeanmalan",
+      "section": "hub",
+      "label": "Skadeanmälan",
+      "type": "page",
+      "handle": "skadeanmalan",
+      "parent": "service-hub"
+    }
+  ]
+}

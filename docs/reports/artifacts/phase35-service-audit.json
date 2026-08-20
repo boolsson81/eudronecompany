@@ -1,0 +1,2056 @@
+{
+  "generated_at": "2026-06-13T10:30:44.184Z",
+  "mode": "dry_run",
+  "catalog_size": 9389,
+  "nodes": 66,
+  "pages_live": 0,
+  "pages_to_create": 73,
+  "collections_hybrid_with_products": 12,
+  "collections_to_create": 9,
+  "seo_landing_pages": 12,
+  "shrinkage_warnings": 0,
+  "validation_pass": true,
+  "results": [
+    {
+      "id": "service-hub",
+      "section": "hub",
+      "label": "Service & Reparationer",
+      "type": "page",
+      "handle": "service-reparationer",
+      "collection_handle": null,
+      "page_handle": "service-reparationer",
+      "page_url": "/pages/service-reparationer",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-konsument-service",
+      "section": "consumer",
+      "label": "DJI Konsument",
+      "type": "page",
+      "handle": "dji-konsument-service",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "dji-konsument-service",
+      "page_url": "/pages/dji-konsument-service",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-mini-service",
+      "section": "consumer",
+      "label": "DJI Mini Service",
+      "type": "page",
+      "handle": "dji-mini-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-mini-3-tillbehor",
+      "collection_handle": null,
+      "page_handle": "dji-mini-service",
+      "page_url": "/pages/dji-mini-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dji-mini-3-tillbehor",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-air-service",
+      "section": "consumer",
+      "label": "DJI Air Service",
+      "type": "page",
+      "handle": "dji-air-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-air-3-tillbehor-omfattande-sortiment",
+      "collection_handle": null,
+      "page_handle": "dji-air-service",
+      "page_url": "/pages/dji-air-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dji-air-3-tillbehor-omfattande-sortiment",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-mavic-service",
+      "section": "consumer",
+      "label": "DJI Mavic Service",
+      "type": "page",
+      "handle": "dji-mavic-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-mavic-3-tillbehor",
+      "collection_handle": null,
+      "page_handle": "dji-mavic-service",
+      "page_url": "/pages/dji-mavic-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dji-mavic-3-tillbehor",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-avata-service",
+      "section": "consumer",
+      "label": "DJI Avata Service",
+      "type": "page",
+      "handle": "dji-avata-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-avata-2-tillbehor",
+      "collection_handle": null,
+      "page_handle": "dji-avata-service",
+      "page_url": "/pages/dji-avata-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dji-avata-2-tillbehor",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-neo-service",
+      "section": "consumer",
+      "label": "DJI Neo Service",
+      "type": "hybrid",
+      "handle": "dji-neo-service",
+      "parent": "dji-konsument-service",
+      "existing": "reparation-dji-neo-reservdelar",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Neo"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "reparation"
+          }
+        ]
+      },
+      "collection_handle": "reparation-dji-neo-reservdelar",
+      "page_handle": "dji-neo-service",
+      "page_url": "/pages/dji-neo-service",
+      "collection_url": "/collections/reparation-dji-neo-reservdelar",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": true,
+      "projected_count": 229,
+      "current_count": 4,
+      "action": "create_page_update_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-flip-service",
+      "section": "consumer",
+      "label": "DJI Flip Service",
+      "type": "page",
+      "handle": "dji-flip-service",
+      "parent": "dji-konsument-service",
+      "related_collection": "dji-flip-tillbehor",
+      "collection_handle": null,
+      "page_handle": "dji-flip-service",
+      "page_url": "/pages/dji-flip-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dji-flip-tillbehor",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-enterprise-service",
+      "section": "enterprise",
+      "label": "DJI Enterprise",
+      "type": "page",
+      "handle": "dji-enterprise-service",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "dji-enterprise-service",
+      "page_url": "/pages/dji-enterprise-service",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "matrice-4-service",
+      "section": "enterprise",
+      "label": "Matrice 4 Service",
+      "type": "hybrid",
+      "handle": "matrice-4-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 4"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "matrice-4-service",
+      "page_handle": "matrice-4-service",
+      "page_url": "/pages/matrice-4-service",
+      "collection_url": "/collections/matrice-4-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "matrice-30-service",
+      "section": "enterprise",
+      "label": "Matrice 30 Service",
+      "type": "hybrid",
+      "handle": "matrice-30-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 30"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "matrice-30-service",
+      "page_handle": "matrice-30-service",
+      "page_url": "/pages/matrice-30-service",
+      "collection_url": "/collections/matrice-30-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "matrice-350-service",
+      "section": "enterprise",
+      "label": "Matrice 350 Service",
+      "type": "hybrid",
+      "handle": "matrice-350-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 350"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "matrice-350-service",
+      "page_handle": "matrice-350-service",
+      "page_url": "/pages/matrice-350-service",
+      "collection_url": "/collections/matrice-350-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "matrice-400-service",
+      "section": "enterprise",
+      "label": "Matrice 400 Service",
+      "type": "hybrid",
+      "handle": "matrice-400-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Matrice 400"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TYPE",
+                "relation": "EQUALS",
+                "condition": "Care"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "matrice-400-service",
+      "page_handle": "matrice-400-service",
+      "page_url": "/pages/matrice-400-service",
+      "collection_url": "/collections/matrice-400-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "mavic-enterprise-service",
+      "section": "enterprise",
+      "label": "Mavic Enterprise Service",
+      "type": "hybrid",
+      "handle": "mavic-enterprise-service",
+      "parent": "dji-enterprise-service",
+      "existing": "enterprise-service-dronare",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Mavic 3 Enterprise"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Enterprise Software"
+          },
+          {
+            "column": "TYPE",
+            "relation": "EQUALS",
+            "condition": "Care"
+          }
+        ]
+      },
+      "collection_handle": "enterprise-service-dronare",
+      "page_handle": "mavic-enterprise-service",
+      "page_url": "/pages/mavic-enterprise-service",
+      "collection_url": "/collections/enterprise-service-dronare",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": true,
+      "projected_count": 6,
+      "current_count": 4,
+      "action": "create_page_update_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "agras-service",
+      "section": "enterprise",
+      "label": "Agras Service",
+      "type": "hybrid",
+      "handle": "agras-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "underhåll"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "agras-service",
+      "page_handle": "agras-service",
+      "page_url": "/pages/agras-service",
+      "collection_url": "/collections/agras-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "flycart-service",
+      "section": "enterprise",
+      "label": "FlyCart Service",
+      "type": "hybrid",
+      "handle": "flycart-service",
+      "parent": "dji-enterprise-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "FlyCart"
+          },
+          {
+            "appliedDisjunctively": true,
+            "rules": [
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "service"
+              },
+              {
+                "column": "TITLE",
+                "relation": "CONTAINS",
+                "condition": "inspektion"
+              }
+            ]
+          }
+        ]
+      },
+      "collection_handle": "flycart-service",
+      "page_handle": "flycart-service",
+      "page_url": "/pages/flycart-service",
+      "collection_url": "/collections/flycart-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "reparationer-hub",
+      "section": "repairs",
+      "label": "Reparationer",
+      "type": "page",
+      "handle": "reparationer",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "reparationer",
+      "page_url": "/pages/reparationer",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "krockskador",
+      "section": "repairs",
+      "label": "Krockskador",
+      "type": "page",
+      "handle": "krockskador",
+      "parent": "reparationer-hub",
+      "collection_handle": null,
+      "page_handle": "krockskador",
+      "page_url": "/pages/krockskador",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dronare-efter-krasch",
+      "section": "repairs",
+      "label": "Drönare efter krasch",
+      "type": "hybrid",
+      "handle": "dronare-efter-krasch",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "reparation"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "repair"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "krasch"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      },
+      "collection_handle": "dronare-efter-krasch",
+      "page_handle": "dronare-efter-krasch",
+      "page_url": "/pages/dronare-efter-krasch",
+      "collection_url": "/collections/dronare-efter-krasch",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 439,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "armbyte",
+      "section": "repairs",
+      "label": "Armbyte",
+      "type": "hybrid",
+      "handle": "armbyte",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "arm"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      },
+      "collection_handle": "armbyte",
+      "page_handle": "armbyte",
+      "page_url": "/pages/armbyte",
+      "collection_url": "/collections/armbyte",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 57,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "motorbyte",
+      "section": "repairs",
+      "label": "Motorbyte",
+      "type": "hybrid",
+      "handle": "motorbyte",
+      "parent": "krockskador",
+      "existing": "reservdelar-gimbal-dronare-motorer",
+      "keepCurrent": true,
+      "collection_handle": "reservdelar-gimbal-dronare-motorer",
+      "page_handle": "motorbyte",
+      "page_url": "/pages/motorbyte",
+      "collection_url": "/collections/reservdelar-gimbal-dronare-motorer",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": true,
+      "projected_count": 171,
+      "current_count": 171,
+      "rules": null,
+      "action": "create_page_update_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "gimbalreparation",
+      "section": "repairs",
+      "label": "Gimbalreparation",
+      "type": "page",
+      "handle": "gimbalreparation",
+      "parent": "krockskador",
+      "related_collection": "reservdelar-gimbal-dronare-motorer",
+      "collection_handle": null,
+      "page_handle": "gimbalreparation",
+      "page_url": "/pages/gimbalreparation",
+      "collection_url": null,
+      "related_collection_url": "/collections/reservdelar-gimbal-dronare-motorer",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "kamerabyte",
+      "section": "repairs",
+      "label": "Kamerabyte",
+      "type": "hybrid",
+      "handle": "kamerabyte",
+      "parent": "krockskador",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kamera"
+          },
+          {
+            "column": "TYPE",
+            "relation": "CONTAINS",
+            "condition": "Reservdel"
+          }
+        ]
+      },
+      "collection_handle": "kamerabyte",
+      "page_handle": "kamerabyte",
+      "page_url": "/pages/kamerabyte",
+      "collection_url": "/collections/kamerabyte",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 57,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "elektronik-reparation",
+      "section": "repairs",
+      "label": "Elektronik",
+      "type": "page",
+      "handle": "elektronik-reparation",
+      "parent": "reparationer-hub",
+      "collection_handle": null,
+      "page_handle": "elektronik-reparation",
+      "page_url": "/pages/elektronik-reparation",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "kretskort",
+      "section": "repairs",
+      "label": "Kretskort",
+      "type": "page",
+      "handle": "kretskort-service",
+      "parent": "elektronik-reparation",
+      "related_collection": "dronarelektronik-flight-components",
+      "collection_handle": null,
+      "page_handle": "kretskort-service",
+      "page_url": "/pages/kretskort-service",
+      "collection_url": null,
+      "related_collection_url": "/collections/dronarelektronik-flight-components",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "esc-service",
+      "section": "repairs",
+      "label": "ESC",
+      "type": "hybrid",
+      "handle": "esc-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "ESC"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "speed controller"
+          }
+        ]
+      },
+      "collection_handle": "esc-service",
+      "page_handle": "esc-service",
+      "page_url": "/pages/esc-service",
+      "collection_url": "/collections/esc-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 33,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "gps-service",
+      "section": "repairs",
+      "label": "GPS",
+      "type": "hybrid",
+      "handle": "gps-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GPS"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "GNSS"
+          }
+        ]
+      },
+      "collection_handle": "gps-service",
+      "page_handle": "gps-service",
+      "page_url": "/pages/gps-service",
+      "collection_url": "/collections/gps-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 27,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "kompass-service",
+      "section": "repairs",
+      "label": "Kompass",
+      "type": "hybrid",
+      "handle": "kompass-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "kompass"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "compass"
+          }
+        ]
+      },
+      "collection_handle": "kompass-service",
+      "page_handle": "kompass-service",
+      "page_url": "/pages/kompass-service",
+      "collection_url": "/collections/kompass-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 14,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "sensorer-service",
+      "section": "repairs",
+      "label": "Sensorer",
+      "type": "hybrid",
+      "handle": "sensorer-service",
+      "parent": "elektronik-reparation",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "sensor"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "IMU"
+          }
+        ]
+      },
+      "collection_handle": "sensorer-service",
+      "page_handle": "sensorer-service",
+      "page_url": "/pages/sensorer-service",
+      "collection_url": "/collections/sensorer-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 28,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "gimbal-kamera-hub",
+      "section": "repairs",
+      "label": "Gimbal & Kamera",
+      "type": "page",
+      "handle": "gimbal-kamera-service",
+      "parent": "reparationer-hub",
+      "collection_handle": null,
+      "page_handle": "gimbal-kamera-service",
+      "page_url": "/pages/gimbal-kamera-service",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "gimbalkalibrering",
+      "section": "repairs",
+      "label": "Gimbalkalibrering",
+      "type": "page",
+      "handle": "gimbalkalibrering",
+      "parent": "gimbal-kamera-hub",
+      "collection_handle": null,
+      "page_handle": "gimbalkalibrering",
+      "page_url": "/pages/gimbalkalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "fokusproblem",
+      "section": "repairs",
+      "label": "Fokusproblem",
+      "type": "page",
+      "handle": "fokusproblem",
+      "parent": "gimbal-kamera-hub",
+      "collection_handle": null,
+      "page_handle": "fokusproblem",
+      "page_url": "/pages/fokusproblem",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "bildproblem",
+      "section": "repairs",
+      "label": "Bildproblem",
+      "type": "page",
+      "handle": "bildproblem",
+      "parent": "gimbal-kamera-hub",
+      "collection_handle": null,
+      "page_handle": "bildproblem",
+      "page_url": "/pages/bildproblem",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "batteriservice-hub",
+      "section": "repairs",
+      "label": "Batteriservice",
+      "type": "page",
+      "handle": "batteriservice",
+      "parent": "reparationer-hub",
+      "collection_handle": null,
+      "page_handle": "batteriservice",
+      "page_url": "/pages/batteriservice",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "batteritest",
+      "section": "repairs",
+      "label": "Batteritest",
+      "type": "page",
+      "handle": "batteritest",
+      "parent": "batteriservice-hub",
+      "collection_handle": null,
+      "page_handle": "batteritest",
+      "page_url": "/pages/batteritest",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "batteribyte",
+      "section": "repairs",
+      "label": "Batteribyte",
+      "type": "page",
+      "handle": "batteribyte",
+      "parent": "batteriservice-hub",
+      "related_collection": "batterier",
+      "collection_handle": null,
+      "page_handle": "batteribyte",
+      "page_url": "/pages/batteribyte",
+      "collection_url": null,
+      "related_collection_url": "/collections/batterier",
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "batterikontroll",
+      "section": "repairs",
+      "label": "Batterikontroll",
+      "type": "page",
+      "handle": "batterikontroll",
+      "parent": "batteriservice-hub",
+      "collection_handle": null,
+      "page_handle": "batterikontroll",
+      "page_url": "/pages/batterikontroll",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "foretagstjanster-hub",
+      "section": "b2b",
+      "label": "Företagstjänster",
+      "type": "page",
+      "handle": "foretagstjanster",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "foretagstjanster",
+      "page_url": "/pages/foretagstjanster",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "enterprise-support",
+      "section": "b2b",
+      "label": "Enterprise Support",
+      "type": "page",
+      "handle": "enterprise-support",
+      "parent": "foretagstjanster-hub",
+      "collection_handle": null,
+      "page_handle": "enterprise-support",
+      "page_url": "/pages/enterprise-support",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "felsokning",
+      "section": "b2b",
+      "label": "Felsökning",
+      "type": "page",
+      "handle": "felsokning",
+      "parent": "foretagstjanster-hub",
+      "collection_handle": null,
+      "page_handle": "felsokning",
+      "page_url": "/pages/felsokning",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "underhallsavtal",
+      "section": "b2b",
+      "label": "Underhållsavtal",
+      "type": "page",
+      "handle": "underhallsavtal",
+      "parent": "foretagstjanster-hub",
+      "collection_handle": null,
+      "page_handle": "underhallsavtal",
+      "page_url": "/pages/underhallsavtal",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "serviceavtal",
+      "section": "b2b",
+      "label": "Serviceavtal",
+      "type": "page",
+      "handle": "serviceavtal",
+      "parent": "foretagstjanster-hub",
+      "collection_handle": null,
+      "page_handle": "serviceavtal",
+      "page_url": "/pages/serviceavtal",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "supportavtal",
+      "section": "b2b",
+      "label": "Supportavtal",
+      "type": "page",
+      "handle": "supportavtal",
+      "parent": "foretagstjanster-hub",
+      "collection_handle": null,
+      "page_handle": "supportavtal",
+      "page_url": "/pages/supportavtal",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "flycart-inspektion",
+      "section": "b2b",
+      "label": "FlyCart Inspektion",
+      "type": "page",
+      "handle": "flycart-inspektion",
+      "parent": "flycart-service",
+      "collection_handle": null,
+      "page_handle": "flycart-inspektion",
+      "page_url": "/pages/flycart-inspektion",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "flycart-underhall",
+      "section": "b2b",
+      "label": "FlyCart Underhåll",
+      "type": "page",
+      "handle": "flycart-underhall",
+      "parent": "flycart-service",
+      "collection_handle": null,
+      "page_handle": "flycart-underhall",
+      "page_url": "/pages/flycart-underhall",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "agras-sprutsystem",
+      "section": "b2b",
+      "label": "Sprutsystem",
+      "type": "hybrid",
+      "handle": "agras-sprutsystem",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "spray"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "munstycke"
+          }
+        ]
+      },
+      "collection_handle": "agras-sprutsystem",
+      "page_handle": "agras-sprutsystem",
+      "page_url": "/pages/agras-sprutsystem",
+      "collection_url": "/collections/agras-sprutsystem",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 4,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "agras-pumpar",
+      "section": "b2b",
+      "label": "Pumpar",
+      "type": "hybrid",
+      "handle": "agras-pumpar",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "pump"
+          }
+        ]
+      },
+      "collection_handle": "agras-pumpar",
+      "page_handle": "agras-pumpar",
+      "page_url": "/pages/agras-pumpar",
+      "collection_url": "/collections/agras-pumpar",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "agras-munstycken",
+      "section": "b2b",
+      "label": "Munstycken",
+      "type": "hybrid",
+      "handle": "agras-munstycken",
+      "parent": "agras-service",
+      "rules": {
+        "appliedDisjunctively": false,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Agras"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "nozzle"
+          }
+        ]
+      },
+      "collection_handle": "agras-munstycken",
+      "page_handle": "agras-munstycken",
+      "page_url": "/pages/agras-munstycken",
+      "collection_url": "/collections/agras-munstycken",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 0,
+      "current_count": null,
+      "action": "create_page_only",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-dock-hub",
+      "section": "dock",
+      "label": "DJI Dock",
+      "type": "page",
+      "handle": "dji-dock",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "dji-dock",
+      "page_url": "/pages/dji-dock",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-dock-installation",
+      "section": "dock",
+      "label": "DJI Dock Installation",
+      "type": "page",
+      "handle": "dji-dock-installation",
+      "parent": "dji-dock-hub",
+      "collection_handle": null,
+      "page_handle": "dji-dock-installation",
+      "page_url": "/pages/dji-dock-installation",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-dock-service",
+      "section": "dock",
+      "label": "DJI Dock Service",
+      "type": "hybrid",
+      "handle": "dji-dock-service",
+      "parent": "dji-dock-hub",
+      "rules": {
+        "appliedDisjunctively": true,
+        "rules": [
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "Dock"
+          },
+          {
+            "column": "TITLE",
+            "relation": "CONTAINS",
+            "condition": "dock"
+          }
+        ]
+      },
+      "collection_handle": "dji-dock-service",
+      "page_handle": "dji-dock-service",
+      "page_url": "/pages/dji-dock-service",
+      "collection_url": "/collections/dji-dock-service",
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": 8,
+      "current_count": null,
+      "action": "create_page_and_collection",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-dock-support",
+      "section": "dock",
+      "label": "DJI Dock Support",
+      "type": "page",
+      "handle": "dji-dock-support",
+      "parent": "dji-dock-hub",
+      "collection_handle": null,
+      "page_handle": "dji-dock-support",
+      "page_url": "/pages/dji-dock-support",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dji-dock-underhall",
+      "section": "dock",
+      "label": "DJI Dock Underhåll",
+      "type": "page",
+      "handle": "dji-dock-underhall",
+      "parent": "dji-dock-hub",
+      "collection_handle": null,
+      "page_handle": "dji-dock-underhall",
+      "page_url": "/pages/dji-dock-underhall",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "kalibrering-hub",
+      "section": "calibration",
+      "label": "Kalibrering",
+      "type": "page",
+      "handle": "kalibrering",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "kalibrering",
+      "page_url": "/pages/kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "imu-kalibrering",
+      "section": "calibration",
+      "label": "IMU",
+      "type": "page",
+      "handle": "imu-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "imu-kalibrering",
+      "page_url": "/pages/imu-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "kompass-kalibrering",
+      "section": "calibration",
+      "label": "Kompass",
+      "type": "page",
+      "handle": "kompass-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "kompass-kalibrering",
+      "page_url": "/pages/kompass-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "rtk-kalibrering",
+      "section": "calibration",
+      "label": "RTK",
+      "type": "page",
+      "handle": "rtk-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "rtk-kalibrering",
+      "page_url": "/pages/rtk-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "gimbal-kalibrering",
+      "section": "calibration",
+      "label": "Gimbal",
+      "type": "page",
+      "handle": "gimbal-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "gimbal-kalibrering",
+      "page_url": "/pages/gimbal-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "kamera-kalibrering",
+      "section": "calibration",
+      "label": "Kamera",
+      "type": "page",
+      "handle": "kamera-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "kamera-kalibrering",
+      "page_url": "/pages/kamera-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "flygsystem-kalibrering",
+      "section": "calibration",
+      "label": "Flygsystem",
+      "type": "page",
+      "handle": "flygsystem-kalibrering",
+      "parent": "kalibrering-hub",
+      "collection_handle": null,
+      "page_handle": "flygsystem-kalibrering",
+      "page_url": "/pages/flygsystem-kalibrering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "besiktning-hub",
+      "section": "inspection",
+      "label": "Besiktning & Certifiering",
+      "type": "page",
+      "handle": "besiktning-certifiering",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "besiktning-certifiering",
+      "page_url": "/pages/besiktning-certifiering",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "leveranskontroll",
+      "section": "inspection",
+      "label": "Leveranskontroll",
+      "type": "page",
+      "handle": "leveranskontroll",
+      "parent": "besiktning-hub",
+      "collection_handle": null,
+      "page_handle": "leveranskontroll",
+      "page_url": "/pages/leveranskontroll",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "arlig-genomgang",
+      "section": "inspection",
+      "label": "Årlig genomgång",
+      "type": "page",
+      "handle": "arlig-genomgang",
+      "parent": "besiktning-hub",
+      "collection_handle": null,
+      "page_handle": "arlig-genomgang",
+      "page_url": "/pages/arlig-genomgang",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "flygsakerhetskontroll",
+      "section": "inspection",
+      "label": "Flygsäkerhetskontroll",
+      "type": "page",
+      "handle": "flygsakerhetskontroll",
+      "parent": "besiktning-hub",
+      "collection_handle": null,
+      "page_handle": "flygsakerhetskontroll",
+      "page_url": "/pages/flygsakerhetskontroll",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "dokumentation",
+      "section": "inspection",
+      "label": "Dokumentation",
+      "type": "page",
+      "handle": "service-dokumentation",
+      "parent": "besiktning-hub",
+      "collection_handle": null,
+      "page_handle": "service-dokumentation",
+      "page_url": "/pages/service-dokumentation",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    },
+    {
+      "id": "skadeanmalan",
+      "section": "hub",
+      "label": "Skadeanmälan",
+      "type": "page",
+      "handle": "skadeanmalan",
+      "parent": "service-hub",
+      "collection_handle": null,
+      "page_handle": "skadeanmalan",
+      "page_url": "/pages/skadeanmalan",
+      "collection_url": null,
+      "related_collection": null,
+      "related_collection_url": null,
+      "page_exists": false,
+      "collection_exists": false,
+      "projected_count": null,
+      "current_count": null,
+      "rules": null,
+      "action": "create_page",
+      "shrinkage": false
+    }
+  ],
+  "menu_validation": [
+    {
+      "title": "Konsumentdrönare",
+      "url": "/pages/dji-konsument-service",
+      "handle": "dji-konsument-service",
+      "status": "pending_create"
+    },
+    {
+      "title": "Enterprisedrönare",
+      "url": "/pages/dji-enterprise-service",
+      "handle": "dji-enterprise-service",
+      "status": "pending_create"
+    },
+    {
+      "title": "FlyCart",
+      "url": "/pages/flycart-service",
+      "handle": "flycart-service",
+      "status": "pending_create"
+    },
+    {
+      "title": "Agras",
+      "url": "/pages/agras-service",
+      "handle": "agras-service",
+      "status": "pending_create"
+    },
+    {
+      "title": "DJI Dock",
+      "url": "/pages/dji-dock",
+      "handle": "dji-dock",
+      "status": "pending_create"
+    },
+    {
+      "title": "Kalibrering",
+      "url": "/pages/kalibrering",
+      "handle": "kalibrering",
+      "status": "pending_create"
+    },
+    {
+      "title": "Serviceavtal",
+      "url": "/pages/serviceavtal",
+      "handle": "serviceavtal",
+      "status": "pending_create"
+    },
+    {
+      "title": "Felsökning",
+      "url": "/pages/felsokning",
+      "handle": "felsokning",
+      "status": "pending_create"
+    },
+    {
+      "title": "Skadeanmälan",
+      "url": "/pages/skadeanmalan",
+      "handle": "skadeanmalan",
+      "status": "pending_create"
+    }
+  ],
+  "seo_pages": [
+    {
+      "handle": "dji-reparation",
+      "title": "DJI reparation",
+      "keyword": "DJI reparation",
+      "markets": [
+        "SE",
+        "DE",
+        "NL",
+        "FR"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI reparation | EuroDroneParts",
+      "seo_description": "Professionell dji reparation för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-dronarservice",
+      "title": "DJI drönarservice",
+      "keyword": "DJI drönarservice",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI drönarservice | EuroDroneParts",
+      "seo_description": "Professionell dji drönarservice för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-enterprise-service",
+      "title": "DJI Enterprise service",
+      "keyword": "DJI Enterprise service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI Enterprise service | EuroDroneParts",
+      "seo_description": "Professionell dji enterprise service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "matrice-350-reparation",
+      "title": "Matrice 350 reparation",
+      "keyword": "Matrice 350 reparation",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Matrice 350 reparation | EuroDroneParts",
+      "seo_description": "Professionell matrice 350 reparation för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "matrice-4-service",
+      "title": "Matrice 4 service",
+      "keyword": "Matrice 4 service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "Matrice 4 service | EuroDroneParts",
+      "seo_description": "Professionell matrice 4 service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "flycart-service",
+      "title": "FlyCart service",
+      "keyword": "FlyCart service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "FlyCart service | EuroDroneParts",
+      "seo_description": "Professionell flycart service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "agras-service",
+      "title": "Agras service",
+      "keyword": "Agras service",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Agras service | EuroDroneParts",
+      "seo_description": "Professionell agras service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-dock-service",
+      "title": "DJI Dock service",
+      "keyword": "DJI Dock service",
+      "markets": [
+        "SE",
+        "EU"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI Dock service | EuroDroneParts",
+      "seo_description": "Professionell dji dock service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dronarreparation-sverige",
+      "title": "Drönarreparation Sverige",
+      "keyword": "drönarreparation Sverige",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Drönarreparation Sverige | EuroDroneParts",
+      "seo_description": "Professionell drönarreparation sverige för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-reservdelar-och-service",
+      "title": "DJI reservdelar och service",
+      "keyword": "DJI reservdelar service",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI reservdelar och service | EuroDroneParts",
+      "seo_description": "Professionell dji reservdelar service för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "dji-batteriservice",
+      "title": "DJI batteriservice",
+      "keyword": "DJI batteriservice",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "DJI batteriservice | EuroDroneParts",
+      "seo_description": "Professionell dji batteriservice för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    },
+    {
+      "handle": "gimbalreparation-dji",
+      "title": "Gimbalreparation DJI",
+      "keyword": "gimbalreparation DJI",
+      "markets": [
+        "SE"
+      ],
+      "page_exists": false,
+      "seo_title": "Gimbalreparation DJI | EuroDroneParts",
+      "seo_description": "Professionell gimbalreparation dji för DJI drönare. Auktoriserad service, reparation och support i Sverige och Europa.",
+      "internal_links": [
+        "service-reparationer",
+        "dji-enterprise-service",
+        "skadeanmalan",
+        "serviceavtal"
+      ]
+    }
+  ],
+  "b2b_services": [
+    {
+      "handle": "serviceavtal",
+      "title": "Serviceavtal",
+      "audience": "kommuner, energibolag, skogsbolag, entreprenörer"
+    },
+    {
+      "handle": "underhallsavtal",
+      "title": "Underhållsavtal",
+      "audience": "enterprise fleet operators"
+    },
+    {
+      "handle": "arlig-kontroll",
+      "title": "Årlig kontroll",
+      "audience": "regulated operators"
+    },
+    {
+      "handle": "prioriterad-support",
+      "title": "Prioriterad support",
+      "audience": "enterprise SLA customers"
+    },
+    {
+      "handle": "reservdelslager",
+      "title": "Reservdelslager",
+      "audience": "fleet operators"
+    },
+    {
+      "handle": "fjarrsupport",
+      "title": "Fjärrsupport",
+      "audience": "remote operations"
+    },
+    {
+      "handle": "utbytesenheter",
+      "title": "Utbytesenheter",
+      "audience": "mission-critical operators"
+    }
+  ]
+}

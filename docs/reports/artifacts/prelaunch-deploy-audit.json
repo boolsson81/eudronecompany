@@ -1,0 +1,760 @@
+{
+  "generated_at": "2026-06-13T11:41:34.668Z",
+  "mode": "apply",
+  "store": "ya1xhg-x6.myshopify.com",
+  "enterprise": [
+    {
+      "phase": "enterprise",
+      "handle": "dji-matrice-300-rtk",
+      "title": "DJI Matrice 300 RTK",
+      "action": "created",
+      "product_count": 2,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-matrice-3d",
+      "title": "DJI Matrice 3D",
+      "action": "created",
+      "product_count": 2,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-matrice-3td",
+      "title": "DJI Matrice 3TD",
+      "action": "created",
+      "product_count": 1,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-mavic-3-thermal",
+      "title": "DJI Mavic 3 Thermal",
+      "action": "created",
+      "product_count": 8,
+      "projected": 8,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-agras-t40",
+      "title": "DJI Agras T40",
+      "action": "created",
+      "product_count": 2,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-agras-t50",
+      "title": "DJI Agras T50",
+      "action": "created",
+      "product_count": 3,
+      "projected": 3,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-flycart-30",
+      "title": "DJI FlyCart 30",
+      "action": "created",
+      "product_count": 2,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-dock-2",
+      "title": "DJI Dock 2",
+      "action": "created",
+      "product_count": 1,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "enterprise",
+      "handle": "dji-dock-3",
+      "title": "DJI Dock 3",
+      "action": "created",
+      "product_count": 1,
+      "projected": 1,
+      "validation": "pass"
+    }
+  ],
+  "spare_parts": [
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-mini-4-pro-reservdelar",
+      "title": "DJI Mini 4 Pro — Reservdelar",
+      "action": "created",
+      "product_count": 127,
+      "projected": 147,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-propellrar",
+      "title": "DJI Mini 4 Pro — Propellrar",
+      "action": "created",
+      "product_count": 320,
+      "projected": 29,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-batterier",
+      "title": "DJI Mini 4 Pro — Batterier",
+      "action": "created",
+      "product_count": 480,
+      "projected": 10,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-motorer",
+      "title": "DJI Mini 4 Pro — Motorer",
+      "action": "created",
+      "product_count": 241,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-armar",
+      "title": "DJI Mini 4 Pro — Armar",
+      "action": "created",
+      "product_count": 264,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-kameror",
+      "title": "DJI Mini 4 Pro — Kameror",
+      "action": "created",
+      "product_count": 900,
+      "projected": 11,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-gimbal",
+      "title": "DJI Mini 4 Pro — Gimbal",
+      "action": "created",
+      "product_count": 323,
+      "projected": 11,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-skal",
+      "title": "DJI Mini 4 Pro — Skal",
+      "action": "created",
+      "product_count": 342,
+      "projected": 6,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-landningsstall",
+      "title": "DJI Mini 4 Pro — Landningsställ",
+      "action": "created",
+      "product_count": 159,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-kablar",
+      "title": "DJI Mini 4 Pro — Kablar",
+      "action": "created",
+      "product_count": 715,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-antenner",
+      "title": "DJI Mini 4 Pro — Antenner",
+      "action": "created",
+      "product_count": 130,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mini-4-pro-sensorer",
+      "title": "DJI Mini 4 Pro — Sensorer",
+      "action": "created",
+      "product_count": 144,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-air-3-reservdelar",
+      "title": "DJI Air 3 — Reservdelar",
+      "action": "created",
+      "product_count": 127,
+      "projected": 93,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-propellrar",
+      "title": "DJI Air 3 — Propellrar",
+      "action": "created",
+      "product_count": 327,
+      "projected": 15,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-batterier",
+      "title": "DJI Air 3 — Batterier",
+      "action": "created",
+      "product_count": 482,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-motorer",
+      "title": "DJI Air 3 — Motorer",
+      "action": "created",
+      "product_count": 245,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-armar",
+      "title": "DJI Air 3 — Armar",
+      "action": "created",
+      "product_count": 267,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-kameror",
+      "title": "DJI Air 3 — Kameror",
+      "action": "created",
+      "product_count": 400,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-gimbal",
+      "title": "DJI Air 3 — Gimbal",
+      "action": "created",
+      "product_count": 323,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-skal",
+      "title": "DJI Air 3 — Skal",
+      "action": "created",
+      "product_count": 345,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-landningsstall",
+      "title": "DJI Air 3 — Landningsställ",
+      "action": "created",
+      "product_count": 160,
+      "projected": 6,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-kablar",
+      "title": "DJI Air 3 — Kablar",
+      "action": "created",
+      "product_count": 713,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-antenner",
+      "title": "DJI Air 3 — Antenner",
+      "action": "created",
+      "product_count": 131,
+      "projected": 3,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-sensorer",
+      "title": "DJI Air 3 — Sensorer",
+      "action": "created",
+      "product_count": 147,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-air-3-tillbehor",
+      "title": "DJI Air 3 — Tillbehör",
+      "action": "created",
+      "product_count": 201,
+      "projected": 55,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-matrice-4-reservdelar",
+      "title": "DJI Matrice 4 — Reservdelar",
+      "action": "created",
+      "product_count": 21,
+      "projected": 22,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-propellrar",
+      "title": "DJI Matrice 4 — Propellrar",
+      "action": "created",
+      "product_count": 242,
+      "projected": 3,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-batterier",
+      "title": "DJI Matrice 4 — Batterier",
+      "action": "created",
+      "product_count": 387,
+      "projected": 4,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-kameror",
+      "title": "DJI Matrice 4 — Kameror",
+      "action": "created",
+      "product_count": 1075,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-gimbal",
+      "title": "DJI Matrice 4 — Gimbal",
+      "action": "created",
+      "product_count": 233,
+      "projected": 3,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-kablar",
+      "title": "DJI Matrice 4 — Kablar",
+      "action": "created",
+      "product_count": 618,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-4-rtk",
+      "title": "DJI Matrice 4 — RTK",
+      "action": "created",
+      "product_count": 47,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-matrice-350-rtk-reservdelar",
+      "title": "DJI Matrice 350 RTK — Reservdelar",
+      "action": "created",
+      "product_count": 5,
+      "projected": 7,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-350-rtk-batterier",
+      "title": "DJI Matrice 350 RTK — Batterier",
+      "action": "created",
+      "product_count": 374,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-350-rtk-antenner",
+      "title": "DJI Matrice 350 RTK — Antenner",
+      "action": "created",
+      "product_count": 17,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-matrice-350-rtk-rtk",
+      "title": "DJI Matrice 350 RTK — RTK",
+      "action": "created",
+      "product_count": 28,
+      "projected": 5,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-mavic-3-enterprise-reservdelar",
+      "title": "DJI Mavic 3 Enterprise — Reservdelar",
+      "action": "created",
+      "product_count": 5,
+      "projected": 11,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mavic-3-enterprise-batterier",
+      "title": "DJI Mavic 3 Enterprise — Batterier",
+      "action": "created",
+      "product_count": 372,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mavic-3-enterprise-kameror",
+      "title": "DJI Mavic 3 Enterprise — Kameror",
+      "action": "created",
+      "product_count": 800,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mavic-3-enterprise-gimbal",
+      "title": "DJI Mavic 3 Enterprise — Gimbal",
+      "action": "created",
+      "product_count": 218,
+      "projected": 1,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mavic-3-enterprise-skal",
+      "title": "DJI Mavic 3 Enterprise — Skal",
+      "action": "created",
+      "product_count": 230,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-mavic-3-enterprise-tillbehor",
+      "title": "DJI Mavic 3 Enterprise — Tillbehör",
+      "action": "created",
+      "product_count": 85,
+      "projected": 7,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_main",
+      "handle": "dji-flycart-30-reservdelar",
+      "title": "DJI FlyCart 30 — Reservdelar",
+      "action": "created",
+      "product_count": 2,
+      "projected": 2,
+      "validation": "pass"
+    },
+    {
+      "phase": "spare_parts_sub",
+      "handle": "dji-flycart-30-batterier",
+      "title": "DJI FlyCart 30 — Batterier",
+      "action": "created",
+      "product_count": 370,
+      "projected": 1,
+      "validation": "pass"
+    }
+  ],
+  "service": [
+    {
+      "phase": "service",
+      "handle": "service-support",
+      "title": "Service & Support",
+      "action": "created",
+      "url": "/pages/service-support"
+    },
+    {
+      "phase": "service",
+      "handle": "dji-service",
+      "title": "DJI Service",
+      "action": "created",
+      "url": "/pages/dji-service"
+    },
+    {
+      "phase": "service",
+      "handle": "dji-enterprise-service",
+      "title": "Enterprise Service",
+      "action": "created",
+      "url": "/pages/dji-enterprise-service"
+    },
+    {
+      "phase": "service",
+      "handle": "flycart-service",
+      "title": "FlyCart Service",
+      "action": "created",
+      "url": "/pages/flycart-service"
+    },
+    {
+      "phase": "service",
+      "handle": "matrice-service",
+      "title": "Matrice Service",
+      "action": "created",
+      "url": "/pages/matrice-service"
+    },
+    {
+      "phase": "service",
+      "handle": "felsokning",
+      "title": "Felsökning",
+      "action": "created",
+      "url": "/pages/felsokning"
+    },
+    {
+      "phase": "service",
+      "handle": "reparation",
+      "title": "Reparation",
+      "action": "created",
+      "url": "/pages/reparation"
+    },
+    {
+      "phase": "service",
+      "handle": "kalibrering",
+      "title": "Kalibrering",
+      "action": "created",
+      "url": "/pages/kalibrering"
+    },
+    {
+      "phase": "service",
+      "handle": "batteritest",
+      "title": "Batteritest",
+      "action": "created",
+      "url": "/pages/batteritest"
+    },
+    {
+      "phase": "service",
+      "handle": "firmwareuppdatering",
+      "title": "Firmwareuppdatering",
+      "action": "created",
+      "url": "/pages/firmwareuppdatering"
+    },
+    {
+      "phase": "service",
+      "handle": "garantihantering",
+      "title": "Garantihantering",
+      "action": "created",
+      "url": "/pages/garantihantering"
+    },
+    {
+      "phase": "service",
+      "handle": "rma",
+      "title": "RMA",
+      "action": "created",
+      "url": "/pages/rma"
+    },
+    {
+      "phase": "service",
+      "handle": "serviceanmalan",
+      "title": "Serviceanmälan",
+      "action": "created",
+      "url": "/pages/serviceanmalan"
+    },
+    {
+      "phase": "service",
+      "handle": "support",
+      "title": "Support",
+      "action": "created",
+      "url": "/pages/support"
+    }
+  ],
+  "b2b": [
+    {
+      "phase": "b2b",
+      "handle": "foretagskonto",
+      "title": "Företagskonto",
+      "action": "created",
+      "url": "/pages/foretagskonto"
+    },
+    {
+      "phase": "b2b",
+      "handle": "offertforfragan",
+      "title": "Offertförfrågan",
+      "action": "created",
+      "url": "/pages/offertforfragan"
+    },
+    {
+      "phase": "b2b",
+      "handle": "leasing",
+      "title": "Leasing",
+      "action": "created",
+      "url": "/pages/leasing"
+    },
+    {
+      "phase": "b2b",
+      "handle": "finansiering",
+      "title": "Finansiering",
+      "action": "created",
+      "url": "/pages/finansiering"
+    },
+    {
+      "phase": "b2b",
+      "handle": "serviceavtal",
+      "title": "Serviceavtal",
+      "action": "created",
+      "url": "/pages/serviceavtal"
+    },
+    {
+      "phase": "b2b",
+      "handle": "supportavtal",
+      "title": "Supportavtal",
+      "action": "created",
+      "url": "/pages/supportavtal"
+    },
+    {
+      "phase": "b2b",
+      "handle": "utbildning",
+      "title": "Utbildning",
+      "action": "created",
+      "url": "/pages/utbildning"
+    },
+    {
+      "phase": "b2b",
+      "handle": "partnerprogram",
+      "title": "Partnerprogram",
+      "action": "created",
+      "url": "/pages/partnerprogram"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-energi-infrastruktur",
+      "title": "Energi & Infrastruktur",
+      "action": "created",
+      "url": "/pages/bransch-energi-infrastruktur"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-vindkraft",
+      "title": "Vindkraft",
+      "action": "created",
+      "url": "/pages/bransch-vindkraft"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-solparker",
+      "title": "Solparker",
+      "action": "created",
+      "url": "/pages/bransch-solparker"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-kraftnat",
+      "title": "Kraftnät",
+      "action": "created",
+      "url": "/pages/bransch-kraftnat"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-skogsbruk",
+      "title": "Skogsbruk",
+      "action": "created",
+      "url": "/pages/bransch-skogsbruk"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-jordbruk",
+      "title": "Jordbruk",
+      "action": "created",
+      "url": "/pages/bransch-jordbruk"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-kartlaggning",
+      "title": "Kartläggning",
+      "action": "created",
+      "url": "/pages/bransch-kartlaggning"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-bygg-anlaggning",
+      "title": "Bygg & Anläggning",
+      "action": "created",
+      "url": "/pages/bransch-bygg-anlaggning"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-sakerhet-raddning",
+      "title": "Säkerhet & Räddning",
+      "action": "created",
+      "url": "/pages/bransch-sakerhet-raddning"
+    },
+    {
+      "phase": "b2b",
+      "handle": "bransch-transport-logistik",
+      "title": "Transport & Logistik",
+      "action": "created",
+      "url": "/pages/bransch-transport-logistik"
+    }
+  ],
+  "menus": [
+    {
+      "phase": "menu",
+      "handle": "enterprise-expansion-deploy",
+      "title": "Enterprise Expansion",
+      "action": "created",
+      "items": 9
+    },
+    {
+      "phase": "menu",
+      "handle": "spare-parts-deploy",
+      "title": "Reservdelar",
+      "action": "created",
+      "items": 6
+    },
+    {
+      "phase": "menu",
+      "handle": "service-support-deploy",
+      "title": "Service & Support",
+      "action": "created",
+      "items": 5
+    },
+    {
+      "phase": "menu",
+      "handle": "b2b-enterprise-deploy",
+      "title": "Enterprise & B2B",
+      "action": "created",
+      "items": 2
+    }
+  ],
+  "summary": {
+    "collections_created": 53,
+    "collections_total": 204,
+    "pages_created": 32,
+    "pages_total": 94,
+    "menus_created": 4,
+    "menus_total": 133,
+    "failures": 0
+  },
+  "readiness_score": 96,
+  "go_no_go": "GO (conditional)",
+  "blockers": [
+    "All products remain DRAFT — publication requires separate approval",
+    "290 products missing images block full catalog publish",
+    "95 legacy empty menus still need cleanup approval"
+  ]
+}

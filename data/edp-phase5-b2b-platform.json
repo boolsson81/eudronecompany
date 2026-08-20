@@ -1,0 +1,74 @@
+{
+  "request_quote": {
+    "handle": "request-quote",
+    "title": "Request Quote",
+    "url": "/pages/request-quote",
+    "workflows": [
+      "Request quotation",
+      "Request project pricing",
+      "Request fleet pricing"
+    ],
+    "form_fields": [
+      "company",
+      "contact",
+      "product_interest",
+      "quantity",
+      "project_description"
+    ]
+  },
+  "enterprise_consultation": {
+    "handle": "enterprise-consultation",
+    "title": "Enterprise Consultation",
+    "url": "/pages/enterprise-consultation",
+    "pages": [
+      {
+        "handle": "boka-konsultation",
+        "title": "Book Consultation"
+      },
+      {
+        "handle": "projektgranskning",
+        "title": "Project Review"
+      },
+      {
+        "handle": "produktrekommendation",
+        "title": "Product Recommendation"
+      }
+    ]
+  },
+  "public_sector": {
+    "handle": "offentlig-sektor",
+    "title": "Public Sector",
+    "url": "/pages/offentlig-sektor",
+    "audiences": [
+      "Municipalities",
+      "Utilities",
+      "Energy Companies",
+      "Infrastructure Companies"
+    ],
+    "workflows": [
+      "Procurement inquiry",
+      "Framework agreement",
+      "Tender support"
+    ]
+  },
+  "payment_options": {
+    "handle": "betalningsalternativ",
+    "title": "Payment Options",
+    "methods": [
+      "Invoice",
+      "Leasing",
+      "Financing",
+      "Purchase Order"
+    ],
+    "peppol": {
+      "ready": true,
+      "note": "PEPPOL-ready procurement structure — integrate with ERP/e-invoicing in Phase 5b",
+      "fields": [
+        "org_number",
+        "peppol_id",
+        "gln",
+        "purchase_order_reference"
+      ]
+    }
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-06-13T11:57:47.812Z",
+  "store": "ya1xhg-x6.myshopify.com",
+  "mode": "read_only",
+  "counts": {
+    "products": 9389,
+    "product_status": {
+      "ACTIVE": 0,
+      "DRAFT": 9389,
+      "ARCHIVED": 0
+    },
+    "collections": 204,
+    "pages": 94,
+    "menus": 151,
+    "without_images": 290,
+    "without_prices": 42,
+    "without_descriptions": 89,
+    "empty_collections": 15,
+    "broken_menu_links": 0,
+    "empty_menus": 142,
+    "seo_gaps": 149,
+    "eligible_publish": 9026
+  },
+  "launch_score": 60,
+  "go_no_go": "NO-GO",
+  "time_estimate": "2–4 business days of focused work",
+  "critical_blockers": [
+    {
+      "severity": "CRITICAL",
+      "issue": "All products are DRAFT — storefront has no purchasable products",
+      "count": 9389
+    }
+  ],
+  "high_blockers": [
+    {
+      "severity": "HIGH",
+      "issue": "Products missing images",
+      "count": 290
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Products missing valid price",
+      "count": 42
+    },
+    {
+      "severity": "HIGH",
+      "issue": "Empty legacy menus",
+      "count": 142
+    },
+    {
+      "severity": "HIGH",
+      "issue": "SEO gaps (collections)",
+      "count": 130
+    }
+  ],
+  "medium_blockers": [
+    {
+      "severity": "MEDIUM",
+      "issue": "Products missing descriptions",
+      "count": 89
+    },
+    {
+      "severity": "MEDIUM",
+      "issue": "Empty collections",
+      "count": 15
+    }
+  ],
+  "top20": [
+    {
+      "rank": 1,
+      "severity": "CRITICAL",
+      "action": "Publish eligible products (bulk publication approval)",
+      "area": "Catalog"
+    },
+    {
+      "rank": 2,
+      "severity": "CRITICAL",
+      "action": "Fix 290 products missing images",
+      "area": "Catalog"
+    },
+    {
+      "rank": 3,
+      "severity": "HIGH",
+      "action": "Resolve 42 products without valid prices",
+      "area": "Catalog"
+    },
+    {
+      "rank": 4,
+      "severity": "HIGH",
+      "action": "Populate or hide 15 empty collections",
+      "area": "Collections"
+    },
+    {
+      "rank": 5,
+      "severity": "HIGH",
+      "action": "Remove 142 empty legacy menus",
+      "area": "Navigation"
+    },
+    {
+      "rank": 6,
+      "severity": "LOW",
+      "action": "Verify deploy menus linked in theme",
+      "area": "Navigation"
+    },
+    {
+      "rank": 7,
+      "severity": "HIGH",
+      "action": "Add missing SEO metadata to 130 assets",
+      "area": "SEO"
+    },
+    {
+      "rank": 8,
+      "severity": "MEDIUM",
+      "action": "Add descriptions to 89 products",
+      "area": "Catalog"
+    },
+    {
+      "rank": 9,
+      "severity": "MEDIUM",
+      "action": "Link new deploy menus to theme footer/header",
+      "area": "Navigation"
+    },
+    {
+      "rank": 10,
+      "severity": "MEDIUM",
+      "action": "Remove legacy ActionKing pages from navigation",
+      "area": "Content"
+    },
+    {
+      "rank": 11,
+      "severity": "MEDIUM",
+      "action": "Validate smart collection rules post-publication",
+      "area": "Collections"
+    },
+    {
+      "rank": 12,
+      "severity": "MEDIUM",
+      "action": "Configure payment methods for B2B (invoice/leasing)",
+      "area": "B2B"
+    },
+    {
+      "rank": 13,
+      "severity": "MEDIUM",
+      "action": "Test checkout flow end-to-end",
+      "area": "QA"
+    },
+    {
+      "rank": 14,
+      "severity": "LOW",
+      "action": "Standardize product tags across catalog",
+      "area": "Data"
+    },
+    {
+      "rank": 15,
+      "severity": "LOW",
+      "action": "Schema markup theme audit",
+      "area": "SEO"
+    },
+    {
+      "rank": 16,
+      "severity": "LOW",
+      "action": "Submit sitemap after publication",
+      "area": "SEO"
+    },
+    {
+      "rank": 17,
+      "severity": "LOW",
+      "action": "Configure shipping zones for Sweden launch",
+      "area": "Operations"
+    },
+    {
+      "rank": 18,
+      "severity": "LOW",
+      "action": "Review new service/B2B page content templates",
+      "area": "Content"
+    },
+    {
+      "rank": 19,
+      "severity": "LOW",
+      "action": "Enable analytics and conversion tracking",
+      "area": "Marketing"
+    },
+    {
+      "rank": 20,
+      "severity": "LOW",
+      "action": "Plan Phase 2 European market activation",
+      "area": "Expansion"
+    }
+  ]
+}

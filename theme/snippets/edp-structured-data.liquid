@@ -1,0 +1,173 @@
+{%- liquid
+  assign edp_social_urls = ''
+  if settings.social_twitter_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_twitter_link | append: '||'
+  endif
+  if settings.social_facebook_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_facebook_link | append: '||'
+  endif
+  if settings.social_pinterest_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_pinterest_link | append: '||'
+  endif
+  if settings.social_instagram_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_instagram_link | append: '||'
+  endif
+  if settings.social_tiktok_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_tiktok_link | append: '||'
+  endif
+  if settings.social_tumblr_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_tumblr_link | append: '||'
+  endif
+  if settings.social_snapchat_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_snapchat_link | append: '||'
+  endif
+  if settings.social_youtube_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_youtube_link | append: '||'
+  endif
+  if settings.social_vimeo_link != blank
+    assign edp_social_urls = edp_social_urls | append: settings.social_vimeo_link | append: '||'
+  endif
+  assign edp_social_list = edp_social_urls | split: '||' | compact
+-%}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": {{ shop.name | json }},
+    {%- if settings.logo -%}
+    "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
+    {%- endif -%}
+    {%- if settings.brand_description != blank -%}
+    "description": {{ settings.brand_description | strip_html | json }},
+    {%- endif -%}
+    "url": {{ shop.url | json }}
+    {%- if edp_social_list.size > 0 -%}
+    ,
+    "sameAs": [
+      {%- for social_url in edp_social_list -%}
+        {{ social_url | json }}{% unless forloop.last %},{% endunless %}
+      {%- endfor -%}
+    ]
+    {%- endif -%}
+  }
+</script>
+
+{%- if request.page_type == 'index' -%}
+  {%- assign potential_action_target = request.origin | append: routes.search_url | append: '?q={search_term_string}' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "url": {{ shop.url | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+{%- endif -%}
+
+{%- liquid
+  assign edp_breadcrumb_items = ''
+  assign edp_home_label = 'general.breadcrumbs.home' | t | default: 'Hem'
+  assign edp_breadcrumb_items = edp_breadcrumb_items | append: edp_home_label | append: '^^^' | append: routes.root_url | append: '|||'
+
+  if request.page_type == 'collection'
+    assign edp_breadcrumb_items = edp_breadcrumb_items | append: collection.title | append: '^^^' | append: collection.url | append: '|||'
+  elsif request.page_type == 'product'
+    assign edp_bc_collection = collection
+    if edp_bc_collection == blank and product.collections.size > 0
+      assign edp_bc_collection = product.collections.first
+    endif
+    if edp_bc_collection != blank
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: edp_bc_collection.title | append: '^^^' | append: edp_bc_collection.url | append: '|||'
+    endif
+    assign edp_breadcrumb_items = edp_breadcrumb_items | append: product.title | append: '^^^' | append: product.url | append: '|||'
+  elsif request.page_type == 'page'
+    assign edp_page_suffix = page.template_suffix
+    if edp_page_suffix == 'enterprise'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: 'Enterprise' | append: '^^^' | append: page.url | append: '|||'
+    elsif edp_page_suffix == 'consumer'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: 'Konsument' | append: '^^^' | append: page.url | append: '|||'
+    elsif edp_page_suffix == 'contact-quote'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: 'Enterprise' | append: '^^^' | append: '/pages/enterprise' | append: '|||'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: page.title | append: '^^^' | append: page.url | append: '|||'
+    elsif edp_page_suffix == 'jordbruk' or edp_page_suffix == 'energi-infrastruktur' or edp_page_suffix == 'gis-kartlaggning' or edp_page_suffix == 'raddningstjanst' or edp_page_suffix == 'skogsbruk' or edp_page_suffix == 'bygg-anlaggning'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: 'Enterprise' | append: '^^^' | append: '/pages/enterprise' | append: '|||'
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: page.title | append: '^^^' | append: page.url | append: '|||'
+    else
+      assign edp_breadcrumb_items = edp_breadcrumb_items | append: page.title | append: '^^^' | append: page.url | append: '|||'
+    endif
+  elsif request.page_type == 'blog'
+    assign edp_breadcrumb_items = edp_breadcrumb_items | append: blog.title | append: '^^^' | append: blog.url | append: '|||'
+  elsif request.page_type == 'article'
+    assign edp_breadcrumb_items = edp_breadcrumb_items | append: blog.title | append: '^^^' | append: blog.url | append: '|||'
+    assign edp_breadcrumb_items = edp_breadcrumb_items | append: article.title | append: '^^^' | append: article.url | append: '|||'
+  endif
+
+  assign edp_breadcrumb_rows = edp_breadcrumb_items | split: '|||' | compact
+-%}
+
+{%- if edp_breadcrumb_rows.size > 1 -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {%- for row in edp_breadcrumb_rows -%}
+          {%- assign crumb_parts = row | split: '^^^' -%}
+          {
+            "@type": "ListItem",
+            "position": {{ forloop.index }},
+            "name": {{ crumb_parts[0] | json }},
+            "item": {{ request.origin | append: crumb_parts[1] | json }}
+          }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ]
+    }
+  </script>
+{%- endif -%}
+
+{%- if request.page_type == 'page' -%}
+  {%- liquid
+    assign edp_webpage_description = page_description
+    if edp_webpage_description == blank
+      assign edp_webpage_description = page.content | strip_html | strip | truncate: 160
+    endif
+    if edp_webpage_description == blank
+      assign edp_webpage_description = settings.brand_description
+    endif
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": {{ page.title | json }},
+      {%- if edp_webpage_description != blank -%}
+      "description": {{ edp_webpage_description | json }},
+      {%- endif -%}
+      "url": {{ canonical_url | json }}
+    }
+  </script>
+{%- elsif request.page_type == 'collection' -%}
+  {%- liquid
+    assign edp_collection_description = page_description
+    if edp_collection_description == blank
+      assign edp_collection_description = collection.description | strip_html | strip | truncate: 160
+    endif
+  -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": {{ collection.title | json }},
+      {%- if edp_collection_description != blank -%}
+      "description": {{ edp_collection_description | json }},
+      {%- endif -%}
+      "url": {{ canonical_url | json }}
+    }
+  </script>
+{%- endif -%}

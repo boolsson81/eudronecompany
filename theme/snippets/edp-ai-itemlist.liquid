@@ -1,0 +1,26 @@
+{%- if request.page_type == 'collection' and collection.products_count > 0 -%}
+  {%- capture item_list -%}
+    {%- for product in collection.products limit: 12 -%}
+      {%- unless forloop.first -%},{%- endunless -%}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "name": {{ product.title | json }},
+        "url": {{ product.url | prepend: request.origin | json }}
+      }
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- if item_list != blank -%}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": {{ collection.title | json }},
+        "description": {{ collection.description | strip_html | truncate: 300 | default: collection.title | json }},
+        "url": {{ collection.url | prepend: request.origin | json }},
+        "numberOfItems": {{ collection.products_count }},
+        "itemListElement": [{{ item_list }}]
+      }
+    </script>
+  {%- endif -%}
+{%- endif -%}

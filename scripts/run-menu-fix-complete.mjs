@@ -1,0 +1,175 @@
+#!/usr/bin/env node
+/**
+ * Complete menu fix orchestration:
+ * 1. Publish placeholder pages (direct token OR worker publish_pages after Lovable deploy)
+ * 2. menu_recovery_fix via shopify-cloner-worker (menuUpdate, skip collections)
+ * 3. Write EURODRONEPARTS_MENU_RECOVERY_REPORT.md
+ */
+import { existsSync, readFileSync, writeFileSync } from "fs";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
+import { spawnSync } from "child_process";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const MID = process.env.MIGRATION_ID || "3d9876af-885c-49e9-a4b0-c4943c06112f";
+const REPORT = join(ROOT, "EURODRONEPARTS_MENU_RECOVERY_REPORT.md");
+
+function loadEnv() {
+  const p = join(ROOT, ".env");
+  if (!existsSync(p)) return;
+  for (const line of readFileSync(p, "utf8").split(/\r?\n/)) {
+    const t = line.trim();
+    if (!t || t.startsWith("#")) continue;
+    const eq = t.indexOf("=");
+    if (eq < 1) continue;
+    const k = t.slice(0, eq).trim();
+    let v = t.slice(eq + 1).trim();
+    if ((v.startsWith('"') && v.endsWith('"')) || (v.startsWith("'") && v.endsWith("'"))) {
+      v = v.slice(1, -1);
+    }
+    if (!process.env[k]) process.env[k] = v;
+  }
+}
+
+async function post(path, body) {
+  const key = process.env.SUPABASE_PUBLISHABLE_KEY;
+  const url = process.env.SUPABASE_URL;
+  const r = await fetch(`${url}/functions/v1/${path}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}`, apikey: key },
+    body: JSON.stringify(body),
+  });
+  const text = await r.text();
+  return { status: r.status, json: text ? JSON.parse(text) : {} };
+}
+
+function buildReport(pages, menus) {
+  const menuList = menus?.menus || [];
+  const pageList = pages?.pages || [];
+  const fixed = menuList.filter((m) => m.publish_result === "updated" || m.publish_result === "published");
+  const failed = menuList.filter((m) => m.publish_result === "failed");
+  const emptyLegacy = new Set(["dronare", "actionkameror", "vandring-outdoor"]);
+  const coreMenus = ["partnership", "main-menu", "footer", "customer-account-main-menu", "enterprise-dr-nare", "meny"];
+  const coreOk = coreMenus.every((h) => fixed.some((m) => m.menu_handle === h));
+  const blockingFailed = failed.filter((m) => !emptyLegacy.has(m.menu_handle));
+  const pass = coreOk && blockingFailed.length === 0;
+
+  const lines = [
+    "# EuroDroneParts — Menu Recovery Report",
+    "",
+    `**Generated:** ${new Date().toISOString()}`,
+    `**Migration:** \`${MID}\``,
+    `**Target:** ya1xhg-x6.myshopify.com`,
+    "",
+    "## Verdict",
+    "",
+    `| Menu integrity | **${pass ? "PASS" : "FAIL"}** |`,
+    `| Menus updated | ${fixed.length} / ${menuList.length} |`,
+    `| Core menus (6) | ${coreOk ? "PASS" : "FAIL"} |`,
+    `| Blocking failures | ${blockingFailed.length} |`,
+    "",
+    "## Dependency pages",
+    "",
+    "| Handle | Result | Published |",
+    "|--------|--------|-----------|",
+  ];
+  for (const p of pageList) {
+    lines.push(`| \`${p.handle}\` | ${p.result} | ${p.published ? "yes" : "no"} |`);
+  }
+  if (!pageList.length) {
+    lines.push("| — | not run | — |");
+  }
+
+  lines.push("", "## Menus", "", "| Handle | Result | Kept | Removed | Deferred | Error |", "|--------|--------|-----:|--------:|---------:|-------|");
+  for (const m of menuList) {
+    lines.push(
+      `| \`${m.menu_handle}\` | ${m.publish_result} | ${m.kept_count ?? 0} | ${m.removed_links?.length ?? 0} | ${m.deferred_links?.length ?? 0} | ${(m.error || "—").slice(0, 100)} |`,
+    );
+  }
+
+  const removed = menuList.flatMap((m) => (m.removed_links || []).map((r) => ({ menu: m.menu_handle, ...r })));
+  if (removed.length) {
+    lines.push("", "### Links removed", "", "| Menu | Title | Reason |", "|------|-------|--------|");
+    for (const r of removed) lines.push(`| \`${r.menu}\` | ${r.title} | ${r.reason} |`);
+  }
+
+  if (blockingFailed.length) {
+    lines.push("", "### Blocking failures", "");
+    for (const m of blockingFailed) lines.push(`- \`${m.menu_handle}\`: ${m.error || "failed"}`);
+  }
+  const acceptable = failed.filter((m) => emptyLegacy.has(m.menu_handle));
+  if (acceptable.length) {
+    lines.push("", "### Acceptable empty legacy menus", "");
+    for (const m of acceptable) lines.push(`- \`${m.menu_handle}\`: empty after ActionKing prune (not on live target)`);
+  }
+
+  lines.push(
+    "",
+    "## Smart collections (unchanged)",
+    "",
+    "6 approved DJI collections remain **usable custom collections** with products > 0.",
+    "They are **not** rule-driven smart collections. Shopify blocks adding `ruleSet` to existing custom collections via `collectionUpdate`.",
+    "",
+    "### Optional future step (requires explicit manual approval)",
+    "",
+    "Destructive custom→smart conversion: delete + recreate with remapped `dji.compatible_models` rules.",
+    "Safeguards: dry-run, backup product IDs, verify counts, one handle at a time.",
+    "",
+    "---",
+    "",
+    "*Generated by `scripts/run-menu-fix-complete.mjs`*",
+  );
+  return lines.join("\n");
+}
+
+async function main() {
+  loadEnv();
+  const dryRun = process.argv.includes("--dry-run");
+  let pages = { pages: [], summary: {} };
+
+  const token = process.env.EUDRONEPARTS_SHOPIFY_ADMIN_TOKEN || process.env.SHOPIFY_ADMIN_ACCESS_TOKEN;
+  if (token && !dryRun) {
+    console.log("Step 1: Direct page publish via Shopify token...");
+    const r = spawnSync("node", ["scripts/publish-menu-pages-direct.mjs"], { cwd: ROOT, encoding: "utf8", env: process.env });
+    if (r.status === 0) {
+      try {
+        pages = JSON.parse(r.stdout);
+        pages = { pages: pages.pages || [], summary: { direct: true } };
+      } catch {
+        console.log(r.stdout);
+      }
+    } else {
+      console.warn("Direct publish failed:", r.stderr || r.stdout);
+    }
+  } else {
+    console.log("Step 1: Page publish via worker (publish_pages=true)...");
+    const pub = await post("shopify-cloner-worker", {
+      action: "menu_recovery_fix",
+      migration_id: MID,
+      dry_run: true,
+      publish_pages: true,
+    });
+    if (pub.json.menu_pages) {
+      pages = pub.json.menu_pages;
+    }
+  }
+
+  console.log(dryRun ? "Step 2: Menu recovery dry-run..." : "Step 2: Menu recovery live...");
+  const menus = await post("shopify-cloner-worker", {
+    action: "menu_recovery_fix",
+    migration_id: MID,
+    dry_run: dryRun,
+    publish_pages: !token,
+  });
+
+  const result = { pages, menus: menus.json };
+  writeFileSync(join(ROOT, "menu-fix-complete.json"), JSON.stringify(result, null, 2));
+  writeFileSync(REPORT, buildReport(pages, menus.json));
+  console.log(`Wrote ${REPORT}`);
+  console.log(JSON.stringify({ pages: pages.summary, menus: menus.json.summary }, null, 2));
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

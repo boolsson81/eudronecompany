@@ -1,0 +1,1205 @@
+{
+  "count": 150,
+  "collections": [
+    {
+      "id": "gid://shopify/Collection/664620400968",
+      "handle": "airdrop-system",
+      "title": "Airdrop System",
+      "productsCount": {
+        "count": 24
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664651366728",
+      "handle": "alla-produkter",
+      "title": "Alla produkter Drönare",
+      "productsCount": {
+        "count": 841
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617845064",
+      "handle": "amagisn-kameratillbehor-och-dronarutrustning",
+      "title": "kameratillbehör - AMagisn Tillbehör för Kamera och Drönare",
+      "productsCount": {
+        "count": 149
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615747912",
+      "handle": "bandverktyg",
+      "title": "Bändverktyg för Precisionsreparationer",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623972680",
+      "handle": "batterier",
+      "title": "Batterier och laddare",
+      "productsCount": {
+        "count": 64
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620106056",
+      "handle": "belysning-till-dronare",
+      "title": "Belysning till drönare",
+      "productsCount": {
+        "count": 28
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664613978440",
+      "handle": "brdrc-tillbehor",
+      "title": "Kompletta BRDRC Tillbehör för Din Utrustning",
+      "productsCount": {
+        "count": 134
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616632648",
+      "handle": "dij-air-3-serien",
+      "title": "DJI Air 3-Serien för Professionell Flygfotografering",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664619057480",
+      "handle": "dji",
+      "title": "DJI: Innovation inom Drönarteknik",
+      "productsCount": {
+        "count": 84
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664630821192",
+      "handle": "dji-agras-dronare",
+      "title": "DJI Agras Drönare för Precisionsjordbruk",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616665416",
+      "handle": "dji-air-2-serien",
+      "title": "DJI Air 2 Serien: Drönare och Tillbehör",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664914985288",
+      "handle": "dji-air-2-tillbehor",
+      "title": "Högkvalitativa DJI Air 2 Tillbehör för Drönare",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664612077896",
+      "handle": "dji-air-2s",
+      "title": "DJI Air 2S",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623284552",
+      "handle": "dji-air-2s-tillbehor",
+      "title": "DJI Air 2S Tillbehör – Optimerad Flygning",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615846216",
+      "handle": "dji-air-3",
+      "title": "DJI AIR 3",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915149128",
+      "handle": "dji-air-3-tillbehor-omfattande-sortiment",
+      "title": "Omfattande Sortiment av DJI Air 3 Tillbehör",
+      "productsCount": {
+        "count": 66
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623219016",
+      "handle": "dji-air-3s",
+      "title": "DJI Air 3S",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664637800776",
+      "handle": "dji-air-serien",
+      "title": "DJI AIR-serien",
+      "productsCount": {
+        "count": 6
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915018056",
+      "handle": "dji-avata-2-tillbehor",
+      "title": "DJI Avata 2 tillbehör – Skydd & batterier till din drönare",
+      "productsCount": {
+        "count": 51
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623382856",
+      "handle": "dji-avata-pro-fpv-dronare",
+      "title": "Avata Pro FPV-Drönare – Nästa Generations Flygning",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616173896",
+      "handle": "dji-avata-serien",
+      "title": "DJI Avata-Serien",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664614142280",
+      "handle": "dji-avata-tillbehor",
+      "title": "DJI Avata Tillbehör",
+      "productsCount": {
+        "count": 6
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616927560",
+      "handle": "dji-dronar-reservdelar",
+      "title": "Hitta DJI-drönar reservdelar av hög kvalitet",
+      "productsCount": {
+        "count": 16
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621351240",
+      "handle": "dji-dronare",
+      "title": "DJI Drönare",
+      "productsCount": {
+        "count": 22
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617582920",
+      "handle": "dji-dronare-fjarrkontroller",
+      "title": "Fjärrkontroller och Tillbehör för DJI Drönare",
+      "productsCount": {
+        "count": 7
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631148872",
+      "handle": "dji-enterprise-fjarrkontroller",
+      "title": "Professionella Fjärrkontroller för DJI Enterprise",
+      "productsCount": {
+        "count": 22
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615092552",
+      "handle": "dji-flip-batteri-tillbehor",
+      "title": "Optimala DJI Flip tillbehör – Maxa din drönarupplevelse!",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664612995400",
+      "handle": "dji-flip-dronare",
+      "title": "DJI Flip: Kompakta Vikbara Drönare",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915083592",
+      "handle": "dji-flip-tillbehor",
+      "title": "DJI Flip™ tillbehör – Optimal utrustning till din drönare",
+      "productsCount": {
+        "count": 63
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631083336",
+      "handle": "dji-flycart-100-lastdronare",
+      "title": "DJI FlyCart 100: Lastdrönare för Tunga Lyft",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664356880712",
+      "handle": "dji-flycart-serien",
+      "title": "DJI FlyCart Serien",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623448392",
+      "handle": "dji-fpv-tillbehor",
+      "title": "Dji FPV Tillbehör – Optimera Din Flygning Med Kvalitet",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623808840",
+      "handle": "dji-inspire",
+      "title": "DJI Inspire Serien Professionella Drönare för Kreatörer",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664357273928",
+      "handle": "dji-inspire-serien",
+      "title": "DJI Inspire Serien",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664356979016",
+      "handle": "dji-marvic-enterprise",
+      "title": "DJI Marvic Enterprise",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664356749640",
+      "handle": "dji-matrice-3-serien",
+      "title": "DJI Matrice 4 Serien",
+      "productsCount": {
+        "count": 22
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631017800",
+      "handle": "dji-matrice-30-serie-tillbehor",
+      "title": "dji arm - DJI Matrice 30 Serie Tillbehör",
+      "productsCount": {
+        "count": 9
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664630985032",
+      "handle": "dji-matrice-350-rtk-tillbehor",
+      "title": "DJI Matrice 350 RTK Tillbehör och Skydd",
+      "productsCount": {
+        "count": 8
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664630919496",
+      "handle": "dji-matrice-4-serie",
+      "title": "dji matrice 4 Serie",
+      "productsCount": {
+        "count": 22
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631116104",
+      "handle": "dji-matrice-4-tillbehor",
+      "title": "DJI Matrice 4 Tillbehör för Professionella Drönare",
+      "productsCount": {
+        "count": 15
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664356815176",
+      "handle": "dji-matrice-400-serien",
+      "title": "DJI Matrice 400 Serien för Professionella Uppdrag",
+      "productsCount": {
+        "count": 9
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664356618568",
+      "handle": "dji-matrice-serien",
+      "title": "DJI Matrice-serien – Professionella Enterprise-drönare",
+      "productsCount": {
+        "count": 32
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616829256",
+      "handle": "dji-mavic-2-pro",
+      "title": "DJI Mavic 2 Pro",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616403272",
+      "handle": "dji-mavic-2-serien",
+      "title": "DJI Mavic 2-serien: Avancerade Drönare",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616796488",
+      "handle": "dji-mavic-3-cine-dronare",
+      "title": "DJI Mavic 3 Cine: Ultimata Drönaren för Filmskapare",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615256392",
+      "handle": "dji-mavic-3-classic",
+      "title": "Tillbehör DJI Mavic 3 Classic",
+      "productsCount": {
+        "count": 15
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664630952264",
+      "handle": "dji-mavic-3-enterprise",
+      "title": "DJI Mavic 3 Enterprise - Kvalitet &",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664593826120",
+      "handle": "dji-mavic-3-pro-avancerad-dronarteknik",
+      "title": "DJI Mavic 3 Pro: Avancerad Drönarteknik",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615387464",
+      "handle": "dji-mavic-3-pro-tillbehor",
+      "title": "DJI Mavic 3 Pro tillbehör – Drönartillbehör för proffs",
+      "productsCount": {
+        "count": 11
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616370504",
+      "handle": "dji-mavic-3-serien",
+      "title": "DJI Mavic 3-serien: Proffsens val av drönare",
+      "productsCount": {
+        "count": 11
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623120712",
+      "handle": "dji-mavic-3-tillbehor",
+      "title": "DJI Mavic 3 Tillbehör för Optimal Prestanda",
+      "productsCount": {
+        "count": 66
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631050568",
+      "handle": "dji-mavic-3m-dronare-tillbehor",
+      "title": "DJI Mavic 3M Drönare och Tillbehör",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615125320",
+      "handle": "dji-mavic-4-pro",
+      "title": "DJI Mavic 4 Tillbehör",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616337736",
+      "handle": "dji-mavic-4-serien",
+      "title": "Upptäck DJI Mavic 4-serien för exceptionell flygfotografering",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623350088",
+      "handle": "dji-mavic-air-tillbehor",
+      "title": "Komplett utbud av DJI Mavic Air Tillbehör",
+      "productsCount": {
+        "count": 39
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616436040",
+      "handle": "dji-mavic-pro-batteri-vaska",
+      "title": "dji mavic pro batteri väska - DJI Mavic Pro Batteriväska och Tillbehör",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623186248",
+      "handle": "dji-mavic-pro-tillbehor",
+      "title": "Omfattande DJI Mavic Pro Tillbehör",
+      "productsCount": {
+        "count": 46
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616108360",
+      "handle": "dji-mavic-serien",
+      "title": "DJI Mavic-Serien",
+      "productsCount": {
+        "count": 6
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631738696",
+      "handle": "dji-mavic-serien-enterprise",
+      "title": "DJI Mavic Serien enterprise",
+      "productsCount": {
+        "count": 11
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621121864",
+      "handle": "dji-mavic-tillbehor",
+      "title": "Dji Mavic Tillbehör för Förbättrad Flygning",
+      "productsCount": {
+        "count": 9
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616567112",
+      "handle": "dji-mini-2-serien",
+      "title": "DJI Mini 2-Serien",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621252936",
+      "handle": "dji-mini-3",
+      "title": "DJI Mini 3 Drönare för Professionellt Flygfoto",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616534344",
+      "handle": "dji-mini-3-serien",
+      "title": "DJI Mini 3-Serien",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915116360",
+      "handle": "dji-mini-3-tillbehor",
+      "title": "DJI Mini 3 Tillbehör",
+      "productsCount": {
+        "count": 43
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621187400",
+      "handle": "dji-mini-4-pro",
+      "title": "DJI Mini 4 Pro – Frihet, precision och kreativ kontroll i miniformat",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623481160",
+      "handle": "dji-mini-4-pro-tillbehor",
+      "title": "DJI Mini 4 Pro",
+      "productsCount": {
+        "count": 14
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616501576",
+      "handle": "dji-mini-4-serien",
+      "title": "DJI Mini 4-Serien",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621023560",
+      "handle": "dji-mini-5-serien",
+      "title": "DJI Mini 5-Serien",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616141128",
+      "handle": "dji-mini-tillbehor",
+      "title": "DJI Mini Tillbehör för Din Drönare",
+      "productsCount": {
+        "count": 7
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664632754504",
+      "handle": "dji-neo",
+      "title": "DJI Neo",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915181896",
+      "handle": "dji-neo-2-tillbehor",
+      "title": "DJI Neo 2 Tillbehör för din Drönare",
+      "productsCount": {
+        "count": 54
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664914886984",
+      "handle": "dji-neo-tillbehor",
+      "title": "DJI Neo Tillbehör – Batteri & mer för din drönare",
+      "productsCount": {
+        "count": 129
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623710536",
+      "handle": "dji-phantom-3-pro-v1",
+      "title": "DJI Phantom 3 Pro v1 Drönare och Tillbehör",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623743304",
+      "handle": "dji-phantom-3-se",
+      "title": "DJI Phantom 3 SE Drönare med Kamera",
+      "productsCount": {
+        "count": 43
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623677768",
+      "handle": "dji-phantom-4-pro-dronare",
+      "title": "DJI Phantom 4 Pro Drönare för Professionella",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631705928",
+      "handle": "dji-phantom-serien",
+      "title": "DJI Phantom Serien",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617025864",
+      "handle": "dji-phantom-tillbehor-vaska-reservdelar",
+      "title": "DJI Phantom Tillbehör för Optimal Prestanda",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616468808",
+      "handle": "dji-rc-fjarrkontroller",
+      "title": "DJI RC – Smart fjärrkontroll",
+      "productsCount": {
+        "count": 7
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664612012360",
+      "handle": "dji-rc-pro-tillbehor",
+      "title": "DJI RC Pro Tillbehör – Optimera Din Fjärrkontroll",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620597576",
+      "handle": "dronar-fjarrkontrollstillbehor",
+      "title": "Drönar - fjärrkontrollstillbehör",
+      "productsCount": {
+        "count": 32
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631247176",
+      "handle": "dronar-kameror",
+      "title": "Professionella Drönar kameror för Flygfoto",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617091400",
+      "handle": "dronare-actionking",
+      "title": "Drönare",
+      "productsCount": {
+        "count": 47
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664614076744",
+      "handle": "dronare-med-kamera",
+      "title": "Drönare med kamera",
+      "productsCount": {
+        "count": 47
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631902536",
+      "handle": "dronare-med-varmekamera",
+      "title": "Drönare med värmekamera",
+      "productsCount": {
+        "count": 30
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638783816",
+      "handle": "dronare-propeller-tillbehor",
+      "title": "Drönare Propeller Tillbehör för Optimal Flygning",
+      "productsCount": {
+        "count": 366
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664915050824",
+      "handle": "dronare-reservdelar-ovriga",
+      "title": "Drönare reservdelar: Allt för din drönarreparation",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638488904",
+      "handle": "dronarelektronik-flight-components",
+      "title": "Reservdelar & Komponenter för DJI & FPV",
+      "productsCount": {
+        "count": 175
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620499272",
+      "handle": "dronarmatta-landning-skydd",
+      "title": "Landningsmattor Drönare – Säker & Stabil Flygning",
+      "productsCount": {
+        "count": 21
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664613749064",
+      "handle": "dronarpropellrar-tysta",
+      "title": "Hållbara drönarpropellrar för optimal flygning och prestanda",
+      "productsCount": {
+        "count": 128
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664612929864",
+      "handle": "dronarryggsack-vaskor",
+      "title": "Robust drönarryggsäck för säker transport av din drönare",
+      "productsCount": {
+        "count": 203
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664622989640",
+      "handle": "dronartillbehor-dronar",
+      "title": "Drönartillbehör Dronar för Optimal Flygning",
+      "productsCount": {
+        "count": 374
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664613519688",
+      "handle": "dronartillbehor-kop",
+      "title": "Drönartillbehör: Filter för bättre flygfotografering",
+      "productsCount": {
+        "count": 615
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664632066376",
+      "handle": "energi-infrastruktur",
+      "title": "Energi & Infrastruktur",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631607624",
+      "handle": "enterprise-belysning",
+      "title": "Enterprise belysning",
+      "productsCount": {
+        "count": 13
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664355569992",
+      "handle": "enterprise-dronare",
+      "title": "Enterprise Drönare för Industri och Inspektion",
+      "productsCount": {
+        "count": 19
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631279944",
+      "handle": "enterprise-dronartillbehor",
+      "title": "Professionella Enterprise drönartillbehör",
+      "productsCount": {
+        "count": 77
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631574856",
+      "handle": "enterprise-hogtalarsystem",
+      "title": "Enterprise Högtalarsystem",
+      "productsCount": {
+        "count": 23
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631771464",
+      "handle": "enterprise-lyftsystem",
+      "title": "Enterprise Lyftsystem",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631673160",
+      "handle": "enterprise-propellrar",
+      "title": "Enterprise Propellrar",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631804232",
+      "handle": "enterprise-sensorer",
+      "title": "Enterprise Sensorer",
+      "productsCount": {
+        "count": 20
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631181640",
+      "handle": "enterprise-service-dronare",
+      "title": "Enterprise Service för Företagsdrönare",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631640392",
+      "handle": "enterprise-tillbehor",
+      "title": "Enterprise Tillbehör",
+      "productsCount": {
+        "count": 32
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664624136520",
+      "handle": "fasten-adaptrar-actionkameror",
+      "title": "Universal Fästen och Adaptrar till actionkameror",
+      "productsCount": {
+        "count": 5
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638193992",
+      "handle": "filter-dronare-lins",
+      "title": "Filter drönare: Skydda din lins med premium glasfilter",
+      "productsCount": {
+        "count": 261
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664613617992",
+      "handle": "filter-till-dronare",
+      "title": "Filter till Drönare för Optimal Bildkvalitet",
+      "productsCount": {
+        "count": 252
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621285704",
+      "handle": "fjarrkontroll-dronare",
+      "title": "Fjärrkontroll drönare: Precision & kontroll för din flygning",
+      "productsCount": {
+        "count": 10
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638325064",
+      "handle": "gopro-hero13-black-skydd",
+      "title": "GoPro Hero13 Black skydd - Skydda din GoPro Hero13 Black med rätt skyd",
+      "productsCount": {
+        "count": 476
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638423368",
+      "handle": "gopro-hero13-vaska",
+      "title": "GoPro Hero13 väska – Skydda din actionkamera tryggt",
+      "productsCount": {
+        "count": 610
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664618533192",
+      "handle": "gopro-tillbehor-vendors",
+      "title": "Hitta pålitliga GoPro tillbehör vendors här",
+      "productsCount": {
+        "count": 228
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631837000",
+      "handle": "inspektionsdronare",
+      "title": "Inspektionsdrönare",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664621089096",
+      "handle": "ji-mini-5-pro-filter",
+      "title": "DJI Mini 5 Pro filter",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664632033608",
+      "handle": "jordbruksdronare",
+      "title": "Jordbruksdrönare",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664624267592",
+      "handle": "kamerakablar-actionking",
+      "title": "Kamerakablar för Optimal Prestanda",
+      "productsCount": {
+        "count": 12
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664914854216",
+      "handle": "kamerastativ-tripod",
+      "title": "Kamerastativ & Tripod – Stabilt Mobil- och Kamerastativ",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638161224",
+      "handle": "kapor-till-dronare",
+      "title": "Högkvalitativa Kåpor till Drönare",
+      "productsCount": {
+        "count": 158
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631869768",
+      "handle": "kartlaggnings-och-matdronare",
+      "title": "Kartläggnings- och mätdrönare",
+      "productsCount": {
+        "count": 26
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620433736",
+      "handle": "landningsstall-dronare",
+      "title": "Landningsställ till drönare – Stabil och säker landning",
+      "productsCount": {
+        "count": 42
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631968072",
+      "handle": "last-och-transportdronare",
+      "title": "Last- och transportdrönare",
+      "productsCount": {
+        "count": 54
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617124168",
+      "handle": "master-airscrew-dji-propellrar",
+      "title": "Master Airscrew DJI propellrar – Tysta & Effektiva",
+      "productsCount": {
+        "count": 42
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664629444936",
+      "handle": "minneskort-lagring",
+      "title": "Minneskort & Lagring",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615715144",
+      "handle": "multiverktyg-friluftsliv",
+      "title": "Multiverktyg friluftsliv: Kompakt & Mångsidigt Äventyrsverktyg",
+      "productsCount": {
+        "count": 14
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617976136",
+      "handle": "pgytech-tillbehor",
+      "title": "Pgytech Tillbehör för Kreativa Skapare",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615813448",
+      "handle": "pincetter-actionking",
+      "title": "Pincetter",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664618664264",
+      "handle": "polarpro",
+      "title": "Polarpro",
+      "productsCount": {
+        "count": 428
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631312712",
+      "handle": "propellerskydd-1",
+      "title": "Robusta Propellerskydd för Säkrare Drönarflygning",
+      "productsCount": {
+        "count": 56
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615780680",
+      "handle": "rengoringsprodukter-actionking",
+      "title": "Rengörning för elektronik",
+      "productsCount": {
+        "count": 18
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664617419080",
+      "handle": "reparation-dji-neo-reservdelar",
+      "title": "Reparation DJI Neo – Fixa din drönare snabbt och enkelt!",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664624333128",
+      "handle": "reparera-precisionsverktyg-elektronik",
+      "title": "Precisionsverktyg Elektronik: Reparera kamera & drönare enkelt",
+      "productsCount": {
+        "count": 36
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664638292296",
+      "handle": "reservdelar-gimbal-dronare-motorer",
+      "title": "Reservdelar Gimbal Drönare: Gimbalmotorer för Optimal Stabilisering",
+      "productsCount": {
+        "count": 171
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664632000840",
+      "handle": "skogsbruksdronare",
+      "title": "Skogsbruksdrönare",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615682376",
+      "handle": "skruvmejsel-set",
+      "title": "Skruvmejsel Set – Precisionsverktyg för Alla Behov",
+      "productsCount": {
+        "count": 6
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620204360",
+      "handle": "skydd-dronare",
+      "title": "Skydd till drönare: Propeller, Gimbal & Skal – Skydda din drönare!",
+      "productsCount": {
+        "count": 53
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615649608",
+      "handle": "tanger-actionking",
+      "title": "Tänger Action: Precision och Styrka",
+      "productsCount": {
+        "count": 1
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623251784",
+      "handle": "tillbehor-dji-air-3s",
+      "title": "Tillbehör DJI Air 3S - Tillbehör för DJI Air 3S: Komplettera din dröna",
+      "productsCount": {
+        "count": 13
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616730952",
+      "handle": "tillbehor-dji-air-serien",
+      "title": "Tillbehör till DJI Air-Serien – Uppgradera din drönare idag!",
+      "productsCount": {
+        "count": 12
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664619254088",
+      "handle": "tillbehor-dji-avata-serien",
+      "title": "DJI Avata tillbehör: FPV-drönarutrustning för proffs & nybörjare",
+      "productsCount": {
+        "count": 14
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664914952520",
+      "handle": "tillbehor-dji-inspire",
+      "title": "DJI Inspire Tillbehör",
+      "productsCount": {
+        "count": 0
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623153480",
+      "handle": "tillbehor-dji-mavic-2",
+      "title": "Tillbehör DJI Mavic 2: Utrustning för din drönare",
+      "productsCount": {
+        "count": 4
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664615453000",
+      "handle": "tillbehor-dji-mavic-3-cine",
+      "title": "Tillbehör DJI Mavic 3 Cine för optimal prestanda",
+      "productsCount": {
+        "count": 10
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664619221320",
+      "handle": "tillbehor-dji-mavic-dronare",
+      "title": "dji mavic 3e - Tillbehör för DJI Mavic Drönare",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623579464",
+      "handle": "tillbehor-dji-mini-2-2-se",
+      "title": "Tillbehör DJI Mini 2 / 2 SE - Tillbehör för DJI Mini",
+      "productsCount": {
+        "count": 47
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664623546696",
+      "handle": "tillbehor-dji-mini-4",
+      "title": "DJI Mini 3 Tillbehör: Utforska drönarens fulla potential",
+      "productsCount": {
+        "count": 18
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664616599880",
+      "handle": "tillbehor-dji-mini-4-serien",
+      "title": "Tillbehör till DJI Mini 4-serien – Maxa din drönarupplevelse!",
+      "productsCount": {
+        "count": 3
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664612045128",
+      "handle": "tillbehor-dji-neo",
+      "title": "DJI Neo tillbehör – Batteri & mer för optimal flygning",
+      "productsCount": {
+        "count": 20
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664614207816",
+      "handle": "tillbehor-till-dji-air-3-serien",
+      "title": "Tillbehör till DJI AIR 3-Serien",
+      "productsCount": {
+        "count": 14
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664620138824",
+      "handle": "tillbehorskablar-dronare",
+      "title": "Kablar till drönare",
+      "productsCount": {
+        "count": 10
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664632131912",
+      "handle": "transport-logistik",
+      "title": "Transport & Logistik",
+      "productsCount": {
+        "count": 2
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664631378248",
+      "handle": "usb-kablar-usb-c-till-usb-c",
+      "title": "Kraftfulla USB-kablar USB-C till USB-C",
+      "productsCount": {
+        "count": 23
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664624300360",
+      "handle": "vattentatt-kameraskydd",
+      "title": "Vattentätt kameraskydd för kamera & drönare",
+      "productsCount": {
+        "count": 141
+      }
+    },
+    {
+      "id": "gid://shopify/Collection/664618500424",
+      "handle": "vendors-q-sunnylife",
+      "title": "Sunnylife: Köp vattentäta kameraskydd & actionkamera tillbehör",
+      "productsCount": {
+        "count": 377
+      }
+    }
+  ]
+}
