@@ -19,9 +19,9 @@ export const EDP_ENTERPRISE_PAGE: EdpEnterprisePage = {
   heroDesc:
     "DJI Matrice, Agras, Zenmuse-sensorer och kompletta enterprise-system — från inspektion och kartläggning till räddningsinsatser.",
   intro:
-    "EuroDroneParts är din partner för professionella UAV-lösningar. Vi levererar enterprise-drönare, sensorer och tillbehör med expertstöd, utbildning och B2B-villkor. Oavsett om du arbetar med energi, GIS eller räddningstjänst — vi hjälper dig hitta rätt utrustning.",
+    "EU Drone Company är din partner för professionella UAV-lösningar. Vi levererar enterprise-drönare, sensorer och tillbehör med expertstöd, utbildning och B2B-villkor. Oavsett om du arbetar med energi, GIS eller räddningstjänst — vi hjälper dig hitta rätt utrustning.",
   templateSuffix: "enterprise",
-  metaTitle: "Enterprise-drönare & professionella UAV-lösningar | EuroDroneParts",
+  metaTitle: "Enterprise-drönare & professionella UAV-lösningar | EU Drone Company",
   metaDescription:
     "Professionella drönarlösningar för företag. DJI Matrice, Agras, Zenmuse-sensorer och kompletta system för inspektion, kartläggning och räddning.",
 };

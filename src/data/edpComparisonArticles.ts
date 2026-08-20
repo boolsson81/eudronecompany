@@ -17,7 +17,7 @@ export interface EdpComparisonArticle {
 export const EDP_COMPARISON_BLOG = {
   handle: "jamforer",
   title: "Jämförer",
-  metaTitle: "Jämför drönarkameror & Zenmuse-sensorer | EuroDroneParts",
+  metaTitle: "Jämför drönarkameror & Zenmuse-sensorer | EU Drone Company",
   metaDescription:
     "Jämför professionella drönarkameror och Zenmuse-payloads sida vid sida. Hitta rätt kamera för inspektion, termisk avbildning, LiDAR och fotogrammetri.",
   templateSuffix: "jamforer",
@@ -30,7 +30,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Inspektion & zoom",
     excerpt:
       "Jämför Zenmuse H30T och H30 — samma 40× optisk zoom men H30T har termisk sensor. Se vilken payload som passar ditt uppdrag.",
-    metaTitle: "Zenmuse H30T vs H30 — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse H30T vs H30 — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H30T och H30. Skillnader i termisk sensor, vikt och användningsområden. Hitta rätt inspektionskamera för Matrice 350 RTK.",
     tags: ["jämförelse", "zenmuse", "h30", "inspektion"],
@@ -61,7 +61,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Termisk inspektion",
     excerpt:
       "Jämför nästa generations H30T med etablerade H20T. Se skillnader i zoom, termisk upplösning och laser-räckvidd.",
-    metaTitle: "Zenmuse H30T vs H20T — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse H30T vs H20T — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H30T och H20T för termisk inspektion. 40× vs 23× zoom, 1280×1024 vs 640×512 termisk, och förbättrad laser-avståndsmätare.",
     tags: ["jämförelse", "zenmuse", "termisk", "inspektion"],
@@ -93,7 +93,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Kartläggning",
     excerpt:
       "Jämför Zenmuse P1 (45 MP fotogrammetri) och L2 (LiDAR + RGB). Vilken kartläggningspayload passar ditt GIS-projekt?",
-    metaTitle: "Zenmuse P1 vs L2 — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse P1 vs L2 — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse P1 och L2 för drönarbaserad kartläggning. Fotogrammetri vs LiDAR — noggrannhet, vegetation, användningsområden och pris.",
     tags: ["jämförelse", "zenmuse", "lidar", "fotogrammetri", "gis"],
@@ -125,7 +125,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Översikt",
     excerpt:
       "Komplett jämförelse av Zenmuse inspektionskameror. Se zoom, termisk sensor och nattseende sida vid sida.",
-    metaTitle: "Jämför Zenmuse inspektionskameror | EuroDroneParts",
+    metaTitle: "Jämför Zenmuse inspektionskameror | EU Drone Company",
     metaDescription:
       "Jämför alla Zenmuse inspektionskameror: H30T, H30, H20T och H20N. Specifikationer, zoom, termisk sensor och rekommendationer.",
     tags: ["jämförelse", "zenmuse", "inspektion", "översikt"],
@@ -150,7 +150,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Termisk avbildning",
     excerpt:
       "Alla Zenmuse-modeller med termisk sensor jämförda. Upplösning, zoom och nattseende i en översikt.",
-    metaTitle: "Jämför termiska drönarkameror | EuroDroneParts",
+    metaTitle: "Jämför termiska drönarkameror | EU Drone Company",
     metaDescription:
       "Jämför termiska Zenmuse-kameror: H30T, H20T och H20N. Termisk upplösning, zoom och användningsområden för energi, säkerhet och räddning.",
     tags: ["jämförelse", "zenmuse", "termisk", "översikt"],
@@ -175,7 +175,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Termisk inspektion",
     excerpt:
       "Jämför H20T och H20N — samma termiska upplösning men H20N har starlight-sensorer optimerade för mörker och nattinspektion.",
-    metaTitle: "Zenmuse H20T vs H20N — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse H20T vs H20N — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H20T och H20N. Skillnader i starlight-sensorer, nattseende, zoom och användningsområden för säkerhet och räddning.",
     tags: ["jämförelse", "zenmuse", "termisk", "nattseende"],
@@ -207,7 +207,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Inspektion & zoom",
     excerpt:
       "Samma 23× zoom och laser-avståndsmätare — men H20T har termisk kamera. Se om den extra kostnaden motiveras.",
-    metaTitle: "Zenmuse H20 vs H20T — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse H20 vs H20T — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H20 och H20T. Skillnaden är termisk sensor, vikt och pris. Hitta rätt payload för visuell vs termisk inspektion.",
     tags: ["jämförelse", "zenmuse", "h20", "inspektion"],
@@ -233,7 +233,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "LiDAR",
     excerpt:
       "Jämför första generationens L1 med L2. Fler returer, längre räckvidd och bättre penetration genom vegetation.",
-    metaTitle: "Zenmuse L1 vs L2 — LiDAR-jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse L1 vs L2 — LiDAR-jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse L1 och L2 LiDAR-sensorer. Skillnader i returer, räckvidd, punktmolnstäthet och noggrannhet för kartläggning.",
     tags: ["jämförelse", "zenmuse", "lidar", "kartläggning"],
@@ -263,7 +263,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "LiDAR",
     excerpt:
       "Jämför L2 och L3. 950 m räckvidd, 16 returer, dubbla 100 MP-kameror — men L3 kräver Matrice 400.",
-    metaTitle: "Zenmuse L2 vs L3 — LiDAR-jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse L2 vs L3 — LiDAR-jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse L2 och L3. Nästa generations LiDAR med 950 m räckvidd och 16 returer vs etablerade L2. Plattformskrav och användningsområden.",
     tags: ["jämförelse", "zenmuse", "lidar", "l3"],
@@ -294,7 +294,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Översikt",
     excerpt:
       "Alla Zenmuse LiDAR-payloads jämförda. Returer, räckvidd, kameror och plattformskrav.",
-    metaTitle: "Jämför Zenmuse LiDAR-sensorer | EuroDroneParts",
+    metaTitle: "Jämför Zenmuse LiDAR-sensorer | EU Drone Company",
     metaDescription:
       "Komplett jämförelse av Zenmuse L1, L2 och L3 LiDAR-sensorer. Specifikationer, noggrannhet och rekommendationer för kartläggning.",
     tags: ["jämförelse", "zenmuse", "lidar", "översikt"],
@@ -319,7 +319,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Översikt",
     excerpt:
       "Fotogrammetri vs LiDAR — alla Zenmuse kartläggningspayloads i en jämförelse.",
-    metaTitle: "Jämför kartläggningskameror & sensorer | EuroDroneParts",
+    metaTitle: "Jämför kartläggningskameror & sensorer | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse P1, L1, L2 och L3 för drönarbaserad kartläggning. Fotogrammetri vs LiDAR — specifikationer och rekommendationer.",
     tags: ["jämförelse", "zenmuse", "kartläggning", "översikt"],
@@ -344,7 +344,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Kompakt enterprise",
     excerpt:
       "Jämför Mavic 3E och Mavic 3T. Mekanisk slutare och 4/3\"-sensor vs termisk kamera — vilken kompakt enterprise-drönare passar dig?",
-    metaTitle: "Mavic 3E vs Mavic 3T — jämförelse | EuroDroneParts",
+    metaTitle: "Mavic 3E vs Mavic 3T — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför DJI Mavic 3 Enterprise och Mavic 3T. Fotogrammetri med mekanisk slutare vs termisk inspektion i kompakt format.",
     tags: ["jämförelse", "mavic", "enterprise", "termisk"],
@@ -375,7 +375,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Kompakt enterprise",
     excerpt:
       "Jämför Mavic 3E och Mavic 3 Multispectral. Inspektion och kartläggning vs NDVI och precisionsjordbruk.",
-    metaTitle: "Mavic 3E vs Mavic 3M — jämförelse | EuroDroneParts",
+    metaTitle: "Mavic 3E vs Mavic 3M — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför DJI Mavic 3 Enterprise och Mavic 3 Multispectral. Inspektionskamera vs multispektral sensor för jordbruk och växtanalys.",
     tags: ["jämförelse", "mavic", "multispektral", "jordbruk"],
@@ -401,7 +401,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Termisk & natt",
     excerpt:
       "Jämför senaste H30T med nattspecialisten H20N. Termisk upplösning, starlight och zoom i mörker.",
-    metaTitle: "Zenmuse H30T vs H20N — jämförelse | EuroDroneParts",
+    metaTitle: "Zenmuse H30T vs H20N — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H30T och H20N för nattinspektion. 1280×1024 vs 640×512 termisk, starlight-sensorer och 40× vs 20× zoom.",
     tags: ["jämförelse", "zenmuse", "termisk", "nattseende"],
@@ -427,7 +427,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Plattform & kamera",
     excerpt:
       "Jämför Zenmuse H30 (Matrice-payload) med integrerad Mavic 3E-kamera. Zoom, sensor och portabilitet.",
-    metaTitle: "Zenmuse H30 vs Mavic 3E — payload vs kompakt | EuroDroneParts",
+    metaTitle: "Zenmuse H30 vs Mavic 3E — payload vs kompakt | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H30 på Matrice med DJI Mavic 3 Enterprise. När lönar sig en tung payload-plattform vs kompakt enterprise-drönare?",
     tags: ["jämförelse", "zenmuse", "mavic", "plattform"],
@@ -453,7 +453,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     eyebrow: "Översikt",
     excerpt:
       "Alla Zenmuse payloads i en tabell. Inspektion, termisk, fotogrammetri och LiDAR — sida vid sida.",
-    metaTitle: "Jämför alla Zenmuse-kameror & sensorer | EuroDroneParts",
+    metaTitle: "Jämför alla Zenmuse-kameror & sensorer | EU Drone Company",
     metaDescription:
       "Komplett jämförelse av alla Zenmuse-kameror: H30T, H30, H20T, H20N, H20, P1, L1, L2 och L3. Specifikationer och rekommendationer.",
     tags: ["jämförelse", "zenmuse", "översikt", "alla"],

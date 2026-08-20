@@ -2,7 +2,7 @@
   "blog": {
     "handle": "jamforer",
     "title": "Jämförer",
-    "metaTitle": "Jämför drönarkameror & Zenmuse-sensorer | EuroDroneParts",
+    "metaTitle": "Jämför drönarkameror & Zenmuse-sensorer | EU Drone Company",
     "metaDescription": "Jämför professionella drönarkameror och Zenmuse-payloads sida vid sida. Hitta rätt kamera för inspektion, termisk avbildning, LiDAR och fotogrammetri.",
     "templateSuffix": "jamforer"
   },
@@ -11,7 +11,7 @@
       "handle": "zenmuse-h30t-vs-h30",
       "title": "Zenmuse H30T vs H30 — vilken ska du välja?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H30T vs H30 — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse H30T vs H30 — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H30T och H30. Skillnader i termisk sensor, vikt och användningsområden. Hitta rätt inspektionskamera för Matrice 350 RTK.",
       "excerpt": "Jämför Zenmuse H30T och H30 — samma 40× optisk zoom men H30T har termisk sensor. Se vilken payload som passar ditt uppdrag.",
       "tags": [
@@ -48,7 +48,7 @@
       "handle": "zenmuse-h30t-vs-h20t",
       "title": "Zenmuse H30T vs H20T — är uppgraderingen värd det?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H30T vs H20T — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse H30T vs H20T — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H30T och H20T för termisk inspektion. 40× vs 23× zoom, 1280×1024 vs 640×512 termisk, och förbättrad laser-avståndsmätare.",
       "excerpt": "Jämför nästa generations H30T med etablerade H20T. Se skillnader i zoom, termisk upplösning och laser-räckvidd.",
       "tags": [
@@ -85,7 +85,7 @@
       "handle": "zenmuse-p1-vs-l2",
       "title": "Zenmuse P1 vs L2 — fotogrammetri eller LiDAR?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse P1 vs L2 — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse P1 vs L2 — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse P1 och L2 för drönarbaserad kartläggning. Fotogrammetri vs LiDAR — noggrannhet, vegetation, användningsområden och pris.",
       "excerpt": "Jämför Zenmuse P1 (45 MP fotogrammetri) och L2 (LiDAR + RGB). Vilken kartläggningspayload passar ditt GIS-projekt?",
       "tags": [
@@ -123,7 +123,7 @@
       "handle": "jamfor-inspektionskameror",
       "title": "Jämför inspektionskameror — H30T, H30, H20T & H20N",
       "templateSuffix": "jamforer",
-      "metaTitle": "Jämför Zenmuse inspektionskameror | EuroDroneParts",
+      "metaTitle": "Jämför Zenmuse inspektionskameror | EU Drone Company",
       "metaDescription": "Jämför alla Zenmuse inspektionskameror: H30T, H30, H20T och H20N. Specifikationer, zoom, termisk sensor och rekommendationer.",
       "excerpt": "Komplett jämförelse av Zenmuse inspektionskameror. Se zoom, termisk sensor och nattseende sida vid sida.",
       "tags": [
@@ -152,7 +152,7 @@
       "handle": "jamfor-termiska-kameror",
       "title": "Jämför termiska drönarkameror — H30T, H20T & H20N",
       "templateSuffix": "jamforer",
-      "metaTitle": "Jämför termiska drönarkameror | EuroDroneParts",
+      "metaTitle": "Jämför termiska drönarkameror | EU Drone Company",
       "metaDescription": "Jämför termiska Zenmuse-kameror: H30T, H20T och H20N. Termisk upplösning, zoom och användningsområden för energi, säkerhet och räddning.",
       "excerpt": "Alla Zenmuse-modeller med termisk sensor jämförda. Upplösning, zoom och nattseende i en översikt.",
       "tags": [
@@ -181,7 +181,7 @@
       "handle": "zenmuse-h20t-vs-h20n",
       "title": "Zenmuse H20T vs H20N — daginspektion eller nattseende?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H20T vs H20N — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse H20T vs H20N — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H20T och H20N. Skillnader i starlight-sensorer, nattseende, zoom och användningsområden för säkerhet och räddning.",
       "excerpt": "Jämför H20T och H20N — samma termiska upplösning men H20N har starlight-sensorer optimerade för mörker och nattinspektion.",
       "tags": [
@@ -218,7 +218,7 @@
       "handle": "zenmuse-h20-vs-h20t",
       "title": "Zenmuse H20 vs H20T — behöver du termisk sensor?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H20 vs H20T — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse H20 vs H20T — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H20 och H20T. Skillnaden är termisk sensor, vikt och pris. Hitta rätt payload för visuell vs termisk inspektion.",
       "excerpt": "Samma 23× zoom och laser-avståndsmätare — men H20T har termisk kamera. Se om den extra kostnaden motiveras.",
       "tags": [
@@ -247,7 +247,7 @@
       "handle": "zenmuse-l1-vs-l2",
       "title": "Zenmuse L1 vs L2 — uppgradera LiDAR-payloaden?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse L1 vs L2 — LiDAR-jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse L1 vs L2 — LiDAR-jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse L1 och L2 LiDAR-sensorer. Skillnader i returer, räckvidd, punktmolnstäthet och noggrannhet för kartläggning.",
       "excerpt": "Jämför första generationens L1 med L2. Fler returer, längre räckvidd och bättre penetration genom vegetation.",
       "tags": [
@@ -284,7 +284,7 @@
       "handle": "zenmuse-l2-vs-l3",
       "title": "Zenmuse L2 vs L3 — nästa generations LiDAR",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse L2 vs L3 — LiDAR-jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse L2 vs L3 — LiDAR-jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse L2 och L3. Nästa generations LiDAR med 950 m räckvidd och 16 returer vs etablerade L2. Plattformskrav och användningsområden.",
       "excerpt": "Jämför L2 och L3. 950 m räckvidd, 16 returer, dubbla 100 MP-kameror — men L3 kräver Matrice 400.",
       "tags": [
@@ -321,7 +321,7 @@
       "handle": "jamfor-lidar-sensorer",
       "title": "Jämför LiDAR-sensorer — L1, L2 & L3",
       "templateSuffix": "jamforer",
-      "metaTitle": "Jämför Zenmuse LiDAR-sensorer | EuroDroneParts",
+      "metaTitle": "Jämför Zenmuse LiDAR-sensorer | EU Drone Company",
       "metaDescription": "Komplett jämförelse av Zenmuse L1, L2 och L3 LiDAR-sensorer. Specifikationer, noggrannhet och rekommendationer för kartläggning.",
       "excerpt": "Alla Zenmuse LiDAR-payloads jämförda. Returer, räckvidd, kameror och plattformskrav.",
       "tags": [
@@ -350,7 +350,7 @@
       "handle": "jamfor-kartlaggningskameror",
       "title": "Jämför kartläggningskameror — P1, L1, L2 & L3",
       "templateSuffix": "jamforer",
-      "metaTitle": "Jämför kartläggningskameror & sensorer | EuroDroneParts",
+      "metaTitle": "Jämför kartläggningskameror & sensorer | EU Drone Company",
       "metaDescription": "Jämför Zenmuse P1, L1, L2 och L3 för drönarbaserad kartläggning. Fotogrammetri vs LiDAR — specifikationer och rekommendationer.",
       "excerpt": "Fotogrammetri vs LiDAR — alla Zenmuse kartläggningspayloads i en jämförelse.",
       "tags": [
@@ -379,7 +379,7 @@
       "handle": "mavic-3e-vs-mavic-3t",
       "title": "Mavic 3 Enterprise vs Mavic 3T — foto eller termisk?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Mavic 3E vs Mavic 3T — jämförelse | EuroDroneParts",
+      "metaTitle": "Mavic 3E vs Mavic 3T — jämförelse | EU Drone Company",
       "metaDescription": "Jämför DJI Mavic 3 Enterprise och Mavic 3T. Fotogrammetri med mekanisk slutare vs termisk inspektion i kompakt format.",
       "excerpt": "Jämför Mavic 3E och Mavic 3T. Mekanisk slutare och 4/3\"-sensor vs termisk kamera — vilken kompakt enterprise-drönare passar dig?",
       "tags": [
@@ -416,7 +416,7 @@
       "handle": "mavic-3e-vs-mavic-3m",
       "title": "Mavic 3 Enterprise vs Multispectral — inspektion eller jordbruk?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Mavic 3E vs Mavic 3M — jämförelse | EuroDroneParts",
+      "metaTitle": "Mavic 3E vs Mavic 3M — jämförelse | EU Drone Company",
       "metaDescription": "Jämför DJI Mavic 3 Enterprise och Mavic 3 Multispectral. Inspektionskamera vs multispektral sensor för jordbruk och växtanalys.",
       "excerpt": "Jämför Mavic 3E och Mavic 3 Multispectral. Inspektion och kartläggning vs NDVI och precisionsjordbruk.",
       "tags": [
@@ -445,7 +445,7 @@
       "handle": "zenmuse-h30t-vs-h20n",
       "title": "Zenmuse H30T vs H20N — bäst för nattinspektion?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H30T vs H20N — jämförelse | EuroDroneParts",
+      "metaTitle": "Zenmuse H30T vs H20N — jämförelse | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H30T och H20N för nattinspektion. 1280×1024 vs 640×512 termisk, starlight-sensorer och 40× vs 20× zoom.",
       "excerpt": "Jämför senaste H30T med nattspecialisten H20N. Termisk upplösning, starlight och zoom i mörker.",
       "tags": [
@@ -474,7 +474,7 @@
       "handle": "matrice-payload-vs-mavic-3e",
       "title": "Matrice-payload vs Mavic 3E — när behöver du Zenmuse?",
       "templateSuffix": "jamforer",
-      "metaTitle": "Zenmuse H30 vs Mavic 3E — payload vs kompakt | EuroDroneParts",
+      "metaTitle": "Zenmuse H30 vs Mavic 3E — payload vs kompakt | EU Drone Company",
       "metaDescription": "Jämför Zenmuse H30 på Matrice med DJI Mavic 3 Enterprise. När lönar sig en tung payload-plattform vs kompakt enterprise-drönare?",
       "excerpt": "Jämför Zenmuse H30 (Matrice-payload) med integrerad Mavic 3E-kamera. Zoom, sensor och portabilitet.",
       "tags": [
@@ -503,7 +503,7 @@
       "handle": "jamfor-alla-zenmuse-kameror",
       "title": "Jämför alla Zenmuse-kameror — komplett översikt",
       "templateSuffix": "jamforer",
-      "metaTitle": "Jämför alla Zenmuse-kameror & sensorer | EuroDroneParts",
+      "metaTitle": "Jämför alla Zenmuse-kameror & sensorer | EU Drone Company",
       "metaDescription": "Komplett jämförelse av alla Zenmuse-kameror: H30T, H30, H20T, H20N, H20, P1, L1, L2 och L3. Specifikationer och rekommendationer.",
       "excerpt": "Alla Zenmuse payloads i en tabell. Inspektion, termisk, fotogrammetri och LiDAR — sida vid sida.",
       "tags": [
@@ -530,5 +530,5 @@
     }
   ],
   "themeCss": ".edp-comparison-page {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n  --edp-highlight: rgba(0, 102, 204, 0.06);\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 0 0 2rem;\n  color: var(--edp-text);\n  font-family: inherit;\n  line-height: 1.6;\n}\n.edp-comparison-page h1,\n.edp-comparison-page h2,\n.edp-comparison-page h3 {\n  line-height: 1.2;\n  margin: 0 0 0.75rem;\n  color: var(--edp-text);\n}\n.edp-comparison-page h2 {\n  font-size: clamp(1.2rem, 3vw, 1.5rem);\n  font-weight: 600;\n  margin: 2rem 0 1rem;\n}\n.edp-comparison-page p { margin: 0 0 1rem; color: var(--edp-muted); }\n.edp-comparison__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.75rem;\n}\n.edp-comparison__lead { font-size: 1.125rem; max-width: 42rem; }\n.edp-comparison__table-wrap {\n  overflow-x: auto;\n  margin: 1.5rem 0 2rem;\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  background: #fff;\n}\n.edp-comparison__table {\n  width: 100%;\n  min-width: 560px;\n  border-collapse: collapse;\n  font-size: 0.9rem;\n}\n.edp-comparison__table th,\n.edp-comparison__table td {\n  padding: 0.875rem 1rem;\n  text-align: left;\n  vertical-align: top;\n  border-bottom: 1px solid var(--edp-border);\n}\n.edp-comparison__table thead th {\n  background: var(--edp-bg);\n  font-weight: 600;\n  color: var(--edp-text);\n  font-size: 0.85rem;\n}\n.edp-comparison__table tbody th {\n  font-weight: 600;\n  color: var(--edp-muted);\n  width: 28%;\n  background: #fff;\n}\n.edp-comparison__table tbody td { color: var(--edp-text); }\n.edp-comparison__table tr:last-child th,\n.edp-comparison__table tr:last-child td { border-bottom: 0; }\n.edp-comparison__row--diff { background: var(--edp-highlight); }\n.edp-comparison__row--diff td { font-weight: 500; }\n.edp-comparison__dash { color: #b0b0b0; }\n.edp-comparison__verdict {\n  padding: 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin: 2rem 0;\n  border-left: 4px solid var(--edp-accent);\n}\n.edp-comparison__verdict h2 { margin-top: 0; font-size: 1.1rem; }\n.edp-comparison__faq-item {\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  margin-bottom: 0.5rem;\n  padding: 0 1rem;\n  background: #fff;\n}\n.edp-comparison__faq-item summary {\n  cursor: pointer;\n  font-weight: 600;\n  padding: 1rem 0;\n  color: var(--edp-text);\n}\n.edp-comparison__faq-item p { padding-bottom: 1rem; margin: 0; }\n.edp-comparison__cta {\n  text-align: center;\n  padding: 2rem 1.5rem;\n  background: var(--edp-bg);\n  border-radius: var(--edp-radius);\n  margin-top: 2rem;\n}\n.edp-comparison__cta-buttons {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.75rem;\n  justify-content: center;\n  margin-top: 1.25rem;\n}\n.edp-comparison__cta-primary,\n.edp-comparison__cta-secondary {\n  display: inline-block;\n  padding: 0.75rem 1.5rem;\n  border-radius: 8px;\n  font-weight: 600;\n  text-decoration: none;\n  font-size: 0.95rem;\n}\n.edp-comparison__cta-primary { background: var(--edp-accent); color: #fff; }\n.edp-comparison__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }\n.edp-comparison__cta-secondary {\n  background: #fff;\n  color: var(--edp-text);\n  border: 1px solid var(--edp-border);\n}\n.edp-comparison__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }\n.edp-comparison__product-links {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n  margin-top: 1rem;\n}\n.edp-comparison__product-link {\n  display: inline-block;\n  padding: 0.4rem 0.9rem;\n  border: 1px solid var(--edp-border);\n  border-radius: 999px;\n  font-size: 0.8rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n  text-decoration: none;\n  background: #fff;\n}\n.edp-comparison__product-link:hover {\n  border-color: var(--edp-accent);\n  background: var(--edp-highlight);\n}\n\n.edp-jamforer-blog {\n  --edp-accent: #0066cc;\n  --edp-accent-hover: #0052a3;\n  --edp-text: #1a1a1a;\n  --edp-muted: #5c5c5c;\n  --edp-border: #e5e7eb;\n  --edp-bg: #f8fafc;\n  --edp-radius: 12px;\n}\n.edp-jamforer-blog__header { margin-bottom: 2rem; }\n.edp-jamforer-blog__eyebrow {\n  display: inline-block;\n  font-size: 0.8rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  color: var(--edp-accent);\n  margin-bottom: 0.5rem;\n}\n.edp-jamforer-blog__title {\n  font-size: clamp(1.75rem, 4vw, 2.5rem);\n  font-weight: 700;\n  color: var(--edp-text);\n  margin: 0 0 0.75rem;\n}\n.edp-jamforer-blog__desc {\n  color: var(--edp-muted);\n  max-width: 40rem;\n  font-size: 1.05rem;\n  margin: 0;\n}\n.edp-jamforer-blog__grid {\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));\n  gap: 1.25rem;\n}\n.edp-jamforer-blog__card {\n  display: flex;\n  flex-direction: column;\n  border: 1px solid var(--edp-border);\n  border-radius: var(--edp-radius);\n  background: #fff;\n  overflow: hidden;\n  text-decoration: none;\n  color: inherit;\n  transition: border-color 0.15s, box-shadow 0.15s;\n}\n.edp-jamforer-blog__card:hover {\n  border-color: var(--edp-accent);\n  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.1);\n}\n.edp-jamforer-blog__card-image {\n  aspect-ratio: 16 / 9;\n  background: var(--edp-bg);\n  overflow: hidden;\n}\n.edp-jamforer-blog__card-image img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.edp-jamforer-blog__card-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }\n.edp-jamforer-blog__card-tag {\n  display: inline-block;\n  font-size: 0.7rem;\n  font-weight: 600;\n  text-transform: uppercase;\n  letter-spacing: 0.04em;\n  color: var(--edp-accent);\n  margin-bottom: 0.5rem;\n}\n.edp-jamforer-blog__card-title {\n  font-size: 1.05rem;\n  font-weight: 600;\n  color: var(--edp-text);\n  margin: 0 0 0.5rem;\n  line-height: 1.3;\n}\n.edp-jamforer-blog__card-excerpt {\n  font-size: 0.875rem;\n  color: var(--edp-muted);\n  margin: 0 0 1rem;\n  flex: 1;\n}\n.edp-jamforer-blog__card-link {\n  font-size: 0.85rem;\n  font-weight: 600;\n  color: var(--edp-accent);\n}\n\n/* Article template: hide Shopify Follow on Shop purple button on jämförer pages */\n.template-article\\.jamforer .shop-follow-button,\n.template-blog\\.jamforer .shop-follow-button {\n  display: none !important;\n}\n\n.edp-jamforer-article__header {\n  margin-bottom: 2rem;\n  padding-bottom: 1.5rem;\n  border-bottom: 1px solid var(--edp-border, #e5e7eb);\n}\n.edp-jamforer-article__title {\n  font-size: clamp(1.5rem, 4vw, 2.25rem);\n  font-weight: 700;\n  color: var(--edp-text, #1a1a1a);\n  margin: 0 0 0.75rem;\n  line-height: 1.2;\n}\n.edp-jamforer-article__meta {\n  font-size: 0.85rem;\n  color: var(--edp-muted, #5c5c5c);\n}\n.edp-jamforer-article__back {\n  display: inline-flex;\n  align-items: center;\n  gap: 0.35rem;\n  margin-top: 2.5rem;\n  font-size: 0.9rem;\n  font-weight: 600;\n  color: #0066cc;\n  text-decoration: none;\n}\n.edp-jamforer-article__back:hover { text-decoration: underline; }\n",
-  "generatedAt": "2026-06-14T20:16:30.366Z"
+  "generatedAt": "2026-08-20T09:46:41.777Z"
 }

@@ -1,4 +1,4 @@
-/* EuroDroneParts — Phase 1 header */
+/* EU Drone Company — Phase 1 header */
 
 :root {
   --edp-utility-height: 3.6rem;
@@ -357,7 +357,7 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
   }
 }
 
-/* Theme editor — EuroDroneParts-navigation help panel */
+/* Theme editor — EU Drone Company-navigation help panel */
 .edp-header-editor-panel {
   display: none;
   position: relative;

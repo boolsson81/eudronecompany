@@ -1,5 +1,5 @@
 /**
- * EuroDroneParts — single source of truth for --header-height
+ * EU Drone Company — single source of truth for --header-height
  */
 (function () {
   'use strict';

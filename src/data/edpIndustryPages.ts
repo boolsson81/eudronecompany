@@ -46,7 +46,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
     heroDesc:
       "Inspektera kraftledningar, transformatorstationer, vindkraftverk och solparker säkert och effektivt — utan driftstopp, ställningar eller helikopter.",
     intro:
-      "Energisektorn står inför ökande krav på tillförlitlighet, säkerhet och kostnadseffektivitet. Professionella enterprise-drönare med termisk kamera, högupplöst zoom och RTK-positionering gör det möjligt att upptäcka fel innan de leder till strömavbrott eller haverier. EuroDroneParts levererar kompletta lösningar med DJI Matrice-serien, Zenmuse-sensorer och tillbehör anpassade för energi- och infrastrukturinspektion.",
+      "Energisektorn står inför ökande krav på tillförlitlighet, säkerhet och kostnadseffektivitet. Professionella enterprise-drönare med termisk kamera, högupplöst zoom och RTK-positionering gör det möjligt att upptäcka fel innan de leder till strömavbrott eller haverier. EU Drone Company levererar kompletta lösningar med DJI Matrice-serien, Zenmuse-sensorer och tillbehör anpassade för energi- och infrastrukturinspektion.",
     templateSuffix: "industry",
     applications: [
       {
@@ -127,7 +127,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       {
         question: "Vilka regelverk gäller för drönarflygning vid energianläggningar?",
         answer:
-          "I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EuroDroneParts hjälper er med rätt utrustning och kan förmedla kontakt med certifierade operatörer.",
+          "I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EU Drone Company hjälper er med rätt utrustning och kan förmedla kontakt med certifierade operatörer.",
       },
       {
         question: "Kan termisk kamera hitta dolda fel i transformatorer?",
@@ -141,7 +141,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       { label: "DJI Matrice-serien", url: "/collections/dji-matrice-series" },
       { label: "Enterprise-tillbehör", url: "/collections/enterprise-accessories" },
     ],
-    metaTitle: "Drönare för energi & infrastruktur | EuroDroneParts",
+    metaTitle: "Drönare för energi & infrastruktur | EU Drone Company",
     metaDescription:
       "Professionella drönarlösningar för inspektion av kraftledningar, vindkraft, solparker och energianläggningar. Termisk kamera, RTK och enterprise-utrustning.",
   },
@@ -155,7 +155,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
     heroDesc:
       "Skapa exakta ortomosaiker, 3D-modeller och terrängmodeller med centimeterprecision. Snabbare och mer kostnadseffektivt än traditionell landmätning.",
     intro:
-      "Drönarbaserad kartläggning har revolutionerat hur geodata samlas in. Med RTK-positionering, LiDAR och fotogrammetri kan du skapa ortomosaiker, digitala terrängmodeller (DTM/DSM) och punktmoln med noggrannhet som matchar traditionell landmätning — men på en bråkdel av tiden. EuroDroneParts erbjuder kompletta kartläggningslösningar med DJI Matrice, Zenmuse LiDAR och mjukvaruintegration mot Pix4D, DJI Terra och ArcGIS.",
+      "Drönarbaserad kartläggning har revolutionerat hur geodata samlas in. Med RTK-positionering, LiDAR och fotogrammetri kan du skapa ortomosaiker, digitala terrängmodeller (DTM/DSM) och punktmoln med noggrannhet som matchar traditionell landmätning — men på en bråkdel av tiden. EU Drone Company erbjuder kompletta kartläggningslösningar med DJI Matrice, Zenmuse LiDAR och mjukvaruintegration mot Pix4D, DJI Terra och ArcGIS.",
     templateSuffix: "industry",
     applications: [
       {
@@ -250,7 +250,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       { label: "DJI Matrice-serien", url: "/collections/dji-matrice-series" },
       { label: "RTK & tillbehör", url: "/collections/enterprise-accessories" },
     ],
-    metaTitle: "Drönare för kartläggning & GIS | EuroDroneParts",
+    metaTitle: "Drönare för kartläggning & GIS | EU Drone Company",
     metaDescription:
       "Professionella UAV-lösningar för geodata, fotogrammetri, LiDAR och GIS-arbetsflöden. RTK-precision, 3D-modeller och volymberäkning.",
   },
@@ -264,7 +264,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
     heroDesc:
       "Ge insatsledning omedelbar överblick vid bränder, olyckor och eftersökningar. Termisk kamera, spotlight och högtalare — flygklar på under 60 sekunder.",
     intro:
-      "Vid räddningsinsatser räknas varje sekund. Enterprise-drönare ger insatsledningen realtidsöverblick, termisk persondetektion i mörker och rök, samt kommunikation via högtalare och spotlight. EuroDroneParts levererar utrustning som används av räddningstjänst, polis och krisledning i hela Norden — från kompakta Mavic 3 Enterprise till fullskaliga Matrice 350 RTK med termisk zoom.",
+      "Vid räddningsinsatser räknas varje sekund. Enterprise-drönare ger insatsledningen realtidsöverblick, termisk persondetektion i mörker och rök, samt kommunikation via högtalare och spotlight. EU Drone Company levererar utrustning som används av räddningstjänst, polis och krisledning i hela Norden — från kompakta Mavic 3 Enterprise till fullskaliga Matrice 350 RTK med termisk zoom.",
     templateSuffix: "industry",
     applications: [
       {
@@ -340,7 +340,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       {
         question: "Vilka regelverk gäller för räddningstjänstens drönarflygning?",
         answer:
-          "Räddningstjänst kan ofta flyga under Specific-kategori med förenklat tillstånd vid akuta insatser. Krav på operatörsutbildning och registrering gäller fortfarande. EuroDroneParts hjälper med rätt utrustning och dokumentation.",
+          "Räddningstjänst kan ofta flyga under Specific-kategori med förenklat tillstånd vid akuta insatser. Krav på operatörsutbildning och registrering gäller fortfarande. EU Drone Company hjälper med rätt utrustning och dokumentation.",
       },
       {
         question: "Kan drönaren kommunicera med personer på marken?",
@@ -359,7 +359,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       { label: "Spotlight & högtalare", url: "/collections/enterprise-lighting" },
       { label: "Enterprise-tillbehör", url: "/collections/enterprise-accessories" },
     ],
-    metaTitle: "Drönare för räddningstjänst & SAR | EuroDroneParts",
+    metaTitle: "Drönare för räddningstjänst & SAR | EU Drone Company",
     metaDescription:
       "Enterprise-drönare för sök- och räddningsinsatser, brand, krisledning och SAR. Termisk kamera, spotlight och snabb utryckning.",
   },

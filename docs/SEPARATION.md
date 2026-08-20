@@ -190,7 +190,40 @@ FAQ-texterna nämner ActionKing). Innehållet flyttades oförändrat och behöve
 `src/pages/admin/AdminDroneRegulations.tsx` stannade här. Den ingår i drift-kontrollen
 (`npm run check:shared`).
 
-## 9. Kvar att göra
+## 9. Namnbytet till EU Drone Company
+
+Bolaget och webbutiken heter numera EU Drone Company och ligger på **eudronecompany.com**.
+De fyra ccTLD:erna (`eurodroneparts.com/.se/.de/.dk`) är ersatta av en enda domän där
+marknaderna skiljs åt med Shopify Markets-underkataloger — `/de`, `/dk`, `/se`, och
+engelska som rotmarknad utan `/en/`.
+
+| Ändrat | Var |
+|---|---|
+| Varumärkesnamn i UI, mejl, fraktsedlar och AI-prompt | `SMP_BRAND`, `customerPortal.ts`, `shippingLabelPdf.ts`, `smp-*`-functions, e-postmallen |
+| `service@eurodroneparts.se` → `service@eudronecompany.com` | Servicportalen, e-postmallen, kolumndefault |
+| Hreflang: fyra origins → en domän med marknadsprefix | `edp-hreflang.ts`, `edp-launch/config.ts` |
+| `shop_domains`: fyra domäner → en domän med `market_slug` | `shop-seo-connect.ts` + migrering |
+| GSC-dataset | `searchconsole_eurodroneparts` → `searchconsole_eudronecompany` |
+| Marknadsföringstexter och tema | Innehållsbundlarna i eudroneparts-repot, temats kommentarer |
+
+Databasen ändras av `supabase/migrations/20260820100000_rename_eurodroneparts_to_eudronecompany.sql`
+(portalkonfiguration, FAQ-svar, `shop_domains`, GSC-dataset).
+
+**Detta döptes medvetet INTE om**, eftersom det är identifierare och inte varumärke:
+
+- Kanalvärdet `"EuroDroneParts"` i `product-channel-classification.ts` — lagrat i
+  `public.storefront_channel_for_product` och i rapporter. Bara etiketten i
+  `storefrontChannels.ts` är omdöpt.
+- Shopify-lagerstället `"EuroDroneParts Sweden"` — matchas mot Shopify på namn.
+- `edp-*`-prefix, `EDP_SHOP_ID`, edge function-namnen `eudroneparts-set-token` och
+  `eudroneparts-token-binding-probe` — deployade namn som skulle brytas av ett byte.
+- Rutten `/eurodroneparts/service` finns kvar vid sidan av `/eudronecompany/service`.
+
+**Kräver manuell åtgärd utanför koden:** mejladressen `service@eudronecompany.com` måste
+finnas, Shopify Markets måste läggas om från ccTLD:er till underkataloger, BigQuery-datasetet
+provisioneras om, och 301:or från de gamla domänerna behöver sättas upp.
+
+## 10. Kvar att göra
 
 1. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
    `src/lib/service-portal/constants.ts` är hårdkodade mot EuroDroneParts. Ska portalen

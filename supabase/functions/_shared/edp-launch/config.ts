@@ -1,5 +1,5 @@
 /**
- * EuroDroneParts launch configuration — clean English URL structure from day one.
+ * EU Drone Company launch configuration — clean English URL structure from day one.
  *
  * Constraints:
  *   - NO 301 redirects
@@ -11,12 +11,27 @@
 export const EDP_SHOPIFY_DOMAIN = "ya1xhg-x6.myshopify.com";
 export const EDP_MIGRATION_ID = "3d9876af-885c-49e9-a4b0-c4943c06112f";
 
-/** Public ccTLD domains — configure in Shopify Admin → Markets → Domains */
+/**
+ * Publik domän — en enda, efter namnbytet till EU Drone Company. Marknaderna
+ * skiljs åt med Shopify Markets-underkataloger i stället för ccTLD:er.
+ * Konfigureras i Shopify Admin → Markets → Domains.
+ */
+export const EDP_DOMAIN = "eudronecompany.com";
+
+/** Marknadernas underkataloger. Tom sträng = rotmarknaden (engelska, ingen /en/). */
+export const EDP_MARKET_PATHS = {
+  primary: "",
+  de: "/de",
+  dk: "/dk",
+  se: "/se",
+} as const;
+
+/** Publik URL-bas per marknad: värd plus eventuell underkatalog. */
 export const EDP_DOMAINS = {
-  primary: "eurodroneparts.com",
-  de: "eurodroneparts.de",
-  dk: "eurodroneparts.dk",
-  se: "eurodroneparts.se",
+  primary: EDP_DOMAIN,
+  de: `${EDP_DOMAIN}${EDP_MARKET_PATHS.de}`,
+  dk: `${EDP_DOMAIN}${EDP_MARKET_PATHS.dk}`,
+  se: `${EDP_DOMAIN}${EDP_MARKET_PATHS.se}`,
 } as const;
 
 /** Legacy menus to delete after theme confirms no references */

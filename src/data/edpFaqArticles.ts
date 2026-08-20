@@ -19,7 +19,7 @@ export interface EdpFaqArticle {
 export const EDP_FAQ_BLOG = {
   handle: "vanliga-fragor",
   title: "Vanliga frågor",
-  metaTitle: "FAQ — enterprise-drönare & drönarkameror | EuroDroneParts",
+  metaTitle: "FAQ — enterprise-drönare & drönarkameror | EU Drone Company",
   metaDescription:
     "Svar på vanliga frågor om professionella DJI Enterprise-drönare, Zenmuse-kameror, payloads, certifiering och branschlösningar.",
   templateSuffix: "vanliga-fragor",
@@ -31,19 +31,19 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     title: "Vanliga frågor om köp av enterprise-drönare",
     eyebrow: "Köp & support",
     excerpt:
-      "Leverans, garanti, utbildning och finansiering — svar på de vanligaste frågorna när du köper professionella drönare från EuroDroneParts.",
-    metaTitle: "FAQ — köp av enterprise-drönare | EuroDroneParts",
+      "Leverans, garanti, utbildning och finansiering — svar på de vanligaste frågorna när du köper professionella drönare från EU Drone Company.",
+    metaTitle: "FAQ — köp av enterprise-drönare | EU Drone Company",
     metaDescription:
       "Svar på frågor om pris, leverans, garanti, utbildning och finansiering av DJI Enterprise-drönare i Sverige.",
     tags: ["faq", "köp", "enterprise", "support"],
     category: "kop",
     introParagraphs: [
       "Att investera i enterprise-drönare innebär mer än att välja modell — leverans, support, utbildning och certifiering påverkar hur snabbt ni får värde av investeringen.",
-      "Här samlar vi de vanligaste frågorna från företag som köper DJI Enterprise-utrustning via EuroDroneParts.",
+      "Här samlar vi de vanligaste frågorna från företag som köper DJI Enterprise-utrustning via EU Drone Company.",
     ],
     faq: [
       {
-        question: "Vilka enterprise-drönare säljer EuroDroneParts?",
+        question: "Vilka enterprise-drönare säljer EU Drone Company?",
         answer:
           "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela sortimentet — bland annat Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör.",
       },
@@ -84,7 +84,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Drönarkameror",
     excerpt:
       "Hur väljer du rätt Zenmuse-payload? Översikt över inspektion, termisk, fotogrammetri och LiDAR — och vilka plattformar de passar.",
-    metaTitle: "FAQ — välja drönarkamera | EuroDroneParts",
+    metaTitle: "FAQ — välja drönarkamera | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse-kameror, H30, H20T, P1 och L2. Vilken payload passar inspektion, kartläggning och termisk avbildning?",
     tags: ["faq", "kameror", "zenmuse", "payload"],
@@ -137,7 +137,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Zenmuse H30",
     excerpt:
       "Frågor om DJI:s senaste inspektionspayload — 40× zoom, termisk sensor, laser-avståndsmätare och kompatibilitet med Matrice.",
-    metaTitle: "FAQ — Zenmuse H30 & H30T | EuroDroneParts",
+    metaTitle: "FAQ — Zenmuse H30 & H30T | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse H30 och H30T: termisk sensor, zoom, vikt, uppgradering från H20T och Matrice-kompatibilitet.",
     tags: ["faq", "zenmuse", "h30", "inspektion"],
@@ -185,7 +185,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Zenmuse H20",
     excerpt:
       "Etablerade inspektionspayloads med zoom och termisk sensor. När passar H20-serien och hur skiljer den sig från H30?",
-    metaTitle: "FAQ — Zenmuse H20-serien | EuroDroneParts",
+    metaTitle: "FAQ — Zenmuse H20-serien | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse H20, H20T och H20N — termisk inspektion, nattläge, zoom och skillnader mot H30-serien.",
     tags: ["faq", "zenmuse", "h20", "termisk"],
@@ -233,7 +233,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Kartläggning",
     excerpt:
       "Zenmuse P1, L1, L2 och L3 — när ska du välja fotogrammetri, när LiDAR, och vilken noggrannhet kan du förvänta dig?",
-    metaTitle: "FAQ — fotogrammetri & LiDAR | EuroDroneParts",
+    metaTitle: "FAQ — fotogrammetri & LiDAR | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse P1, L1, L2 och L3. Fotogrammetri vs LiDAR, noggrannhet, filformat och GIS-arbetsflöden.",
     tags: ["faq", "lidar", "fotogrammetri", "gis", "p1", "l2"],
@@ -287,7 +287,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Plattformar",
     excerpt:
       "När räcker Mavic 3 Enterprise och när behöver du Matrice 350 RTK? Jämför flygtid, payloads, portabilitet och pris.",
-    metaTitle: "FAQ — Matrice vs Mavic Enterprise | EuroDroneParts",
+    metaTitle: "FAQ — Matrice vs Mavic Enterprise | EU Drone Company",
     metaDescription:
       "Svar på frågor om DJI Matrice 350 RTK vs Mavic 3 Enterprise. Payloads, flygtid, portabilitet och vilken plattform som passar ditt företag.",
     tags: ["faq", "matrice", "mavic", "plattformar"],
@@ -336,7 +336,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Termisk avbildning",
     excerpt:
       "Hur fungerar termisk inspektion med drönare? Sensorupplösning, radiometri, energiinspektion och räddningstjänst.",
-    metaTitle: "FAQ — termiska drönarkameror | EuroDroneParts",
+    metaTitle: "FAQ — termiska drönarkameror | EU Drone Company",
     metaDescription:
       "Svar på frågor om termisk drönarinspektion: H30T, H20T, H20N, radiometri, energiinspektion och persondetektion.",
     tags: ["faq", "termisk", "inspektion", "h30t"],
@@ -384,7 +384,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Inspektion",
     excerpt:
       "Optisk zoom, hybridzoom och laser-avståndsmätare — vad betyder det i praktiken vid kraftlednings- och infrastrukturinspektion?",
-    metaTitle: "FAQ — inspektionskameror & zoom | EuroDroneParts",
+    metaTitle: "FAQ — inspektionskameror & zoom | EU Drone Company",
     metaDescription:
       "Svar på frågor om optisk zoom, hybridzoom och laser-avståndsmätare för drönarbaserad infrastrukturinspektion.",
     tags: ["faq", "inspektion", "zoom", "lrf"],
@@ -432,7 +432,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Energi & infrastruktur",
     excerpt:
       "Kraftledningar, transformatorer, vindkraft och solparker — svar på frågor om termisk inspektion och enterprise-utrustning.",
-    metaTitle: "FAQ — drönare för energi & infrastruktur | EuroDroneParts",
+    metaTitle: "FAQ — drönare för energi & infrastruktur | EU Drone Company",
     metaDescription:
       "Svar på frågor om drönarinspektion av kraftledningar, transformatorer, vindkraft och solparker. Termisk kamera, RTK och regelverk.",
     tags: ["faq", "energi", "infrastruktur", "termisk"],
@@ -460,7 +460,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilka regelverk gäller vid energianläggningar?",
         answer:
-          "I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EuroDroneParts hjälper er med rätt utrustning och kan förmedla certifierade operatörer.",
+          "I Sverige krävs normalt Specific-kategori enligt EASA, operatörsregistrering och ofta tillstånd från nätägare. EU Drone Company hjälper er med rätt utrustning och kan förmedla certifierade operatörer.",
       },
       {
         question: "Hur mycket billigare är drönare än helikopter?",
@@ -480,7 +480,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "GIS & kartläggning",
     excerpt:
       "Noggrannhet, filformat, RTK och mjukvaruintegration — svar på frågor om professionell drönarkartläggning.",
-    metaTitle: "FAQ — drönare för GIS & kartläggning | EuroDroneParts",
+    metaTitle: "FAQ — drönare för GIS & kartläggning | EU Drone Company",
     metaDescription:
       "Svar på frågor om drönarbaserad kartläggning: noggrannhet, fotogrammetri, LiDAR, RTK och export till GIS.",
     tags: ["faq", "gis", "kartläggning", "lidar"],
@@ -528,7 +528,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Räddningstjänst",
     excerpt:
       "Sök- och räddningsinsatser, brand, termisk detektion och snabb utryckning — svar för räddningstjänst och krisledning.",
-    metaTitle: "FAQ — drönare för räddningstjänst | EuroDroneParts",
+    metaTitle: "FAQ — drönare för räddningstjänst | EU Drone Company",
     metaDescription:
       "Svar på frågor om enterprise-drönare för räddningstjänst, SAR, brand och krisledning. Termisk kamera, utryckningstid och regelverk.",
     tags: ["faq", "räddningstjänst", "sar", "termisk"],
@@ -576,7 +576,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Regelverk & EASA",
     excerpt:
       "Open, Specific och Certified — vad gäller för enterprise-drönare i Sverige? Operatörsregistrering, tillstånd och utbildning.",
-    metaTitle: "FAQ — certifiering & drönarregelverk | EuroDroneParts",
+    metaTitle: "FAQ — certifiering & drönarregelverk | EU Drone Company",
     metaDescription:
       "Svar på frågor om EASA-regelverk, operatörsregistrering, flygcertifikat och tillstånd för professionella drönare i Sverige.",
     tags: ["faq", "regelverk", "easa", "certifiering"],
@@ -599,7 +599,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken utbildning krävs?",
         answer:
-          "För Specific-kategori krävs vanligtvis A1/A3-kunskapsprov plus STS-utbildning (Standard Scenario) eller SORA-baserat tillstånd. EuroDroneParts kan förmedla kontakt med certifierade utbildningspartners.",
+          "För Specific-kategori krävs vanligtvis A1/A3-kunskapsprov plus STS-utbildning (Standard Scenario) eller SORA-baserat tillstånd. EU Drone Company kan förmedla kontakt med certifierade utbildningspartners.",
       },
       {
         question: "Kan jag flyga BVLOS (bortom synhåll)?",
@@ -612,7 +612,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
           "Ja. Räddningstjänst kan få förenklat tillstånd vid akuta insatser. Energianläggningar kräver ofta tillstånd från nätägare utöver EASA-regelverket.",
       },
       {
-        question: "Hjälper EuroDroneParts med tillståndsansökan?",
+        question: "Hjälper EU Drone Company med tillståndsansökan?",
         answer:
           "Vi rådgiver om rätt utrustning och dokumentation för er ansökan. Vi kan förmedla kontakt med certifierade operatörer och konsulter som hanterar SORA och tillståndsprocessen.",
       },
@@ -628,7 +628,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     eyebrow: "Kompatibilitet",
     excerpt:
       "Vilka Zenmuse-kameror passar vilken Matrice? Adapter, viktgränser och snabb payload-byte mellan uppdrag.",
-    metaTitle: "FAQ — payload-kompatibilitet | EuroDroneParts",
+    metaTitle: "FAQ — payload-kompatibilitet | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse-kompatibilitet med Matrice 300, 350 och 400 RTK. Payload-byte, vikt och adapter.",
     tags: ["faq", "kompatibilitet", "payload", "matrice"],

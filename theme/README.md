@@ -1,6 +1,6 @@
-# EuroDroneParts Shopify Theme
+# EU Drone Company Shopify Theme
 
-Based on **Shopify Dawn 15.4.1** with EuroDroneParts (`edp-*`) customizations.
+Based on **Shopify Dawn 15.4.1** with EU Drone Company (`edp-*`) customizations.
 
 ## Phase 1 — Header (implemented)
 

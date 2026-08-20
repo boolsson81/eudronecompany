@@ -18,7 +18,7 @@ export interface DroneCamera {
   badge?: string;
   imageUrl?: string;
   shopUrl?: string;
-  /** EuroDroneParts collection or product link */
+  /** EU Drone Company collection or product link */
   edpUrl?: string;
   specs: DroneCameraSpec[];
 }

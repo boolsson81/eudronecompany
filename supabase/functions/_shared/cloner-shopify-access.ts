@@ -15,7 +15,7 @@ function getServiceClient() {
 
 /**
  * Fetches the OAuth installation access_token for a given shop domain.
- * This is the PRIMARY auth source for EuroDroneParts / DigitalSignal —
+ * This is the PRIMARY auth source for EU Drone Company / DigitalSignal —
  * the env token (`atkn_…` / legacy `shpat_…`) is only a last-resort fallback.
  */
 async function fetchInstallToken(shopDomain: string): Promise<string | null> {

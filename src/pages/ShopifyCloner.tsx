@@ -2005,7 +2005,7 @@ export default function ShopifyCloner() {
           <div className="space-y-3">
             <div className="space-y-1">
               <Label>Namn</Label>
-              <Input value={newMigration.name} onChange={(e) => setNewMigration({ ...newMigration, name: e.target.value })} placeholder="ActionKing → EuroDroneParts" />
+              <Input value={newMigration.name} onChange={(e) => setNewMigration({ ...newMigration, name: e.target.value })} placeholder="ActionKing → EU Drone Company" />
             </div>
             <div className="space-y-1">
               <Label>Källa</Label>
