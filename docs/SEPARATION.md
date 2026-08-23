@@ -85,7 +85,7 @@ functions) som är DigitalSignals produkt — inte att förväxla med EDP:s buti
 
 ### Alternativ 1 — Eget repo, delad databas *(rekommenderas)*
 
-Nytt repo `boolsson81/eudroneparts` (eller liknande) med tema, EDP-sidor, EDP-skript, rapporter
+Nytt repo `boolsson81/eudronecompany` (eller liknande) med tema, EDP-sidor, EDP-skript, rapporter
 och EDP-specifika edge functions. Supabase-projektet delas fortfarande, men EDP-koden deployas
 separat och har egen backlog.
 
@@ -103,7 +103,7 @@ Full separation: eget Supabase-projekt, egna secrets (Shopify, Sunsky, Fortnox),
 
 ### Alternativ 3 — Monorepo med tydliga gränser
 
-Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudroneparts/`, `packages/shared/`.
+Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudronecompany/`, `packages/shared/`.
 
 - **Fördel:** Ingen delad-databas-problematik, gemensamma beroenden.
 - **Nackdel:** Löser inte "eget projekt" i praktiken — samma PR-flöde, samma CI, samma risk.
@@ -118,7 +118,7 @@ Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudroneparts/`, `p
 | 1 | Nytt repo + flytta `theme/`, `shopify-theme/`, `data/edp-*` | Ingen — inget kod-beroende |
 | 2 | Flytta ~136 rapport-/CSV-filer från repo-roten till nya repots `docs/` | Ingen |
 | 3 | Flytta EDP-skript (`scripts/*edp*`, `*sunsky*`, `*boston*`) | Låg — fristående `.mjs` |
-| 4 | Flytta EDP-edge functions (sunsky, edp-launch, eudroneparts-token) | Mellan — kräver deploy till samma Supabase från nytt repo |
+| 4 | Flytta EDP-edge functions (sunsky, edp-launch, eudronecompany-token) | Mellan — kräver deploy till samma Supabase från nytt repo |
 | 5 | Bryt ut publika drönarsidor (`/kommersiella-dronare/*`) till egen frontend | Mellan — SEO/rutter/sitemap måste följa med |
 | 6 | Beslut om kategori B (SMP, cloner, compliance, inventory) | — |
 
@@ -141,10 +141,10 @@ medan tema-, meny-, kollektions-, cloner- och compliancerapporterna flyttar.
 
 ## 7. Genomfört
 
-Utfört av `scripts/extract-eudroneparts.mjs` (kör med `--prune` för att också ta bort ur
-det här repot). Exakt innehåll: `docs/eudroneparts-extraction-manifest.md`.
+Utfört av `scripts/extract-eudronecompany.mjs` (kör med `--prune` för att också ta bort ur
+det här repot). Exakt innehåll: `docs/eudronecompany-extraction-manifest.md`.
 
-| Flyttat till `eudroneparts` | Antal |
+| Flyttat till `eudronecompany` | Antal |
 |---|---|
 | `theme/` + `shopify-theme/` (Shopify-tema och sektioner) | 473 filer |
 | `data/edp-*.json` | 26 |
@@ -161,12 +161,12 @@ det här repot). Exakt innehåll: `docs/eudroneparts-extraction-manifest.md`.
 `shopify-client`, `shopify-product-feed`, `shopify-product-templates`,
 `suggest-product-type`, `sunsky-product-map`, `sunsky-stock` — de används fortfarande av
 Sunsky-, leverantörs- och GEO-funktioner som stannade kvar. **DigitalSignal är källan.**
-Ändras någon av dem ska ändringen speglas; `npm run check:shared` i eudroneparts-repot
+Ändras någon av dem ska ändringen speglas; `npm run check:shared` i eudronecompany-repot
 jämför dem. Om Sunsky senare flyttar med krymper listan till ungefär sju.
 
 ## 8. Frontend-flytt (steg 5, genomförd)
 
-eudroneparts fick en egen Vite/React-frontend. Detaljer och cutover-checklista:
+eudronecompany fick en egen Vite/React-frontend. Detaljer och cutover-checklista:
 `docs/FRONTEND_MIGRATION.md`.
 
 | Flyttat | Detalj |
@@ -174,7 +174,7 @@ eudroneparts fick en egen Vite/React-frontend. Detaljer och cutover-checklista:
 | Driftsvyer | `/admin/shopify-cloner`, `/admin/shopify-drone-clone`, `/admin/product-compliance` |
 | Publika drönarsidor | `/kommersiella-dronare/*` — 14 sidkomponenter |
 | Stödfiler | 9 komponenter/datafiler som blev föräldralösa här (`EnterpriseNav`, `DroneAccessories`, `commercialDroneIndustries` m.fl.) |
-| Nytt i eudroneparts | Slimmad `useAuth`/`useTenant`, `AdminLayout` med rollguard, `Login`, otypad Supabase-klient |
+| Nytt i eudronecompany | Slimmad `useAuth`/`useTenant`, `AdminLayout` med rollguard, `Login`, otypad Supabase-klient |
 
 Ändrat här: 26 filer borttagna, rutterna ur `src/App.tsx`, drönargenereringen ur
 `scripts/generate-sitemap.ts` (45 URL:er försvann ur sitemapen), 301-omdirigeringar i
@@ -204,7 +204,7 @@ engelska som rotmarknad utan `/en/`.
 | Hreflang: fyra origins → en domän med marknadsprefix | `edp-hreflang.ts`, `edp-launch/config.ts` |
 | `shop_domains`: fyra domäner → en domän med `market_slug` | `shop-seo-connect.ts` + migrering |
 | GSC-dataset | `searchconsole_eurodroneparts` → `searchconsole_eudronecompany` |
-| Marknadsföringstexter och tema | Innehållsbundlarna i eudroneparts-repot, temats kommentarer |
+| Marknadsföringstexter och tema | Innehållsbundlarna i eudronecompany-repot, temats kommentarer |
 
 Databasen ändras av två migreringar, båda applicerade i `digitalsignal-prod`:
 
@@ -246,13 +246,22 @@ where id = 'e6ad2afc-e468-49a7-8d33-9b1837419ed8';
 Observera att `20260820120000_sunsky_orphan_backfill_resume_watchdog_cron.sql` finns i
 repot men **inte** är applicerad — nästa `db push` kommer att köra den.
 
-## 10. Kvar att göra
+## 10. Öppen fråga: enterprise-mejladressen i temat
+
+`theme/sections/enterprise-quote-form.liquid` och `theme/templates/page.contact-quote.json`
+skickar offertförfrågningar till **`enterprise@eudroneparts.se`** — observera stavningen,
+utan "ro". Det är varken den nya domänen eller någon av de fyra gamla `eurodroneparts.*`.
+Adressen är orörd i namnbytet eftersom det inte går att avgöra härifrån om brevlådan finns
+och tar emot post. Kontrollera den innan temat deployas nästa gång; går den till en död
+adress tappas enterprise-leads tyst.
+
+## 11. Kvar att göra
 
 1. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
    `src/lib/service-portal/constants.ts` är hårdkodade mot EuroDroneParts. Ska portalen
    säljas till fler kunder behöver det bli tenant-styrt.
 2. **`docs/go-live/`** blandar plattformsmigrering och EDP-drift och är inte uppdelad.
-3. **Deploy.** `.github/workflows/deploy-functions.yml` i eudroneparts-repot behöver
+3. **Deploy.** `.github/workflows/deploy-functions.yml` i eudronecompany-repot behöver
    hemligheterna `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF`.
 4. **`AdminDroneRegulations`** ligger kvar här och redigerar innehåll som drönarsidorna
    visar. Antingen följer den med, eller så accepteras `droneRegulations.ts` som speglad.

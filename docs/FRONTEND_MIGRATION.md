@@ -2,7 +2,7 @@
 
 **Datum:** 2026-08-20
 **Från:** `boolsson81/digitalsignal` (`app.digitalsignal.io`)
-**Till:** `boolsson81/eudroneparts`
+**Till:** `boolsson81/eudronecompany`
 
 ## Vad som flyttade
 
@@ -83,7 +83,7 @@ efter cutover:
 
 ## Checklista vid cutover
 
-1. Deploya eudroneparts-frontenden och bekräfta att alla 45 sökvägar svarar 200.
+1. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200.
 2. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
 3. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.
 4. Verifiera 301 på ett par sökvägar.
