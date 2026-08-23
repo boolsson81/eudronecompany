@@ -206,36 +206,45 @@ engelska som rotmarknad utan `/en/`.
 | GSC-dataset | `searchconsole_eurodroneparts` → `searchconsole_eudronecompany` |
 | Marknadsföringstexter och tema | Innehållsbundlarna i eudroneparts-repot, temats kommentarer |
 
-Databasen ändras av två migreringar, medvetet separerade eftersom de blir körbara vid
-olika tidpunkter:
+Databasen ändras av två migreringar, båda applicerade i `digitalsignal-prod`:
 
-| Migrering | Innehåll | Körbar |
+| Migrering | Innehåll | Status |
 |---|---|---|
-| `20260820101644_edp_service_contact_rename.sql` | Portalkonfiguration (returföretag, returmejl) och publika FAQ-svar | ✅ **Applicerad** i digitalsignal-prod 2026-08-20 |
-| `20260820140000_edp_single_domain_markets.sql` | `shop_domains` och GSC-datasetet | **Först efter** att Shopify Markets lagts om till underkataloger |
+| `20260823100822_edp_service_contact_rename.sql` | Portalkonfiguration (returföretag, returmejl) och publika FAQ-svar | Applicerad för hand — **men inte registrerad** i `schema_migrations`, så nästa `db push` kör den igen. Ofarligt: `set default` är idempotent och båda update-satserna matchar noll rader nu. |
+| `20260823100823_edp_single_domain_markets.sql` | `shop_domains` och GSC-datasetet | Applicerad och registrerad som version `20260823100823` — `db push` hoppar över den |
 
-Kör inte del 2 för tidigt: `shop_domains` beskriver hur butiken ser ut utåt, och
-SEO-modulerna (hreflang-validering, canonicals, GSC-routing) skulle då arbeta mot en
-domänuppsättning som ännu inte finns.
+Utfall av del 2:
 
-Del 1 kördes direkt mot databasen och registrerades som version `20260820101644`.
-Filnamnet är satt till samma version så att `supabase db push` ser den som körd.
-Observera att `20260820120000_sunsky_orphan_backfill_resume_watchdog_cron.sql` ännu
-**inte** är applicerad — nästa `db push` kommer att köra den.
+| domain | market_slug | label | primär |
+|---|---|---|---|
+| `eudronecompany.com` | — | Global (EN) | ✅ |
+| `eudronecompany.com` | `se` | Sverige | |
+| `eudronecompany.com` | `de` | Tyskland | |
+| `eudronecompany.com` | `dk` | Danmark | |
+| `euactioncam.com` | — | European Action Cam Company | |
 
-**Detta döptes medvetet INTE om**, eftersom det är identifierare och inte varumärke:
+`euactioncam.com` ligger på samma `shop_id` men hör till en annan butiksidentitet och
+rördes inte — raderingen träffade bara de fyra `eurodroneparts.*`-domänerna.
 
-- Kanalvärdet `"EuroDroneParts"` i `product-channel-classification.ts` — lagrat i
-  `public.storefront_channel_for_product` och i rapporter. Bara etiketten i
-  `storefrontChannels.ts` är omdöpt.
-- Shopify-lagerstället `"EuroDroneParts Sweden"` — matchas mot Shopify på namn.
-- `edp-*`-prefix, `EDP_SHOP_ID`, edge function-namnen `eudroneparts-set-token` och
-  `eudroneparts-token-binding-probe` — deployade namn som skulle brytas av ett byte.
-- Rutten `/eurodroneparts/service` finns kvar vid sidan av `/eudronecompany/service`.
+**Rollback** om Shopify Markets inte är omlagt än:
 
-**Kräver manuell åtgärd utanför koden:** mejladressen `service@eudronecompany.com` måste
-finnas, Shopify Markets måste läggas om från ccTLD:er till underkataloger, BigQuery-datasetet
-provisioneras om, och 301:or från de gamla domänerna behöver sättas upp.
+```sql
+insert into public.shop_domains (shop_id, domain, market_slug, label, is_primary, currency, language)
+values
+  ('e6ad2afc-e468-49a7-8d33-9b1837419ed8', 'eurodroneparts.com', null, 'Global (EN)', true,  'EUR', 'en'),
+  ('e6ad2afc-e468-49a7-8d33-9b1837419ed8', 'eurodroneparts.se',  null, 'Sverige',     false, 'SEK', 'sv'),
+  ('e6ad2afc-e468-49a7-8d33-9b1837419ed8', 'eurodroneparts.de',  'de', 'Tyskland',    false, 'EUR', 'de'),
+  ('e6ad2afc-e468-49a7-8d33-9b1837419ed8', 'eurodroneparts.dk',  null, 'Danmark',     false, 'DKK', 'da');
+
+delete from public.shop_domains
+where shop_id = 'e6ad2afc-e468-49a7-8d33-9b1837419ed8' and domain = 'eudronecompany.com';
+
+update public.shops set gsc_bigquery_dataset = 'searchconsole_eurodroneparts'
+where id = 'e6ad2afc-e468-49a7-8d33-9b1837419ed8';
+```
+
+Observera att `20260820120000_sunsky_orphan_backfill_resume_watchdog_cron.sql` finns i
+repot men **inte** är applicerad — nästa `db push` kommer att köra den.
 
 ## 10. Kvar att göra
 
