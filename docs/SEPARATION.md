@@ -118,7 +118,7 @@ Behåll ett repo men flytta till `apps/digitalsignal/`, `apps/eudronecompany/`, 
 | 1 | Nytt repo + flytta `theme/`, `shopify-theme/`, `data/edp-*` | Ingen — inget kod-beroende |
 | 2 | Flytta ~136 rapport-/CSV-filer från repo-roten till nya repots `docs/` | Ingen |
 | 3 | Flytta EDP-skript (`scripts/*edp*`, `*sunsky*`, `*boston*`) | Låg — fristående `.mjs` |
-| 4 | Flytta EDP-edge functions (sunsky, edp-launch, eudronecompany-token) | Mellan — kräver deploy till samma Supabase från nytt repo |
+| 4 | Flytta EDP-edge functions (sunsky, edp-launch, eudroneparts-token) | Mellan — kräver deploy till samma Supabase från nytt repo |
 | 5 | Bryt ut publika drönarsidor (`/kommersiella-dronare/*`) till egen frontend | Mellan — SEO/rutter/sitemap måste följa med |
 | 6 | Beslut om kategori B (SMP, cloner, compliance, inventory) | — |
 
