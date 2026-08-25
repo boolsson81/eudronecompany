@@ -8,6 +8,7 @@ const NAV = [
   { to: "/admin/shopify-cloner", label: "Shopify Cloner" },
   { to: "/admin/shopify-drone-clone", label: "Drone Clone" },
   { to: "/admin/product-compliance", label: "Produktcompliance" },
+  { to: "/admin/drone-regulations", label: "Regelverk" },
 ];
 
 /** Skyddar driftsvyerna. Rollerna kommer från samma databas som DigitalSignal. */

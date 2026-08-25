@@ -186,9 +186,10 @@ Company, inte EuroDroneParts.
 **Kvar:** sidorna är ActionKing-brandade (`EnterpriseNav` renderar "ActionKing Enterprise",
 FAQ-texterna nämner ActionKing). Innehållet flyttades oförändrat och behöver skrivas om.
 
-`src/data/droneRegulations.ts` finns nu i båda repona eftersom
-`src/pages/admin/AdminDroneRegulations.tsx` stannade här. Den ingår i drift-kontrollen
-(`npm run check:shared`).
+`AdminDroneRegulations` flyttade med 2026-08-23 tillsammans med `droneRegulations.ts`.
+Sidan var en rent läsande vy över statisk regelverksdata plus länkar till
+Transportstyrelsen — inga skrivningar, ingen databas — och hörde ihop med drönarsidorna.
+Därmed speglas inga filer utanför `supabase/functions/_shared/` längre (16 kvar).
 
 ## 9. Namnbytet till EU Drone Company
 
@@ -263,5 +264,3 @@ adress tappas enterprise-leads tyst.
 2. **`docs/go-live/`** blandar plattformsmigrering och EDP-drift och är inte uppdelad.
 3. **Deploy.** `.github/workflows/deploy-functions.yml` i eudronecompany-repot behöver
    hemligheterna `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF`.
-4. **`AdminDroneRegulations`** ligger kvar här och redigerar innehåll som drönarsidorna
-   visar. Antingen följer den med, eller så accepteras `droneRegulations.ts` som speglad.

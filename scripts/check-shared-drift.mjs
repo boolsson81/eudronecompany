@@ -17,9 +17,9 @@ import { dirname, join, resolve } from "node:path";
 const HERE = resolve(dirname(new URL(import.meta.url).pathname), "..");
 const OTHER = resolve(process.argv[2] ?? join(HERE, "../digitalsignal"));
 
-// Filer utanför _shared som också speglas. `droneRegulations` används av
-// `src/pages/admin/AdminDroneRegulations.tsx` som stannade i DigitalSignal.
-const SRC_MIRRORED = ["src/data/droneRegulations.ts"];
+// Inga filer utanför _shared speglas längre — AdminDroneRegulations flyttade hit
+// tillsammans med droneRegulations.ts.
+const SRC_MIRRORED = [];
 
 const MIRRORED = [
   "cloner-shopify-access.ts",

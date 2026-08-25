@@ -28,6 +28,7 @@ const DroneConfiguration = lazy(() => import("./pages/DroneConfiguration"));
 const ShopifyCloner = lazy(() => import("./pages/ShopifyCloner"));
 const ShopifyDroneClone = lazy(() => import("./pages/admin/ShopifyDroneClone"));
 const ProductCompliance = lazy(() => import("./pages/admin/ProductCompliance"));
+const AdminDroneRegulations = lazy(() => import("./pages/admin/AdminDroneRegulations"));
 
 const PageLoader = () => (
   <div className="flex min-h-screen items-center justify-center">
@@ -65,6 +66,7 @@ export default function App() {
               <Route path="shopify-cloner/:migrationId" element={<ShopifyCloner />} />
               <Route path="shopify-drone-clone" element={<ShopifyDroneClone />} />
               <Route path="product-compliance" element={<ProductCompliance />} />
+              <Route path="drone-regulations" element={<AdminDroneRegulations />} />
             </Route>
 
             <Route path="*" element={<Navigate to="/kommersiella-dronare" replace />} />
