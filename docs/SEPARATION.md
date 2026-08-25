@@ -256,7 +256,35 @@ Adressen är orörd i namnbytet eftersom det inte går att avgöra härifrån om
 och tar emot post. Kontrollera den innan temat deployas nästa gång; går den till en död
 adress tappas enterprise-leads tyst.
 
-## 11. Kvar att göra
+## 11. SMP-brandingen är tenant-styrd
+
+Portalens namn, färger och butiks-id låg hårdkodat i `src/lib/service-portal/constants.ts`
+(`SMP_BRAND`, `EDP_SHOP_ID`) och band portalen till EU Drone Company. De ligger nu per
+tenant i `smp_portal_config`, samma tabell som redan bar returadress och fraktpriser —
+ingen ny tabell behövdes.
+
+| Yta | Hämtar brandingen från |
+|---|---|
+| Inloggad portal, kundportalens header, rapportsidan, ärendedetaljen | `useSmpBrand()` / `useSmpPortalConfig()` — RLS-scopat på tenant |
+| Publika kundvyer (kvittens, spårning) | Configen de redan hämtar via `smp-customer-status` (`select("*")`) |
+| Publika FAQ-widgeten | Props från sidan som monterar den |
+| PDF:er (fraktsedel, fakturaunderlag, servicerapport) | Parameter från anropande vy |
+| Statusmejl | Redan tenant-styrt via `portalConfig.return_company` / `return_email` |
+| Fortnox-fakturautkast | `smp_portal_config.shop_id`, med den gamla konstanten som fallback |
+
+Migrering: `20260823140000_smp_portal_branding.sql`. Defaultvärdena är dagens hårdkodade
+värden, så utseendet är oförändrat tills en tenant sätter egna.
+
+`SMP_BRAND` heter nu `DEFAULT_SMP_BRAND` och `EDP_SHOP_ID` heter `DEFAULT_SMP_SHOP_ID` —
+båda är dokumenterade fallbacks, inte konfiguration.
+
+**Öppen fråga: hur vet en publik vy vilken tenant den tillhör?** De publika sidorna under
+`/service/*` ligger på DigitalSignals domän och har i dag ingen tenant-upplösning — de
+faller tillbaka på `DEFAULT_SMP_BRAND` och `DEFAULT_SMP_SHOP_ID`. Innan portalen säljs till
+en andra kund behöver det lösas, t.ex. med subdomän per tenant eller tenant-slug i
+sökvägen. Den inloggade ytan är däremot fullt tenant-styrd redan nu.
+
+## 12. Kvar att göra
 
 1. **SMP-branding.** `SMP_BRAND`, `service@eurodroneparts.se` och `EDP_SHOP_ID` i
    `src/lib/service-portal/constants.ts` är hårdkodade mot EuroDroneParts. Ska portalen
