@@ -83,11 +83,11 @@ export default function CommercialDronesContact() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Kontakta ActionKing Enterprise",
+    name: "Kontakta EU Drone Company Enterprise",
     url: "https://actionking.se/kommersiella-dronare/kontakt",
     mainEntity: {
       "@type": "Organization",
-      name: "ActionKing Enterprise",
+      name: "EU Drone Company Enterprise",
       telephone: "+46101025591",
       email: "Sales@actionking.se",
       contactPoint: {
@@ -102,8 +102,8 @@ export default function CommercialDronesContact() {
   return (
     <>
       <SeoHead
-        title="Kontakta oss — ActionKing Enterprise | Kommersiella drönare"
-        description="Kontakta ActionKing Enterprise för offert, demo eller rådgivning om kommersiella drönare. Vi återkommer inom 24 timmar."
+        title="Kontakta oss — EU Drone Company Enterprise | Kommersiella drönare"
+        description="Kontakta EU Drone Company Enterprise för offert, demo eller rådgivning om kommersiella drönare. Vi återkommer inom 24 timmar."
         canonical="https://actionking.se/kommersiella-dronare/kontakt"
         jsonLd={jsonLd}
       />
@@ -232,7 +232,7 @@ export default function CommercialDronesContact() {
                         className="mt-0.5 border-white/20 data-[state=checked]:bg-orange-500 data-[state=checked]:border-orange-500"
                       />
                       <Label htmlFor="consent" className="text-xs text-white/50 leading-relaxed cursor-pointer">
-                        Jag samtycker till att ActionKing lagrar mina uppgifter för att kontakta mig angående kommersiella drönare. *
+                        Jag samtycker till att EU Drone Company lagrar mina uppgifter för att kontakta mig angående kommersiella drönare. *
                       </Label>
                     </div>
 
@@ -253,10 +253,10 @@ export default function CommercialDronesContact() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">ActionKing Enterprise</span>
+              <span className="font-semibold">EU Drone Company Enterprise</span>
             </div>
             <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} ActionKing. Auktoriserad DJI Enterprise-partner.
+              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
             </p>
           </div>
         </footer>

@@ -1974,7 +1974,7 @@ export default function ShopifyCloner() {
             </div>
             <div className="space-y-1">
               <Label>Etikett</Label>
-              <Input value={newStore.label} onChange={(e) => setNewStore({ ...newStore, label: e.target.value })} placeholder="ActionKing produktion" />
+              <Input value={newStore.label} onChange={(e) => setNewStore({ ...newStore, label: e.target.value })} placeholder="EU Drone Company produktion" />
             </div>
             <div className="space-y-1">
               <Label>Shopify-domän</Label>
@@ -2005,7 +2005,7 @@ export default function ShopifyCloner() {
           <div className="space-y-3">
             <div className="space-y-1">
               <Label>Namn</Label>
-              <Input value={newMigration.name} onChange={(e) => setNewMigration({ ...newMigration, name: e.target.value })} placeholder="ActionKing → EU Drone Company" />
+              <Input value={newMigration.name} onChange={(e) => setNewMigration({ ...newMigration, name: e.target.value })} placeholder="EU Drone Company → EU Drone Company" />
             </div>
             <div className="space-y-1">
               <Label>Källa</Label>

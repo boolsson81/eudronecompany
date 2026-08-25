@@ -35,7 +35,7 @@ export default function CommercialDroneSolution() {
   return (
     <>
       <SeoHead
-        title={solution.seoTitle || `${solution.title} — ${industry.title} | ActionKing`}
+        title={solution.seoTitle || `${solution.title} — ${industry.title} | EU Drone Company`}
         description={solution.seoDesc || solution.desc}
       />
 

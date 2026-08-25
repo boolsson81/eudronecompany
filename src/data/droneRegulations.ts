@@ -69,8 +69,8 @@ export const DRONE_CATEGORIES: DroneCategory[] = [
       { name: "DJI Mini 4 Pro", weight: "249g", category: "C0", classLabel: "Open A1", notes: "Kan flygas nära människor tack vare låg vikt." },
       { name: "DJI Air 3", weight: "720g", category: "C1", classLabel: "Open A1/A2", notes: "C1-märkt — kräver A1/A3-utbildning. Får flygas nära människor." },
     ],
-    seoTitle: "Drönare Open A1 — Regler & Krav | ActionKing",
-    seoDesc: "Allt om EASA Open A1 för drönare i Sverige. Vilka drönare, utbildning och regler som gäller. Läs mer hos ActionKing.",
+    seoTitle: "Drönare Open A1 — Regler & Krav | EU Drone Company",
+    seoDesc: "Allt om EASA Open A1 för drönare i Sverige. Vilka drönare, utbildning och regler som gäller. Läs mer hos EU Drone Company.",
   },
   {
     slug: "open-a2",
@@ -96,8 +96,8 @@ export const DRONE_CATEGORIES: DroneCategory[] = [
       { name: "DJI Mavic 3 Enterprise", weight: "920g", category: "C2 (med tillbehör)", classLabel: "Open A2", notes: "Med termisk/RTK — kräver A2-certifikat för professionellt bruk nära människor." },
       { name: "DJI Mavic 3 Pro", weight: "958g", category: "C1/C2", classLabel: "Open A1/A2", notes: "Perfekt för film & foto. A2-certifikat rekommenderas." },
     ],
-    seoTitle: "Drönare Open A2 — Certifikat & Regler | ActionKing",
-    seoDesc: "Open A2 drönarkategori i Sverige. A2-certifikat, utbildningskrav och godkända drönare. Läs mer hos ActionKing.",
+    seoTitle: "Drönare Open A2 — Certifikat & Regler | EU Drone Company",
+    seoDesc: "Open A2 drönarkategori i Sverige. A2-certifikat, utbildningskrav och godkända drönare. Läs mer hos EU Drone Company.",
   },
   {
     slug: "open-a3",
@@ -122,8 +122,8 @@ export const DRONE_CATEGORIES: DroneCategory[] = [
       { name: "DJI Matrice 350 RTK", weight: "6,47 kg", category: "Kräver Specific*", classLabel: "Specific / Open A3*", notes: "Över 4 kg — kräver normalt Specific-kategori. Kan flyga i A3 om långt från människor och bebyggelse." },
       { name: "DJI Agras T50", weight: "52 kg", category: "Specific", classLabel: "Specific", notes: "Tung lantbruksdrönare — kräver alltid Specific-tillstånd." },
     ],
-    seoTitle: "Drönare Open A3 — Regler för Öppna Områden | ActionKing",
-    seoDesc: "Open A3 regler för drönare i Sverige. Flygning i öppna områden med drönare upp till 25 kg. Läs mer hos ActionKing.",
+    seoTitle: "Drönare Open A3 — Regler för Öppna Områden | EU Drone Company",
+    seoDesc: "Open A3 regler för drönare i Sverige. Flygning i öppna områden med drönare upp till 25 kg. Läs mer hos EU Drone Company.",
   },
   {
     slug: "specific",
@@ -150,8 +150,8 @@ export const DRONE_CATEGORIES: DroneCategory[] = [
       { name: "DJI Agras T50", weight: "52 kg", category: "Specific", classLabel: "Specific", notes: "Lantbruksdrönare — kräver Specific-tillstånd p.g.a. vikt och kemikaliehantering." },
       { name: "DJI Inspire 3", weight: "3,99 kg", category: "C2/Specific", classLabel: "Open A2 / Specific", notes: "Under 4 kg — kan flyga i Open A2, men Specific behövs för kommersiell filmning i bebyggelse." },
     ],
-    seoTitle: "Specific-kategorin — Drönarttillstånd för Proffs | ActionKing",
-    seoDesc: "Allt om Specific-kategorin för drönare i Sverige. SORA, tillstånd och utbildningskrav. Kontakta ActionKing.",
+    seoTitle: "Specific-kategorin — Drönarttillstånd för Proffs | EU Drone Company",
+    seoDesc: "Allt om Specific-kategorin för drönare i Sverige. SORA, tillstånd och utbildningskrav. Kontakta EU Drone Company.",
   },
 ];
 
@@ -177,8 +177,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "Riskanalys (SORA) för icke-standardscenarier",
     ],
     recommendedDrones: ["DJI Matrice 350 RTK", "DJI Mavic 3 Enterprise"],
-    seoTitle: "Drönarpilot för Inspektion — Utbildning & Krav | ActionKing",
-    seoDesc: "Vilken utbildning behövs för att flyga drönare för inspektion? A2-certifikat, Specific-tillstånd och mer. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Inspektion — Utbildning & Krav | EU Drone Company",
+    seoDesc: "Vilken utbildning behövs för att flyga drönare för inspektion? A2-certifikat, Specific-tillstånd och mer. Läs mer hos EU Drone Company.",
   },
   {
     slug: "lantbruk",
@@ -202,8 +202,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "Anmälan till Jordbruksverket vid bekämpningsmedelsanvändning",
     ],
     recommendedDrones: ["DJI Agras T50", "DJI Mavic 3 Multispectral"],
-    seoTitle: "Drönarpilot för Lantbruk — Utbildning & Tillstånd | ActionKing",
-    seoDesc: "Utbildningskrav för lantbruksdrönare i Sverige. Specific-tillstånd, kemikaliehantering och certifiering. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Lantbruk — Utbildning & Tillstånd | EU Drone Company",
+    seoDesc: "Utbildningskrav för lantbruksdrönare i Sverige. Specific-tillstånd, kemikaliehantering och certifiering. Läs mer hos EU Drone Company.",
   },
   {
     slug: "kartlaggning",
@@ -226,8 +226,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "Förståelse för geodetiska referenssystem (SWEREF 99)",
     ],
     recommendedDrones: ["DJI Matrice 350 RTK", "DJI Mavic 3 Enterprise"],
-    seoTitle: "Drönarpilot för Kartläggning — Utbildning & Krav | ActionKing",
-    seoDesc: "Utbildningskrav för drönarkartläggning i Sverige. RTK-precision, certifikat och Specific-tillstånd. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Kartläggning — Utbildning & Krav | EU Drone Company",
+    seoDesc: "Utbildningskrav för drönarkartläggning i Sverige. RTK-precision, certifikat och Specific-tillstånd. Läs mer hos EU Drone Company.",
   },
   {
     slug: "sakerhet",
@@ -251,8 +251,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "Nattflygningsutrustning (ljus enligt EASA-krav)",
     ],
     recommendedDrones: ["DJI Matrice 350 RTK", "DJI Mavic 3 Enterprise"],
-    seoTitle: "Drönarpilot för Säkerhet — Utbildning & Tillstånd | ActionKing",
-    seoDesc: "Utbildningskrav för säkerhetsdrönare. Specific-tillstånd, BVLOS och kamerabevakningslagen. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Säkerhet — Utbildning & Tillstånd | EU Drone Company",
+    seoDesc: "Utbildningskrav för säkerhetsdrönare. Specific-tillstånd, BVLOS och kamerabevakningslagen. Läs mer hos EU Drone Company.",
   },
   {
     slug: "energi",
@@ -277,8 +277,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "Säkerhetsavstånd till högspänningsledningar",
     ],
     recommendedDrones: ["DJI Matrice 350 RTK", "DJI Mavic 3 Enterprise"],
-    seoTitle: "Drönarpilot för Energi — Utbildning & Säkerhet | ActionKing",
-    seoDesc: "Utbildningskrav för drönarinspektion av elnät och energi. Specific-tillstånd och elsäkerhet. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Energi — Utbildning & Säkerhet | EU Drone Company",
+    seoDesc: "Utbildningskrav för drönarinspektion av elnät och energi. Specific-tillstånd och elsäkerhet. Läs mer hos EU Drone Company.",
   },
   {
     slug: "film-media",
@@ -301,8 +301,8 @@ export const TRAINING_REQUIREMENTS: TrainingRequirement[] = [
       "GDPR-hänsyn vid filmning av identifierbara personer",
     ],
     recommendedDrones: ["DJI Inspire 3", "DJI Mavic 3 Pro"],
-    seoTitle: "Drönarpilot för Film — Utbildning & Filmtillstånd | ActionKing",
-    seoDesc: "Utbildningskrav för drönarfilm. A2-certifikat, filmtillstånd och Specific-kategori. Läs mer hos ActionKing.",
+    seoTitle: "Drönarpilot för Film — Utbildning & Filmtillstånd | EU Drone Company",
+    seoDesc: "Utbildningskrav för drönarfilm. A2-certifikat, filmtillstånd och Specific-kategori. Läs mer hos EU Drone Company.",
   },
 ];
 

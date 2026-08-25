@@ -12,13 +12,13 @@ export default function DroneComparisons() {
     () => ({
       "@context": "https://schema.org",
       "@type": "Blog",
-      name: "Drönarjämförelser — ActionKing Enterprise",
+      name: "Drönarjämförelser — EU Drone Company Enterprise",
       url: "https://actionking.se/kommersiella-dronare/jamforelser",
       description:
         "Jämförelser mellan professionella DJI-drönare — specifikationer, användningsområden och köpråd för företag.",
       publisher: {
         "@type": "Organization",
-        name: "ActionKing Enterprise",
+        name: "EU Drone Company Enterprise",
         url: "https://actionking.se",
       },
       blogPost: DRONE_COMPARISONS.map((article) => ({
@@ -35,7 +35,7 @@ export default function DroneComparisons() {
   return (
     <>
       <SeoHead
-        title="Drönarjämförelser — Vilken DJI passar dig? | ActionKing"
+        title="Drönarjämförelser — Vilken DJI passar dig? | EU Drone Company"
         description="Jämför professionella DJI-drönare sida vid sida. Specifikationer, användningsområden och köpråd för inspektion, lantbruk och filmproduktion."
         canonical="https://actionking.se/kommersiella-dronare/jamforelser"
         breadcrumbs={[

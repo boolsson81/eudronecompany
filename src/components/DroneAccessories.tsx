@@ -41,7 +41,7 @@ export default function DroneAccessories({
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <h2 className="text-2xl md:text-3xl font-bold mb-3">{heading}</h2>
         <p className="text-white/50 mb-8 max-w-2xl">
-          Komplettera din drönarlösning med rätt payloads, batterier och tillbehör. Alla produkter finns att beställa via ActionKing.
+          Komplettera din drönarlösning med rätt payloads, batterier och tillbehör. Alla produkter finns att beställa via EU Drone Company.
         </p>
 
         {/* Category filter pills */}

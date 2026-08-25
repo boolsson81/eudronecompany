@@ -78,7 +78,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     faq: [
       {
         question: "Vilka drönare är Zenmuse H30T kompatibel med?",
-        answer: "Zenmuse H30T monteras på DJI Matrice 350 RTK, Matrice 300 RTK och Matrice 400. Kontakta ActionKing för komplett konfiguration med fjärrkontroll och mjukvara.",
+        answer: "Zenmuse H30T monteras på DJI Matrice 350 RTK, Matrice 300 RTK och Matrice 400. Kontakta EU Drone Company för komplett konfiguration med fjärrkontroll och mjukvara.",
       },
       {
         question: "Vad är skillnaden mellan H30T och H30?",
@@ -89,8 +89,8 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         answer: "Ja. Termisk kameran fungerar oberoende av synligt ljus, och NIR-auxiliary light förbättrar nattseende med den optiska kameran.",
       },
     ],
-    seoTitle: "Zenmuse H30T — Termisk hybridkamera för Matrice | ActionKing",
-    seoDesc: "Zenmuse H30T med 40× zoom, termisk kamera och laser-avståndsmätare. Enterprise-payload för inspektion och räddning. Begär offert hos ActionKing.",
+    seoTitle: "Zenmuse H30T — Termisk hybridkamera för Matrice | EU Drone Company",
+    seoDesc: "Zenmuse H30T med 40× zoom, termisk kamera och laser-avståndsmätare. Enterprise-payload för inspektion och räddning. Begär offert hos EU Drone Company.",
   },
   {
     slug: "zenmuse-h30",
@@ -135,8 +135,8 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         answer: "Ja, båda har 40× optisk zoom med Super Resolution och samma vidvinkel-sensor.",
       },
     ],
-    seoTitle: "Zenmuse H30 — Hybridkamera 40× zoom | ActionKing",
-    seoDesc: "Zenmuse H30 med 40× optisk zoom och laser-avståndsmätare för DJI Matrice. Kostnadseffektiv enterprise-kamera. Kontakta ActionKing.",
+    seoTitle: "Zenmuse H30 — Hybridkamera 40× zoom | EU Drone Company",
+    seoDesc: "Zenmuse H30 med 40× optisk zoom och laser-avståndsmätare för DJI Matrice. Kostnadseffektiv enterprise-kamera. Kontakta EU Drone Company.",
   },
   {
     slug: "zenmuse-h20t",
@@ -179,7 +179,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         answer: "Ja, den termiska kameran stöder radiometrisk temperaturmätning för att kvantifiera hotspots och värmeläckor.",
       },
     ],
-    seoTitle: "Zenmuse H20T — Termisk inspektionskamera | ActionKing",
+    seoTitle: "Zenmuse H20T — Termisk inspektionskamera | EU Drone Company",
     seoDesc: "Zenmuse H20T med termisk kamera, zoom och LRF för DJI Matrice. Beprövad payload för energi- och infrastrukturinspektion. Begär offert.",
   },
   {
@@ -222,11 +222,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       },
       {
         question: "Vilken mjukvara fungerar med L2-data?",
-        answer: "Zenmuse L2 integreras med DJI Terra, Pix4D och andra GIS-verktyg. ActionKing kan hjälpa till med komplett arbetsflöde inklusive mjukvarulicenser.",
+        answer: "Zenmuse L2 integreras med DJI Terra, Pix4D och andra GIS-verktyg. EU Drone Company kan hjälpa till med komplett arbetsflöde inklusive mjukvarulicenser.",
       },
     ],
-    seoTitle: "Zenmuse L2 — LiDAR-sensor för drönarkartläggning | ActionKing",
-    seoDesc: "Zenmuse L2 LiDAR med 5 returer och 250 m räckvidd. Punktmoln för GIS och infrastruktur. Komplett lösning från ActionKing.",
+    seoTitle: "Zenmuse L2 — LiDAR-sensor för drönarkartläggning | EU Drone Company",
+    seoDesc: "Zenmuse L2 LiDAR med 5 returer och 250 m räckvidd. Punktmoln för GIS och infrastruktur. Komplett lösning från EU Drone Company.",
   },
   {
     slug: "zenmuse-p1",
@@ -267,11 +267,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       },
       {
         question: "Ingår objektiven?",
-        answer: "Zenmuse P1 levereras med tre utbytbara objektiv (24, 35 och 50 mm). ActionKing kan konfigurera komplett paket med drönare, RTK och mjukvara.",
+        answer: "Zenmuse P1 levereras med tre utbytbara objektiv (24, 35 och 50 mm). EU Drone Company kan konfigurera komplett paket med drönare, RTK och mjukvara.",
       },
     ],
-    seoTitle: "Zenmuse P1 — Fotogrammetrikamera 45 MP | ActionKing",
-    seoDesc: "Zenmuse P1 full-frame fotogrammetrikamera med mekanisk slutare. Centimeterprecision för kartläggning. Begär offert hos ActionKing.",
+    seoTitle: "Zenmuse P1 — Fotogrammetrikamera 45 MP | EU Drone Company",
+    seoDesc: "Zenmuse P1 full-frame fotogrammetrikamera med mekanisk slutare. Centimeterprecision för kartläggning. Begär offert hos EU Drone Company.",
   },
   {
     slug: "zenmuse-s1",
@@ -312,10 +312,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       },
       {
         question: "Hur långt når ljuset?",
-        answer: "S1 levererar kraftfull belysning som täcker stora områden under nattoperationer. Exakt räckvidd beror på väder och terräng — kontakta ActionKing för demonstrationsvideo.",
+        answer: "S1 levererar kraftfull belysning som täcker stora områden under nattoperationer. Exakt räckvidd beror på väder och terräng — kontakta EU Drone Company för demonstrationsvideo.",
       },
     ],
-    seoTitle: "Zenmuse S1 — Sökljus-payload för drönare | ActionKing",
+    seoTitle: "Zenmuse S1 — Sökljus-payload för drönare | EU Drone Company",
     seoDesc: "Zenmuse S1 sökljus med LED och IR för nattliga räddningsinsatser. Enterprise-payload för DJI Matrice. Begär offert.",
   },
   {
@@ -360,8 +360,8 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         answer: "V1 är designad för att nå markpersonal även i utmanande miljöer. Vid extremt buller rekommenderar vi att kombinera med visuell kommunikation via kamerapayload.",
       },
     ],
-    seoTitle: "Zenmuse V1 — Högtalare-payload för drönare | ActionKing",
-    seoDesc: "Zenmuse V1 röstförstärkare med 1500 m räckvidd. Kommunikationspayload för räddning och säkerhet. Kontakta ActionKing.",
+    seoTitle: "Zenmuse V1 — Högtalare-payload för drönare | EU Drone Company",
+    seoDesc: "Zenmuse V1 röstförstärkare med 1500 m räckvidd. Kommunikationspayload för räddning och säkerhet. Kontakta EU Drone Company.",
   },
 ];
 

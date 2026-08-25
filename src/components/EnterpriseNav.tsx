@@ -82,7 +82,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
         <Link to="/kommersiella-dronare" className="flex items-center gap-3">
           <Radio className="h-6 w-6 text-orange-500" />
           <span className="font-bold text-lg tracking-tight text-white">
-            ActionKing <span className="text-orange-500">Enterprise</span>
+            EU Drone Company <span className="text-orange-500">Enterprise</span>
           </span>
         </Link>
 

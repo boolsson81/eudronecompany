@@ -101,7 +101,7 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
         heading: "Drift och totalkostnad",
         paragraphs: [
           "Räkna inte bara inköpspriset. Matrice 350 RTK har dyrare batterier och payloads, men kortare flygtid per uppdrag på stora objekt kan kompensera det. Mavic 3 Enterprise har lägre tröskel men kan kräva fler flygningar på samma yta.",
-          "ActionKing hjälper dig räkna på totalkostnad baserat på dina typiska uppdrag — antal inspektioner per månad, medelstorlek på objekt och vilken rapportkvalitet kunden kräver.",
+          "EU Drone Company hjälper dig räkna på totalkostnad baserat på dina typiska uppdrag — antal inspektioner per månad, medelstorlek på objekt och vilken rapportkvalitet kunden kräver.",
         ],
       },
     ],
@@ -116,7 +116,7 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
       {
         question: "Vilken modell kräver enklare tillstånd?",
         answer:
-          "Båda kräver registrering hos Transportstyrelsen och rätt operatörsbehörighet i de flesta kommersiella sammanhang. ActionKing hjälper dig med tillståndsprocessen oavsett modell.",
+          "Båda kräver registrering hos Transportstyrelsen och rätt operatörsbehörighet i de flesta kommersiella sammanhang. EU Drone Company hjälper dig med tillståndsprocessen oavsett modell.",
       },
       {
         question: "Ingår RTK i båda modellerna?",
@@ -188,7 +188,7 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
         heading: "Regler och certifiering",
         paragraphs: [
           "Agras T50 kräver att operatören hanterar växtskyddsmedel enligt gällande kemikalielagstiftning — utöver vanliga drönarregler. Mavic 3 Multispectral har inga särskilda kemikaliekrav men kräver förståelse för multispektral analys och tolkning av NDVI-data.",
-          "ActionKing erbjuder utbildning anpassad efter vilken modell du väljer, inklusive certifieringsstöd för sprutning.",
+          "EU Drone Company erbjuder utbildning anpassad efter vilken modell du väljer, inklusive certifieringsstöd för sprutning.",
         ],
       },
       {
@@ -288,7 +288,7 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
         heading: "Vilken ska du hyra eller köpa?",
         paragraphs: [
           "Hyrs Inspire 3 ofta per projekt för reklamfilm och större produktioner. Mavic 3 Pro ägs oftare av frilansande filmare och mindre produktionsbolag som flyger regelbundet.",
-          "ActionKing erbjuder båda modellerna med rådgivning kring rätt konfiguration, försäkring och utbildning.",
+          "EU Drone Company erbjuder båda modellerna med rådgivning kring rätt konfiguration, försäkring och utbildning.",
         ],
       },
     ],

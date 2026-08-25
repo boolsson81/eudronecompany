@@ -94,8 +94,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "Transportlåda IP67", description: "Stöt- och vattentålig väska för säker transport.", why: "Skyddar utrustningen vid transport till inspektionsplatser i alla väder.", icon: Box },
       { name: "Pix4Dinspect", description: "Mjukvara för automatiserad inspektionsanalys och rapportgenerering.", why: "Automatiserar rapportering och gör det enkelt att dela resultat med kunder.", icon: HardDrive },
     ],
-    seoTitle: "Drönarkonfiguration för Inspektion — Paket & Tillbehör | ActionKing",
-    seoDesc: "Kompletta konfigurationspaket för drönarinspektion. Termisk kamera, RTK och tillbehör. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Inspektion — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Kompletta konfigurationspaket för drönarinspektion. Termisk kamera, RTK och tillbehör. Begär offert från EU Drone Company.",
   },
   {
     slug: "lantbruk",
@@ -160,8 +160,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "Väderstationskit", description: "Portabel väderstation med vind-, temperatur- och fuktighetsmätning.", why: "Avgörande för att veta om sprutningsvillkoren är godkända (vindstyrka, temperatur).", icon: Wind },
       { name: "Solskydd & markör-set", description: "GCP-markörer och skärm för utomhusanvändning.", why: "Solskydd för kontrollenheten och markpunkter för exakt kartläggning.", icon: SunMedium },
     ],
-    seoTitle: "Drönarkonfiguration för Lantbruk — Paket & Tillbehör | ActionKing",
-    seoDesc: "Kompletta konfigurationspaket för lantbruksdrönare. Sprutning, kartläggning och tillbehör. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Lantbruk — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Kompletta konfigurationspaket för lantbruksdrönare. Sprutning, kartläggning och tillbehör. Begär offert från EU Drone Company.",
   },
   {
     slug: "kartlaggning",
@@ -228,8 +228,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "DJI Terra", description: "Mjukvara för ortomosaikgenerering, 3D-modeller och volymberäkning.", why: "Komplett bearbetningskedja från drönarbilder till leveransfärdiga modeller.", icon: HardDrive },
       { name: "Extra batterier (TB65)", description: "Intelligent batterier med värmesystem.", why: "Kartläggning av stora ytor kräver lång flygtid — extra batterier är ett måste.", icon: Battery },
     ],
-    seoTitle: "Drönarkonfiguration för Kartläggning — Paket & Tillbehör | ActionKing",
-    seoDesc: "Kompletta konfigurationspaket för drönarkartläggning. LiDAR, fotogrammetri och tillbehör. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Kartläggning — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Kompletta konfigurationspaket för drönarkartläggning. LiDAR, fotogrammetri och tillbehör. Begär offert från EU Drone Company.",
   },
   {
     slug: "sakerhet",
@@ -293,8 +293,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "DJI FlightHub 2", description: "Centraliserad flyghantering med livestreaming och larmhantering.", why: "Kontrollcentral för alla drönaroperationer med realtidsvideo.", icon: Radar },
       { name: "Nattflygnings-kit", description: "Anti-kollisionsljus och stroboskop enligt EASA-krav.", why: "Obligatoriskt vid flygning under mörker och skymning.", icon: Glasses },
     ],
-    seoTitle: "Drönarkonfiguration för Säkerhet — Paket & Tillbehör | ActionKing",
-    seoDesc: "Kompletta säkerhetspaket med drönare. Termisk kamera, spotlight och dockningslösningar. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Säkerhet — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Kompletta säkerhetspaket med drönare. Termisk kamera, spotlight och dockningslösningar. Begär offert från EU Drone Company.",
   },
   {
     slug: "energi",
@@ -361,8 +361,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "Nattflygnings-kit", description: "Positionsljus och stroboskop.", why: "Möjliggör inspektion under tidiga morgnar och sena kvällar.", icon: SunMedium },
       { name: "Extra batterier (TB65)", description: "Kraftfulla batterier med värmesystem.", why: "Ledningsinspektion kräver lång flygtid — planera för 6+ batterier per dag.", icon: Battery },
     ],
-    seoTitle: "Drönarkonfiguration för Energi & Elnät — Paket & Tillbehör | ActionKing",
-    seoDesc: "Konfigurationspaket för drönarinspektion av elnät och energi. Termisk, LiDAR och tillbehör. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Energi & Elnät — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Konfigurationspaket för drönarinspektion av elnät och energi. Termisk, LiDAR och tillbehör. Begär offert från EU Drone Company.",
   },
   {
     slug: "film-media",
@@ -430,8 +430,8 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
       { name: "Extra batterier (TB51)", description: "Intelligent batterier för Inspire 3.", why: "Filmproduktion kräver många tagningar — planera för minst 6 batterier.", icon: Battery },
       { name: "Medicinsk nödväska", description: "Första hjälpen-kit för fältarbete.", why: "Säkerhetskrav vid professionella filmproduktioner med drönare.", icon: BriefcaseMedical },
     ],
-    seoTitle: "Drönarkonfiguration för Film & Media — Paket & Tillbehör | ActionKing",
-    seoDesc: "Konfigurationspaket för drönarfilm. Inspire 3, Mavic 3 Pro, objektiv och tillbehör. Begär offert från ActionKing.",
+    seoTitle: "Drönarkonfiguration för Film & Media — Paket & Tillbehör | EU Drone Company",
+    seoDesc: "Konfigurationspaket för drönarfilm. Inspire 3, Mavic 3 Pro, objektiv och tillbehör. Begär offert från EU Drone Company.",
   },
 ];
 

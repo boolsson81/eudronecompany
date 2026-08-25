@@ -24,11 +24,24 @@ EuroDroneParts. Domänen står på två ställen och båda måste peka åt samma
 - Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt (fallback i
   koden är samma domän, så variabeln behövs bara om ni testar mot något annat)
 
-## Varumärkesfrågan
+## Varumärket: omskrivet, men shoplänkarna kvarstår
 
-Sidorna är **ActionKing**-brandade: `EnterpriseNav` renderar "ActionKing Enterprise" och
-FAQ-texterna säger "Vilka drönare säljer ActionKing?". De flyttades enligt beslut, men
-innehållet behöver skrivas om till EU Drone Company. Ingen text har ändrats i flytten.
+Prosan är omskriven från ActionKing till EU Drone Company 2026-08-23 — 145 förekomster i
+24 filer: rubriker, FAQ-svar, SEO-titlar, JSON-LD-organisationsnamn, footer och
+GDPR-samtycket i kontaktformuläret.
+
+**Kvar: 63 unika länkar till `actionking.se`.** De ligger i `src/data/droneAccessories.ts`
+(57 tillbehör) och pekar på ActionKings produktsidor. `DroneAccessories`-komponenten
+renderar dem med etiketten "Se på ActionKing.se", vilket betyder att sidan säger
+EU Drone Company i rubrikerna men skickar köparen till ActionKing.
+
+Länkarna är **inte** omskrivna, och det är avsiktligt: handles i EU Drone Company-butiken
+är engelska efter migreringen, ActionKing-URL:erna är svenska, och ingen av
+mappningsfilerna under `docs/reports/` täcker dem. En blind omskrivning hade gett 63 döda
+länkar i stället för 63 länkar till fel butik.
+
+För att lösa det behövs antingen en handle-mappning från EU Drone Company-butikens katalog,
+eller ett beslut att tillbehören ska fortsätta säljas via ActionKing.
 
 ## 45 indexerade URL:er som behöver 301
 

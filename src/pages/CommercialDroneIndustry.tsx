@@ -36,7 +36,7 @@ export default function CommercialDroneIndustry() {
   return (
     <>
       <SeoHead
-        title={`${industry.title} — Kommersiella Drönare | ActionKing`}
+        title={`${industry.title} — Kommersiella Drönare | EU Drone Company`}
         description={industry.heroDesc}
         canonical={`https://actionking.se/kommersiella-dronare/${industry.slug}`}
         breadcrumbs={[

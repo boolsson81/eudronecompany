@@ -31,8 +31,8 @@ export default function CommercialDronesProducts() {
   return (
     <>
       <SeoHead
-        title="Produkter — ActionKing Enterprise | Kommersiella drönare"
-        description="Utforska DJI Enterprise-sortimentet hos ActionKing. Matrice 350 RTK, Mavic 3 Enterprise, Agras T50 och fler professionella drönarlösningar."
+        title="Produkter — EU Drone Company Enterprise | Kommersiella drönare"
+        description="Utforska DJI Enterprise-sortimentet hos EU Drone Company. Matrice 350 RTK, Mavic 3 Enterprise, Agras T50 och fler professionella drönarlösningar."
         canonical="https://actionking.se/kommersiella-dronare/produkter"
       />
 
@@ -130,10 +130,10 @@ export default function CommercialDronesProducts() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">ActionKing Enterprise</span>
+              <span className="font-semibold">EU Drone Company Enterprise</span>
             </div>
             <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} ActionKing. Auktoriserad DJI Enterprise-partner.
+              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
             </p>
           </div>
         </footer>

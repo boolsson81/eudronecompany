@@ -44,10 +44,10 @@ export default function DroneComparisonArticle() {
     datePublished: article.date,
     dateModified: article.date,
     url: `https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`,
-    author: { "@type": "Organization", name: "ActionKing Enterprise" },
+    author: { "@type": "Organization", name: "EU Drone Company Enterprise" },
     publisher: {
       "@type": "Organization",
-      name: "ActionKing Enterprise",
+      name: "EU Drone Company Enterprise",
       url: "https://actionking.se",
     },
   };
@@ -55,7 +55,7 @@ export default function DroneComparisonArticle() {
   return (
     <>
       <SeoHead
-        title={`${article.title} | ActionKing`}
+        title={`${article.title} | EU Drone Company`}
         description={article.excerpt}
         canonical={`https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`}
         breadcrumbs={[

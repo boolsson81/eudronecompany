@@ -7,7 +7,7 @@ import { toast } from "sonner";
 import { Loader2, Play, ListChecks, Upload, Palette } from "lucide-react";
 
 // Fixed source/target shops for this operation.
-const SOURCE_SHOP = { id: "010120e6-6def-431e-8614-905cb69f85b9", name: "ActionKing", domain: "actionking.se" };
+const SOURCE_SHOP = { id: "010120e6-6def-431e-8614-905cb69f85b9", name: "EU Drone Company", domain: "actionking.se" };
 const TARGET_SHOP = { id: "e6ad2afc-e468-49a7-8d33-9b1837419ed8", name: "EUDroneParts", domain: "ya1xhg-x6.myshopify.com" };
 
 type Migration = { id: string; status: string; stats: any; error: string | null };
@@ -107,7 +107,7 @@ export default function ShopifyDroneClone() {
   return (
     <div className="container mx-auto p-4 sm:p-6 max-w-5xl space-y-6">
       <header>
-        <h1 className="text-2xl font-bold">Drönar-migrering: ActionKing → EUDroneParts</h1>
+        <h1 className="text-2xl font-bold">Drönar-migrering: EU Drone Company → EUDroneParts</h1>
         <p className="text-sm text-muted-foreground mt-1">Kopierar alla drönar-relaterade produkter, collections, metafields, bilder och tema.</p>
       </header>
 

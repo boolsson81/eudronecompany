@@ -9,7 +9,7 @@ export default function DroneRegulations() {
   return (
     <>
       <SeoHead
-        title="Drönaregler & Utbildningskrav i Sverige — EASA | ActionKing"
+        title="Drönaregler & Utbildningskrav i Sverige — EASA | EU Drone Company"
         description="Komplett guide till drönaregler i Sverige. EASA-kategorier, utbildningskrav och certifikat per bransch. Allt du behöver veta innan du flyger."
       />
 
@@ -19,7 +19,7 @@ export default function DroneRegulations() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
             <Link to="/kommersiella-dronare" className="flex items-center gap-3">
               <Radio className="h-6 w-6 text-orange-500" />
-              <span className="font-bold text-lg tracking-tight">ActionKing <span className="text-orange-500">Enterprise</span></span>
+              <span className="font-bold text-lg tracking-tight">EU Drone Company <span className="text-orange-500">Enterprise</span></span>
             </Link>
             <Link to="/kommersiella-dronare/kontakt">
               <Button size="sm" className="bg-orange-500 hover:bg-orange-600 text-white border-0">

@@ -47,7 +47,7 @@ export default function DroneCameraComparisonPage() {
   return (
     <>
       <SeoHead
-        title="Jämför drönarkameror — Zenmuse H30, H20T, P1 & L2 | ActionKing"
+        title="Jämför drönarkameror — Zenmuse H30, H20T, P1 & L2 | EU Drone Company"
         description="Jämför professionella drönarkameror och Zenmuse-sensorer sida vid sida. Se specifikationer för termisk kamera, zoom, LiDAR och fotogrammetri — hitta rätt payload för ditt uppdrag."
         canonical="https://actionking.se/kommersiella-dronare/jamfor-kameror"
         breadcrumbs={[

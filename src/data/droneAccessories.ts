@@ -1,7 +1,7 @@
 /**
  * DJI Enterprise accessories, payloads, and configurations.
  * Maps each drone model to its compatible accessories with categories.
- * shopUrl links to the ActionKing.se Shopify store.
+ * shopUrl links to the actionking.se Shopify store.
  */
 
 import zenmuseH30TImg from "@/assets/dji-zenmuse-h30t.png";

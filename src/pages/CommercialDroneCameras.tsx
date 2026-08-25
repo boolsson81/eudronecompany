@@ -16,7 +16,7 @@ export default function CommercialDroneCameras() {
   return (
     <>
       <SeoHead
-        title="Enterprise-kameror & sensorer — Zenmuse | ActionKing"
+        title="Enterprise-kameror & sensorer — Zenmuse | EU Drone Company"
         description="Utforska DJI Zenmuse enterprise-kameror och sensorer. H30T, H20T, L2 LiDAR, P1 fotogrammetri och specialpayloads för Matrice-serien."
         canonical="https://actionking.se/kommersiella-dronare/kameror"
         breadcrumbs={[
@@ -146,10 +146,10 @@ export default function CommercialDroneCameras() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">ActionKing Enterprise</span>
+              <span className="font-semibold">EU Drone Company Enterprise</span>
             </div>
             <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} ActionKing. Auktoriserad DJI Enterprise-partner.
+              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
             </p>
           </div>
         </footer>

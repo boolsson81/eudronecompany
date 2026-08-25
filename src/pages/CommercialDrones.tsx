@@ -24,7 +24,7 @@ import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
 
 const HUB_FAQ: FaqItem[] = [
-  { question: "Vilka drönare säljer ActionKing?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
+  { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
   { question: "Vad kostar en kommersiell drönare?", answer: "Priset varierar beroende på modell och tillbehör. DJI Mavic 3 Enterprise börjar runt 30 000 kr, medan DJI Matrice 350 RTK med payload kostar från ca 100 000 kr. Kontakta oss för exakt offert." },
   { question: "Ingår utbildning vid köp?", answer: "Ja, vi erbjuder skräddarsydd utbildning anpassad efter din bransch och tillämpning. Vi hjälper även med flygcertifiering och tillståndsansökningar." },
   { question: "Hur lång tid tar leveransen?", answer: "Vi har lager i Sverige och de flesta produkter levereras inom 2–5 arbetsdagar. Specialkonfigurationer kan ta något längre." },
@@ -47,7 +47,7 @@ export default function CommercialDrones() {
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "ActionKing Enterprise",
+    name: "EU Drone Company Enterprise",
     url: "https://actionking.se",
     description: "Auktoriserad DJI Enterprise-partner i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
     contactPoint: {
@@ -61,7 +61,7 @@ export default function CommercialDrones() {
   return (
     <>
       <SeoHead
-        title="Kommersiella Drönare för Företag — DJI Enterprise | ActionKing"
+        title="Kommersiella Drönare för Företag — DJI Enterprise | EU Drone Company"
         description="Köp professionella DJI Enterprise-drönare för inspektion, kartläggning, lantbruk och säkerhet. Auktoriserad återförsäljare i Sverige med lager, support och utbildning."
         canonical="https://actionking.se/kommersiella-dronare"
         breadcrumbs={[
@@ -283,7 +283,7 @@ export default function CommercialDrones() {
           </div>
         </section>
 
-        {/* Why ActionKing */}
+        {/* Why EU Drone Company */}
         <section className="py-20 md:py-28">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -292,7 +292,7 @@ export default function CommercialDrones() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Varför ActionKing?</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Varför EU Drone Company?</h2>
                 <div className="space-y-4">
                   {[
                     "Auktoriserad DJI Enterprise-partner i Sverige",
@@ -367,10 +367,10 @@ export default function CommercialDrones() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">ActionKing Enterprise</span>
+              <span className="font-semibold">EU Drone Company Enterprise</span>
             </div>
             <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} ActionKing. Auktoriserad DJI Enterprise-partner.
+              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
             </p>
           </div>
         </footer>
