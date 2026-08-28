@@ -82,9 +82,9 @@ Nio av dem fanns kvar i arkivtemat *"rev11 — Live sync (templates fix)"* som i
 
 Repot synkas **inte** automatiskt till butiken — det finns ingen deploy-workflow för temat, bara de manuella skripten `scripts/push-edp-theme.mjs` och `scripts/push-single-theme-file.mjs` (kräver nycklar i `.env`). Mallväljaren i admin läser det publicerade temat, så filer i Git syns inte där förrän de laddats upp.
 
-Skrivningar mot det publicerade temat är dessutom blockerade via Shopify-kopplingen i den här sessionen. Därför ligger produkt- och samlingsmallarna i ett utkastema:
+Skrivningar mot det publicerade temat är blockerade via Shopify-kopplingen, så produkt- och samlingsmallarna lades först i ett utkastema (`188874916168`), en exakt kopia av det dåvarande live-temat plus de sex nya filerna.
 
-**`EDP Dawn v1 + nya mallar (2026-08-28)`** — tema-id `188874916168`, en exakt kopia av det publicerade temat plus:
+**2026-08-28 21:15 UTC publicerades det temat.** De sex mallarna är alltså live och syns i mallväljaren:
 
 - `templates/product.drones.json`
 - `templates/product.enterprise-drones.json`
@@ -93,9 +93,9 @@ Skrivningar mot det publicerade temat är dessutom blockerade via Shopify-koppli
 - `templates/product.service-plans.json`
 - `templates/collection.drones.json`
 
-Publicera det temat för att få mallarna i mallväljaren. Eftersom kopian togs från det publicerade temat ändras ingenting annat — men ändringar som gjorts i det nuvarande live-temat efter 2026-08-28 20:26 UTC följer inte med och behöver göras om.
+De återställda sid-mallarna och knappfixen i `page.mission-vision.json` ligger **bara i Git**, inte i temat.
 
-De återställda sid-mallarna och knappfixen i `page.mission-vision.json` ligger **bara i Git**, inte i utkastet.
+> **Viktigt:** en efterföljande felsökning visade att det publicerade temat är Horizon-baserat, medan de här mallarna är byggda för Dawn. De renderar därför utan Dawns grundstilar, precis som de tillbehörsmallar som fanns sedan tidigare. Se `THEME_DIAGNOSTIC_2026-08-28.md`.
 
 ## Så tilldelar ni mallarna
 
