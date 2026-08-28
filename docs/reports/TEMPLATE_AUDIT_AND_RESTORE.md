@@ -78,6 +78,25 @@ Nio av dem fanns kvar i arkivtemat *"rev11 — Live sync (templates fix)"* som i
 
 5. **Enterprise-nyttolaster** (`Enterprise Payload`, `Enterprise Drone Camera`, 17 produkter) har ingen egen mall. De täcks rimligt av `enterprise-accessories`; en egen mall är motiverad först om sortimentet växer.
 
+## Deploy-läge
+
+Repot synkas **inte** automatiskt till butiken — det finns ingen deploy-workflow för temat, bara de manuella skripten `scripts/push-edp-theme.mjs` och `scripts/push-single-theme-file.mjs` (kräver nycklar i `.env`). Mallväljaren i admin läser det publicerade temat, så filer i Git syns inte där förrän de laddats upp.
+
+Skrivningar mot det publicerade temat är dessutom blockerade via Shopify-kopplingen i den här sessionen. Därför ligger produkt- och samlingsmallarna i ett utkastema:
+
+**`EDP Dawn v1 + nya mallar (2026-08-28)`** — tema-id `188874916168`, en exakt kopia av det publicerade temat plus:
+
+- `templates/product.drones.json`
+- `templates/product.enterprise-drones.json`
+- `templates/product.batteries.json`
+- `templates/product.software-licenses.json`
+- `templates/product.service-plans.json`
+- `templates/collection.drones.json`
+
+Publicera det temat för att få mallarna i mallväljaren. Eftersom kopian togs från det publicerade temat ändras ingenting annat — men ändringar som gjorts i det nuvarande live-temat efter 2026-08-28 20:26 UTC följer inte med och behöver göras om.
+
+De återställda sid-mallarna och knappfixen i `page.mission-vision.json` ligger **bara i Git**, inte i utkastet.
+
 ## Så tilldelar ni mallarna
 
 Shopify admin → produkt (eller samling) → **Webbshopsmall** → välj mallen. Går att sätta i bulk för en hel samling via bulk-redigering — testa på 2–3 poster i förhandsvisning först. Sid-mallarna behöver ingen åtgärd; sidorna pekar redan på dem.
