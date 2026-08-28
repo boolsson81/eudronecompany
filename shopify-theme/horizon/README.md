@@ -44,6 +44,23 @@ Inga nya sektioner, block eller metafältsdefinitioner krävs.
 
 Etiketterna är skrivna på svenska direkt i mallarna. Dawns översättningsnycklar (`products.product.compatibility_label`) används inte, eftersom de inte finns i Horizons språkfiler.
 
+## Status
+
+Samtliga nio mallar är uppladdade till och accepterade av Shopifys egen validering i
+temat **`AAA HORIZON-MALLAR — test`** (id `188878291272`), en exakt kopia av det
+publicerade temat. Förhandsgranska där innan något publiceras.
+
+Shopifys uppladdningsvalidering fångade tre fel som den lokala kontrollen missade —
+alla i richtext-fältet `text`, som kräver att varje toppnivånod är `<p>`, `<ul>`,
+`<ol>` eller `<h1>`–`<h6>`:
+
+- tomma dragspelsrader satte `text` till `""`; inställningen utelämnas nu helt
+- underrubriken var ren Liquid utan omslutande tagg, nu i `<p>`
+- produktbeskrivningen var ett `text`-block med ren Liquid; ersatt med Horizons
+  `product-description`-block
+
+`scripts/validate-horizon-templates.py` kontrollerar numera den regeln också.
+
 ## Att kontrollera före publicering
 
 1. **Trygghetsraderna innehåller påståenden som behöver stämma.** "Auktoriserad DJI-återförsäljare", "Auktoriserad DJI Enterprise-partner", "Spårbar frakt", "Svensk kundsupport" m.fl. är utkast — verifiera eller byt ut dem.
