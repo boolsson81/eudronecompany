@@ -173,6 +173,7 @@
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "compatibility_label": "Compatible with: ",
+      "series_label": "Series: ",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
       "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
