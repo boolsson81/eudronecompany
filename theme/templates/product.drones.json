@@ -23,7 +23,7 @@
         "series": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- assign drone_series = product.metafields.dji.series.value -%}{%- if drone_series != blank -%}<p class=\"product__text caption-with-letter-spacing product__series\">{{ 'products.product.series_label' | t }}{%- for serie in drone_series -%}{{ serie | escape }}{%- unless forloop.last -%}, {%- endunless -%}{%- endfor -%}</p>{%- endif -%}"
+            "custom_liquid": "{%- assign drone_series = product.metafields.dji.series.value -%}{%- if drone_series != blank -%}<p class=\"product__text caption-with-letter-spacing product__series\">Serie: {%- for serie in drone_series -%}{{ serie | escape }}{%- unless forloop.last -%}, {%- endunless -%}{%- endfor -%}</p>{%- endif -%}"
           }
         },
         "price": {

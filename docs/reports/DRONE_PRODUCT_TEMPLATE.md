@@ -40,7 +40,7 @@ Konsekvensen är att alla drönare idag ligger på den generiska `product.json` 
 
 ### Översättningar
 
-`products.product.series_label` tillagd i `theme/locales/sv.json` ("Serie: ") och `theme/locales/en.default.json` ("Series: ") — samma två filer som `compatibility_label` ligger i sedan tidigare.
+Serieetiketten ("Serie: ") är inskriven direkt i mallen på svenska, precis som flikrubriker och trygghetstexter i de övriga produktmallarna. Ingen ny nyckel i `locales/` behövs, vilket gör att mallen kan läggas upp i temat som en ren nyfil utan att skriva över befintliga språkfiler.
 
 ## Vad som INTE ingår ännu (uppföljningsförslag)
 
