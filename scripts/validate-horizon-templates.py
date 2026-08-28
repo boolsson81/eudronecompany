@@ -79,6 +79,16 @@ def walk_blocks(path, container, blocks, allowed=None):
             for k in s:
                 if k not in SCHEMA_IDS[bt]:
                     errors.append(f"{path}: {bt}.{bid} -> okänd inställning '{k}'")
+        if "text" in s and bt in ("text", "_accordion-row"):
+            t = s["text"].strip()
+            # Shopifys richtext-fält: varje toppnivånod måste vara p/ul/ol/h1-h6.
+            # Gäller även när värdet bara är Liquid — det måste omslutas av en tagg.
+            # Tom sträng avvisas; utelämna inställningen i stället.
+            if not t:
+                errors.append(f"{path}: {bid} -> tom text-inställning; utelämna den i stället")
+            elif not any(t.startswith(f"<{tag}") for tag in
+                         ("p", "ul", "ol", "h1", "h2", "h3", "h4", "h5", "h6")):
+                errors.append(f"{path}: {bid} -> text måste börja med <p>/<ul>/<ol>/<h1>-<h6>")
         if bt == "icon" and s.get("icon") not in ICONS:
             errors.append(f"{path}: {bid} -> okänt ikonnamn '{s.get('icon')}'")
         child = blk.get("blocks", {})
