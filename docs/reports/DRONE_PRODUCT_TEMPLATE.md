@@ -6,7 +6,9 @@
 
 Mallväljaren i Shopify admin ("Webbshopsmall") har hittills bara innehållit `Standardprodukt`, `drone-accessories`, `drone-spare-parts` och `enterprise-accessories` — alltså tre tillbehörs-/reservdelsmallar, men ingen mall för själva drönarna.
 
-Kontroll av både Git-historiken och den publicerade butiksmallen (`templates/product*.json` i det live-satta temat) visar att `product.drones.json` **aldrig har funnits**. Den har alltså inte försvunnit i en uppdatering — den blev aldrig byggd när tillbehörsmallarna togs fram.
+**Rättelse:** en första kontroll av Git-historiken och det publicerade temat visade inget spår av en drönarmall, och slutsatsen blev att den aldrig hade byggts. En genomgång av butikens 15 opublicerade teman visade att det var fel: `templates/product.dronare.json` finns i samtliga temaversioner till och med *"Uppdaterad kopia av EDP Dawn v1 — 2026-08-01 08:55"* och saknas i alla senare. Mallen fanns alltså och försvann vid ett temabyte.
+
+Den kunde inte återställas rakt av: den är byggd på Shopifys Horizon-sektioner (`product-information`, `_product-details`, `variant-picker`), medan det nuvarande temat är Dawn-baserat (`main-product`, `collapsible_tab`). Mallen nedan är därför en Dawn-byggd ersättare. Se `TEMPLATE_AUDIT_AND_RESTORE.md` för hela mallrevisionen.
 
 Konsekvensen är att alla drönare idag ligger på den generiska `product.json` ("Standardprodukt"), som fortfarande har Dawns engelska standardflikar (*Materials*, *Care Instructions*, *Dimensions*, *Shipping & Returns*). De saknar det en drönarköpare letar efter:
 

@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": true,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "buying-guide": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Vikt & C-klass",
+            "text": "<p>Under 250 g (C0) får du flyga närmare människor och slipper de flesta kraven. Tyngre modeller kräver A1/A3-certifikat.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Kamera & flygtid",
+            "text": "<p>Jämför sensorstorlek, zoom och flygtid per batteri — det avgör vad du faktiskt hinner filma per laddning.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Paket & tillbehör",
+            "text": "<p>Fly More-paket med extra batterier och väska blir nästan alltid billigare än att köpa delarna var för sig.</p>",
+            "link_label": "Se tillbehör",
+            "link": "/collections/drone-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
+      "settings": {
+        "title": "Så väljer du rätt drönare",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behöver jag drönarkort?",
+            "icon": "clipboard",
+            "row_content": "<p>Drönare med kamera kräver att du registrerar dig som operatör hos Transportstyrelsen. För de flesta modeller över 250 g behöver du dessutom ett A1/A3-certifikat, som du tar gratis online.</p>",
+            "page": ""
+          }
+        },
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Måste drönaren vara försäkrad?",
+            "icon": "check_mark",
+            "row_content": "<p>Privat flygning täcks ofta av hemförsäkringen, men kontrollera villkoren. Flyger du i jobbet krävs en särskild ansvarsförsäkring.</p>",
+            "page": ""
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad är skillnaden på Standard och Fly More Combo?",
+            "icon": "box",
+            "row_content": "<p>Fly More Combo innehåller normalt två extra batterier, laddhubb och väska. Räkna på styckpriset — paketet är i regel billigare än att komplettera i efterhand.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "row-0",
+        "row-1",
+        "row-2"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Vanliga frågor om drönare",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-edp",
+        "color_scheme": "scheme-edp",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "buying-guide",
+    "faq"
+  ]
+}
