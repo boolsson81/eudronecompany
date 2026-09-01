@@ -67,6 +67,11 @@ node scripts/verify-edp-theme-menus.mjs
 Kopiera `.env.example` till `.env.local` och fyll i `VITE_SUPABASE_URL` och
 `VITE_SUPABASE_PUBLISHABLE_KEY` innan `npm run dev`.
 
+`VITE_SITE_ORIGIN` behövs inte lokalt — `npm run dev` använder sidans egen origin. Men
+`npm run build` avbryts utan den, eftersom canonical-URL:erna byggs av den. Sätt den till
+frontendens publika origin i Vercel-projektet; se
+[`docs/FRONTEND_MIGRATION.md`](docs/FRONTEND_MIGRATION.md) § Måldomän.
+
 ## Speglade moduler
 
 Ett fåtal moduler under `supabase/functions/_shared/` finns i båda repona, eftersom

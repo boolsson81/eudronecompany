@@ -7,6 +7,7 @@ import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { getSolutionBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
+import { siteUrl } from "@/lib/site";
 
 export default function CommercialDroneSolution() {
   const { slug, solutionSlug } = useParams<{ slug: string; solutionSlug: string }>();
@@ -187,7 +188,7 @@ export default function CommercialDroneSolution() {
           droneNames={industry.recommendedDrones.map(d => d.name)}
           heading={`Tillbehör för ${solution.title.toLowerCase()}`}
         />
-        <RelatedPages pageUrl={`https://actionking.se/kommersiella-dronare/${industry.slug}/${solution.slug}`} heading="Relaterade sidor" />
+        <RelatedPages pageUrl={siteUrl(`/kommersiella-dronare/${industry.slug}/${solution.slug}`)} heading="Relaterade sidor" />
 
         {/* CTA */}
         <section id="solution-cta" className="py-16 md:py-24">

@@ -8,6 +8,7 @@ import EnterpriseNav from "@/components/EnterpriseNav";
 import DroneCameraComparison from "@/components/DroneCameraComparison";
 import type { FaqItem } from "@/data/commercialDroneIndustries";
 import { Camera, ArrowRight } from "lucide-react";
+import { siteUrl } from "@/lib/site";
 
 const PAGE_FAQ: FaqItem[] = [
   {
@@ -49,11 +50,11 @@ export default function DroneCameraComparisonPage() {
       <SeoHead
         title="Jämför drönarkameror — Zenmuse H30, H20T, P1 & L2 | EU Drone Company"
         description="Jämför professionella drönarkameror och Zenmuse-sensorer sida vid sida. Se specifikationer för termisk kamera, zoom, LiDAR och fotogrammetri — hitta rätt payload för ditt uppdrag."
-        canonical="https://actionking.se/kommersiella-dronare/jamfor-kameror"
+        canonical={siteUrl("/kommersiella-dronare/jamfor-kameror")}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Jämför kameror", url: "https://actionking.se/kommersiella-dronare/jamfor-kameror" },
+          { name: "Hem", url: siteUrl("/") },
+          { name: "Kommersiella drönare", url: siteUrl("/kommersiella-dronare") },
+          { name: "Jämför kameror", url: siteUrl("/kommersiella-dronare/jamfor-kameror") },
         ]}
         jsonLd={[faqJsonLdData]}
       />

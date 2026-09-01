@@ -12,6 +12,7 @@ import {
   getRelatedCameras,
   CAMERA_CATEGORIES,
 } from "@/data/enterpriseCameraProducts";
+import { siteUrl } from "@/lib/site";
 
 export default function CommercialDroneCamera() {
   const { cameraSlug } = useParams<{ cameraSlug: string }>();
@@ -39,12 +40,12 @@ export default function CommercialDroneCamera() {
       <SeoHead
         title={camera.seoTitle}
         description={camera.seoDesc}
-        canonical={`https://actionking.se/kommersiella-dronare/kameror/${camera.slug}`}
+        canonical={siteUrl(`/kommersiella-dronare/kameror/${camera.slug}`)}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Kameror & sensorer", url: "https://actionking.se/kommersiella-dronare/kameror" },
-          { name: camera.name, url: `https://actionking.se/kommersiella-dronare/kameror/${camera.slug}` },
+          { name: "Hem", url: siteUrl("/") },
+          { name: "Kommersiella drönare", url: siteUrl("/kommersiella-dronare") },
+          { name: "Kameror & sensorer", url: siteUrl("/kommersiella-dronare/kameror") },
+          { name: camera.name, url: siteUrl(`/kommersiella-dronare/kameror/${camera.slug}`) },
         ]}
         jsonLd={faqJsonLdData || undefined}
       />

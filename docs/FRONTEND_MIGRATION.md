@@ -31,16 +31,38 @@ finns på den värden: kör man cutovern med apexen som mål blir alla 45 URL:er
 
 Frontenden i det här repot är inte deployad någonstans. Innan checklistan kan köras behöver
 en egen värd väljas — en subdomän (t.ex. `dronare.eudronecompany.com`) är det enda som
-fungerar utan att röra butiken. När den är vald står domänen på två ställen och båda måste
-peka åt samma håll:
+fungerar utan att röra butiken. När den är vald ska den sättas på tre ställen:
 
-- `vercel.json` → `redirects[].destination` (301:orna från `app.digitalsignal.io`)
+- `VITE_SITE_ORIGIN` i det här projektets Vercel-inställningar (se nedan)
+- `vercel.json` i digitalsignal → `redirects[].destination` (301:orna från
+  `app.digitalsignal.io`)
 - Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt (fallback i
   koden är `https://eudronecompany.com`, alltså butiken — variabeln måste sättas explicit
   när frontenden hamnar på en subdomän)
 
 `EDP_DOMAIN` i `src/lib/edp-hreflang.ts` och `supabase/functions/_shared/edp-launch/config.ts`
 är butikens domän och ska stå kvar som `eudronecompany.com` oavsett vad frontenden får.
+
+### `VITE_SITE_ORIGIN` — canonical-URL:erna
+
+Efter flytten hit hade nio av tio drönarsidor `https://actionking.se` hårdkodat som
+canonical, och samma domän i brödsmulor, JSON-LD och `RelatedPages`. Deployade som de var
+hade varje sida sagt åt Google att originalet ligger kvar hos ActionKing — 301:orna hade
+inte hjälpt, för sidorna hade pekat bort från sig själva.
+
+Origin läses numera ur `VITE_SITE_ORIGIN` via [`src/lib/site.ts`](../src/lib/site.ts).
+Ingen default: `npm run build` avbryts om variabeln saknas (kontrollen ligger i
+`vite.config.ts`), medan `npm run dev` faller tillbaka på sidans egen origin.
+`BRAND_ORIGIN` i samma modul är butiken, `https://eudronecompany.com`, och används där
+JSON-LD ska peka på bolaget — `Organization`, `publisher`, `provider`.
+
+De ~65 produktlänkarna till `actionking.se` är orörda; de är en separat fråga, se nedan.
+
+**Att göra samtidigt som domänen sätts:** `RelatedPages` slår upp den aktuella sidan i
+Supabase-tabellen `pages` på exakt URL. Raderna där innehåller fortfarande
+`actionking.se`-URL:er, så avsnittet "Relaterade sidor" kommer tyst att sluta renderas
+(komponenten returnerar utan träff — inget fel kastas). Uppdatera `pages.url` till den nya
+origin i samma sväng.
 
 ### Vercel-projektet `european-drone-company`
 
@@ -56,10 +78,12 @@ Prosan är omskriven från ActionKing till EU Drone Company 2026-08-23 — 145 f
 24 filer: rubriker, FAQ-svar, SEO-titlar, JSON-LD-organisationsnamn, footer och
 GDPR-samtycket i kontaktformuläret.
 
-**Kvar: 63 unika länkar till `actionking.se`.** De ligger i `src/data/droneAccessories.ts`
-(57 tillbehör) och pekar på ActionKings produktsidor. `DroneAccessories`-komponenten
-renderar dem med etiketten "Se på ActionKing.se", vilket betyder att sidan säger
-EU Drone Company i rubrikerna men skickar köparen till ActionKing.
+**Kvar: 51 unika länkar till `actionking.se`**, fördelade på
+`src/data/droneAccessories.ts` (46), `src/data/enterpriseCameraProducts.ts` (11),
+`src/data/droneCameras.ts` (6) och butikslänken i `src/components/DroneAccessories.tsx`.
+De pekar på ActionKings produkt- och söksidor, och komponenten renderar dem med etiketten
+"Se på ActionKing.se" — sidan säger alltså EU Drone Company i rubrikerna men skickar
+köparen till ActionKing.
 
 Länkarna är **inte** omskrivna, och det är avsiktligt: handles i EU Drone Company-butiken
 är engelska efter migreringen, ActionKing-URL:erna är svenska, och ingen av
@@ -122,8 +146,10 @@ efter cutover:
 
 ## Checklista vid cutover
 
-0. Välj värd för frontenden (subdomän — apexen är Shopifys, se ovan).
-1. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200.
+0. Välj värd för frontenden (subdomän — apexen är Shopifys, se ovan) och sätt
+   `VITE_SITE_ORIGIN` i Vercel-projektet.
+1. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200, och att
+   deras canonical pekar på samma domän.
 2. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
 3. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.
 4. Verifiera 301 på ett par sökvägar.

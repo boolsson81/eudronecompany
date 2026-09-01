@@ -9,6 +9,7 @@ import {
   CAMERA_CATEGORIES,
   type CameraCategory,
 } from "@/data/enterpriseCameraProducts";
+import { siteUrl } from "@/lib/site";
 
 const CATEGORY_ORDER: CameraCategory[] = ["hybrid", "thermal", "lidar", "photogrammetry", "utility"];
 
@@ -18,11 +19,11 @@ export default function CommercialDroneCameras() {
       <SeoHead
         title="Enterprise-kameror & sensorer — Zenmuse | EU Drone Company"
         description="Utforska DJI Zenmuse enterprise-kameror och sensorer. H30T, H20T, L2 LiDAR, P1 fotogrammetri och specialpayloads för Matrice-serien."
-        canonical="https://actionking.se/kommersiella-dronare/kameror"
+        canonical={siteUrl("/kommersiella-dronare/kameror")}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Kameror & sensorer", url: "https://actionking.se/kommersiella-dronare/kameror" },
+          { name: "Hem", url: siteUrl("/") },
+          { name: "Kommersiella drönare", url: siteUrl("/kommersiella-dronare") },
+          { name: "Kameror & sensorer", url: siteUrl("/kommersiella-dronare/kameror") },
         ]}
       />
 

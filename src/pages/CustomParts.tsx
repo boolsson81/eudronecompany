@@ -22,8 +22,9 @@ import {
   Upload,
   Wrench,
 } from "lucide-react";
+import { BRAND_ORIGIN, siteUrl } from "@/lib/site";
 
-const CANONICAL = "https://actionking.se/kommersiella-dronare/specialtillverkning";
+const CANONICAL = siteUrl("/kommersiella-dronare/specialtillverkning");
 
 /** De två anledningarna kunder hör av sig: delen finns inte längre, eller den finns inte alls. */
 const USE_CASES = [
@@ -193,7 +194,7 @@ export default function CustomParts() {
     provider: {
       "@type": "Organization",
       name: "EU Drone Company",
-      url: "https://eudronecompany.com",
+      url: BRAND_ORIGIN,
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -212,8 +213,8 @@ export default function CustomParts() {
         description="Vi tillverkar drönardelar som inte längre går att få tag på och konstruerar egna delar från din skiss eller CAD-fil. 3D-utskrift, CNC, komposit och serieproduktion."
         canonical={CANONICAL}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
+          { name: "Hem", url: siteUrl("/") },
+          { name: "Kommersiella drönare", url: siteUrl("/kommersiella-dronare") },
           { name: "Specialtillverkning", url: CANONICAL },
         ]}
         jsonLd={[jsonLd, faqJsonLd(FAQ_ITEMS)]}
@@ -453,7 +454,7 @@ export default function CustomParts() {
                     Begär offert <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
                 </Link>
-                <a href="mailto:Sales@actionking.se?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
+                <a href="mailto:info@eudronecompany.com?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
                   <Button
                     size="lg"
                     variant="outline"

@@ -185,8 +185,13 @@ Shopify (`A 23.227.38.65` respektive `CNAME shops.myshopify.com`), så drönarsi
 sökvägar finns inte där — frontenden behöver en egen subdomän. Se
 [`FRONTEND_MIGRATION.md`](FRONTEND_MIGRATION.md) § Måldomän.
 
-**Kvar:** sidorna är ActionKing-brandade (`EnterpriseNav` renderar "ActionKing Enterprise",
-FAQ-texterna nämner ActionKing). Innehållet flyttades oförändrat och behöver skrivas om.
+**Klart sedan dess:** varumärkestexten är omskriven — `EnterpriseNav` renderar
+"EU Drone Company Enterprise" och FAQ-texterna nämner inte längre ActionKing. Kvar av
+namnet är butikslänkarna i `DroneAccessories` ("Se på ActionKing.se"), som är avsiktliga
+tills tillbehören har en handle-mappning mot EU Drone Company-katalogen.
+
+Canonical-URL:erna pekade däremot på `actionking.se` ända fram till 2026-09-01 och läses nu
+ur `VITE_SITE_ORIGIN` — se [`FRONTEND_MIGRATION.md`](FRONTEND_MIGRATION.md) § Måldomän.
 
 `AdminDroneRegulations` flyttade med 2026-08-23 tillsammans med `droneRegulations.ts`.
 Sidan var en rent läsande vy över statisk regelverksdata plus länkar till

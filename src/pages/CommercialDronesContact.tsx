@@ -13,6 +13,7 @@ import EnterpriseNav from "@/components/EnterpriseNav";
 import {
   CheckCircle2, Loader2, Radio, ArrowRight, Phone, Mail,
 } from "lucide-react";
+import { siteUrl } from "@/lib/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -84,12 +85,12 @@ export default function CommercialDronesContact() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Kontakta EU Drone Company Enterprise",
-    url: "https://actionking.se/kommersiella-dronare/kontakt",
+    url: siteUrl("/kommersiella-dronare/kontakt"),
     mainEntity: {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
       telephone: "+46101025591",
-      email: "Sales@actionking.se",
+      email: "info@eudronecompany.com",
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+46101025591",
@@ -104,7 +105,7 @@ export default function CommercialDronesContact() {
       <SeoHead
         title="Kontakta oss — EU Drone Company Enterprise | Kommersiella drönare"
         description="Kontakta EU Drone Company Enterprise för offert, demo eller rådgivning om kommersiella drönare. Vi återkommer inom 24 timmar."
-        canonical="https://actionking.se/kommersiella-dronare/kontakt"
+        canonical={siteUrl("/kommersiella-dronare/kontakt")}
         jsonLd={jsonLd}
       />
 
@@ -135,9 +136,9 @@ export default function CommercialDronesContact() {
                     <Phone className="h-5 w-5 text-orange-500" />
                     <span>010-102 55 91</span>
                   </a>
-                  <a href="mailto:Sales@actionking.se" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+                  <a href="mailto:info@eudronecompany.com" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                     <Mail className="h-5 w-5 text-orange-500" />
-                    <span>Sales@actionking.se</span>
+                    <span>info@eudronecompany.com</span>
                   </a>
                 </div>
               </motion.div>
