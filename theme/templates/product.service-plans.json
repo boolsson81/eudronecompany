@@ -11,7 +11,8 @@
           }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -21,14 +22,14 @@
           }
         },
         "compatibility": {
-          "type": "text",
+          "type": "custom_liquid",
           "settings": {
-            "text": "Passar till: {{ product.metafields.custom.passsar_till.value }}",
-            "text_style": "uppercase"
+            "custom_liquid": "{%- assign compat_models = product.metafields.dji.compatible_models_display.value -%}{%- if compat_models != blank -%}<p class=\"product__text caption-with-letter-spacing product__compatibility\">{{ 'products.product.compatibility_label' | t }}{%- for model in compat_models -%} {{ model | escape }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}</p>{%- endif -%}"
           }
         },
         "price": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -37,7 +38,8 @@
           }
         },
         "quantity_selector": {
-          "type": "quantity_selector"
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -47,12 +49,13 @@
           }
         },
         "description": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Kompatibla modeller",
+            "heading": "Det här täcker planen",
             "icon": "check_mark",
             "content": "",
             "page": ""
@@ -61,8 +64,8 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Tekniska specifikationer",
-            "icon": "ruler",
+            "heading": "Det här täcker den inte",
+            "icon": "question_mark",
             "content": "",
             "page": ""
           }
@@ -70,8 +73,8 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Leverans, garanti & service",
-            "icon": "truck",
+            "heading": "Aktivering & registrering",
+            "icon": "stopwatch",
             "content": "",
             "page": ""
           }
@@ -79,8 +82,17 @@
         "collapsible-row-3": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dokumentation & nedladdningar",
+            "heading": "Så gör du vid skada",
             "icon": "clipboard",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Villkor & giltighetstid",
+            "icon": "price_tag",
             "content": "",
             "page": ""
           }
@@ -106,17 +118,18 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
+        "collapsible-row-4",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "color_scheme": "scheme-edp",
         "media_size": "large",
         "constrain_to_viewport": true,
+        "gallery_layout": "stacked",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 12
       }
@@ -127,8 +140,8 @@
         "column-0": {
           "type": "column",
           "settings": {
-            "title": "Officiell DJI-återförsäljare",
-            "text": "<p>Auktoriserad distributör med originaldelar och fullt tillverkargaranti.</p>",
+            "title": "Officiella DJI-planer",
+            "text": "<p>DJI Care Refresh och Maintenance-planer köpta via auktoriserad återförsäljare.</p>",
             "link_label": "",
             "link": ""
           }
@@ -136,36 +149,40 @@
         "column-1": {
           "type": "column",
           "settings": {
-            "title": "Fakturaköp för företag",
-            "text": "<p>Handla mot faktura med företagskonto, eller begär en offert för större volymer.</p>",
-            "link_label": "Begär offert",
-            "link": "/pages/contact-quote"
+            "title": "Aktivera i tid",
+            "text": "<p>Planen måste kopplas till drönarens serienummer inom aktiveringsfönstret för att gälla.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column-2": {
           "type": "column",
           "settings": {
-            "title": "Service & support",
-            "text": "<p>Vårt enterprise-team hjälper dig välja rätt tillbehör till din flotta.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Vi hjälper till med registreringen",
+            "text": "<p>Får du inte aktiveringen att fungera? Vår support löser det åt dig.</p>",
+            "link_label": "Support",
+            "link": "/pages/support"
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
         "color_scheme": "scheme-edp",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 12
       }
@@ -173,29 +190,23 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "Andra tillbehör till din flotta",
+        "heading": "Fler service- och garantiplaner",
         "heading_size": "h2",
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-edp",
         "image_ratio": "square",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "enterprise-quote": {
-      "type": "enterprise-quote-form",
-      "settings": {
-        "title": "Osäker på vilket tillbehör som passar din flotta?",
-        "intro": "Beskriv ditt behov så återkommer vårt enterprise-team med rekommendation och offert inom 24 timmar.",
-        "color_scheme": "scheme-edp",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
-  "order": ["main", "trust-badges", "related-products", "enterprise-quote"]
+  "order": [
+    "main",
+    "trust-badges",
+    "related-products"
+  ]
 }

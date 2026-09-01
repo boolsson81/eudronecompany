@@ -1941,7 +1941,7 @@
       }
     },
     "enterprise-payloads": {
-      "name": "Enterprise sensor platforms",
+      "name": "Enterprise payloads",
       "settings": {
         "heading": {
           "label": "Heading"
@@ -1997,7 +1997,7 @@
         }
       },
       "presets": {
-        "name": "Enterprise sensor platforms"
+        "name": "Enterprise payloads"
       }
     },
     "enterprise-quote-form": {
@@ -2021,7 +2021,7 @@
       }
     },
     "enterprise-industry-landing": {
-      "name": "Enterprise industry landing",
+      "name": "Enterprise industry",
       "settings": {
         "show_breadcrumb": {
           "label": "Show breadcrumb"
@@ -2073,7 +2073,7 @@
         }
       },
       "presets": {
-        "name": "Enterprise industry landing"
+        "name": "Enterprise industry"
       }
     },
     "edp-header": {

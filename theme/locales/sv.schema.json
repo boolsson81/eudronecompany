@@ -1490,7 +1490,7 @@
       }
     },
     "enterprise-matrice-models": {
-      "name": "Enterprise Matrice-modeller",
+      "name": "Enterprise Matrice",
       "settings": {
         "heading": {
           "label": "Rubrik"
@@ -1634,7 +1634,7 @@
       }
     },
     "enterprise-payloads": {
-      "name": "Enterprise sensorplattformar",
+      "name": "Enterprise nyttolaster",
       "settings": {
         "heading": {
           "label": "Rubrik"
@@ -1647,6 +1647,30 @@
         "payload": {
           "name": "Nyttolastkort",
           "settings": {
+            "display_style": {
+              "label": "Layout",
+              "options__1": {
+                "label": "Kompakt (ikon + text)"
+              },
+              "options__2": {
+                "label": "Utvald (hjältebild)"
+              }
+            },
+            "series_icon": {
+              "label": "Ikon",
+              "options__1": {
+                "label": "Kamera"
+              },
+              "options__2": {
+                "label": "LiDAR"
+              },
+              "options__3": {
+                "label": "Fotogrammetri"
+              },
+              "options__4": {
+                "label": "Verktyg"
+              }
+            },
             "image": {
               "label": "Bild"
             },
@@ -1666,7 +1690,7 @@
         }
       },
       "presets": {
-        "name": "Enterprise sensorplattformar"
+        "name": "Enterprise nyttolaster"
       }
     },
     "enterprise-contact": {
@@ -1716,7 +1740,7 @@
       }
     },
     "enterprise-industry-landing": {
-      "name": "Enterprise branschlandning",
+      "name": "Enterprise bransch",
       "settings": {
         "show_breadcrumb": {
           "label": "Visa brödsmulor"
@@ -1768,7 +1792,7 @@
         }
       },
       "presets": {
-        "name": "Enterprise branschlandning"
+        "name": "Enterprise bransch"
       }
     },
     "edp-header": {

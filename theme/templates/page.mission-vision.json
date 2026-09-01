@@ -135,9 +135,9 @@
         "buttons": {
           "type": "button",
           "settings": {
-            "button_label_1": "Kontakta oss",
-            "button_link_1": "/pages/contact",
-            "button_style_secondary_1": false,
+            "button_label": "Kontakta oss",
+            "button_link": "/pages/contact-us",
+            "button_style_secondary": false,
             "button_label_2": "Om oss",
             "button_link_2": "/pages/about",
             "button_style_secondary_2": true

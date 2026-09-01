@@ -3,7 +3,6 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
-        "color_scheme": "scheme-1",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 36
@@ -12,7 +11,7 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "settings": {
-        "color_scheme": "scheme-1"
+        "color_scheme": "scheme-edp"
       },
       "blocks": {
         "subtotal": {
@@ -29,10 +28,7 @@
       "block_order": [
         "subtotal",
         "buttons"
-      ],
-      "settings": {
-        "color_scheme": "scheme-edp"
-      }
+      ]
     },
     "featured-collection": {
       "type": "featured-collection",
