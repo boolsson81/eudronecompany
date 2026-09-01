@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ExternalLink, Check } from "lucide-react";
+import { ArrowRight, ExternalLink, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import zenmuseH30TImg from "@/assets/dji-zenmuse-h30t.png";
 import zenmuseH30Img from "@/assets/dji-zenmuse-h30.png";
@@ -11,6 +12,7 @@ import {
   COMPARISON_PRESETS,
   COMPARISON_SPEC_LABELS,
   DRONE_CAMERAS,
+  getCameraDetailPath,
   getCamerasByIds,
   getSpecValue,
 } from "@/data/droneCameras";
@@ -212,17 +214,27 @@ export default function DroneCameraComparison({
                           </div>
                         )}
                         <div className="font-semibold text-white">{camera.name}</div>
-                        {camera.shopUrl && (
-                          <a
-                            href={camera.shopUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 text-xs text-orange-400 hover:text-orange-300"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            Se produkt <ExternalLink className="h-3 w-3" />
-                          </a>
-                        )}
+                        <div className="flex flex-col gap-1">
+                          {getCameraDetailPath(camera) && (
+                            <Link
+                              to={getCameraDetailPath(camera)!}
+                              className="inline-flex items-center gap-1 text-xs text-orange-400 hover:text-orange-300"
+                            >
+                              Läs mer <ArrowRight className="h-3 w-3" />
+                            </Link>
+                          )}
+                          {camera.shopUrl && (
+                            <a
+                              href={camera.shopUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1 text-xs text-white/50 hover:text-white/80"
+                              onClick={(e) => e.stopPropagation()}
+                            >
+                              Se produkt <ExternalLink className="h-3 w-3" />
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </th>
                   ))}
@@ -270,22 +282,31 @@ export default function DroneCameraComparison({
         </p>
       )}
 
-      {!compact && selectedCameras.some((c) => c.shopUrl) && (
+      {!compact && selectedCameras.some((c) => getCameraDetailPath(c) || c.shopUrl) && (
         <div className="flex flex-wrap gap-3 justify-center">
           {selectedCameras
-            .filter((c) => c.shopUrl)
-            .map((camera) => (
-              <Button
-                key={camera.id}
-                asChild
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/5"
-              >
-                <a href={camera.shopUrl} target="_blank" rel="noopener noreferrer">
-                  {camera.name} <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
-                </a>
-              </Button>
-            ))}
+            .filter((c) => getCameraDetailPath(c) || c.shopUrl)
+            .map((camera) => {
+              const detailPath = getCameraDetailPath(camera);
+              return (
+                <Button
+                  key={camera.id}
+                  asChild
+                  variant="outline"
+                  className="border-white/20 text-white hover:bg-white/5"
+                >
+                  {detailPath ? (
+                    <Link to={detailPath}>
+                      {camera.name} <ArrowRight className="h-3.5 w-3.5 ml-1.5" />
+                    </Link>
+                  ) : (
+                    <a href={camera.shopUrl} target="_blank" rel="noopener noreferrer">
+                      {camera.name} <ExternalLink className="h-3.5 w-3.5 ml-1.5" />
+                    </a>
+                  )}
+                </Button>
+              );
+            })}
         </div>
       )}
     </div>
