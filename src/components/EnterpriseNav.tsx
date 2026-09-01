@@ -64,6 +64,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       href: "/kommersiella-dronare#accessories",
     },
     {
+      key: "custom-parts",
+      label: "Specialtillverkning",
+      href: "/kommersiella-dronare/specialtillverkning",
+    },
+    {
       key: "faq",
       label: "Vanliga frågor",
       href: "/kommersiella-dronare#faq",
