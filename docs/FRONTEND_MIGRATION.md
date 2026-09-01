@@ -15,14 +15,40 @@
 
 Sökvägarna är oförändrade i den nya appen, så omdirigeringarna behöver bara byta domän.
 
-## Måldomän
+## Måldomän — inte bekräftad, och apexen är upptagen
 
-`https://eudronecompany.com` — bolaget och domänen heter numera EU Drone Company, inte
-EuroDroneParts. Domänen står på två ställen och båda måste peka åt samma håll:
+Bolaget och domänen heter numera EU Drone Company, inte EuroDroneParts. Men
+`eudronecompany.com` kan **inte** vara måldomän för 301:orna, för apexen är Shopifys:
+
+| Namn | Post | Pekar på |
+|---|---|---|
+| `eudronecompany.com` | `A 23.227.38.65` | Shopify |
+| `www.eudronecompany.com` | `CNAME shops.myshopify.com` | Shopify |
+
+Det är rätt DNS för butiken (en domän, marknader via `/se`, `/de`, `/dk` — se
+[`SEPARATION.md`](SEPARATION.md) §9). Konsekvensen är att `/kommersiella-dronare/*` inte
+finns på den värden: kör man cutovern med apexen som mål blir alla 45 URL:erna nedan 404.
+
+Frontenden i det här repot är inte deployad någonstans. Innan checklistan kan köras behöver
+en egen värd väljas — en subdomän (t.ex. `dronare.eudronecompany.com`) är det enda som
+fungerar utan att röra butiken. När den är vald står domänen på två ställen och båda måste
+peka åt samma håll:
 
 - `vercel.json` → `redirects[].destination` (301:orna från `app.digitalsignal.io`)
 - Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt (fallback i
-  koden är samma domän, så variabeln behövs bara om ni testar mot något annat)
+  koden är `https://eudronecompany.com`, alltså butiken — variabeln måste sättas explicit
+  när frontenden hamnar på en subdomän)
+
+`EDP_DOMAIN` i `src/lib/edp-hreflang.ts` och `supabase/functions/_shared/edp-launch/config.ts`
+är butikens domän och ska stå kvar som `eudronecompany.com` oavsett vad frontenden får.
+
+### Vercel-projektet `european-drone-company`
+
+Tomt: noll deployments, ingen Git-koppling, `live: false`. Apex och `www` låg tillagda som
+domäner där, vilket gav Vercels återkommande "misconfigured domains"-varningar — DNS pekar
+ju på Shopify, inte på projektet. Domänerna ska tas bort från projektet (Project → Settings
+→ Domains → Remove), eller projektet raderas. Ingen trafik påverkas; butiken har aldrig
+gått via Vercel.
 
 ## Varumärket: omskrivet, men shoplänkarna kvarstår
 
@@ -96,6 +122,7 @@ efter cutover:
 
 ## Checklista vid cutover
 
+0. Välj värd för frontenden (subdomän — apexen är Shopifys, se ovan).
 1. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200.
 2. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
 3. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.

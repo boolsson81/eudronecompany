@@ -180,8 +180,10 @@ eudronecompany fick en egen Vite/React-frontend. Detaljer och cutover-checklista
 `scripts/generate-sitemap.ts` (45 URL:er försvann ur sitemapen), 301-omdirigeringar i
 `vercel.json`, och ActionKing-värdarna skickas vidare via `VITE_EUDRONECOMPANY_URL`.
 
-Måldomänen är `https://eudronecompany.com` — bolaget och domänen heter numera EU Drone
-Company, inte EuroDroneParts.
+Måldomänen för 301:orna är **inte** bestämd. `eudronecompany.com` och `www` pekar på
+Shopify (`A 23.227.38.65` respektive `CNAME shops.myshopify.com`), så drönarsidornas
+sökvägar finns inte där — frontenden behöver en egen subdomän. Se
+[`FRONTEND_MIGRATION.md`](FRONTEND_MIGRATION.md) § Måldomän.
 
 **Kvar:** sidorna är ActionKing-brandade (`EnterpriseNav` renderar "ActionKing Enterprise",
 FAQ-texterna nämner ActionKing). Innehållet flyttades oförändrat och behöver skrivas om.
