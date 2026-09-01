@@ -50,7 +50,6 @@
         "benefit_3": { "type": "benefit", "settings": { "text": "Dokumentation med termisk och visuell data i hög upplösning" } },
         "benefit_4": { "type": "benefit", "settings": { "text": "AI-assisterad analys och automatiserad rapportgenerering" } }
       },
-      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
       "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "solution_5", "solution_6", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
       "settings": {
         "show_breadcrumb": true,

@@ -335,7 +335,10 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-    <script src="{{ 'edp-header.js' | asset_url }}"></script>
+    {%- comment -%}
+      Sätter --header-height direkt efter headern så att innehållet inte hoppar.
+      edp-header.js laddas defer längre ned och tar över lyssnarna därifrån.
+    {%- endcomment -%}
     <script>
       (function () {
         if (typeof Shopify !== 'undefined' && Shopify.designMode) return;
