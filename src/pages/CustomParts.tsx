@@ -6,6 +6,7 @@ import EnterpriseNav from "@/components/EnterpriseNav";
 import FaqSection, { faqJsonLd, type FaqItem } from "@/components/FaqSection";
 import {
   ArrowRight,
+  Mail,
   Boxes,
   CheckCircle2,
   Clock,
@@ -443,14 +444,25 @@ export default function CustomParts() {
             <section className="rounded-3xl border border-orange-500/20 bg-gradient-to-br from-orange-500/10 to-transparent p-8 md:p-14 text-center">
               <h2 className="text-2xl md:text-4xl font-bold mb-4">Skicka in delen — så återkommer vi med pris</h2>
               <p className="text-white/50 max-w-2xl mx-auto mb-8 leading-relaxed">
-                Beskriv delen och bifoga foton eller CAD-fil i formuläret. Du får besked om vi kan tillverka den,
-                med förslag på material och ledtid, inom 1–3 arbetsdagar.
+                Beskriv delen i formuläret, eller mejla foton och CAD-filer direkt till oss. Du får besked om vi
+                kan tillverka den, med förslag på material och ledtid, inom 1–3 arbetsdagar.
               </p>
-              <Link to="/kommersiella-dronare/kontakt">
-                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-10">
-                  Begär offert <ArrowRight className="h-4 w-4 ml-2" />
-                </Button>
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Link to="/kommersiella-dronare/kontakt">
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-10 w-full sm:w-auto">
+                    Begär offert <ArrowRight className="h-4 w-4 ml-2" />
+                  </Button>
+                </Link>
+                <a href="mailto:Sales@actionking.se?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="bg-transparent border-white/15 text-white hover:bg-white/5 hover:text-white text-base px-8 w-full sm:w-auto"
+                  >
+                    <Mail className="h-4 w-4 mr-2" /> Mejla underlaget
+                  </Button>
+                </a>
+              </div>
             </section>
           </div>
         </div>
