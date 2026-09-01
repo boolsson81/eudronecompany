@@ -187,22 +187,23 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     name: "Zenmuse H20N",
     tag: "Nattseende quad-sensor",
     category: "thermal",
-    heroTitle: "Zenmuse H20N — Quad-sensor med starlight för nattoperationer",
-    heroDesc: "Starlight-sensorer i både vidvinkel och zoom, radiometrisk termisk kamera och laser-avståndsmätare — byggd för uppdrag efter mörkrets inbrott.",
+    heroTitle: "Zenmuse H20N — Quad-sensor för nattoperationer",
+    heroDesc: "Starlight-sensorer i både vidvinkel och zoom, två radiometriska termiska kameror och laser-avståndsmätare — byggd för uppdrag efter mörkrets inbrott.",
     longDesc:
-      "Zenmuse H20N är H20-seriens nattvariant. Där H20T använder vanliga sensorer har H20N starlight-sensorer i både vidvinkel- och zoomkameran, vilket ger användbar bild i ljusförhållanden där de andra payloadsen bara ger brus. Tillsammans med den radiometriska termiska kameran och laser-avståndsmätaren täcker den både detektering och identifiering i mörker.",
+      "Zenmuse H20N är H20-seriens nattvariant. Där H20T använder vanliga sensorer har H20N starlight-sensorer i både vidvinkel- och zoomkameran, vilket ger användbar bild i ljusförhållanden där de andra payloadsen bara ger brus. Till det kommer två radiometriska termiska kameror med var sin fasta optik — 2× för överblick och 8× för detalj — som tillsammans ger upp till 32× termisk zoom, plus laser-avståndsmätare. Payloaden täcker därmed både detektering och identifiering i mörker.",
     features: [
-      "Starlight-sensorer i vidvinkel och zoom",
-      "20× optisk zoom (upp till 128× hybrid)",
-      "Termisk kamera 640×512, radiometrisk",
+      "Starlight-sensorer i vidvinkel (2 MP) och zoom (4 MP)",
+      "20× hybrid optisk zoom, upp till 128× digital",
+      "Dubbla termiska kameror 640×512 (2× och 8×), radiometriska",
       "Laser-avståndsmätare 3–1200 m",
       "Samma gimbal-fäste som övriga H20-payloads",
     ],
     specs: [
-      { label: "Zoom", value: "20× optisk, upp till 128× hybrid" },
-      { label: "Termisk", value: "640×512 @ 30 Hz, radiometrisk" },
-      { label: "Starlight", value: "4 MP vidvinkel + 4 MP zoom" },
+      { label: "Zoom", value: "20× hybrid optisk, upp till 128× digital" },
+      { label: "Termisk", value: "Dubbla 640×512 (2× och 8×), radiometriska" },
+      { label: "Starlight", value: "2 MP vidvinkel + 4 MP zoom" },
       { label: "LRF", value: "3–1200 m" },
+      { label: "Skydd", value: "IP44" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -216,7 +217,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     faq: [
       {
         question: "H20N eller H20T — vad skiljer dem åt?",
-        answer: "Båda har termisk kamera på 640×512 och laser-avståndsmätare. Skillnaden ligger i de visuella sensorerna: H20N har starlight-sensorer som ser i nästan mörker men bara 4 MP, medan H20T har 20 MP zoom och 12 MP vidvinkel för skarpare bilder i dagsljus. Väljer du efter uppdrag: H20N för nattarbete, H20T för dygnet-runt-inspektion.",
+        answer: "Båda har laser-avståndsmätare och termisk upplösning 640×512, men H20N har två termiska kameror med olika optik (2× och 8×) medan H20T har en. Den större skillnaden ligger i de visuella sensorerna: H20N har starlight-sensorer som ser i nästan mörker, men bara 2 MP vidvinkel och 4 MP zoom, medan H20T har 20 MP zoom och 12 MP vidvinkel för skarpare bilder i dagsljus. Väljer du efter uppdrag: H20N för nattarbete, H20T för dygnet-runt-inspektion.",
       },
       {
         question: "Behöver jag extra belysning tillsammans med H20N?",
@@ -224,7 +225,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       },
       {
         question: "Vilken zoom klarar H20N?",
-        answer: "20× optisk zoom och upp till 128× hybrid. Det är lägre än H20T:s 23× och H30-seriens 40×, en följd av att sensorerna är optimerade för ljuskänslighet snarare än upplösning.",
+        answer: "20× hybrid optisk zoom och upp till 128× digital. Det är lägre än H20T:s 23× och H30-seriens 40×, en följd av att sensorerna är optimerade för ljuskänslighet snarare än upplösning.",
       },
     ],
     seoTitle: "Zenmuse H20N — Nattseende-payload för drönare | EU Drone Company",
@@ -286,19 +287,19 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     heroTitle: "Zenmuse L2 — LiDAR för högprecisionskartläggning",
     heroDesc: "Integrerad LiDAR-sensor med RGB-kamera. Generera punktmoln med upp till 5 returer och 250 m räckvidd — perfekt för GIS och infrastruktur.",
     longDesc:
-      "Zenmuse L2 kombinerar en LiDAR-sensor med integrerad RGB-kamera och IMU för att skapa högdensitetspunktmoln. Med upp till 5 returer och 250 m räckvidd kan du kartlägga genom vegetation och i skuggade områden med vertikal noggrannhet ner till 5 cm.",
+      "Zenmuse L2 kombinerar en LiDAR-sensor med integrerad RGB-kamera och IMU för att skapa högdensitetspunktmoln. Med upp till 5 returer och 250 m räckvidd vid 10 % reflektans kan du kartlägga genom vegetation och i skuggade områden med 4 cm vertikal och 5 cm horisontell noggrannhet vid 150 m flyghöjd.",
     features: [
       "LiDAR med upp till 5 returer",
-      "250 m mäträckvidd",
+      "250 m mäträckvidd vid 10 % reflektans",
       "Integrerad RGB-kamera",
-      "Vertikal noggrannhet ner till 5 cm",
+      "4 cm vertikal och 5 cm horisontell noggrannhet @ 150 m",
       "Kompatibel med DJI Terra och Pix4D",
     ],
     specs: [
       { label: "Returer", value: "Upp till 5" },
-      { label: "Räckvidd", value: "250 m @ 10% reflektans" },
-      { label: "Noggrannhet", value: "5 cm vertikal (med RTK)" },
-      { label: "Punktfrekvens", value: "Upp till 240 000 pts/s" },
+      { label: "Räckvidd", value: "450 m @ 50 % reflektans, 250 m @ 10 %" },
+      { label: "Noggrannhet", value: "4 cm vertikalt, 5 cm horisontellt @ 150 m" },
+      { label: "Punktfrekvens", value: "240 000 pts/s (en retur), 1 200 000 pts/s (flera)" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -314,7 +315,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     faq: [
       {
         question: "Behöver jag RTK för Zenmuse L2?",
-        answer: "RTK rekommenderas starkt för att uppnå centimeterprecision. Med RTK-positionering uppnås 1–3 cm horisontellt och vertikal noggrannhet ner till 5 cm.",
+        answer: "RTK rekommenderas starkt för att uppnå centimeterprecision. Med RTK-positionering anger DJI 4 cm vertikal och 5 cm horisontell noggrannhet vid 150 m flyghöjd.",
       },
       {
         question: "Vilken mjukvara fungerar med L2-data?",
@@ -382,13 +383,13 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       "LiDAR med upp till 3 returer",
       "20 MP RGB-kamera på 1\" CMOS för färgsättning av punktmoln",
       "Inbyggd IMU för positionering",
-      "Upp till 240 000 punkter per sekund",
+      "240 000 punkter/s med en retur, 480 000 med flera",
       "Arbetsflöde via DJI Terra",
     ],
     specs: [
       { label: "Returer", value: "Upp till 3" },
-      { label: "Räckvidd", value: "450 m @ 80 % reflektans (190 m @ 10 %)" },
-      { label: "Punktfrekvens", value: "Upp till 240 000 pts/s" },
+      { label: "Räckvidd", value: "450 m @ 80 % reflektans, 190 m @ 10 %" },
+      { label: "Punktfrekvens", value: "240 000 pts/s (en retur), 480 000 pts/s (flera)" },
       { label: "RGB-kamera", value: "20 MP, 1\" CMOS" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
@@ -425,19 +426,21 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     heroTitle: "Zenmuse L3 — LiDAR för storskalig kartläggning",
     heroDesc: "L-seriens största steg hittills: kraftigt utökad räckvidd, upp till 16 returer och dubbla 100 MP-kameror för storskalig kartläggning från hög höjd.",
     longDesc:
-      "Zenmuse L3 är L-seriens nya toppmodell och flyger på Matrice 400 RTK. Med upp till 16 returer och 950 m mäträckvidd kan du kartlägga från betydligt högre höjd än med L2, vilket ger färre flyglinjer och kortare tid i luften per kvadratkilometer. De dubbla 100 MP-kamerorna färgsätter punktmolnet och ger samtidigt ortofoto av hög upplösning.",
+      "Zenmuse L3 är L-seriens nya toppmodell och flyger på Matrice 400 RTK. Med upp till 16 returer och 950 m mäträckvidd vid 10 % reflektans kan du kartlägga från betydligt högre höjd än med L2, vilket ger färre flyglinjer och kortare tid i luften per kvadratkilometer. Pulsfrekvensen är justerbar mellan 100 kHz och 2 MHz, så du kan växla mellan lång räckvidd och hög punkttäthet. De dubbla 100 MP-kamerorna färgsätter punktmolnet och ger samtidigt ortofoto av hög upplösning.",
     features: [
       "Upp till 16 returer",
-      "950 m mäträckvidd",
+      "950 m mäträckvidd vid 10 % reflektans och 100 kHz",
       "Dubbla 100 MP-kameror på 4/3\" CMOS",
-      "Färre flyglinjer per kvadratkilometer",
+      "Vertikal noggrannhet under 3 cm vid 120 m flyghöjd",
       "Byggd för Matrice 400 RTK",
     ],
     specs: [
       { label: "Returer", value: "Upp till 16" },
-      { label: "Räckvidd", value: "950 m" },
-      { label: "Pulsfrekvens", value: "2 MHz" },
+      { label: "Räckvidd", value: "950 m @ 10 % reflektans (100 kHz)" },
+      { label: "Pulsfrekvens", value: "100 kHz–2 MHz, justerbar" },
+      { label: "Noggrannhet", value: "<3 cm @ 120 m, <5 cm @ 300 m, <10 cm @ 500 m" },
       { label: "RGB-kameror", value: "2× 100 MP, 4/3\" CMOS" },
+      { label: "Vikt", value: "ca 1,6 kg" },
       { label: "Kompatibilitet", value: "Matrice 400 RTK" },
     ],
     applications: [
@@ -456,7 +459,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       },
       {
         question: "Vad vinner jag på 950 m räckvidd?",
-        answer: "Du kan flyga högre och bredare, vilket ger färre flyglinjer per kvadratkilometer och kortare tid i luften. På stora korridor- och områdesuppdrag är det där skillnaden mot L2 syns i kalkylen.",
+        answer: "Du kan flyga högre och bredare, vilket ger färre flyglinjer per kvadratkilometer och kortare tid i luften. Räckvidden gäller vid 10 % reflektans och 100 kHz pulsfrekvens — höjer du punkttätheten kortas den. På stora korridor- och områdesuppdrag är det där skillnaden mot L2 syns i kalkylen.",
       },
       {
         question: "När kan jag få L3 levererad?",
