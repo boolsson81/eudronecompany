@@ -20,6 +20,8 @@ export interface DroneCamera {
   shopUrl?: string;
   /** EU Drone Company collection or product link */
   edpUrl?: string;
+  /** Slug in ENTERPRISE_CAMERA_PRODUCTS, when the payload has a detail page */
+  detailSlug?: string;
   specs: DroneCameraSpec[];
 }
 
@@ -50,6 +52,7 @@ export const COMPARISON_SPEC_LABELS = [
 export const DRONE_CAMERAS: DroneCamera[] = [
   {
     id: "zenmuse-h30t",
+    detailSlug: "zenmuse-h30t",
     name: "Zenmuse H30T",
     shortDesc: "DJI:s mest avancerade hybridpayload med termisk sensor, 40× zoom och laser-avståndsmätare.",
     category: "thermal",
@@ -72,6 +75,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-h30",
+    detailSlug: "zenmuse-h30",
     name: "Zenmuse H30",
     shortDesc: "Avancerad hybridpayload med 40× optisk zoom och laser-avståndsmätare — utan termisk sensor.",
     category: "inspection",
@@ -94,6 +98,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-h20t",
+    detailSlug: "zenmuse-h20t",
     name: "Zenmuse H20T",
     shortDesc: "Etablerad quad-sensor med termisk kamera, 23× zoom och laser-avståndsmätare.",
     category: "thermal",
@@ -115,6 +120,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-h20n",
+    detailSlug: "zenmuse-h20n",
     name: "Zenmuse H20N",
     shortDesc: "Nattseende-hybrid med starlight-sensor, termisk kamera och zoom — optimerad för mörker.",
     category: "thermal",
@@ -136,6 +142,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-p1",
+    detailSlug: "zenmuse-p1",
     name: "Zenmuse P1",
     shortDesc: "45 MP fullformats fotogrammetrikamera med mekanisk slutare och utbytbara objektiv.",
     category: "mapping",
@@ -158,6 +165,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-l2",
+    detailSlug: "zenmuse-l2",
     name: "Zenmuse L2",
     shortDesc: "Integrerad LiDAR-sensor med RGB-kamera för högprecisionskartläggning och punktmoln.",
     category: "mapping",
@@ -180,12 +188,13 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-h20",
+    detailSlug: "zenmuse-h20",
     name: "Zenmuse H20",
-    shortDesc: "Quad-sensor med vidvinkel, zoom och laser-avståndsmätare — utan termisk sensor.",
+    shortDesc: "Triple-sensor med vidvinkel, zoom och laser-avståndsmätare — utan termisk sensor.",
     category: "inspection",
     edpUrl: "/collections/enterprise-sensors",
     specs: [
-      { label: "Typ", value: "Quad-sensor (vidvinkel + zoom + LRF)" },
+      { label: "Typ", value: "Triple-sensor (vidvinkel + zoom + LRF)" },
       { label: "Användningsområde", value: "Visuell inspektion, kartläggning" },
       { label: "Vidvinkelssensor", value: "1/2,3\" CMOS, 12 MP" },
       { label: "Zoomsensor", value: "1/1,7\" CMOS, 20 MP" },
@@ -200,6 +209,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-l1",
+    detailSlug: "zenmuse-l1",
     name: "Zenmuse L1",
     shortDesc: "DJI:s första integrerade LiDAR-payload med RGB-kamera för luftburen kartläggning.",
     category: "mapping",
@@ -212,7 +222,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
       { label: "Optisk zoom", value: "—" },
       { label: "Termisk sensor", value: "—" },
       { label: "Laser-avståndsmätare", value: "—" },
-      { label: "LiDAR", value: "1 retur, 240 m räckvidd, 240 000 pts/s" },
+      { label: "LiDAR", value: "Upp till 3 returer, 450 m räckvidd, 240 000 pts/s" },
       { label: "Max upplösning", value: "20 MP (RGB-foto)" },
       { label: "Vikt", value: "ca 930 g" },
       { label: "Kompatibla plattformar", value: "Matrice 300/350 RTK" },
@@ -220,6 +230,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
   },
   {
     id: "zenmuse-l3",
+    detailSlug: "zenmuse-l3",
     name: "Zenmuse L3",
     shortDesc: "Nästa generations LiDAR med 950 m räckvidd, 16 returer och dubbla 100 MP-kameror.",
     category: "mapping",
@@ -351,4 +362,9 @@ export function getCamerasByIds(ids: string[]): DroneCamera[] {
 
 export function getSpecValue(camera: DroneCamera, label: string): string {
   return camera.specs.find((s) => s.label === label)?.value ?? "—";
+}
+
+/** Internal path to the payload's detail page, when one exists. */
+export function getCameraDetailPath(camera: DroneCamera): string | undefined {
+  return camera.detailSlug ? `/kommersiella-dronare/kameror/${camera.detailSlug}` : undefined;
 }
