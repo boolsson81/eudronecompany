@@ -23,6 +23,7 @@ const DroneRegulations = lazy(() => import("./pages/DroneRegulations"));
 const DroneRegulationCategory = lazy(() => import("./pages/DroneRegulationCategory"));
 const DroneTrainingRequirement = lazy(() => import("./pages/DroneTrainingRequirement"));
 const DroneConfiguration = lazy(() => import("./pages/DroneConfiguration"));
+const CustomParts = lazy(() => import("./pages/CustomParts"));
 
 // Driftsvyer
 const ShopifyCloner = lazy(() => import("./pages/ShopifyCloner"));
@@ -53,6 +54,7 @@ export default function App() {
             <Route path="/kommersiella-dronare/jamforelser" element={<DroneComparisons />} />
             <Route path="/kommersiella-dronare/jamforelser/:comparisonSlug" element={<DroneComparisonArticle />} />
             <Route path="/kommersiella-dronare/jamfor-kameror" element={<DroneCameraComparison />} />
+            <Route path="/kommersiella-dronare/specialtillverkning" element={<CustomParts />} />
             <Route path="/kommersiella-dronare/regelverk" element={<DroneRegulations />} />
             <Route path="/kommersiella-dronare/regelverk/:categorySlug" element={<DroneRegulationCategory />} />
             <Route path="/kommersiella-dronare/utbildning/:trainingSlug" element={<DroneTrainingRequirement />} />

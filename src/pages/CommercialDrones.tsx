@@ -10,7 +10,7 @@ import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import type { FaqItem } from "@/data/commercialDroneIndustries";
 import {
-  Cpu, Shield, CheckCircle2, Radio, ArrowRight, Scale
+  Cpu, Shield, CheckCircle2, Radio, ArrowRight, Scale, Wrench
 } from "lucide-react";
 import { INDUSTRY_DATA } from "@/data/commercialDroneIndustries";
 
@@ -333,6 +333,51 @@ export default function CommercialDrones() {
                 </div>
               </motion.div>
             </div>
+          </div>
+        </section>
+
+        {/* Specialtillverkning */}
+        <section className="py-20 md:py-28">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="rounded-3xl border border-white/10 bg-white/[0.02] p-8 md:p-12 grid md:grid-cols-2 gap-10 items-center"
+            >
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-medium mb-5">
+                  <Wrench className="h-3.5 w-3.5" />
+                  Specialtillverkning
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Delen finns inte att köpa? Vi tillverkar den.
+                </h2>
+                <p className="text-white/60 leading-relaxed mb-6">
+                  Utgången reservdel, avvecklad modell eller en egen konstruktion som ingen
+                  tillverkare gjort ännu — vi mäter upp, ritar och tillverkar delen i 3D-utskrift,
+                  CNC eller komposit.
+                </p>
+                <Link to="/kommersiella-dronare/specialtillverkning">
+                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0">
+                    Läs om specialtillverkning <ArrowRight className="h-4 w-4 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+              <div className="space-y-4">
+                {[
+                  "Reservdelar som tillverkaren slutat sälja",
+                  "Egen design från skiss eller CAD-fil",
+                  "Prototyp innan serieproduktion",
+                  "Enstaka delar lika väl som serier",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-white/70">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </section>
 
