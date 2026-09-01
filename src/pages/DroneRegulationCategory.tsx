@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, CheckCircle2, AlertTriangle, Cpu } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
+import RegulationSourceNote from "@/components/RegulationSourceNote";
 import { getCategoryBySlug, DRONE_CATEGORIES } from "@/data/droneRegulations";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
 
@@ -75,7 +76,7 @@ export default function DroneRegulationCategory() {
                 { label: "Åldersgräns", value: category.pilotAge },
                 { label: "Registrering", value: category.requiresRegistration ? "Ja — hos Transportstyrelsen" : "Nej" },
                 { label: "Försäkring", value: category.requiresInsurance ? "Ja — ansvarsförsäkring krävs" : "Nej" },
-                { label: "Prov", value: category.examRequired ? "Ja — teori- och/eller praktiskt prov" : "Nej" },
+                { label: "Prov", value: category.examRequired ? "Ja — teoriprov" : "Nej" },
               ].map((item, i) => (
                 <motion.div
                   key={item.label}
@@ -187,6 +188,8 @@ export default function DroneRegulationCategory() {
             </Link>
           </div>
         </section>
+
+        <RegulationSourceNote />
       </div>
     </>
   );

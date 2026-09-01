@@ -208,7 +208,7 @@ export default function AdminDroneRegulations() {
                 <tr>
                   <td className="py-3 px-2"><Badge variant="outline" className="bg-amber-500/10 text-amber-700">STS</Badge></td>
                   <td className="py-3 px-2">Teoretisk kurs + praktisk utbildning</td>
-                  <td className="py-3 px-2">Teori + praktiskt prov hos godkänd enhet</td>
+                  <td className="py-3 px-2">Teoriprov hos godkänd enhet + praktik som piloten intygar</td>
                   <td className="py-3 px-2">5 år</td>
                 </tr>
                 <tr>
