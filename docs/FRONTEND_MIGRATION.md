@@ -58,6 +58,14 @@ JSON-LD ska peka på bolaget — `Organization`, `publisher`, `provider`.
 
 De ~65 produktlänkarna till `actionking.se` är orörda; de är en separat fråga, se nedan.
 
+`src/lib/hreflang.ts` är borttagen i samma veva. Den var DigitalSignals SV/EN-karta
+(`/kundcase`, `/moduler`, `/blogg` …) och `SeoHead` föll tillbaka på den när en sida inte
+skickade egna alternates — alltså på alla sidor. Av appens rutter matchade exakt en, `/`,
+vilket gjorde att startsidan emitterade `<link rel="alternate">` mot
+`https://app.digitalsignal.io` — just den domän 301:orna ska leda bort ifrån. `SeoHead`
+sätter numera hreflang bara när en sida uttryckligen skickar dem, och den här appen har
+ingen SV/EN-uppdelning som behöver det.
+
 **Att göra samtidigt som domänen sätts:** `RelatedPages` slår upp den aktuella sidan i
 Supabase-tabellen `pages` på exakt URL. Raderna där innehåller fortfarande
 `actionking.se`-URL:er, så avsnittet "Relaterade sidor" kommer tyst att sluta renderas

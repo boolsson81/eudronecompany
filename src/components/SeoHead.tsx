@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { getHreflangAlternates } from "@/lib/hreflang";
 
 interface BreadcrumbItem {
   name: string;
@@ -116,16 +115,14 @@ export default function SeoHead({ title, description, canonical, ogImage, ogType
       ensureMeta("property", "og:url", resolvedCanonical);
     }
 
-    // Hreflang links — explicit prop wins; otherwise auto-derive from current path.
+    // Hreflang links. Sätts bara när en sida uttryckligen skickar dem — den
+    // här appen har ingen SV/EN-uppdelning. Tidigare härleddes de ur en karta
+    // (`src/lib/hreflang.ts`) som var DigitalSignals: enda rutten som matchade
+    // var "/", och den emitterade alternates mot app.digitalsignal.io — domänen
+    // startsidan ska 301:as bort ifrån. Kartan är borttagen.
     const hreflangLinks: HTMLLinkElement[] = [];
-    const resolvedHreflang =
-      hreflang && hreflang.length > 0
-        ? hreflang
-        : (typeof window !== "undefined"
-            ? getHreflangAlternates(window.location.pathname)
-            : null) ?? [];
-    if (resolvedHreflang && resolvedHreflang.length > 0) {
-      resolvedHreflang.forEach(({ lang, href }) => {
+    if (hreflang && hreflang.length > 0) {
+      hreflang.forEach(({ lang, href }) => {
         const link = document.createElement("link");
         link.rel = "alternate";
         link.hreflang = lang;

@@ -10,7 +10,14 @@ interface RelatedPage {
 }
 
 interface RelatedPagesProps {
-  /** The full public URL of the current page, e.g. "https://app.digitalsignal.io/boka-demo" */
+  /**
+   * Sidans fullständiga publika URL. Bygg den med `siteUrl()` från
+   * `@/lib/site` — t.ex. `siteUrl("/kommersiella-dronare")`.
+   *
+   * Slår upp raden i `pages` på exakt URL, så origin måste matcha det som står
+   * i tabellen. Gör den inte det renderas avsnittet tyst inte alls. Se
+   * `docs/FRONTEND_MIGRATION.md` § Måldomän.
+   */
   pageUrl: string;
   /** Optional heading override */
   heading?: string;
