@@ -77,14 +77,14 @@ export const INDUSTRY_DATA: IndustryData[] = [
       {
         name: "DJI Matrice 350 RTK",
         tag: "Bäst för inspektion",
-        desc: "Kraftfull plattform med stöd för termisk, zoom och multispektralkamera. IP45-skydd.",
-        features: ["55 min flygtid", "IP45 väderskydd", "RTK-precision", "Multi-sensor"],
+        desc: "Kraftfull plattform med stöd för termisk, zoom och multispektralkamera. IP55-skydd.",
+        features: ["55 min flygtid", "IP55 väderskydd", "RTK-precision", "Multi-sensor"],
       },
       {
         name: "DJI Mavic 3 Enterprise",
         tag: "Kompakt inspektion",
-        desc: "Termisk + visuell kamera i ett portabelt format. Perfekt för snabba inspektioner.",
-        features: ["45 min flygtid", "Termisk kamera", "RTK-modul", "56× zoom"],
+        desc: "4/3-sensor med mekanisk slutare i ett portabelt format. Perfekt för snabba inspektioner; 3T-varianten har termisk kamera.",
+        features: ["45 min flygtid", "4/3 CMOS, mekanisk slutare", "RTK-modul", "56× hybridzoom"],
       },
     ],
     benefits: [
@@ -97,7 +97,7 @@ export const INDUSTRY_DATA: IndustryData[] = [
       { question: "Hur snabbt kan en drönarinspektion genomföras?", answer: "En typisk takinspektion tar 15–30 minuter jämfört med en hel dag med byggnadsställning. Stora anläggningar som vindparker kan inspekteras på timmar istället för veckor." },
       { question: "Behöver jag flygtillstånd för inspektion med drönare?", answer: "I de flesta fall krävs registrering hos Transportstyrelsen och en drönaroperatör med rätt behörighet. EU Drone Company hjälper dig med alla tillstånd och kan utföra flygningen åt dig." },
       { question: "Vilken upplösning får jag på inspektionsbilderna?", answer: "Med DJI Matrice 350 RTK och 200× zoom kan du se detaljer ner till millimeternivå. Termisk kamera detekterar temperaturskillnader på 0,1°C." },
-      { question: "Kan drönare inspektera i dåligt väder?", answer: "DJI Matrice 350 RTK har IP45-skydd och klarar lätt regn och vind upp till 12 m/s. Vid kraftig storm rekommenderar vi att vänta." },
+      { question: "Kan drönare inspektera i dåligt väder?", answer: "DJI Matrice 350 RTK har IP55-skydd och klarar lätt regn och vind upp till 12 m/s. Vid kraftig storm rekommenderar vi att vänta." },
     ],
   },
   {
@@ -111,20 +111,20 @@ export const INDUSTRY_DATA: IndustryData[] = [
       { slug: "precisionsspruta", title: "Precisionsspruta", desc: "Automatiserad sprutning med centimeterprecision. Reducera kemikalieanvändning med upp till 30%.", longDesc: "Sprutdrönare som DJI Agras T50 möjliggör precisionsbekämpning med centimeterprecision. Terrängföljning och AI-styrda sprutmönster reducerar kemikalieanvändning med upp till 30% jämfört med konventionella metoder.", seoTitle: "Precisionsspruta med Drönare — Minska Kemikalier | EU Drone Company", seoDesc: "Automatiserad precisionsspruta med drönare. Reducera kemikalieanvändning upp till 30%. Kontakta EU Drone Company för lantbruksdrönare.", useCases: ["Växtskydd i spannmål och oljeväxter", "Precisionsbekämpning av ogräs", "Behandling av svårtillgängliga fält", "Storskalig odling med minskad miljöpåverkan"], keyFeatures: ["40L spruttank med terrängföljning", "AI-styrd sprutoptimering", "Centimeterprecision med RTK", "Täck upp till 20 hektar per timme"] },
       { slug: "faltkartlaggning", title: "Fältkartläggning", desc: "Skapa NDVI-kartor och ortomosaiker för att identifiera problemområden tidigt.", longDesc: "Multispektrala drönare skapar NDVI-kartor och ortomosaiker som avslöjar variationer i grödors hälsa. Identifiera stresszoner, näringsbrister och bevattningsproblem innan de syns med blotta ögat.", seoTitle: "Fältkartläggning med Drönare — NDVI & Ortomosaik | EU Drone Company", seoDesc: "Kartlägg fält med multispektral drönare. NDVI-kartor och ortomosaiker för precisionsodling. Begär offert från EU Drone Company.", useCases: ["Säsongsövervakning av grödor", "Bevattningsoptimering", "Jordbruksplanering och zonindelning", "Dokumentation för EU-stöd och miljöcertifiering"], keyFeatures: ["Multispektral sensor (NDVI, NDRE)", "RTK-precision för exakta kartor", "Automatisk ortomosaikgenerering", "Integration med Farm Management-system"] },
       { slug: "vaxtanalys", title: "Växtanalys", desc: "Multispektralkameror avslöjar stress, sjukdomar och näringsbrist innan de syns med blotta ögat.", longDesc: "Med multispektral drönardata kan du identifiera växtsjukdomar, skadedjursangrepp och näringsbrister veckor innan problemen blir synliga. Detta möjliggör riktade åtgärder och sparar både resurser och skörd.", seoTitle: "Växtanalys med Drönare — Tidig Detektion | EU Drone Company", seoDesc: "Upptäck sjukdomar och näringsbrist tidigt med multispektral drönaranalys. Skydda din skörd med EU Drone Company.", useCases: ["Tidig sjukdomsdetektion i potatis och sockerbetor", "Skadedjursövervakning i fruktodlingar", "Näringsanalys för variabel giva", "Kvalitetsuppföljning under växtsäsongen"], keyFeatures: ["Multispektral bildanalys", "AI-driven anomalidetektering", "Historisk jämförelse över säsonger", "Exporterbara rapporter till agronomer"] },
-      { slug: "godslingsspridning", title: "Gödslingsspridning", desc: "Granulat- och frögödselspridning med hög precision och jämn fördelning.", longDesc: "Spridningsdrönare kan sprida granulat, utsäde och gödsel med hög precision och jämn fördelning. Idealiskt för svårtillgängliga fält, blöta marker eller situationer där tunga maskiner skadar jorden.", seoTitle: "Gödslingsspridning med Drönare — Precisionsgödsling | EU Drone Company", seoDesc: "Sprid gödsel och utsäde med drönare. Hög precision utan markpackning. Kontakta EU Drone Company för offert.", useCases: ["Gödsling av blöta eller lutande fält", "Utsädesspridning i svårtillgängliga områden", "Kompletterande gödsling under växtsäsongen", "Kalkspridning och pH-korrigering"], keyFeatures: ["50 kg nyttolast per flygning", "Variabel spridning baserat på kartor", "Ingen markpackning", "GPS-styrda spridningsmönster"] },
+      { slug: "godslingsspridning", title: "Gödslingsspridning", desc: "Granulat- och frögödselspridning med hög precision och jämn fördelning.", longDesc: "Spridningsdrönare kan sprida granulat, utsäde och gödsel med hög precision och jämn fördelning. Idealiskt för svårtillgängliga fält, blöta marker eller situationer där tunga maskiner skadar jorden.", seoTitle: "Gödslingsspridning med Drönare — Precisionsgödsling | EU Drone Company", seoDesc: "Sprid gödsel och utsäde med drönare. Hög precision utan markpackning. Kontakta EU Drone Company för offert.", useCases: ["Gödsling av blöta eller lutande fält", "Utsädesspridning i svårtillgängliga områden", "Kompletterande gödsling under växtsäsongen", "Kalkspridning och pH-korrigering"], keyFeatures: ["50 kg spridarlast per flygning", "Variabel spridning baserat på kartor", "Ingen markpackning", "GPS-styrda spridningsmönster"] },
     ],
     recommendedDrones: [
       {
         name: "DJI Agras T50",
         tag: "Lantbruk & Sprutning",
         desc: "Automatiserad precisionsspruta med 40 liter tank och terrängföljning.",
-        features: ["40L spruttank", "Terrängföljning", "AI-sprutning", "50 kg nyttolast"],
+        features: ["40 L spruttank", "Terrängföljning", "AI-sprutning", "50 kg spridarlast"],
       },
       {
         name: "DJI Mavic 3 Multispectral",
         tag: "Fältkartläggning",
         desc: "Multispektralkamera för NDVI-analys och vegetationsövervakning.",
-        features: ["45 min flygtid", "Multispektral sensor", "RTK-precision", "Autonom flygning"],
+        features: ["43 min flygtid", "Multispektral sensor", "RTK-precision", "Autonom flygning"],
       },
     ],
     benefits: [
@@ -198,13 +198,13 @@ export const INDUSTRY_DATA: IndustryData[] = [
         name: "DJI Matrice 350 RTK",
         tag: "Professionell bevakning",
         desc: "Lång flygtid, termisk kamera och zoom för krävande uppdrag.",
-        features: ["55 min flygtid", "IP45 väderskydd", "Termisk + zoom", "Realtidsvideo"],
+        features: ["55 min flygtid", "IP55 väderskydd", "Termisk + zoom", "Realtidsvideo"],
       },
       {
         name: "DJI Mavic 3 Enterprise",
         tag: "Snabb insats",
         desc: "Kompakt och snabbt redo — perfekt för snabba utryckningar och patrullering.",
-        features: ["45 min flygtid", "Termisk kamera", "Speakers", "Spotlight"],
+        features: ["45 min flygtid", "Termisk kamera (3T)", "Högtalare", "Spotlight"],
       },
     ],
     benefits: [
@@ -238,13 +238,13 @@ export const INDUSTRY_DATA: IndustryData[] = [
         name: "DJI Matrice 350 RTK",
         tag: "Kraftverksinspektion",
         desc: "Den mest använda drönaren i energisektorn med stöd för alla sensortyper.",
-        features: ["55 min flygtid", "IP45 väderskydd", "RTK-precision", "Multi-sensor"],
+        features: ["55 min flygtid", "IP55 väderskydd", "RTK-precision", "Multi-sensor"],
       },
       {
         name: "DJI Mavic 3 Enterprise",
         tag: "Snabbinspektion",
         desc: "Snabb och enkel inspektion av enskilda master och anläggningar.",
-        features: ["45 min flygtid", "Termisk kamera", "200× zoom", "RTK-modul"],
+        features: ["45 min flygtid", "Termisk kamera (3T)", "56× hybridzoom", "RTK-modul"],
       },
     ],
     benefits: [

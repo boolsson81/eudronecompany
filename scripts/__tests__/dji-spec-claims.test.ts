@@ -57,6 +57,18 @@ const FORBIDDEN: { pattern: RegExp; why: string }[] = [
     pattern: /Quad-sensor \(vidvinkel \+ zoom \+ LRF\)/,
     why: "Zenmuse H20 är DJI:s triple-sensor; H20T är quad-sensorn.",
   },
+  {
+    pattern: /IP45/,
+    why: "Matrice 350 RTK är IP55. IP45 är föregångaren Matrice 300 RTK.",
+  },
+  {
+    pattern: /"Termisk kamera",/,
+    why: "Mavic 3 Enterprise (3E) saknar termisk kamera — den sitter på 3T. Skriv 'Termisk kamera (3T)'.",
+  },
+  {
+    pattern: /50 kg nyttolast/,
+    why: "Agras T50 tar 40 kg i sprutläge; 50 kg är spridarlasten.",
+  },
 ];
 
 describe("DJI-specpåståenden", () => {

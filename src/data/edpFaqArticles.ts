@@ -300,7 +300,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "När räcker Mavic 3 Enterprise?",
         answer:
-          "Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Integrerad termisk kamera ingår.",
+          "Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Termisk kamera ingår på 3T-varianten.",
       },
       {
         question: "När behöver jag Matrice 350 RTK?",
@@ -450,7 +450,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken drönare passar bäst för energiinspektion?",
         answer:
-          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera.",
+          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3T med termisk kamera.",
       },
       {
         question: "Hur ofta bör energiinfrastruktur inspekteras med drönare?",

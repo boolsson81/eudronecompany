@@ -96,8 +96,8 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
         name: "DJI Mavic 3 Enterprise",
         tag: "Snabb inspektion",
         description:
-          "Kompakt drönare med termisk kamera för snabba inspektioner av enskilda master, transformatorer och mindre anläggningar.",
-        features: ["45 min flygtid", "Termisk kamera", "RTK-modul", "Portabel"],
+          "Kompakt drönare för snabba inspektioner av enskilda master, transformatorer och mindre anläggningar. Termisk kamera på 3T-varianten.",
+        features: ["45 min flygtid", "Termisk kamera (3T)", "RTK-modul", "Portabel"],
         collectionUrl: "/collections/dji-mavic-enterprise-series",
       },
     ],
@@ -117,7 +117,7 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
       {
         question: "Vilken drönare passar bäst för energiinspektion?",
         answer:
-          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera.",
+          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3T med termisk kamera.",
       },
       {
         question: "Hur ofta bör energiinfrastruktur inspekteras med drönare?",
@@ -306,8 +306,8 @@ export const EDP_INDUSTRY_PAGES: EdpIndustryPage[] = [
         name: "DJI Mavic 3 Enterprise",
         tag: "Snabb utryckning",
         description:
-          "Kompakt och portabel — flygklar på under 60 sekunder. Termisk kamera, spotlight och högtalare i ett paket.",
-        features: ["45 min flygtid", "Termisk kamera", "Spotlight", "Högtalare"],
+          "Kompakt och portabel — flygklar på under 60 sekunder. Spotlight och högtalare som tillbehör, termisk kamera på 3T-varianten.",
+        features: ["45 min flygtid", "Termisk kamera (3T)", "Spotlight", "Högtalare"],
         collectionUrl: "/collections/dji-mavic-enterprise-series",
       },
       {
