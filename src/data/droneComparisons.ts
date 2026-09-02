@@ -51,8 +51,8 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
     specs: [
       { label: "Flygtid", droneA: "upp till 45 min", droneB: "upp till 55 min" },
       { label: "Max vindtålighet", droneA: "12 m/s", droneB: "12 m/s" },
-      { label: "Väderskydd", droneA: "Inget IP-klassat", droneB: "IP45" },
-      { label: "Vikt (startvikt)", droneA: "ca 915 g", droneB: "ca 3 770 g" },
+      { label: "Väderskydd", droneA: "Inget IP-klassat", droneB: "IP55" },
+      { label: "Vikt (startvikt)", droneA: "ca 915 g", droneB: "ca 6,47 kg (med två TB65)" },
       { label: "Kamera", droneA: "Bred + zoom + termisk (M3T)", droneB: "Utbytbar payload (H20T, H30T m.fl.)" },
       { label: "Zoom", droneA: "56× hybridzoom", droneB: "Upp till 200× (beroende på payload)" },
       { label: "RTK-positionering", droneA: "Valfri RTK-modul", droneB: "Inbyggd RTK" },

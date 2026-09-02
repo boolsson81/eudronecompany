@@ -97,7 +97,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken Zenmuse-kamera passar bäst för inspektion?",
         answer:
-          "För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 40× optisk zoom och förbättrad bildkvalitet jämfört med H20T.",
+          "För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 34× optisk zoom och förbättrad bildkvalitet jämfört med H20T.",
       },
       {
         question: "Vad är skillnaden mellan H30 och H30T?",
@@ -136,14 +136,14 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
     title: "Vanliga frågor om Zenmuse H30 & H30T",
     eyebrow: "Zenmuse H30",
     excerpt:
-      "Frågor om DJI:s senaste inspektionspayload — 40× zoom, termisk sensor, laser-avståndsmätare och kompatibilitet med Matrice.",
+      "Frågor om DJI:s senaste inspektionspayload — 34× zoom, termisk sensor, laser-avståndsmätare och kompatibilitet med Matrice.",
     metaTitle: "FAQ — Zenmuse H30 & H30T | EU Drone Company",
     metaDescription:
       "Svar på frågor om Zenmuse H30 och H30T: termisk sensor, zoom, vikt, uppgradering från H20T och Matrice-kompatibilitet.",
     tags: ["faq", "zenmuse", "h30", "inspektion"],
     category: "kameror",
     introParagraphs: [
-      "Zenmuse H30-serien är DJI:s senaste generation av hybridpayloads med 40× optisk zoom och förbättrad laser-avståndsmätare.",
+      "Zenmuse H30-serien är DJI:s senaste generation av hybridpayloads med 34× optisk zoom och förbättrad laser-avståndsmätare.",
       "H30T lägger till en radiometrisk termisk sensor med 1280×1024 upplösning — ett stort steg framåt jämfört med H20T.",
     ],
     faq: [
@@ -208,7 +208,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "När ska jag välja H20T istället för H30T?",
         answer:
-          "H20T är ett kostnadseffektivt val om dina inspektionsuppdrag inte kräver 40× zoom, högre termisk upplösning eller längre laser-räckvidd. Många energibolag använder fortfarande H20T framgångsrikt.",
+          "H20T är ett kostnadseffektivt val om dina inspektionsuppdrag inte kräver 34× zoom, högre termisk upplösning eller längre laser-räckvidd. Många energibolag använder fortfarande H20T framgångsrikt.",
       },
       {
         question: "Vad är H20N:s starlight-sensor?",
@@ -300,7 +300,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "När räcker Mavic 3 Enterprise?",
         answer:
-          "Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Integrerad termisk kamera ingår.",
+          "Mavic 3 Enterprise passar snabba inspektioner, mindre kartläggningsområden och räddningsinsatser där portabilitet och snabb utryckning (< 60 sekunder) är viktigast. Termisk kamera ingår på 3T-varianten.",
       },
       {
         question: "När behöver jag Matrice 350 RTK?",
@@ -364,7 +364,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken payload passar energiinspektion?",
         answer:
-          "Zenmuse H30T är branschledande med 1280×1024 termisk sensor och 40× zoom. H20T är ett kostnadseffektivt alternativ för enklare inspektioner. Mavic 3T passar snabba kontroller.",
+          "Zenmuse H30T är branschledande med 1280×1024 termisk sensor och 34× zoom. H20T är ett kostnadseffektivt alternativ för enklare inspektioner. Mavic 3T passar snabba kontroller.",
       },
       {
         question: "Kan termisk kamera hitta dolda fel i transformatorer?",
@@ -397,7 +397,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vad är skillnaden på optisk och digital zoom?",
         answer:
-          "Optisk zoom använder linsrörelse och behåller bildkvalitet. Digital (hybrid) zoom beskär och förstorar — kvaliteten minskar. H30-serien erbjuder 40× optisk och upp till 200× hybrid.",
+          "Optisk zoom använder linsrörelse och behåller bildkvalitet. Digital (hybrid) zoom beskär och förstorar — kvaliteten minskar. H30-serien erbjuder 34× optisk och upp till 400× digital.",
       },
       {
         question: "Vad används laser-avståndsmätaren till?",
@@ -405,14 +405,14 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
           "LRF (Laser Range Finder) mäter exakt avstånd till ett objekt. Vid kraftledningsinspektion identifierar den vilken ledning eller isolator som avses, och koordinater kan dokumenteras i rapporten.",
       },
       {
-        question: "Hur nära behöver jag flyga vid 40× zoom?",
+        question: "Hur nära behöver jag flyga vid 34× zoom?",
         answer:
-          "Med 40× optisk zoom kan du inspektera detaljer på kraftledningar och master på säkert avstånd — ofta 50–100 meter — utan att exponera drönaren för elektromagnetiska fält eller fallrisk.",
+          "Med 34× optisk zoom kan du inspektera detaljer på kraftledningar och master på säkert avstånd — ofta 50–100 meter — utan att exponera drönaren för elektromagnetiska fält eller fallrisk.",
       },
       {
         question: "Vilken kamera har bäst zoom för inspektion?",
         answer:
-          "Zenmuse H30 och H30T erbjuder 40× optisk zoom — marknadsledande bland DJI-payloads. H20T erbjuder 23× optisk zoom, vilket fortfarande räcker för många uppdrag.",
+          "Zenmuse H30 och H30T erbjuder 34× optisk zoom — marknadsledande bland DJI-payloads. H20T erbjuder 23× optisk zoom, vilket fortfarande räcker för många uppdrag.",
       },
       {
         question: "Kan jag inspektera vindkraftverk med zoomkamera?",
@@ -450,7 +450,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken drönare passar bäst för energiinspektion?",
         answer:
-          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3 Enterprise med termisk kamera.",
+          "DJI Matrice 350 RTK med Zenmuse H30T är branschstandard för kraftledningar och transformatorer. För snabbare inspektioner av enskilda objekt räcker DJI Mavic 3T med termisk kamera.",
       },
       {
         question: "Hur ofta bör energiinfrastruktur inspekteras med drönare?",

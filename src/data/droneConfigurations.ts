@@ -43,7 +43,7 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
         drone: "DJI Mavic 3 Enterprise",
         description: "Kompakt och snabbt redo — perfekt för enklare inspektioner av tak och fasader.",
         components: [
-          "DJI Mavic 3 Enterprise (termisk + visuell kamera)",
+          "DJI Mavic 3T (termisk + visuell kamera)",
           "DJI RC Pro Enterprise-kontroll",
           "3 × Intelligent Flight Battery",
           "Laddhubb för 3 batterier",
@@ -59,7 +59,7 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
         description: "Industriell plattform med termisk zoom och RTK-precision för krävande inspektionsuppdrag.",
         components: [
           "DJI Matrice 350 RTK",
-          "Zenmuse H20T (termisk + 20MP visuell + LRF + zoom)",
+          "Zenmuse H20T (termisk + 20 MP zoom + 12 MP vidvinkel + LRF)",
           "DJI RC Plus-kontroll",
           "4 × TB65 Intelligent Battery",
           "BS65 laddstation",
@@ -244,7 +244,7 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
         drone: "DJI Mavic 3 Enterprise",
         description: "Snabb deployment med termisk kamera, spotlight och högtalare — flygklar på 60 sekunder.",
         components: [
-          "DJI Mavic 3 Enterprise (termisk)",
+          "DJI Mavic 3T (termisk)",
           "DJI RC Pro Enterprise",
           "DJI Spotlight",
           "DJI Speaker (högtalare)",
@@ -309,7 +309,7 @@ export const INDUSTRY_CONFIGS: IndustryConfig[] = [
         drone: "DJI Mavic 3 Enterprise",
         description: "Portabelt inspektionskit för enstaka master, ställverk och transformatorer.",
         components: [
-          "DJI Mavic 3 Enterprise (termisk)",
+          "DJI Mavic 3T (termisk)",
           "DJI RC Pro Enterprise",
           "3 × Intelligent Flight Battery",
           "Laddhubb",

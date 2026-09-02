@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, CheckCircle2, GraduationCap, AlertTriangle, Cpu } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
+import RegulationSourceNote from "@/components/RegulationSourceNote";
 import { getTrainingBySlug, TRAINING_REQUIREMENTS } from "@/data/droneRegulations";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
 
@@ -208,6 +209,8 @@ export default function DroneTrainingRequirement() {
             </Link>
           </div>
         </section>
+
+        <RegulationSourceNote />
       </div>
     </>
   );

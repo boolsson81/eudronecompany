@@ -13,7 +13,7 @@ const PAGE_FAQ: FaqItem[] = [
   {
     question: "Vilken Zenmuse-kamera passar bäst för inspektion?",
     answer:
-      "För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 40× optisk zoom och förbättrad bildkvalitet jämfört med H20T.",
+      "För de flesta inspektionsuppdrag rekommenderar vi Zenmuse H30T om du behöver termisk sensor, eller Zenmuse H30 om du enbart behöver högupplöst zoom. H30-serien erbjuder 34× optisk zoom och förbättrad bildkvalitet jämfört med H20T.",
   },
   {
     question: "Vad är skillnaden mellan H30 och H30T?",

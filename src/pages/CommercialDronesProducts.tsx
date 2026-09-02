@@ -10,20 +10,20 @@ const PRODUCTS = [
   {
     name: "DJI Matrice 350 RTK",
     tag: "Industriell flaggskepp",
-    desc: "Kraftfull inspektion och kartläggning med upp till 55 min flygtid och IP45-skydd.",
-    features: ["55 min flygtid", "IP45 väderskydd", "RTK-precision", "Multi-sensor"],
+    desc: "Kraftfull inspektion och kartläggning med upp till 55 min flygtid och IP55-skydd.",
+    features: ["55 min flygtid", "IP55 väderskydd", "RTK-precision", "Multi-sensor"],
   },
   {
     name: "DJI Mavic 3 Enterprise",
     tag: "Kompakt & mångsidig",
-    desc: "Mekanisk slutare, termisk kamera och RTK — i ett smidigt format.",
-    features: ["45 min flygtid", "Termisk kamera", "RTK-modul", "4/3 CMOS sensor"],
+    desc: "Mekanisk slutare, 4/3-sensor och RTK — i ett smidigt format. Termisk kamera finns på 3T-varianten.",
+    features: ["45 min flygtid", "4/3 CMOS, mekanisk slutare", "RTK-modul", "Termisk på 3T"],
   },
   {
     name: "DJI Agras T50",
     tag: "Lantbruk & Sprutning",
     desc: "Automatiserad precisionsspruta med 40 liter tank och centimeterprecision.",
-    features: ["40L spruttank", "Terrängföljning", "AI-sprutning", "50 kg nyttolast"],
+    features: ["40L spruttank", "Terrängföljning", "AI-sprutning", "50 kg spridarlast"],
   },
 ];
 

@@ -29,14 +29,14 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     title: "Zenmuse H30T vs H30 — vilken ska du välja?",
     eyebrow: "Inspektion & zoom",
     excerpt:
-      "Jämför Zenmuse H30T och H30 — samma 40× optisk zoom men H30T har termisk sensor. Se vilken payload som passar ditt uppdrag.",
+      "Jämför Zenmuse H30T och H30 — samma 34× optisk zoom men H30T har termisk sensor. Se vilken payload som passar ditt uppdrag.",
     metaTitle: "Zenmuse H30T vs H30 — jämförelse | EU Drone Company",
     metaDescription:
       "Jämför Zenmuse H30T och H30. Skillnader i termisk sensor, vikt och användningsområden. Hitta rätt inspektionskamera för Matrice 350 RTK.",
     tags: ["jämförelse", "zenmuse", "h30", "inspektion"],
     cameraIds: ["zenmuse-h30t", "zenmuse-h30"],
     introParagraphs: [
-      "Zenmuse H30-serien är DJI:s senaste generation av hybridpayloads med 40× optisk zoom och laser-avståndsmätare. Den centrala skillnaden mellan H30T och H30 är termisk sensor — men det påverkar både pris, vikt och användningsområden.",
+      "Zenmuse H30-serien är DJI:s senaste generation av hybridpayloads med 34× optisk zoom och laser-avståndsmätare. Den centrala skillnaden mellan H30T och H30 är termisk sensor — men det påverkar både pris, vikt och användningsområden.",
       "I den här jämförelsen går vi igenom specifikationerna sida vid sida så du kan välja rätt payload för dina inspektions- och säkerhetsuppdrag.",
     ],
     verdictParagraphs: [
@@ -63,7 +63,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
       "Jämför nästa generations H30T med etablerade H20T. Se skillnader i zoom, termisk upplösning och laser-räckvidd.",
     metaTitle: "Zenmuse H30T vs H20T — jämförelse | EU Drone Company",
     metaDescription:
-      "Jämför Zenmuse H30T och H20T för termisk inspektion. 40× vs 23× zoom, 1280×1024 vs 640×512 termisk, och förbättrad laser-avståndsmätare.",
+      "Jämför Zenmuse H30T och H20T för termisk inspektion. 34× vs 23× zoom, 1280×1024 vs 640×512 termisk, och förbättrad laser-avståndsmätare.",
     tags: ["jämförelse", "zenmuse", "termisk", "inspektion"],
     cameraIds: ["zenmuse-h30t", "zenmuse-h20t"],
     introParagraphs: [
@@ -71,7 +71,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
       "Här jämför vi de två modellerna för att hjälpa dig bedöma om det är dags att uppgradera din flotta.",
     ],
     verdictParagraphs: [
-      "Uppgradera till H30T om du regelbundet inspekterar på långt avstånd (40× zoom vs 23×), behöver skarpare termiska bilder (1280×1024 vs 640×512), eller mäter avstånd över 1200 meter.",
+      "Uppgradera till H30T om du regelbundet inspekterar på långt avstånd (34× zoom vs 23×), behöver skarpare termiska bilder (1280×1024 vs 640×512), eller mäter avstånd över 1200 meter.",
       "H20T är fortfarande ett kapabelt val om budgeten är begränsad och dina inspektionsuppdrag inte kräver den extra räckvidden och upplösningen.",
     ],
     faq: [
@@ -159,7 +159,7 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
       "Termiska drönarkameror är oumbärliga för energiinspektion, brandövervakning, sök-och-räddning och säkerhet. Här jämför vi alla Zenmuse-modeller med termisk sensor.",
     ],
     verdictParagraphs: [
-      "För de flesta termiska inspektionsuppdrag rekommenderar vi H30T med sin 1280×1024 termiska sensor och 40× zoom. H20T är ett kostnadseffektivt alternativ med beprövad teknik. H20N är specialbyggd för mörkeroperatörer med starlight-sensorer kombinerat med termisk avbildning.",
+      "För de flesta termiska inspektionsuppdrag rekommenderar vi H30T med sin 1280×1024 termiska sensor och 34× zoom. H20T är ett kostnadseffektivt alternativ med beprövad teknik. H20N är specialbyggd för mörkeroperatörer med starlight-sensorer kombinerat med termisk avbildning.",
     ],
     faq: [
       {
@@ -403,14 +403,14 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
       "Jämför senaste H30T med nattspecialisten H20N. Termisk upplösning, starlight och zoom i mörker.",
     metaTitle: "Zenmuse H30T vs H20N — jämförelse | EU Drone Company",
     metaDescription:
-      "Jämför Zenmuse H30T och H20N för nattinspektion. 1280×1024 vs 640×512 termisk, starlight-sensorer och 40× vs 20× zoom.",
+      "Jämför Zenmuse H30T och H20N för nattinspektion. 1280×1024 vs 640×512 termisk, starlight-sensorer och 34× vs 20× zoom.",
     tags: ["jämförelse", "zenmuse", "termisk", "nattseende"],
     cameraIds: ["zenmuse-h30t", "zenmuse-h20n"],
     introParagraphs: [
       "För nattliga inspektions- och räddningsuppdrag finns två starka alternativ: den nya H30T med överlägsen termisk upplösning och zoom, eller H20N som är specialbyggd med starlight-sensorer för extremt svagt ljus.",
     ],
     verdictParagraphs: [
-      "Välj H30T om du behöver bästa termiska upplösning (1280×1024), längst zoom (40×) och laser-räckvidd (3000 m) — den klarar både dag och natt bra.",
+      "Välj H30T om du behöver bästa termiska upplösning (1280×1024), längst zoom (34×) och laser-räckvidd (3000 m) — den klarar både dag och natt bra.",
       "Välj H20N om dina uppdrag nästan uteslutande sker i mörker och du prioriterar starlight-sensorernas prestanda i svagt ljus framför maximal zoom och termisk upplösning.",
     ],
     faq: [
@@ -433,10 +433,10 @@ export const EDP_COMPARISON_ARTICLES: EdpComparisonArticle[] = [
     tags: ["jämförelse", "zenmuse", "mavic", "plattform"],
     cameraIds: ["zenmuse-h30", "mavic-3e"],
     introParagraphs: [
-      "Ett vanligt val för enterprise-kunder är mellan en kompakt drönare med integrerad kamera (Mavic 3E) och en tung plattform med utbytbar payload (Matrice 350 RTK + Zenmuse H30). Båda har 40×/56× zoom men skiljer sig i sensor, portabilitet och expansion.",
+      "Ett vanligt val för enterprise-kunder är mellan en kompakt drönare med integrerad kamera (Mavic 3E) och en tung plattform med utbytbar payload (Matrice 350 RTK + Zenmuse H30). Båda har 34×/56× zoom men skiljer sig i sensor, portabilitet och expansion.",
     ],
     verdictParagraphs: [
-      "Välj Matrice 350 RTK + Zenmuse H30 om du behöver 40× optisk zoom, laser-avståndsmätare, längre flygtid och möjlighet att byta payload (termisk, LiDAR, fotogrammetri).",
+      "Välj Matrice 350 RTK + Zenmuse H30 om du behöver 34× optisk zoom, laser-avståndsmätare, längre flygtid och möjlighet att byta payload (termisk, LiDAR, fotogrammetri).",
       "Välj Mavic 3E om portabilitet, snabb utryckning och fotogrammetri med mekanisk slutare är viktigare. Perfekt som komplement eller för mindre team.",
     ],
     faq: [
