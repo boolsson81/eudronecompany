@@ -69,6 +69,10 @@ const FORBIDDEN: { pattern: RegExp; why: string }[] = [
     pattern: /50 kg nyttolast/,
     why: "Agras T50 tar 40 kg i sprutläge; 50 kg är spridarlasten.",
   },
+  {
+    pattern: /3 ?770 ?g/,
+    why: "Matrice 350 RTK väger 6,47 kg med de två TB65-batterierna, inte 3 770 g.",
+  },
 ];
 
 describe("DJI-specpåståenden", () => {
