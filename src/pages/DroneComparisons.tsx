@@ -6,6 +6,7 @@ import SeoHead from "@/components/SeoHead";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl } from "@/lib/publicSite";
 
 export default function DroneComparisons() {
   const jsonLd = useMemo(
@@ -13,20 +14,20 @@ export default function DroneComparisons() {
       "@context": "https://schema.org",
       "@type": "Blog",
       name: "Drönarjämförelser — EU Drone Company Enterprise",
-      url: "https://actionking.se/kommersiella-dronare/jamforelser",
+      url: droneUrl("/kommersiella-dronare/jamforelser"),
       description:
         "Jämförelser mellan professionella DJI-drönare — specifikationer, användningsområden och köpråd för företag.",
       publisher: {
         "@type": "Organization",
         name: "EU Drone Company Enterprise",
-        url: "https://actionking.se",
+        url: droneUrl("/"),
       },
       blogPost: DRONE_COMPARISONS.map((article) => ({
         "@type": "BlogPosting",
         headline: article.title,
         description: article.excerpt,
         datePublished: article.date,
-        url: `https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`,
+        url: droneUrl(`/kommersiella-dronare/jamforelser/${article.slug}`),
       })),
     }),
     [],
@@ -37,11 +38,11 @@ export default function DroneComparisons() {
       <SeoHead
         title="Drönarjämförelser — Vilken DJI passar dig? | EU Drone Company"
         description="Jämför professionella DJI-drönare sida vid sida. Specifikationer, användningsområden och köpråd för inspektion, lantbruk och filmproduktion."
-        canonical="https://actionking.se/kommersiella-dronare/jamforelser"
+        canonical={droneUrl("/kommersiella-dronare/jamforelser")}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Jämförelser", url: "https://actionking.se/kommersiella-dronare/jamforelser" },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
+          { name: "Jämförelser", url: droneUrl("/kommersiella-dronare/jamforelser") },
         ]}
         jsonLd={jsonLd}
       />

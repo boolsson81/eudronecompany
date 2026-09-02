@@ -98,8 +98,14 @@ wildcarden. Notera också att en gammal branschsida listade flera lösningar med
 enskild lösningssida: innehållet är inte identiskt, så det är ett beslut om det är rätt mål
 eller om de i stället ska peka på den nya branschsidan.
 
-**`vercel.json` har i dag ingen `redirects`-nyckel** — bara SPA-rewriten. Checklistan nedan
-förutsätter att den läggs till.
+**Åtgärdat:** `vercel.json` har nu explicita 301:or för alla tio, med målen i tabellen ovan.
+`scripts/__tests__/legacy-url-redirects.test.ts` kontrollerar att varje mål fortfarande
+motsvarar en sida som finns, så att en framtida taxonomiändring fångas i testet i stället
+för i Search Console.
+
+Kvar att avgöra: en gammal branschsida listade flera lösningar medan målet är en enskild
+lösningssida. Innehållet är alltså inte identiskt. Bedöm om målen ska vara lösningarna (som
+nu) eller de nya branschsidorna — de fem ennivå-URL:erna är de som berörs.
 
 Övriga 35 URL:er svarar korrekt. Listan finns för att kunna verifieras i Search Console
 efter cutover:

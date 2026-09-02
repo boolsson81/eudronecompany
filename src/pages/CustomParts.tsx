@@ -1,3 +1,4 @@
+import { droneUrl } from "@/lib/publicSite";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -23,7 +24,7 @@ import {
   Wrench,
 } from "lucide-react";
 
-const CANONICAL = "https://actionking.se/kommersiella-dronare/specialtillverkning";
+const CANONICAL = droneUrl("/kommersiella-dronare/specialtillverkning");
 
 /** De två anledningarna kunder hör av sig: delen finns inte längre, eller den finns inte alls. */
 const USE_CASES = [
@@ -212,8 +213,8 @@ export default function CustomParts() {
         description="Vi tillverkar drönardelar som inte längre går att få tag på och konstruerar egna delar från din skiss eller CAD-fil. 3D-utskrift, CNC, komposit och serieproduktion."
         canonical={CANONICAL}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
           { name: "Specialtillverkning", url: CANONICAL },
         ]}
         jsonLd={[jsonLd, faqJsonLd(FAQ_ITEMS)]}

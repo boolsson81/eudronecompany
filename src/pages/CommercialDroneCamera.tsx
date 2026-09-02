@@ -1,3 +1,4 @@
+import { droneUrl } from "@/lib/publicSite";
 import { useMemo } from "react";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -39,12 +40,12 @@ export default function CommercialDroneCamera() {
       <SeoHead
         title={camera.seoTitle}
         description={camera.seoDesc}
-        canonical={`https://actionking.se/kommersiella-dronare/kameror/${camera.slug}`}
+        canonical={droneUrl(`/kommersiella-dronare/kameror/${camera.slug}`)}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Kameror & sensorer", url: "https://actionking.se/kommersiella-dronare/kameror" },
-          { name: camera.name, url: `https://actionking.se/kommersiella-dronare/kameror/${camera.slug}` },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
+          { name: "Kameror & sensorer", url: droneUrl("/kommersiella-dronare/kameror") },
+          { name: camera.name, url: droneUrl(`/kommersiella-dronare/kameror/${camera.slug}`) },
         ]}
         jsonLd={faqJsonLdData || undefined}
       />

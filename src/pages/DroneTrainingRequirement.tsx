@@ -6,6 +6,7 @@ import SeoHead from "@/components/SeoHead";
 import RegulationSourceNote from "@/components/RegulationSourceNote";
 import { getTrainingBySlug, TRAINING_REQUIREMENTS } from "@/data/droneRegulations";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 export default function DroneTrainingRequirement() {
   const { trainingSlug } = useParams<{ trainingSlug: string }>();
@@ -26,7 +27,16 @@ export default function DroneTrainingRequirement() {
 
   return (
     <>
-      <SeoHead title={training.seoTitle} description={training.seoDesc} />
+      <SeoHead
+        title={training.seoTitle}
+        description={training.seoDesc}
+        canonical={droneUrl(`/kommersiella-dronare/utbildning/${training.slug}`)}
+        breadcrumbs={[
+          ...DRONE_BREADCRUMB_ROOT,
+          { name: "Regelverk", url: droneUrl("/kommersiella-dronare/regelverk") },
+          { name: training.title, url: droneUrl(`/kommersiella-dronare/utbildning/${training.slug}`) },
+        ]}
+      />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/10">

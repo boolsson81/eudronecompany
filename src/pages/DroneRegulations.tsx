@@ -5,6 +5,7 @@ import { ArrowRight, Radio, BookOpen, Shield, GraduationCap } from "lucide-react
 import SeoHead from "@/components/SeoHead";
 import RegulationSourceNote from "@/components/RegulationSourceNote";
 import { DRONE_CATEGORIES, TRAINING_REQUIREMENTS } from "@/data/droneRegulations";
+import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 export default function DroneRegulations() {
   return (
@@ -12,6 +13,11 @@ export default function DroneRegulations() {
       <SeoHead
         title="Drönaregler & Utbildningskrav i Sverige — EASA | EU Drone Company"
         description="Komplett guide till drönaregler i Sverige. EASA-kategorier, utbildningskrav och certifikat per bransch. Allt du behöver veta innan du flyger."
+        canonical={droneUrl("/kommersiella-dronare/regelverk")}
+        breadcrumbs={[
+          ...DRONE_BREADCRUMB_ROOT,
+          { name: "Regelverk", url: droneUrl("/kommersiella-dronare/regelverk") },
+        ]}
       />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">

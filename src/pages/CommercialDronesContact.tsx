@@ -1,3 +1,4 @@
+import { droneUrl } from "@/lib/publicSite";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -84,7 +85,7 @@ export default function CommercialDronesContact() {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     name: "Kontakta EU Drone Company Enterprise",
-    url: "https://actionking.se/kommersiella-dronare/kontakt",
+    url: droneUrl("/kommersiella-dronare/kontakt"),
     mainEntity: {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
@@ -104,7 +105,7 @@ export default function CommercialDronesContact() {
       <SeoHead
         title="Kontakta oss — EU Drone Company Enterprise | Kommersiella drönare"
         description="Kontakta EU Drone Company Enterprise för offert, demo eller rådgivning om kommersiella drönare. Vi återkommer inom 24 timmar."
-        canonical="https://actionking.se/kommersiella-dronare/kontakt"
+        canonical={droneUrl("/kommersiella-dronare/kontakt")}
         jsonLd={jsonLd}
       />
 

@@ -9,6 +9,7 @@ import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { getIndustryBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl } from "@/lib/publicSite";
 
 export default function CommercialDroneIndustry() {
   const { slug } = useParams<{ slug: string }>();
@@ -38,11 +39,11 @@ export default function CommercialDroneIndustry() {
       <SeoHead
         title={`${industry.title} — Kommersiella Drönare | EU Drone Company`}
         description={industry.heroDesc}
-        canonical={`https://actionking.se/kommersiella-dronare/${industry.slug}`}
+        canonical={droneUrl(`/kommersiella-dronare/${industry.slug}`)}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: industry.title, url: `https://actionking.se/kommersiella-dronare/${industry.slug}` },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
+          { name: industry.title, url: droneUrl(`/kommersiella-dronare/${industry.slug}`) },
         ]}
         jsonLd={faqJsonLdData || undefined}
       />
@@ -190,7 +191,7 @@ export default function CommercialDroneIndustry() {
           droneNames={industry.recommendedDrones.map(d => d.name)}
           heading={`Tillbehör för ${industry.title.toLowerCase()}`}
         />
-        <RelatedPages pageUrl={`https://actionking.se/kommersiella-dronare/${industry.slug}`} heading="Relaterade sidor" />
+        <RelatedPages pageUrl={droneUrl(`/kommersiella-dronare/${industry.slug}`)} heading="Relaterade sidor" />
 
         {/* CTA */}
         <section id="contact-cta" className="py-16 md:py-24 bg-white/[0.02]">

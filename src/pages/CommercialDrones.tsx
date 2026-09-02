@@ -22,6 +22,7 @@ const SHOWCASE_VIDEOS = [
 ];
 import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl } from "@/lib/publicSite";
 
 const HUB_FAQ: FaqItem[] = [
   { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
@@ -48,7 +49,7 @@ export default function CommercialDrones() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "EU Drone Company Enterprise",
-    url: "https://actionking.se",
+    url: droneUrl("/"),
     description: "Auktoriserad DJI Enterprise-partner i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
     contactPoint: {
       "@type": "ContactPoint",
@@ -63,10 +64,10 @@ export default function CommercialDrones() {
       <SeoHead
         title="Kommersiella Drönare för Företag — DJI Enterprise | EU Drone Company"
         description="Köp professionella DJI Enterprise-drönare för inspektion, kartläggning, lantbruk och säkerhet. Auktoriserad återförsäljare i Sverige med lager, support och utbildning."
-        canonical="https://actionking.se/kommersiella-dronare"
+        canonical={droneUrl("/kommersiella-dronare")}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
         ]}
         jsonLd={[hubFaqJsonLd, organizationJsonLd]}
       />
@@ -405,7 +406,7 @@ export default function CommercialDrones() {
           heading="Tillbehör & Konfigurationer"
         />
         <FaqSection items={HUB_FAQ} variant="dark" heading="Vanliga frågor om kommersiella drönare" />
-        <RelatedPages pageUrl="https://actionking.se/kommersiella-dronare" heading="Relaterade sidor" />
+        <RelatedPages pageUrl={droneUrl("/kommersiella-dronare")} heading="Relaterade sidor" />
 
         {/* Footer */}
         <footer className="border-t border-white/10 py-10">
