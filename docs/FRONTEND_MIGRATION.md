@@ -71,7 +71,37 @@ eller ett beslut att tillbehören ska fortsätta säljas via ActionKing.
 
 ## 45 indexerade URL:er som behöver 301
 
-Wildcard-redirecten ovan täcker alla. Listan finns för att kunna verifieras i Search Console
+**10 av dem 404:ar i nuvarande frontend.** Wildcard-redirecten bevarar sökvägen, men
+taxonomin har ändrats sedan URL:erna indexerades: fem sidor som var branscher på
+`app.digitalsignal.io` är numera lösningar under en annan bransch. Kör man cutovern som den
+står nu landar de tio på appens 404-vy i stället för på innehållet.
+
+Verifierat 2026-09-02 genom att köra samtliga 45 mot `vite preview` av nuvarande build.
+
+| Indexerad URL (sökväg) | Innehållet finns nu på |
+|---|---|
+| `/kommersiella-dronare/faltkartlaggning` | `/kommersiella-dronare/lantbruk/faltkartlaggning` |
+| `/kommersiella-dronare/faltkartlaggning/3d-modellering` | `/kommersiella-dronare/kartlaggning/3d-modellering` |
+| `/kommersiella-dronare/fasadinspektion` | `/kommersiella-dronare/inspektion/fasadinspektion` |
+| `/kommersiella-dronare/fasadinspektion/precisionsspruta` | `/kommersiella-dronare/lantbruk/precisionsspruta` |
+| `/kommersiella-dronare/raddningsinsatser` | `/kommersiella-dronare/sakerhet/raddningsinsatser` |
+| `/kommersiella-dronare/raddningsinsatser/ledningsinspektion` | `/kommersiella-dronare/energi/ledningsinspektion` |
+| `/kommersiella-dronare/transformatorinspektion` | `/kommersiella-dronare/energi/transformatorinspektion` |
+| `/kommersiella-dronare/transformatorinspektion/fastighetsfotografi` | `/kommersiella-dronare/film-media/fastighetsfotografi` |
+| `/kommersiella-dronare/volymberakning` | `/kommersiella-dronare/kartlaggning/volymberakning` |
+| `/kommersiella-dronare/volymberakning/perimetersakerhet` | `/kommersiella-dronare/sakerhet/perimetersakerhet` |
+
+De åtta andranivå-URL:erna parar dessutom ihop en gammal bransch med en lösning som numera
+hör till en helt annan bransch — det var alltså inte bara en omflyttning, utan en annan
+indelning. Vill man behålla länkkraften behövs explicita 301:or per URL, inte bara
+wildcarden. Notera också att en gammal branschsida listade flera lösningar medan målet är en
+enskild lösningssida: innehållet är inte identiskt, så det är ett beslut om det är rätt mål
+eller om de i stället ska peka på den nya branschsidan.
+
+**`vercel.json` har i dag ingen `redirects`-nyckel** — bara SPA-rewriten. Checklistan nedan
+förutsätter att den läggs till.
+
+Övriga 35 URL:er svarar korrekt. Listan finns för att kunna verifieras i Search Console
 efter cutover:
 
 - https://app.digitalsignal.io/kommersiella-dronare

@@ -35,11 +35,13 @@ Svenska i UI-text, commit-meddelanden och kommunikation. Engelska bara om det ef
 - **Speglade moduler.** Modulerna i `docs/EXTRACTION_MANIFEST.md` under "dupliceras" finns i
   båda repona. DigitalSignal är källan — ändra där först, spegla hit, kör `npm run check:shared`.
 - **Stannade kvar i DigitalSignal:** Sunsky-dropship, leverantörs-FTP (Boston),
-  lagerhantering, servicportalen (SMP), `/admin/drone-regulations` och
-  `/admin/product-compliance/backfill-sunsky`. Se `docs/SEPARATION.md`.
-- **Drönarsidorna är ActionKing-brandade.** ActionKing är ett annat varumärke, inte ett
-  gammalt namn på det här — texterna flyttades oförändrade och omfattades inte av
-  namnbytet. Skriv inte om dem utan att fråga; se `docs/FRONTEND_MIGRATION.md`.
+  lagerhantering, servicportalen (SMP) och `/admin/product-compliance/backfill-sunsky`.
+  Se `docs/SEPARATION.md`. (`/admin/drone-regulations` flyttade hit 2026-08-23 tillsammans
+  med `droneRegulations.ts` och ligger under `src/pages/admin/`.)
+- **Shoplänkarna pekar på ActionKing.** Drönarsidornas texter skrevs om till EU Drone
+  Company 2026-08-25, men de utgående produktlänkarna till `actionking.se` är medvetet
+  kvar — ActionKing är ett annat varumärke och har de svenska produkthandles som EU Drone
+  Company-butiken saknar. Rör dem inte utan att fråga; se `docs/FRONTEND_MIGRATION.md`.
 
 ## Namn som medvetet inte döptes om
 
