@@ -5,6 +5,7 @@ import SeoHead from "@/components/SeoHead";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { Cpu, Radio, ArrowRight } from "lucide-react";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl } from "@/lib/publicSite";
 
 const PRODUCTS = [
   {
@@ -33,7 +34,7 @@ export default function CommercialDronesProducts() {
       <SeoHead
         title="Produkter — EU Drone Company Enterprise | Kommersiella drönare"
         description="Utforska DJI Enterprise-sortimentet hos EU Drone Company. Matrice 350 RTK, Mavic 3 Enterprise, Agras T50 och fler professionella drönarlösningar."
-        canonical="https://actionking.se/kommersiella-dronare/produkter"
+        canonical={droneUrl("/kommersiella-dronare/produkter")}
       />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">

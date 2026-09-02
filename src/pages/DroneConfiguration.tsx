@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, Package, Wrench, CheckCircle2, Star } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import { getConfigBySlug, INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
+import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 const LEVEL_LABELS: Record<string, { label: string; color: string }> = {
   standard: { label: "Bas", color: "bg-white/10 text-white/70 border-white/20" },
@@ -30,7 +31,15 @@ export default function DroneConfiguration() {
 
   return (
     <>
-      <SeoHead title={config.seoTitle} description={config.seoDesc} />
+      <SeoHead
+        title={config.seoTitle}
+        description={config.seoDesc}
+        canonical={droneUrl(`/kommersiella-dronare/konfiguration/${config.slug}`)}
+        breadcrumbs={[
+          ...DRONE_BREADCRUMB_ROOT,
+          { name: config.title, url: droneUrl(`/kommersiella-dronare/konfiguration/${config.slug}`) },
+        ]}
+      />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">
         {/* Nav */}

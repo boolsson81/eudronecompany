@@ -8,6 +8,7 @@ import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { getComparisonBySlug, DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl } from "@/lib/publicSite";
 
 export default function DroneComparisonArticle() {
   const { comparisonSlug } = useParams<{ comparisonSlug: string }>();
@@ -43,12 +44,12 @@ export default function DroneComparisonArticle() {
     description: article.excerpt,
     datePublished: article.date,
     dateModified: article.date,
-    url: `https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`,
+    url: droneUrl(`/kommersiella-dronare/jamforelser/${article.slug}`),
     author: { "@type": "Organization", name: "EU Drone Company Enterprise" },
     publisher: {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
-      url: "https://actionking.se",
+      url: droneUrl("/"),
     },
   };
 
@@ -57,14 +58,14 @@ export default function DroneComparisonArticle() {
       <SeoHead
         title={`${article.title} | EU Drone Company`}
         description={article.excerpt}
-        canonical={`https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`}
+        canonical={droneUrl(`/kommersiella-dronare/jamforelser/${article.slug}`)}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Jämförelser", url: "https://actionking.se/kommersiella-dronare/jamforelser" },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
+          { name: "Jämförelser", url: droneUrl("/kommersiella-dronare/jamforelser") },
           {
             name: article.title,
-            url: `https://actionking.se/kommersiella-dronare/jamforelser/${article.slug}`,
+            url: droneUrl(`/kommersiella-dronare/jamforelser/${article.slug}`),
           },
         ]}
         jsonLd={[blogJsonLd, ...(faqJsonLdData ? [faqJsonLdData] : [])]}

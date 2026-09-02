@@ -2,5 +2,17 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "redirects": [
+    { "source": "/kommersiella-dronare/faltkartlaggning/3d-modellering", "destination": "/kommersiella-dronare/kartlaggning/3d-modellering", "permanent": true },
+    { "source": "/kommersiella-dronare/faltkartlaggning", "destination": "/kommersiella-dronare/lantbruk/faltkartlaggning", "permanent": true },
+    { "source": "/kommersiella-dronare/fasadinspektion/precisionsspruta", "destination": "/kommersiella-dronare/lantbruk/precisionsspruta", "permanent": true },
+    { "source": "/kommersiella-dronare/fasadinspektion", "destination": "/kommersiella-dronare/inspektion/fasadinspektion", "permanent": true },
+    { "source": "/kommersiella-dronare/raddningsinsatser/ledningsinspektion", "destination": "/kommersiella-dronare/energi/ledningsinspektion", "permanent": true },
+    { "source": "/kommersiella-dronare/raddningsinsatser", "destination": "/kommersiella-dronare/sakerhet/raddningsinsatser", "permanent": true },
+    { "source": "/kommersiella-dronare/transformatorinspektion/fastighetsfotografi", "destination": "/kommersiella-dronare/film-media/fastighetsfotografi", "permanent": true },
+    { "source": "/kommersiella-dronare/transformatorinspektion", "destination": "/kommersiella-dronare/energi/transformatorinspektion", "permanent": true },
+    { "source": "/kommersiella-dronare/volymberakning/perimetersakerhet", "destination": "/kommersiella-dronare/sakerhet/perimetersakerhet", "permanent": true },
+    { "source": "/kommersiella-dronare/volymberakning", "destination": "/kommersiella-dronare/kartlaggning/volymberakning", "permanent": true }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }

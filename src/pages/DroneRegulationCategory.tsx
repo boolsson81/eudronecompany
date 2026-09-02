@@ -6,6 +6,7 @@ import SeoHead from "@/components/SeoHead";
 import RegulationSourceNote from "@/components/RegulationSourceNote";
 import { getCategoryBySlug, DRONE_CATEGORIES } from "@/data/droneRegulations";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 export default function DroneRegulationCategory() {
   const { categorySlug } = useParams<{ categorySlug: string }>();
@@ -26,7 +27,16 @@ export default function DroneRegulationCategory() {
 
   return (
     <>
-      <SeoHead title={category.seoTitle} description={category.seoDesc} />
+      <SeoHead
+        title={category.seoTitle}
+        description={category.seoDesc}
+        canonical={droneUrl(`/kommersiella-dronare/regelverk/${category.slug}`)}
+        breadcrumbs={[
+          ...DRONE_BREADCRUMB_ROOT,
+          { name: "Regelverk", url: droneUrl("/kommersiella-dronare/regelverk") },
+          { name: category.name, url: droneUrl(`/kommersiella-dronare/regelverk/${category.slug}`) },
+        ]}
+      />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">
         <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/10">

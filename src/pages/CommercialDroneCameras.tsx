@@ -1,3 +1,4 @@
+import { droneUrl } from "@/lib/publicSite";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -18,11 +19,11 @@ export default function CommercialDroneCameras() {
       <SeoHead
         title="Enterprise-kameror & sensorer — Zenmuse | EU Drone Company"
         description="Utforska DJI Zenmuse enterprise-kameror och sensorer. H30T, H20T, L2 LiDAR, P1 fotogrammetri och specialpayloads för Matrice-serien."
-        canonical="https://actionking.se/kommersiella-dronare/kameror"
+        canonical={droneUrl("/kommersiella-dronare/kameror")}
         breadcrumbs={[
-          { name: "Hem", url: "https://actionking.se/" },
-          { name: "Kommersiella drönare", url: "https://actionking.se/kommersiella-dronare" },
-          { name: "Kameror & sensorer", url: "https://actionking.se/kommersiella-dronare/kameror" },
+          { name: "Hem", url: droneUrl("/") },
+          { name: "Kommersiella drönare", url: droneUrl("/kommersiella-dronare") },
+          { name: "Kameror & sensorer", url: droneUrl("/kommersiella-dronare/kameror") },
         ]}
       />
 
