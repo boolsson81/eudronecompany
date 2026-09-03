@@ -31,6 +31,10 @@ const ShopifyDroneClone = lazy(() => import("./pages/admin/ShopifyDroneClone"));
 const ProductCompliance = lazy(() => import("./pages/admin/ProductCompliance"));
 const AdminDroneRegulations = lazy(() => import("./pages/admin/AdminDroneRegulations"));
 
+// Inköp
+const TradeFairs = lazy(() => import("./pages/admin/TradeFairs"));
+const TradeFairEvent = lazy(() => import("./pages/admin/TradeFairEvent"));
+
 const PageLoader = () => (
   <div className="flex min-h-screen items-center justify-center">
     <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
@@ -69,6 +73,8 @@ export default function App() {
               <Route path="shopify-drone-clone" element={<ShopifyDroneClone />} />
               <Route path="product-compliance" element={<ProductCompliance />} />
               <Route path="drone-regulations" element={<AdminDroneRegulations />} />
+              <Route path="trade-fairs" element={<TradeFairs />} />
+              <Route path="trade-fairs/:slug" element={<TradeFairEvent />} />
             </Route>
 
             <Route path="*" element={<Navigate to="/kommersiella-dronare" replace />} />

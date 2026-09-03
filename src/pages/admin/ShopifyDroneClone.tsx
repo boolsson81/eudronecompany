@@ -5,10 +5,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { toast } from "sonner";
 import { Loader2, Play, ListChecks, Upload, Palette } from "lucide-react";
+import { EDP_SHOP } from "@/lib/edpShop";
 
 // Fixed source/target shops for this operation.
 const SOURCE_SHOP = { id: "010120e6-6def-431e-8614-905cb69f85b9", name: "EU Drone Company", domain: "actionking.se" };
-const TARGET_SHOP = { id: "e6ad2afc-e468-49a7-8d33-9b1837419ed8", name: "EUDroneParts", domain: "ya1xhg-x6.myshopify.com" };
+const TARGET_SHOP = EDP_SHOP;
 
 type Migration = { id: string; status: string; stats: any; error: string | null };
 type Item = { object_type: string; approval_status: string | null; publish_status: string | null; error: string | null };
