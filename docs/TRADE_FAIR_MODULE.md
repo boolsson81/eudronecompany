@@ -125,20 +125,54 @@ verifieras mot officiell källa innan de sparas som verifierade.
 test i `trade-fair-events.test.ts` misslyckas om en TBC-post får ett datum, och om
 en post markeras `verified` utan namngiven källa.
 
-### Verifieringsläge i den första katalogen
+### Verifieringsläge
 
-| Mässa | Datum | Status |
+Genomgången mot officiella källor gjordes 2026-09-03. Nio av fjorton mässor har
+nu datum bekräftade av arrangören eller mässanläggningen.
+
+| Mässa | Datum | Källa |
 |---|---|---|
-| INTERGEO 2026 | 15–17 sep 2026, Messe München | Verifierad mot Messe München och DVW/INTERGEO |
-| XPONENTIAL Europe 2027 | 16–18 mar 2027, Messe Düsseldorf | Verifierad mot arrangörens eventsida |
-| DroneX 2026 | 29–30 sep 2026, ExCeL London | Verifierad mot ExCeL Londons kalender |
-| Commercial UAV Expo Europe | TBC | Nästa upplaga inte annonserad; 2026 hölls i april på RAI Amsterdam under namnet Commercial UAV Forum |
-| Amsterdam Drone Week | TBC | 2027 inte officiellt bekräftat |
-| Övriga tio | TBC | Ingen officiell källa kontrollerad ännu |
+| INTERGEO 2026 | 15–17 sep 2026, Messe München | Messe München och DVW/INTERGEO |
+| XPONENTIAL Europe 2027 | 16–18 mar 2027, Messe Düsseldorf | Arrangörens eventsida |
+| IDEX | 25–29 jan 2027, ADNEC Centre Abu Dhabi | ADNEC Groups pressmeddelande och idexuae.ae |
+| Drone Show Korea | 24–26 feb 2027, BEXCO Busan | eng.droneshowkorea.com |
+| Dronitaly | 7–9 apr 2027, Bologna Congress Center | dronitaly.it |
+| Paris Air Show | 14–20 jun 2027, Paris–Le Bourget | siae.fr |
+| DSEI | 7–10 sep 2027, ExCeL London | dsei.co.uk |
+| DroneX 2026 | 29–30 sep 2026, ExCeL London | ExCeL Londons kalender |
+| Commercial UAV Expo (USA) | 1–3 sep 2026, Caesars Forum Las Vegas | Arrangörens eget meddelande |
 
-DroneX ligger som prioritet **B**, inte A som i uppdraget: relevanstalet 85 hamnar
-i B-spannet, och att lägga den i A hade brutit ordningen mot Dronitaly och de
-övriga 85-poängarna. Ändra `priority` i katalogen om bedömningen är en annan.
+Kvar att verifiera:
+
+| Mässa | Läge |
+|---|---|
+| AUVSI XPONENTIAL | 17–20 maj 2027, Miami Beach enligt samstämmiga branschlistningar. `xponential.org` gick inte att nå härifrån — bekräfta innan resa bokas. |
+| Eurosatory | Datum lämnat TBC med flit. Branschlistningar anger 19–23 jun 2028, men källpolicyn kräver COGES egen bekräftelse. |
+| Amsterdam Drone Week | 2027 inte annonserat. Branschlistningar uppger att mässan går samman med Intertraffic Amsterdam 2028 (7–10 mar 2028) och att ingen 2027-upplaga är satt — obekräftat av RAI Amsterdam. |
+| Drone World Congress | Identifierad som World UAV Federations mässa i Futian, samlokaliserad med Shenzhen International UAV Expo. 2027 är elfte upplagan; datum inte publicerade. |
+
+### Commercial UAV Expo Europe är inställd
+
+Arrangören Diversified Communications meddelade 2026-01-09 att **Commercial UAV
+Forum ställs in** — Europaupplagan som skulle hållits 22–23 april 2026 på RAI
+Amsterdam. Resurserna koncentreras till Las Vegas-upplagan. Ingen ersättare i
+Europa är annonserad.
+
+Uppdraget listade mässan som prioritet A. Den står nu som **D – Not Relevant**
+med status **Inställd** och besöksbeslut **Åker inte**, och syns därmed inte i
+huvudlistan. Posten är kvar med hela motiveringen, eftersom den förklarar varför
+A-listan gick från fyra mässor till tre. Ett test håller inställda event ute ur
+huvudlistan och ur besöksplanen.
+
+Det europeiska inköpsbehovet får täckas av INTERGEO och XPONENTIAL Europe, eller
+av Las Vegas-upplagan när sortimentet kräver de amerikanska tillverkarna.
+
+### Prioritetsändringar mot uppdraget
+
+| Mässa | Uppdraget | Nu | Varför |
+|---|---|---|---|
+| DroneX | A | B | Relevanstalet 85 hamnar i B-spannet, tillsammans med Dronitaly och de övriga 85-poängarna |
+| Commercial UAV Expo Europe | A | D | Inställd av arrangören |
 
 ## 5. Faser
 
@@ -184,8 +218,9 @@ ovan. Vägen framåt, när det byggs:
 
 1. Kopiera migreringen till `digitalsignal/supabase/migrations/` och kör den.
 2. Verifiera att `EDP_SHOP_ID` (`e6ad2afc-…`) är rätt butik för inköparnas RLS.
-3. Gå igenom katalogens tio TBC-poster mot officiella källor och fyll i datum,
-   arrangör och mässanläggning.
+3. Bekräfta de fyra kvarvarande posterna i tabellen ovan: AUVSI XPONENTIAL mot
+   `xponential.org`, Eurosatory mot COGES, Amsterdam Drone Week mot RAI Amsterdam,
+   och Drone World Congress mot `droneworldcongress.com`.
 4. Stäm av INTERGEO:s utställarkandidater mot den officiella utställarkatalogen —
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
