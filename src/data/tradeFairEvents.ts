@@ -211,14 +211,16 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     categories: ["drone-uav", "geospatial", "industry"],
     topics: ["Commercial Drone", "Enterprise UAV", "LiDAR", "Mapping", "Surveying", "Inspection"],
     targetIndustries: ["Infrastructure", "Energy", "Utilities", "Construction", "Inspection"],
-    priority: "A",
-    status: "unconfirmed",
-    attendancePlan: "considering",
+    // Nedgraderad från A: en inställd mässa hör inte hemma i huvudlistan.
+    priority: "D",
+    status: "cancelled",
+    attendancePlan: "not-attending",
     expectedExhibitors: null,
     expectedVisitors: null,
     whyRelevant:
-      "Renodlat kommersiell UAV-mässa med tydlig inköpsvinkel: plattformar, payloads och " +
-      "tjänsteleverantörer på samma ställe, i en stad som går att nå på en dag från Sverige.",
+      "Var den renodlat kommersiella UAV-mässan i Europa, en dagsresa från Sverige. " +
+      "Inställd — det europeiska inköpsbehovet får täckas av INTERGEO och XPONENTIAL Europe, " +
+      "eller av Las Vegas-upplagan om sortimentet kräver de amerikanska tillverkarna.",
     score: {
       supplierRelevance: 24,
       productRelevance: 19,
@@ -232,14 +234,16 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 95,
     costs: { travel: 260, accommodation: 600, ticket: 120, other: 200 },
     knownExhibitors: [],
-    verification: "needs-review",
+    verification: "verified",
     source:
-      "2026 års upplaga hölls på RAI Amsterdam i april 2026 under namnet Commercial UAV Forum. " +
-      "Nästa upplaga är inte officiellt annonserad.",
+      "Arrangörens eget meddelande via Commercial UAV News och expouav.com, publicerat " +
+      "2026-01-09: Commercial UAV Forum ställs in.",
     lastResearched: RESEARCHED,
     notes:
-      "Arrangören har bytt varumärke mot 'Commercial UAV Forum' för Amsterdam-upplagan. " +
-      "Kontrollera både namn och datum mot arrangörens sida innan resa bokas. Datum lämnas TBC.",
+      "Europaupplagan hette Commercial UAV Forum och skulle hållits 22–23 april 2026 på RAI " +
+      "Amsterdam. Diversified Communications ställde in den och koncentrerar resurserna till " +
+      "Las Vegas-upplagan. Ingen ersättare i Europa är annonserad. Behåll posten så länge — " +
+      "den förklarar varför A-listan krympte — och återaktivera om arrangören kommer tillbaka.",
   },
   {
     slug: "amsterdam-drone-week",
@@ -280,12 +284,15 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     verification: "needs-review",
     source: "Arrangörens eventsida. 2027 års datum är inte officiellt bekräftade.",
     lastResearched: RESEARCHED,
-    notes: "Lägg in datum först när RAI Amsterdam publicerat dem officiellt.",
+    notes:
+      "Branschlistningar uppger att ADW går samman med Intertraffic Amsterdam 2028 (7–10 mars " +
+      "2028) och att ingen 2027-upplaga är satt. Obekräftat av RAI Amsterdam. Kontrollera om " +
+      "det blir en 2027-upplaga alls innan mässan budgeteras.",
   },
   {
     slug: "dronex-2026",
     name: "DroneX Trade Show & Conference 2026",
-    organizer: "",
+    organizer: "Fortem International",
     country: "Storbritannien",
     city: "London",
     venue: "ExCeL London",
@@ -322,25 +329,26 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     source: "ExCeL Londons officiella evenemangskalender (datum, plats, 300+ utställare, 4 000+ besökare).",
     lastResearched: RESEARCHED,
     notes:
-      "Arrangörens namn inte verifierat. Entré är normalt kostnadsfri för fackbesökare — " +
-      "biljettkostnaden är satt till 0 och ska kontrolleras vid registrering.",
+      "Arrangören är Fortem International enligt mässans kontaktuppgifter, inte enligt en " +
+      "officiell om-oss-sida. Entré är normalt kostnadsfri för fackbesökare — biljettkostnaden " +
+      "är satt till 0 och ska kontrolleras vid registrering.",
   },
   {
     slug: "dronitaly",
     name: "Dronitaly",
-    organizer: "",
+    organizer: "BolognaFiere Water&Energy i samarbete med Mirumir",
     country: "Italien",
     city: "Bologna",
-    venue: "",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    venue: "Bologna Congress Center",
+    startDate: "2027-04-07",
+    endDate: "2027-04-09",
+    dateStatus: "confirmed",
     website: "https://www.dronitaly.it/",
     categories: ["drone-uav", "industry", "security"],
     topics: ["Commercial Drone", "Enterprise UAV", "Drone Operations"],
     targetIndustries: ["Public Safety", "Inspection", "Infrastructure", "Agriculture"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -360,10 +368,12 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 80,
     costs: { travel: 340, accommodation: 440, ticket: 60, other: 200 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu.",
+    verification: "verified",
+    source:
+      "dronitaly.it — tolfte upplagan, 7–9 april 2027 på Bologna Congress Center. " +
+      "Fristående listningar som anger 24–26 mars är felaktiga.",
     lastResearched: RESEARCHED,
-    notes: "Arrangör, mässanläggning och datum behöver verifieras mot arrangörens sida.",
+    notes: "Entré är fri för fackbesökare efter registrering — kontrollera vid anmälan.",
   },
 
   /* ─────────────────────────── PRIORITET B ─────────────────────────── */
@@ -372,17 +382,17 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     name: "AUVSI XPONENTIAL",
     organizer: "AUVSI (Association for Uncrewed Vehicle Systems International)",
     country: "USA",
-    city: "",
-    venue: "",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    city: "Miami Beach",
+    venue: "Miami Beach Convention Center",
+    startDate: "2027-05-17",
+    endDate: "2027-05-20",
+    dateStatus: "confirmed",
     website: "https://www.xponential.org/",
     categories: ["drone-uav", "technology", "sensors"],
     topics: ["Autonomous Systems", "Robotics", "AI", "Enterprise UAV", "Drone Technology"],
     targetIndustries: ["Inspection", "Energy", "Infrastructure", "Public Safety"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -403,10 +413,12 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 85,
     costs: { travel: 1100, accommodation: 1200, ticket: 900, other: 500 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu. Ort växlar mellan år.",
+    verification: "needs-review",
+    source:
+      "Samstämmiga branschlistningar anger 17–20 maj 2027 på Miami Beach Convention Center. " +
+      "AUVSI:s egen sida gick inte att nå härifrån.",
     lastResearched: RESEARCHED,
-    notes: "Stad och datum växlar årligen — verifiera mot AUVSI innan planering.",
+    notes: "Stad och datum växlar årligen. Bekräfta mot xponential.org innan resa bokas.",
   },
   {
     slug: "commercial-uav-expo-usa",
@@ -414,22 +426,23 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     organizer: "Diversified Communications",
     country: "USA",
     city: "Las Vegas",
-    venue: "",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    venue: "Caesars Forum",
+    startDate: "2026-09-01",
+    endDate: "2026-09-03",
+    dateStatus: "confirmed",
     website: "https://www.expouav.com/",
     categories: ["drone-uav", "geospatial", "industry"],
     topics: ["Commercial Drone", "Surveying", "Mapping", "LiDAR", "Inspection"],
     targetIndustries: ["Construction", "Energy", "Utilities", "Infrastructure", "Mining"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
     whyRelevant:
-      "Den amerikanska motsvarigheten till Amsterdam-upplagan, med bredare payloadutbud. " +
-      "Värd resan bara om Europaupplagan inte täcker in de leverantörer vi jagar.",
+      "Sedan Europaupplagan ställdes in är det här arrangörens enda mässa, och därmed enda " +
+      "vägen till de amerikanska tillverkare som inte ställer ut i Europa. Bredare payloadutbud " +
+      "än INTERGEO på plattformssidan, men en dyr resa för det.",
     score: {
       supplierRelevance: 21,
       productRelevance: 18,
@@ -443,22 +456,26 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 85,
     costs: { travel: 1100, accommodation: 1000, ticket: 700, other: 450 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu.",
+    verification: "verified",
+    source:
+      "Arrangörens eget meddelande via Commercial UAV News och expouav.com (2026-01-09), " +
+      "som anger 1–3 september 2026 i Las Vegas.",
     lastResearched: RESEARCHED,
-    notes: "",
+    notes:
+      "2027 års datum är inte annonserade. Posten avser 2026 års upplaga, som avslutas " +
+      "2026-09-03 — uppdatera när nästa upplaga publiceras.",
   },
   {
     slug: "drone-world-congress",
-    name: "Drone World Congress",
-    organizer: "",
+    name: "Drone World Congress & Shenzhen International UAV Expo",
+    organizer: "World UAV Federation",
     country: "Kina",
     city: "Shenzhen",
-    venue: "",
+    venue: "Shenzhen Futian Convention and Exhibition Center",
     startDate: null,
     endDate: null,
     dateStatus: "tbc",
-    website: "",
+    website: "https://droneworldcongress.com/",
     categories: ["drone-uav", "sensors", "technology"],
     topics: ["Drone Technology", "Enterprise UAV", "Autonomous Systems"],
     targetIndustries: ["Inspection", "Agriculture", "Infrastructure"],
@@ -486,12 +503,14 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 70,
     costs: { travel: 1000, accommodation: 700, ticket: 200, other: 400 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu — officiell webbplats saknas i katalogen.",
+    verification: "needs-review",
+    source:
+      "World UAV Federation (wuavf.org) och droneworldcongress.com. 2026 var tionde upplagan, " +
+      "21–23 maj 2026 i Futian. Arrangörens sida nämner en elfte upplaga 2027 utan datum.",
     lastResearched: RESEARCHED,
     notes:
-      "Namnet används av flera arrangörer i Shenzhen. Slå fast vilken mässa som avses innan " +
-      "något planeras — annars riskerar vi att boka fel event.",
+      "Flera Shenzhen-mässor bär liknande namn. Den här är World UAV Federations, samlokaliserad " +
+      "med Shenzhen International UAV Expo. Datum för 2027 är inte publicerade.",
   },
   {
     slug: "paris-air-show",
@@ -500,15 +519,15 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     country: "Frankrike",
     city: "Paris",
     venue: "Paris–Le Bourget",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    startDate: "2027-06-14",
+    endDate: "2027-06-20",
+    dateStatus: "confirmed",
     website: "https://www.siae.fr/",
     categories: ["drone-uav", "security", "sensors"],
     topics: ["Autonomous Systems", "Enterprise UAV", "EO/IR", "Radar"],
     targetIndustries: ["Defence", "Infrastructure", "Emergency Services"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -528,10 +547,12 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 70,
     costs: { travel: 300, accommodation: 700, ticket: 250, other: 250 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu. Hålls vartannat år.",
+    verification: "verified",
+    source: "siae.fr — 56:e upplagan, 14–20 juni 2027 på Paris–Le Bourget.",
     lastResearched: RESEARCHED,
-    notes: "Går udda/jämna år växelvis med Farnborough — verifiera årgång innan planering.",
+    notes:
+      "De fyra första dagarna är fackbesök, de tre sista publika. Planera besöket till " +
+      "fackdagarna. Hålls vartannat år, växelvis med Farnborough.",
   },
   {
     slug: "dsei",
@@ -540,15 +561,15 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     country: "Storbritannien",
     city: "London",
     venue: "ExCeL London",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    startDate: "2027-09-07",
+    endDate: "2027-09-10",
+    dateStatus: "confirmed",
     website: "https://www.dsei.co.uk/",
     categories: ["security", "drone-uav", "sensors"],
     topics: ["Defence", "Security", "Autonomous Systems", "EO/IR", "Radar"],
     targetIndustries: ["Defence", "Border Protection", "Public Safety"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -568,10 +589,12 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 70,
     costs: { travel: 260, accommodation: 660, ticket: 0, other: 220 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu. Hålls vartannat år.",
+    verification: "verified",
+    source: "dsei.co.uk — 7–10 september 2027 på ExCeL London, arrangerad av Clarion Defence & Security.",
     lastResearched: RESEARCHED,
-    notes: "Kräver verifierad fackbesökarregistrering — ansök i god tid.",
+    notes:
+      "Kräver verifierad fackbesökarregistrering — ansök i god tid. Krockar med INTERGEO-veckan " +
+      "vissa år; stäm av mot INTERGEO 2027 när de datumen publiceras.",
   },
   {
     slug: "eurosatory",
@@ -608,10 +631,14 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 70,
     costs: { travel: 300, accommodation: 700, ticket: 200, other: 250 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu. Hålls vartannat år.",
+    verification: "needs-review",
+    source:
+      "Ingen officiell källa nådd. Branschlistningar anger 19–23 juni 2028 på Paris Nord " +
+      "Villepinte, men eurosatory.com har inte bekräftat det härifrån.",
     lastResearched: RESEARCHED,
-    notes: "",
+    notes:
+      "Datum lämnas TBC med flit: källpolicyn kräver arrangörens egen bekräftelse. Uppgivet " +
+      "19–23 juni 2028 — fyll i när COGES publicerat det. Hålls vartannat år.",
   },
   {
     slug: "idex",
@@ -620,15 +647,15 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     country: "Förenade Arabemiraten",
     city: "Abu Dhabi",
     venue: "ADNEC Centre Abu Dhabi",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    startDate: "2027-01-25",
+    endDate: "2027-01-29",
+    dateStatus: "confirmed",
     website: "https://www.idexuae.ae/",
     categories: ["security", "drone-uav", "sensors"],
     topics: ["Defence", "Security", "Autonomous Systems"],
     targetIndustries: ["Defence", "Border Protection"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "not-attending",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -648,10 +675,12 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 65,
     costs: { travel: 750, accommodation: 800, ticket: 250, other: 350 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu. Hålls vartannat år.",
+    verification: "verified",
+    source:
+      "ADNEC Groups eget pressmeddelande och idexuae.ae — 25–29 januari 2027 på ADNEC Centre " +
+      "Abu Dhabi. En fristående listning anger 21–25 februari och är felaktig.",
     lastResearched: RESEARCHED,
-    notes: "",
+    notes: "Hålls vartannat år. Står som Åker inte — tas med för fullständighet.",
   },
   {
     slug: "drone-show-korea",
@@ -660,15 +689,15 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     country: "Sydkorea",
     city: "Busan",
     venue: "BEXCO",
-    startDate: null,
-    endDate: null,
-    dateStatus: "tbc",
+    startDate: "2027-02-24",
+    endDate: "2027-02-26",
+    dateStatus: "confirmed",
     website: "https://www.droneshowkorea.com/",
     categories: ["drone-uav", "sensors", "technology"],
     topics: ["Drone Technology", "Enterprise UAV", "Autonomous Systems"],
     targetIndustries: ["Inspection", "Infrastructure", "Public Safety"],
     priority: "B",
-    status: "unconfirmed",
+    status: "confirmed",
     attendancePlan: "considering",
     expectedExhibitors: null,
     expectedVisitors: null,
@@ -688,8 +717,8 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     statedRelevance: 65,
     costs: { travel: 1000, accommodation: 600, ticket: 100, other: 350 },
     knownExhibitors: [],
-    verification: "unverified",
-    source: "Ingen officiell källa kontrollerad ännu.",
+    verification: "verified",
+    source: "eng.droneshowkorea.com — DSK 2027, 24–26 februari 2027 på BEXCO i Busan.",
     lastResearched: RESEARCHED,
     notes: "",
   },

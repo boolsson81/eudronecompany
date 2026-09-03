@@ -65,9 +65,22 @@ describe("TRADE_FAIR_EVENTS", () => {
     for (const event of TRADE_FAIR_EVENTS) {
       if (event.verification === "verified") {
         expect(event.source.length, event.slug).toBeGreaterThan(20);
-        expect(event.dateStatus, event.slug).toBe("confirmed");
+        // Ett verifierat event har antingen ett bekräftat datum eller ett
+        // bekräftat besked om att det inte blir av.
+        expect(
+          event.dateStatus === "confirmed" || event.status === "cancelled",
+          event.slug,
+        ).toBe(true);
       }
       expect(event.lastResearched, event.slug).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+    }
+  });
+
+  it("keeps a cancelled event out of the default list and off the plan", () => {
+    for (const event of TRADE_FAIR_EVENTS.filter((e) => e.status === "cancelled")) {
+      expect(event.priority, event.slug).toBe("D");
+      expect(event.attendancePlan, event.slug).toBe("not-attending");
+      expect(event.notes.length, event.slug).toBeGreaterThan(20);
     }
   });
 
@@ -216,12 +229,28 @@ describe("computeKpis", () => {
   const now = new Date("2026-09-03T00:00:00Z");
 
   it("counts upcoming and current-year events from confirmed dates only", () => {
-    const kpis = computeKpis(resolveEvents([]), now);
+    const events = resolveEvents([]);
+    const kpis = computeKpis(events, now);
     expect(kpis.year).toBe(2026);
-    // INTERGEO 15–17 sep och DroneX 29–30 sep ligger kvar 2026.
-    expect(kpis.upcoming).toBe(3);
-    expect(kpis.thisYear).toBe(2);
-    expect(kpis.highPriority).toBe(4);
+    // Härlett ur katalogen i stället för hårdkodat: siffran ändras varje gång ett
+    // TBC-event får ett datum, och testet ska fånga fel räkning, inte ny research.
+    const dated = events.filter((e) => e.status !== "cancelled" && e.startDate !== null);
+    expect(kpis.upcoming).toBe(dated.filter((e) => e.startDate! >= "2026-09-03").length);
+    expect(kpis.thisYear).toBe(dated.filter((e) => e.startDate!.startsWith("2026")).length);
+    expect(kpis.highPriority).toBe(events.filter((e) => e.priority === "A").length);
+  });
+
+  it("leaves the cancelled event out of every count", () => {
+    const events = resolveEvents([]);
+    const kpis = computeKpis(events, now);
+    const cancelled = events.filter((e) => e.status === "cancelled");
+    expect(cancelled.length).toBeGreaterThan(0);
+    // Commercial UAV Expo Europe är inställd — den får varken räknas som kommande
+    // eller som ett planerat besök.
+    expect(kpis.upcoming + kpis.thisYear).toBeLessThan(events.length);
+    for (const event of cancelled) {
+      expect(event.attendancePlan).toBe("not-attending");
+    }
   });
 
   it("sums the cost of the events we decided to attend", () => {
