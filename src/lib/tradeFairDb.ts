@@ -5,7 +5,7 @@
 // Två lager, med avsikt:
 //   1. Katalogen i src/data/tradeFairEvents.ts är den granskade referensdatan.
 //      Den finns alltid och gör att modulen är användbar direkt.
-//   2. Tabellerna i docs/migrations/20260903120000_tradefair_events.sql håller
+//   2. Tabellerna i docs/migrations/20260903220000_tradefair_events.sql håller
 //      allt inköparen skriver. De körs från digitalsignal-repot (AGENTS.md), och
 //      tills de finns svarar PostgREST 42P01. Då slås skrivning av i UI:t i
 //      stället för att sidan kraschar — `useTradeFairBackend` exponerar det som

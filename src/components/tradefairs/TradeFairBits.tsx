@@ -211,7 +211,7 @@ export function BackendMissingNotice({ compact }: { compact?: boolean }) {
             Mässkatalogen, poängen och kostnadsberäkningen fungerar ändå. Utställare, möten, agenda,
             inköpslista, kostnadsutfall, uppföljningar och rapporter kräver migreringen i{" "}
             <code className="rounded bg-black/10 px-1 py-0.5 dark:bg-white/10">
-              docs/migrations/20260903120000_tradefair_events.sql
+              docs/migrations/20260903220000_tradefair_events.sql
             </code>
             , som körs från digitalsignal-repot.
           </p>
