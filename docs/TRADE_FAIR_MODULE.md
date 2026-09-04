@@ -250,10 +250,26 @@ varje utställare att räknas som ny tills registret fyllts på.
 
 ### Vad som inte gick att verifiera
 
-**INTERGEO:s utställarkatalog.** Den officiella listan ligger på `dvw.de`, som
-nätverksproxyn i den här miljön blockerar — liksom `intergeo.de`, `xponential.org`
-och `expouav.com`. De sju utställarkandidaterna på INTERGEO är därför fortfarande
-kvalificerade gissningar, markerade som sådana i UI:t. Punkt 4 nedan står kvar.
+**Arrangörssidorna går inte att nå härifrån.** Miljöns nätverkspolicy blockerar
+dem, och det gäller all utgående trafik — inte bara hämtverktyget. Kontrollerat
+med direktanrop: `eurosatory.com`, `amsterdamdroneweek.com`,
+`droneworldcongress.com`, `xponential.org` och `dvw.de` svarar inte alls, och
+`intergeo.de` och `expouav.com` blockeras likaså.
+
+Det sätter en gräns för hur långt verifieringen kan drivas i den här miljön. De
+uppgifter som står som `verified` kunde beläggas via sökresultat som citerade
+arrangörens egen sida; de fyra nedan kräver att någon öppnar sidan.
+
+| Kontrollera | Adress | Vad som saknas |
+|---|---|---|
+| AUVSI XPONENTIAL | `xponential.org` | Bekräfta 17–20 maj 2027, Miami Beach Convention Center |
+| Eurosatory | `eurosatory.com` | Datum för 2028. Uppgivet 19–23 juni, ej bekräftat |
+| Amsterdam Drone Week | `amsterdamdroneweek.com` | Finns en 2027-upplaga, eller går mässan upp i Intertraffic Amsterdam 2028? |
+| Drone World Congress | `droneworldcongress.com` | Datum för elfte upplagan 2027 |
+| INTERGEO:s utställarlista | `dvw.de/intergeo/en/visit/exhibitor-list` | Stäm av de sju utställarkandidaterna |
+
+De sju kandidaterna på INTERGEO är alltså fortfarande kvalificerade gissningar,
+markerade som sådana i UI:t. Punkt 4 nedan står kvar.
 
 **Biljettpriser.** INTERGEO säljer separata expo-, konferens- och kombibiljetter,
 och utställare delar ut fria tredagarskoder. Budgetens 100 EUR är rimlig för en
