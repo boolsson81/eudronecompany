@@ -116,9 +116,9 @@ export const TRADE_FAIR_EVENTS: TradeFairEvent[] = [
     expectedVisitors: 18500,
     whyRelevant:
       "Tätast koncentration av payload- och sensortillverkare i Europa. Nästan hela LiDAR-, " +
-      "mappnings- och reality capture-kedjan ställer ut på samma golv, vilket gör det till den " +
-      "billigaste platsen att på tre dagar täcka av både befintliga leverantörer och nya " +
-      "sourcingkandidater för enterprise-payloads.",
+      "mappnings- och reality capture-kedjan ställer ut på samma golv. Det är också den mässa " +
+      "som täcker vår faktiska lucka: leverantörsregistret innehåller i dag bara distributörer " +
+      "och sourcingagenter, ingen enda payloadtillverkare vi köper direkt av.",
     score: {
       supplierRelevance: 25,
       productRelevance: 20,

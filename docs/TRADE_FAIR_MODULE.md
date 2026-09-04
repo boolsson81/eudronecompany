@@ -38,9 +38,10 @@ där. Det har två följder som är värda att fatta beslut om:
   och en död länk är sämre än ingen länk. Ska hela Inköp-menyn samlas på ett ställe
   är det ett separat beslut om vilken app som äger inköpsytan.
 - **Databasen.** `AGENTS.md` slår fast att migreringar aldrig skapas här. Schemat
-  ligger därför som ett förslag i
-  [`docs/migrations/20260903120000_tradefair_events.sql`](migrations/20260903120000_tradefair_events.sql)
-  och ska kopieras till `digitalsignal/supabase/migrations/` och köras därifrån.
+  ligger därför i DigitalSignal, som
+  `supabase/migrations/20260903220000_tradefair_events.sql`, och körs därifrån.
+  Kopian i [`docs/migrations/`](migrations/20260903220000_tradefair_events.sql) är
+  en spegling så att schemat går att läsa bredvid koden — DigitalSignal är källan.
 
 ## 2. Arkitektur: katalog i kod, planering i databas
 
@@ -77,7 +78,7 @@ läsläge med en banner i stället för att krascha.
 | `src/pages/admin/TradeFairs.tsx` | Dashboard + mässlista med sök och filter |
 | `src/pages/admin/TradeFairEvent.tsx` | Eventprofil med åtta flikar |
 | `src/components/tradefairs/` | Delade byggstenar och flikinnehåll |
-| `docs/migrations/20260903120000_tradefair_events.sql` | Schemaförslaget |
+| `docs/migrations/20260903220000_tradefair_events.sql` | Spegling av schemat; källan ligger i DigitalSignal |
 | `scripts/__tests__/trade-fair-events.test.ts` | 27 tester över katalog, poäng, sammanslagning och KPI |
 
 ## 3. Opportunity Score
@@ -214,10 +215,72 @@ ovan. Vägen framåt, när det byggs:
   det delade Supabase-projektet, vilket koordineras från DigitalSignal.
 - **De sex övriga Inköp-menyposterna.** Se § 1.
 
-## 7. Innan modulen tas i drift
+## 7. Avstämning mot databasen 2026-09-03
 
-1. Kopiera migreringen till `digitalsignal/supabase/migrations/` och kör den.
-2. Verifiera att `EDP_SHOP_ID` (`e6ad2afc-…`) är rätt butik för inköparnas RLS.
+Läsande kontroll mot `digitalsignal-prod` (`jzqgwsryxmgzcbjjddic`).
+
+**Butiks-id:t stämmer.** `e6ad2afc-e468-49a7-8d33-9b1837419ed8` är butiken
+«European Drone Company» under tenanten «Eu Drone Company». RLS-scopingen i
+migreringen träffar därmed rätt, och `loadSuppliers()` läser rätt register.
+
+**Mässtabellerna finns inte.** Ingen tabell med prefixet `tradefair_` existerar,
+vilket är precis vad UI:ts läsläge bygger på. Migreringen är alltså fortfarande
+det som blockerar drift.
+
+**Leverantörsregistret bekräftar inköpstesen.** Sex aktiva leverantörer:
+
+| Leverantör | Roll |
+|---|---|
+| ALSO Sweden AB | Distributör |
+| Boston Group | Distributör |
+| INNPRO | Distributör (B2B) |
+| Solectric GmbH | Distributör |
+| Sunsky | Sourcingagent, Kina |
+| WISSON INTL. LTD. | Sourcingagent, Kina |
+
+Ingen av dem är tillverkare av de payloads sortimentet behöver. Alla enterprise-
+sensorer köps i dag genom ett mellanled eller en agent, vilket är exakt den lucka
+mässorna ska stänga: INTERGEO och XPONENTIAL Europe är de två ställen där
+YellowScan, RIEGL, GeoCue och motsvarande går att träffa direkt. Det motiverar
+också varför Supplier relevance väger tyngst i poängmodellen.
+
+Observera att sifferkolumnen «New Suppliers» på dashboarden räknar utställare
+utan koppling till registret. Med bara sex leverantörer inlagda kommer nästan
+varje utställare att räknas som ny tills registret fyllts på.
+
+### Vad som inte gick att verifiera
+
+**Arrangörssidorna går inte att nå härifrån.** Miljöns nätverkspolicy blockerar
+dem, och det gäller all utgående trafik — inte bara hämtverktyget. Kontrollerat
+med direktanrop: `eurosatory.com`, `amsterdamdroneweek.com`,
+`droneworldcongress.com`, `xponential.org` och `dvw.de` svarar inte alls, och
+`intergeo.de` och `expouav.com` blockeras likaså.
+
+Det sätter en gräns för hur långt verifieringen kan drivas i den här miljön. De
+uppgifter som står som `verified` kunde beläggas via sökresultat som citerade
+arrangörens egen sida; de fyra nedan kräver att någon öppnar sidan.
+
+| Kontrollera | Adress | Vad som saknas |
+|---|---|---|
+| AUVSI XPONENTIAL | `xponential.org` | Bekräfta 17–20 maj 2027, Miami Beach Convention Center |
+| Eurosatory | `eurosatory.com` | Datum för 2028. Uppgivet 19–23 juni, ej bekräftat |
+| Amsterdam Drone Week | `amsterdamdroneweek.com` | Finns en 2027-upplaga, eller går mässan upp i Intertraffic Amsterdam 2028? |
+| Drone World Congress | `droneworldcongress.com` | Datum för elfte upplagan 2027 |
+| INTERGEO:s utställarlista | `dvw.de/intergeo/en/visit/exhibitor-list` | Stäm av de sju utställarkandidaterna |
+
+De sju kandidaterna på INTERGEO är alltså fortfarande kvalificerade gissningar,
+markerade som sådana i UI:t. Punkt 4 nedan står kvar.
+
+**Biljettpriser.** INTERGEO säljer separata expo-, konferens- och kombibiljetter,
+och utställare delar ut fria tredagarskoder. Budgetens 100 EUR är rimlig för en
+expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bokas.
+
+## 8. Innan modulen tas i drift
+
+1. Merga migreringen i DigitalSignal (`claude/tradefair-events-schema`) och kör
+   `supabase db push`. Versionen `20260903220000` ligger efter `20260903210000`,
+   som är den senast bokförda i prod, så den tas i ordning.
+2. ~~Verifiera att `EDP_SHOP_ID` är rätt butik för inköparnas RLS.~~ Klart, se § 7.
 3. Bekräfta de fyra kvarvarande posterna i tabellen ovan: AUVSI XPONENTIAL mot
    `xponential.org`, Eurosatory mot COGES, Amsterdam Drone Week mot RAI Amsterdam,
    och Drone World Congress mot `droneworldcongress.com`.

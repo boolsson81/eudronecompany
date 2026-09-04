@@ -1,8 +1,11 @@
 -- Inköp → Mässor & Events — normaliserat schema.
 --
--- LÄGGS INTE HÄR I DRIFT. Databasen delas med DigitalSignal och alla migreringar
--- körs därifrån (se AGENTS.md). Den här filen är förslaget som ska kopieras till
--- boolsson81/digitalsignal:supabase/migrations/ och köras med `supabase db push`.
+-- SPEGLING. DigitalSignal är källan: filen ligger som
+-- boolsson81/digitalsignal:supabase/migrations/20260903220000_tradefair_events.sql
+-- och körs därifrån med `supabase db push`, eftersom databasen delas (AGENTS.md).
+-- Kopian finns här för att schemat ska gå att läsa bredvid koden som använder det.
+-- Ändra i digitalsignal först, spegla hit sedan.
+--
 -- Så länge tabellerna saknas faller modulen tillbaka på katalogen i
 -- src/data/tradeFairEvents.ts och visar en banner om att skrivning är avstängd.
 --
