@@ -362,21 +362,33 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
    offerter.
-6. **Sätt deployhemligheterna. Det här blockerar AI-researchen just nu.** Första
-   körningen av `deploy-functions.yml` (2026-09-04) föll direkt med *«Access token
-   not provided»* — både `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` är
-   tomma i repots Actions-inställningar, precis som `AGENTS.md` förutspådde.
-   Arbetsflödet avbryter på första funktionen, så **ingen** edge-funktion
-   deployas härifrån. Tills det är åtgärdat svarar AI-knapparna «AI-researchen är
-   inte deployad ännu».
+6. **Sätt `SUPABASE_ACCESS_TOKEN` i det här repots Actions-hemligheter. Det är
+   det enda som blockerar AI-researchen.** Två körningar av
+   `deploy-functions.yml` (2026-09-04) föll på *«Access token not provided»*.
+   Verifierat, inte antaget: i den andra körningen skickades `ONLY:
+   tradefair-research` in via `workflow_dispatch` och syns med sitt riktiga värde
+   i loggen, medan `SUPABASE_ACCESS_TOKEN` står tom. En registrerad hemlighet
+   maskeras till `***`, aldrig till tomt — den finns alltså inte i det här repot.
 
-   När hemligheterna är satta: kör om arbetsflödet för hand i stället för att
-   knuffa fram en tom commit. `deploy-functions.yml` har `workflow_dispatch` och
-   tar ett funktionsnamn som indata, så
-   `Actions → Deploy edge functions → Run workflow` med `tradefair-research`
-   deployar bara den nya funktionen. Lämnas fältet tomt deployas alla nitton, och
-   då rör man samtidigt cloner- och compliancefunktioner som fungerar i dag.
-   Observera också att arbetsflödet bara utlöses av ändringar under
-   `supabase/functions/**` — en merge som inte rör dem kör det inte.
+   Den finns däremot i `digitalsignal`, som använder den i ett sextiotal
+   workflows. **Hemligheter delas inte mellan repon**, så den måste sättas här
+   också, under Settings → Secrets and variables → Actions.
+
+   `SUPABASE_PROJECT_REF` krävs inte längre. Projekt-referensen är ingen
+   hemlighet — digitalsignal har den i klartext som `PROJECT_REF:
+   jzqgwsryxmgzcbjjddic` i sina egna workflows — och att kräva den som hemlighet
+   gjorde bara att utrullningen föll på en tom variabel. Den är nu inbakad, med
+   hemligheten kvar som frivillig överstyrning.
+
+   Arbetsflödet säger numera rakt ut vad som fattas och var det sätts, i stället
+   för att låta supabase-cli falla med ett meddelande som inte pekar någonstans.
+
+   När token är satt: kör om arbetsflödet för hand i stället för att knuffa fram
+   en tom commit. `deploy-functions.yml` har `workflow_dispatch` och tar ett
+   funktionsnamn, så `Actions → Deploy edge functions → Run workflow` med
+   `tradefair-research` deployar bara den nya funktionen. Lämnas fältet tomt
+   deployas alla nitton, och då rörs cloner- och compliancefunktioner som
+   fungerar i dag. Observera också att arbetsflödet bara utlöses av ändringar
+   under `supabase/functions/**` — en merge som inte rör dem kör det inte.
 7. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet.
    Saknas den svarar funktionen 500, och UI:t säger vilken nyckel som fattas.
