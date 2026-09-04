@@ -6,7 +6,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loader2, Search, Sparkles } from "lucide-react";
+import { Loader2, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -33,6 +33,7 @@ import {
 } from "@/data/tradeFairTaxonomy";
 import { loadDashboardCounts, useEvents, type ResolvedEvent } from "@/lib/tradeFairDb";
 import { computeKpis } from "@/lib/tradeFairKpis";
+import ResearchDialog from "@/components/tradefairs/ResearchDialog";
 import { recommendEvent, VERDICT_LABEL, type Recommendation, type Verdict } from "@/lib/tradeFairRecommendation";
 import {
   AttendanceBadge,
@@ -53,7 +54,7 @@ type SortKey = "recommendation" | "score" | "date" | "cost";
 const VERDICT_ORDER: Verdict[] = ["must-attend", "recommended", "optional", "skip"];
 
 export default function TradeFairs() {
-  const { events, loading, backendAvailable } = useEvents();
+  const { events, loading, backendAvailable, reload } = useEvents();
   const [counts, setCounts] = useState<Awaited<ReturnType<typeof loadDashboardCounts>>>(null);
 
   const [query, setQuery] = useState("");
@@ -273,10 +274,13 @@ export default function TradeFairs() {
             <Checkbox checked={showNotRelevant} onCheckedChange={(v) => setShowNotRelevant(v === true)} />
             Visa D – Not Relevant
           </label>
-          <Button variant="outline" size="sm" className="ml-auto gap-2" disabled title="Byggs i fas 4">
-            <Sparkles className="h-3.5 w-3.5" />
-            AI Discover Events
-          </Button>
+          <div className="ml-auto">
+            <ResearchDialog
+              mode={{ action: "discover", known: events.map((e) => e.slug) }}
+              writable={backendAvailable === true}
+              onSaved={reload}
+            />
+          </div>
         </div>
       </section>
 

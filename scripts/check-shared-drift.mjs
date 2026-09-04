@@ -22,6 +22,7 @@ const OTHER = resolve(process.argv[2] ?? join(HERE, "../digitalsignal"));
 const SRC_MIRRORED = [];
 
 const MIRRORED = [
+  "aiUsageLog.ts",
   "cloner-shopify-access.ts",
   "compliance-sync.ts",
   "dji-compatibility.ts",

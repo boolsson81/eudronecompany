@@ -12,7 +12,6 @@ import {
   ExternalLink,
   Loader2,
   MapPin,
-  Sparkles,
   Square,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -64,6 +63,7 @@ import ExhibitorsTab from "@/components/tradefairs/ExhibitorsTab";
 import MeetingsTab from "@/components/tradefairs/MeetingsTab";
 import { AgendaTab, WishlistTab } from "@/components/tradefairs/PlanningTabs";
 import { CostsTab, FollowUpsTab, ReportTab } from "@/components/tradefairs/ResultsTabs";
+import ResearchDialog from "@/components/tradefairs/ResearchDialog";
 
 export default function TradeFairEvent() {
   const { slug = "" } = useParams();
@@ -361,10 +361,7 @@ function OverviewTab({ event, writable }: { event: ResolvedEvent; writable: bool
           {event.lastResearched && <p>Senast researchad: {event.lastResearched}</p>}
           {event.notes && <p className="border-t pt-2">{event.notes}</p>}
           <div className="flex gap-2 pt-1">
-            <Button variant="outline" size="sm" className="gap-2" disabled title="Byggs i fas 4">
-              <Sparkles className="h-3.5 w-3.5" />
-              AI Research Event
-            </Button>
+            <ResearchDialog mode={{ action: "research", event }} writable={writable} />
           </div>
         </section>
       </div>

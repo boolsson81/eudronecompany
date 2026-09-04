@@ -75,6 +75,8 @@ läsläge med en banner i stället för att krascha.
 | `src/lib/tradeFairDb.ts` | Supabase-åtkomst, tabelltillgänglighet, leverantörsuppslag |
 | `src/lib/tradeFairKpis.ts` | KPI-räkningen för dashboarden |
 | `src/lib/tradeFairRecommendation.ts` | «Bör vi åka?» — omdöme, skäl och invändningar |
+| `src/lib/tradeFairResearch.ts` | Guarden mellan AI-researchen och katalogen |
+| `supabase/functions/tradefair-research/` | Edge-funktionen som äger prompten och anropar gatewayen |
 | `src/lib/tradeFairDates.ts` | Datumformat och nedräkning |
 | `src/pages/admin/TradeFairs.tsx` | Dashboard + mässlista med sök och filter |
 | `src/pages/admin/TradeFairEvent.tsx` | Eventprofil med åtta flikar |
@@ -82,6 +84,7 @@ läsläge med en banner i stället för att krascha.
 | `docs/migrations/20260903220000_tradefair_events.sql` | Spegling av schemat; källan ligger i DigitalSignal |
 | `scripts/__tests__/trade-fair-events.test.ts` | Tester över katalog, poäng, sammanslagning och KPI |
 | `scripts/__tests__/trade-fair-recommendation.test.ts` | Tester över sourcingkartan och rekommendationsreglerna |
+| `scripts/__tests__/trade-fair-research.test.ts` | Tester över guarden: datum, taxonomi, länkar och rådata |
 
 ## 3. Opportunity Score
 
@@ -184,7 +187,9 @@ av Las Vegas-upplagan när sortimentet kräver de amerikanska tillverkarna.
 | **1** Event database, dashboard, profil, sök, filter, prioritet, Opportunity Score, kategorier, seed | Klar och körbar utan databas |
 | **2** Utställare, leverantörskoppling, mötesplanerare, agenda, inköpslista, kostnader | UI och datalager klara; kräver migreringen för att skriva |
 | **3** Rapport, ROI, uppföljningar, kalenderintegration | Rapport, ROI och uppföljningar klara mot schemat. Kalenderexport är **förberedd, inte byggd** — `calendar_provider`, `calendar_event_id` och `calendar_synced_at` finns i `tradefair_meetings`, men uppdraget säger uttryckligen att integrationen inte ska byggas förrän befintlig arkitektur analyserats. Notifieringar likaså: schemat 30/14/7/1 dagar före och 1/7/14/30 efter finns i taxonomin och visas i UI:t, men inget skickas. |
-| **4** AI Event Discovery, AI Event Research, AI Exhibitor Research | **Arkitektur, inte funktion.** Knapparna finns inaktiverade, `research_payload` finns i schemat. Ingen AI-funktion är skriven — se nedan. |
+| **4** AI Event Discovery, AI Event Research | **Byggd.** Edge-funktionen `tradefair-research` letar, guarden i `tradeFairResearch.ts` granskar, inköparen godkänner. Se nedan. |
+| **4** AI Exhibitor Research | Ligger i researchanropet som `relevantExhibitors`, men skrivs inte till `tradefair_exhibitors` — utställarlistan ska stämmas av mot den officiella katalogen först. |
+| **4** Automatiserad mässbevakning | Inte byggd. Kräver ett cron-jobb i det delade Supabase-projektet, vilket koordineras från DigitalSignal. |
 | **4** Rekommendationsmotor (§ 27) | **Byggd, men regelbaserad — inte en modellfråga.** Se nedan. |
 
 ### Rekommendationsmotorn är regelbaserad med flit
@@ -227,26 +232,48 @@ katalogen som den ser ut i dag får bara INTERGEO och XPONENTIAL Europe Must Att
 Omdömet syns som en egen kolumn i listan, är sorterings- och filtrerbart, och
 ligger med hela motiveringen överst på eventprofilen.
 
-### Varför fas 4 inte byggdes klart
+### AI-researchen: modellen letar, människan godkänner
 
-AI-infrastrukturen ligger i DigitalSignal: Lovable AI Gateway (`LOVABLE_API_KEY`,
-OpenAI-kompatibelt), `_shared/aiUsageLog.ts` för kostnadsloggning och Firecrawl för
-webbresearch. Inget av det är speglat hit, och `docs/EXTRACTION_MANIFEST.md`
-reglerar vilka `_shared`-moduler som får dupliceras.
+Uppdraget ville att AI ska kunna hitta nya mässor (§ 16) och fördjupa en befintlig
+(§ 17). Båda finns nu, men flödet är byggt så att modellen aldrig kan skriva något
+till katalogen på egen hand.
 
-En AI-funktion som *gissar* mässdatum vore dessutom direkt i strid med källpolicyn
-ovan. Vägen framåt, när det byggs:
+| Led | Var | Vad det gör |
+|---|---|---|
+| Anropet | `supabase/functions/tradefair-research/` | Äger prompten, kräver butiksåtkomst, anropar Lovable AI Gateway och loggar förbrukningen |
+| Guarden | `src/lib/tradeFairResearch.ts` | Granskar svaret fält för fält och tvingar in det i källpolicyn |
+| Godkännandet | `ResearchDialog` | Visar fynden, vad guarden kastade och vilken källa som påstås. Inköparen trycker spara |
 
-1. Ny edge function `tradefair-research` i det här repot, deployad mot samma
-   Supabase-projekt via `.github/workflows/deploy-functions.yml`.
-2. Anropar gatewayen via en kopia av `callLovableAiGateway` — läggs till i
-   duplicerings­listan i extraktionsmanifestet så `npm run check:shared` fångar drift.
-3. Skriver aldrig direkt till `tradefair_events`. Resultatet landar i
-   `research_payload` med `verification: "needs-review"`, och en människa
-   godkänner innan det blir katalogdata.
-4. Rekommendationsmotorn finns redan regelbaserat (se ovan). En AI-variant bör
-   förfina den mot faktiska utställarlistor och sortimentsdata, inte ersätta
-   reglerna — de är det som gör omdömet möjligt att ifrågasätta.
+**Prompten bor i funktionen, inte hos klienten.** En funktion som vidarebefordrar
+fritt formulerade meddelanden till gatewayen är både en injektionsyta och ett sätt
+att bränna delade AI-krediter på annat än mässresearch. Klienten skickar bara
+`action`, en sökfråga och kända fakta om mässan.
+
+**Guarden är den som faktiskt skyddar katalogen**, och den ligger därför i testad
+frontend-kod i stället för i en Deno-funktion som testsviten inte når. Den:
+
+- sätter alltid `verification: "needs-review"` — modellen får inte verifiera sig själv,
+  inte ens när den påstår `verified`;
+- kastar varje datum som inte är ISO-format, som slutar innan det börjar, eller som
+  modellen inte själv kallar bekräftat;
+- kastar kategorier och ämnen utanför taxonomin, så att filtren fortsätter fungera
+  och ett påhittat begrepp inte tyst blir ett nytt;
+- kastar webbadresser som inte är http(s);
+- redovisar allt den kastade i `dropped`, som visas för granskaren.
+
+Ett sparat fynd blir prioritet **C**, status **Obekräftad** och besöksbeslut
+**Övervägs**, med rådata kvar i `research_payload`. Det är en kandidat att granska,
+inte en mässa vi bestämt något om.
+
+**Behörighet och kostnad.** Funktionen kräver inloggning (`verify_jwt` är på) och
+att användaren har butiken via `user_shops` — krediterna delas med DigitalSignal
+och ska inte gå att spendera av vem som helst i det gemensamma projektet. Varje
+anrop loggas i `ai_usage_log` via den speglade `_shared/aiUsageLog.ts`, som därmed
+också står i `npm run check:shared`.
+
+**Kräver `LOVABLE_API_KEY`** som hemlighet i Supabase-projektet, samma nyckel som
+DigitalSignals 147 andra AI-anrop använder. Saknas den svarar funktionen 500 med
+det beskedet i klartext.
 
 ## 6. Det som medvetet lämnades ogjort
 
@@ -254,8 +281,12 @@ ovan. Vägen framåt, när det byggs:
   men ingen kartrendering är byggd. Det kräver ett kartbibliotek som repot inte har
   och venue-planer som arrangörerna inte publicerar maskinläsbart.
 - **Kalenderintegration.** Se fas 3 — uttryckligen avvaktat enligt uppdraget.
-- **Notifieringar.** Schemat finns, utskicket saknas: det behöver ett cron-jobb i
-  det delade Supabase-projektet, vilket koordineras från DigitalSignal.
+- **Notifieringar och automatiserad mässbevakning.** Schemat finns, utskicket
+  saknas: båda behöver cron-jobb i det delade Supabase-projektet, vilket
+  koordineras från DigitalSignal.
+- **AI-skrivna utställarlistor.** Researchen returnerar `relevantExhibitors`, men
+  de skrivs inte till `tradefair_exhibitors`. En utställarlista som inte är hämtad
+  ur den officiella katalogen ska inte kunna se hämtad ut.
 - **De sex övriga Inköp-menyposterna.** Se § 1.
 
 ## 7. Avstämning mot databasen 2026-09-03
@@ -331,3 +362,7 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
    offerter.
+6. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet innan
+   AI-researchen används, och att `.github/workflows/deploy-functions.yml` har
+   `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` — annars deployas
+   `tradefair-research` aldrig.
