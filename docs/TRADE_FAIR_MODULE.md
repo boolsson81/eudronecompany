@@ -273,7 +273,12 @@ också står i `npm run check:shared`.
 
 **Kräver `LOVABLE_API_KEY`** som hemlighet i Supabase-projektet, samma nyckel som
 DigitalSignals 147 andra AI-anrop använder. Saknas den svarar funktionen 500 med
-det beskedet i klartext.
+det beskedet i klartext, och UI:t säger vilken nyckel som fattas.
+
+Funktionen är utrullad sedan 2026-09-04 (se § 8, punkt 6). Den gick inte att
+röktesta härifrån — miljöns nätverkspolicy blockerar
+`*.supabase.co/functions/v1` — så att den svarar som avsett är bekräftat av
+Management-API:et (status ACTIVE, `verify_jwt` på), inte av ett anrop.
 
 ## 6. Det som medvetet lämnades ogjort
 
@@ -362,33 +367,42 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
    offerter.
-6. **Sätt `SUPABASE_ACCESS_TOKEN` i det här repots Actions-hemligheter. Det är
-   det enda som blockerar AI-researchen.** Två körningar av
-   `deploy-functions.yml` (2026-09-04) föll på *«Access token not provided»*.
-   Verifierat, inte antaget: i den andra körningen skickades `ONLY:
-   tradefair-research` in via `workflow_dispatch` och syns med sitt riktiga värde
-   i loggen, medan `SUPABASE_ACCESS_TOKEN` står tom. En registrerad hemlighet
-   maskeras till `***`, aldrig till tomt — den finns alltså inte i det här repot.
+6. ~~Deploya `tradefair-research`.~~ **Klar 2026-09-04.** Funktionen är utrullad
+   och aktiv i `jzqgwsryxmgzcbjjddic`, version 1, med `verify_jwt` påslaget.
 
-   Den finns däremot i `digitalsignal`, som använder den i ett sextiotal
-   workflows. **Hemligheter delas inte mellan repon**, så den måste sättas här
-   också, under Settings → Secrets and variables → Actions.
+   Den gick inte via GitHub Actions. Två körningar av `deploy-functions.yml` föll
+   på *«Access token not provided»*, och verifieringen visade varför: i en
+   `workflow_dispatch`-körning syns indatat `ONLY: tradefair-research` med sitt
+   riktiga värde medan `SUPABASE_ACCESS_TOKEN` står tom, och en registrerad
+   hemlighet maskeras till `***` — aldrig till tomt. Den finns i `digitalsignal`,
+   som använder den i ett sextiotal workflows, men **hemligheter delas inte
+   mellan repon**.
 
-   `SUPABASE_PROJECT_REF` krävs inte längre. Projekt-referensen är ingen
-   hemlighet — digitalsignal har den i klartext som `PROJECT_REF:
-   jzqgwsryxmgzcbjjddic` i sina egna workflows — och att kräva den som hemlighet
-   gjorde bara att utrullningen föll på en tom variabel. Den är nu inbakad, med
-   hemligheten kvar som frivillig överstyrning.
+   Utrullningen gjordes i stället direkt mot Management-API:et, med
+   entrypointen och de två `_shared`-modulerna som funktionen importerar.
 
-   Arbetsflödet säger numera rakt ut vad som fattas och var det sätts, i stället
-   för att låta supabase-cli falla med ett meddelande som inte pekar någonstans.
+   **Två följder att känna till.** Den utrullade kopian är inskriven för hand och
+   avviker på en punkt från repot: i `_shared/aiUsageLog.ts` ligger `durationMs`
+   på en annan plats i objektet som skickas till `logAiUsage` vid lyckat anrop.
+   Nyckelordningen i en objektlitteral saknar betydelse, men avvikelsen finns.
+   Och en direktutrullning står utanför repots historik — nästa körning av
+   `deploy-functions.yml` skriver över den med repots version, vilket också
+   rättar avvikelsen.
 
-   När token är satt: kör om arbetsflödet för hand i stället för att knuffa fram
-   en tom commit. `deploy-functions.yml` har `workflow_dispatch` och tar ett
-   funktionsnamn, så `Actions → Deploy edge functions → Run workflow` med
-   `tradefair-research` deployar bara den nya funktionen. Lämnas fältet tomt
-   deployas alla nitton, och då rörs cloner- och compliancefunktioner som
-   fungerar i dag. Observera också att arbetsflödet bara utlöses av ändringar
-   under `supabase/functions/**` — en merge som inte rör dem kör det inte.
+   **Sätt därför ändå `SUPABASE_ACCESS_TOKEN`** under Settings → Secrets and
+   variables → Actions. Utan den är varje kommande ändring av funktionen en
+   manuell utrullning, och repot slutar vara sanningen om vad som körs.
+
+   `SUPABASE_PROJECT_REF` krävs inte. Projekt-referensen är ingen hemlighet —
+   digitalsignal har den i klartext som `PROJECT_REF: jzqgwsryxmgzcbjjddic` — och
+   att kräva den gjorde bara att utrullningen föll på en tom variabel. Den är nu
+   inbakad i arbetsflödet, med hemligheten kvar som frivillig överstyrning.
+
+   Arbetsflödet säger numera rakt ut vad som fattas och var det sätts. Kör det
+   för hand i stället för att knuffa fram en tom commit: det har
+   `workflow_dispatch` och tar ett funktionsnamn, så `Actions → Deploy edge
+   functions → Run workflow` med `tradefair-research` rör bara den funktionen.
+   Lämnas fältet tomt deployas alla nitton. Arbetsflödet utlöses annars bara av
+   ändringar under `supabase/functions/**`.
 7. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet.
    Saknas den svarar funktionen 500, och UI:t säger vilken nyckel som fattas.
