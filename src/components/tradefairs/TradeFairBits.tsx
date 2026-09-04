@@ -21,6 +21,7 @@ import {
   type VerificationStatus,
 } from "@/data/tradeFairTaxonomy";
 import { scoreRaw } from "@/data/tradeFairEvents";
+import { VERDICT_BADGE, VERDICT_LABEL, type Verdict } from "@/lib/tradeFairRecommendation";
 import { daysUntil, formatDateRange } from "@/lib/tradeFairDates";
 
 const PILL = "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-xs font-medium";
@@ -109,6 +110,10 @@ export function EventDates({
       {formatDateRange(startDate, endDate)}
     </span>
   );
+}
+
+export function VerdictBadge({ verdict }: { verdict: Verdict }) {
+  return <span className={cn(PILL, VERDICT_BADGE[verdict])}>{VERDICT_LABEL[verdict]}</span>;
 }
 
 export function ScoreDial({ value, className }: { value: number; className?: string }) {

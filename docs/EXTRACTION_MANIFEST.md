@@ -55,7 +55,8 @@ Genererat av `scripts/extract-eudroneparts.mjs`. Mål: `/home/user/eudroneparts-
 - _shared/migration-recovery-pass.ts
 - _shared/shopify-menu-inventory-audit.ts
 
-## Delade moduler som dupliceras (används även av funktioner som stannar) (16)
+## Delade moduler som dupliceras (används även av funktioner som stannar) (17)
+- _shared/aiUsageLog.ts
 - _shared/cloner-shopify-access.ts
 - _shared/compliance-sync.ts
 - _shared/dji-compatibility.ts

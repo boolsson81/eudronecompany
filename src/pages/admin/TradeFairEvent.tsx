@@ -4,13 +4,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
+  AlertTriangle,
   ArrowLeft,
   Building2,
+  Check,
   CheckSquare,
   ExternalLink,
   Loader2,
   MapPin,
-  Sparkles,
   Square,
 } from "lucide-react";
 import { toast } from "sonner";
@@ -44,6 +45,7 @@ import {
   type ResolvedEvent,
   type SupplierOption,
 } from "@/lib/tradeFairDb";
+import { recommendEvent } from "@/lib/tradeFairRecommendation";
 import {
   AttendanceBadge,
   BackendMissingNotice,
@@ -54,12 +56,14 @@ import {
   ScoreDial,
   StatusBadge,
   VerificationBadge,
+  VerdictBadge,
   daysUntil,
 } from "@/components/tradefairs/TradeFairBits";
 import ExhibitorsTab from "@/components/tradefairs/ExhibitorsTab";
 import MeetingsTab from "@/components/tradefairs/MeetingsTab";
 import { AgendaTab, WishlistTab } from "@/components/tradefairs/PlanningTabs";
 import { CostsTab, FollowUpsTab, ReportTab } from "@/components/tradefairs/ResultsTabs";
+import ResearchDialog from "@/components/tradefairs/ResearchDialog";
 
 export default function TradeFairEvent() {
   const { slug = "" } = useParams();
@@ -264,10 +268,58 @@ function NotificationStrip({ days }: { days: number }) {
   );
 }
 
+
+/**
+ * «Bör vi åka?» — uppdragets § 27. Motiveringen står bredvid omdömet, eftersom
+ * ett omdöme utan skäl inte går att invända mot.
+ */
+function RecommendationCard({ event }: { event: ResolvedEvent }) {
+  const advice = useMemo(() => recommendEvent(event), [event]);
+
+  return (
+    <section className="space-y-3 rounded-lg border bg-card p-4">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        <h2 className="text-sm font-medium">Bör vi åka?</h2>
+        <VerdictBadge verdict={advice.verdict} />
+      </div>
+      <p className="text-sm">{advice.headline}</p>
+
+      {advice.reasons.length > 0 && (
+        <ul className="space-y-1">
+          {advice.reasons.map((reason) => (
+            <li key={reason} className="flex gap-2 text-xs text-muted-foreground">
+              <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600 dark:text-emerald-400" />
+              <span>{reason}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {advice.warnings.length > 0 && (
+        <ul className="space-y-1 border-t pt-2">
+          {advice.warnings.map((warning) => (
+            <li key={warning} className="flex gap-2 text-xs text-muted-foreground">
+              <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-amber-600 dark:text-amber-400" />
+              <span>{warning}</span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <p className="text-[11px] leading-snug text-muted-foreground">
+        Bedömningen är regelbaserad och läser poängen, datumet, kostnaden och vilka sourcingbehov
+        mässans ämnesområden täcker. Den vet ingenting om utställarlistan.
+      </p>
+    </section>
+  );
+}
+
 function OverviewTab({ event, writable }: { event: ResolvedEvent; writable: boolean }) {
   return (
     <div className="grid gap-4 lg:grid-cols-3">
       <div className="space-y-4 lg:col-span-2">
+        <RecommendationCard event={event} />
+
         <section className="space-y-2 rounded-lg border bg-card p-4">
           <h2 className="text-sm font-medium">Varför mässan är relevant för EU Drone Company</h2>
           <p className="text-sm leading-relaxed text-muted-foreground">
@@ -309,10 +361,7 @@ function OverviewTab({ event, writable }: { event: ResolvedEvent; writable: bool
           {event.lastResearched && <p>Senast researchad: {event.lastResearched}</p>}
           {event.notes && <p className="border-t pt-2">{event.notes}</p>}
           <div className="flex gap-2 pt-1">
-            <Button variant="outline" size="sm" className="gap-2" disabled title="Byggs i fas 4">
-              <Sparkles className="h-3.5 w-3.5" />
-              AI Research Event
-            </Button>
+            <ResearchDialog mode={{ action: "research", event }} writable={writable} />
           </div>
         </section>
       </div>
