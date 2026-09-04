@@ -362,7 +362,21 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
    offerter.
-6. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet innan
-   AI-researchen används, och att `.github/workflows/deploy-functions.yml` har
-   `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` — annars deployas
-   `tradefair-research` aldrig.
+6. **Sätt deployhemligheterna. Det här blockerar AI-researchen just nu.** Första
+   körningen av `deploy-functions.yml` (2026-09-04) föll direkt med *«Access token
+   not provided»* — både `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` är
+   tomma i repots Actions-inställningar, precis som `AGENTS.md` förutspådde.
+   Arbetsflödet avbryter på första funktionen, så **ingen** edge-funktion
+   deployas härifrån. Tills det är åtgärdat svarar AI-knapparna «AI-researchen är
+   inte deployad ännu».
+
+   När hemligheterna är satta: kör om arbetsflödet för hand i stället för att
+   knuffa fram en tom commit. `deploy-functions.yml` har `workflow_dispatch` och
+   tar ett funktionsnamn som indata, så
+   `Actions → Deploy edge functions → Run workflow` med `tradefair-research`
+   deployar bara den nya funktionen. Lämnas fältet tomt deployas alla nitton, och
+   då rör man samtidigt cloner- och compliancefunktioner som fungerar i dag.
+   Observera också att arbetsflödet bara utlöses av ändringar under
+   `supabase/functions/**` — en merge som inte rör dem kör det inte.
+7. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet.
+   Saknas den svarar funktionen 500, och UI:t säger vilken nyckel som fattas.

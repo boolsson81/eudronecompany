@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   guardResearchResponse,
   guardResearchedEvent,
+  researchErrorText,
   slugifyEventName,
   toEventRow,
 } from "../../src/lib/tradeFairResearch";
@@ -150,5 +151,42 @@ describe("toEventRow", () => {
     const row = toEventRow(guardResearchedEvent({ ...base, categories: ["underwater"] })!, shop);
     expect(row.research_payload).toBeDefined();
     expect((row.research_payload as { dropped: string[] }).dropped.join(" ")).toMatch(/underwater/);
+  });
+});
+
+describe("researchErrorText", () => {
+  it("pekar ut den odeployade funktionen, som är det vanligaste felet", () => {
+    // supabase-js ger 404 när funktionen inte finns i projektet, och
+    // "Failed to send a request" när den inte går att nå alls.
+    expect(researchErrorText({ context: { status: 404 } })).toMatch(/inte deployad/);
+    expect(researchErrorText({ message: "Failed to send a request to the Edge Function" })).toMatch(
+      /inte deployad/,
+    );
+  });
+
+  it("skiljer på utloggad och obehörig", () => {
+    expect(researchErrorText({ context: { status: 401 } })).toMatch(/inte inloggad/);
+    expect(researchErrorText({ context: { status: 403 } })).toMatch(/saknar åtkomst/);
+  });
+
+  it("säger till när krediterna är slut", () => {
+    expect(researchErrorText({ context: { status: 402 } })).toMatch(/krediterna är slut/);
+    expect(researchErrorText({ message: "AI_CREDITS_EXHAUSTED" })).toMatch(/krediterna är slut/);
+  });
+
+  it("ber om en ny försök vid rate limit", () => {
+    expect(researchErrorText({ context: { status: 429 } })).toMatch(/försök igen/i);
+  });
+
+  it("pekar ut den saknade AI-nyckeln", () => {
+    expect(researchErrorText({ message: "LOVABLE_API_KEY is not configured" })).toMatch(
+      /LOVABLE_API_KEY/,
+    );
+  });
+
+  it("faller tillbaka på meddelandet, och på något alls", () => {
+    expect(researchErrorText({ message: "Något oväntat" })).toBe("Något oväntat");
+    expect(researchErrorText(null)).toBe("Researchen misslyckades.");
+    expect(researchErrorText({})).toBe("Researchen misslyckades.");
   });
 });
