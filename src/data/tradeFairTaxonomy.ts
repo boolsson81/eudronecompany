@@ -361,6 +361,39 @@ export const WISHLIST_SUGGESTIONS = [
   "Drone docks",
 ] as const;
 
+/** Hur svårt behovet är att fylla. Styr om en mässa är värd resan för det. */
+export type SourcingTier = "strategic" | "commodity";
+
+export interface SourcingGap {
+  /** Ämnen ur EVENT_TOPICS där behovet går att fylla. */
+  topics: string[];
+  tier: SourcingTier;
+}
+
+/**
+ * Vilka ämnesområden som svarar mot ett sourcingbehov. Kartan är explicit i
+ * stället för textmatchande: «RTK module» hittas på en GNSS-monter, inte på en
+ * monter som råkar ha ordet RTK i sin text, och den som ändrar bedömningen ska
+ * behöva ändra en rad här i stället för att gissa vad en sökning gjorde.
+ *
+ * `tier` avgör vikten. Batterier, propellrar och gimbaler går att köpa av
+ * vilken distributör som helst — de motiverar ingen resa, hur många mässor som
+ * än har dem. Enterprise-LiDAR, termik, RTK, tunglyft och dockor kräver att man
+ * träffar tillverkaren, och det är den sortens täckning som ska väga.
+ *
+ * Nycklarna är WISHLIST_SUGGESTIONS.
+ */
+export const SOURCING_GAPS: Record<string, SourcingGap> = {
+  "Enterprise LiDAR": { topics: ["LiDAR", "Surveying", "Mapping", "Reality Capture"], tier: "strategic" },
+  "Thermal payload": { topics: ["Thermal", "EO/IR", "Inspection"], tier: "strategic" },
+  "RTK module": { topics: ["GNSS", "INS", "Surveying"], tier: "strategic" },
+  "Heavy-lift drone": { topics: ["Enterprise UAV", "Commercial Drone"], tier: "strategic" },
+  "Drone docks": { topics: ["Drone Operations", "Autonomous Systems", "Autonomy"], tier: "strategic" },
+  "Drone batteries": { topics: ["Drone Technology", "Commercial Drone"], tier: "commodity" },
+  Propellers: { topics: ["Drone Technology"], tier: "commodity" },
+  Gimbals: { topics: ["Drone Technology", "EO/IR"], tier: "commodity" },
+};
+
 export type WishlistPriority = "must-source" | "should-source" | "nice-to-have";
 
 export const WISHLIST_PRIORITY_LABEL: Record<WishlistPriority, string> = {

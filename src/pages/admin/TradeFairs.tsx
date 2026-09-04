@@ -33,6 +33,7 @@ import {
 } from "@/data/tradeFairTaxonomy";
 import { loadDashboardCounts, useEvents, type ResolvedEvent } from "@/lib/tradeFairDb";
 import { computeKpis } from "@/lib/tradeFairKpis";
+import { recommendEvent, VERDICT_LABEL, type Recommendation, type Verdict } from "@/lib/tradeFairRecommendation";
 import {
   AttendanceBadge,
   BackendMissingNotice,
@@ -43,10 +44,13 @@ import {
   PriorityBadge,
   StatusBadge,
   VerificationBadge,
+  VerdictBadge,
   daysUntil,
 } from "@/components/tradefairs/TradeFairBits";
 
-type SortKey = "score" | "date" | "cost";
+type SortKey = "recommendation" | "score" | "date" | "cost";
+
+const VERDICT_ORDER: Verdict[] = ["must-attend", "recommended", "optional", "skip"];
 
 export default function TradeFairs() {
   const { events, loading, backendAvailable } = useEvents();
@@ -56,7 +60,8 @@ export default function TradeFairs() {
   const [category, setCategory] = useState("all");
   const [priority, setPriority] = useState("all");
   const [country, setCountry] = useState("all");
-  const [sort, setSort] = useState<SortKey>("score");
+  const [sort, setSort] = useState<SortKey>("recommendation");
+  const [verdictFilter, setVerdictFilter] = useState("all");
   const [showNotRelevant, setShowNotRelevant] = useState(false);
   const [onlyUpcoming, setOnlyUpcoming] = useState(false);
 
@@ -72,11 +77,19 @@ export default function TradeFairs() {
 
   const kpis = useMemo(() => computeKpis(events), [events]);
 
+  /** Rekommendationen räknas en gång per lista och återanvänds i rad och sortering. */
+  const advice = useMemo(() => {
+    const map = new Map<string, Recommendation>();
+    for (const event of events) map.set(event.slug, recommendEvent(event));
+    return map;
+  }, [events]);
+
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     const today = new Date().toISOString().slice(0, 10);
 
     const rows = events.filter((e) => {
+      if (verdictFilter !== "all" && advice.get(e.slug)?.verdict !== verdictFilter) return false;
       // D visas bara när användaren aktivt begär det (spec § Event Priority).
       if (!showNotRelevant && !(EVENT_PRIORITY_BY_ID.get(e.priority)?.inDefaultList ?? true)) return false;
       if (priority !== "all" && e.priority !== priority) return false;
@@ -91,6 +104,13 @@ export default function TradeFairs() {
     });
 
     return rows.sort((a, b) => {
+      if (sort === "recommendation") {
+        const rank =
+          VERDICT_ORDER.indexOf(advice.get(a.slug)!.verdict) -
+          VERDICT_ORDER.indexOf(advice.get(b.slug)!.verdict);
+        if (rank !== 0) return rank;
+        return b.opportunityScoreValue - a.opportunityScoreValue;
+      }
       if (sort === "cost") return a.totalEstimatedCostValue - b.totalEstimatedCostValue;
       if (sort === "date") {
         if (a.startDate && b.startDate) return a.startDate.localeCompare(b.startDate);
@@ -99,7 +119,7 @@ export default function TradeFairs() {
       }
       return b.opportunityScoreValue - a.opportunityScoreValue;
     });
-  }, [events, query, category, priority, country, sort, showNotRelevant, onlyUpcoming]);
+  }, [events, advice, query, category, priority, country, sort, verdictFilter, showNotRelevant, onlyUpcoming]);
 
   return (
     <div className="mx-auto max-w-7xl space-y-4 px-4 py-6">
@@ -196,6 +216,23 @@ export default function TradeFairs() {
           </div>
 
           <div className="space-y-1">
+            <Label className="text-xs">Rekommendation</Label>
+            <Select value={verdictFilter} onValueChange={setVerdictFilter}>
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">Alla omdömen</SelectItem>
+                {VERDICT_ORDER.map((v) => (
+                  <SelectItem key={v} value={v}>
+                    {VERDICT_LABEL[v]}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div className="space-y-1">
             <Label className="text-xs">Land</Label>
             <Select value={country} onValueChange={setCountry}>
               <SelectTrigger>
@@ -221,6 +258,7 @@ export default function TradeFairs() {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
+                <SelectItem value="recommendation">Rekommendation</SelectItem>
                 <SelectItem value="score">Opportunity Score</SelectItem>
                 <SelectItem value="date">Datum</SelectItem>
                 <SelectItem value="cost">Kostnad</SelectItem>
@@ -253,6 +291,7 @@ export default function TradeFairs() {
           <Table>
             <TableHeader>
               <TableRow>
+                <TableHead>Bör vi åka?</TableHead>
                 <TableHead>Mässa</TableHead>
                 <TableHead>Datum</TableHead>
                 <TableHead>Plats</TableHead>
@@ -264,7 +303,7 @@ export default function TradeFairs() {
             </TableHeader>
             <TableBody>
               {filtered.map((event) => (
-                <EventRow key={event.slug} event={event} />
+                <EventRow key={event.slug} event={event} recommendation={advice.get(event.slug)!} />
               ))}
             </TableBody>
           </Table>
@@ -280,10 +319,20 @@ export default function TradeFairs() {
   );
 }
 
-function EventRow({ event }: { event: ResolvedEvent }) {
+function EventRow({
+  event,
+  recommendation,
+}: {
+  event: ResolvedEvent;
+  recommendation: Recommendation;
+}) {
   const days = daysUntil(event.startDate);
   return (
     <TableRow>
+      <TableCell className="max-w-[13rem] align-top">
+        <VerdictBadge verdict={recommendation.verdict} />
+        <div className="mt-1 text-xs text-muted-foreground">{recommendation.headline}</div>
+      </TableCell>
       <TableCell className="max-w-[26rem]">
         <Link to={`/admin/trade-fairs/${event.slug}`} className="font-medium hover:underline">
           {event.name}

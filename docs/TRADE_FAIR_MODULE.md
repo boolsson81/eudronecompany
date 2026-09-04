@@ -74,12 +74,14 @@ läsläge med en banner i stället för att krascha.
 | `src/lib/tradeFairCatalog.ts` | Sammanslagning katalog + databasrader (ren logik, testad) |
 | `src/lib/tradeFairDb.ts` | Supabase-åtkomst, tabelltillgänglighet, leverantörsuppslag |
 | `src/lib/tradeFairKpis.ts` | KPI-räkningen för dashboarden |
+| `src/lib/tradeFairRecommendation.ts` | «Bör vi åka?» — omdöme, skäl och invändningar |
 | `src/lib/tradeFairDates.ts` | Datumformat och nedräkning |
 | `src/pages/admin/TradeFairs.tsx` | Dashboard + mässlista med sök och filter |
 | `src/pages/admin/TradeFairEvent.tsx` | Eventprofil med åtta flikar |
 | `src/components/tradefairs/` | Delade byggstenar och flikinnehåll |
 | `docs/migrations/20260903220000_tradefair_events.sql` | Spegling av schemat; källan ligger i DigitalSignal |
-| `scripts/__tests__/trade-fair-events.test.ts` | 27 tester över katalog, poäng, sammanslagning och KPI |
+| `scripts/__tests__/trade-fair-events.test.ts` | Tester över katalog, poäng, sammanslagning och KPI |
+| `scripts/__tests__/trade-fair-recommendation.test.ts` | Tester över sourcingkartan och rekommendationsreglerna |
 
 ## 3. Opportunity Score
 
@@ -182,7 +184,48 @@ av Las Vegas-upplagan när sortimentet kräver de amerikanska tillverkarna.
 | **1** Event database, dashboard, profil, sök, filter, prioritet, Opportunity Score, kategorier, seed | Klar och körbar utan databas |
 | **2** Utställare, leverantörskoppling, mötesplanerare, agenda, inköpslista, kostnader | UI och datalager klara; kräver migreringen för att skriva |
 | **3** Rapport, ROI, uppföljningar, kalenderintegration | Rapport, ROI och uppföljningar klara mot schemat. Kalenderexport är **förberedd, inte byggd** — `calendar_provider`, `calendar_event_id` och `calendar_synced_at` finns i `tradefair_meetings`, men uppdraget säger uttryckligen att integrationen inte ska byggas förrän befintlig arkitektur analyserats. Notifieringar likaså: schemat 30/14/7/1 dagar före och 1/7/14/30 efter finns i taxonomin och visas i UI:t, men inget skickas. |
-| **4** AI Event Discovery, AI Event Research, AI Exhibitor Research, AI Recommendation | **Arkitektur, inte funktion.** Knapparna finns inaktiverade, `research_payload` finns i schemat. Ingen AI-funktion är skriven — se nedan. |
+| **4** AI Event Discovery, AI Event Research, AI Exhibitor Research | **Arkitektur, inte funktion.** Knapparna finns inaktiverade, `research_payload` finns i schemat. Ingen AI-funktion är skriven — se nedan. |
+| **4** Rekommendationsmotor (§ 27) | **Byggd, men regelbaserad — inte en modellfråga.** Se nedan. |
+
+### Rekommendationsmotorn är regelbaserad med flit
+
+Uppdraget kallar § 27 för en AI-motor. Den är byggd som explicita regler i
+`src/lib/tradeFairRecommendation.ts`, och det är ett medvetet avsteg.
+
+Ett inköpsbeslut som kostar en resa, tre dagar och en kalender full av möten ska
+gå att ifrågasätta rad för rad. Uppdraget kräver dessutom att motiveringen alltid
+följer med (*«Förklara alltid varför»*), och en regel som säger vad den gör är
+ett bättre svar på det än en modell som sammanfattar i efterhand. En AI-variant
+kan senare förfina bedömningen — men då mot den här stegen som utgångsläge.
+
+Motorn läser bara sådant vi vet: poängen, datumet, kostnaden, statusen och vilka
+sourcingbehov mässans ämnesområden täcker. Den gissar aldrig om utställarlistan.
+
+| Steg | Regel |
+|---|---|
+| Utgångsläge | Opportunity Score: ≥ 90 Must Attend, ≥ 75 Recommended, ≥ 60 Optional, annars Skip |
+| Hårt utfall | Inställd eller redan genomförd mässa blir Skip utan vägning |
+| Sourcingtäckning | Två strategiska behov höjer ett steg — men aldrig till Must Attend, och aldrig under 70 poäng |
+| Obekräftat datum | Sänker ett steg. Går inte att budgetera eller boka möten till |
+| Kort varsel | Under sju dagar sänker ett steg. Under 21 dagar en varning |
+| Kostnadstak | Över taket sänker ett steg |
+| Verifiering | Ej verifierade uppgifter ger en varning, inte en sänkning |
+
+**Strategiskt eller förbrukningsvara.** `SOURCING_GAPS` märker varje behov. Första
+utkastet lät alla behov väga lika, och då fick varje drönarmässa fem träffar —
+batterier, propellrar och gimbaler finns på ämnet «Drone Technology», som alla
+har. Signalen blev värdelös och Drone Show Korea på 65 poäng klättrade till
+Recommended. Nu väger bara det som kräver att man träffar tillverkaren:
+enterprise-LiDAR, termik, RTK, tunglyft och dockor.
+
+**Taket på höjningen** finns av samma skäl. DroneX täcker två strategiska behov
+och har 85 poäng, men stannar på Recommended. Must Attend ska poängen bära själv,
+annars klättrar en medelmåttig mässa hela vägen på generisk drönartäckning. Med
+katalogen som den ser ut i dag får bara INTERGEO och XPONENTIAL Europe Must Attend
+— de två bekräftade A-mässorna.
+
+Omdömet syns som en egen kolumn i listan, är sorterings- och filtrerbart, och
+ligger med hela motiveringen överst på eventprofilen.
 
 ### Varför fas 4 inte byggdes klart
 
@@ -201,9 +244,9 @@ ovan. Vägen framåt, när det byggs:
 3. Skriver aldrig direkt till `tradefair_events`. Resultatet landar i
    `research_payload` med `verification: "needs-review"`, och en människa
    godkänner innan det blir katalogdata.
-4. Rekommendationsmotorn (§27 i uppdraget) läser sortiment, leverantörer och
-   inköpslista och returnerar Must Attend / Recommended / Optional / Skip **med
-   motivering** — samma poängmodell som redan finns, men med portföljen som indata.
+4. Rekommendationsmotorn finns redan regelbaserat (se ovan). En AI-variant bör
+   förfina den mot faktiska utställarlistor och sortimentsdata, inte ersätta
+   reglerna — de är det som gör omdömet möjligt att ifrågasätta.
 
 ## 6. Det som medvetet lämnades ogjort
 
