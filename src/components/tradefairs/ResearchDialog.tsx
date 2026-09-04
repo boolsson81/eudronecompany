@@ -19,11 +19,17 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { guardResearchResponse, toEventRow, type ResearchedEvent } from "@/lib/tradeFairResearch";
+import {
+  guardResearchResponse,
+  researchErrorText,
+  toEventRow,
+  type ResearchedEvent,
+} from "@/lib/tradeFairResearch";
 import { TRADEFAIR_TABLES, type ResolvedEvent } from "@/lib/tradeFairDb";
 import { EmptyState } from "./TradeFairBits";
 
 type Mode = { action: "discover"; known: string[] } | { action: "research"; event: ResolvedEvent };
+
 
 export default function ResearchDialog({
   mode,
@@ -68,10 +74,7 @@ export default function ResearchDialog({
       setResults(guarded);
       if (guarded.length === 0) toast.info("Researchen gav inget som gick att granska.");
     } catch (err) {
-      const message = (err as { message?: string }).message ?? "Researchen misslyckades.";
-      toast.error(
-        message.includes("AI_CREDITS_EXHAUSTED") ? "AI-krediterna är slut." : message,
-      );
+      toast.error(researchErrorText(err));
     } finally {
       setRunning(false);
     }

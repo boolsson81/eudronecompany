@@ -203,3 +203,26 @@ export function toEventRow(event: ResearchedEvent, shopId: string): Record<strin
     research_payload: event as unknown as Record<string, unknown>,
   };
 }
+
+/**
+ * Gör felet begripligt för en inköpare. Det vanligaste felet är inte ett fel i
+ * researchen utan att edge-funktionen aldrig deployats: arbetsflödet
+ * deploy-functions.yml behöver SUPABASE_ACCESS_TOKEN och SUPABASE_PROJECT_REF,
+ * och utan dem finns funktionen inte i projektet.
+ */
+export function researchErrorText(err: unknown): string {
+  const message = (err as { message?: string } | null)?.message ?? "";
+  const status = (err as { context?: { status?: number } } | null)?.context?.status;
+
+  if (status === 404 || /not found|failed to send a request/i.test(message)) {
+    return "AI-researchen är inte deployad ännu. Edge-funktionen tradefair-research saknas i Supabase-projektet.";
+  }
+  if (status === 401) return "Du är inte inloggad.";
+  if (status === 403) return "Ditt konto saknar åtkomst till butiken.";
+  if (status === 402 || message.includes("AI_CREDITS_EXHAUSTED")) return "AI-krediterna är slut.";
+  if (status === 429) return "För många anrop just nu. Försök igen om en stund.";
+  if (message.includes("LOVABLE_API_KEY")) {
+    return "AI-nyckeln saknas i Supabase-projektet. Sätt LOVABLE_API_KEY innan researchen används.";
+  }
+  return message || "Researchen misslyckades.";
+}

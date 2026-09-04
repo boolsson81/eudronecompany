@@ -362,7 +362,12 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    de är kvalificerade gissningar, inte hämtade ur katalogen.
 5. Bekräfta kostnadsbudgeten. Siffrorna är planeringsvärden i EUR per person, inte
    offerter.
-6. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet innan
-   AI-researchen används, och att `.github/workflows/deploy-functions.yml` har
-   `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` — annars deployas
-   `tradefair-research` aldrig.
+6. **Sätt deployhemligheterna. Det här blockerar AI-researchen just nu.** Första
+   körningen av `deploy-functions.yml` (2026-09-04) föll direkt med *«Access token
+   not provided»* — både `SUPABASE_ACCESS_TOKEN` och `SUPABASE_PROJECT_REF` är
+   tomma i repots Actions-inställningar, precis som `AGENTS.md` förutspådde.
+   Arbetsflödet avbryter på första funktionen, så **ingen** edge-funktion
+   deployas härifrån. Tills det är åtgärdat svarar AI-knapparna «AI-researchen är
+   inte deployad ännu».
+7. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet.
+   Saknas den svarar funktionen 500, och UI:t säger vilken nyckel som fattas.
