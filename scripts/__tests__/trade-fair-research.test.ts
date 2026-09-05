@@ -184,6 +184,47 @@ describe("researchErrorText", () => {
     );
   });
 
+  // Svaren nedan är ordagrant vad ai.gateway.lovable.dev returnerade när de
+  // testades mot produktionsprojektet, så mappningen sitter på riktiga strängar
+  // och inte på gissningar.
+  it("skiljer saknad nyckel från ogiltig nyckel", () => {
+    expect(
+      researchErrorText({
+        context: { status: 502 },
+        message:
+          'AI gateway error: 401 {"status":401,"type":"unauthorized","title":"Missing API key. Provide via Lovable-API-Key header or Authorization: Bearer token."}',
+      }),
+    ).toMatch(/saknas/);
+
+    expect(
+      researchErrorText({
+        context: { status: 502 },
+        message:
+          'AI gateway error: 401 {"status":401,"type":"unauthorized","title":"Invalid API key. The key could not be decrypted."}',
+      }),
+    ).toMatch(/satt men avvisas/);
+  });
+
+  it("pekar ut gatewayens egen uppströmsleverantör när nyckeln själv går igenom", () => {
+    const text = researchErrorText({
+      context: { status: 502 },
+      message:
+        'AI gateway error: 400 [{ "error": { "code": 400, "message": "Please pass a valid API key", "status": "INVALID_ARGUMENT" } }]',
+    });
+    expect(text).toMatch(/modellleverantör/);
+    // Får inte skylla på en saknad nyckel, för nyckeln finns och autentiserar.
+    expect(text).not.toMatch(/saknas/);
+  });
+
+  it("sammanfattar okända gatewayfel utan att kräkas ut rå JSON", () => {
+    const text = researchErrorText({
+      context: { status: 502 },
+      message: 'AI gateway error: 503 {"title":"upstream unavailable"}',
+    });
+    expect(text).toContain("503");
+    expect(text).not.toContain("{");
+  });
+
   it("faller tillbaka på meddelandet, och på något alls", () => {
     expect(researchErrorText({ message: "Något oväntat" })).toBe("Något oväntat");
     expect(researchErrorText(null)).toBe("Researchen misslyckades.");

@@ -275,10 +275,43 @@ också står i `npm run check:shared`.
 DigitalSignals 147 andra AI-anrop använder. Saknas den svarar funktionen 500 med
 det beskedet i klartext, och UI:t säger vilken nyckel som fattas.
 
-Funktionen är utrullad sedan 2026-09-04 (se § 8, punkt 6). Den gick inte att
-röktesta härifrån — miljöns nätverkspolicy blockerar
-`*.supabase.co/functions/v1` — så att den svarar som avsett är bekräftat av
-Management-API:et (status ACTIVE, `verify_jwt` på), inte av ett anrop.
+Funktionen är utrullad sedan 2026-09-04 (se § 8, punkt 6) och är röktestad
+2026-09-05: ett anrop lagt via `pg_net` inifrån databasen fick 401 Unauthorized
+från `requireShopAccess`, alltså precis det svar en oautentiserad anropare ska
+få. Funktionen serverar HTTP och auth-grinden håller.
+
+### Statusen på `LOVABLE_API_KEY` per 2026-09-05
+
+Nyckeln **finns** i Supabase-projektet, men **gatewayen fungerar inte just nu**,
+och det gäller alla DigitalSignals AI-funktioner, inte bara den här.
+
+Det gick att skilja fallen åt genom att lägga fyra anrop mot
+`ai.gateway.lovable.dev` via `pg_net` och jämföra svaren med vad
+produktionsfunktionerna får:
+
+| Nyckel i anropet | Gatewayens svar |
+| --- | --- |
+| ingen alls | 401 `Missing API key` |
+| `garbage` / `undefined` | 401 `Invalid API key format. Key must start with 'sk_' prefix.` |
+| välformad men påhittad `sk_…` | 401 `Invalid API key. The key could not be decrypted.` |
+| projektets riktiga nyckel | 400 `Please pass a valid API key` (`INVALID_ARGUMENT`) |
+
+De tre översta är gatewayens egna avvisningar. Det riktiga anropet får inget av
+dem — det tar sig förbi gatewayens autentisering och felar först längre upp, mot
+gatewayens egen modellleverantör, med ett Google-format fel. Nyckeln är alltså
+satt, har rätt `sk_`-prefix och går att dekryptera mot Lovable-kontot.
+
+Felet reproducerades identiskt genom två orelaterade produktionsfunktioner,
+`predict-conversion-impact` (`google/gemini-3-flash-preview`) och `ia-analysis`
+(`google/gemini-2.5-flash`), vilket utesluter att det är modellspecifikt.
+Ingen av dem hann skriva någon rad, eftersom båda avbryts vid gateway-felet före
+sin `insert`.
+
+Slutsats: det finns inget att åtgärda i det här repot eller i Supabase-projektet.
+Uppströmskopplingen på Lovable-kontot behöver lagas, alternativt behöver
+`LOVABLE_API_KEY` bytas mot en nyckel från ett konto med fungerande
+modellåtkomst. `researchErrorText` säger numera vilket av de fyra fallen som
+gäller i stället för att visa gatewayens råa JSON.
 
 ## 6. Det som medvetet lämnades ogjort
 
@@ -404,5 +437,7 @@ expobiljett men bör nollas om en utställarkod finns. Kontrollera innan resa bo
    functions → Run workflow` med `tradefair-research` rör bara den funktionen.
    Lämnas fältet tomt deployas alla nitton. Arbetsflödet utlöses annars bara av
    ändringar under `supabase/functions/**`.
-7. Kontrollera att `LOVABLE_API_KEY` finns som hemlighet i Supabase-projektet.
-   Saknas den svarar funktionen 500, och UI:t säger vilken nyckel som fattas.
+7. `LOVABLE_API_KEY` är kontrollerad och finns (se § 6). Den behöver alltså inte
+   sättas. Däremot avvisar gatewayens uppströmsleverantör anropen, så AI-Discover
+   och AI-Research svarar med fel tills det är löst på Lovable-sidan. Resten av
+   modulen berörs inte.

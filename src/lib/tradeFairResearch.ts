@@ -221,8 +221,25 @@ export function researchErrorText(err: unknown): string {
   if (status === 403) return "Ditt konto saknar åtkomst till butiken.";
   if (status === 402 || message.includes("AI_CREDITS_EXHAUSTED")) return "AI-krediterna är slut.";
   if (status === 429) return "För många anrop just nu. Försök igen om en stund.";
-  if (message.includes("LOVABLE_API_KEY")) {
+  if (message.includes("LOVABLE_API_KEY") || message.includes("Missing API key")) {
     return "AI-nyckeln saknas i Supabase-projektet. Sätt LOVABLE_API_KEY innan researchen används.";
+  }
+  // Gatewayen svarar 401 på formatfel och odekrypterbara nycklar. Då finns en
+  // nyckel satt, men den är inte giltig för Lovable-kontot.
+  if (message.includes("Invalid API key")) {
+    return "LOVABLE_API_KEY är satt men avvisas av AI-gatewayen. Nyckeln behöver bytas ut i Supabase-projektet.";
+  }
+  // Gatewayen släpper igenom nyckeln och felar först mot sin egen
+  // modellleverantör. Det går inte att åtgärda härifrån - det är
+  // Lovable-kontots uppströmskoppling som ligger nere.
+  if (message.includes("Please pass a valid API key") || message.includes("INVALID_ARGUMENT")) {
+    return "AI-gatewayen når inte sin modellleverantör just nu. LOVABLE_API_KEY är giltig, felet ligger hos Lovable och påverkar alla AI-funktioner.";
+  }
+  if (message.includes("AI gateway error")) {
+    const upstream = /AI gateway error: (\d{3})/.exec(message)?.[1];
+    return upstream
+      ? `AI-gatewayen svarade med fel ${upstream}. Researchen kunde inte köras.`
+      : "AI-gatewayen svarade med ett fel. Researchen kunde inte köras.";
   }
   return message || "Researchen misslyckades.";
 }
