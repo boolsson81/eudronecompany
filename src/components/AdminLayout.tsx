@@ -5,16 +5,11 @@ import { Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /**
- * Driftsvyerna grupperade. "Inköp" är EU Drone Companys inköpsyta; resten av den
- * gruppen (Inköpsdashboard, Leverantörer, Produkter, Prisbevakning, Ecosystem,
- * Supplier Opportunities) ligger i DigitalSignal-appen — se
- * docs/TRADE_FAIR_MODULE.md § Var modulen hamnade.
+ * Driftsvyerna grupperade. Inköpsytan, Mässor & Events inräknad, ligger i
+ * DigitalSignal-appen och inte här — den appen är deployad, det är inte den
+ * här. Se README § Vad som ligger i DigitalSignal.
  */
 const NAV_GROUPS: { label: string; items: { to: string; label: string }[] }[] = [
-  {
-    label: "Inköp",
-    items: [{ to: "/admin/trade-fairs", label: "Mässor & Events" }],
-  },
   {
     label: "Drift",
     items: [
