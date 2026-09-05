@@ -230,10 +230,10 @@ export function researchErrorText(err: unknown): string {
     return "LOVABLE_API_KEY är satt men avvisas av AI-gatewayen. Nyckeln behöver bytas ut i Supabase-projektet.";
   }
   // Gatewayen släpper igenom nyckeln och felar först mot sin egen
-  // modellleverantör. Det går inte att åtgärda härifrån - det är
+  // modelleverantör. Det går inte att åtgärda härifrån - det är
   // Lovable-kontots uppströmskoppling som ligger nere.
   if (message.includes("Please pass a valid API key") || message.includes("INVALID_ARGUMENT")) {
-    return "AI-gatewayen når inte sin modellleverantör just nu. LOVABLE_API_KEY är giltig, felet ligger hos Lovable och påverkar alla AI-funktioner.";
+    return "AI-gatewayen når inte sin modelleverantör just nu. LOVABLE_API_KEY är giltig, felet ligger hos Lovable och påverkar alla AI-funktioner.";
   }
   if (message.includes("AI gateway error")) {
     const upstream = /AI gateway error: (\d{3})/.exec(message)?.[1];

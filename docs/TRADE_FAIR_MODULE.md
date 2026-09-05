@@ -298,7 +298,7 @@ produktionsfunktionerna får:
 
 De tre översta är gatewayens egna avvisningar. Det riktiga anropet får inget av
 dem — det tar sig förbi gatewayens autentisering och felar först längre upp, mot
-gatewayens egen modellleverantör, med ett Google-format fel. Nyckeln är alltså
+gatewayens egen modelleverantör, med ett Google-format fel. Nyckeln är alltså
 satt, har rätt `sk_`-prefix och går att dekryptera mot Lovable-kontot.
 
 Felet reproducerades identiskt genom två orelaterade produktionsfunktioner,

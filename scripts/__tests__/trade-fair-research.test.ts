@@ -211,7 +211,7 @@ describe("researchErrorText", () => {
       message:
         'AI gateway error: 400 [{ "error": { "code": 400, "message": "Please pass a valid API key", "status": "INVALID_ARGUMENT" } }]',
     });
-    expect(text).toMatch(/modellleverantör/);
+    expect(text).toMatch(/modelleverantör/);
     // Får inte skylla på en saknad nyckel, för nyckeln finns och autentiserar.
     expect(text).not.toMatch(/saknas/);
   });
