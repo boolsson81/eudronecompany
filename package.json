@@ -14,7 +14,8 @@
     "theme:push": "node scripts/push-edp-theme.mjs",
     "theme:verify": "node scripts/verify-edp-theme-deploy.mjs",
     "audit:seo": "node scripts/audit-edp-storefront-seo.mjs",
-    "audit:menus": "node scripts/verify-edp-theme-menus.mjs"
+    "audit:menus": "node scripts/verify-edp-theme-menus.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
