@@ -293,7 +293,7 @@ export default function DroneCameraComparison({
                   key={camera.id}
                   asChild
                   variant="outline"
-                  className="border-white/20 text-white hover:bg-white/5"
+                  className="border-white/20 bg-transparent text-white hover:bg-white/5"
                 >
                   {detailPath ? (
                     <Link to={detailPath}>

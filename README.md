@@ -38,7 +38,7 @@ SHOPIFY_ADMIN_TOKEN=
 
 | Rutt | Vad |
 |---|---|
-| `/kommersiella-dronare/*` | Publika drönarsidor (15 sidor) — samma sökvägar som tidigare på `app.digitalsignal.io`, plus `/specialtillverkning` som är ny här |
+| `/kommersiella-dronare/*` | Publika drönarsidor (17 sidkomponenter) — samma sökvägar som tidigare på `app.digitalsignal.io`, plus `/specialtillverkning`, `/produkter/:slug` och `/paket/:slug` som är nya här |
 | `/admin/shopify-cloner` | Shopify Cloner |
 | `/admin/shopify-drone-clone` | Drone Clone |
 | `/admin/product-compliance` | Produktcompliance (IOSS/GPSR/CE/HS) |

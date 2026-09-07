@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, Package, Wrench, CheckCircle2, Star } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import { getConfigBySlug, INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
+import { getPackagesForIndustry } from "@/data/enterprisePackages";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 const LEVEL_LABELS: Record<string, { label: string; color: string }> = {
@@ -15,6 +16,7 @@ const LEVEL_LABELS: Record<string, { label: string; color: string }> = {
 export default function DroneConfiguration() {
   const { configSlug } = useParams<{ configSlug: string }>();
   const config = configSlug ? getConfigBySlug(configSlug) : undefined;
+  const packages = config ? getPackagesForIndustry(config.slug) : [];
 
   if (!config) {
     return (
@@ -87,7 +89,7 @@ export default function DroneConfiguration() {
               <h2 className="text-2xl md:text-3xl font-bold">Rekommenderade paket</h2>
             </div>
             <div className="grid lg:grid-cols-3 gap-6">
-              {config.packages.map((pkg, i) => {
+              {packages.map((pkg, i) => {
                 const level = LEVEL_LABELS[pkg.level];
                 return (
                   <motion.div
@@ -128,10 +130,15 @@ export default function DroneConfiguration() {
                       </div>
                     </div>
 
-                    <div className="p-6 pt-0">
-                      <Link to="/kommersiella-dronare/kontakt">
+                    <div className="p-6 pt-0 space-y-2">
+                      <Link to={`/kommersiella-dronare/paket/${pkg.slug}`}>
                         <Button className={`w-full ${pkg.level === "pro" ? "bg-orange-500 hover:bg-orange-600 text-white" : "bg-white/10 hover:bg-white/15 text-white"} border-0`}>
-                          Begär offert <ArrowRight className="h-4 w-4 ml-1" />
+                          Läs mer om paketet <ArrowRight className="h-4 w-4 ml-1" />
+                        </Button>
+                      </Link>
+                      <Link to="/kommersiella-dronare/kontakt">
+                        <Button variant="outline" className="w-full border-white/20 bg-transparent text-white hover:bg-white/5">
+                          Begär offert
                         </Button>
                       </Link>
                     </div>
@@ -212,7 +219,7 @@ export default function DroneConfiguration() {
                     className="p-5 rounded-xl bg-white/[0.03] border border-white/10 hover:border-orange-500/30 transition-colors group"
                   >
                     <h3 className="font-semibold mb-1 group-hover:text-orange-400 transition-colors text-sm">{c.title}</h3>
-                    <p className="text-xs text-white/40">{c.packages.length} paket · {c.accessories.length} tillbehör</p>
+                    <p className="text-xs text-white/40">{getPackagesForIndustry(c.slug).length} paket · {c.accessories.length} tillbehör</p>
                   </motion.div>
                 </Link>
               ))}

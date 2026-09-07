@@ -9,6 +9,8 @@ import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { getIndustryBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
+import { getDroneProductPathByName } from "@/data/enterpriseDroneProducts";
+import { getPackagesForIndustry, PACKAGE_LEVELS } from "@/data/enterprisePackages";
 import { droneUrl } from "@/lib/publicSite";
 
 export default function CommercialDroneIndustry() {
@@ -138,6 +140,17 @@ export default function CommercialDroneIndustry() {
                           <span key={f} className="text-[11px] px-2.5 py-1 rounded-full bg-white/5 text-white/60 border border-white/10">{f}</span>
                         ))}
                       </div>
+                      {(() => {
+                        const productPath = getDroneProductPathByName(drone.name);
+                        return productPath ? (
+                          <Link
+                            to={productPath}
+                            className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors mt-4"
+                          >
+                            Läs mer om {drone.name} <ArrowRight className="h-4 w-4" />
+                          </Link>
+                        ) : null;
+                      })()}
                     </div>
                     {media && (
                       <div className="px-6 pb-6">
@@ -191,6 +204,31 @@ export default function CommercialDroneIndustry() {
           droneNames={industry.recommendedDrones.map(d => d.name)}
           heading={`Tillbehör för ${industry.title.toLowerCase()}`}
         />
+        {/* Färdiga paket för branschen */}
+        {getPackagesForIndustry(industry.slug).length > 0 && (
+          <section className="py-16 md:py-24">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Färdiga paket för {industry.title.toLowerCase()}</h2>
+              <p className="text-white/50 mb-10 max-w-2xl">
+                Drönare, payload, ström, transport och mjukvara i en leverans — i tre nivåer.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6">
+                {getPackagesForIndustry(industry.slug).map((pkg) => (
+                  <Link key={pkg.slug} to={`/kommersiella-dronare/paket/${pkg.slug}`}>
+                    <div className="p-6 rounded-2xl bg-[#111] border border-white/10 hover:border-orange-500/30 transition-colors group h-full">
+                      <div className="text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-2">
+                        {PACKAGE_LEVELS[pkg.level].label}
+                      </div>
+                      <h3 className="text-lg font-bold mb-2 group-hover:text-orange-400 transition-colors">{pkg.name}</h3>
+                      <p className="text-sm text-white/50">{pkg.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         <RelatedPages pageUrl={droneUrl(`/kommersiella-dronare/${industry.slug}`)} heading="Relaterade sidor" />
 
         {/* CTA */}
@@ -205,7 +243,7 @@ export default function CommercialDroneIndustry() {
                 </Button>
               </Link>
               <Link to="/kommersiella-dronare/kontakt">
-                <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-base px-8 w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-8 w-full sm:w-auto">
                   Konsultera en expert
                 </Button>
               </Link>
