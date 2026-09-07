@@ -21,6 +21,7 @@ const SHOWCASE_VIDEOS = [
   { id: "TxthvIgwPPc", title: "DJI Zenmuse H30 Series" },
 ];
 import { DRONE_COMPARISONS } from "@/data/droneComparisons";
+import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
 
@@ -104,7 +105,7 @@ export default function CommercialDrones() {
                 <Button onClick={scrollToForm} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-8">
                   Begär offert <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
-                <Button onClick={scrollToForm} variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-base px-8">
+                <Button onClick={scrollToForm} variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-8">
                   Konsultera en expert
                 </Button>
               </div>
@@ -208,7 +209,7 @@ export default function CommercialDrones() {
 
             <div className="text-center">
               <Link to="/kommersiella-dronare/jamforelser">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/5">
+                <Button variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
                   Se alla jämförelser <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
               </Link>
@@ -216,27 +217,76 @@ export default function CommercialDrones() {
           </div>
         </section>
 
-        {/* Products CTA */}
+        {/* Products */}
         <section id="products" className="py-20 md:py-28">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-14"
+            >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Utvalda produkter</h2>
-              <p className="text-white/50 mb-8 max-w-2xl mx-auto">
+              <p className="text-white/50 max-w-2xl mx-auto">
                 Vi erbjuder hela DJI Enterprise-sortimentet — från kompakta inspektionsdrönare till tunga industriella plattformar.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link to="/kommersiella-dronare/produkter">
-                  <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-10">
-                    Se produkter <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                </Link>
-                <Link to="/kommersiella-dronare/jamfor-kameror">
-                  <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/5 text-base px-10">
-                    Jämför kameror
-                  </Button>
-                </Link>
-              </div>
             </motion.div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {ENTERPRISE_DRONE_PRODUCTS.slice(0, 6).map((product, i) => (
+                <motion.div
+                  key={product.slug}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.06 }}
+                >
+                  <Link to={`/kommersiella-dronare/produkter/${product.slug}`} className="block h-full">
+                    <div className="rounded-2xl bg-[#111] border border-white/10 overflow-hidden group hover:border-orange-500/30 transition-colors h-full">
+                      {product.imageUrl ? (
+                        <div className="h-44 overflow-hidden">
+                          <img
+                            src={product.imageUrl}
+                            alt={product.name}
+                            loading="lazy"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          />
+                        </div>
+                      ) : (
+                        <div className="h-44 bg-gradient-to-br from-orange-500/10 to-transparent" />
+                      )}
+                      <div className="p-6">
+                        <div className="text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-2">
+                          {product.tag}
+                        </div>
+                        <h3 className="text-lg font-bold mb-2 group-hover:text-orange-400 transition-colors">
+                          {product.name}
+                        </h3>
+                        <p className="text-sm text-white/50 line-clamp-2">{product.heroDesc}</p>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Link to="/kommersiella-dronare/produkter">
+                <Button size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-10 w-full sm:w-auto">
+                  Se alla drönare <ArrowRight className="h-4 w-4 ml-2" />
+                </Button>
+              </Link>
+              <Link to="/kommersiella-dronare/paket">
+                <Button size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-10 w-full sm:w-auto">
+                  Se färdiga paket
+                </Button>
+              </Link>
+              <Link to="/kommersiella-dronare/jamfor-kameror">
+                <Button size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-10 w-full sm:w-auto">
+                  Jämför kameror
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
 

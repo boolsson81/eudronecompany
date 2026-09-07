@@ -1,11 +1,26 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Radio, ChevronDown, Menu, X } from "lucide-react";
+import { Radio, ChevronDown, Menu, X, Camera, Cpu } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { INDUSTRY_DATA } from "@/data/commercialDroneIndustries";
+import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 
 interface EnterpriseNavProps {
   onCtaClick?: () => void;
+}
+
+interface NavChild {
+  label: string;
+  href: string;
+  icon?: LucideIcon;
+}
+
+interface NavItem {
+  key: string;
+  label: string;
+  href?: string;
+  children?: NavChild[];
 }
 
 export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
@@ -28,7 +43,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
     setOpenDropdown(null);
   }, [location.pathname]);
 
-  const navItems = [
+  const navItems: NavItem[] = [
     {
       key: "industries",
       label: "Användningsområden",
@@ -41,27 +56,32 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
     {
       key: "products",
       label: "Produkter",
-      href: "/kommersiella-dronare/produkter",
+      children: [
+        { label: "Alla enterprise-drönare", href: "/kommersiella-dronare/produkter", icon: Cpu },
+        ...ENTERPRISE_DRONE_PRODUCTS.map((product) => ({
+          label: product.name,
+          href: `/kommersiella-dronare/produkter/${product.slug}`,
+        })),
+      ],
+    },
+    {
+      key: "packages",
+      label: "Paket",
+      href: "/kommersiella-dronare/paket",
+    },
+    {
+      key: "cameras",
+      label: "Kameror",
+      children: [
+        { label: "Alla kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
+        { label: "Jämför kameror", href: "/kommersiella-dronare/jamfor-kameror" },
+        { label: "Tillbehör", href: "/kommersiella-dronare#accessories" },
+      ],
     },
     {
       key: "comparisons",
       label: "Jämförelser",
       href: "/kommersiella-dronare/jamforelser",
-    },
-    {
-      key: "cameras",
-      label: "Kameror",
-      href: "/kommersiella-dronare/kameror",
-    },
-    {
-      key: "camera-comparison",
-      label: "Jämför kameror",
-      href: "/kommersiella-dronare/jamfor-kameror",
-    },
-    {
-      key: "accessories",
-      label: "Tillbehör",
-      href: "/kommersiella-dronare#accessories",
     },
     {
       key: "custom-parts",
@@ -84,15 +104,15 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/kommersiella-dronare" className="flex items-center gap-3">
-          <Radio className="h-6 w-6 text-orange-500" />
-          <span className="font-bold text-lg tracking-tight text-white">
+        <Link to="/kommersiella-dronare" className="flex items-center gap-2 min-w-0 lg:shrink-0">
+          <Radio className="h-6 w-6 text-orange-500 shrink-0" />
+          <span className="font-bold text-base xl:text-lg tracking-tight text-white leading-tight lg:whitespace-nowrap">
             EU Drone Company <span className="text-orange-500">Enterprise</span>
           </span>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-1 text-sm">
+        <nav className="hidden lg:flex items-center gap-0.5 text-sm">
           {navItems.map((item) =>
             "children" in item && item.children ? (
               <div
@@ -101,7 +121,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
                 onMouseEnter={() => handleMouseEnter(item.key)}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="flex items-center gap-1 px-3 py-2 rounded-md text-white/70 hover:text-white hover:bg-white/5 transition-colors">
+                <button className="flex items-center gap-1 px-2.5 py-2 rounded-md text-white/70 hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap">
                   {item.label}
                   <ChevronDown className={`h-3.5 w-3.5 transition-transform ${openDropdown === item.key ? "rotate-180" : ""}`} />
                 </button>
@@ -121,7 +141,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
                                 : "text-white/70 hover:text-white hover:bg-white/5"
                             }`}
                           >
-                            <Icon className="h-4 w-4 shrink-0 text-orange-500/70" />
+                            {Icon ? (
+                              <Icon className="h-4 w-4 shrink-0 text-orange-500/70" />
+                            ) : (
+                              <span className="h-4 w-4 shrink-0" />
+                            )}
                             {child.label}
                           </Link>
                         );
@@ -134,7 +158,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
               <a
                 key={item.key}
                 href={item.href}
-                className="px-3 py-2 rounded-md text-white/70 hover:text-white hover:bg-white/5 transition-colors"
+                className="px-2.5 py-2 rounded-md text-white/70 hover:text-white hover:bg-white/5 transition-colors whitespace-nowrap"
               >
                 {item.label}
               </a>
@@ -186,7 +210,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
                             to={child.href}
                             className="flex items-center gap-2 px-3 py-2 text-sm text-white/60 hover:text-white rounded-md"
                           >
-                            <Icon className="h-3.5 w-3.5 text-orange-500/70" />
+                            {Icon ? (
+                              <Icon className="h-3.5 w-3.5 text-orange-500/70" />
+                            ) : (
+                              <span className="h-3.5 w-3.5" />
+                            )}
                             {child.label}
                           </Link>
                         );

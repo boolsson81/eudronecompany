@@ -208,7 +208,7 @@ export default function CommercialDroneSolution() {
                 </Button>
               </Link>
               <Link to="/kommersiella-dronare/kontakt">
-                <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-base px-8 w-full sm:w-auto">
+                <Button variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-8 w-full sm:w-auto">
                   Konsultera en expert
                 </Button>
               </Link>

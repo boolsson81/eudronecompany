@@ -8,6 +8,7 @@ import SeoHead from "@/components/SeoHead";
 import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { getDroneProductPathByName } from "@/data/enterpriseDroneProducts";
 import {
   getCameraBySlug,
   getRelatedCameras,
@@ -98,7 +99,7 @@ export default function CommercialDroneCamera() {
                   </Link>
                   {camera.shopUrl && (
                     <a href={camera.shopUrl} target="_blank" rel="noopener noreferrer">
-                      <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/5">
+                      <Button size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
                         Se i webbshop <ExternalLink className="h-4 w-4 ml-2" />
                       </Button>
                     </a>
@@ -211,14 +212,12 @@ export default function CommercialDroneCamera() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {camera.compatibleDrones.map((droneName, i) => {
                 const media = getDroneMedia(droneName);
-                return (
-                  <motion.div
-                    key={droneName}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.08 }}
-                    className="rounded-2xl bg-[#111] border border-white/10 overflow-hidden"
+                const productPath = getDroneProductPathByName(droneName);
+                const card = (
+                  <div
+                    className={`rounded-2xl bg-[#111] border border-white/10 overflow-hidden h-full ${
+                      productPath ? "group hover:border-orange-500/30 transition-colors" : ""
+                    }`}
                   >
                     {media ? (
                       <img
@@ -231,8 +230,25 @@ export default function CommercialDroneCamera() {
                       <div className="h-40 bg-gradient-to-br from-orange-500/10 to-transparent" />
                     )}
                     <div className="p-5">
-                      <h3 className="font-semibold">{droneName}</h3>
+                      <h3 className="font-semibold group-hover:text-orange-400 transition-colors">{droneName}</h3>
                     </div>
+                  </div>
+                );
+                return (
+                  <motion.div
+                    key={droneName}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 }}
+                  >
+                    {productPath ? (
+                      <Link to={productPath} className="block h-full">
+                        {card}
+                      </Link>
+                    ) : (
+                      card
+                    )}
                   </motion.div>
                 );
               })}

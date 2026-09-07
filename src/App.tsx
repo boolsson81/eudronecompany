@@ -12,6 +12,9 @@ const Login = lazy(() => import("./pages/Login"));
 const CommercialDrones = lazy(() => import("./pages/CommercialDrones"));
 const CommercialDronesContact = lazy(() => import("./pages/CommercialDronesContact"));
 const CommercialDronesProducts = lazy(() => import("./pages/CommercialDronesProducts"));
+const CommercialDroneProduct = lazy(() => import("./pages/CommercialDroneProduct"));
+const EnterprisePackages = lazy(() => import("./pages/EnterprisePackages"));
+const EnterprisePackage = lazy(() => import("./pages/EnterprisePackage"));
 const CommercialDroneCameras = lazy(() => import("./pages/CommercialDroneCameras"));
 const CommercialDroneCamera = lazy(() => import("./pages/CommercialDroneCamera"));
 const CommercialDroneIndustry = lazy(() => import("./pages/CommercialDroneIndustry"));
@@ -49,6 +52,9 @@ export default function App() {
             <Route path="/kommersiella-dronare" element={<CommercialDrones />} />
             <Route path="/kommersiella-dronare/kontakt" element={<CommercialDronesContact />} />
             <Route path="/kommersiella-dronare/produkter" element={<CommercialDronesProducts />} />
+            <Route path="/kommersiella-dronare/produkter/:productSlug" element={<CommercialDroneProduct />} />
+            <Route path="/kommersiella-dronare/paket" element={<EnterprisePackages />} />
+            <Route path="/kommersiella-dronare/paket/:packageSlug" element={<EnterprisePackage />} />
             <Route path="/kommersiella-dronare/kameror" element={<CommercialDroneCameras />} />
             <Route path="/kommersiella-dronare/kameror/:cameraSlug" element={<CommercialDroneCamera />} />
             <Route path="/kommersiella-dronare/jamforelser" element={<DroneComparisons />} />
