@@ -454,7 +454,7 @@ export default function CustomParts() {
                     Begär offert <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
                 </Link>
-                <a href="mailto:Sales@actionking.se?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
+                <a href="mailto:info@eudronecompany.com?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
                   <Button
                     size="lg"
                     variant="outline"

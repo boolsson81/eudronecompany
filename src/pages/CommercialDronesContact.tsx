@@ -90,7 +90,7 @@ export default function CommercialDronesContact() {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
       telephone: "+46101025591",
-      email: "Sales@actionking.se",
+      email: "info@eudronecompany.com",
       contactPoint: {
         "@type": "ContactPoint",
         telephone: "+46101025591",
@@ -136,9 +136,9 @@ export default function CommercialDronesContact() {
                     <Phone className="h-5 w-5 text-orange-500" />
                     <span>010-102 55 91</span>
                   </a>
-                  <a href="mailto:Sales@actionking.se" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+                  <a href="mailto:info@eudronecompany.com" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                     <Mail className="h-5 w-5 text-orange-500" />
-                    <span>Sales@actionking.se</span>
+                    <span>info@eudronecompany.com</span>
                   </a>
                 </div>
               </motion.div>
