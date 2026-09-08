@@ -29,7 +29,13 @@ delade för få tokens (`dji-matrice-400-tb100-batteri` matchade inte
 
 Efter det ligger tröskeln för "saknas" runt 0,75 i stället för 0,60.
 
-## Importerat: 65 produkter, alla som utkast
+## Importerat: 114 produkter, alla som utkast
+
+Körningen gjordes i två omgångar. Omgång 1 tog den bredaste delen av
+drönargapet, omgång 2 tog resterande kandidatlista — främst branschpaket och
+tillbehör som första matchningen missade.
+
+### Omgång 1 — 65 produkter
 
 Alla bär taggarna `swedron-gap-import` och `draft-granskas`. Ingen är publicerad.
 
@@ -49,6 +55,28 @@ Alla bär taggarna `swedron-gap-import` och `draft-granskas`. Ingen är publicer
 
 Leverantörer: DJI (48), JLIDrone (16), Hoodman (1). JLIDrone var helt frånvarande
 i vår katalog.
+
+### Omgång 2 — 52 produkter
+
+| Produkttyp | Antal |
+|---|---|
+| Drönarpaket (bransch, mätning, skog, renskötsel) | 27 |
+| Drönartillbehör | 4 |
+| Filter (Zenmuse X7/X9 ND) | 4 |
+| Skärm & fäste | 4 |
+| Värmekamera (Hikmicro NEOS) | 3 |
+| Signalförstärkning | 3 |
+| Drönarpayload | 3 |
+| Gimbaltillbehör | 2 |
+| Batteri & laddning | 2 |
+
+Leverantörer: DJI (41), JLIDrone (4), Hikmicro (3), 4Hawks (2), PolarPro (1),
+LifThor (1). 4Hawks, Hikmicro NEOS, PolarPro och LifThor var helt frånvarande
+i vår katalog.
+
+Tyngdpunkten ligger på branschpaket vi inte hade motsvarigheter till:
+skogsbrukspaket med Global Forester-licens, mätpaket med Emlid-mottagare,
+paket för renskötsel och för projektering av solcellsanläggningar.
 
 Innehållet är nyskriven svensk text per produkt plus faktabaserade
 specifikationslistor, inte kopierad brödtext från Swedron.
@@ -71,9 +99,10 @@ sortimentet).
 
 ## Kvarvarande gap
 
-**55 drönarnära produkter** ligger färdigt kandidatlistade i
-`data/swedron-gap-remaining.json`. Där finns bland annat Zenmuse X7-filter,
-Inspire 2-reservdelar, Mavic 3 Enterprise-batterier och fler Matrice 400-paket.
+**Det drönarnära gapet är stängt.** Samtliga 127 kandidater från
+matchningen är hanterade: 114 importerade som utkast, 13 avfärdade som
+dubbletter eller utanför sortimentet. `data/swedron-gap-remaining.json` är
+därmed tom.
 
 **Hela varumärken saknas.** Detta är den stora posten och kräver ett
 inköpsbeslut, inte bara en import:
@@ -114,7 +143,8 @@ foto- och videotillbehör snarare än drönarutrustning.
 ```sh
 python3 scripts/swedron-gap/match-catalog.py <swedron.tsv> <ut.json>
 python3 scripts/swedron-gap/parse-product-pages.py
-python3 scripts/swedron-gap/build-shopify-payloads.py
+python3 scripts/swedron-gap/build-shopify-payloads.py         # omgång 1
+python3 scripts/swedron-gap/build-shopify-payloads-round2.py  # omgång 2
 ```
 
 Sidhämtningen görs med Nimble Extract (`vx8`) mot URL:erna i

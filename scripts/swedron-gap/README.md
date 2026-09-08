@@ -11,7 +11,9 @@ för resultatet av första körningen.
 | `match-catalog.py` | Tvåspråkig titel-/slugmatchning mot vår katalog. Hanterar svensk-engelska synonymer och Swedrons trunkerade slugs. |
 | `parse-product-pages.py` | Plockar titel, varumärke, USP-punkter, specifikationer och bilder ur hämtade produktsidor. |
 | `build-shopify-payloads.py` | Bygger `ProductCreateInput` med produkttyp, taggar och bilder. |
-| `copy_sv.py` | Egenförfattad svensk säljtext per produkt. |
+| `copy_sv.py` | Egenförfattad svensk säljtext, omgång 1. |
+| `build-shopify-payloads-round2.py` | Som ovan, med produkttyper för paket, filter och värmekameror. |
+| `copy_sv2.py` | Egenförfattad svensk säljtext, omgång 2. |
 
 ## Arbetsflöde
 
@@ -26,6 +28,10 @@ för resultatet av första körningen.
    Nimble Crawl fungerar inte, länkupptäckten hittar inga produktsidor.
 5. **Import.** `productCreate` med GraphQL-alias, sju produkter per anrop.
    `bulkOperationRunMutation` är blockerad av connectorns säkerhetspolicy.
+
+Kör alltid steg 3 igen på de faktiska produkttitlarna efter hämtning. Slugen
+är trunkerad och ger sämre matchning än titeln — flera produkter som såg
+saknade ut visade sig finnas när titeln jämfördes.
 
 ## Viktigt
 
