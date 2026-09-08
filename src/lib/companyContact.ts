@@ -1,10 +1,18 @@
 /**
  * Publika företags- och kontaktuppgifter för EU Drone Company.
  *
- * Källan är företagsuppgifterna för tenanten "European Drone Company" i den
- * delade databasen. De ligger som konstanter här i stället för att hämtas i
- * runtime: de behövs i JSON-LD och i statiska mejl- och telefonlänkar, och
- * sidorna ska rendera likadant utan databasanrop.
+ * Källan är företagskortet för tenanten "European Drone Company" i den delade
+ * databasen — `tenants.settings` på id `c9fbc543-3a18-431f-960a-fb85ec24f384`.
+ * Värdena nedan ska stå exakt som där. De ligger som konstanter i stället för
+ * att hämtas i runtime: de behövs i JSON-LD och i statiska mejl- och
+ * telefonlänkar, och sidorna ska rendera likadant utan databasanrop.
+ *
+ * Ändras företagskortet ska konstanterna uppdateras här. Kontrollera mot:
+ *
+ *   select settings->>'street_address', settings->>'zip_code',
+ *          settings->>'city', settings->>'org_number',
+ *          settings->>'contact_phone', settings->>'contact_email'
+ *   from tenants where id = 'c9fbc543-3a18-431f-960a-fb85ec24f384';
  *
  * Sidorna hade tidigare tre olika nummer: två uppenbara platshållare och ett
  * som gick till ActionKing. Ändras numret ska det ändras här;
