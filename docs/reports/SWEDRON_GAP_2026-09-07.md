@@ -129,10 +129,12 @@ sortimentet).
 
 ## Kvarvarande gap
 
-**Det drönarnära gapet är stängt.** Samtliga 127 kandidater från
-matchningen är hanterade: 114 importerade som utkast, 13 avfärdade som
-dubbletter eller utanför sortimentet. `data/swedron-gap-remaining.json` är
-därmed tom.
+**Rättelse:** en tidigare version av det här stycket sa att det drönarnära
+gapet var stängt. Det stämde inte. Matchningen gav 417 kandidater under 0,60 i
+drönarkärnan. 127 av dem prioriterades och behandlades — 117 importerade som
+utkast, 10 avfärdade som dubbletter eller utanför sortimentet. **290 kandidater
+blev aldrig genomgångna.** Se
+[`SWEDRON_SAKNADE_PRODUKTER.md`](SWEDRON_SAKNADE_PRODUKTER.md) för hela bilden.
 
 **Hela varumärken saknas.** Detta är den stora posten och kräver ett
 inköpsbeslut, inte bara en import:
