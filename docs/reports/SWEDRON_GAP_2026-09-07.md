@@ -29,11 +29,14 @@ delade för få tokens (`dji-matrice-400-tb100-batteri` matchade inte
 
 Efter det ligger tröskeln för "saknas" runt 0,75 i stället för 0,60.
 
-## Importerat: 114 produkter, alla som utkast
+## Importerat: 166 produkter, alla som utkast
 
-Körningen gjordes i två omgångar. Omgång 1 tog den bredaste delen av
-drönargapet, omgång 2 tog resterande kandidatlista — främst branschpaket och
-tillbehör som första matchningen missade.
+Körningen gjordes i tre omgångar. Omgång 1 och 2 stängde drönargapet.
+Omgång 3 tog första varumärket ur varumärkesgapet: EcoFlow.
+
+Siffran 114 som rapporterades efter omgång 2 var för låg. Shopifys sökindex
+släpar efter direkt efter en import, och räkningen togs för tidigt. Direkt
+uppräkning mot katalogen ger 117 produkter efter omgång 2.
 
 ### Omgång 1 — 65 produkter
 
@@ -73,6 +76,33 @@ i vår katalog.
 Leverantörer: DJI (41), JLIDrone (4), Hikmicro (3), 4Hawks (2), PolarPro (1),
 LifThor (1). 4Hawks, Hikmicro NEOS, PolarPro och LifThor var helt frånvarande
 i vår katalog.
+
+### Omgång 3 — 49 produkter, EcoFlow
+
+Första varumärket ur varumärkesgapet. EcoFlow för fältkraft ligger nära
+drönardriften: kraftstationer, solpaneler och snabbladdare avgör hur många
+flygpass som ryms på en dag utanför elnätet.
+
+| Produkttyp | Antal |
+|---|---|
+| Kraftstation | 11 |
+| Solpanel | 9 |
+| Powerbank | 7 |
+| Extrabatteri | 5 |
+| Kablar & adaptrar | 5 |
+| Solpanelsfäste | 4 |
+| Kraftsystem | 4 |
+| Laddare | 3 |
+| Transport | 1 |
+
+Av EcoFlows 73 produkter hos Swedron importerades 49. Bortvalt:
+
+- **14 produkter utanför sortimentet** — kylboxar (Glacier), luftkonditionering
+  (WAVE), duschkit, doppvärmare, uppvärmda mössor och en axelväska. Camping
+  snarare än drönardrift.
+- **10 rena färgvarianter** av redan importerade powerbanks (Rapid 5000 och
+  10000 i blå och silver, Rapid Mag i flera kulörer). De bör läggas som
+  varianter på befintlig produkt, inte som egna produkter.
 
 Tyngdpunkten ligger på branschpaket vi inte hade motsvarigheter till:
 skogsbrukspaket med Global Forester-licens, mätpaket med Emlid-mottagare,
@@ -119,13 +149,19 @@ inköpsbeslut, inte bara en import:
 | Rusan | 123 | 0 |
 | GoMatic | 106 | 0 |
 | Atomos | 84 | 0 |
-| EcoFlow | 73 | 0 |
+| EcoFlow | 73 | 49 (importerat) |
 | Vallerret | 45 | 0 |
 | SeeTec | 33 | 0 |
 | NiSi | 29 | 0 |
 
-Totalt ligger omkring 5 500 produkter i varumärken vi inte för alls, mestadels
-foto- och videotillbehör snarare än drönarutrustning.
+EcoFlow är avklarat. Kvar ligger omkring 5 400 produkter i varumärken vi inte
+för alls, mestadels foto- och videotillbehör snarare än drönarutrustning.
+
+Närmast i tur står de två varumärken som ligger kvar närmast drönardriften:
+**Chasing** (133 produkter, undervattensdrönare) och **Hollyland** (123,
+trådlös videoöverföring). Resten — SmallRig, Kupo, Nanlite, Peak Design,
+Think Tank — är rigg-, ljus- och väskvarumärken där importen bör föregås av
+ett inköpsbeslut.
 
 ## Att kontrollera manuellt
 
@@ -145,6 +181,7 @@ python3 scripts/swedron-gap/match-catalog.py <swedron.tsv> <ut.json>
 python3 scripts/swedron-gap/parse-product-pages.py
 python3 scripts/swedron-gap/build-shopify-payloads.py         # omgång 1
 python3 scripts/swedron-gap/build-shopify-payloads-round2.py  # omgång 2
+python3 scripts/swedron-gap/build-shopify-payloads-ecoflow.py # omgång 3
 ```
 
 Sidhämtningen görs med Nimble Extract (`vx8`) mot URL:erna i

@@ -14,6 +14,8 @@ för resultatet av första körningen.
 | `copy_sv.py` | Egenförfattad svensk säljtext, omgång 1. |
 | `build-shopify-payloads-round2.py` | Som ovan, med produkttyper för paket, filter och värmekameror. |
 | `copy_sv2.py` | Egenförfattad svensk säljtext, omgång 2. |
+| `build-shopify-payloads-ecoflow.py` | Payloads för varumärkesimport, med produkttyper för kraft och solel. |
+| `copy_ecoflow.py` | Egenförfattad svensk säljtext, EcoFlow. |
 
 ## Arbetsflöde
 
@@ -40,3 +42,8 @@ saknade ut visade sig finnas när titeln jämfördes.
   säljtext är det inte.
 - Sätt inte pris från konkurrentens sida.
 - Tagga med `swedron-gap-import` så att en körning går att spåra och ångra.
+- Vid varumärkesimport: gå igenom sortimentet först. Varumärken som EcoFlow
+  har stora delar som inte hör hemma i en drönarbutik, och rena färgvarianter
+  bör bli varianter på en produkt i stället för egna produkter.
+- Räkna inte importen med `productsCount` direkt efteråt. Shopifys sökindex
+  släpar och ger för låga siffror; lista produkterna i stället.
