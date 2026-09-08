@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Clock, Calendar, Scale } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
@@ -145,6 +146,8 @@ export default function DroneComparisons() {
             </div>
           </div>
         </section>
+
+        <EnterpriseFooter />
       </div>
     </>
   );

@@ -8,6 +8,7 @@ import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getIndustryBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { getDroneProductPathByName } from "@/data/enterpriseDroneProducts";
 import { getPackagesForIndustry, PACKAGE_LEVELS } from "@/data/enterprisePackages";
@@ -250,6 +251,8 @@ export default function CommercialDroneIndustry() {
             </div>
           </div>
         </section>
+
+        <EnterpriseFooter />
       </div>
     </>
   );

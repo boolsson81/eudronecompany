@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, Package, Wrench, CheckCircle2, Star } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getConfigBySlug, INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
 import { getPackagesForIndustry } from "@/data/enterprisePackages";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
@@ -239,6 +240,8 @@ export default function DroneConfiguration() {
             </Link>
           </div>
         </section>
+
+        <EnterpriseFooter />
       </div>
     </>
   );

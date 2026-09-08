@@ -138,7 +138,7 @@ describe("organisationsnummer och postadress", () => {
     expect(elsewhere, "organisationsnumret ska läsas från companyContact.ts").toEqual([]);
   });
 
-  it("visas i sidfoten på varje sida som har en", () => {
+  it("visas i sidfoten, som varje publik sida delar", () => {
     const footer = readFileSync("src/components/EnterpriseFooter.tsx", "utf-8");
     expect(footer).toContain("COMPANY_CONTACT.orgNumber");
     expect(footer).toContain("COMPANY_ADDRESS_LINE");
@@ -148,6 +148,24 @@ describe("organisationsnummer och postadress", () => {
       (f) => f.path.startsWith("src/pages/") && f.text.includes("<footer"),
     ).map((f) => f.path);
     expect(inlineFooters, "använd EnterpriseFooter i stället").toEqual([]);
+  });
+
+  it("står på varje publik sida", () => {
+    // Inloggning och driftsvyerna ska inte ha marknadssidfot.
+    const withoutFooter = ["src/pages/Login.tsx", "src/pages/ShopifyCloner.tsx"];
+
+    const publicPages = FILES.filter(
+      (f) =>
+        f.path.startsWith("src/pages/") &&
+        !f.path.startsWith("src/pages/admin/") &&
+        f.path.endsWith(".tsx") &&
+        !withoutFooter.includes(f.path),
+    );
+
+    expect(publicPages.length).toBeGreaterThanOrEqual(18);
+    for (const page of publicPages) {
+      expect(page.text, `${page.path} saknar EnterpriseFooter`).toContain("<EnterpriseFooter />");
+    }
   });
 
   it("ligger i sidornas Organization-strukturdata", () => {
