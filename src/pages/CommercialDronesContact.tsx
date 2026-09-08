@@ -1,4 +1,5 @@
 import { droneUrl } from "@/lib/publicSite";
+import { COMPANY_CONTACT, COMPANY_PHONE_HREF, companyMailto } from "@/lib/companyContact";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -89,11 +90,11 @@ export default function CommercialDronesContact() {
     mainEntity: {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
-      telephone: "+46101025591",
-      email: "info@eudronecompany.com",
+      telephone: COMPANY_CONTACT.phoneE164,
+      email: COMPANY_CONTACT.email,
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+46101025591",
+        telephone: COMPANY_CONTACT.phoneE164,
         contactType: "sales",
         availableLanguage: "Swedish",
       },
@@ -132,13 +133,13 @@ export default function CommercialDronesContact() {
                   Vi återkommer inom 24 timmar med en personlig rekommendation.
                 </p>
                 <div className="space-y-4">
-                  <a href="tel:+46101025591" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+                  <a href={COMPANY_PHONE_HREF} className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                     <Phone className="h-5 w-5 text-orange-500" />
-                    <span>010-102 55 91</span>
+                    <span>{COMPANY_CONTACT.phone}</span>
                   </a>
-                  <a href="mailto:info@eudronecompany.com" className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
+                  <a href={companyMailto()} className="flex items-center gap-3 text-white/60 hover:text-white transition-colors">
                     <Mail className="h-5 w-5 text-orange-500" />
-                    <span>info@eudronecompany.com</span>
+                    <span>{COMPANY_CONTACT.email}</span>
                   </a>
                 </div>
               </motion.div>

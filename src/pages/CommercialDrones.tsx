@@ -24,6 +24,7 @@ import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
+import { COMPANY_CONTACT } from "@/lib/companyContact";
 
 const HUB_FAQ: FaqItem[] = [
   { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
@@ -54,7 +55,7 @@ export default function CommercialDrones() {
     description: "Auktoriserad DJI Enterprise-partner i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+46320123456",
+      telephone: COMPANY_CONTACT.phoneE164,
       contactType: "sales",
       availableLanguage: "Swedish",
     },

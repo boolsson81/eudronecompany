@@ -13,6 +13,18 @@ import { describe, expect, it } from "vitest";
  */
 
 export const CONTACT_EMAIL = "info@eudronecompany.com";
+export const CONTACT_PHONE = "076-285 00 65";
+export const CONTACT_PHONE_E164 = "+46762850065";
+
+/**
+ * Numren som låg i sidorna innan företagsuppgifterna slogs upp: två
+ * platshållare, ActionKings växel och dess visningsform. Inget av dem får
+ * tillbaka.
+ *
+ * Formulärfältens platshållare (`070-123 45 67`, `08-123 45 67`) är exempeltext
+ * i inmatningsfält, inte bolagets nummer, och står kvar med flit.
+ */
+const RETIRED_PHONES = ["+4612345678", "+46 8 123 45 67", "+46320123456", "+46101025591", "010-102 55 91"];
 
 const ROOTS = ["src", "theme", "shopify-theme"];
 const EXTENSIONS = [".ts", ".tsx", ".liquid", ".json"];
@@ -45,13 +57,19 @@ describe("publik kontaktadress", () => {
     expect(hits, "bolaget heter EU Drone Company sedan 2026-08-23").toEqual([]);
   });
 
-  it("står på kontaktsidan, i JSON-LD och på specialtillverkningssidan", () => {
+  it("kommer från en enda konstant i frontenden", () => {
+    expect(readFileSync("src/lib/companyContact.ts", "utf-8")).toContain(
+      `email: "${CONTACT_EMAIL}"`,
+    );
+  });
+
+  it("används på kontaktsidan och på specialtillverkningssidan", () => {
     const contact = readFileSync("src/pages/CommercialDronesContact.tsx", "utf-8");
-    expect(contact).toContain(`email: "${CONTACT_EMAIL}"`);
-    expect(contact).toContain(`mailto:${CONTACT_EMAIL}`);
+    expect(contact).toContain("COMPANY_CONTACT.email");
+    expect(contact).toContain("companyMailto()");
 
     const customParts = readFileSync("src/pages/CustomParts.tsx", "utf-8");
-    expect(customParts).toContain(`mailto:${CONTACT_EMAIL}`);
+    expect(customParts).toContain("companyMailto(");
   });
 
   it("är samma adress i Shopify-temats offertformulär", () => {
@@ -60,6 +78,43 @@ describe("publik kontaktadress", () => {
       "theme/templates/page.contact-quote.json",
     ]) {
       expect(readFileSync(path, "utf-8"), path).toContain(CONTACT_EMAIL);
+    }
+  });
+});
+
+describe("publikt telefonnummer", () => {
+  it("har inte kvar platshållarna eller ActionKings växel", () => {
+    for (const phone of RETIRED_PHONES) {
+      const hits = FILES.filter((f) => f.text.includes(phone)).map((f) => f.path);
+      expect(hits, `${phone} ska vara ersatt av företagsuppgifternas nummer`).toEqual([]);
+    }
+  });
+
+  it("kommer från en enda konstant i frontenden", () => {
+    const module = readFileSync("src/lib/companyContact.ts", "utf-8");
+    expect(module).toContain(`phone: "${CONTACT_PHONE}"`);
+    expect(module).toContain(`phoneE164: "${CONTACT_PHONE_E164}"`);
+
+    // Sidorna ska läsa konstanten, inte upprepa siffrorna.
+    for (const path of [
+      "src/pages/CommercialDrones.tsx",
+      "src/pages/CommercialDronesContact.tsx",
+    ]) {
+      const page = readFileSync(path, "utf-8");
+      expect(page, path).toContain("COMPANY_CONTACT");
+      expect(page, path).not.toContain(CONTACT_PHONE_E164);
+    }
+  });
+
+  it("står i Shopify-temats ring-oss-knappar, som inte kan importera konstanten", () => {
+    const callButtons = FILES.filter(
+      (f) => f.path.startsWith("theme/") && f.text.includes("tel:"),
+    );
+    expect(callButtons.length).toBeGreaterThan(0);
+    for (const file of callButtons) {
+      for (const [, number] of file.text.matchAll(/tel:([+0-9 -]+)/g)) {
+        expect(number.trim(), file.path).toBe(CONTACT_PHONE_E164);
+      }
     }
   });
 });
