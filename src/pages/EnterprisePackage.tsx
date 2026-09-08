@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/SeoHead";
 import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import {
   getPackageBySlug,
   getPackageServices,
@@ -372,18 +373,7 @@ export default function EnterprisePackage() {
             </div>
           </div>
         </section>
-
-        <footer className="border-t border-white/10 py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">EU Drone Company Enterprise</span>
-            </div>
-            <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
-            </p>
-          </div>
-        </footer>
+        <EnterpriseFooter />
       </div>
     </>
   );

@@ -15,7 +15,7 @@
 
 Sökvägarna är oförändrade i den nya appen, så omdirigeringarna behöver bara byta domän.
 
-## Måldomän — inte bekräftad, och apexen är upptagen
+## Måldomän: `enterprise.eudronecompany.com` (beslutad 2026-09-07)
 
 Bolaget och domänen heter numera EU Drone Company, inte EuroDroneParts. Men
 `eudronecompany.com` kan **inte** vara måldomän för 301:orna, för apexen är Shopifys:
@@ -29,10 +29,16 @@ Det är rätt DNS för butiken (en domän, marknader via `/se`, `/de`, `/dk` —
 [`SEPARATION.md`](SEPARATION.md) §9). Konsekvensen är att `/kommersiella-dronare/*` inte
 finns på den värden: kör man cutovern med apexen som mål blir alla 45 URL:erna nedan 404.
 
-Frontenden i det här repot är inte deployad någonstans. Innan checklistan kan köras behöver
-en egen värd väljas — en subdomän (t.ex. `dronare.eudronecompany.com`) är det enda som
-fungerar utan att röra butiken. När den är vald står domänen på två ställen och båda måste
-peka åt samma håll:
+Frontenden i det här repot är fortfarande inte deployad. Valet av värd är däremot gjort:
+**`enterprise.eudronecompany.com`**, en egen subdomän som lämnar butiken på apexen orörd.
+Namnet följer hur sektionen redan marknadsförs i navigationen och i rubrikerna.
+
+`DRONE_SITE_ORIGIN` i `src/lib/publicSite.ts` pekar sedan 2026-09-07 på den domänen, och
+`public/sitemap.xml` samt `public/robots.txt` genereras från samma konstant med
+`npm run sitemap`. Byts domänen igen räcker det att ändra konstanten och köra om skriptet;
+`scripts/__tests__/sitemap.test.ts` fångar en sitemap som inte följt med.
+
+Domänen står på två ställen till, och båda måste peka åt samma håll:
 
 - `vercel.json` → `redirects[].destination` (301:orna från `app.digitalsignal.io`)
 - Miljövariabeln `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt (fallback i
@@ -158,12 +164,20 @@ efter cutover:
 
 ## Checklista vid cutover
 
-0. Välj värd för frontenden (subdomän — apexen är Shopifys, se ovan).
-1. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200.
-2. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
-3. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.
-4. Verifiera 301 på ett par sökvägar.
-5. Lämna in den nya sajtens sitemap i Search Console och bevaka indexeringen.
-6. `actionking.se` renderar inte längre drönarsajten — den skickas vidare till den nya
+0. ~~Välj värd för frontenden.~~ Klart: `enterprise.eudronecompany.com`, se ovan.
+1. Koppla Vercel-projektet `european-drone-company` till `boolsson81/eudronecompany`
+   (Project → Settings → Git). Projektet fanns tomt 2026-09-07: ingen Git-koppling, noll
+   deployments.
+2. Sätt `VITE_SUPABASE_URL` och `VITE_SUPABASE_PUBLISHABLE_KEY` i Vercel-projektet. Utan
+   dem kastar `src/lib/supabaseEnv.ts` vid uppstart och hela appen blir en tom sida —
+   bygget går igenom, felet syns först i webbläsaren.
+3. Lägg till subdomänen i Vercel-projektet och peka DNS dit.
+4. Deploya eudronecompany-frontenden och bekräfta att alla 45 sökvägar svarar 200.
+5. Sätt `VITE_EUDRONECOMPANY_URL` i digitalsignals Vercel-projekt.
+6. Uppdatera `vercel.json` med rätt måldomän och deploya digitalsignal.
+7. Verifiera 301 på ett par sökvägar.
+8. Lämna in `https://enterprise.eudronecompany.com/sitemap.xml` i Search Console och bevaka
+   indexeringen.
+9. `actionking.se` renderar inte längre drönarsajten — den skickas vidare till den nya
    domänen (`src/App.tsx`, `src/pages/Index.tsx`). Peka hellre om DNS/Vercel-domänen direkt
    när den nya sajten är live, så slipper man dubbelhoppet.

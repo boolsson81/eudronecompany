@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Radio, CheckCircle2, GraduationCap, AlertTriangle, Cpu } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import RegulationSourceNote from "@/components/RegulationSourceNote";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getTrainingBySlug, TRAINING_REQUIREMENTS } from "@/data/droneRegulations";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
@@ -221,6 +222,8 @@ export default function DroneTrainingRequirement() {
         </section>
 
         <RegulationSourceNote />
+
+        <EnterpriseFooter />
       </div>
     </>
   );

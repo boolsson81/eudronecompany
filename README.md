@@ -58,6 +58,7 @@ npm run dev                     # Vite på http://localhost:8080
 npm run build
 npm run typecheck
 npm test                        # vitest över scripts/__tests__
+npm run sitemap                 # genererar om public/sitemap.xml och robots.txt
 npm run check:shared            # jämför speglade filer mot ../digitalsignal
 npx supabase functions deploy <namn> --project-ref <ref>
 node scripts/push-edp-theme.mjs        # publicera temat

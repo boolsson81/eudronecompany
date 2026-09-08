@@ -6,6 +6,7 @@ import SeoHead from "@/components/SeoHead";
 import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import DroneCameraComparison from "@/components/DroneCameraComparison";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import type { FaqItem } from "@/data/commercialDroneIndustries";
 import { Camera, ArrowRight } from "lucide-react";
 import { droneUrl } from "@/lib/publicSite";
@@ -145,6 +146,8 @@ export default function DroneCameraComparisonPage() {
             <FaqSection items={PAGE_FAQ} heading="Vanliga frågor om drönarkameror" />
           </div>
         </section>
+
+        <EnterpriseFooter />
       </div>
     </>
   );

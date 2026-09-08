@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/SeoHead";
 import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getComparisonBySlug, DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
@@ -237,6 +238,8 @@ export default function DroneComparisonArticle() {
             </div>
           </section>
         )}
+
+        <EnterpriseFooter />
       </div>
     </>
   );

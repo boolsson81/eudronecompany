@@ -1,0 +1,9 @@
+# EU Drone Company — publika drönarsidor
+User-agent: *
+Allow: /
+
+# Driftsvyerna kräver inloggning och har inget att göra i sökresultaten.
+Disallow: /admin
+Disallow: /login
+
+Sitemap: https://enterprise.eudronecompany.com/sitemap.xml

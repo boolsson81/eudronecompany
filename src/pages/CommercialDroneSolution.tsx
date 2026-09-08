@@ -6,6 +6,7 @@ import SeoHead from "@/components/SeoHead";
 import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getSolutionBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
@@ -215,6 +216,8 @@ export default function CommercialDroneSolution() {
             </div>
           </div>
         </section>
+
+        <EnterpriseFooter />
       </div>
     </>
   );

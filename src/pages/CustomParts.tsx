@@ -1,10 +1,12 @@
 import { droneUrl } from "@/lib/publicSite";
+import { companyMailto } from "@/lib/companyContact";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/SeoHead";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import FaqSection, { faqJsonLd, type FaqItem } from "@/components/FaqSection";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import {
   ArrowRight,
   Mail,
@@ -454,7 +456,7 @@ export default function CustomParts() {
                     Begär offert <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
                 </Link>
-                <a href="mailto:Sales@actionking.se?subject=Specialtillverkning%20%E2%80%94%20f%C3%B6rfr%C3%A5gan">
+                <a href={companyMailto("Specialtillverkning — förfrågan")}>
                   <Button
                     size="lg"
                     variant="outline"
@@ -469,18 +471,7 @@ export default function CustomParts() {
         </div>
 
         <FaqSection items={FAQ_ITEMS} variant="dark" heading="Vanliga frågor om specialtillverkning" />
-
-        <footer className="border-t border-white/10 py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">EU Drone Company Enterprise</span>
-            </div>
-            <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
-            </p>
-          </div>
-        </footer>
+        <EnterpriseFooter />
       </div>
     </>
   );
