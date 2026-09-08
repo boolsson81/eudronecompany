@@ -63,8 +63,8 @@ Det betyder att en stor del av **kategori B**, de 1 876 enskilda luckorna i
 märken vi redan för, sannolikt går genom samma avtal. PolarPro ensamt står för
 336 av dem, Insta360 för 149.
 
-Värt att kontrollera internt: köper vi redan från Focus Nordic idag? I så fall
-handlar det om att utöka avtalet, inte att teckna ett nytt.
+Focus Nordic finns inte bland de nio leverantörer som är registrerade i
+inköpsportalen, så det rör sig om ett nytt avtal.
 
 ## Utanför Focus Nordic — 1 079 produkter
 
@@ -87,11 +87,44 @@ drönarnära nog att vara värda ett samtal.
 Resterande 827 produkter ligger i poster med färre än fem artiklar vardera,
 mestadels reservdelar och enskilda tillbehör.
 
+## Inlagt i inköpsportalen
+
+Samtliga distributörer ovan som vi inte redan har är inlagda som **potentiella
+distributörer** i inköpsportalen, i tabellen `supplier_prospects` för butiken
+European Drone Company. Tabellen var tom innan. Se
+[`data/inkopsportal-potentiella-distributorer.json`](../../data/inkopsportal-potentiella-distributorer.json)
+för exakt vad som lades in.
+
+| Prospekt | Grupp | Land | Produkter i gapet |
+|---|---|---|---|
+| Focus Nordic AB | eu-distributor | SE | 4 723 |
+| Anker Innovations | accessory | — | 90 |
+| Emlid Tech Kft | payload | HU | 32 |
+| HPRC | accessory | IT | 17 |
+| AgEagle Aerial Systems (EagleNXT) | payload | US | 15 |
+| LifThor | accessory | — | 14 |
+| 4Hawks | accessory | PL | 12 |
+| Dronavia | commercial | FR | 10 |
+| AVSS | commercial | CA | 10 |
+
+Webbadress är satt bara där den är verifierad: Focus Nordic, Emlid och AgEagle.
+För övriga står fältet tomt hellre än gissat. Alla får status `new` som default.
+
+Dreame och Hasselblad lades medvetet inte in. Dreame är robotdammsugare och
+ligger utanför sortimentet, Hasselblad ägs av DJI och går via DJI-kanalen som vi
+redan har.
+
+## Rättelse om befintliga leverantörer
+
+Rapportens första version sa att de enda kända leverantörerna var Sunsky och
+Boston. Det gällde repot, inte verkligheten. Inköpsportalen har nio registrerade
+leverantörer för European Drone Company: ALSO Sweden, Boston Group, ELKO Group,
+iFlight Europe, INNPRO, Komsa, Solectric, Sunsky och Wisson. Focus Nordic finns
+inte bland dem, så det handlar om ett nytt avtal och inte om att utöka ett
+befintligt.
+
 ## Vad jag inte kunnat bekräfta
 
-- Om vi redan har ett avtal med Focus Nordic. Det finns inget i repot om det;
-  de enda leverantörer som nämns här är Sunsky (dropship) och Boston
-  (leverantörs-FTP), och båda ligger kvar i DigitalSignal.
 - Nordisk distributör för Anker, HPRC, 4Hawks, Dronavia och AVSS. Sökningarna
   gav inget entydigt svar, och jag har inte gissat.
 - Vilka villkor eller marginaler någon av kanalerna ger.

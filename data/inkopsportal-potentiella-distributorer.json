@@ -1,0 +1,27 @@
+{
+  "beskrivning": "Potentiella distributörer inlagda i inköpsportalen (Supabase-tabell supplier_prospects) utifrån varumärkesgapet mot Swedron.",
+  "kalla": "docs/reports/SWEDRON_DISTRIBUTORER.md",
+  "shop": "European Drone Company",
+  "shop_id": "e6ad2afc-e468-49a7-8d33-9b1837419ed8",
+  "tabell": "supplier_prospects",
+  "inlagt": "2026-09-08",
+  "prospekt": [
+    { "namn": "Focus Nordic AB", "grupp": "eu-distributor", "land": "SE", "segment": "Foto, video, optik", "webb": "https://www.focusnordic.com/become-reseller", "produkter_i_gapet": 4723 },
+    { "namn": "Emlid Tech Kft", "grupp": "payload", "land": "HU", "segment": "RTK GNSS", "webb": "https://emlid.com/dealership", "produkter_i_gapet": 32 },
+    { "namn": "AgEagle Aerial Systems (EagleNXT)", "grupp": "payload", "land": "US", "segment": "Multispektralsensorer", "webb": "https://eaglenxt.com", "produkter_i_gapet": 15 },
+    { "namn": "Anker Innovations", "grupp": "accessory", "land": null, "segment": "Kraft och laddning", "webb": null, "produkter_i_gapet": 90 },
+    { "namn": "HPRC", "grupp": "accessory", "land": "IT", "segment": "Transportväskor", "webb": null, "produkter_i_gapet": 17 },
+    { "namn": "LifThor", "grupp": "accessory", "land": null, "segment": "Fästen för drönarkontroller", "webb": null, "produkter_i_gapet": 14 },
+    { "namn": "4Hawks", "grupp": "accessory", "land": "PL", "segment": "Riktantenner", "webb": null, "produkter_i_gapet": 12 },
+    { "namn": "Dronavia", "grupp": "commercial", "land": "FR", "segment": "Drönarsäkerhet", "webb": null, "produkter_i_gapet": 10 },
+    { "namn": "AVSS", "grupp": "commercial", "land": "CA", "segment": "Fallskärmssystem", "webb": null, "produkter_i_gapet": 10 }
+  ],
+  "medvetet_utelamnade": [
+    { "namn": "Dreame", "skal": "Robotdammsugare, utanför sortimentet" },
+    { "namn": "Hasselblad", "skal": "Ägs av DJI och går via DJI-kanalen, som vi redan har" }
+  ],
+  "befintliga_leverantorer_vid_tillfallet": [
+    "ALSO Sweden AB", "Boston Group", "ELKO Group", "iFlight Europe",
+    "INNPRO Robert Bledowski Sp. z o.o.", "Komsa AG", "Solectric GmbH", "SUNSKY", "WISSON INTL. LTD."
+  ]
+}
