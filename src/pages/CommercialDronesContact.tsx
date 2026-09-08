@@ -1,5 +1,12 @@
 import { droneUrl } from "@/lib/publicSite";
-import { COMPANY_CONTACT, COMPANY_PHONE_HREF, companyMailto } from "@/lib/companyContact";
+import {
+  COMPANY_ADDRESS_LINE,
+  COMPANY_CONTACT,
+  COMPANY_ORG_IDENTIFIER,
+  COMPANY_PHONE_HREF,
+  COMPANY_POSTAL_ADDRESS,
+  companyMailto,
+} from "@/lib/companyContact";
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -12,8 +19,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { supabase } from "@/integrations/supabase/client";
 import SeoHead from "@/components/SeoHead";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import {
-  CheckCircle2, Loader2, Radio, ArrowRight, Phone, Mail,
+  CheckCircle2, Loader2, Radio, ArrowRight, Phone, Mail, MapPin,
 } from "lucide-react";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -90,8 +98,11 @@ export default function CommercialDronesContact() {
     mainEntity: {
       "@type": "Organization",
       name: "EU Drone Company Enterprise",
+      legalName: COMPANY_CONTACT.legalName,
+      identifier: COMPANY_ORG_IDENTIFIER,
       telephone: COMPANY_CONTACT.phoneE164,
       email: COMPANY_CONTACT.email,
+      address: COMPANY_POSTAL_ADDRESS,
       contactPoint: {
         "@type": "ContactPoint",
         telephone: COMPANY_CONTACT.phoneE164,
@@ -141,6 +152,16 @@ export default function CommercialDronesContact() {
                     <Mail className="h-5 w-5 text-orange-500" />
                     <span>{COMPANY_CONTACT.email}</span>
                   </a>
+                  <div className="flex items-start gap-3 text-white/60">
+                    <MapPin className="h-5 w-5 text-orange-500 shrink-0 mt-0.5" />
+                    <address className="not-italic">
+                      {COMPANY_CONTACT.legalName}
+                      <br />
+                      {COMPANY_ADDRESS_LINE}
+                      <br />
+                      <span className="text-white/40">Org.nr {COMPANY_CONTACT.orgNumber}</span>
+                    </address>
+                  </div>
                 </div>
               </motion.div>
 
@@ -249,19 +270,7 @@ export default function CommercialDronesContact() {
             </div>
           </div>
         </div>
-
-        {/* Footer */}
-        <footer className="border-t border-white/10 py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">EU Drone Company Enterprise</span>
-            </div>
-            <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
-            </p>
-          </div>
-        </footer>
+        <EnterpriseFooter />
       </div>
     </>
   );

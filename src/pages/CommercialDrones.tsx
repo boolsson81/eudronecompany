@@ -8,6 +8,7 @@ import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import RelatedPages from "@/components/RelatedPages";
 import DroneAccessories from "@/components/DroneAccessories";
 import EnterpriseNav from "@/components/EnterpriseNav";
+import EnterpriseFooter from "@/components/EnterpriseFooter";
 import type { FaqItem } from "@/data/commercialDroneIndustries";
 import {
   Cpu, Shield, CheckCircle2, Radio, ArrowRight, Scale, Wrench
@@ -24,7 +25,11 @@ import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
-import { COMPANY_CONTACT } from "@/lib/companyContact";
+import {
+  COMPANY_CONTACT,
+  COMPANY_ORG_IDENTIFIER,
+  COMPANY_POSTAL_ADDRESS,
+} from "@/lib/companyContact";
 
 const HUB_FAQ: FaqItem[] = [
   { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
@@ -53,6 +58,10 @@ export default function CommercialDrones() {
     name: "EU Drone Company Enterprise",
     url: droneUrl("/"),
     description: "Auktoriserad DJI Enterprise-partner i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
+    legalName: COMPANY_CONTACT.legalName,
+    identifier: COMPANY_ORG_IDENTIFIER,
+    email: COMPANY_CONTACT.email,
+    address: COMPANY_POSTAL_ADDRESS,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: COMPANY_CONTACT.phoneE164,
@@ -458,19 +467,7 @@ export default function CommercialDrones() {
         />
         <FaqSection items={HUB_FAQ} variant="dark" heading="Vanliga frågor om kommersiella drönare" />
         <RelatedPages pageUrl={droneUrl("/kommersiella-dronare")} heading="Relaterade sidor" />
-
-        {/* Footer */}
-        <footer className="border-t border-white/10 py-10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <Radio className="h-5 w-5 text-orange-500" />
-              <span className="font-semibold">EU Drone Company Enterprise</span>
-            </div>
-            <p className="text-sm text-white/40">
-              © {new Date().getFullYear()} EU Drone Company. Auktoriserad DJI Enterprise-partner.
-            </p>
-          </div>
-        </footer>
+        <EnterpriseFooter />
       </div>
     </>
   );

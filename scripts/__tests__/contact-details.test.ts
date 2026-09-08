@@ -15,6 +15,10 @@ import { describe, expect, it } from "vitest";
 export const CONTACT_EMAIL = "info@eudronecompany.com";
 export const CONTACT_PHONE = "076-285 00 65";
 export const CONTACT_PHONE_E164 = "+46762850065";
+export const ORG_NUMBER = "810912-2971";
+export const ADDRESS_STREET = "Lyddevägen 34";
+export const ADDRESS_ZIP = "511 58";
+export const ADDRESS_CITY = "Kinna";
 
 /**
  * Numren som låg i sidorna innan företagsuppgifterna slogs upp: två
@@ -116,5 +120,51 @@ describe("publikt telefonnummer", () => {
         expect(number.trim(), file.path).toBe(CONTACT_PHONE_E164);
       }
     }
+  });
+});
+
+
+describe("organisationsnummer och postadress", () => {
+  it("står i konstanten, inte utspritt i sidorna", () => {
+    const module = readFileSync("src/lib/companyContact.ts", "utf-8");
+    expect(module).toContain(`orgNumber: "${ORG_NUMBER}"`);
+    expect(module).toContain(`street: "${ADDRESS_STREET}"`);
+    expect(module).toContain(`zip: "${ADDRESS_ZIP}"`);
+    expect(module).toContain(`city: "${ADDRESS_CITY}"`);
+
+    const elsewhere = FILES.filter(
+      (f) => f.path !== "src/lib/companyContact.ts" && f.text.includes(ORG_NUMBER),
+    ).map((f) => f.path);
+    expect(elsewhere, "organisationsnumret ska läsas från companyContact.ts").toEqual([]);
+  });
+
+  it("visas i sidfoten på varje sida som har en", () => {
+    const footer = readFileSync("src/components/EnterpriseFooter.tsx", "utf-8");
+    expect(footer).toContain("COMPANY_CONTACT.orgNumber");
+    expect(footer).toContain("COMPANY_ADDRESS_LINE");
+
+    // Sidfoten låg tidigare inline och identisk i nio sidor. Ingen får ha en egen.
+    const inlineFooters = FILES.filter(
+      (f) => f.path.startsWith("src/pages/") && f.text.includes("<footer"),
+    ).map((f) => f.path);
+    expect(inlineFooters, "använd EnterpriseFooter i stället").toEqual([]);
+  });
+
+  it("ligger i sidornas Organization-strukturdata", () => {
+    for (const path of [
+      "src/pages/CommercialDrones.tsx",
+      "src/pages/CommercialDronesContact.tsx",
+    ]) {
+      const page = readFileSync(path, "utf-8");
+      expect(page, path).toContain("COMPANY_ORG_IDENTIFIER");
+      expect(page, path).toContain("COMPANY_POSTAL_ADDRESS");
+    }
+  });
+
+  it("har inte kvar butikens avvikande gatuadress", () => {
+    // Shopifys företagsuppgifter säger Kristinebergsgatan 22A. Företagsuppgifterna
+    // i databasen säger Lyddevägen 34, och det är den som gäller på sajten.
+    const hits = FILES.filter((f) => /Kristinebergsgatan/i.test(f.text)).map((f) => f.path);
+    expect(hits).toEqual([]);
   });
 });
