@@ -9,7 +9,6 @@
     "satt": "2026-09-08"
   },
   "leveransvillkor": "FOB Shenzhen. Frakt, tull och moms ingår inte i inköpspriset.",
-  "avrundning": "Närmaste hel krona, halva ören uppåt.",
   "artiklar": [
     {
       "modell": "AP3-P3 - Standard",
@@ -23,7 +22,8 @@
         "distributor_10plus": 4334,
         "sample": 4789
       },
-      "inkopspris_sek": 80449,
+      "varuvarde_sek": 80449,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138253558088",
@@ -68,7 +68,8 @@
         "distributor_10plus": 5201,
         "sample": 5747
       },
-      "inkopspris_sek": 96536,
+      "varuvarde_sek": 96536,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10088748908872",
@@ -113,7 +114,8 @@
         "distributor_10plus": 4473,
         "sample": 4951
       },
-      "inkopspris_sek": 82890,
+      "varuvarde_sek": 82890,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138251985224",
@@ -141,7 +143,8 @@
         "distributor_10plus": 11754,
         "sample": 13262
       },
-      "inkopspris_sek": 220433,
+      "varuvarde_sek": 220433,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138862256456",
@@ -169,7 +172,8 @@
         "distributor_10plus": 884,
         "sample": 1017
       },
-      "inkopspris_sek": 16898,
+      "varuvarde_sek": 16898,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138864779592",
@@ -197,7 +201,8 @@
         "distributor_10plus": 4473,
         "sample": 4951
       },
-      "inkopspris_sek": 82868,
+      "varuvarde_sek": 82868,
+      "frakt_sek": null,
       "shopify": []
     },
     {
@@ -212,7 +217,8 @@
         "distributor_10plus": 3034,
         "sample": 3389
       },
-      "inkopspris_sek": 36574,
+      "varuvarde_sek": 36574,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138861207880",
@@ -240,7 +246,8 @@
         "distributor_10plus": 4473,
         "sample": 4951
       },
-      "inkopspris_sek": 82868,
+      "varuvarde_sek": 82868,
+      "frakt_sek": null,
       "shopify": [
         {
           "produktId": "gid://shopify/Product/10138865533256",
@@ -268,7 +275,8 @@
         "distributor_10plus": 2288,
         "sample": 2476
       },
-      "inkopspris_sek": 41029,
+      "varuvarde_sek": 41029,
+      "frakt_sek": null,
       "shopify": []
     },
     {
@@ -283,8 +291,17 @@
         "distributor_10plus": 5201,
         "sample": 5747
       },
-      "inkopspris_sek": 96536,
+      "varuvarde_sek": 96536,
+      "frakt_sek": null,
       "shopify": []
     }
-  ]
+  ],
+  "palagg": {
+    "tullsats": 0.017,
+    "tullbas": "Varuvärde + frakt fram till EU-gränsen (tullvärde vid FOB-inköp).",
+    "tullsats_kalla": "Position 8424 (HS 8424490000 enligt leverantörens faktura). Ej verifierad mot TARIC — bekräfta innan den används i bokföringen.",
+    "frakt": "frakt_sek per modell, faktisk kostnad enligt speditör. null = ej angiven, då hoppar skriptet över modellen."
+  },
+  "berakning": "inkopspris_sek = varuvarde_sek + frakt_sek + tull, där tull = tullsats * (varuvarde_sek + frakt_sek).",
+  "avrundning": "Närmaste hel krona, halva ören uppåt."
 }

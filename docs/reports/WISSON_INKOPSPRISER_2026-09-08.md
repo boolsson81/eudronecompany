@@ -6,8 +6,9 @@
 **Kurs:** 11,25 SEK/EUR
 **Underlag:** [`data/wisson-inkopspriser-202607.json`](../../data/wisson-inkopspriser-202607.json)
 
-Priserna är inlagda som **Cost per item** (`inventoryItem.cost`) på varje variant i
-Shopify. Butiken handlar i SEK, så kostnaden är satt i SEK.
+Inköpspriset är landat: **varuvärde + frakt + tull**. Det skrivs som
+**Cost per item** (`inventoryItem.cost`) på varje variant i Shopify. Butiken
+handlar i SEK, så kostnaden är satt i SEK.
 
 ## Val av priskolumn
 
@@ -20,19 +21,36 @@ Listan är byggd i USD och omräknad till EUR med kursen 0,8668 som ligger i cel
 H49 i kalkylbladet. Underliggande USD-priser är jämna tal: MSRP 11 000 USD,
 dealer 8 250 USD, distributör 6 500 respektive 5 000 USD för AP3-P3 Standard.
 
-## Inlagda priser
+## Frakt och tull
 
-| Modell | Dealer EUR | Inköpspris SEK | Varianter |
-|---|---:|---:|---:|
-| AP3-P3 Standard | 7 151 | 80 449 | 3 |
-| AP3-P3 Pro | 8 581 | 96 536 | 3 |
-| AP3-P1 Aerial Sprayer | 7 368 | 82 890 | 1 |
-| AP30-N1 Aerial Manipulator | 19 594 | 220 433 | 1 |
-| AP30-G2 Heavy-load Release | 1 502 | 16 898 | 1 |
-| AP-P DIC Water Treatment System | 3 251 | 36 574 | 1 |
-| AP3-D1 Contact Inspection (EOL) | 7 366 | 82 868 | 1 |
+Tullen räknas på varuvärde plus frakt fram till EU-gränsen. Det är tullvärdet
+vid FOB-inköp, inte varuvärdet ensamt. Satsen 1,7 % gäller position 8424 och är
+**inte verifierad mot TARIC** — bekräfta den innan den används i bokföringen.
+HS-numret 8424490000 kommer från leverantörens faktura.
 
-Totalt 11 varianter över 8 produkter, inklusive arkiverade produkter.
+Frakten är faktisk kostnad per modell och sätts i `frakt_sek` i datafilen.
+Produkternas vikter i Shopify duger inte som fördelningsnyckel: de flesta står på
+noll och AP3-P3-systemet står på 1,3 kg, vilket är nyttolasten och inte
+fraktvikten med markutrustning och 70 meter slang.
+
+## Varuvärden
+
+| Modell | Dealer EUR | Varuvärde SEK | Frakt | Varianter |
+|---|---:|---:|---:|---:|
+| AP3-P3 Standard | 7 151 | 80 449 | — | 3 |
+| AP3-P3 Pro | 8 581 | 96 536 | — | 3 |
+| AP3-P1 Aerial Sprayer | 7 368 | 82 890 | — | 1 |
+| AP30-N1 Aerial Manipulator | 19 594 | 220 433 | — | 1 |
+| AP30-G2 Heavy-load Release | 1 502 | 16 898 | — | 1 |
+| AP-P DIC Water Treatment System | 3 251 | 36 574 | — | 1 |
+| AP3-D1 Contact Inspection (EOL) | 7 366 | 82 868 | — | 1 |
+
+Totalt 11 varianter över 8 produkter, inklusive arkiverade produkter. Modeller
+utan angiven frakt skrivs inte till Shopify — skriptet hoppar över dem hellre än
+att sätta ett halvt inköpspris.
+
+Butiken innehåller just nu varuvärdet utan frakt och tull. Kör om skriptet när
+fraktbeloppen är ifyllda, så skrivs det landade priset över.
 
 ## Utan inköpspris
 
@@ -45,9 +63,8 @@ Totalt 11 varianter över 8 produkter, inklusive arkiverade produkter.
 
 ## Att tänka på
 
-Listan är FOB Shenzhen. Frakt, tull och moms ingår inte i inköpspriset, så
-bruttomarginalen i Shopify blir för hög i motsvarande grad. Kursen 11,25 är satt
-manuellt och behöver ses över när den rör sig.
+Moms ingår inte och ska inte göra det — den är avdragsgill och hör inte hemma i
+inköpspriset. Kursen 11,25 är satt manuellt och behöver ses över när den rör sig.
 
 ## Körning
 

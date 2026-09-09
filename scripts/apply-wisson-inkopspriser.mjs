@@ -7,6 +7,10 @@
  * leverantörens prislista juli 2026, kolumnen "Suggested Dealer Price (EURO)"
  * omräknad till SEK. Butiken handlar i SEK, så cost sätts i SEK.
  *
+ * Inköpspriset är landat: varuvärde + frakt + tull. Tullen räknas på varuvärde
+ * plus frakt, eftersom det är tullvärdet vid FOB-inköp. Modeller utan angiven
+ * frakt hoppas över — ett halvt inköpspris är värre än inget.
+ *
  * Usage:
  *   node scripts/apply-wisson-inkopspriser.mjs            # dry run
  *   node scripts/apply-wisson-inkopspriser.mjs --execute  # skriver till Shopify
@@ -28,9 +32,25 @@ const MUTATION = `
   }
 `;
 
+/** Landat inköpspris: varuvärde + frakt + tull på varuvärde plus frakt. */
+export function landatInkopspris(varuvarde, frakt, tullsats) {
+  const tull = Math.round((varuvarde + frakt) * tullsats);
+  return { tull, total: varuvarde + frakt + tull };
+}
+
 function targets(doc) {
   const out = [];
+  const utanFrakt = [];
   for (const artikel of doc.artiklar) {
+    if (artikel.frakt_sek == null) {
+      if (artikel.shopify.length) utanFrakt.push(artikel.modell);
+      continue;
+    }
+    const { tull, total } = landatInkopspris(
+      artikel.varuvarde_sek,
+      artikel.frakt_sek,
+      doc.palagg.tullsats,
+    );
     for (const produkt of artikel.shopify) {
       for (const variant of produkt.varianter) {
         out.push({
@@ -39,29 +59,37 @@ function targets(doc) {
           status: produkt.status,
           variantTitel: variant.titel,
           inventoryItemId: variant.inventoryItemId,
-          kostnad: artikel.inkopspris_sek,
-          eur: artikel.listpris_eur.dealer,
+          varuvarde: artikel.varuvarde_sek,
+          frakt: artikel.frakt_sek,
+          tull,
+          kostnad: total,
         });
       }
     }
   }
-  return out;
+  return { rader: out, utanFrakt };
 }
 
 async function main() {
   const execute = process.argv.includes("--execute");
   const doc = JSON.parse(readFileSync(DATA, "utf8"));
-  const rader = targets(doc);
+  const { rader, utanFrakt } = targets(doc);
 
   console.log(`Källa: ${doc.kalla}`);
   console.log(`Kolumn: ${doc.priskolumn}, kurs ${doc.valuta.kurs} SEK/EUR`);
+  console.log(`Tullsats: ${(doc.palagg.tullsats * 100).toFixed(1)} % på varuvärde plus frakt`);
   console.log(`${rader.length} varianter${execute ? "" : " (dry run, inget skrivs)"}\n`);
+
+  if (utanFrakt.length) {
+    console.log(`Hoppar över utan angiven frakt: ${utanFrakt.join(", ")}\n`);
+  }
 
   let ok = 0;
   for (const rad of rader) {
     const etikett = `${rad.modell} / ${rad.handle} / ${rad.variantTitel} [${rad.status}]`;
+    const delar = `${rad.varuvarde} + frakt ${rad.frakt} + tull ${rad.tull}`;
     if (!execute) {
-      console.log(`DRY  ${etikett}: ${rad.eur} EUR -> ${rad.kostnad} SEK`);
+      console.log(`DRY  ${etikett}: ${delar} = ${rad.kostnad} SEK`);
       continue;
     }
     const data = await shopifyGraphQL(MUTATION, {
