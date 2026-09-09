@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-D1",
+            "text": "20 N kontaktkraft i upp till 30 sekunder, med kraftåterkoppling i realtid på skärmen."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Sidoarbete",
+            "text": "Den mjuka upphängningen justerar modulens läge så att drönaren håller balansen under mätning."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Inbyggd sprutning",
+            "text": "Väter ytan före mätning och kan märka mätpunkter med färg för dokumentation."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Sensorval",
+            "text": "Stöd för olika givare beroende på vad som ska mätas. Modulbyte på under en minut."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Byggnadsprovning och fasadkontroll"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Brokontroll och bärverk"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Vindkraftsunderhåll"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dokumenterade mätpunkter med färgmarkering"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson",
+        "breadcrumb_link": "/pages/wisson",
+        "eyebrow": "Wisson D-serien",
+        "title": "Wisson D-serien — flygburen kontaktinspektion",
+        "text": "D-serien mäter med fysisk kontakt från luften. Modulen arbetar i sidled ut från drönaren och trycker givaren mot ytan, medan den mjuka upphängningen dämpar anslaget och håller flygningen i balans.",
+        "solutions_heading": "System i serien",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vad ska mätas?",
+        "text": "AP3-D1 är integrerad med DJI Matrice 300 och 350. Berätta vilken givare uppdraget kräver.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

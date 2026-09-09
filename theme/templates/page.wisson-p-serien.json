@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-P1",
+            "text": "Sprutmodul med 2-liters behållare som sprutar åt alla håll, även i trånga utrymmen. Fälls till 0,7 m."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-P3",
+            "text": "Slangmatat fasadtvättsystem med renvatten och 40° Pliabot-skrapa. Torkar utan ränder."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "AP30-P4",
+            "text": "Dimspruta där atomiseringen lägger ett jämnt skikt utan överskott eller dropp."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "AP30-P4H",
+            "text": "Högtrycksvariant för rengöring och sprutning med modulära arbetsenheter."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Fasadtvätt och höghöjdsrengöring"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Vindkraftverk, blad och torn"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Isolatorer, master och broar"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Solpaneler och stora takytor"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson",
+        "breadcrumb_link": "/pages/wisson",
+        "eyebrow": "Wisson P-serien",
+        "title": "Wisson P-serien — flygburen sprutning och tvätt",
+        "text": "P-serien utför arbete på höga ytor utan ställning eller lift. Den mjuka upphängningen dämpar både pendling och kontakt med ytan, vilket gör att drönaren kan arbeta tätt intill i stället för att spruta på avstånd.",
+        "solutions_heading": "System i serien",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Sprutning eller tvätt?",
+        "text": "Valet styrs av yta, vätska och vilken drönare ni flyger. Vi går igenom uppdraget och offererar rätt konfiguration.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

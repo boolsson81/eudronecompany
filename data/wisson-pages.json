@@ -1,0 +1,72 @@
+[
+ {
+  "handle": "wisson",
+  "title": "Wisson Orion — flygburna robotsystem",
+  "templateSuffix": "wisson",
+  "body": "<p>Wisson Orion gör industridrönaren till en arbetsmaskin. Pliabot-tekniken bygger på mjuka bioniska muskler med pneumatisk drivning, vilket ger armar som både böjer sig och teleskoperar — och som tål att slå emot utan att flygningen havererar.</p>",
+  "seo": {
+   "title": "Wisson Orion — flygburna robotsystem | EU Drone Company",
+   "description": "Pliabot-baserade robotarmar, gripdon, sprutmoduler och tvättsystem för DJI-industridrönare. Offert, utbildning och support på svenska."
+  }
+ },
+ {
+  "handle": "wisson-n-serien",
+  "title": "Wisson N-serien — flygburen manipulation",
+  "templateSuffix": "wisson-n-serien",
+  "body": "<p>N-serien flyttar drönaren från att observera till att arbeta. Armen böjer sig 360 grader och teleskoperar, och verktyget byts i ett steg — samma flygning kan gripa, ta prov, spruta och mäta.</p>",
+  "seo": {
+   "title": "Wisson N-serien — flygburen manipulation | EU Drone Company",
+   "description": "AP30-N1 flygburen Pliabot-manipulator: 15 kg lyftkapacitet, 360° böjning, verktygsbyte i ett steg. För DJI FlyCart 30."
+  }
+ },
+ {
+  "handle": "wisson-g-serien",
+  "title": "Wisson G-serien — flygburet lastsläpp",
+  "templateSuffix": "wisson-g-serien",
+  "body": "<p>G-serien lämnar last exakt där den ska ligga. Gemensamt för systemen är aktiv utlösning: operatören bestämmer ögonblicket, i stället för att lasten släpps när linan slaknar.</p>",
+  "seo": {
+   "title": "Wisson G-serien — flygburet lastsläpp | EU Drone Company",
+   "description": "AP3-G1 gripdon 2 kg och AP30-G2 tunglastsläppare 40 kg med 100 m hisshöjd. Aktiv utlösning och AR-positionering."
+  }
+ },
+ {
+  "handle": "wisson-p-serien",
+  "title": "Wisson P-serien — flygburen sprutning och tvätt",
+  "templateSuffix": "wisson-p-serien",
+  "body": "<p>P-serien utför arbete på höga ytor utan ställning eller lift. Den mjuka upphängningen dämpar både pendling och kontakt med ytan, vilket gör att drönaren kan arbeta tätt intill i stället för att spruta på avstånd.</p>",
+  "seo": {
+   "title": "Wisson P-serien — flygburen sprutning och tvätt | EU Drone Company",
+   "description": "AP3-P1 sprutmodul, AP3-P3 fasadtvätt med renvatten, AP30-P4 dimspruta och AP30-P4H högtryck. För höghöjdsarbete utan lift."
+  }
+ },
+ {
+  "handle": "wisson-d-serien",
+  "title": "Wisson D-serien — flygburen kontaktinspektion",
+  "templateSuffix": "wisson-d-serien",
+  "body": "<p>D-serien mäter med fysisk kontakt från luften. Modulen arbetar i sidled ut från drönaren och trycker givaren mot ytan, medan den mjuka upphängningen dämpar anslaget och håller flygningen i balans.</p>",
+  "seo": {
+   "title": "Wisson D-serien — flygburen kontaktinspektion | EU Drone Company",
+   "description": "AP3-D1 kontaktinspektionsrobot: 20 N anliggning i 30 sekunder, kraftåterkoppling i realtid och inbyggd färgmarkering."
+  }
+ },
+ {
+  "handle": "fasadtvatt-dronare",
+  "title": "Fasadtvätt med drönare",
+  "templateSuffix": "fasadtvatt-dronare",
+  "body": "<p>Fasadtvätt med drönare tar bort behovet av ställning, lift och reparbete. Med Wisson AP3-P3 arbetar drönaren tätt intill ytan och tvättar med renvatten — inga kemikalier, inga ränder.</p>",
+  "seo": {
+   "title": "Fasadtvätt med drönare | EU Drone Company",
+   "description": "Tvätta fasader från luften med Wisson AP3-P3: renvatten utan kemikalier, ingen ställning och personal kvar på marken."
+  }
+ },
+ {
+  "handle": "vindkraftsunderhall-dronare",
+  "title": "Vindkraftsunderhåll med drönare",
+  "templateSuffix": "vindkraftsunderhall-dronare",
+  "body": "<p>Underhåll av vindkraftverk kräver att någon tar sig upp på tornet eller bladet. Med flygburna robotsystem utförs rengöring, sprutning och kontaktmätning från luften — snabbare, och utan att någon hänger i rep.</p>",
+  "seo": {
+   "title": "Vindkraftsunderhåll med drönare | EU Drone Company",
+   "description": "Rengöring, sprutning, kontaktmätning och tunga lyft på vindkraftverk med flygburna Wisson-robotsystem. Ingen personal på hög höjd."
+  }
+ }
+]

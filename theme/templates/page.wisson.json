@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "N-serien — manipulation",
+            "text": "Robotarm som griper, lyfter och arbetar i luften. AP30-N1 lyfter 15 kg vid 8 kg egenvikt."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "G-serien — lastsläpp",
+            "text": "Aktivt styrd avlämning, från 2 kg gripdon till 40 kg tunglast på 100 meters lina."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "P-serien — sprutning och tvätt",
+            "text": "Sprutmoduler och fasadtvätt för höghöjdsarbete, från 2-liters modul till slangmatat renvattensystem."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "D-serien — kontaktinspektion",
+            "text": "Mätning med fysisk kontakt: 20 N anliggning i 30 sekunder med kraftåterkoppling i realtid."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Mjuka leder gör kontakt med arbetsytan ofarlig"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Noll strömförbrukning när greppet håller"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Monteras och byts på plats, ofta under en minut"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Integrerad med DJI-kontrollen — en operatör räcker"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Wisson",
+        "title": "Wisson Orion — flygburna robotsystem",
+        "text": "Wisson Orion gör industridrönaren till en arbetsmaskin. Pliabot-tekniken bygger på mjuka bioniska muskler med pneumatisk drivning, vilket ger armar som både böjer sig och teleskoperar — och som tål att slå emot utan att flygningen havererar.",
+        "solutions_heading": "Fyra serier",
+        "benefits_heading": "Därför Pliabot",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vill du veta om Orion passar er verksamhet?",
+        "text": "Vi går igenom uppdraget, plattformen ni redan flyger och vilken serie som är rätt. Systemen offereras per uppdrag.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}
