@@ -18,9 +18,11 @@
    "industry:public-safety",
    "manufacturer:wisson",
    "model:ap30-n1",
+   "offert",
    "serie:n",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP30-N1 gör drönaren till ett verktyg som kan gripa, lyfta och arbeta i luften, inte bara filma. Armen bygger på Wissons Pliabot-teknik: mjuka bioniska muskler med pneumatisk drivning som både böjer sig 360 grader och teleskoperar. Den väger 8 kg och lyfter 15 kg rakt upp, alltså nästan dubbla sin egen vikt. Verktyget byts på plats utan verktyg, så samma arm klarar gripning, provtagning, sprutning och kontaktmätning under en och samma flygning.</p><h3>Nyckelegenskaper</h3><ul><li>Lyfter 15 kg vid 8 kg egenvikt</li><li>360° böjning kombinerat med teleskopisk räckvidd</li><li>60 W i drift och 0 W när armen håller sin position</li><li>Verktygsbyte i ett steg, gripdon eller vision-modul</li><li>Testad ned till -40 °C, med skydd mot vatten, damm och korrosion</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Systemvikt</th><td>8 kg</td></tr><tr><th scope=\"row\">Rörelser</th><td>360° böjning + teleskopering</td></tr><tr><th scope=\"row\">Armdiameter</th><td>150 mm</td></tr><tr><th scope=\"row\">Längd infälld</th><td>390 mm</td></tr><tr><th scope=\"row\">Längd utfälld</th><td>800 mm</td></tr><tr><th scope=\"row\">Max last (vertikalt)</th><td>15 kg</td></tr><tr><th scope=\"row\">Effekt i drift</th><td>60 W</td></tr><tr><th scope=\"row\">Effekt vid hållning</th><td>0 W</td></tr><tr><th scope=\"row\">Operatörspanel</th><td>Integrerad</td></tr><tr><th scope=\"row\">Lägsta arbetstemperatur</th><td>-40 °C</td></tr></table><h3>Kompatibilitet</h3><p>DJI FlyCart 30.</p><h3>Användning</h3><p>Byggd för DJI FC30, med stöd för anpassning till andra plattformar. Används för underhåll i energianläggningar, räddningsinsatser, infrastrukturinspektion, logistik och lantbruk.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP30-N1 — flygburen Pliabot-manipulator | EU Drone Company",
@@ -44,9 +46,11 @@
    "industry:public-safety",
    "manufacturer:wisson",
    "model:ap3-g1",
+   "offert",
    "serie:g",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP3-G1 är ett mjukt gripdon för DJI M300 och M350. Klon är byggd i flexibla material med bionisk struktur, vilket gör att den formar sig efter oregelbundna föremål i stället för att kräva en plan yta. Greppkraften styrs steglöst och visas i realtid på skärmen, så operatören ser exakt hur hårt det hålls. När greppet sitter låser det sig mekaniskt och drar noll ström — föremålet kan inte lossna under flygning även om strömmen bryts.</p><h3>Nyckelegenskaper</h3><ul><li>2 kg maxlast med självlåsning utan strömförbrukning</li><li>Anpassar greppet efter oregelbundna föremål</li><li>Greppkraften styrs och visas i realtid</li><li>Dubbla kameror för exakt positionering</li><li>Monteras på 30 sekunder, styrs från DJI-kontrollen</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Max last</th><td>2 kg</td></tr><tr><th scope=\"row\">Effekt vid hållning</th><td>0 W</td></tr><tr><th scope=\"row\">Monteringstid</th><td>30 s</td></tr></table><h3>Kompatibilitet</h3><p>DJI Matrice 300 RTK, DJI Matrice 350 RTK.</p><h3>Användning</h3><p>För blåljus, räddningstjänst och sjukvårdstransport där små föremål behöver hämtas eller levereras exakt, ofta upprepade gånger under samma insats.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP3-G1 — flygburet Pliabot-gripdon | EU Drone Company",
@@ -71,9 +75,11 @@
    "industry:public-safety",
    "manufacturer:wisson",
    "model:ap30-g2",
+   "offert",
    "serie:g",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP30-G2 flyttar tung last dit marken inte bär. Systemet är integrerat med DJI FC30:s flygkontroll och hisssystem, greppar upp till 40 kg och kan sänka ned lasten på lina från 100 meters höjd. Drönaren känner av lasten automatiskt och operatören placerar den med AR-positionering direkt i kontrollbilden. Utlösningen är aktiv, alltså styrd på kommando i stället för att lasten släpps när linan slaknar — det ger kontrollerad, skonsam avlämning nära marken.</p><h3>Nyckelegenskaper</h3><ul><li>40 kg last med stabilt grepp</li><li>100 meters hisshöjd, linlängden anpassas efter uppdraget</li><li>AR-positionering för precis avlämning</li><li>Aktiv utlösning styrd på kommando</li><li>Riggad på 3 minuter tack vare modulär uppbyggnad</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Max last</th><td>40 kg</td></tr><tr><th scope=\"row\">Hisshöjd</th><td>100 m</td></tr><tr><th scope=\"row\">Riggtid</th><td>3 min</td></tr></table><h3>Kompatibilitet</h3><p>DJI FlyCart 30.</p><h3>Användning</h3><p>För geoteknik, räddningsinsatser, kraftnätsunderhåll och byggnation på svåråtkomlig mark — stup, raserade vägar och kraftledningsstolpar.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP30-G2 — flygburen lastsläppare 40 kg | EU Drone Company",
@@ -98,9 +104,11 @@
    "industry:inspection",
    "manufacturer:wisson",
    "model:ap3-p1",
+   "offert",
    "serie:p",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP3-P1 är en sprutmodul för DJI M300 och M350, byggd för lätta plattformar och trånga utrymmen. Munstycket sitter på en led med flera frihetsgrader och sprutar åt alla håll, så konvexa och oregelbundna ytor täcks utan blinda fläckar. Den mjuka upphängningen dämpar både pendling under flygning och en eventuell kollision, vilket skyddar drönaren. Behållaren rymmer 2 liter och byts under drift; modulen fälls ihop till 0,7 meter för transport.</p><h3>Nyckelegenskaper</h3><ul><li>Sprutar åt alla håll, även i trånga utrymmen</li><li>2 liters behållare som byts snabbt</li><li>Mjuk upphängning dämpar pendling och kollision</li><li>FPV med långt fokus för exakt sikte och mindre spill</li><li>Vatten, olja, färg, kylvätska och rostskydd</li><li>Fälls till 0,7 m för transport</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Vätskevolym</th><td>2 l</td></tr><tr><th scope=\"row\">Hopfälld längd</th><td>0,7 m</td></tr><tr><th scope=\"row\">Effektivitet (tillverkarens uppgift)</th><td>4× jämfört med manuellt arbete</td></tr><tr><th scope=\"row\">Avsedd drönarlastkapacitet</th><td>3 kg</td></tr></table><h3>Kompatibilitet</h3><p>DJI Matrice 300 RTK, DJI Matrice 350 RTK, övriga drönare med lastkapacitet under 5 kg.</p><h3>Användning</h3><p>För energi, elnät och byggnation. Flyg och sprutning styrs från samma DJI-kontroll, och anpassning till andra flygplattformar går att beställa.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP3-P1 — flygburen Pliabot-sprutmodul | EU Drone Company",
@@ -123,9 +131,11 @@
    "industry:inspection",
    "manufacturer:wisson",
    "model:ap3-p3",
+   "offert",
    "serie:p",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP3-P3 är ett slangmatat tvättsystem för DJI M400 som rengör fasader och höga konstruktioner utan att skada ytan. Det arbetar med medicinskt rent vatten genom Wissons dubbelpatenterade DIC-vattenrening, vilket betyder att ytan torkar utan ränder och att inga kemikalier hamnar i marken. Pliabot-lederna bär en 40 graders solfjäderformad gummiskrapa och låter munstycket vinklas 60 grader i höjdled, så drönaren kan arbeta tätt intill ytan i stället för att spruta på avstånd.</p><h3>Nyckelegenskaper</h3><ul><li>40° solfjäderformad Pliabot-skrapa</li><li>60° vertikal vinkling av sprutbilden</li><li>Rent vatten utan kemikalier, torkar utan ränder</li><li>Dubbelpatenterad DIC-vattenrening</li><li>Slangmatat, alltså ingen tankbegränsning i luften</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Skrapans solfjädervinkel</th><td>40 °</td></tr><tr><th scope=\"row\">Vertikal sprutjustering</th><td>60 °</td></tr><tr><th scope=\"row\">Vatten</th><td>Renvatten av medicinsk kvalitet</td></tr><tr><th scope=\"row\">Vattenrening</th><td>DIC-vattenrening (dubbelpatenterad)</td></tr></table><h3>Kompatibilitet</h3><p>DJI Matrice 400.</p><h3>Användning</h3><p>För fasadtvätt och höghöjdsrengöring där ställning eller lift annars krävs. Anpassad för DJI M400.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP3-P3 — flygburet fasadtvättsystem | EU Drone Company",
@@ -148,9 +158,11 @@
    "industry:inspection",
    "manufacturer:wisson",
    "model:ap30-p4",
+   "offert",
    "serie:p",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP30-P4 är en dimsprutningsmodul för höghöjdsarbete. Pliabot-leden har taktil avkänning och dämpar pendling aktivt, vilket håller drönaren stabil även när sprutstrålen ger rekyl, och gör en kontakt med ytan ofarlig i stället för att slå ut flygningen. Atomiseringen är konstruerad för att lägga ett jämnt skikt utan överskott — vätskan rinner inte och droppar inte ned från arbetsytan.</p><h3>Nyckelegenskaper</h3><ul><li>Taktil Pliabot-led som dämpar pendling</li><li>Kollision mot ytan är ofarlig</li><li>Stora arbetsvinklar för komplexa former</li><li>Atomisering som minskar överskott och dropp</li></ul><h3>Kompatibilitet</h3><p>ledande industridrönare — plattform bekräftas vid offert.</p><h3>Användning</h3><p>För vindkraftverk, broar, isolatorer, väggar och master. Kompatibel med ledande industridrönare — bekräfta plattform med oss innan beställning.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP30-P4 — flygburen Pliabot-dimspruta | EU Drone Company",
@@ -173,9 +185,11 @@
    "industry:inspection",
    "manufacturer:wisson",
    "model:ap30-p4h",
+   "offert",
    "serie:p",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP30-P4H är högtrycksvarianten i P-serien, för rengöring och sprutning där dimsprutning inte räcker. Samma taktila Pliabot-led som i AP30-P4 håller drönaren stabil och gör kontakt med arbetsytan ofarlig. Arbetsenheterna är modulära, så samma bärare kan användas för olika arbetsmoment och kravnivåer i stället för att kräva en egen rigg per uppgift.</p><h3>Nyckelegenskaper</h3><ul><li>Högtryck för rengöring och sprutning</li><li>Taktil Pliabot-led som dämpar pendling</li><li>Stora arbetsvinklar med fin justering</li><li>Modulära arbetsenheter för flera uppgifter</li></ul><h3>Kompatibilitet</h3><p>ledande industridrönare — plattform bekräftas vid offert.</p><h3>Användning</h3><p>För vindkraftverk, solpaneler, isolatorer, väggar och master. Kompatibel med ledande industridrönare — bekräfta plattform med oss innan beställning.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP30-P4H — flygburen högtrycksspruta | EU Drone Company",
@@ -200,9 +214,11 @@
    "industry:inspection",
    "manufacturer:wisson",
    "model:ap3-d1",
+   "offert",
    "serie:d",
    "wisson-import"
   ],
+  "templateSuffix": "enterprise-accessories",
   "descriptionHtml": "<p>AP3-D1 gör kontaktmätning från luften möjlig. Modulen arbetar i sidled ut från drönaren och trycker en givare mot ytan med upp till 20 newton i 30 sekunder, medan den mjuka upphängningen dämpar anslaget och håller drönaren i balans. Kraften visas i realtid och kan justeras under pågående mätning. En inbyggd sprutfunktion väter ytan innan mätning och kan märka upp mätpunkter med färg för dokumentation.</p><h3>Nyckelegenskaper</h3><ul><li>20 N kontaktkraft i upp till 30 sekunder</li><li>Kraftåterkoppling i realtid, justerbar under mätning</li><li>Mjuk upphängning som håller balansen vid sidoarbete</li><li>Inbyggd sprutning för vätning och färgmarkering</li><li>Modulbyte på under 1 minut</li><li>Fälls i Z-form till 0,8 m</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Max kontaktkraft</th><td>20 N</td></tr><tr><th scope=\"row\">Kontakttid</th><td>30 s</td></tr><tr><th scope=\"row\">Modulbyte</th><td>1 min</td></tr><tr><th scope=\"row\">Hopfälld längd</th><td>0,8 m</td></tr></table><h3>Kompatibilitet</h3><p>DJI Matrice 300 RTK, DJI Matrice 350 RTK.</p><h3>Användning</h3><p>För byggnadsprovning, brokontroll och vindkraftsunderhåll. Integrerad med DJI M300 och M350, med stöd för fler plattformar på beställning.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
   "seo": {
    "title": "AP3-D1 — flygburen kontaktinspektion | EU Drone Company",

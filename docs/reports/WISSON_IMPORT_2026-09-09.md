@@ -56,9 +56,8 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
    ungefär 4:1 som blir brevlådeformad i en kvadratisk produktgrid. Var och en av
    dem har en mer kvadratisk detaljbild som kan flyttas först i Shopify-admin.
    Se `data/wisson-images.json`.
-3. **Inga priser.** Sortimentet är enterprise och offereras per uppdrag. Produkterna
-   har därför Shopifys standardvariant på 0 kr. Bestäm om de ska säljas via
-   offertflödet eller få riktiga priser innan status ändras från `DRAFT`.
+3. **Offertflöde i stället för priser.** Beslutat 2026-09-09: sortimentet säljs
+   inte i kassan. Se avsnittet nedan.
 4. **AP30-P4 och AP30-P4H saknar plattformsuppgift.** Källsidorna säger bara
    "ledande industridrönare" utan modellnamn, och har heller ingen specifikationstabell.
    Produkttexten säger att plattformen bekräftas vid offert.
@@ -78,6 +77,25 @@ Avtalet är på plats, men tre saker måste vara klara innan status ändras frå
 | Deploya temamallarna (`node scripts/push-edp-theme.mjs`) | Utan dem renderas de sju sidorna med standardmallen och sektionsinnehållet syns inte |
 | Sätt priser eller koppla offertflöde | Produkterna har Shopifys standardvariant på 0 kr |
 | Lägg in sidorna i menystrukturen | De är inte nåbara från navigationen än |
+
+## Offertflöde
+
+Produkterna har ingen prissättning och ska inte gå att lägga i varukorgen. Det
+löses med produkttaggen `offert`, som styr två snippets i temat:
+
+| Fil | Beteende med taggen |
+|---|---|
+| `snippets/buy-buttons.liquid` | Köpknappen byts mot en länk till `/pages/contact-quote` med texten "Begär offert", plus en rad om att produkten offereras per uppdrag. Hämtningsalternativ döljs. |
+| `snippets/price.liquid` | Visar "Pris på förfrågan" i stället för 0 kr. |
+
+Båda ändringarna är strikt villkorade på taggen, så produkter utan den renderas
+exakt som förut. Varianten ligger kvar på 0 kr i Shopify eftersom priset aldrig
+visas eller används.
+
+Produkterna använder dessutom mallen `enterprise-accessories`, som lägger
+`enterprise-quote-form` under produktinformationen. Wisson-systemen är
+nyttolaster som monteras på DJI-plattformar, vilket är vad den mallen är gjord
+för — `enterprise-drones` är för flygplattformarna själva.
 
 ## Temadeploy — vad som faktiskt går
 
@@ -104,6 +122,9 @@ sju mallarna skrevs in där. Samtliga verifierade som befintliga filer i temat.
 Kopieringen tar flera minuter. Skriver man innan `processing` slår om till false
 avvisas filerna med att sektionerna inte existerar, vilket ser ut som ett riktigt
 fel men bara betyder att kopian inte är klar.
+
+Utöver de sju mallarna ligger även de två ändrade snippets för offertflödet i
+utkaststemat.
 
 **Kvar:** granska i temaredigeraren och publicera temat. Båda görs i admin —
 `themePublish` är blockerad för connectorn.

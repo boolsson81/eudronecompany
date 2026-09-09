@@ -15,6 +15,10 @@ SRC = json.load(open(os.path.join(ROOT, "data", "wisson-source-extract.json"), e
 
 RUN_TAG = "wisson-import"
 REVIEW_TAG = "draft-granskas"
+# Sortimentet säljs inte i kassan. Taggen styr temat: buy-buttons.liquid byter
+# köpknappen mot "Begär offert" och price.liquid visar "Pris på förfrågan".
+QUOTE_TAG = "offert"
+TEMPLATE_SUFFIX = "enterprise-accessories"
 
 PRODUCT_TYPE = {
     "AP30-N1": "Flygburen manipulator",
@@ -169,7 +173,7 @@ def build():
         c = COPY[m]
         tags = ["Wisson", "Orion", "Pliabot", f"model:{m.lower()}",
                 "brand:wisson", "manufacturer:wisson",
-                f"serie:{p['series'].lower()}", RUN_TAG, REVIEW_TAG]
+                f"serie:{p['series'].lower()}", RUN_TAG, REVIEW_TAG, QUOTE_TAG]
         for d in p.get("drone_compatibility") or []:
             if d in COMPAT_TAG:
                 tags.append(COMPAT_TAG[d])
@@ -180,6 +184,7 @@ def build():
             "vendor": "Wisson",
             "productType": PRODUCT_TYPE[m],
             "tags": sorted(set(tags)),
+            "templateSuffix": TEMPLATE_SUFFIX,
             "descriptionHtml": build_description(p, c),
             "seo": {
                 "title": seo_title(m, p["name_en"]),
