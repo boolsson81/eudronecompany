@@ -4,6 +4,7 @@ import { Toaster } from "sonner";
 import { AuthProvider } from "@/hooks/useAuth";
 import AdminLayout from "@/components/AdminLayout";
 import { Loader2 } from "lucide-react";
+import { usePageViewTracking } from "@/hooks/usePageViewTracking";
 
 const Login = lazy(() => import("./pages/Login"));
 
@@ -40,10 +41,17 @@ const PageLoader = () => (
   </div>
 );
 
+/** Skickar GA4-sidvisningar vid ruttbyten. Måste ligga inuti BrowserRouter. */
+const PageViewTracker = () => {
+  usePageViewTracking();
+  return null;
+};
+
 export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <PageViewTracker />
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<CommercialDrones />} />
