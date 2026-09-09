@@ -1,0 +1,307 @@
+{
+  "kalla": "Wisson Robotics Price List 202607 (leverantörens prislista, juli 2026)",
+  "priskolumn": "Suggested Dealer Price (EURO)",
+  "beslut": "Vi köper som återförsäljare och betalar dealerpriset. MSRP är slutkundspris; distributörskolumnerna kräver distributörsavtal och volym.",
+  "valuta": {
+    "fran": "EUR",
+    "till": "SEK",
+    "kurs": 11.25,
+    "satt": "2026-09-08"
+  },
+  "leveransvillkor": "FOB Shenzhen. Frakt, tull och moms ingår inte i inköpspriset.",
+  "artiklar": [
+    {
+      "modell": "AP3-P3 - Standard",
+      "produktnamn": "Pliabot® Aerial Tethered Cleaning System",
+      "plattform": "M350、M400",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 9535,
+        "dealer": 7151,
+        "distributor_5_9": 5634,
+        "distributor_10plus": 4334,
+        "sample": 4789
+      },
+      "varuvarde_sek": 80449,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138253558088",
+          "handle": "ap3-p3-tethered-cleaning-system",
+          "status": "DRAFT",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53503818006856",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55106816966984"
+            }
+          ]
+        },
+        {
+          "produktId": "gid://shopify/Product/10195369099592",
+          "handle": "wisson-orion-ap3-p3-pro-pliabot®-fjarrstyrt-flygande-rengoringssystem",
+          "status": "ACTIVE",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53741024575816",
+              "titel": "Orion AP3-P3-STD M400",
+              "inventoryItemId": "gid://shopify/InventoryItem/55346435227976"
+            },
+            {
+              "variantId": "gid://shopify/ProductVariant/53741024641352",
+              "titel": "Orion AP3-P3-STD M350 RTK",
+              "inventoryItemId": "gid://shopify/InventoryItem/55346435293512"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP3-P3 - Pro",
+      "produktnamn": "Pliabot® Aerial Tethered Cleaning System",
+      "plattform": "M350、M400",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 11442,
+        "dealer": 8581,
+        "distributor_5_9": 6761,
+        "distributor_10plus": 5201,
+        "sample": 5747
+      },
+      "varuvarde_sek": 96536,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10088748908872",
+          "handle": "wisson-orion-ap3-p3-pro",
+          "status": "ARCHIVED",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53239396893000",
+              "titel": "Default Title",
+              "inventoryItemId": "gid://shopify/InventoryItem/54839270900040"
+            }
+          ]
+        },
+        {
+          "produktId": "gid://shopify/Product/10195369099592",
+          "handle": "wisson-orion-ap3-p3-pro-pliabot®-fjarrstyrt-flygande-rengoringssystem",
+          "status": "ACTIVE",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53741024608584",
+              "titel": "Orion AP3-P3-Pro M400",
+              "inventoryItemId": "gid://shopify/InventoryItem/55346435260744"
+            },
+            {
+              "variantId": "gid://shopify/ProductVariant/53741024674120",
+              "titel": "Orion AP3-P3-Pro M350 RTK",
+              "inventoryItemId": "gid://shopify/InventoryItem/55346435326280"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP3-P1",
+      "produktnamn": "Pliabot® Aerial Sprayer",
+      "plattform": "M350、M400",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 9821,
+        "dealer": 7368,
+        "distributor_5_9": 5825,
+        "distributor_10plus": 4473,
+        "sample": 4951
+      },
+      "varuvarde_sek": 82890,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138251985224",
+          "handle": "ap3-p1-aerial-sprayer",
+          "status": "DRAFT",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53503816204616",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55106815164744"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP30-N1",
+      "produktnamn": "Pliabot® Aerial Manipulator",
+      "plattform": "FC30",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 26125,
+        "dealer": 19594,
+        "distributor_5_9": 15602,
+        "distributor_10plus": 11754,
+        "sample": 13262
+      },
+      "varuvarde_sek": 220433,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138862256456",
+          "handle": "ap30-n1-aerial-manipulator",
+          "status": "DRAFT",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53504782303560",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55107795878216"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP30-G2",
+      "produktnamn": "Aerial Heavy-load Release",
+      "plattform": "M350、M400",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 2002,
+        "dealer": 1502,
+        "distributor_5_9": 1196,
+        "distributor_10plus": 884,
+        "sample": 1017
+      },
+      "varuvarde_sek": 16898,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138864779592",
+          "handle": "ap30-g2-heavy-load-release",
+          "status": "ARCHIVED",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53504785350984",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55107798925640"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP3-P2",
+      "produktnamn": "Aerial High-pressure Cleaning System",
+      "plattform": "FC30",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 9821,
+        "dealer": 7366,
+        "distributor_5_9": 5825,
+        "distributor_10plus": 4473,
+        "sample": 4951
+      },
+      "varuvarde_sek": 82868,
+      "frakt_sek": null,
+      "shopify": []
+    },
+    {
+      "modell": "AP-P DIC Water Treatment System",
+      "produktnamn": "Dynamic Intelligent Control Water Treatment System",
+      "plattform": "/",
+      "eol": false,
+      "listpris_eur": {
+        "msrp": 4334,
+        "dealer": 3251,
+        "distributor_5_9": 3987,
+        "distributor_10plus": 3034,
+        "sample": 3389
+      },
+      "varuvarde_sek": 36574,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138861207880",
+          "handle": "ap-p-series-water-treatment-system",
+          "status": "DRAFT",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53504781254984",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55107794829640"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP3-D1",
+      "produktnamn": "Pliabot® Aerial Contact Inspection System",
+      "plattform": "M300",
+      "eol": true,
+      "listpris_eur": {
+        "msrp": 9821,
+        "dealer": 7366,
+        "distributor_5_9": 5825,
+        "distributor_10plus": 4473,
+        "sample": 4951
+      },
+      "varuvarde_sek": 82868,
+      "frakt_sek": null,
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10138865533256",
+          "handle": "ap3-d1-contact-inspection-system",
+          "status": "ARCHIVED",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/53504786268488",
+              "titel": "Default",
+              "inventoryItemId": "gid://shopify/InventoryItem/55107799843144"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "modell": "AP3-G1",
+      "produktnamn": "Pliabot Aerial Release",
+      "plattform": "M350",
+      "eol": true,
+      "listpris_eur": {
+        "msrp": 4863,
+        "dealer": 3647,
+        "distributor_5_9": 2912,
+        "distributor_10plus": 2288,
+        "sample": 2476
+      },
+      "varuvarde_sek": 41029,
+      "frakt_sek": null,
+      "shopify": []
+    },
+    {
+      "modell": "AP30-N2",
+      "produktnamn": "AP30-N2",
+      "plattform": "FC30",
+      "eol": true,
+      "listpris_eur": {
+        "msrp": 11442,
+        "dealer": 8581,
+        "distributor_5_9": 6761,
+        "distributor_10plus": 5201,
+        "sample": 5747
+      },
+      "varuvarde_sek": 96536,
+      "frakt_sek": null,
+      "shopify": []
+    }
+  ],
+  "palagg": {
+    "tullsats": 0.017,
+    "tullbas": "Varuvärde + frakt fram till EU-gränsen (tullvärde vid FOB-inköp).",
+    "tullsats_kalla": "Position 8424 (HS 8424490000 enligt leverantörens faktura). Ej verifierad mot TARIC — bekräfta innan den används i bokföringen.",
+    "frakt": "frakt_sek per modell, faktisk kostnad enligt speditör. null = ej angiven, då hoppar skriptet över modellen."
+  },
+  "berakning": "inkopspris_sek = varuvarde_sek + frakt_sek + tull, där tull = tullsats * (varuvarde_sek + frakt_sek).",
+  "avrundning": "Närmaste hel krona, halva ören uppåt."
+}
