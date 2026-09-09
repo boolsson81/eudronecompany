@@ -46,9 +46,10 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
 
 ## Kräver manuell kontroll
 
-1. **Temamallarna är inte deployade.** De sju `page.*.json` ligger bara i repot.
-   Utan deploy renderas sidorna med standardmallen och sektionsinnehållet syns inte.
-   Vägen dit är utredd och testad 2026-09-09, se avsnittet nedan.
+1. **Utkastsstemat väntar på publicering.** De sju mallarna ligger i temat
+   `Wisson-mallar — utkast 2026-09-09` (`189320397128`), en kopia av live-temat.
+   Publicering är blockerad för connectorn och görs i Shopify-admin. Se avsnittet
+   nedan.
 2. **Tre hjältebilder är breda banners.** Samtliga åtta produkter har bild — 15
    totalt, hämtade från wissonrobotics.com och lagrade som egna kopior på Shopifys
    CDN, så butiken hotlänkar inte. AP3-G1, AP3-P1 och AP3-D1 har en hjältebild i
@@ -94,19 +95,18 @@ Dupliceringen misslyckas för att butiken har exakt 20 teman, vilket är Shopify
 tak. Ingen slot är ledig, och felet syns inte i svaret — det ser ut som en lyckad
 tom körning.
 
-**Vald väg:** frigör en temaslot genom att radera ett föråldrat tema i
-Shopify-admin, duplicera sedan live-temat, lägg mallarna i kopian och publicera
-den efter förhandsgranskning. Live-temat heter `AAA NYA MALLAR — publicera denna`
-(`188874916168`).
+**Genomfört 2026-09-09.** En temaslot frigjordes genom att `FÖRÅLDRAD 2026-08-21`
+raderades i admin, vilket också tog med sig probe-filen från kapacitetstestet.
+Därefter duplicerades live-temat `AAA NYA MALLAR — publicera denna`
+(`188874916168`) till `Wisson-mallar — utkast 2026-09-09` (`189320397128`), och de
+sju mallarna skrevs in där. Samtliga verifierade som befintliga filer i temat.
 
-Kandidater för radering, alla opublicerade och överspelade av live-temat:
-`FÖRÅLDRAD 2026-08-21 — publicera ej` (`188345319752`), samt `rev5`–`rev11`-kopiorna
-från juli.
+Kopieringen tar flera minuter. Skriver man innan `processing` slår om till false
+avvisas filerna med att sektionerna inte existerar, vilket ser ut som ett riktigt
+fel men bara betyder att kopian inte är klar.
 
-**Kvarlämnad fil:** verifieringen av att opublicerade teman går att skriva till
-lade `templates/page.wisson-probe.json` i temat `FÖRÅLDRAD 2026-08-21`. Filen är
-verkningslös — temat är märkt "publicera ej" — och `themeFilesDelete` är blockerad
-för connectorn. Raderas det temat försvinner filen med det.
+**Kvar:** granska i temaredigeraren och publicera temat. Båda görs i admin —
+`themePublish` är blockerad för connectorn.
 
 ## Om bildhämtningen
 
