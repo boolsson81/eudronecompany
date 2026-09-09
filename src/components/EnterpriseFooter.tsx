@@ -1,5 +1,6 @@
 import { Radio } from "lucide-react";
 import { COMPANY_ADDRESS_LINE, COMPANY_CONTACT } from "@/lib/companyContact";
+import { reopenConsent } from "@/lib/consent";
 
 /**
  * Sidfoten för de publika drönarsidorna.
@@ -28,7 +29,14 @@ export default function EnterpriseFooter() {
             {COMPANY_CONTACT.legalName} · Org.nr {COMPANY_CONTACT.orgNumber}
           </p>
           <p>
-            {COMPANY_ADDRESS_LINE} · {COMPANY_CONTACT.address.country}
+            {COMPANY_ADDRESS_LINE} · {COMPANY_CONTACT.address.country} ·{" "}
+            <button
+              type="button"
+              onClick={reopenConsent}
+              className="underline underline-offset-2 hover:text-white/60"
+            >
+              Cookies
+            </button>
           </p>
         </div>
       </div>

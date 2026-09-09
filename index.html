@@ -6,14 +6,31 @@
     <title>EU Drone Company — kommersiella drönare för företag</title>
     <meta name="description" content="Professionella drönarlösningar för företag: DJI Enterprise-plattformar, Zenmuse-sensorer och färdiga paket för inspektion, lantbruk, kartläggning och räddning." />
 
-    <!-- Google tag (gtag.js) — GA4. Automatisk page_view är avstängd eftersom
-         sajten är en SPA; sidvisningarna skickas från src/lib/analytics.ts. -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5KGZ4RKSD"></script>
+    <!-- Google tag (gtag.js) — GA4. Själva taggen laddas av src/lib/analytics.ts
+         först när besökaren samtyckt; här sätts bara utgångsläget. Automatisk
+         page_view är av eftersom sajten är en SPA. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied'
+      });
+
+      // Ett tidigare ja måste återställas innan taggen kör, annars mäts
+      // återvändande besökares första sidvisning utan cookies.
+      try {
+        if (localStorage.getItem('edc:cookie-consent') === 'granted') {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+        }
+      } catch (e) {
+        // Blockerad lagring — utgångsläget nekat gäller.
+      }
+
+      gtag('js', new Date());
       gtag('config', 'G-G5KGZ4RKSD', { send_page_view: false });
     </script>
   </head>
