@@ -46,10 +46,9 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
 
 ## Kräver manuell kontroll
 
-1. **Temamallarna är inte deployade.** Shopify-connectorn blockerar skrivningar mot
-   det publicerade temat, så de sju `page.*.json` ligger bara i repot. Kör
-   `node scripts/push-edp-theme.mjs` innan sidorna publiceras — annars renderas de
-   med standardmallen och sektionsinnehållet syns inte.
+1. **Temamallarna är inte deployade.** De sju `page.*.json` ligger bara i repot.
+   Utan deploy renderas sidorna med standardmallen och sektionsinnehållet syns inte.
+   Vägen dit är utredd och testad 2026-09-09, se avsnittet nedan.
 2. **Tre hjältebilder är breda banners.** Samtliga åtta produkter har bild — 15
    totalt, hämtade från wissonrobotics.com och lagrade som egna kopior på Shopifys
    CDN, så butiken hotlänkar inte. AP3-G1, AP3-P1 och AP3-D1 har en hjältebild i
@@ -78,6 +77,36 @@ Avtalet är på plats, men tre saker måste vara klara innan status ändras frå
 | Deploya temamallarna (`node scripts/push-edp-theme.mjs`) | Utan dem renderas de sju sidorna med standardmallen och sektionsinnehållet syns inte |
 | Sätt priser eller koppla offertflöde | Produkterna har Shopifys standardvariant på 0 kr |
 | Lägg in sidorna i menystrukturen | De är inte nåbara från navigationen än |
+
+## Temadeploy — vad som faktiskt går
+
+Testat mot butiken 2026-09-09, inte antaget:
+
+| Åtgärd | Utfall |
+|---|---|
+| `themeFilesUpsert` mot live-temat | Blockerad av connectorns säkerhetspolicy (`category: live_theme`) |
+| `themeFilesUpsert` mot opublicerat tema | Fungerar |
+| `themeDuplicate` av live-temat | Misslyckas tyst — `newTheme: null`, inga `userErrors` |
+| `themeFilesDelete` | Blockerad (`category: destructive`) |
+| `themePublish` | Blockerad |
+
+Dupliceringen misslyckas för att butiken har exakt 20 teman, vilket är Shopifys
+tak. Ingen slot är ledig, och felet syns inte i svaret — det ser ut som en lyckad
+tom körning.
+
+**Vald väg:** frigör en temaslot genom att radera ett föråldrat tema i
+Shopify-admin, duplicera sedan live-temat, lägg mallarna i kopian och publicera
+den efter förhandsgranskning. Live-temat heter `AAA NYA MALLAR — publicera denna`
+(`188874916168`).
+
+Kandidater för radering, alla opublicerade och överspelade av live-temat:
+`FÖRÅLDRAD 2026-08-21 — publicera ej` (`188345319752`), samt `rev5`–`rev11`-kopiorna
+från juli.
+
+**Kvarlämnad fil:** verifieringen av att opublicerade teman går att skriva till
+lade `templates/page.wisson-probe.json` i temat `FÖRÅLDRAD 2026-08-21`. Filen är
+verkningslös — temat är märkt "publicera ej" — och `themeFilesDelete` är blockerad
+för connectorn. Raderas det temat försvinner filen med det.
 
 ## Om bildhämtningen
 
