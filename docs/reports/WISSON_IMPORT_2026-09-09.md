@@ -61,8 +61,28 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
 4. **AP30-P4 och AP30-P4H saknar plattformsuppgift.** Källsidorna säger bara
    "ledande industridrönare" utan modellnamn, och har heller ingen specifikationstabell.
    Produkttexten säger att plattformen bekräftas vid offert.
-5. **Navigationen är inte uppdaterad.** Sidorna är inte inlagda i någon meny. Se
-   `scripts/apply-edp-menu-structure.mjs`.
+5. **Navigationen är inte uppdaterad.** Medvetet uppskjutet: sidorna är
+   opublicerade, så menylänkar till dem skulle ge 404. Lägg in dem efter att
+   temat publicerats och sidorna satts till publicerade. `menuUpdate` ersätter
+   dessutom hela menyn i ett anrop, så Enterprise-menyns samtliga poster måste
+   skickas med — se `scripts/apply-edp-menu-structure.mjs`.
+
+   Föreslagen placering:
+
+   | Post | Meny | Under |
+   |---|---|---|
+   | Wisson Orion → `/collections/wisson-orion` | Enterprise (`300398248264`) | Payloads & Sensors |
+   | Wisson Orion → `/pages/wisson` | Enterprise | Payloads & Sensors |
+   | Fasadtvätt → `/pages/fasadtvatt-dronare` | Business (`300399427912`) | Industries |
+
+   Vindkraftssidan lämnas utanför tills vidare. Business-menyn har redan
+   `Wind Power` → `/pages/industry-wind-power`, och två vindkraftsposter bredvid
+   varandra behöver ett redaktionellt beslut om vilken som är ingången.
+
+   De fyra serie-sidorna nås i dag bara via direktlänk. Sektionen
+   `enterprise-industry-landing` renderar solution-blocken som text utan länk, så
+   navet på `/pages/wisson` pekar inte vidare till dem. Antingen läggs de i menyn,
+   eller så behöver sektionen ett länkfält per block.
 6. **Compat-taggen för FlyCart 30.** AP30-N1 och AP30-G2 taggades `compat:flycart-30`
    enligt `data/edp-product-tag-standards.json`. Kontrollera att det matchar hur
    FlyCart-produkterna i katalogen redan är taggade.
