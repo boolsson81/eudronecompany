@@ -5,6 +5,7 @@ import { AuthProvider } from "@/hooks/useAuth";
 import AdminLayout from "@/components/AdminLayout";
 import { Loader2 } from "lucide-react";
 import { usePageViewTracking } from "@/hooks/usePageViewTracking";
+import CookieConsent from "@/components/CookieConsent";
 
 const Login = lazy(() => import("./pages/Login"));
 
@@ -88,6 +89,7 @@ export default function App() {
             <Route path="*" element={<Navigate to="/kommersiella-dronare" replace />} />
           </Routes>
         </Suspense>
+        <CookieConsent />
         <Toaster position="top-right" richColors />
       </BrowserRouter>
     </AuthProvider>

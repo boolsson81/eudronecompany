@@ -14,5 +14,5 @@
     { "source": "/kommersiella-dronare/volymberakning/perimetersakerhet", "destination": "/kommersiella-dronare/sakerhet/perimetersakerhet", "permanent": true },
     { "source": "/kommersiella-dronare/volymberakning", "destination": "/kommersiella-dronare/kartlaggning/volymberakning", "permanent": true }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
 }
