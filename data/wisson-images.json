@@ -1,0 +1,137 @@
+{
+ "_meta": {
+  "source": "https://www.wissonrobotics.com/en/",
+  "extracted": "2026-09-09",
+  "cdn": "11918092.s21i.faiusr.com",
+  "method": "Nimble Extract med output_format=simplified_html och drivern vx8. Sidorna lazy-laddar bilder: <img src> pekar på en platshållare (0.ss.508sys.com/image/loading/dot.gif) och den riktiga URL:en ligger i attributet data-original, protokollrelativt (//). Markdown-extraktion tappar dem — HTML krävs.",
+  "resize_suffix": "URL:erna kan ha ett suffix som !600x600 som är CDN:ens omskalning. Suffixet är borttaget nedan för att få originalupplösningen.",
+  "ingestion": "Shopify hämtar bilden själv från URL:en via productUpdate(media:) och lagrar en kopia på sitt eget CDN. Ingen nedladdning sker i vår miljö.",
+  "rights": "Bilderna är Wisson Technology (Shenzhen):s. De används här som leverantörsmaterial för återförsäljning och förutsätter att återförsäljaravtalet är på plats.",
+  "images_are_rehosted": "Shopify hämtar bilden från käll-URL:en och lagrar en egen kopia på cdn.shopify.com. Butiken hotlänkar alltså inte mot Wissons CDN.",
+  "pitfall_thumbnails": "Sidfotens sortimentsrad ser ut som produktbilder men levererar 100x70 px. Använd hjältebilden från respektive produktsida i stället."
+ },
+ "products": {
+  "AP30-N1": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgl9bxrQYopc2DqQYwlAo4uAg.png",
+    "alt": "Wisson Orion AP30-N1 flygburen Pliabot-manipulator med gripdon och visionmodul",
+    "role": "hero",
+    "px": "1300x1080"
+   }
+  ],
+  "AP3-G1": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/2/ABUIABACGAAg3aT7tQYokuH1-AMwkAs4_QI",
+    "alt": "Wisson Orion AP3-G1 flygburet Pliabot-gripdon monterat under DJI Matrice-drönare",
+    "role": "hero",
+    "px": "1424x377",
+    "note": "bred banner"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgzaSNtQYo4J_pvAcwngQ4pAI",
+    "alt": "AP3-G1 med mjuk klo, kamera och drivenhet — komponentöversikt",
+    "role": "detalj"
+   }
+  ],
+  "AP30-G2": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAguoWctQYo8K-ZITDcBTjFBg",
+    "alt": "Wisson Orion AP30-G2 flygburen lastsläppare med 40 kg grepp i terräng",
+    "role": "hero",
+    "px": "732x837"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgu4WctQYoz5nokwEwkQY41wQ",
+    "alt": "AP30-G2 integrerad med DJI FlyCart 30 och hisssystem för avlämning från 100 meter",
+    "role": "detalj",
+    "px": "785x599"
+   }
+  ],
+  "AP3-P1": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/2/ABUIABACGAAg7vOywwYohJrPpQEwrws4xAQ",
+    "alt": "Wisson Orion AP3-P1 flygburen sprutmodul som täcker ytor från alla håll",
+    "role": "hero",
+    "px": "1455x580",
+    "note": "bred banner"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg8eWHtQYovsCgygQwzAQ4vgI",
+    "alt": "AP3-P1 vid sidoarbete med mjuk upphängning som dämpar pendling",
+    "role": "detalj"
+   }
+  ],
+  "AP3-P3": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg-_Tz0AYo4ISrPzDAKjiYGw",
+    "alt": "Wisson Orion AP3-P3 flygburet Pliabot-fasadtvättsystem i arbete på hög fasad",
+    "role": "hero",
+    "px": "5440x3480"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgpKX60AYogr3k7gQw-DM4qhs",
+    "alt": "AP3-P3 Pliabot-skrapa och sprutbild vid tvätt med renvatten",
+    "role": "detalj",
+    "px": "6652x3498"
+   }
+  ],
+  "AP30-P4": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg8POGzAYolNuN3gEwjwY4hQU.png",
+    "alt": "Wisson Orion AP30-P4 flygburen Pliabot-dimspruta med skyddande mjuk led",
+    "role": "hero",
+    "px": "783x645"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg1PWGzAYohc6k4wYwoAs47gI",
+    "alt": "AP30-P4 vid sprutning på hög konstruktion",
+    "role": "detalj",
+    "px": "1440x366"
+   }
+  ],
+  "AP30-P4H": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgvM2LzAYo8PKqwwIwhgY4jgU.png",
+    "alt": "Wisson Orion AP30-P4H flygburen högtrycksspruta med skyddande Pliabot-led",
+    "role": "hero",
+    "px": "774x654"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg8s6LzAYo5uunuwMw8gk4sgI",
+    "alt": "AP30-P4H vid högtrycksrengöring på hög höjd",
+    "role": "detalj",
+    "px": "1266x306"
+   }
+  ],
+  "AP3-D1": [
+   {
+    "url": "https://11918092.s21i.faiusr.com/2/ABUIABACGAAg1Kf7tQYo4KbqdzCmCzjUAg",
+    "alt": "Wisson Orion AP3-D1 flygburen kontaktinspektionsrobot vid mätning i sidled",
+    "role": "hero",
+    "px": "1446x340",
+    "note": "bred banner"
+   },
+   {
+    "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgjYSNtQYotrHH8gYw_wQ4xwM",
+    "alt": "AP3-D1 funktioner: mjuk upphängning, kraftåterkoppling och sprutmodul",
+    "role": "detalj",
+    "px": "635x455"
+   }
+  ]
+ },
+ "collection": {
+  "wisson-orion": {
+   "url": "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgl9bxrQYopc2DqQYwlAo4uAg.png",
+   "alt": "Wisson Orion AP30-N1 flygburen Pliabot-manipulator med utbytbara verktyg",
+   "verified": "1300x1080"
+  }
+ },
+ "solutions": {
+  "_note": "Sidfotens lösningsrad, i visuell ordning. Ej inlagda i Shopify — sektionen enterprise-industry-landing använder image_picker som kräver att bilden ligger som temafil.",
+  "facade-cleaning": "https://11918092.s21i.faiusr.com/95/ABUIABBfGAAgm9WGzAYoveXx0QQwoAE4aw",
+  "wind-turbine-cleaning": "https://11918092.s21i.faiusr.com/95/ABUIABBfGAAgm9WGzAYoorbujgYwoAE4Sg",
+  "lightning-protection-testing": "https://11918092.s21i.faiusr.com/95/ABUIABBfGAAgm9WGzAYoxZ7rwgUwoAE4Uw",
+  "paint-spraying": "https://11918092.s21i.faiusr.com/95/ABUIABBfGAAgm9WGzAYo3eKziQUwoAE4Yw",
+  "anti-icing-spraying": "https://11918092.s21i.faiusr.com/95/ABUIABBfGAAgm9WGzAYomNGu4gYwoAE4WA"
+ }
+}

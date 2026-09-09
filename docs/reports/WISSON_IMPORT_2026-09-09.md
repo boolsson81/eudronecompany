@@ -47,10 +47,13 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
    det publicerade temat, så de sju `page.*.json` ligger bara i repot. Kör
    `node scripts/push-edp-theme.mjs` innan sidorna publiceras — annars renderas de
    med standardmallen och sektionsinnehållet syns inte.
-2. **Inga produktbilder.** Wissons sidor lazy-laddar bilder via
-   `0.ss.508sys.com/image/loading/dot.gif` och exponerar inga riktiga URL:er i
-   renderad DOM. Samtliga åtta produkter saknar bild och behöver bildmaterial från
-   leverantören innan publicering.
+2. **Bilderna är Wissons.** Samtliga åtta produkter har nu bild — 15 bilder totalt,
+   hämtade från wissonrobotics.com och lagrade som egna kopior på Shopifys CDN
+   (butiken hotlänkar alltså inte). Att använda dem förutsätter samma
+   återförsäljaravtal som punkt 4. Tre hjältebilder är breda banners (AP3-G1,
+   AP3-P1, AP3-D1, omkring 4:1) och blir brevlådeformade i en kvadratisk
+   produktgrid — varje sådan produkt har därför en mer kvadratisk detaljbild som
+   kan flyttas först. Se `data/wisson-images.json`.
 3. **Inga priser.** Sortimentet är enterprise och offereras per uppdrag. Produkterna
    har därför Shopifys standardvariant på 0 kr. Bestäm om de ska säljas via
    offertflödet eller få riktiga priser innan status ändras från `DRAFT`.
@@ -65,6 +68,21 @@ Mallarna följer samma mönster som `page.jordbruk.json`: sektionen
 7. **Compat-taggen för FlyCart 30.** AP30-N1 och AP30-G2 taggades `compat:flycart-30`
    enligt `data/edp-product-tag-standards.json`. Kontrollera att det matchar hur
    FlyCart-produkterna i katalogen redan är taggade.
+
+## Om bildhämtningen
+
+Bilderna ligger inte i `<img src>`. Sidorna lazy-laddar: `src` pekar på en
+platshållare (`0.ss.508sys.com/image/loading/dot.gif`) och den riktiga URL:en
+ligger i attributet `data-original`, protokollrelativt. Markdown-extraktion tappar
+dem helt — hämtningen måste ske som `simplified_html`.
+
+Två fällor:
+
+- **Suffixet `!600x600`** i URL:en är CDN:ens omskalning. Tas det bort får man
+  originalupplösningen. AP3-P3 gick från 600 px till 5440 px på det viset.
+- **Sidfotens sortimentsrad** ser ut som produktbilder men levererar 100x70 px.
+  Fyra produkter fick först de bilderna; de byttes mot hjältebilden från
+  respektive produktsida.
 
 ## Avgränsning
 
