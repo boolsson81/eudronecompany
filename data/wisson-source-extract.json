@@ -1,0 +1,210 @@
+{
+  "_meta": {
+    "source": "https://www.wissonrobotics.com/en/",
+    "extracted": "2026-09-09",
+    "method": "Nimble Extract, driver vx8 (sidorna är JavaScript-renderade)",
+    "note": "Endast fakta (modellnamn, mätvärden, kompatibilitet) är hämtade härifrån. All säljtext i data/wisson-catalog.json är egenförfattad, enligt regeln i scripts/swedron-gap/README.md.",
+    "images": "Inga produktbilder kunde hämtas. Sidorna lazy-laddar via 0.ss.508sys.com/image/loading/dot.gif och exponerar inga riktiga bild-URL:er i renderad DOM.",
+    "vendor_contact": {
+      "presales": "bd@wissonrobotics.com",
+      "support": "support@wissonrobotics.com",
+      "tel": "+86 755 8670 5724",
+      "entity": "万勋科技（深圳）有限公司 / Wisson Technology (Shenzhen)",
+      "offices": ["Shenzhen: 23/F, Tower A, Zhongguan Times Square, Nanshan District", "Beijing: Building 47, Zhihui Park, Design Town, Tongzhou District", "Hong Kong: Room 2612, Hong Kong Commercial Centre, Sai Wan"]
+    }
+  },
+  "core_technology": {
+    "name": "Pliabot®",
+    "claim_en": "Emulate Human Muscles, Transcend Human Capabilities",
+    "principle": "Mjuka bioniska muskler med pneumatisk drivning ger böjning och teleskopisk rörelse i samma led."
+  },
+  "series": [
+    { "code": "N", "name_en": "Precision Aerial Operation System", "models": ["AP30-N1"] },
+    { "code": "G", "name_en": "Aerial Active Release", "models": ["AP3-G1", "AP30-G2"] },
+    { "code": "P", "name_en": "Aerial Flexible Coating Platform", "models": ["AP3-P1", "AP3-P3", "AP30-P4", "AP30-P4H"] },
+    { "code": "D", "name_en": "Aerial Flexible Inspection Platform", "models": ["AP3-D1"] }
+  ],
+  "products": [
+    {
+      "model": "AP30-N1",
+      "series": "N",
+      "name_en": "Pliabot® Aerial Manipulator System",
+      "source": "https://www.wissonrobotics.com/en/products/AP30-N1.html",
+      "drone_compatibility": ["DJI FC30"],
+      "compatibility_note_en": "Adaptation supported to other UAV models",
+      "specs": {
+        "system_weight_kg": 8,
+        "controllable_motions": "360° bending + telescoping",
+        "manipulator_diameter_mm": 150,
+        "vertical_length_retracted_mm": 390,
+        "vertical_length_extended_mm": 800,
+        "max_payload_vertical_kg": 15,
+        "operating_power_w": 60,
+        "holding_power_w": 0,
+        "operator_console": "Integrated",
+        "min_temperature_c": -40
+      },
+      "features_en": [
+        "Lightweight with High Payload — nearly 2:1 load-to-weight ratio",
+        "Expandable Multi-functional Modules",
+        "360-Degree Precision Aerial Operation",
+        "Built for Extremes — water & dust resistance, radiation & corrosion enhancements",
+        "Low Power Consumption with 0-Watt Holding",
+        "Ready-to-Use — snap-on design, one-click initiation"
+      ],
+      "tooling_en": ["2-digit gripper", "3-digit gripper", "vision module", "swappable end-effector tools"],
+      "industries_en": ["Energy Maintenance", "Emergency Response", "Infrastructure Inspection", "Aerial Logistics", "Smart Agriculture"]
+    },
+    {
+      "model": "AP3-G1",
+      "series": "G",
+      "name_en": "Pliabot® Aerial Release",
+      "source": "https://www.wissonrobotics.com/en/products/AP3-G1.html",
+      "drone_compatibility": ["DJI M300", "DJI M350"],
+      "specs": {
+        "max_payload_kg": 2,
+        "holding_power_w": 0,
+        "install_time_s": 30
+      },
+      "features_en": [
+        "Strong grasping force, zero-power consumption self-locking",
+        "One-click precise grasping",
+        "Adaptive grasping of irregular items",
+        "Controlled and visible force with real-time on-screen display",
+        "Dual-vision precise positioning",
+        "Integrated flight control via DJI M300/M350 remote controller",
+        "Plug and play — 30-second installation"
+      ],
+      "industries_en": ["Public safety", "Emergency rescue", "Medical rescue"]
+    },
+    {
+      "model": "AP30-G2",
+      "series": "G",
+      "name_en": "Aerial Heavy-load Release",
+      "source": "https://www.wissonrobotics.com/en/products/AP30-G2.html",
+      "drone_compatibility": ["DJI FC30"],
+      "specs": {
+        "max_payload_kg": 40,
+        "suspension_height_m": 100,
+        "setup_time_min": 3
+      },
+      "features_en": [
+        "Seamless integration with DJI FC30 flight control and aerial suspension system",
+        "100 m aerial suspension, safe and damage-free placement",
+        "40 kg stable grasping, all-terrain compatibility",
+        "AR one-click positioning for precision release",
+        "Active release — remote control of release timing",
+        "Drone automatically detects the load"
+      ],
+      "industries_en": ["Geological surveys", "Emergency response", "Power grid maintenance", "Environmentally friendly construction"],
+      "terrain_en": ["cliffs", "collapsed roads", "high-voltage towers"]
+    },
+    {
+      "model": "AP3-P1",
+      "series": "P",
+      "name_en": "Pliabot® Aerial Sprayer",
+      "source": "https://www.wissonrobotics.com/en/products/AP3-P1.html",
+      "drone_compatibility": ["DJI M300", "DJI M350", "other drones with payload under 5 kg"],
+      "specs": {
+        "liquid_capacity_l": 2,
+        "folded_length_m": 0.7,
+        "efficiency_claim": "4x efficiency",
+        "paired_drone_payload_kg": 3
+      },
+      "features_en": [
+        "All-directional spraying, multi-surface coverage in narrow spaces",
+        "Pliable gimbal — soft compliance protects the drone on emergency collision",
+        "Self-balance — adaptively compensates for swings from motion and environment",
+        "Long-focus FPV for precise aiming, minimising waste",
+        "Seamless integration with DJI M300/M350 — one controller for flight and spraying",
+        "Various liquids compatible: water, oil, paint, coolant, anti-rust paint",
+        "Swappable high-capacity bucket",
+        "Folds to 0.7 m for storage and transport"
+      ],
+      "surfaces_en": ["Convex surfaces", "Horizontally irregular surfaces"],
+      "industries_en": ["Energy", "Electricity", "Construction"]
+    },
+    {
+      "model": "AP3-P3",
+      "series": "P",
+      "name_en": "Bionic Pliabot® Aerial Tethered Non-Destructive Cleaning System",
+      "source": "https://www.wissonrobotics.com/en/products/AP3-P3.html",
+      "drone_compatibility": ["DJI M400"],
+      "specs": {
+        "squeegee_fan_angle_deg": 40,
+        "vertical_spray_adjust_deg": 60,
+        "water": "medical-grade pure water",
+        "water_system": "Dual-patented DIC water treatment system"
+      },
+      "features_en": [
+        "40° fan-shaped Bionic Pliabot® water squeegee",
+        "Ultra-close operation",
+        "60° vertically adjustable spraying",
+        "Streak-free, eco-friendly cleaning with pure water only",
+        "Tethered supply — sustained operation without onboard tank limits"
+      ],
+      "industries_en": ["Facade cleaning", "High-altitude cleaning"]
+    },
+    {
+      "model": "AP30-P4",
+      "series": "P",
+      "name_en": "Pliabot® Aerial Atomized Sprayer",
+      "source": "https://www.wissonrobotics.com/en/h-col-418.html",
+      "drone_compatibility": ["leading industrial drones (model not stated on source page)"],
+      "specs": {},
+      "features_en": [
+        "Pliabot® joint with tactile AI suppresses sway and maintains flight stability",
+        "Inherent collision safety",
+        "Large-angle precision operation",
+        "Innovative atomization design reduces overflow and prevents dripping"
+      ],
+      "targets_en": ["wind turbines", "bridges", "insulators", "walls", "towers"]
+    },
+    {
+      "model": "AP30-P4H",
+      "series": "P",
+      "name_en": "Pliabot® Aerial High-Pressure Sprayer",
+      "source": "https://www.wissonrobotics.com/en/h-col-420.html",
+      "drone_compatibility": ["industry-leading drones (model not stated on source page)"],
+      "specs": {},
+      "features_en": [
+        "Pliabot® joint with tactile AI suppresses sway and maintains flight stability",
+        "Inherent collision safety",
+        "Large-angle precise adjustment",
+        "Modular operation units enable multi-functionality"
+      ],
+      "targets_en": ["wind turbines", "solar panels", "insulators", "walls", "towers"]
+    },
+    {
+      "model": "AP3-D1",
+      "series": "D",
+      "name_en": "Aerial Contact Detection Robot",
+      "source": "https://www.wissonrobotics.com/en/products/AP3-D1.html",
+      "drone_compatibility": ["DJI M300", "DJI M350"],
+      "specs": {
+        "max_contact_force_n": 20,
+        "contact_duration_s": 30,
+        "module_swap_time_min": 1,
+        "folded_length_m": 0.8
+      },
+      "features_en": [
+        "Intelligent and adaptive contact — pliable stabilizer cushions contact force",
+        "Real-time force feedback on screen, remotely adjustable",
+        "Integrated flight control with DJI M300/M350",
+        "Plug and play — module change within 1 minute",
+        "Safe lateral operation",
+        "20 N continuous contact force for up to 30 seconds",
+        "Built-in spray function — wets the surface and can spray paint markings",
+        "Folds into a Z-shape down to 0.8 m"
+      ],
+      "industries_en": ["Construction detection", "Bridge inspection", "Wind turbine maintenance"]
+    }
+  ],
+  "solutions": [
+    { "slug": "facade-cleaning", "name_en": "Facade Cleaning / High-Altitude Cleaning", "source": "https://www.wissonrobotics.com/en/facade-cleaning/" },
+    { "slug": "wind-turbine-cleaning", "name_en": "Wind Turbine Cleaning / Wind Turbine O&M", "source": "https://www.wissonrobotics.com/en/Power-System-Maintenance/" },
+    { "slug": "paint-spraying", "name_en": "Paint Spraying", "source": "https://www.wissonrobotics.com/en/h-col-415.html" },
+    { "slug": "anti-icing-spraying", "name_en": "Anti-icing Spraying", "source": "https://www.wissonrobotics.com/en/h-col-416.html" },
+    { "slug": "lightning-protection-testing", "name_en": "Lightning Protection Conductivity Testing", "source": "https://www.wissonrobotics.com/en/h-col-417.html" }
+  ]
+}

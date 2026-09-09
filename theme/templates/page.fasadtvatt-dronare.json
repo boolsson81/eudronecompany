@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Renvatten",
+            "text": "Medicinskt rent vatten genom dubbelpatenterad DIC-rening. Ytan torkar utan ränder och inget hamnar i marken."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Slangmatning",
+            "text": "Vattnet matas från marken, så arbetet begränsas inte av hur mycket drönaren kan bära."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Pliabot-skrapa",
+            "text": "40° solfjäderformad gummiskrapa som ligger an mot ytan i stället för att spola på avstånd."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Vinklad sprutbild",
+            "text": "60° vertikal justering når in under utsprång och listverk."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Ingen ställning, lift eller reparbete"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Personal står kvar på marken"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kortare avstängning av gata och entré"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kemikaliefritt, inget avrinningsavfall"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Lösning",
+        "title": "Fasadtvätt med drönare",
+        "text": "Fasadtvätt med drönare tar bort behovet av ställning, lift och reparbete. Med Wisson AP3-P3 arbetar drönaren tätt intill ytan och tvättar med renvatten — inga kemikalier, inga ränder.",
+        "solutions_heading": "Så går det till",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Räkna på ett fasadobjekt",
+        "text": "Berätta om byggnaden och ytan, så återkommer vi med upplägg, utrustning och offert.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

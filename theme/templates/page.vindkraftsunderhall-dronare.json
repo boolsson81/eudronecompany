@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Rengöring",
+            "text": "Blad och torn tvättas från luften med högtryck eller renvatten, utan uppställning av lift."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Sprutning",
+            "text": "Ytbehandling och avisningsmedel läggs jämnt med dimsprutning som varken rinner eller droppar."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Kontaktmätning",
+            "text": "AP3-D1 trycker givaren mot ytan med 20 N och återkopplar kraften i realtid."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Tunga lyft",
+            "text": "AP30-G2 lyfter upp till 40 kg materiel till svåråtkomliga platser i parken."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kortare stillestånd per verk"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Ingen personal på hög höjd"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Arbete även där lift inte kommer fram"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Dokumenterade mätpunkter från varje pass"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Lösning",
+        "title": "Vindkraftsunderhåll med drönare",
+        "text": "Underhåll av vindkraftverk kräver att någon tar sig upp på tornet eller bladet. Med flygburna robotsystem utförs rengöring, sprutning och kontaktmätning från luften — snabbare, och utan att någon hänger i rep.",
+        "solutions_heading": "Vad som går att göra",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Planera underhåll för er park",
+        "text": "Vi går igenom antal verk, åtgärder och tidsfönster, och föreslår utrustning och upplägg.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-G1",
+            "text": "Mjukt gripdon för 2 kg som formar sig efter oregelbundna föremål. Självlåsande utan ström."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "AP30-G2",
+            "text": "40 kg last som sänks på lina från 100 meters höjd, med AR-positionering för precis avlämning."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Kraftkontroll",
+            "text": "Greppkraften styrs steglöst och visas i realtid, så känsligt gods kan hanteras säkert."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Snabb rigg",
+            "text": "AP3-G1 monteras på 30 sekunder, AP30-G2 riggas på 3 minuter."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Blåljus, räddning och sjukvårdstransport"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kraftnätsunderhåll och kraftledningsstolpar"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Geoteknik och terräng utan bärighet"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Avlämning vid stup och raserade vägar"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson",
+        "breadcrumb_link": "/pages/wisson",
+        "eyebrow": "Wisson G-serien",
+        "title": "Wisson G-serien — flygburet lastsläpp",
+        "text": "G-serien lämnar last exakt där den ska ligga. Gemensamt för systemen är aktiv utlösning: operatören bestämmer ögonblicket, i stället för att lasten släpps när linan slaknar.",
+        "solutions_heading": "System i serien",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vilken lastnivå behöver ni?",
+        "text": "AP3-G1 flyger på DJI Matrice 300 och 350, AP30-G2 på DJI FlyCart 30. Vi hjälper er välja.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

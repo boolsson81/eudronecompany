@@ -1,0 +1,102 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP30-N1",
+            "text": "8 kg egenvikt, 15 kg vertikal lyftkapacitet, 390–800 mm räckvidd. Byggd för DJI FlyCart 30."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Verktyg",
+            "text": "Gripdon med två eller tre fingrar, visionmodul och fler verktyg som byts utan verktyg."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Drift i kyla",
+            "text": "Testad ned till -40 °C med skydd mot vatten, damm, strålning och korrosion."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Strömbudget",
+            "text": "60 W i drift och 0 W när armen håller sin position, vilket sparar flygtid."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Underhåll i energianläggningar"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Räddningsinsatser och akut hantering"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Infrastrukturinspektion"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Provtagning av gas, vätska och fast material"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson",
+        "breadcrumb_link": "/pages/wisson",
+        "eyebrow": "Wisson N-serien",
+        "title": "Wisson N-serien — flygburen manipulation",
+        "text": "N-serien flyttar drönaren från att observera till att arbeta. Armen böjer sig 360 grader och teleskoperar, och verktyget byts i ett steg — samma flygning kan gripa, ta prov, spruta och mäta.",
+        "solutions_heading": "System i serien",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Diskutera ett N-seriesystem",
+        "text": "AP30-N1 är byggd för DJI FlyCart 30, med anpassning till andra plattformar på beställning.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}
