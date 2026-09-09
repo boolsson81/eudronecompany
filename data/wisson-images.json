@@ -6,7 +6,7 @@
   "method": "Nimble Extract med output_format=simplified_html och drivern vx8. Sidorna lazy-laddar bilder: <img src> pekar på en platshållare (0.ss.508sys.com/image/loading/dot.gif) och den riktiga URL:en ligger i attributet data-original, protokollrelativt (//). Markdown-extraktion tappar dem — HTML krävs.",
   "resize_suffix": "URL:erna kan ha ett suffix som !600x600 som är CDN:ens omskalning. Suffixet är borttaget nedan för att få originalupplösningen.",
   "ingestion": "Shopify hämtar bilden själv från URL:en via productUpdate(media:) och lagrar en kopia på sitt eget CDN. Ingen nedladdning sker i vår miljö.",
-  "rights": "Bilderna är Wisson Technology (Shenzhen):s. De används här som leverantörsmaterial för återförsäljning och förutsätter att återförsäljaravtalet är på plats.",
+  "rights": "Bilderna är Wisson Technology (Shenzhen):s och används som leverantörsmaterial för återförsäljning. Återförsäljaravtal med Wisson är bekräftat av EU Drone Company 2026-09-09.",
   "images_are_rehosted": "Shopify hämtar bilden från käll-URL:en och lagrar en egen kopia på cdn.shopify.com. Butiken hotlänkar alltså inte mot Wissons CDN.",
   "pitfall_thumbnails": "Sidfotens sortimentsrad ser ut som produktbilder men levererar 100x70 px. Använd hjältebilden från respektive produktsida i stället."
  },
