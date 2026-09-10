@@ -95,4 +95,28 @@ COPY = {
     ],
     "usecase": "För byggnadsprovning, brokontroll och vindkraftsunderhåll. Integrerad med DJI M300 och M350, med stöd för fler plattformar på beställning.",
   },
+  "AP30-P2": {
+    "intro": "AP30-P2 är Wissons högtryckstvätt för tunga drönare. Munstycket sitter på en led som vrids -60 till +35 grader i höjdled och ±45 grader i sidled, så en yta kan sopas av medan drönaren står stilla i luften. Tanken rymmer 30 liter, vilket räcker för stora ytor mellan påfyllningarna. En laser mäter avståndet till ytan i realtid och visar det för operatören, och sprutbanan planeras i förväg och körs automatiskt tillsammans med flygrutten. Sprutmodulen fälls ihop till en meter för transport.",
+    "usp": [
+      "30 liters tank för stora ytor mellan påfyllningar",
+      "Munstycket vrids -60 till +35° i höjdled och ±45° i sidled",
+      "Laser mäter arbetsavståndet i realtid",
+      "6 meters räckvidd håller drönaren på säkert avstånd",
+      "Sprutbana och flygrutt körs som ett automatiserat moment",
+      "Modulära munstycken byts efter uppdrag",
+      "Fälls ihop till 1 meter för transport",
+    ],
+    "usecase": "För rengöring av vingar på vindkraftverk, solpaneler, isolatorer, fasader, murar och torn — ytor som annars kräver ställning, lift eller reparbete.",
+  },
+  "AP3-P5": {
+    "intro": "AP3-P5 sprutar färg från luften utan att spilla den i vinden. Runt strålen bygger modulen en luftridå som håller ihop sprutbilden, och Wisson uppger att spillet minskar med över 80 procent jämfört med sprutning utan ridå. Färgmängd och lufttryck justeras automatiskt efter avståndet till ytan, så resultatet blir jämnt även när drönaren rör sig in och ut. Färgen matas genom slang från marken, vilket ger obruten drift på stora ytor, och flödesstyrningen är anpassad till fler än tio ledande färgmärken.",
+    "usp": [
+      "Luftridå som enligt tillverkaren minskar spillet med över 80 %",
+      "Färgmängd och lufttryck följer arbetsavståndet automatiskt",
+      "Fungerar med fler än tio ledande färgmärken",
+      "Slangmatad färg ger obruten drift på stora ytor",
+      "Pliabot-leder och taktil AI håller modulen stabil i flykten",
+    ],
+    "usecase": "För målning av isolatorer, murar, fasader och torn. Lanserad som komplement till AP30-P4, som täcker de grövre sprutuppdragen.",
+  },
 }

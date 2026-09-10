@@ -30,7 +30,7 @@ const PAGES = [
     solutions: [
       { title: "N-serien — manipulation", text: "Robotarm som griper, lyfter och arbetar i luften. AP30-N1 lyfter 15 kg vid 8 kg egenvikt." },
       { title: "G-serien — lastsläpp", text: "Aktivt styrd avlämning, från 2 kg gripdon till 40 kg tunglast på 100 meters lina." },
-      { title: "P-serien — sprutning och tvätt", text: "Sprutmoduler och fasadtvätt för höghöjdsarbete, från 2-liters modul till slangmatat renvattensystem." },
+      { title: "P-serien — sprutning och tvätt", text: "Sex system för höghöjdsarbete: sprutmoduler, högtryckstvätt och slangmatad fasadtvätt med renvatten." },
       { title: "D-serien — kontaktinspektion", text: "Mätning med fysisk kontakt: 20 N anliggning i 30 sekunder med kraftåterkoppling i realtid." },
     ],
     benefitsHeading: "Därför Pliabot",
@@ -122,9 +122,11 @@ const PAGES = [
     solutionsHeading: "System i serien",
     solutions: [
       { title: "AP3-P1", text: "Sprutmodul med 2-liters behållare som sprutar åt alla håll, även i trånga utrymmen. Fälls till 0,7 m." },
+      { title: "AP30-P2", text: "Högtryckstvätt med 30 liters tank, vridbart munstycke och laser som mäter arbetsavståndet." },
       { title: "AP3-P3", text: "Slangmatat fasadtvättsystem med renvatten och 40° Pliabot-skrapa. Torkar utan ränder." },
       { title: "AP30-P4", text: "Dimspruta där atomiseringen lägger ett jämnt skikt utan överskott eller dropp." },
       { title: "AP30-P4H", text: "Högtrycksvariant för rengöring och sprutning med modulära arbetsenheter." },
+      { title: "AP3-P5", text: "Sprutmodul med luftridå runt strålen. Minskar spillet med över 80 % enligt tillverkaren." },
     ],
     benefitsHeading: "Användningsområden",
     benefits: [
@@ -140,7 +142,7 @@ const PAGES = [
     seo: {
       title: `Wisson P-serien — flygburen sprutning och tvätt | ${BRAND}`,
       description:
-        "AP3-P1 sprutmodul, AP3-P3 fasadtvätt med renvatten, AP30-P4 dimspruta och AP30-P4H högtryck. För höghöjdsarbete utan lift.",
+        "AP3-P1 sprutmodul, AP30-P2 högtryckstvätt, AP3-P3 fasadtvätt med renvatten, AP30-P4 dimspruta, AP30-P4H högtryck och AP3-P5 luftridå.",
     },
   },
   {

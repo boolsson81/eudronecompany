@@ -209,5 +209,57 @@
    "description": "AP3-D1 gör kontaktmätning från luften möjlig. Modulen arbetar i sidled ut från drönaren och trycker en givare mot ytan med upp till 20 newton i 30…"
   },
   "source": "https://www.wissonrobotics.com/en/products/AP3-D1.html"
+ },
+ {
+  "model": "AP30-P2",
+  "title": "Wisson Orion AP30-P2 — flygburen högtryckstvätt 30 l (DJI FC30)",
+  "vendor": "Wisson",
+  "productType": "Flygburet tvättsystem",
+  "tags": [
+   "Orion",
+   "Pliabot",
+   "Wisson",
+   "brand:wisson",
+   "compat:flycart-30",
+   "draft-granskas",
+   "industry:energy",
+   "industry:inspection",
+   "manufacturer:wisson",
+   "model:ap30-p2",
+   "serie:p",
+   "wisson-import"
+  ],
+  "descriptionHtml": "<p>AP30-P2 är Wissons högtryckstvätt för tunga drönare. Munstycket sitter på en led som vrids -60 till +35 grader i höjdled och ±45 grader i sidled, så en yta kan sopas av medan drönaren står stilla i luften. Tanken rymmer 30 liter, vilket räcker för stora ytor mellan påfyllningarna. En laser mäter avståndet till ytan i realtid och visar det för operatören, och sprutbanan planeras i förväg och körs automatiskt tillsammans med flygrutten. Sprutmodulen fälls ihop till en meter för transport.</p><h3>Nyckelegenskaper</h3><ul><li>30 liters tank för stora ytor mellan påfyllningar</li><li>Munstycket vrids -60 till +35° i höjdled och ±45° i sidled</li><li>Laser mäter arbetsavståndet i realtid</li><li>6 meters räckvidd håller drönaren på säkert avstånd</li><li>Sprutbana och flygrutt körs som ett automatiserat moment</li><li>Modulära munstycken byts efter uppdrag</li><li>Fälls ihop till 1 meter för transport</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Vätskevolym</th><td>30 l</td></tr><tr><th scope=\"row\">Vertikal sprutjustering</th><td>-60 till +35 °</td></tr><tr><th scope=\"row\">Horisontell sprutjustering</th><td>±45 °</td></tr><tr><th scope=\"row\">Effektiv räckvidd</th><td>6 m</td></tr><tr><th scope=\"row\">Hopfälld längd</th><td>1 m</td></tr><tr><th scope=\"row\">Avståndsmätning</th><td>Laser, realtidsmätning av arbetsavstånd</td></tr><tr><th scope=\"row\">Munstycken</th><td>Modulära, byts efter uppdrag</td></tr><tr><th scope=\"row\">Sprutbana</th><td>Sprutbana planeras och körs automatiskt</td></tr></table><h3>Kompatibilitet</h3><p>DJI FlyCart 30.</p><h3>Användning</h3><p>För rengöring av vingar på vindkraftverk, solpaneler, isolatorer, fasader, murar och torn — ytor som annars kräver ställning, lift eller reparbete.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
+  "seo": {
+   "title": "AP30-P2 — flygburen högtryckstvätt 30 l | EU Drone Company",
+   "description": "AP30-P2 är Wissons högtryckstvätt för tunga drönare. Munstycket sitter på en led som vrids -60 till +35 grader i höjdled och ±45 grader i sidled, så…"
+  },
+  "source": "https://www.wissonrobotics.com/en/products/AP30-P2.html"
+ },
+ {
+  "model": "AP3-P5",
+  "title": "Wisson Orion AP3-P5 — Pliabot flygburen sprutmodul med luftridå (DJI M400)",
+  "vendor": "Wisson",
+  "productType": "Flygburen sprutmodul",
+  "tags": [
+   "Orion",
+   "Pliabot",
+   "Wisson",
+   "brand:wisson",
+   "compat:matrice-400",
+   "draft-granskas",
+   "industry:energy",
+   "industry:inspection",
+   "manufacturer:wisson",
+   "model:ap3-p5",
+   "serie:p",
+   "wisson-import"
+  ],
+  "descriptionHtml": "<p>AP3-P5 sprutar färg från luften utan att spilla den i vinden. Runt strålen bygger modulen en luftridå som håller ihop sprutbilden, och Wisson uppger att spillet minskar med över 80 procent jämfört med sprutning utan ridå. Färgmängd och lufttryck justeras automatiskt efter avståndet till ytan, så resultatet blir jämnt även när drönaren rör sig in och ut. Färgen matas genom slang från marken, vilket ger obruten drift på stora ytor, och flödesstyrningen är anpassad till fler än tio ledande färgmärken.</p><h3>Nyckelegenskaper</h3><ul><li>Luftridå som enligt tillverkaren minskar spillet med över 80 %</li><li>Färgmängd och lufttryck följer arbetsavståndet automatiskt</li><li>Fungerar med fler än tio ledande färgmärken</li><li>Slangmatad färg ger obruten drift på stora ytor</li><li>Pliabot-leder och taktil AI håller modulen stabil i flykten</li></ul><h3>Specifikation</h3><table><tr><th scope=\"row\">Minskat sprutspill</th><td>Över 80 % lägre än utan luftridå</td></tr><tr><th scope=\"row\">Färgkompatibilitet</th><td>10+ ledande färgmärken</td></tr><tr><th scope=\"row\">Avståndsstyrt utflöde</th><td>Färgmängd och lufttryck justeras automatiskt efter arbetsavstånd</td></tr><tr><th scope=\"row\">Effektivitet (tillverkarens uppgift)</th><td>Över 5× jämfört med manuellt arbete</td></tr></table><h3>Kompatibilitet</h3><p>DJI Matrice 400.</p><h3>Användning</h3><p>För målning av isolatorer, murar, fasader och torn. Lanserad som komplement till AP30-P4, som täcker de grövre sprutuppdragen.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Enterprise-produkt som offereras per uppdrag — kontakta oss för pris, leveranstid och konfiguration.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
+  "seo": {
+   "title": "AP3-P5 — flygburen spruta med luftridå | EU Drone Company",
+   "description": "AP3-P5 sprutar färg från luften utan att spilla den i vinden. Runt strålen bygger modulen en luftridå som håller ihop sprutbilden, och Wisson uppger…"
+  },
+  "source": "https://www.wissonrobotics.com/h-col-406.html"
  }
 ]

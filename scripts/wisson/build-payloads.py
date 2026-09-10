@@ -21,9 +21,11 @@ PRODUCT_TYPE = {
     "AP3-G1": "Flygburet gripdon",
     "AP30-G2": "Flygburen lastsläppare",
     "AP3-P1": "Flygburen sprutmodul",
+    "AP30-P2": "Flygburet tvättsystem",
     "AP3-P3": "Flygburet tvättsystem",
     "AP30-P4": "Flygburen sprutmodul",
     "AP30-P4H": "Flygburen sprutmodul",
+    "AP3-P5": "Flygburen sprutmodul",
     "AP3-D1": "Flygburen inspektionsmodul",
 }
 
@@ -32,9 +34,11 @@ TITLE_SV = {
     "AP3-G1": "Wisson Orion AP3-G1 — Pliabot flygburet gripdon (DJI M300/M350)",
     "AP30-G2": "Wisson Orion AP30-G2 — flygburen lastsläppare 40 kg (DJI FC30)",
     "AP3-P1": "Wisson Orion AP3-P1 — Pliabot flygburen sprutmodul (DJI M300/M350)",
+    "AP30-P2": "Wisson Orion AP30-P2 — flygburen högtryckstvätt 30 l (DJI FC30)",
     "AP3-P3": "Wisson Orion AP3-P3 — Pliabot fasadtvättsystem (DJI M400)",
     "AP30-P4": "Wisson Orion AP30-P4 — Pliabot flygburen dimspruta",
     "AP30-P4H": "Wisson Orion AP30-P4H — Pliabot flygburen högtrycksspruta",
+    "AP3-P5": "Wisson Orion AP3-P5 — Pliabot flygburen sprutmodul med luftridå (DJI M400)",
     "AP3-D1": "Wisson Orion AP3-D1 — flygburen kontaktinspektionsrobot (DJI M300/M350)",
 }
 
@@ -64,6 +68,14 @@ SPEC_LABEL = {
     "max_contact_force_n": ("Max kontaktkraft", "N"),
     "contact_duration_s": ("Kontakttid", "s"),
     "module_swap_time_min": ("Modulbyte", "min"),
+    "horizontal_spray_adjust_deg": ("Horisontell sprutjustering", "°"),
+    "effective_range_m": ("Effektiv räckvidd", "m"),
+    "distance_sensor": ("Avståndsmätning", ""),
+    "nozzles": ("Munstycken", ""),
+    "route_planning": ("Sprutbana", ""),
+    "overspray_reduction": ("Minskat sprutspill", ""),
+    "paint_brand_compatibility": ("Färgkompatibilitet", ""),
+    "distance_adaptive_output": ("Avståndsstyrt utflöde", ""),
 }
 
 COMPAT_TAG = {
@@ -78,9 +90,11 @@ INDUSTRY_TAG = {
     "AP3-G1": ["industry:public-safety"],
     "AP30-G2": ["industry:energy", "industry:public-safety", "industry:logistics"],
     "AP3-P1": ["industry:energy", "industry:inspection"],
+    "AP30-P2": ["industry:energy", "industry:inspection"],
     "AP3-P3": ["industry:inspection"],
     "AP30-P4": ["industry:energy", "industry:inspection"],
     "AP30-P4H": ["industry:energy", "industry:inspection"],
+    "AP3-P5": ["industry:energy", "industry:inspection"],
     "AP3-D1": ["industry:inspection", "industry:energy"],
 }
 
@@ -146,9 +160,11 @@ SEO_NAME_SV = {
     "AP3-G1": "flygburet Pliabot-gripdon",
     "AP30-G2": "flygburen lastsläppare 40 kg",
     "AP3-P1": "flygburen Pliabot-sprutmodul",
+    "AP30-P2": "flygburen högtryckstvätt 30 l",
     "AP3-P3": "flygburet fasadtvättsystem",
     "AP30-P4": "flygburen Pliabot-dimspruta",
     "AP30-P4H": "flygburen högtrycksspruta",
+    "AP3-P5": "flygburen spruta med luftridå",
     "AP3-D1": "flygburen kontaktinspektion",
 }
 

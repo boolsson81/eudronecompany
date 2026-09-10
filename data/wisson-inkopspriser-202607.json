@@ -203,8 +203,22 @@
       },
       "varuvarde_sek": 82868,
       "frakt_sek": null,
-      "shopify": [],
-      "beslut": "Aktiv i prislistan och saknar produkt i butiken. Datablad begärt av Wisson 2026-09-10, se docs/reports/WISSON_FORFRAGAN_AP3-P2.md. Läggs upp när specifikationer och bilder finns."
+      "shopify": [
+        {
+          "produktId": "gid://shopify/Product/10274678309192",
+          "handle": "wisson-orion-ap30-p2-flygburen-hogtryckstvatt-30-l-dji-fc30",
+          "status": "DRAFT",
+          "varianter": [
+            {
+              "variantId": "gid://shopify/ProductVariant/54030891843912",
+              "titel": "Default Title",
+              "inventoryItemId": "gid://shopify/InventoryItem/55651224387912"
+            }
+          ]
+        }
+      ],
+      "beslut": "Prislistans AP3-P2 är tillverkarens AP30-P2 — samma produktnamn och samma plattform. Produkten är upplagd som utkast 2026-09-10 med specifikationer från https://www.wissonrobotics.com/en/products/AP30-P2.html. Inköpspris skrivs när frakten är ifylld.",
+      "modell_hos_tillverkaren": "AP30-P2"
     },
     {
       "modell": "AP-P DIC Water Treatment System",
@@ -295,7 +309,7 @@
       "varuvarde_sek": 96536,
       "frakt_sek": null,
       "shopify": [],
-      "beslut": "Utgången och saknar produktnamn i prislistan. Läggs inte upp i butiken. Prisraden ligger kvar som referens."
+      "beslut": "Utgången, saknar produktnamn i prislistan och finns inte på tillverkarens sajt (genomsökning 2026-09-10). Läggs inte upp i butiken. Prisraden ligger kvar som referens."
     }
   ],
   "palagg": {
