@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "uppdaterad": "2026-09-10",
+  "dokumentation": "docs/INKOPSPROSPEKT.md",
+  "noteringar": [
+    "Leverantörer och produkter vi överväger att köpa in. Inget här är beställt.",
+    "Priser är det källan angav — se pris.basis. Listpris är inte vårt inköpspris.",
+    "Lägg till med: npm run prospekt:add -- --leverantor ... --produkt ..."
+  ],
+  "prospekt": []
+}
