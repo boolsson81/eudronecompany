@@ -1,0 +1,184 @@
+{
+  "version": "1.0",
+  "generated": "2026-09-10",
+  "status": "proposed",
+  "report": "docs/reports/TVATTSYSTEM_LEVERANTORER_2026-09.md",
+  "notes": [
+    "Leverantörsscanning för tvättutrustning till tak och fasad.",
+    "Alla priser är publika listpriser hos tillverkare eller återförsäljare, inte våra inköpspriser.",
+    "Momsstatus framgår inte alltid av källan och är inte normaliserad här.",
+    "Inga produkter, kollektioner eller taxonomier ändras av den här filen."
+  ],
+  "product_types": [
+    {
+      "type": "payload",
+      "label": "Tvättmodul under drönare vi redan säljer",
+      "buyer": "Drönaroperatör eller befintlig DJI-kund",
+      "price_band_eur": [12000, 25000],
+      "requires_ground_kit": true
+    },
+    {
+      "type": "complete_system",
+      "label": "Komplett system inklusive markutrustning och utbildning",
+      "buyer": "Städ- och fastighetsbolag som bygger en tjänst",
+      "price_band_eur": [46000, 75000],
+      "requires_ground_kit": false
+    }
+  ],
+  "suppliers": [
+    {
+      "supplier": "drone-volt",
+      "name": "Drone Volt",
+      "country": "FR",
+      "city": "Villepinte",
+      "rank": 1,
+      "product_type": "complete_system",
+      "products": [
+        {
+          "model": "Hercules 20 HIGH-DRA",
+          "surface": ["fasad", "tak", "vindkraft", "avisning"],
+          "max_pressure_bar": 250,
+          "max_height_m": 60,
+          "hose_m": 100,
+          "tank_l": 300,
+          "options": ["omvänd osmos", "jonbytarfilter", "hetvattenbox 30-150 °C", "dubbelinjektor 0-15 %", "tank 600/1000 l", "transportsläp"],
+          "price_eur_ex_vat": 46850,
+          "price_includes": ["C5-certifierad drönare", "högtryckssystem", "300 l tank", "100 m slang", "sprutbom", "6 munstycken", "5 dagars utbildning"]
+        },
+        {
+          "model": "Hercules 20 Spray — Low Pressure",
+          "surface": ["tak", "algbehandling", "solpaneler"],
+          "max_pressure_bar": 10,
+          "max_height_m": 30,
+          "flow_l_per_min": 18
+        }
+      ],
+      "reseller_program": true,
+      "nordic_presence": "Köpenhamn",
+      "regulatory_claim": "C5-certifierad av EASA, STS-01. Publicering på EASA:s webbplats uppges komma senare — ej verifierad.",
+      "contact": { "phone": "+33 1 80 89 44 44", "site": "https://www.dronevolt.com/en/" }
+    },
+    {
+      "supplier": "wisson",
+      "name": "Wisson Robotics",
+      "country": "CN",
+      "city": "Shenzhen / Hongkong",
+      "rank": 2,
+      "product_type": "payload",
+      "in_catalog": true,
+      "catalog_file": "data/wisson-catalog.json",
+      "products": [
+        {
+          "model": "Orion AP3-P3",
+          "surface": ["fasad", "fönster", "solpaneler", "tak"],
+          "max_pressure_mpa": 13,
+          "platform_source_2026_09": "DJI M400",
+          "platform_in_our_catalog": "DJI M300/M350",
+          "weight_kg": 1.3,
+          "host_payload_capacity_kg": [3, 10],
+          "water": "renat vatten via DIC-vattenrening"
+        },
+        { "model": "Orion AP30-P4H", "surface": ["fasad"], "note": "flygburen högtrycksspruta, plattform ej angiven av källan" }
+      ],
+      "eu_prices": [
+        { "seller": "aeroMind", "country": "PL", "item": "AP3-P3 Standard (M350)", "price": 11735.99, "currency": "EUR", "vat": "netto" },
+        { "seller": "Pro Fly Center", "country": "DE", "item": "AP3-P3", "price": 13159.53, "currency": "EUR", "vat": "okänd" },
+        { "seller": "Swedron", "country": "SE", "item": "AP3-P3 Standard (M400)", "price": 111996, "currency": "SEK", "vat": "okänd" }
+      ],
+      "reseller_program": "via EU-distributörer (aeroMind, Pro Fly Center) eller direktavtal",
+      "contact": { "presales": "bd@wissonrobotics.com", "support": "support@wissonrobotics.com", "phone": "+86 755 8670 5724" }
+    },
+    {
+      "supplier": "eauav",
+      "name": "EAUAV",
+      "country": "CN",
+      "city": "Hangzhou",
+      "rank": 3,
+      "product_type": ["complete_system", "payload"],
+      "products": [
+        {
+          "model": "Vertex C80 / C80P",
+          "surface": ["fasad", "fönster", "tak", "skyltar", "takmonterad solel"],
+          "max_pressure_bar": 200,
+          "flow_l_per_min": 15,
+          "hose_m": 100,
+          "max_height_m": { "c80": 80, "c80p": 120 },
+          "endurance_min": 45,
+          "weight_kg": "<15",
+          "ip_rating": "IP65",
+          "capacity_m2_per_h": { "djup": 500, "underhall": 1000 }
+        },
+        { "model": "M400 Facade Cleaning Kit", "type": "PSDK-kit", "platform": "DJI M400" },
+        { "model": "Solar/Rooftop Cleaning Kit", "type": "tillval", "surface": ["tak", "solpaneler"] }
+      ],
+      "reseller_program": true,
+      "documentation": ["CE för levererad konfiguration", "Remote ID", "fallskärm som tillval"],
+      "price_public": false,
+      "contact": { "email": "support@eauav.com", "phone": "+86 193 5717 7328" }
+    },
+    {
+      "supplier": "foxtech",
+      "name": "Foxtech",
+      "country": "CN",
+      "city": "Tianjin",
+      "rank": 4,
+      "product_type": "payload",
+      "products": [
+        {
+          "model": "AeroClean P3 (T50)",
+          "platform": ["DJI M400", "DJI M350"],
+          "price": 13200,
+          "currency": "USD",
+          "spec_conflict": "Egna sidor anger både 20 MPa/45 m och 40 MPa/120 m. Datablad krävs."
+        }
+      ],
+      "reseller_program": "webbutik med lagerförd vara",
+      "verdict": "Referenspris och testköp, inte sortimentsbas"
+    },
+    {
+      "supplier": "apellix",
+      "name": "Apellix",
+      "country": "US",
+      "rank": 5,
+      "product_type": "complete_system",
+      "products": [
+        { "model": "Power Wash B2", "price": 47000, "currency": "USD", "max_pressure_psi": 4000, "max_height_m": 60, "endurance_min": 32 },
+        { "model": "Power Wash Blue", "price": 60000, "currency": "USD", "note": "NDAA-kompatibel" }
+      ],
+      "reseller_program": "exklusiva landsdistributörer, UK taget av Drone Clean UK 2026-03",
+      "verdict": "Avfärdad — dubbel prisnivå utan EU-fördel. Källjämförelsen är sponsrad av Apellix."
+    },
+    {
+      "supplier": "lucid-bots",
+      "name": "Lucid Bots",
+      "country": "US",
+      "rank": 6,
+      "product_type": "complete_system",
+      "products": [{ "model": "Sherpa", "price": 75000, "currency": "USD", "max_pressure_psi": 4500, "max_height_m": 46, "endurance_min": 19 }],
+      "verdict": "Avfärdad — pris och kort flygtid, ingen EU-närvaro"
+    },
+    {
+      "supplier": "ktv",
+      "name": "KTV Working Drone",
+      "country": "NO",
+      "rank": 7,
+      "product_type": "franchise",
+      "products": [{ "model": "KTV Working Drone", "max_pressure_bar": 300, "method": "filtrerat vatten, värme, måttligt tryck, utan kemi" }],
+      "verdict": "Avfärdad som leverantör — franchise med obligatorisk femdagarsutbildning, säljer inte lös utrustning"
+    }
+  ],
+  "market_reference": [
+    { "seller": "Power Drone", "country": "LU", "item": "DJI M400 + Falcon X2 komplett kit", "price": 25000, "currency": "EUR", "specs": { "max_pressure_bar": 250, "m2_per_flight": 600 } },
+    { "seller": "DroneBase", "country": "IT", "item": "Drone Cleaning System för DJI M400", "specs": { "max_pressure_bar": 220, "hose_m": 150, "tank_l": 100, "nozzles": 7 } },
+    { "seller": "Swedron", "country": "SE", "item": "DJI M400", "price": 89368, "currency": "SEK" },
+    { "seller": "Swedron", "country": "SE", "item": "4 × Matrice 400 TB100-batteri", "price": 57568, "currency": "SEK" }
+  ],
+  "open_questions": [
+    "C5-certifikatets status hos EASA för Drone Volt Hercules 20",
+    "DJI:s garantiläge vid tredjepartstvättlast på M400",
+    "AP3-P3 plattformsuppgift i data/wisson-catalog.json (M300/M350 → M400)",
+    "Biocid- och kemikaliekrav för takbehandling i SE/DE/DK",
+    "Marginal vid köp via EU-distributör kontra direktavtal med Wisson",
+    "Leverantör för markdelen (renvatten, hetvatten, fordonsinredning) om payload-vägen väljs"
+  ]
+}
