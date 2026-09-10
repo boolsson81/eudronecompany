@@ -16,11 +16,16 @@ RTK-basstationer, väskor och fältström. Varje sådan lucka är en förlorad a
 en drönare vi redan har på hyllan.
 
 På plattformssidan gäller en annan logik, som utvecklas under
-[Drönare — flygplattformar](#drönare--flygplattformar): **ett** lagerfört
-alternativ (Autel), **två** offertvaror som säljs tillsammans med DJI snarare än
-istället för (Flyability, Wingtra), och undervattens-ROV som närliggande
-segment (Chasing). Varje ytterligare lagerförd plattform kostar ett eget
-reservdelslager och en egen servicekedja.
+[Drönare — flygplattformar](#drönare--flygplattformar): ett lagerfört
+alternativ, ett par offertvaror som säljs tillsammans med DJI snarare än
+istället för, och undervattens-ROV som närliggande segment. Varje ytterligare
+lagerförd plattform kostar ett eget reservdelslager och en egen servicekedja.
+
+**Och innan något av det: 107 icke-DJI-artiklar ligger redan i databasen med
+inköpspris från en distributör vi redan handlar av, opublicerade.** CZI,
+Wingtra, Parrot, Pix4D, Tundra, Livox och FlyFire. Det är den billigaste
+sortimentsutökningen som finns och den kräver inget inköpsbeslut alls — se
+[Distributörer](#distributörer--vem-levererar-vad).
 
 Referenspunkten: **Drone Parts Center** (belgisk DJI Enterprise Gold Partner) når
 full enterprise-trovärdighet med DJI plus fyra partnervarumärken — Dronavia,
@@ -37,15 +42,22 @@ Det ger tre nivåer:
 
 ## Utgångsläget
 
-Katalogarkitekturen är enmärkes. `data/edp-enterprise-architecture-v2.json` har
-97 noder, samtliga DJI. `data/edp-product-tag-standards.json` har exakt ett
+**Taxonomin** är enmärkes. `data/edp-enterprise-architecture-v2.json` har 97
+noder, samtliga DJI. `data/edp-product-tag-standards.json` har exakt ett
 brand-värde: `brand:dji`. I kollektionsreglerna finns 428 DJI-träffar mot 3 för
 PolarPro och 4 för Livox.
 
-Enda icke-DJI-varumärket med verkligt enterprise-innehåll är **Wisson** — 8
-produkter i `data/wisson-catalog.json`, flygburna manipulatorer och
-rengöringssystem för FlyCart 30, fortfarande utkast. Via Swedron-gapimporten
-tillkom **JLIDrone** (16), **Hikmicro NEOS** (3), **4Hawks** (2), **LifThor** (1)
+**Sortimentet är det inte.** Databasen innehåller redan CZI, Wingtra, Parrot,
+Pix4D, Tundra, Livox och FlyFire med inköpspris från en befintlig distributör.
+Se [Distributörer](#distributörer--vem-levererar-vad) — det är den viktigaste
+korrigeringen i rapporten. Problemet är alltså inte att varumärkena saknas utan
+att de är osynliga: ingen kollektion, ingen varumärkestagg, ingen menyplacering,
+och i de flesta fall status `draft`.
+
+**Wisson** — 8 produkter i `data/wisson-catalog.json`, flygburna manipulatorer
+och rengöringssystem för FlyCart 30 — är det enda icke-DJI-varumärket med
+nyskriven svensk enterprise-text, och ligger som utkast. Via Swedron-gapimporten
+tillkom **JLIDrone** (20), **Hikmicro** (145), **4Hawks** (2), **LifThor** (1)
 och **Hoodman** (1), också som utkast.
 
 Den tidigare gap-rapporten (`SWEDRON_GAP_2026-09-07.md`) konstaterade att cirka
@@ -73,7 +85,9 @@ det, och det finns ingen DJI-motsvarighet.
 **CZI** (Kina) — strålkastare, högtalare/LRAD och lastsläpp för hela
 Matrice- och Mavic Enterprise-linjen. Det mest spridda tredjeparts-payloadmärket
 bland DJI-återförsäljare. Bredare och billigare än DJI:s egna motsvarigheter och
-täcker äldre plattformar som DJI slutat stötta.
+täcker äldre plattformar som DJI slutat stötta. **Redan inköpt via Boston
+Nordic: 27 artiklar med inköpspris, varav 25 ligger som utkast.** Kräver inget
+avtal, bara publicering.
 
 **Workswell** (Tjeckien) — industriell termografi över Zenmuse-nivå: WIRIS-serien
 och optisk gasavbildning (OGI). Europeisk tillverkning, högt snittpris, hög
@@ -81,7 +95,8 @@ marginal, och rätt svar när kunden säger att H30T inte räcker.
 
 **EcoFlow** — fältström och laddning för Matrice-, Agras- och FlyCart-kunder.
 Låg tröskel, hög attachrate, redan 73 artiklar hos Swedron och partnervarumärke
-hos Drone Parts Center.
+hos Drone Parts Center. **EcoFlow ingår i Boston Groups portfölj**, så det ryms
+sannolikt i befintligt avtal — fråga innan ni söker ny leverantör.
 
 Dessutom: **slutför Wisson-importen**. Åtta produkter ligger som utkast utan
 inköpspris. De är ett unikt sortiment som ingen nordisk konkurrent har.
@@ -93,7 +108,9 @@ varje Zenmuse P1- eller L2/L3-affär. Lågt pris, hög attachrate, finns hos
 Swedron.
 
 **Pix4D** — mjukvarulicenser för fotogrammetri. Både Globe Flight och Swedron
-för det. Licensförsäljning är ren marginal utan lagerbindning.
+för det. Licensförsäljning är ren marginal utan lagerbindning. **31 artiklar
+ligger redan som utkast med inköpspris från Boston Nordic**, ingen publicerad.
+Det är den snabbaste posten i hela rapporten.
 
 **Dronetag** (Tjeckien) — Remote ID-moduler (DRI, Beacon, Mini), EASA-godkända.
 EU-förordning 2019/945 kräver Direct Remote ID för allt över 250 g i öppen och
@@ -156,11 +173,15 @@ tre helt olika roller.
 
 #### Roll 1 — hyllvara: en (1) direkt DJI-ersättare
 
-**Autel Robotics** är det enda märket som fungerar som lagerförd hyllvara vid
-sidan av DJI. EVO Max 4T V2 ligger på cirka 5 700 euro med EU-lager via
-etablerad distributör, och konkurrerar direkt med Mavic 3 Enterprise och
-Matrice 4T. Autel har återförsäljarkanal, reservdelsförsörjning och en produkt
-som en kund kan köpa i en webbutik utan föregående demo.
+**Autel Robotics** är produktmässigt det enda märket som fungerar som lagerförd
+hyllvara vid sidan av DJI. EVO Max 4T V2 ligger på cirka 5 700 euro med EU-lager
+via etablerad återförsäljare, och konkurrerar direkt med Mavic 3 Enterprise och
+Matrice 4T.
+
+Men distributionsledet är svagt i Norden — se
+[Autel — rekommendationen behöver en varning](#autel--rekommendationen-behöver-en-varning).
+`autel.eu` är fordonsdiagnostik, inte drönare, och Autel Robotics saknar nordisk
+distributör. Behåll Autel som mål, men räkna med utredningsarbete först.
 
 Autel löser tre saker på en gång: prispunkt under DJI, en andra källa om
 DJI-leveranser störs, och ett svar till kunder som av policyskäl inte får köpa
@@ -176,7 +197,7 @@ lagerhållning, demoexemplar och utbildning istället.
 | Märke | Land | Jobbet DJI inte klarar |
 |---|---|---|
 | Flyability (Elios 3) | CH | Slutna utrymmen och GPS-nekade miljöer: pannor, tankar, schakt, gruvor. Kolliderings­tålig bur. DJI har ingen motsvarighet alls. |
-| Wingtra | CH | Fixed-wing VTOL-kartering. Täcker flerdubbelt så stor areal per flygning som M400 med P1. Swedron för 33 artiklar, alltså bevisad svensk efterfrågan. |
+| Wingtra | CH | Fixed-wing VTOL-kartering. Täcker flerdubbelt så stor areal per flygning som M400 med P1. **Vi har redan 26 Wingtra-artiklar med inköpspris via Boston Nordic**, varav 9 publicerade. Boston är Wingtras nordiska distributör. |
 | Quantum Systems | DE | Samma segment som Wingtra, tysk tillverkning, EASA-certifierad, stark i offentlig sektor och försvar. |
 | Griff Aviation | NO | Tunglyft över FlyCart-klassen. Griff 30 lyfter 30 kg nyttolast, större modeller mer. Norsk tillverkning. |
 | Acecore | NL | Tunglyft och specialbyggen, europeisk tillverkning, etablerad återförsäljarkanal. |
@@ -195,7 +216,8 @@ undantagna. Realistiskt först när vi har en namngiven myndighetskund.
 **Parrot** (FR) — har pivoterat mot försvar och myndighet. ANAFI UKR ligger runt
 15 000 euro och säljs i den kanalen, inte som webbutiksvara. ANAFI USA finns
 kvar. Värdet för oss är kryssrutan "icke-kinesisk tillverkare" i upphandling,
-inte volymen.
+inte volymen. **Vi har redan 25 Parrot-artiklar via Boston Nordic**, 13
+publicerade — Boston för Parrot vid sidan av DJI.
 
 **Sky-Watch** (DK) — dansk, omsatte drygt 520 miljoner danska kronor 2025, men
 säljer försvars- och säkerhetssystem direkt. Relevant kunskap för
@@ -205,8 +227,9 @@ DK-marknaden, inte ett återförsäljarsortiment.
 
 - **Undervattens-ROV** — Chasing, QYSEA, Deep Trekker. Inte flygande, men exakt
   samma kund: hamn, energibolag, räddningstjänst, polis. Chasing har 133 artiklar
-  hos Swedron och noll hos oss, och förs dessutom av Globe Flight. Det här är
-  den lägst hängande frukten på plattformssidan.
+  hos Swedron och noll hos oss, och förs dessutom av Globe Flight. **Svensk
+  distributör är Focus Nordic AB i Göteborg**, vilket gör detta till den enklaste
+  plattformsutökningen av alla — närmare än Autel.
 - **Vattentäta drönare** — Swellpro. Sjöräddning och fiske, nordisk relevans.
 - **Drone-in-a-box till befintliga DJI-drönare** — Heisha bygger dockor som
   passar DJI Mavic och Phantom samt Autel, Skydio och Parrot. Det är ett
@@ -229,14 +252,17 @@ alternativ att erbjuda, inte att bygga om sortimentet.
 
 #### Rekommendation flygplattformar
 
-1. **Lagerför Autel.** Ett märke, som direkt alternativ och andra källa.
-2. **Ta in Chasing** som undervattenskomplement — låg risk, bevisad efterfrågan,
-   redan identifierat gap.
-3. **Teckna offertavtal med Flyability och Wingtra.** Ingen lagerbindning, säljs
-   tillsammans med DJI.
-4. **Bevaka Quantum Systems och Skydio.** Ta in när en namngiven kundaffär
+1. **Publicera Wingtra och Parrot.** Redan inköpta via Boston Nordic, 29
+   artiklar ligger som utkast. Detta går före allt annat på plattformssidan.
+2. **Ta in Chasing via Focus Nordic AB.** Svensk distributör, låg risk, bevisad
+   efterfrågan, redan identifierat gap.
+3. **Utred Autel.** Rätt produkt, men ingen nordisk drönardistributör. Kontakta
+   Autel Robotics EU-kontor innan något utlovas.
+4. **Teckna offertavtal med Flyability.** Kräver åtagande om demo, reservdelar,
+   service och utbildning.
+5. **Bevaka Quantum Systems och Skydio.** Ta in när en namngiven kundaffär
    betalar för kvalificeringen.
-5. **Avstå tills vidare** från Griff, Acecore, XAG, Parrots försvarslinje och
+6. **Avstå tills vidare** från Griff, Acecore, XAG, Parrots försvarslinje och
    Sky-Watch. Rätt produkter, fel försäljningsmodell för en webbutik.
 
 Räkna med att varje lagerförd plattform utöver DJI kräver eget reservdelslager
@@ -283,6 +309,100 @@ plattform, inte fler leverantörer. De enda meningsfulla
 tredjepartstilläggen är förbrukningsartiklar utanför garantin: minneskort,
 kablage och skuminsatser till väskor.
 
+## Distributörer — vem levererar vad
+
+Tillagt 2026-09-10. Det här avsnittet **korrigerar en felaktighet i de tidigare
+utgåvorna.** Jag skrev att katalogen är enmärkes. Det gäller taxonomin, inte
+sortimentet. Frågan om distributörer visade sig till stor del redan vara löst.
+
+### Vi har redan distributören för fem av rekommendationerna
+
+`public.inventory` för EU Drone Company (`shop_id e6ad2afc…`) har fyra aktiva
+leverantörsplatser: egen butiksplats, Sunsky (kinesisk dropship), **Boston
+Nordic** och **InnPro**.
+
+Boston Nordic levererar 13 varumärken med inköpspris i SEK på varenda rad:
+
+| Varumärke | Rader | Publicerade | Utkast | Inköpspris SEK |
+|---|--:|--:|--:|---|
+| DJI | 639 | 199 | 388 | 10 – 160 984 |
+| PGYTECH | 109 | 70 | 39 | 45 – 1 787 |
+| Pix4D | 31 | 0 | 31 | 30 – 74 754 |
+| PolarPro | 30 | 3 | 27 | 109 – 3 676 |
+| CZI | 27 | 2 | 25 | 1 187 – 212 019 |
+| Wingtra | 26 | 9 | 17 | 236 – 322 906 |
+| Parrot | 25 | 13 | 12 | 64 – 227 846 |
+| Tundra | 12 | 2 | 10 | 3 339 – 44 518 |
+| Livox | 9 | 2 | 7 | 135 – 12 740 |
+| FlyFire | 7 | 2 | 5 | 512 – 38 846 |
+| DBOX | 2 | — | — | 63 493 – 65 958 |
+| Arastelle | 1 | 0 | 1 | 24 485 |
+| PowerVisio | 1 | 1 | 0 | 872 |
+
+**CZI (nivå 1), Pix4D (nivå 2), Wingtra och Parrot (flygplattformar) och Tundra
+Drone (nivå 4) kräver alltså inget nytt distributörsavtal.** De är redan
+inköpta, prissatta och ligger som utkast. Det gäller 107 icke-DJI-artiklar med
+färdigt inköpspris som bara inte är publicerade.
+
+Det ändrar rekommendationen för de fem från "teckna avtal" till "publicera".
+Det är också en helt annan tidsplan: dagar istället för månader.
+
+Boston Group A/S är dansk, ligger i Farum, har säljkontor i Sverige, Norge och
+Finland och är Nordens största drönardistributör. Deras varumärkesportfölj är
+bredare än vad vi importerat: utöver ovanstående för de **EcoFlow** (vår nivå
+1), **Phase One** (kartkameror i toppklass), Sony, Canon, Hasselblad och Obsbot.
+
+**Enskilt högst hävstång: ett mejl till salg@boston.dk med frågan vad mer de kan
+leverera.** EcoFlow och Phase One ligger sannolikt inom befintligt avtal.
+
+InnPro (Rybnik, Polen) står för 295 rader, i huvudsak Puluz- och
+DJI-tillbehör utan varumärkesfält. InnPro är samtidigt auktoriserad
+Dronavia-återförsäljare, vilket gör dem till en möjlig andraväg dit.
+
+### Varumärken som kräver nytt avtal
+
+| Varumärke | Distributionsmodell | Väg in | Nordisk täckning idag |
+|---|---|---|---|
+| Dronavia | Endast auktoriserade återförsäljare, ingen direktförsäljning | Ansökningsformulär på dronavia.com/partners | SE: AMKVO (Uppsala) och Scandinavian Drone. NO: ROMVESEN. FI: Skydata OY. **DK saknas** |
+| Workswell | Direkt från tillverkaren i Prag, partnernätverk utan landsexklusivitet | sales@workswell.eu | Ingen nordisk återförsäljare hittad |
+| Soarability / Sniffer4D | Regionala distributörer. TPI (Warszawa) driver sniffer4d.eu för CZ, LT, PL, RO, SK | Direkt till Soarability, eller via TPI | Norden inte täckt av TPI |
+| Chasing Innovation | Distributör per marknad | **Focus Nordic AB** (Göteborg) är svensk distributör | Täckt — Focus Nordic |
+| Emlid | Återförsäljarnätverk plus egen EU-butik | emlid.com/dealers | Kontrollera aktuell lista |
+| Dronetag | Uttalat distributörsprogram med marginal och marknadsstöd | dronetag.com/company/partners | Öppet |
+| Flyability | Distributörsnätverk med krav på demo, reservdelar, service och utbildning | flyability.com/distributors | Kräver serviceåtagande |
+| Elistair, XGRIDS, Emesent, YellowScan, MicaSense | Distributörsledda | Direktkontakt | Ej undersökt per land |
+
+### Autel — rekommendationen behöver en varning
+
+Jag skrev i förra utgåvan att Autel är den enda plattform som fungerar som
+lagerförd hyllvara. Distributionsledet är svagare än jag antog.
+
+`autel.eu` är **Autel Intelligent Technology**, alltså fordonsdiagnostik: ADAS,
+TPMS, nyckelprogrammering. Svensk distributör där är Skantz Diagnosverktyg i
+Eslöv. Det är inte drönarsidan. Drönarna är **Autel Robotics**, en annan
+kanal, och de har ingen nordisk distributör vi kunnat hitta. Vägen in är
+antingen Autel Robotics egen EU-kanal (salesoffice.eu@autel.com för länder som
+saknas i listan) eller en återförsäljarroll under Autelpilot, som själv är
+återförsäljare snarare än tillverkarens distributör.
+
+Autel är alltså fortfarande rätt produktval, men det är inte längre det enkla
+alternativet. Rangordna om: **Chasing via Focus Nordic är nu den enklaste
+plattformsutökningen**, eftersom distributören finns på plats i Göteborg.
+
+### Reviderad åtgärdsordning
+
+1. **Publicera 107 icke-DJI-utkast från Boston Nordic.** CZI 25, Pix4D 31,
+   Wingtra 17, Parrot 12, Tundra 10, Livox 7, FlyFire 5. Inköpspris finns,
+   leverantören finns, inget avtal behövs.
+2. **Mejla Boston** och fråga vad mer som ryms i befintligt avtal. EcoFlow och
+   Phase One först.
+3. **Ansök hos Dronavia.** Danmark saknar återförsäljare, vilket passar
+   `/dk`-marknaden. Sverige har redan två, så räkna med konkurrens där.
+4. **Kontakta Focus Nordic om Chasing.** Svensk distributör, känd motpart.
+5. **Kontakta Workswell och Soarability direkt.** Ingen nordisk återförsäljare
+   står i vägen för någon av dem.
+6. **Autel sist**, när distributionsvägen är utredd.
+
 ## Konkurrentunderlag
 
 **Globe Flight** (DE), 39 varumärken: AirInnoX, Akku-King, B&W International,
@@ -321,9 +441,13 @@ att produkten faktiskt monterar och att distributionsavtal går att få.
 
 ## Vad som behöver göras i katalogen
 
+0. **Publicera de 107 Boston-utkasten.** Går före allt annat här: inköpspris
+   finns, leverantören finns, inget avtal behövs. Se
+   [Distributörer](#distributörer--vem-levererar-vad).
 1. **Utöka `brand`-dimensionen i `edp-product-tag-standards.json`.** Ett enda
-   värde `brand:dji` gör varje icke-DJI-produkt hemlös. Föreslagna värden ligger
-   i `data/enterprise-brand-coverage.json`.
+   värde `brand:dji` gör varje icke-DJI-produkt hemlös, vilket är själva orsaken
+   till att sju varumärken kunnat ligga osynliga i katalogen. Föreslagna värden
+   ligger i `data/enterprise-brand-coverage.json`.
 2. **Lägg en varumärkesnivå i enterprise-arkitekturen.** Idag är noderna
    modellbaserade (Matrice 400, Zenmuse L2). Payloadsektionen behöver kunna
    grupperas både på funktion och på tillverkare.
@@ -355,6 +479,13 @@ att produkten faktiskt monterar och att distributionsavtal går att få.
   prisuppgift är en butikslistning hos en EU-distributör, inte ett inköpspris.
 - Skydios EU-täckning varierar per land och listan över undantagna länder
   ändras. Kontrollera aktuell status innan något utlovas till kund.
+- Distributörssiffrorna är avlästa ur `public.inventory` 2026-09-10 och speglar
+  vad som importerats, inte nödvändigtvis hela Boston Nordics katalog. Vad
+  befintligt avtal täcker utöver de 13 varumärkena är inte bekräftat med dem.
+- Återförsäljarlistorna hos Dronavia, Flyability, Emlid och Dronetag är
+  färskvara och kan ha ändrats sedan avläsningen.
+- Att Danmark saknas i Dronavias lista betyder att ingen dansk återförsäljare är
+  publicerad, inte att exklusivitet är utlovad. Kontrollera med dem.
 
 ## Källor
 
@@ -384,3 +515,18 @@ Tillagt för avsnittet om flygplattformar:
 - [Montel News — Norges användning av kinesiska drönare](https://montelnews.com/news/a178e32a-1786-4003-bd8c-3b1925bb89b7/norways-use-of-chinese-drones-raises-energy-security-concerns)
 - [Drone Trader — drone-in-a-box jämförelse 2026](https://blog.dronetrader.com/drone-in-a-box/)
 - [GrabaRobot — DJI Agras mot XAG](https://www.grabarobot.com/blog/china-agricultural-drone-market-2026/)
+
+Tillagt för avsnittet om distributörer:
+
+- [Dronavia — partnernätverk och återförsäljarlista](https://www.dronavia.com/partners/)
+- [Workswell — kontakt och partnernätverk](https://workswell.eu/contact/)
+- [Sniffer4D Europe (drivs av TPI)](https://sniffer4d.eu/)
+- [Boston Group — Commercial Drones](https://www.boston.dk/commercial-drones-en)
+- [Boston Group — bli återförsäljare](https://www.boston.dk/become-a-reseller)
+- [Wingtra — partnerprogram](https://wingtra.com/partner-program/)
+- [Wingtra och Boston Group i Norden](https://wingtra.com/wingtra-partners-with-boston-group-to-bring-more-orange-to-the-nordic-skies/)
+- [Autel — officiella EU-distributörer (fordonsdiagnostik)](https://www.autel.eu/official-eu-distributors/)
+- [Focus Nordic — Chasing](https://www.focusnordic.com/brands/chasing)
+- [Flyability — distributörer](https://www.flyability.com/distributors)
+- [Emlid — återförsäljare](https://emlid.com/dealers/)
+- [Dronetag — partners](https://www.dronetag.com/company/partners)

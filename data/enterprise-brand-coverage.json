@@ -8,7 +8,8 @@
     "Sorterad på sortimentshål, inte på marginal — inköpsvillkor är inte undersökta.",
     "brand-värdena är förslag till utökning av edp-product-tag-standards.json, som idag bara har brand:dji.",
     "Inga produkter ändras av den här filen.",
-    "Chasing och Parrot flyttades från tier 3 till drone_platforms i revision 1.1 — de bedöms på försäljningsmodell, inte som payloadmärken."
+    "Chasing och Parrot flyttades från tier 3 till drone_platforms i revision 1.1 — de bedöms på försäljningsmodell, inte som payloadmärken.",
+    "Revision 1.2: distributörsled tillagt. Sju varumärken visade sig redan finnas i katalogen med inköpspris från Boston Nordic."
   ],
   "current_coverage": {
     "architecture_nodes": 97,
@@ -105,7 +106,9 @@
             "globe-flight",
             "swedron"
           ],
-          "dji_ecosystem": true
+          "dji_ecosystem": true,
+          "sourcing": "Boston Nordic — 27 artiklar med inköpspris, 25 utkast. Inget avtal behövs.",
+          "action": "publicera"
         },
         {
           "brand": "brand:workswell",
@@ -137,7 +140,8 @@
             "drone-parts-center",
             "swedron"
           ],
-          "dji_ecosystem": false
+          "dji_ecosystem": false,
+          "sourcing": "Ingår i Boston Groups portfölj — fråga om befintligt avtal täcker."
         },
         {
           "brand": "brand:wisson",
@@ -183,7 +187,9 @@
             "globe-flight",
             "swedron",
             "heliguy"
-          ]
+          ],
+          "sourcing": "Boston Nordic — 31 artiklar med inköpspris, alla utkast.",
+          "action": "publicera"
         },
         {
           "brand": "brand:dronetag",
@@ -565,7 +571,7 @@
       "source": "härlett ur data/swedron-product-index.tsv via prefixmatchning på handles"
     }
   },
-  "revision": "1.1 — flygplattformar tillagda",
+  "revision": "1.2 — distributörsled tillagt, korrigerar bilden av katalogen som enmärkes",
   "drone_platforms": {
     "note": "Flygplattformar bedöms på försäljningsmodell, inte bara på produkt. Varje lagerförd plattform utöver DJI kräver eget reservdelslager, egen RMA-väg och egen servicekompetens.",
     "competitor_observation": "Ingen av jämförelseåterförsäljarna (Globe Flight, Heliguy, Drone Parts Center) säljer en konkurrerande flygplattform. De differentierar på payloads, skanners och tjänster.",
@@ -590,7 +596,8 @@
             ],
             "why": "Enda märket som fungerar som lagerförd hyllvara. Prispunkt under DJI, andra källa vid leveransstörning, och svar till kunder som av policyskäl inte får köpa DJI.",
             "channel": "etablerad EU-distributör med EU-lager",
-            "decision": "ta in"
+            "decision": "utred distributionsväg först",
+            "warning": "Autel Robotics saknar nordisk distributör. autel.eu är fordonsdiagnostik, inte drönare. Utred kanalen innan något utlovas."
           },
           {
             "brand": "brand:chasing",
@@ -601,7 +608,8 @@
             "alternatives": [
               "qysea",
               "deep-trekker"
-            ]
+            ],
+            "sourcing": "Focus Nordic AB, Göteborg — svensk distributör."
           }
         ]
       },
@@ -626,7 +634,8 @@
             "origin": "CH",
             "job_dji_cannot_do": "Fixed-wing VTOL-kartering, flerdubbel areal per flygning mot M400 med P1.",
             "why": "Efterfrågan bevisad — 33 artiklar hos Swedron.",
-            "decision": "prioritera"
+            "decision": "publicera befintliga utkast",
+            "sourcing": "Boston Nordic är Wingtras nordiska distributör — 26 artiklar med inköpspris, 9 publicerade, 17 utkast."
           },
           {
             "brand": "brand:quantum-systems",
@@ -677,7 +686,8 @@
             ],
             "price_indication_eur": 15000,
             "why": "Pivoterat mot försvar och myndighet. Värdet är kryssrutan icke-kinesisk tillverkare i upphandling, inte volymen.",
-            "decision": "bevaka"
+            "decision": "publicera befintliga utkast",
+            "sourcing": "Boston Nordic — 25 artiklar med inköpspris, 13 publicerade, 12 utkast."
           },
           {
             "brand": "brand:sky-watch",
@@ -732,5 +742,202 @@
       "driver": "Säkerhetspolitik i enskilda upphandlingar. Norges stortingsbehandling landade i att säkerhetsaspekter ska vägas in vid upphandling snarare än i förbud. Drönarincidenterna i Danmark och Tyskland hösten 2025 har gjort frågan levande hos myndighetskunder.",
       "implication": "Motiverar ett icke-kinesiskt alternativ i sortimentet, inte en ombyggnad av det."
     }
+  },
+  "distributors": {
+    "note": "Källa: public.inventory för shop_id e6ad2afc-e468-49a7-8d33-9b1837419ed8, avläst 2026-09-10, plus tillverkarnas egna återförsäljarsidor.",
+    "correction": "Tidigare utgåvor beskrev katalogen som enmärkes. Det gäller taxonomin. Sortimentet innehåller redan sju icke-DJI-varumärken med inköpspris från befintlig distributör.",
+    "existing": [
+      {
+        "name": "Boston Nordic (Boston Group A/S)",
+        "country": "DK",
+        "role": "Nordens största drönardistributör, säljkontor i SE, NO, FI",
+        "contact": {
+          "email": "salg@boston.dk",
+          "phone": "+45 4810 4810",
+          "reseller_page": "https://www.boston.dk/become-a-reseller"
+        },
+        "rows_in_inventory": 1086,
+        "all_rows_priced": true,
+        "currency": "SEK",
+        "supplies_now": [
+          {
+            "brand": "DJI",
+            "rows": 639,
+            "active": 199,
+            "draft": 388
+          },
+          {
+            "brand": "PGYTECH",
+            "rows": 109,
+            "active": 70,
+            "draft": 39
+          },
+          {
+            "brand": "Pix4D",
+            "rows": 31,
+            "active": 0,
+            "draft": 31
+          },
+          {
+            "brand": "PolarPro",
+            "rows": 30,
+            "active": 3,
+            "draft": 27
+          },
+          {
+            "brand": "CZI",
+            "rows": 27,
+            "active": 2,
+            "draft": 25
+          },
+          {
+            "brand": "Wingtra",
+            "rows": 26,
+            "active": 9,
+            "draft": 17
+          },
+          {
+            "brand": "Parrot",
+            "rows": 25,
+            "active": 13,
+            "draft": 12
+          },
+          {
+            "brand": "Tundra",
+            "rows": 12,
+            "active": 2,
+            "draft": 10
+          },
+          {
+            "brand": "Livox",
+            "rows": 9,
+            "active": 2,
+            "draft": 7
+          },
+          {
+            "brand": "FlyFire",
+            "rows": 7,
+            "active": 2,
+            "draft": 5
+          },
+          {
+            "brand": "DBOX",
+            "rows": 2
+          },
+          {
+            "brand": "Arastelle",
+            "rows": 1,
+            "active": 0,
+            "draft": 1
+          },
+          {
+            "brand": "PowerVisio",
+            "rows": 1,
+            "active": 1,
+            "draft": 0
+          }
+        ],
+        "portfolio_not_yet_imported": [
+          "EcoFlow",
+          "Phase One",
+          "Sony",
+          "Canon",
+          "Hasselblad",
+          "Obsbot"
+        ],
+        "action": "Mejla och fråga vad mer som ryms i befintligt avtal. EcoFlow och Phase One först."
+      },
+      {
+        "name": "InnPro",
+        "country": "PL",
+        "rows_in_inventory": 295,
+        "supplies_now": "Puluz- och DJI-tillbehör, varumärkesfält saknas",
+        "note": "Är även auktoriserad Dronavia-återförsäljare — möjlig andraväg dit."
+      },
+      {
+        "name": "Sunsky",
+        "country": "CN",
+        "rows_in_inventory": 7843,
+        "supplies_now": "Dropship, billiga tillbehör (Puluz, STARTRC, Sunnylife, JSR)",
+        "note": "Inte en enterprise-kanal."
+      }
+    ],
+    "publish_now": {
+      "total_non_dji_drafts_with_purchase_price": 107,
+      "breakdown": {
+        "Pix4D": 31,
+        "CZI": 25,
+        "Wingtra": 17,
+        "Parrot": 12,
+        "Tundra": 10,
+        "Livox": 7,
+        "FlyFire": 5
+      },
+      "blocker": "Ingen. Inköpspris, leverantör och avtal finns redan.",
+      "priority": 0
+    },
+    "needs_new_agreement": [
+      {
+        "brand": "brand:dronavia",
+        "model": "Endast auktoriserade återförsäljare, ingen direktförsäljning",
+        "route": "https://www.dronavia.com/partners/ — ansökningsformulär",
+        "nordic_coverage": {
+          "SE": [
+            "AMKVO AB / dronarbutiken.se, Uppsala",
+            "Scandinavian Drone AB, Mellbystrand"
+          ],
+          "NO": [
+            "ROMVESEN, Rugsund"
+          ],
+          "FI": [
+            "Skydata OY, Espoo"
+          ],
+          "DK": []
+        },
+        "opening": "Danmark saknar återförsäljare — passar /dk-marknaden. Sverige har två, räkna med konkurrens.",
+        "note": "Dronavia distribuerar även ScoutDI Scout 137 (norsk inspektionsdrönare för slutna utrymmen)."
+      },
+      {
+        "brand": "brand:workswell",
+        "model": "Direkt från tillverkaren i Prag, partnernätverk utan landsexklusivitet",
+        "route": "sales@workswell.eu, +420 725 955 464",
+        "nordic_coverage": "Ingen nordisk återförsäljare hittad"
+      },
+      {
+        "brand": "brand:sniffer4d",
+        "model": "Regionala distributörer",
+        "route": "Direkt till Soarability, eller via TPI Sp. z o.o. (Warszawa) som driver sniffer4d.eu",
+        "nordic_coverage": "TPI täcker CZ, LT, PL, RO, SK — inte Norden"
+      },
+      {
+        "brand": "brand:chasing",
+        "model": "Distributör per marknad",
+        "route": "Focus Nordic AB, Göteborg",
+        "nordic_coverage": "Täckt",
+        "note": "Enklaste plattformsutökningen — distributören finns i Sverige."
+      },
+      {
+        "brand": "brand:emlid",
+        "model": "Återförsäljarnätverk plus egen EU-butik",
+        "route": "https://emlid.com/dealers/"
+      },
+      {
+        "brand": "brand:dronetag",
+        "model": "Uttalat distributörsprogram med marginal och marknadsstöd",
+        "route": "https://www.dronetag.com/company/partners"
+      },
+      {
+        "brand": "brand:flyability",
+        "model": "Distributörsnätverk",
+        "route": "https://www.flyability.com/distributors",
+        "requirement": "Demo, reservdelar, service, underhåll och utbildning"
+      },
+      {
+        "brand": "brand:autel",
+        "model": "Oklar i Norden",
+        "route": "salesoffice.eu@autel.com",
+        "warning": "autel.eu är Autel Intelligent Technology (fordonsdiagnostik), inte Autel Robotics. Svensk autel.eu-distributör Skantz Diagnosverktyg säljer ADAS och diagnostik, inte drönare. Autel Robotics saknar nordisk distributör."
+      }
+    ]
   }
 }
