@@ -31,6 +31,13 @@
             "text": "Mätning med fysisk kontakt: 20 N anliggning i 30 sekunder med kraftåterkoppling i realtid."
           }
         },
+        "solution_5": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-S1 — hela tvättekipaget",
+            "text": "Systempaketet för fasadtvätt: AP3-P3-robot, DJI Matrice 400 och DIC-vattenrening i ett."
+          }
+        },
         "benefit_1": {
           "type": "benefit",
           "settings": {
@@ -61,6 +68,7 @@
         "solution_2",
         "solution_3",
         "solution_4",
+        "solution_5",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -73,7 +81,7 @@
         "eyebrow": "Wisson",
         "title": "Wisson Orion — flygburna robotsystem",
         "text": "Wisson Orion gör industridrönaren till en arbetsmaskin. Pliabot-tekniken bygger på mjuka bioniska muskler med pneumatisk drivning, vilket ger armar som både böjer sig och teleskoperar — och som tål att slå emot utan att flygningen havererar.",
-        "solutions_heading": "Fyra serier",
+        "solutions_heading": "Fyra serier och ett färdigt paket",
         "benefits_heading": "Därför Pliabot",
         "color_scheme": "scheme-edp",
         "padding_top": 36,

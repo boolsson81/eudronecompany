@@ -400,5 +400,27 @@
    "name_en": "Lightning Protection Conductivity Testing",
    "source": "https://www.wissonrobotics.com/en/h-col-417.html"
   }
+ ],
+ "systems": [
+  {
+   "code": "AP3-S1",
+   "name_en": "Orion AP3-S1 Pliabot® Aerial Tethered Cleaning System",
+   "source": "https://www.wissonrobotics.com/en/h-nd-305.html",
+   "core_modules_en": [
+    "AP3-P3 Pliabot® Aerial Tethered Cleaning Robot",
+    "DJI Matrice 400 drone",
+    "AP-P Series dedicated dynamic intelligent control (DIC) water treatment system"
+   ],
+   "supporting_components_en": [
+    "AP-P Series dedicated water management system",
+    "AP-P Series dedicated curtain wall cleaning agent"
+   ],
+   "applications_en": [
+    "Building exterior wall cleaning",
+    "Tower cleaning",
+    "Other high-altitude cleaning scenarios"
+   ],
+   "note": "Paketnamn, inte en egen maskin. Delarna säljs var för sig i butiken."
+  }
  ]
 }

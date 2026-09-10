@@ -6,7 +6,7 @@
   "body": "<p>Wisson Orion gör industridrönaren till en arbetsmaskin. Pliabot-tekniken bygger på mjuka bioniska muskler med pneumatisk drivning, vilket ger armar som både böjer sig och teleskoperar — och som tål att slå emot utan att flygningen havererar.</p>",
   "seo": {
    "title": "Wisson Orion — flygburna robotsystem | EU Drone Company",
-   "description": "Pliabot-baserade robotarmar, gripdon, sprutmoduler och tvättsystem för DJI-industridrönare. Offert, utbildning och support på svenska."
+   "description": "Pliabot-baserade robotarmar, gripdon, sprutmoduler och fasadtvättsystem för DJI-industridrönare. Offert, utbildning och support på svenska."
   }
  },
  {
@@ -47,6 +47,16 @@
   "seo": {
    "title": "Wisson D-serien — flygburen kontaktinspektion | EU Drone Company",
    "description": "AP3-D1 kontaktinspektionsrobot: 20 N anliggning i 30 sekunder, kraftåterkoppling i realtid och inbyggd färgmarkering."
+  }
+ },
+ {
+  "handle": "wisson-ap3-s1",
+  "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem",
+  "templateSuffix": "wisson-ap3-s1",
+  "body": "<p>AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Paketet består av tre kärnmoduler: AP3-P3-roboten, en DJI Matrice 400 och AP-P-seriens DIC-vattenrening. Till det hör vattenhantering och rengöringsmedel. Vi säljer delarna var för sig, men den som ska börja från noll behöver alla tre.</p>",
+  "seo": {
+   "title": "Wisson AP3-S1 — komplett fasadtvättsystem | EU Drone Company",
+   "description": "AP3-S1 är Wissons systempaket för fasadtvätt: AP3-P3-robot, DJI Matrice 400 och DIC-vattenrening, med slang, vinschar och rengöringsmedel."
   }
  },
  {

@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-P3 tvättrobot",
+            "text": "Pliabot-leder, 40° gummiskrapa och 60° vertikal sprutjustering. Arbetar tätt intill ytan i stället för att spola på avstånd."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "DJI Matrice 400",
+            "text": "Flygplattformen som bär roboten. AP3-P3 är PSDK-certifierad för serieproduktion på M400."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "AP-P DIC-vattenrening",
+            "text": "Dubbelpatenterad rening som ger medicinskt rent vatten. Ytan torkar utan ränder och inget kemikalieavfall uppstår."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "AP-P vattenhanteringssystem"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "AP-P rengöringsmedel för glasfasad"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Slangvinsch och säkerhetslinvinsch"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Högtrycksslang på 70 meter med tillhörande kopplingar"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson",
+        "breadcrumb_link": "/pages/wisson",
+        "eyebrow": "Wisson systempaket",
+        "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem",
+        "text": "AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Paketet består av tre kärnmoduler: AP3-P3-roboten, en DJI Matrice 400 och AP-P-seriens DIC-vattenrening. Till det hör vattenhantering och rengöringsmedel. Vi säljer delarna var för sig, men den som ska börja från noll behöver alla tre.",
+        "solutions_heading": "Tre kärnmoduler",
+        "benefits_heading": "Kringutrustning i paketet",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Sätt ihop ett AP3-S1",
+        "text": "Paketet konfigureras efter byggnad, vattentillgång och om ni redan flyger en M400. Berätta om objektet så återkommer vi med innehåll och offert.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact"
+  ]
+}

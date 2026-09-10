@@ -49,14 +49,26 @@ sitt inköpspris så snart frakten är ifylld. Kvar att be Wisson om är produkt
 |---|---|
 | **Orion CP-C1** repdriven fasadtvättrobot | Ny lansering utan egen produktsida. Ingen drönarprodukt — den hänger i rep längs fasaden, 0–250 m. Egen kategori. |
 | **Orion PWS** intelligent arbetsstation | Repdriven fasadplattform, inte en drönarmodul. Lanserad samtidigt som CP-C1. |
-| **AP3-S1** system | Paketnamn för AP3-P3-roboten plus DJI Matrice plus vattenrening. Vi säljer redan delarna var för sig; modullistan är inte bekräftad från en produktsida. |
 | **AP3-P3 系留喷漆系统** (`/h-col-398.html`) | Målningsvariant av AP3-P3. Butiken har tvättvarianten. Oklart om det är en egen artikel eller en konfiguration. |
 | **CF1, CS1, hemmaladdare** | Automatiska laddrobotar för elbilar, tillverkarens Monos-serie. En annan bransch än drönare. |
 
+## AP3-S1
+
+Modullistan är bekräftad ur Wissons egen text: AP3-S1 består av **AP3-P3-roboten,
+en DJI Matrice 400 och AP-P-seriens DIC-vattenrening**, med vattenhantering och
+rengöringsmedel som kringutrustning. Källa `/en/h-nd-305.html`, nu i
+`data/wisson-source-extract.json` under `systems`.
+
+Paketet har fått en egen sida, `wisson-ap3-s1`, opublicerad som övriga
+Wisson-sidor. Den beskriver de tre kärnmodulerna och kringutrustningen, och säger
+uttryckligen att AP3-S1 inte är en egen maskin utan ett namn på ekipaget. Delarna
+säljs vidare var för sig; ingen paketprodukt är skapad.
+
 ## Sidor
 
-P-seriesidan listar nu sex system i stället för fyra, och dess SEO-beskrivning är
-uppdaterad i butiken. Temamallarna under `theme/templates/` är regenererade men
+Wisson-startsidan länkar nu AP3-S1 vid sidan av de fyra serierna. P-seriesidan
+listar sex system i stället för fyra. Båda sidornas SEO-beskrivningar är
+uppdaterade i butiken. Temamallarna under `theme/templates/` är regenererade men
 måste deployas separat med `node scripts/push-edp-theme.mjs`.
 
 Inga nya landningssidor är byggda. Om CP-C1 och PWS ska säljas behöver de en egen
@@ -68,4 +80,5 @@ Orion-sidorna.
 1. Ska laddrobotarna (CF1, CS1, hemmaladdare) säljas alls? De ligger utanför
    drönarsortimentet.
 2. Ska CP-C1 och PWS läggas upp? Då behövs en egen kategori och egna sidor.
-3. Ska AP3-S1 säljas som paket vid sidan av de enskilda delarna?
+3. Ska AP3-S1 också bli en köpbar paketprodukt, eller räcker sidan plus de
+   enskilda artiklarna?
