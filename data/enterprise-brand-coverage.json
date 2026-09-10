@@ -7,19 +7,48 @@
     "Prioritering av varumärken för ett heltäckande enterprise-sortiment.",
     "Sorterad på sortimentshål, inte på marginal — inköpsvillkor är inte undersökta.",
     "brand-värdena är förslag till utökning av edp-product-tag-standards.json, som idag bara har brand:dji.",
-    "Inga produkter ändras av den här filen."
+    "Inga produkter ändras av den här filen.",
+    "Chasing och Parrot flyttades från tier 3 till drone_platforms i revision 1.1 — de bedöms på försäljningsmodell, inte som payloadmärken."
   ],
   "current_coverage": {
     "architecture_nodes": 97,
-    "architecture_brands": ["dji"],
-    "tag_standard_brands": ["brand:dji"],
+    "architecture_brands": [
+      "dji"
+    ],
+    "tag_standard_brands": [
+      "brand:dji"
+    ],
     "non_dji_in_catalog": [
-      { "brand": "wisson", "products": 8, "state": "draft" },
-      { "brand": "jlidrone", "products": 16, "state": "draft" },
-      { "brand": "hikmicro", "products": 3, "state": "draft" },
-      { "brand": "4hawks", "products": 2, "state": "draft" },
-      { "brand": "lifthor", "products": 1, "state": "draft" },
-      { "brand": "hoodman", "products": 1, "state": "draft" }
+      {
+        "brand": "wisson",
+        "products": 8,
+        "state": "draft"
+      },
+      {
+        "brand": "jlidrone",
+        "products": 16,
+        "state": "draft"
+      },
+      {
+        "brand": "hikmicro",
+        "products": 3,
+        "state": "draft"
+      },
+      {
+        "brand": "4hawks",
+        "products": 2,
+        "state": "draft"
+      },
+      {
+        "brand": "lifthor",
+        "products": 1,
+        "state": "draft"
+      },
+      {
+        "brand": "hoodman",
+        "products": 1,
+        "state": "draft"
+      }
     ]
   },
   "tiers": [
@@ -32,9 +61,18 @@
           "name": "Dronavia",
           "origin": "FR",
           "category": "safety",
-          "products": ["fallskärm", "flight termination system", "strobes", "positionsljus"],
+          "products": [
+            "fallskärm",
+            "flight termination system",
+            "strobes",
+            "positionsljus"
+          ],
           "why": "Krävs för specifik kategori/SORA. Officiell DJI Eco Partner.",
-          "carried_by": ["globe-flight", "drone-parts-center", "swedron"],
+          "carried_by": [
+            "globe-flight",
+            "drone-parts-center",
+            "swedron"
+          ],
           "dji_ecosystem": true
         },
         {
@@ -42,9 +80,14 @@
           "name": "Soarability / Sniffer4D",
           "origin": "PL",
           "category": "payload-sensor",
-          "products": ["gasdetektion", "gaskartering"],
+          "products": [
+            "gasdetektion",
+            "gaskartering"
+          ],
           "why": "Ingen DJI-motsvarighet. Energi, deponi, räddningstjänst.",
-          "carried_by": ["drone-parts-center"],
+          "carried_by": [
+            "drone-parts-center"
+          ],
           "dji_ecosystem": true
         },
         {
@@ -52,9 +95,16 @@
           "name": "CZI",
           "origin": "CN",
           "category": "payload-utility",
-          "products": ["strålkastare", "högtalare/LRAD", "lastsläpp"],
+          "products": [
+            "strålkastare",
+            "högtalare/LRAD",
+            "lastsläpp"
+          ],
           "why": "Mest spridda tredjeparts-payloadmärket bland DJI-återförsäljare. Täcker även äldre plattformar.",
-          "carried_by": ["globe-flight", "swedron"],
+          "carried_by": [
+            "globe-flight",
+            "swedron"
+          ],
           "dji_ecosystem": true
         },
         {
@@ -62,9 +112,15 @@
           "name": "Workswell",
           "origin": "CZ",
           "category": "payload-thermal",
-          "products": ["WIRIS termalkameror", "optisk gasavbildning (OGI)"],
+          "products": [
+            "WIRIS termalkameror",
+            "optisk gasavbildning (OGI)"
+          ],
           "why": "Industriell termografi över Zenmuse-nivå. Europeisk tillverkning, högt snittpris.",
-          "carried_by": ["heliguy", "deltaquad"],
+          "carried_by": [
+            "heliguy",
+            "deltaquad"
+          ],
           "dji_ecosystem": false
         },
         {
@@ -72,9 +128,15 @@
           "name": "EcoFlow",
           "origin": "CN",
           "category": "power",
-          "products": ["fältström", "laddstationer"],
+          "products": [
+            "fältström",
+            "laddstationer"
+          ],
           "why": "Hög attachrate till Matrice, Agras och FlyCart.",
-          "carried_by": ["drone-parts-center", "swedron"],
+          "carried_by": [
+            "drone-parts-center",
+            "swedron"
+          ],
           "dji_ecosystem": false
         },
         {
@@ -82,9 +144,15 @@
           "name": "Wisson",
           "origin": "CN",
           "category": "payload-manipulator",
-          "products": ["flygburen manipulator", "rengöringssystem"],
+          "products": [
+            "flygburen manipulator",
+            "rengöringssystem"
+          ],
           "why": "Redan importerad som utkast. Unikt i Norden. Blockerare är inköpspris, inte innehåll.",
-          "carried_by": ["globe-flight", "drone-parts-center"],
+          "carried_by": [
+            "globe-flight",
+            "drone-parts-center"
+          ],
           "dji_ecosystem": true,
           "action": "publicera"
         }
@@ -94,86 +162,575 @@
       "tier": 2,
       "label": "Gör oss konkurrenskraftiga mot nordiska konkurrenter",
       "brands": [
-        { "brand": "brand:emlid", "name": "Emlid", "origin": "EE", "category": "rtk-gnss", "why": "Följeslagare till varje P1- och L2/L3-affär.", "carried_by": ["swedron", "heliguy"] },
-        { "brand": "brand:pix4d", "name": "Pix4D", "origin": "CH", "category": "software", "why": "Licensmarginal utan lagerbindning.", "carried_by": ["globe-flight", "swedron", "heliguy"] },
-        { "brand": "brand:dronetag", "name": "Dronetag", "origin": "CZ", "category": "remote-id", "why": "EU 2019/945 kräver Direct Remote ID över 250 g. Regulatoriskt driven efterfrågan.", "carried_by": [] },
-        { "brand": "brand:elistair", "name": "Elistair", "origin": "FR", "category": "tether", "why": "Uthållig övervakning för polis, räddningstjänst, evenemang.", "carried_by": ["globe-flight"] },
-        { "brand": "brand:xgrids", "name": "XGRIDS", "origin": "CN", "category": "lidar-slam", "why": "Handhållen SLAM-LiDAR. Egen huvudkategori hos Globe Flight.", "carried_by": ["globe-flight"] },
-        { "brand": "brand:emesent", "name": "Emesent", "origin": "AU", "category": "lidar-slam", "why": "Hovermap. Alternativ till XGRIDS, finns i DJI:s ekosystemkatalog.", "carried_by": [], "dji_ecosystem": true },
-        { "brand": "brand:hprc", "name": "HPRC", "origin": "IT", "category": "cases", "why": "Väska säljs på nästan varje enterprise-order. Välj ett väskmärke, inte fyra.", "alternatives": ["tomcase", "b-w-international", "peli", "nanuk"], "carried_by": ["globe-flight", "swedron"] },
-        { "brand": "brand:sandisk", "name": "SanDisk", "origin": "US", "category": "storage", "why": "V90 och CFexpress är reellt tillbehörsköp till P1 och H30T.", "alternatives": ["lexar", "delkin", "angelbird"], "carried_by": ["globe-flight"] }
+        {
+          "brand": "brand:emlid",
+          "name": "Emlid",
+          "origin": "EE",
+          "category": "rtk-gnss",
+          "why": "Följeslagare till varje P1- och L2/L3-affär.",
+          "carried_by": [
+            "swedron",
+            "heliguy"
+          ]
+        },
+        {
+          "brand": "brand:pix4d",
+          "name": "Pix4D",
+          "origin": "CH",
+          "category": "software",
+          "why": "Licensmarginal utan lagerbindning.",
+          "carried_by": [
+            "globe-flight",
+            "swedron",
+            "heliguy"
+          ]
+        },
+        {
+          "brand": "brand:dronetag",
+          "name": "Dronetag",
+          "origin": "CZ",
+          "category": "remote-id",
+          "why": "EU 2019/945 kräver Direct Remote ID över 250 g. Regulatoriskt driven efterfrågan.",
+          "carried_by": []
+        },
+        {
+          "brand": "brand:elistair",
+          "name": "Elistair",
+          "origin": "FR",
+          "category": "tether",
+          "why": "Uthållig övervakning för polis, räddningstjänst, evenemang.",
+          "carried_by": [
+            "globe-flight"
+          ]
+        },
+        {
+          "brand": "brand:xgrids",
+          "name": "XGRIDS",
+          "origin": "CN",
+          "category": "lidar-slam",
+          "why": "Handhållen SLAM-LiDAR. Egen huvudkategori hos Globe Flight.",
+          "carried_by": [
+            "globe-flight"
+          ]
+        },
+        {
+          "brand": "brand:emesent",
+          "name": "Emesent",
+          "origin": "AU",
+          "category": "lidar-slam",
+          "why": "Hovermap. Alternativ till XGRIDS, finns i DJI:s ekosystemkatalog.",
+          "carried_by": [],
+          "dji_ecosystem": true
+        },
+        {
+          "brand": "brand:hprc",
+          "name": "HPRC",
+          "origin": "IT",
+          "category": "cases",
+          "why": "Väska säljs på nästan varje enterprise-order. Välj ett väskmärke, inte fyra.",
+          "alternatives": [
+            "tomcase",
+            "b-w-international",
+            "peli",
+            "nanuk"
+          ],
+          "carried_by": [
+            "globe-flight",
+            "swedron"
+          ]
+        },
+        {
+          "brand": "brand:sandisk",
+          "name": "SanDisk",
+          "origin": "US",
+          "category": "storage",
+          "why": "V90 och CFexpress är reellt tillbehörsköp till P1 och H30T.",
+          "alternatives": [
+            "lexar",
+            "delkin",
+            "angelbird"
+          ],
+          "carried_by": [
+            "globe-flight"
+          ]
+        }
       ]
     },
     {
       "tier": 3,
       "label": "Globe Flight-paritet — opportunistiskt eller kunddrivet",
       "brands": [
-        { "brand": "brand:micasense", "name": "MicaSense (AgEagle)", "category": "payload-multispectral", "why": "Jordbruk och skogsbruk. Finns redan i gapimporten." },
-        { "brand": "brand:yusense", "name": "Yusense", "category": "payload-multispectral", "why": "Alternativ till MicaSense, M400-anpassad.", "dji_ecosystem": true },
-        { "brand": "brand:yellowscan", "name": "YellowScan", "origin": "FR", "category": "lidar-survey", "why": "Survey-klass över L2/L3." },
-        { "brand": "brand:chasing", "name": "Chasing Innovation", "category": "rov", "why": "Undervattens-ROV för hamn, energi, räddning. 133 artiklar hos Swedron, noll hos oss." },
-        { "brand": "brand:parrot", "name": "Parrot", "origin": "FR", "category": "drone", "why": "Icke-kinesisk kryssruta i offentlig upphandling." },
-        { "brand": "brand:flarm", "name": "FLARM", "origin": "CH", "category": "daa", "why": "Elektronisk synlighet, krav vid BVLOS.", "alternatives": ["uavionix"] },
-        { "brand": "brand:hikmicro", "name": "Hikmicro", "category": "thermal-handheld", "why": "Påbörjat via NEOS-importen. Kompletterar drönartermografi." },
-        { "brand": "brand:nitecore", "name": "Nitecore", "category": "power", "why": "Volymtillbehör, låg risk.", "alternatives": ["patona", "akku-king"] },
-        { "brand": "brand:roboterwerk", "name": "Roboterwerk", "origin": "DE", "category": "accessories", "why": "Rehkitzrettung och viltsök är egen kategori på DE-marknaden.", "alternatives": ["thors-drone-world"] }
+        {
+          "brand": "brand:micasense",
+          "name": "MicaSense (AgEagle)",
+          "category": "payload-multispectral",
+          "why": "Jordbruk och skogsbruk. Finns redan i gapimporten."
+        },
+        {
+          "brand": "brand:yusense",
+          "name": "Yusense",
+          "category": "payload-multispectral",
+          "why": "Alternativ till MicaSense, M400-anpassad.",
+          "dji_ecosystem": true
+        },
+        {
+          "brand": "brand:yellowscan",
+          "name": "YellowScan",
+          "origin": "FR",
+          "category": "lidar-survey",
+          "why": "Survey-klass över L2/L3."
+        },
+        {
+          "brand": "brand:flarm",
+          "name": "FLARM",
+          "origin": "CH",
+          "category": "daa",
+          "why": "Elektronisk synlighet, krav vid BVLOS.",
+          "alternatives": [
+            "uavionix"
+          ]
+        },
+        {
+          "brand": "brand:hikmicro",
+          "name": "Hikmicro",
+          "category": "thermal-handheld",
+          "why": "Påbörjat via NEOS-importen. Kompletterar drönartermografi."
+        },
+        {
+          "brand": "brand:nitecore",
+          "name": "Nitecore",
+          "category": "power",
+          "why": "Volymtillbehör, låg risk.",
+          "alternatives": [
+            "patona",
+            "akku-king"
+          ]
+        },
+        {
+          "brand": "brand:roboterwerk",
+          "name": "Roboterwerk",
+          "origin": "DE",
+          "category": "accessories",
+          "why": "Rehkitzrettung och viltsök är egen kategori på DE-marknaden.",
+          "alternatives": [
+            "thors-drone-world"
+          ]
+        }
+      ],
+      "moved_to_drone_platforms": [
+        "brand:chasing",
+        "brand:parrot"
       ]
     },
     {
       "tier": 4,
       "label": "Projektdrivet — offert, inte lagerfört",
       "brands": [
-        { "brand": "brand:flyability", "name": "Flyability", "origin": "CH", "category": "drone", "why": "Elios-serien för slutna utrymmen. Ingen DJI-motsvarighet alls." },
-        { "brand": "brand:wingtra", "name": "Wingtra", "origin": "CH", "category": "drone-vtol", "why": "Storskalig kartering. 33 artiklar hos Swedron, alltså efterfrågan i Norden." },
-        { "brand": "brand:quantum-systems", "name": "Quantum Systems", "origin": "DE", "category": "drone-vtol", "why": "Tysk VTOL, EASA-certifierad, stark i offentlig sektor." },
-        { "brand": "brand:airins", "name": "AIRINS", "category": "payload-sensor", "why": "MetScan metandetektion, kopplat till EU:s metanförordning.", "dji_ecosystem": true },
-        { "brand": "brand:ofil", "name": "OFIL Systems", "category": "payload-corona", "why": "DayCor koronainspektion för kraftnät.", "dji_ecosystem": true },
-        { "brand": "brand:tundra-drone", "name": "Tundra Drone", "origin": "NO", "category": "payload-modular", "why": "Modulära payloadmoduler. Coptrz har exklusivitet i UK, Norden är öppet." }
+        {
+          "brand": "brand:flyability",
+          "name": "Flyability",
+          "origin": "CH",
+          "category": "drone",
+          "why": "Elios-serien för slutna utrymmen. Ingen DJI-motsvarighet alls."
+        },
+        {
+          "brand": "brand:wingtra",
+          "name": "Wingtra",
+          "origin": "CH",
+          "category": "drone-vtol",
+          "why": "Storskalig kartering. 33 artiklar hos Swedron, alltså efterfrågan i Norden."
+        },
+        {
+          "brand": "brand:quantum-systems",
+          "name": "Quantum Systems",
+          "origin": "DE",
+          "category": "drone-vtol",
+          "why": "Tysk VTOL, EASA-certifierad, stark i offentlig sektor."
+        },
+        {
+          "brand": "brand:airins",
+          "name": "AIRINS",
+          "category": "payload-sensor",
+          "why": "MetScan metandetektion, kopplat till EU:s metanförordning.",
+          "dji_ecosystem": true
+        },
+        {
+          "brand": "brand:ofil",
+          "name": "OFIL Systems",
+          "category": "payload-corona",
+          "why": "DayCor koronainspektion för kraftnät.",
+          "dji_ecosystem": true
+        },
+        {
+          "brand": "brand:tundra-drone",
+          "name": "Tundra Drone",
+          "origin": "NO",
+          "category": "payload-modular",
+          "why": "Modulära payloadmoduler. Coptrz har exklusivitet i UK, Norden är öppet."
+        }
       ]
     }
   ],
   "deprioritized": {
     "ndaa_platforms": {
-      "brands": ["skydio", "anzu", "freefly", "acsl"],
-      "reason": "FCC-beslutet i december 2025 gäller USA. Ingen motsvarande EU-restriktion mot DJI finns. Ta in bara om specifik kund med USA-koppling betalar för det."
+      "brands": [
+        "anzu",
+        "freefly",
+        "acsl"
+      ],
+      "reason": "FCC-beslutet i december 2025 gäller USA. Ingen motsvarande EU-restriktion mot DJI finns. Skydio och Parrot behandlas separat under drone_platforms.qualified_channel — de har ett EU-värde som ligger i upphandlingskrav, inte i NDAA."
     },
     "third_party_enterprise_batteries": {
       "reason": "Garantifråga. Reservdelar till enterprise-plattformar ska vara DJI OEM."
     },
     "photo_video_accessories": {
-      "brands": ["smallrig", "kupo", "nanlite", "peak-design", "think-tank"],
+      "brands": [
+        "smallrig",
+        "kupo",
+        "nanlite",
+        "peak-design",
+        "think-tank"
+      ],
       "reason": "Cirka 5 500 produkter hos Swedron, men det är fotohandel snarare än drönarsortiment. Se SWEDRON_GAP_2026-09-07.md."
     }
   },
   "payload_shelf": [
-    { "position": "Gimbalkamera RGB/zoom", "covered_by": "dji", "gap": false },
-    { "position": "Termisk standard", "covered_by": "dji", "gap": false },
-    { "position": "Termisk industriell/OGI", "covered_by": null, "gap": true, "recommend": ["workswell"] },
-    { "position": "LiDAR standard", "covered_by": "dji", "gap": false },
-    { "position": "LiDAR survey och SLAM", "covered_by": null, "gap": true, "recommend": ["yellowscan", "xgrids", "emesent"] },
-    { "position": "Multispektral", "covered_by": null, "gap": true, "recommend": ["micasense", "yusense"] },
-    { "position": "Gasdetektion", "covered_by": null, "gap": true, "recommend": ["sniffer4d", "airins"] },
-    { "position": "Högtalare, strålkastare, lastsläpp", "covered_by": "dji", "gap": "partial", "recommend": ["czi", "jlidrone"] },
-    { "position": "Fallskärm och FTS", "covered_by": null, "gap": true, "recommend": ["dronavia"] },
-    { "position": "Manipulator och rengöring", "covered_by": "wisson", "gap": "partial", "recommend": ["wisson"] }
+    {
+      "position": "Gimbalkamera RGB/zoom",
+      "covered_by": "dji",
+      "gap": false
+    },
+    {
+      "position": "Termisk standard",
+      "covered_by": "dji",
+      "gap": false
+    },
+    {
+      "position": "Termisk industriell/OGI",
+      "covered_by": null,
+      "gap": true,
+      "recommend": [
+        "workswell"
+      ]
+    },
+    {
+      "position": "LiDAR standard",
+      "covered_by": "dji",
+      "gap": false
+    },
+    {
+      "position": "LiDAR survey och SLAM",
+      "covered_by": null,
+      "gap": true,
+      "recommend": [
+        "yellowscan",
+        "xgrids",
+        "emesent"
+      ]
+    },
+    {
+      "position": "Multispektral",
+      "covered_by": null,
+      "gap": true,
+      "recommend": [
+        "micasense",
+        "yusense"
+      ]
+    },
+    {
+      "position": "Gasdetektion",
+      "covered_by": null,
+      "gap": true,
+      "recommend": [
+        "sniffer4d",
+        "airins"
+      ]
+    },
+    {
+      "position": "Högtalare, strålkastare, lastsläpp",
+      "covered_by": "dji",
+      "gap": "partial",
+      "recommend": [
+        "czi",
+        "jlidrone"
+      ]
+    },
+    {
+      "position": "Fallskärm och FTS",
+      "covered_by": null,
+      "gap": true,
+      "recommend": [
+        "dronavia"
+      ]
+    },
+    {
+      "position": "Manipulator och rengöring",
+      "covered_by": "wisson",
+      "gap": "partial",
+      "recommend": [
+        "wisson"
+      ]
+    }
   ],
   "benchmarks": {
     "globe-flight": {
       "market": "DE",
       "brand_count": 39,
-      "brands": ["AirInnoX", "Akku-King", "B&W International", "BLV", "CADdy Geomatics", "Chasing Innovation", "Copteruni", "CSD", "CZI", "DJI", "DJI Agricultural", "DJI Delivery", "DJI Enterprise", "Dronavia", "DroneControl", "Elistair", "Extron", "FLARM", "GF UltraThin", "Globe Protect", "Halbig", "Hexagon", "HPRC", "JLIdrone", "MicaSense", "Nitecore", "Patona", "Perspective", "PGYTECH", "Pix4D", "Restube", "Roboterwerk", "SanDisk", "Scantech", "Sony", "SWIT", "Thor's Drone World", "TomCase", "UGREEN", "WEBARO", "WISSON", "XGRIDS", "YX"],
-      "payload_subcategories": ["fallskärmssystem", "industrikameror", "Wisson-rengöringssystem", "termalkameror", "multispektralkameror", "LiDAR-sensorer", "högtalare", "strålkastare", "lastsläpp", "SDK-payloads", "handhållen LiDAR"]
+      "brands": [
+        "AirInnoX",
+        "Akku-King",
+        "B&W International",
+        "BLV",
+        "CADdy Geomatics",
+        "Chasing Innovation",
+        "Copteruni",
+        "CSD",
+        "CZI",
+        "DJI",
+        "DJI Agricultural",
+        "DJI Delivery",
+        "DJI Enterprise",
+        "Dronavia",
+        "DroneControl",
+        "Elistair",
+        "Extron",
+        "FLARM",
+        "GF UltraThin",
+        "Globe Protect",
+        "Halbig",
+        "Hexagon",
+        "HPRC",
+        "JLIdrone",
+        "MicaSense",
+        "Nitecore",
+        "Patona",
+        "Perspective",
+        "PGYTECH",
+        "Pix4D",
+        "Restube",
+        "Roboterwerk",
+        "SanDisk",
+        "Scantech",
+        "Sony",
+        "SWIT",
+        "Thor's Drone World",
+        "TomCase",
+        "UGREEN",
+        "WEBARO",
+        "WISSON",
+        "XGRIDS",
+        "YX"
+      ],
+      "payload_subcategories": [
+        "fallskärmssystem",
+        "industrikameror",
+        "Wisson-rengöringssystem",
+        "termalkameror",
+        "multispektralkameror",
+        "LiDAR-sensorer",
+        "högtalare",
+        "strålkastare",
+        "lastsläpp",
+        "SDK-payloads",
+        "handhållen LiDAR"
+      ]
     },
     "drone-parts-center": {
       "market": "BE",
       "status": "DJI Enterprise Gold Partner",
-      "brands": ["DJI", "Dronavia", "Soarability", "Wisson", "EcoFlow"]
+      "brands": [
+        "DJI",
+        "Dronavia",
+        "Soarability",
+        "Wisson",
+        "EcoFlow"
+      ]
     },
     "swedron": {
       "market": "SE",
-      "stated_brands": ["DJI", "Parrot", "Chasing Innovation", "Pix4D"],
-      "enterprise_gaps_vs_us": { "wingtra": 33, "czi": 22, "hprc": 17, "micasense": 16, "emlid": 13, "dronavia": 10 },
+      "stated_brands": [
+        "DJI",
+        "Parrot",
+        "Chasing Innovation",
+        "Pix4D"
+      ],
+      "enterprise_gaps_vs_us": {
+        "wingtra": 33,
+        "czi": 22,
+        "hprc": 17,
+        "micasense": 16,
+        "emlid": 13,
+        "dronavia": 10
+      },
       "source": "härlett ur data/swedron-product-index.tsv via prefixmatchning på handles"
+    }
+  },
+  "revision": "1.1 — flygplattformar tillagda",
+  "drone_platforms": {
+    "note": "Flygplattformar bedöms på försäljningsmodell, inte bara på produkt. Varje lagerförd plattform utöver DJI kräver eget reservdelslager, egen RMA-väg och egen servicekompetens.",
+    "competitor_observation": "Ingen av jämförelseåterförsäljarna (Globe Flight, Heliguy, Drone Parts Center) säljer en konkurrerande flygplattform. De differentierar på payloads, skanners och tjänster.",
+    "roles": [
+      {
+        "role": "stocked",
+        "label": "Hyllvara — lagerförs och säljs i webbutik",
+        "recommendation": "max ett märke",
+        "brands": [
+          {
+            "brand": "brand:autel",
+            "name": "Autel Robotics",
+            "origin": "CN",
+            "models": [
+              "EVO Max 4T V2",
+              "EVO Max 4N V2"
+            ],
+            "price_indication_eur": 5699,
+            "competes_with": [
+              "Mavic 3 Enterprise",
+              "Matrice 4T"
+            ],
+            "why": "Enda märket som fungerar som lagerförd hyllvara. Prispunkt under DJI, andra källa vid leveransstörning, och svar till kunder som av policyskäl inte får köpa DJI.",
+            "channel": "etablerad EU-distributör med EU-lager",
+            "decision": "ta in"
+          },
+          {
+            "brand": "brand:chasing",
+            "name": "Chasing Innovation",
+            "category": "underwater-rov",
+            "why": "Samma kund som drönaraffären — hamn, energi, räddning, polis. 133 artiklar hos Swedron, noll hos oss, förs även av Globe Flight.",
+            "decision": "ta in",
+            "alternatives": [
+              "qysea",
+              "deep-trekker"
+            ]
+          }
+        ]
+      },
+      {
+        "role": "quote_only",
+        "label": "Offertvara — demo och utbildning, ingen lagerhållning; säljs tillsammans med DJI",
+        "brands": [
+          {
+            "brand": "brand:flyability",
+            "name": "Flyability",
+            "origin": "CH",
+            "models": [
+              "Elios 3"
+            ],
+            "job_dji_cannot_do": "Slutna utrymmen och GPS-nekade miljöer: pannor, tankar, schakt, gruvor. Kolliderings­tålig bur.",
+            "why": "Unik, saknar substitut i DJI:s sortiment.",
+            "decision": "prioritera"
+          },
+          {
+            "brand": "brand:wingtra",
+            "name": "Wingtra",
+            "origin": "CH",
+            "job_dji_cannot_do": "Fixed-wing VTOL-kartering, flerdubbel areal per flygning mot M400 med P1.",
+            "why": "Efterfrågan bevisad — 33 artiklar hos Swedron.",
+            "decision": "prioritera"
+          },
+          {
+            "brand": "brand:quantum-systems",
+            "name": "Quantum Systems",
+            "origin": "DE",
+            "job_dji_cannot_do": "Samma segment som Wingtra, tysk tillverkning, EASA-certifierad.",
+            "decision": "bevaka"
+          },
+          {
+            "brand": "brand:griff-aviation",
+            "name": "Griff Aviation",
+            "origin": "NO",
+            "job_dji_cannot_do": "Tunglyft över FlyCart-klassen, Griff 30 lyfter 30 kg nyttolast.",
+            "decision": "avstå tills vidare"
+          },
+          {
+            "brand": "brand:acecore",
+            "name": "Acecore",
+            "origin": "NL",
+            "job_dji_cannot_do": "Tunglyft och specialbyggen, europeisk tillverkning.",
+            "decision": "avstå tills vidare"
+          }
+        ]
+      },
+      {
+        "role": "qualified_channel",
+        "label": "Kvalificerad kanal — kräver avtal och kundaffär, inte hyllplats",
+        "brands": [
+          {
+            "brand": "brand:skydio",
+            "name": "Skydio",
+            "origin": "US",
+            "models": [
+              "X10",
+              "X10D",
+              "X10 Dock"
+            ],
+            "why": "Ledande DFR-plattform, över 1 000 dockor utplacerade första året. Enterprise-only via auktoriserad återförsäljare, vissa EU-länder undantagna.",
+            "decision": "bevaka — ta in vid namngiven myndighetskund"
+          },
+          {
+            "brand": "brand:parrot",
+            "name": "Parrot",
+            "origin": "FR",
+            "models": [
+              "ANAFI USA",
+              "ANAFI UKR"
+            ],
+            "price_indication_eur": 15000,
+            "why": "Pivoterat mot försvar och myndighet. Värdet är kryssrutan icke-kinesisk tillverkare i upphandling, inte volymen.",
+            "decision": "bevaka"
+          },
+          {
+            "brand": "brand:sky-watch",
+            "name": "Sky-Watch",
+            "origin": "DK",
+            "why": "Dansk, omsättning drygt 520 MDKK 2025, men säljer försvarssystem direkt. Relevant marknadskunskap för DK, inte återförsäljarsortiment.",
+            "decision": "avstå"
+          }
+        ]
+      },
+      {
+        "role": "adjacent",
+        "label": "Närliggande segment",
+        "brands": [
+          {
+            "brand": "brand:swellpro",
+            "name": "Swellpro",
+            "category": "waterproof-drone",
+            "why": "Sjöräddning och fiske, nordisk relevans.",
+            "decision": "bevaka"
+          },
+          {
+            "brand": "brand:heisha",
+            "name": "Heisha",
+            "category": "drone-dock",
+            "why": "Dockor som passar befintliga DJI Mavic och Phantom samt Autel, Skydio och Parrot. Tillbehör som utökar värdet på drönare vi redan säljer, inte konkurrent till Dock 3.",
+            "decision": "utvärdera"
+          },
+          {
+            "brand": "brand:hextronics",
+            "name": "Hextronics",
+            "category": "drone-dock",
+            "why": "Batteribytande dockor, under 90 sekunder per byte.",
+            "decision": "bevaka"
+          },
+          {
+            "brand": "brand:xag",
+            "name": "XAG",
+            "category": "agriculture",
+            "models": [
+              "P150",
+              "V40"
+            ],
+            "why": "Enda reella Agras-alternativet, något under DJI i pris. Men servicenätet avgör köpbeslutet i sprutdrönare och där är DJI ohotat i Norden.",
+            "decision": "avstå tills kund efterfrågar"
+          }
+        ]
+      }
+    ],
+    "regulatory_context": {
+      "eu": "Ingen EU-motsvarighet till FCC-beslutet i december 2025. DJI får säljas och flygas fritt i EU.",
+      "driver": "Säkerhetspolitik i enskilda upphandlingar. Norges stortingsbehandling landade i att säkerhetsaspekter ska vägas in vid upphandling snarare än i förbud. Drönarincidenterna i Danmark och Tyskland hösten 2025 har gjort frågan levande hos myndighetskunder.",
+      "implication": "Motiverar ett icke-kinesiskt alternativ i sortimentet, inte en ombyggnad av det."
     }
   }
 }

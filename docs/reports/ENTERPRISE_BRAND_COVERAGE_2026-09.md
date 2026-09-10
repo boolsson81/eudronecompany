@@ -5,14 +5,22 @@ payloads, tillbehör och reservdelar. Underlag för inköps- och taxonomibeslut.
 
 ## Kortsvaret
 
-**Sortimentet blir inte heltäckande av fler drönarmärken. Det blir heltäckande
-av fler payload- och säkerhetsmärken ovanpå DJI.**
+**Tyngdpunkten ligger på payload- och säkerhetsmärken ovanpå DJI. Men
+flygplattformarna behöver också en plan — bara inte i form av en hylla full av
+konkurrerande drönare.**
 
 DJI täcker flygplattform, gimbalkameror, batterier och reservdelar. Det DJI inte
 gör — och som kunden idag måste gå till en konkurrent för — är fallskärm/FTS,
 gasdetektion, industriell termografi, tether, mät-LiDAR i survey-klass,
 RTK-basstationer, väskor och fältström. Varje sådan lucka är en förlorad affär på
 en drönare vi redan har på hyllan.
+
+På plattformssidan gäller en annan logik, som utvecklas under
+[Drönare — flygplattformar](#drönare--flygplattformar): **ett** lagerfört
+alternativ (Autel), **två** offertvaror som säljs tillsammans med DJI snarare än
+istället för (Flyability, Wingtra), och undervattens-ROV som närliggande
+segment (Chasing). Varje ytterligare lagerförd plattform kostar ett eget
+reservdelslager och en egen servicekedja.
 
 Referenspunkten: **Drone Parts Center** (belgisk DJI Enterprise Gold Partner) når
 full enterprise-trovärdighet med DJI plus fyra partnervarumärken — Dronavia,
@@ -106,17 +114,17 @@ princip varje enterprise-order. Vi behöver ett, inte fyra.
 **Minneskort — SanDisk eller Lexar.** V90 och CFexpress är ett reellt
 tillbehörsköp till P1 och H30T, inte en konsumentartikel.
 
-## Nivå 3 — Globe Flight-paritet (ytterligare 8)
+## Nivå 3 — Globe Flight-paritet (ytterligare 7)
 
 Tas in när nivå 1 och 2 sitter, eller opportunistiskt när en kundaffär betalar
-för det.
+för det. Chasing och Parrot låg i den här listan i första utgåvan men behandlas
+nu under [Drönare — flygplattformar](#drönare--flygplattformar), eftersom de
+bedöms på försäljningsmodell snarare än som payloadmärken.
 
 | Varumärke | Vad | Varför |
 |---|---|---|
 | MicaSense (AgEagle) / Yusense | Multispektralkameror | Jordbruk och skogsbruk; MicaSense finns redan i gapimporten |
 | YellowScan | UAV-LiDAR i survey-klass | Franskt, över L2/L3-nivån, mätkonsulter |
-| Chasing Innovation | Undervattens-ROV | Hamn, energi, räddning; 133 artiklar hos Swedron, noll hos oss |
-| Parrot | Fransk drönartillverkare | Den icke-kinesiska kryssrutan i offentlig upphandling |
 | FLARM / uAvionix | Elektronisk synlighet, DAA | Krav vid BVLOS-tillstånd |
 | Hikmicro | Handhållen termografi | Redan påbörjat via NEOS-importen; kompletterar drönartermografi |
 | Nitecore / Patona | Batterier och laddning | Volymtillbehör, låg risk |
@@ -124,25 +132,115 @@ för det.
 
 ## Per kategori
 
-### Drönare
+### Drönare — flygplattformar
 
-Här ska vi vara återhållsamma. DJI täcker multirotor från Mini till M400, Agras
-och FlyCart. Att lägga till fler flygplattformar ger lågt utbyte per krona:
-dyra demoexemplar, tung konsultativ försäljning, låg volym.
+Den här sektionen är utökad 2026-09-10 efter påpekande att den första
+genomgången avfärdade flygplattformarna för lättvindigt.
 
-Tre undantag, alla projektdrivna och offertbaserade snarare än lagerförda:
+#### Vad konkurrenterna faktiskt gör
 
-- **Flyability** (Schweiz), Elios-serien — inspektion i slutna utrymmen. Ingen
-  DJI-motsvarighet överhuvudtaget. Pannor, tankar, schakt, gruvor.
-- **Wingtra** (Schweiz) och **Quantum Systems** (Tyskland) — VTOL för storskalig
-  kartering. Swedron för 33 Wingtra-artiklar, så efterfrågan finns i Norden.
-- **Parrot** (Frankrike) — inte för prestandan, utan för att vinna upphandlingar
-  där kinesisk hårdvara är utesluten.
+Ingen av de enterprise-återförsäljare vi jämför oss med säljer en konkurrerande
+flygplattform. Globe Flights 39 varumärken innehåller noll icke-DJI-drönare —
+Chasing är undervattens-ROV, resten är payloads och tillbehör. Heliguy, störst i
+Storbritannien, har `/dji-drones-shop/` som butiksadress och lyfter XGRIDS,
+inte en annan drönare, till egen menypost. Drone Parts Center är ren DJI plus
+fyra payloadmärken.
 
-NDAA-märkena (Skydio, Anzu, Freefly, ACSL) är i praktiken irrelevanta för
-EU-kunder. FCC:s beslut i december 2025 gäller USA; någon motsvarande
-EU-restriktion mot DJI finns inte. Ta in dem bara om en specifik kund med
-USA-koppling betalar för det.
+Skälet är inte lathet. **Varje extra flygplattform dubblerar reservdels- och
+servicebördan** — eget reservdelslager, egen RMA-väg, egen firmwarekunskap, egen
+utbildning, eget garantiflöde. Det är den verkliga kostnaden, och den syns inte i
+inköpsmarginalen.
+
+Slutsatsen är därför inte att strunta i andra drönarmärken, utan att skilja på
+tre helt olika roller.
+
+#### Roll 1 — hyllvara: en (1) direkt DJI-ersättare
+
+**Autel Robotics** är det enda märket som fungerar som lagerförd hyllvara vid
+sidan av DJI. EVO Max 4T V2 ligger på cirka 5 700 euro med EU-lager via
+etablerad distributör, och konkurrerar direkt med Mavic 3 Enterprise och
+Matrice 4T. Autel har återförsäljarkanal, reservdelsförsörjning och en produkt
+som en kund kan köpa i en webbutik utan föregående demo.
+
+Autel löser tre saker på en gång: prispunkt under DJI, en andra källa om
+DJI-leveranser störs, och ett svar till kunder som av policyskäl inte får köpa
+DJI men inte har budget för Skydio eller Parrot. Det är den enda
+flygplattformen jag skulle lagerföra.
+
+#### Roll 2 — offertvaror: säljs tillsammans med DJI, inte istället för
+
+De här plattformarna gör saker DJI inte gör. Kunden köper dem **utöver** sin
+DJI-flotta, vilket gör dem till breddning snarare än kannibalisering. Ingen
+lagerhållning, demoexemplar och utbildning istället.
+
+| Märke | Land | Jobbet DJI inte klarar |
+|---|---|---|
+| Flyability (Elios 3) | CH | Slutna utrymmen och GPS-nekade miljöer: pannor, tankar, schakt, gruvor. Kolliderings­tålig bur. DJI har ingen motsvarighet alls. |
+| Wingtra | CH | Fixed-wing VTOL-kartering. Täcker flerdubbelt så stor areal per flygning som M400 med P1. Swedron för 33 artiklar, alltså bevisad svensk efterfrågan. |
+| Quantum Systems | DE | Samma segment som Wingtra, tysk tillverkning, EASA-certifierad, stark i offentlig sektor och försvar. |
+| Griff Aviation | NO | Tunglyft över FlyCart-klassen. Griff 30 lyfter 30 kg nyttolast, större modeller mer. Norsk tillverkning. |
+| Acecore | NL | Tunglyft och specialbyggen, europeisk tillverkning, etablerad återförsäljarkanal. |
+
+Av dessa är **Flyability och Wingtra** de två jag skulle prioritera. Flyability
+för att den är unik och saknar substitut. Wingtra för att efterfrågan redan är
+bevisad hos vår närmaste svenska konkurrent.
+
+#### Roll 3 — kvalificerad kanal: kräver avtal, inte hyllplats
+
+**Skydio** (US) — X10 med dock är den ledande DFR-plattformen och har över 1 000
+dockor utplacerade första året. Men försäljningen är enterprise-only via
+auktoriserad återförsäljare med tung kvalificering, och vissa EU-länder är
+undantagna. Realistiskt först när vi har en namngiven myndighetskund.
+
+**Parrot** (FR) — har pivoterat mot försvar och myndighet. ANAFI UKR ligger runt
+15 000 euro och säljs i den kanalen, inte som webbutiksvara. ANAFI USA finns
+kvar. Värdet för oss är kryssrutan "icke-kinesisk tillverkare" i upphandling,
+inte volymen.
+
+**Sky-Watch** (DK) — dansk, omsatte drygt 520 miljoner danska kronor 2025, men
+säljer försvars- och säkerhetssystem direkt. Relevant kunskap för
+DK-marknaden, inte ett återförsäljarsortiment.
+
+#### Segment vi saknar helt och som ligger nära kunden
+
+- **Undervattens-ROV** — Chasing, QYSEA, Deep Trekker. Inte flygande, men exakt
+  samma kund: hamn, energibolag, räddningstjänst, polis. Chasing har 133 artiklar
+  hos Swedron och noll hos oss, och förs dessutom av Globe Flight. Det här är
+  den lägst hängande frukten på plattformssidan.
+- **Vattentäta drönare** — Swellpro. Sjöräddning och fiske, nordisk relevans.
+- **Drone-in-a-box till befintliga DJI-drönare** — Heisha bygger dockor som
+  passar DJI Mavic och Phantom samt Autel, Skydio och Parrot. Det är ett
+  *tillbehör* som utökar värdet på drönare vi redan säljer, inte en konkurrent
+  till Dock 3. Hextronics gör batteribytande dockor. Azur Drones (FR) och
+  Percepto (IL) är helhetssystem i en högre prisklass.
+- **Jordbruk** — XAG (P150, V40) är det enda reella Agras-alternativet och
+  ligger något under DJI i pris. Men i sprutdrönare avgör servicenätet
+  köpbeslutet, och där är DJI ohotat i Norden. Avstå tills en kund efterfrågar det.
+
+#### Om regelläget
+
+Det finns ingen EU-motsvarighet till FCC:s beslut i december 2025. DJI får säljas
+och flygas fritt i EU. Det som ändå driver efterfrågan på icke-kinesiska
+plattformar är säkerhetspolitik i enskilda upphandlingar: Norges stortingsbehandling
+landade i att säkerhetsaspekter ska vägas in vid upphandling snarare än i ett
+förbud, och drönarincidenterna i Danmark och Tyskland hösten 2025 har gjort frågan
+levande hos myndighetskunder. Det motiverar att ha **ett** icke-kinesiskt
+alternativ att erbjuda, inte att bygga om sortimentet.
+
+#### Rekommendation flygplattformar
+
+1. **Lagerför Autel.** Ett märke, som direkt alternativ och andra källa.
+2. **Ta in Chasing** som undervattenskomplement — låg risk, bevisad efterfrågan,
+   redan identifierat gap.
+3. **Teckna offertavtal med Flyability och Wingtra.** Ingen lagerbindning, säljs
+   tillsammans med DJI.
+4. **Bevaka Quantum Systems och Skydio.** Ta in när en namngiven kundaffär
+   betalar för kvalificeringen.
+5. **Avstå tills vidare** från Griff, Acecore, XAG, Parrots försvarslinje och
+   Sky-Watch. Rätt produkter, fel försäljningsmodell för en webbutik.
+
+Räkna med att varje lagerförd plattform utöver DJI kräver eget reservdelslager
+och egen servicekompetens. Det är därför listan slutar på ett märke och inte fem.
 
 ### Payloads
 
@@ -233,6 +331,11 @@ att produkten faktiskt monterar och att distributionsavtal går att få.
    Blockeraren är inköpspris, inte innehåll.
 4. **Begär offert från Dronavia och Soarability.** Båda är EU-baserade, båda
    säljer via återförsäljare, båda fyller hål som stoppar affärer idag.
+5. **Skilj på lagerförd och offererad plattform i katalogen.** Autel och Chasing
+   ska kunna köpas i butiken. Flyability och Wingtra ska ligga som
+   offertprodukter med samma mönster som Wisson-produkterna redan använder
+   ("Enterprise-produkt som offereras per uppdrag"). Utan den skillnaden ser
+   sortimentet ut att lova leveranstider vi inte kan hålla.
 
 ## Osäkerheter
 
@@ -246,6 +349,12 @@ att produkten faktiskt monterar och att distributionsavtal går att få.
   varumärken vars artiklar inte bär varumärkesnamnet i sin slug.
 - Om ett enskilt varumärke är värt att ta in beror på minsta orderkvantitet och
   lagerbindning, vilket kräver kontakt med respektive leverantör.
+- Återförsäljarvillkoren för flygplattformarna är inte verifierade med
+  tillverkarna. Bedömningen av vad som går att lagerföra respektive bara
+  offerera bygger på hur märkena säljs idag, inte på offerter vi begärt. Autels
+  prisuppgift är en butikslistning hos en EU-distributör, inte ett inköpspris.
+- Skydios EU-täckning varierar per land och listan över undantagna länder
+  ändras. Kontrollera aktuell status innan något utlovas till kund.
 
 ## Källor
 
@@ -262,3 +371,16 @@ att produkten faktiskt monterar och att distributionsavtal går att få.
 - [DSLRPros — A Complete Guide to the DJI Drone Ban](https://www.dslrpros.com/blogs/drone-trends/a-complete-guide-to-the-dji-drone-ban-2025)
 - [SPH Engineering — DJI Alternatives](https://www.sphengineering.com/news/dji-alternatives)
 - [Heliguy — DJI drone payload compatibility guide](https://www.heliguy.com/blogs/posts/dji-drone-payload-compatibility-and-maximum-payload-capacity-guide/)
+
+Tillagt för avsnittet om flygplattformar:
+
+- [Autelpilot.eu — EVO Max 4T, EU-lager och pris](https://www.autelpilot.eu/products/autel-robotics-evo-max-4t)
+- [Skydio — auktoriserade återförsäljare](https://www.skydio.com/authorized-resellers)
+- [The Drone Girl — Skydio 1 000 dockor första året](https://www.thedronegirl.com/2026/07/08/skydio-dock-1000-deployments-one-year-milestone/)
+- [UAV Coach — Parrot ANAFI UKR](https://uavcoach.com/parrot-anafi-ukr/)
+- [Flyability — Elios](https://www.flyability.com/)
+- [Griff Aviation](https://www.griffaviation.com/)
+- [Sky-Watch — nästa tillväxtfas](https://www.defencenordic.com/article/view/1231443/skywatch_prepares_for_its_next_phase_of_growth)
+- [Montel News — Norges användning av kinesiska drönare](https://montelnews.com/news/a178e32a-1786-4003-bd8c-3b1925bb89b7/norways-use-of-chinese-drones-raises-energy-security-concerns)
+- [Drone Trader — drone-in-a-box jämförelse 2026](https://blog.dronetrader.com/drone-in-a-box/)
+- [GrabaRobot — DJI Agras mot XAG](https://www.grabarobot.com/blog/china-agricultural-drone-market-2026/)
