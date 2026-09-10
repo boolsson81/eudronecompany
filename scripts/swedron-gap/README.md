@@ -65,6 +65,18 @@ saknade ut visade sig finnas när titeln jämfördes.
 - Vid import av flera varumärken i samma körning: håll klassificeringsreglerna
   åtskilda per varumärke. Nyckelord som `Battery` och `Cable` finns hos alla
   och en gemensam ordnad regellista ger fel varumärke i säljtexten.
+- Plocka bara bilder vars alt-text är produkttiteln. Karusellen "Andra tittade
+  även på" ligger i samma block som galleriet och ger annars grannproduktens
+  foto, ibland som huvudbild. Att begränsa sökningen till ett stycke av sidan
+  räcker inte.
+- Kontrollera bilderna genom alt-texten, inte genom att jämföra URL:er mellan
+  produkter. Källan återanvänder samma foto på flera produkter helt legitimt,
+  så URL-jämförelsen ger både falska träffar och missar.
+- Rensa bort källans egna kategorifält ur specifikationstabellen. De ser ut som
+  specifikationer men innehåller sådant som "Tillbehörstyp (Drönare): Delar",
+  och i värsta fall konkurrentens interna artikelkod.
+- Ett tomt `userErrors` betyder inte att bilderna gick fram. Media behandlas
+  asynkront; kontrollera `status` på `MediaImage` efteråt.
 - Jämför de faktiskt skickade payloaderna mot den slutliga genereringen efter
   körningen. Rättningar mitt i en import gör att tidigare batchar hamnar efter,
   och skillnaden syns bara i en sådan diff.

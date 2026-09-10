@@ -93,6 +93,31 @@ FACTS = [
 
 SKIPSPEC = re.compile(r'^(EC Rep|Tillverkare|Manufacturer|Importer|Importör|Adress|Address|Produktnamn|Kontakt)', re.I)
 
+# Swedrons egna kategorifält. De ser ut som specifikationer men säger inget om
+# produkten — "Tillbehörstyp (Drönare): Delar" — och "Typ av drönare" bär deras
+# interna artikelkod (DE001), som inte hör hemma på våra sidor.
+SKIPTAXONOMI = {
+    'tillbehörstyp (drönare)', 'typ av tillbehör (drönare)', 'typ av tillbehör (drone)',
+    'type of accessory (drone)', 'typ av drönare', 'drönartyp', 'märke',
+}
+
+# Etiketter som Swedron lämnar på engelska.
+SPECNAMN = {'Power Consumption': 'Effektförbrukning', 'Resolution': 'Upplösning'}
+
+# Värden utan innehåll.
+TOMTVARDE = re.compile(r'^(not specified|ej specificerat|n/?a|-|—)\s*(by manufacturer|av tillverkaren)?$', re.I)
+
+
+def specrader(rec):
+    """Specifikationsrader värda att visa, med svenska etiketter."""
+    ut = []
+    for k, v in rec.get('specs', []):
+        k, v = k.strip(), v.strip()
+        if SKIPSPEC.match(k) or k.lower() in SKIPTAXONOMI or TOMTVARDE.match(v):
+            continue
+        ut.append((SPECNAMN.get(k, k), v))
+    return ut
+
 
 def esc(s):
     return html.escape(s, quote=False)
@@ -124,7 +149,7 @@ def body_html(rec):
         p.append("<h3>Kort om produkten</h3><ul>" +
                  ''.join(f"<li>{esc(x)}</li>" for x in f) + "</ul>")
 
-    specs = [(k, v) for k, v in rec.get('specs', []) if not SKIPSPEC.match(k)]
+    specs = specrader(rec)
     if specs:
         rows = ''.join(f"<tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>" for k, v in specs[:20])
         p.append("<h3>Specifikation</h3><table>" + rows + "</table>")

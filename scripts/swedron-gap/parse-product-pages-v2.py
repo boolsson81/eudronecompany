@@ -71,9 +71,19 @@ def parse(fp):
     ean = m.group(1) if m else None
     in_stock = 'Slut i lager' not in headtxt
 
+    # Galleribilderna har alt-text lika med produkttiteln. Karusellen "Andra
+    # tittade även på" ligger i samma block men bär grannproduktens alt-text,
+    # så alt är det enda som skiljer dem åt.
+    def norm(s):
+        return re.sub(r'[^a-z0-9]', '', s.lower())
+
     imgs = []
-    for m in re.finditer(r'!\[[^\]]*\]\((https://swedron\.se/_next/image\?url=[^)]+)\)', '\n'.join(lines[h1:end])):
-        u = unwrap(m.group(1))
+    want = norm(title)
+    for m in re.finditer(r'!\[([^\]]*)\]\((https://swedron\.se/_next/image\?url=[^)]+)\)',
+                         '\n'.join(lines[h1:end])):
+        if norm(m.group(1)) != want:
+            continue
+        u = unwrap(m.group(2))
         if 'cdn.shopify.com' in u and u not in imgs:
             imgs.append(u)
 

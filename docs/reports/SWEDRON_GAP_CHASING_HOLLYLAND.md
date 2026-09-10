@@ -47,6 +47,37 @@ Av de 17 under Undervattensdrönare är samtliga kompletta farkoster eller
 paket. Det bestäms av en explicit vitlista i `classify-chhl.py`, inte av
 nyckelord — se nedan.
 
+## Felsökning efter importen
+
+En genomgång av de importerade produkterna efter körningen hittade tre fel som
+inte syntes i `userErrors`. Alla tre är åtgärdade.
+
+**Bilder från grannprodukter.** Parsern hämtade bilder ur hela blocket mellan
+rubriken och avsnittet "Andra tittade även på". Karusellen med relaterade
+produkter ligger inom det blocket, så 29 produkter fick en andra bild som
+tillhörde en annan produkt, och åtta fick fel huvudbild. Två sonarprodukter,
+Cerulean USBL Sonar Mounting Kit och USBL Quick Mounting Bracket, hade bytt
+bilder med varandra rakt av.
+
+Galleribilderna bär alt-text lika med produkttiteln medan karusellens bilder
+bär grannens titel. Det är den enda skillnaden mellan dem, och parsern filtrerar
+nu på det. Att i stället begränsa sökningen till blocket före flikraden löser
+inte problemet: karusellen ligger delvis där också, och antalet felaktiga
+bilder blev då lika stort men på andra produkter.
+
+**Swedrons interna kategorifält som specifikation.** Av 86 specifikationstabeller
+innehöll 66 ingenting annat än Swedrons egna kategorifält, av typen
+"Tillbehörstyp (Drönare): Delar". Tio produkter visade "Typ av drönare: DE001",
+alltså konkurrentens interna artikelkod. Fältnamnen förekom dessutom i fyra
+stavningar, två av dem på engelska. Tjugo tabeller med verkligt innehåll är kvar.
+
+**Fyra produkter med värdelös specifikationsrad**, "Resolution: Not Specified by
+Manufacturer". Raden är borttagen, och etiketterna `Power Consumption` och
+`Resolution` översätts nu.
+
+Bilderna i sig är kontrollerade: alla media har status `READY`, ingen enda
+`FAILED`. De tolv produkterna utan bild saknar bild även hos källan.
+
 ## Kvar att göra
 
 - **12 produkter saknar bild.** Swedrons sidor har ingen produktbild för dem.
@@ -82,7 +113,16 @@ Efter importen rättades fyra produkter med `productUpdate` som skapats innan
 den sista rättningen slog igenom. Två av dem var materiella: laddfodralen till
 Lark M2S låg som Trådlös mikrofon och är nu Batteri och laddning.
 
+**Fel metod för att hitta fel bild.** Första försöket att hitta de felaktiga
+bilderna jämförde bild-URL:er mellan produkter. Den metoden gav fem falska
+träffar, där två produkter delar samma foto hos källan helt korrekt, och
+missade samtidigt att huvudbilden var fel på åtta produkter. Alt-texten är
+den enda pålitliga signalen. Efter att hela bildmängden byggts om mot den
+stämmer alla 315 produkter.
+
 ## Data
 
 `data/swedron-gap-imported-chasing-hollyland.json` innehåller alla 315
-produkter som de ser ut i Shopify, med käll-URL per produkt.
+produkter som de ser ut i Shopify, med käll-URL per produkt. Filen är
+regenererad från den rättade pipelinen och stämmer rad för rad med butiken,
+vilket är verifierat genom att jämföra mot de payloads som faktiskt skickades.
