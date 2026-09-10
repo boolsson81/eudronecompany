@@ -53,6 +53,13 @@ körningen dagen innan. Inget nytt skrivs förrän fraktbeloppen är ifyllda.
 Sökning i butiken ger noll träffar på AP3-P2 och AP30-N2. AP3-G1 finns numera,
 se punkt 1.
 
+Beslut 2026-09-10: **AP3-P2** ska läggas upp, men först när Wisson skickat
+datablad och bilder — modellen saknas även på wissonrobotics.com, så vi har inga
+fakta att bygga en sida på. Förfrågan ligger som utkast i
+[`WISSON_FORFRAGAN_AP3-P2.md`](./WISSON_FORFRAGAN_AP3-P2.md). **AP30-N2** läggs
+inte upp; den är utgången och har bara en modellbeteckning i listan. Båda
+besluten står i `beslut`-fältet på respektive artikel i datafilen.
+
 ### 4. Tillbehör, reservdelar och två sprutmodeller har inga listpriser
 
 Tjugotre produkter under `Wisson Robotics` är tillbehör och förbrukningsmaterial:
@@ -70,4 +77,5 @@ saknas i prislistan.
    eller lägg till dem vid sidan av de gamla. Avgör först vilken uppsättning som
    ska leva vidare — dubbletterna ger annars dubbla lagervärden.
 3. Begär pris på AP30-P4 och AP30-P4H samt på tillbehören från Wisson.
-4. Bestäm om AP3-P2 och AP30-N2 ska läggas upp som produkter eller lämnas.
+4. AP3-P2: skicka förfrågan om datablad och lägg upp modellen när svaret kommer.
+   AP30-N2 är avförd.

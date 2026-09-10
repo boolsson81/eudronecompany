@@ -203,7 +203,8 @@
       },
       "varuvarde_sek": 82868,
       "frakt_sek": null,
-      "shopify": []
+      "shopify": [],
+      "beslut": "Aktiv i prislistan och saknar produkt i butiken. Datablad begärt av Wisson 2026-09-10, se docs/reports/WISSON_FORFRAGAN_AP3-P2.md. Läggs upp när specifikationer och bilder finns."
     },
     {
       "modell": "AP-P DIC Water Treatment System",
@@ -293,7 +294,8 @@
       },
       "varuvarde_sek": 96536,
       "frakt_sek": null,
-      "shopify": []
+      "shopify": [],
+      "beslut": "Utgången och saknar produktnamn i prislistan. Läggs inte upp i butiken. Prisraden ligger kvar som referens."
     }
   ],
   "palagg": {
