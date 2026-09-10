@@ -389,6 +389,33 @@ Autel är alltså fortfarande rätt produktval, men det är inte längre det enk
 alternativet. Rangordna om: **Chasing via Focus Nordic är nu den enklaste
 plattformsutökningen**, eftersom distributören finns på plats i Göteborg.
 
+### Ansökningslänkar
+
+Verifierade 2026-09-10. Kolumnen "Typ" skiljer riktiga ansökningsformulär från
+sidor där enda vägen in är att mejla.
+
+| Prio | Varumärke | Länk | Typ |
+|--:|---|---|---|
+| 0 | Boston Group | https://www.boston.dk/become-a-reseller | Formulär — men vi är redan kund, så mejla `salg@boston.dk` och fråga om utökat sortiment i stället |
+| 1 | Dronavia | https://www.dronavia.com/partners/ | Formulär, "Become a reseller" längst ned på sidan |
+| 2 | Workswell | https://workswell.eu/contactform/ | Kontaktformulär. Alternativ: `sales@workswell.eu` |
+| 3 | Soarability / Sniffer4D | https://sniffer4d.eu/?page_id=263 | Kontaktformulär hos TPI (täcker CEE, inte Norden). För Norden: kontakta Soarability direkt |
+| 4 | EcoFlow | https://www.ecoflow.com/eu/cooperation | Formulär, "Become a Dealer". Även https://energy.ecoflow.com/eu/become-our-partner |
+| 5 | Focus Nordic (Chasing) | https://www.focusnordic.com/about-us | Kontaktväg. Göteborg, svensk distributör för Chasing |
+| 6 | Dronetag | https://www.dronetag.com/company/partners | Uttalat distributörsprogram |
+| 7 | Emlid | https://emlid.com/dealers/ | Återförsäljarsida med kontaktväg |
+| 8 | Elistair | https://elistair.com/contact-us/ | Kontaktformulär. Partnerportal för befintliga: https://partners.elistair.com/ |
+| 9 | XGRIDS | https://xgrids.com/agent | Global Partners-sida |
+| 9 | Emesent | https://www.emesent.com/reseller-application | Formulär, "Reseller Application" |
+| 10 | Flyability | https://www.flyability.com/distributors | Distributörssida. Kräver åtagande om demo, reservdelar, service och utbildning |
+| 11 | Wingtra | https://wingtra.com/partner-program/ | Partnerprogram. Vi når dem redan via Boston, så detta behövs bara för egen dealer-status |
+| 12 | Autel Robotics | https://www.autelrobotics.com/wheretobuy/find_store/ | Ingen publik ansökan hittad. Mejla `salesoffice.eu@autel.com`. OBS: https://www.autel.eu/official-eu-distributors/ är fordonsdiagnostik, inte drönare |
+| 13 | YellowScan | https://www.yellowscan.com/customers/geospatial-resellers/ | Återförsäljarnätverk med kontaktväg |
+
+Ingen publik ansökningssida hittades för **CZI** eller **Chasing Innovation** som
+tillverkare. Båda nås via distributör: CZI genom Boston Nordic som vi redan
+handlar av, Chasing genom Focus Nordic.
+
 ### Reviderad åtgärdsordning
 
 1. **Publicera 107 icke-DJI-utkast från Boston Nordic.** CZI 25, Pix4D 31,

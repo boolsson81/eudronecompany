@@ -939,5 +939,122 @@
         "warning": "autel.eu är Autel Intelligent Technology (fordonsdiagnostik), inte Autel Robotics. Svensk autel.eu-distributör Skantz Diagnosverktyg säljer ADAS och diagnostik, inte drönare. Autel Robotics saknar nordisk distributör."
       }
     ]
+  },
+  "application_links": {
+    "verified": "2026-09-10",
+    "note": "Typ skiljer riktiga ansökningsformulär från sidor där enda vägen in är mejl.",
+    "links": [
+      {
+        "priority": 0,
+        "brand": "Boston Group",
+        "url": "https://www.boston.dk/become-a-reseller",
+        "type": "form",
+        "note": "Vi är redan kund — mejla salg@boston.dk om utökat sortiment i stället."
+      },
+      {
+        "priority": 1,
+        "brand": "Dronavia",
+        "url": "https://www.dronavia.com/partners/",
+        "type": "form",
+        "note": "Become a reseller-formulär längst ned."
+      },
+      {
+        "priority": 2,
+        "brand": "Workswell",
+        "url": "https://workswell.eu/contactform/",
+        "type": "contact_form",
+        "email": "sales@workswell.eu"
+      },
+      {
+        "priority": 3,
+        "brand": "Soarability / Sniffer4D",
+        "url": "https://sniffer4d.eu/?page_id=263",
+        "type": "contact_form",
+        "note": "TPI täcker CEE, inte Norden. Kontakta Soarability direkt för Norden."
+      },
+      {
+        "priority": 4,
+        "brand": "EcoFlow",
+        "url": "https://www.ecoflow.com/eu/cooperation",
+        "type": "form",
+        "alt_url": "https://energy.ecoflow.com/eu/become-our-partner"
+      },
+      {
+        "priority": 5,
+        "brand": "Focus Nordic (Chasing)",
+        "url": "https://www.focusnordic.com/about-us",
+        "type": "contact",
+        "note": "Göteborg, svensk distributör för Chasing."
+      },
+      {
+        "priority": 6,
+        "brand": "Dronetag",
+        "url": "https://www.dronetag.com/company/partners",
+        "type": "partner_program"
+      },
+      {
+        "priority": 7,
+        "brand": "Emlid",
+        "url": "https://emlid.com/dealers/",
+        "type": "contact"
+      },
+      {
+        "priority": 8,
+        "brand": "Elistair",
+        "url": "https://elistair.com/contact-us/",
+        "type": "contact_form",
+        "alt_url": "https://partners.elistair.com/"
+      },
+      {
+        "priority": 9,
+        "brand": "XGRIDS",
+        "url": "https://xgrids.com/agent",
+        "type": "partner_program"
+      },
+      {
+        "priority": 9,
+        "brand": "Emesent",
+        "url": "https://www.emesent.com/reseller-application",
+        "type": "form"
+      },
+      {
+        "priority": 10,
+        "brand": "Flyability",
+        "url": "https://www.flyability.com/distributors",
+        "type": "contact",
+        "requirement": "Demo, reservdelar, service, underhåll, utbildning"
+      },
+      {
+        "priority": 11,
+        "brand": "Wingtra",
+        "url": "https://wingtra.com/partner-program/",
+        "type": "partner_program",
+        "note": "Nås redan via Boston Nordic."
+      },
+      {
+        "priority": 12,
+        "brand": "Autel Robotics",
+        "url": "https://www.autelrobotics.com/wheretobuy/find_store/",
+        "type": "contact",
+        "email": "salesoffice.eu@autel.com",
+        "warning": "autel.eu/official-eu-distributors är fordonsdiagnostik, inte drönare."
+      },
+      {
+        "priority": 13,
+        "brand": "YellowScan",
+        "url": "https://www.yellowscan.com/customers/geospatial-resellers/",
+        "type": "contact"
+      }
+    ],
+    "no_public_application": [
+      {
+        "brand": "CZI",
+        "route": "Boston Nordic — befintlig distributör"
+      },
+      {
+        "brand": "Chasing Innovation",
+        "route": "Focus Nordic AB, Göteborg"
+      }
+    ]
   }
 }
