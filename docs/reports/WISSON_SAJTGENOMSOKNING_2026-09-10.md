@@ -105,6 +105,35 @@ Inga nya landningssidor är byggda. Om CP-C1 och PWS ska säljas behöver de en 
 sida — de är fasadrobotar, inte drönartillbehör, och passar inte under
 Orion-sidorna.
 
+## Bilder — inte klart
+
+De åtta produkter som lades upp 9 september har bilder från tillverkarens CDN.
+De tre nya — AP30-P2, AP3-P5 och AP3-S1 — har inga.
+
+Jag lät bli att ladda upp, av två skäl:
+
+1. **Bilderna går inte att granska härifrån.** Både `wissonrobotics.com` och
+   `cdn.shopify.com` är blockerade av sessionens egress-proxy. En uppladdning
+   hade alltså skett blint.
+2. **AP3-P5-sidans bilder är sannolikt fel produkt.** Sidans fem
+   innehållsbilder bär alt-texter som namnger AP30-P2: 多角度喷洒 (sprutning i
+   flera vinklar), 高空作业 (höghöjdsarbete), 6m喷洒 (sprutning på 6 meter) och
+   激光测距 (laseravståndsmätning). Antingen återanvänder Wisson AP30-P2:s foton
+   på P5-sidan, eller så är alt-texterna kvarglömda. Det går inte att avgöra
+   utan att se dem.
+
+Kandidat-URL:erna är ändå räddade, med källa och förbehåll per modell, i
+[`data/wisson-bildkandidater.json`](../../data/wisson-bildkandidater.json).
+Suffixet `!BxH` i tillverkarens URL:er är en skalningsdirektiv och är bortplockat,
+så URL:erna pekar på originalupplösning.
+
+Bättre väg är att få bilder från Wisson som vi vet att vi får använda. Utkastet i
+[`WISSON_FORFRAGAN_AP3-P2.md`](./WISSON_FORFRAGAN_AP3-P2.md) ber om just det för
+AP30-P2 och AP3-P5.
+
+AP3-S1 är ett paket utan egen produktsida hos tillverkaren. Rimligast är att
+återanvända AP3-P3-robotens bilder, som redan ligger i butiken.
+
 ## Att bestämma
 
 1. Ska laddrobotarna (CF1, CS1, hemmaladdare) säljas alls? De ligger utanför

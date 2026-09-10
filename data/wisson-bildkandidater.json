@@ -1,0 +1,50 @@
+{
+ "_meta": {
+  "syfte": "Kandidater till produktbilder från tillverkarens CDN. Inte uppladdade.",
+  "hamtat": "2026-09-10, Nimble Extract vx8, attributet data-original (sidorna lazy-laddar).",
+  "storlek": "Suffixet !BxH är en skalningsdirektiv. URL:erna nedan är utan suffix, alltså originalupplösning.",
+  "varfor_inte_uppladdade": "Bilderna gick inte att granska. Både wissonrobotics.com och cdn.shopify.com är blockerade av sessionens egress-proxy, så ingen av dem kunde öppnas och tittas på.",
+  "rattigheter": "Bilderna är tillverkarens. Utkastet i docs/reports/WISSON_FORFRAGAN_AP3-P2.md ber Wisson om bilder vi får använda."
+ },
+ "modeller": [
+  {
+   "modell": "AP30-P2",
+   "produkt": "gid://shopify/Product/10274678309192",
+   "kalla": "https://www.wissonrobotics.com/en/products/AP30-P2.html",
+   "bedomning": "Bilderna ligger på modellens egen produktsida, men saknar alt-text, så det går inte att säga vad var och en visar.",
+   "kandidater": [
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYoouS48wYwsAk4igQ.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYozfvlPjC3BTjYAw.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYooOfl3gEwtwU42AM.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYohISHBTC2BTjbAw.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYo8vzHfzC2BTjbAw.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgtZ2MtQYo4Ii50QEwtgU42wM.png"
+   ]
+  },
+  {
+   "modell": "AP3-P5",
+   "produkt": "gid://shopify/Product/10274678341960",
+   "kalla": "https://www.wissonrobotics.com/h-col-406.html",
+   "bedomning": "ANVÄND INTE utan granskning. Sidans fem innehållsbilder bär alt-texter som namnger AP30-P2 (多角度喷洒, 高空作业, 6m喷洒, 激光测距). Antingen återanvänder Wisson AP30-P2:s foton på P5-sidan, eller så är alt-texterna kvarglömda. Går inte att avgöra utan att se bilderna.",
+   "kandidater": [
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg_srV0AYoz7bWygcwwC44sB4.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAg1cjU0AYoy9_56gIwmgE4ag.png",
+    "https://11918092.s21i.faiusr.com/4/ABUIABAEGAAgwbTOxwYo1KO0wQUwnwM4-gI.png"
+   ],
+   "alt_pa_kallsidan": {
+    "ABUIABAEGAAg_srV0AYoz7bWygcwwC44sB4!1500x1500.png": "万勋AP30P2-多角度喷洒",
+    "ABUIABAEGAAg1cjU0AYoy9_56gIwmgE4ag.png": "万勋AP30P2-多角度喷洒",
+    "ABUIABAEGAAgwbTOxwYohNajmQEwngM4-gI!300x300.png": "万勋AP30P2-高空作业",
+    "ABUIABAEGAAgkLjOxwYoxM6h5gQwnwM4-gI!300x300.png": "万勋AP30P2-6m喷洒",
+    "ABUIABAEGAAgwbTOxwYo1KO0wQUwnwM4-gI!400x400.png": "万勋AP30P2-激光测距"
+   }
+  },
+  {
+   "modell": "AP3-S1",
+   "produkt": "gid://shopify/Product/10275314958664",
+   "kalla": "https://www.wissonrobotics.com/en/facade-cleaning/",
+   "bedomning": "Paketet har ingen egen produktsida med bilder. Rimligast är AP3-P3-robotens bilder, som redan ligger på AP3-P3-produkten i butiken.",
+   "kandidater": []
+  }
+ ]
+}
