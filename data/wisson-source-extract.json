@@ -420,7 +420,24 @@
     "Tower cleaning",
     "Other high-altitude cleaning scenarios"
    ],
-   "note": "Paketnamn, inte en egen maskin. Delarna säljs var för sig i butiken."
+   "note": "Paketnamn, inte en egen maskin. Delarna säljs var för sig i butiken.",
+   "platform_options_en": [
+    "DJI Matrice 400",
+    "DJI Matrice 350 RTK"
+   ],
+   "platform_source": "Prislistan 202607 anger M350 och M400 som plattform för AP3-P3.",
+   "packages": [
+    {
+     "kod": "komplett",
+     "namn_sv": "Komplett paket",
+     "innehall": "Robot, drönare, vattenrening och kringutrustning."
+    },
+    {
+     "kod": "utan-dronare",
+     "namn_sv": "Paket utan drönare",
+     "innehall": "Robot, vattenrening och kringutrustning. För den som redan flyger M400 eller M350 RTK."
+    }
+   ]
   }
  ]
 }

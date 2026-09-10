@@ -6,18 +6,32 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "AP3-P3 tvättrobot",
-            "text": "Pliabot-leder, 40° gummiskrapa och 60° vertikal sprutjustering. Arbetar tätt intill ytan i stället för att spola på avstånd."
+            "title": "Komplett paket",
+            "text": "Robot, drönare, vattenrening och kringutrustning. För den som ska börja från noll."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "DJI Matrice 400",
-            "text": "Flygplattformen som bär roboten. AP3-P3 är PSDK-certifierad för serieproduktion på M400."
+            "title": "Paket utan drönare",
+            "text": "Samma innehåll men utan flygplattform. För den som redan flyger Matrice 400 eller Matrice 350 RTK."
           }
         },
         "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-P3 tvättrobot",
+            "text": "Pliabot-leder, 40° gummiskrapa och 60° vertikal sprutjustering. Arbetar tätt intill ytan i stället för att spola på avstånd."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Flygplattform",
+            "text": "DJI Matrice 400 eller Matrice 350 RTK. AP3-P3 är PSDK-certifierad för serieproduktion på M400."
+          }
+        },
+        "solution_5": {
           "type": "solution",
           "settings": {
             "title": "AP-P DIC-vattenrening",
@@ -53,6 +67,8 @@
         "solution_1",
         "solution_2",
         "solution_3",
+        "solution_4",
+        "solution_5",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -63,10 +79,10 @@
         "breadcrumb_label": "Wisson",
         "breadcrumb_link": "/pages/wisson",
         "eyebrow": "Wisson systempaket",
-        "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem",
-        "text": "AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Paketet består av tre kärnmoduler: AP3-P3-roboten, en DJI Matrice 400 och AP-P-seriens DIC-vattenrening. Till det hör vattenhantering och rengöringsmedel. Vi säljer delarna var för sig, men den som ska börja från noll behöver alla tre.",
-        "solutions_heading": "Tre kärnmoduler",
-        "benefits_heading": "Kringutrustning i paketet",
+        "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
+        "text": "AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Kärnan är tre delar: AP3-P3-roboten, en flygplattform och AP-P-seriens DIC-vattenrening. Paketet finns i två former — komplett med drönare, eller utan drönare för den som redan flyger Matrice 400 eller Matrice 350 RTK.",
+        "solutions_heading": "Två paket, tre kärnmoduler",
+        "benefits_heading": "Kringutrustning i båda paketen",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 24
@@ -76,7 +92,7 @@
       "type": "enterprise-contact",
       "settings": {
         "title": "Sätt ihop ett AP3-S1",
-        "text": "Paketet konfigureras efter byggnad, vattentillgång och om ni redan flyger en M400. Berätta om objektet så återkommer vi med innehåll och offert.",
+        "text": "Valet mellan paketen styrs av om ni redan äger rätt drönare. Berätta om byggnaden och vattentillgången så återkommer vi med innehåll och offert.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

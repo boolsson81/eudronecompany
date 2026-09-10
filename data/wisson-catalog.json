@@ -264,7 +264,7 @@
  },
  {
   "model": "AP3-S1",
-  "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem (paket)",
+  "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
   "vendor": "Wisson",
   "productType": "Fasadtvättsystem (paket)",
   "tags": [
@@ -281,10 +281,20 @@
    "typ:paket",
    "wisson-import"
   ],
-  "descriptionHtml": "<p>AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, flygplattformen DJI Matrice 400 och AP-P-seriens vattenrening — de tre delar som måste finnas för att arbetet ska gå att utföra. Roboten arbetar tätt intill fasaden med sin gummiskrapa, plattformen bär den, och reningen gör om vanligt kranvatten till medicinskt rent vatten så att ytan torkar utan ränder. Vi konfigurerar paketet efter byggnaden och efter vad ni redan äger.</p><h3>Tre kärnmoduler</h3><ul><li>AP3-P3 — Pliabot flygburen tvättrobot med 40° gummiskrapa</li><li>DJI Matrice 400 — flygplattformen som bär roboten</li><li>AP-P DIC-vattenrening — dubbelpatenterad, ger medicinskt rent vatten</li></ul><h3>Kringutrustning</h3><ul><li>AP-P vattenhanteringssystem</li><li>AP-P rengöringsmedel för glasfasad</li></ul><h3>Nyckelegenskaper</h3><ul><li>Tre kärnmoduler som är avstämda mot varandra</li><li>AP3-P3 är PSDK-certifierad för serieproduktion på Matrice 400</li><li>Renvatten genom dubbelpatenterad DIC-rening, inga kemikalier</li><li>Slangmatat vatten ger obruten drift oavsett drönarens lastkapacitet</li><li>Slang, vinschar och rengöringsmedel ingår som kringutrustning</li></ul><h3>Användning</h3><p>För fasadtvätt av glas och puts, torn och andra höga ytor som annars kräver ställning, lift eller reparbete. Paketet vänder sig till den som ska börja från noll; äger ni redan en Matrice 400 offererar vi delarna var för sig.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Paketet konfigureras per uppdrag — innehåll, pris och leveranstid bekräftas i offert.</li><li>Äger ni redan en Matrice 400 offererar vi delarna var för sig.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
+  "descriptionHtml": "<p>AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, en flygplattform och AP-P-seriens vattenrening — de tre delar som måste finnas för att arbetet ska gå att utföra. Roboten arbetar tätt intill fasaden med sin gummiskrapa, plattformen bär den, och reningen gör om vanligt kranvatten till medicinskt rent vatten så att ytan torkar utan ränder. Paketet finns i två former: komplett med drönare, eller utan drönare för den som redan flyger rätt plattform.</p><h3>Två paket</h3><ul><li><strong>Komplett paket</strong> — Robot, drönare, vattenrening och kringutrustning.</li><li><strong>Paket utan drönare</strong> — Robot, vattenrening och kringutrustning. För den som redan flyger M400 eller M350 RTK.</li></ul><h3>Tre kärnmoduler</h3><ul><li>AP3-P3 — Pliabot flygburen tvättrobot med 40° gummiskrapa</li><li>Flygplattform — DJI Matrice 400 eller Matrice 350 RTK, ingår bara i det kompletta paketet</li><li>AP-P DIC-vattenrening — dubbelpatenterad, ger medicinskt rent vatten</li></ul><h3>Kringutrustning</h3><ul><li>AP-P vattenhanteringssystem</li><li>AP-P rengöringsmedel för glasfasad</li></ul><h3>Nyckelegenskaper</h3><ul><li>Två paketformer: komplett med drönare eller utan</li><li>Drönaren väljs mellan Matrice 400 och Matrice 350 RTK</li><li>AP3-P3 är PSDK-certifierad för serieproduktion på Matrice 400</li><li>Renvatten genom dubbelpatenterad DIC-rening, inga kemikalier</li><li>Slangmatat vatten ger obruten drift oavsett drönarens lastkapacitet</li><li>Slang, vinschar och rengöringsmedel ingår som kringutrustning</li></ul><h3>Användning</h3><p>För fasadtvätt av glas och puts, torn och andra höga ytor som annars kräver ställning, lift eller reparbete. Det kompletta paketet vänder sig till den som ska börja från noll. Flyger ni redan en Matrice 400 eller Matrice 350 RTK väljer ni paketet utan drönare.</p><h3>Bra att veta</h3><ul><li>Säljs av EU Drone Company med support på svenska.</li><li>Paketet konfigureras per uppdrag — innehåll, pris och leveranstid bekräftas i offert.</li><li>Välj paketet utan drönare om ni redan flyger Matrice 400 eller Matrice 350 RTK.</li><li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li></ul>",
+  "options": [
+   {
+    "name": "Paket",
+    "values": [
+     "Komplett med DJI Matrice 400",
+     "Komplett med DJI Matrice 350 RTK",
+     "Utan drönare"
+    ]
+   }
+  ],
   "seo": {
-   "title": "AP3-S1 — komplett fasadtvättsystem | EU Drone Company",
-   "description": "AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, flygplattformen DJI Matrice 400…"
+   "title": "AP3-S1 — fasadtvättsystem i paket | EU Drone Company",
+   "description": "AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, en flygplattform och AP-P-seriens…"
   },
   "source": "https://www.wissonrobotics.com/en/h-nd-305.html"
  }

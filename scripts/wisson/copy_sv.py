@@ -120,14 +120,15 @@ COPY = {
     "usecase": "För målning av isolatorer, murar, fasader och torn. Lanserad som komplement till AP30-P4, som täcker de grövre sprutuppdragen.",
   },
   "AP3-S1": {
-    "intro": "AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, flygplattformen DJI Matrice 400 och AP-P-seriens vattenrening — de tre delar som måste finnas för att arbetet ska gå att utföra. Roboten arbetar tätt intill fasaden med sin gummiskrapa, plattformen bär den, och reningen gör om vanligt kranvatten till medicinskt rent vatten så att ytan torkar utan ränder. Vi konfigurerar paketet efter byggnaden och efter vad ni redan äger.",
+    "intro": "AP3-S1 är hela fasadtvättekipaget i ett paket. Wisson sätter beteckningen på kombinationen av tvättroboten AP3-P3, en flygplattform och AP-P-seriens vattenrening — de tre delar som måste finnas för att arbetet ska gå att utföra. Roboten arbetar tätt intill fasaden med sin gummiskrapa, plattformen bär den, och reningen gör om vanligt kranvatten till medicinskt rent vatten så att ytan torkar utan ränder. Paketet finns i två former: komplett med drönare, eller utan drönare för den som redan flyger rätt plattform.",
     "usp": [
-      "Tre kärnmoduler som är avstämda mot varandra",
+      "Två paketformer: komplett med drönare eller utan",
+      "Drönaren väljs mellan Matrice 400 och Matrice 350 RTK",
       "AP3-P3 är PSDK-certifierad för serieproduktion på Matrice 400",
       "Renvatten genom dubbelpatenterad DIC-rening, inga kemikalier",
       "Slangmatat vatten ger obruten drift oavsett drönarens lastkapacitet",
       "Slang, vinschar och rengöringsmedel ingår som kringutrustning",
     ],
-    "usecase": "För fasadtvätt av glas och puts, torn och andra höga ytor som annars kräver ställning, lift eller reparbete. Paketet vänder sig till den som ska börja från noll; äger ni redan en Matrice 400 offererar vi delarna var för sig.",
+    "usecase": "För fasadtvätt av glas och puts, torn och andra höga ytor som annars kräver ställning, lift eller reparbete. Det kompletta paketet vänder sig till den som ska börja från noll. Flyger ni redan en Matrice 400 eller Matrice 350 RTK väljer ni paketet utan drönare.",
   },
 }

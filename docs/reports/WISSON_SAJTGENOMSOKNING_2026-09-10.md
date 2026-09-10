@@ -63,6 +63,18 @@ Paketet har både en egen sida, `wisson-ap3-s1`, och en egen produkt,
 `wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket`. Sidan länkar till
 produkten. Båda är opublicerade respektive utkast, som övrigt Wisson-material.
 
+Produkten säljs i **två paket**, lagda som varianter under optionen `Paket`:
+
+| Variant | Innehåll |
+|---|---|
+| Komplett med DJI Matrice 400 | Robot, drönare, vattenrening, kringutrustning |
+| Komplett med DJI Matrice 350 RTK | Samma, med den äldre plattformen |
+| Utan drönare | Robot, vattenrening, kringutrustning |
+
+Att drönarvalet står mellan M400 och M350 RTK följer prislistan juli 2026, som
+anger båda som plattform för AP3-P3. Optionen har tre värden men två paketformer:
+kunden som redan äger rätt drönare väljer den tredje.
+
 Produkten är byggd genom samma kedja som resten: modullistan ligger i
 `data/wisson-source-extract.json` under `systems`, säljtexten i `copy_sv.py` och
 payloaden byggs av `build_systems()` i `build-payloads.py`. Där en vanlig
@@ -71,8 +83,10 @@ tre kärnmodulerna och kringutrustningen.
 
 **För att göra produkten köpbar återstår:**
 
-1. Pris. Vi har inget landat inköpspris på AP3-P3 eller DIC-reningen — frakten är
-   ofylld — och inget pris alls på Matrice 400 i bunten.
+1. Pris per variant. Vi har inget landat inköpspris på AP3-P3 eller DIC-reningen
+   — frakten är ofylld — och inget pris alls på Matrice 400 eller Matrice 350 RTK.
+   Varianten utan drönare går att prissätta så snart frakten är ifylld; de två
+   kompletta kräver dessutom drönarpriset.
 2. Produktbild. Wissons sidor lazy-laddar sina bilder och exponerar inga
    användbara fil-URL:er, så bilden måste komma från leverantören.
 3. Publicering. Produkten står på `DRAFT` och sidan på `isPublished: false`,
@@ -96,5 +110,4 @@ Orion-sidorna.
 1. Ska laddrobotarna (CF1, CS1, hemmaladdare) säljas alls? De ligger utanför
    drönarsortimentet.
 2. Ska CP-C1 och PWS läggas upp? Då behövs en egen kategori och egna sidor.
-3. Vilket pris AP3-S1 ska ha, och om Matrice 400 ska ingå i priset eller
-   offereras separat.
+3. Vilka priser de tre AP3-S1-varianterna ska ha.

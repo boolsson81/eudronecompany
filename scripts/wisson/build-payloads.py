@@ -109,7 +109,7 @@ VALUE_SV = {
 
 MODULE_SV = {
     "AP3-P3 Pliabot® Aerial Tethered Cleaning Robot": "AP3-P3 — Pliabot flygburen tvättrobot med 40° gummiskrapa",
-    "DJI Matrice 400 drone": "DJI Matrice 400 — flygplattformen som bär roboten",
+    "DJI Matrice 400 drone": "Flygplattform — DJI Matrice 400 eller Matrice 350 RTK, ingår bara i det kompletta paketet",
     "AP-P Series dedicated dynamic intelligent control (DIC) water treatment system": "AP-P DIC-vattenrening — dubbelpatenterad, ger medicinskt rent vatten",
     "AP-P Series dedicated water management system": "AP-P vattenhanteringssystem",
     "AP-P Series dedicated curtain wall cleaning agent": "AP-P rengöringsmedel för glasfasad",
@@ -167,6 +167,13 @@ def build_description(p, c):
 def build_system_description(sysdef, c):
     """Paketprodukt: modullistan ersätter specifikationstabellen."""
     parts = [f"<p>{esc(c['intro'])}</p>"]
+    pkgs = sysdef.get("packages") or []
+    if pkgs:
+        parts.append(
+            "<h3>Två paket</h3><ul>"
+            + "".join(f"<li><strong>{esc(p['namn_sv'])}</strong> — {esc(p['innehall'])}</li>" for p in pkgs)
+            + "</ul>"
+        )
     parts.append(
         "<h3>Tre kärnmoduler</h3><ul>"
         + "".join(f"<li>{esc(MODULE_SV.get(m, m))}</li>" for m in sysdef["core_modules_en"])
@@ -183,7 +190,7 @@ def build_system_description(sysdef, c):
         "<h3>Bra att veta</h3><ul>"
         "<li>Säljs av EU Drone Company med support på svenska.</li>"
         "<li>Paketet konfigureras per uppdrag — innehåll, pris och leveranstid bekräftas i offert.</li>"
-        "<li>Äger ni redan en Matrice 400 offererar vi delarna var för sig.</li>"
+        "<li>Välj paketet utan drönare om ni redan flyger Matrice 400 eller Matrice 350 RTK.</li>"
         "<li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li>"
         "</ul>"
     )
@@ -224,13 +231,19 @@ def build_systems():
                 "industry:inspection", RUN_TAG, REVIEW_TAG]
         out.append({
             "model": code,
-            "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem (paket)",
+            "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
             "vendor": "Wisson",
             "productType": "Fasadtvättsystem (paket)",
             "tags": sorted(set(tags)),
             "descriptionHtml": build_system_description(sysdef, c),
+            "options": [{
+                "name": "Paket",
+                "values": ["Komplett med DJI Matrice 400",
+                           "Komplett med DJI Matrice 350 RTK",
+                           "Utan drönare"],
+            }],
             "seo": {
-                "title": f"AP3-S1 — komplett fasadtvättsystem | {BRAND}",
+                "title": f"AP3-S1 — fasadtvättsystem i paket | {BRAND}",
                 "description": (c["intro"][:150].rsplit(" ", 1)[0] + "…"),
             },
             "source": sysdef["source"],
