@@ -4,7 +4,9 @@ Verktyg för att jämföra Swedron.se:s sortiment mot vår Shopify-katalog och
 importera saknade produkter som utkast.
 
 Se [`docs/reports/SWEDRON_GAP_2026-09-07.md`](../../docs/reports/SWEDRON_GAP_2026-09-07.md)
-för resultatet av första körningen.
+för resultatet av första körningen och
+[`docs/reports/SWEDRON_GAP_CHASING_HOLLYLAND.md`](../../docs/reports/SWEDRON_GAP_CHASING_HOLLYLAND.md)
+för varumärkesimporten av Chasing och Hollyland.
 
 | Fil | Vad |
 |---|---|
@@ -16,6 +18,10 @@ för resultatet av första körningen.
 | `copy_sv2.py` | Egenförfattad svensk säljtext, omgång 2. |
 | `build-shopify-payloads-ecoflow.py` | Payloads för varumärkesimport, med produkttyper för kraft och solel. |
 | `copy_ecoflow.py` | Egenförfattad svensk säljtext, EcoFlow. |
+| `parse-product-pages-v2.py` | Parser för sidor med en enda H1, där innehållet skiljs av en flikrad i stället för av två rubriker. |
+| `classify-chhl.py` | Varumärkesgrindad klassificering för Chasing och Hollyland. Reglerna är separata per varumärke, aldrig en gemensam lista. |
+| `copy-chhl.py` | Egenförfattad svensk säljtext, Chasing och Hollyland. |
+| `build-shopify-payloads-chhl.py` | Payloads för Chasing och Hollyland, med serietaggar som `Solidcom C1` och `M2 Pro Max`. |
 
 ## Arbetsflöde
 
@@ -28,8 +34,15 @@ för resultatet av första körningen.
    saknad — verifiera alltid mot katalogen innan import, tröskeln är trubbig.
 4. **Hämtning.** Nimble Extract med drivern `vx8`; sidorna är JavaScript-renderade.
    Nimble Crawl fungerar inte, länkupptäckten hittar inga produktsidor.
-5. **Import.** `productCreate` med GraphQL-alias, sju produkter per anrop.
-   `bulkOperationRunMutation` är blockerad av connectorns säkerhetspolicy.
+5. **Import.** `productCreate` med GraphQL-alias, upp till tjugo produkter
+   per anrop. `bulkOperationRunMutation` är blockerad av connectorns
+   säkerhetspolicy.
+
+Swedron har två sidlayouter. Den äldre har två H1 och hanteras av
+`parse-product-pages.py`. Den nyare har en enda H1 och innehållet avgränsas av
+en flikrad — den kräver `parse-product-pages-v2.py`. Kör den gamla parsern mot
+den nya layouten och du får noll specifikationer och noll USP:er utan
+felmeddelande, så kontrollera alltid räknarna i parserns utskrift.
 
 Kör alltid steg 3 igen på de faktiska produkttitlarna efter hämtning. Slugen
 är trunkerad och ger sämre matchning än titeln — flera produkter som såg
@@ -46,4 +59,12 @@ saknade ut visade sig finnas när titeln jämfördes.
   har stora delar som inte hör hemma i en drönarbutik, och rena färgvarianter
   bör bli varianter på en produkt i stället för egna produkter.
 - Räkna inte importen med `productsCount` direkt efteråt. Shopifys sökindex
-  släpar och ger för låga siffror; lista produkterna i stället.
+  släpar och ger för låga siffror; lista produkterna i stället. Av samma skäl
+  hittar `products(query: "title:...")` inte nyimporterade produkter — sortera
+  på `CREATED_AT` och matcha titeln lokalt.
+- Vid import av flera varumärken i samma körning: håll klassificeringsreglerna
+  åtskilda per varumärke. Nyckelord som `Battery` och `Cable` finns hos alla
+  och en gemensam ordnad regellista ger fel varumärke i säljtexten.
+- Jämför de faktiskt skickade payloaderna mot den slutliga genereringen efter
+  körningen. Rättningar mitt i en import gör att tidigare batchar hamnar efter,
+  och skillnaden syns bara i en sådan diff.
