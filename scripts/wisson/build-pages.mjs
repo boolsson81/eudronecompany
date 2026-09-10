@@ -179,6 +179,7 @@ const PAGES = [
   },
   {
     handle: "wisson-ap3-s1",
+    productHandle: "wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket",
     title: "Wisson Orion AP3-S1 — komplett fasadtvättsystem",
     eyebrow: "Wisson systempaket",
     breadcrumb: { label: "Wisson", link: "/pages/wisson" },
@@ -338,7 +339,9 @@ writeFileSync(
       handle: p.handle,
       title: p.title,
       templateSuffix: p.handle,
-      body: `<p>${p.intro}</p>`,
+      body: p.productHandle
+        ? `<p>${p.intro}</p><p><a href="/products/${p.productHandle}">Se paketet som produkt</a></p>`
+        : `<p>${p.intro}</p>`,
       seo: p.seo,
     })),
     null,

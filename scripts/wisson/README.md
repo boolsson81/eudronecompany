@@ -9,7 +9,7 @@ för resultatet av första körningen.
 | Fil | Vad |
 |---|---|
 | `copy_sv.py` | Egenförfattad svensk säljtext per modell. |
-| `build-payloads.py` | Bygger `ProductCreateInput` av fakta + säljtext → `data/wisson-catalog.json`. |
+| `build-payloads.py` | Bygger `ProductCreateInput` av fakta + säljtext → `data/wisson-catalog.json`. `build_systems()` bygger paketprodukter ur `systems` i källutdraget. |
 | `build-pages.mjs` | Genererar temamallar under `theme/templates/` + `data/wisson-pages.json`. |
 
 ## Arbetsflöde

@@ -59,10 +59,26 @@ en DJI Matrice 400 och AP-P-seriens DIC-vattenrening**, med vattenhantering och
 rengöringsmedel som kringutrustning. Källa `/en/h-nd-305.html`, nu i
 `data/wisson-source-extract.json` under `systems`.
 
-Paketet har fått en egen sida, `wisson-ap3-s1`, opublicerad som övriga
-Wisson-sidor. Den beskriver de tre kärnmodulerna och kringutrustningen, och säger
-uttryckligen att AP3-S1 inte är en egen maskin utan ett namn på ekipaget. Delarna
-säljs vidare var för sig; ingen paketprodukt är skapad.
+Paketet har både en egen sida, `wisson-ap3-s1`, och en egen produkt,
+`wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket`. Sidan länkar till
+produkten. Båda är opublicerade respektive utkast, som övrigt Wisson-material.
+
+Produkten är byggd genom samma kedja som resten: modullistan ligger i
+`data/wisson-source-extract.json` under `systems`, säljtexten i `copy_sv.py` och
+payloaden byggs av `build_systems()` i `build-payloads.py`. Där en vanlig
+modellprodukt får en specifikationstabell får paketet i stället en lista över de
+tre kärnmodulerna och kringutrustningen.
+
+**För att göra produkten köpbar återstår:**
+
+1. Pris. Vi har inget landat inköpspris på AP3-P3 eller DIC-reningen — frakten är
+   ofylld — och inget pris alls på Matrice 400 i bunten.
+2. Produktbild. Wissons sidor lazy-laddar sina bilder och exponerar inga
+   användbara fil-URL:er, så bilden måste komma från leverantören.
+3. Publicering. Produkten står på `DRAFT` och sidan på `isPublished: false`,
+   enligt regeln i `scripts/wisson/README.md`.
+4. Temadeploy. Sidmallen ligger bara i repot tills `node scripts/push-edp-theme.mjs`
+   körts med butikstoken.
 
 ## Sidor
 
@@ -80,5 +96,5 @@ Orion-sidorna.
 1. Ska laddrobotarna (CF1, CS1, hemmaladdare) säljas alls? De ligger utanför
    drönarsortimentet.
 2. Ska CP-C1 och PWS läggas upp? Då behövs en egen kategori och egna sidor.
-3. Ska AP3-S1 också bli en köpbar paketprodukt, eller räcker sidan plus de
-   enskilda artiklarna?
+3. Vilket pris AP3-S1 ska ha, och om Matrice 400 ska ingå i priset eller
+   offereras separat.

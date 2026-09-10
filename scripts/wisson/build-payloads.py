@@ -13,6 +13,7 @@ from copy_sv import COPY
 
 SRC = json.load(open(os.path.join(ROOT, "data", "wisson-source-extract.json"), encoding="utf-8"))
 
+BRAND = "EU Drone Company"
 RUN_TAG = "wisson-import"
 REVIEW_TAG = "draft-granskas"
 
@@ -106,6 +107,14 @@ VALUE_SV = {
     "4x efficiency": "4× jämfört med manuellt arbete",
 }
 
+MODULE_SV = {
+    "AP3-P3 Pliabot® Aerial Tethered Cleaning Robot": "AP3-P3 — Pliabot flygburen tvättrobot med 40° gummiskrapa",
+    "DJI Matrice 400 drone": "DJI Matrice 400 — flygplattformen som bär roboten",
+    "AP-P Series dedicated dynamic intelligent control (DIC) water treatment system": "AP-P DIC-vattenrening — dubbelpatenterad, ger medicinskt rent vatten",
+    "AP-P Series dedicated water management system": "AP-P vattenhanteringssystem",
+    "AP-P Series dedicated curtain wall cleaning agent": "AP-P rengöringsmedel för glasfasad",
+}
+
 COMPAT_SV = {
     "DJI FC30": "DJI FlyCart 30",
     "DJI M300": "DJI Matrice 300 RTK",
@@ -155,6 +164,32 @@ def build_description(p, c):
     )
     return "".join(parts)
 
+def build_system_description(sysdef, c):
+    """Paketprodukt: modullistan ersätter specifikationstabellen."""
+    parts = [f"<p>{esc(c['intro'])}</p>"]
+    parts.append(
+        "<h3>Tre kärnmoduler</h3><ul>"
+        + "".join(f"<li>{esc(MODULE_SV.get(m, m))}</li>" for m in sysdef["core_modules_en"])
+        + "</ul>"
+    )
+    parts.append(
+        "<h3>Kringutrustning</h3><ul>"
+        + "".join(f"<li>{esc(MODULE_SV.get(m, m))}</li>" for m in sysdef["supporting_components_en"])
+        + "</ul>"
+    )
+    parts.append("<h3>Nyckelegenskaper</h3><ul>" + "".join(f"<li>{esc(u)}</li>" for u in c["usp"]) + "</ul>")
+    parts.append(f"<h3>Användning</h3><p>{esc(c['usecase'])}</p>")
+    parts.append(
+        "<h3>Bra att veta</h3><ul>"
+        "<li>Säljs av EU Drone Company med support på svenska.</li>"
+        "<li>Paketet konfigureras per uppdrag — innehåll, pris och leveranstid bekräftas i offert.</li>"
+        "<li>Äger ni redan en Matrice 400 offererar vi delarna var för sig.</li>"
+        "<li>Specifikationerna är tillverkarens uppgifter och bekräftas vid offert.</li>"
+        "</ul>"
+    )
+    return "".join(parts)
+
+
 SEO_NAME_SV = {
     "AP30-N1": "flygburen Pliabot-manipulator",
     "AP3-G1": "flygburet Pliabot-gripdon",
@@ -170,12 +205,37 @@ SEO_NAME_SV = {
 
 
 def seo_title(model, name_en, limit=70):
-    suffix = " | EU Drone Company"
+    suffix = f" | {BRAND}"
     room = limit - len(suffix) - len(model) - 3
     name = SEO_NAME_SV.get(model, name_en)
     if len(name) > room:
         name = name[:room].rsplit(" ", 1)[0]
     return f"{model} — {name}{suffix}"
+
+
+def build_systems():
+    out = []
+    for sysdef in SRC.get("systems", []):
+        code = sysdef["code"]
+        c = COPY[code]
+        tags = ["Wisson", "Orion", "Pliabot", f"model:{code.lower()}",
+                "brand:wisson", "manufacturer:wisson", "serie:s",
+                "typ:paket", "compat:matrice-400",
+                "industry:inspection", RUN_TAG, REVIEW_TAG]
+        out.append({
+            "model": code,
+            "title": "Wisson Orion AP3-S1 — komplett fasadtvättsystem (paket)",
+            "vendor": "Wisson",
+            "productType": "Fasadtvättsystem (paket)",
+            "tags": sorted(set(tags)),
+            "descriptionHtml": build_system_description(sysdef, c),
+            "seo": {
+                "title": f"AP3-S1 — komplett fasadtvättsystem | {BRAND}",
+                "description": (c["intro"][:150].rsplit(" ", 1)[0] + "…"),
+            },
+            "source": sysdef["source"],
+        })
+    return out
 
 
 def build():
@@ -206,7 +266,7 @@ def build():
     return out
 
 if __name__ == "__main__":
-    cat = build()
+    cat = build() + build_systems()
     dest = os.path.join(ROOT, "data", "wisson-catalog.json")
     with open(dest, "w", encoding="utf-8") as f:
         json.dump(cat, f, ensure_ascii=False, indent=1)
