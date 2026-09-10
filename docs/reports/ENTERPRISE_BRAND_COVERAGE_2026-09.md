@@ -416,6 +416,26 @@ Ingen publik ansökningssida hittades för **CZI** eller **Chasing Innovation** 
 tillverkare. Båda nås via distributör: CZI genom Boston Nordic som vi redan
 handlar av, Chasing genom Focus Nordic.
 
+### Kopplingen till inköpsmodulens prospektlista
+
+Prospektlistan i inköpsmodulen är **inte** tabellen `supplier_prospects` utan
+den statiska filen `src/data/droneSuppliers.ts` i digitalsignal-repot.
+Tabellen finns och har nio rader för vår butik, men vyn läser den inte. Värt
+att veta innan någon letar efter en kandidat på fel ställe.
+
+**Dronavia fanns i listan hela tiden**, i gruppen Tillbehör snarare än
+Kommersiellt, vilket är varför den är lätt att missa. Dronavia, CZI, Dronetag,
+Wisson och Boston Group ligger dessutom redan i `suppliers`.
+
+Tio av den här rapportens varumärken saknades helt och är tillagda 2026-09-10:
+Soarability, EcoFlow, Wisson, Pix4D, XGRIDS, Emesent, SanDisk, Boston Group,
+Chasing Innovation och Tundra Drone.
+
+Kandidater på nivå 1 och 2 bär nu flaggan `strategic` och en egen badge i
+Prospekt-fliken. Kriteriet är den här rapportens: **sortimentshål, inte
+marginal eller storlek.** Fjorton av 101 kandidater bär den. Ändras
+prioriteringen här ska flaggan följa med — det är samma beslut på två ställen.
+
 ### Reviderad åtgärdsordning
 
 1. **Publicera 107 icke-DJI-utkast från Boston Nordic.** CZI 25, Pix4D 31,
