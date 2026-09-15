@@ -15,7 +15,9 @@
     "theme:verify": "node scripts/verify-edp-theme-deploy.mjs",
     "audit:seo": "node scripts/audit-edp-storefront-seo.mjs",
     "audit:menus": "node scripts/verify-edp-theme-menus.mjs",
-    "sitemap": "node scripts/generate-sitemap.mjs"
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "prospekt:add": "node scripts/add-inkopsprospekt.mjs",
+    "prospekt:list": "node scripts/list-inkopsprospekt.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

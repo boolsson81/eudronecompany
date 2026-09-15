@@ -27,6 +27,20 @@ Svenska i UI-text, commit-meddelanden och kommunikation. Engelska bara om det ef
   (förväntar sig att det ligger på `../digitalsignal`, annars ange sökväg som argument).
 - Edge functions deployas med Supabase CLI mot **samma hostade projekt som DigitalSignal**.
   Det finns ingen lokal Supabase-stack.
+- `npm run prospekt:add` / `npm run prospekt:list` — registret över inköpsprospect i
+  `data/inkopsprospekt.json`. Se `docs/INKOPSPROSPEKT.md`.
+
+## Inköpsprospect
+
+Leverantörer och produkter vi överväger att köpa in ligger i
+`data/inkopsprospekt.json`, oavsett om de kommer från en kartläggning under
+`docs/reports/` eller är egna fynd. Lägg till dem med `npm run prospekt:add`, som
+validerar posten — skriv inte i registret för hand. Fälten och prisreglerna
+(listpris är inte inköpspris) beskrivs i `docs/INKOPSPROSPEKT.md`.
+
+Gör du en leverantörskartläggning: behåll rapporten och datafilen som förut, och
+lägg de leverantörer som är värda att gå vidare med i registret med
+`--kalla kartlaggning`.
 
 ## Gränser mot DigitalSignal
 
