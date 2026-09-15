@@ -108,6 +108,24 @@
     "collection_title": "Namn på produktserien"
   },
   "products": {
+    "package": {
+      "contents_heading": "Det här paketet innehåller",
+      "addons_heading": "Utvalda tillbehör",
+      "addons_hint": "Bocka i det ni vill lägga till – tillvalen läggs i varukorgen tillsammans med paketet.",
+      "in_stock": "I lager",
+      "in_stock_count": "{{ quantity }} i lager",
+      "backorder": "Beställningsvara",
+      "sold_out": "Slut i lager",
+      "view_product": "Se produkt",
+      "value_label": "Värde om delarna köps var för sig",
+      "package_price_label": "Paketpris",
+      "savings_label": "Ni sparar {{ amount }} med paketet",
+      "addons_selected": {
+        "one": "1 tillval valt · +{{ amount }}",
+        "other": "{{ count }} tillval valda · +{{ amount }}"
+      },
+      "total_with_addons": "Totalt med tillval: {{ amount }}"
+    },
     "product": {
       "add_to_cart": "Lägg i varukorgen",
       "description": "Beskrivning",

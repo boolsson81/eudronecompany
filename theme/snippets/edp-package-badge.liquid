@@ -1,0 +1,14 @@
+{% comment %}
+  Etikett över paketets titel, t.ex. "TVÄTTPAKET" eller "PRO-PAKET".
+  Läser product.metafields.paket.etikett och renderar ingenting om fältet är tomt.
+
+  Usage:
+  {% render 'edp-package-badge', product: product %}
+{% endcomment %}
+{%- assign edp_package_label = product.metafields.paket.etikett.value -%}
+{%- if edp_package_label != blank -%}
+  {{ 'edp-package.css' | asset_url | stylesheet_tag }}
+  <p class="edp-package__badge-row">
+    <span class="edp-package__badge">{{ edp_package_label | escape }}</span>
+  </p>
+{%- endif -%}

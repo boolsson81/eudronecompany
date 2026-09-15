@@ -108,6 +108,24 @@
     "collection_title": "Your collection's name"
   },
   "products": {
+    "package": {
+      "contents_heading": "This package includes",
+      "addons_heading": "Recommended add-ons",
+      "addons_hint": "Tick what you want to add – the add-ons go into the cart together with the package.",
+      "in_stock": "In stock",
+      "in_stock_count": "{{ quantity }} in stock",
+      "backorder": "Available to order",
+      "sold_out": "Out of stock",
+      "view_product": "View product",
+      "value_label": "Value if bought separately",
+      "package_price_label": "Package price",
+      "savings_label": "You save {{ amount }} with the package",
+      "addons_selected": {
+        "one": "1 add-on selected · +{{ amount }}",
+        "other": "{{ count }} add-ons selected · +{{ amount }}"
+      },
+      "total_with_addons": "Total with add-ons: {{ amount }}"
+    },
     "product": {
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
