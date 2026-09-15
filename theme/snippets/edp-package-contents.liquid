@@ -1,0 +1,124 @@
+{% comment %}
+  "Det här paketet innehåller" — listar produkterna som ingår i ett paket.
+
+  Metafält på paketprodukten:
+  - paket.sammanfattning (multi_line_text_field) — kort text i rutan under titeln
+  - paket.innehall      (list.product_reference) — produkterna som ingår, i visningsordning
+  - paket.antal         (list.number_integer)    — antal per rad, samma ordning som innehall.
+                                                   Saknas fältet eller en post räknas antalet som 1.
+
+  Renderar ingenting om paket.innehall är tomt, så mallen kan tilldelas innan
+  metafälten fyllts i utan att sidan ser trasig ut.
+
+  Usage:
+  {% render 'edp-package-contents', product: product %}
+{% endcomment %}
+{%- liquid
+  assign edp_package_summary = product.metafields.paket.sammanfattning.value
+  assign edp_package_items = product.metafields.paket.innehall.value
+  assign edp_package_qtys = product.metafields.paket.antal.value
+  assign edp_package_price = product.selected_or_first_available_variant.price | default: 0
+-%}
+
+{%- if edp_package_summary != blank or edp_package_items.size > 0 -%}
+  {{ 'edp-package.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'edp-package.js' | asset_url }}" defer="defer"></script>
+
+  <div class="edp-package" data-edp-package>
+    {%- if edp_package_summary != blank -%}
+      <div class="edp-package__summary">
+        <p class="edp-package__summary-title">{{ product.title | escape }}</p>
+        <p class="edp-package__summary-text">{{ edp_package_summary | newline_to_br }}</p>
+      </div>
+    {%- endif -%}
+
+    {%- if edp_package_items.size > 0 -%}
+      {%- assign edp_package_total = 0 -%}
+      {%- assign edp_package_all_priced = true -%}
+      <h2 class="edp-package__heading h3">{{ 'products.package.contents_heading' | t }}</h2>
+      <ul class="edp-package__list" role="list">
+        {%- for edp_item in edp_package_items -%}
+          {%- liquid
+            assign edp_qty = edp_package_qtys[forloop.index0] | default: 1 | plus: 0
+            if edp_qty < 1
+              assign edp_qty = 1
+            endif
+            assign edp_variant = edp_item.selected_or_first_available_variant
+            if edp_variant == null
+              assign edp_variant = edp_item.variants.first
+            endif
+            assign edp_line_price = edp_variant.price | default: 0 | times: edp_qty
+            if edp_variant.price == null or edp_variant.price == 0
+              assign edp_package_all_priced = false
+            endif
+            assign edp_package_total = edp_package_total | plus: edp_line_price
+
+            assign edp_stock_state = 'sold_out'
+            if edp_variant != null and edp_variant.available
+              if edp_variant.inventory_management == 'shopify'
+                if edp_variant.inventory_quantity > 0
+                  assign edp_stock_state = 'in_stock_count'
+                else
+                  assign edp_stock_state = 'backorder'
+                endif
+              else
+                assign edp_stock_state = 'in_stock'
+              endif
+            endif
+          -%}
+          <li class="edp-package__item">
+            <a class="edp-package__thumb" href="{{ edp_item.url }}" aria-hidden="true" tabindex="-1">
+              {%- if edp_item.featured_image -%}
+                {{ edp_item.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', widths: '80, 160', sizes: '80px', alt: '' }}
+              {%- endif -%}
+            </a>
+            <div class="edp-package__body">
+              {%- if edp_item.vendor != blank -%}
+                <p class="edp-package__vendor">{{ edp_item.vendor | escape }}</p>
+              {%- endif -%}
+              <p class="edp-package__name">
+                <a href="{{ edp_item.url }}" class="edp-package__link">
+                  {%- if edp_qty > 1 -%}{{ edp_qty }} x {% endif -%}{{ edp_item.title | escape }}
+                </a>
+              </p>
+              <p class="edp-package__meta">
+                {%- if edp_line_price > 0 -%}
+                  <span class="edp-package__price">{{ edp_line_price | money }}</span>
+                {%- endif -%}
+                <span class="edp-package__stock edp-package__stock--{{ edp_stock_state }}">
+                  {%- case edp_stock_state -%}
+                    {%- when 'in_stock_count' -%}
+                      {{ 'products.package.in_stock_count' | t: quantity: edp_variant.inventory_quantity }}
+                    {%- when 'in_stock' -%}
+                      {{ 'products.package.in_stock' | t }}
+                    {%- when 'backorder' -%}
+                      {{ 'products.package.backorder' | t }}
+                    {%- else -%}
+                      {{ 'products.package.sold_out' | t }}
+                  {%- endcase -%}
+                </span>
+              </p>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+
+      {%- if edp_package_all_priced and edp_package_total > edp_package_price and edp_package_price > 0 -%}
+        <div class="edp-package__value">
+          <p class="edp-package__value-row">
+            <span>{{ 'products.package.value_label' | t }}</span>
+            <span class="edp-package__value-amount">{{ edp_package_total | money }}</span>
+          </p>
+          <p class="edp-package__value-row">
+            <span>{{ 'products.package.package_price_label' | t }}</span>
+            <span class="edp-package__value-amount">{{ edp_package_price | money }}</span>
+          </p>
+          {%- assign edp_package_savings = edp_package_total | minus: edp_package_price | money -%}
+          <p class="edp-package__savings">
+            {{ 'products.package.savings_label' | t: amount: edp_package_savings }}
+          </p>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+{%- endif -%}

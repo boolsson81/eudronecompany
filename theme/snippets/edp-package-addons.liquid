@@ -1,0 +1,88 @@
+{% comment %}
+  "Utvalda tillbehör" — valbara tillval till ett paket.
+
+  Metafält på paketprodukten:
+  - paket.tillval (list.product_reference) — produkter kunden kan bocka i.
+
+  Ibockade tillval läggs i varukorgen tillsammans med paketet (1 st per tillval)
+  när kunden klickar "Lägg i varukorgen". Logiken ligger i assets/edp-package.js,
+  som hakar på temats vanliga product-form. Utan JavaScript läggs bara paketet.
+
+  Renderar ingenting om paket.tillval är tomt.
+
+  Usage:
+  {% render 'edp-package-addons', product: product, section_id: section.id %}
+{% endcomment %}
+{%- assign edp_addons = product.metafields.paket.tillval.value -%}
+
+{%- if edp_addons.size > 0 -%}
+  {{ 'edp-package.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'edp-package.js' | asset_url }}" defer="defer"></script>
+
+  <fieldset
+    class="edp-package edp-package__addons"
+    data-edp-package-addons
+    data-money-format="{{ shop.money_format | escape }}"
+    data-package-price="{{ product.selected_or_first_available_variant.price | default: 0 }}"
+    data-summary-one="{{ 'products.package.addons_selected.one' | t | escape }}"
+    data-summary-other="{{ 'products.package.addons_selected.other' | t | escape }}"
+    data-total-label="{{ 'products.package.total_with_addons' | t: amount: '__AMOUNT__' | escape }}"
+  >
+    <legend class="edp-package__heading h3">{{ 'products.package.addons_heading' | t }}</legend>
+    <p class="edp-package__hint">{{ 'products.package.addons_hint' | t }}</p>
+
+    <ul class="edp-package__list" role="list">
+      {%- for edp_addon in edp_addons -%}
+        {%- liquid
+          assign edp_addon_variant = edp_addon.selected_or_first_available_variant
+          assign edp_addon_available = false
+          if edp_addon_variant != null and edp_addon_variant.available
+            assign edp_addon_available = true
+          endif
+          assign edp_addon_input_id = 'EdpAddon-' | append: section_id | append: '-' | append: edp_addon.id
+        -%}
+        <li class="edp-package__item edp-package__item--addon{% unless edp_addon_available %} edp-package__item--unavailable{% endunless %}">
+          <div class="edp-package__check">
+            <input
+              type="checkbox"
+              id="{{ edp_addon_input_id }}"
+              class="edp-package__checkbox"
+              data-edp-addon
+              value="{{ edp_addon_variant.id }}"
+              data-price="{{ edp_addon_variant.price | default: 0 }}"
+              data-title="{{ edp_addon.title | escape }}"
+              {% unless edp_addon_available %}disabled{% endunless %}
+            >
+          </div>
+          <label class="edp-package__thumb" for="{{ edp_addon_input_id }}" aria-hidden="true">
+            {%- if edp_addon.featured_image -%}
+              {{ edp_addon.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', widths: '80, 160', sizes: '80px', alt: '' }}
+            {%- endif -%}
+          </label>
+          <div class="edp-package__body">
+            {%- if edp_addon.vendor != blank -%}
+              <p class="edp-package__vendor">{{ edp_addon.vendor | escape }}</p>
+            {%- endif -%}
+            <label class="edp-package__name" for="{{ edp_addon_input_id }}">{{ edp_addon.title | escape }}</label>
+            <p class="edp-package__meta">
+              {%- if edp_addon_available -%}
+                <span class="edp-package__price">{{ edp_addon_variant.price | money }}</span>
+              {%- else -%}
+                <span class="edp-package__stock edp-package__stock--sold_out">{{ 'products.package.sold_out' | t }}</span>
+              {%- endif -%}
+              <a href="{{ edp_addon.url }}" class="edp-package__link edp-package__link--product">
+                {{ 'products.package.view_product' | t }}
+                <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+              </a>
+            </p>
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
+
+    <div class="edp-package__addon-summary" data-edp-addon-summary hidden aria-live="polite">
+      <p class="edp-package__addon-summary-line" data-edp-addon-summary-count></p>
+      <p class="edp-package__addon-summary-total" data-edp-addon-summary-total></p>
+    </div>
+  </fieldset>
+{%- endif -%}

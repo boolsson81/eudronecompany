@@ -1,0 +1,277 @@
+/* EU Drone Company — paketmall (product.paket.json): innehåll och tillval */
+
+.edp-package {
+  margin: 0 0 2.4rem;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.edp-package__badge-row {
+  margin: 0 0 1.2rem;
+}
+
+.edp-package__badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgb(var(--color-foreground));
+  color: rgb(var(--color-background));
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.edp-package__summary {
+  padding: 1.6rem 1.8rem;
+  border: 0.2rem solid rgb(var(--edp-accent, 0, 163, 224));
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.edp-package__summary-title {
+  margin: 0 0 0.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+}
+
+.edp-package__summary-text {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.55;
+  color: rgba(var(--color-foreground), 0.78);
+}
+
+.edp-package__heading {
+  margin: 0 0 1.2rem;
+  padding: 0;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+}
+
+.edp-package__hint {
+  margin: -0.6rem 0 1.2rem;
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.65);
+}
+
+.edp-package__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.12);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.edp-package__item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1.4rem 1.6rem;
+  background: rgb(var(--color-background));
+}
+
+.edp-package__item + .edp-package__item {
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.12);
+}
+
+.edp-package__item--unavailable {
+  opacity: 0.55;
+}
+
+.edp-package__thumb {
+  flex: 0 0 7rem;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.edp-package__thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.edp-package__body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.edp-package__vendor {
+  margin: 0 0 0.2rem;
+  font-size: 1.2rem;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.edp-package__name {
+  display: block;
+  margin: 0 0 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+}
+
+.edp-package__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.edp-package__link:hover {
+  text-decoration: underline;
+}
+
+.edp-package__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.6rem;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.edp-package__price {
+  font-weight: 700;
+  color: rgb(var(--color-foreground));
+}
+
+.edp-package__stock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(var(--color-foreground), 0.7);
+}
+
+.edp-package__stock::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: rgba(var(--color-foreground), 0.35);
+}
+
+.edp-package__stock--in_stock::before,
+.edp-package__stock--in_stock_count::before {
+  background: #2e9e5b;
+}
+
+.edp-package__stock--backorder::before {
+  background: #d9a300;
+}
+
+.edp-package__stock--sold_out::before {
+  background: #c8402f;
+}
+
+.edp-package__link--product {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(var(--color-foreground));
+}
+
+.edp-package__link--product .svg-wrapper {
+  width: 1rem;
+  height: 1rem;
+  transform: rotate(-90deg);
+}
+
+.edp-package__link--product svg {
+  width: 100%;
+  height: 100%;
+}
+
+.edp-package__check {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.edp-package__checkbox {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0;
+  accent-color: rgb(var(--edp-accent, 0, 163, 224));
+  cursor: pointer;
+}
+
+.edp-package__checkbox:disabled {
+  cursor: not-allowed;
+}
+
+.edp-package__item--addon:has(.edp-package__checkbox:checked) {
+  background: rgba(var(--edp-accent, 0, 163, 224), 0.06);
+}
+
+.edp-package__value {
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  background: rgba(var(--color-foreground), 0.04);
+  font-size: 1.3rem;
+}
+
+.edp-package__value-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.6rem;
+  margin: 0 0 0.4rem;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+.edp-package__value-amount {
+  font-weight: 600;
+  color: rgb(var(--color-foreground));
+}
+
+.edp-package__savings {
+  margin: 0.6rem 0 0;
+  font-weight: 700;
+  color: #2e9e5b;
+}
+
+.edp-package__addon-summary {
+  margin-top: 1.2rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.8rem;
+  background: rgba(var(--edp-accent, 0, 163, 224), 0.08);
+  font-size: 1.3rem;
+}
+
+.edp-package__addon-summary-line {
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.8);
+}
+
+.edp-package__addon-summary-total {
+  margin: 0.3rem 0 0;
+  font-weight: 700;
+  color: rgb(var(--color-foreground));
+}
+
+@media screen and (max-width: 749px) {
+  .edp-package__item {
+    gap: 1rem;
+    padding: 1.2rem;
+  }
+
+  .edp-package__thumb {
+    flex-basis: 5.6rem;
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
