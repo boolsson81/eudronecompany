@@ -159,6 +159,18 @@
         Array.prototype.forEach.call(roots, updateSummary);
       }
     });
+    // Dawn byter varianten utan att rendera om custom_liquid-blocken, så
+    // paketpriset i data-package-price måste uppdateras när varianten ändras.
+    if (typeof subscribe === 'function' && typeof PUB_SUB_EVENTS !== 'undefined' && PUB_SUB_EVENTS.variantChange) {
+      subscribe(PUB_SUB_EVENTS.variantChange, function (event) {
+        var variant = event && event.data && event.data.variant;
+        if (!variant || typeof variant.price !== 'number') return;
+        Array.prototype.forEach.call(roots, function (root) {
+          root.dataset.packagePrice = String(variant.price);
+          updateSummary(root);
+        });
+      });
+    }
     patchCartNotification();
     if (window.customElements && customElements.whenDefined) {
       customElements.whenDefined('cart-notification').then(patchCartNotification);

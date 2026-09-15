@@ -160,19 +160,50 @@ async function createDefinition(def) {
   return { status: "created", key: def.key, id: result.createdDefinition?.id };
 }
 
+/**
+ * Jämför befintliga definitioner med de mallen kräver. En definition med samma
+ * nyckel men annan typ ger snippets data i fel form (t.ex. en textsträng i
+ * stället för en produktlista), så den ska stoppa körningen i stället för att
+ * rapporteras som "finns redan".
+ */
+export function findTypeMismatches(required, existing) {
+  const byKey = new Map(existing.map((d) => [d.key, d]));
+  const mismatches = [];
+  for (const def of required) {
+    const found = byKey.get(def.key);
+    if (!found) continue;
+    const actual = typeof found.type === "string" ? found.type : found.type?.name;
+    if (actual && actual !== def.type) {
+      mismatches.push({ namespace: def.namespace, key: def.key, expected: def.type, actual });
+    }
+  }
+  return mismatches;
+}
+
 async function main() {
   loadEnv();
   console.log(`Paket-metafält (${EXECUTE ? "EXECUTE" : "dry-run"}) — ${SHOP}\n`);
 
   const existing = await listExistingDefinitions();
-  const existingKeys = new Set(existing.map((d) => d.key));
-  console.log(`Befintliga ${PAKET_NAMESPACE}.*-definitioner: ${existing.length ? [...existingKeys].join(", ") : "(inga)"}\n`);
+  const existingByKey = new Map(existing.map((d) => [d.key, d]));
+  console.log(`Befintliga ${PAKET_NAMESPACE}.*-definitioner: ${existing.length ? [...existingByKey.keys()].join(", ") : "(inga)"}\n`);
+
+  const typeMismatches = findTypeMismatches(PAKET_METAFIELD_DEFINITIONS, existing);
+  if (typeMismatches.length) {
+    for (const m of typeMismatches) {
+      console.error(`  FEL   ${m.namespace}.${m.key} finns redan med typen ${m.actual}, mallen kräver ${m.expected}`);
+    }
+    throw new Error(
+      "Metafältsdefinitioner med fel typ. Migrera värdena till ett nytt fält, ta bort den gamla definitionen " +
+        "i Shopify admin (Inställningar → Anpassade data → Produkter) och kör skriptet igen.",
+    );
+  }
 
   const results = [];
   for (const def of PAKET_METAFIELD_DEFINITIONS) {
     const label = `${def.namespace}.${def.key}`;
-    if (existingKeys.has(def.key)) {
-      console.log(`  hoppa ${label} — finns redan`);
+    if (existingByKey.has(def.key)) {
+      console.log(`  hoppa ${label} — finns redan (${def.type})`);
       results.push({ key: def.key, status: "exists" });
       continue;
     }

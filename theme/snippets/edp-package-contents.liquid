@@ -28,7 +28,7 @@
     {%- if edp_package_summary != blank -%}
       <div class="edp-package__summary">
         <p class="edp-package__summary-title">{{ product.title | escape }}</p>
-        <p class="edp-package__summary-text">{{ edp_package_summary | newline_to_br }}</p>
+        <p class="edp-package__summary-text">{{ edp_package_summary | escape | newline_to_br }}</p>
       </div>
     {%- endif -%}
 

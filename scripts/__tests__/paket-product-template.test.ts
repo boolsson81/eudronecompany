@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
-import { PAKET_METAFIELD_DEFINITIONS, PAKET_NAMESPACE } from "../setup-paket-metafields.mjs";
+import { findTypeMismatches, PAKET_METAFIELD_DEFINITIONS, PAKET_NAMESPACE } from "../setup-paket-metafields.mjs";
 
 /**
  * Paketmallen (`product.paket.json`) bygger på custom_liquid-block som renderar
@@ -126,5 +126,26 @@ describe("paket-snippets", () => {
     expect(js).toContain("[data-edp-package-addons]");
     expect(js).toContain("input[data-edp-addon]:checked");
     expect(js).toContain("items[0][id]");
+  });
+});
+
+describe("setup-paket-metafields", () => {
+  it("stoppar på befintlig definition med fel typ", () => {
+    const [first] = PAKET_METAFIELD_DEFINITIONS;
+    const wrongType = [{ key: first.key, namespace: first.namespace, type: { name: "single_line_text_field_x" } }];
+    expect(findTypeMismatches(PAKET_METAFIELD_DEFINITIONS, wrongType)).toEqual([
+      { namespace: first.namespace, key: first.key, expected: first.type, actual: "single_line_text_field_x" },
+    ]);
+  });
+
+  it("släpper igenom befintliga definitioner med rätt typ", () => {
+    const same = PAKET_METAFIELD_DEFINITIONS.map((d) => ({ key: d.key, namespace: d.namespace, type: { name: d.type } }));
+    expect(findTypeMismatches(PAKET_METAFIELD_DEFINITIONS, same)).toEqual([]);
+  });
+});
+
+describe("edp-package-contents", () => {
+  it("escapar sammanfattningen innan radbrytningar blir HTML", () => {
+    expect(snippetSource("edp-package-contents")).toContain("edp_package_summary | escape | newline_to_br");
   });
 });
