@@ -1,0 +1,187 @@
+{% comment %}
+  Mission page — Shopify-native metaobject template for `mission`
+  (onlineStore urlHandle: "missions"). Used as the `main` section in
+  templates/metaobject.mission.json. Renders from `closest.metaobject`.
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign mission = closest.metaobject
+  assign quote_link = section.settings.quote_link | default: '/pages/contact-quote'
+-%}
+
+{%- if mission == blank -%}
+  <div class="edp-payload__wrap edp-payload__section">
+    <p>Det här uppdraget kunde inte hittas.</p>
+  </div>
+{%- else -%}
+  <div class="edp-payload color-{{ section.settings.color_scheme }}">
+    <div class="edp-payload__wrap">
+
+      <nav class="edp-payload__breadcrumb" aria-label="Brödsmula">
+        <a href="/">Hem</a>
+        <span aria-hidden="true">/</span>
+        <a href="/pages/enterprise">Enterprise</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{{ mission.name.value | escape }}</span>
+      </nav>
+
+      <header class="edp-payload__hero">
+        {%- if mission.industry.value != blank -%}
+          <p class="edp-payload__eyebrow">{{ mission.industry.value | replace: '-', ' ' | capitalize }}</p>
+        {%- endif -%}
+        <h1 class="edp-payload__title">{{ mission.name.value | escape }}</h1>
+        {%- if mission.hero_image.value != blank -%}
+          <div class="edp-payload__hero-media">
+            {{ mission.hero_image.value | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '600,900,1200' }}
+          </div>
+        {%- endif -%}
+        <div class="edp-cta-row">
+          <a href="{{ quote_link }}" class="button">Boka konsultation</a>
+        </div>
+      </header>
+
+      {%- if mission.problem_statement.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Utmaningen</h2>
+          <p class="edp-payload__prose">{{ mission.problem_statement.value }}</p>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.description.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Lösningen</h2>
+          <div class="edp-payload__prose">{{ mission.description.value }}</div>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.tasks.value != blank or mission.technologies.value != blank or mission.environments.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Arbetsflöde</h2>
+          {%- if mission.tasks.value != blank -%}
+            <p class="edp-payload__spec-group-title">Uppgifter</p>
+            <ul class="edp-payload__pills">
+              {%- for t in mission.tasks.value -%}<li class="edp-payload__pill">{{ t | replace: '-', ' ' | capitalize }}</li>{%- endfor -%}
+            </ul>
+          {%- endif -%}
+          {%- if mission.technologies.value != blank -%}
+            <p class="edp-payload__spec-group-title" style="margin-top:1rem">Teknik</p>
+            <ul class="edp-payload__pills">
+              {%- for t in mission.technologies.value -%}<li class="edp-payload__pill">{{ t | replace: '-', ' ' | upcase }}</li>{%- endfor -%}
+            </ul>
+          {%- endif -%}
+          {%- if mission.environments.value != blank -%}
+            <p class="edp-payload__spec-group-title" style="margin-top:1rem">Miljö</p>
+            <ul class="edp-payload__pills">
+              {%- for t in mission.environments.value -%}<li class="edp-payload__pill">{{ t | replace: '-', ' ' | capitalize }}</li>{%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </section>
+      {%- endif -%}
+
+      {%- if mission.recommended_uav_types.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Rekommenderade UAV-plattformar</h2>
+          <ul class="edp-payload__pills">
+            {%- for platform in mission.recommended_uav_types.value -%}
+              <li class="edp-payload__pill">{{ platform.name.value | escape }}</li>
+            {%- endfor -%}
+          </ul>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.recommended_payloads.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Rekommenderad payload</h2>
+          <div class="edp-payload__grid">
+            {%- for product in mission.recommended_payloads.value -%}
+              {%- render 'card-product', card_product: product, media_aspect_ratio: 'square' -%}
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.recommended_software.value != blank or mission.recommended_services.value != blank or mission.recommended_accessories.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Övriga komponenter</h2>
+          <div class="edp-payload__grid">
+            {%- for product in mission.recommended_accessories.value -%}
+              {%- render 'card-product', card_product: product, media_aspect_ratio: 'square' -%}
+            {%- endfor -%}
+            {%- for product in mission.recommended_software.value -%}
+              {%- render 'card-product', card_product: product, media_aspect_ratio: 'square' -%}
+            {%- endfor -%}
+            {%- for product in mission.recommended_services.value -%}
+              {%- render 'card-product', card_product: product, media_aspect_ratio: 'square' -%}
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.solution_packages.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Exempel på systemkonfiguration</h2>
+          <div class="edp-payload__grid">
+            {%- for pkg in mission.solution_packages.value -%}
+              <a class="edp-payload__card" href="{{ pkg.url }}">
+                <p class="edp-payload__card-title">{{ pkg.name.value | escape }}</p>
+                {%- if pkg.components_summary.value != blank -%}
+                  <p class="edp-payload__card-text">{{ pkg.components_summary.value | join: ' · ' }}</p>
+                {%- endif -%}
+              </a>
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.case_studies.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Referensuppdrag</h2>
+          <div class="edp-payload__prose">{{ mission.case_studies.value }}</div>
+        </section>
+      {%- endif -%}
+
+      {%- if mission.buying_guide.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Köpguide</h2>
+          <div class="edp-payload__prose">{{ mission.buying_guide.value }}</div>
+        </section>
+      {%- endif -%}
+
+      {%- assign faq_items = mission.faq.value | default: nil -%}
+      {%- if faq_items != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Vanliga frågor</h2>
+          {%- for item in faq_items -%}
+            <div class="edp-payload__faq-item">
+              <p class="edp-payload__faq-q">{{ item.question }}</p>
+              <p class="edp-payload__faq-a">{{ item.answer }}</p>
+            </div>
+          {%- endfor -%}
+        </section>
+      {%- endif -%}
+
+      <section class="edp-payload__banner">
+        <h2 class="edp-payload__banner-title">Behöver du en komplett lösning för {{ mission.name.value | downcase }}?</h2>
+        <p class="edp-payload__banner-text">Vårt enterprise-team bygger en komplett konfiguration av drönare, payload, mjukvara och service för ditt uppdrag.</p>
+        <div class="edp-cta-row">
+          <a href="{{ quote_link }}" class="button">Begär konsultation</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Uppdrag",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "url", "id": "quote_link", "label": "Länk till offertformulär", "default": "/pages/contact-quote" }
+  ],
+  "presets": [{ "name": "Uppdrag" }]
+}
+{% endschema %}

@@ -1,0 +1,173 @@
+{% comment %}
+  Payload category page — Shopify-native metaobject template for
+  `payload_category` (onlineStore urlHandle: "payloads").
+  Used as the `main` section in templates/metaobject.payload_category.json.
+  Renders from `closest.metaobject`, the payload_category entry Shopify
+  resolves automatically for the current URL.
+
+  Self-contained: styles come from assets/edp-payload.css, no dependency
+  on Dawn or Horizon component classes (see Phase 1 audit — the live
+  theme is a Horizon/Dawn hybrid).
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign category = closest.metaobject
+  assign quote_link = section.settings.quote_link | default: '/pages/contact-quote'
+-%}
+
+{%- if category == blank -%}
+  <div class="edp-payload__wrap edp-payload__section">
+    <p>Den här kategorin kunde inte hittas.</p>
+  </div>
+{%- else -%}
+  <div class="edp-payload color-{{ section.settings.color_scheme }}">
+    <div class="edp-payload__wrap">
+
+      <nav class="edp-payload__breadcrumb" aria-label="Brödsmula">
+        <a href="/">Hem</a>
+        <span aria-hidden="true">/</span>
+        <a href="/pages/enterprise">Enterprise</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{{ category.name.value | escape }}</span>
+      </nav>
+
+      <header class="edp-payload__hero">
+        {%- if category.icon.value != blank -%}
+          <p class="edp-payload__eyebrow">{{ category.icon.value | escape }}</p>
+        {%- endif -%}
+        <h1 class="edp-payload__title">{{ category.name.value | escape }}</h1>
+        {%- if category.short_description.value != blank -%}
+          <p class="edp-payload__lede">{{ category.short_description.value }}</p>
+        {%- endif -%}
+        {%- if category.hero_image.value != blank -%}
+          <div class="edp-payload__hero-media">
+            {{ category.hero_image.value | image_url: width: 1200 | image_tag: loading: 'lazy', widths: '600,900,1200' }}
+          </div>
+        {%- endif -%}
+        <div class="edp-cta-row">
+          <a href="{{ quote_link }}" class="button">Begär Enterprise-offert</a>
+          {%- if section.settings.finder_link != blank -%}
+            <a href="{{ section.settings.finder_link }}" class="button button--secondary">Hitta rätt payload</a>
+          {%- endif -%}
+        </div>
+      </header>
+
+      {%- if category.technical_overview.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Teknisk översikt</h2>
+          <div class="edp-payload__prose">{{ category.technical_overview.value }}</div>
+        </section>
+      {%- endif -%}
+
+      {%- comment %} Subcategories: payload_subcategory entries whose parent_category matches this category {% endcomment -%}
+      {%- assign subcategories = shop.metaobjects.payload_subcategory.values -%}
+      {%- if subcategories != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Underkategorier</h2>
+          <div class="edp-payload__grid">
+            {%- for sub in subcategories -%}
+              {%- if sub.parent_category.value.id == category.id -%}
+                <div class="edp-payload__card">
+                  <p class="edp-payload__card-title">{{ sub.name.value | escape }}</p>
+                  {%- if sub.description.value != blank -%}
+                    <p class="edp-payload__card-text">{{ sub.description.value | truncate: 110 }}</p>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if category.typical_customers.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Vem använder {{ category.name.value | downcase }}?</h2>
+          <ul class="edp-payload__pills">
+            {%- for customer in category.typical_customers.value -%}
+              <li class="edp-payload__pill">{{ customer | escape }}</li>
+            {%- endfor -%}
+          </ul>
+        </section>
+      {%- endif -%}
+
+      {%- comment %} Related missions: mission entries whose technologies include this category's technology key {% endcomment -%}
+      {%- assign tech_key = category.technology.value -%}
+      {%- assign missions = shop.metaobjects.mission.values -%}
+      {%- assign related_missions_count = 0 -%}
+      {%- if missions != blank and tech_key != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Vanliga uppdrag</h2>
+          <div class="edp-payload__grid">
+            {%- for mission in missions -%}
+              {%- if mission.technologies.value contains tech_key and related_missions_count < 8 -%}
+                {%- assign related_missions_count = related_missions_count | plus: 1 -%}
+                <a class="edp-payload__card" href="{{ mission.url }}">
+                  <p class="edp-payload__card-title">{{ mission.name.value | escape }}</p>
+                  {%- if mission.problem_statement.value != blank -%}
+                    <p class="edp-payload__card-text">{{ mission.problem_statement.value | truncate: 110 }}</p>
+                  {%- endif -%}
+                </a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if category.featured_products.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Utvalda produkter</h2>
+          <div class="edp-payload__grid">
+            {%- for product in category.featured_products.value -%}
+              {%- render 'card-product', card_product: product, media_aspect_ratio: 'square' -%}
+            {%- endfor -%}
+          </div>
+        </section>
+      {%- endif -%}
+
+      {%- if category.buying_guide.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Köpguide</h2>
+          <div class="edp-payload__prose">{{ category.buying_guide.value }}</div>
+        </section>
+      {%- endif -%}
+
+      {%- assign faq_items = category.faq.value | default: nil -%}
+      {%- if faq_items != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Vanliga frågor</h2>
+          {%- for item in faq_items -%}
+            <div class="edp-payload__faq-item">
+              <p class="edp-payload__faq-q">{{ item.question }}</p>
+              <p class="edp-payload__faq-a">{{ item.answer }}</p>
+            </div>
+          {%- endfor -%}
+        </section>
+      {%- endif -%}
+
+      <section class="edp-payload__banner">
+        <h2 class="edp-payload__banner-title">Osäker på vilken {{ category.name.value | downcase }} som passar din verksamhet?</h2>
+        <p class="edp-payload__banner-text">Vårt enterprise-team hjälper dig välja rätt sensor, plattform och integration utifrån ditt uppdrag.</p>
+        <div class="edp-cta-row">
+          <a href="{{ quote_link }}" class="button">Begär Enterprise-offert</a>
+          <a href="/pages/contact-us" class="button button--secondary">Prata med en expert</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Payload-kategori",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "url", "id": "quote_link", "label": "Länk till offertformulär", "default": "/pages/contact-quote" },
+    { "type": "url", "id": "finder_link", "label": "Länk till Payload Finder" }
+  ],
+  "presets": [{ "name": "Payload-kategori" }]
+}
+{% endschema %}
