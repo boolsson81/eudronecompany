@@ -234,3 +234,15 @@
 .edp-compare-table td { text-align: left; padding: 0.6em 1.25em 0.6em 0; white-space: nowrap; }
 .edp-compare-table thead th { font-weight: 600; }
 .edp-compare-table thead th a { color: inherit; }
+
+/* Configurator summary ----------------------------------------------------- */
+.edp-configurator__summary {
+  white-space: pre-wrap;
+  font-family: inherit;
+  background: color-mix(in srgb, var(--edp-payload-fg) 4%, transparent);
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

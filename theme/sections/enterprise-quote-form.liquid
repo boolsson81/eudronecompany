@@ -268,6 +268,30 @@
   </div>
 </div>
 
+<script>
+  (function () {
+    // Optional prefill from the Enterprise Configurator / Payload Finder —
+    // only acts when these query params are present, so normal direct visits
+    // to this form are unaffected.
+    var params = new URLSearchParams(window.location.search);
+    var message = params.get('prefill_message');
+    var industry = params.get('industry');
+    if (message) {
+      var messageField = document.getElementById('EnterpriseQuoteForm-message');
+      if (messageField && !messageField.value) messageField.value = message;
+    }
+    if (industry) {
+      var industryField = document.getElementById('EnterpriseQuoteForm-industry');
+      if (industryField) {
+        var match = Array.prototype.find.call(industryField.options, function (opt) {
+          return opt.value.toLowerCase().indexOf(industry.toLowerCase()) !== -1;
+        });
+        if (match) industryField.value = match.value;
+      }
+    }
+  })();
+</script>
+
 {% schema %}
 {
   "name": "t:sections.enterprise-quote-form.name",
