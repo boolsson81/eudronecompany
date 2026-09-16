@@ -1,0 +1,242 @@
+{
+  "version": "1.0",
+  "generated": "2026-09-15",
+  "namespace": "edp",
+  "notes": [
+    "Source of truth for the payload / mission / platform taxonomy. scripts/setup-enterprise-payload-architecture.mjs upserts this into Shopify metaobjects (handle-based, idempotent).",
+    "Handles are English and stable (used in URLs and as AI keys). Display names are Swedish; name_en is kept for AI/API consumers.",
+    "No specifications, prices, lead times or compatibility claims are asserted here. Platform facts are limited to manufacturer, series and mount interface names that appear in supplier product titles; anything else is left empty."
+  ],
+  "categories": [
+    {"handle": "eo-zoom-cameras", "priority": 1, "name": "EO / RGB / Zoom-kameror", "name_en": "EO / RGB / Zoom Cameras", "technology": "rgb", "short_description": "Optiska kameror för visuell inspektion, dokumentation och långdistansobservation — från högupplöst RGB till ultralång optisk zoom.", "technical_overview": "EO-kameror (electro-optical) avbildar i det synliga spektrumet. Nyckelparametrar är sensorupplösning, optisk zoom, bildstabilisering och lågljusprestanda. Zoomkameror används när objektet inte kan nås på nära håll, exempelvis kraftledningar, master och fasader.", "typical_customers": ["Inspektionsföretag", "Energibolag", "Polis och räddningstjänst", "Fastighetsförvaltare"], "typical_missions": ["powerline-inspection", "wind-turbine-inspection", "bridge-inspection", "building-inspection", "police-surveillance", "perimeter-security"], "subcategories": [
+      {"handle": "eo-cameras", "name": "EO-kameror", "name_en": "EO Cameras"},
+      {"handle": "high-resolution-rgb", "name": "Högupplöst RGB", "name_en": "High Resolution RGB"},
+      {"handle": "optical-zoom", "name": "Optisk zoom", "name_en": "Optical Zoom"},
+      {"handle": "long-range-eo", "name": "Långdistans-EO", "name_en": "Long Range EO"},
+      {"handle": "ultra-long-range-eo", "name": "Ultralång distans-EO", "name_en": "Ultra Long Range EO"},
+      {"handle": "low-light", "name": "Lågljus", "name_en": "Low Light"},
+      {"handle": "night-vision", "name": "Mörkerseende", "name_en": "Night Vision"},
+      {"handle": "inspection-cameras", "name": "Inspektionskameror", "name_en": "Inspection Cameras"}
+    ]},
+    {"handle": "thermal-cameras", "priority": 2, "name": "Termiska / IR-kameror", "name_en": "Thermal / Infrared", "technology": "thermal", "short_description": "Värmekameror för att se temperaturskillnader — hitta hotspots i solparker och ställverk, personer i mörker och glödhärdar vid brand.", "technical_overview": "Termiska kameror avbildar långvågig infraröd strålning (LWIR, 8–14 µm). Radiometriska kameror mäter absolut temperatur per pixel, vilket krävs för solpanels- och elinspektion. Viktiga parametrar är termisk upplösning (t.ex. 640×512 eller 1280×1024), känslighet (NETD), temperaturområde och om kameran är radiometrisk. EO+termisk-kombinationer ger både visuell och termisk bild i samma gimbal.", "typical_customers": ["Solparksägare", "Nätbolag", "Räddningstjänst", "Industriunderhåll"], "typical_missions": ["solar-inspection", "substation-inspection", "fire-response", "search-and-rescue", "roof-inspection", "night-surveillance"], "subcategories": [
+      {"handle": "thermal-cameras-general", "name": "Värmekameror", "name_en": "Thermal Cameras"},
+      {"handle": "radiometric-thermal", "name": "Radiometrisk termisk", "name_en": "Radiometric Thermal"},
+      {"handle": "high-resolution-thermal", "name": "Högupplöst termisk", "name_en": "High Resolution Thermal"},
+      {"handle": "long-wave-infrared", "name": "Långvågig IR (LWIR)", "name_en": "Long Wave Infrared"},
+      {"handle": "high-temperature-inspection", "name": "Högtemperaturinspektion", "name_en": "High Temperature Inspection"},
+      {"handle": "firefighting-thermal", "name": "Termisk för brandbekämpning", "name_en": "Firefighting Thermal"},
+      {"handle": "industrial-thermal", "name": "Industriell termisk", "name_en": "Industrial Thermal"},
+      {"handle": "eo-plus-thermal", "name": "EO + termisk", "name_en": "EO + Thermal"}
+    ]},
+    {"handle": "eo-ir-multisensor", "priority": 3, "name": "EO/IR multisensor", "name_en": "EO/IR Multisensor", "technology": "eo-ir", "short_description": "Gimbalsystem som kombinerar zoomkamera, vidvinkel, termisk kamera och laseravståndsmätare i en enhet för inspektion, räddning och övervakning.", "technical_overview": "EO/IR-payloads integrerar flera sensorer i en stabiliserad gimbal så att operatören kan växla mellan optisk och termisk bild, mäta avstånd med laser (LRF) och geolokalisera objekt. Detta är standardpayloaden för polis, räddningstjänst och infrastrukturinspektion.", "typical_customers": ["Polis", "Räddningstjänst", "Kustbevakning", "Nätbolag"], "typical_missions": ["police-surveillance", "search-and-rescue", "fire-response", "powerline-inspection", "border-surveillance", "long-range-surveillance"], "subcategories": [
+      {"handle": "eo-ir", "name": "EO/IR", "name_en": "EO/IR"},
+      {"handle": "eo-ir-lrf", "name": "EO/IR + LRF", "name_en": "EO/IR + LRF"},
+      {"handle": "eo-ir-thermal", "name": "EO/IR + termisk", "name_en": "EO/IR + Thermal"},
+      {"handle": "eo-ir-swir", "name": "EO/IR + SWIR", "name_en": "EO/IR + SWIR"},
+      {"handle": "multisensor-gimbals", "name": "Multisensorgimbaler", "name_en": "Multisensor Gimbals"},
+      {"handle": "long-range-surveillance-payloads", "name": "Långdistansövervakning", "name_en": "Long Range Surveillance"}
+    ]},
+    {"handle": "lidar", "priority": 4, "name": "LiDAR & laserskanning", "name_en": "LiDAR & Laser Scanning", "technology": "lidar", "short_description": "Laserskannrar som skapar punktmoln med centimeternoggrannhet — för mätning, skogsinventering, korridorkartläggning och 3D-modeller även under vegetation.", "technical_overview": "UAV-LiDAR mäter avstånd med laserpulser och bygger punktmoln som georefereras med RTK/PPK och IMU. Nyckelparametrar är räckvidd, punkttäthet (punkter per sekund), antal returer (penetration genom vegetation), noggrannhet och om systemet har integrerad RGB-kamera för färgade punktmoln. SLAM-LiDAR fungerar utan GNSS, exempelvis inomhus.", "typical_customers": ["Mätkonsulter", "Skogsbolag", "Nätbolag", "Gruvbolag", "Kommuner"], "typical_missions": ["land-survey", "topographic-survey", "forestry", "powerline-inspection", "corridor-mapping", "mining", "stockpile-measurement"], "subcategories": [
+      {"handle": "uav-lidar", "name": "UAV-LiDAR", "name_en": "UAV LiDAR"},
+      {"handle": "survey-lidar", "name": "Mät-LiDAR", "name_en": "Survey LiDAR"},
+      {"handle": "long-range-lidar", "name": "Långdistans-LiDAR", "name_en": "Long Range LiDAR"},
+      {"handle": "forestry-lidar", "name": "Skogs-LiDAR", "name_en": "Forestry LiDAR"},
+      {"handle": "corridor-mapping-lidar", "name": "Korridorkartläggning", "name_en": "Corridor Mapping"},
+      {"handle": "powerline-lidar", "name": "Kraftlednings-LiDAR", "name_en": "Powerline LiDAR"},
+      {"handle": "construction-lidar", "name": "Bygg-LiDAR", "name_en": "Construction LiDAR"},
+      {"handle": "mining-lidar", "name": "Gruv-LiDAR", "name_en": "Mining LiDAR"},
+      {"handle": "lidar-rgb", "name": "LiDAR + RGB", "name_en": "LiDAR + RGB"},
+      {"handle": "lidar-slam", "name": "LiDAR + SLAM", "name_en": "LiDAR + SLAM"}
+    ]},
+    {"handle": "photogrammetry-mapping", "priority": 5, "name": "Fotogrammetri & kartläggning", "name_en": "Photogrammetry & Mapping", "technology": "mapping", "short_description": "Mät- och kartläggningskameror för ortofoto, 3D-modeller, volymberäkning och BIM — fullformat, nadir och oblique.", "technical_overview": "Fotogrammetri bygger 3D-modeller och ortofoton från överlappande bilder. Fullformatssensorer med global/mekanisk slutare, RTK-tidsstämpling och kalibrerade objektiv ger mätnoggrannhet på centimeternivå. Oblique-kameror fångar fasader för 3D-stadsmodeller; nadirkameror används för ortofoto och volymer.", "typical_customers": ["Mätkonsulter", "Byggföretag", "Kommuner", "Gruvbolag"], "typical_missions": ["land-survey", "construction-survey", "3d-mapping", "bim", "progress-monitoring", "stockpile-measurement"], "subcategories": [
+      {"handle": "mapping-cameras", "name": "Kartläggningskameror", "name_en": "Mapping Cameras"},
+      {"handle": "full-frame-mapping", "name": "Fullformat för kartläggning", "name_en": "Full Frame Mapping"},
+      {"handle": "oblique-cameras", "name": "Oblique-kameror", "name_en": "Oblique Cameras"},
+      {"handle": "nadir-cameras", "name": "Nadirkameror", "name_en": "Nadir Cameras"},
+      {"handle": "survey-cameras", "name": "Mätkameror", "name_en": "Survey Cameras"},
+      {"handle": "photogrammetry-systems", "name": "Fotogrammetrisystem", "name_en": "Photogrammetry Systems"},
+      {"handle": "3d-mapping-payloads", "name": "3D-kartläggning", "name_en": "3D Mapping"}
+    ]},
+    {"handle": "multispectral", "priority": 6, "name": "Multispektralt", "name_en": "Multispectral", "technology": "multispectral", "short_description": "Sensorer med flera smalbandiga kanaler (t.ex. rött, red edge, NIR) för vegetationsindex som NDVI och NDRE inom jordbruk, skog och miljöövervakning.", "technical_overview": "Multispektrala kameror registrerar separata band utanför det synliga spektrumet. Genom att kombinera banden beräknas index som NDVI (växtvitalitet), NDRE (kväve/klorofyll) och GNDVI. Solstrålningssensor (DLS) och reflektanspanel krävs för kalibrerade, jämförbara resultat över tid.", "typical_customers": ["Lantbrukare", "Rådgivningsföretag", "Skogsbolag", "Forskningsinstitut"], "typical_missions": ["precision-agriculture", "crop-health", "vegetation-analysis", "forestry", "tree-health", "environmental-monitoring"], "subcategories": [
+      {"handle": "ms-agriculture", "name": "Jordbruk", "name_en": "Agriculture"},
+      {"handle": "ms-forestry", "name": "Skogsbruk", "name_en": "Forestry"},
+      {"handle": "ms-vegetation-analysis", "name": "Vegetationsanalys", "name_en": "Vegetation Analysis"},
+      {"handle": "ms-environmental-monitoring", "name": "Miljöövervakning", "name_en": "Environmental Monitoring"},
+      {"handle": "ms-crop-health", "name": "Grödhälsa", "name_en": "Crop Health"},
+      {"handle": "ndvi", "name": "NDVI", "name_en": "NDVI"},
+      {"handle": "ndre", "name": "NDRE", "name_en": "NDRE"},
+      {"handle": "gndvi", "name": "GNDVI", "name_en": "GNDVI"}
+    ]},
+    {"handle": "hyperspectral", "priority": 7, "name": "Hyperspektralt", "name_en": "Hyperspectral", "technology": "hyperspectral", "short_description": "Sensorer som registrerar hundratals smala spektralband (VNIR/SWIR) för materialidentifiering, mineralanalys och avancerad miljö- och jordbruksforskning.", "technical_overview": "Hyperspektrala kameror ger ett kontinuerligt spektrum per pixel, vilket gör det möjligt att identifiera material och kemiska sammansättningar. VNIR täcker cirka 400–1000 nm, SWIR cirka 900–2500 nm. Systemen kräver noggrann radiometrisk kalibrering, hög datakapacitet och specialiserad programvara.", "typical_customers": ["Forskningsinstitut", "Gruv- och prospekteringsbolag", "Miljömyndigheter"], "typical_missions": ["mining", "environmental-monitoring", "vegetation-analysis", "crop-health"], "subcategories": [
+      {"handle": "vnir", "name": "VNIR", "name_en": "VNIR"},
+      {"handle": "swir", "name": "SWIR", "name_en": "SWIR"},
+      {"handle": "vnir-swir", "name": "VNIR + SWIR", "name_en": "VNIR + SWIR"},
+      {"handle": "mineral-analysis", "name": "Mineralanalys", "name_en": "Mineral Analysis"},
+      {"handle": "hs-environmental-research", "name": "Miljöforskning", "name_en": "Environmental Research"},
+      {"handle": "hs-agriculture-research", "name": "Jordbruksforskning", "name_en": "Agriculture Research"},
+      {"handle": "hs-forestry-research", "name": "Skogsforskning", "name_en": "Forestry Research"}
+    ]},
+    {"handle": "gas-detection", "priority": 8, "name": "Gasdetektion", "name_en": "Gas Detection", "technology": "gas", "short_description": "Sensorer och optiska gaskameror för att hitta läckor av metan, naturgas, VOC, CO2 och vätgas i gasnät, industrianläggningar och deponier.", "technical_overview": "Gasdetektion från UAV sker antingen med punktsensorer (elektrokemiska, laserbaserade TDLAS eller PID för VOC) som mäter koncentration längs flygvägen, eller med optiska gaskameror (OGI) som visualiserar gasmoln i infrarött. Valet styrs av gastyp, krav på kvantifiering och avstånd till källan.", "typical_customers": ["Gasnätsägare", "Raffinaderier och petrokemi", "Deponier och biogas", "Räddningstjänst"], "typical_missions": ["gas-leak-detection", "oil-and-gas", "gas-infrastructure", "industrial-inspection"], "subcategories": [
+      {"handle": "methane", "name": "Metan", "name_en": "Methane"},
+      {"handle": "natural-gas", "name": "Naturgas", "name_en": "Natural Gas"},
+      {"handle": "voc", "name": "VOC", "name_en": "VOC"},
+      {"handle": "co2", "name": "CO2", "name_en": "CO2"},
+      {"handle": "hydrogen", "name": "Vätgas", "name_en": "Hydrogen"},
+      {"handle": "industrial-gas", "name": "Industrigas", "name_en": "Industrial Gas"},
+      {"handle": "optical-gas-imaging", "name": "Optisk gasavbildning (OGI)", "name_en": "Optical Gas Imaging"},
+      {"handle": "leak-detection", "name": "Läcksökning", "name_en": "Leak Detection"}
+    ]},
+    {"handle": "radiation-cbrn", "priority": 9, "name": "Strålning & CBRN", "name_en": "Radiation & CBRN", "technology": "radiation", "short_description": "Detektorer för gamma- och neutronstrålning, radiologisk kartläggning och kemisk detektion — för kärnkraft, beredskap och CBRN-insatser.", "technical_overview": "Strålningspayloads bär scintillations- eller halvledardetektorer som mäter dosrat och spektrum, och georefererar mätningarna till kartor. CBRN-payloads kompletterar med kemiska sensorer. Systemen används där personal inte bör exponeras: kärntekniska anläggningar, olycksplatser och beredskapsövningar.", "typical_customers": ["Kärnkraftverk", "Myndigheter och beredskap", "Försvar", "Forskning"], "typical_missions": ["nuclear-inspection", "disaster-response", "critical-incident", "environmental-monitoring"], "subcategories": [
+      {"handle": "radiation-detection", "name": "Strålningsdetektion", "name_en": "Radiation Detection"},
+      {"handle": "gamma", "name": "Gamma", "name_en": "Gamma"},
+      {"handle": "neutron", "name": "Neutron", "name_en": "Neutron"},
+      {"handle": "radiological-mapping", "name": "Radiologisk kartläggning", "name_en": "Radiological Mapping"},
+      {"handle": "chemical-detection", "name": "Kemisk detektion", "name_en": "Chemical Detection"},
+      {"handle": "cbrn", "name": "CBRN", "name_en": "CBRN"},
+      {"handle": "nuclear-inspection-payloads", "name": "Kärnteknisk inspektion", "name_en": "Nuclear Inspection"}
+    ]},
+    {"handle": "search-rescue-illumination", "priority": 10, "name": "Sök, räddning & belysning", "name_en": "Search, Rescue & Illumination", "technology": "spotlight", "short_description": "Sökljus, IR-belysning, strobe och beacon för nattinsatser, sök- och räddning och säker drift i mörker.", "technical_overview": "Belysningspayloads ger synligt ljus (sökljus/strålkastare), osynlig IR/NIR-belysning för mörkerkameror, eller varningsljus (strobe/beacon) för synlighet och regelefterlevnad. Nyckelparametrar är ljusflöde (lumen), räckvidd, vikt, strömförbrukning och hur payloaden styrs från fjärrkontrollen.", "typical_customers": ["Räddningstjänst", "Polis", "Sjöräddning", "Säkerhetsföretag"], "typical_missions": ["search-and-rescue", "fire-response", "disaster-response", "night-surveillance", "maritime-surveillance"], "subcategories": [
+      {"handle": "spotlight", "name": "Sökljus", "name_en": "Spotlight"},
+      {"handle": "searchlight", "name": "Strålkastare", "name_en": "Searchlight"},
+      {"handle": "ir-illuminator", "name": "IR-belysning", "name_en": "IR Illuminator"},
+      {"handle": "nir-illuminator", "name": "NIR-belysning", "name_en": "NIR Illuminator"},
+      {"handle": "strobe", "name": "Strobe", "name_en": "Strobe"},
+      {"handle": "beacon", "name": "Beacon", "name_en": "Beacon"},
+      {"handle": "search-rescue-systems", "name": "Sök- och räddningssystem", "name_en": "Search & Rescue Systems"}
+    ]},
+    {"handle": "communication-public-address", "priority": 11, "name": "Kommunikation & högtalarsystem", "name_en": "Communication & Public Address", "technology": "speaker", "short_description": "Högtalare, sirener, radio- och LTE/5G-payloads för att nå människor på marken och hålla kommunikationen uppe under insatser.", "technical_overview": "Public address-payloads sänder tal, inspelade meddelanden eller TTS med hög ljudnivå (mätt i dB på avstånd). Kommunikationspayloads kan fungera som relä (mesh, LTE/5G) för att förlänga räckvidd eller ge nät i områden utan täckning. Vikt, ljudnivå på 100 m och integrering med drönarens styrsystem avgör användbarheten.", "typical_customers": ["Polis", "Räddningstjänst", "Evenemangssäkerhet", "Kommuner"], "typical_missions": ["crowd-monitoring", "disaster-response", "search-and-rescue", "police-surveillance", "emergency-response"], "subcategories": [
+      {"handle": "speakers", "name": "Högtalare", "name_en": "Speakers"},
+      {"handle": "public-address", "name": "Public address", "name_en": "Public Address"},
+      {"handle": "sirens", "name": "Sirener", "name_en": "Sirens"},
+      {"handle": "emergency-communication", "name": "Krisommunikation", "name_en": "Emergency Communication"},
+      {"handle": "two-way-communication", "name": "Tvåvägskommunikation", "name_en": "Two-Way Communication"},
+      {"handle": "radio-payloads", "name": "Radiopayloads", "name_en": "Radio Payloads"},
+      {"handle": "lte-5g", "name": "LTE / 5G", "name_en": "LTE / 5G"},
+      {"handle": "mesh-communication", "name": "Mesh-kommunikation", "name_en": "Mesh Communication"}
+    ]},
+    {"handle": "special-custom-payloads", "priority": 12, "name": "Special- & specialbyggda payloads", "name_en": "Special & Custom Payloads", "technology": "other", "short_description": "Miljö- och vädersensorer, luft- och vattenkvalitet, RF-detektion, AIS, radar och OEM-/forskningspayloads — samt helt kundanpassade integrationer.", "technical_overview": "Specialpayloads täcker allt som inte är en standardkamera: sensorer för luft- och vattenkvalitet, RF-/spektrummonitorer, maritima sensorer (AIS, radar) och forskningsinstrument. EU Drone Company hjälper till med mekanisk montering, strömförsörjning, dataöverföring och integration mot drönarens PSDK/E-Port.", "typical_customers": ["Forskning", "Miljömyndigheter", "Hamnar och kustbevakning", "Systemintegratörer"], "typical_missions": ["environmental-monitoring", "maritime-surveillance", "critical-infrastructure-security", "industrial-inspection"], "subcategories": [
+      {"handle": "environmental-sensors", "name": "Miljösensorer", "name_en": "Environmental Sensors"},
+      {"handle": "weather-sensors", "name": "Vädersensorer", "name_en": "Weather Sensors"},
+      {"handle": "air-quality", "name": "Luftkvalitet", "name_en": "Air Quality"},
+      {"handle": "water-quality", "name": "Vattenkvalitet", "name_en": "Water Quality"},
+      {"handle": "rf-detection", "name": "RF-detektion", "name_en": "RF Detection"},
+      {"handle": "spectrum-monitoring", "name": "Spektrummonitorering", "name_en": "Spectrum Monitoring"},
+      {"handle": "maritime-sensors", "name": "Maritima sensorer", "name_en": "Maritime Sensors"},
+      {"handle": "ais", "name": "AIS", "name_en": "AIS"},
+      {"handle": "radar", "name": "Radar", "name_en": "Radar"},
+      {"handle": "custom-payload", "name": "Kundanpassad payload", "name_en": "Custom Payload"},
+      {"handle": "oem-payload", "name": "OEM-payload", "name_en": "OEM Payload"},
+      {"handle": "research-payload", "name": "Forskningspayload", "name_en": "Research Payload"}
+    ]}
+  ],
+  "mission_groups": [
+    {"handle": "public-safety", "name": "Samhällssäkerhet", "name_en": "Public Safety", "industry": "public-safety", "missions": [
+      {"handle": "police", "name": "Polis", "name_en": "Police", "tasks": ["monitor", "search"], "technologies": ["eo-ir", "thermal", "zoom", "spotlight", "speaker"], "environments": ["day", "night", "long-distance"], "problem": "Skapa lägesbild, följa misstänkta och dokumentera händelser på säkert avstånd, dag som natt."},
+      {"handle": "fire-response", "name": "Brand", "name_en": "Fire", "tasks": ["measure-temperature", "monitor", "search"], "technologies": ["thermal", "eo-ir", "spotlight", "speaker"], "environments": ["smoke", "night", "day"], "problem": "Se genom rök, hitta glödhärdar och leda insatsen från luften utan att exponera personal."},
+      {"handle": "emergency-response", "name": "Akut insats", "name_en": "Emergency Response", "tasks": ["monitor", "search"], "technologies": ["eo-ir", "thermal", "speaker", "spotlight"], "environments": ["day", "night", "difficult-terrain"], "problem": "Få en snabb överblick över en olycksplats och kommunicera med drabbade innan markresurser är framme."},
+      {"handle": "search-and-rescue", "name": "Sök och räddning", "name_en": "Search & Rescue", "tasks": ["search"], "technologies": ["thermal", "eo-ir", "spotlight", "speaker", "zoom"], "environments": ["night", "difficult-terrain", "low-light", "outdoor"], "problem": "Hitta försvunna personer snabbt i skog, fjäll eller vatten — även i mörker och dålig sikt."},
+      {"handle": "disaster-response", "name": "Katastrofinsats", "name_en": "Disaster Response", "tasks": ["monitor", "map", "search"], "technologies": ["eo-ir", "thermal", "mapping", "speaker", "lte-5g"], "environments": ["day", "night", "difficult-terrain"], "problem": "Kartlägga skadeområden, hitta drabbade och upprätta kommunikation när infrastrukturen är utslagen."},
+      {"handle": "critical-incident", "name": "Särskild händelse", "name_en": "Critical Incident", "tasks": ["monitor", "detect-gas"], "technologies": ["eo-ir", "thermal", "gas", "radiation"], "environments": ["day", "night", "smoke"], "problem": "Bedöma fara på avstånd vid kemikalieolyckor, explosioner eller hotsituationer."},
+      {"handle": "crowd-monitoring", "name": "Folksamlingar", "name_en": "Crowd Monitoring", "tasks": ["monitor"], "technologies": ["zoom", "eo-ir", "speaker"], "environments": ["day", "night", "outdoor"], "problem": "Övervaka flöden och säkerhet vid evenemang och nå publiken med meddelanden."}
+    ]},
+    {"handle": "energy", "name": "Energi", "name_en": "Energy", "industry": "energy", "missions": [
+      {"handle": "powerline-inspection", "name": "Kraftledningsinspektion", "name_en": "Powerline Inspection", "tasks": ["inspect", "scan"], "technologies": ["zoom", "thermal", "eo-ir", "lidar"], "environments": ["day", "long-distance", "outdoor"], "problem": "Inspektera isolatorer, linor och stolpar utan avbrott, helikopter eller klättring — och mäta vegetation nära ledningen."},
+      {"handle": "substation-inspection", "name": "Ställverksinspektion", "name_en": "Substation Inspection", "tasks": ["inspect", "measure-temperature"], "technologies": ["thermal", "zoom"], "environments": ["day", "outdoor"], "problem": "Hitta överhettade anslutningar och komponenter i ställverk med radiometrisk termisk kamera."},
+      {"handle": "solar-inspection", "name": "Solparksinspektion", "name_en": "Solar Inspection", "tasks": ["inspect", "measure-temperature", "map"], "technologies": ["thermal", "rgb", "mapping"], "environments": ["day", "outdoor"], "problem": "Identifiera defekta celler, strängar och moduler i storskaliga solparker och koppla fel till exakt position."},
+      {"handle": "wind-turbine-inspection", "name": "Vindkraftsinspektion", "name_en": "Wind Turbine Inspection", "tasks": ["inspect"], "technologies": ["zoom", "rgb", "thermal"], "environments": ["day", "long-distance", "outdoor"], "problem": "Dokumentera bladskador, blixtnedslag och erosion med hög upplösning utan repklättring och stillestånd."},
+      {"handle": "oil-and-gas", "name": "Olja & gas", "name_en": "Oil & Gas", "tasks": ["inspect", "detect-gas"], "technologies": ["gas", "thermal", "zoom"], "environments": ["day", "outdoor", "long-distance"], "problem": "Inspektera fackling, tankar och rörsystem och hitta läckor utan att stänga anläggningen."},
+      {"handle": "gas-infrastructure", "name": "Gasinfrastruktur", "name_en": "Gas Infrastructure", "tasks": ["detect-gas", "inspect"], "technologies": ["gas", "thermal"], "environments": ["day", "outdoor"], "problem": "Söka av gasnät och anläggningar efter metanläckor på ett systematiskt och dokumenterat sätt."}
+    ]},
+    {"handle": "infrastructure", "name": "Infrastruktur", "name_en": "Infrastructure", "industry": "infrastructure", "missions": [
+      {"handle": "bridge-inspection", "name": "Broinspektion", "name_en": "Bridge Inspection", "tasks": ["inspect", "scan"], "technologies": ["zoom", "rgb", "lidar"], "environments": ["day", "outdoor"], "problem": "Dokumentera sprickor, korrosion och skador på brokonstruktioner utan lift och avstängning."},
+      {"handle": "road-inspection", "name": "Väginspektion", "name_en": "Road Inspection", "tasks": ["inspect", "map"], "technologies": ["rgb", "mapping", "lidar"], "environments": ["day", "outdoor"], "problem": "Kartlägga vägens tillstånd, sprickor och sättningar över långa sträckor."},
+      {"handle": "railway-inspection", "name": "Järnvägsinspektion", "name_en": "Railway Inspection", "tasks": ["inspect", "scan"], "technologies": ["zoom", "lidar", "rgb"], "environments": ["day", "outdoor", "long-distance"], "problem": "Inspektera kontaktledning, spår och vegetation längs banan utan spåravstängning."},
+      {"handle": "tunnel-inspection", "name": "Tunnelinspektion", "name_en": "Tunnel Inspection", "tasks": ["inspect", "scan"], "technologies": ["lidar-slam", "rgb", "spotlight"], "environments": ["indoor", "low-light"], "problem": "Skanna och dokumentera tunnlar och kulvertar där GNSS saknas och ljuset är dåligt."},
+      {"handle": "building-inspection", "name": "Byggnadsinspektion", "name_en": "Building Inspection", "tasks": ["inspect"], "technologies": ["zoom", "rgb", "thermal"], "environments": ["day", "outdoor"], "problem": "Besiktiga fasader, tak och installationer snabbt och säkert utan ställning."},
+      {"handle": "roof-inspection", "name": "Takinspektion", "name_en": "Roof Inspection", "tasks": ["inspect", "measure-temperature"], "technologies": ["rgb", "thermal"], "environments": ["day", "outdoor"], "problem": "Hitta fuktskador, värmeläckage och skadade takytor utan att beträda taket."},
+      {"handle": "industrial-inspection", "name": "Industriinspektion", "name_en": "Industrial Inspection", "tasks": ["inspect", "measure-temperature", "detect-gas"], "technologies": ["eo-ir", "thermal", "rgb", "gas"], "environments": ["day", "indoor", "outdoor"], "problem": "Inspektera skorstenar, tankar, rör och processutrustning under drift med minimal risk."}
+    ]},
+    {"handle": "survey-construction", "name": "Mätning & bygg", "name_en": "Survey & Construction", "industry": "construction", "missions": [
+      {"handle": "land-survey", "name": "Lantmätning", "name_en": "Land Survey", "tasks": ["survey", "measure-terrain"], "technologies": ["mapping", "lidar", "rtk"], "environments": ["day", "outdoor"], "problem": "Producera mätdata med lantmäterinoggrannhet över stora ytor på en bråkdel av tiden för markmätning."},
+      {"handle": "topographic-survey", "name": "Topografisk mätning", "name_en": "Topographic Survey", "tasks": ["survey", "measure-terrain"], "technologies": ["lidar", "mapping"], "environments": ["day", "outdoor", "difficult-terrain"], "problem": "Skapa terrängmodeller (DTM) även under vegetation för projektering och hydrologi."},
+      {"handle": "construction-survey", "name": "Byggmätning", "name_en": "Construction Survey", "tasks": ["survey", "map", "measure-terrain"], "technologies": ["mapping", "lidar", "rtk"], "environments": ["day", "outdoor"], "problem": "Följa massbalans, jämföra mot ritning och dokumentera byggplatsen vecka för vecka."},
+      {"handle": "stockpile-measurement", "name": "Volymmätning", "name_en": "Stockpile Measurement", "tasks": ["measure-terrain", "map"], "technologies": ["mapping", "lidar"], "environments": ["day", "outdoor"], "problem": "Mäta volymer på upplag och massor exakt utan att klättra på högarna."},
+      {"handle": "3d-mapping", "name": "3D-kartläggning", "name_en": "3D Mapping", "tasks": ["map"], "technologies": ["mapping", "lidar", "oblique"], "environments": ["day", "outdoor"], "problem": "Bygga fotorealistiska 3D-modeller av byggnader, kvarter och anläggningar."},
+      {"handle": "bim", "name": "BIM", "name_en": "BIM", "tasks": ["map", "scan"], "technologies": ["lidar", "mapping"], "environments": ["day", "outdoor", "indoor"], "problem": "Leverera punktmoln och modeller som kan importeras i BIM-arbetsflöden och jämföras mot projekterad modell."},
+      {"handle": "progress-monitoring", "name": "Framdriftsuppföljning", "name_en": "Progress Monitoring", "tasks": ["map", "monitor"], "technologies": ["mapping", "rgb"], "environments": ["day", "outdoor"], "problem": "Dokumentera byggprojektets framdrift regelbundet och jämförbart över tid."},
+      {"handle": "mining", "name": "Gruva & täkt", "name_en": "Mining", "tasks": ["survey", "map", "measure-terrain", "identify-materials"], "technologies": ["lidar", "mapping", "hyperspectral"], "environments": ["day", "outdoor", "difficult-terrain"], "problem": "Mäta volymer, planera brytning och kartlägga slänter och mineraler i dagbrott och täkter."}
+    ]},
+    {"handle": "agriculture-forestry", "name": "Jordbruk & skogsbruk", "name_en": "Agriculture & Forestry", "industry": "agriculture", "missions": [
+      {"handle": "precision-agriculture", "name": "Precisionsjordbruk", "name_en": "Precision Agriculture", "tasks": ["detect-vegetation", "map"], "technologies": ["multispectral", "rgb", "thermal", "mapping"], "environments": ["day", "outdoor"], "problem": "Styra gödsling, bevattning och växtskydd efter grödans faktiska behov i fältet."},
+      {"handle": "crop-health", "name": "Grödhälsa", "name_en": "Crop Health", "tasks": ["detect-vegetation"], "technologies": ["multispectral", "hyperspectral"], "environments": ["day", "outdoor"], "problem": "Upptäcka stress, sjukdom och näringsbrist innan det syns med blotta ögat."},
+      {"handle": "vegetation-analysis", "name": "Vegetationsanalys", "name_en": "Vegetation Analysis", "tasks": ["detect-vegetation", "map"], "technologies": ["multispectral", "hyperspectral", "lidar"], "environments": ["day", "outdoor"], "problem": "Kvantifiera vegetationens täthet, vitalitet och förändring över tid."},
+      {"handle": "forestry", "name": "Skogsbruk", "name_en": "Forestry", "tasks": ["scan", "map", "detect-vegetation"], "technologies": ["lidar", "rgb", "multispectral"], "environments": ["day", "outdoor", "difficult-terrain"], "problem": "Inventera virkesförråd, trädhöjd och stamantal och planera avverkning och gallring."},
+      {"handle": "tree-health", "name": "Trädhälsa", "name_en": "Tree Health", "tasks": ["detect-vegetation"], "technologies": ["multispectral", "rgb"], "environments": ["day", "outdoor"], "problem": "Hitta angrepp av granbarkborre och andra skador tidigt över stora arealer."},
+      {"handle": "environmental-monitoring", "name": "Miljöövervakning", "name_en": "Environmental Monitoring", "tasks": ["monitor", "detect-vegetation", "identify-materials"], "technologies": ["multispectral", "hyperspectral", "environmental-sensors"], "environments": ["day", "outdoor"], "problem": "Följa vattenkvalitet, utsläpp och naturvärden med repeterbara mätningar."}
+    ]},
+    {"handle": "security-surveillance", "name": "Säkerhet & övervakning", "name_en": "Security & Surveillance", "industry": "security", "missions": [
+      {"handle": "perimeter-security", "name": "Områdesskydd", "name_en": "Perimeter Security", "tasks": ["monitor"], "technologies": ["eo-ir", "thermal", "zoom", "spotlight"], "environments": ["day", "night", "outdoor"], "problem": "Patrullera och verifiera larm längs långa staket och områdesgränser, automatiserat eller på begäran."},
+      {"handle": "border-surveillance", "name": "Gränsövervakning", "name_en": "Border Surveillance", "tasks": ["monitor", "search"], "technologies": ["eo-ir", "thermal", "zoom"], "environments": ["day", "night", "long-distance", "difficult-terrain"], "problem": "Övervaka stora, svårtillgängliga områden på långt avstånd dygnet runt."},
+      {"handle": "critical-infrastructure-security", "name": "Skydd av kritisk infrastruktur", "name_en": "Critical Infrastructure Security", "tasks": ["monitor"], "technologies": ["eo-ir", "thermal", "rf-detection", "spotlight"], "environments": ["day", "night", "outdoor"], "problem": "Skydda kraftverk, hamnar och vattenverk mot intrång och drönarhot."},
+      {"handle": "maritime-surveillance", "name": "Sjöövervakning", "name_en": "Maritime Surveillance", "tasks": ["monitor", "search"], "technologies": ["eo-ir", "thermal", "ais", "radar"], "environments": ["day", "night", "long-distance"], "problem": "Identifiera fartyg, hitta personer i vattnet och övervaka hamn- och kustområden."},
+      {"handle": "long-range-surveillance", "name": "Långdistansövervakning", "name_en": "Long Range Surveillance", "tasks": ["monitor"], "technologies": ["zoom", "eo-ir", "thermal"], "environments": ["day", "night", "long-distance"], "problem": "Observera och identifiera objekt på flera kilometers avstånd utan att röja sin position."},
+      {"handle": "night-surveillance", "name": "Nattövervakning", "name_en": "Night Surveillance", "tasks": ["monitor", "search"], "technologies": ["thermal", "eo-ir", "ir-illuminator", "spotlight"], "environments": ["night", "low-light"], "problem": "Se, identifiera och följa i totalt mörker med termisk kamera och IR-belysning."}
+    ]},
+    {"handle": "corridor", "name": "Korridor", "name_en": "Corridor", "industry": "infrastructure", "hidden": true, "missions": [
+      {"handle": "corridor-mapping", "name": "Korridorkartläggning", "name_en": "Corridor Mapping", "tasks": ["scan", "map"], "technologies": ["lidar", "mapping"], "environments": ["day", "outdoor", "long-distance"], "problem": "Kartlägga långsträckta objekt som ledningsgator, vägar och järnvägar i ett svep."},
+      {"handle": "gas-leak-detection", "name": "Gasläcksökning", "name_en": "Gas Leak Detection", "tasks": ["detect-gas"], "technologies": ["gas"], "environments": ["day", "outdoor", "indoor"], "problem": "Lokalisera och kvantifiera gasläckor snabbt och utan att utsätta personal för fara."},
+      {"handle": "nuclear-inspection", "name": "Kärnteknisk inspektion", "name_en": "Nuclear Inspection", "tasks": ["inspect", "monitor"], "technologies": ["radiation", "eo-ir"], "environments": ["indoor", "outdoor"], "problem": "Mäta och kartlägga strålning i och kring kärntekniska anläggningar utan personalexponering."},
+      {"handle": "mapping", "name": "Kartläggning", "name_en": "Mapping", "tasks": ["map"], "technologies": ["mapping", "lidar"], "environments": ["day", "outdoor"], "problem": "Skapa aktuella ortofoton och höjdmodeller för planering, GIS och dokumentation."}
+    ]}
+  ],
+  "platforms": [
+    {"handle": "dji-matrice-400", "name": "DJI Matrice 400", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["E-Port V2", "SkyPort V3"], "legacy_fits_value": "DJI Matrice 400", "active": true},
+    {"handle": "dji-matrice-350-rtk", "name": "DJI Matrice 350 RTK", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["SkyPort V2", "OSDK / E-Port"], "legacy_fits_value": "DJI Matrice 350 RTK", "active": true},
+    {"handle": "dji-matrice-300-rtk", "name": "DJI Matrice 300 RTK", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["SkyPort V2", "OSDK"], "legacy_fits_value": "DJI Matrice 300 RTK", "active": true},
+    {"handle": "dji-matrice-30-series", "name": "DJI Matrice 30 / 30T", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["PSDK-port (integrerad kamera)"], "legacy_fits_value": "DJI Matrice 30", "active": true},
+    {"handle": "dji-matrice-4-series", "name": "DJI Matrice 4E / 4T", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["E-Port V2"], "legacy_fits_value": "DJI Matrice 4T", "active": true},
+    {"handle": "dji-matrice-4d-series", "name": "DJI Matrice 4D / 4TD", "manufacturer": "DJI", "series": "Matrice", "mount_interface": ["E-Port V2"], "legacy_fits_value": "DJI Matrice 4D", "active": true},
+    {"handle": "dji-matrice-3d-series", "name": "DJI Matrice 3D / 3TD", "manufacturer": "DJI", "series": "Matrice", "mount_interface": [], "legacy_fits_value": "DJI Matrice 3D", "active": true},
+    {"handle": "dji-mavic-3-enterprise", "name": "DJI Mavic 3 Enterprise / 3T / 3M", "manufacturer": "DJI", "series": "Mavic Enterprise", "mount_interface": ["E-Port"], "legacy_fits_value": "DJI Mavic 3E", "active": true},
+    {"handle": "freefly-astro", "name": "Freefly Astro", "manufacturer": "Freefly", "series": "Astro", "mount_interface": [], "active": true},
+    {"handle": "freefly-alta-x", "name": "Freefly Alta X", "manufacturer": "Freefly", "series": "Alta", "mount_interface": [], "active": true},
+    {"handle": "inspired-flight-if800", "name": "Inspired Flight IF800 Tomcat", "manufacturer": "Inspired Flight", "series": "IF800", "mount_interface": [], "active": true},
+    {"handle": "inspired-flight-if1200", "name": "Inspired Flight IF1200A", "manufacturer": "Inspired Flight", "series": "IF1200", "mount_interface": [], "active": true},
+    {"handle": "autel-evo-max", "name": "Autel EVO Max 4T / 4N", "manufacturer": "Autel Robotics", "series": "EVO Max", "mount_interface": [], "active": true},
+    {"handle": "autel-alpha", "name": "Autel Alpha", "manufacturer": "Autel Robotics", "series": "Alpha", "mount_interface": [], "active": true},
+    {"handle": "wisson-orion", "name": "Wisson Orion (N/G/P/D-serien)", "manufacturer": "Wisson Robotics", "series": "Orion", "mount_interface": [], "active": true},
+    {"handle": "other-platform", "name": "Annan plattform", "manufacturer": "", "series": "", "mount_interface": [], "active": true}
+  ],
+  "packages": [
+    {"handle": "powerline-inspection-package", "name": "Kraftledningsinspektion – paket", "name_en": "Powerline Inspection Package", "mission": "powerline-inspection", "components": ["Enterprise-UAV", "EO/IR-kamera", "Termisk kamera", "LiDAR", "RTK", "Inspektionsprogramvara", "Utbildning", "Service"]},
+    {"handle": "solar-inspection-package", "name": "Solparksinspektion – paket", "name_en": "Solar Inspection Package", "mission": "solar-inspection", "components": ["Enterprise-UAV", "Termisk kamera", "RGB-kamera", "Kartläggning", "Inspektionsprogramvara"]},
+    {"handle": "wind-turbine-inspection-package", "name": "Vindkraftsinspektion – paket", "name_en": "Wind Turbine Inspection Package", "mission": "wind-turbine-inspection", "components": ["Långdistans-EO", "Termisk kamera", "Högupplöst RGB", "RTK"]},
+    {"handle": "fire-rescue-package", "name": "Brand & räddning – paket", "name_en": "Fire & Rescue Package", "mission": "fire-response", "components": ["Termisk kamera", "EO/IR", "Sökljus", "Högtalare", "Sök- och räddningsprogramvara"]},
+    {"handle": "police-public-safety-package", "name": "Polis / samhällssäkerhet – paket", "name_en": "Police / Public Safety Package", "mission": "police", "components": ["EO/IR", "Termisk kamera", "Långdistanszoom", "Laseravståndsmätare", "Sökljus", "Högtalare", "Kommunikation"]},
+    {"handle": "construction-survey-package", "name": "Byggmätning – paket", "name_en": "Construction Survey Package", "mission": "construction-survey", "components": ["Kartläggningskamera", "LiDAR", "RTK", "Fotogrammetriprogramvara"]},
+    {"handle": "forestry-package", "name": "Skogsbruk – paket", "name_en": "Forestry Package", "mission": "forestry", "components": ["LiDAR", "RGB", "Multispektralt"]},
+    {"handle": "precision-agriculture-package", "name": "Precisionsjordbruk – paket", "name_en": "Precision Agriculture Package", "mission": "precision-agriculture", "components": ["Multispektralt", "Termisk kamera", "RGB", "Kartläggning"]},
+    {"handle": "industrial-inspection-package", "name": "Industriinspektion – paket", "name_en": "Industrial Inspection Package", "mission": "industrial-inspection", "components": ["EO/IR", "Termisk kamera", "Högupplöst RGB", "Gasdetektion"]}
+  ],
+  "finder": {
+    "tasks": [
+      {"key": "inspect", "label": "Inspektera"}, {"key": "survey", "label": "Mäta"}, {"key": "map", "label": "Kartlägga"}, {"key": "measure-temperature", "label": "Mäta temperatur"}, {"key": "detect-gas", "label": "Detektera gas"}, {"key": "search", "label": "Söka"}, {"key": "monitor", "label": "Övervaka"}, {"key": "scan", "label": "Skanna"}, {"key": "detect-vegetation", "label": "Analysera vegetation"}, {"key": "measure-terrain", "label": "Mäta terräng"}, {"key": "identify-materials", "label": "Identifiera material"}
+    ],
+    "industries": [
+      {"key": "energy", "label": "Energi"}, {"key": "construction", "label": "Bygg"}, {"key": "public-safety", "label": "Samhällssäkerhet"}, {"key": "forestry", "label": "Skogsbruk"}, {"key": "agriculture", "label": "Jordbruk"}, {"key": "infrastructure", "label": "Infrastruktur"}, {"key": "industrial", "label": "Industri"}, {"key": "mining", "label": "Gruva"}, {"key": "security", "label": "Säkerhet"}, {"key": "maritime", "label": "Maritimt"}, {"key": "research", "label": "Forskning"}
+    ],
+    "environments": [
+      {"key": "day", "label": "Dag"}, {"key": "night", "label": "Natt"}, {"key": "smoke", "label": "Rök"}, {"key": "low-light", "label": "Svagt ljus"}, {"key": "indoor", "label": "Inomhus"}, {"key": "outdoor", "label": "Utomhus"}, {"key": "long-distance", "label": "Långt avstånd"}, {"key": "difficult-terrain", "label": "Svår terräng"}
+    ],
+    "technologies": [
+      {"key": "rgb", "label": "RGB"}, {"key": "zoom", "label": "Zoom"}, {"key": "thermal", "label": "Termisk"}, {"key": "eo-ir", "label": "EO/IR"}, {"key": "lidar", "label": "LiDAR"}, {"key": "multispectral", "label": "Multispektralt"}, {"key": "hyperspectral", "label": "Hyperspektralt"}, {"key": "gas", "label": "Gas"}, {"key": "radiation", "label": "Strålning"}, {"key": "spotlight", "label": "Sökljus"}, {"key": "speaker", "label": "Högtalare"}, {"key": "mapping", "label": "Kartläggning"}, {"key": "other", "label": "Annat"}
+    ],
+    "scoring_weights": {"compatibility": 30, "mission": 25, "sensor": 20, "environment": 10, "performance": 10, "requirements": 5},
+    "score_bands": [
+      {"min": 90, "label": "Utmärkt matchning", "label_en": "Excellent Match"},
+      {"min": 75, "label": "Stark matchning", "label_en": "Strong Match"},
+      {"min": 60, "label": "Möjlig matchning", "label_en": "Possible Match"},
+      {"min": 0, "label": "Kräver bekräftelse", "label_en": "Requires Confirmation"}
+    ]
+  }
+}
