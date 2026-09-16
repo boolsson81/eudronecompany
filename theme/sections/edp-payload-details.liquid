@@ -1,0 +1,209 @@
+{% comment %}
+  Enterprise payload product-page enhancement (master prompt §13).
+  Standalone section added to a product JSON template's `order` array
+  alongside the theme's own main product section — it reads the current
+  `product` object, which Shopify makes available to every section
+  rendered as part of a product template, regardless of section type.
+  Works unmodified on Dawn (main-product) or Horizon (product-information)
+  product templates; nothing here depends on either engine's block schema.
+
+  Reads only `edp.*` / `custom.*` fields that exist today (see Phase 2
+  report). Never fabricates a spec or compatibility claim — blank fields
+  render as "Ej specificerat".
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign quote_link = section.settings.quote_link | default: '/pages/contact-quote'
+  assign not_specified = 'Ej specificerat'
+  assign is_enterprise = product.metafields.edp.enterprise_product.value
+  assign requires_quote = product.metafields.edp.requires_quote.value
+  assign spec = product.metafields.edp.specification.value
+-%}
+
+<div class="edp-payload color-{{ section.settings.color_scheme }}">
+  <div class="edp-payload__wrap">
+
+    {%- if is_enterprise or requires_quote -%}
+      <section class="edp-payload__section" style="padding-top:1.5rem">
+        <div class="edp-badges">
+          {%- if is_enterprise -%}<span class="edp-badge">Enterprise</span>{%- endif -%}
+          {%- if product.metafields.edp.mission_critical.value -%}<span class="edp-badge edp-badge--outline">Verksamhetskritisk</span>{%- endif -%}
+          {%- if product.metafields.edp.professional_grade.value -%}<span class="edp-badge edp-badge--outline">Professionell klass</span>{%- endif -%}
+        </div>
+        <div class="edp-cta-row">
+          <a href="{{ quote_link }}?ref={{ product.handle }}" class="button">Begär Enterprise-offert</a>
+          <a href="#edp-compat-{{ section.id }}" class="button button--secondary" data-edp-event="compatibility_check">Kontrollera kompatibilitet</a>
+          <button type="button" class="button button--secondary" data-edp-compare-add="{{ product.handle | escape }}">Lägg till i jämförelse</button>
+        </div>
+        {%- if requires_quote -%}
+          <p class="edp-payload__card-text" style="margin-top:0.75rem">
+            Den här produkten kräver konfiguration, integration eller offert — komplettera via vårt enterprise-team i stället för direkt kassa.
+          </p>
+        {%- endif -%}
+      </section>
+    {%- endif -%}
+
+    {%- if product.metafields.edp.mission_types.value != blank -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Rekommenderade uppdrag</h2>
+        <div class="edp-payload__grid">
+          {%- for mission in product.metafields.edp.mission_types.value -%}
+            <a class="edp-payload__card" href="{{ mission.url }}">
+              <p class="edp-payload__card-title">{{ mission.name.value | escape }}</p>
+            </a>
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+    <section class="edp-payload__section" id="edp-compat-{{ section.id }}">
+      <h2 class="edp-payload__section-heading">Kompatibla UAV-plattformar</h2>
+      {%- render 'edp-compatibility-status', product: product, quote_url: quote_link -%}
+    </section>
+
+    <section class="edp-payload__section">
+      <h2 class="edp-payload__section-heading">Tekniska specifikationer</h2>
+      <div class="edp-payload__spec-groups">
+        <div>
+          <p class="edp-payload__spec-group-title">Sensor</p>
+          <table class="edp-payload__spec-table">
+            <tbody>
+              <tr><th>Sensortyp</th><td>{%- if spec.sensor_type.value != blank -%}{{ spec.sensor_type.value | join: ', ' }}{%- elsif product.metafields.edp.sensor_type.value != blank -%}{{ product.metafields.edp.sensor_type.value | join: ', ' }}{%- else -%}<span class="edp-payload__spec-not-specified">{{ not_specified }}</span>{%- endif -%}</td></tr>
+              <tr><th>Sensorupplösning</th><td>{{ spec.sensor_resolution.value | default: product.metafields.edp.sensor_resolution.value | default: not_specified }}</td></tr>
+              <tr><th>Termisk upplösning</th><td>{{ spec.thermal_resolution.value | default: product.metafields.edp.thermal_resolution.value | default: not_specified }}</td></tr>
+              <tr><th>Radiometrisk</th><td>{%- if spec.radiometric.value == true -%}Ja{%- elsif spec.radiometric.value == false -%}Nej{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>Optisk zoom</th><td>{%- if spec.optical_zoom.value != blank -%}{{ spec.optical_zoom.value }}×{%- elsif product.metafields.edp.optical_zoom.value != blank -%}{{ product.metafields.edp.optical_zoom.value }}×{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>Digital zoom</th><td>{%- if spec.digital_zoom.value != blank -%}{{ spec.digital_zoom.value }}×{%- elsif product.metafields.edp.digital_zoom.value != blank -%}{{ product.metafields.edp.digital_zoom.value }}×{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>Laseravståndsmätare</th><td>{%- if spec.laser_rangefinder.value or product.metafields.edp.laser_rangefinder.value -%}Ja{%- if spec.laser_range.value != blank -%}, upp till {{ spec.laser_range.value }} m{%- endif -%}{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p class="edp-payload__spec-group-title">LiDAR & kartläggning</p>
+          <table class="edp-payload__spec-table">
+            <tbody>
+              <tr><th>Räckvidd</th><td>{%- if spec.lidar_range.value != blank -%}{{ spec.lidar_range.value }} m{%- elsif product.metafields.edp.lidar_range.value != blank -%}{{ product.metafields.edp.lidar_range.value }} m{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>Noggrannhet</th><td>{{ spec.lidar_accuracy.value | default: product.metafields.edp.accuracy.value | default: not_specified }}</td></tr>
+              <tr><th>Punkter per sekund</th><td>{{ spec.lidar_points_per_second.value | default: not_specified }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p class="edp-payload__spec-group-title">Fysiskt & drift</p>
+          <table class="edp-payload__spec-table">
+            <tbody>
+              <tr><th>Vikt</th><td>{%- if spec.weight.value != blank -%}{{ spec.weight.value }}{%- elsif product.metafields.edp.weight.value != blank -%}{{ product.metafields.edp.weight.value }}{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>Mått</th><td>{{ spec.dimensions.value | default: not_specified }}</td></tr>
+              <tr><th>Drifttemperatur</th><td>{{ spec.operating_temperature.value | default: product.metafields.edp.operating_temperature.value | default: not_specified }}</td></tr>
+              <tr><th>IP-klass</th><td>{{ spec.ip_rating.value | default: product.metafields.edp.ip_rating.value | default: not_specified }}</td></tr>
+              <tr><th>Effektförbrukning</th><td>{{ spec.power_consumption.value | default: not_specified }}</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <p class="edp-payload__spec-group-title">Gränssnitt & mjukvara</p>
+          <table class="edp-payload__spec-table">
+            <tbody>
+              <tr><th>Gränssnitt</th><td>{%- if spec.interface.value != blank -%}{{ spec.interface.value | join: ', ' }}{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>SDK tillgängligt</th><td>{%- if spec.sdk_available.value or product.metafields.edp.sdk_available.value -%}Ja{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>RTSP</th><td>{%- if spec.rtsp.value -%}Ja{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+              <tr><th>API tillgängligt</th><td>{%- if product.metafields.edp.api_available.value -%}Ja{%- else -%}{{ not_specified }}{%- endif -%}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {%- if spec == blank -%}
+        <p class="edp-payload__card-text" style="margin-top:1rem">
+          Fullständigt specifikationsblad är inte inlagt för den här produkten ännu. Fält ovan visar de tekniska metafält som finns registrerade.
+        </p>
+      {%- endif -%}
+    </section>
+
+    {%- if product.metafields.edp.required_accessories.value != blank -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Nödvändiga tillbehör</h2>
+        <div class="edp-payload__grid">
+          {%- for accessory in product.metafields.edp.required_accessories.value -%}
+            {%- render 'card-product', card_product: accessory, media_aspect_ratio: 'square' -%}
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if product.metafields.edp.recommended_accessories.value != blank -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Rekommenderade tillbehör</h2>
+        <div class="edp-payload__grid">
+          {%- for accessory in product.metafields.edp.recommended_accessories.value -%}
+            {%- render 'card-product', card_product: accessory, media_aspect_ratio: 'square' -%}
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+    {%- if product.metafields.edp.software_compatible.value != blank -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Kompatibel programvara</h2>
+        <ul class="edp-payload__pills">
+          {%- for sw in product.metafields.edp.software_compatible.value -%}<li class="edp-payload__pill">{{ sw | escape }}</li>{%- endfor -%}
+        </ul>
+      </section>
+    {%- endif -%}
+
+    {%- assign has_service_badges = false -%}
+    {%- if product.metafields.edp.installation_available.value or product.metafields.edp.training_available.value or product.metafields.edp.service_available.value or product.metafields.edp.integration_available.value or product.metafields.edp.demo_available.value -%}
+      {%- assign has_service_badges = true -%}
+    {%- endif -%}
+    {%- if has_service_badges -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Installation, utbildning & service</h2>
+        <div class="edp-badges">
+          {%- if product.metafields.edp.demo_available.value -%}<span class="edp-badge edp-badge--outline">Demo tillgänglig</span>{%- endif -%}
+          {%- if product.metafields.edp.installation_available.value -%}<span class="edp-badge edp-badge--outline">Installation</span>{%- endif -%}
+          {%- if product.metafields.edp.integration_available.value -%}<span class="edp-badge edp-badge--outline">Integration</span>{%- endif -%}
+          {%- if product.metafields.edp.training_available.value -%}<span class="edp-badge edp-badge--outline">Utbildning</span>{%- endif -%}
+          {%- if product.metafields.edp.service_available.value -%}<span class="edp-badge edp-badge--outline">Service & support</span>{%- endif -%}
+        </div>
+        {%- if product.metafields.edp.lead_time.value != blank -%}
+          <p class="edp-payload__card-text" style="margin-top:0.5rem">Leveranstid: {{ product.metafields.edp.lead_time.value | escape }}</p>
+        {%- endif -%}
+      </section>
+    {%- endif -%}
+
+    {%- if product.metafields.edp.solution_packages.value != blank -%}
+      <section class="edp-payload__section">
+        <h2 class="edp-payload__section-heading">Kompletta lösningar</h2>
+        <div class="edp-payload__grid">
+          {%- for pkg in product.metafields.edp.solution_packages.value -%}
+            <a class="edp-payload__card" href="{{ pkg.url }}">
+              <p class="edp-payload__card-title">{{ pkg.name.value | escape }}</p>
+            </a>
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endif -%}
+
+  </div>
+</div>
+
+<script src="{{ 'edp-payload-comparison.js' | asset_url }}" defer></script>
+<script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'payload_product_view', handle: {{ product.handle | json }} } }));
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Enterprise payload-detaljer",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "url", "id": "quote_link", "label": "Länk till offertformulär", "default": "/pages/contact-quote" }
+  ],
+  "presets": [{ "name": "Enterprise payload-detaljer" }]
+}
+{% endschema %}

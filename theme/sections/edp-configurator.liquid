@@ -1,0 +1,108 @@
+{% comment %}
+  Enterprise Configurator — "Bygg ditt drönarsystem": 8-stegsguide som
+  hjälper kunden ställa samman en UAV-plattform, primär och kompletterande
+  payload-kategorier, miljökrav samt önskad mjukvara/service, och lämnar
+  över en läsbar sammanfattning till den BEFINTLIGA offertformulär-sektionen
+  (enterprise-quote-form.liquid) i stället för att bygga en egen
+  inskickningsväg — se master-promptens regel om att inte bygga om
+  befintlig funktionalitet.
+
+  Steg 6-7 (mjukvara, utbildning/installation/service) är kundens ÖNSKEMÅL,
+  inte påståenden om produktdata — inga kompatibilitets- eller
+  tillgänglighetsanspråk görs här.
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign quote_page = section.settings.quote_page | default: '/pages/contact-quote'
+  assign categories = shop.metaobjects.payload_category.values
+  assign platforms = shop.metaobjects.uav_platform.values
+-%}
+
+<div class="edp-payload color-{{ section.settings.color_scheme }}">
+  <div class="edp-payload__wrap">
+
+    <header class="edp-payload__hero">
+      <p class="edp-payload__eyebrow">Enterprise Configurator</p>
+      <h1 class="edp-payload__title">{{ section.settings.heading | default: 'Bygg ditt drönarsystem' }}</h1>
+      <p class="edp-payload__lede">{{ section.settings.intro | default: 'Ställ samman UAV-plattform, payloads och tjänster för ditt uppdrag. I sista steget skickar vi din konfiguration till vårt enterprise-team som en offertförfrågan.' }}</p>
+    </header>
+
+    <div id="edp-configurator-root" data-quote-page="{{ quote_page | escape }}">
+      <noscript>
+        <p class="edp-payload__prose">Konfiguratorn kräver JavaScript. <a href="{{ quote_page }}">Kontakta vårt enterprise-team</a> direkt för att bygga din systemkonfiguration.</p>
+      </noscript>
+    </div>
+
+    <script type="application/json" id="edp-configurator-data">
+      {
+        "industries": [
+          {"key":"energy","label":"Energi"},
+          {"key":"construction","label":"Bygg"},
+          {"key":"public-safety","label":"Samhällssäkerhet"},
+          {"key":"forestry","label":"Skogsbruk"},
+          {"key":"agriculture","label":"Jordbruk"},
+          {"key":"infrastructure","label":"Infrastruktur"},
+          {"key":"industrial","label":"Industri"},
+          {"key":"mining","label":"Gruva"},
+          {"key":"security","label":"Säkerhet"},
+          {"key":"maritime","label":"Maritimt"},
+          {"key":"research","label":"Forskning"}
+        ],
+        "environments": [
+          {"key":"day","label":"Dag"},
+          {"key":"night","label":"Natt"},
+          {"key":"smoke","label":"Rök"},
+          {"key":"low-light","label":"Svagt ljus"},
+          {"key":"indoor","label":"Inomhus"},
+          {"key":"outdoor","label":"Utomhus"},
+          {"key":"long-distance","label":"Långt avstånd"},
+          {"key":"difficult-terrain","label":"Svår terräng"}
+        ],
+        "software": [
+          {"key":"flight-planning","label":"Flygplanering"},
+          {"key":"photogrammetry","label":"Fotogrammetri/databehandling"},
+          {"key":"fleet-management","label":"Flotthantering"},
+          {"key":"gis","label":"GIS-integration"},
+          {"key":"other","label":"Annat (ange i meddelande)"}
+        ],
+        "services": [
+          {"key":"installation","label":"Installation"},
+          {"key":"training","label":"Utbildning"},
+          {"key":"service-agreement","label":"Serviceavtal"},
+          {"key":"demo","label":"Demo innan köp"},
+          {"key":"integration","label":"Systemintegration"}
+        ],
+        "platforms": [
+          {%- for platform in platforms -%}
+            { "handle": {{ platform.handle | json }}, "name": {{ platform.name.value | json }}, "manufacturer": {{ platform.manufacturer.value | json }} }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        ],
+        "categories": [
+          {%- for category in categories -%}
+            { "handle": {{ category.handle | json }}, "name": {{ category.name.value | json }}, "url": {{ category.url | json }} }{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+        ]
+      }
+    </script>
+
+  </div>
+</div>
+
+<script src="{{ 'edp-configurator.js' | asset_url }}" defer></script>
+<script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Enterprise Configurator",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "text", "id": "heading", "label": "Rubrik", "default": "Bygg ditt drönarsystem" },
+    { "type": "textarea", "id": "intro", "label": "Ingress" },
+    { "type": "url", "id": "quote_page", "label": "Länk till offertformulär", "default": "/pages/contact-quote" }
+  ],
+  "presets": [{ "name": "Enterprise Configurator" }]
+}
+{% endschema %}
