@@ -74,11 +74,15 @@ inget `onlineStoreUrl`-fält, så detta är den auktoritativa källan):
 
 | Typ | `onlineStore.enabled` | `urlHandle` | Sid-URL |
 |---|---|---|---|
-| `payload_category` | true | `payloads` | `/payloads/<handle>` |
-| `mission` | true | `missions` | `/missions/<handle>` |
-| `solution_package` | true | `solutions` | `/solutions/<handle>` |
+| `payload_category` | true | `payloads` | `/pages/payloads/<handle>` |
+| `mission` | true | `missions` | `/pages/missions/<handle>` |
+| `solution_package` | true | `solutions` | `/pages/solutions/<handle>` |
 | `payload_subcategory` | false | – | ingen egen sida |
 | `uav_platform` | false | – | ingen egen sida |
+
+(Bekräftat i efterhand via en `menuUpdate`-läsning: menyposter av typ
+`METAOBJECT` returnerar sin faktiska `url` som `/pages/<urlHandle>/<handle>`,
+inte `/<urlHandle>/<handle>` som antogs innan detta kunde verifieras.)
 
 ## 5. TEST RESULTS
 

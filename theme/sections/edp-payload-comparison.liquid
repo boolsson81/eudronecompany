@@ -1,0 +1,46 @@
+{% comment %}
+  Payload comparison page. Selected products live in the visitor's browser
+  (localStorage — per-viewer only, never synced to Shopify), added via the
+  "Lägg till i jämförelse" button on edp-payload-details.liquid. Row data is
+  fetched per product through Shopify's Section Rendering API
+  (edp-comparison-row.liquid), so every value shown is real product/metafield
+  data — nothing here is invented. Missing fields render as "Ej specificerat".
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign quote_link = section.settings.quote_link | default: '/pages/contact-quote'
+-%}
+
+<div class="edp-payload color-{{ section.settings.color_scheme }}">
+  <div class="edp-payload__wrap">
+
+    <header class="edp-payload__hero">
+      <p class="edp-payload__eyebrow">Jämförelse</p>
+      <h1 class="edp-payload__title">Jämför payloads</h1>
+      <p class="edp-payload__lede">Lägg till upp till 4 produkter från deras produktsidor för att jämföra tekniska specifikationer sida vid sida.</p>
+    </header>
+
+    <div id="edp-comparison-root" data-quote-link="{{ quote_link | escape }}">
+      <noscript>
+        <p class="edp-payload__prose">Jämförelsen kräver JavaScript. <a href="{{ quote_link }}">Kontakta vårt enterprise-team</a> om du behöver hjälp att jämföra produkter.</p>
+      </noscript>
+    </div>
+
+  </div>
+</div>
+
+<script src="{{ 'edp-payload-comparison.js' | asset_url }}" defer></script>
+
+{% schema %}
+{
+  "name": "Payload-jämförelse",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "url", "id": "quote_link", "label": "Länk till offertformulär", "default": "/pages/contact-quote" }
+  ],
+  "presets": [{ "name": "Payload-jämförelse" }]
+}
+{% endschema %}
