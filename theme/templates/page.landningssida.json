@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "En rubrik som säger vad besökaren får",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "En rad som förklarar erbjudandet och vem det är för.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Kom igång",
+            "button_link_1": "/pages/contact-quote",
+            "button_style_secondary_1": false,
+            "button_label_2": "Se allt sortiment",
+            "button_link_2": "/collections/all",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": { "type": "trust_item", "settings": { "text": "Auktoriserad återförsäljare" } },
+        "trust_2": { "type": "trust_item", "settings": { "text": "Svensk kundsupport" } },
+        "trust_3": { "type": "trust_item", "settings": { "text": "Snabb leverans" } },
+        "trust_4": { "type": "trust_item", "settings": { "text": "Trygg betalning" } }
+      },
+      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Snabb leverans",
+            "text": "<p>Beställningar skickas inom 1–2 arbetsdagar.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Personlig rådgivning",
+            "text": "<p>Vårt team hjälper dig hitta rätt lösning för ditt behov.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Trygg after-sales",
+            "text": "<p>Garanti, support och reservdelar när du behöver det.</p>"
+          }
+        }
+      },
+      "block_order": ["column_1", "column_2", "column_3"],
+      "settings": {
+        "title": "Varför välja oss",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur lång är leveranstiden?",
+            "row_content": "<p>De flesta beställningar skickas inom 1–2 arbetsdagar och levereras inom Sverige på 2–4 arbetsdagar.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad ingår i priset?",
+            "row_content": "<p>Priset visas alltid inklusive moms. Eventuella fraktkostnader visas tydligt i kassan innan betalning.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag få en offert innan jag beställer?",
+            "row_content": "<p>Ja, kontakta oss via formuläret eller telefon så återkommer vi samma vardag med en offert.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilken support ingår efter köpet?",
+            "row_content": "<p>Du får svensk kundsupport, garanti enligt tillverkare och hjälp med reservdelar och service.</p>"
+          }
+        }
+      },
+      "block_order": ["row_1", "row_2", "row_3", "row_4"],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Redo att komma igång?",
+        "text": "Kontakta oss för rådgivning, offert eller svar på dina frågor — vi återkommer samma vardag.",
+        "button_label_1": "Kontakta oss",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "trust_bar", "benefits", "faq", "cta"]
+}
