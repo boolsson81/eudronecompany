@@ -59,6 +59,11 @@
               <h2 class="h3">{{ 'sections.enterprise-quote-form.success' | t }}</h2>
               <p>{{ 'sections.enterprise-quote-form.success_detail' | t }}</p>
             </div>
+            <script>
+              document.addEventListener('DOMContentLoaded', function () {
+                window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'enterprise_quote_submitted' } }));
+              });
+            </script>
           {%- else -%}
             {%- if form.errors -%}
               <div class="form__message" role="alert">
@@ -268,7 +273,19 @@
   </div>
 </div>
 
+<script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
 <script>
+  (function () {
+    var form = document.getElementById('EnterpriseQuoteForm');
+    if (form) {
+      var started = false;
+      form.addEventListener('focusin', function () {
+        if (started) return;
+        started = true;
+        window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'enterprise_quote_started' } }));
+      });
+    }
+  })();
   (function () {
     // Optional prefill from the Enterprise Configurator / Payload Finder —
     // only acts when these query params are present, so normal direct visits

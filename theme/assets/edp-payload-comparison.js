@@ -87,9 +87,9 @@
       if (idx !== -1) {
         handles.splice(idx, 1);
       } else {
+        if (handles.length === 0) emitAnalytics("product_comparison_started", { handle: handle });
         if (handles.length >= MAX_COMPARE) handles.shift();
         handles.push(handle);
-        emitAnalytics("product_added_to_comparison", { handle: handle });
       }
       writeHandles(handles);
       render();
@@ -188,7 +188,6 @@
         el("a", { href: quoteLink, class: "button" }, ["Begär Enterprise-offert"]),
       ]);
       root.appendChild(cta);
-      emitAnalytics("payload_comparison_viewed", { handles: handles });
     });
   }
 

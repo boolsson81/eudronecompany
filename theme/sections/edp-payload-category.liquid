@@ -150,12 +150,18 @@
         <p class="edp-payload__banner-text">Vårt enterprise-team hjälper dig välja rätt sensor, plattform och integration utifrån ditt uppdrag.</p>
         <div class="edp-cta-row">
           <a href="{{ quote_link }}" class="button">Begär Enterprise-offert</a>
-          <a href="/pages/contact-us" class="button button--secondary">Prata med en expert</a>
+          <a href="/pages/contact-us" class="button button--secondary" data-edp-event="contact_expert_clicked">Prata med en expert</a>
         </div>
       </section>
 
     </div>
   </div>
+  <script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'payload_category_view', handle: {{ category.handle | json }} } }));
+    });
+  </script>
 {%- endif -%}
 
 {% schema %}

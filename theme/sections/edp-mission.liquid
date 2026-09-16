@@ -171,6 +171,12 @@
 
     </div>
   </div>
+  <script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'mission_view', handle: {{ mission.handle | json }} } }));
+    });
+  </script>
 {%- endif -%}
 
 {% schema %}

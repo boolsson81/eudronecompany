@@ -47,7 +47,6 @@
     var quotePage = root.getAttribute("data-quote-page") || "/pages/contact-quote";
     var answers = { industry: null, platform: null, primaryCategory: null, additionalCategories: [], environments: [], software: [], services: [] };
     var step = 0;
-    var started = false;
 
     var steps = [
       { title: "Vilken bransch gäller uppdraget?", render: renderIndustry, type: "single" },
@@ -102,6 +101,7 @@
       data.categories.forEach(function (c) {
         container.appendChild(optionButton(c.name, answers.primaryCategory === c.handle, function () {
           answers.primaryCategory = c.handle;
+          emitAnalytics("product_added_to_configuration", { handle: c.handle, role: "primary" });
           goNext();
         }));
       });
@@ -114,8 +114,12 @@
           var active = answers.additionalCategories.indexOf(c.handle) !== -1;
           container.appendChild(optionButton(c.name, active, function () {
             var idx = answers.additionalCategories.indexOf(c.handle);
-            if (idx === -1) answers.additionalCategories.push(c.handle);
-            else answers.additionalCategories.splice(idx, 1);
+            if (idx === -1) {
+              answers.additionalCategories.push(c.handle);
+              emitAnalytics("product_added_to_configuration", { handle: c.handle, role: "additional" });
+            } else {
+              answers.additionalCategories.splice(idx, 1);
+            }
             renderStep();
           }));
         });
@@ -205,10 +209,6 @@
     }
 
     function renderStep() {
-      if (!started) {
-        started = true;
-        emitAnalytics("configurator_started");
-      }
       root.innerHTML = "";
       var current = steps[step];
       var wrap = el("div", { class: "edp-finder__step" });

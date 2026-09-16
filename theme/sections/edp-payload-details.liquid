@@ -33,7 +33,7 @@
         </div>
         <div class="edp-cta-row">
           <a href="{{ quote_link }}?ref={{ product.handle }}" class="button">Begär Enterprise-offert</a>
-          <a href="#edp-compat-{{ section.id }}" class="button button--secondary">Kontrollera kompatibilitet</a>
+          <a href="#edp-compat-{{ section.id }}" class="button button--secondary" data-edp-event="compatibility_check">Kontrollera kompatibilitet</a>
           <button type="button" class="button button--secondary" data-edp-compare-add="{{ product.handle | escape }}">Lägg till i jämförelse</button>
         </div>
         {%- if requires_quote -%}
@@ -188,6 +188,12 @@
 </div>
 
 <script src="{{ 'edp-payload-comparison.js' | asset_url }}" defer></script>
+<script src="{{ 'edp-analytics.js' | asset_url }}" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.dispatchEvent(new CustomEvent('edp:analytics', { detail: { event: 'payload_product_view', handle: {{ product.handle | json }} } }));
+  });
+</script>
 
 {% schema %}
 {
