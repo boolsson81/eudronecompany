@@ -341,9 +341,27 @@
             "link_label": "Se tillbehör",
             "link": "/collections/enterprise-accessories"
           }
+        },
+        "product_4": {
+          "type": "product",
+          "settings": {
+            "title": "Företagscase & referenser",
+            "text": "Se hur andra verksamheter löser sina uppdrag med drönare.",
+            "link_label": "Se exempel",
+            "link": "/pages/foretagscase"
+          }
+        },
+        "product_5": {
+          "type": "product",
+          "settings": {
+            "title": "Flottleasing & finansiering",
+            "text": "Bygg upp er flotta med fast månadskostnad och inkluderad service.",
+            "link_label": "Läs mer om leasing",
+            "link": "/pages/flottleasing"
+          }
         }
       },
-      "block_order": ["product_1", "product_2", "product_3"],
+      "block_order": ["product_1", "product_2", "product_3", "product_4", "product_5"],
       "settings": {
         "heading": "Enterprise-produkter",
         "text": "Drönare, tillbehör och kompletta paket för professionell användning.",
