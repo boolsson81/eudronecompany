@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "DJI Enterprise — Matrice, FlyCart och Agras för industri och jordbruk",
+            "heading": "DJI Enterprise — Matrice och FlyCart för inspektion, kartläggning och transport",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Industridrönare för inspektion, kartläggning, transport och jordbruk, med enterprise-tillbehör och originalreservdelar. Letar du Mini, Air, Mavic eller Avata? Se vår vanliga DJI-sida.",
+            "text": "Industridrönare för inspektion, kartläggning och transport, med enterprise-tillbehör och originalreservdelar. Letar du Mini, Air, Mavic eller Avata? Se vår vanliga DJI-sida. Letar du en jordbruksdrönare? Se DJI Agras.",
             "text_style": "subtitle"
           }
         },
@@ -90,8 +90,8 @@
         "column_1": {
           "type": "column",
           "settings": {
-            "title": "Matrice, FlyCart och Agras",
-            "text": "<p>Plattformar för inspektion, kartläggning, transport och bekämpning/sådd, med nyttolaster som termisk kamera, zoom och LiDAR.</p>"
+            "title": "Matrice och FlyCart",
+            "text": "<p>Plattformar för inspektion, kartläggning och transport, med nyttolaster som termisk kamera, zoom och LiDAR.</p>"
           }
         },
         "column_2": {
@@ -131,7 +131,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Vad skiljer DJI Enterprise från DJI:s vanliga sortiment?",
-            "row_content": "<p>Enterprise-serien (Matrice, FlyCart, Agras) är byggd för yrkesmässig drift — inspektion, kartläggning, transport och jordbruk — med egna nyttolaster, tillbehör och reservdelar.</p>"
+            "row_content": "<p>Enterprise-serien (Matrice, FlyCart) är byggd för yrkesmässig drift — inspektion, kartläggning och transport — med egna nyttolaster, tillbehör och reservdelar. Jordbruksdrönare (Agras) hör till en egen serie, se DJI Agras.</p>"
           }
         },
         "row_2": {
@@ -161,6 +161,13 @@
             "heading": "Jag letar efter en Mini, Air eller Mavic — är det rätt sida?",
             "row_content": "<p>Nej, de tillhör DJI:s konsumentserie. Besök vår vanliga DJI-sida för den.</p>"
           }
+        },
+        "row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Jag letar efter en sprutdrönare för jordbruk — är det rätt sida?",
+            "row_content": "<p>Nej, jordbruksserien Agras (T50, T70P, T25 m.fl.) har en egen sida: DJI Agras.</p>"
+          }
         }
       },
       "block_order": [
@@ -168,7 +175,8 @@
         "row_2",
         "row_3",
         "row_4",
-        "row_5"
+        "row_5",
+        "row_6"
       ],
       "settings": {
         "caption": "Vanliga frågor",
@@ -185,7 +193,7 @@
       "type": "enterprise-contact",
       "settings": {
         "title": "Fundera på DJI Enterprise till er verksamhet?",
-        "text": "Berätta om uppdraget (inspektion, kartläggning, transport eller jordbruk) så föreslår vi rätt plattform och nyttolast.",
+        "text": "Berätta om uppdraget (inspektion, kartläggning eller transport) så föreslår vi rätt plattform och nyttolast.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

@@ -45,9 +45,18 @@
           "type": "column",
           "settings": {
             "title": "DJI Enterprise",
-            "text": "<p>Matrice, FlyCart och Agras för industri, kartl&auml;ggning och jordbruk.</p>",
+            "text": "<p>Matrice och FlyCart f&ouml;r inspektion, kartl&auml;ggning och transport.</p>",
             "link_label": "Till DJI Enterprise",
             "link": "/pages/dji-enterprise"
+          }
+        },
+        "dji_agras": {
+          "type": "column",
+          "settings": {
+            "title": "DJI Agras",
+            "text": "<p>T50, T70P och T25 &ndash; jordbruksdr&ouml;nare f&ouml;r sprutning och spridning.</p>",
+            "link_label": "Till DJI Agras",
+            "link": "/pages/dji-agras"
           }
         },
         "wisson": {
@@ -189,6 +198,7 @@
       "block_order": [
         "dji",
         "dji_enterprise",
+        "dji_agras",
         "wisson",
         "wingtra",
         "parrot",

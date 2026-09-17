@@ -1,0 +1,161 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "DJI Agras — jordbruksdrönare för sprutning och spridning",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "T50, T70P och T25 med tank-, batteri- och propellertillbehör. Letar du Matrice eller FlyCart för inspektion, kartläggning eller transport? Se DJI Enterprise.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Se sortimentet",
+            "button_link_1": "/collections/dji-agras",
+            "button_style_secondary_1": false,
+            "button_label_2": "Läs om drönare i jordbruket",
+            "button_link_2": "/pages/jordbruk",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": { "type": "trust_item", "settings": { "text": "Enterprise-specialister" } },
+        "trust_2": { "type": "trust_item", "settings": { "text": "Service och support i Sverige" } },
+        "trust_3": { "type": "trust_item", "settings": { "text": "Offert inom 24 timmar" } },
+        "trust_4": { "type": "trust_item", "settings": { "text": "Auktoriserade leverantörer" } }
+      },
+      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "T50, T70P och T25",
+            "text": "<p>Spruta och sprid över T50-, T70P- och T25-plattformarna, med tankstorlek och kapacitet anpassad efter fält och gröda.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Fullt tillbehörssortiment",
+            "text": "<p>Spraytankar, spridningssystem, batterier, laddhubbar och propellrar för Agras-serien i original.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Rådgivning för lantbruket",
+            "text": "<p>Vi hjälper er välja rätt Agras-modell och tank-/spridarkonfiguration för uppdraget, med offert inom 24 timmar.</p>"
+          }
+        }
+      },
+      "block_order": ["column_1", "column_2", "column_3"],
+      "settings": {
+        "title": "Därför DJI Agras",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka Agras-modeller för ni?",
+            "row_content": "<p>T50, T70P och T25, tillsammans med spraytankar, spridningssystem, batterier, laddhubbar och propellrar till respektive modell.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag använda samma drönare för både sprutning och spridning?",
+            "row_content": "<p>Ja, flera Agras-modeller stöder både spraytank och spridningssystem, men de monteras separat. Kontakta oss för rätt kombination till er gröda och fält.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Är reservdelarna original från DJI?",
+            "row_content": "<p>Ja, våra Agras-reservdelar och tillbehör är original, inte tredjepartskopior.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan vi få offert för en eller flera enheter till gården?",
+            "row_content": "<p>Ja, vi lämnar offert inom 24 timmar för enskilda enheter eller flera maskiner.</p>"
+          }
+        },
+        "row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Jag letar efter Matrice eller FlyCart — är det rätt sida?",
+            "row_content": "<p>Nej, de tillhör DJI Enterprise (inspektion, kartläggning och transport), inte jordbruksserien. Besök vår DJI Enterprise-sida.</p>"
+          }
+        }
+      },
+      "block_order": ["row_1", "row_2", "row_3", "row_4", "row_5"],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Fundera på en sprutdrönare till gården eller entreprenaden?",
+        "text": "Berätta om gröda, fältstorlek och önskad kapacitet så föreslår vi rätt Agras-modell och tillbehör.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "trust_bar", "benefits", "faq", "cta"]
+}
