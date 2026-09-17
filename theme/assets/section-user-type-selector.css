@@ -105,26 +105,6 @@
   mix-blend-mode: multiply;
 }
 
-.user-type-selector--premium .user-type-card__media--dark-image .user-type-card__image--bundled-transparent {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  padding: 1.2rem 1.6rem;
-  box-sizing: border-box;
-}
-
-.user-type-selector--premium .user-type-card__media--dark-image .user-type-card__image--bundled-transparent {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  padding: 1.2rem 1.6rem;
-  box-sizing: border-box;
-}
-
 .user-type-selector--premium .user-type-card__image--processed {
   filter: none !important;
   -webkit-filter: none !important;

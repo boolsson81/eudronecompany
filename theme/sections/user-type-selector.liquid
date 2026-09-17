@@ -65,19 +65,7 @@
         if block.settings.remove_image_background == false
           assign scan_block_remove_bg = false
         endif
-        assign scan_bundled_asset = blank
-        if block.settings.use_bundled_transparent_image != false
-          if block.settings.card_type == 'consumer'
-            assign scan_bundled_asset = 'edp-home-user-type-consumer-transparent.png'
-          elsif block.settings.card_type == 'enterprise'
-            assign scan_bundled_asset = 'edp-home-user-type-enterprise-transparent.png'
-          endif
-        endif
-        assign scan_use_bundled = false
-        if scan_bundled_asset != blank and section.settings.remove_image_background and scan_block_remove_bg and section_appearance == 'premium-dark'
-          assign scan_use_bundled = true
-        endif
-        if section.settings.remove_image_background and scan_block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true and scan_use_bundled == false
+        if section.settings.remove_image_background and scan_block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true
           assign section_has_custom_bg_images = true
         endif
       endfor
@@ -102,7 +90,7 @@
         <p class="user-type-selector__editor-panel-title">Bildbakgrund</p>
         <p class="user-type-selector__editor-panel-text">
           {%- if section.settings.remove_image_background -%}
-            Standardkort använder förberedda transparenta PNG-bilder. Knappen nedan gäller endast egna uppladdade bilder.
+            Bilder som laddas upp i kortens bildruta och inte redan är transparenta bearbetas automatiskt.
           {%- else -%}
             Avstängt. Aktivera <strong>Ta bort bildbakgrund</strong> i inställningspanelen till höger under rubriken <strong>Bildbakgrund</strong>.
           {%- endif -%}
@@ -120,7 +108,7 @@
             </button>
           {%- else -%}
             <p class="user-type-selector__editor-panel-note">
-              Standardkorten använder redan transparenta temabilder — ingen åtgärd krävs.
+              Inga bilder behöver bakgrundsbearbetning just nu.
             </p>
           {%- endif -%}
         </div>
@@ -155,41 +143,22 @@
             assign block_remove_bg = false
           endif
 
-          assign bundled_asset = blank
-          if block.settings.use_bundled_transparent_image != false
-            if block.settings.card_type == 'consumer'
-              assign bundled_asset = 'edp-home-user-type-consumer-transparent.png'
-            elsif block.settings.card_type == 'enterprise'
-              assign bundled_asset = 'edp-home-user-type-enterprise-transparent.png'
-            endif
-          endif
-
-          assign use_bundled_asset = false
-          if bundled_asset != blank and section.settings.remove_image_background and block_remove_bg and section_appearance == 'premium-dark'
-            assign use_bundled_asset = true
-          endif
-
           assign use_dark_image_filter = false
-          if section.settings.remove_image_background and block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true and use_bundled_asset == false
+          if section.settings.remove_image_background and block_remove_bg and section_appearance == 'premium-dark' and block.settings.image != blank and block.settings.image_has_transparency != true
             assign use_dark_image_filter = true
           endif
 
-          assign has_card_image = false
-          if use_bundled_asset or block.settings.image != blank
-            assign has_card_image = true
-          endif
+          assign has_card_image = block.settings.image != blank
         -%}
         <li
           id="UserTypeCard-{{ section.id }}-{{ block.id }}"
           class="user-type-card {{ card_modifier }} user-type-card--title-align-{{ card_title_alignment }} user-type-card--text-align-{{ card_text_alignment }}"
           {{ block.shopify_attributes }}
         >
-          <div class="user-type-card__media{% if use_dark_image_filter or use_bundled_asset %} user-type-card__media--dark-image{% endif %}">
+          <div class="user-type-card__media{% if use_dark_image_filter %} user-type-card__media--dark-image{% endif %}">
             {%- if request.design_mode and has_card_image -%}
               <div class="user-type-card__editor-badge" aria-hidden="true">
-                {%- if use_bundled_asset -%}
-                  <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--transparent">Transparent PNG (tema)</span>
-                {%- elsif block.settings.image_has_transparency -%}
+                {%- if block.settings.image_has_transparency -%}
                   <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--transparent">PNG utan bakgrund</span>
                 {%- elsif use_dark_image_filter -%}
                   <span class="user-type-card__editor-badge-pill user-type-card__editor-badge-pill--active">Bakgrund tas bort</span>
@@ -211,17 +180,7 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
-            {%- if use_bundled_asset -%}
-              <img
-                src="{{ bundled_asset | asset_url }}"
-                class="user-type-card__image user-type-card__image--bundled-transparent"
-                loading="eager"
-                fetchpriority="high"
-                width="600"
-                height="600"
-                alt="{{ block.settings.title | escape }}"
-              >
-            {%- elsif block.settings.image != blank -%}
+            {%- if block.settings.image != blank -%}
               {%- if use_dark_image_filter -%}
                 {{
                   block.settings.image
@@ -484,17 +443,10 @@
           "default": "consumer"
         },
         {
-          "type": "checkbox",
-          "id": "use_bundled_transparent_image",
-          "label": "Använd transparent temabild",
-          "default": true,
-          "info": "Använder förberedd PNG utan bakgrund för konsument- och företagskort. Stäng av om du vill visa din egen uppladdade bild."
-        },
-        {
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.user-type-selector.blocks.card.settings.image.label",
-          "info": "Används när transparent temabild är av. Premium mörk: bäst resultat med PNG utan bakgrund."
+          "info": "Lämna tomt för en ikon. Premium mörk: bäst resultat med PNG utan bakgrund."
         },
         {
           "type": "checkbox",
@@ -589,7 +541,6 @@
             "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
             "button_label": "Utforska tävling & FPV",
             "button_link": "/collections/tavling-fpv",
-            "use_bundled_transparent_image": false,
             "title_alignment": "center",
             "text_alignment": "center"
           }

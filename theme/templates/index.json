@@ -24,7 +24,6 @@
           "settings": {
             "card_type": "consumer",
             "image": "shopify://shop_images/edp-home-user-type-consumer.webp",
-            "use_bundled_transparent_image": true,
             "image_has_transparency": true,
             "title": "Konsumentdrönare",
             "description": "Drönare och tillbehör för privat bruk, foto, video och fritidsflygning.",
@@ -39,7 +38,6 @@
           "type": "card",
           "settings": {
             "card_type": "competition",
-            "use_bundled_transparent_image": false,
             "title": "Tävling & FPV",
             "description": "Racingdrönare, FPV-utrustning och byggdelar för freestyle och tävling.",
             "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
@@ -54,7 +52,6 @@
           "settings": {
             "card_type": "enterprise",
             "image": "shopify://shop_images/edp-home-user-type-enterprise.webp",
-            "use_bundled_transparent_image": true,
             "image_has_transparency": true,
             "title": "Enterprise & Företag",
             "description": "Professionella UAV-lösningar för mätning, inspektion, säkerhet och offentlig sektor.",
