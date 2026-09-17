@@ -19,8 +19,8 @@ export default function CommercialDronesProducts() {
   return (
     <>
       <SeoHead
-        title="Enterprise-drönare — hela DJI-sortimentet | EU Drone Company"
-        description="Utforska DJI Enterprise-sortimentet hos EU Drone Company. Matrice 400, Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och fler."
+        title="Enterprise-drönare för företag | EU Drone Company"
+        description="Utforska vårt Enterprise-sortiment hos EU Drone Company: Matrice 400, Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och fler."
         canonical={droneUrl("/kommersiella-dronare/produkter")}
         breadcrumbs={[
           ...DRONE_BREADCRUMB_ROOT,
@@ -48,7 +48,7 @@ export default function CommercialDronesProducts() {
             >
               <h1 className="text-3xl md:text-5xl font-bold mb-4">Enterprise-drönare</h1>
               <p className="text-white/50 max-w-2xl mx-auto text-lg">
-                Vi levererar hela DJI Enterprise-sortimentet — {ENTERPRISE_DRONE_PRODUCTS.length} plattformar från
+                Vi levererar ett brett Enterprise-sortiment — {ENTERPRISE_DRONE_PRODUCTS.length} plattformar från
                 kompakt inspektion till tung LiDAR och cinema. Varje drönare har en egen sida med specar,
                 användningsområden och kompatibla payloads.
               </p>

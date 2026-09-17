@@ -19,8 +19,8 @@ export default function EnterpriseFooter() {
             <span className="font-semibold">{COMPANY_CONTACT.brandName} Enterprise</span>
           </div>
           <p className="text-sm text-white/40 text-center md:text-right">
-            © {new Date().getFullYear()} {COMPANY_CONTACT.brandName}. Auktoriserad DJI
-            Enterprise-partner.
+            © {new Date().getFullYear()} {COMPANY_CONTACT.brandName}. Professionella
+            drönarlösningar för företag.
           </p>
         </div>
 

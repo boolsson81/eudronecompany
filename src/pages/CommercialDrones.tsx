@@ -32,12 +32,12 @@ import {
 } from "@/lib/companyContact";
 
 const HUB_FAQ: FaqItem[] = [
-  { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela DJI Enterprise-sortimentet, inklusive Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
+  { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi erbjuder ett brett Enterprise-sortiment, bland annat DJI:s Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
   { question: "Vad kostar en kommersiell drönare?", answer: "Priset varierar beroende på modell och tillbehör. DJI Mavic 3 Enterprise börjar runt 30 000 kr, medan DJI Matrice 350 RTK med payload kostar från ca 100 000 kr. Kontakta oss för exakt offert." },
   { question: "Ingår utbildning vid köp?", answer: "Ja, vi erbjuder skräddarsydd utbildning anpassad efter din bransch och tillämpning. Vi hjälper även med flygcertifiering och tillståndsansökningar." },
   { question: "Hur lång tid tar leveransen?", answer: "Vi har lager i Sverige och de flesta produkter levereras inom 2–5 arbetsdagar. Specialkonfigurationer kan ta något längre." },
   { question: "Erbjuder ni leasing eller finansiering?", answer: "Ja, vi erbjuder flera finansieringsalternativ inklusive leasing, avbetalning och hyra. Kontakta oss för ett upplägg som passar ert företag." },
-  { question: "Vilken support ingår efter köpet?", answer: "Alla köp inkluderar 2 års DJI Enterprise-garanti, teknisk support och tillgång till vår serviceverkstad i Sverige. Vi erbjuder även DJI Care Enterprise för utökat skydd." },
+  { question: "Vilken support ingår efter köpet?", answer: "Alla köp inkluderar minst 2 års tillverkargaranti, teknisk support och tillgång till vår serviceverkstad i Sverige. Vi erbjuder även utökade serviceavtal för extra skydd." },
 ];
 
 
@@ -57,7 +57,7 @@ export default function CommercialDrones() {
     "@type": "Organization",
     name: "EU Drone Company Enterprise",
     url: droneUrl("/"),
-    description: "Auktoriserad DJI Enterprise-partner i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
+    description: "Leverantör av professionella Enterprise-drönare för företag i Sverige. Kommersiella drönare för inspektion, kartläggning, lantbruk och säkerhet.",
     legalName: COMPANY_CONTACT.legalName,
     identifier: COMPANY_ORG_IDENTIFIER,
     email: COMPANY_CONTACT.email,
@@ -73,8 +73,8 @@ export default function CommercialDrones() {
   return (
     <>
       <SeoHead
-        title="Kommersiella Drönare för Företag — DJI Enterprise | EU Drone Company"
-        description="Köp professionella DJI Enterprise-drönare för inspektion, kartläggning, lantbruk och säkerhet. Auktoriserad återförsäljare i Sverige med lager, support och utbildning."
+        title="Kommersiella Drönare för Företag — Enterprise | EU Drone Company"
+        description="Köp professionella Enterprise-drönare för inspektion, kartläggning, lantbruk och säkerhet. Återförsäljare i Sverige med lager, support och utbildning."
         canonical={droneUrl("/kommersiella-dronare")}
         breadcrumbs={[
           { name: "Hem", url: droneUrl("/") },
@@ -101,7 +101,7 @@ export default function CommercialDrones() {
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-medium mb-6">
                   <Cpu className="h-3.5 w-3.5" />
-                  Auktoriserad DJI Enterprise-återförsäljare
+                  Återförsäljare av professionella Enterprise-drönare
                 </div>
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95] mb-6">
                   Kommersiella<br />
@@ -109,7 +109,7 @@ export default function CommercialDrones() {
                   ditt företag
                 </h1>
                 <p className="text-lg md:text-xl text-white/60 max-w-xl mb-8 leading-relaxed">
-                  Effektivisera inspektion, kartläggning och övervakning med professionella DJI Enterprise-drönare.
+                  Effektivisera inspektion, kartläggning och övervakning med professionella Enterprise-drönare.
                   Vi hjälper dig välja rätt lösning.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -149,7 +149,7 @@ export default function CommercialDrones() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             {[
               { value: "500+", label: "Företagskunder" },
-              { value: "DJI", label: "Enterprise Partner" },
+              { value: "Flera märken", label: "Enterprise Partner" },
               { value: "24/7", label: "Support & Service" },
               { value: "Sverige", label: "Lager & Leverans" },
             ].map((item, i) => (
@@ -214,7 +214,7 @@ export default function CommercialDrones() {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Vilken drönare passar dig?</h2>
               <p className="text-white/50 max-w-2xl mx-auto">
-                Läs våra jämförelseguider och hitta rätt DJI-modell för ditt företag.
+                Läs våra jämförelseguider och hitta rätt drönarmodell för ditt företag.
               </p>
             </motion.div>
 
@@ -259,7 +259,7 @@ export default function CommercialDrones() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Utvalda produkter</h2>
               <p className="text-white/50 max-w-2xl mx-auto">
-                Vi erbjuder hela DJI Enterprise-sortimentet — från kompakta inspektionsdrönare till tunga industriella plattformar.
+                Vi erbjuder ett brett Enterprise-sortiment — från kompakta inspektionsdrönare till tunga industriella plattformar.
               </p>
             </motion.div>
 
@@ -332,7 +332,7 @@ export default function CommercialDrones() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Se drönarna i aktion</h2>
               <p className="text-white/50 max-w-2xl mx-auto">
-                Upptäck kapaciteten hos DJI:s Enterprise-drönare genom officiella produktfilmer.
+                Upptäck kapaciteten hos våra Enterprise-drönare genom officiella produktfilmer.
               </p>
             </motion.div>
 
@@ -377,7 +377,7 @@ export default function CommercialDrones() {
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">Varför EU Drone Company?</h2>
                 <div className="space-y-4">
                   {[
-                    "Auktoriserad DJI Enterprise-partner i Sverige",
+                    "Brett utbud av ledande drönarmärken för Enterprise",
                     "Komplett support — från val av drönare till flygutbildning",
                     "Lager i Sverige — snabb leverans utan tull",
                     "Service och reparation på plats",
@@ -400,8 +400,8 @@ export default function CommercialDrones() {
                 <Shield className="h-10 w-10 text-orange-500 mb-4" />
                 <h3 className="text-xl font-bold mb-3">Enterprise-garanti</h3>
                 <p className="text-white/60 leading-relaxed mb-4">
-                  Alla våra kommersiella drönare levereras med DJI Enterprise-garanti, 
-                  professionell support och möjlighet till utökat serviceavtal (DJI Care Enterprise).
+                  Alla våra kommersiella drönare levereras med tillverkargaranti,
+                  professionell support och möjlighet till utökat serviceavtal.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="text-center p-3 rounded-xl bg-white/5">

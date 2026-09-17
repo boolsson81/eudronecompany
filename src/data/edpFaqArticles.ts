@@ -21,7 +21,7 @@ export const EDP_FAQ_BLOG = {
   title: "Vanliga frågor",
   metaTitle: "FAQ — enterprise-drönare & drönarkameror | EU Drone Company",
   metaDescription:
-    "Svar på vanliga frågor om professionella DJI Enterprise-drönare, Zenmuse-kameror, payloads, certifiering och branschlösningar.",
+    "Svar på vanliga frågor om professionella Enterprise-drönare, kameror, payloads, certifiering och branschlösningar.",
   templateSuffix: "vanliga-fragor",
 } as const;
 
@@ -34,18 +34,18 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       "Leverans, garanti, utbildning och finansiering — svar på de vanligaste frågorna när du köper professionella drönare från EU Drone Company.",
     metaTitle: "FAQ — köp av enterprise-drönare | EU Drone Company",
     metaDescription:
-      "Svar på frågor om pris, leverans, garanti, utbildning och finansiering av DJI Enterprise-drönare i Sverige.",
+      "Svar på frågor om pris, leverans, garanti, utbildning och finansiering av Enterprise-drönare i Sverige.",
     tags: ["faq", "köp", "enterprise", "support"],
     category: "kop",
     introParagraphs: [
       "Att investera i enterprise-drönare innebär mer än att välja modell — leverans, support, utbildning och certifiering påverkar hur snabbt ni får värde av investeringen.",
-      "Här samlar vi de vanligaste frågorna från företag som köper DJI Enterprise-utrustning via EU Drone Company.",
+      "Här samlar vi de vanligaste frågorna från företag som köper Enterprise-utrustning via EU Drone Company.",
     ],
     faq: [
       {
         question: "Vilka enterprise-drönare säljer EU Drone Company?",
         answer:
-          "Vi är auktoriserad DJI Enterprise-partner och erbjuder hela sortimentet — bland annat Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör.",
+          "Vi erbjuder ett brett Enterprise-sortiment — bland annat DJI:s Matrice 350 RTK, Matrice 400 RTK, Mavic 3 Enterprise-serien, Agras och tillhörande Zenmuse-payloads och tillbehör.",
       },
       {
         question: "Vad kostar en professionell enterprise-drönare?",
@@ -70,7 +70,7 @@ export const EDP_FAQ_ARTICLES: EdpFaqArticle[] = [
       {
         question: "Vilken support ingår efter köpet?",
         answer:
-          "Alla köp inkluderar DJI Enterprise-garanti, teknisk support och tillgång till vår serviceverkstad. Vi erbjuder även DJI Care Enterprise för utökat skydd och snabbare reparation.",
+          "Alla köp inkluderar tillverkargaranti, teknisk support och tillgång till vår serviceverkstad. Vi erbjuder även utökade serviceavtal för extra skydd och snabbare reparation.",
       },
     ],
     relatedLinks: [
