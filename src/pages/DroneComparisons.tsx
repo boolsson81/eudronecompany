@@ -17,7 +17,7 @@ export default function DroneComparisons() {
       name: "Drönarjämförelser — EU Drone Company Enterprise",
       url: droneUrl("/kommersiella-dronare/jamforelser"),
       description:
-        "Jämförelser mellan professionella DJI-drönare — specifikationer, användningsområden och köpråd för företag.",
+        "Jämförelser mellan professionella Enterprise-drönare — specifikationer, användningsområden och köpråd för företag.",
       publisher: {
         "@type": "Organization",
         name: "EU Drone Company Enterprise",
@@ -37,8 +37,8 @@ export default function DroneComparisons() {
   return (
     <>
       <SeoHead
-        title="Drönarjämförelser — Vilken DJI passar dig? | EU Drone Company"
-        description="Jämför professionella DJI-drönare sida vid sida. Specifikationer, användningsområden och köpråd för inspektion, lantbruk och filmproduktion."
+        title="Drönarjämförelser — Vilken drönare passar dig? | EU Drone Company"
+        description="Jämför professionella Enterprise-drönare sida vid sida. Specifikationer, användningsområden och köpråd för inspektion, lantbruk och filmproduktion."
         canonical={droneUrl("/kommersiella-dronare/jamforelser")}
         breadcrumbs={[
           { name: "Hem", url: droneUrl("/") },
@@ -66,7 +66,7 @@ export default function DroneComparisons() {
                 Jämför professionella drönare
               </h1>
               <p className="text-lg text-white/60 leading-relaxed">
-                Osäker på vilken DJI-modell som passar ditt företag? Våra jämförelseguider går igenom
+                Osäker på vilken drönarmodell som passar ditt företag? Våra jämförelseguider går igenom
                 specifikationer, användningsområden och totalkostnad — så att du kan fatta rätt beslut.
               </p>
             </motion.div>

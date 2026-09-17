@@ -18,8 +18,8 @@ export default function CommercialDroneCameras() {
   return (
     <>
       <SeoHead
-        title="Enterprise-kameror & sensorer — Zenmuse | EU Drone Company"
-        description="Utforska DJI Zenmuse enterprise-kameror och sensorer. H30T, H20T, L2 LiDAR, P1 fotogrammetri och specialpayloads för Matrice-serien."
+        title="Enterprise-kameror & sensorer | EU Drone Company"
+        description="Utforska professionella Enterprise-kameror och sensorer. H30T, H20T, L2 LiDAR, P1 fotogrammetri och specialpayloads för Matrice-serien."
         canonical={droneUrl("/kommersiella-dronare/kameror")}
         breadcrumbs={[
           { name: "Hem", url: droneUrl("/") },
@@ -52,7 +52,7 @@ export default function CommercialDroneCameras() {
               </div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4">Enterprise-kameror & sensorer</h1>
               <p className="text-white/50 max-w-2xl mx-auto text-lg">
-                Professionella payloads för DJI Matrice — från hybridkameror och termisk avbildning till LiDAR och fotogrammetri.
+                Professionella payloads för Enterprise-drönare — från hybridkameror och termisk avbildning till LiDAR och fotogrammetri.
               </p>
             </motion.div>
 
