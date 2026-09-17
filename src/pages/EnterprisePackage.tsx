@@ -18,6 +18,7 @@ import { getDroneProductBySlug } from "@/data/enterpriseDroneProducts";
 import { getCameraBySlug } from "@/data/enterpriseCameraProducts";
 import { getIndustryBySlug } from "@/data/commercialDroneIndustries";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
+import { useViewContentTracking } from "@/hooks/useViewContentTracking";
 
 const LEVEL_BADGE: Record<string, string> = {
   standard: "bg-white/10 text-white/70 border-white/20",
@@ -29,6 +30,7 @@ export default function EnterprisePackage() {
   const { packageSlug } = useParams<{ packageSlug: string }>();
   const pkg = packageSlug ? getPackageBySlug(packageSlug) : undefined;
   const faqJsonLdData = useMemo(() => (pkg ? faqJsonLd(pkg.faq) : null), [pkg]);
+  useViewContentTracking(pkg);
 
   if (!pkg) {
     return (

@@ -70,12 +70,16 @@ export function onConsentChange(listener: Listener): () => void {
   };
 }
 
-/** Tar bort GA-kakorna när besökaren tackar nej efter att ha sagt ja. */
+/** Tar bort GA- och Meta Pixel-kakorna när besökaren tackar nej efter att ha sagt ja. */
 function clearAnalyticsCookies(): void {
   const names = document.cookie
     .split(";")
     .map((part) => part.split("=")[0]?.trim())
-    .filter((name): name is string => Boolean(name) && (name.startsWith("_ga") || name === "_edc_cid"));
+    .filter(
+      (name): name is string =>
+        Boolean(name) &&
+        (name.startsWith("_ga") || name === "_edc_cid" || name === "_fbp" || name === "_fbc"),
+    );
 
   for (const name of names) {
     document.cookie = `${name}=; path=/; max-age=0`;
