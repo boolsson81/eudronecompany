@@ -1095,6 +1095,7 @@
               "options__1": { "label": "Service" },
               "options__2": { "label": "Utbildning" }
             },
+            "image": { "label": "Egen bild (ersätter ikonen)", "info": "Valfri. Om ingen bild väljs visas ikonen ovan istället." },
             "title": { "label": "Rubrik" },
             "text": { "label": "Text" },
             "link_label": { "label": "Länketikett" },

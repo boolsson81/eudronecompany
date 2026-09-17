@@ -32,22 +32,32 @@
         {%- for block in section.blocks -%}
           <li class="edp-home-portals__card" {{ block.shopify_attributes }}>
             <a href="{{ block.settings.link | default: '#' }}" class="edp-home-portals__card-link">
-              <span class="edp-home-portals__icon" aria-hidden="true">
-                {%- case block.settings.icon -%}
-                  {%- when 'education' -%}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <path d="M22 10L12 5 2 10l10 5 10-5z"/>
-                      <path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/>
-                    </svg>
-                  {%- else -%}
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                      <path d="M4 13a8 8 0 0 1 16 0v4"/>
-                      <rect x="2" y="13" width="4" height="6" rx="1.5"/>
-                      <rect x="18" y="13" width="4" height="6" rx="1.5"/>
-                      <path d="M20 19a3 3 0 0 1-3 3h-2"/>
-                    </svg>
-                {%- endcase -%}
-              </span>
+              {%- if block.settings.image != blank -%}
+                <span class="edp-home-portals__icon edp-home-portals__icon--image">
+                  {{
+                    block.settings.image
+                    | image_url: width: 160
+                    | image_tag: loading: 'lazy', widths: '80,120,160', alt: block.settings.title
+                  }}
+                </span>
+              {%- else -%}
+                <span class="edp-home-portals__icon" aria-hidden="true">
+                  {%- case block.settings.icon -%}
+                    {%- when 'education' -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M22 10L12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c0 1.5 2.5 3 6 3s6-1.5 6-3v-5"/>
+                      </svg>
+                    {%- else -%}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 13a8 8 0 0 1 16 0v4"/>
+                        <rect x="2" y="13" width="4" height="6" rx="1.5"/>
+                        <rect x="18" y="13" width="4" height="6" rx="1.5"/>
+                        <path d="M20 19a3 3 0 0 1-3 3h-2"/>
+                      </svg>
+                  {%- endcase -%}
+                </span>
+              {%- endif -%}
               <span class="edp-home-portals__body">
                 {%- unless block.settings.title == blank -%}
                   <span class="edp-home-portals__title">{{ block.settings.title | escape }}</span>
@@ -56,7 +66,7 @@
                   <span class="edp-home-portals__card-text">{{ block.settings.text | escape }}</span>
                 {%- endunless -%}
                 {%- unless block.settings.link_label == blank -%}
-                  <span class="edp-home-portals__cta">{{ block.settings.link_label | escape }} →</span>
+                  <span class="edp-home-portals__cta">{{ block.settings.link_label | escape }}</span>
                 {%- endunless -%}
               </span>
             </a>
@@ -122,6 +132,12 @@
             { "value": "education", "label": "t:sections.edp-home-portals.blocks.portal.settings.icon.options__2.label" }
           ],
           "default": "service"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.edp-home-portals.blocks.portal.settings.image.label",
+          "info": "t:sections.edp-home-portals.blocks.portal.settings.image.info"
         },
         {
           "type": "text",
