@@ -57,6 +57,17 @@ lägg de leverantörer som är värda att gå vidare med i registret med
   kvar — ActionKing är ett annat varumärke och har de svenska produkthandles som EU Drone
   Company-butiken saknar. Rör dem inte utan att fråga; se `docs/FRONTEND_MIGRATION.md`.
 
+## Shopify-koppling
+
+Sessionen har en Shopify MCP-koppling (server "Shopify") separat från de
+env-baserade skripten mot Admin API. Den pekar mot butiken **Europe Drone
+Company** (`www.eudronecompany.com`, e-post `info@eudronecompany.com`).
+
+Tema att pusha ändringar mot: **EDC Förhandsgranskning (Claude)**
+(`gid://shopify/OnlineStoreTheme/189631627592`), ett opublicerat utkast.
+Fråga inte vilken butik eller vilket tema — använd detta om inget annat
+anges.
+
 ## Namn som medvetet inte döptes om
 
 `eudroneparts-set-token` och `eudroneparts-token-binding-probe` är deployade
