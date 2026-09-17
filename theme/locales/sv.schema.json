@@ -3528,6 +3528,10 @@
     "section-divider": {
       "name": "Avdelare",
       "settings": {
+        "line_color": {
+          "label": "Linjens färg",
+          "info": "Lämna tomt för att använda färgschemats textfärg"
+        },
         "line_style": {
           "label": "Linjestil",
           "options__1": {

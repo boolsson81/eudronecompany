@@ -16,7 +16,7 @@
     border: none;
     border-top-style: {{ section.settings.line_style }};
     border-top-width: {{ section.settings.line_thickness }}px;
-    border-top-color: currentColor;
+    border-top-color: {% if section.settings.line_color != blank %}{{ section.settings.line_color }}{% else %}currentColor{% endif %};
     margin: 0 auto;
     opacity: {{ section.settings.line_opacity | divided_by: 100.0 }};
   }
@@ -41,6 +41,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "color",
+      "id": "line_color",
+      "label": "t:sections.section-divider.settings.line_color.label",
+      "info": "t:sections.section-divider.settings.line_color.info"
     },
     {
       "type": "select",

@@ -3984,6 +3984,10 @@
     "section-divider": {
       "name": "Section divider",
       "settings": {
+        "line_color": {
+          "label": "Line color",
+          "info": "Leave blank to use the color scheme's text color"
+        },
         "line_style": {
           "label": "Line style",
           "options__1": {
