@@ -218,7 +218,7 @@
       "settings": {
         "heading": "Aktuella modeller",
         "text": "DJI Matrice-serien — aktuella enterprise-drönare för inspektion, kartläggning och säkerhet.",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -258,7 +258,7 @@
       "settings": {
         "heading": "DJI Dock-serien",
         "text": "Drönare-i-box — automatiserade hangarlösningar för fjärrstyrda och schemalagda flygningar dygnet runt.",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -307,7 +307,7 @@
       "settings": {
         "heading": "Dock-specifika modeller",
         "text": "Drönare optimerade för DJI Dock — autonom start, landning och laddning dygnet runt.",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -439,7 +439,7 @@
       "settings": {
         "heading": "Enterprise-sensorplattformar",
         "text": "Vanliga nyttolaster för Matrice-plattformarna — Zenmuse-sensorer för inspektion, kartläggning och säkerhet.",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 24,
         "padding_bottom": 24
       }
