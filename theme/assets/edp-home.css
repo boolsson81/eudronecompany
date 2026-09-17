@@ -912,3 +912,41 @@
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+/* Availability alert (main-product.liquid block) */
+.edp-availability-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.4rem 1.6rem;
+  border-radius: 1rem;
+  background: rgba(var(--edp-accent, 0, 163, 224), 0.1);
+  margin: 1.6rem 0;
+}
+
+.edp-availability-alert__icon {
+  display: flex;
+  flex-shrink: 0;
+  color: rgb(var(--edp-accent, 0, 163, 224));
+}
+
+.edp-availability-alert__icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.edp-availability-alert__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.edp-availability-alert__heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.edp-availability-alert__text {
+  font-size: 1.35rem;
+  color: rgba(var(--color-foreground), 0.7);
+}

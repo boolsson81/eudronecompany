@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "availability_alert": {
+          "type": "availability_alert",
+          "settings": {
+            "icon": "shield-check",
+            "heading": "Installation & utbildning ingår",
+            "text": "Vårt enterprise-team hjälper till med driftsättning och operatörsutbildning."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Tekniska specifikationer",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Vattenrening & munstycken",
+            "icon": "washing",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Leverans & installation",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dokumentation & nedladdningar",
+            "icon": "clipboard",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Dela"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "availability_alert",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-edp",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "before-after": {
+      "type": "edp-image-comparison",
+      "settings": {
+        "heading": "Resultat i verkligheten",
+        "text": "Dra i reglaget för att se skillnaden före och efter en tvätt.",
+        "before_label": "Före",
+        "after_label": "Efter",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "enterprise-quote": {
+      "type": "enterprise-quote-form",
+      "settings": {
+        "title": "Behöver du hjälp att räkna på ett objekt?",
+        "intro": "Berätta om byggnaden och ytan, så återkommer vi med upplägg, utrustning och offert.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["main", "before-after", "enterprise-quote"]
+}
