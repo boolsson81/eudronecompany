@@ -2103,6 +2103,16 @@
         },
         "drawer_phone": {
           "label": "Phone (mobile drawer)"
+        },
+        "logo_header": {
+          "content": "Logo override"
+        },
+        "logo": {
+          "label": "Logo image",
+          "info": "Overrides the logo set in Theme settings > Logo for this section only. Leave empty to use the theme-wide logo."
+        },
+        "logo_width": {
+          "label": "Custom logo width"
         }
       },
       "blocks": {
