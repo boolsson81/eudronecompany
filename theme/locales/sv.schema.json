@@ -1144,7 +1144,9 @@
         "drop": "Vattendroppe",
         "building": "Byggnad",
         "lightning": "Blixt",
-        "compass": "Kompass"
+        "compass": "Kompass",
+        "camera": "Kamera",
+        "radar": "Radar/sensor"
       }
     },
     "edp-brand-logos": {
@@ -1638,6 +1640,10 @@
           "settings": {
             "image": {
               "label": "Ikonbild"
+            },
+            "icon": {
+              "label": "Reservikon",
+              "info": "Används när ingen ikonbild är vald ovan."
             },
             "title": {
               "label": "Rubrik"

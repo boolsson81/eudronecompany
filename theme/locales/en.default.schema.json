@@ -1511,6 +1511,10 @@
             "image": {
               "label": "Icon image"
             },
+            "icon": {
+              "label": "Fallback icon",
+              "info": "Used when no icon image is set above."
+            },
             "title": {
               "label": "Title"
             },
