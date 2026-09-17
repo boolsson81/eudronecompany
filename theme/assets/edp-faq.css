@@ -188,6 +188,9 @@
   font-weight: 600;
   color: var(--edp-accent);
 }
+.edp-faq-blog__card-link::after {
+  content: " →";
+}
 
 .template-article\.vanliga-fragor .shop-follow-button,
 .template-blog\.vanliga-fragor .shop-follow-button {
@@ -209,6 +212,9 @@
 .edp-faq-article__meta {
   font-size: 0.85rem;
   color: var(--edp-muted, #5c5c5c);
+}
+.edp-faq-article__back::before {
+  content: "← ";
 }
 .edp-faq-article__back {
   display: inline-flex;

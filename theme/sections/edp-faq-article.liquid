@@ -34,7 +34,7 @@
     </div>
 
     <a href="{{ blog.url }}" class="edp-faq-article__back">
-      ← Tillbaka till {{ blog.title | escape }}
+      {{ 'edp.back_to_blog' | t: blog: blog.title }}
     </a>
   </div>
 </article>

@@ -29,8 +29,6 @@
         <h1 class="edp-jamforer-blog__title">{{ blog.title | escape }}</h1>
         {%- unless section.settings.description == blank -%}
           <p class="edp-jamforer-blog__desc">{{ section.settings.description | escape }}</p>
-        {%- else -%}
-          <p class="edp-jamforer-blog__desc">Jämför professionella drönarkameror och Zenmuse-sensorer sida vid sida.</p>
         {%- endunless -%}
       </header>
 
@@ -54,7 +52,7 @@
               {%- if article.excerpt.size > 0 -%}
                 <p class="edp-jamforer-blog__card-excerpt">{{ article.excerpt | strip_html | truncate: 140 }}</p>
               {%- endif -%}
-              <span class="edp-jamforer-blog__card-link">Läs jämförelsen →</span>
+              <span class="edp-jamforer-blog__card-link">{{ section.settings.card_link_label | escape }}</span>
             </div>
           </a>
         {%- endfor -%}
@@ -84,6 +82,12 @@
       "id": "description",
       "label": "Beskrivning",
       "default": "Jämför Zenmuse-kameror och payloads för inspektion, termisk avbildning, LiDAR och fotogrammetri."
+    },
+    {
+      "type": "text",
+      "id": "card_link_label",
+      "label": "Länketikett (kort)",
+      "default": "Läs jämförelsen"
     },
     {
       "type": "color_scheme",

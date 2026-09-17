@@ -239,6 +239,9 @@
   font-weight: 600;
   color: var(--edp-accent);
 }
+.edp-jamforer-blog__card-link::after {
+  content: " →";
+}
 
 /* Article template: hide Shopify Follow on Shop purple button on jämförer pages */
 .template-article\.jamforer .shop-follow-button,
@@ -261,6 +264,9 @@
 .edp-jamforer-article__meta {
   font-size: 0.85rem;
   color: var(--edp-muted, #5c5c5c);
+}
+.edp-jamforer-article__back::before {
+  content: "← ";
 }
 .edp-jamforer-article__back {
   display: inline-flex;

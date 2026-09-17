@@ -28,8 +28,6 @@
         <h1 class="edp-faq-blog__title">{{ blog.title | escape }}</h1>
         {%- unless section.settings.description == blank -%}
           <p class="edp-faq-blog__desc">{{ section.settings.description | escape }}</p>
-        {%- else -%}
-          <p class="edp-faq-blog__desc">Svar på vanliga frågor om enterprise-drönare, Zenmuse-kameror och professionella payloads.</p>
         {%- endunless -%}
       </header>
 
@@ -44,7 +42,7 @@
               {%- if article.excerpt.size > 0 -%}
                 <p class="edp-faq-blog__card-excerpt">{{ article.excerpt | strip_html | truncate: 140 }}</p>
               {%- endif -%}
-              <span class="edp-faq-blog__card-link">Läs svaren →</span>
+              <span class="edp-faq-blog__card-link">{{ section.settings.card_link_label | escape }}</span>
             </div>
           </a>
         {%- endfor -%}
@@ -74,6 +72,12 @@
       "id": "description",
       "label": "Beskrivning",
       "default": "Svar på vanliga frågor om DJI Enterprise-drönare, Zenmuse-payloads, certifiering och branschlösningar."
+    },
+    {
+      "type": "text",
+      "id": "card_link_label",
+      "label": "Länketikett (kort)",
+      "default": "Läs svaren"
     },
     {
       "type": "color_scheme",

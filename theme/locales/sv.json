@@ -606,6 +606,7 @@
     },
     "sticky_bar": {
       "nav_label": "Snabbmeny"
-    }
+    },
+    "back_to_blog": "Tillbaka till {{ blog }}"
   }
 }
