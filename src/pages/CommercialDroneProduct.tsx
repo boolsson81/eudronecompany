@@ -17,12 +17,14 @@ import { getPackagesForDrone, PACKAGE_LEVELS } from "@/data/enterprisePackages";
 import { getIndustryBySlug } from "@/data/commercialDroneIndustries";
 import { getComparisonBySlug } from "@/data/droneComparisons";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
+import { useViewContentTracking } from "@/hooks/useViewContentTracking";
 
 export default function CommercialDroneProduct() {
   const { productSlug } = useParams<{ productSlug: string }>();
   const product = productSlug ? getDroneProductBySlug(productSlug) : undefined;
   const related = productSlug ? getRelatedDroneProducts(productSlug) : [];
   const faqJsonLdData = useMemo(() => (product ? faqJsonLd(product.faq) : null), [product]);
+  useViewContentTracking(product);
 
   if (!product) {
     return (

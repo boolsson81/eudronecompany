@@ -15,12 +15,14 @@ import {
   getRelatedCameras,
   CAMERA_CATEGORIES,
 } from "@/data/enterpriseCameraProducts";
+import { useViewContentTracking } from "@/hooks/useViewContentTracking";
 
 export default function CommercialDroneCamera() {
   const { cameraSlug } = useParams<{ cameraSlug: string }>();
   const camera = cameraSlug ? getCameraBySlug(cameraSlug) : undefined;
   const related = cameraSlug ? getRelatedCameras(cameraSlug) : [];
   const faqJsonLdData = useMemo(() => (camera ? faqJsonLd(camera.faq) : null), [camera]);
+  useViewContentTracking(camera);
 
   if (!camera) {
     return (
