@@ -342,6 +342,37 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
   }
 }
 
+/* At 1440px+ there's room for the inline menu, but the last item ("Verktyg")
+   could still wrap onto its own row because item padding ate the last few
+   pixels. Force one row (nowrap) and trim the item padding slightly so all
+   items fit; a scrollable fallback keeps a future, longer menu from ever
+   breaking onto a second line again instead of wrapping. */
+@media screen and (min-width: 1440px) {
+  .header__inline-menu.edp-header-menu {
+    /* Grid items default to a content-based automatic minimum size, which
+       would otherwise force the "navigation" track wider than its 1fr
+       share instead of letting the menu below scroll. */
+    min-width: 0;
+  }
+
+  .header__inline-menu.edp-header-menu .list-menu--inline {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .header__inline-menu.edp-header-menu .list-menu--inline::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header__inline-menu.edp-header-menu .header__menu-item {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
 /* Mobile text logo — prevent "Europe / Drone / Parts" vertical stacking */
 @media screen and (max-width: 749px) {
   .header--has-menu {
