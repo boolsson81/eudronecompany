@@ -13,7 +13,7 @@ import type { FaqItem } from "@/data/commercialDroneIndustries";
 import {
   Cpu, Shield, CheckCircle2, Radio, ArrowRight, Scale, Wrench
 } from "lucide-react";
-import { INDUSTRY_DATA } from "@/data/commercialDroneIndustries";
+import djiMini5ProImg from "@/assets/dji-mini-5-pro.webp";
 
 const SHOWCASE_VIDEOS = [
   { id: "JPPHG5dSpwM", title: "DJI Matrice 350 RTK" },
@@ -92,34 +92,55 @@ export default function CommercialDrones() {
           <div className="absolute top-20 right-0 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none" />
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="max-w-3xl"
-            >
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-medium mb-6">
-                <Cpu className="h-3.5 w-3.5" />
-                Auktoriserad DJI Enterprise-återförsäljare
-              </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95] mb-6">
-                Kommersiella<br />
-                <span className="text-orange-500">drönare</span> för<br />
-                ditt företag
-              </h1>
-              <p className="text-lg md:text-xl text-white/60 max-w-xl mb-8 leading-relaxed">
-                Effektivisera inspektion, kartläggning och övervakning med professionella DJI Enterprise-drönare. 
-                Vi hjälper dig välja rätt lösning.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Button onClick={scrollToForm} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-8">
-                  Begär offert <ArrowRight className="h-4 w-4 ml-1" />
-                </Button>
-                <Button onClick={scrollToForm} variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-8">
-                  Konsultera en expert
-                </Button>
-              </div>
-            </motion.div>
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7 }}
+                className="max-w-3xl"
+              >
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-medium mb-6">
+                  <Cpu className="h-3.5 w-3.5" />
+                  Auktoriserad DJI Enterprise-återförsäljare
+                </div>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight leading-[0.95] mb-6">
+                  Kommersiella<br />
+                  <span className="text-orange-500">drönare</span> för<br />
+                  ditt företag
+                </h1>
+                <p className="text-lg md:text-xl text-white/60 max-w-xl mb-8 leading-relaxed">
+                  Effektivisera inspektion, kartläggning och övervakning med professionella DJI Enterprise-drönare.
+                  Vi hjälper dig välja rätt lösning.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Button onClick={scrollToForm} size="lg" className="bg-orange-500 hover:bg-orange-600 text-white border-0 text-base px-8">
+                    Begär offert <ArrowRight className="h-4 w-4 ml-1" />
+                  </Button>
+                  <Button onClick={scrollToForm} variant="outline" size="lg" className="border-white/20 bg-transparent text-white hover:bg-white/5 text-base px-8">
+                    Konsultera en expert
+                  </Button>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, scale: 0.92 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.15 }}
+                className="relative hidden lg:block"
+              >
+                <div className="absolute inset-0 bg-orange-500/15 rounded-full blur-[100px] pointer-events-none" />
+                <img
+                  src={djiMini5ProImg}
+                  alt="DJI Mini 5 Pro drönare"
+                  width={681}
+                  height={394}
+                  fetchpriority="high"
+                  loading="eager"
+                  decoding="async"
+                  className="relative w-full h-auto max-w-xl mx-auto drop-shadow-[0_25px_60px_rgba(0,0,0,0.5)]"
+                />
+              </motion.div>
+            </div>
           </div>
         </section>
 
