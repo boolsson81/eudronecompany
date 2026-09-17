@@ -1,0 +1,228 @@
+{
+  "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Ny kategori",
+        "title": "Bygg din racing-rigg",
+        "heading_size": "h1",
+        "text": "Ramar, motorer, ESC:er, FPV-kameror och batterier – allt du behöver för att bygga eller uppgradera din freestyle- eller tävlingsdrönare. Fri frakt inom EU över 1000 kr.",
+        "button_label_1": "Se sortimentet",
+        "button_link_1": "/collections/tavling-fpv",
+        "button_label_2": "Prata med vårt race-team",
+        "button_link_2": "/pages/contact-quote",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "quick_picks": {
+      "type": "enterprise-industries",
+      "blocks": {
+        "frames": {
+          "type": "industry",
+          "settings": {
+            "title": "Ramar",
+            "text": "5\" & 7\" freestyle- och racingramar.",
+            "link_label": "Visa kategori",
+            "link": "/collections/tavling-fpv-ramar"
+          }
+        },
+        "motors": {
+          "type": "industry",
+          "settings": {
+            "title": "Motorer",
+            "text": "1404–2306 med olika KV-värden.",
+            "link_label": "Visa kategori",
+            "link": "/collections/tavling-fpv-motorer"
+          }
+        },
+        "esc": {
+          "type": "industry",
+          "settings": {
+            "title": "ESC:er",
+            "text": "4-i-1 med BLHeli och AM32.",
+            "link_label": "Visa kategori",
+            "link": "/collections/tavling-fpv-esc"
+          }
+        },
+        "cameras": {
+          "type": "industry",
+          "settings": {
+            "title": "FPV-kameror",
+            "text": "Analogt och digitalt HD.",
+            "link_label": "Visa kategori",
+            "link": "/collections/tavling-fpv-kameror"
+          }
+        },
+        "batteries": {
+          "type": "industry",
+          "settings": {
+            "title": "Batterier",
+            "text": "LiPo/LiHV, 4S–6S.",
+            "link_label": "Visa kategori",
+            "link": "/collections/tavling-fpv-batterier"
+          }
+        }
+      },
+      "block_order": ["frames", "motors", "esc", "cameras", "batteries"],
+      "settings": {
+        "heading": "Handla efter kategori",
+        "heading_size": "h2",
+        "text": "Hitta rätt ram, motor eller elektronik för din byggnation.",
+        "color_scheme": "scheme-edp",
+        "card_title_alignment": "left",
+        "card_text_alignment": "left",
+        "card_link_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Populära FPV-drönare",
+        "heading_size": "h2",
+        "collection": "tavling-fpv",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "comparison": {
+      "type": "edp-comparison-table",
+      "blocks": {
+        "row-class": {
+          "type": "row",
+          "settings": { "icon": "star", "label": "Klass" }
+        },
+        "row-weight": {
+          "type": "row",
+          "settings": { "icon": "check", "label": "Vikt" }
+        },
+        "row-camera": {
+          "type": "row",
+          "settings": { "icon": "check", "label": "Kamera" }
+        },
+        "row-flighttime": {
+          "type": "row",
+          "settings": { "icon": "lightning", "label": "Batteritid" }
+        },
+        "row-price": {
+          "type": "row",
+          "settings": { "icon": "shield-check", "label": "Pris från" }
+        },
+        "col-sport": {
+          "type": "column",
+          "settings": {
+            "heading": "Sprint 5\" Sport",
+            "values": "Nybörjare/sport\n380 g\nAnalog 1000TVL\n~4 min\n2 495 kr",
+            "button_label": "Se produkt",
+            "button_link": "/collections/tavling-fpv"
+          }
+        },
+        "col-freestyle": {
+          "type": "column",
+          "settings": {
+            "heading": "Vortex 7\" Freestyle",
+            "values": "Freestyle/long range\n620 g\nDigital HD\n~7 min\n4 290 kr",
+            "button_label": "Se produkt",
+            "button_link": "/collections/tavling-fpv"
+          }
+        },
+        "col-competition": {
+          "type": "column",
+          "settings": {
+            "heading": "Pro-Race 5\" Competition",
+            "values": "Tävling\n340 g\nDigital HD Race\n~3 min\n5 990 kr",
+            "button_label": "Se produkt",
+            "button_link": "/collections/tavling-fpv"
+          }
+        }
+      },
+      "block_order": ["row-class", "row-weight", "row-camera", "row-flighttime", "row-price", "col-sport", "col-freestyle", "col-competition"],
+      "settings": {
+        "heading": "Jämför våra race-drönare",
+        "text": "Hitta rätt nivå för din körstil.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "build_tabs": {
+      "type": "edp-banner-with-tabs",
+      "blocks": {
+        "diy": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Bygg själv",
+            "eyebrow": "Fördelar",
+            "heading": "Full kontroll över varje komponent",
+            "text": "Välj själv ram, motorer, ESC och kamera. Lättare att reparera och uppgradera – och ofta billigare i längden. Kräver viss lödning och grundkunskap i konfiguration (t.ex. Betaflight).",
+            "button_label": "Se komponenter",
+            "button_link": "/collections/tavling-fpv"
+          }
+        },
+        "rtf": {
+          "type": "tab",
+          "settings": {
+            "tab_label": "Färdigbyggd (RTF/PNP)",
+            "eyebrow": "Snabbaste vägen till luften",
+            "heading": "Redo att flyga direkt",
+            "text": "Färdigmonterade och testade drönare med kortare tid från beställning till första flygningen. Perfekt om du vill komma igång snabbt utan att skruva ihop allt själv.",
+            "button_label": "Se färdigbyggda drönare",
+            "button_link": "/collections/tavling-fpv"
+          }
+        }
+      },
+      "block_order": ["diy", "rtf"],
+      "settings": {
+        "heading": "Bygg själv eller köp färdigbyggd?",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "brand_logos": {
+      "type": "edp-brand-logos",
+      "blocks": {
+        "logo-a": { "type": "logo", "settings": { "name": "Partner A" } },
+        "logo-b": { "type": "logo", "settings": { "name": "Partner B" } },
+        "logo-c": { "type": "logo", "settings": { "name": "Partner C" } },
+        "logo-d": { "type": "logo", "settings": { "name": "Partner D" } },
+        "logo-e": { "type": "logo", "settings": { "name": "Partner E" } }
+      },
+      "block_order": ["logo-a", "logo-b", "logo-c", "logo-d", "logo-e"],
+      "settings": {
+        "heading": "Varumärken vi säljer",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Redo att tävla?",
+        "text": "Vårt race-team hjälper dig att välja rätt komponenter för din klass och köralstil – helt kostnadsfritt.",
+        "button_label_1": "Prata med race-teamet",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "quick_picks", "featured_collection", "comparison", "build_tabs", "brand_logos", "cta"]
+}
