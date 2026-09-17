@@ -9,6 +9,10 @@ begäran: "Skapa en ny mall. Med alla gamla uppdateringar och funktioner. Plus d
 nya du gjort." Användaren valde alternativet "Produktmall för Horizon" när jag
 frågade vilken mall och för vilket tema.
 
+**Del 2 (samma dag):** användaren bekräftade ("Ja") att Payload Finder,
+Enterprise Configurator och jämförelsesidorna skulle få samma behandling —
+se avsnitt 8–10 nedan.
+
 ## 1. CREATED
 
 - **`theme/templates/product.horizon-enterprise-payload.json`** — ny Shopify-
@@ -88,13 +92,10 @@ i ett separat anrop FÖRE mallfilen.
    `themeDuplicate`. Om någon redigerar det publicerade Horizon-temat efter
    detta (t.ex. via temaredigeraren) synkas INTE de ändringarna automatiskt
    till utkastet — de två temana divergerar från och med nu.
-2. Endast payload-produktmallen flyttades över i den här fasen (vilket var vad
-   som efterfrågades: "en ny mall"). Payload Finder-, Configurator- och
-   jämförelsesidorna (fas 4–6) finns fortfarande bara som Dawn-orienterade
-   sid-mallar i git-grenen — de är INTE laddade till utkasttemat och alltså
-   inte förhandsgranskningsbara ännu.
+2. ~~Endast payload-produktmallen flyttades över i den här fasen~~ — åtgärdat,
+   se del 2 nedan.
 
-## 7. NEXT STEP
+## 7. NEXT STEP (del 1)
 
 1. Förhandsgranska: öppna Shopify-admin → Theme Library → hitta
    "Horizon + Enterprise Payload (draft)" → Preview, eller besök butiken med
@@ -106,6 +107,59 @@ i ett separat anrop FÖRE mallfilen.
 3. Om det ser bra ut: en människa publicerar utkasttemat, eller kopierar bara
    den nya mallen/sektionen till det befintliga live-temat via
    temaredigeraren/Shopify CLI.
-4. Om ni vill ha samma sak för Payload Finder/Configurator/jämförelse-sidorna
-   (fas 4–6) på Horizon, säg till — samma mönster (duplicera → ladda upp →
-   förhandsgranska) kan upprepas för dem.
+
+## 8. CREATED (del 2 — Payload Finder, Configurator, jämförelse)
+
+Samma utkasttema (`Horizon + Enterprise Payload (draft)`,
+`gid://shopify/OnlineStoreTheme/189611049288`) fick ytterligare 9 filer laddade
+via `themeFilesUpsert`, i tre separata anrop (sektioner → JS-tillgångar →
+sidmallar, av samma anledning som i del 1 — mallvalidering sker mot temats
+redan sparade tillstånd):
+
+- `sections/edp-payload-finder.liquid`, `sections/edp-configurator.liquid`,
+  `sections/edp-payload-comparison.liquid`, `sections/edp-comparison-row.liquid`
+- `assets/edp-payload-finder.js`, `assets/edp-configurator.js`
+  (`edp-payload-comparison.js` och `edp-analytics.js` fanns redan från del 1)
+- `templates/page.payload-finder.json`, `templates/page.bygg-ditt-system.json`,
+  `templates/page.jamfor-payloads.json`
+
+De motsvarande Shopify-sidorna (`/pages/hitta-ratt-payload`,
+`/pages/bygg-ditt-system`, `/pages/jamfor-payloads`) skapades redan tidigare i
+sessionen och är live sedan tidigare — de renderas med standardmallen tills
+utkasttemat publiceras, men i förhandsvisningen av utkasttemat visar de nu
+Payload Finder-guiden, Enterprise Configurator-guiden respektive
+jämförelsetabellen.
+
+## 9. MODIFIED (del 2)
+
+Samma url-schema-fel som i del 1 (Horizons striktare validator, `default`
+avvisat) hittades och åtgärdades i tre sektioner till, alla i
+`theme/sections/`: `edp-payload-finder.liquid`, `edp-configurator.liquid`,
+`edp-payload-comparison.liquid`. Sektionsnamnen i dessa tre var redan inom
+25-teckensgränsen, så ingen ändring behövdes där.
+
+## 10. TEST RESULTS (del 2)
+
+- Alla 9 filer laddades upp med tomma `userErrors`-listor i respektive anrop,
+  verifierat med en avslutande `theme.files`-läsning som bekräftar samtliga
+  9 filnamn finns på utkasttemat (roll fortfarande `UNPUBLISHED`).
+- Inga nya schemamönster upptäcktes utöver de redan kända (namnlängd,
+  url-default) — de tre återstående sektionernas namn var redan korta nog.
+- **Inte verifierat**: visuell rendering i webbläsare (samma
+  nätverksbegränsning som tidigare faser).
+
+## 11. NEXT STEP (del 2)
+
+1. Förhandsgranska samtliga tre sidor i utkasttemat:
+   `/pages/hitta-ratt-payload`, `/pages/bygg-ditt-system`,
+   `/pages/jamfor-payloads`, alla med `?preview_theme_id=189611049288`.
+2. Payload Finder och Configurator läser riktiga `payload_category`-,
+   `mission`- och `uav_platform`-metaobjekt, så de bör redan visa verkligt
+   innehåll (12 kategorier, 44 uppdrag, 16 plattformar) utan att några
+   produkter behöver klassificeras först.
+3. Jämförelsesidan kräver att minst en produkt har fått
+   "Lägg till i jämförelse" klickad på sin produktsida (payload-mallen från
+   del 1) — testa det flödet i förhandsvisningen innan ni bedömer
+   jämförelsetabellen.
+4. Som tidigare: publicering av utkasttemat, eller selektiv kopiering av
+   filer till det live temat, är ett medvetet beslut som en människa tar.
