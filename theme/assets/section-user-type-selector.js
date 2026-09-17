@@ -394,11 +394,6 @@
     });
   }
 
-  function boot(root) {
-    bindEditorActions();
-    wireEditorButtons(root || document);
-  }
-
   function forceReprocess(root) {
     if (!isEnabled(root)) return Promise.resolve([]);
 
@@ -595,7 +590,6 @@
   }
 
   function boot(root) {
-    init(root || document);
     bindEditorActions();
     wireEditorButtons(root || document);
   }
