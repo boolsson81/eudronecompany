@@ -1471,6 +1471,19 @@
     },
     "enterprise-trust-bar": {
       "name": "Enterprise trust bar",
+      "settings": {
+        "header_layout": {
+          "content": "Layout"
+        },
+        "center_items": {
+          "label": "Center trust points",
+          "info": "Centers the trust points as a group instead of stretching them across the row."
+        },
+        "enable_carousel": {
+          "label": "Show as carousel",
+          "info": "Lets visitors swipe or use arrows to scroll through the trust points instead of showing them all at once."
+        }
+      },
       "blocks": {
         "trust_item": {
           "name": "Trust item",

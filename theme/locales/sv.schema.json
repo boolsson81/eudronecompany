@@ -1610,6 +1610,19 @@
     },
     "enterprise-trust-bar": {
       "name": "Enterprise förtroenderad",
+      "settings": {
+        "header_layout": {
+          "content": "Layout"
+        },
+        "center_items": {
+          "label": "Centrera förtroendepunkter",
+          "info": "Centrerar förtroendepunkterna som grupp istället för att sträcka ut dem över hela raden."
+        },
+        "enable_carousel": {
+          "label": "Visa som karusell",
+          "info": "Låter besökare svepa eller använda pilar för att bläddra genom förtroendepunkterna istället för att visa alla samtidigt."
+        }
+      },
       "blocks": {
         "trust_item": {
           "name": "Förtroendepunkt",

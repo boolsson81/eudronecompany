@@ -61,6 +61,42 @@
   }
 }
 
+/* Centered layout: items are grouped and centered instead of stretched across the row */
+.edp-enterprise__trust-list.edp-enterprise__trust-list--center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.edp-enterprise__trust-list--center .edp-enterprise__trust-item {
+  flex: 0 1 auto;
+}
+
+/* Carousel layout: items scroll horizontally instead of wrapping into a grid */
+.edp-enterprise__trust-slider {
+  position: relative;
+  display: block;
+}
+
+.edp-enterprise__trust-list.edp-enterprise__trust-list--carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+
+.edp-enterprise__trust-list--carousel .edp-enterprise__trust-item--slide {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.edp-enterprise__trust-slider .slider-buttons {
+  margin-top: 0.4rem;
+}
+
 .edp-enterprise__trust-item {
   display: flex;
   align-items: center;

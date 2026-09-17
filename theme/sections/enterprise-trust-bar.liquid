@@ -1,4 +1,5 @@
 {{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -14,13 +15,38 @@
   }
 {%- endstyle -%}
 
+{%- liquid
+  assign enable_carousel = section.settings.enable_carousel
+  assign list_classes = 'edp-enterprise__trust-list'
+  if enable_carousel
+    assign list_classes = list_classes | append: ' edp-enterprise__trust-list--carousel'
+  elsif section.settings.center_items
+    assign list_classes = list_classes | append: ' edp-enterprise__trust-list--center'
+  endif
+-%}
+
 <div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
   <div class="edp-enterprise__trust-bar section-{{ section.id }}-padding">
     <div class="page-width">
       {%- if section.blocks.size > 0 -%}
-        <ul class="edp-enterprise__trust-list" role="list">
+        {%- if enable_carousel -%}
+          <slider-component class="edp-enterprise__trust-slider">
+        {%- endif -%}
+        <ul
+          class="{{ list_classes }}"
+          role="list"
+          {% if enable_carousel %}
+            id="Slider-{{ section.id }}"
+          {% endif %}
+        >
           {%- for block in section.blocks -%}
-            <li class="edp-enterprise__trust-item" {{ block.shopify_attributes }}>
+            <li
+              class="edp-enterprise__trust-item{% if enable_carousel %} edp-enterprise__trust-item--slide{% endif %}"
+              {% if enable_carousel %}
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+              {% endif %}
+              {{ block.shopify_attributes }}
+            >
               <span class="edp-enterprise__trust-check" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M20 6L9 17l-5-5"/>
@@ -30,6 +56,35 @@
             </li>
           {%- endfor -%}
         </ul>
+        {%- if enable_carousel -%}
+          {%- if section.blocks.size > 1 -%}
+            <div class="slider-buttons">
+              <button
+                type="button"
+                class="slider-button slider-button--prev"
+                name="previous"
+                aria-label="{{ 'general.slider.previous_slide' | t }}"
+              >
+                <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+              </button>
+              <div class="slider-counter caption">
+                <span class="slider-counter--current">1</span>
+                <span aria-hidden="true"> / </span>
+                <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                <span class="slider-counter--total">{{ section.blocks.size }}</span>
+              </div>
+              <button
+                type="button"
+                class="slider-button slider-button--next"
+                name="next"
+                aria-label="{{ 'general.slider.next_slide' | t }}"
+              >
+                <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+              </button>
+            </div>
+          {%- endif -%}
+          </slider-component>
+        {%- endif -%}
       {%- endif -%}
     </div>
   </div>
@@ -62,6 +117,21 @@
       "min": 0, "max": 100, "step": 4, "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 16
+    },
+    { "type": "header", "content": "t:sections.enterprise-trust-bar.settings.header_layout.content" },
+    {
+      "type": "checkbox",
+      "id": "center_items",
+      "label": "t:sections.enterprise-trust-bar.settings.center_items.label",
+      "info": "t:sections.enterprise-trust-bar.settings.center_items.info",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_carousel",
+      "label": "t:sections.enterprise-trust-bar.settings.enable_carousel.label",
+      "info": "t:sections.enterprise-trust-bar.settings.enable_carousel.info",
+      "default": false
     }
   ],
   "blocks": [
