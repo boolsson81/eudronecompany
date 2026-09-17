@@ -59,3 +59,24 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+
+.collection-list-group {
+  margin-top: 4rem;
+}
+
+.collection-list-group:first-of-type {
+  margin-top: 3rem;
+}
+
+.collection-list-group__heading {
+  margin: 0 0 2rem;
+}
+
+.collection-list-group--empty {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.collection-list-group__empty-text {
+  color: rgba(var(--color-foreground), 0.75);
+}

@@ -346,6 +346,9 @@
     "collection_list": {
       "view_all": "Visa alla"
     },
+    "main-list-collections": {
+      "no_groups": "Lägg till en grupp och välj vilka produktserier som ska visas i den."
+    },
     "collection_template": {
       "title": "Produktserie",
       "empty": "Inga produkter hittades",
