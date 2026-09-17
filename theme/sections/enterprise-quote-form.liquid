@@ -155,9 +155,9 @@
               </div>
             </div>
 
-            <div class="field">
+            <div class="edp-enterprise__select-field">
               <label class="form__label" for="EnterpriseQuoteForm-industry">
-                {{ 'sections.enterprise-quote-form.industry' | t }}
+                {{ section.settings.industry_label }}
                 <span aria-hidden="true">*</span>
               </label>
               <div class="select">
@@ -168,13 +168,13 @@
                   required
                 >
                   <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_energy' | t }}">{{ 'sections.enterprise-quote-form.industry_energy' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_gis' | t }}">{{ 'sections.enterprise-quote-form.industry_gis' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_rescue' | t }}">{{ 'sections.enterprise-quote-form.industry_rescue' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_forestry' | t }}">{{ 'sections.enterprise-quote-form.industry_forestry' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_construction' | t }}">{{ 'sections.enterprise-quote-form.industry_construction' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_agriculture' | t }}">{{ 'sections.enterprise-quote-form.industry_agriculture' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.industry_other' | t }}">{{ 'sections.enterprise-quote-form.industry_other' | t }}</option>
+                  {%- assign industry_options = section.settings.industry_options | newline_to_br | split: '<br />' -%}
+                  {%- for option in industry_options -%}
+                    {%- assign option_trimmed = option | strip -%}
+                    {%- unless option_trimmed == blank -%}
+                      <option value="{{ option_trimmed }}">{{ option_trimmed }}</option>
+                    {%- endunless -%}
+                  {%- endfor -%}
                 </select>
                 <span class="svg-wrapper">
                   {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -182,9 +182,9 @@
               </div>
             </div>
 
-            <div class="field">
+            <div class="edp-enterprise__select-field">
               <label class="form__label" for="EnterpriseQuoteForm-need">
-                {{ 'sections.enterprise-quote-form.need' | t }}
+                {{ section.settings.need_label }}
                 <span aria-hidden="true">*</span>
               </label>
               <div class="select">
@@ -195,12 +195,13 @@
                   required
                 >
                   <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_drone' | t }}">{{ 'sections.enterprise-quote-form.need_drone' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_package' | t }}">{{ 'sections.enterprise-quote-form.need_package' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_payload' | t }}">{{ 'sections.enterprise-quote-form.need_payload' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_training' | t }}">{{ 'sections.enterprise-quote-form.need_training' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_support' | t }}">{{ 'sections.enterprise-quote-form.need_support' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.need_consulting' | t }}">{{ 'sections.enterprise-quote-form.need_consulting' | t }}</option>
+                  {%- assign need_options = section.settings.need_options | newline_to_br | split: '<br />' -%}
+                  {%- for option in need_options -%}
+                    {%- assign option_trimmed = option | strip -%}
+                    {%- unless option_trimmed == blank -%}
+                      <option value="{{ option_trimmed }}">{{ option_trimmed }}</option>
+                    {%- endunless -%}
+                  {%- endfor -%}
                 </select>
                 <span class="svg-wrapper">
                   {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -208,9 +209,9 @@
               </div>
             </div>
 
-            <div class="field">
+            <div class="edp-enterprise__select-field">
               <label class="form__label" for="EnterpriseQuoteForm-type">
-                {{ 'sections.enterprise-quote-form.request_type' | t }}
+                {{ section.settings.request_type_label }}
                 <span aria-hidden="true">*</span>
               </label>
               <div class="select">
@@ -221,10 +222,13 @@
                   required
                 >
                   <option value="" disabled selected>{{ 'sections.enterprise-quote-form.select_placeholder' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.type_quote' | t }}">{{ 'sections.enterprise-quote-form.type_quote' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.type_demo' | t }}">{{ 'sections.enterprise-quote-form.type_demo' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.type_advisory' | t }}">{{ 'sections.enterprise-quote-form.type_advisory' | t }}</option>
-                  <option value="{{ 'sections.enterprise-quote-form.type_info' | t }}">{{ 'sections.enterprise-quote-form.type_info' | t }}</option>
+                  {%- assign request_type_options = section.settings.request_type_options | newline_to_br | split: '<br />' -%}
+                  {%- for option in request_type_options -%}
+                    {%- assign option_trimmed = option | strip -%}
+                    {%- unless option_trimmed == blank -%}
+                      <option value="{{ option_trimmed }}">{{ option_trimmed }}</option>
+                    {%- endunless -%}
+                  {%- endfor -%}
                 </select>
                 <span class="svg-wrapper">
                   {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -339,6 +343,45 @@
       "id": "email",
       "label": "t:sections.enterprise-quote-form.settings.email.label",
       "default": "info@eudronecompany.com"
+    },
+    { "type": "header", "content": "Rullgardin: Bransch" },
+    {
+      "type": "text",
+      "id": "industry_label",
+      "label": "Etikett",
+      "default": "Bransch"
+    },
+    {
+      "type": "textarea",
+      "id": "industry_options",
+      "label": "Alternativ (ett per rad)",
+      "default": "Energi & Infrastruktur\nKartläggning & GIS\nRäddningstjänst\nSkogsbruk\nBygg & Anläggning\nJordbruk\nAnnat"
+    },
+    { "type": "header", "content": "Rullgardin: Behov" },
+    {
+      "type": "text",
+      "id": "need_label",
+      "label": "Etikett",
+      "default": "Behov"
+    },
+    {
+      "type": "textarea",
+      "id": "need_options",
+      "label": "Alternativ (ett per rad)",
+      "default": "Enterprise-drönare\nKomplett paket\nKamera / nyttolast\nUtbildning\nService & support\nRådgivning / projektering"
+    },
+    { "type": "header", "content": "Rullgardin: Typ av förfrågan" },
+    {
+      "type": "text",
+      "id": "request_type_label",
+      "label": "Etikett",
+      "default": "Typ av förfrågan"
+    },
+    {
+      "type": "textarea",
+      "id": "request_type_options",
+      "label": "Alternativ (ett per rad)",
+      "default": "Offert\nDemo\nRådgivning\nInformation"
     },
     {
       "type": "color_scheme",

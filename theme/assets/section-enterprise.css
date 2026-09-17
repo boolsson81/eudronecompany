@@ -600,6 +600,10 @@
   margin-bottom: 1.6rem;
 }
 
+.edp-enterprise__quote-form .edp-enterprise__select-field {
+  margin-bottom: 1.6rem;
+}
+
 .edp-enterprise__quote-form .edp-enterprise__field-row {
   display: grid;
   gap: 1.6rem;
