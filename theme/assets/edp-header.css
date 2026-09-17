@@ -320,25 +320,40 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
   display: none !important;
 }
 
-/* The full inline menu (5 items) plus the country/language switcher don't
-   fit on one line between 990px and ~1440px, which made the menu wrap onto
-   a second row. Collapse to the hamburger drawer in that range instead —
-   same pattern Dawn already uses for "drawer-menu" — and only show the
-   inline menu once there's genuinely room for it. */
-@media screen and (min-width: 990px) and (max-width: 1439px) {
+/* With 5 menu items the inline menu can run wider than the space left over
+   after the logo and icons, which used to wrap it onto a second row. Trim
+   the per-item padding and the grid gap to buy back space first ... */
+@media screen and (min-width: 990px) {
+  .header--middle-left.header--has-menu .header__menu-item {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .header--middle-left.header--has-menu summary.header__menu-item {
+    padding-right: 2rem;
+  }
+
   .header--middle-left.header--has-menu:not(.drawer-menu) {
-    grid-template-areas: 'navigation heading icons';
-    grid-template-columns: auto 1fr auto;
-    column-gap: 1rem;
+    column-gap: 1.25rem;
   }
 
-  .header--middle-left.header--has-menu:not(.drawer-menu) header-drawer {
-    display: block;
+  /* ... and if it still doesn't fit, keep it a single row regardless — the
+     row scrolls horizontally instead of wrapping or falling back to a
+     hamburger, so the desktop menu always stays a normal inline text menu.
+     The scrollbar only appears when it's actually needed (native overflow
+     behavior), so this is invisible at widths where everything already
+     fits on one line. */
+  .header--middle-left.header--has-menu:not(.drawer-menu) .header__inline-menu {
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
-  .header--middle-left.header--has-menu:not(.drawer-menu) .header__inline-menu,
-  .header--middle-left.header--has-menu:not(.drawer-menu) .desktop-localization-wrapper {
-    display: none;
+  .header--middle-left.header--has-menu:not(.drawer-menu) .list-menu--inline {
+    flex-wrap: nowrap;
+  }
+
+  .header--middle-left.header--has-menu:not(.drawer-menu) .list-menu--inline > li {
+    flex-shrink: 0;
   }
 }
 
