@@ -608,8 +608,17 @@
   font-size: 1.6rem;
   font-weight: normal;
   color: rgba(var(--color-foreground), 0.75);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.02rem;
   line-height: 1.5;
+  white-space: nowrap;
+}
+
+.edp-enterprise__quote-form .field__label {
+  letter-spacing: 0.02rem;
+  white-space: nowrap;
+  max-width: calc(100% - 4rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .edp-enterprise__quote-form .edp-enterprise__field-row {
