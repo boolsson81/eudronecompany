@@ -57,6 +57,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       key: "products",
       label: "Produkter",
       children: [
+        { label: "DJI Enterprise — sortiment & tillbehör", href: "/kommersiella-dronare/dji-enterprise", icon: Cpu },
         { label: "Alla enterprise-drönare", href: "/kommersiella-dronare/produkter", icon: Cpu },
         ...ENTERPRISE_DRONE_PRODUCTS.map((product) => ({
           label: product.name,
@@ -75,7 +76,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       children: [
         { label: "Alla kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
         { label: "Jämför kameror", href: "/kommersiella-dronare/jamfor-kameror" },
-        { label: "Tillbehör", href: "/kommersiella-dronare#accessories" },
+        { label: "Tillbehör", href: "/kommersiella-dronare/dji-enterprise" },
       ],
     },
     {
