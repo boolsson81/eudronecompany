@@ -1049,6 +1049,9 @@
               },
               "options__2": {
                 "label": "Företag"
+              },
+              "options__3": {
+                "label": "Tävling & FPV"
               }
             },
             "image": {
@@ -1075,6 +1078,57 @@
       },
       "presets": {
         "name": "Användartypväljare"
+      }
+    },
+    "edp-home-portals": {
+      "name": "Kundportaler",
+      "settings": {
+        "heading": { "label": "Rubrik" },
+        "text": { "label": "Text" }
+      },
+      "blocks": {
+        "portal": {
+          "name": "Portal",
+          "settings": {
+            "icon": {
+              "label": "Ikon",
+              "options__1": { "label": "Service" },
+              "options__2": { "label": "Utbildning" }
+            },
+            "title": { "label": "Rubrik" },
+            "text": { "label": "Text" },
+            "link_label": { "label": "Länketikett" },
+            "link": { "label": "Länk" }
+          }
+        }
+      },
+      "presets": {
+        "name": "Kundportaler"
+      }
+    },
+    "edp-home-mission-spotlight": {
+      "name": "Uppdragslösningar (branschraden)",
+      "settings": {
+        "heading": { "label": "Rubrik" },
+        "text": { "label": "Text" },
+        "feature_eyebrow": { "label": "Överrubrik, utvalt uppdrag" },
+        "feature_title": { "label": "Rubrik, utvalt uppdrag" },
+        "feature_text": { "label": "Text, utvalt uppdrag" },
+        "feature_image": { "label": "Bild, utvalt uppdrag" },
+        "feature_button_label": { "label": "Knappetikett, utvalt uppdrag" },
+        "feature_button_link": { "label": "Knapplänk, utvalt uppdrag" }
+      },
+      "blocks": {
+        "pill": {
+          "name": "Branschlänk",
+          "settings": {
+            "label": { "label": "Etikett" },
+            "link": { "label": "Länk" }
+          }
+        }
+      },
+      "presets": {
+        "name": "Uppdragslösningar"
       }
     },
     "enterprise-landing": {

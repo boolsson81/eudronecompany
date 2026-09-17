@@ -1,5 +1,21 @@
 {
   "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Konsument, tävling & enterprise-UAV",
+        "title": "DJI-drönare & UAV-lösningar för hela Europa",
+        "heading_size": "h1",
+        "text": "Från fritidsflygning till uppdragskritiska system. Vi kombinerar DJI:s plattformar med EU-lager, lokal support och komplett GPSR/CE-dokumentation.",
+        "button_label_1": "Handla konsumentdrönare",
+        "button_link_1": "/pages/consumer",
+        "button_label_2": "Boka företagskonsultation",
+        "button_link_2": "/pages/contact-quote",
+        "color_scheme": "scheme-edp",
+        "padding_top": 48,
+        "padding_bottom": 36
+      }
+    },
     "user_type_selector": {
       "type": "user-type-selector",
       "blocks": {
@@ -15,6 +31,20 @@
             "examples": "DJI Mini & Air-serien\nTillbehör & reservdelar\nKom igång-paket",
             "button_label": "Utforska konsument",
             "button_link": "/pages/consumer",
+            "title_alignment": "center",
+            "text_alignment": "center"
+          }
+        },
+        "competition_card": {
+          "type": "card",
+          "settings": {
+            "card_type": "competition",
+            "use_bundled_transparent_image": false,
+            "title": "Tävling & FPV",
+            "description": "Racingdrönare, FPV-utrustning och byggdelar för freestyle och tävling.",
+            "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
+            "button_label": "Utforska tävling & FPV",
+            "button_link": "/collections/tavling-fpv",
             "title_alignment": "center",
             "text_alignment": "center"
           }
@@ -38,11 +68,12 @@
       },
       "block_order": [
         "consumer_card",
+        "competition_card",
         "enterprise_card"
       ],
       "settings": {
         "heading": "Välj din väg in",
-        "subheading": "Hitta rätt drönarlösning — oavsett om du flyger privat eller driver verksamhet.",
+        "subheading": "Hitta rätt drönarlösning — privat flygning, tävling & FPV, eller verksamhet.",
         "heading_size": "h1",
         "heading_alignment": "center",
         "subheading_alignment": "center",
@@ -54,6 +85,83 @@
         "padding_top": 48,
         "padding_bottom": 48
       }
+    },
+    "categories": {
+      "type": "enterprise-industries",
+      "settings": {
+        "heading": "Handla efter kategori",
+        "heading_size": "h2",
+        "text": "Det bredaste sortimentet av DJI-drönare och tillbehör i Norden.",
+        "color_scheme": "scheme-edp",
+        "card_title_alignment": "left",
+        "card_text_alignment": "left",
+        "card_link_alignment": "left",
+        "padding_top": 48,
+        "padding_bottom": 24
+      },
+      "blocks": {
+        "cat_camera": {
+          "type": "industry",
+          "settings": {
+            "title": "Kamera- & prosumerdrönare",
+            "text": "Foto, film & kreativ produktion",
+            "link_label": "Utforska",
+            "link": "/collections/kameradronare"
+          }
+        },
+        "cat_agri": {
+          "type": "industry",
+          "settings": {
+            "title": "Lantbruk & sprutdrönare",
+            "text": "Precisionsjordbruk i stor skala",
+            "link_label": "Utforska",
+            "link": "/collections/lantbruksdronare"
+          }
+        },
+        "cat_inspection": {
+          "type": "industry",
+          "settings": {
+            "title": "Inspektion & kartläggning",
+            "text": "Mätning, LiDAR & besiktning",
+            "link_label": "Utforska",
+            "link": "/collections/inspektionsdronare"
+          }
+        },
+        "cat_wash": {
+          "type": "industry",
+          "settings": {
+            "title": "Fönster-, tak- & fasadtvätt",
+            "text": "Rengöring på höjd utan ställning",
+            "link_label": "Läs mer",
+            "link": "/pages/fasadtvatt-dronare"
+          }
+        },
+        "cat_payload": {
+          "type": "industry",
+          "settings": {
+            "title": "Payload & sensorer",
+            "text": "Termisk, zoom & multispektral",
+            "link_label": "Utforska",
+            "link": "/collections/payload-sensorer"
+          }
+        }
+      },
+      "block_order": ["cat_camera", "cat_agri", "cat_inspection", "cat_wash", "cat_payload"]
+    },
+    "value_props": {
+      "type": "enterprise-trust-bar",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      },
+      "blocks": {
+        "trust_1": { "type": "trust_item", "settings": { "text": "Auktoriserad DJI-partner" } },
+        "trust_2": { "type": "trust_item", "settings": { "text": "EU-lager, snabb leverans" } },
+        "trust_3": { "type": "trust_item", "settings": { "text": "GPSR, CE & IOSS-dokumentation" } },
+        "trust_4": { "type": "trust_item", "settings": { "text": "Support på svenska, tyska & danska" } }
+      },
+      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"]
     },
     "featured_collection": {
       "type": "featured-collection",
@@ -71,13 +179,88 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
+        "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "portals": {
+      "type": "edp-home-portals",
+      "settings": {
+        "heading": "Kundportaler",
+        "text": "Redan kund? Logga in för att hantera ärenden eller din utbildning.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 48,
+        "padding_bottom": 24
+      },
+      "blocks": {
+        "portal_service": {
+          "type": "portal",
+          "settings": {
+            "icon": "service",
+            "title": "Serviceportal",
+            "text": "Spåra serviceärenden, reservdelsbeställningar och garantier.",
+            "link_label": "Logga in på serviceportalen"
+          }
+        },
+        "portal_education": {
+          "type": "portal",
+          "settings": {
+            "icon": "education",
+            "title": "Utbildningsportal",
+            "text": "Boka drönarkurser, håll koll på certifieringar och kursintyg.",
+            "link_label": "Logga in på utbildningsportalen"
+          }
+        }
+      },
+      "block_order": ["portal_service", "portal_education"]
+    },
+    "mission_spotlight": {
+      "type": "edp-home-mission-spotlight",
+      "settings": {
+        "heading": "Uppdragslösningar för din bransch",
+        "text": "Vårt enterprise-team matchar drönare, payload och mjukvara mot uppdraget — inte tvärtom.",
+        "feature_eyebrow": "Lantbruk",
+        "feature_title": "Sprutning & fältkartläggning",
+        "feature_text": "En komplett konfiguration för storskalig precisionssprutning och multispektral fältanalys — plattform, payload, mjukvara och service i ett paket.",
+        "feature_button_label": "Se rekommenderad konfiguration",
+        "feature_button_link": "/pages/jordbruk",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      },
+      "blocks": {
+        "pill_1": { "type": "pill", "settings": { "label": "Lantbruk", "link": "/pages/jordbruk" } },
+        "pill_2": { "type": "pill", "settings": { "label": "Bygg & inspektion", "link": "/pages/bygg-anlaggning" } },
+        "pill_3": { "type": "pill", "settings": { "label": "Säkerhet & räddning", "link": "/pages/raddningstjanst" } },
+        "pill_4": { "type": "pill", "settings": { "label": "Kartläggning & lantmäteri", "link": "/pages/gis-kartlaggning" } },
+        "pill_5": { "type": "pill", "settings": { "label": "Energi & telekom", "link": "/pages/energi-infrastruktur" } },
+        "pill_6": { "type": "pill", "settings": { "label": "Fönster-, tak- & fasadtvätt", "link": "/pages/fasadtvatt-dronare" } }
+      },
+      "block_order": ["pill_1", "pill_2", "pill_3", "pill_4", "pill_5", "pill_6"]
+    },
+    "cta_banner": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du en skräddarsydd systemlösning?",
+        "text": "Vårt enterprise-team bygger en komplett konfiguration av drönare, payload, mjukvara och service för ditt uppdrag.",
+        "button_label_1": "Begär konsultation",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 64
       }
     }
   },
   "order": [
+    "hero",
     "user_type_selector",
-    "featured_collection"
+    "categories",
+    "value_props",
+    "featured_collection",
+    "portals",
+    "mission_spotlight",
+    "cta_banner"
   ]
 }
