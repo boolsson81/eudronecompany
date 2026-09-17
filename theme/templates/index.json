@@ -106,7 +106,7 @@
             "title": "Kamera- & prosumerdrönare",
             "text": "Foto, film & kreativ produktion",
             "link_label": "Utforska",
-            "link": "/collections/kameradronare"
+            "link": "/collections/drones-with-camera"
           }
         },
         "cat_agri": {
@@ -115,7 +115,7 @@
             "title": "Lantbruk & sprutdrönare",
             "text": "Precisionsjordbruk i stor skala",
             "link_label": "Utforska",
-            "link": "/collections/lantbruksdronare"
+            "link": "/collections/agriculture-drones"
           }
         },
         "cat_inspection": {
@@ -124,7 +124,7 @@
             "title": "Inspektion & kartläggning",
             "text": "Mätning, LiDAR & besiktning",
             "link_label": "Utforska",
-            "link": "/collections/inspektionsdronare"
+            "link": "/collections/inspection-drones"
           }
         },
         "cat_wash": {
@@ -142,7 +142,7 @@
             "title": "Payload & sensorer",
             "text": "Termisk, zoom & multispektral",
             "link_label": "Utforska",
-            "link": "/collections/payload-sensorer"
+            "link": "/collections/enterprise-sensors"
           }
         }
       },
