@@ -1,0 +1,234 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Våra varumärken",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Drönare, enterprise-payload och tillbehör från de varumärken vi faktiskt säljer — inte bara namn på en lista.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "brands": {
+      "type": "multicolumn",
+      "blocks": {
+        "dji": {
+          "type": "column",
+          "settings": {
+            "title": "DJI",
+            "text": "<p>Mini, Air, Mavic, Avata, Neo och Flip &ndash; konsument- och prosumentserien.</p>",
+            "link_label": "Till DJI",
+            "link": "/pages/dji"
+          }
+        },
+        "dji_enterprise": {
+          "type": "column",
+          "settings": {
+            "title": "DJI Enterprise",
+            "text": "<p>Matrice, FlyCart och Agras för industri, kartl&auml;ggning och jordbruk.</p>",
+            "link_label": "Till DJI Enterprise",
+            "link": "/pages/dji-enterprise"
+          }
+        },
+        "wisson": {
+          "type": "column",
+          "settings": {
+            "title": "Wisson",
+            "text": "<p>Flygburna robotsystem &ndash; manipulator, lastsl&auml;pp, sprutning och fasadtv&auml;tt.</p>",
+            "link_label": "Till Wisson",
+            "link": "/pages/wisson"
+          }
+        },
+        "wingtra": {
+          "type": "column",
+          "settings": {
+            "title": "Wingtra",
+            "text": "<p>VTOL-kartl&auml;ggningsdr&ouml;nare f&ouml;r lantm&auml;teri och storskalig kartering.</p>",
+            "link_label": "Till Wingtra",
+            "link": "/pages/wingtra"
+          }
+        },
+        "parrot": {
+          "type": "column",
+          "settings": {
+            "title": "Parrot",
+            "text": "<p>Anafi USA/UKR &ndash; dr&ouml;nare byggda utanf&ouml;r Kina, f&ouml;r myndighet och offentlig sektor.</p>",
+            "link_label": "Till Parrot",
+            "link": "/pages/parrot"
+          }
+        },
+        "tundra": {
+          "type": "column",
+          "settings": {
+            "title": "Tundra",
+            "text": "<p>Modul&auml;rt payloadsystem &ndash; IR-ljus, laser, dropper och fler moduler p&aring; en bas.</p>",
+            "link_label": "Till Tundra",
+            "link": "/pages/tundra"
+          }
+        },
+        "livox": {
+          "type": "column",
+          "settings": {
+            "title": "Livox",
+            "text": "<p>LiDAR-sensorer f&ouml;r dr&ouml;nare, plus kablage och kontakter.</p>",
+            "link_label": "Till Livox",
+            "link": "/pages/livox"
+          }
+        },
+        "czi": {
+          "type": "column",
+          "settings": {
+            "title": "CZI",
+            "text": "<p>S&ouml;kljus, h&ouml;gtalarsystem och lastsl&auml;pp f&ouml;r DJI enterprise.</p>",
+            "link_label": "Till CZI",
+            "link": "/pages/czi"
+          }
+        },
+        "flyfire": {
+          "type": "column",
+          "settings": {
+            "title": "FlyFire",
+            "text": "<p>Fallsk&auml;rm och flythj&auml;lp f&ouml;r enterprise-dr&ouml;nare.</p>",
+            "link_label": "Till FlyFire",
+            "link": "/pages/flyfire"
+          }
+        },
+        "brdrc": {
+          "type": "column",
+          "settings": {
+            "title": "BRDRC",
+            "text": "<p>Landningsst&auml;ll och f&auml;llsystem f&ouml;r DJI-dr&ouml;nare.</p>",
+            "link_label": "Till BRDRC",
+            "link": "/pages/brdrc"
+          }
+        },
+        "cqt": {
+          "type": "column",
+          "settings": {
+            "title": "CQT",
+            "text": "<p>Vardagstillbeh&ouml;r f&ouml;r DJI Neo, Flip och Mini.</p>",
+            "link_label": "Till CQT",
+            "link": "/pages/cqt"
+          }
+        },
+        "yx": {
+          "type": "column",
+          "settings": {
+            "title": "YX",
+            "text": "<p>Laddningshubbar f&ouml;r DJI Flip, Neo, Mavic och Avata.</p>",
+            "link_label": "Till YX",
+            "link": "/pages/yx"
+          }
+        },
+        "aerobrigh": {
+          "type": "column",
+          "settings": {
+            "title": "AeroBrigh",
+            "text": "<p>Tetherstr&ouml;m och belysning f&ouml;r kontinuerlig flygning.</p>",
+            "link_label": "Till AeroBrigh",
+            "link": "/pages/aerobrigh"
+          }
+        },
+        "powervision": {
+          "type": "column",
+          "settings": {
+            "title": "PowerVision",
+            "text": "<p>Reservdelar och batterier till den marina dr&ouml;naren PowerDolphin.</p>",
+            "link_label": "Till PowerVision",
+            "link": "/pages/powervisio"
+          }
+        },
+        "sunnylife": {
+          "type": "column",
+          "settings": {
+            "title": "Sunnylife",
+            "text": "<p>Propellerskydd och prisv&auml;rda tillbeh&ouml;r f&ouml;r vardagsflygning.</p>",
+            "link_label": "Till Sunnylife",
+            "link": "/pages/sunnylife"
+          }
+        },
+        "polarpro": {
+          "type": "column",
+          "settings": {
+            "title": "PolarPro",
+            "text": "<p>ND- och PL-filter f&ouml;r dr&ouml;narfoto och -film.</p>",
+            "link_label": "Till PolarPro",
+            "link": "/pages/polarpro"
+          }
+        },
+        "pgytech": {
+          "type": "column",
+          "settings": {
+            "title": "PGYTECH",
+            "text": "<p>V&auml;skor, filter och tillbeh&ouml;r f&ouml;r dr&ouml;nare och kamera.</p>",
+            "link_label": "Till PGYTECH",
+            "link": "/pages/pgytech"
+          }
+        }
+      },
+      "block_order": [
+        "dji",
+        "dji_enterprise",
+        "wisson",
+        "wingtra",
+        "parrot",
+        "tundra",
+        "livox",
+        "czi",
+        "flyfire",
+        "brdrc",
+        "cqt",
+        "yx",
+        "aerobrigh",
+        "powervision",
+        "sunnylife",
+        "polarpro",
+        "pgytech"
+      ],
+      "settings": {
+        "title": "Alla varumärken",
+        "heading_size": "h2",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Hittar du inte varumärket du letar efter?",
+        "text": "Vi bygger ut sortimentet löpande. Hör av dig så ser vi om vi kan ta in det du söker.",
+        "button_label_1": "Kontakta oss",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "brands", "cta"]
+}

@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "DJI — från konsumentdrönare till enterprise-flotta",
+            "heading": "DJI — Mini, Air, Mavic, Avata, Neo och Flip",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Officiellt sortiment från Mini, Air, Mavic, Avata och Neo till Matrice, FlyCart och Agras — plus originalbatterier, gimbaler och reservdelar.",
+            "text": "Konsument- och prosumentserien från DJI, plus originalbatterier, gimbaler, fjärrkontroller och reservdelar. Söker du Matrice, FlyCart eller Agras för verksamheten? Se DJI Enterprise.",
             "text_style": "subtitle"
           }
         },
@@ -90,8 +90,8 @@
         "column_1": {
           "type": "column",
           "settings": {
-            "title": "Helt sortiment",
-            "text": "<p>Konsument- och enterpriseserien i samma butik — drönare, batterier, gimbaler, fjärrkontroller och reservdelar.</p>"
+            "title": "Hela konsumentserien",
+            "text": "<p>Mini, Air, Mavic, Avata, Neo och Flip i samma butik, med tillhörande batterier, gimbaler och fjärrkontroller.</p>"
           }
         },
         "column_2": {
@@ -130,8 +130,8 @@
         "row_1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Säljer ni hela DJI:s sortiment?",
-            "row_content": "<p>Vi för både konsumentserien (Mini, Air, Mavic, Avata, Neo, Flip) och enterpriseserien (Matrice, FlyCart, Agras) med tillhörande tillbehör och reservdelar.</p>"
+            "heading": "Vilka DJI-modeller för ni för privat- och proffsfotografering?",
+            "row_content": "<p>Mini-, Air-, Mavic-, Avata-, Neo- och Flip-serien, med tillhörande batterier, gimbaler, filter och reservdelar.</p>"
           }
         },
         "row_2": {
@@ -144,15 +144,15 @@
         "row_3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Kan jag få hjälp att välja rätt drönare?",
-            "row_content": "<p>Kontakta oss så hjälper vi dig matcha modell mot uppdrag, oavsett om det är foto, kartläggning eller industriinspektion.</p>"
+            "heading": "Jag letar efter Matrice, FlyCart eller Agras — är det rätt sida?",
+            "row_content": "<p>Nej, de tillhör DJI:s enterprise-serie. Besök vår DJI Enterprise-sida för industridrönare.</p>"
           }
         },
         "row_4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Hanterar ni garantiärenden?",
-            "row_content": "<p>Ja, vi hjälper dig med garantiärenden på produkter köpta hos oss.</p>"
+            "heading": "Kan jag få hjälp att välja rätt drönare?",
+            "row_content": "<p>Kontakta oss så hjälper vi dig matcha modell mot användning, oavsett om det är foto, film eller resande.</p>"
           }
         }
       },

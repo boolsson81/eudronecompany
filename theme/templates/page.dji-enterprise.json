@@ -6,14 +6,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "FlyFire — fallskärm och flythjälp för enterprise-drönare",
+            "heading": "DJI Enterprise — Matrice, FlyCart och Agras för industri och jordbruk",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "OWL-fallskärmssystem för Matrice 30/300/350 och Mavic-serien, plus flytbojar och kabinreservdelar för uppdrag över vatten eller befolkade områden.",
+            "text": "Industridrönare för inspektion, kartläggning, transport och jordbruk, med enterprise-tillbehör och originalreservdelar. Letar du Mini, Air, Mavic eller Avata? Se vår vanliga DJI-sida.",
             "text_style": "subtitle"
           }
         },
@@ -21,7 +21,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Se sortimentet",
-            "button_link_1": "/collections/flyfire",
+            "button_link_1": "/collections/enterprise-drones",
             "button_style_secondary_1": false,
             "button_label_2": "Kontakta oss",
             "button_link_2": "/pages/contact-quote",
@@ -50,25 +50,25 @@
         "trust_1": {
           "type": "trust_item",
           "settings": {
-            "text": "Auktoriserad återförsäljare"
+            "text": "Enterprise-specialister"
           }
         },
         "trust_2": {
           "type": "trust_item",
           "settings": {
-            "text": "Svensk kundsupport"
+            "text": "Service och support i Sverige"
           }
         },
         "trust_3": {
           "type": "trust_item",
           "settings": {
-            "text": "Snabb leverans"
+            "text": "Offert inom 24 timmar"
           }
         },
         "trust_4": {
           "type": "trust_item",
           "settings": {
-            "text": "Trygg betalning"
+            "text": "Auktoriserade leverantörer"
           }
         }
       },
@@ -90,22 +90,22 @@
         "column_1": {
           "type": "column",
           "settings": {
-            "title": "Nödfallskärm",
-            "text": "<p>OWL-30 och OWL-300 ger en räddningslösning vid motorbortfall — relevant för uppdrag över människor eller trafik.</p>"
+            "title": "Matrice, FlyCart och Agras",
+            "text": "<p>Plattformar för inspektion, kartläggning, transport och bekämpning/sådd, med nyttolaster som termisk kamera, zoom och LiDAR.</p>"
           }
         },
         "column_2": {
           "type": "column",
           "settings": {
-            "title": "Flythjälp vid vatten",
-            "text": "<p>Drone Bouy håller drönaren flytande upp till 6 kg vid nödlandning på vatten.</p>"
+            "title": "Enterprise-tillbehör och reservdelar",
+            "text": "<p>Original batterier, propellrar, laddhubbar och reservdelar för verksamheter som flyger dagligen.</p>"
           }
         },
         "column_3": {
           "type": "column",
           "settings": {
-            "title": "Reservdelar till kabin",
-            "text": "<p>Ersättningskabiner till Manti-serien om huset skadas i fält.</p>"
+            "title": "Rådgivning för verksamheter",
+            "text": "<p>Vi hjälper er välja rätt plattform och nyttolast för uppdraget, med offert inom 24 timmar.</p>"
           }
         }
       },
@@ -115,7 +115,7 @@
         "column_3"
       ],
       "settings": {
-        "title": "Därför FlyFire",
+        "title": "Därför DJI Enterprise",
         "heading_size": "h2",
         "columns_desktop": 3,
         "column_alignment": "left",
@@ -130,29 +130,36 @@
         "row_1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Krävs fallskärm för mitt uppdrag?",
-            "row_content": "<p>Vissa BVLOS- eller SORA-klassade uppdrag över människor kräver ett räddningssystem. Kontakta oss så går vi igenom vad ert tillstånd kräver.</p>"
+            "heading": "Vad skiljer DJI Enterprise från DJI:s vanliga sortiment?",
+            "row_content": "<p>Enterprise-serien (Matrice, FlyCart, Agras) är byggd för yrkesmässig drift — inspektion, kartläggning, transport och jordbruk — med egna nyttolaster, tillbehör och reservdelar.</p>"
           }
         },
         "row_2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Vilka drönare passar FlyFire:s fallskärmar?",
-            "row_content": "<p>Sortimentet täcker bland annat Matrice 30, Matrice 300/350 och Mavic 2/3-serien.</p>"
+            "heading": "Vilka nyttolaster finns till Matrice?",
+            "row_content": "<p>Bland annat termiska kameror, zoomkameror och LiDAR, beroende på Matrice-modell. Kontakta oss med ert uppdrag så föreslår vi rätt kombination.</p>"
           }
         },
         "row_3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Hur ofta behöver fallskärmen packas om eller servas?",
-            "row_content": "<p>Det varierar per modell och tillverkarens rekommendation — kontakta oss för underhållsintervall.</p>"
+            "heading": "Kan vi få offert för flera enheter till verksamheten?",
+            "row_content": "<p>Ja, vi lämnar offert inom 24 timmar för enskilda enheter eller hela flottor.</p>"
           }
         },
         "row_4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Säljer ni flytbojen separat från fallskärmen?",
-            "row_content": "<p>Ja, Drone Bouy säljs separat för uppdrag över vatten.</p>"
+            "heading": "Ingår utbildning eller support?",
+            "row_content": "<p>Vi ger svensk support och rådgivning kring drift — hör av er om ni behöver utbildning kopplad till ett specifikt uppdrag.</p>"
+          }
+        },
+        "row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Jag letar efter en Mini, Air eller Mavic — är det rätt sida?",
+            "row_content": "<p>Nej, de tillhör DJI:s konsumentserie. Besök vår vanliga DJI-sida för den.</p>"
           }
         }
       },
@@ -160,7 +167,8 @@
         "row_1",
         "row_2",
         "row_3",
-        "row_4"
+        "row_4",
+        "row_5"
       ],
       "settings": {
         "caption": "Vanliga frågor",
@@ -176,8 +184,8 @@
     "cta": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Kräver ert tillstånd ett räddningssystem?",
-        "text": "Berätta vilken drönare och vilket uppdrag det gäller så hjälper vi er välja rätt FlyFire-system.",
+        "title": "Fundera på DJI Enterprise till er verksamhet?",
+        "text": "Berätta om uppdraget (inspektion, kartläggning, transport eller jordbruk) så föreslår vi rätt plattform och nyttolast.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",
