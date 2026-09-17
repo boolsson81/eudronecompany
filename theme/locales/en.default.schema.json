@@ -3981,6 +3981,42 @@
         "name": "Rich text"
       }
     },
+    "section-divider": {
+      "name": "Section divider",
+      "settings": {
+        "line_color": {
+          "label": "Line color",
+          "info": "Leave blank to use the color scheme's text color"
+        },
+        "line_style": {
+          "label": "Line style",
+          "options__1": {
+            "label": "None"
+          },
+          "options__2": {
+            "label": "Solid"
+          },
+          "options__3": {
+            "label": "Dashed"
+          },
+          "options__4": {
+            "label": "Dotted"
+          }
+        },
+        "line_width": {
+          "label": "Line width"
+        },
+        "line_thickness": {
+          "label": "Line thickness"
+        },
+        "line_opacity": {
+          "label": "Line opacity"
+        }
+      },
+      "presets": {
+        "name": "Section divider"
+      }
+    },
     "video": {
       "name": "Video",
       "settings": {

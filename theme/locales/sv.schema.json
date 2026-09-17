@@ -3525,6 +3525,42 @@
         "name": "Rich text"
       }
     },
+    "section-divider": {
+      "name": "Avdelare",
+      "settings": {
+        "line_color": {
+          "label": "Linjens färg",
+          "info": "Lämna tomt för att använda färgschemats textfärg"
+        },
+        "line_style": {
+          "label": "Linjestil",
+          "options__1": {
+            "label": "Ingen"
+          },
+          "options__2": {
+            "label": "Heldragen"
+          },
+          "options__3": {
+            "label": "Streckad"
+          },
+          "options__4": {
+            "label": "Punktad"
+          }
+        },
+        "line_width": {
+          "label": "Linjens bredd"
+        },
+        "line_thickness": {
+          "label": "Linjens tjocklek"
+        },
+        "line_opacity": {
+          "label": "Linjens opacitet"
+        }
+      },
+      "presets": {
+        "name": "Avdelare"
+      }
+    },
     "apps": {
       "name": "Appar",
       "settings": {
