@@ -1,0 +1,71 @@
+{% comment %}
+  Renders the enterprise compatibility panel for a payload product.
+
+  Reads:
+  - product.metafields.edp.compatibility_records (list.metaobject_reference -> payload_compatibility)
+    Preferred source: explicit status per platform (fully_compatible / compatible_with_adapter /
+    compatible_with_integration / not_compatible / unknown), never inferred.
+  - product.metafields.edp.compatible_uav (list.metaobject_reference -> uav_platform)
+    Fallback when no compatibility_records exist yet: lists the platforms without a status claim.
+
+  Never invents a compatibility claim (data quality rule 29). Accepts:
+  - product: {Object} required
+  - quote_url: {String} optional, defaults to /pages/contact-quote
+{% endcomment %}
+{%- liquid
+  assign records = product.metafields.edp.compatibility_records.value
+  assign platforms = product.metafields.edp.compatible_uav.value
+  assign quote_link = quote_url | default: '/pages/contact-quote'
+-%}
+
+<div class="edp-compat">
+  {%- if records != blank and records.size > 0 -%}
+    {%- for record in records -%}
+      {%- liquid
+        assign status = record.status.value
+        assign status_label = 'Kompatibilitet okänd'
+        case status
+          when 'fully_compatible'
+            assign status_label = 'Fullt kompatibel'
+          when 'compatible_with_adapter'
+            assign status_label = 'Kompatibel med adapter'
+          when 'compatible_with_integration'
+            assign status_label = 'Kompatibel med integration'
+          when 'not_compatible'
+            assign status_label = 'Ej kompatibel'
+          else
+            assign status_label = 'Kompatibilitet behöver bekräftas'
+        endcase
+      -%}
+      <div class="edp-compat__row">
+        <span class="edp-compat__platform">{{ record.platform.value.name.value | escape }}</span>
+        <span class="edp-compat__status edp-compat__status--{{ status | default: 'unknown' }}">{{ status_label }}</span>
+      </div>
+      {%- if record.adapter_product.value != blank and status == 'compatible_with_adapter' -%}
+        <p class="edp-compat__unknown-note">
+          Kräver: <a href="{{ record.adapter_product.value.url }}">{{ record.adapter_product.value.title | escape }}</a>
+        </p>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- elsif platforms != blank and platforms.size > 0 -%}
+    {%- for platform in platforms -%}
+      <div class="edp-compat__row">
+        <span class="edp-compat__platform">{{ platform.name.value | escape }}</span>
+        <span class="edp-compat__status edp-compat__status--unknown">Kompatibilitet behöver bekräftas</span>
+      </div>
+    {%- endfor -%}
+    <p class="edp-compat__unknown-note">
+      Exakt kompatibilitetsstatus är inte verifierad ännu för dessa plattformar.
+      <a href="{{ quote_link }}">Kontakta vårt Enterprise-team</a> för att bekräfta din konfiguration.
+    </p>
+  {%- else -%}
+    <div class="edp-compat__row">
+      <span class="edp-compat__platform">Kompatibilitet behöver bekräftas</span>
+      <span class="edp-compat__status edp-compat__status--unknown">Okänd</span>
+    </div>
+    <p class="edp-compat__unknown-note">
+      Vi har inte registrerat kompatibel UAV-plattform för denna produkt ännu.
+      <a href="{{ quote_link }}">Kontakta vårt Enterprise-team</a> så bekräftar vi din konfiguration.
+    </p>
+  {%- endif -%}
+</div>

@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "edp-payload-finder",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "heading": "Hitta rätt payload",
+        "intro": "Svara på fem korta frågor så föreslår vi vilka payload-kategorier som passar ditt uppdrag bäst. Resultatet är en vägledning — vårt enterprise-team bekräftar alltid slutgiltig kompatibilitet och pris.",
+        "quote_link": "/pages/contact-quote"
+      }
+    }
+  },
+  "order": ["main"]
+}

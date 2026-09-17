@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "edp-configurator",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "heading": "Bygg ditt drönarsystem",
+        "intro": "Ställ samman UAV-plattform, payloads och tjänster för ditt uppdrag. I sista steget skickar vi din konfiguration till vårt enterprise-team som en offertförfrågan.",
+        "quote_page": "/pages/contact-quote"
+      }
+    }
+  },
+  "order": ["main"]
+}

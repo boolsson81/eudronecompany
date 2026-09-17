@@ -1,0 +1,248 @@
+/* EU Drone Company — enterprise payload architecture (Phase 3)
+   Self-contained styles for payload category / mission / solution package
+   pages and the product-page payload enhancements. Deliberately independent
+   of Dawn's component-*.css and Horizon's block styles (see Phase 1 audit:
+   the live theme is Horizon-based, the repo theme is Dawn-based — anything
+   new must not assume either). Namespaced under .edp-payload to avoid
+   colliding with the existing .edp-enterprise system. */
+
+.edp-payload {
+  --edp-payload-fg: var(--color-foreground, #1a1a1a);
+  --edp-payload-bg: var(--color-background, #fff);
+  --edp-payload-muted: color-mix(in srgb, var(--edp-payload-fg) 60%, transparent);
+  --edp-payload-border: color-mix(in srgb, var(--edp-payload-fg) 14%, transparent);
+  --edp-payload-accent: var(--color-foreground, #1a1a1a);
+  color: var(--edp-payload-fg);
+}
+
+.edp-payload__wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 750px) {
+  .edp-payload__wrap { padding: 0 3rem; }
+}
+
+/* Breadcrumb ------------------------------------------------------------ */
+.edp-payload__breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  font-size: 0.8125rem;
+  color: var(--edp-payload-muted);
+  margin: 0 0 1.5rem;
+}
+.edp-payload__breadcrumb a { color: inherit; text-decoration: underline; }
+.edp-payload__breadcrumb span[aria-hidden] { opacity: 0.6; }
+
+/* Hero ------------------------------------------------------------------ */
+.edp-payload__hero { padding: 2rem 0 2.5rem; border-bottom: 1px solid var(--edp-payload-border); }
+.edp-payload__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--edp-payload-muted);
+  margin: 0 0 0.5rem;
+}
+.edp-payload__title { font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.75rem); line-height: 1.1; margin: 0 0 1rem; }
+.edp-payload__lede { font-size: 1.0625rem; line-height: 1.6; color: var(--edp-payload-muted); max-width: 62ch; margin: 0; }
+.edp-payload__hero-media { margin-top: 1.5rem; border-radius: 4px; overflow: hidden; }
+.edp-payload__hero-media img { display: block; width: 100%; height: auto; }
+
+/* Generic section block -------------------------------------------------- */
+.edp-payload__section { padding: 2.5rem 0; border-bottom: 1px solid var(--edp-payload-border); }
+.edp-payload__section:last-child { border-bottom: none; }
+.edp-payload__section-heading { font-size: 1.375rem; margin: 0 0 1.25rem; }
+.edp-payload__prose { line-height: 1.65; max-width: 68ch; }
+.edp-payload__prose p { margin: 0 0 1em; }
+
+/* Grid of cards (subcategories, missions, packages) ---------------------- */
+.edp-payload__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+.edp-payload__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s ease;
+}
+.edp-payload__card:hover,
+.edp-payload__card:focus-visible { border-color: var(--edp-payload-fg); }
+.edp-payload__card-title { font-weight: 600; font-size: 0.9375rem; margin: 0; }
+.edp-payload__card-text { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; line-height: 1.45; }
+
+/* Tag/pill lists ---------------------------------------------------------- */
+.edp-payload__pills { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin: 0; padding: 0; }
+.edp-payload__pill {
+  font-size: 0.75rem;
+  padding: 0.3em 0.75em;
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 999px;
+  color: var(--edp-payload-muted);
+}
+
+/* Spec table --------------------------------------------------------------- */
+.edp-payload__spec-groups { display: grid; gap: 1.5rem; }
+.edp-payload__spec-group-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--edp-payload-muted);
+  margin: 0 0 0.5rem;
+}
+.edp-payload__spec-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.edp-payload__spec-table tr { border-bottom: 1px solid var(--edp-payload-border); }
+.edp-payload__spec-table tr:last-child { border-bottom: none; }
+.edp-payload__spec-table th,
+.edp-payload__spec-table td { text-align: left; padding: 0.55em 0.75em 0.55em 0; vertical-align: top; }
+.edp-payload__spec-table th { font-weight: 500; color: var(--edp-payload-muted); width: 45%; }
+.edp-payload__spec-not-specified { color: var(--edp-payload-muted); font-style: italic; }
+
+/* Compatibility ------------------------------------------------------------ */
+.edp-compat { border: 1px solid var(--edp-payload-border); border-radius: 6px; padding: 1rem 1.1rem; }
+.edp-compat__row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.5em 0; }
+.edp-compat__row + .edp-compat__row { border-top: 1px solid var(--edp-payload-border); }
+.edp-compat__platform { font-weight: 500; font-size: 0.875rem; }
+.edp-compat__status { font-size: 0.75rem; font-weight: 600; padding: 0.25em 0.7em; border-radius: 999px; white-space: nowrap; }
+.edp-compat__status--fully_compatible { background: color-mix(in srgb, #1a7f37 15%, transparent); color: #1a7f37; }
+.edp-compat__status--compatible_with_adapter,
+.edp-compat__status--compatible_with_integration { background: color-mix(in srgb, #9a6700 15%, transparent); color: #9a6700; }
+.edp-compat__status--not_compatible { background: color-mix(in srgb, #cf222e 15%, transparent); color: #cf222e; }
+.edp-compat__status--unknown { background: var(--edp-payload-border); color: var(--edp-payload-muted); }
+.edp-compat__unknown-note { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0.75em 0 0; }
+.edp-compat__unknown-note a { color: inherit; }
+
+/* Badges -------------------------------------------------------------------- */
+.edp-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.edp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.3em 0.75em;
+  border-radius: 4px;
+  background: var(--edp-payload-fg);
+  color: var(--edp-payload-bg);
+}
+.edp-badge--outline { background: transparent; border: 1px solid var(--edp-payload-border); color: var(--edp-payload-fg); }
+
+/* CTA row -------------------------------------------------------------------- */
+.edp-cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+.edp-cta-row .button { margin: 0; }
+
+/* Enterprise contact banner --------------------------------------------------- */
+.edp-payload__banner {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.edp-payload__banner-title { font-size: 1.5rem; margin: 0 0 0.5rem; }
+.edp-payload__banner-text { color: var(--edp-payload-muted); max-width: 52ch; margin: 0 auto 1.25rem; }
+.edp-payload__banner .edp-cta-row { justify-content: center; }
+
+/* FAQ -------------------------------------------------------------------------- */
+.edp-payload__faq-item { border-top: 1px solid var(--edp-payload-border); padding: 1rem 0; }
+.edp-payload__faq-item:first-child { border-top: none; }
+.edp-payload__faq-q { font-weight: 600; margin: 0 0 0.4em; font-size: 0.9375rem; }
+.edp-payload__faq-a { margin: 0; color: var(--edp-payload-muted); font-size: 0.875rem; line-height: 1.55; }
+
+/* Responsive guard: never let cards or tables force horizontal scroll on body */
+@media screen and (max-width: 480px) {
+  .edp-compat__row { flex-direction: column; align-items: flex-start; gap: 0.35rem; }
+}
+
+/* Payload Finder wizard -------------------------------------------------- */
+.edp-finder { padding: 1.5rem 0 3rem; }
+.edp-finder__progress { margin-bottom: 1.75rem; }
+.edp-finder__progress-bar { height: 4px; border-radius: 999px; background: var(--edp-payload-border); overflow: hidden; }
+.edp-finder__progress-fill { height: 100%; background: var(--edp-payload-fg); transition: width 0.2s ease; }
+.edp-finder__progress-label { font-size: 0.75rem; color: var(--edp-payload-muted); margin: 0.5em 0 0; }
+.edp-finder__step-title { font-size: 1.375rem; margin: 0 0 1.25rem; }
+.edp-finder__options { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.75rem; }
+.edp-finder__option {
+  font: inherit;
+  font-size: 0.9375rem;
+  padding: 0.65em 1.1em;
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--edp-payload-fg);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+.edp-finder__option:hover,
+.edp-finder__option:focus-visible { border-color: var(--edp-payload-fg); }
+.edp-finder__option.is-active { background: var(--edp-payload-fg); color: var(--edp-payload-bg); border-color: var(--edp-payload-fg); }
+.edp-finder__nav { display: flex; gap: 0.75rem; }
+.edp-finder__nav .button { margin: 0; }
+
+.edp-finder__results { display: flex; flex-direction: column; gap: 1.5rem; }
+.edp-finder__result {
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.edp-finder__result-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.edp-finder__result-title { font-size: 1.125rem; font-weight: 600; color: inherit; text-decoration: none; }
+.edp-finder__result-title:hover { text-decoration: underline; }
+.edp-finder__breakdown {
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.35rem 1rem;
+  font-size: 0.8125rem;
+  color: var(--edp-payload-muted);
+}
+.edp-finder__restart { align-self: flex-start; }
+
+/* Comparison tray + table -------------------------------------------------- */
+.edp-compare-tray {
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  z-index: 100;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.1rem;
+  background: var(--color-background, #fff);
+  border: 1px solid var(--edp-payload-border, #0002);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+.edp-compare-tray .button { margin: 0; }
+.edp-compare-tray__count { font-size: 0.875rem; font-weight: 600; }
+
+.edp-compare-table { width: auto; min-width: 100%; }
+.edp-compare-table th,
+.edp-compare-table td { text-align: left; padding: 0.6em 1.25em 0.6em 0; white-space: nowrap; }
+.edp-compare-table thead th { font-weight: 600; }
+.edp-compare-table thead th a { color: inherit; }
+
+/* Configurator summary ----------------------------------------------------- */
+.edp-configurator__summary {
+  white-space: pre-wrap;
+  font-family: inherit;
+  background: color-mix(in srgb, var(--edp-payload-fg) 4%, transparent);
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}

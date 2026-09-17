@@ -1,0 +1,74 @@
+{% comment %}
+  Comparison row data source — fetched client-side via Shopify's Section
+  Rendering API: GET /products/<handle>?section_id=edp-comparison-row
+  returns just this section rendered in the context of that product, so
+  `product` below resolves correctly without a Storefront API token.
+
+  Renders one JSON object (not HTML) with the same fields as the payload
+  product-page spec table (edp-payload-details.liquid), so the comparison
+  page in edp-payload-comparison.js can build a table from it. Missing
+  values are reported as null and rendered as "Ej specificerat" by the
+  comparison table — never guessed here.
+{% endcomment %}
+{%- liquid
+  assign spec = product.metafields.edp.specification.value
+  assign records = product.metafields.edp.compatibility_records.value
+  assign compatible_platforms = product.metafields.edp.compatible_uav.value
+
+  assign sensor_type = spec.sensor_type.value | default: product.metafields.edp.sensor_type.value
+  assign sensor_resolution = spec.sensor_resolution.value | default: product.metafields.edp.sensor_resolution.value
+  assign thermal_resolution = spec.thermal_resolution.value | default: product.metafields.edp.thermal_resolution.value
+  assign optical_zoom = spec.optical_zoom.value | default: product.metafields.edp.optical_zoom.value
+  assign weight = spec.weight.value | default: product.metafields.edp.weight.value
+  assign ip_rating = spec.ip_rating.value | default: product.metafields.edp.ip_rating.value
+  assign operating_temperature = spec.operating_temperature.value | default: product.metafields.edp.operating_temperature.value
+  assign lead_time = product.metafields.edp.lead_time.value
+  assign sdk_available = spec.sdk_available.value | default: product.metafields.edp.sdk_available.value
+  assign requires_quote = product.metafields.edp.requires_quote.value
+
+  assign compat_summary = nil
+  if records != blank and records.size > 0
+    assign fully_compatible_count = 0
+    for record in records
+      if record.status.value == 'fully_compatible'
+        assign fully_compatible_count = fully_compatible_count | plus: 1
+      endif
+    endfor
+    if fully_compatible_count > 0
+      assign compat_summary = 'Bekräftat kompatibel med ' | append: fully_compatible_count | append: ' plattform(ar)'
+    else
+      assign compat_summary = 'Kompatibilitet behöver bekräftas'
+    endif
+  elsif compatible_platforms != blank and compatible_platforms.size > 0
+    assign compat_summary = 'Kompatibilitet behöver bekräftas'
+  endif
+-%}
+<script type="application/json" data-edp-comparison-row="{{ product.handle }}">
+{
+  "handle": {{ product.handle | json }},
+  "title": {{ product.title | json }},
+  "url": {{ product.url | json }},
+  "image": {{ product.featured_image | image_url: width: 400 | json }},
+  "price": {{ product.price | money | strip_html | json }},
+  "requires_quote": {{ requires_quote | default: false | json }},
+  "sensor_type": {{ sensor_type | join: ', ' | default: nil | json }},
+  "sensor_resolution": {{ sensor_resolution | json }},
+  "thermal_resolution": {{ thermal_resolution | json }},
+  "optical_zoom": {{ optical_zoom | json }},
+  "weight": {{ weight | json }},
+  "ip_rating": {{ ip_rating | json }},
+  "operating_temperature": {{ operating_temperature | json }},
+  "lead_time": {{ lead_time | json }},
+  "sdk_available": {{ sdk_available | default: false | json }},
+  "compatibility_summary": {{ compat_summary | json }}
+}
+</script>
+
+{% schema %}
+{
+  "name": "Jämförelserad (dold)",
+  "tag": "section",
+  "class": "section",
+  "settings": []
+}
+{% endschema %}
