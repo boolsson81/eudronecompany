@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Enterprise",
+        "title": "Se hur företag löser sina uppdrag med drönare",
+        "heading_size": "h1",
+        "text": "Verkliga exempel på hur besiktning, inspektion, kartläggning och bekämpning effektiviseras med rätt drönarlösning — från upphandling till drift.",
+        "button_label_1": "Bli vår nästa referens",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "case_grid": {
+      "type": "enterprise-industries",
+      "blocks": {
+        "case-bygg": {
+          "type": "industry",
+          "settings": {
+            "title": "Byggbolag AB (exempel)",
+            "text": "Exempel: 40 % snabbare fasad- och takbesiktning.",
+            "link_label": "Läs mer om bygg & anläggning",
+            "link": "/pages/bygg-anlaggning"
+          }
+        },
+        "case-energi": {
+          "type": "industry",
+          "settings": {
+            "title": "Energikoncern AB (exempel)",
+            "text": "Exempel: Halverad inspektionstid för vindkraftverk.",
+            "link_label": "Läs mer om energi & telekom",
+            "link": "/pages/energi-infrastruktur"
+          }
+        },
+        "case-raddning": {
+          "type": "industry",
+          "settings": {
+            "title": "Räddningstjänst [Region] (exempel)",
+            "text": "Exempel: Snabbare lägesbild vid skogsbrand.",
+            "link_label": "Läs mer om räddningstjänst",
+            "link": "/pages/raddningstjanst"
+          }
+        },
+        "case-lantbruk": {
+          "type": "industry",
+          "settings": {
+            "title": "Lantbrukskoncern AB (exempel)",
+            "text": "Exempel: 18 % lägre kemikalieåtgång vid sprutning.",
+            "link_label": "Läs mer om lantbruk",
+            "link": "/pages/jordbruk"
+          }
+        }
+      },
+      "block_order": ["case-bygg", "case-energi", "case-raddning", "case-lantbruk"],
+      "settings": {
+        "heading": "Utvalda exempel per bransch",
+        "heading_size": "h2",
+        "text": "Nedan är illustrativa exempel — kontakta oss för verkliga referenser och kundcase.",
+        "color_scheme": "scheme-edp",
+        "card_title_alignment": "left",
+        "card_text_alignment": "left",
+        "card_link_alignment": "left",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "spotlight_stats": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": { "title": "-50 %", "text": "<p>Besiktningstid (exempel)</p>", "link_label": "", "link": "" }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": { "title": "+30 %", "text": "<p>Dokumentationskvalitet (exempel)</p>", "link_label": "", "link": "" }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": { "title": "12", "text": "<p>Projekt per år (exempel)</p>", "link_label": "", "link": "" }
+        }
+      },
+      "block_order": ["column-0", "column-1", "column-2"],
+      "settings": {
+        "title": "Vad ett samarbete kan ge",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "1",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vill du bli nästa framgångssaga?",
+        "text": "Boka ett kostnadsfritt möte med vårt enterprise-team och se vad en drönarlösning kan göra för er verksamhet.",
+        "button_label_1": "Boka möte med enterprise-teamet",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "case_grid", "spotlight_stats", "cta"]
+}

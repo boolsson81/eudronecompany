@@ -1,0 +1,119 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "subcategories": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "LiDAR-drönare",
+            "text": "<p>Högupplöst 3D-kartläggning för mätning och lantmäteri.</p>",
+            "link_label": "Visa LiDAR",
+            "link": "/collections/inspektionsdronare"
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Termiska kameror",
+            "text": "<p>Värmeinspektion för bygg, energi och räddningstjänst.</p>",
+            "link_label": "Visa termiska kameror",
+            "link": "/collections/inspektionsdronare"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Mätverktyg & mjukvara",
+            "text": "<p>Mjukvara för flygplanering, molnbearbetning och rapporter.</p>",
+            "link_label": "Visa mjukvara",
+            "link": "/collections/inspektionsdronare"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Tillbehör",
+            "text": "<p>Batterier, cases och reservdelar för fältarbete.</p>",
+            "link_label": "Visa tillbehör",
+            "link": "/collections/inspektionsdronare"
+          }
+        }
+      },
+      "block_order": ["column-0", "column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "Handla efter kategori",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": false,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "gis_teaser": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Läs mer om GIS & kartläggning för din verksamhet", "heading_size": "h3" }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Till branschsidan",
+            "button_link": "/pages/gis-kartlaggning",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-edp",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["banner", "subcategories", "product-grid", "gis_teaser"]
+}

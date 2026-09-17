@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "availability_alert": {
+          "type": "availability_alert",
+          "settings": {
+            "icon": "shield-check",
+            "heading": "Anpassas efter er flotta",
+            "text": "Slutgiltigt pris baseras på offert och antal enheter."
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Vad ingår",
+            "icon": "box",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Utbildning & onboarding",
+            "icon": "chat_bubble",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Service & SLA",
+            "icon": "clipboard",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Leverans & installation",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Dela"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "availability_alert",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-edp",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "gallery_layout": "stacked",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "volume_pricing": {
+      "type": "edp-comparison-table",
+      "blocks": {
+        "row-count": { "type": "row", "settings": { "icon": "star", "label": "Antal drönare" } },
+        "row-discount": { "type": "row", "settings": { "icon": "check", "label": "Rabatt" } },
+        "col-1": { "type": "column", "settings": { "heading": "1–2", "values": "1–2\n—", "button_label": "", "button_link": "" } },
+        "col-2": { "type": "column", "settings": { "heading": "3–5", "values": "3–5\n5 %", "button_label": "", "button_link": "" } },
+        "col-3": { "type": "column", "settings": { "heading": "6+", "values": "6+\n12 %", "button_label": "", "button_link": "" } }
+      },
+      "block_order": ["row-count", "row-discount", "col-1", "col-2", "col-3"],
+      "settings": {
+        "heading": "Volymrabatt",
+        "text": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 24
+      }
+    },
+    "quote": {
+      "type": "enterprise-quote-form",
+      "settings": {
+        "title": "Begär offert för er flotta",
+        "intro": "Berätta om er flotta och önskat antal drönare, så återkommer vi med ett skräddarsytt förslag.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["main", "volume_pricing", "quote"]
+}

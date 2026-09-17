@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Fönster-, tak- & fasadtvätt",
+        "title": "Jämför våra system för fönster-, tak- och fasadtvätt",
+        "heading_size": "h1",
+        "text": "Tre kompletta system för professionell höjdrengöring utan ställning — jämför kapacitet och pris för att hitta rätt nivå för er verksamhet.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "comparison": {
+      "type": "edp-comparison-table",
+      "blocks": {
+        "row-type": { "type": "row", "settings": { "icon": "drop", "label": "Systemtyp" } },
+        "row-capacity": { "type": "row", "settings": { "icon": "check", "label": "Kapacitet" } },
+        "row-fit": { "type": "row", "settings": { "icon": "star", "label": "Passar bäst för" } },
+        "row-price": { "type": "row", "settings": { "icon": "shield-check", "label": "Pris från" } },
+        "col-wisson": {
+          "type": "column",
+          "settings": {
+            "heading": "Wisson Orion AP3-P3",
+            "values": "Fönster- & fasadtvätt\nPayload AP3-P3\nMindre & medelstora fastigheter\n~11 736 EUR",
+            "button_label": "Läs mer",
+            "button_link": "/pages/contact-quote"
+          }
+        },
+        "col-dronevolt": {
+          "type": "column",
+          "settings": {
+            "heading": "Drone Volt Hercules 20 HIGH-DRA",
+            "values": "Fasad & industriell rengöring\nHög kapacitet (HIGH-DRA)\nStora fasader & industrianläggningar\nfrån ~46 850 EUR",
+            "button_label": "Läs mer",
+            "button_link": "/pages/contact-quote"
+          }
+        },
+        "col-eauav": {
+          "type": "column",
+          "settings": {
+            "heading": "EAUAV Vertex C80/C80P + M400-kit",
+            "values": "Fasad- & takrengöring\nModulärt m. M400-kit\nFlexibel skalning efter behov\nOffert",
+            "button_label": "Läs mer",
+            "button_link": "/pages/contact-quote"
+          }
+        }
+      },
+      "block_order": ["row-type", "row-capacity", "row-fit", "row-price", "col-wisson", "col-dronevolt", "col-eauav"],
+      "settings": {
+        "heading": "Jämförelsetabell",
+        "text": "Priser exkl. moms, baserade på leverantörsunderlag — kontakta oss för aktuell offert och konfiguration.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "before_after": {
+      "type": "edp-image-comparison",
+      "settings": {
+        "heading": "Resultat i verkligheten",
+        "text": "Dra i reglaget för att se skillnaden före och efter en tvätt.",
+        "before_label": "Före",
+        "after_label": "Efter",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "quote": {
+      "type": "enterprise-quote-form",
+      "settings": {
+        "title": "Behöver du hjälp att räkna på ett objekt?",
+        "intro": "Berätta om byggnaden och ytan, så återkommer vi med upplägg, utrustning och offert.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behövs särskilt tillstånd för att flyga fasadtvätt-drönare?",
+            "icon": "clipboard",
+            "row_content": "<p>Ja, kommersiell flygning kräver operatörsregistrering och rätt behörighetsklass — vårt team hjälper er med ansökan.</p>",
+            "page": ""
+          }
+        },
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan systemen användas för både glas och fasadmaterial?",
+            "icon": "check_mark",
+            "row_content": "<p>Munstycken och vattentryck anpassas efter material — vi konfigurerar systemet utifrån er fastighets behov.</p>",
+            "page": ""
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ingår utbildning vid köp?",
+            "icon": "box",
+            "row_content": "<p>Ja, samtliga system levereras med grundläggande operatörsutbildning och driftsättning på plats.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["row-0", "row-1", "row-2"],
+      "settings": {
+        "caption": "",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-edp",
+        "color_scheme": "scheme-edp",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "comparison", "before_after", "quote", "faq"]
+}

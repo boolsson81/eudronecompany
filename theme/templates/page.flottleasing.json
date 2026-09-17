@@ -1,0 +1,151 @@
+{
+  "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Finansiering",
+        "title": "Leasa din flotta – utan stor investering",
+        "heading_size": "h1",
+        "text": "Bygg upp er drönarflotta med fast månadskostnad, inkluderad service och möjlighet att uppgradera i takt med att verksamheten växer.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "trust": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "item-0": { "type": "trust_item", "settings": { "text": "Flexibla avtal" } },
+        "item-1": { "type": "trust_item", "settings": { "text": "Service ingår" } },
+        "item-2": { "type": "trust_item", "settings": { "text": "Uppgraderingsbart" } },
+        "item-3": { "type": "trust_item", "settings": { "text": "Momsavdrag" } }
+      },
+      "block_order": ["item-0", "item-1", "item-2", "item-3"],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 24
+      }
+    },
+    "packages": {
+      "type": "edp-comparison-table",
+      "blocks": {
+        "row-term": { "type": "row", "settings": { "icon": "calendar", "label": "Bindningstid" } },
+        "row-service": { "type": "row", "settings": { "icon": "check", "label": "Service & underhåll" } },
+        "row-support": { "type": "row", "settings": { "icon": "star", "label": "Support" } },
+        "row-price": { "type": "row", "settings": { "icon": "shield-check", "label": "Pris/mån från" } },
+        "col-start": {
+          "type": "column",
+          "settings": {
+            "heading": "Start (1–2 drönare)",
+            "values": "12 mån\nGrundnivå\nE-post\n[Pris] kr",
+            "button_label": "Begär offert",
+            "button_link": "/pages/contact-quote"
+          }
+        },
+        "col-business": {
+          "type": "column",
+          "settings": {
+            "heading": "Business (3–5 drönare)",
+            "values": "24 mån\nIngår fullt ut\nE-post & telefon\n[Pris] kr",
+            "button_label": "Begär offert",
+            "button_link": "/pages/contact-quote"
+          }
+        },
+        "col-enterprise": {
+          "type": "column",
+          "settings": {
+            "heading": "Enterprise (6+ drönare)",
+            "values": "36 mån\nIngår fullt ut + SLA\nDedikerad kontaktperson\nOffert",
+            "button_label": "Begär offert",
+            "button_link": "/pages/contact-quote"
+          }
+        }
+      },
+      "block_order": ["row-term", "row-service", "row-support", "row-price", "col-start", "col-business", "col-enterprise"],
+      "settings": {
+        "heading": "Jämför våra leasingpaket",
+        "text": "Exakt pris fastställs i offert utifrån antal enheter och bindningstid.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "quote": {
+      "type": "enterprise-quote-form",
+      "settings": {
+        "title": "Få ett skräddarsytt förslag",
+        "intro": "Berätta om ert användningsområde och önskat antal drönare, så återkommer vi med ett finansieringsförslag.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad händer när bindningstiden går ut?",
+            "icon": "stopwatch",
+            "row_content": "<p>Ni kan förlänga avtalet, uppgradera till nyare utrustning eller lösa ut drönarna till restvärde.</p>",
+            "page": ""
+          }
+        },
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan vi uppgradera flottan under avtalstiden?",
+            "icon": "check_mark",
+            "row_content": "<p>Ja, Business- och Enterprise-paketen tillåter uppgradering vid behov mot justerad månadskostnad.</p>",
+            "page": ""
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ingår moms och kan leasingen dras av?",
+            "icon": "clipboard",
+            "row_content": "<p>Leasingkostnaden är normalt avdragsgill som driftskostnad — kontakta er redovisningsbyrå för rådgivning specifik för er verksamhet.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["row-0", "row-1", "row-2"],
+      "settings": {
+        "caption": "",
+        "heading": "Vanliga frågor om leasing",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-edp",
+        "color_scheme": "scheme-edp",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 24,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Prata med vårt säljteam",
+        "text": "Vi hjälper er att hitta rätt paket och finansieringsform för er verksamhet.",
+        "button_label_1": "Boka samtal",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "trust", "packages", "quote", "faq", "cta"]
+}

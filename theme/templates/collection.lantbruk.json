@@ -1,0 +1,118 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "trust_notice": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "item-0": { "type": "trust_item", "settings": { "text": "Godkänd för yrkesmässig sprutning" } },
+        "item-1": { "type": "trust_item", "settings": { "text": "Utbildning ingår vid köp av sprutdrönare" } },
+        "item-2": { "type": "trust_item", "settings": { "text": "Service & support i hela Norden" } }
+      },
+      "block_order": ["item-0", "item-1", "item-2"],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "subcategories": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Sprutdrönare",
+            "text": "<p>Storskalig precisionssprutning med hög kapacitet.</p>",
+            "link_label": "Visa sprutdrönare",
+            "link": "/collections/lantbruksdronare"
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Multispektrala kameror",
+            "text": "<p>Fältanalys och grödkartläggning i flera våglängder.</p>",
+            "link_label": "Visa kameror",
+            "link": "/collections/lantbruksdronare"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Tankar & munstycken",
+            "text": "<p>Reservdelar och tillbehör anpassade för sprutning.</p>",
+            "link_label": "Visa tillbehör",
+            "link": "/collections/lantbruksdronare"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Reservdelar",
+            "text": "<p>Propellrar, batterier och slitdelar för fältdrift.</p>",
+            "link_label": "Visa reservdelar",
+            "link": "/collections/lantbruksdronare"
+          }
+        }
+      },
+      "block_order": ["column-0", "column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "Handla efter kategori",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": false,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp att välja rätt konfiguration?",
+        "text": "Vårt enterprise-team hjälper dig matcha sprutdrönare, tank och munstycken mot ert fält och gröda.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["banner", "trust_notice", "subcategories", "product-grid", "cta"]
+}
