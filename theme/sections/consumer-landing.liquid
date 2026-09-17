@@ -64,16 +64,18 @@
           {%- endunless -%}
           <div class="consumer-landing__hero-actions">
             {%- if hero_block.settings.button_label_1 != blank -%}
+              {%- capture hero_url_1 -%}{% render 'edp-card-url', collection: hero_block.settings.collection_1, page: hero_block.settings.page_1, link: hero_block.settings.button_link_1 %}{%- endcapture -%}
               <a
-                href="{{ hero_block.settings.button_link_1 | default: '#' }}"
+                href="{{ hero_url_1 | strip | default: '#' }}"
                 class="consumer-landing__btn consumer-landing__btn--primary"
               >
                 {{ hero_block.settings.button_label_1 | escape }}
               </a>
             {%- endif -%}
             {%- if hero_block.settings.button_label_2 != blank -%}
+              {%- capture hero_url_2 -%}{% render 'edp-card-url', collection: hero_block.settings.collection_2, page: hero_block.settings.page_2, link: hero_block.settings.button_link_2 %}{%- endcapture -%}
               <a
-                href="{{ hero_block.settings.button_link_2 | default: '#' }}"
+                href="{{ hero_url_2 | strip | default: '#' }}"
                 class="consumer-landing__btn consumer-landing__btn--secondary"
               >
                 {{ hero_block.settings.button_label_2 | escape }}
@@ -153,7 +155,8 @@
                 <p class="consumer-landing__card-text">{{ block.settings.text | escape }}</p>
               {%- endunless -%}
               {%- if block.settings.link_label != blank -%}
-                <a class="consumer-landing__card-link" href="{{ block.settings.link | default: '#' }}">
+                {%- capture card_url -%}{% render 'edp-card-url', collection: block.settings.collection, page: block.settings.page, link: block.settings.link %}{%- endcapture -%}
+                <a class="consumer-landing__card-link" href="{{ card_url | strip | default: '#' }}">
                   {{ block.settings.link_label | escape }}
                 </a>
               {%- endif -%}
@@ -207,7 +210,8 @@
                 <p class="consumer-landing__card-text">{{ block.settings.text | escape }}</p>
               {%- endunless -%}
               {%- if block.settings.link_label != blank -%}
-                <a class="consumer-landing__card-link" href="{{ block.settings.link | default: '#' }}">
+                {%- capture card_url -%}{% render 'edp-card-url', collection: block.settings.collection, page: block.settings.page, link: block.settings.link %}{%- endcapture -%}
+                <a class="consumer-landing__card-link" href="{{ card_url | strip | default: '#' }}">
                   {{ block.settings.link_label | escape }}
                 </a>
               {%- endif -%}
@@ -255,16 +259,18 @@
         {%- endunless -%}
         <div class="consumer-landing__cta-actions">
           {%- if cta_block.settings.button_label_1 != blank -%}
+            {%- capture cta_url_1 -%}{% render 'edp-card-url', collection: cta_block.settings.collection_1, page: cta_block.settings.page_1, link: cta_block.settings.button_link_1 %}{%- endcapture -%}
             <a
-              href="{{ cta_block.settings.button_link_1 | default: '/collections/consumer-drones' }}"
+              href="{{ cta_url_1 | strip | default: '/collections/all' }}"
               class="consumer-landing__btn consumer-landing__btn--primary"
             >
               {{ cta_block.settings.button_label_1 | escape }}
             </a>
           {%- endif -%}
           {%- if cta_block.settings.button_label_2 != blank -%}
+            {%- capture cta_url_2 -%}{% render 'edp-card-url', collection: cta_block.settings.collection_2, page: cta_block.settings.page_2, link: cta_block.settings.button_link_2 %}{%- endcapture -%}
             <a
-              href="{{ cta_block.settings.button_link_2 | default: '/collections/all' }}"
+              href="{{ cta_url_2 | strip | default: '/collections/all' }}"
               class="consumer-landing__btn consumer-landing__btn--outline"
             >
               {{ cta_block.settings.button_label_2 | escape }}
@@ -363,6 +369,16 @@
           "default": "Handla drönare"
         },
         {
+          "type": "collection",
+          "id": "collection_1",
+          "label": "Länkad kollektion (knapp 1)"
+        },
+        {
+          "type": "page",
+          "id": "page_1",
+          "label": "Länkad sida (knapp 1, används om ingen kollektion är vald)"
+        },
+        {
           "type": "url",
           "id": "button_link_1",
           "label": "t:sections.consumer-landing.blocks.hero.settings.button_link_1.label"
@@ -372,6 +388,16 @@
           "id": "button_label_2",
           "label": "t:sections.consumer-landing.blocks.hero.settings.button_label_2.label",
           "default": "Se kom igång-paket"
+        },
+        {
+          "type": "collection",
+          "id": "collection_2",
+          "label": "Länkad kollektion (knapp 2)"
+        },
+        {
+          "type": "page",
+          "id": "page_2",
+          "label": "Länkad sida (knapp 2, används om ingen kollektion är vald)"
         },
         {
           "type": "url",
@@ -447,6 +473,16 @@
           "default": "Utforska"
         },
         {
+          "type": "collection",
+          "id": "collection",
+          "label": "Länkad kollektion"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Länkad sida (används om ingen kollektion är vald)"
+        },
+        {
           "type": "url",
           "id": "link",
           "label": "t:sections.consumer-landing.blocks.category.settings.link.label"
@@ -478,6 +514,16 @@
           "type": "text",
           "id": "link_label",
           "label": "t:sections.consumer-landing.blocks.feature.settings.link_label.label"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Länkad kollektion"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Länkad sida (används om ingen kollektion är vald)"
         },
         {
           "type": "url",
@@ -522,6 +568,16 @@
           "default": "Handla alla drönare"
         },
         {
+          "type": "collection",
+          "id": "collection_1",
+          "label": "Länkad kollektion (knapp 1)"
+        },
+        {
+          "type": "page",
+          "id": "page_1",
+          "label": "Länkad sida (knapp 1, används om ingen kollektion är vald)"
+        },
+        {
           "type": "url",
           "id": "button_link_1",
           "label": "t:sections.consumer-landing.blocks.cta.settings.button_link_1.label"
@@ -531,6 +587,16 @@
           "id": "button_label_2",
           "label": "t:sections.consumer-landing.blocks.cta.settings.button_label_2.label",
           "default": "Se tillbehör"
+        },
+        {
+          "type": "collection",
+          "id": "collection_2",
+          "label": "Länkad kollektion (knapp 2)"
+        },
+        {
+          "type": "page",
+          "id": "page_2",
+          "label": "Länkad sida (knapp 2, används om ingen kollektion är vald)"
         },
         {
           "type": "url",
@@ -551,9 +617,9 @@
             "title": "Drönare för foto, video och äventyr",
             "text": "Utforska DJI Mini, Air och Mavic — plus tillbehör, reservdelar och kom igång-paket för privat bruk.",
             "button_label_1": "Handla drönare",
-            "button_link_1": "/collections/consumer-drones",
+            "collection_1": "drones-with-camera",
             "button_label_2": "Se kom igång-paket",
-            "button_link_2": "/collections/starter-kits"
+            "button_link_2": "/collections/all"
           }
         },
         {
@@ -570,7 +636,7 @@
             "title": "Resa & vlog",
             "text": "Lätta och portabla drönare som DJI Mini och Flip — perfekta för resan.",
             "link_label": "Se Mini & Flip",
-            "link": "/collections/mini-flip"
+            "collection": "dji-flip-drones"
           }
         },
         {
@@ -579,7 +645,7 @@
             "title": "Foto & video",
             "text": "Högre bildkvalitet med DJI Air och Mavic för seriös foto och film.",
             "link_label": "Se Air & Mavic",
-            "link": "/collections/air-mavic"
+            "collection": "dji-mavic-series"
           }
         },
         {
@@ -588,7 +654,7 @@
             "title": "FPV & action",
             "text": "Immersiv flygning med FPV-glasögon och actionkameror.",
             "link_label": "Se FPV",
-            "link": "/collections/fpv"
+            "collection": "dji-avata-series"
           }
         },
         {
@@ -597,7 +663,7 @@
             "title": "Tillbehör & reservdelar",
             "text": "Batterier, propellrar, ND-filter, laddare och mer för din modell.",
             "link_label": "Se tillbehör",
-            "link": "/collections/accessories"
+            "collection": "drone-accessories"
           }
         },
         {
@@ -614,7 +680,7 @@
             "title": "Kom igång-paket",
             "text": "Kompletta paket med drönare, extra batteri och tillbehör — redo att flyga.",
             "link_label": "Se paket",
-            "link": "/collections/starter-kits"
+            "link": "/collections/all"
           }
         },
         {
@@ -623,7 +689,7 @@
             "title": "Drönarkort & utbildning",
             "text": "A1/A3+A2-certifiering och guider för att flyga lagligt och säkert i Sverige.",
             "link_label": "Utbildningar",
-            "link": "/pages/training"
+            "page": "training"
           }
         },
         {
@@ -632,7 +698,7 @@
             "title": "Support & garanti",
             "text": "DJI Care Refresh, reparation och svensk kundsupport när du behöver hjälp.",
             "link_label": "Support",
-            "link": "/pages/support"
+            "page": "support"
           }
         },
         {
@@ -660,9 +726,9 @@
             "title": "Redo att börja flyga?",
             "text": "Hitta rätt drönare, tillbehör och utbildning — allt på ett ställe.",
             "button_label_1": "Handla alla drönare",
-            "button_link_1": "/collections/consumer-drones",
+            "collection_1": "drones-with-camera",
             "button_label_2": "Se tillbehör",
-            "button_link_2": "/collections/accessories"
+            "collection_2": "drone-accessories"
           }
         }
       ]
