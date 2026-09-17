@@ -222,4 +222,7 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
   grid-area: product-image;
   object-fit: contain;
   font-family: 'object-fit: contain';
+  background-color: rgb(var(--color-background));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-radius: var(--media-radius);
 }
