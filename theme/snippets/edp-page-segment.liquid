@@ -1,7 +1,9 @@
 {%- liquid
   assign edp_resolved_segment = ''
 
-  if request.page_type == 'page'
+  if request.page_type == 'index'
+    assign edp_resolved_segment = 'enterprise'
+  elsif request.page_type == 'page'
     assign edp_page_suffix = page.template_suffix
     if edp_page_suffix == 'consumer'
       assign edp_resolved_segment = 'consumer'
