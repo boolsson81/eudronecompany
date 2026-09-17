@@ -354,6 +354,9 @@
     "collection_list": {
       "view_all": "View all"
     },
+    "main-list-collections": {
+      "no_groups": "Add a group and choose which collections to show in it."
+    },
     "collection_template": {
       "empty": "No products found",
       "title": "Collection",

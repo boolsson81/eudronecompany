@@ -2,9 +2,36 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "blocks": {
+        "group-1": {
+          "type": "group",
+          "settings": {
+            "heading": "Consumer Drones",
+            "collections": []
+          }
+        },
+        "group-2": {
+          "type": "group",
+          "settings": {
+            "heading": "Accessories",
+            "collections": []
+          }
+        },
+        "group-3": {
+          "type": "group",
+          "settings": {
+            "heading": "Spare Parts",
+            "collections": []
+          }
+        }
+      },
+      "block_order": [
+        "group-1",
+        "group-2",
+        "group-3"
+      ],
       "settings": {
         "title": "Collections",
-        "sort": "alphabetical",
         "image_ratio": "square"
       }
     }

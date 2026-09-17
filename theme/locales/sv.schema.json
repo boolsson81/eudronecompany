@@ -2637,27 +2637,6 @@
           "label": "Rubrik",
           "default": "Produktserier"
         },
-        "sort": {
-          "label": "Sortera produktserier",
-          "options__1": {
-            "label": "Alfabetiskt, A–Ö"
-          },
-          "options__2": {
-            "label": "Alfabetiskt, Ö–A"
-          },
-          "options__3": {
-            "label": "Datum, nytt till gammalt"
-          },
-          "options__4": {
-            "label": "Datum, gammalt till nytt"
-          },
-          "options__5": {
-            "label": "Produktantal, högt till lågt"
-          },
-          "options__6": {
-            "label": "Produktantal, lågt till högt"
-          }
-        },
         "image_ratio": {
           "label": "Bildförhållande",
           "options__1": {
@@ -2683,6 +2662,21 @@
           },
           "options__2": {
             "label": "2"
+          }
+        }
+      },
+      "blocks": {
+        "group": {
+          "name": "Grupp",
+          "settings": {
+            "heading": {
+              "label": "Rubrik för gruppen",
+              "default": "Ny grupp"
+            },
+            "collections": {
+              "label": "Produktserier i gruppen",
+              "info": "Välj vilka produktserier som ska visas i den här gruppen, och i vilken ordning."
+            }
           }
         }
       }
