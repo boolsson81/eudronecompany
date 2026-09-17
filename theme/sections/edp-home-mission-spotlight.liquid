@@ -1,5 +1,4 @@
 {{ 'edp-home.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'section-edp-home-mission-spotlight.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -13,9 +12,20 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {%- for block in section.blocks -%}
+    #MissionTab-{{ block.id }}:checked ~ .edp-home-mission__panels .edp-home-mission__feature[data-panel="{{ block.id }}"] {
+      display: grid;
+    }
+    #MissionTab-{{ block.id }}:checked ~ .edp-home-mission__pills label[for="MissionTab-{{ block.id }}"] {
+      background: rgb(var(--edp-accent, 0, 163, 224));
+      border-color: rgb(var(--edp-accent, 0, 163, 224));
+      color: #fff;
+    }
+  {%- endfor -%}
 {%- endstyle -%}
 
-<div class="edp-home-mission color-{{ section.settings.color_scheme }} gradient" data-mission-spotlight>
+<div class="edp-home-mission color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width section-{{ section.id }}-padding">
     {%- unless section.settings.heading == blank and section.settings.text == blank -%}
       <div class="edp-home-mission__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
@@ -29,70 +39,65 @@
     {%- endunless -%}
 
     {%- if section.blocks.size > 0 -%}
-      <div class="edp-home-mission__pills" role="tablist" aria-label="{{ section.settings.heading | default: 'Uppdragslösningar' | escape }}">
+      {%- for block in section.blocks -%}
+        <input
+          type="radio"
+          name="edp-home-mission-{{ section.id }}"
+          id="MissionTab-{{ block.id }}"
+          class="edp-tabs__radio"
+          {% if forloop.first %}checked{% endif %}
+        >
+      {%- endfor -%}
+
+      <div class="edp-home-mission__pills" role="tablist">
         {%- for block in section.blocks -%}
-          <button
-            type="button"
-            id="MissionTab-{{ section.id }}-{{ forloop.index0 }}"
-            class="edp-home-mission__pill"
-            role="tab"
-            aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-            aria-controls="MissionPanel-{{ section.id }}-{{ forloop.index0 }}"
-            tabindex="{% if forloop.first %}0{% else %}-1{% endif %}"
-            data-mission-tab
-            {{ block.shopify_attributes }}
-          >
+          <label for="MissionTab-{{ block.id }}" class="edp-home-mission__pill" {{ block.shopify_attributes }}>
             {{ block.settings.label | escape }}
-          </button>
+          </label>
         {%- endfor -%}
       </div>
 
-      {%- for block in section.blocks -%}
-        {%- liquid
-          assign panel_eyebrow = block.settings.feature_eyebrow | default: block.settings.label
-          assign panel_button_link = block.settings.feature_button_link | default: block.settings.link
-        -%}
-        {%- if block.settings.feature_title != blank or block.settings.feature_image != blank -%}
-          <div
-            id="MissionPanel-{{ section.id }}-{{ forloop.index0 }}"
-            class="edp-home-mission__feature"
-            role="tabpanel"
-            aria-labelledby="MissionTab-{{ section.id }}-{{ forloop.index0 }}"
-            {% unless forloop.first %}hidden{% endunless %}
-            data-mission-panel
-          >
-            <div class="edp-home-mission__feature-content">
-              {%- unless panel_eyebrow == blank -%}
-                <span class="edp-home-mission__feature-eyebrow">{{ panel_eyebrow | escape }}</span>
-              {%- endunless -%}
-              {%- unless block.settings.feature_title == blank -%}
-                <h3 class="edp-home-mission__feature-title">{{ block.settings.feature_title | escape }}</h3>
-              {%- endunless -%}
-              {%- unless block.settings.feature_text == blank -%}
-                <p class="edp-home-mission__feature-text">{{ block.settings.feature_text | escape }}</p>
-              {%- endunless -%}
-              {%- if block.settings.feature_button_label != blank -%}
-                <a href="{{ panel_button_link | default: '#' }}" class="button button--secondary">
-                  {{ block.settings.feature_button_label | escape }}
-                </a>
-              {%- endif -%}
+      <div class="edp-home-mission__panels">
+        {%- for block in section.blocks -%}
+          {%- liquid
+            assign panel_eyebrow = block.settings.feature_eyebrow | default: block.settings.label
+            assign panel_button_link = block.settings.feature_button_link | default: block.settings.link
+          -%}
+          {%- if block.settings.feature_title != blank or block.settings.feature_image != blank -%}
+            <div class="edp-home-mission__feature" data-panel="{{ block.id }}">
+              <div class="edp-home-mission__feature-content">
+                {%- unless panel_eyebrow == blank -%}
+                  <span class="edp-home-mission__feature-eyebrow">{{ panel_eyebrow | escape }}</span>
+                {%- endunless -%}
+                {%- unless block.settings.feature_title == blank -%}
+                  <h3 class="edp-home-mission__feature-title">{{ block.settings.feature_title | escape }}</h3>
+                {%- endunless -%}
+                {%- unless block.settings.feature_text == blank -%}
+                  <p class="edp-home-mission__feature-text">{{ block.settings.feature_text | escape }}</p>
+                {%- endunless -%}
+                {%- if block.settings.feature_button_label != blank -%}
+                  <a href="{{ panel_button_link | default: '#' }}" class="button button--secondary">
+                    {{ block.settings.feature_button_label | escape }}
+                  </a>
+                {%- endif -%}
+              </div>
+              <div class="edp-home-mission__feature-media">
+                {%- if block.settings.feature_image != blank -%}
+                  {{
+                    block.settings.feature_image
+                    | image_url: width: 900
+                    | image_tag:
+                      class: 'edp-home-mission__feature-image',
+                      loading: 'lazy',
+                      widths: '450, 650, 900',
+                      alt: block.settings.feature_image.alt | default: block.settings.feature_title
+                  }}
+                {%- endif -%}
+              </div>
             </div>
-            <div class="edp-home-mission__feature-media">
-              {%- if block.settings.feature_image != blank -%}
-                {{
-                  block.settings.feature_image
-                  | image_url: width: 900
-                  | image_tag:
-                    class: 'edp-home-mission__feature-image',
-                    loading: 'lazy',
-                    widths: '450, 650, 900',
-                    alt: block.settings.feature_image.alt | default: block.settings.feature_title
-                }}
-              {%- endif -%}
-            </div>
-          </div>
-        {%- endif -%}
-      {%- endfor -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
     {%- endif -%}
   </div>
 </div>

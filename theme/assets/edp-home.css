@@ -362,11 +362,9 @@
   border: 0.1rem solid rgba(var(--color-foreground), 0.22);
   border-radius: 999px;
   padding: 1rem 2rem;
-  font-family: inherit;
   font-size: 1.4rem;
   font-weight: 600;
   color: rgba(var(--color-foreground), 0.75);
-  background: transparent;
   text-decoration: none;
   cursor: pointer;
   transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
@@ -377,28 +375,13 @@
   color: rgb(var(--color-foreground));
 }
 
-.edp-home-mission__pill:focus-visible {
-  outline: 0.2rem solid rgb(var(--edp-accent, 0, 163, 224));
-  outline-offset: 0.2rem;
-}
-
-.edp-home-mission__pill[aria-selected='true'] {
-  border-color: rgb(var(--edp-accent, 0, 163, 224));
-  background: rgb(var(--edp-accent, 0, 163, 224));
-  color: rgb(var(--color-background));
-}
-
 .edp-home-mission__feature {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 1.6rem;
   overflow: hidden;
   background: rgba(var(--color-foreground), 0.03);
-}
-
-.edp-home-mission__feature[hidden] {
-  display: none;
 }
 
 @media screen and (min-width: 750px) {
