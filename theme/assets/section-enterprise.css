@@ -604,6 +604,14 @@
   margin-bottom: 1.6rem;
 }
 
+.edp-enterprise__quote-form .edp-enterprise__select-field .form__label {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: rgba(var(--color-foreground), 0.75);
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+
 .edp-enterprise__quote-form .edp-enterprise__field-row {
   display: grid;
   gap: 1.6rem;
