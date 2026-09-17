@@ -46,6 +46,12 @@
   }
 }
 
+@media screen and (min-width: 990px) {
+  .user-type-selector__grid--count-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .user-type-selector--premium.gradient {
   background: radial-gradient(ellipse 120% 80% at 50% -20%, #1a1a1a 0%, #000 55%);
   background-color: #000;
@@ -178,6 +184,18 @@
 }
 
 .user-type-selector--premium .user-type-card--enterprise .user-type-card__cta:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.55);
+  opacity: 1;
+}
+
+.user-type-selector--premium .user-type-card--competition .user-type-card__cta {
+  background: transparent;
+  border: 0.1rem solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+.user-type-selector--premium .user-type-card--competition .user-type-card__cta:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.55);
   opacity: 1;

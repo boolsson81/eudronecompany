@@ -594,6 +594,18 @@
       "quote": "Offertförfrågan",
       "support": "Support",
       "call_us": "Ring oss"
+    },
+    "countdown": {
+      "days": "Dagar",
+      "hours": "Timmar",
+      "minutes": "Minuter",
+      "seconds": "Sekunder"
+    },
+    "image_comparison": {
+      "slider_label": "Jämför bilder, före och efter"
+    },
+    "sticky_bar": {
+      "nav_label": "Snabbmeny"
     }
   }
 }

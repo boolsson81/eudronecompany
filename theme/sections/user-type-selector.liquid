@@ -128,12 +128,14 @@
       </div>
     {%- endif -%}
 
-    <ul class="user-type-selector__grid" role="list">
+    <ul class="user-type-selector__grid user-type-selector__grid--count-{{ section.blocks.size }}" role="list">
       {%- for block in section.blocks -%}
         {%- liquid
           assign card_modifier = 'user-type-card--consumer'
           if block.settings.card_type == 'enterprise'
             assign card_modifier = 'user-type-card--enterprise'
+          elsif block.settings.card_type == 'competition'
+            assign card_modifier = 'user-type-card--competition'
           endif
 
           assign card_title_alignment = block.settings.title_alignment
@@ -249,6 +251,10 @@
                 {%- if block.settings.card_type == 'enterprise' -%}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                     <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/>
+                  </svg>
+                {%- elsif block.settings.card_type == 'competition' -%}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M13 2L4.5 14h6l-1.5 8L18 10h-6l1-8z"/>
                   </svg>
                 {%- else -%}
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -455,7 +461,7 @@
     {
       "type": "card",
       "name": "t:sections.user-type-selector.blocks.card.name",
-      "limit": 2,
+      "limit": 3,
       "settings": [
         {
           "type": "select",
@@ -469,6 +475,10 @@
             {
               "value": "enterprise",
               "label": "t:sections.user-type-selector.blocks.card.settings.card_type.options__2.label"
+            },
+            {
+              "value": "competition",
+              "label": "t:sections.user-type-selector.blocks.card.settings.card_type.options__3.label"
             }
           ],
           "default": "consumer"
@@ -566,6 +576,20 @@
             "examples": "DJI Mini & Air-serien\nTillbehör & reservdelar\nKom igång-paket",
             "button_label": "Utforska konsument",
             "button_link": "/pages/consumer",
+            "title_alignment": "center",
+            "text_alignment": "center"
+          }
+        },
+        {
+          "type": "card",
+          "settings": {
+            "card_type": "competition",
+            "title": "Tävling & FPV",
+            "description": "Racingdrönare, FPV-utrustning och byggdelar för freestyle och tävling.",
+            "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
+            "button_label": "Utforska tävling & FPV",
+            "button_link": "/collections/tavling-fpv",
+            "use_bundled_transparent_image": false,
             "title_alignment": "center",
             "text_alignment": "center"
           }
