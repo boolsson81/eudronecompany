@@ -1,0 +1,122 @@
+{{ 'edp-home.css' | asset_url | stylesheet_tag }}
+
+{%- if section.blocks.size > 0 -%}
+  <nav class="edp-sticky-bar color-{{ section.settings.color_scheme }}" aria-label="{{ 'edp.sticky_bar.nav_label' | t }}">
+    {%- for block in section.blocks -%}
+      {%- liquid
+        assign href = '#'
+        assign icon = 'home'
+        case block.type
+          when 'home'
+            assign href = routes.root_url
+            assign icon = 'home'
+          when 'cart'
+            assign href = routes.cart_url
+            assign icon = 'cart'
+          when 'collection'
+            assign href = block.settings.collection.url | default: routes.all_products_collection_url
+            assign icon = block.settings.icon
+          when 'link'
+            assign href = block.settings.link | default: '#'
+            assign icon = block.settings.icon
+        endcase
+      -%}
+      <a href="{{ href }}" class="edp-sticky-bar__item" {{ block.shopify_attributes }}>
+        <span class="edp-sticky-bar__icon" aria-hidden="true">
+          {%- render 'edp-icon', icon: icon -%}
+          {%- if block.type == 'cart' and cart.item_count > 0 -%}
+            <span class="edp-sticky-bar__badge">{{ cart.item_count }}</span>
+          {%- endif -%}
+        </span>
+        <span class="edp-sticky-bar__label">{{ block.settings.label | escape }}</span>
+      </a>
+    {%- endfor -%}
+  </nav>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.edp-mobile-sticky-bar.name",
+  "tag": "section",
+  "class": "section",
+  "enabled_on": { "groups": ["footer"] },
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "home",
+      "name": "t:sections.edp-mobile-sticky-bar.blocks.home.name",
+      "settings": [
+        { "type": "text", "id": "label", "label": "t:sections.edp-mobile-sticky-bar.blocks.home.settings.label.label", "default": "Hem" }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "t:sections.edp-mobile-sticky-bar.blocks.collection.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:sections.edp-mobile-sticky-bar.blocks.collection.settings.icon.label",
+          "options": [
+            { "value": "compass", "label": "t:sections.edp-icon.options.compass" },
+            { "value": "building", "label": "t:sections.edp-icon.options.building" },
+            { "value": "lightning", "label": "t:sections.edp-icon.options.lightning" },
+            { "value": "drop", "label": "t:sections.edp-icon.options.drop" },
+            { "value": "star", "label": "t:sections.edp-icon.options.star" }
+          ],
+          "default": "compass"
+        },
+        { "type": "text", "id": "label", "label": "t:sections.edp-mobile-sticky-bar.blocks.collection.settings.label.label", "default": "Produkter" },
+        { "type": "collection", "id": "collection", "label": "t:sections.edp-mobile-sticky-bar.blocks.collection.settings.collection.label" }
+      ]
+    },
+    {
+      "type": "cart",
+      "name": "t:sections.edp-mobile-sticky-bar.blocks.cart.name",
+      "settings": [
+        { "type": "text", "id": "label", "label": "t:sections.edp-mobile-sticky-bar.blocks.cart.settings.label.label", "default": "Varukorg" }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "t:sections.edp-mobile-sticky-bar.blocks.link.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:sections.edp-mobile-sticky-bar.blocks.link.settings.icon.label",
+          "options": [
+            { "value": "phone", "label": "t:sections.edp-icon.options.phone" },
+            { "value": "bell", "label": "t:sections.edp-icon.options.bell" },
+            { "value": "shield-check", "label": "t:sections.edp-icon.options.shield-check" },
+            { "value": "building", "label": "t:sections.edp-icon.options.building" },
+            { "value": "star", "label": "t:sections.edp-icon.options.star" }
+          ],
+          "default": "phone"
+        },
+        { "type": "text", "id": "label", "label": "t:sections.edp-mobile-sticky-bar.blocks.link.settings.label.label", "default": "Kontakt" },
+        { "type": "url", "id": "link", "label": "t:sections.edp-mobile-sticky-bar.blocks.link.settings.link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.edp-mobile-sticky-bar.presets.name",
+      "blocks": [
+        { "type": "home" },
+        { "type": "collection", "settings": { "icon": "compass", "label": "Produkter" } },
+        { "type": "cart" },
+        { "type": "link", "settings": { "icon": "phone", "label": "Kontakt" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

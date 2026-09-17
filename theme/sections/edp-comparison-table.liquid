@@ -1,0 +1,177 @@
+{{ 'edp-home.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign row_blocks = section.blocks | where: 'type', 'row'
+  assign column_blocks = section.blocks | where: 'type', 'column'
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-comparison color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-comparison__header">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-comparison__heading h2">{{ section.settings.heading | escape }}</h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-comparison__text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if row_blocks.size > 0 and column_blocks.size > 0 -%}
+      <div class="edp-comparison__scroll">
+        <table class="edp-comparison__table">
+          <thead>
+            <tr>
+              <th class="edp-comparison__row-label" scope="col"></th>
+              {%- for column in column_blocks -%}
+                <th class="edp-comparison__col-head" scope="col" {{ column.shopify_attributes }}>
+                  {%- if column.settings.image != blank -%}
+                    <div class="edp-comparison__col-image">
+                      {{ column.settings.image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '100,150,200', alt: column.settings.heading }}
+                    </div>
+                  {%- endif -%}
+                  <span class="edp-comparison__col-title">{{ column.settings.heading | escape }}</span>
+                  {%- if column.settings.button_label != blank -%}
+                    <a href="{{ column.settings.button_link | default: '#' }}" class="button button--secondary edp-comparison__col-button">
+                      {{ column.settings.button_label | escape }}
+                    </a>
+                  {%- endif -%}
+                </th>
+              {%- endfor -%}
+            </tr>
+          </thead>
+          <tbody>
+            {%- for row in row_blocks -%}
+              {%- assign row_index = forloop.index0 -%}
+              <tr {{ row.shopify_attributes }}>
+                <th class="edp-comparison__row-label" scope="row">
+                  <span class="edp-comparison__row-icon" aria-hidden="true">{%- render 'edp-icon', icon: row.settings.icon -%}</span>
+                  {{ row.settings.label | escape }}
+                </th>
+                {%- for column in column_blocks -%}
+                  {%- assign values = column.settings.values | newline_to_br | split: '<br />' -%}
+                  {%- assign value = values[row_index] | strip -%}
+                  <td>{{ value | default: '—' }}</td>
+                {%- endfor -%}
+              </tr>
+            {%- endfor -%}
+          </tbody>
+        </table>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.edp-comparison-table.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "t:sections.edp-comparison-table.settings.heading.label",
+      "default": "Jämför alternativ"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:sections.edp-comparison-table.settings.text.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0, "max": 100, "step": 4, "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 48
+    }
+  ],
+  "blocks": [
+    {
+      "type": "row",
+      "name": "t:sections.edp-comparison-table.blocks.row.name",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:sections.edp-comparison-table.blocks.row.settings.icon.label",
+          "options": [
+            { "value": "truck", "label": "t:sections.edp-icon.options.truck" },
+            { "value": "calendar", "label": "t:sections.edp-icon.options.calendar" },
+            { "value": "bell", "label": "t:sections.edp-icon.options.bell" },
+            { "value": "shield-check", "label": "t:sections.edp-icon.options.shield-check" },
+            { "value": "check", "label": "t:sections.edp-icon.options.check" },
+            { "value": "star", "label": "t:sections.edp-icon.options.star" },
+            { "value": "leaf", "label": "t:sections.edp-icon.options.leaf" },
+            { "value": "drop", "label": "t:sections.edp-icon.options.drop" },
+            { "value": "building", "label": "t:sections.edp-icon.options.building" },
+            { "value": "lightning", "label": "t:sections.edp-icon.options.lightning" }
+          ],
+          "default": "check"
+        },
+        { "type": "text", "id": "label", "label": "t:sections.edp-comparison-table.blocks.row.settings.label.label", "default": "Egenskap" }
+      ]
+    },
+    {
+      "type": "column",
+      "name": "t:sections.edp-comparison-table.blocks.column.name",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "t:sections.edp-comparison-table.blocks.column.settings.image.label" },
+        { "type": "text", "id": "heading", "label": "t:sections.edp-comparison-table.blocks.column.settings.heading.label", "default": "Alternativ" },
+        {
+          "type": "textarea",
+          "id": "values",
+          "label": "t:sections.edp-comparison-table.blocks.column.settings.values.label",
+          "info": "t:sections.edp-comparison-table.blocks.column.settings.values.info"
+        },
+        { "type": "text", "id": "button_label", "label": "t:sections.edp-comparison-table.blocks.column.settings.button_label.label" },
+        { "type": "url", "id": "button_link", "label": "t:sections.edp-comparison-table.blocks.column.settings.button_link.label" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.edp-comparison-table.presets.name",
+      "blocks": [
+        { "type": "row", "settings": { "icon": "drop", "label": "Trycktyp" } },
+        { "type": "row", "settings": { "icon": "building", "label": "Användningsområde" } },
+        { "type": "row", "settings": { "icon": "check", "label": "Prisnivå" } },
+        { "type": "column", "settings": { "heading": "Wisson (payload)", "values": "13 MPa\nFasad, punktinsats\nFrån ca 12 000 EUR" } },
+        { "type": "column", "settings": { "heading": "Drone Volt (system)", "values": "250 bar / 10 bar (soft wash)\nFasad & tak, komplett system\nFrån ca 47 000 EUR" } },
+        { "type": "column", "settings": { "heading": "EAUAV", "values": "200 bar\nFasad & tak\nEj publikt pris" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
