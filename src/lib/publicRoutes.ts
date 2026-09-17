@@ -27,6 +27,7 @@ export function getPublicRoutes(): string[] {
 
     `${base}/produkter`,
     ...ENTERPRISE_DRONE_PRODUCTS.map((p) => `${base}/produkter/${p.slug}`),
+    `${base}/dji-enterprise`,
 
     `${base}/paket`,
     ...ENTERPRISE_PACKAGES.map((p) => `${base}/paket/${p.slug}`),
