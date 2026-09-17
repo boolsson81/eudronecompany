@@ -25,7 +25,7 @@
             "title": "Byggbolag AB (exempel)",
             "text": "Exempel: 40 % snabbare fasad- och takbesiktning.",
             "link_label": "Läs mer om bygg & anläggning",
-            "link": "/pages/bygg-anlaggning"
+            "page": "bygg-anlaggning"
           }
         },
         "case-energi": {
@@ -34,7 +34,7 @@
             "title": "Energikoncern AB (exempel)",
             "text": "Exempel: Halverad inspektionstid för vindkraftverk.",
             "link_label": "Läs mer om energi & telekom",
-            "link": "/pages/energi-infrastruktur"
+            "page": "energi-infrastruktur"
           }
         },
         "case-raddning": {
@@ -43,7 +43,7 @@
             "title": "Räddningstjänst [Region] (exempel)",
             "text": "Exempel: Snabbare lägesbild vid skogsbrand.",
             "link_label": "Läs mer om räddningstjänst",
-            "link": "/pages/raddningstjanst"
+            "page": "raddningstjanst"
           }
         },
         "case-lantbruk": {
@@ -52,7 +52,7 @@
             "title": "Lantbrukskoncern AB (exempel)",
             "text": "Exempel: 18 % lägre kemikalieåtgång vid sprutning.",
             "link_label": "Läs mer om lantbruk",
-            "link": "/pages/jordbruk"
+            "page": "jordbruk"
           }
         }
       },

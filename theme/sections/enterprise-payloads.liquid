@@ -56,7 +56,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -219,6 +220,8 @@
           ],
           "default": ""
         },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-payloads.blocks.payload.settings.link.label" }
       ]
     }
@@ -227,13 +230,13 @@
     {
       "name": "t:sections.enterprise-payloads.presets.name",
       "blocks": [
-        { "type": "payload", "settings": { "display_style": "compact", "series_icon": "camera", "title": "DJI Zenmuse H30T", "text": "Hybrid multisensor med termisk kamera, 34× optisk zoom och laseravståndsmätare.", "link_label": "Se H30T", "link": "/collections/zenmuse-h30" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse H30", "text": "Hybrid multisensor med 34× optisk zoom och laseravståndsmätare.", "link_label": "Se H30", "link": "/collections/zenmuse-h30" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse L2", "text": "Högupplöst LiDAR för kartläggning, volymberäkning och skogsinventering.", "link_label": "Se L2", "link": "/collections/zenmuse-l2" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse L3", "text": "LiDAR-sensor för precisionkartläggning och 3D-modellering.", "link_label": "Se L3", "link": "/collections/enterprise-sensors" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse P1", "text": "Fullformat fotogrammetri-kamera för precisionsmätning och 3D-modellering.", "link_label": "Se P1", "link": "/collections/zenmuse-p1" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse V1", "text": "Röstförstärkare och kommunikationspayload för räddning och säkerhet.", "link_label": "Se V1", "link": "/collections/enterprise-sensors" } },
-        { "type": "payload", "settings": { "title": "DJI Zenmuse S1", "text": "Sökljus-payload med 10 000 lumen och 500 m räckvidd för nattinsatser.", "link_label": "Se S1", "link": "/collections/enterprise-sensors" } }
+        { "type": "payload", "settings": { "display_style": "compact", "series_icon": "camera", "title": "DJI Zenmuse H30T", "text": "Hybrid multisensor med termisk kamera, 34× optisk zoom och laseravståndsmätare.", "link_label": "Se H30T", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse H30", "text": "Hybrid multisensor med 34× optisk zoom och laseravståndsmätare.", "link_label": "Se H30", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse L2", "text": "Högupplöst LiDAR för kartläggning, volymberäkning och skogsinventering.", "link_label": "Se L2", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse L3", "text": "LiDAR-sensor för precisionkartläggning och 3D-modellering.", "link_label": "Se L3", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse P1", "text": "Fullformat fotogrammetri-kamera för precisionsmätning och 3D-modellering.", "link_label": "Se P1", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse V1", "text": "Röstförstärkare och kommunikationspayload för räddning och säkerhet.", "link_label": "Se V1", "collection": "enterprise-sensors" } },
+        { "type": "payload", "settings": { "title": "DJI Zenmuse S1", "text": "Sökljus-payload med 10 000 lumen och 500 m räckvidd för nattinsatser.", "link_label": "Se S1", "collection": "enterprise-sensors" } }
       ]
     }
   ]

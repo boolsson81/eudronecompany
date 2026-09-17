@@ -49,7 +49,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -120,6 +121,8 @@
         { "type": "text", "id": "title", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.title.label", "default": "DJI Matrice" },
         { "type": "textarea", "id": "text", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.text.label", "default": "Dock-kompatibel enterprise-drönare." },
         { "type": "text", "id": "link_label", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.link_label.label", "default": "Se modellen" },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-dock-models.blocks.dock_model.settings.link.label" }
       ]
     }
@@ -128,10 +131,10 @@
     {
       "name": "t:sections.enterprise-dock-models.presets.name",
       "blocks": [
-        { "type": "dock_model", "settings": { "title": "DJI Matrice 4D", "text": "Dock-kompatibel Matrice 4-plattform för autonom inspektion och kartläggning.", "link_label": "Se Matrice 4D", "link": "/collections/matrice-4" } },
-        { "type": "dock_model", "settings": { "title": "DJI Matrice 4TD", "text": "Termisk dock-kompatibel modell för inspektion, räddning och säkerhet.", "link_label": "Se Matrice 4TD", "link": "/collections/matrice-4" } },
-        { "type": "dock_model", "settings": { "title": "DJI Matrice 3D", "text": "Kompakt dock-kompatibel drönare för autonom drift med DJI Dock 2.", "link_label": "Se Matrice 3D", "link": "/collections/dji-dock" } },
-        { "type": "dock_model", "settings": { "title": "DJI Matrice 3TD", "text": "Termisk dock-kompatibel modell baserad på Matrice 30-plattformen.", "link_label": "Se Matrice 3TD", "link": "/collections/dji-dock" } }
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 4D", "text": "Dock-kompatibel Matrice 4-plattform för autonom inspektion och kartläggning.", "link_label": "Se Matrice 4D", "collection": "dji-matrice-series" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 4TD", "text": "Termisk dock-kompatibel modell för inspektion, räddning och säkerhet.", "link_label": "Se Matrice 4TD", "collection": "dji-matrice-series" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 3D", "text": "Kompakt dock-kompatibel drönare för autonom drift med DJI Dock 2.", "link_label": "Se Matrice 3D", "collection": "dji-matrice-3d" } },
+        { "type": "dock_model", "settings": { "title": "DJI Matrice 3TD", "text": "Termisk dock-kompatibel modell baserad på Matrice 30-plattformen.", "link_label": "Se Matrice 3TD", "collection": "dji-matrice-3td" } }
       ]
     }
   ]

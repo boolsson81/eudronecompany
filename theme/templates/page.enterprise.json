@@ -125,7 +125,7 @@
             "title": "DJI Mavic 3 Enterprise/Thermal",
             "text": "Lättvikts enterprise med termisk kamera, RTK och 45 min flygtid — smidigt format för fältarbete.",
             "link_label": "Se Mavic 3 Enterprise",
-            "link": "/collections/dji-mavic-3-enterprise"
+            "collection": "dji-mavic-3-enterprise"
           }
         },
         "platform_2": {
@@ -134,7 +134,7 @@
             "title": "DJI FlyCart 30",
             "text": "Lastdrönare för transport och logistik — upp till 30 kg nyttolast.",
             "link_label": "Se FlyCart 30",
-            "link": "/collections/dji-flycart-series"
+            "collection": "dji-flycart-series"
           }
         },
         "platform_3": {
@@ -143,7 +143,7 @@
             "title": "DJI Agras T-serien",
             "text": "Precisionsspruta för jordbruk med stora tankar och centimeterprecision.",
             "link_label": "Se Agras T-serien",
-            "link": "/collections/dji-agras-drones"
+            "collection": "dji-agras-drones"
           }
         }
       },
@@ -165,7 +165,7 @@
             "title": "DJI Matrice 400",
             "text": "DJI:s nuvarande flaggskeppsplattform för tunga sensorer, LiDAR och avancerade inspektionsuppdrag. Upp till 6 kg nyttolast.",
             "link_label": "Se Matrice 400",
-            "link": "/collections/matrice-400"
+            "collection": "dji-matrice-400-series"
           }
         },
         "model_2": {
@@ -174,7 +174,7 @@
             "title": "DJI Matrice 350 RTK",
             "text": "Robust arbetsplattform för Zenmuse H30, L2, P1 m.fl.",
             "link_label": "Se Matrice 350 RTK",
-            "link": "/collections/dji-matrice-series"
+            "collection": "dji-matrice-series"
           }
         },
         "model_3": {
@@ -183,7 +183,7 @@
             "title": "DJI Matrice 30",
             "text": "Kompakt inspektionsdrönare.",
             "link_label": "Se Matrice 30",
-            "link": "/collections/dji-matrice-series"
+            "collection": "dji-matrice-series"
           }
         },
         "model_4": {
@@ -192,7 +192,7 @@
             "title": "DJI Matrice 30T",
             "text": "Termisk version av M30.",
             "link_label": "Se Matrice 30T",
-            "link": "/collections/dji-matrice-series"
+            "collection": "dji-matrice-series"
           }
         },
         "model_5": {
@@ -201,7 +201,7 @@
             "title": "DJI Matrice 4E",
             "text": "Mätning, kartläggning och GIS.",
             "link_label": "Se Matrice 4E",
-            "link": "/collections/matrice-4"
+            "collection": "dji-matrice-series"
           }
         },
         "model_6": {
@@ -210,7 +210,7 @@
             "title": "DJI Matrice 4T",
             "text": "Termisk modell för inspektion, räddningstjänst och säkerhet.",
             "link_label": "Se Matrice 4T",
-            "link": "/collections/matrice-4"
+            "collection": "dji-matrice-series"
           }
         }
       },
@@ -232,7 +232,7 @@
             "title": "DJI Dock",
             "text": "Automatiserad drönarhangare för obemannade operationer och schemalagda flygningar.",
             "link_label": "Se Dock",
-            "link": "/collections/dji-dock"
+            "collection": "enterprise-drones"
           }
         },
         "dock_2": {
@@ -241,7 +241,7 @@
             "title": "DJI Dock 2",
             "text": "Kompakt, väderskyddad dockningsstation med automatisk laddning och start.",
             "link_label": "Se Dock 2",
-            "link": "/collections/dji-dock"
+            "collection": "dji-dock-2"
           }
         },
         "dock_3": {
@@ -250,7 +250,7 @@
             "title": "DJI Dock 3",
             "text": "Nästa generations drönare-i-box för autonom drift dygnet runt.",
             "link_label": "Se Dock 3",
-            "link": "/collections/dji-dock"
+            "collection": "dji-dock-3"
           }
         }
       },
@@ -272,7 +272,7 @@
             "title": "DJI Matrice 4D",
             "text": "Dock-kompatibel Matrice 4-plattform för autonom inspektion och kartläggning.",
             "link_label": "Se Matrice 4D",
-            "link": "/collections/matrice-4"
+            "collection": "dji-matrice-series"
           }
         },
         "dock_model_2": {
@@ -281,7 +281,7 @@
             "title": "DJI Matrice 4TD",
             "text": "Termisk dock-kompatibel modell för inspektion, räddning och säkerhet.",
             "link_label": "Se Matrice 4TD",
-            "link": "/collections/matrice-4"
+            "collection": "dji-matrice-series"
           }
         },
         "dock_model_3": {
@@ -290,7 +290,7 @@
             "title": "DJI Matrice 3D",
             "text": "Kompakt dock-kompatibel drönare för autonom drift med DJI Dock 2.",
             "link_label": "Se Matrice 3D",
-            "link": "/collections/dji-dock"
+            "collection": "dji-matrice-3d"
           }
         },
         "dock_model_4": {
@@ -299,7 +299,7 @@
             "title": "DJI Matrice 3TD",
             "text": "Termisk dock-kompatibel modell baserad på Matrice 30-plattformen.",
             "link_label": "Se Matrice 3TD",
-            "link": "/collections/dji-dock"
+            "collection": "dji-matrice-3td"
           }
         }
       },
@@ -321,7 +321,7 @@
             "title": "Enterprise-drönare",
             "text": "Matrice-serien och professionella flygplattformar.",
             "link_label": "Se drönare",
-            "link": "/collections/enterprise-drones"
+            "collection": "enterprise-drones"
           }
         },
         "product_2": {
@@ -330,7 +330,7 @@
             "title": "Färdiga paket",
             "text": "Kompletta lösningar med drönare, tillbehör och mjukvara.",
             "link_label": "Se paket",
-            "link": "/collections/enterprise-packages"
+            "page": "bygg-ditt-system"
           }
         },
         "product_3": {
@@ -339,7 +339,7 @@
             "title": "Tillbehör & reservdelar",
             "text": "Batterier, propellrar och originaldelar för enterprise-flottan.",
             "link_label": "Se tillbehör",
-            "link": "/collections/enterprise-accessories"
+            "collection": "enterprise-accessories"
           }
         },
         "product_4": {
@@ -348,7 +348,7 @@
             "title": "Företagscase & referenser",
             "text": "Se hur andra verksamheter löser sina uppdrag med drönare.",
             "link_label": "Se exempel",
-            "link": "/pages/foretagscase"
+            "page": "foretagscase"
           }
         },
         "product_5": {
@@ -357,7 +357,7 @@
             "title": "Flottleasing & finansiering",
             "text": "Bygg upp er flotta med fast månadskostnad och inkluderad service.",
             "link_label": "Läs mer om leasing",
-            "link": "/pages/flottleasing"
+            "page": "flottleasing"
           }
         }
       },
@@ -381,7 +381,7 @@
             "title": "DJI Zenmuse H30T",
             "text": "Hybrid multisensor med termisk kamera, 34× optisk zoom och laseravståndsmätare.",
             "link_label": "Se H30T",
-            "link": "/collections/zenmuse-h30"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_2": {
@@ -392,7 +392,7 @@
             "title": "DJI Zenmuse H30",
             "text": "Hybrid multisensor med 34× optisk zoom och laseravståndsmätare.",
             "link_label": "Se H30",
-            "link": "/collections/zenmuse-h30"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_3": {
@@ -403,7 +403,7 @@
             "title": "DJI Zenmuse L2",
             "text": "Högupplöst LiDAR för kartläggning, volymberäkning och skogsinventering.",
             "link_label": "Se L2",
-            "link": "/collections/zenmuse-l2"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_4": {
@@ -412,7 +412,7 @@
             "title": "DJI Zenmuse L3",
             "text": "LiDAR-sensor för precisionkartläggning och 3D-modellering.",
             "link_label": "Se L3",
-            "link": "/collections/enterprise-sensors"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_5": {
@@ -423,7 +423,7 @@
             "title": "DJI Zenmuse P1",
             "text": "Fullformat fotogrammetri-kamera för precisionsmätning och 3D-modellering.",
             "link_label": "Se P1",
-            "link": "/collections/zenmuse-p1"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_6": {
@@ -432,7 +432,7 @@
             "title": "DJI Zenmuse V1",
             "text": "Röstförstärkare och kommunikationspayload för räddning och säkerhet.",
             "link_label": "Se V1",
-            "link": "/collections/enterprise-sensors"
+            "collection": "enterprise-sensors"
           }
         },
         "payload_7": {
@@ -441,7 +441,7 @@
             "title": "DJI Zenmuse S1",
             "text": "Sökljus-payload med 10 000 lumen och 500 m räckvidd för nattinsatser.",
             "link_label": "Se S1",
-            "link": "/collections/enterprise-sensors"
+            "collection": "enterprise-sensors"
           }
         }
       },

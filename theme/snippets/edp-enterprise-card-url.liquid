@@ -1,0 +1,12 @@
+{%- comment -%}
+  Resolves a card's link from a dynamic reference instead of a hardcoded URL string.
+  Priority: collection reference > page reference > manual fallback URL.
+  Usage: {% render 'edp-enterprise-card-url', block: block %} -> outputs the URL, or nothing.
+{%- endcomment -%}
+{%- if block.settings.collection != blank -%}
+  {{ block.settings.collection.url }}
+{%- elsif block.settings.page != blank -%}
+  {{ block.settings.page.url }}
+{%- elsif block.settings.link != blank -%}
+  {{ block.settings.link }}
+{%- endif -%}

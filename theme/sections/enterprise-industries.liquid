@@ -53,7 +53,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -194,6 +195,8 @@
           ],
           "default": ""
         },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-industries.blocks.industry.settings.link.label" }
       ]
     }
@@ -202,12 +205,12 @@
     {
       "name": "t:sections.enterprise-industries.presets.name",
       "blocks": [
-        { "type": "industry", "settings": { "title": "Energi & Infrastruktur", "text": "Inspektion av kraftledningar, vindkraft och anläggningar.", "link_label": "Läs mer", "link": "/pages/energi-infrastruktur" } },
-        { "type": "industry", "settings": { "title": "Kartläggning & GIS", "text": "Geodata, mätning och GIS-arbetsflöden med UAV.", "link_label": "Läs mer", "link": "/pages/gis-kartlaggning" } },
-        { "type": "industry", "settings": { "title": "Räddningstjänst", "text": "Sök- och räddningsinsatser samt krisledning.", "link_label": "Läs mer", "link": "/pages/raddningstjanst" } },
-        { "type": "industry", "settings": { "title": "Skogsbruk", "text": "Inventering och skogsvård med UAV och LiDAR.", "link_label": "Läs mer", "link": "/pages/skogsbruk" } },
-        { "type": "industry", "settings": { "title": "Bygg & Anläggning", "text": "Övervakning av byggarbetsplatser och dokumentation.", "link_label": "Läs mer", "link": "/pages/bygg-anlaggning" } },
-        { "type": "industry", "settings": { "title": "Jordbruk", "text": "Precisionsspridning, grödansalys och fältövervakning.", "link_label": "Läs mer", "link": "/pages/jordbruk" } }
+        { "type": "industry", "settings": { "title": "Energi & Infrastruktur", "text": "Inspektion av kraftledningar, vindkraft och anläggningar.", "link_label": "Läs mer", "page": "energi-infrastruktur" } },
+        { "type": "industry", "settings": { "title": "Kartläggning & GIS", "text": "Geodata, mätning och GIS-arbetsflöden med UAV.", "link_label": "Läs mer", "page": "gis-kartlaggning" } },
+        { "type": "industry", "settings": { "title": "Räddningstjänst", "text": "Sök- och räddningsinsatser samt krisledning.", "link_label": "Läs mer", "page": "raddningstjanst" } },
+        { "type": "industry", "settings": { "title": "Skogsbruk", "text": "Inventering och skogsvård med UAV och LiDAR.", "link_label": "Läs mer", "page": "skogsbruk" } },
+        { "type": "industry", "settings": { "title": "Bygg & Anläggning", "text": "Övervakning av byggarbetsplatser och dokumentation.", "link_label": "Läs mer", "page": "bygg-anlaggning" } },
+        { "type": "industry", "settings": { "title": "Jordbruk", "text": "Precisionsspridning, grödansalys och fältövervakning.", "link_label": "Läs mer", "page": "jordbruk" } }
       ]
     }
   ]

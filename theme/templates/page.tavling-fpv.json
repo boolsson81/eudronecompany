@@ -8,7 +8,7 @@
         "heading_size": "h1",
         "text": "Ramar, motorer, ESC:er, FPV-kameror och batterier – allt du behöver för att bygga eller uppgradera din freestyle- eller tävlingsdrönare. Fri frakt inom EU över 1000 kr.",
         "button_label_1": "Se sortimentet",
-        "button_link_1": "/collections/tavling-fpv",
+        "button_link_1": "/collections/all",
         "button_label_2": "Prata med vårt race-team",
         "button_link_2": "/pages/contact-quote",
         "color_scheme": "scheme-edp",
@@ -25,7 +25,7 @@
             "title": "Ramar",
             "text": "5\" & 7\" freestyle- och racingramar.",
             "link_label": "Visa kategori",
-            "link": "/collections/tavling-fpv-ramar"
+            "collection": "all"
           }
         },
         "motors": {
@@ -34,7 +34,7 @@
             "title": "Motorer",
             "text": "1404–2306 med olika KV-värden.",
             "link_label": "Visa kategori",
-            "link": "/collections/tavling-fpv-motorer"
+            "collection": "all"
           }
         },
         "esc": {
@@ -43,7 +43,7 @@
             "title": "ESC:er",
             "text": "4-i-1 med BLHeli och AM32.",
             "link_label": "Visa kategori",
-            "link": "/collections/tavling-fpv-esc"
+            "collection": "all"
           }
         },
         "cameras": {
@@ -52,7 +52,7 @@
             "title": "FPV-kameror",
             "text": "Analogt och digitalt HD.",
             "link_label": "Visa kategori",
-            "link": "/collections/tavling-fpv-kameror"
+            "collection": "all"
           }
         },
         "batteries": {
@@ -61,7 +61,7 @@
             "title": "Batterier",
             "text": "LiPo/LiHV, 4S–6S.",
             "link_label": "Visa kategori",
-            "link": "/collections/tavling-fpv-batterier"
+            "collection": "all"
           }
         }
       },

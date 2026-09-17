@@ -49,7 +49,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -120,6 +121,8 @@
         { "type": "text", "id": "title", "label": "t:sections.enterprise-docks.blocks.dock.settings.title.label", "default": "DJI Dock" },
         { "type": "textarea", "id": "text", "label": "t:sections.enterprise-docks.blocks.dock.settings.text.label", "default": "Automatiserad drönarhangare för obemannade operationer." },
         { "type": "text", "id": "link_label", "label": "t:sections.enterprise-docks.blocks.dock.settings.link_label.label", "default": "Se Dock" },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-docks.blocks.dock.settings.link.label" }
       ]
     }
@@ -128,9 +131,9 @@
     {
       "name": "t:sections.enterprise-docks.presets.name",
       "blocks": [
-        { "type": "dock", "settings": { "title": "DJI Dock", "text": "Automatiserad drönarhangare för obemannade operationer och schemalagda flygningar.", "link_label": "Se Dock", "link": "/collections/dji-dock" } },
-        { "type": "dock", "settings": { "title": "DJI Dock 2", "text": "Kompakt, väderskyddad dockningsstation med automatisk laddning och start.", "link_label": "Se Dock 2", "link": "/collections/dji-dock" } },
-        { "type": "dock", "settings": { "title": "DJI Dock 3", "text": "Nästa generations drönare-i-box för autonom drift dygnet runt.", "link_label": "Se Dock 3", "link": "/collections/dji-dock" } }
+        { "type": "dock", "settings": { "title": "DJI Dock", "text": "Automatiserad drönarhangare för obemannade operationer och schemalagda flygningar.", "link_label": "Se Dock", "collection": "enterprise-drones" } },
+        { "type": "dock", "settings": { "title": "DJI Dock 2", "text": "Kompakt, väderskyddad dockningsstation med automatisk laddning och start.", "link_label": "Se Dock 2", "collection": "dji-dock-2" } },
+        { "type": "dock", "settings": { "title": "DJI Dock 3", "text": "Nästa generations drönare-i-box för autonom drift dygnet runt.", "link_label": "Se Dock 3", "collection": "dji-dock-3" } }
       ]
     }
   ]

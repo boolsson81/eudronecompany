@@ -44,7 +44,7 @@
             "description": "Racingdrönare, FPV-utrustning och byggdelar för freestyle och tävling.",
             "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
             "button_label": "Utforska tävling & FPV",
-            "button_link": "/collections/tavling-fpv",
+            "button_link": "/collections/all",
             "title_alignment": "center",
             "text_alignment": "center"
           }
@@ -106,7 +106,7 @@
             "title": "Kamera- & prosumerdrönare",
             "text": "Foto, film & kreativ produktion",
             "link_label": "Utforska",
-            "link": "/collections/drones-with-camera"
+            "collection": "drones-with-camera"
           }
         },
         "cat_agri": {
@@ -115,7 +115,7 @@
             "title": "Lantbruk & sprutdrönare",
             "text": "Precisionsjordbruk i stor skala",
             "link_label": "Utforska",
-            "link": "/collections/agriculture-drones"
+            "collection": "agriculture-drones"
           }
         },
         "cat_inspection": {
@@ -124,7 +124,7 @@
             "title": "Inspektion & kartläggning",
             "text": "Mätning, LiDAR & besiktning",
             "link_label": "Utforska",
-            "link": "/collections/inspection-drones"
+            "collection": "inspection-drones"
           }
         },
         "cat_wash": {
@@ -133,7 +133,7 @@
             "title": "Fönster-, tak- & fasadtvätt",
             "text": "Rengöring på höjd utan ställning",
             "link_label": "Läs mer",
-            "link": "/pages/fasadtvatt-dronare"
+            "page": "fasadtvatt-dronare"
           }
         },
         "cat_payload": {
@@ -142,7 +142,7 @@
             "title": "Payload & sensorer",
             "text": "Termisk, zoom & multispektral",
             "link_label": "Utforska",
-            "link": "/collections/enterprise-sensors"
+            "collection": "enterprise-sensors"
           }
         }
       },

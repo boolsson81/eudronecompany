@@ -49,7 +49,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -190,6 +191,8 @@
           ],
           "default": ""
         },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-products.blocks.product.settings.link.label" }
       ]
     }
@@ -198,9 +201,9 @@
     {
       "name": "t:sections.enterprise-products.presets.name",
       "blocks": [
-        { "type": "product", "settings": { "title": "Enterprise-drönare", "text": "Matrice-serien och professionella flygplattformar för industri och offentlig sektor.", "link_label": "Se drönare", "link": "/collections/enterprise-drones" } },
-        { "type": "product", "settings": { "title": "Färdiga paket", "text": "Kompletta lösningar med drönare, tillbehör och mjukvara — redo för fält.", "link_label": "Se paket", "link": "/collections/enterprise-packages" } },
-        { "type": "product", "settings": { "title": "Tillbehör & reservdelar", "text": "Batterier, propellrar, laddare och originaldelar för enterprise-flottan.", "link_label": "Se tillbehör", "link": "/collections/enterprise-accessories" } }
+        { "type": "product", "settings": { "title": "Enterprise-drönare", "text": "Matrice-serien och professionella flygplattformar för industri och offentlig sektor.", "link_label": "Se drönare", "collection": "enterprise-drones" } },
+        { "type": "product", "settings": { "title": "Färdiga paket", "text": "Kompletta lösningar med drönare, tillbehör och mjukvara — redo för fält.", "link_label": "Se paket", "page": "bygg-ditt-system" } },
+        { "type": "product", "settings": { "title": "Tillbehör & reservdelar", "text": "Batterier, propellrar, laddare och originaldelar för enterprise-flottan.", "link_label": "Se tillbehör", "collection": "enterprise-accessories" } }
       ]
     }
   ]

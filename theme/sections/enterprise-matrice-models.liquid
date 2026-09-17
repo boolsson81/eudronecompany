@@ -49,7 +49,8 @@
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
             {%- if block.settings.link_label != blank -%}
-              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+              {%- capture card_url -%}{% render 'edp-enterprise-card-url', block: block %}{%- endcapture -%}
+              <a class="edp-enterprise__card-link" href="{{ card_url | strip | default: '#' }}">
                 {{ block.settings.link_label | escape }}
               </a>
             {%- endif -%}
@@ -120,6 +121,8 @@
         { "type": "text", "id": "title", "label": "t:sections.enterprise-matrice-models.blocks.model.settings.title.label", "default": "DJI Matrice" },
         { "type": "textarea", "id": "text", "label": "t:sections.enterprise-matrice-models.blocks.model.settings.text.label", "default": "Beskrivning av modellen." },
         { "type": "text", "id": "link_label", "label": "t:sections.enterprise-matrice-models.blocks.model.settings.link_label.label", "default": "Se modellen" },
+        { "type": "collection", "id": "collection", "label": "Länkad kollektion" },
+        { "type": "page", "id": "page", "label": "Länkad sida (används om ingen kollektion är vald)" },
         { "type": "url", "id": "link", "label": "t:sections.enterprise-matrice-models.blocks.model.settings.link.label" }
       ]
     }
@@ -128,12 +131,12 @@
     {
       "name": "t:sections.enterprise-matrice-models.presets.name",
       "blocks": [
-        { "type": "model", "settings": { "title": "DJI Matrice 400", "text": "DJI:s nuvarande flaggskeppsplattform för tunga sensorer, LiDAR och avancerade inspektionsuppdrag. Upp till 6 kg nyttolast.", "link_label": "Se Matrice 400", "link": "/collections/matrice-400" } },
-        { "type": "model", "settings": { "title": "DJI Matrice 350 RTK", "text": "Robust arbetsplattform för Zenmuse H30, L2, P1 m.fl.", "link_label": "Se Matrice 350 RTK", "link": "/collections/dji-matrice-series" } },
-        { "type": "model", "settings": { "title": "DJI Matrice 30", "text": "Kompakt inspektionsdrönare.", "link_label": "Se Matrice 30", "link": "/collections/dji-matrice-series" } },
-        { "type": "model", "settings": { "title": "DJI Matrice 30T", "text": "Termisk version av M30.", "link_label": "Se Matrice 30T", "link": "/collections/dji-matrice-series" } },
-        { "type": "model", "settings": { "title": "DJI Matrice 4E", "text": "Mätning, kartläggning och GIS.", "link_label": "Se Matrice 4E", "link": "/collections/matrice-4" } },
-        { "type": "model", "settings": { "title": "DJI Matrice 4T", "text": "Termisk modell för inspektion, räddningstjänst och säkerhet.", "link_label": "Se Matrice 4T", "link": "/collections/matrice-4" } }
+        { "type": "model", "settings": { "title": "DJI Matrice 400", "text": "DJI:s nuvarande flaggskeppsplattform för tunga sensorer, LiDAR och avancerade inspektionsuppdrag. Upp till 6 kg nyttolast.", "link_label": "Se Matrice 400", "collection": "dji-matrice-400-series" } },
+        { "type": "model", "settings": { "title": "DJI Matrice 350 RTK", "text": "Robust arbetsplattform för Zenmuse H30, L2, P1 m.fl.", "link_label": "Se Matrice 350 RTK", "collection": "dji-matrice-series" } },
+        { "type": "model", "settings": { "title": "DJI Matrice 30", "text": "Kompakt inspektionsdrönare.", "link_label": "Se Matrice 30", "collection": "dji-matrice-series" } },
+        { "type": "model", "settings": { "title": "DJI Matrice 30T", "text": "Termisk version av M30.", "link_label": "Se Matrice 30T", "collection": "dji-matrice-series" } },
+        { "type": "model", "settings": { "title": "DJI Matrice 4E", "text": "Mätning, kartläggning och GIS.", "link_label": "Se Matrice 4E", "collection": "dji-matrice-series" } },
+        { "type": "model", "settings": { "title": "DJI Matrice 4T", "text": "Termisk modell för inspektion, räddningstjänst och säkerhet.", "link_label": "Se Matrice 4T", "collection": "dji-matrice-series" } }
       ]
     }
   ]
