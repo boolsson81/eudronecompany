@@ -41,9 +41,7 @@
               }}
             {%- else -%}
               <div class="edp-enterprise__card-icon-fallback" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                </svg>
+                {%- render 'edp-icon', icon: block.settings.icon -%}
               </div>
             {%- endif -%}
             {%- unless block.settings.title == blank -%}
@@ -155,6 +153,25 @@
       "name": "t:sections.enterprise-industries.blocks.industry.name",
       "settings": [
         { "type": "image_picker", "id": "image", "label": "t:sections.enterprise-industries.blocks.industry.settings.image.label" },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "t:sections.enterprise-industries.blocks.industry.settings.icon.label",
+          "info": "t:sections.enterprise-industries.blocks.industry.settings.icon.info",
+          "options": [
+            { "value": "compass", "label": "t:sections.edp-icon.options.compass" },
+            { "value": "camera", "label": "t:sections.edp-icon.options.camera" },
+            { "value": "leaf", "label": "t:sections.edp-icon.options.leaf" },
+            { "value": "drop", "label": "t:sections.edp-icon.options.drop" },
+            { "value": "radar", "label": "t:sections.edp-icon.options.radar" },
+            { "value": "building", "label": "t:sections.edp-icon.options.building" },
+            { "value": "lightning", "label": "t:sections.edp-icon.options.lightning" },
+            { "value": "shield-check", "label": "t:sections.edp-icon.options.shield-check" },
+            { "value": "truck", "label": "t:sections.edp-icon.options.truck" },
+            { "value": "star", "label": "t:sections.edp-icon.options.star" }
+          ],
+          "default": "compass"
+        },
         { "type": "text", "id": "title", "label": "t:sections.enterprise-industries.blocks.industry.settings.title.label", "default": "Bransch" },
         {
           "type": "select",
@@ -202,12 +219,12 @@
     {
       "name": "t:sections.enterprise-industries.presets.name",
       "blocks": [
-        { "type": "industry", "settings": { "title": "Energi & Infrastruktur", "text": "Inspektion av kraftledningar, vindkraft och anläggningar.", "link_label": "Läs mer", "link": "/pages/energi-infrastruktur" } },
-        { "type": "industry", "settings": { "title": "Kartläggning & GIS", "text": "Geodata, mätning och GIS-arbetsflöden med UAV.", "link_label": "Läs mer", "link": "/pages/gis-kartlaggning" } },
-        { "type": "industry", "settings": { "title": "Räddningstjänst", "text": "Sök- och räddningsinsatser samt krisledning.", "link_label": "Läs mer", "link": "/pages/raddningstjanst" } },
-        { "type": "industry", "settings": { "title": "Skogsbruk", "text": "Inventering och skogsvård med UAV och LiDAR.", "link_label": "Läs mer", "link": "/pages/skogsbruk" } },
-        { "type": "industry", "settings": { "title": "Bygg & Anläggning", "text": "Övervakning av byggarbetsplatser och dokumentation.", "link_label": "Läs mer", "link": "/pages/bygg-anlaggning" } },
-        { "type": "industry", "settings": { "title": "Jordbruk", "text": "Precisionsspridning, grödansalys och fältövervakning.", "link_label": "Läs mer", "link": "/pages/jordbruk" } }
+        { "type": "industry", "settings": { "icon": "lightning", "title": "Energi & Infrastruktur", "text": "Inspektion av kraftledningar, vindkraft och anläggningar.", "link_label": "Läs mer", "link": "/pages/energi-infrastruktur" } },
+        { "type": "industry", "settings": { "icon": "compass", "title": "Kartläggning & GIS", "text": "Geodata, mätning och GIS-arbetsflöden med UAV.", "link_label": "Läs mer", "link": "/pages/gis-kartlaggning" } },
+        { "type": "industry", "settings": { "icon": "shield-check", "title": "Räddningstjänst", "text": "Sök- och räddningsinsatser samt krisledning.", "link_label": "Läs mer", "link": "/pages/raddningstjanst" } },
+        { "type": "industry", "settings": { "icon": "leaf", "title": "Skogsbruk", "text": "Inventering och skogsvård med UAV och LiDAR.", "link_label": "Läs mer", "link": "/pages/skogsbruk" } },
+        { "type": "industry", "settings": { "icon": "building", "title": "Bygg & Anläggning", "text": "Övervakning av byggarbetsplatser och dokumentation.", "link_label": "Läs mer", "link": "/pages/bygg-anlaggning" } },
+        { "type": "industry", "settings": { "icon": "leaf", "title": "Jordbruk", "text": "Precisionsspridning, grödansalys och fältövervakning.", "link_label": "Läs mer", "link": "/pages/jordbruk" } }
       ]
     }
   ]

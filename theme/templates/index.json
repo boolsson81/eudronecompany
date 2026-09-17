@@ -99,6 +99,7 @@
         "cat_camera": {
           "type": "industry",
           "settings": {
+            "icon": "camera",
             "title": "Kamera- & prosumerdrönare",
             "text": "Foto, film & kreativ produktion",
             "link_label": "Utforska",
@@ -108,6 +109,7 @@
         "cat_agri": {
           "type": "industry",
           "settings": {
+            "icon": "leaf",
             "title": "Lantbruk & sprutdrönare",
             "text": "Precisionsjordbruk i stor skala",
             "link_label": "Utforska",
@@ -117,6 +119,7 @@
         "cat_inspection": {
           "type": "industry",
           "settings": {
+            "icon": "compass",
             "title": "Inspektion & kartläggning",
             "text": "Mätning, LiDAR & besiktning",
             "link_label": "Utforska",
@@ -126,6 +129,7 @@
         "cat_wash": {
           "type": "industry",
           "settings": {
+            "icon": "drop",
             "title": "Fönster-, tak- & fasadtvätt",
             "text": "Rengöring på höjd utan ställning",
             "link_label": "Läs mer",
@@ -135,6 +139,7 @@
         "cat_payload": {
           "type": "industry",
           "settings": {
+            "icon": "radar",
             "title": "Payload & sensorer",
             "text": "Termisk, zoom & multispektral",
             "link_label": "Utforska",
