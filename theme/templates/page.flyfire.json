@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "FlyFire — fallskärm och flythjälp för enterprise-drönare",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "OWL-fallskärmssystem för Matrice 30/300/350 och Mavic-serien, plus flytbojar och kabinreservdelar för uppdrag över vatten eller befolkade områden.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Se sortimentet",
+            "button_link_1": "/search?q=vendor%3AFlyFire&type=product",
+            "button_style_secondary_1": false,
+            "button_label_2": "Kontakta oss",
+            "button_link_2": "/pages/contact-quote",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Auktoriserad återförsäljare"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Svensk kundsupport"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Snabb leverans"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Trygg betalning"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Nödfallskärm",
+            "text": "<p>OWL-30 och OWL-300 ger en räddningslösning vid motorbortfall — relevant för uppdrag över människor eller trafik.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Flythjälp vid vatten",
+            "text": "<p>Drone Bouy håller drönaren flytande upp till 6 kg vid nödlandning på vatten.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Reservdelar till kabin",
+            "text": "<p>Ersättningskabiner till Manti-serien om huset skadas i fält.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "settings": {
+        "title": "Därför FlyFire",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Krävs fallskärm för mitt uppdrag?",
+            "row_content": "<p>Vissa BVLOS- eller SORA-klassade uppdrag över människor kräver ett räddningssystem. Kontakta oss så går vi igenom vad ert tillstånd kräver.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka drönare passar FlyFire:s fallskärmar?",
+            "row_content": "<p>Sortimentet täcker bland annat Matrice 30, Matrice 300/350 och Mavic 2/3-serien.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur ofta behöver fallskärmen packas om eller servas?",
+            "row_content": "<p>Det varierar per modell och tillverkarens rekommendation — kontakta oss för underhållsintervall.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Säljer ni flytbojen separat från fallskärmen?",
+            "row_content": "<p>Ja, Drone Bouy säljs separat för uppdrag över vatten.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4"
+      ],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Kräver ert tillstånd ett räddningssystem?",
+        "text": "Berätta vilken drönare och vilket uppdrag det gäller så hjälper vi er välja rätt FlyFire-system.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust_bar",
+    "benefits",
+    "faq",
+    "cta"
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wingtra — VTOL-kartläggning utan landningsbana",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "WingtraOne GENII lyfter och landar vertikalt men flyger som en fixedwing — storskalig kartering och lantmäteri med RGB-, multispektral- eller LiDAR-nyttolast.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Se sortimentet",
+            "button_link_1": "/search?q=vendor%3AWingtra&type=product",
+            "button_style_secondary_1": false,
+            "button_label_2": "Kontakta oss",
+            "button_link_2": "/pages/contact-quote",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Auktoriserad återförsäljare"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Svensk kundsupport"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Snabb leverans"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Trygg betalning"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Ingen landningsbana krävs",
+            "text": "<p>VTOL-start och landning gör att du kan flyga från svårtillgängliga eller trånga arbetsplatser.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Payloadflexibilitet",
+            "text": "<p>Byt mellan RGB- (Sony RX1R II), multispektral- (MicaSense RedEdge-P) och andra nyttolaster efter uppdrag.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Fältutrustning ingår",
+            "text": "<p>Batterier, hardcase, reservpropellrar och tillbehör för drift ute på fältet.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "settings": {
+        "title": "Därför Wingtra",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad är fördelen med VTOL jämfört med en vanlig kartläggningsdrönare?",
+            "row_content": "<p>VTOL kombinerar vertikal start/landning med en fixedwing-drönares räckvidd och effektivitet, så du täcker stora ytor utan att behöva en landningsbana.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka nyttolaster finns?",
+            "row_content": "<p>Bland annat RGB-kamera (Sony RX1R II) och multispektral sensor (MicaSense RedEdge-P), samt reservdelar och batterier till WingtraOne.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Säljer ni tillbehör separat?",
+            "row_content": "<p>Ja, batterier, laddkablar, hardcase och reservpropellrar finns separat till befintliga Wingtra-system.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag få en offert för ett komplett system?",
+            "row_content": "<p>Ja, kontakta oss med ert uppdrag (yta, upplösningskrav, sensor) så tar vi fram en offert.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3",
+        "row_4"
+      ],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Fundera på Wingtra till ert kartläggningsuppdrag?",
+        "text": "Berätta vilken yta och upplösning uppdraget kräver så föreslår vi rätt payload och konfiguration.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust_bar",
+    "benefits",
+    "faq",
+    "cta"
+  ]
+}

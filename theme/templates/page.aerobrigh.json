@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "AeroBrigh — tetherström och belysning för kontinuerlig flygning",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Power-Tether ger obruten strömförsörjning via kabel för långa övervaknings- och belysningsuppdrag, ett litet men fokuserat enterprise-sortiment.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Se sortimentet",
+            "button_link_1": "/search?q=vendor%3AAeroBrigh&type=product",
+            "button_style_secondary_1": false,
+            "button_label_2": "Kontakta oss",
+            "button_link_2": "/pages/contact-quote",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Auktoriserad återförsäljare"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Svensk kundsupport"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Snabb leverans"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Trygg betalning"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Obegränsad flygtid",
+            "text": "<p>Power-Tether förser drönaren med ström via kabel istället för batteribyten, för uppdrag som pågår timmar i sträck.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Kraftfull belysning",
+            "text": "<p>Falcon X2 ger belysning för nattinsatser och övervakning.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Nischat enterprise-sortiment",
+            "text": "<p>Ett fåtal produkter riktade mot specifika, långvariga uppdrag snarare än ett brett tillbehörssortiment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "settings": {
+        "title": "Därför AeroBrigh",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad gör en tethered power-lösning?",
+            "row_content": "<p>Den förser drönaren med ström via en markkabel istället för batteri, vilket ger i princip obegränsad flygtid för stationär övervakning.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka drönare fungerar med Power-Tether?",
+            "row_content": "<p>Kontakta oss med er plattform så bekräftar vi kompatibiliteten — sortimentet är litet och uppdragsanpassat.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Säljs produkterna som färdiga paket?",
+            "row_content": "<p>Systemen offereras ofta per uppdrag. Hör av er så går vi igenom vad som ingår.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3"
+      ],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver ni obruten flygtid för ett övervakningsuppdrag?",
+        "text": "Beskriv uppdraget (varaktighet, plattform, strömkälla på plats) så återkommer vi med en lösning.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust_bar",
+    "benefits",
+    "faq",
+    "cta"
+  ]
+}

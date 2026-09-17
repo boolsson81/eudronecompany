@@ -1,0 +1,190 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sunnylife — propellerskydd och drönartillbehör",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Prisvärda propellerskydd och tillbehör som täcker ett brett spann av DJI-modeller för daglig användning.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Se sortimentet",
+            "button_link_1": "/collections/sunnylife",
+            "button_style_secondary_1": false,
+            "button_label_2": "Kontakta oss",
+            "button_link_2": "/pages/contact-quote",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "buttons"
+      ],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "trust_bar": {
+      "type": "enterprise-trust-bar",
+      "blocks": {
+        "trust_1": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Auktoriserad återförsäljare"
+          }
+        },
+        "trust_2": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Svensk kundsupport"
+          }
+        },
+        "trust_3": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Snabb leverans"
+          }
+        },
+        "trust_4": {
+          "type": "trust_item",
+          "settings": {
+            "text": "Trygg betalning"
+          }
+        }
+      },
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "benefits": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Skydd för vardagsflygning",
+            "text": "<p>Propellerskydd minskar skaderisken vid landning i trånga miljöer eller nära människor.</p>"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Brett modellstöd",
+            "text": "<p>Tillbehör anpassade för flera DJI-serier, inte bara en enskild modell.</p>"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Prisvärt",
+            "text": "<p>Ett tillgängligt sätt att komplettera drönaren utan att lägga pengar på premiumtillbehör.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3"
+      ],
+      "settings": {
+        "title": "Därför Sunnylife",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka DJI-modeller passar Sunnylifes propellerskydd?",
+            "row_content": "<p>Sortimentet är modellanpassat — ange er drönare i sökrutan eller kontakta oss så visar vi rätt variant.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Påverkar propellerskydden flygtiden?",
+            "row_content": "<p>Skydd tillför viss vikt och kan marginellt påverka flygtid och stabilitet i hård vind. Kontakta oss vid tveksamhet.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Är skydden enkla att sätta på och ta av?",
+            "row_content": "<p>Ja, de är byggda för snabb montering utan verktyg på de flesta modeller.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "row_1",
+        "row_2",
+        "row_3"
+      ],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Osäker på vilket Sunnylife-tillbehör som passar din drönare?",
+        "text": "Ange din modell så hjälper vi dig hitta rätt propellerskydd eller tillbehör.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "trust_bar",
+    "benefits",
+    "faq",
+    "cta"
+  ]
+}
