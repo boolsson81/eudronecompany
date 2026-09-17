@@ -362,6 +362,7 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
   display: none;
   position: relative;
   z-index: 20;
+  grid-column: 1 / -1;
   margin: 0 1.6rem 1.2rem;
   padding: 1.4rem 1.6rem;
   border: 0.15rem solid rgba(0, 163, 224, 0.55);
