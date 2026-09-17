@@ -2027,6 +2027,16 @@
         },
         "drawer_phone": {
           "label": "Telefon (mobilmeny)"
+        },
+        "logo_header": {
+          "content": "Egen logotyp"
+        },
+        "logo": {
+          "label": "Logotypbild",
+          "info": "Åsidosätter logotypen från Temainställningar > Logotyp, men bara för den här sektionen. Lämna tom för att använda temats logotyp."
+        },
+        "logo_width": {
+          "label": "Bredd på egen logotyp"
         }
       },
       "blocks": {
