@@ -153,6 +153,26 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
   }
 }
 
+.edp-utility-bar__home-link {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(var(--color-foreground), 0.75);
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.edp-utility-bar__home-link:hover {
+  color: rgb(var(--color-foreground));
+  text-decoration: underline;
+}
+
+.edp-utility-bar__home-link:focus-visible {
+  outline: 0.2rem solid rgb(var(--edp-accent));
+  outline-offset: 0.2rem;
+}
+
 .edp-utility-bar__segment {
   display: inline-flex;
   border-radius: 0.4rem;

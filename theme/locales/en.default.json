@@ -591,6 +591,7 @@
   },
   "edp": {
     "header": {
+      "home": "Home",
       "segment_label": "Store segment",
       "segment_consumer": "Consumer",
       "segment_enterprise": "Enterprise",

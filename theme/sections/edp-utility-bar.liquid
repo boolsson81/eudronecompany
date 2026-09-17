@@ -21,6 +21,10 @@
 
 <div class="edp-utility-bar color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   <div class="page-width edp-utility-bar__inner">
+    <a href="{{ routes.root_url }}" class="edp-utility-bar__home-link">
+      {{- 'edp.header.home' | t -}}
+    </a>
+
     <div
       class="edp-utility-bar__segment"
       role="group"
