@@ -591,6 +591,7 @@
   "edp": {
     "header": {
       "home": "Start",
+      "announcement": "Meddelande",
       "segment_label": "Butikssegment",
       "segment_consumer": "Privat",
       "segment_enterprise": "Företag",
