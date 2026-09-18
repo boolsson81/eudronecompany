@@ -999,6 +999,15 @@
     "edp-utility-bar": {
       "name": "EDP verktygsrad",
       "settings": {
+        "announcement_header": {
+          "content": "Meddelande"
+        },
+        "announcement_text": {
+          "label": "Meddelandetext"
+        },
+        "announcement_link": {
+          "label": "Meddelandelänk"
+        },
         "segment_header": {
           "content": "Privat / Företag"
         },

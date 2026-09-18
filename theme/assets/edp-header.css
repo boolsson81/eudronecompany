@@ -139,18 +139,71 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
 
 .edp-utility-bar__inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.6rem;
+  justify-content: center;
+  gap: 0.8rem 1.6rem;
   min-height: var(--edp-utility-height);
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (min-width: 750px) {
   .edp-utility-bar__inner {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: unset;
   }
+}
+
+.edp-utility-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 750px) {
+  .edp-utility-bar__left {
+    justify-self: start;
+  }
+}
+
+.edp-utility-bar__announcement {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .edp-utility-bar__announcement {
+    width: auto;
+    justify-self: center;
+  }
+}
+
+.edp-utility-bar__announcement-text {
+  margin: 0;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 750px) {
+  .edp-utility-bar__announcement-text {
+    white-space: nowrap;
+  }
+}
+
+.edp-utility-bar__announcement-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.edp-utility-bar__announcement-link:hover .edp-utility-bar__announcement-text {
+  text-decoration: underline;
+}
+
+.edp-utility-bar__announcement-link:focus-visible {
+  outline: 0.2rem solid rgb(var(--edp-accent));
+  outline-offset: 0.2rem;
 }
 
 .edp-utility-bar__home-link {
@@ -222,6 +275,7 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
 @media screen and (min-width: 750px) {
   .edp-utility-bar__links {
     display: flex;
+    justify-self: end;
   }
 }
 

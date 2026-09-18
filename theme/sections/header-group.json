@@ -6,6 +6,8 @@
       "type": "edp-utility-bar",
       "settings": {
         "color_scheme": "scheme-edp",
+        "announcement_text": "Fri frakt över 999 kr — Din drönar specialist",
+        "announcement_link": "",
         "consumer_label": "Privat",
         "enterprise_label": "Företag",
         "quote_label": "Offertförfrågan",
@@ -14,27 +16,6 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "settings": {
-        "color_scheme": "scheme-3",
-        "show_line_separator": false
-      },
-      "blocks": {
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Fri frakt över 999 kr — DJI-specialist i Norden",
-            "text_alignment": "center",
-            "color_scheme": "scheme-edp",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement-bar-0"
-      ]
     },
     "header": {
       "type": "header",
@@ -61,7 +42,6 @@
   },
   "order": [
     "edp-utility-bar",
-    "announcement-bar",
     "header"
   ]
 }

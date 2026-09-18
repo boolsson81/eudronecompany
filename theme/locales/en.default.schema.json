@@ -1067,6 +1067,15 @@
     "edp-utility-bar": {
       "name": "EDP utility bar",
       "settings": {
+        "announcement_header": {
+          "content": "Announcement"
+        },
+        "announcement_text": {
+          "label": "Announcement text"
+        },
+        "announcement_link": {
+          "label": "Announcement link"
+        },
         "segment_header": {
           "content": "Consumer / Enterprise"
         },
