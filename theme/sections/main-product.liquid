@@ -86,7 +86,7 @@
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-          {% render 'edp-ai-content', resource: product %}
+          {% render 'edp-ai-content', resource: product, hide_spec: true %}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -225,8 +225,12 @@
                       {{- 'icon-caret.svg' | inline_asset_content -}}
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      {{ block.settings.content }}
-                      {{ block.settings.page.content }}
+                      {%- if block.settings.content == blank and block.settings.page == blank and block.settings.icon == 'ruler' -%}
+                        {{ product.metafields.seo.specification.value }}
+                      {%- else -%}
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      {%- endif -%}
                     </div>
                   </details>
                 </div>
