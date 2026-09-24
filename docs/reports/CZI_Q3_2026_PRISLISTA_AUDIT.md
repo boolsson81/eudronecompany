@@ -8,8 +8,8 @@ Company** (samma butik som är kopplad via Shopify MCP i den här sessionen).
 
 | Status | Antal unika modeller |
 | --- | --- |
-| Aktiv i Shopify och matchar prislistan | 11 |
-| Upplagd men DRAFT (opublicerad) | 19 |
+| Aktiv i Shopify och matchar prislistan | 7 |
+| Upplagd men DRAFT (opublicerad) | 21 |
 | Saknas helt — registrerad som inköpsprospekt | 27 |
 
 Under genomgången hittades och åtgärdades:
