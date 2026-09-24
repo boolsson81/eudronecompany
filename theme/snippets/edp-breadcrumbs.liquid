@@ -26,10 +26,10 @@
 -%}
 
 {%- if edp_crumb_leaf != blank -%}
-  <nav class="edp-breadcrumbs page-width" aria-label="{{ 'breadcrumbs.home' | t }}">
+  <nav class="edp-breadcrumbs page-width" aria-label="{{ 'general.breadcrumbs.home' | t }}">
     <ol class="edp-breadcrumbs__list" role="list">
       <li class="edp-breadcrumbs__item">
-        <a href="{{ routes.root_url }}">{{ 'breadcrumbs.home' | t }}</a>
+        <a href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
       </li>
       {%- if request.page_type == 'product' and edp_crumb_collection != null -%}
         <li class="edp-breadcrumbs__item" aria-hidden="true">/</li>
