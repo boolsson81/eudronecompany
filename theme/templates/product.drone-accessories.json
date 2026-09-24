@@ -151,7 +151,11 @@
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -167,6 +171,17 @@
         "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "accessories_heading": "Tillbehör till denna produkt",
+        "spare_parts_heading": "Reservdelar",
+        "docs_heading": "Dokumentation & manualer",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "compatible-accessories": {
@@ -198,5 +213,11 @@
       }
     }
   },
-  "order": ["main", "trust-badges", "compatible-accessories", "related-products"]
+  "order": [
+    "main",
+    "trust-badges",
+    "product-relations",
+    "compatible-accessories",
+    "related-products"
+  ]
 }

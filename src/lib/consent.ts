@@ -7,7 +7,7 @@
  *
  * Nyckeln läses också av det inlinade skriptet i `index.html`, så att ett
  * tidigare ja kan återställas innan taggen hinner köra. Ändras den här måste
- * den ändras där också; `scripts/__tests__/analytics-consent.test.ts` vaktar det.
+ * den ändras där också; `scripts/__tests__/analytics-collect.test.ts` vaktar det.
  */
 
 export const CONSENT_STORAGE_KEY = "edc:cookie-consent";
