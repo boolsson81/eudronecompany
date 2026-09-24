@@ -86,7 +86,7 @@
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
-          {% render 'edp-ai-content', resource: product %}
+          {% render 'edp-ai-content', resource: product, parts: 'top' %}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -230,6 +230,9 @@
                     </div>
                   </details>
                 </div>
+                {%- if block.settings.heading == 'Tekniska specifikationer' -%}
+                  {% render 'edp-ai-content', resource: product, parts: 'spec' %}
+                {%- endif -%}
               {%- when 'quantity_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"

@@ -1,6 +1,25 @@
 {{ 'edp-ai.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
+  assign parts = parts | default: 'all'
+  assign show_answer = false
+  assign show_spec = false
+  assign show_faq = false
+  assign show_related = false
+  case parts
+    when 'top'
+      assign show_answer = true
+      assign show_faq = true
+      assign show_related = true
+    when 'spec'
+      assign show_spec = true
+    else
+      assign show_answer = true
+      assign show_spec = true
+      assign show_faq = true
+      assign show_related = true
+  endcase
+
   assign ai_answer = nil
   assign ai_spec = nil
   assign ai_faq = nil
@@ -28,28 +47,34 @@
   endif
 
   assign has_ai_content = false
-  if ai_answer != blank or ai_spec != blank or ai_faq != blank
+  if show_answer and ai_answer != blank
+    assign has_ai_content = true
+  endif
+  if show_spec and ai_spec != blank
+    assign has_ai_content = true
+  endif
+  if show_faq and ai_faq != blank
     assign has_ai_content = true
   endif
 -%}
 
 {%- if has_ai_content -%}
-  <aside class="edp-ai" data-edp-ai-content>
-    {%- if ai_answer != blank -%}
+  <aside class="edp-ai" data-edp-ai-content data-edp-ai-parts="{{ parts }}">
+    {%- if show_answer and ai_answer != blank -%}
       <section class="edp-ai__answer" id="edp-ai-answer" data-speakable>
         <p class="edp-ai__label">Snabbt svar</p>
         <p class="edp-ai__answer-text">{{ ai_answer | strip_html }}</p>
       </section>
     {%- endif -%}
 
-    {%- if ai_spec != blank -%}
+    {%- if show_spec and ai_spec != blank -%}
       <section class="edp-ai__spec">
         <h2 class="edp-ai__heading">Specifikation</h2>
         <div class="edp-ai__spec-body rte">{{ ai_spec }}</div>
       </section>
     {%- endif -%}
 
-    {%- if ai_faq != blank and ai_faq.size > 0 -%}
+    {%- if show_faq and ai_faq != blank and ai_faq.size > 0 -%}
       <section class="edp-ai__faq" id="edp-ai-faq">
         <h2 class="edp-ai__heading">Vanliga frågor</h2>
         <div class="edp-ai__faq-list">
@@ -67,7 +92,7 @@
       </section>
     {%- endif -%}
 
-    {%- if ai_related_collections != blank or ai_related_products != blank -%}
+    {%- if show_related and ai_related_collections != blank or show_related and ai_related_products != blank -%}
       <section class="edp-ai__related">
         <h2 class="edp-ai__heading">Relaterat</h2>
         <div class="edp-ai__related-links">
