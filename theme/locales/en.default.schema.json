@@ -330,12 +330,20 @@
         "show_cart_note": {
           "label": "Cart note"
         },
+        "low_stock_threshold": {
+          "label": "Low stock warning threshold",
+          "info": "Shows \"Only X left in stock\" on a cart line when inventory is at or below this number. 0 turns the warning off."
+        },
         "cart_drawer": {
           "header": "Cart drawer",
           "collection": {
             "label": "Collection",
             "info": "Shown when cart drawer is empty"
           }
+        },
+        "free_shipping_threshold": {
+          "label": "Free shipping threshold",
+          "info": "Shows a progress bar in the cart drawer. Leave blank to hide it. Must match the threshold set under Settings → Shipping and delivery, otherwise this promises something checkout won't honor."
         }
       }
     },

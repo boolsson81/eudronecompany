@@ -255,12 +255,20 @@
         "show_cart_note": {
           "label": "Varukorgsanteckning"
         },
+        "low_stock_threshold": {
+          "label": "Varningsgräns för lågt lager",
+          "info": "Visar \"Bara X kvar i lager\" på en varukorgsrad när lagersaldot är på eller under detta antal. 0 stänger av varningen."
+        },
         "cart_drawer": {
           "header": "Varukorgspanel",
           "collection": {
             "label": "Produktserie",
             "info": "Visas när varukorgspanelen är tom"
           }
+        },
+        "free_shipping_threshold": {
+          "label": "Gräns för fri frakt (kr)",
+          "info": "Visar en förloppsindikator i varukorgspanelen. Lämna tomt för att dölja den. Måste matcha samma gräns som ni ställt in under Inställningar → Frakt och leverans, annars ger vi ett löfte som inte stämmer i kassan."
         }
       }
     },
