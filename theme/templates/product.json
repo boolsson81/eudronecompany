@@ -113,6 +113,14 @@
         "padding_bottom": 12
       }
     },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -132,6 +140,7 @@
   },
   "order": [
     "main",
+    "product-relations",
     "related-products"
   ]
 }

@@ -157,11 +157,15 @@
             "title": "Drönarkort & regler",
             "text": "<p>Vi hjälper dig flyga lagligt: registrering hos Transportstyrelsen och A1/A3-certifiering.</p>",
             "link_label": "Läs mer",
-            "link": "/pages/training"
+            "link": "/pages/service-support"
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -177,6 +181,14 @@
         "columns_mobile": "1",
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "related-products": {
@@ -196,5 +208,10 @@
       }
     }
   },
-  "order": ["main", "trust-badges", "related-products"]
+  "order": [
+    "main",
+    "trust-badges",
+    "product-relations",
+    "related-products"
+  ]
 }
