@@ -79,9 +79,9 @@
         "feature_2": {
           "type": "feature",
           "settings": {
-            "title": "Drönarkort & utbildning",
-            "text": "Certifiering och guider för laglig flygning.",
-            "link_label": "Guider & support",
+            "title": "Drönarregler",
+            "text": "Höjdgränser, registrering och no-fly-zoner — koll på vad som gäller.",
+            "link_label": "Läs reglerna",
             "link": "/pages/service-support"
           }
         },
