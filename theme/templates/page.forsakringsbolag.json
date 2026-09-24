@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Skadebesiktning",
+            "text": "Närbilder och höjddata dokumenterar storm-, hagel- och brandskador i detalj."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Riskbedömning",
+            "text": "Kartlägg byggnaders skick inför nyteckning eller förnyelse av försäkring."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Katastrofinsats",
+            "text": "Snabb överblick av drabbade områden efter storm eller översvämning för prioritering av skadereglerare."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Digital rapportering",
+            "text": "Bilddokumentation och mätdata levereras direkt i det format skaderegleraren behöver."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Besiktning utan att skadereglerare behöver upp på taket" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Snabbare handläggning tack vare tydlig bilddokumentation" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Säkrare besiktning efter storm- och brandskador" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Skalbart vid stora skadevolymer efter oväder" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Försäkringsbolag",
+        "title": "Drönare för Försäkringsbolag",
+        "text": "Snabbare och säkrare skadebesiktning av tak och byggnader — dokumentation som håller för skadereglering, utan att någon behöver upp på taket.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Effektivisera er skadereglering",
+        "text": "Berätta om volym och typ av besiktningar, så föreslår vi upplägg för snabbare handläggning.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

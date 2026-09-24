@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Takinspektion",
+            "text": "Höjddata och närbilder av tätskikt, plåt och avvattning identifierar skador innan de blir vattenläckor."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Fasadbesiktning",
+            "text": "Systematisk fotodokumentation av fasadytor, fogar och fönsterpartier utan att stänga av gator eller sätta upp ställning."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Termisk analys",
+            "text": "Värmekameror avslöjar fuktskador, isoleringsbrister och köldbryggor i klimatskal och tak."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Underhållsplanering",
+            "text": "Återkommande flygningar ger jämförbar bilddokumentation över tid som underlag för budget och prioritering."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Besiktning utan ställning, lift eller avstängd gata" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Tidig upptäckt av fukt- och takskador" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Jämförbar dokumentation år efter år" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Kortare besiktningstid för stora fastighetsbestånd" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "eyebrow": "Fastighetsförvaltning",
+        "title": "Drönare för Fastighetsförvaltning",
+        "text": "Inspektera tak, fasader och tekniska installationer utan byggnadsställning eller lift — snabbare besiktningar och tydlig dokumentation inför underhåll och budget.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Planera besiktning av ert fastighetsbestånd",
+        "text": "Berätta om antal byggnader och vad som ska inspekteras, så föreslår vi upplägg och offert.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}
