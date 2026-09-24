@@ -236,7 +236,14 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }}) filter valda",
       "show_more": "Visa mer",
       "show_less": "Visa mindre",
-      "filter_and_operator_subtitle": "Matcha alla"
+      "filter_and_operator_subtitle": "Matcha alla",
+      "search_filter_placeholder": "Sök {{ label }}…",
+      "search_filter_no_matches": "Inga träffar.",
+      "show_products_count": {
+        "one": "Visa {{ count }} produkt",
+        "other": "Visa {{ count }} produkter"
+      },
+      "fetch_error": "Det gick inte att uppdatera filtren just nu. Försök igen."
     }
   },
   "templates": {
