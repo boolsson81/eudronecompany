@@ -1,0 +1,25 @@
+{%- liquid
+  assign ai_related_products = resource.metafields.seo.related_products.value
+  assign ai_related_collections = resource.metafields.seo.related_collections.value
+-%}
+{%- if ai_related_collections != blank or ai_related_products != blank -%}
+  <section class="edp-ai__related"{% if block %} {{ block.shopify_attributes }}{% endif %}>
+    <h2 class="edp-ai__heading">Relaterat</h2>
+    <div class="edp-ai__related-links">
+      {%- if ai_related_collections != blank -%}
+        {%- for coll in ai_related_collections -%}
+          {%- if coll.url -%}
+            <a href="{{ coll.url }}" class="edp-ai__related-link">{{ coll.title | default: coll.handle | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if ai_related_products != blank -%}
+        {%- for rel in ai_related_products -%}
+          {%- if rel.url -%}
+            <a href="{{ rel.url }}" class="edp-ai__related-link">{{ rel.title | default: rel.handle | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </section>
+{%- endif -%}
