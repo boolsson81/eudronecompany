@@ -152,7 +152,11 @@
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -195,7 +199,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["main", "trust-badges", "related-products", "enterprise-quote"]
+  "order": [
+    "main",
+    "trust-badges",
+    "related-products",
+    "enterprise-quote",
+    "faq"
+  ]
 }

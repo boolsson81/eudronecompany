@@ -20,22 +20,35 @@
       "blocks": {
         "trust_1": {
           "type": "trust_item",
-          "settings": { "text": "Auktoriserade leverantörer" }
+          "settings": {
+            "text": "Auktoriserade leverantörer"
+          }
         },
         "trust_2": {
           "type": "trust_item",
-          "settings": { "text": "Service och support i Sverige" }
+          "settings": {
+            "text": "Service och support i Sverige"
+          }
         },
         "trust_3": {
           "type": "trust_item",
-          "settings": { "text": "Enterprise-specialister" }
+          "settings": {
+            "text": "Enterprise-specialister"
+          }
         },
         "trust_4": {
           "type": "trust_item",
-          "settings": { "text": "Offert inom 24 timmar" }
+          "settings": {
+            "text": "Offert inom 24 timmar"
+          }
         }
       },
-      "block_order": ["trust_1", "trust_2", "trust_3", "trust_4"],
+      "block_order": [
+        "trust_1",
+        "trust_2",
+        "trust_3",
+        "trust_4"
+      ],
       "settings": {
         "color_scheme": "scheme-edp",
         "padding_top": 16,
@@ -147,7 +160,11 @@
           }
         }
       },
-      "block_order": ["platform_1", "platform_2", "platform_3"],
+      "block_order": [
+        "platform_1",
+        "platform_2",
+        "platform_3"
+      ],
       "settings": {
         "heading": "Enterprise-plattformar",
         "text": "Övriga DJI Enterprise-plattformar — kompakt, jordbruk och lasttransport.",
@@ -214,7 +231,14 @@
           }
         }
       },
-      "block_order": ["model_1", "model_2", "model_3", "model_4", "model_5", "model_6"],
+      "block_order": [
+        "model_1",
+        "model_2",
+        "model_3",
+        "model_4",
+        "model_5",
+        "model_6"
+      ],
       "settings": {
         "heading": "Aktuella modeller",
         "text": "DJI Matrice-serien — aktuella enterprise-drönare för inspektion, kartläggning och säkerhet.",
@@ -254,7 +278,11 @@
           }
         }
       },
-      "block_order": ["dock_1", "dock_2", "dock_3"],
+      "block_order": [
+        "dock_1",
+        "dock_2",
+        "dock_3"
+      ],
       "settings": {
         "heading": "DJI Dock-serien",
         "text": "Drönare-i-box — automatiserade hangarlösningar för fjärrstyrda och schemalagda flygningar dygnet runt.",
@@ -303,7 +331,12 @@
           }
         }
       },
-      "block_order": ["dock_model_1", "dock_model_2", "dock_model_3", "dock_model_4"],
+      "block_order": [
+        "dock_model_1",
+        "dock_model_2",
+        "dock_model_3",
+        "dock_model_4"
+      ],
       "settings": {
         "heading": "Dock-specifika modeller",
         "text": "Drönare optimerade för DJI Dock — autonom start, landning och laddning dygnet runt.",
@@ -343,7 +376,11 @@
           }
         }
       },
-      "block_order": ["product_1", "product_2", "product_3"],
+      "block_order": [
+        "product_1",
+        "product_2",
+        "product_3"
+      ],
       "settings": {
         "heading": "Enterprise-produkter",
         "text": "Drönare, tillbehör och kompletta paket för professionell användning.",
@@ -457,6 +494,14 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -469,6 +514,7 @@
     "enterprise_dock_models",
     "enterprise_products",
     "enterprise_payloads",
-    "enterprise_contact"
+    "enterprise_contact",
+    "faq"
   ]
 }
