@@ -154,6 +154,11 @@
       "sold_out": "Slutsåld",
       "unavailable": "Inte tillgängliga",
       "compatibility_label": "Passar till: ",
+      "compatibility_fits_html": "Passar {{ model }}",
+      "compatibility_heading": "Kompatibilitet",
+      "compatibility_unsure": "Osäker på om den passar?",
+      "compatible_accessories_heading": "Passande tillbehör",
+      "compatible_accessories_heading_html": "Passande tillbehör för {{ model }}",
       "series_label": "Serie: ",
       "vendor": "Säljare",
       "video_exit_message": "{{ title }} öppnar helskärmsvideo i samma fönster.",
@@ -244,6 +249,19 @@
         "other": "Visa {{ count }} produkter"
       },
       "fetch_error": "Det gick inte att uppdatera filtren just nu. Försök igen."
+    },
+    "drone_finder": {
+      "select_label": "Välj din drönare",
+      "select_placeholder": "Välj din drönare",
+      "search_placeholder": "Sök efter drönarmodell...",
+      "change_drone": "Byt drönare",
+      "clear_filter": "Rensa filter",
+      "result_count": {
+        "one": "{{ count }} kompatibel produkt",
+        "other": "{{ count }} kompatibla produkter"
+      },
+      "no_results": "Inga kompatibla produkter hittades för den här modellen än.",
+      "active_heading_html": "Tillbehör för {{ model }}"
     }
   },
   "templates": {

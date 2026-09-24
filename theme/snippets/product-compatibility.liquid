@@ -1,0 +1,42 @@
+{% comment %}
+  STEG 15 — "Kompatibilitet / Passar: ..." block for the product page.
+
+  Reads custom.passsar_till (falls back to the legacy, currently-unused
+  dji.compatible_models_display so nothing breaks if that pipeline is
+  ever revived). Never invents a compatibility claim: renders nothing
+  when the product has no compatibility data at all.
+
+  Uses the global `product` object of the current product page.
+
+  Accepts:
+  - accessories_collection_url: {String} URL of the Drone Accessories
+    collection, used for the "Osäker på om den passar?" link (optional,
+    defaults to /collections/drone-accessories)
+{% endcomment %}
+{%- liquid
+  assign compat_models = product.metafields.custom.passsar_till.value
+  if compat_models == blank
+    assign compat_models = product.metafields.dji.compatible_models_display.value
+  endif
+  assign finder_url = accessories_collection_url | default: '/collections/drone-accessories'
+-%}
+{%- if compat_models != blank -%}
+  <div class="product__compatibility-block">
+    <p class="product__compatibility-heading caption-with-letter-spacing">
+      {{ 'products.product.compatibility_heading' | t }}
+    </p>
+    <ul class="product__compatibility-list list-unstyled">
+      {%- for model in compat_models -%}
+        <li class="product__compatibility-item">
+          <span class="svg-wrapper">{{- 'icon-checkmark.svg' | inline_asset_content -}}</span>
+          {{- model | escape -}}
+        </li>
+      {%- endfor -%}
+    </ul>
+    <p class="product__compatibility-unsure caption">
+      <a href="{{ finder_url }}" class="link underlined-link">
+        {{ 'products.product.compatibility_unsure' | t }} {{ 'products.drone_finder.select_label' | t }}
+      </a>
+    </p>
+  </div>
+{%- endif -%}
