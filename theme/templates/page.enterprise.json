@@ -111,6 +111,66 @@
             "link_label": "Läs mer",
             "link": "/pages/jordbruk"
           }
+        },
+        "industry_7": {
+          "type": "industry",
+          "settings": {
+            "icon": "building",
+            "title": "Fastighetsförvaltning",
+            "text": "Tak- och fasadinspektion utan ställning eller lift.",
+            "link_label": "Läs mer",
+            "link": "/pages/fastighetsforvaltning"
+          }
+        },
+        "industry_8": {
+          "type": "industry",
+          "settings": {
+            "icon": "radar",
+            "title": "Gruvindustri & Bergtäkt",
+            "text": "Volymberäkning och kartläggning av täkter med LiDAR.",
+            "link_label": "Läs mer",
+            "link": "/pages/gruvindustri-bergtakt"
+          }
+        },
+        "industry_9": {
+          "type": "industry",
+          "settings": {
+            "icon": "truck",
+            "title": "Hamnar & Logistik",
+            "text": "Inventering och bevakning av containerytor och terminaler.",
+            "link_label": "Läs mer",
+            "link": "/pages/hamnar-logistik"
+          }
+        },
+        "industry_10": {
+          "type": "industry",
+          "settings": {
+            "icon": "camera",
+            "title": "Försäkringsbolag",
+            "text": "Snabb och säker skadebesiktning av tak och byggnader.",
+            "link_label": "Läs mer",
+            "link": "/pages/forsakringsbolag"
+          }
+        },
+        "industry_11": {
+          "type": "industry",
+          "settings": {
+            "icon": "lightning",
+            "title": "Vindkraftsunderhåll",
+            "text": "Rengöring, sprutning och mätning av vindkraftverk från luften.",
+            "link_label": "Läs mer",
+            "link": "/pages/vindkraftsunderhall-dronare"
+          }
+        },
+        "industry_12": {
+          "type": "industry",
+          "settings": {
+            "icon": "drop",
+            "title": "Fasadtvätt",
+            "text": "Kemikaliefri fasadtvätt med drönare, utan ställning.",
+            "link_label": "Läs mer",
+            "link": "/pages/fasadtvatt-dronare"
+          }
         }
       },
       "block_order": [
@@ -119,7 +179,13 @@
         "industry_3",
         "industry_4",
         "industry_5",
-        "industry_6"
+        "industry_6",
+        "industry_7",
+        "industry_8",
+        "industry_9",
+        "industry_10",
+        "industry_11",
+        "industry_12"
       ],
       "settings": {
         "heading": "Lösningar per bransch",
