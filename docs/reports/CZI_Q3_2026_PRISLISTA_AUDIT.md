@@ -8,7 +8,7 @@ Company** (samma butik som är kopplad via Shopify MCP i den här sessionen).
 
 | Status | Antal unika modeller |
 | --- | --- |
-| Aktiv i Shopify och matchar prislistan | 7 |
+| Aktiv i Shopify och matchar prislistan | 8 |
 | Upplagd men DRAFT (opublicerad) | 21 |
 | Saknas helt — registrerad som inköpsprospekt | 27 |
 
@@ -28,15 +28,15 @@ Under genomgången hittades och åtgärdades:
 
 ## Kvarstående att bestämma (kräver ett pris-/publiceringsbeslut, inte kod)
 
-- **C30N** (DRAFT, 524 999 kr) ser fel ut — DT1K, en jämförbar/dyrare
-  nattkamera enligt prislistan (RRP €14 999 vs C30N:s RRP €14 999 — samma
-  RRP faktiskt), ligger på 166 999 kr som aktiv produkt. C30N:s pris bör
-  kontrolleras innan den publiceras.
+- **C30N** (DRAFT, 524 999 kr) ser fel ut — DT1K, en jämförbar nattkamera
+  (RRP €11 999 vs C30N:s RRP €14 999, dvs ca 25 % högre), ligger på
+  166 999 kr som aktiv produkt, medan C30N ligger på ca 3× det priset.
+  C30N:s pris bör kontrolleras innan den publiceras.
 - Flera DRAFT-produkter har **pris 0 kr**: ES638/ES838, FS32 (Logistic
   Payloads Kit), FS35 ("Appearance" — trasig titel, är FlyCart 100/FS35
   Delivery System), TH6. Ofarligt så länge de är DRAFT, men de kan inte
   publiceras förrän pris satts.
-- 19 modeller ligger som DRAFT och kräver ett aktivt beslut om de ska säljas
+- 21 modeller ligger som DRAFT och kräver ett aktivt beslut om de ska säljas
   nu (se tabellen nedan) — inget pris har ändrats åt något håll utan
   bekräftelse, i linje med att listpris/dealerpris inte är samma sak som
   butikens säljpris.
@@ -105,6 +105,7 @@ RRP i EUR om inget annat anges. "saknas" innebär registrerad i
 | IR3 Infrared Zoom Spotlight | €2 299 | DRAFT | 10159898853704 |
 | TK3-M350 Tethered Power System | €11 999 | saknas | czi-tk3-m350-tethered-power-system |
 | TK3-M350 + ML200(800W) Set | €12 999 | saknas | czi-tk3-m350-tether-power-system-och-ml200-800w-matrix-light-set |
+| LP35 Searchlight and Broadcasting System (endast M350) | €2 999 | **ACTIVE** | 10089060532552 |
 | DT1K Night Vision Camera | €11 999 | **ACTIVE** | 10220802539848 |
 | MP140 Digital Voice Broadcasting System | €4 999 | DRAFT | 10159975301448 |
 | FC30/FS32 Payload Set | €5 999 | DRAFT | 10159897968968 (även 10282091741512, endast FS32) |
