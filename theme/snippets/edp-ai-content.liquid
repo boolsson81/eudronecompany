@@ -27,10 +27,18 @@
     assign ai_related_collections = resource.metafields.seo.related_collections.value
   endif
 
-  assign has_ai_content = false
-  if ai_answer != blank or ai_spec != blank or ai_faq != blank
-    assign has_ai_content = true
-  endif
+  unless hide_spec
+    assign has_ai_content = false
+    if ai_answer != blank or ai_spec != blank or ai_faq != blank
+      assign has_ai_content = true
+    endif
+  else
+    assign ai_spec = nil
+    assign has_ai_content = false
+    if ai_answer != blank or ai_faq != blank
+      assign has_ai_content = true
+    endif
+  endunless
 -%}
 
 {%- if has_ai_content -%}
