@@ -31,12 +31,41 @@
             "text": "Övervaka planteringar, stormskador och skogsvårdsåtgärder med regelbundna flygningar och jämförelse över tid."
           }
         },
-        "benefit_1": { "type": "benefit", "settings": { "text": "Täck stora skogsarealer snabbt utan markstörning" } },
-        "benefit_2": { "type": "benefit", "settings": { "text": "Exakta volym- och beståndsdata med LiDAR och RTK" } },
-        "benefit_3": { "type": "benefit", "settings": { "text": "Minska manuell fältinventering och markgång" } },
-        "benefit_4": { "type": "benefit", "settings": { "text": "Exporterbara data till GIS och skogsbruksprogram" } }
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Täck stora skogsarealer snabbt utan markstörning"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Exakta volym- och beståndsdata med LiDAR och RTK"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Minska manuell fältinventering och markgång"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Exporterbara data till GIS och skogsbruksprogram"
+          }
+        }
       },
-      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
       "settings": {
         "show_breadcrumb": true,
         "breadcrumb_label": "Enterprise",
@@ -64,7 +93,19 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["industry_landing", "enterprise_contact"]
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
 }

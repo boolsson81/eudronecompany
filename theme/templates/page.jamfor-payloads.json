@@ -6,7 +6,18 @@
         "color_scheme": "scheme-edp",
         "quote_link": "/pages/contact-quote"
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "faq"
+  ]
 }
