@@ -2139,25 +2139,6 @@
         },
         "logo_width": {
           "label": "Custom logo width"
-        },
-        "hamburger_header": {
-          "content": "Hamburger menu icon"
-        },
-        "hamburger_icon_style": {
-          "label": "Icon style",
-          "info": "Choose how the mobile menu icon looks",
-          "options__1": {
-            "label": "Classic lines"
-          },
-          "options__2": {
-            "label": "Bold lines"
-          },
-          "options__3": {
-            "label": "Dots"
-          },
-          "options__4": {
-            "label": "Squeeze"
-          }
         }
       },
       "blocks": {
