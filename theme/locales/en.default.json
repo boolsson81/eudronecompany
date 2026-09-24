@@ -241,7 +241,14 @@
       "sort_button": "Sort",
       "sort_by_label": "Sort by:",
       "to": "To",
-      "clear_filter": "Remove filter"
+      "clear_filter": "Remove filter",
+      "search_filter_placeholder": "Search {{ label }}…",
+      "search_filter_no_matches": "No matching values.",
+      "show_products_count": {
+        "one": "Show {{ count }} product",
+        "other": "Show {{ count }} products"
+      },
+      "fetch_error": "Couldn't update the filters right now. Please try again."
     },
     "drone_finder": {
       "select_label": "Choose your drone",

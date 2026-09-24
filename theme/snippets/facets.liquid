@@ -20,6 +20,7 @@
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
   assign default_presentation = 'text'
+  assign facet_search_threshold = 8
   if results.url
     assign results_url = results.url
   else
@@ -188,6 +189,22 @@
                             assign sorted_values = active_filter_values | concat: inactive_filter_values
                           endif
                         -%}
+                        <facet-value-filter>
+                        {%- if filter.values.size > facet_search_threshold -%}
+                          <div class="facets__value-search">
+                            <span class="svg-wrapper" aria-hidden="true">
+                              {{- 'icon-search.svg' | inline_asset_content -}}
+                            </span>
+                            <input
+                              type="text"
+                              class="facets__value-search-input field__input"
+                              autocomplete="off"
+                              spellcheck="false"
+                              placeholder="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                              aria-label="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                            >
+                          </div>
+                        {%- endif -%}
                         <ul
                           class="{{ visual_layout_class }}{% if filter_type == 'vertical' %} facets__list--vertical{% else %} facets__list{% endif %} list-unstyled"
                           role="list"
@@ -276,6 +293,12 @@
                             </li>
                           {%- endfor -%}
                         </ul>
+                        {%- if filter.values.size > facet_search_threshold -%}
+                          <p class="facets__value-search-empty hidden">
+                            {{- 'products.facets.search_filter_no_matches' | t -}}
+                          </p>
+                        {%- endif -%}
+                        </facet-value-filter>
                       </fieldset>
                       {%- if filter.values.size > show_more_number and filter_type == 'vertical' -%}
                         <show-more-button>
@@ -550,6 +573,22 @@
                               </span>
                             {%- endif -%}
                           </button>
+                          <facet-value-filter>
+                          {%- if filter.values.size > facet_search_threshold -%}
+                            <div class="facets__value-search facets__value-search--mobile">
+                              <span class="svg-wrapper" aria-hidden="true">
+                                {{- 'icon-search.svg' | inline_asset_content -}}
+                              </span>
+                              <input
+                                type="text"
+                                class="facets__value-search-input field__input"
+                                autocomplete="off"
+                                spellcheck="false"
+                                placeholder="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                                aria-label="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                              >
+                            </div>
+                          {%- endif -%}
                           <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
                             {%- liquid
                               assign sorted_values = filter.values
@@ -644,6 +683,12 @@
                               </li>
                             {%- endfor -%}
                           </ul>
+                          {%- if filter.values.size > facet_search_threshold -%}
+                            <p class="facets__value-search-empty hidden">
+                              {{- 'products.facets.search_filter_no_matches' | t -}}
+                            </p>
+                          {%- endif -%}
+                          </facet-value-filter>
 
                           <div class="mobile-facets__footer gradient">
                             <facet-remove class="mobile-facets__clear-wrapper">
@@ -656,7 +701,9 @@
                               class="button button--primary"
                               onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                             >
-                              {{ 'products.facets.apply' | t }}
+                              <span class="mobile-facets__show-count">
+                                {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                              </span>
                             </button>
                           </div>
                         </div>
@@ -707,7 +754,9 @@
                               class="button button--primary"
                               onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                             >
-                              {{ 'products.facets.apply' | t }}
+                              <span class="mobile-facets__show-count">
+                                {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                              </span>
                             </button>
                           </div>
                         </div>
@@ -763,7 +812,9 @@
                   class="button button--primary"
                   onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                 >
-                  {{ 'products.facets.apply' | t }}
+                  <span class="mobile-facets__show-count">
+                    {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                  </span>
                 </button>
               </div>
             </div>
