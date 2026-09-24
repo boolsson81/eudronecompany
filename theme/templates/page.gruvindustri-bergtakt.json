@@ -41,6 +41,7 @@
         "show_breadcrumb": true,
         "breadcrumb_label": "Enterprise",
         "breadcrumb_link": "/pages/enterprise",
+        "image": "shopify://shop_images/photo-1571223641822-b82408a0e705.jpg",
         "eyebrow": "Gruvindustri & Bergtäkt",
         "title": "Drönare för Gruvindustri & Bergtäkt",
         "text": "Mät volymer, följ upp brytning och dokumentera täkter med LiDAR och fotogrammetri — utan att stänga av verksamheten.",
