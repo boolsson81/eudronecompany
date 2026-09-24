@@ -1445,6 +1445,13 @@
         "default": false
       },
       {
+        "type": "number",
+        "id": "low_stock_threshold",
+        "label": "t:settings_schema.cart.settings.low_stock_threshold.label",
+        "info": "t:settings_schema.cart.settings.low_stock_threshold.info",
+        "default": 5
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },
@@ -1459,6 +1466,12 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "t:settings_schema.cart.settings.free_shipping_threshold.label",
+        "info": "t:settings_schema.cart.settings.free_shipping_threshold.info"
       }
     ]
   },
