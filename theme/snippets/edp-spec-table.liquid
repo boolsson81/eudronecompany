@@ -1,0 +1,33 @@
+{%- comment -%}
+  Renders a flat "Namn: Värde. Namn: Värde." spec string (t.ex. seo.specification-
+  metafältet) som en tvåkolumnstabell i samma stil som edp-payload.css:s
+  .edp-payload__spec-table (se sections/edp-payload-details.liquid).
+  Param: spec_text (string)
+{%- endcomment -%}
+{%- if spec_text != blank -%}
+  {{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+  <table class="edp-payload__spec-table edp-spec-table">
+    <tbody>
+      {%- assign spec_rows = spec_text | strip | split: '. ' -%}
+      {%- for row in spec_rows -%}
+        {%- assign row = row | strip -%}
+        {%- if row == blank -%}
+          {%- continue -%}
+        {%- endif -%}
+        {%- assign row_parts = row | split: ': ' -%}
+        {%- if row_parts.size > 1 -%}
+          {%- assign row_label = row_parts | first -%}
+          {%- assign row_value = row_parts | slice: 1, row_parts.size | join: ': ' -%}
+          <tr>
+            <th>{{ row_label | strip }}</th>
+            <td>{{ row_value | strip }}</td>
+          </tr>
+        {%- else -%}
+          <tr>
+            <td colspan="2">{{ row }}</td>
+          </tr>
+        {%- endif -%}
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endif -%}
