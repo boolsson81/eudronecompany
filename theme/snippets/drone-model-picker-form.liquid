@@ -27,15 +27,21 @@
   {%- endfor -%}
 
   <div class="drone-picker__field">
-    <label for="DroneModel-{{ section.id }}">{{ 'products.drone_finder.select_label' | t }}</label>
+    <label class="visually-hidden" for="DroneModel-{{ section.id }}">{{ 'products.drone_finder.select_label' | t }}</label>
     {%- if section.settings.enable_search -%}
-      <input
-        type="search"
-        class="drone-picker__search"
-        data-drone-picker-search="DroneModel-{{ section.id }}"
-        placeholder="{{ 'products.drone_finder.search_placeholder' | t }}"
-        autocomplete="off"
-      >
+      <div class="field drone-picker__search-field">
+        <input
+          type="search"
+          id="DronePickerSearch-{{ section.id }}"
+          class="drone-picker__search field__input"
+          data-drone-picker-search="DroneModel-{{ section.id }}"
+          placeholder="{{ 'products.drone_finder.search_placeholder' | t }}"
+          autocomplete="off"
+        >
+        <label class="field__label" for="DronePickerSearch-{{ section.id }}">
+          {{ 'products.drone_finder.search_placeholder' | t }}
+        </label>
+      </div>
     {%- endif -%}
     <div class="select">
       <select name="{{ compat_filter.param_name }}" id="DroneModel-{{ section.id }}" class="select__select">
