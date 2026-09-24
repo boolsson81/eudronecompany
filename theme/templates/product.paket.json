@@ -165,7 +165,7 @@
             "title": "Utbildning & driftsättning",
             "text": "<p>Vi hjälper er med drönarkort, operatörstillstånd och driftsättning på plats.</p>",
             "link_label": "Utbildningar",
-            "link": "/pages/training"
+            "link": "/pages/service-support"
           }
         }
       },
@@ -189,6 +189,14 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "related-products": {
@@ -221,6 +229,7 @@
   "order": [
     "main",
     "trust-badges",
+    "product-relations",
     "related-products",
     "enterprise-quote"
   ]

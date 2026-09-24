@@ -13,6 +13,7 @@
         "quote_label": "Offertförfrågan",
         "quote_link": "/pages/contact-quote",
         "support_label": "Support",
+        "support_link": "/pages/service-support",
         "padding_top": 0,
         "padding_bottom": 0
       }
