@@ -1,11 +1,917 @@
 {
   "version": "1.0",
-  "uppdaterad": "2026-09-10",
+  "uppdaterad": "2026-09-24",
   "dokumentation": "docs/INKOPSPROSPEKT.md",
   "noteringar": [
     "Leverantörer och produkter vi överväger att köpa in. Inget här är beställt.",
     "Priser är det källan angav — se pris.basis. Listpris är inte vårt inköpspris.",
     "Lägg till med: npm run prospekt:add -- --leverantor ... --produkt ..."
   ],
-  "prospekt": []
+  "prospekt": [
+    {
+      "id": "czi-bs16-uav-battery-charging-cabinet",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "BS16 UAV Battery Charging Cabinet",
+      "kategori": "batteri",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 7450,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "batteri",
+        "ny-modell"
+      ],
+      "anteckning": "Ny modell, inget RRP angivet i källan. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-cz100-tethered-lighting-system",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "CZ100 Tethered Lighting System",
+      "kategori": "tetherad-belysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 12999,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-belysning",
+        "sokljus"
+      ],
+      "anteckning": "Saknas helt i Shopify (vendor:CZI, kontrollerat 2026-09-24). RRP ur Q3 2026 CZI-prislista (PDF). Dealer price gick inte att läsa av säkert i PDF-extraktionen för M400-seriens produkter."
+    },
+    {
+      "id": "czi-cz100v-tethered-lighting-system-med-zoom-och-varmekamera",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "CZ100V Tethered Lighting System med zoom och värmekamera",
+      "kategori": "tetherad-belysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 17999,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-belysning",
+        "sokljus",
+        "varmekamera"
+      ],
+      "anteckning": "Saknas helt i Shopify. RRP ur Q3 2026 CZI-prislista. Dealer price ej säkert extraherad."
+    },
+    {
+      "id": "czi-eload5-m400-winch-system-5kg",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "Eload5 M400 Winch System 5kg",
+      "kategori": "lastslapp",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 4399,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "vinsch",
+        "ny-modell",
+        "m400"
+      ],
+      "anteckning": "Ny modell i Q3 2026 CZI-prislista, 5kg nyttolast. Saknas helt i Shopify. Dealer price ej säkert extraherad."
+    },
+    {
+      "id": "czi-gl310-high-power-gimbal-spotlight",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "GL310 High Power Gimbal Spotlight",
+      "kategori": "sokljus",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 3899,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "sokljus",
+        "gimbal",
+        "ny-modell"
+      ],
+      "anteckning": "Ny modell i Q3 2026 CZI-prislista. Saknas helt i Shopify. Dealer price ej säkert extraherad."
+    },
+    {
+      "id": "czi-ll600-360-degree-automatic-floodlight-work-lamp",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "LL600 360-degree Automatic Floodlight Work Lamp",
+      "kategori": "nodbelysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 1860,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nodbelysning",
+        "arbetsbelysning"
+      ],
+      "anteckning": "RRP 2999 EUR. Ej drönarmonterad. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-mf30-drone-flow-meter",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MF30 Drone Flow Meter",
+      "kategori": "sensorer",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 3150,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "flodesmatare",
+        "m4",
+        "m30"
+      ],
+      "anteckning": "Listas i prislistan som MF30-M4 och MF30-M30 (samma pris för båda drönarkompatibiliteterna). RRP 5999 EUR. Kräver czi Pilot APP. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-ml200-1500w-matrix-light",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "ML200 1500W Matrix Light",
+      "kategori": "sokljus",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 2899,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "matrix-light",
+        "sokljus"
+      ],
+      "anteckning": "800W-varianten (ML200) finns redan aktiv/draft i Shopify, men inte 1500W-varianten. RRP ur Q3 2026 CZI-prislista."
+    },
+    {
+      "id": "czi-mp135-multi-functional-megaphone",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MP135 Multi-functional Megaphone",
+      "kategori": "hogtalare",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 2699,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "hogtalare",
+        "ny-modell",
+        "handhallen"
+      ],
+      "anteckning": "Ny modell i Q3 2026 CZI-prislista (mountable/robot-compatible/handheld). Saknas helt i Shopify. Dealer price ej säkert extraherad."
+    },
+    {
+      "id": "czi-mt10-emergency-lighting-power-bank",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MT10 Emergency Lighting Power Bank",
+      "kategori": "nodbelysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 25,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nodbelysning",
+        "ny-modell"
+      ],
+      "anteckning": "RRP 49 EUR. Ny produktkategori (ej drönarmonterad). Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-mt100-high-power-handheld-searchlight",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MT100 High-Power Handheld Searchlight",
+      "kategori": "nodbelysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 240,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nodbelysning",
+        "sokljus",
+        "handhallen"
+      ],
+      "anteckning": "RRP 329 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-mt20-multi-functional-outdoor-searchlight",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MT20 Multi-functional Outdoor Searchlight",
+      "kategori": "nodbelysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 140,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nodbelysning",
+        "sokljus",
+        "ny-modell"
+      ],
+      "anteckning": "RRP 199 EUR. Handhållen, ej drönarmonterad. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-mt60-multi-functional-handheld-searchlight",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "MT60 Multi-functional Handheld Searchlight",
+      "kategori": "nodbelysning",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 190,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nodbelysning",
+        "sokljus",
+        "handhallen"
+      ],
+      "anteckning": "RRP 299 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-nv10-night-vision-binoculars",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "NV10 Night Vision Binoculars",
+      "kategori": "nattvision",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 8800,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "nattvision",
+        "ny-modell"
+      ],
+      "anteckning": "RRP 15999 EUR. Ny modell, handhållen (ej drönarmonterad). Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-t40-td40-material-delivery-dropping-device",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "T40 TD40 Material Delivery Dropping Device",
+      "kategori": "lastslapp",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 660,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "lastslapp"
+      ],
+      "anteckning": "RRP 1199 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-th4-v3-throwing-hook-for-m400",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TH4 V3 Throwing Hook för M400",
+      "kategori": "lastslapp",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 1099,
+        "valuta": "USD",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "lastslapp",
+        "m400"
+      ],
+      "anteckning": "Ny variant, endast för M400 (skiljer sig från TH4 V2 som redan finns som draft i Shopify). Pris i USD i källan, ej EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-backpack-tethered-power-system-set-m30-och-m350",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3 Backpack Tethered Power System Set M30 och M350",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 9300,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "backpack",
+        "m30",
+        "m350"
+      ],
+      "anteckning": "RRP 16999 EUR. Innehåller TK3, ML200 400W, ML200 800W samt air modules för M30 och M350. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m30-air-module",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M30 Air Module",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 1980,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "air-module",
+        "m30"
+      ],
+      "anteckning": "RRP 3600 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m30-tether-power-system-och-ml200-400w-matrix-light-set",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M30 Tether Power System och ML200 400W Matrix Light Set",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 6460,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "matrix-light",
+        "m30"
+      ],
+      "anteckning": "RRP 11999 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m30-tethered-power-system",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M30 Tethered Power System",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 5820,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "m30"
+      ],
+      "anteckning": "RRP 10999 EUR. Saknas som fristående produkt i Shopify (endast omärkta ML200-kombinationer finns som drafts)."
+    },
+    {
+      "id": "czi-tk3-m350-air-module",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M350 Air Module",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 2200,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "air-module",
+        "m350"
+      ],
+      "anteckning": "RRP 4000 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m350-tether-power-system-och-ml200-800w-matrix-light-set",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M350 Tether Power System och ML200 800W Matrix Light Set",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 6800,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "matrix-light",
+        "m350"
+      ],
+      "anteckning": "RRP 12999 EUR. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m350-tethered-power-system",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M350 Tethered Power System",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 6150,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "m350"
+      ],
+      "anteckning": "RRP 11999 EUR. Saknas som fristående produkt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m4-tethered-power-system-50m",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M4 Tethered Power System 50m",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 10899,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "ny-modell",
+        "m4"
+      ],
+      "anteckning": "Ny modell i Q3 2026 CZI-prislista, för M4-serien. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-m4d-td-tethered-power-system-set",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3-M4D/TD Tethered Power System Set",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 6500,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "ny-modell"
+      ],
+      "anteckning": "Ny modell för 4D/4TD-serien. Innehåller tetherad station och airborne-enhet. Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk3-tethered-power-system-set-med-air-modules-m30-och-m350",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK3 Tethered Power System Set med Air Modules M30 och M350",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 8020,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom",
+        "m30",
+        "m350"
+      ],
+      "anteckning": "RRP 14999 EUR. Innehåller TK3 samt air modules för M30 och M350 (utan matrislampor). Saknas helt i Shopify."
+    },
+    {
+      "id": "czi-tk4-tethered-power-system-200m",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-09-24",
+      "uppdaterad": "2026-09-24",
+      "tillagd_av": "bo",
+      "leverantor": "CZI",
+      "produkt": "TK4 Tethered Power System 200m",
+      "kategori": "tetherad-strom",
+      "land": "CN",
+      "url": null,
+      "kontakt": {
+        "namn": null,
+        "epost": null,
+        "telefon": null,
+        "webb": null
+      },
+      "pris": {
+        "belopp": 12999,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "tetherad-strom"
+      ],
+      "anteckning": "110m-varianten (TK4) finns redan som draft i Shopify, men inte 200m-varianten. RRP ur Q3 2026 CZI-prislista."
+    }
+  ]
 }
