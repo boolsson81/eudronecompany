@@ -191,6 +191,11 @@
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "compatibility_label": "Compatible with: ",
+      "compatibility_fits_html": "Fits {{ model }}",
+      "compatibility_heading": "Compatibility",
+      "compatibility_unsure": "Not sure if it fits?",
+      "compatible_accessories_heading": "Compatible accessories",
+      "compatible_accessories_heading_html": "Compatible accessories for {{ model }}",
       "series_label": "Series: ",
       "vendor": "Vendor",
       "value_unavailable": "{{ option_value }} - Unavailable",
@@ -237,6 +242,19 @@
       "sort_by_label": "Sort by:",
       "to": "To",
       "clear_filter": "Remove filter"
+    },
+    "drone_finder": {
+      "select_label": "Choose your drone",
+      "select_placeholder": "Choose your drone",
+      "search_placeholder": "Search for a drone model...",
+      "change_drone": "Change drone",
+      "clear_filter": "Clear filter",
+      "result_count": {
+        "one": "{{ count }} compatible product",
+        "other": "{{ count }} compatible products"
+      },
+      "no_results": "No compatible products found for this model yet.",
+      "active_heading_html": "Accessories for {{ model }}"
     }
   },
   "templates": {
@@ -297,7 +315,6 @@
       "announcement": "Announcement",
       "announcement_bar": "Announcement bar"
     },
-
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",

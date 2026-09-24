@@ -1,14 +1,46 @@
 {% comment %}
-  Renders DJI compatibility line from dji.compatible_models_display metafield.
+  Renders a "Passar till" compatibility line on product cards.
+
+  Reads compatible drone models from custom.passsar_till (the populated,
+  filterable metafield — see docs/reports/DJI_FILTER_SETUP.md for the
+  originally planned dji.compatible_models_display, which has no live data).
+  Falls back to dji.compatible_models_display for forward-compatibility.
+
+  When the current collection page has an active "Passar till" filter
+  (custom.passsar_till), highlights the matching model with a checkmark
+  instead of listing every compatible model.
+
   Accepts:
   - product: {Object} Product Liquid object
 {% endcomment %}
-{%- assign compat_models = product.metafields.dji.compatible_models_display.value -%}
+{%- liquid
+  assign compat_models = product.metafields.custom.passsar_till.value
+  if compat_models == blank
+    assign compat_models = product.metafields.dji.compatible_models_display.value
+  endif
+
+  assign active_model = blank
+  for filter in collection.filters
+    if filter.param_name contains 'passsar_till'
+      assign active_values = filter.active_values
+      if active_values.size > 0
+        assign active_model = active_values.first.label
+      endif
+    endif
+  endfor
+-%}
 {%- if compat_models != blank -%}
   <p class="caption light card__compatibility">
-    <span class="card__compatibility-label">{{ 'products.product.compatibility_label' | t }}</span>
-    {%- for model in compat_models -%}
-      {{- model | escape -}}{%- unless forloop.last -%}, {% endunless -%}
-    {%- endfor -%}
+    {%- if active_model != blank and compat_models contains active_model -%}
+      <span class="card__compatibility-match">
+        <span class="svg-wrapper">{{- 'icon-checkmark.svg' | inline_asset_content -}}</span>
+        {{- 'products.product.compatibility_fits_html' | t: model: active_model -}}
+      </span>
+    {%- else -%}
+      <span class="card__compatibility-label">{{ 'products.product.compatibility_label' | t }}</span>
+      {%- for model in compat_models -%}
+        {{- model | escape -}}{%- unless forloop.last -%}, {% endunless -%}
+      {%- endfor -%}
+    {%- endif -%}
   </p>
 {%- endif -%}

@@ -1,0 +1,187 @@
+{% comment %}
+  Drone model picker + active-compatibility banner.
+
+  Single reusable component for "Vilken drönare använder du?" (hero,
+  context: hero) and "Hitta rätt tillbehör" (mid-page CTA, context: cta).
+  Both instances read/write the SAME Search & Discovery filter
+  (custom.passsar_till) on this collection, so there is only one
+  compatibility mechanism on the page — never two parallel systems.
+
+  Requires the collection to have Search & Discovery filtering enabled
+  for the "custom.passsar_till" (Passar till) metafield. If that filter
+  isn't available yet, this section renders a setup note in the theme
+  editor and nothing on the live storefront.
+{% endcomment %}
+
+{%- liquid
+  assign compat_filter = nil
+  for filter in collection.filters
+    if filter.param_name contains 'passsar_till'
+      assign compat_filter = filter
+    endif
+  endfor
+
+  assign active_value = nil
+  if compat_filter
+    assign active_value = compat_filter.active_values.first
+  endif
+-%}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  .drone-picker { max-width: 720px; }
+  .drone-picker--cta { max-width: 100%; }
+  .drone-picker__form { display: flex; flex-wrap: wrap; gap: 1rem; align-items: flex-end; }
+  .drone-picker__field { flex: 1 1 280px; min-width: 220px; }
+  .drone-picker__field label { display: block; margin-bottom: 0.5rem; }
+  .drone-picker__field select { width: 100%; }
+  .drone-picker__actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .drone-picker__active { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; }
+  .drone-picker__active-copy .drone-picker__count { display: block; }
+  .drone-picker__setup-note { border: 1px dashed rgba(var(--color-foreground), 0.3); padding: 1rem; border-radius: var(--inputs-radius, 4px); }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width drone-picker drone-picker--{{ section.settings.context }}">
+    {%- if compat_filter == nil -%}
+      {%- if request.design_mode -%}
+        <div class="drone-picker__setup-note caption">
+          "Passar till"-filtret (custom.passsar_till) är inte aktiverat i Shopify Admin → Online Store → Search &amp; Discovery → Filter för den här kollektionen än. Aktivera det så visas drönarväljaren automatiskt här.
+        </div>
+      {%- endif -%}
+    {%- elsif active_value -%}
+      {%- comment -%} Active state: STEG 8 — show which drone is selected + count + change/clear. {%- endcomment -%}
+      <div class="drone-picker__active">
+        <div class="drone-picker__active-copy">
+          <h2 class="drone-picker__heading inline-richtext {{ section.settings.heading_size }}">
+            {{ 'products.drone_finder.active_heading_html' | t: model: active_value.label }}
+          </h2>
+          <span class="drone-picker__count light">
+            {{ 'products.drone_finder.result_count' | t: count: collection.products_count }}
+          </span>
+        </div>
+        <div class="drone-picker__actions">
+          <button
+            type="button"
+            class="button button--secondary"
+            aria-expanded="false"
+            aria-controls="DronePickerForm-{{ section.id }}"
+            onclick="this.closest('.drone-picker__active').hidden = true; document.getElementById('DronePickerFormWrapper-{{ section.id }}').hidden = false;"
+          >
+            {{ 'products.drone_finder.change_drone' | t }}
+          </button>
+          <a href="{{ active_value.url_to_remove }}" class="button button--tertiary">
+            {{ 'products.drone_finder.clear_filter' | t }}
+          </a>
+        </div>
+      </div>
+      <div id="DronePickerFormWrapper-{{ section.id }}" hidden>
+        {%- render 'drone-model-picker-form', section: section, compat_filter: compat_filter -%}
+      </div>
+    {%- else -%}
+      {%- comment -%} Picker state: STEG 3 (hero) / STEG 10 (cta). {%- endcomment -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="drone-picker__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="drone-picker__text rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+      <div id="DronePickerFormWrapper-{{ section.id }}">
+        {%- render 'drone-model-picker-form', section: section, compat_filter: compat_filter -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Välj din drönare",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "context",
+      "label": "Placering",
+      "options": [
+        { "value": "hero", "label": "Högst upp (drönarväljare)" },
+        { "value": "cta", "label": "CTA längre ner på sidan" }
+      ],
+      "default": "hero"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Vilken drönare använder du?"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Rubrikstorlek",
+      "options": [
+        { "value": "h3", "label": "Liten" },
+        { "value": "h2", "label": "Medel" },
+        { "value": "h1", "label": "Stor" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Filtrera efter modell, kategori och kompatibilitet.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_search",
+      "label": "Sökbar lista",
+      "info": "Lägg till ett sökfält som filtrerar listan med drönarmodeller.",
+      "default": true
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Välj din drönare"
+    }
+  ]
+}
+{% endschema %}
