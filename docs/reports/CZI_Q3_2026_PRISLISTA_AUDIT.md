@@ -31,7 +31,11 @@ Under genomgången hittades och åtgärdades:
 - **C30N** (DRAFT, 524 999 kr) ser fel ut — DT1K, en jämförbar nattkamera
   (RRP €11 999 vs C30N:s RRP €14 999, dvs ca 25 % högre), ligger på
   166 999 kr som aktiv produkt, medan C30N ligger på ca 3× det priset.
-  C30N:s pris bör kontrolleras innan den publiceras.
+  Försökte verifiera mot en konkurrents pris (Swedron, som säljer CZI) för
+  att få ett riktvärde, men både direkt hämtning och Wayback Machine
+  blockerades av sessionens nätverkspolicy (endast förkonfigurerade
+  domäner tillåtna). **Rätt pris är okänt** — kräver manuell kontroll
+  innan C30N publiceras.
 - Flera DRAFT-produkter har **pris 0 kr**: ES638/ES838, FS32 (Logistic
   Payloads Kit), FS35 ("Appearance" — trasig titel, är FlyCart 100/FS35
   Delivery System), TH6. Ofarligt så länge de är DRAFT, men de kan inte
