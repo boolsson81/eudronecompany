@@ -238,6 +238,8 @@
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                       {%- if block.settings.content == blank and block.settings.page == blank and block.settings.icon == 'ruler' -%}
                         {{ product.metafields.seo.specification.value }}
+                      {%- elsif block.settings.content == blank and block.settings.page == blank and block.settings.heading == 'Kompatibla modeller' -%}
+                        {% render 'product-compatibility', show_heading: false %}
                       {%- else -%}
                         {{ block.settings.content }}
                         {{ block.settings.page.content }}
