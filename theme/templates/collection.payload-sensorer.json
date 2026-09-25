@@ -1,0 +1,137 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "compare_teaser": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": { "caption": "Osäker på vilken payload som passar?", "text_style": "uppercase", "text_size": "small" }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": { "heading": "Jämför payloads sida vid sida", "heading_size": "h3" }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Öppna jämförelsen",
+            "button_link": "/pages/jamfor-payloads",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "button"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-edp",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "subcategories": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Kamera & sensor",
+            "text": "<p>RGB, zoom och termiska sensorer för inspektion och kartläggning.</p>",
+            "link_label": "Visa kamera & sensor",
+            "link": "/collections/payload-sensorer"
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Spray-tillsatser",
+            "text": "<p>Tank- och munstyckskit för sprutdrönare.</p>",
+            "link_label": "Visa spray-tillsatser",
+            "link": "/collections/payload-sensorer"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Lyft & vinsch",
+            "text": "<p>Lyft- och transportlösningar för tunga uppdrag.</p>",
+            "link_label": "Visa lyft & vinsch",
+            "link": "/collections/payload-sensorer"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Multispektral",
+            "text": "<p>Sensorer för fältanalys och grödkartläggning.</p>",
+            "link_label": "Visa multispektral",
+            "link": "/collections/payload-sensorer"
+          }
+        }
+      },
+      "block_order": ["column-0", "column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "Handla efter typ",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "2",
+        "padding_top": 24,
+        "padding_bottom": 12
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": true,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver du hjälp att välja rätt payload?",
+        "text": "Vårt enterprise-team hjälper dig matcha sensor mot uppdrag och plattform.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "",
+        "button_link_2": "",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["banner", "compare_teaser", "subcategories", "product-grid", "cta"]
+}
