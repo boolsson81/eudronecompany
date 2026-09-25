@@ -15,6 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'edp-ai.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
@@ -85,8 +86,6 @@
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
-          {% render 'edp-ai-content', resource: product, hide_spec: true %}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -695,6 +694,14 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'edp_ai_answer' -%}
+                {% render 'edp-ai-answer', resource: product, block: block %}
+              {%- when 'edp_ai_spec' -%}
+                {% render 'edp-ai-spec', resource: product, block: block %}
+              {%- when 'edp_ai_faq' -%}
+                {% render 'edp-ai-faq', resource: product, block: block %}
+              {%- when 'edp_ai_related' -%}
+                {% render 'edp-ai-related', resource: product, block: block %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -953,6 +960,50 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+    {
+      "type": "edp_ai_answer",
+      "name": "AI: Snabbt svar",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar texten från metafältet seo.kort_text_150, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_spec",
+      "name": "AI: Specifikation",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar innehållet från metafältet seo.specification som en \"Beskrivning\"-flik, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_faq",
+      "name": "AI: Vanliga frågor",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar frågor/svar från metafältet seo.faq_json, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_related",
+      "name": "AI: Relaterat",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar relaterade produkter/kollektioner från metafälten seo.related_products och seo.related_collections, om de finns."
+        }
+      ]
     },
     {
       "type": "share",
