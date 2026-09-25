@@ -336,6 +336,24 @@
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
+      "complementary_products": {
+        "heading": "Complete your order"
+      },
+      "free_shipping": {
+        "remaining_html": "Spend {{ amount }} more for free shipping!",
+        "reached": "You've got free shipping! 🎉"
+      },
+      "discount_code": {
+        "label": "Have a discount code?",
+        "placeholder": "Enter discount code",
+        "apply": "Apply code"
+      },
+      "secure_checkout": "Secure checkout",
+      "low_stock_html": "Only {{ count }} left in stock",
+      "compatibility_warning": {
+        "title": "Your cart has parts for different drone models",
+        "fits": "Fits"
+      },
       "note": "Order special instructions",
       "checkout": "Check out",
       "empty": "Your cart is empty",

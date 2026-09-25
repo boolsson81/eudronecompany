@@ -346,6 +346,24 @@
       },
       "estimated_total": "Beräknad totalsumma",
       "new_estimated_total": "Nytt beräknat totalbelopp",
+      "complementary_products": {
+        "heading": "Kompletterar din beställning"
+      },
+      "free_shipping": {
+        "remaining_html": "Handla för {{ amount }} till för fri frakt!",
+        "reached": "Du har fri frakt! 🎉"
+      },
+      "discount_code": {
+        "label": "Har du en rabattkod?",
+        "placeholder": "Ange rabattkod",
+        "apply": "Använd kod"
+      },
+      "secure_checkout": "Säker betalning",
+      "low_stock_html": "Bara {{ count }} kvar i lager",
+      "compatibility_warning": {
+        "title": "Din varukorg innehåller delar för olika drönarmodeller",
+        "fits": "Passar"
+      },
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Tullavgifter och skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Tullavgifter och skatter ingår. Rabatter och fraktkostnad beräknas i kassan.",
       "taxes_included_shipping_at_checkout_with_policy_html": "Skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",

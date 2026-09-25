@@ -100,9 +100,6 @@
         "edp-ai-answer": {
           "type": "edp_ai_answer"
         },
-        "edp-ai-spec": {
-          "type": "edp_ai_spec"
-        },
         "edp-ai-faq": {
           "type": "edp_ai_faq"
         },
@@ -112,7 +109,6 @@
       },
       "block_order": [
         "edp-ai-answer",
-        "edp-ai-spec",
         "edp-ai-faq",
         "edp-ai-related",
         "vendor",
