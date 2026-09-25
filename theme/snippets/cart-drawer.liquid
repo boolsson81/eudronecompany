@@ -7,9 +7,13 @@
 
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+{{ 'component-cart-drawer-extras.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-discount-form.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .drawer {
@@ -74,6 +78,29 @@
           </span>
         </button>
       </div>
+      {%- if cart != empty and settings.free_shipping_threshold != blank and settings.free_shipping_threshold > 0 -%}
+        {%- liquid
+          assign fs_threshold_cents = settings.free_shipping_threshold | times: 100 | round
+          assign fs_remaining_cents = fs_threshold_cents | minus: cart.total_price
+          assign fs_percent = cart.total_price | times: 100.0 | divided_by: fs_threshold_cents | round: 1
+          if fs_percent > 100
+            assign fs_percent = 100
+          endif
+        -%}
+        <div class="cart-drawer__free-shipping" role="status">
+          <p class="cart-drawer__free-shipping-text">
+            {%- if fs_remaining_cents > 0 -%}
+              {%- assign fs_remaining_money = fs_remaining_cents | money -%}
+              {{ 'sections.cart.free_shipping.remaining_html' | t: amount: fs_remaining_money }}
+            {%- else -%}
+              {{ 'sections.cart.free_shipping.reached' | t }}
+            {%- endif -%}
+          </p>
+          <div class="cart-drawer__free-shipping-track">
+            <div class="cart-drawer__free-shipping-bar" style="width: {{ fs_percent }}%;"></div>
+          </div>
+        </div>
+      {%- endif -%}
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
@@ -173,6 +200,22 @@
                             <div class="product-option">
                               {{ item.original_price | money }}
                             </div>
+                          {%- endif -%}
+
+                          {%- liquid
+                            assign show_low_stock = false
+                            if settings.low_stock_threshold != blank and settings.low_stock_threshold > 0
+                              if item.variant.inventory_management == 'shopify' and item.variant.inventory_policy == 'deny'
+                                if item.variant.inventory_quantity > 0 and item.variant.inventory_quantity <= settings.low_stock_threshold
+                                  assign show_low_stock = true
+                                endif
+                              endif
+                            endif
+                          -%}
+                          {%- if show_low_stock -%}
+                            <p class="cart-item__low-stock caption">
+                              {{- 'sections.cart.low_stock_html' | t: count: item.variant.inventory_quantity -}}
+                            </p>
                           {%- endif -%}
 
                           {%- if item.product.has_only_default_variant == false
@@ -465,6 +508,129 @@
                   </tbody>
                 </table>
               </div>
+
+              {%- comment -%}
+                Kompatibilitetsvarning — återanvänder samma custom.passsar_till-
+                metafält (fallback dji.compatible_models_display) som är källan
+                till sanning för drönarmodell-kompatibilitet i resten av temat,
+                se sections/compatible-accessories.liquid och
+                snippets/product-compatibility.liquid. Bygger aldrig en egen
+                parallell taxonomi.
+              {%- endcomment -%}
+              {%- liquid
+                assign compat_intersection = ''
+                assign compat_item_count = 0
+                assign compat_first = true
+                for compat_item in cart.items
+                  assign compat_item_models = compat_item.product.metafields.custom.passsar_till.value
+                  if compat_item_models == blank
+                    assign compat_item_models = compat_item.product.metafields.dji.compatible_models_display.value
+                  endif
+                  if compat_item_models != blank
+                    assign compat_item_count = compat_item_count | plus: 1
+                    if compat_first
+                      assign next_intersection = ''
+                      for compat_model in compat_item_models
+                        assign next_intersection = next_intersection | append: '||' | append: compat_model
+                      endfor
+                      if next_intersection != ''
+                        assign next_intersection = next_intersection | append: '||'
+                      endif
+                      assign compat_intersection = next_intersection
+                      assign compat_first = false
+                    else
+                      assign next_intersection = ''
+                      for compat_model in compat_item_models
+                        assign compat_needle = '||' | append: compat_model | append: '||'
+                        if compat_intersection contains compat_needle
+                          assign next_intersection = next_intersection | append: '||' | append: compat_model
+                        endif
+                      endfor
+                      if next_intersection != ''
+                        assign next_intersection = next_intersection | append: '||'
+                      endif
+                      assign compat_intersection = next_intersection
+                    endif
+                  endif
+                endfor
+                assign show_compat_warning = false
+                if compat_item_count > 1 and compat_intersection == ''
+                  assign show_compat_warning = true
+                endif
+              -%}
+              {%- if show_compat_warning -%}
+                <div class="cart-drawer__compat-warning" role="alert">
+                  <span class="svg-wrapper">{{- 'icon-info.svg' | inline_asset_content -}}</span>
+                  <div class="cart-drawer__compat-warning-body">
+                    <p class="cart-drawer__compat-warning-title">
+                      {{ 'sections.cart.compatibility_warning.title' | t }}
+                    </p>
+                    <ul class="cart-drawer__compat-warning-list list-unstyled">
+                      {%- for compat_item in cart.items -%}
+                        {%- liquid
+                          assign compat_item_models = compat_item.product.metafields.custom.passsar_till.value
+                          if compat_item_models == blank
+                            assign compat_item_models = compat_item.product.metafields.dji.compatible_models_display.value
+                          endif
+                        -%}
+                        {%- if compat_item_models != blank -%}
+                          <li>
+                            <strong>{{ compat_item.product.title | escape }}</strong>
+                            — {{ 'sections.cart.compatibility_warning.fits' | t }}
+                            {{ compat_item_models | join: ', ' }}
+                          </li>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </ul>
+                    <a href="/collections/drone-accessories" class="link underlined-link">
+                      {{ 'products.product.compatibility_unsure' | t }}
+                    </a>
+                  </div>
+                </div>
+              {%- endif -%}
+
+              {%- comment -%}
+                Korsförsäljning — Shopifys Product Recommendations API, samma
+                mekanism som sections/main-product.liquid använder för
+                "complementary"-blocket och sections/related-products.liquid,
+                här fröad med den senast tillagda produkten i varukorgen.
+              {%- endcomment -%}
+              <product-recommendations
+                class="cart-drawer__recommendations quick-add-hidden"
+                data-url="{{ routes.product_recommendations_url }}?limit=4&intent=complementary"
+                data-section-id="cart-drawer"
+                data-product-id="{{ cart.items.last.product.id }}"
+              >
+                {%- if recommendations.performed and recommendations.products_count > 0 -%}
+                  <aside
+                    class="cart-drawer__recommendations-container complementary-products__container"
+                    aria-label="{{ 'accessibility.complementary_products' | t }}"
+                  >
+                    <p class="cart-drawer__recommendations-heading h4">
+                      {{ 'sections.cart.complementary_products.heading' | t }}
+                    </p>
+                    <ul class="cart-drawer__recommendations-list list-unstyled" role="list">
+                      {%- assign skip_card_product_styles = false -%}
+                      {%- for recommended_product in recommendations.products limit: 4 -%}
+                        <li class="cart-drawer__recommendations-item">
+                          {% render 'card-product',
+                            card_product: recommended_product,
+                            media_aspect_ratio: 'square',
+                            show_secondary_image: false,
+                            show_compatibility: true,
+                            lazy_load: true,
+                            skip_styles: skip_card_product_styles,
+                            quick_add: 'none',
+                            section_id: 'cart-drawer',
+                            horizontal_class: true
+                          %}
+                        </li>
+                        {%- assign skip_card_product_styles = true -%}
+                      {%- endfor -%}
+                    </ul>
+                  </aside>
+                {%- endif -%}
+              </product-recommendations>
             {%- endif -%}
             <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
             <p id="CartDrawer-LineItemStatus" class="visually-hidden" aria-hidden="true" role="status">
@@ -492,6 +658,36 @@
                 placeholder="{{ 'sections.cart.note' | t }}"
               >{{ cart.note }}</textarea>
             </cart-note>
+          </details>
+        {%- endif -%}
+
+        {%- if cart != empty -%}
+          <details id="Details-CartDrawer-Discount" class="cart-drawer__discount-details">
+            <summary>
+              <span class="summary__title">
+                {{ 'sections.cart.discount_code.label' | t }}
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </summary>
+            <cart-discount-form class="cart-drawer__discount-form">
+              <form novalidate>
+                <label class="visually-hidden" for="CartDrawer-DiscountCode">
+                  {{ 'sections.cart.discount_code.label' | t }}
+                </label>
+                <div class="cart-drawer__discount-input-row">
+                  <input
+                    type="text"
+                    id="CartDrawer-DiscountCode"
+                    name="discount-code"
+                    placeholder="{{ 'sections.cart.discount_code.placeholder' | t }}"
+                    autocomplete="off"
+                  >
+                  <button type="submit" class="button button--secondary cart-drawer__discount-submit">
+                    {{ 'sections.cart.discount_code.apply' | t }}
+                  </button>
+                </div>
+              </form>
+            </cart-discount-form>
           </details>
         {%- endif -%}
 
@@ -558,6 +754,28 @@
             {%- endif -%}
           </small>
         </div>
+
+        {%- if cart != empty -%}
+          <div class="cart-drawer__trust">
+            {%- if shop.enabled_payment_types.size > 0 -%}
+              <ul
+                class="list list-payment cart-drawer__payment-icons"
+                role="list"
+                aria-label="{{ 'sections.footer.payment' | t }}"
+              >
+                {%- for type in shop.enabled_payment_types -%}
+                  <li class="list-payment__item">
+                    {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+            <p class="cart-drawer__trust-text caption">
+              <span class="svg-wrapper">{{- 'icon-lock.svg' | inline_asset_content -}}</span>
+              {{ 'sections.cart.secure_checkout' | t }}
+            </p>
+          </div>
+        {%- endif -%}
 
         <!-- CTAs -->
 

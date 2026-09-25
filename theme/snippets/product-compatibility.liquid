@@ -12,6 +12,10 @@
   - accessories_collection_url: {String} URL of the Drone Accessories
     collection, used for the "Osäker på om den passar?" link (optional,
     defaults to /collections/drone-accessories)
+  - show_heading: {Boolean} whether to render the "Kompatibilitet" heading
+    (optional, defaults to true; pass false when embedding this snippet
+    inside something that already labels the section, such as the
+    "Kompatibla modeller" collapsible tab on the product page)
 {% endcomment %}
 {%- liquid
   assign compat_models = product.metafields.custom.passsar_till.value
@@ -22,9 +26,11 @@
 -%}
 {%- if compat_models != blank -%}
   <div class="product__compatibility-block">
-    <p class="product__compatibility-heading caption-with-letter-spacing">
-      {{ 'products.product.compatibility_heading' | t }}
-    </p>
+    {%- unless show_heading == false -%}
+      <p class="product__compatibility-heading caption-with-letter-spacing">
+        {{ 'products.product.compatibility_heading' | t }}
+      </p>
+    {%- endunless -%}
     <ul class="product__compatibility-list list-unstyled">
       {%- for model in compat_models -%}
         <li class="product__compatibility-item">

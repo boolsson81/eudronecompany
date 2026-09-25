@@ -83,9 +83,21 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "edp-ai-answer": {
+          "type": "edp_ai_answer"
+        },
+        "edp-ai-faq": {
+          "type": "edp_ai_faq"
+        },
+        "edp-ai-related": {
+          "type": "edp_ai_related"
         }
       },
       "block_order": [
+        "edp-ai-answer",
+        "edp-ai-faq",
+        "edp-ai-related",
         "vendor",
         "title",
         "caption",

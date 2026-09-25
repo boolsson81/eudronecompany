@@ -105,9 +105,21 @@
           "settings": {
             "share_label": "Dela"
           }
+        },
+        "edp-ai-answer": {
+          "type": "edp_ai_answer"
+        },
+        "edp-ai-faq": {
+          "type": "edp_ai_faq"
+        },
+        "edp-ai-related": {
+          "type": "edp_ai_related"
         }
       },
       "block_order": [
+        "edp-ai-answer",
+        "edp-ai-faq",
+        "edp-ai-related",
         "package_badge",
         "vendor",
         "title",
