@@ -62,7 +62,8 @@
                 {%- assign question = item.question | default: item.q | strip_html | strip -%}
                 {%- assign answer = item.answer | default: item.a | strip_html | strip -%}
                 {%- if question != blank and answer != blank -%}
-                  {%- assign icon = faq_icons[forloop.index0 | modulo: faq_icons.size] -%}
+                  {%- assign icon_index = forloop.index0 | modulo: faq_icons.size -%}
+                  {%- assign icon = faq_icons[icon_index] -%}
                   <div class="accordion">
                     <details id="Details-{{ section.id }}-{{ forloop.index0 }}">
                       <summary id="Summary-{{ section.id }}-{{ forloop.index0 }}">
