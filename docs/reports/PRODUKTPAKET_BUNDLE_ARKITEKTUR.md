@@ -1,6 +1,39 @@
 # Produktpaket / Bundles — analys och teknisk plan
 
-**Status:** Analysfas klar. Inga kodändringar gjorda. Väntar på godkännande innan Phase 2.
+**Status:** Analysfas klar. Fas 0 (API-versionshöjning) genomförd i kod, väntar på deploy
+av edge functions. Väntar på beslut/godkännande innan Fas 2.
+
+## 0. Fas 0 — genomfört
+
+- `SHOPIFY_API_VERSION` i `supabase/functions/_shared/shopify-client.ts` höjd från
+  `2025-07` till `2026-07` (senaste stabila version).
+- Regressionskontroll: samtliga GraphQL-mutationer som redan används i
+  `supabase/functions/**` (`articleCreate/Update`, `blogCreate`, `collectionDelete/Update`,
+  `deliveryProfileUpdate`, `discountAutomaticBasicCreate`, `discountCodeBasicCreate`,
+  `fileCreate`, `inventoryItemUpdate`, `menuCreate/Update/Delete`,
+  `metafieldDefinitionCreate`, `metafieldsSet`, `metaobjectCreate/DefinitionCreate`,
+  `pageCreate/Update`, `segmentCreate`) verifierade mot det aktuella GraphQL-schemat — alla
+  finns kvar oförändrade. Ingen av de kända föråldrade mutationerna
+  (`productVariantCreate`/`Update`/`Delete` på variantnivå) används i repot, så ingen
+  brytande ändring identifierad.
+- De mutationer bundle-arbetet planerar att använda (`productCreate`, `productBundleCreate`,
+  `productVariantRelationshipBulkUpdate`, `productVariantsBulkUpdate`) verifierade att de
+  finns i samma schema.
+- **Kvarstår, kräver ett separat beslut:** flera fristående Node-skript
+  (`scripts/audit-edp-storefront-seo.mjs` → `2025-07`, `scripts/run-category-audit.mjs` →
+  `2025-10`, `scripts/run-menu-recovery-local.mjs` och
+  `scripts/publish-menu-pages-direct.mjs` → `2024-10`) har egna hårdkodade API-versioner,
+  oberoende av den delade klienten. De är historiska engångs-/migreringsskript, inte del av
+  den löpande edge-function-ytan bundle-arbetet bygger på — lämnade orörda i denna omgång
+  för att inte bredda ändringen utanför det som efterfrågades. Flagga om ni vill att de ska
+  städas upp separat.
+- **Inte gjort (kräver produktionsåtgärd, se nedan):** faktisk deploy av edge functions med
+  den nya versionen. Koden är committad men gäller inte live förrän
+  `npx supabase functions deploy <namn> --project-ref <ref>` körs mot det delade,
+  hostade Supabase-projektet — det gör jag inte utan uttryckligt godkännande eftersom det
+  är en produktionsändring mot en miljö som delas med DigitalSignal.
+- `npm run typecheck`/`npm test` körs inte för denna ändring — filen ligger under
+  `supabase/functions/`, utanför `src/`/`scripts/` som AGENTS.md kräver testkörning för.
 
 ## 1. Vad som redan finns
 
