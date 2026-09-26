@@ -1,0 +1,461 @@
+{
+  "sections": {
+    "hero": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kom igång med drönare",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Guider, tips och färdiga paket för dig som vill börja flyga.",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Hitta rätt drönare",
+            "button_link_1": "#shopify-section-find_drone",
+            "button_style_secondary_1": false,
+            "button_label_2": "Se startpaket",
+            "button_link_2": "#shopify-section-packages",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "scheme-edp",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "find_drone": {
+      "type": "multicolumn",
+      "blocks": {
+        "category_1": {
+          "type": "column",
+          "settings": {
+            "title": "Nybörjare",
+            "text": "<p>Lätt, stabil och enkel att lära sig på — ett tryggt första köp.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-mini-4-series"
+          }
+        },
+        "category_2": {
+          "type": "column",
+          "settings": {
+            "title": "Foto &amp; video",
+            "text": "<p>Högre bildkvalitet och avancerad kamera för dig som vill skapa innehåll.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-air-3-series"
+          }
+        },
+        "category_3": {
+          "type": "column",
+          "settings": {
+            "title": "Resor",
+            "text": "<p>Kompakt och vikbar — får plats i väskan vart du än ska.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-flip-drones"
+          }
+        },
+        "category_4": {
+          "type": "column",
+          "settings": {
+            "title": "Hobby",
+            "text": "<p>Ultralätt och rolig att flyga för dig som vill testa på.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-neo"
+          }
+        },
+        "category_5": {
+          "type": "column",
+          "settings": {
+            "title": "FPV",
+            "text": "<p>Flyg i förstaperson med FPV-glasögon för en helt ny känsla.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-avata-series"
+          }
+        },
+        "category_6": {
+          "type": "column",
+          "settings": {
+            "title": "Avancerad användning",
+            "text": "<p>Professionell bildkvalitet och prestanda när du vuxit ur nybörjarläget.</p>",
+            "link_label": "Utforska",
+            "link": "/collections/dji-mavic-3-series"
+          }
+        }
+      },
+      "block_order": ["category_1", "category_2", "category_3", "category_4", "category_5", "category_6"],
+      "settings": {
+        "title": "Hitta rätt drönare",
+        "heading_size": "h2",
+        "button_label": "Se alla drönare",
+        "button_link": "/collections/dji-drones",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "accessories": {
+      "type": "multicolumn",
+      "blocks": {
+        "item_1": {
+          "type": "column",
+          "settings": {
+            "title": "Extra batteri &amp; laddare",
+            "text": "<p>Flyg längre under samma dag med en extra batteripack.</p>",
+            "link_label": "Se batterier",
+            "link": "/collections/batteries"
+          }
+        },
+        "item_2": {
+          "type": "column",
+          "settings": {
+            "title": "Propellrar",
+            "text": "<p>Bra att ha reserv hemma om en propeller skadas.</p>",
+            "link_label": "Se propellrar",
+            "link": "/collections/drone-propellers-quiet"
+          }
+        },
+        "item_3": {
+          "type": "column",
+          "settings": {
+            "title": "Väska &amp; transport",
+            "text": "<p>Skydda drönaren när du är på språng.</p>",
+            "link_label": "Se väskor",
+            "link": "/collections/drone-backpack-bags"
+          }
+        },
+        "item_4": {
+          "type": "column",
+          "settings": {
+            "title": "Minneskort &amp; lagring",
+            "text": "<p>Tillräckligt med utrymme för foto och video i hög upplösning.</p>",
+            "link_label": "Se minneskort",
+            "link": "/pages/memory-card-storage"
+          }
+        },
+        "item_5": {
+          "type": "column",
+          "settings": {
+            "title": "ND-filter",
+            "text": "<p>Jämnare rörelseoskärpa och bättre exponering i starkt ljus.</p>",
+            "link_label": "Se filter",
+            "link": "/collections/drone-filters"
+          }
+        },
+        "item_6": {
+          "type": "column",
+          "settings": {
+            "title": "Reservdelar &amp; skydd",
+            "text": "<p>Propellerskydd, landningsställ och delar om något behöver bytas.</p>",
+            "link_label": "Se reservdelar",
+            "link": "/collections/drone-spare-parts"
+          }
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3", "item_4", "item_5", "item_6"],
+      "settings": {
+        "title": "Vad behöver jag?",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "packages": {
+      "type": "multicolumn",
+      "blocks": {
+        "package_1": {
+          "type": "column",
+          "settings": {
+            "title": "Nybörjarpaket",
+            "text": "<p>Drönare + extra batteri + laddare + väska.</p>"
+          }
+        },
+        "package_2": {
+          "type": "column",
+          "settings": {
+            "title": "Fotopaket",
+            "text": "<p>Drönare + batteri + minneskort + ND-filter.</p>"
+          }
+        },
+        "package_3": {
+          "type": "column",
+          "settings": {
+            "title": "Resepaket",
+            "text": "<p>Drönare + extra batterier + laddning + kompakt väska.</p>"
+          }
+        }
+      },
+      "block_order": ["package_1", "package_2", "package_3"],
+      "settings": {
+        "title": "Färdiga startpaket",
+        "heading_size": "h2",
+        "button_label": "Se alla paket",
+        "button_link": "/collections/starter-package",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rules": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behöver jag registrera mig?",
+            "row_content": "<p>De flesta drönare över 250 gram, eller drönare med kamera, måste registreras hos Transportstyrelsen och märkas med ett registreringsnummer. Kontrollera alltid vad som gäller för just din drönare på <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsens webbplats</a>.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behöver jag drönarkort?",
+            "row_content": "<p>Ett drönarkort (onlineutbildning eller teoriprov) krävs för de flesta drönare i öppen kategori. Vilket kort du behöver beror på drönarens vikt och hur du flyger. Se aktuella krav och boka prov via <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsen</a>.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Var får jag flyga?",
+            "row_content": "<p>Det finns områden där drönarflygning är begränsad eller förbjuden, till exempel nära flygplatser och vissa skyddade platser. Kontrollera kartan innan du flyger på <a href=\"https://www.ludc.se\" target=\"_blank\" rel=\"noopener\">LFV:s drönarkarta</a>.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilka regler gäller?",
+            "row_content": "<p>Drönarregler i Sverige följer EU:s gemensamma regelverk och delas in i kategorierna Open, Specific och Certified beroende på risk. Reglerna uppdateras löpande — se alltid senaste versionen hos <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsen</a>.</p>"
+          }
+        },
+        "row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad gäller för drönare med kamera?",
+            "row_content": "<p>Filmar eller fotograferar du människor kan reglerna kring integritet och personuppgifter gälla, utöver drönarreglerna. Läs mer hos <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener\">Integritetsskyddsmyndigheten (IMY)</a>.</p>"
+          }
+        },
+        "row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Var hittar jag aktuell information?",
+            "row_content": "<p>Regler för drönare kan ändras, så använd alltid en officiell källa som utgångspunkt: <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsen</a> för registrering och drönarkort, samt <a href=\"https://www.ludc.se\" target=\"_blank\" rel=\"noopener\">LFV:s drönarkarta</a> för flygrestriktioner.</p>"
+          }
+        }
+      },
+      "block_order": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6"],
+      "settings": {
+        "caption": "Regler",
+        "heading": "Flyg säkert och lagligt",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": false
+      }
+    },
+    "guides": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "kom-igang-guider",
+        "post_limit": 3,
+        "heading": "Guider &amp; tips",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "color_scheme": "scheme-2",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "service": {
+      "type": "multicolumn",
+      "blocks": {
+        "help_1": {
+          "type": "column",
+          "settings": {
+            "title": "Felsökning",
+            "text": "<p>Kom igång igen om något krånglar.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/troubleshooting"
+          }
+        },
+        "help_2": {
+          "type": "column",
+          "settings": {
+            "title": "Reservdelar",
+            "text": "<p>Byt slitna eller trasiga delar själv.</p>",
+            "link_label": "Se reservdelar",
+            "link": "/collections/drone-spare-parts"
+          }
+        },
+        "help_3": {
+          "type": "column",
+          "settings": {
+            "title": "Tillbehör",
+            "text": "<p>Komplettera din utrustning efter köpet.</p>",
+            "link_label": "Se tillbehör",
+            "link": "/collections/drone-accessories"
+          }
+        },
+        "help_4": {
+          "type": "column",
+          "settings": {
+            "title": "Service &amp; garanti",
+            "text": "<p>Vi hjälper dig med garantiärenden och service.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/service-support"
+          }
+        },
+        "help_5": {
+          "type": "column",
+          "settings": {
+            "title": "Reparation",
+            "text": "<p>Behöver drönaren lagas hjälper vårt team dig vidare.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/support"
+          }
+        },
+        "help_6": {
+          "type": "column",
+          "settings": {
+            "title": "Produktfrågor",
+            "text": "<p>Osäker på vad som passar dig? Fråga oss.</p>",
+            "link_label": "Kontakta oss",
+            "link": "/pages/contact-us"
+          }
+        }
+      },
+      "block_order": ["help_1", "help_2", "help_3", "help_4", "help_5", "help_6"],
+      "settings": {
+        "title": "Behöver du hjälp?",
+        "heading_size": "h2",
+        "button_label": "Kontakta oss",
+        "button_link": "/pages/contact-us",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row_1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vilken drönare passar en nybörjare?",
+            "row_content": "<p>En lätt och stabil drönare, som DJI Mini-serien, är oftast bäst att börja med. Se vårt urval under <a href=\"#shopify-section-find_drone\">Hitta rätt drönare</a>.</p>"
+          }
+        },
+        "row_2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behöver jag registrera min drönare?",
+            "row_content": "<p>I de flesta fall ja, om drönaren väger över 250 gram eller har kamera. Kontrollera aktuella krav hos <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsen</a>.</p>"
+          }
+        },
+        "row_3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Behöver jag drönarkort?",
+            "row_content": "<p>De flesta som flyger i öppen kategori behöver ett drönarkort. Läs mer och gör testet hos <a href=\"https://transportstyrelsen.se/dronare\" target=\"_blank\" rel=\"noopener\">Transportstyrelsen</a>.</p>"
+          }
+        },
+        "row_4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Får jag flyga med kamera?",
+            "row_content": "<p>Ja, men tänk på andras integritet och kontrollera om extra regler gäller, till exempel hos <a href=\"https://www.imy.se\" target=\"_blank\" rel=\"noopener\">Integritetsskyddsmyndigheten (IMY)</a>.</p>"
+          }
+        },
+        "row_5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur långt kan en drönare flyga?",
+            "row_content": "<p>Det varierar mellan modeller. Se specifikationerna på respektive produktsida för exakt räckvidd och flygtid.</p>"
+          }
+        },
+        "row_6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur många batterier behöver jag?",
+            "row_content": "<p>De flesta väljer minst ett extra batteri för att kunna flyga längre samma dag. Se <a href=\"/collections/batteries\">batterier och laddare</a>.</p>"
+          }
+        },
+        "row_7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad behöver jag köpa tillsammans med en drönare?",
+            "row_content": "<p>Vanligast är extra batteri, minneskort och en väska. Se hela listan under <a href=\"#shopify-section-accessories\">Vad behöver jag?</a>.</p>"
+          }
+        },
+        "row_8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan jag få hjälp om min drönare går sönder?",
+            "row_content": "<p>Ja, vi hjälper dig med felsökning, reservdelar och service. Se <a href=\"/pages/service-support\">Service &amp; support</a> eller <a href=\"/pages/contact-us\">kontakta oss</a>.</p>"
+          }
+        }
+      },
+      "block_order": ["row_1", "row_2", "row_3", "row_4", "row_5", "row_6", "row_7", "row_8"],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Vanliga frågor",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
+        "open_first_collapsible_row": true
+      }
+    }
+  },
+  "order": ["hero", "find_drone", "accessories", "packages", "rules", "guides", "service", "faq"]
+}
