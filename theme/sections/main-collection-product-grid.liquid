@@ -36,6 +36,27 @@
   }
 {%- endstyle -%}
 
+{%- comment -%}
+  Collection-specific default filter override (point 20 in the collection
+  builder spec): optional custom.default_filter_query metafield on the
+  collection, e.g. "filter.p.m.custom.compatible_model=Matrice+350+RTK".
+  Reused by any collection — nothing product-specific is hardcoded here.
+  Only applies on a bare landing (no existing query string), so a shared
+  or bookmarked filtered link is never overridden. Progressive enhancement:
+  without JavaScript the collection simply shows unfiltered, so for a
+  collection that should ALWAYS be narrowed, prefer an automated collection
+  rule in Shopify Admin instead (see docs/reports/EDC_COLLECTION_ENGINE.md).
+{%- endcomment -%}
+{%- assign default_filter_query = collection.metafields.custom.default_filter_query.value -%}
+{%- if default_filter_query != blank -%}
+  <script>
+    (function () {
+      if (window.location.search) return;
+      window.location.replace({{ collection.url | json }} + '?' + {{ default_filter_query | json }});
+    })();
+  </script>
+{%- endif -%}
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -101,6 +122,9 @@
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+        {%- liquid
+          assign filter_groups = section.blocks | where: 'type', 'filter_group'
+        -%}
         <aside
           aria-labelledby="verticalTitle"
           class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
@@ -112,7 +136,8 @@
             enable_filtering: section.settings.enable_filtering,
             enable_sorting: section.settings.enable_sorting,
             filter_type: section.settings.filter_type,
-            paginate: paginate
+            paginate: paginate,
+            filter_groups: filter_groups
           %}
         </aside>
       {%- endif -%}
@@ -149,6 +174,7 @@
               class="
                 grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
                 grid--{{ section.settings.columns_desktop }}-col-desktop
+                {% if section.settings.columns_tablet != blank %} grid--{{ section.settings.columns_tablet }}-col-tablet-override{% endif %}
                 {% if section.settings.quick_add == 'bulk' %} collection-quick-add-bulk{% endif %}
               "
             >
@@ -234,7 +260,20 @@
           "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
         }
       ]
-    },    
+    },
+    {
+      "type": "select",
+      "id": "columns_tablet",
+      "default": "",
+      "label": "Kolumner (tablet)",
+      "info": "Valfritt. Lämna tomt för att använda samma antal som mobil (Dawns standardbeteende).",
+      "options": [
+        { "value": "", "label": "Samma som mobil" },
+        { "value": "2", "label": "2" },
+        { "value": "3", "label": "3" },
+        { "value": "4", "label": "4" }
+      ]
+    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
@@ -412,6 +451,27 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "filter_group",
+      "name": "Filtergrupp",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Rubrik",
+          "default": "Filter",
+          "info": "Visas ovanför filtren i den här gruppen i sidopanelen (endast desktop/horisontell layout)."
+        },
+        {
+          "type": "text",
+          "id": "params",
+          "label": "Filterparametrar (kommaseparerade)",
+          "info": "De exakta parameternamnen från Sök & upptäckt → Filter, t.ex. filter.p.m.custom.manufacturer,filter.p.m.custom.compatible_model. Filter som inte finns i någon grupp visas ändå, samlade under gruppen \"Fler filter\"."
+        }
+      ]
     }
   ]
 }

@@ -12,6 +12,24 @@
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
+      {%- if section.settings.show_breadcrumbs -%}
+        <nav class="collection-hero__breadcrumbs" aria-label="Brödsmulor">
+          <a href="{{ routes.root_url }}">Hem</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">{{ collection.title | escape }}</span>
+        </nav>
+      {%- endif -%}
+
+      {%- if section.settings.icon != blank -%}
+        <div class="collection-hero__icon">
+          {{
+            section.settings.icon
+            | image_url: width: 96
+            | image_tag: loading: 'eager', widths: '48, 96', alt: section.settings.icon.alt
+          }}
+        </div>
+      {%- endif -%}
+
       <h1 class="collection-hero__title">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
@@ -22,6 +40,14 @@
       {%- endif -%}
 
       {% render 'edp-ai-content', resource: collection %}
+
+      {%- if section.settings.cta_label != blank and section.settings.cta_url != blank -%}
+        <div class="collection-hero__cta">
+          <a href="{{ section.settings.cta_url }}" class="button button--primary">
+            {{ section.settings.cta_label | escape }}
+          </a>
+        </div>
+      {%- endif -%}
     </div>
 
     {%- if section.settings.show_collection_image and collection.image -%}
@@ -67,6 +93,32 @@
       "id": "show_collection_image",
       "default": false,
       "label": "t:sections.main-collection-banner.settings.show_collection_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "default": false,
+      "label": "Visa brödsmulor",
+      "info": "Hem / Collection-namn."
+    },
+    {
+      "type": "image_picker",
+      "id": "icon",
+      "label": "Ikon"
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Knapptext"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Knapplänk"
     },
     {
       "type": "color_scheme",

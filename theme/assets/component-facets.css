@@ -188,6 +188,26 @@
   margin-left: auto;
 }
 
+.facets__group + .facets__group {
+  margin-top: 1.5rem;
+}
+
+.facets__group-heading {
+  display: block;
+  color: rgba(var(--color-foreground), 0.75);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  margin: 0 0 0.5rem;
+  padding-top: 1rem;
+  border-top: solid 1px rgba(var(--color-foreground), 0.08);
+}
+
+.facets__group:first-child .facets__group-heading {
+  padding-top: 0;
+  border-top: 0;
+}
+
 .facets__disclosure {
   margin-right: 3.5rem;
 }

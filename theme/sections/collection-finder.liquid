@@ -1,0 +1,145 @@
+{% comment %}
+  Generic guided filter / product finder.
+
+  Fully data-driven from theme editor blocks — no product category, brand,
+  model or filter name is hardcoded here. Each block is one wizard step
+  (a question + a list of Label|value options); the value is whatever the
+  target collection's real Search & Discovery filter param_name expects.
+  Chaining steps together lands the visitor on the target collection with
+  every selection applied as a real, native, shareable filter URL — this
+  section never invents its own product list or filtering logic.
+
+  This is a separate, optional module: add it to any collection.json (or
+  any page) via the theme editor. It does nothing unless it has at least
+  one step block and a target collection configured.
+{% endcomment %}
+{{ 'collection-finder.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection-finder.js' | asset_url }}" defer="defer"></script>
+
+{%- liquid
+  assign target_url = section.settings.target_collection.url | default: collection.url
+-%}
+
+<div class="collection-finder color-{{ section.settings.color_scheme }} gradient">
+  <div class="collection-finder__wrap page-width">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="collection-finder__heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+    {%- if section.settings.intro != blank -%}
+      <div class="collection-finder__intro rte">{{ section.settings.intro }}</div>
+    {%- endif -%}
+
+    {%- if section.blocks.size == 0 or target_url == blank -%}
+      {%- if request.design_mode -%}
+        <p class="collection-finder__empty">
+          Lägg till minst ett steg och välj en målcollection i temaeditorn för att aktivera det guidade filtret.
+        </p>
+      {%- endif -%}
+    {%- else -%}
+      <collection-finder>
+        <div data-finder-root class="collection-finder__root" aria-live="polite"></div>
+        <script type="application/json">
+          {
+            "targetUrl": {{ target_url | json }},
+            "steps": [
+              {%- for block in section.blocks -%}
+                {%- liquid
+                  assign lines = block.settings.options | newline_to_br | split: '<br />'
+                  assign options_json = ''
+                -%}
+                {%- for line in lines -%}
+                  {%- assign line = line | strip -%}
+                  {%- if line != blank and line contains '|' -%}
+                    {%- assign parts = line | split: '|' -%}
+                    {%- assign opt_label = parts[0] | strip -%}
+                    {%- assign opt_value = parts[1] | strip -%}
+                    {%- capture option_obj -%}{ "label": {{ opt_label | json }}, "value": {{ opt_value | json }} },{%- endcapture -%}
+                    {%- assign options_json = options_json | append: option_obj -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if options_json != blank -%}
+                  {%- assign trimmed_length = options_json.size | minus: 1 -%}
+                  {%- assign options_json = options_json | slice: 0, trimmed_length -%}
+                {%- endif -%}
+                {
+                  "question": {{ block.settings.question | json }},
+                  "paramName": {{ block.settings.param_name | json }},
+                  "options": [{{ options_json }}]
+                }{%- unless forloop.last -%},{%- endunless -%}
+              {%- endfor -%}
+            ]
+          }
+        </script>
+      </collection-finder>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Guidat filter",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Bygg en frågeguide som leder fram till en filtrerad collection. Varje steg motsvarar ett riktigt filter (Sök & upptäckt) på målcollectionen — inget här är hårdkodat till en specifik produkttyp."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Hitta rätt produkt"
+    },
+    {
+      "type": "richtext",
+      "id": "intro",
+      "label": "Ingress"
+    },
+    {
+      "type": "collection",
+      "id": "target_collection",
+      "label": "Målcollection",
+      "info": "Collectionen som visar resultatet när alla steg är besvarade. Saknas denna används collectionen sidan visas på."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Steg",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Fråga",
+          "default": "Vad har du?"
+        },
+        {
+          "type": "text",
+          "id": "param_name",
+          "label": "Filterparameter",
+          "info": "Det exakta parameternamnet från Sök & upptäckt → Filter på målcollectionen, t.ex. filter.p.m.custom.manufacturer."
+        },
+        {
+          "type": "textarea",
+          "id": "options",
+          "label": "Alternativ (ett per rad: Etikett|värde)",
+          "info": "Värdet måste matcha filtrets faktiska värde exakt, t.ex. DJI|DJI eller Ja|true.",
+          "default": "DJI|DJI\nAutel|Autel"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Guidat filter"
+    }
+  ]
+}
+{% endschema %}
