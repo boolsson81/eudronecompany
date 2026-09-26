@@ -20,11 +20,11 @@
         "buttons": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Se sortimentet",
-            "button_link_1": "/collections/brdrc-accessories",
+            "button_label_1": "",
+            "button_link_1": "",
             "button_style_secondary_1": false,
-            "button_label_2": "Kontakta oss",
-            "button_link_2": "/pages/contact-quote",
+            "button_label_2": "",
+            "button_link_2": "",
             "button_style_secondary_2": true
           }
         }
