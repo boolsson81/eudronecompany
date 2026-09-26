@@ -98,9 +98,21 @@
           "settings": {
             "share_label": "Dela"
           }
+        },
+        "edp-ai-answer": {
+          "type": "edp_ai_answer"
+        },
+        "edp-ai-faq": {
+          "type": "edp_ai_faq"
+        },
+        "edp-ai-related": {
+          "type": "edp_ai_related"
         }
       },
       "block_order": [
+        "edp-ai-answer",
+        "edp-ai-faq",
+        "edp-ai-related",
         "vendor",
         "title",
         "caption",
@@ -157,11 +169,15 @@
             "title": "Drönarkort & regler",
             "text": "<p>Vi hjälper dig flyga lagligt: registrering hos Transportstyrelsen och A1/A3-certifiering.</p>",
             "link_label": "Läs mer",
-            "link": "/pages/training"
+            "link": "/pages/service-support"
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -179,6 +195,14 @@
         "padding_bottom": 12
       }
     },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -194,7 +218,21 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["main", "trust-badges", "related-products"]
+  "order": [
+    "main",
+    "trust-badges",
+    "product-relations",
+    "related-products",
+    "faq"
+  ]
 }

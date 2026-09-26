@@ -31,6 +31,16 @@
   endcapture
   assign edp_page_segment = edp_page_segment | strip
   assign edp_initial_segment = edp_page_segment | default: 'consumer'
+
+  assign hamburger_icon_file = 'icon-hamburger.svg'
+  case section.settings.hamburger_icon_style
+    when 'bold'
+      assign hamburger_icon_file = 'icon-hamburger-bold.svg'
+    when 'dots'
+      assign hamburger_icon_file = 'icon-hamburger-dots.svg'
+    when 'squeeze'
+      assign hamburger_icon_file = 'icon-hamburger-squeeze.svg'
+  endcase
 -%}
 
 {%- if has_menus -%}
@@ -41,7 +51,7 @@
       aria-label="{{ 'sections.header.menu' | t }}"
     >
       <span>
-        {{- 'icon-hamburger.svg' | inline_asset_content -}}
+        {{- hamburger_icon_file | inline_asset_content -}}
         {{- 'icon-close.svg' | inline_asset_content -}}
       </span>
     </summary>

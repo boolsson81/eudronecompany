@@ -12,7 +12,7 @@ guide + produktvägledning + SEO-hubb — inte en traditionell blogg.
 | `hero` | `image-banner` | H1 "Kom igång med drönare" + undertext + två CTA:er som skrollar till sidans egna sektioner. |
 | `find_drone` | `multicolumn` | "Hitta rätt drönare" — 6 kategorier (Nybörjare, Foto & video, Resor, Hobby, FPV, Avancerad) länkade till riktiga collections. |
 | `accessories` | `multicolumn` | "Vad behöver jag?" — 6 tillbehörsgrupper länkade till riktiga collections/sidor. |
-| `packages` | `multicolumn` | "Färdiga startpaket" — 3 exempelpaket (text only, inga priser/produkter). Knappen "Se alla paket" pekar på `/collections/startpaket`. |
+| `packages` | `multicolumn` | "Färdiga startpaket" — 3 exempelpaket (text only, inga priser/produkter). Knappen "Se alla paket" pekar på `/collections/starter-package` (samma collection som redan används av "Kom igång-paket"-kortet på `/pages/consumer`). |
 | `rules` | `collapsible-content` | "Flyg säkert och lagligt" — generella svar med länkar till Transportstyrelsen, LFV och IMY. Inga hårdkodade viktgränser presenteras som absolut sanning utan källhänvisning. |
 | `guides` | `featured-blog` | "Guider & tips" — visar 3 senaste artiklar från bloggen `kom-igang-guider`. |
 | `service` | `multicolumn` | "Behöver du hjälp?" — länkar till felsökning, reservdelar, tillbehör, service, support, kontakt. |
@@ -34,11 +34,13 @@ Detta **kan inte** göras enbart via temafiler i git — någon med Admin-access
 3. **Hero-bild**: ladda upp en bild till `hero`-sektionens `image`-inställning
    (lämnas tom i temafilen — kräver ett filbibliotek-val i Admin) med
    beskrivande alt-text.
-4. **Startpaket-collection**: `/collections/startpaket` måste fyllas med
-   riktiga paketprodukter (byggda på `product.paket.json`-mallen och
-   metafälten `paket.sammanfattning` / `paket.innehall` / `paket.antal`)
-   innan sektionen visar något. Fram tills dess renderas en tom collection
-   — det är inte en trasig länk, bara ett tomt läge.
+4. **Startpaket-collection**: `/collections/starter-package` innehåller idag
+   133 produkter men bygger på en bred regel (`TYPE EQUALS Drones`) — inga
+   riktiga, kuraterade paket ännu. Bör ersättas med riktiga paketprodukter
+   (byggda på `product.paket.json`-mallen och metafälten
+   `paket.sammanfattning` / `paket.innehall` / `paket.antal`) när
+   produktpaket-funktionen (se `docs/reports/PRODUKTPAKET_BUNDLE_ARKITEKTUR.md`)
+   är klar.
 5. **Guider-bloggen**: bloggen `kom-igang-guider` behöver riktiga artiklar
    (3–6 st) innan `guides`-sektionen visar innehåll. Föreslagna ämnen (från
    uppdraget, inte publicerad text): "Så kommer du igång med din första
@@ -48,13 +50,20 @@ Detta **kan inte** göras enbart via temafiler i git — någon med Admin-access
    köper min första drönare?", "Så förbereder du drönaren inför första
    flygningen".
 
-## Känd, separat brist (upptäckt under analysen, inte åtgärdad här)
+## Uppdatering: sammanslagning med parallellt arbete på `main`
 
-De befintliga korten på `/pages/consumer` under "Hitta rätt drönare"
-(`category_1`–`category_4`) och "Kom igång-paket" (`feature_1`) länkar till
-collection-handles som **inte finns** i butiken: `/collections/mini-flip`,
-`/collections/air-mavic`, `/collections/fpv`, `/collections/accessories`,
-`/collections/starter-kits`, `/collections/consumer-drones`. Detta är
-oberoende av den här ändringen och bör fixas i en separat uppgift — verkliga
-handles finns dokumenterade i denna commit-historik (se
-`page.kom-igang.json` för exempel på riktiga handles att återanvända).
+När den här grenen slogs samman med `main` hade en annan, redan mergad PR
+(#86–#88) redan fixat de trasiga collection-länkarna på `/pages/consumer`
+(`mini-flip`, `air-mavic`, `fpv`, `accessories`, `starter-kits`,
+`consumer-drones` → riktiga handles) **och** döpt om `feature_2` från
+"Drönarkort & utbildning" till "Drönarregler" (länkar till
+`/pages/service-support`). Den ursprungliga uppgiften i den här PR:n
+(byt `feature_2` mot "Kom igång med drönare") kolliderade alltså med det.
+
+Lösning: "Drönarregler"-kortet behölls som `feature_2` (redan mergat, pekar
+på riktigt innehåll), och "Kom igång med drönare" lades till som ett nytt
+fjärde kort, `feature_4`, i både `page.consumer.json` och presetet i
+`consumer-landing.liquid`. Sektionens grid (`consumer-landing__grid--3`)
+hanterar fler än tre kort utan kodändring — fjärde kortet radbryts bara till
+en ny rad. Ingen ytterligare separat uppgift krävs längre för de gamla
+länkarna.

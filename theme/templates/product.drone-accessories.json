@@ -23,7 +23,7 @@
         "compatibility": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- assign compat_models = product.metafields.dji.compatible_models_display.value -%}{%- if compat_models != blank -%}<p class=\"product__text caption-with-letter-spacing product__compatibility\">{{ 'products.product.compatibility_label' | t }}{%- for model in compat_models -%} {{ model | escape }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}</p>{%- endif -%}"
+            "custom_liquid": "{% render 'product-compatibility' %}"
           }
         },
         "price": {
@@ -89,9 +89,21 @@
           "settings": {
             "share_label": "Dela"
           }
+        },
+        "edp-ai-answer": {
+          "type": "edp_ai_answer"
+        },
+        "edp-ai-faq": {
+          "type": "edp_ai_faq"
+        },
+        "edp-ai-related": {
+          "type": "edp_ai_related"
         }
       },
       "block_order": [
+        "edp-ai-answer",
+        "edp-ai-faq",
+        "edp-ai-related",
         "vendor",
         "title",
         "caption",
@@ -151,7 +163,11 @@
           }
         }
       },
-      "block_order": ["column-0", "column-1", "column-2"],
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -169,6 +185,29 @@
         "padding_bottom": 12
       }
     },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "accessories_heading": "Tillbehör till denna produkt",
+        "spare_parts_heading": "Reservdelar",
+        "docs_heading": "Dokumentation & manualer",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "compatible-accessories": {
+      "type": "compatible-accessories",
+      "settings": {
+        "accessories_collection_handle": "drone-accessories",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -184,7 +223,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["main", "trust-badges", "related-products"]
+  "order": [
+    "main",
+    "trust-badges",
+    "product-relations",
+    "compatible-accessories",
+    "related-products",
+    "faq"
+  ]
 }

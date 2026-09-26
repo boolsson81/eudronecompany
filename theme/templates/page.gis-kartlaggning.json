@@ -31,12 +31,41 @@
             "text": "Exportera drönardata direkt till BIM-system för byggprojektsuppföljning och avvikelseanalys."
           }
         },
-        "benefit_1": { "type": "benefit", "settings": { "text": "90% tidsbesparing jämfört med traditionell landmätning" } },
-        "benefit_2": { "type": "benefit", "settings": { "text": "Centimeterprecision med RTK-positionering" } },
-        "benefit_3": { "type": "benefit", "settings": { "text": "Automatisk generering av ortomosaiker och 3D-modeller" } },
-        "benefit_4": { "type": "benefit", "settings": { "text": "Sömlös integration med CAD och BIM-system" } }
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "90% tidsbesparing jämfört med traditionell landmätning"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Centimeterprecision med RTK-positionering"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Automatisk generering av ortomosaiker och 3D-modeller"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sömlös integration med CAD och BIM-system"
+          }
+        }
       },
-      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
       "settings": {
         "show_breadcrumb": true,
         "breadcrumb_label": "Enterprise",
@@ -64,7 +93,19 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["industry_landing", "enterprise_contact"]
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
 }

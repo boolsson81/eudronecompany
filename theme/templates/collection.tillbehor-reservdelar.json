@@ -1,0 +1,122 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "drone-picker-hero": {
+      "type": "drone-model-picker",
+      "settings": {
+        "context": "hero",
+        "heading": "Vilken drönare använder du?",
+        "heading_size": "h2",
+        "text": "<p>Filtrera efter modell, kategori och kompatibilitet.</p>",
+        "enable_search": true,
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 24
+      }
+    },
+    "category-cards": {
+      "type": "accessory-category-cards",
+      "settings": {
+        "heading": "Handla efter kategori",
+        "heading_size": "h2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": true,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "drone-picker-cta": {
+      "type": "drone-model-picker",
+      "settings": {
+        "context": "cta",
+        "heading": "Hitta rätt tillbehör",
+        "heading_size": "h2",
+        "text": "<p>Osäker på vad som passar din drönare? Välj din modell så visar vi kompatibla produkter.</p>",
+        "enable_search": true,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur vet jag om ett tillbehör passar min drönare?",
+            "icon": "check_mark",
+            "row_content": "<p>Välj din drönarmodell högst upp på sidan så visas bara tillbehör och reservdelar som är kompatibla med just den modellen. Produktsidan visar också alltid vilka modeller ett tillbehör passar till.</p>",
+            "page": ""
+          }
+        },
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kan ett tillbehör passa flera drönarmodeller?",
+            "icon": "clipboard",
+            "row_content": "<p>Ja. Många tillbehör, som ND-filter och väskor, passar flera modeller inom samma serie. Alla kompatibla modeller listas på produktsidan.</p>",
+            "page": ""
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hittar jag inte det jag söker?",
+            "icon": "box",
+            "row_content": "<p>Rensa filtren och sök på modell- eller produktnamn, eller kontakta oss så hjälper vi dig hitta rätt del.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["row-0", "row-1", "row-2"],
+      "settings": {
+        "caption": "",
+        "heading": "Vanliga frågor om tillbehör & reservdelar",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "none",
+        "container_color_scheme": "scheme-edp",
+        "color_scheme": "scheme-edp",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "drone-picker-hero",
+    "category-cards",
+    "product-grid",
+    "drone-picker-cta",
+    "faq"
+  ]
+}

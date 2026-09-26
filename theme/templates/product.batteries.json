@@ -102,9 +102,21 @@
           "settings": {
             "share_label": "Dela"
           }
+        },
+        "edp-ai-answer": {
+          "type": "edp_ai_answer"
+        },
+        "edp-ai-faq": {
+          "type": "edp_ai_faq"
+        },
+        "edp-ai-related": {
+          "type": "edp_ai_related"
         }
       },
       "block_order": [
+        "edp-ai-answer",
+        "edp-ai-faq",
+        "edp-ai-related",
         "vendor",
         "title",
         "caption",
@@ -187,6 +199,14 @@
         "padding_bottom": 12
       }
     },
+    "product-relations": {
+      "type": "edp-product-relations",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -202,11 +222,21 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "trust-badges",
-    "related-products"
+    "product-relations",
+    "related-products",
+    "faq"
   ]
 }

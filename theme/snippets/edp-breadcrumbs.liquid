@@ -1,0 +1,75 @@
+{%- comment -%}
+  Visible breadcrumb nav. Mirrors the leaf-resolution logic in edp-seo-breadcrumbs.liquid
+  (which only emits JSON-LD) so both stay in sync, but also gives customers and search
+  engines a real, crawlable <nav> path: Hem > [Collection] > [Product/Page].
+{%- endcomment -%}
+{%- liquid
+  assign edp_crumb_collection = null
+  assign edp_crumb_leaf = ''
+
+  if request.page_type == 'product'
+    assign edp_crumb_leaf = product.title
+    if collection != blank
+      assign edp_crumb_collection = collection
+    elsif product.collections.size > 0
+      assign edp_crumb_collection = product.collections.first
+    endif
+  elsif request.page_type == 'collection'
+    assign edp_crumb_leaf = collection.title
+  elsif request.page_type == 'page'
+    assign edp_crumb_leaf = page.title
+  elsif request.page_type == 'article'
+    assign edp_crumb_leaf = article.title
+  elsif request.page_type == 'blog'
+    assign edp_crumb_leaf = blog.title
+  endif
+-%}
+
+{%- if edp_crumb_leaf != blank -%}
+  <nav class="edp-breadcrumbs page-width" aria-label="{{ 'general.breadcrumbs.home' | t }}">
+    <ol class="edp-breadcrumbs__list" role="list">
+      <li class="edp-breadcrumbs__item">
+        <a href="{{ routes.root_url }}">{{ 'general.breadcrumbs.home' | t }}</a>
+      </li>
+      {%- if request.page_type == 'product' and edp_crumb_collection != null -%}
+        <li class="edp-breadcrumbs__item" aria-hidden="true">/</li>
+        <li class="edp-breadcrumbs__item">
+          <a href="{{ edp_crumb_collection.url }}">{{ edp_crumb_collection.title | escape }}</a>
+        </li>
+      {%- elsif request.page_type == 'article' and blog != blank -%}
+        <li class="edp-breadcrumbs__item" aria-hidden="true">/</li>
+        <li class="edp-breadcrumbs__item">
+          <a href="{{ blog.url }}">{{ blog.title | escape }}</a>
+        </li>
+      {%- endif -%}
+      <li class="edp-breadcrumbs__item" aria-hidden="true">/</li>
+      <li class="edp-breadcrumbs__item edp-breadcrumbs__item--current" aria-current="page">
+        {{ edp_crumb_leaf | escape }}
+      </li>
+    </ol>
+  </nav>
+  {%- style -%}
+    .edp-breadcrumbs {
+      padding-top: 1.2rem;
+    }
+    .edp-breadcrumbs__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+      color: rgba(var(--color-foreground), 0.75);
+    }
+    .edp-breadcrumbs__item a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+    .edp-breadcrumbs__item--current {
+      color: rgb(var(--color-foreground));
+    }
+  {%- endstyle -%}
+{%- endif -%}

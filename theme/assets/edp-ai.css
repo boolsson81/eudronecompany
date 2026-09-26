@@ -72,11 +72,13 @@
   border-radius: 999px;
   border: 1px solid rgba(var(--color-foreground), 0.14);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
+  color: rgba(var(--color-link), var(--alpha-link));
 }
 
 .edp-ai__related-link:hover {
   background: rgba(var(--color-foreground), 0.05);
+  color: rgb(var(--color-link));
 }
 
 .edp-llms {

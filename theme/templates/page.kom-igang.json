@@ -220,7 +220,7 @@
         "title": "Färdiga startpaket",
         "heading_size": "h2",
         "button_label": "Se alla paket",
-        "button_link": "/collections/startpaket",
+        "button_link": "/collections/starter-package",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,

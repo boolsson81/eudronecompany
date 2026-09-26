@@ -15,6 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'edp-ai.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
@@ -72,6 +73,7 @@
     >
   {%- endif -%}
 
+  {% render 'edp-breadcrumbs' %}
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -84,8 +86,6 @@
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
-
-          {% render 'edp-ai-content', resource: product %}
 
           {%- for block in section.blocks -%}
             {%- case block.type -%}
@@ -195,8 +195,20 @@
                 </p>
               {%- when 'description' -%}
                 {%- if product.description != blank -%}
-                  <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                  <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
+                    <details id="Details-{{ block.id }}-{{ section.id }}">
+                      <summary>
+                        <div class="summary__title">
+                          <h2 class="h4 accordion__title inline-richtext">
+                            {{ 'products.product.description' | t }}
+                          </h2>
+                        </div>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
+                        {{ product.description }}
+                      </div>
+                    </details>
                   </div>
                 {%- endif -%}
               {%- when 'sku' -%}
@@ -224,8 +236,14 @@
                       {{- 'icon-caret.svg' | inline_asset_content -}}
                     </summary>
                     <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                      {{ block.settings.content }}
-                      {{ block.settings.page.content }}
+                      {%- if block.settings.content == blank and block.settings.page == blank and block.settings.icon == 'ruler' -%}
+                        {{ product.metafields.seo.specification.value }}
+                      {%- elsif block.settings.content == blank and block.settings.page == blank and block.settings.heading == 'Kompatibla modeller' -%}
+                        {% render 'product-compatibility', show_heading: false %}
+                      {%- else -%}
+                        {{ block.settings.content }}
+                        {{ block.settings.page.content }}
+                      {%- endif -%}
                     </div>
                   </details>
                 </div>
@@ -676,6 +694,14 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'edp_ai_answer' -%}
+                {% render 'edp-ai-answer', resource: product, block: block %}
+              {%- when 'edp_ai_spec' -%}
+                {% render 'edp-ai-spec', resource: product, block: block %}
+              {%- when 'edp_ai_faq' -%}
+                {% render 'edp-ai-faq', resource: product, block: block %}
+              {%- when 'edp_ai_related' -%}
+                {% render 'edp-ai-related', resource: product, block: block %}
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -934,6 +960,50 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1
+    },
+    {
+      "type": "edp_ai_answer",
+      "name": "AI: Snabbt svar",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar texten från metafältet seo.kort_text_150, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_spec",
+      "name": "AI: Specifikation",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar innehållet från metafältet seo.specification som en \"Beskrivning\"-flik, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_faq",
+      "name": "AI: Vanliga frågor",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar frågor/svar från metafältet seo.faq_json, om det finns."
+        }
+      ]
+    },
+    {
+      "type": "edp_ai_related",
+      "name": "AI: Relaterat",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Visar relaterade produkter/kollektioner från metafälten seo.related_products och seo.related_collections, om de finns."
+        }
+      ]
     },
     {
       "type": "share",
