@@ -1162,6 +1162,48 @@
         "name": "User type selector"
       }
     },
+    "edp-home-portals": {
+      "name": "Customer portals",
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "text": {
+          "label": "Text"
+        }
+      },
+      "blocks": {
+        "portal": {
+          "name": "Portal",
+          "settings": {
+            "icon": {
+              "label": "Icon",
+              "options__1": {
+                "label": "Service"
+              },
+              "options__2": {
+                "label": "Education"
+              }
+            },
+            "title": {
+              "label": "Title"
+            },
+            "text": {
+              "label": "Text"
+            },
+            "link_label": {
+              "label": "Link label"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Customer portals"
+      }
+    },
     "enterprise-landing": {
       "name": "Enterprise landing",
       "blocks": {
