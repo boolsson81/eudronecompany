@@ -79,10 +79,10 @@
         "feature_2": {
           "type": "feature",
           "settings": {
-            "title": "Drönarkort & utbildning",
-            "text": "Certifiering och guider för laglig flygning.",
-            "link_label": "Utbildningar",
-            "link": "/pages/training"
+            "title": "Kom igång med drönare",
+            "text": "Guider, tips och färdiga paket för dig som vill börja flyga.",
+            "link_label": "Kom igång",
+            "link": "/pages/kom-igang"
           }
         },
         "feature_3": {
