@@ -88,9 +88,9 @@
         "feature_3": {
           "type": "feature",
           "settings": {
-            "title": "Support & garanti",
-            "text": "DJI Care Refresh och svensk kundsupport.",
-            "link_label": "Support",
+            "title": "Support & trygghet",
+            "text": "Support, garanti, service och DJI Care Refresh – vi finns här även efter köpet.",
+            "link_label": "Läs mer →",
             "link": "/pages/support"
           }
         },

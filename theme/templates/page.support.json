@@ -1,0 +1,295 @@
+{
+  "sections": {
+    "hero": {
+      "type": "rich-text",
+      "blocks": {
+        "caption": {
+          "type": "caption",
+          "settings": {
+            "caption": "Europe Drone Company",
+            "text_style": "subtitle",
+            "text_size": "large"
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Support & trygghet",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Behöver du hjälp med din drönare? Vi hjälper dig med support, garanti, service, reparationer och DJI Care Refresh.</p>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakta support",
+            "button_link": "/pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "Vanliga frågor",
+            "button_link_2": "/pages/support#shopify-section-faq",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["caption", "heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-edp",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 24
+      }
+    },
+    "support": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kundsupport",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vår kundsupport hjälper dig genom hela ägandet av din drönare – inte bara vid köpet.</p><ul><li>Produktfrågor och rådgivning innan köp</li><li>Kom igång med din drönare</li><li>Installation och aktivering av appar och tillbehör</li><li>Felsökning</li><li>Tillbehör och reservdelar</li><li>Frågor efter köp</li></ul>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakta support",
+            "button_link": "/pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "warranty": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Garanti & reklamation",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Garanti, reklamation och slitage är inte samma sak. Här är skillnaden i korthet:</p><ul><li><strong>Garanti</strong> är ett åtagande från tillverkaren eller återförsäljaren om att åtgärda vissa fel under en begränsad tid efter köpet.</li><li><strong>Reklamation</strong> är din lagstadgade rätt enligt konsumentköplagen att få ett ursprungligt fel på produkten åtgärdat, även efter att garantitiden gått ut.</li><li><strong>Skada genom en olycka</strong> (till exempel en krasch) täcks normalt inte av garanti eller reklamation, men kan istället omfattas av DJI Care Refresh om du har ett aktivt skydd.</li><li><strong>Normalt slitage</strong>, som en nedsliten yta eller minskad batterikapacitet efter lång användning, räknas inte som ett fel och täcks inte av garanti eller reklamation.</li></ul><p><em>Att fylla i: European Drone Companys aktuella garantivillkor, garantitid och rätt kontaktväg för reklamationer.</em></p>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakta support",
+            "button_link": "/pages/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "dji-care-refresh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "DJI Care Refresh",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>DJI Care Refresh är DJI:s egna skyddsplan för drönare och annan utrustning. Med en aktiv plan kan du få hjälp om produkten skadas vid vissa olyckshändelser, till exempel en krasch.</p><ul><li>Skydd vid vissa typer av olyckshändelser, enligt den plan du har</li><li>Om drönaren skadas ansöker du om ersättning eller byte direkt hos DJI</li><li>Ersättningsprocessen sköts av DJI, inte av European Drone Company</li><li>Vilka skador som täcks, eventuell avgift och hur många ersättningar som ingår beror på produkt och vald DJI Care Refresh-plan</li></ul><p>Villkoren uppdateras löpande av DJI. Läs alltid den fullständiga och aktuella informationen på DJI:s egen webbplats innan du köper eller använder DJI Care Refresh.</p><p><a href=\"https://www.dji.com/support/service/djicare-refresh\" target=\"_blank\" rel=\"noopener noreferrer\">Läs mer om DJI Care Refresh på dji.com ↗</a></p>"
+          }
+        }
+      },
+      "block_order": ["heading", "text"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "service": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Service & reparation",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Behöver din drönare service eller reparation? Vi hjälper dig vidare.</p><ul><li>Skador efter en olycka</li><li>Felsökning av drönare, fjärrkontroll och tillbehör</li><li>Service och underhåll</li><li>Reservdelar</li><li>Hjälp att skicka in produkten för reparation vid behov</li></ul>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakta support",
+            "button_link": "/pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "full_width": false,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "faq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "row-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Vad är skillnaden mellan garanti och reklamation?",
+            "icon": "question_mark",
+            "row_content": "<p>Garanti är ett frivilligt åtagande från tillverkaren eller återförsäljaren. Reklamation är din lagstadgade rätt att få ett ursprungligt fel åtgärdat enligt konsumentköplagen, även efter att garantitiden gått ut.</p>",
+            "page": ""
+          }
+        },
+        "row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Täcker garantin skador efter en olycka?",
+            "icon": "return",
+            "row_content": "<p>Nej. Skador som uppstår genom en olycka, till exempel en krasch, täcks normalt inte av garanti eller reklamation. Sådana skador kan istället omfattas av DJI Care Refresh om du har en aktiv plan.</p>",
+            "page": ""
+          }
+        },
+        "row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur fungerar DJI Care Refresh om drönaren skadas?",
+            "icon": "lock",
+            "row_content": "<p>Du ansöker om ersättning direkt hos DJI. Vad som täcks, eventuell avgift och hur många ersättningar som ingår beror på din produkt och valda plan – se DJI:s egen sida för aktuella villkor.</p>",
+            "page": ""
+          }
+        },
+        "row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur skickar jag in drönaren för service eller reparation?",
+            "icon": "clipboard",
+            "row_content": "<p>Kontakta vår support så hjälper vi dig med nästa steg, oavsett om det handlar om felsökning, reservdelar eller inskickning för reparation.</p>",
+            "page": ""
+          }
+        },
+        "row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Hur kontaktar jag support?",
+            "icon": "chat_bubble",
+            "row_content": "<p>Använd vårt <a href=\"/pages/contact\">kontaktformulär</a> så återkommer vi så snart vi kan.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": ["row-0", "row-1", "row-2", "row-3", "row-4"],
+      "settings": {
+        "caption": "Vanliga frågor",
+        "heading": "Support & trygghet – vanliga frågor",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "container_color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cta": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Har du fler frågor?",
+            "heading_size": "h2"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Vår support hjälper dig gärna vidare med produktfrågor, garanti, service eller DJI Care Refresh.</p>"
+          }
+        },
+        "buttons": {
+          "type": "button",
+          "settings": {
+            "button_label": "Kontakta support",
+            "button_link": "/pages/contact",
+            "button_style_secondary": false,
+            "button_label_2": "Tillbaka till Consumer",
+            "button_link_2": "/pages/consumer",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": ["heading", "text", "buttons"],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["hero", "support", "warranty", "dji-care-refresh", "service", "faq", "cta"]
+}
