@@ -1441,20 +1441,6 @@
     },
     "consumer-landing": {
       "name": "Konsument-landningssida",
-      "settings": {
-        "header_benefits": {
-          "content": "Fördelar"
-        },
-        "benefits_layout": {
-          "label": "Layout",
-          "options__1": {
-            "label": "Rutnät"
-          },
-          "options__2": {
-            "label": "Karusell"
-          }
-        }
-      },
       "blocks": {
         "hero": {
           "name": "Hero",
@@ -1566,17 +1552,8 @@
         "benefit": {
           "name": "Fördel",
           "settings": {
-            "icon": {
-              "label": "Ikon (valfritt)"
-            },
-            "title": {
-              "label": "Rubrik (valfritt)"
-            },
             "text": {
               "label": "Text"
-            },
-            "color_scheme": {
-              "label": "Färgtema"
             }
           }
         },
