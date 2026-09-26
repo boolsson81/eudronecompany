@@ -1302,6 +1302,20 @@
     },
     "consumer-landing": {
       "name": "Consumer landing",
+      "settings": {
+        "header_benefits": {
+          "content": "Benefits"
+        },
+        "benefits_layout": {
+          "label": "Layout",
+          "options__1": {
+            "label": "Grid"
+          },
+          "options__2": {
+            "label": "Carousel"
+          }
+        }
+      },
       "blocks": {
         "hero": {
           "name": "Hero",
@@ -1373,8 +1387,17 @@
         "benefit": {
           "name": "Benefit",
           "settings": {
+            "icon": {
+              "label": "Icon (optional)"
+            },
+            "title": {
+              "label": "Title (optional)"
+            },
             "text": {
               "label": "Text"
+            },
+            "color_scheme": {
+              "label": "Color scheme"
             }
           }
         },

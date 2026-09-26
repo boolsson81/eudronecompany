@@ -1,4 +1,5 @@
 {{ 'section-consumer-landing.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -234,15 +235,81 @@
           {%- endunless -%}
         </div>
       {%- endif -%}
-      <ul class="consumer-landing__benefits" role="list">
-        {%- for block in section.blocks -%}
-          {%- if block.type == 'benefit' -%}
-            <li class="consumer-landing__benefit" {{ block.shopify_attributes }}>
-              {{ block.settings.text | escape }}
-            </li>
-          {%- endif -%}
-        {%- endfor -%}
-      </ul>
+      {%- if section.settings.benefits_layout == 'carousel' -%}
+        <slider-component class="consumer-landing__benefits-slider">
+          <ul
+            class="consumer-landing__benefits consumer-landing__benefits--carousel slider slider--everywhere"
+            id="Slider-{{ section.id }}-benefits"
+            role="list"
+          >
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'benefit' -%}
+                <li
+                  id="Slide-{{ section.id }}-{{ forloop.index }}"
+                  class="consumer-landing__benefit slider__slide color-{{ block.settings.color_scheme }}"
+                  {{ block.shopify_attributes }}
+                >
+                  {%- if block.settings.icon != blank -%}
+                    {{
+                      block.settings.icon
+                      | image_url: width: 96
+                      | image_tag: class: 'consumer-landing__benefit-icon', loading: 'lazy', widths: '48, 64, 96', alt: block.settings.title
+                    }}
+                  {%- endif -%}
+                  {%- unless block.settings.title == blank -%}
+                    <p class="consumer-landing__benefit-title">{{ block.settings.title | escape }}</p>
+                  {%- endunless -%}
+                  <p class="consumer-landing__benefit-text">{{ block.settings.text | escape }}</p>
+                </li>
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+          <div class="slider-buttons">
+            <button
+              type="button"
+              class="slider-button slider-button--prev"
+              name="previous"
+              aria-label="{{ 'general.slider.previous_slide' | t }}"
+            >
+              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            </button>
+            <div class="slider-counter caption">
+              <span class="slider-counter--current">1</span>
+              <span aria-hidden="true"> / </span>
+              <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+              <span class="slider-counter--total">{{ benefit_count }}</span>
+            </div>
+            <button
+              type="button"
+              class="slider-button slider-button--next"
+              name="next"
+              aria-label="{{ 'general.slider.next_slide' | t }}"
+            >
+              <span class="svg-wrapper">{{ 'icon-caret.svg' | inline_asset_content }}</span>
+            </button>
+          </div>
+        </slider-component>
+      {%- else -%}
+        <ul class="consumer-landing__benefits" role="list">
+          {%- for block in section.blocks -%}
+            {%- if block.type == 'benefit' -%}
+              <li class="consumer-landing__benefit color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+                {%- if block.settings.icon != blank -%}
+                  {{
+                    block.settings.icon
+                    | image_url: width: 96
+                    | image_tag: class: 'consumer-landing__benefit-icon', loading: 'lazy', widths: '48, 64, 96', alt: block.settings.title
+                  }}
+                {%- endif -%}
+                {%- unless block.settings.title == blank -%}
+                  <p class="consumer-landing__benefit-title">{{ block.settings.title | escape }}</p>
+                {%- endunless -%}
+                <p class="consumer-landing__benefit-text">{{ block.settings.text | escape }}</p>
+              </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
     {%- endif -%}
 
     {%- if cta_block -%}
@@ -290,6 +357,20 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.consumer-landing.settings.header_benefits.content"
+    },
+    {
+      "type": "select",
+      "id": "benefits_layout",
+      "label": "t:sections.consumer-landing.settings.benefits_layout.label",
+      "options": [
+        { "value": "grid", "label": "t:sections.consumer-landing.settings.benefits_layout.options__1.label" },
+        { "value": "carousel", "label": "t:sections.consumer-landing.settings.benefits_layout.options__2.label" }
+      ],
+      "default": "grid"
     },
     {
       "type": "header",
@@ -491,10 +572,26 @@
       "name": "t:sections.consumer-landing.blocks.benefit.name",
       "settings": [
         {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "t:sections.consumer-landing.blocks.benefit.settings.icon.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.consumer-landing.blocks.benefit.settings.title.label"
+        },
+        {
           "type": "text",
           "id": "text",
           "label": "t:sections.consumer-landing.blocks.benefit.settings.text.label",
           "default": "Fördel"
+        },
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.consumer-landing.blocks.benefit.settings.color_scheme.label",
+          "default": "scheme-edp"
         }
       ]
     },
