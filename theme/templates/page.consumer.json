@@ -12,7 +12,7 @@
             "button_label_1": "Handla drönare",
             "collection_1": "drones-with-camera",
             "button_label_2": "Se kom igång-paket",
-            "button_link_2": "/collections/all"
+            "collection_2": "kom-igang-paket"
           }
         },
         "heading_categories": {
@@ -73,7 +73,7 @@
             "title": "Kom igång-paket",
             "text": "Kompletta paket redo att flyga.",
             "link_label": "Se paket",
-            "link": "/collections/all"
+            "collection": "kom-igang-paket"
           }
         },
         "feature_2": {

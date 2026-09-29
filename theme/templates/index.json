@@ -44,7 +44,7 @@
             "description": "Racingdrönare, FPV-utrustning och byggdelar för freestyle och tävling.",
             "examples": "DJI FPV & Avata-serien\nRacing-ramar, motorer & ESC\nSimulator & startpaket",
             "button_label": "Utforska tävling & FPV",
-            "button_link": "/collections/all",
+            "button_link": "/collections/tavling-fpv",
             "title_alignment": "center",
             "text_alignment": "center"
           }
