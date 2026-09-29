@@ -2,6 +2,13 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
+  "build": {
+    "env": {
+      "VITE_SUPABASE_URL": "https://jzqgwsryxmgzcbjjddic.supabase.co",
+      "VITE_SUPABASE_PUBLISHABLE_KEY": "sb_publishable_P1ha4kDGZALhb3iTV1cN_g_AlTm42oG",
+      "VITE_SUPABASE_PROJECT_ID": "jzqgwsryxmgzcbjjddic"
+    }
+  },
   "redirects": [
     { "source": "/kommersiella-dronare/faltkartlaggning/3d-modellering", "destination": "/kommersiella-dronare/kartlaggning/3d-modellering", "permanent": true },
     { "source": "/kommersiella-dronare/faltkartlaggning", "destination": "/kommersiella-dronare/lantbruk/faltkartlaggning", "permanent": true },
