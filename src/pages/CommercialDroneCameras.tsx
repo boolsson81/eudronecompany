@@ -133,6 +133,14 @@ export default function CommercialDroneCameras() {
 
             <div className="text-center mt-16">
               <p className="text-white/50 mb-6">
+                Söker du sprutnings-, belysnings- eller RTK-payloads snarare än kameror?
+              </p>
+              <Link to="/kommersiella-dronare/payloads" className="inline-block mb-10">
+                <Button variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
+                  Se alla payload-typer <ArrowRight className="h-4 w-4 ml-2" />
+                </Button>
+              </Link>
+              <p className="text-white/50 mb-6">
                 Osäker på vilken kamera som passar ditt uppdrag? Vi hjälper dig välja rätt payload och konfiguration.
               </p>
               <Link to="/kommersiella-dronare/kontakt">

@@ -10,6 +10,14 @@
   Steg 6-7 (mjukvara, utbildning/installation/service) är kundens ÖNSKEMÅL,
   inte påståenden om produktdata — inga kompatibilitets- eller
   tillgänglighetsanspråk görs här.
+
+  Steg 2 (plattform) och 3-4 (payload-kategorier) visar även RIKTIGA produkter
+  när sådana finns kopplade (uav_platform.product respektive
+  payload_category.featured_products), med bild, pris och en kompatibilitets-
+  markering byggd på samma data som edp-compatibility-status.liquid
+  (product.metafields.edp.compatible_uav / compatibility_records). Precis som
+  där: ingen kompatibilitet påstås utan en verklig payload_compatibility-post
+  eller compatible_uav-listning — se data quality-regel 29.
 {% endcomment %}
 {{ 'edp-payload.css' | asset_url | stylesheet_tag }}
 
@@ -75,12 +83,62 @@
         ],
         "platforms": [
           {%- for platform in platforms -%}
-            { "handle": {{ platform.handle | json }}, "name": {{ platform.name.value | json }}, "manufacturer": {{ platform.manufacturer.value | json }} }{%- unless forloop.last -%},{%- endunless -%}
+            {%- liquid
+              assign platform_product = platform.product.value
+              assign platform_collection = platform.collection.value
+            -%}
+            {
+              "handle": {{ platform.handle | json }},
+              "name": {{ platform.name.value | json }},
+              "manufacturer": {{ platform.manufacturer.value | json }},
+              "series": {{ platform.series.value | json }},
+              "product": {%- if platform_product != blank -%}{
+                "title": {{ platform_product.title | json }},
+                "url": {{ platform_product.url | json }},
+                "image": {{ platform_product.featured_image | image_url: width: 400 | json }},
+                "price": {{ platform_product.price | money | strip_html | json }}
+              }{%- else -%}null{%- endif -%},
+              "collectionUrl": {%- if platform_collection != blank -%}{{ platform_collection.url | json }}{%- else -%}null{%- endif -%}
+            }{%- unless forloop.last -%},{%- endunless -%}
           {%- endfor -%}
         ],
         "categories": [
           {%- for category in categories -%}
-            { "handle": {{ category.handle | json }}, "name": {{ category.name.value | json }}, "url": {{ category.url | json }} }{%- unless forloop.last -%},{%- endunless -%}
+            {%- assign featured = category.featured_products.value -%}
+            {
+              "handle": {{ category.handle | json }},
+              "name": {{ category.name.value | json }},
+              "url": {{ category.url | json }},
+              "products": [
+                {%- if featured != blank -%}
+                  {%- for product in featured limit: 6 -%}
+                    {%- liquid
+                      assign compat_platforms = product.metafields.edp.compatible_uav.value
+                      assign compat_records = product.metafields.edp.compatibility_records.value
+                    -%}
+                    {
+                      "handle": {{ product.handle | json }},
+                      "title": {{ product.title | json }},
+                      "url": {{ product.url | json }},
+                      "image": {{ product.featured_image | image_url: width: 300 | json }},
+                      "price": {{ product.price | money | strip_html | json }},
+                      "compatibleUav": [
+                        {%- if compat_platforms != blank -%}
+                          {%- for p in compat_platforms -%}{{ p.handle | json }}{%- unless forloop.last -%},{%- endunless -%}{%- endfor -%}
+                        {%- endif -%}
+                      ],
+                      "compatibilityRecords": [
+                        {%- if compat_records != blank -%}
+                          {%- for r in compat_records -%}
+                            { "platform": {{ r.platform.value.handle | json }}, "status": {{ r.status.value | json }} }{%- unless forloop.last -%},{%- endunless -%}
+                          {%- endfor -%}
+                        {%- endif -%}
+                      ]
+                    }{%- unless forloop.last -%},{%- endunless -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              ]
+            }{%- unless forloop.last -%},{%- endunless -%}
           {%- endfor -%}
         ]
       }

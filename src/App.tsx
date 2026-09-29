@@ -16,10 +16,13 @@ const CommercialDronesContact = lazy(() => import("./pages/CommercialDronesConta
 const CommercialDronesProducts = lazy(() => import("./pages/CommercialDronesProducts"));
 const CommercialDroneProduct = lazy(() => import("./pages/CommercialDroneProduct"));
 const DjiEnterprise = lazy(() => import("./pages/DjiEnterprise"));
+const EnterpriseSolutions = lazy(() => import("./pages/EnterpriseSolutions"));
 const EnterprisePackages = lazy(() => import("./pages/EnterprisePackages"));
 const EnterprisePackage = lazy(() => import("./pages/EnterprisePackage"));
 const CommercialDroneCameras = lazy(() => import("./pages/CommercialDroneCameras"));
 const CommercialDroneCamera = lazy(() => import("./pages/CommercialDroneCamera"));
+const CommercialDronePayloads = lazy(() => import("./pages/CommercialDronePayloads"));
+const CommercialDroneTools = lazy(() => import("./pages/CommercialDroneTools"));
 const CommercialDroneIndustry = lazy(() => import("./pages/CommercialDroneIndustry"));
 const CommercialDroneSolution = lazy(() => import("./pages/CommercialDroneSolution"));
 const DroneComparisons = lazy(() => import("./pages/DroneComparisons"));
@@ -66,10 +69,13 @@ export default function App() {
             <Route path="/kommersiella-dronare/produkter" element={<CommercialDronesProducts />} />
             <Route path="/kommersiella-dronare/produkter/:productSlug" element={<CommercialDroneProduct />} />
             <Route path="/kommersiella-dronare/dji-enterprise" element={<DjiEnterprise />} />
+            <Route path="/kommersiella-dronare/enterprise-losningar" element={<EnterpriseSolutions />} />
             <Route path="/kommersiella-dronare/paket" element={<EnterprisePackages />} />
             <Route path="/kommersiella-dronare/paket/:packageSlug" element={<EnterprisePackage />} />
             <Route path="/kommersiella-dronare/kameror" element={<CommercialDroneCameras />} />
             <Route path="/kommersiella-dronare/kameror/:cameraSlug" element={<CommercialDroneCamera />} />
+            <Route path="/kommersiella-dronare/payloads" element={<CommercialDronePayloads />} />
+            <Route path="/kommersiella-dronare/verktyg" element={<CommercialDroneTools />} />
             <Route path="/kommersiella-dronare/jamforelser" element={<DroneComparisons />} />
             <Route path="/kommersiella-dronare/jamforelser/:comparisonSlug" element={<DroneComparisonArticle />} />
             <Route path="/kommersiella-dronare/jamfor-kameror" element={<DroneCameraComparison />} />
