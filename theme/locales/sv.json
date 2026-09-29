@@ -375,7 +375,7 @@
     },
     "footer": {
       "payment": "Betalningsmetoder",
-      "copyright_powered_by": "Drivs av European Drone Company"
+      "copyright_powered_by": "Drivs av EU Drone Company"
     },
     "featured_blog": {
       "view_all": "Visa alla",
@@ -453,7 +453,7 @@
       "need": "Behov",
       "request_type": "Typ av förfrågan",
       "message": "Meddelande",
-      "consent": "Jag godkänner att EuroDroneCompany behandlar mina uppgifter för att besvara min förfrågan.",
+      "consent": "Jag godkänner att EU Drone Company behandlar mina uppgifter för att besvara min förfrågan.",
       "consent_value": "Godkänt",
       "submit": "Skicka offertförfrågan",
       "select_placeholder": "Välj...",
