@@ -196,22 +196,28 @@
         "package_1": {
           "type": "column",
           "settings": {
-            "title": "Nybörjarpaket",
-            "text": "<p>Drönare + extra batteri + laddare + väska.</p>"
+            "title": "DJI Neo 2 — nybörjarpaket",
+            "text": "<p>Superlätt drönare klar att flyga direkt ur lådan — ett tryggt och billigt sätt att komma igång.</p>",
+            "link_label": "Se DJI Neo 2",
+            "link": "/products/dji-neo-2-drones-your-port-for-flygfotografi"
           }
         },
         "package_2": {
           "type": "column",
           "settings": {
-            "title": "Fotopaket",
-            "text": "<p>Drönare + batteri + minneskort + ND-filter.</p>"
+            "title": "DJI Air 3S Fly More Combo — fotopaket",
+            "text": "<p>Drönare, extra batterier och laddning i samma paket — för dig som tar foto och film på allvar.</p>",
+            "link_label": "Se DJI Air 3S Fly More Combo",
+            "link": "/products/dji-air-3s-flymore-combo"
           }
         },
         "package_3": {
           "type": "column",
           "settings": {
-            "title": "Resepaket",
-            "text": "<p>Drönare + extra batterier + laddning + kompakt väska.</p>"
+            "title": "DJI Avata 2 Fly Smart Combo — FPV/resepaket",
+            "text": "<p>Kommer med tre batterier redan i paketet — långa flygdagar utan att behöva ladda mitt i.</p>",
+            "link_label": "Se DJI Avata 2 Fly Smart Combo",
+            "link": "/products/dji-avata-2-fly-smart-combo-three-batter"
           }
         }
       },
@@ -220,7 +226,7 @@
         "title": "Färdiga startpaket",
         "heading_size": "h2",
         "button_label": "Se alla paket",
-        "button_link": "/collections/starter-package",
+        "button_link": "/collections/kom-igang-paket",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -295,7 +301,7 @@
       "type": "featured-blog",
       "settings": {
         "blog": "kom-igang-guider",
-        "post_limit": 3,
+        "post_limit": 4,
         "heading": "Guider &amp; tips",
         "heading_size": "h2",
         "columns_desktop": 3,
