@@ -73,6 +73,48 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/matrice-400/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/matrice-350-rtk/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/mavic-3-enterprise/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/mavic-3-multispectral/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/agras-t50/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/inspire-3/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/produkter/mavic-3-pro/tillbehor</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/dji-enterprise</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -188,6 +230,30 @@
   </url>
   <url>
     <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/paket/film-media-enterprise</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/paket/bygg-markkartlaggning-bas</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/paket/bygg-markkartlaggning-pro</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/paket/bygg-uppfoljning-bas</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/paket/bygg-uppfoljning-pro</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -584,6 +650,36 @@
   </url>
   <url>
     <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/film-media/byggdokumentation</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/bygg-anlaggning</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/bygg-anlaggning/markkartlaggning</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/bygg-anlaggning/massaberakning</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/bygg-anlaggning/byggprojektuppfoljning</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/bygg-anlaggning/sakerhetsinspektion-byggarbetsplats</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
