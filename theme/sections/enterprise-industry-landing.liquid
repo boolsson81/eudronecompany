@@ -76,6 +76,9 @@
             {%- unless block.settings.text == blank -%}
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
+            {%- unless block.settings.link == blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link }}">Se produkt &rarr;</a>
+            {%- endunless -%}
           </li>
         {%- endfor -%}
       </ul>
@@ -229,6 +232,7 @@
           "default": ""
         },
         { "type": "textarea", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.solution.settings.text.label", "default": "Beskrivning av lösningen." },
+        { "type": "url", "id": "link", "label": "Produktlänk", "info": "Valfri. Visar länken \"Se produkt\" på kortet." },
         {
           "type": "select",
           "id": "text_alignment",

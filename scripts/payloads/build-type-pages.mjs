@@ -210,7 +210,7 @@ function template(p) {
   const order = [];
   p.solutions.forEach((s, i) => {
     const k = `solution_${i + 1}`;
-    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text } };
+    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text, ...(s.link ? { link: s.link } : {}) } };
     order.push(k);
   });
   p.benefits.forEach((b, i) => {

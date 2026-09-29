@@ -391,6 +391,8 @@
 
 .edp-enterprise__card-link {
   display: block;
+  margin-top: auto;
+  padding-top: 1.2rem;
   font-weight: 600;
   color: rgb(var(--edp-accent));
   text-decoration: none;
