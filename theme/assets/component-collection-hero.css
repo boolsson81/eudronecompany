@@ -96,3 +96,16 @@
     min-height: 20rem;
   }
 }
+
+.collection-hero__icon {
+  margin-bottom: 1rem;
+}
+
+.collection-hero__icon img {
+  height: 4.8rem;
+  width: auto;
+}
+
+.collection-hero__cta {
+  margin-top: 1.5rem;
+}

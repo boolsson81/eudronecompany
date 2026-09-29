@@ -97,3 +97,27 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+/*
+  Optional tablet-specific column count (main-collection-product-grid's
+  columns_tablet setting). Dawn only ships a combined mobile+tablet
+  "-tablet-down" breakpoint and a desktop one; these rules add a real
+  750–989px breakpoint without touching either of Dawn's own classes, using
+  a two-class selector so they win regardless of stylesheet order.
+*/
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .product-grid.grid--2-col-tablet-override .grid__item {
+    width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+  }
+
+  .product-grid.grid--3-col-tablet-override .grid__item {
+    width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+    max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 / 3);
+  }
+
+  .product-grid.grid--4-col-tablet-override .grid__item {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    max-width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+  }
+}
