@@ -2,9 +2,7 @@
   "sections": {
     "main": {
       "type": "edp-page-content",
-      "settings": {
-        "color_scheme": "scheme-edp"
-      }
+      "settings": {}
     },
     "faq": {
       "type": "edp-metafield-faq",
