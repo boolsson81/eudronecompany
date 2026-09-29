@@ -64,7 +64,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Termisk", value: "1280×1024, radiometrisk" },
       { label: "Vidvinkel", value: "48 MP" },
       { label: "LRF", value: "3–3000 m" },
-      { label: "Skydd", value: "IP54" },
+      { label: "Skydd", value: "IP54 (under kontrollerade laboratorieförhållanden)" },
+      { label: "Vikt", value: "920 g" },
+      { label: "Mått", value: "170×145×165 mm" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
+      { label: "Effektförbrukning", value: "28 W" },
       { label: "Kompatibilitet", value: "Matrice 350/300/400 RTK" },
     ],
     applications: [
@@ -77,7 +81,6 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30t-dronarkamera",
     imageUrl: zenmuseH30TImg,
     youtubeId: "fKkR6D-UGq0",
-    badge: "Ny",
     faq: [
       {
         question: "Vilka drönare är Zenmuse H30T kompatibel med?",
@@ -117,7 +120,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Zoomkamera", value: "40 MP, 1/1,8\" CMOS" },
       { label: "Vidvinkel", value: "48 MP" },
       { label: "LRF", value: "3–3000 m" },
-      { label: "Skydd", value: "IP54" },
+      { label: "Skydd", value: "IP54 (under kontrollerade laboratorieförhållanden)" },
+      { label: "Vikt", value: "920 g" },
+      { label: "Mått", value: "170×145×165 mm" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
+      { label: "Effektförbrukning", value: "26 W" },
       { label: "Kompatibilitet", value: "Matrice 350/300/400 RTK" },
     ],
     applications: [
@@ -130,7 +137,6 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30-dronarkamera",
     imageUrl: zenmuseH30Img,
     youtubeId: "fKkR6D-UGq0",
-    badge: "Ny",
     faq: [
       {
         question: "När ska jag välja H30 framför H30T?",
@@ -170,6 +176,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Zoomkamera", value: "20 MP" },
       { label: "Vidvinkel", value: "12 MP" },
       { label: "LRF", value: "3–1200 m" },
+      { label: "Vikt", value: "828 g" },
+      { label: "Mått", value: "167×135×161 mm" },
+      { label: "Skydd", value: "IP44" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -215,6 +225,9 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Starlight", value: "2 MP vidvinkel + 4 MP zoom" },
       { label: "LRF", value: "3–1200 m" },
       { label: "Skydd", value: "IP44" },
+      { label: "Vikt", value: "878 g" },
+      { label: "Mått", value: "178×135×161 mm" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -263,6 +276,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Zoomkamera", value: "20 MP, 1/1,7\" CMOS" },
       { label: "Vidvinkel", value: "12 MP, 1/2,3\" CMOS" },
       { label: "LRF", value: "3–1200 m" },
+      { label: "Vikt", value: "678 g" },
+      { label: "Mått", value: "150×114×151 mm" },
+      { label: "Skydd", value: "IP44" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -311,6 +328,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Räckvidd", value: "450 m @ 50 % reflektans, 250 m @ 10 %" },
       { label: "Noggrannhet", value: "4 cm vertikalt, 5 cm horisontellt @ 150 m" },
       { label: "Punktfrekvens", value: "240 000 pts/s (en retur), 1 200 000 pts/s (flera)" },
+      { label: "Vikt", value: "905 g" },
+      { label: "Mått", value: "155×128×176 mm" },
+      { label: "Skydd", value: "IP54" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
+      { label: "Effektförbrukning", value: "28 W typiskt, 58 W max" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -361,6 +383,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Slutare", value: "Mekanisk global" },
       { label: "Objektiv", value: "24, 35, 50 mm (utbytbara)" },
       { label: "Noggrannhet", value: "3 cm horisontellt, 5 cm vertikalt (utan markstöd)" },
+      { label: "Vikt", value: "ca 800 g" },
+      { label: "Mått", value: "198×166×129 mm" },
+      { label: "Skydd", value: "IP4X" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
+      { label: "Effektförbrukning", value: "20 W" },
       { label: "Kompatibilitet", value: "Matrice 400, 350/300 RTK" },
     ],
     applications: [
@@ -410,6 +437,11 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Räckvidd", value: "450 m @ 80 % reflektans, 190 m @ 10 %" },
       { label: "Punktfrekvens", value: "240 000 pts/s (en retur), 480 000 pts/s (flera)" },
       { label: "RGB-kamera", value: "20 MP, 1\" CMOS" },
+      { label: "Vikt", value: "930 g" },
+      { label: "Mått", value: "152×110×169 mm" },
+      { label: "Skydd", value: "IP54" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C (0 till 50 °C med RGB-kameran)" },
+      { label: "Effektförbrukning", value: "30 W typiskt, 60 W max" },
       { label: "Kompatibilitet", value: "Matrice 350/300 RTK" },
     ],
     applications: [
@@ -460,6 +492,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Noggrannhet", value: "<3 cm @ 120 m, <5 cm @ 300 m, <10 cm @ 500 m" },
       { label: "RGB-kameror", value: "2× 100 MP, 4/3\" CMOS" },
       { label: "Vikt", value: "ca 1,6 kg" },
+      { label: "Mått", value: "192×162×202 mm" },
+      { label: "Skydd", value: "IP54" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
+      { label: "Effektförbrukning", value: "64 W typiskt, 100 W max" },
       { label: "Kompatibilitet", value: "Matrice 400 RTK" },
     ],
     applications: [
@@ -512,6 +548,9 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Styrning", value: "Gimbal-styrd, fjärrkontroll" },
       { label: "Vikt", value: "ca 0,76 kg" },
       { label: "Skydd", value: "IP54" },
+      { label: "Mått", value: "125×152×171 mm" },
+      { label: "Drifttemperatur", value: "−20 till 40 °C" },
+      { label: "Effektförbrukning", value: "120 W på Matrice 400, 68 W på Matrice 350/300 RTK" },
       { label: "Kompatibilitet", value: "Matrice 350/300/400 RTK" },
     ],
     applications: [
@@ -564,6 +603,8 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       { label: "Styrning", value: "Fjärrkontroll + förinspelat" },
       { label: "Vikt", value: "ca 0,69 kg" },
       { label: "Skydd", value: "IP54" },
+      { label: "Mått", value: "134×119×140 mm" },
+      { label: "Drifttemperatur", value: "−20 till 50 °C" },
       { label: "Kompatibilitet", value: "Matrice 350/300/400 RTK" },
     ],
     applications: [
