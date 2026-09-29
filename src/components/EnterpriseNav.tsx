@@ -76,6 +76,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       href: "/kommersiella-dronare/paket",
     },
     {
+      key: "industry-solutions",
+      label: "Branschlösningar",
+      href: "/kommersiella-dronare/branschlosningar",
+    },
+    {
       key: "cameras",
       label: "Payloads",
       children: [
