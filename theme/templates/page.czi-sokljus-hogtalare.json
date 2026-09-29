@@ -7,21 +7,24 @@
           "type": "solution",
           "settings": {
             "title": "LP12 och LP20",
-            "text": "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD."
+            "text": "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD.",
+            "link": "/products/matrice-3d-sokarlampa-dji-matrice-3d-3dt-czi"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "LP35",
-            "text": "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK."
+            "text": "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK.",
+            "link": "/products/czi-lp35-sokarljus-m350-dji"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "MP130 V2 och MP130 Pro",
-            "text": "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS."
+            "text": "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS.",
+            "link": "/products/czi-mp130-v2-h-gtalare"
           }
         },
         "solution_4": {

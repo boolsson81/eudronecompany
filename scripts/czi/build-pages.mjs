@@ -32,8 +32,8 @@ const PAGES = [
       "CZI:s gimbalstyrda sökljus förlänger uppdraget in i mörkret. GL-serien passar allt från Mavic 3 Enterprise till Matrice 300 och 350, SL60 lägger till strobe och IR-modellerna ger osynlig belysning för spaning.",
     solutionsHeading: "Modeller",
     solutions: [
-      { title: "GL10 V2", text: "Dubbelaxlad gimbal-sökarlampa för DJI Mavic 3E och 3T." },
-      { title: "GL60 Mini och GL60 Plus", text: "Gimbalsökljus för Matrice 30-serien respektive avancerad belysning under svåra förhållanden." },
+      { title: "GL10 V2", text: "Dubbelaxlad gimbal-sökarlampa för DJI Mavic 3E och 3T.", link: "/products/dubbelaxlad-gimbal-sokarlampa-for-dji-mavic-3e-3t" },
+      { title: "GL60 Mini och GL60 Plus", text: "Gimbalsökljus för Matrice 30-serien respektive avancerad belysning under svåra förhållanden.", link: "/products/czi-gl60-mini-sokljus" },
       { title: "GL300 och SL60", text: "Kraftfullt sökljus för Matrice 200/300, samt SL60 med strobefunktion för M350/M300." },
       { title: "IR3 och IR10", text: "Infraröda fill-in-ljus. IR10 är en 808 nm-laser med upp till 12 W, osynlig för blotta ögat." },
     ],
@@ -62,9 +62,9 @@ const PAGES = [
       "LP-serien kombinerar sökljus och högtalare i en enhet, MP-serien är rena röst- och utropssystem. Drönaren blir en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.",
     solutionsHeading: "Modeller",
     solutions: [
-      { title: "LP12 och LP20", text: "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD." },
-      { title: "LP35", text: "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK." },
-      { title: "MP130 V2 och MP130 Pro", text: "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS." },
+      { title: "LP12 och LP20", text: "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD.", link: "/products/matrice-3d-sokarlampa-dji-matrice-3d-3dt-czi" },
+      { title: "LP35", text: "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK.", link: "/products/czi-lp35-sokarljus-m350-dji" },
+      { title: "MP130 V2 och MP130 Pro", text: "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS.", link: "/products/czi-mp130-v2-h-gtalare" },
       { title: "MP140, MP120 och PK10", text: "MP140 för stora områden på M300/M350, MP120 varningsljus och PK10 ljudupptagare." },
     ],
     benefitsHeading: "Användningsområden",
@@ -92,7 +92,7 @@ const PAGES = [
       "Matrix Light-serien ger bred arbetsbelysning från luften, och tjudrade system som TK3/TK4 och CZ10 matar drönaren med ström från marken så att belysningen kan stå uppe hela natten.",
     solutionsHeading: "System",
     solutions: [
-      { title: "ML200 Matrix Light", text: "Belysningsset i flera effekter: 400 W, 800 W och 1500 W, för DJI M350/M300." },
+      { title: "ML200 Matrix Light", text: "Belysningsset i flera effekter: 400 W, 800 W och 1500 W, för DJI M350/M300.", link: "/products/czi-ml200-800w-matrix-light-for-m350-300" },
       { title: "TK3 och TK4", text: "Tjudrat kraftsystem som omvandlar 220 V AC till drönarens strömförsörjning. TK4 finns med 110 m lina." },
       { title: "CZ10 Tethered Hover Light", text: "Portabelt, snabbt utplacerat luftburet ljus med hopfällbar konstruktion för utomhusbruk." },
       { title: "CZ100 och CZ100V", text: "Tjudrade belysningssystem, CZ100V med zoom och värmekamera." },
@@ -122,7 +122,7 @@ const PAGES = [
       "CZI:s lastsläpp låter drönaren leverera utrustning på exakt plats. TH-serien är kroksläpp för Matrice och FlyCart, FS-serien är logistiknyttolaster för leveransuppdrag.",
     solutionsHeading: "Modeller",
     solutions: [
-      { title: "TH4 V2", text: "Kroksläpp på 320 g med 40 kg lastkapacitet. Genomför fyra uppdrag på en flygning. För Matrice 210 V2 och M300 RTK." },
+      { title: "TH4 V2", text: "Kroksläpp på 320 g med 40 kg lastkapacitet. Genomför fyra uppdrag på en flygning. För Matrice 210 V2 och M300 RTK.", link: "/products/czi-th4-v2-airdrop-kit" },
       { title: "Throwing Hook för Matrice 4", text: "Kompakt släpp för DJI Matrice 4." },
       { title: "TH6", text: "Precisionssläpp för FlyCart 100 och AGRAS T100 med laseravståndsmätning för meterprecis avlämning." },
       { title: "FS32 och FS35", text: "Logistiknyttolaster för leveranser med DJI FlyCart-serien." },
@@ -208,7 +208,7 @@ function template(p) {
   const order = [];
   p.solutions.forEach((s, i) => {
     const k = `solution_${i + 1}`;
-    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text } };
+    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text, ...(s.link ? { link: s.link } : {}) } };
     order.push(k);
   });
   p.benefits.forEach((b, i) => {
