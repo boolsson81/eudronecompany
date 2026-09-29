@@ -1,0 +1,140 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign mf_namespace = section.settings.metafield_namespace | strip | default: 'custom'
+  assign mf_key = section.settings.metafield_key | strip | default: 'industry'
+  assign source = section.settings.collection | default: collections.all
+
+  # Tidigare ord i listan styr ordningen. Format per rad: Värde | Rubrik | Beskrivning | Länk
+  assign config_lines = section.settings.industries | newline_to_br | strip_newlines | split: '<br />'
+  assign all_values = ''
+  assign known = '||'
+
+  paginate source.products by 50
+    for product in source.products
+      assign raw = product.metafields[mf_namespace][mf_key].value
+      if raw != blank
+        assign vals = raw | join: '||' | split: '||'
+        for v in vals
+          assign v = v | strip
+          if v != blank
+            assign all_values = all_values | append: '||' | append: v | append: '||'
+          endif
+        endfor
+      endif
+    endfor
+  endpaginate
+  assign all_values = all_values | append: '~'
+
+  for line in config_lines
+    assign parts = line | split: '|'
+    assign key = parts[0] | strip
+    if key != blank
+      assign known = known | append: key | append: '||'
+    endif
+  endfor
+-%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    <ul class="edp-enterprise__grid edp-enterprise__grid--6" role="list">
+      {%- for line in config_lines -%}
+        {%- assign parts = line | split: '|' -%}
+        {%- assign key = parts[0] | strip -%}
+        {%- if key == blank -%}{%- continue -%}{%- endif -%}
+        {%- assign title = parts[1] | strip | default: key -%}
+        {%- assign desc = parts[2] | strip -%}
+        {%- assign link = parts[3] | strip -%}
+        {%- assign marker = '||' | append: key | append: '||' -%}
+        {%- assign count = all_values | split: marker | size | minus: 1 -%}
+        {%- render 'edp-industry-index-card', title: title, desc: desc, link: link, count: count, section: section -%}
+      {%- endfor -%}
+
+      {%- comment -%} Värden som finns på produkter men saknas i listan visas sist. {%- endcomment -%}
+      {%- if section.settings.show_unlisted -%}
+        {%- assign seen = known -%}
+        {%- assign occurrences = all_values | split: '||' -%}
+        {%- for occ in occurrences -%}
+          {%- if occ == blank or occ == '~' -%}{%- continue -%}{%- endif -%}
+          {%- assign marker = '||' | append: occ | append: '||' -%}
+          {%- unless seen contains marker -%}
+            {%- assign seen = seen | append: occ | append: '||' -%}
+            {%- assign count = all_values | split: marker | size | minus: 1 -%}
+            {%- render 'edp-industry-index-card', title: occ, desc: '', link: '', count: count, section: section -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      {%- endif -%}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Branschöversikt (metafält)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "default": "Alla branscher" },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    { "type": "textarea", "id": "text", "label": "Text", "default": "Välj din bransch för att se lösningar och produkter." },
+    { "type": "header", "content": "Metafält" },
+    { "type": "text", "id": "metafield_namespace", "label": "Namnrymd", "default": "custom", "info": "Produktmetafältets namnrymd, t.ex. custom eller edp." },
+    { "type": "text", "id": "metafield_key", "label": "Nyckel", "default": "industry" },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Produktkälla för antal",
+      "info": "Tomt = alla produkter. Shopify läser högst 50 produkter per sida, så välj en samling om katalogen är större."
+    },
+    {
+      "type": "textarea",
+      "id": "industries",
+      "label": "Branscher (en per rad)",
+      "info": "Liquid kan inte läsa metafältsdefinitionens val, så lista dem här i samma ordning. Format: Värde | Rubrik | Beskrivning | Länk. Värdet måste stämma exakt med metafältet; övriga fält är valfria.",
+      "default": "Infrastructure & Construction\nEnergy & Utilities\nIndustry & Manufacturing\nAgriculture & Forestry\nPublic Safety & Security\nLogistics & Transportation\nMaritime & Offshore\nMining & Resources\nEnvironmental & Research\nMedia & Professional Services"
+    },
+    { "type": "checkbox", "id": "show_unlisted", "label": "Visa värden som finns på produkter men saknas i listan", "default": true },
+    { "type": "checkbox", "id": "show_count", "label": "Visa antal produkter", "default": true },
+    { "type": "color_scheme", "id": "color_scheme", "label": "t:sections.all.colors.label", "default": "scheme-edp" },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_top", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_bottom", "default": 36 }
+  ],
+  "presets": [{ "name": "Branschöversikt (metafält)" }]
+}
+{% endschema %}

@@ -1,0 +1,22 @@
+{%- comment -%}
+  Kort i edp-industry-index.
+  Parametrar: title, desc, link, count, section
+{%- endcomment -%}
+<li class="edp-enterprise__card">
+  <h3 class="edp-enterprise__card-title">
+    {%- if link != blank -%}
+      <a href="{{ link }}">{{ title | escape }}</a>
+    {%- else -%}
+      {{ title | escape }}
+    {%- endif -%}
+  </h3>
+  {%- unless desc == blank -%}
+    <p class="edp-enterprise__card-text">{{ desc | escape }}</p>
+  {%- endunless -%}
+  {%- if section.settings.show_count and count > 0 -%}
+    <p class="edp-enterprise__card-text">{{ count }} {% if count == 1 %}produkt{% else %}produkter{% endif %}</p>
+  {%- endif -%}
+  {%- if link != blank -%}
+    <a class="edp-enterprise__card-link" href="{{ link }}">Läs mer</a>
+  {%- endif -%}
+</li>
