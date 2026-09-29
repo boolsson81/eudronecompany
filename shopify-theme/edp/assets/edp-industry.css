@@ -1,10 +1,13 @@
 .edp-industry-page {
   --edp-accent: #0066cc;
   --edp-accent-hover: #0052a3;
-  --edp-text: #1a1a1a;
-  --edp-muted: #5c5c5c;
-  --edp-border: #e5e7eb;
-  --edp-bg: #f8fafc;
+  /* Följer sektionens färgschema (Dawn --color-*), med ljus fallback */
+  --edp-fg: var(--color-foreground, 26, 26, 26);
+  --edp-text: rgb(var(--edp-fg));
+  --edp-muted: rgba(var(--edp-fg), 0.75);
+  --edp-border: rgba(var(--edp-fg), 0.15);
+  --edp-bg: rgba(var(--edp-fg), 0.05);
+  --edp-card-bg: rgba(var(--edp-fg), 0.06);
   --edp-radius: 12px;
   max-width: 1100px;
   margin: 0 auto;
@@ -47,7 +50,7 @@
   padding: 1.5rem;
   border: 1px solid var(--edp-border);
   border-radius: var(--edp-radius);
-  background: #fff;
+  background: var(--edp-card-bg);
 }
 .edp-industry__product-tag {
   display: inline-block;
@@ -87,7 +90,7 @@
   border-radius: var(--edp-radius);
   margin-bottom: 0.5rem;
   padding: 0 1rem;
-  background: #fff;
+  background: var(--edp-card-bg);
 }
 .edp-industry__faq-item summary {
   cursor: pointer;
@@ -104,7 +107,7 @@
   font-size: 0.875rem;
   color: var(--edp-text);
   text-decoration: none;
-  background: #fff;
+  background: var(--edp-card-bg);
 }
 .edp-industry__related-link:hover { border-color: var(--edp-accent); color: var(--edp-accent); }
 .edp-industry__cta {
@@ -126,7 +129,7 @@
 }
 .edp-industry__cta-primary { background: var(--edp-accent); color: #fff; }
 .edp-industry__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }
-.edp-industry__cta-secondary { background: #fff; color: var(--edp-text); border: 1px solid var(--edp-border); }
+.edp-industry__cta-secondary { background: var(--edp-card-bg); color: var(--edp-text); border: 1px solid var(--edp-border); }
 .edp-industry__cta-secondary:hover { border-color: var(--edp-accent); color: var(--edp-accent); }
 .edp-enterprise__industries { margin: 2rem 0 3rem; }
 .edp-enterprise__industries h2 { margin-bottom: 0.5rem; }
@@ -137,7 +140,7 @@
   padding: 1.5rem;
   border: 1px solid var(--edp-border);
   border-radius: var(--edp-radius);
-  background: #fff;
+  background: var(--edp-card-bg);
   text-decoration: none;
   color: inherit;
   transition: border-color 0.15s, box-shadow 0.15s;
