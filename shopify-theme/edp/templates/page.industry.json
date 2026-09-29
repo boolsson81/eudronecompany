@@ -2,7 +2,9 @@
   "sections": {
     "main": {
       "type": "edp-page-content",
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": ["main"]
