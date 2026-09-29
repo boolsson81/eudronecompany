@@ -1204,6 +1204,128 @@ export const INDUSTRY_SOLUTIONS: IndustrySolutionVertical[] = [
     title: "Media & Tjänsteföretag",
     titleEn: "Media & Professional Services",
     omfattar: ["Film", "Foto", "Media", "Inspektion", "Serviceföretag"],
+    heroTitle: "Drönare för Media & Tjänsteföretag",
+    heroDesc: "Lägg till drönarkapacitet i ert tjänsteutbud, ta hjälp av oss som underleverantör vid enstaka uppdrag, eller producera nyhets- och sociala medier-innehåll snabbt — utan att bygga en egen drönarorganisation.",
+    solutions: [
+      {
+        slug: "dronare-som-tjansteerbjudande",
+        title: "Drönare som tjänsteerbjudande",
+        desc: "Lägg till drönardokumentation som tilläggstjänst till ert befintliga erbjudande — med utrustning, utbildning och rapportmallar.",
+        longDesc: "Besiktnings-, konsult- och serviceföretag som vill erbjuda drönardokumentation till sina kunder behöver inte bygga upp allt från grunden. EU Drone Company hjälper er välja rätt utrustning, utbilda personal för certifiering och ta fram rapportmallar anpassade efter er varumärkesprofil, så att drönartjänsten känns som en naturlig del av ert erbjudande.",
+        seoTitle: "Drönare som Tjänsteerbjudande — Bygg Egen Kapacitet | EU Drone Company",
+        seoDesc: "Lägg till drönartjänster i ert erbjudande. Utrustning, utbildning och rapportmallar från EU Drone Company. Kontakta oss.",
+        useCases: [
+          "Besiktningsföretag som vill komplettera med drönardokumentation",
+          "Konsultbolag som vill erbjuda flygfoto till sina uppdrag",
+          "Fastighetsförvaltare som vill bygga intern drönarkapacitet",
+          "Serviceföretag som vill differentiera sitt erbjudande",
+        ],
+        keyFeatures: [
+          "Rådgivning kring val av drönare och utrustning",
+          "Utbildning fram till certifiering för egen personal",
+          "Rapportmallar anpassade efter er verksamhet",
+          "Löpande support vid uppstart av egen drönarverksamhet",
+        ],
+      },
+      {
+        slug: "underleverantor-dronarflygningar",
+        title: "Underleverantör för drönarflygningar",
+        desc: "Ta hjälp av oss som underleverantör vid enstaka eller återkommande uppdrag, utan att investera i egen utrustning.",
+        longDesc: "Alla företag behöver inte bygga egen drönarkapacitet. Som underleverantör utför EU Drone Company enstaka eller återkommande flyguppdrag åt mediebyråer, konsultföretag och andra serviceföretag, med leverans anpassad efter era befintliga kundrelationer och tidsramar.",
+        seoTitle: "Underleverantör för Drönarflygningar | EU Drone Company",
+        seoDesc: "Ta hjälp av EU Drone Company som underleverantör för drönaruppdrag. Enstaka eller återkommande flygningar utan egen investering. Kontakta oss.",
+        useCases: [
+          "Enstaka flyguppdrag åt mediebyråer och produktionsbolag",
+          "Återkommande dokumentation åt konsultföretag",
+          "Vitmärkt leverans som en del av ert eget kunderbjudande",
+          "Kapacitet vid arbetstoppar utan att anställa egen pilot",
+        ],
+        keyFeatures: [
+          "Certifierade piloter och rätt försäkringsskydd",
+          "Leverans anpassad efter era befintliga kundformat",
+          "Flexibel bokning vid enstaka eller löpande behov",
+          "Möjlighet till vitmärkt rapportering i ert namn",
+        ],
+      },
+      {
+        slug: "nyhets-samhallsjournalistik",
+        title: "Nyhets- & samhällsjournalistik",
+        desc: "Snabb flygdokumentation av nyhetshändelser, samhällsfrågor och pågående skeenden för medieaktörer.",
+        longDesc: "Nyhetsredaktioner behöver ibland flygbilder på kort varsel — vid bränder, översvämningar, byggprojekt eller samhällshändelser. EU Drone Company levererar snabb, professionell flygdokumentation med hänsyn till gällande regelverk kring integritet och flygsäkerhet, anpassad efter redaktionens deadline.",
+        seoTitle: "Nyhets- & Samhällsjournalistik med Drönare | EU Drone Company",
+        seoDesc: "Snabb flygdokumentation för nyhetsredaktioner. Professionellt bildmaterial vid samhällshändelser. Kontakta EU Drone Company.",
+        useCases: [
+          "Flygbilder vid bränder, olyckor och naturhändelser",
+          "Dokumentation av stora byggprojekt och samhällsförändringar",
+          "Bakgrundsmaterial till research och dokumentärjournalistik",
+          "Snabb leverans anpassad efter redaktionens deadline",
+        ],
+        keyFeatures: [
+          "Kort inställelsetid vid tidskritiska händelser",
+          "Hänsyn till integritets- och flygsäkerhetsregler",
+          "4K/5.1K-video redo för sändning",
+          "Erfarenhet av samverkan med räddningstjänst på plats",
+        ],
+      },
+      {
+        slug: "socialt-innehall-kortformat",
+        title: "Socialt innehåll i kortformat",
+        desc: "Snabb vertikal drönarvideo för sociala medier och marknadsföringsbyråer med kort ledtid.",
+        longDesc: "Marknadsföringsbyråer och contentteam behöver ofta korta, vertikala flygklipp för sociala medier med kort ledtid — inte alltid en fullskalig filmproduktion. EU Drone Company levererar snabbt redigeringsklart material anpassat för Instagram, TikTok och andra kanaler, till skillnad från längre cinematiska produktioner.",
+        seoTitle: "Socialt Innehåll i Kortformat med Drönare | EU Drone Company",
+        seoDesc: "Snabb vertikal drönarvideo för sociala medier. Kort ledtid för marknadsföringsbyråer. Kontakta EU Drone Company.",
+        useCases: [
+          "Vertikal video för Instagram Reels och TikTok",
+          "Snabba kampanjklipp med kort ledtid",
+          "Löpande innehållsproduktion åt marknadsföringsbyråer",
+          "Kompletterande flygklipp till befintligt kampanjmaterial",
+        ],
+        keyFeatures: [
+          "Vertikalt format optimerat för sociala plattformar",
+          "Snabb leverans, ofta inom något dygn",
+          "Kompakt utrustning för smidig produktion på plats",
+          "Möjlighet till löpande samarbete för kontinuerligt innehåll",
+        ],
+      },
+    ],
+    recommendedDrones: [
+      {
+        name: "DJI Mavic 3 Pro",
+        tag: "Snabbt & mångsidigt",
+        desc: "Tre kameror i ett kompakt format — perfekt för både socialt innehåll och professionell mediaproduktion med kort ledtid.",
+        features: ["43 min flygtid", "3 kameror", "5.1K video", "Hasselblad"],
+      },
+      {
+        name: "DJI Inspire 3",
+        tag: "Professionell nyhets- & mediaproduktion",
+        desc: "8K RAW-video med utbytbara objektiv för uppdrag som kräver högsta bildkvalitet, till exempel sändningsfärdigt nyhetsmaterial.",
+        features: ["8K RAW video", "Full-frame sensor", "Utbytbara objektiv", "FPV-styrning"],
+      },
+    ],
+    benefits: [
+      "Ny intäktskälla utan investering i egen drönarorganisation",
+      "Snabb leverans vid tidskritiska nyhets- och kampanjbehov",
+      "Professionell kvalitet med certifierade piloter",
+      "Flexibelt — från enstaka uppdrag till löpande partnerskap",
+    ],
+    faq: [
+      {
+        question: "Behöver vårt företag eget drönartillstånd för att erbjuda drönartjänster till kunder?",
+        answer: "Om ni använder EU Drone Company som underleverantör krävs inget eget tillstånd — vi står för certifiering, försäkring och flygtillstånd. Vill ni bygga egen kapacitet hjälper vi er genom hela utbildnings- och certifieringsprocessen.",
+      },
+      {
+        question: "Hur snabbt kan ni leverera material till en nyhetsredaktion?",
+        answer: "Vid tidskritiska händelser strävar vi efter att vara på plats inom timmar, beroende på plats och väderförhållanden. Redigeringsklart material levereras normalt samma dag.",
+      },
+      {
+        question: "Kan leveransen ske i vårt eget varumärke?",
+        answer: "Ja, vi kan leverera vitmärkt dokumentation och rapporter anpassade efter er grafiska profil, så att slutkunden möter ert varumärke genom hela leveransen.",
+      },
+      {
+        question: "Passar korta sociala medier-klipp för fler branscher än marknadsföring?",
+        answer: "Ja, många av våra kunder inom bygg, fastighet och event använder samma korta format för att visa upp projekt löpande i sociala kanaler, inte bara renodlade marknadsföringsbyråer.",
+      },
+    ],
   },
 ];
 
