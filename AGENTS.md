@@ -68,6 +68,13 @@ Tema att pusha ändringar mot: **EDC Förhandsgranskning (Claude)**
 Fråga inte vilken butik eller vilket tema — använd detta om inget annat
 anges.
 
+## CZI-sidor
+
+CZI:s produktsidor (sex serie-/sortimentssidor plus navsidan `czi`) genereras av
+`node scripts/czi/build-pages.mjs` till `theme/templates/page.czi*.json` och
+`data/czi-pages.json`. Redigera skriptet, inte mallarna för hand. Se
+`docs/reports/CZI_PRODUKTSIDOR_2026-09-29.md`.
+
 ## Namn som medvetet inte döptes om
 
 `eudroneparts-set-token` och `eudroneparts-token-binding-probe` är deployade
