@@ -60,7 +60,10 @@ class FacetFiltersForm extends HTMLElement {
 
   static renderSectionFromFetch(url, event) {
     fetch(url)
-      .then((response) => response.text())
+      .then((response) => {
+        if (!response.ok) throw new Error(`Facets request failed with status ${response.status}`);
+        return response.text();
+      })
       .then((responseText) => {
         const html = responseText;
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
@@ -68,7 +71,34 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderProductGridContainer(html);
         FacetFiltersForm.renderProductCount(html);
         if (typeof initializeScrollAnimationTrigger === 'function') initializeScrollAnimationTrigger(html.innerHTML);
+      })
+      .catch(() => {
+        FacetFiltersForm.handleFetchError();
       });
+  }
+
+  static handleFetchError() {
+    const loadingSpinners = document.querySelectorAll(
+      '.facets-container .loading__spinner, facet-filters-form .loading__spinner'
+    );
+    loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
+
+    const gridContainer = document.getElementById('ProductGridContainer');
+    const collection = gridContainer && gridContainer.querySelector('.collection');
+    if (collection) collection.classList.remove('loading');
+
+    const countContainer = document.getElementById('ProductCount');
+    const countContainerDesktop = document.getElementById('ProductCountDesktop');
+    if (countContainer) countContainer.classList.remove('loading');
+    if (countContainerDesktop) countContainerDesktop.classList.remove('loading');
+
+    const errorElement = document.getElementById('FacetsError');
+    if (!errorElement) return;
+    errorElement.classList.remove('hidden');
+    window.clearTimeout(FacetFiltersForm.errorTimeout);
+    FacetFiltersForm.errorTimeout = window.setTimeout(() => {
+      errorElement.classList.add('hidden');
+    }, 6000);
   }
 
   static renderSectionFromCache(filterDataUrl, event) {
@@ -196,6 +226,18 @@ class FacetFiltersForm extends HTMLElement {
       document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
     });
 
+    // Selectors that can appear more than once (eg. the "show N products" label
+    // repeated on each mobile filter's footer button and the drawer's final footer).
+    const repeatedElementSelectors = ['.mobile-facets__show-count'];
+
+    repeatedElementSelectors.forEach((selector) => {
+      const sourceElements = html.querySelectorAll(selector);
+      const targetElements = document.querySelectorAll(selector);
+      targetElements.forEach((target, index) => {
+        if (sourceElements[index]) target.innerHTML = sourceElements[index].innerHTML;
+      });
+    });
+
     document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
   }
 
@@ -230,8 +272,11 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static renderMobileCounts(source, target) {
-    const targetFacetsList = target.querySelector('.mobile-facets__list');
-    const sourceFacetsList = source.querySelector('.mobile-facets__list');
+    // Prefer swapping the whole facet-value-filter wrapper (search input + list) so a
+    // freshly rendered list is never left behind a stale, already-constructed custom
+    // element; fall back to the bare list for filter types that don't use the wrapper.
+    const targetFacetsList = target.querySelector('facet-value-filter') || target.querySelector('.mobile-facets__list');
+    const sourceFacetsList = source.querySelector('facet-value-filter') || source.querySelector('.mobile-facets__list');
 
     if (sourceFacetsList && targetFacetsList) {
       targetFacetsList.outerHTML = sourceFacetsList.outerHTML;
@@ -363,3 +408,44 @@ class FacetRemove extends HTMLElement {
 }
 
 customElements.define('facet-remove', FacetRemove);
+
+// Lets shoppers search within a filter group's own values (eg. "Brand") once the
+// list is long enough that scanning it is slower than typing. Purely client-side:
+// it never touches the applied filters, just what's visible in the current list.
+class FacetValueFilter extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('.facets__value-search-input');
+    this.list = this.querySelector('ul');
+    if (!this.input || !this.list) return;
+
+    this.emptyState = this.querySelector('.facets__value-search-empty');
+    this.items = Array.from(this.list.children);
+    this.input.addEventListener('input', debounce(this.onInput.bind(this), 150));
+  }
+
+  onInput(event) {
+    const query = event.target.value.trim().toLowerCase();
+    const collapsed = this.isShowMoreCollapsed();
+    let visibleCount = 0;
+
+    this.items.forEach((item) => {
+      const matches = !query || item.textContent.toLowerCase().includes(query);
+      const hiddenByShowMore = !query && collapsed && item.classList.contains('show-more-item');
+      item.classList.toggle('hidden', !matches || hiddenByShowMore);
+      if (matches && !hiddenByShowMore) visibleCount += 1;
+    });
+
+    if (this.emptyState) this.emptyState.classList.toggle('hidden', query === '' || visibleCount > 0);
+  }
+
+  isShowMoreCollapsed() {
+    const scope = this.closest('.parent-display') || this.closest('.mobile-facets__submenu');
+    const button = scope && scope.querySelector('show-more-button');
+    if (!button) return false;
+    const moreLabel = button.querySelector('.label-show-more');
+    return moreLabel ? !moreLabel.classList.contains('hidden') : false;
+  }
+}
+
+customElements.define('facet-value-filter', FacetValueFilter);

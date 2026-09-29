@@ -25,6 +25,7 @@
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
   assign default_presentation = 'text'
+  assign facet_search_threshold = 8
   if results.url
     assign results_url = results.url
   else
@@ -137,7 +138,11 @@
                   {%- endif -%}
                 {%- endfor -%}
                 {%- if group_has_items -%}
-                  <div class="facets__group" data-facet-group="{{ group.settings.heading | escape }}">
+                  <div
+                    class="facets__group"
+                    id="FacetsGroup-{{ forloop.index }}-{{ section.id }}"
+                    data-facet-group="{{ group.settings.heading | escape }}"
+                  >
                     {%- if group.settings.heading != blank -%}
                       <h3 class="facets__group-heading caption-large text-body">{{ group.settings.heading | escape }}</h3>
                     {%- endif -%}
@@ -150,6 +155,7 @@
                           filter: filter,
                           filter_type: filter_type,
                           default_presentation: default_presentation,
+                          facet_search_threshold: facet_search_threshold,
                           index: facet_item_index
                         %}
                       {%- endif -%}
@@ -166,7 +172,7 @@
                 {%- endunless -%}
               {%- endfor -%}
               {%- if has_ungrouped -%}
-                <div class="facets__group facets__group--other">
+                <div class="facets__group facets__group--other" id="FacetsGroup-other-{{ section.id }}">
                   {%- for filter in results.filters -%}
                     {%- assign param_key = '|' | append: filter.param_name | append: '|' -%}
                     {%- unless grouped_param_keys contains param_key -%}
@@ -176,6 +182,7 @@
                         filter: filter,
                         filter_type: filter_type,
                         default_presentation: default_presentation,
+                        facet_search_threshold: facet_search_threshold,
                         index: facet_item_index
                       %}
                     {%- endunless -%}
@@ -189,6 +196,7 @@
                   filter: filter,
                   filter_type: filter_type,
                   default_presentation: default_presentation,
+                  facet_search_threshold: facet_search_threshold,
                   index: forloop.index
                 %}
               {%- endfor -%}
@@ -409,6 +417,22 @@
                               </span>
                             {%- endif -%}
                           </button>
+                          <facet-value-filter>
+                          {%- if filter.values.size > facet_search_threshold -%}
+                            <div class="facets__value-search facets__value-search--mobile">
+                              <span class="svg-wrapper" aria-hidden="true">
+                                {{- 'icon-search.svg' | inline_asset_content -}}
+                              </span>
+                              <input
+                                type="text"
+                                class="facets__value-search-input field__input"
+                                autocomplete="off"
+                                spellcheck="false"
+                                placeholder="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                                aria-label="{{ 'products.facets.search_filter_placeholder' | t: label: filter.label | escape }}"
+                              >
+                            </div>
+                          {%- endif -%}
                           <ul class="{{ visual_layout_class }} mobile-facets__list list-unstyled" role="list">
                             {%- liquid
                               assign sorted_values = filter.values
@@ -503,6 +527,12 @@
                               </li>
                             {%- endfor -%}
                           </ul>
+                          {%- if filter.values.size > facet_search_threshold -%}
+                            <p class="facets__value-search-empty hidden">
+                              {{- 'products.facets.search_filter_no_matches' | t -}}
+                            </p>
+                          {%- endif -%}
+                          </facet-value-filter>
 
                           <div class="mobile-facets__footer gradient">
                             <facet-remove class="mobile-facets__clear-wrapper">
@@ -515,7 +545,9 @@
                               class="button button--primary"
                               onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                             >
-                              {{ 'products.facets.apply' | t }}
+                              <span class="mobile-facets__show-count">
+                                {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                              </span>
                             </button>
                           </div>
                         </div>
@@ -566,7 +598,9 @@
                               class="button button--primary"
                               onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                             >
-                              {{ 'products.facets.apply' | t }}
+                              <span class="mobile-facets__show-count">
+                                {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                              </span>
                             </button>
                           </div>
                         </div>
@@ -622,7 +656,9 @@
                   class="button button--primary"
                   onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()"
                 >
-                  {{ 'products.facets.apply' | t }}
+                  <span class="mobile-facets__show-count">
+                    {{- 'products.facets.show_products_count' | t: count: results.products_count -}}
+                  </span>
                 </button>
               </div>
             </div>

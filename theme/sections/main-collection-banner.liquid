@@ -10,16 +10,9 @@
 {%- endstyle -%}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+  {% render 'edp-breadcrumbs' %}
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
-      {%- if section.settings.show_breadcrumbs -%}
-        <nav class="collection-hero__breadcrumbs" aria-label="Brödsmulor">
-          <a href="{{ routes.root_url }}">Hem</a>
-          <span aria-hidden="true">/</span>
-          <span aria-current="page">{{ collection.title | escape }}</span>
-        </nav>
-      {%- endif -%}
-
       {%- if section.settings.icon != blank -%}
         <div class="collection-hero__icon">
           {{
@@ -93,13 +86,6 @@
       "id": "show_collection_image",
       "default": false,
       "label": "t:sections.main-collection-banner.settings.show_collection_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_breadcrumbs",
-      "default": false,
-      "label": "Visa brödsmulor",
-      "info": "Hem / Collection-namn."
     },
     {
       "type": "image_picker",

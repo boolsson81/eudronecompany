@@ -1,0 +1,138 @@
+{% comment %}
+  STEG 9 — visual category cards, generated from the live "Produkttyp"
+  Search & Discovery filter (custom.produkttyp) on this collection.
+
+  New categories added in Shopify Admin (metafield choices) appear here
+  automatically — no theme edit needed. Each card links straight to the
+  pre-filtered collection result for that category (Shopify's own filter
+  URL, not a hardcoded collection).
+{% endcomment %}
+
+{%- liquid
+  assign category_filter = nil
+  for filter in collection.filters
+    if filter.param_name contains 'produkttyp'
+      assign category_filter = filter
+    endif
+  endfor
+-%}
+
+{%- if category_filter and category_filter.values.size > 0 -%}
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    .category-cards__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media screen and (min-width: 750px) {
+      .category-cards__grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    .category-cards__item {
+      display: block;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      border: 1px solid rgba(var(--color-foreground), 0.08);
+      border-radius: var(--inputs-radius, 4px);
+      text-decoration: none;
+    }
+    .category-cards__count { display: block; }
+  {%- endstyle -%}
+
+  <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width">
+      {%- if section.settings.heading != blank -%}
+        <h2 class="category-cards__heading {{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      <ul class="category-cards__grid list-unstyled" role="list">
+        {%- for value in category_filter.values -%}
+          {%- if value.count > 0 or value.active -%}
+            {%- if value.active -%}
+              {%- assign card_url = value.url_to_remove -%}
+            {%- else -%}
+              {%- assign card_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | url_encode -%}
+            {%- endif -%}
+            <li>
+              <a href="{{ card_url }}" class="category-cards__item{% if value.active %} category-cards__item--active{% endif %}">
+                <span class="category-cards__label">{{ value.label }}</span>
+                <span class="category-cards__count caption light">
+                  {{ 'products.drone_finder.result_count' | t: count: value.count }}
+                </span>
+              </a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Tillbehörskategorier",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Handla efter kategori"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Rubrikstorlek",
+      "options": [
+        { "value": "h3", "label": "Liten" },
+        { "value": "h2", "label": "Medel" },
+        { "value": "h1", "label": "Stor" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tillbehörskategorier"
+    }
+  ]
+}
+{% endschema %}

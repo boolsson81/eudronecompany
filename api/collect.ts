@@ -16,7 +16,7 @@ import {
   isParseFailure,
   measurementProtocolUrl,
   parseCollectBody,
-} from "./_lib/measurementProtocol";
+} from "./_lib/measurementProtocol.js";
 
 const DEFAULT_MEASUREMENT_ID = "G-G5KGZ4RKSD";
 

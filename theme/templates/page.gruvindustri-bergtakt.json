@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Volymberäkning",
+            "text": "Regelbundna flygningar ger exakta volymer på massor, lager och upplag för lagerbokföring och fakturering."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Täktkartläggning",
+            "text": "Högupplösta 3D-modeller av brytningsfronter och slänter för planering och tillståndsrapportering."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Släntstabilitet",
+            "text": "Upprepade mätningar identifierar rörelser i slänter och bergväggar innan de blir en säkerhetsrisk."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Efterbehandlingskontroll",
+            "text": "Dokumentera återställning och efterbehandling av avslutade täktområden."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Volymmätning utan att stoppa maskiner eller trafik" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Centimeterprecision med LiDAR och fotogrammetri" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Data kompatibel med GIS- och projekteringsverktyg" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Säkrare uppföljning av slänter och brytningsfronter" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "image": "shopify://shop_images/photo-1571223641822-b82408a0e705.jpg",
+        "eyebrow": "Gruvindustri & Bergtäkt",
+        "title": "Drönare för Gruvindustri & Bergtäkt",
+        "text": "Mät volymer, följ upp brytning och dokumentera täkter med LiDAR och fotogrammetri — utan att stänga av verksamheten.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Räkna på volymmätning för er täkt",
+        "text": "Berätta om täktens storlek och mätbehov, så föreslår vi utrustning och flygintervall.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}

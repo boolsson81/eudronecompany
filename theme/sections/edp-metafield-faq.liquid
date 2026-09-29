@@ -1,0 +1,175 @@
+{%- comment -%}
+  Visible FAQ accordion driven by the seo.faq_json metafield (array of
+  {question, answer} or {q, a}) already used for FAQPage JSON-LD in
+  snippets/edp-seo-faq.liquid. Same metafield, same data, just rendered
+  visibly here. Renders nothing when the metafield is empty, so this
+  section is safe to include on every product/collection/page template.
+{%- endcomment -%}
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign faq_raw = nil
+  if request.page_type == 'product'
+    assign faq_raw = product.metafields.seo.faq_json.value
+  elsif request.page_type == 'page'
+    assign faq_raw = page.metafields.seo.faq_json.value
+  elsif request.page_type == 'collection'
+    assign faq_raw = collection.metafields.seo.faq_json.value
+  elsif request.page_type == 'article'
+    assign faq_raw = article.metafields.seo.faq_json.value
+  endif
+  assign faq_icons = 'question_mark,chat_bubble,truck,return,clipboard,check_mark,box,lock' | split: ','
+-%}
+
+{%- if faq_raw != blank and faq_raw.size > 0 -%}
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="color-{{ section.settings.color_scheme }} gradient">
+    <div class="collapsible-content collapsible-none-layout isolate">
+      <div class="collapsible-content__wrapper section-{{ section.id }}-padding">
+        <div class="collapsible-content-wrapper-narrow">
+          <div
+            class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            style="text-align: {{ section.settings.heading_alignment }};"
+          >
+            {%- if section.settings.caption != blank -%}
+              <p class="caption-with-letter-spacing">
+                {{ section.settings.caption | escape }}
+              </p>
+            {%- endif -%}
+            {%- if section.settings.heading != blank -%}
+              <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h2>
+            {%- endif -%}
+          </div>
+          <div class="grid grid--1-col collapsible-content__grid{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            <div class="grid__item">
+              {%- for item in faq_raw -%}
+                {%- assign question = item.question | default: item.q | strip_html | strip -%}
+                {%- assign answer = item.answer | default: item.a | strip_html | strip -%}
+                {%- if question != blank and answer != blank -%}
+                  {%- assign icon_index = forloop.index0 | modulo: faq_icons.size -%}
+                  {%- assign icon = faq_icons[icon_index] -%}
+                  <div class="accordion">
+                    <details id="Details-{{ section.id }}-{{ forloop.index0 }}">
+                      <summary id="Summary-{{ section.id }}-{{ forloop.index0 }}">
+                        {% render 'icon-accordion', icon: icon %}
+                        <h3 class="accordion__title inline-richtext h4">
+                          {{ question }}
+                        </h3>
+                        {{- 'icon-caret.svg' | inline_asset_content -}}
+                      </summary>
+                      <div
+                        class="accordion__content rte"
+                        id="CollapsibleAccordion-{{ section.id }}-{{ forloop.index0 }}"
+                        role="region"
+                        aria-labelledby="Summary-{{ section.id }}-{{ forloop.index0 }}"
+                      >
+                        <p>{{ answer | newline_to_br }}</p>
+                      </div>
+                    </details>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "EDP FAQ (metafält)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Ingress"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Vanliga frågor"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Rubrikstorlek",
+      "options": [
+        { "value": "h2", "label": "Liten" },
+        { "value": "h1", "label": "Medel" },
+        { "value": "h0", "label": "Stor" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Rubrikjustering",
+      "options": [
+        { "value": "left", "label": "Vänster" },
+        { "value": "center", "label": "Centrerad" },
+        { "value": "right", "label": "Höger" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Färgschema",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "Avstånd"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding topp",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding botten",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "EDP FAQ (metafält)"
+    }
+  ]
+}
+{% endschema %}

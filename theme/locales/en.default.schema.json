@@ -330,12 +330,20 @@
         "show_cart_note": {
           "label": "Cart note"
         },
+        "low_stock_threshold": {
+          "label": "Low stock warning threshold",
+          "info": "Shows \"Only X left in stock\" on a cart line when inventory is at or below this number. 0 turns the warning off."
+        },
         "cart_drawer": {
           "header": "Cart drawer",
           "collection": {
             "label": "Collection",
             "info": "Shown when cart drawer is empty"
           }
+        },
+        "free_shipping_threshold": {
+          "label": "Free shipping threshold",
+          "info": "Shows a progress bar in the cart drawer. Leave blank to hide it. Must match the threshold set under Settings → Shipping and delivery, otherwise this promises something checkout won't honor."
         }
       }
     },
@@ -1152,6 +1160,48 @@
       },
       "presets": {
         "name": "User type selector"
+      }
+    },
+    "edp-home-portals": {
+      "name": "Customer portals",
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "text": {
+          "label": "Text"
+        }
+      },
+      "blocks": {
+        "portal": {
+          "name": "Portal",
+          "settings": {
+            "icon": {
+              "label": "Icon",
+              "options__1": {
+                "label": "Service"
+              },
+              "options__2": {
+                "label": "Education"
+              }
+            },
+            "title": {
+              "label": "Title"
+            },
+            "text": {
+              "label": "Text"
+            },
+            "link_label": {
+              "label": "Link label"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Customer portals"
       }
     },
     "enterprise-landing": {
@@ -2139,6 +2189,25 @@
         },
         "logo_width": {
           "label": "Custom logo width"
+        },
+        "hamburger_header": {
+          "content": "Hamburger menu icon"
+        },
+        "hamburger_icon_style": {
+          "label": "Icon style",
+          "info": "Choose how the mobile menu icon looks",
+          "options__1": {
+            "label": "Classic lines"
+          },
+          "options__2": {
+            "label": "Bold lines"
+          },
+          "options__3": {
+            "label": "Dots"
+          },
+          "options__4": {
+            "label": "Squeeze"
+          }
         }
       },
       "blocks": {

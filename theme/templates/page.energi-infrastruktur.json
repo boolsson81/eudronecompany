@@ -31,12 +31,41 @@
             "text": "Bladinspektion med AI-analys och automatiserad rapportering — minskar stilleståndstid och kostnader."
           }
         },
-        "benefit_1": { "type": "benefit", "settings": { "text": "Inspektera utan driftstopp och utan att klättra i master" } },
-        "benefit_2": { "type": "benefit", "settings": { "text": "Identifiera termiska anomalier innan de orsakar haveri" } },
-        "benefit_3": { "type": "benefit", "settings": { "text": "Automatiserade inspektionsrutter med repeterbara resultat" } },
-        "benefit_4": { "type": "benefit", "settings": { "text": "Drastiskt minskade inspektionskostnader jämfört med helikopter" } }
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Inspektera utan driftstopp och utan att klättra i master"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Identifiera termiska anomalier innan de orsakar haveri"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Automatiserade inspektionsrutter med repeterbara resultat"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Drastiskt minskade inspektionskostnader jämfört med helikopter"
+          }
+        }
       },
-      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
       "settings": {
         "show_breadcrumb": true,
         "breadcrumb_label": "Enterprise",
@@ -64,7 +93,19 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["industry_landing", "enterprise_contact"]
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
 }

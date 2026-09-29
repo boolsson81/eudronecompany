@@ -1,0 +1,139 @@
+{% comment %}
+  STEG 16 — "Passande tillbehör" on the product page.
+
+  Shows accessories that are compatible with the same drone model(s) as
+  this product, derived entirely from the custom.passsar_till
+  compatibility metafield (never a manually curated product list).
+
+  Implementation note: this fetches the live, filtered Drone Accessories
+  collection page in the browser and reuses its own rendered product
+  grid — the exact same data Shopify's Search & Discovery filter already
+  produces, so there is only one source of truth for compatibility.
+  Renders nothing if the product has no compatibility data, and fails
+  silently (no console errors, section just stays hidden) if the
+  compatibility filter isn't enabled yet in Search & Discovery.
+{% endcomment %}
+{%- liquid
+  assign compat_models = product.metafields.custom.passsar_till.value
+  assign accessories_collection = collections[section.settings.accessories_collection_handle]
+-%}
+{%- if compat_models != blank and accessories_collection -%}
+  {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+  {{ 'component-card.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'compatible-accessories.js' | asset_url }}" defer="defer"></script>
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    compatible-accessories:not([data-loaded]) .compatible-accessories__grid { display: none; }
+    compatible-accessories:not([data-loaded]) .compatible-accessories__loading { display: block; }
+    compatible-accessories[data-loaded] .compatible-accessories__loading { display: none; }
+    compatible-accessories[data-empty] { display: none; }
+  {%- endstyle -%}
+
+  <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width">
+      <compatible-accessories
+        data-collection-url="{{ accessories_collection.url }}"
+        data-models="{{ compat_models | join: '||' | escape }}"
+        data-current-product-url="{{ product.url }}"
+        data-limit="{{ section.settings.max_products }}"
+      >
+        <h2 class="compatible-accessories__heading {{ section.settings.heading_size }}">
+          {{ 'products.product.compatible_accessories_heading' | t }}
+        </h2>
+        <p class="compatible-accessories__loading light">{{ 'accessibility.loading' | t }}</p>
+        <ul class="compatible-accessories__grid grid product-grid grid--2-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop"></ul>
+      </compatible-accessories>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Passande tillbehör",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "accessories_collection_handle",
+      "label": "Tillbehörskollektion (handle)",
+      "default": "drone-accessories",
+      "info": "Handle för kollektionen med det kompatibilitetsfilter (Passar till) som ska återanvändas."
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Rubrikstorlek",
+      "options": [
+        { "value": "h3", "label": "Liten" },
+        { "value": "h2", "label": "Medel" },
+        { "value": "h1", "label": "Stor" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "max_products",
+      "label": "Max antal produkter",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Kolumner (desktop)",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 28
+    }
+  ],
+  "presets": [
+    {
+      "name": "Passande tillbehör"
+    }
+  ]
+}
+{% endschema %}

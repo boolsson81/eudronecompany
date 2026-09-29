@@ -14,8 +14,19 @@ param_name, värden, antal) och renderar dem utan att något produktnamn,
 varumärke eller filternamn är hårdkodat. Det here arbetet **bygger vidare på**
 den motorn istället för att ersätta den, och fyller bara i de luckor som
 uppgiften pekade på: filtergrupper, ett generiskt guidat filter, per-collection
-förvalt filter, en tablet-brytpunkt för layout, samt ikon/CTA/brödsmula i
+förvalt filter, en tablet-brytpunkt för layout, samt ikon/CTA i
 collection-headern.
+
+Under tiden det här arbetet pågick landade en parallell ändring på `main`
+(`0f84bf9`) som dels byggde sök-i-filtervärden i samma del av `facets.liquid`
+som filtergrupperingen, dels lade till en riktig, global, sidtypsmedveten
+breadcrumb-komponent (`snippets/edp-breadcrumbs.liquid`, redan inkopplad på
+både collection- och produktsidor). Vid mergen mot `main` slogs
+sök-i-filter-funktionen ihop med grupperingen (båda finns kvar, se punkt 2–3),
+och den egna, enklare breadcrumb-togglen i det här arbetet togs bort helt
+till förmån för `edp-breadcrumbs.liquid` — två parallella brödsmulespår på
+samma sida hade varit exakt den typen av duplicerad funktionalitet uppgiften
+ber oss undvika.
 
 Ingen ny admin-app byggdes. Inga metafield- eller metaobject-definitioner
 skapades i den skarpa butiken — allt nytt är tema-kod (git, reversibelt) plus
@@ -38,9 +49,10 @@ dokumentation av hur man använder befintliga Shopify Admin-ytor
   en generisk JSON-mall + collection-specifika sektionsinställningar är
   precis "Collection Configuration" från uppgiften och återanvänds rakt av.
 - **`canonical_url`** (Shopifys globala objekt) — SEO för filterkombinationer.
-- **`edp-seo-breadcrumbs.liquid` / `edp-seo-collection.liquid`** — osynlig
-  JSON-LD för breadcrumb och CollectionPage, orörda och kompletterar den nu
-  tillagda synliga breadcrumben.
+- **`edp-seo-breadcrumbs.liquid` / `edp-seo-collection.liquid`** (osynlig
+  JSON-LD) och den nyare, synliga **`edp-breadcrumbs.liquid`** (från en
+  parallell ändring på `main`, se ovan) — orörda och återanvända rakt av;
+  ingen egen breadcrumb-implementation byggdes i det här arbetet.
 - **Befintliga `edp.*`- och `dji.*`-metafields** (se punkt 4) och
   metaobjects (`uav_platform`, `payload_category`, `mission`,
   `payload_compatibility`) — inget nytt behövdes för att exemplifiera
@@ -54,12 +66,13 @@ dokumentation av hur man använder befintliga Shopify Admin-ytor
 
 | Fil | Ändring |
 |---|---|
-| `theme/snippets/facets.liquid` | Desktop/horisontell filterloop ersatt med grupperingslogik (bakåtkompatibel — identiskt beteende när inga `filter_group`-block finns) |
+| `theme/snippets/facets.liquid` | Desktop/horisontell filterloop ersatt med grupperingslogik (bakåtkompatibel — identiskt beteende när inga `filter_group`-block finns); mergad med `main`s sök-i-filtervärden på samma rader |
+| `theme/snippets/facets-filter-item.liquid` | Innehåller nu även sök-i-filter-markeringen (`<facet-value-filter>`) som var en del av `main`s parallella ändring |
 | `theme/sections/main-collection-product-grid.liquid` | Skickar `filter_groups` till facets, ny `filter_group`-blocktyp, ny `columns_tablet`-inställning + CSS-klass, ny default-filter-override-script |
-| `theme/sections/main-collection-banner.liquid` | Nya inställningar: `show_breadcrumbs`, `icon`, `cta_label`/`cta_url` |
+| `theme/sections/main-collection-banner.liquid` | Nya inställningar: `icon`, `cta_label`/`cta_url` |
 | `theme/assets/component-facets.css` | Stil för `.facets__group` / `.facets__group-heading` |
 | `theme/assets/template-collection.css` | Ny tablet-brytpunkt (750–989px) för produktgrid-kolumner |
-| `theme/assets/component-collection-hero.css` | Stil för breadcrumb, ikon, CTA i collection-headern |
+| `theme/assets/component-collection-hero.css` | Stil för ikon och CTA i collection-headern |
 
 ## 3. Nya filer
 
@@ -143,7 +156,9 @@ reservdelar, batterier, kameror, framtida produktkategorier.
    filtren under rubriker (se punkt 8).
 6. Lägg valfritt till sektionen **Guidat filter** (`collection-finder`) om
    collectionen ska ha en produktguide.
-7. Justera `banner`-sektionen: beskrivning, bild, ikon, CTA, brödsmula.
+7. Justera `banner`-sektionen: beskrivning, bild, ikon, CTA. Breadcrumb visas
+   automatiskt av den globala `edp-breadcrumbs.liquid` och behöver inte
+   konfigureras per collection.
 
 Ingen av dessa steg kräver en utvecklare eller en kodändring per collection.
 

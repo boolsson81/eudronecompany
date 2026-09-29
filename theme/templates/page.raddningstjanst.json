@@ -31,12 +31,41 @@
             "text": "Gasläckedetektion och säkerhetsinspektion i farliga miljöer utan att utsätta personal."
           }
         },
-        "benefit_1": { "type": "benefit", "settings": { "text": "Täck stora områden snabbt med realtidsöverblick" } },
-        "benefit_2": { "type": "benefit", "settings": { "text": "Termisk detektion dygnet runt, oavsett ljusförhållanden" } },
-        "benefit_3": { "type": "benefit", "settings": { "text": "Minska behovet av fysisk patrullering" } },
-        "benefit_4": { "type": "benefit", "settings": { "text": "Snabb deployment — flygklar på under 60 sekunder" } }
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Täck stora områden snabbt med realtidsöverblick"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Termisk detektion dygnet runt, oavsett ljusförhållanden"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Minska behovet av fysisk patrullering"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Snabb deployment — flygklar på under 60 sekunder"
+          }
+        }
       },
-      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
       "settings": {
         "show_breadcrumb": true,
         "breadcrumb_label": "Enterprise",
@@ -64,7 +93,19 @@
         "padding_top": 24,
         "padding_bottom": 48
       }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
-  "order": ["industry_landing", "enterprise_contact"]
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
 }

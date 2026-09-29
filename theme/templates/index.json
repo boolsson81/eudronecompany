@@ -200,7 +200,8 @@
             "icon": "service",
             "title": "Serviceportal",
             "text": "Spåra serviceärenden, reservdelsbeställningar och garantier.",
-            "link_label": "Logga in på serviceportalen"
+            "link_label": "Logga in på serviceportalen",
+            "link": "/account"
           }
         },
         "portal_education": {
@@ -209,7 +210,8 @@
             "icon": "education",
             "title": "Utbildningsportal",
             "text": "Boka drönarkurser, håll koll på certifieringar och kursintyg.",
-            "link_label": "Logga in på utbildningsportalen"
+            "link_label": "Logga in på utbildningsportalen",
+            "link": "/account"
           }
         }
       },

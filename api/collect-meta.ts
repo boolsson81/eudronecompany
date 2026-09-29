@@ -10,13 +10,13 @@
  * släpper händelsen, så en glömd variabel aldrig fäller sidan.
  */
 
-import { clientIpFrom } from "./_lib/measurementProtocol";
+import { clientIpFrom } from "./_lib/measurementProtocol.js";
 import {
   buildConversionsApiBody,
   conversionsApiUrl,
   isParseFailure,
   parseCollectMetaBody,
-} from "./_lib/metaConversionsApi";
+} from "./_lib/metaConversionsApi.js";
 
 type ApiRequest = {
   method?: string;

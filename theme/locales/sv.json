@@ -154,6 +154,11 @@
       "sold_out": "Slutsåld",
       "unavailable": "Inte tillgängliga",
       "compatibility_label": "Passar till: ",
+      "compatibility_fits_html": "Passar {{ model }}",
+      "compatibility_heading": "Kompatibilitet",
+      "compatibility_unsure": "Osäker på om den passar?",
+      "compatible_accessories_heading": "Passande tillbehör",
+      "compatible_accessories_heading_html": "Passande tillbehör för {{ model }}",
       "series_label": "Serie: ",
       "vendor": "Säljare",
       "video_exit_message": "{{ title }} öppnar helskärmsvideo i samma fönster.",
@@ -236,7 +241,27 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }}) filter valda",
       "show_more": "Visa mer",
       "show_less": "Visa mindre",
-      "filter_and_operator_subtitle": "Matcha alla"
+      "filter_and_operator_subtitle": "Matcha alla",
+      "search_filter_placeholder": "Sök {{ label }}…",
+      "search_filter_no_matches": "Inga träffar.",
+      "show_products_count": {
+        "one": "Visa {{ count }} produkt",
+        "other": "Visa {{ count }} produkter"
+      },
+      "fetch_error": "Det gick inte att uppdatera filtren just nu. Försök igen."
+    },
+    "drone_finder": {
+      "select_label": "Välj din drönare",
+      "select_placeholder": "Välj din drönare",
+      "search_placeholder": "Sök efter drönarmodell...",
+      "change_drone": "Byt drönare",
+      "clear_filter": "Rensa filter",
+      "result_count": {
+        "one": "{{ count }} kompatibel produkt",
+        "other": "{{ count }} kompatibla produkter"
+      },
+      "no_results": "Inga kompatibla produkter hittades för den här modellen än.",
+      "active_heading_html": "Tillbehör för {{ model }}"
     }
   },
   "templates": {
@@ -321,6 +346,24 @@
       },
       "estimated_total": "Beräknad totalsumma",
       "new_estimated_total": "Nytt beräknat totalbelopp",
+      "complementary_products": {
+        "heading": "Kompletterar din beställning"
+      },
+      "free_shipping": {
+        "remaining_html": "Handla för {{ amount }} till för fri frakt!",
+        "reached": "Du har fri frakt! 🎉"
+      },
+      "discount_code": {
+        "label": "Har du en rabattkod?",
+        "placeholder": "Ange rabattkod",
+        "apply": "Använd kod"
+      },
+      "secure_checkout": "Säker betalning",
+      "low_stock_html": "Bara {{ count }} kvar i lager",
+      "compatibility_warning": {
+        "title": "Din varukorg innehåller delar för olika drönarmodeller",
+        "fits": "Passar"
+      },
       "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Tullavgifter och skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",
       "duties_and_taxes_included_shipping_at_checkout_without_policy": "Tullavgifter och skatter ingår. Rabatter och fraktkostnad beräknas i kassan.",
       "taxes_included_shipping_at_checkout_with_policy_html": "Skatter ingår. Rabatter och <a href=\"{{ link }}\">fraktkostnad</a> beräknas i kassan.",

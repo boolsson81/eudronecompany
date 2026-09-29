@@ -1,0 +1,141 @@
+/* Fri frakt-indikator */
+.cart-drawer__free-shipping {
+  margin: 1rem 0 0;
+}
+
+.cart-drawer__free-shipping-text {
+  font-size: 1.3rem;
+  margin: 0 0 0.6rem;
+}
+
+.cart-drawer__free-shipping-track {
+  height: 0.6rem;
+  border-radius: 100px;
+  background: rgba(var(--color-foreground), 0.08);
+  overflow: hidden;
+}
+
+.cart-drawer__free-shipping-bar {
+  height: 100%;
+  background: rgb(var(--color-button));
+  transition: width var(--duration-default) ease;
+}
+
+/* Kompatibilitetsvarning */
+.cart-drawer__compat-warning {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #d97706;
+  border-radius: var(--inputs-radius, 0);
+  background: rgba(217, 119, 6, 0.08);
+}
+
+.cart-drawer__compat-warning > .svg-wrapper {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  color: #d97706;
+}
+
+.cart-drawer__compat-warning-title {
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.cart-drawer__compat-warning-list {
+  margin: 0 0 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 1.3rem;
+}
+
+/* Korsförsäljning */
+.cart-drawer__recommendations-container {
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.cart-drawer__recommendations-heading {
+  margin: 0 0 1rem;
+}
+
+.cart-drawer__recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cart-drawer__recommendations-item .card--horizontal .card__inner {
+  max-width: 30%;
+}
+
+.cart-drawer__recommendations-item .card--card .card__content,
+.cart-drawer__recommendations-item .card--horizontal .card__information {
+  padding: 0;
+}
+
+/* Rabattkodsfält */
+.cart-drawer__discount-details {
+  margin-top: 1rem;
+}
+
+.cart-drawer__discount-form {
+  display: block;
+  margin-top: 1rem;
+}
+
+.cart-drawer__discount-input-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.cart-drawer__discount-input-row input {
+  flex: 1;
+  min-width: 0;
+  border: 0.1rem solid rgba(var(--color-foreground), 0.55);
+  border-radius: var(--inputs-radius, 0);
+  padding: 0.9rem 1.2rem;
+  background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  font: inherit;
+}
+
+.cart-drawer__discount-submit {
+  flex-shrink: 0;
+}
+
+/* Lågt lager-varning per rad */
+.cart-item__low-stock {
+  color: #b45309;
+  margin: 0.4rem 0 0;
+}
+
+/* Trygghetssignaler vid kassaknappen */
+.cart-drawer__trust {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cart-drawer__payment-icons {
+  justify-content: flex-start;
+}
+
+.cart-drawer__trust-text {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.cart-drawer__trust-text .svg-wrapper {
+  width: 1.6rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+}

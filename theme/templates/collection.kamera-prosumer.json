@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-edp"
+      }
+    },
+    "subcategories": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Mini-serien",
+            "text": "<p>Lätta drönare under 250 g för smidig vardagsflygning.</p>",
+            "link_label": "Visa Mini-serien",
+            "link": "/collections/kamera-prosumer"
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Air-serien",
+            "text": "<p>Balans mellan portabilitet och avancerad kamerakvalitet.</p>",
+            "link_label": "Visa Air-serien",
+            "link": "/collections/kamera-prosumer"
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "title": "Mavic-serien",
+            "text": "<p>Flaggskepp med större sensor för professionell foto & film.</p>",
+            "link_label": "Visa Mavic-serien",
+            "link": "/collections/kamera-prosumer"
+          }
+        },
+        "column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Osmo-actionkameror",
+            "text": "<p>Handhållna actionkameror och gimbals för rörligt bildmaterial.</p>",
+            "link_label": "Visa Osmo-serien",
+            "link": "/collections/kamera-prosumer"
+          }
+        }
+      },
+      "block_order": ["column-0", "column-1", "column-2", "column-3"],
+      "settings": {
+        "title": "Handla efter serie",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false,
+        "color_scheme": "scheme-edp",
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "show_compatibility": false,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-edp",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": ["banner", "subcategories", "product-grid"]
+}

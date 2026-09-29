@@ -46,6 +46,11 @@ fungerar, men den blockerade trafiken mäts inte.
 `vercel.json` undantar `/api/` från SPA-rewriten. Tas det undantaget bort
 serveras `index.html` på endpointen och all serverside-mätning tystnar.
 
+Relativa importer under `api/` måste ha `.js` på slutet (`./_lib/measurementProtocol.js`).
+Vercel bundlar inte funktionerna och repot är ESM, så utan ändelsen kraschar de vid
+laddning med `ERR_MODULE_NOT_FOUND`. Typecheck och build märker det inte;
+`scripts/__tests__/api-esm-imports.test.ts` gör det.
+
 ## Kontrollera
 
 1. GA4 → Realtid, med och utan blockerare påslagen. Båda ska ge sidvisningar.

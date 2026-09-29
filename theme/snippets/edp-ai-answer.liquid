@@ -1,0 +1,9 @@
+{%- liquid
+  assign ai_answer = resource.metafields.seo.kort_text_150.value
+-%}
+{%- if ai_answer != blank -%}
+  <section class="edp-ai__answer" id="edp-ai-answer" data-speakable{% if block %} {{ block.shopify_attributes }}{% endif %}>
+    <p class="edp-ai__label">Snabbt svar</p>
+    <p class="edp-ai__answer-text">{{ ai_answer | strip_html }}</p>
+  </section>
+{%- endif -%}

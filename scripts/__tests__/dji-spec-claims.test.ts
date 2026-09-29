@@ -31,8 +31,10 @@ const FILES = ROOTS.flatMap((root) => collectFiles(root)).map((path) => ({
   text: readFileSync(path, "utf-8"),
 }));
 
-/** Formuleringar som var faktafel och inte får återinföras. */
-const FORBIDDEN: { pattern: RegExp; why: string }[] = [
+/** Formuleringar som var faktafel och inte får återinföras. `onlyIn` begränsar
+ *  vakten till filer som handlar om produkten — samma ord kan vara sant om en
+ *  annan tillverkares produkt. */
+const FORBIDDEN: { pattern: RegExp; why: string; onlyIn?: RegExp }[] = [
   {
     pattern: /40×\s*(optisk|zoom)|40x\s*(optisk|zoom)/i,
     why: "H30-seriens zoom är 34× optisk (400× digital). 40 MP är zoomkamerans upplösning, inte zoomfaktorn.",
@@ -42,8 +44,14 @@ const FORBIDDEN: { pattern: RegExp; why: string }[] = [
     why: "Zenmuse V1 har 700 m effektiv räckvidd, inte 1500 m.",
   },
   {
-    pattern: /4\s*(×|x)?\s*LED|IR-belysning/i,
+    pattern: /4\s*(×|x)?\s*LED/i,
     why: "Zenmuse S1 anges av DJI som 10 000 lumen och 500 m räckvidd; '4 LED + IR' gick inte att belägga.",
+  },
+  {
+    // Hexadrones Tundra har en IR-ljusmodul på riktigt, så ordet får stå där S1 inte nämns.
+    pattern: /IR-belysning/i,
+    why: "IR-belysning gick inte att belägga för Zenmuse S1; DJI anger 10 000 lumen och 500 m räckvidd.",
+    onlyIn: /\bS1\b/,
   },
   {
     pattern: /20\s*MP visuell|label: "Vidvinkel", value: "20 MP"/i,
@@ -76,10 +84,13 @@ const FORBIDDEN: { pattern: RegExp; why: string }[] = [
 ];
 
 describe("DJI-specpåståenden", () => {
-  for (const { pattern, why } of FORBIDDEN) {
+  for (const { pattern, why, onlyIn } of FORBIDDEN) {
     it(`återinför inte: ${why}`, () => {
       const hits = FILES.filter(
-        (f) => !f.path.includes("__tests__") && pattern.test(f.text),
+        (f) =>
+          !f.path.includes("__tests__") &&
+          (!onlyIn || onlyIn.test(f.text)) &&
+          pattern.test(f.text),
       ).map((f) => f.path);
       expect(hits, why).toEqual([]);
     });

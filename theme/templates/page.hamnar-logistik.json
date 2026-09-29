@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Lagerinventering",
+            "text": "Flygfoto och volymdata ger snabb överblick av containrar, bulkgods och upplagsytor."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Perimeterbevakning",
+            "text": "Schemalagda eller behovsstyrda flygningar täcker stora kajytor och stängselsträckor."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Skadeinspektion",
+            "text": "Dokumentera skador på kajer, kranar och fartygssidor utan att stoppa lastning eller lossning."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Trafikflödesanalys",
+            "text": "Överblick av fordons- och godsrörelser för att identifiera flaskhalsar i terminalen."
+          }
+        },
+        "benefit_1": { "type": "benefit", "settings": { "text": "Inventering av stora ytor på minuter i stället för timmar" } },
+        "benefit_2": { "type": "benefit", "settings": { "text": "Bevakning dygnet runt med termisk kamera" } },
+        "benefit_3": { "type": "benefit", "settings": { "text": "Minskat behov av manuell patrullering och inspektion" } },
+        "benefit_4": { "type": "benefit", "settings": { "text": "Dokumentation som underlag vid skadeärenden" } }
+      },
+      "block_order": ["solution_1", "solution_2", "solution_3", "solution_4", "benefit_1", "benefit_2", "benefit_3", "benefit_4"],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Enterprise",
+        "breadcrumb_link": "/pages/enterprise",
+        "image": "shopify://shop_images/photo-1782398138711-72c37bce4b38.jpg",
+        "eyebrow": "Hamnar & Logistik",
+        "title": "Drönare för Hamnar & Logistik",
+        "text": "Överblick av containerytor, lagerplatser och godsflöden — snabbare inventering och tryggare bevakning av stora terminalytor.",
+        "solutions_heading": "Lösningar",
+        "benefits_heading": "Fördelar",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Se hur drönare kan effektivisera er terminal",
+        "text": "Berätta om terminalens storlek och vad ni vill övervaka, så föreslår vi lösning och offert.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    }
+  },
+  "order": ["industry_landing", "enterprise_contact"]
+}
