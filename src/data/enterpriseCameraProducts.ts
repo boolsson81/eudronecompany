@@ -140,6 +140,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         question: "Har H30 samma zoom som H30T?",
         answer: "Ja, båda har samma optik: 40 MP zoomkamera med 34× optisk zoom och 48 MP vidvinkel. Skillnaden är att H30T dessutom har termisk kamera.",
       },
+      {
+        question: "Vilka drönare kan bära H30?",
+        answer: "Zenmuse H30 monteras på DJI Matrice 350 RTK, Matrice 300 RTK och Matrice 400. EU Drone Company hjälper dig att sätta ihop komplett konfiguration med fjärrkontroll och mjukvara.",
+      },
     ],
     seoTitle: "Zenmuse H30 — Hybridkamera 34× zoom | EU Drone Company",
     seoDesc: "Zenmuse H30 med 34× optisk zoom och laser-avståndsmätare för DJI Matrice. Kostnadseffektiv enterprise-kamera. Kontakta EU Drone Company.",
@@ -328,6 +332,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         question: "Vilken mjukvara fungerar med L2-data?",
         answer: "Zenmuse L2 integreras med DJI Terra, Pix4D och andra GIS-verktyg. EU Drone Company kan hjälpa till med komplett arbetsflöde inklusive mjukvarulicenser.",
       },
+      {
+        question: "Vilka drönare kan bära L2?",
+        answer: "Zenmuse L2 monteras på DJI Matrice 350 RTK och Matrice 300 RTK. Flyger du Matrice 400 RTK är Zenmuse L3 vår rekommendation — kontakta EU Drone Company så hjälper vi dig att välja rätt LiDAR för din plattform.",
+      },
     ],
     seoTitle: "Zenmuse L2 — LiDAR-sensor för drönarkartläggning | EU Drone Company",
     seoDesc: "Zenmuse L2 LiDAR med 5 returer och 250 m räckvidd. Punktmoln för GIS och infrastruktur. Komplett lösning från EU Drone Company.",
@@ -372,6 +380,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       {
         question: "Ingår objektiven?",
         answer: "Zenmuse P1 levereras med tre utbytbara objektiv (24, 35 och 50 mm). EU Drone Company kan konfigurera komplett paket med drönare, RTK och mjukvara.",
+      },
+      {
+        question: "Vilka drönare kan bära P1?",
+        answer: "Zenmuse P1 monteras på DJI Matrice 400, Matrice 350 RTK och Matrice 300 RTK. Kontakta EU Drone Company för komplett konfiguration med drönare, RTK och mjukvara.",
       },
     ],
     seoTitle: "Zenmuse P1 — Fotogrammetrikamera 45 MP | EU Drone Company",
@@ -521,6 +533,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
         question: "Hur långt når ljuset?",
         answer: "DJI anger upp till 500 meter, med 40 lux central belysningsstyrka på 100 meters avstånd. Hur långt det räcker i praktiken beror på dis, nederbörd och hur ljus omgivningen är.",
       },
+      {
+        question: "Vilka drönare kan bära S1?",
+        answer: "Zenmuse S1 monteras på DJI Matrice 350 RTK, Matrice 300 RTK och Matrice 400. Kontakta EU Drone Company för komplett konfiguration med fjärrkontroll och tillbehör.",
+      },
     ],
     seoTitle: "Zenmuse S1 — Sökljus-payload för drönare | EU Drone Company",
     seoDesc: "Zenmuse S1 sökljus med 10 000 lumen och 500 m räckvidd för nattliga räddningsinsatser. Enterprise-payload för DJI Matrice. Begär offert.",
@@ -568,6 +584,10 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
       {
         question: "Fungerar V1 i bullriga miljöer?",
         answer: "129 dB räcker långt, men den effektiva räckvidden på 700 meter förutsätter rimliga förhållanden. Vid extremt buller, motvind eller stora avstånd rekommenderar vi att komplettera med visuell kommunikation via kamerapayload.",
+      },
+      {
+        question: "Vilka drönare kan bära V1?",
+        answer: "Zenmuse V1 monteras på DJI Matrice 350 RTK, Matrice 300 RTK och Matrice 400. Kontakta EU Drone Company för komplett konfiguration med fjärrkontroll och tillbehör.",
       },
     ],
     seoTitle: "Zenmuse V1 — Högtalare-payload för drönare | EU Drone Company",
