@@ -379,6 +379,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/regelverk/privatpersoner</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/regelverk/foretag</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://enterprise.eudronecompany.com/kommersiella-dronare/regelverk/open-a1</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
