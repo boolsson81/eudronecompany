@@ -80,6 +80,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       ],
     },
     {
+      key: "tools",
+      label: "Verktyg",
+      href: "/kommersiella-dronare/verktyg",
+    },
+    {
       key: "comparisons",
       label: "Jämförelser",
       href: "/kommersiella-dronare/jamforelser",
