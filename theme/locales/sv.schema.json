@@ -499,7 +499,8 @@
         },
         "paragraph": {
           "content": "Visas endast på stora skärmar"
-        }
+        },
+        "content": "Verktyg"
       },
       "presets": {
         "name": "Meddelandefält"
@@ -715,7 +716,8 @@
         },
         "text_header": {
           "content": "Text"
-        }
+        },
+        "content": "Layout"
       },
       "presets": {
         "name": "Blogginlägg"
@@ -1002,7 +1004,8 @@
         "header__utilities": {
           "content": "Verktyg"
         }
-      }
+      },
+      "content": "Bild"
     },
     "edp-utility-bar": {
       "name": "EDP verktygsrad",
@@ -1100,8 +1103,12 @@
     "edp-home-portals": {
       "name": "Kundportaler",
       "settings": {
-        "heading": { "label": "Rubrik" },
-        "text": { "label": "Text" }
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        }
       },
       "blocks": {
         "portal": {
@@ -1109,13 +1116,25 @@
           "settings": {
             "icon": {
               "label": "Ikon",
-              "options__1": { "label": "Service" },
-              "options__2": { "label": "Utbildning" }
+              "options__1": {
+                "label": "Service"
+              },
+              "options__2": {
+                "label": "Utbildning"
+              }
             },
-            "title": { "label": "Rubrik" },
-            "text": { "label": "Text" },
-            "link_label": { "label": "Länketikett" },
-            "link": { "label": "Länk" }
+            "title": {
+              "label": "Rubrik"
+            },
+            "text": {
+              "label": "Text"
+            },
+            "link_label": {
+              "label": "Länketikett"
+            },
+            "link": {
+              "label": "Länk"
+            }
           }
         }
       },
@@ -1126,21 +1145,41 @@
     "edp-home-mission-spotlight": {
       "name": "Uppdragslösningar (branschraden)",
       "settings": {
-        "heading": { "label": "Rubrik" },
-        "text": { "label": "Text" },
-        "feature_eyebrow": { "label": "Överrubrik, utvalt uppdrag" },
-        "feature_title": { "label": "Rubrik, utvalt uppdrag" },
-        "feature_text": { "label": "Text, utvalt uppdrag" },
-        "feature_image": { "label": "Bild, utvalt uppdrag" },
-        "feature_button_label": { "label": "Knappetikett, utvalt uppdrag" },
-        "feature_button_link": { "label": "Knapplänk, utvalt uppdrag" }
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "feature_eyebrow": {
+          "label": "Överrubrik, utvalt uppdrag"
+        },
+        "feature_title": {
+          "label": "Rubrik, utvalt uppdrag"
+        },
+        "feature_text": {
+          "label": "Text, utvalt uppdrag"
+        },
+        "feature_image": {
+          "label": "Bild, utvalt uppdrag"
+        },
+        "feature_button_label": {
+          "label": "Knappetikett, utvalt uppdrag"
+        },
+        "feature_button_link": {
+          "label": "Knapplänk, utvalt uppdrag"
+        }
       },
       "blocks": {
         "pill": {
           "name": "Branschlänk",
           "settings": {
-            "label": { "label": "Etikett" },
-            "link": { "label": "Länk" }
+            "label": {
+              "label": "Etikett"
+            },
+            "link": {
+              "label": "Länk"
+            }
           }
         }
       },
@@ -1169,137 +1208,245 @@
     "edp-brand-logos": {
       "name": "Varumärkeslogotyper",
       "settings": {
-        "heading": { "label": "Rubrik" }
+        "heading": {
+          "label": "Rubrik"
+        }
       },
       "blocks": {
         "logo": {
           "name": "Logotyp",
           "settings": {
-            "image": { "label": "Bild" },
-            "name": { "label": "Namn (visas om ingen bild)" },
-            "link": { "label": "Länk" }
+            "image": {
+              "label": "Bild"
+            },
+            "name": {
+              "label": "Namn (visas om ingen bild)"
+            },
+            "link": {
+              "label": "Länk"
+            }
           }
         }
       },
-      "presets": { "name": "Varumärkeslogotyper" }
+      "presets": {
+        "name": "Varumärkeslogotyper"
+      }
     },
     "edp-mobile-sticky-bar": {
       "name": "Mobil snabbmeny (nederkant)",
       "blocks": {
         "home": {
           "name": "Hem",
-          "settings": { "label": { "label": "Etikett" } }
+          "settings": {
+            "label": {
+              "label": "Etikett"
+            }
+          }
         },
         "collection": {
           "name": "Kollektion",
           "settings": {
-            "icon": { "label": "Ikon" },
-            "label": { "label": "Etikett" },
-            "collection": { "label": "Kollektion" }
+            "icon": {
+              "label": "Ikon"
+            },
+            "label": {
+              "label": "Etikett"
+            },
+            "collection": {
+              "label": "Kollektion"
+            }
           }
         },
         "cart": {
           "name": "Varukorg",
-          "settings": { "label": { "label": "Etikett" } }
+          "settings": {
+            "label": {
+              "label": "Etikett"
+            }
+          }
         },
         "link": {
           "name": "Länk",
           "settings": {
-            "icon": { "label": "Ikon" },
-            "label": { "label": "Etikett" },
-            "link": { "label": "Länk" }
+            "icon": {
+              "label": "Ikon"
+            },
+            "label": {
+              "label": "Etikett"
+            },
+            "link": {
+              "label": "Länk"
+            }
           }
         }
       },
-      "presets": { "name": "Mobil snabbmeny" }
+      "presets": {
+        "name": "Mobil snabbmeny"
+      }
     },
     "edp-banner-with-tabs": {
       "name": "Banner med flikar",
       "settings": {
-        "heading": { "label": "Rubrik" }
+        "heading": {
+          "label": "Rubrik"
+        }
       },
       "blocks": {
         "tab": {
           "name": "Flik",
           "settings": {
-            "tab_label": { "label": "Flik-etikett" },
-            "image": { "label": "Bild" },
-            "eyebrow": { "label": "Överrubrik" },
-            "heading": { "label": "Rubrik" },
-            "text": { "label": "Text" },
-            "button_label": { "label": "Knappetikett" },
-            "button_link": { "label": "Knapplänk" }
+            "tab_label": {
+              "label": "Flik-etikett"
+            },
+            "image": {
+              "label": "Bild"
+            },
+            "eyebrow": {
+              "label": "Överrubrik"
+            },
+            "heading": {
+              "label": "Rubrik"
+            },
+            "text": {
+              "label": "Text"
+            },
+            "button_label": {
+              "label": "Knappetikett"
+            },
+            "button_link": {
+              "label": "Knapplänk"
+            }
           }
         }
       },
-      "presets": { "name": "Banner med flikar" }
+      "presets": {
+        "name": "Banner med flikar"
+      }
     },
     "edp-image-comparison": {
       "name": "Före & efter-jämförelse",
       "settings": {
-        "heading": { "label": "Rubrik" },
-        "text": { "label": "Text" },
-        "image_before": { "label": "Bild — före" },
-        "before_label": { "label": "Etikett — före" },
-        "image_after": { "label": "Bild — efter" },
-        "after_label": { "label": "Etikett — efter" }
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "image_before": {
+          "label": "Bild — före"
+        },
+        "before_label": {
+          "label": "Etikett — före"
+        },
+        "image_after": {
+          "label": "Bild — efter"
+        },
+        "after_label": {
+          "label": "Etikett — efter"
+        }
       },
-      "presets": { "name": "Före & efter-jämförelse" }
+      "presets": {
+        "name": "Före & efter-jämförelse"
+      }
     },
     "edp-comparison-table": {
       "name": "Jämförelsetabell",
       "settings": {
-        "heading": { "label": "Rubrik" },
-        "text": { "label": "Text" }
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        }
       },
       "blocks": {
         "row": {
           "name": "Rad (egenskap)",
           "settings": {
-            "icon": { "label": "Ikon" },
-            "label": { "label": "Etikett" }
+            "icon": {
+              "label": "Ikon"
+            },
+            "label": {
+              "label": "Etikett"
+            }
           }
         },
         "column": {
           "name": "Kolumn (alternativ)",
           "settings": {
-            "image": { "label": "Bild" },
-            "heading": { "label": "Rubrik" },
-            "values": { "label": "Värden", "info": "En rad text per egenskap, i samma ordning som raderna ovan." },
-            "button_label": { "label": "Knappetikett" },
-            "button_link": { "label": "Knapplänk" }
+            "image": {
+              "label": "Bild"
+            },
+            "heading": {
+              "label": "Rubrik"
+            },
+            "values": {
+              "label": "Värden",
+              "info": "En rad text per egenskap, i samma ordning som raderna ovan."
+            },
+            "button_label": {
+              "label": "Knappetikett"
+            },
+            "button_link": {
+              "label": "Knapplänk"
+            }
           }
         }
       },
-      "presets": { "name": "Jämförelsetabell" }
+      "presets": {
+        "name": "Jämförelsetabell"
+      }
     },
     "edp-countdown-timer": {
       "name": "Nedräkning",
       "settings": {
-        "heading": { "label": "Rubrik" },
-        "text": { "label": "Text" },
-        "target_date": { "label": "Sluttid", "info": "Format: ÅÅÅÅ-MM-DDTTT:MM:SS, t.ex. 2026-12-24T00:00:00" },
-        "button_label": { "label": "Knappetikett" },
-        "button_link": { "label": "Knapplänk" }
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "target_date": {
+          "label": "Sluttid",
+          "info": "Format: ÅÅÅÅ-MM-DDTTT:MM:SS, t.ex. 2026-12-24T00:00:00"
+        },
+        "button_label": {
+          "label": "Knappetikett"
+        },
+        "button_link": {
+          "label": "Knapplänk"
+        }
       },
-      "presets": { "name": "Nedräkning" }
+      "presets": {
+        "name": "Nedräkning"
+      }
     },
     "edp-buttons-with-icon": {
       "name": "Genvägar med ikon",
       "settings": {
-        "heading": { "label": "Rubrik" }
+        "heading": {
+          "label": "Rubrik"
+        }
       },
       "blocks": {
         "button": {
           "name": "Genväg",
           "settings": {
-            "icon": { "label": "Ikon" },
-            "label": { "label": "Etikett" },
-            "link": { "label": "Länk" }
+            "icon": {
+              "label": "Ikon"
+            },
+            "label": {
+              "label": "Etikett"
+            },
+            "link": {
+              "label": "Länk"
+            }
           }
         }
       },
-      "presets": { "name": "Genvägar med ikon" }
+      "presets": {
+        "name": "Genvägar med ikon"
+      }
     },
     "enterprise-landing": {
       "name": "Enterprise-landningssida",
@@ -1651,7 +1798,10 @@
         }
       },
       "presets": {
-        "name": "Enterprise förtroenderad"
+        "name": "Enterprise förtroenderad",
+        "text": {
+          "label": "Text"
+        }
       }
     },
     "enterprise-industries": {
@@ -1662,6 +1812,12 @@
         },
         "text": {
           "label": "Text"
+        },
+        "link": {
+          "label": "Länk"
+        },
+        "link_label": {
+          "label": "Länketikett"
         }
       },
       "blocks": {
@@ -2073,6 +2229,25 @@
         },
         "logo_width": {
           "label": "Bredd på egen logotyp"
+        },
+        "hamburger_header": {
+          "content": "Hamburgermenyikon"
+        },
+        "hamburger_icon_style": {
+          "info": "Välj hur mobilmenyns ikon ser ut",
+          "label": "Ikonstil",
+          "options__1": {
+            "label": "Klassiska linjer"
+          },
+          "options__2": {
+            "label": "Feta linjer"
+          },
+          "options__3": {
+            "label": "Punkter"
+          },
+          "options__4": {
+            "label": "Klämning"
+          }
         }
       },
       "blocks": {
@@ -3069,6 +3244,10 @@
             },
             "pairing_3": {
               "label": "Parkoppling 3"
+            },
+            "content": {
+              "info": "Välj en ikon eller lägg till en bild för varje par",
+              "label": "Par"
             }
           }
         },

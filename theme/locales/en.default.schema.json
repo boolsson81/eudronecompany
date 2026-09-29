@@ -1134,6 +1134,9 @@
               },
               "options__2": {
                 "label": "Enterprise"
+              },
+              "options__3": {
+                "label": "Racing & FPV"
               }
             },
             "image": {
@@ -4415,6 +4418,312 @@
         }
       },
       "content": "Image"
+    },
+    "edp-banner-with-tabs": {
+      "blocks": {
+        "tab": {
+          "name": "Tab",
+          "settings": {
+            "button_label": {
+              "label": "Button label"
+            },
+            "button_link": {
+              "label": "Button link"
+            },
+            "eyebrow": {
+              "label": "Eyebrow"
+            },
+            "heading": {
+              "label": "Heading"
+            },
+            "image": {
+              "label": "Image"
+            },
+            "tab_label": {
+              "label": "Tab label"
+            },
+            "text": {
+              "label": "Text"
+            }
+          }
+        }
+      },
+      "name": "Banner with tabs",
+      "presets": {
+        "name": "Banner with tabs"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        }
+      }
+    },
+    "edp-brand-logos": {
+      "blocks": {
+        "logo": {
+          "name": "Logo",
+          "settings": {
+            "image": {
+              "label": "Image"
+            },
+            "link": {
+              "label": "Link"
+            },
+            "name": {
+              "label": "Name (shown if no image)"
+            }
+          }
+        }
+      },
+      "name": "Brand logos",
+      "presets": {
+        "name": "Brand logos"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        }
+      }
+    },
+    "edp-buttons-with-icon": {
+      "blocks": {
+        "button": {
+          "name": "Shortcut",
+          "settings": {
+            "icon": {
+              "label": "Icon"
+            },
+            "label": {
+              "label": "Label"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "name": "Shortcuts with icon",
+      "presets": {
+        "name": "Shortcuts with icon"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        }
+      }
+    },
+    "edp-comparison-table": {
+      "blocks": {
+        "column": {
+          "name": "Column (option)",
+          "settings": {
+            "button_label": {
+              "label": "Button label"
+            },
+            "button_link": {
+              "label": "Button link"
+            },
+            "heading": {
+              "label": "Heading"
+            },
+            "image": {
+              "label": "Image"
+            },
+            "values": {
+              "info": "One line of text per feature, in the same order as the rows above.",
+              "label": "Values"
+            }
+          }
+        },
+        "row": {
+          "name": "Row (feature)",
+          "settings": {
+            "icon": {
+              "label": "Icon"
+            },
+            "label": {
+              "label": "Label"
+            }
+          }
+        }
+      },
+      "name": "Comparison table",
+      "presets": {
+        "name": "Comparison table"
+      },
+      "settings": {
+        "heading": {
+          "label": "Heading"
+        },
+        "text": {
+          "label": "Text"
+        }
+      }
+    },
+    "edp-countdown-timer": {
+      "name": "Countdown",
+      "presets": {
+        "name": "Countdown"
+      },
+      "settings": {
+        "button_label": {
+          "label": "Button label"
+        },
+        "button_link": {
+          "label": "Button link"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "target_date": {
+          "info": "Format: YYYY-MM-DDTHH:MM:SS, e.g. 2026-12-24T00:00:00",
+          "label": "End time"
+        },
+        "text": {
+          "label": "Text"
+        }
+      }
+    },
+    "edp-home-mission-spotlight": {
+      "blocks": {
+        "pill": {
+          "name": "Industry link",
+          "settings": {
+            "label": {
+              "label": "Label"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "name": "Mission solutions (industry row)",
+      "presets": {
+        "name": "Mission solutions"
+      },
+      "settings": {
+        "feature_button_label": {
+          "label": "Button label, featured mission"
+        },
+        "feature_button_link": {
+          "label": "Button link, featured mission"
+        },
+        "feature_eyebrow": {
+          "label": "Eyebrow, featured mission"
+        },
+        "feature_image": {
+          "label": "Image, featured mission"
+        },
+        "feature_text": {
+          "label": "Text, featured mission"
+        },
+        "feature_title": {
+          "label": "Heading, featured mission"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "text": {
+          "label": "Text"
+        }
+      }
+    },
+    "edp-icon": {
+      "options": {
+        "bell": "Notify me",
+        "building": "Building",
+        "calendar": "Calendar",
+        "camera": "Camera",
+        "check": "Check",
+        "compass": "Compass",
+        "drop": "Water drop",
+        "leaf": "Environment",
+        "lightning": "Lightning",
+        "phone": "Phone",
+        "radar": "Radar/sensor",
+        "shield-check": "Warranty",
+        "star": "Star",
+        "truck": "Delivery"
+      }
+    },
+    "edp-image-comparison": {
+      "name": "Before & after comparison",
+      "presets": {
+        "name": "Before & after comparison"
+      },
+      "settings": {
+        "after_label": {
+          "label": "Label — after"
+        },
+        "before_label": {
+          "label": "Label — before"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "image_after": {
+          "label": "Image — after"
+        },
+        "image_before": {
+          "label": "Image — before"
+        },
+        "text": {
+          "label": "Text"
+        }
+      }
+    },
+    "edp-mobile-sticky-bar": {
+      "blocks": {
+        "cart": {
+          "name": "Cart",
+          "settings": {
+            "label": {
+              "label": "Label"
+            }
+          }
+        },
+        "collection": {
+          "name": "Collection",
+          "settings": {
+            "collection": {
+              "label": "Collection"
+            },
+            "icon": {
+              "label": "Icon"
+            },
+            "label": {
+              "label": "Label"
+            }
+          }
+        },
+        "home": {
+          "name": "Home",
+          "settings": {
+            "label": {
+              "label": "Label"
+            }
+          }
+        },
+        "link": {
+          "name": "Link",
+          "settings": {
+            "icon": {
+              "label": "Icon"
+            },
+            "label": {
+              "label": "Label"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "name": "Mobile quick menu (bottom)",
+      "presets": {
+        "name": "Mobile quick menu"
+      }
     }
   },
   "names": {
