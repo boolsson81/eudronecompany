@@ -6,53 +6,53 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "TH4 V2",
-            "text": "Kroksläpp på 320 g med 40 kg lastkapacitet. Genomför fyra uppdrag på en flygning. För Matrice 210 V2 och M300 RTK."
+            "title": "Sökljus och högtalare i en enhet",
+            "text": "Ljus och ljud i samma nyttolast, vilket sparar vikt och fäste på plattformen."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "Throwing Hook för Matrice 4",
-            "text": "Kompakt släpp för DJI Matrice 4."
+            "title": "Röst- och utropssystem",
+            "text": "Digital röstsändning med realtidsutrop, inspelade meddelanden och text-till-tal."
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
-            "title": "TH6",
-            "text": "Precisionssläpp för FlyCart 100 och AGRAS T100 med laseravståndsmätning för meterprecis avlämning."
+            "title": "Varningsljus",
+            "text": "Ljus som drar uppmärksamhet och förstärker ett utrop eller en varning."
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
-            "title": "FS32 och FS35",
-            "text": "Logistiknyttolaster för leveranser med DJI FlyCart-serien."
+            "title": "Ljudupptagare",
+            "text": "Mikrofon för att höra vad som sägs på marken vid kommunikation åt två håll."
           }
         },
         "benefit_1": {
           "type": "benefit",
           "settings": {
-            "text": "Leverans av nödutrustning och livlinor"
+            "text": "Utrop och varning vid räddningsinsatser"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Materialtransport till svårtillgängliga platser"
+            "text": "Sökning efter försvunna personer"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Logistik i glesbygd och skärgård"
+            "text": "Ordning och säkerhet vid stora evenemang"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Precisionsavlämning på fasta punkter"
+            "text": "Kommunikation med personer utom räckhåll"
           }
         }
       },
@@ -68,12 +68,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI TH- och FS-serien",
-        "title": "CZI lastsläpp och logistiknyttolaster",
-        "text": "CZI:s lastsläpp låter drönaren leverera utrustning på exakt plats. TH-serien är kroksläpp för Matrice och FlyCart, FS-serien är logistiknyttolaster för leveransuppdrag.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Sökljus och högtalare",
+        "title": "Sökljus och högtalare för drönare",
+        "text": "Kombinerade sökljus och högtalare samt rena röst- och utropssystem gör drönaren till en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -83,8 +83,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Vad ska drönaren leverera?",
-        "text": "Berätta om last, vikt och plattform så väljer vi rätt släpp.",
+        "title": "Behöver ni utrop från luften?",
+        "text": "Vi går igenom uppdraget och rekommenderar rätt kombination av sökljus och högtalare för er plattform.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

@@ -6,46 +6,53 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "DH100",
-            "text": "Multifunktionellt högtrycksvattensystem för medelstora och stora multirotordrönare, avsett för bland annat skogsbrandbekämpning."
+            "title": "Kroksläpp",
+            "text": "Släpp för krok eller lina, med olika lastkapacitet och möjlighet till flera avlämningar på en flygning."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "FT10 V2",
-            "text": "Drönarmonterad eldkastare för precis röjning av hinder och markvård."
+            "title": "Precisionssläpp",
+            "text": "Släpp med avståndsmätning för meterprecis avlämning från större plattformar."
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
-            "title": "ES638",
-            "text": "Elektrisk utlösare för M400/M350/M300 med 2, 6 eller 8 skott i en last för 38 mm/64 mm ammunition. Snabbmontering."
+            "title": "Kompakta släpp",
+            "text": "Lätta släpp för mindre enterprise-drönare där vikten är avgörande."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Logistiknyttolaster",
+            "text": "Lådor och hållare för leveransuppdrag med transportdrönare."
           }
         },
         "benefit_1": {
           "type": "benefit",
           "settings": {
-            "text": "Skogs- och markbrandbekämpning"
+            "text": "Leverans av nödutrustning och livlinor"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Röjning av hinder på svåråtkomlig mark"
+            "text": "Materialtransport till svårtillgängliga platser"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Höghöjdsarbete utan personal i fara"
+            "text": "Logistik i glesbygd och skärgård"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Myndighetsuppdrag med särskilda krav"
+            "text": "Precisionsavlämning på fasta punkter"
           }
         }
       },
@@ -53,6 +60,7 @@
         "solution_1",
         "solution_2",
         "solution_3",
+        "solution_4",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -60,12 +68,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI specialnyttolaster",
-        "title": "CZI specialnyttolaster — vatten, eld och lastutlösning",
-        "text": "För uppdrag som kräver mer än belysning och ljud: DH100 vattensystem för brandbekämpning, FT10 V2 för hinderröjning och ES638 för elektrisk utlösning. Alla är avsedda för professionell användning.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Lastsläpp och logistik",
+        "title": "Lastsläpp och logistiknyttolaster för drönare",
+        "text": "Lastsläpp låter drönaren leverera utrustning på exakt plats. Kroksläpp passar räddnings- och materialuppdrag, logistiknyttolaster är byggda för leveranser med större transportdrönare.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -75,8 +83,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Särskilda krav på uppdraget?",
-        "text": "Dessa nyttolaster kan omfattas av tillstånds- och exportregler. Kontakta oss innan beställning så går vi igenom vad som gäller.",
+        "title": "Vad ska drönaren leverera?",
+        "text": "Berätta om last, vikt och plattform så väljer vi rätt släpp.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",
