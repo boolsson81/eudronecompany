@@ -1,4 +1,4 @@
-import { Building2, TreePine, Map, Eye, Zap, Camera } from "lucide-react";
+import { Building2, TreePine, Map, Eye, Zap, Camera, HardHat } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import matriceImg from "@/assets/dji-matrice-350-rtk.jpg";
 import mavicEntImg from "@/assets/dji-mavic-3-enterprise.jpg";
@@ -298,6 +298,46 @@ export const INDUSTRY_DATA: IndustryData[] = [
       { question: "Vilken bildkvalitet kan jag förvänta mig?", answer: "DJI Inspire 3 levererar 8K RAW-video med full-frame sensor och utbytbara objektiv — samma kvalitet som används i Hollywood-produktioner och internationella reklamfilmer." },
       { question: "Kan man filma inomhus med drönare?", answer: "Ja, med övningsflyg och manuellt läge. DJI Avata 2 och FPV-drönare är populära för dynamiska inomhussekvenser i lager, fabriker och evenemangslokaler." },
       { question: "Hur lång tid tar det att få färdigt material?", answer: "Enkla flygtagningar kan levereras samma dag. Komplexa produktioner med efterbearbetning tar vanligtvis 3–5 arbetsdagar." },
+    ],
+  },
+  {
+    slug: "bygg-anlaggning",
+    icon: HardHat,
+    title: "Bygg & Anläggning",
+    shortDesc: "Markkartläggning, massaberäkning och byggprojektuppföljning för entreprenörer, byggherrar och anläggningsföretag.",
+    heroTitle: "Drönare för Bygg & Anläggning",
+    heroDesc: "Kartlägg mark, beräkna massor och följ upp byggprojekt från luften — snabbare beslutsunderlag genom hela byggprocessen.",
+    solutions: [
+      { slug: "markkartlaggning", title: "Markkartläggning", desc: "Topografisk kartläggning och terrängmodeller inför schakt- och grundläggningsarbete.", longDesc: "Innan spaden sätts i marken behöver projektet en pålitlig terrängmodell. Drönarbaserad markkartläggning ger höjddata och topografi med centimeterprecision, snabbare och till en bråkdel av kostnaden för traditionell inmätning. Underlaget går rakt in i projekteringen och används genom hela byggprocessen som referens.", seoTitle: "Markkartläggning med Drönare — Bygg & Anläggning | EU Drone Company", seoDesc: "Kartlägg mark inför schakt och grundläggning med drönare. Centimeterprecision och snabbt beslutsunderlag. Kontakta EU Drone Company.", useCases: ["Förprojektering inför schakt och grundläggning", "Detaljplaner och exploateringsprojekt", "Väg- och ledningsprojektering", "Uppdaterad topografi för anbudsunderlag"], keyFeatures: ["Centimeterprecision med RTK", "Digital terrängmodell (DTM) inom en fältdag", "Export till CAD och GIS-format", "Repeterbara flygningar för uppföljning"] },
+      { slug: "massaberakning", title: "Massaberäkning", desc: "Beräkna schaktvolymer och materialupplag med drönare istället för manuell mätning.", longDesc: "Massabalans avgör lönsamheten i ett anläggningsprojekt. Med drönarbaserad volymberäkning mäts schakt, fyllnad och materialupplag på minuter med en noggrannhet inom 1–2 procent — utan att en mätingenjör behöver gå ute på ytan. Data uppdateras löpande genom projektet så att avvikelser upptäcks innan de blir dyra.", seoTitle: "Massaberäkning med Drönare — Schakt & Volym | EU Drone Company", seoDesc: "Beräkna schaktvolymer och materialupplag med drönare. Exakt massabalans för anläggningsprojekt. Begär offert från EU Drone Company.", useCases: ["Massabalans vid schakt- och fyllnadsarbeten", "Lagerinventering av grus, jord och bergmassor", "Fakturaunderlag mot underentreprenörer", "Löpande uppföljning under hela byggtiden"], keyFeatures: ["Noggrannhet inom 1–2 % av verklig volym", "Jämförelse mot tidigare flygningar", "Automatisk rapport med volymdata", "Ingen manuell mätning på plats krävs"] },
+      { slug: "byggprojektuppfoljning", title: "Byggprojektuppföljning", desc: "Regelbunden dokumentation av byggets framdrift för projektledning och beställare.", longDesc: "Regelbundna drönarflygningar över byggarbetsplatsen ger projektledningen en objektiv bild av framdriften — utan att någon behöver gå runt med kamera. Ortomosaiker och tidslaps från samma position vecka för vecka gör det enkelt att visa beställare och styrgrupp hur projektet fortskrider, och att upptäcka avvikelser mot tidplanen tidigt.", seoTitle: "Byggprojektuppföljning med Drönare | EU Drone Company", seoDesc: "Följ upp byggprojekt från luften med drönare. Tidslaps och ortomosaik för projektledning och beställare. Kontakta EU Drone Company.", useCases: ["Löpande statusrapportering till beställare och styrgrupp", "Tidslaps för marknadsföring och slutdokumentation", "Avstämning mot tidplan och etapper", "As-built-dokumentation vid överlämning"], keyFeatures: ["Regelbundna flygningar från exakt samma position", "Automatisk ortomosaik vid varje flygning", "Jämförelse mellan flygningar över tid", "Färdigt bildmaterial för rapporter och presentationer"] },
+      { slug: "sakerhetsinspektion-byggarbetsplats", title: "Säkerhetsinspektion", desc: "Överblick av arbetsmiljö, ställningar och riskområden på byggarbetsplatsen.", longDesc: "Med drönare får arbetsmiljöansvarig och platschef en snabb överblick av hela arbetsplatsen — ställningar, upplag, avspärrningar och riskområden — utan att behöva gå hela rundan till fots. Det gör det enklare att upptäcka avvikelser innan de blir tillbud och att dokumentera skyddsronder objektivt.", seoTitle: "Säkerhetsinspektion Byggarbetsplats med Drönare | EU Drone Company", seoDesc: "Inspektera arbetsmiljö och riskområden på byggarbetsplatsen med drönare. Snabbare och säkrare skyddsronder. Kontakta EU Drone Company.", useCases: ["Skyddsronder och arbetsmiljödokumentation", "Kontroll av ställningar och upplag på höjd", "Överblick vid stora eller komplexa arbetsplatser", "Dokumentation vid tillbud och incidenter"], keyFeatures: ["Snabb överblick av hela arbetsplatsen från luften", "Dokumentation av svårtillgängliga områden på höjd", "Objektiv bilddokumentation för skyddsronder", "Flygklar på under en minut vid akuta behov"] },
+    ],
+    recommendedDrones: [
+      {
+        name: "DJI Matrice 350 RTK",
+        tag: "Precisionskartläggning",
+        desc: "RTK-precision och stöd för fotogrammetri- eller termisk payload — för markkartläggning och massaberäkning.",
+        features: ["55 min flygtid", "RTK-precision", "IP55 väderskydd", "Multi-payload"],
+      },
+      {
+        name: "DJI Mavic 3 Enterprise",
+        tag: "Snabb uppföljning",
+        desc: "Kompakt och flygklar på minuter — perfekt för regelbunden projektuppföljning och säkerhetsinspektion.",
+        features: ["45 min flygtid", "RTK-modul", "56× hybridzoom", "Portabel"],
+      },
+    ],
+    benefits: [
+      "90% tidsbesparing jämfört med traditionell inmätning och manuell mätning",
+      "Massabalans och volymberäkningar med 1–2% noggrannhet",
+      "Objektiv, regelbunden dokumentation av byggets framdrift",
+      "Bättre överblick av arbetsmiljö och riskområden på arbetsplatsen",
+    ],
+    faq: [
+      { question: "Hur exakt är drönarbaserad markkartläggning för byggprojekt?", answer: "Med RTK-positionering uppnår vi centimeterprecision, vilket räcker för de flesta projekterings- och massaberäkningsbehov. För juridiskt bindande gränsmätning krävs fortfarande auktoriserad lantmätare." },
+      { question: "Hur ofta bör en byggarbetsplats flygas för uppföljning?", answer: "De flesta projekt flyger varje eller varannan vecka för att fånga framdriften utan att generera onödigt mycket data. Vid kritiska skeden, som schakt och grundläggning, kan tätare flygningar vara motiverat." },
+      { question: "Kan drönardata användas som fakturaunderlag mot underentreprenörer?", answer: "Ja, volymberäkningar med dokumenterad noggrannhet används redan idag som underlag för schakt- och massahantering mellan beställare och entreprenör." },
+      { question: "Behövs tillstånd för att flyga drönare över en byggarbetsplats?", answer: "I de flesta fall krävs registrering hos Transportstyrelsen och rätt operatörsbehörighet. EU Drone Company hjälper till med tillstånd och kan utföra flygningen åt er." },
     ],
   },
 ];

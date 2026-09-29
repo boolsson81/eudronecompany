@@ -12,6 +12,7 @@ import {
   getDroneProductBySlug,
   getRelatedDroneProducts,
 } from "@/data/enterpriseDroneProducts";
+import { getAccessoriesForDrones } from "@/data/droneAccessories";
 import { getCameraBySlug } from "@/data/enterpriseCameraProducts";
 import { getPackagesForDrone, PACKAGE_LEVELS } from "@/data/enterprisePackages";
 import { getIndustryBySlug } from "@/data/commercialDroneIndustries";
@@ -48,6 +49,7 @@ export default function CommercialDroneProduct() {
     .map((slug) => getIndustryBySlug(slug))
     .filter((industry): industry is NonNullable<typeof industry> => !!industry);
   const comparison = product.comparisonSlug ? getComparisonBySlug(product.comparisonSlug) : undefined;
+  const accessoryCount = getAccessoriesForDrones([product.name]).length;
 
   return (
     <>
@@ -107,6 +109,13 @@ export default function CommercialDroneProduct() {
                         Se i webbshop <ExternalLink className="h-4 w-4 ml-2" />
                       </Button>
                     </a>
+                  )}
+                  {accessoryCount > 0 && (
+                    <Link to={`/kommersiella-dronare/produkter/${product.slug}/tillbehor`}>
+                      <Button size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
+                        Tillbehör ({accessoryCount})
+                      </Button>
+                    </Link>
                   )}
                 </div>
               </motion.div>

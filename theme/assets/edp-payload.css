@@ -78,6 +78,14 @@
 }
 .edp-payload__card:hover,
 .edp-payload__card:focus-visible { border-color: var(--edp-payload-fg); }
+.edp-payload__card-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--edp-payload-muted);
+  margin: 0;
+}
 .edp-payload__card-title { font-weight: 600; font-size: 0.9375rem; margin: 0; }
 .edp-payload__card-text { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; line-height: 1.45; }
 
@@ -235,7 +243,54 @@
 .edp-compare-table thead th { font-weight: 600; }
 .edp-compare-table thead th a { color: inherit; }
 
-/* Configurator summary ----------------------------------------------------- */
+/* Configurator: rich platform/product cards --------------------------------- */
+.edp-finder__option--card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  width: 200px;
+  padding: 0.85rem;
+  border-radius: 6px;
+  text-align: left;
+}
+.edp-finder__option--card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--edp-payload-border);
+}
+.edp-finder__option-title { font-weight: 600; font-size: 0.9375rem; line-height: 1.3; }
+.edp-finder__option-price { font-size: 0.8125rem; font-weight: 600; color: var(--edp-payload-muted); }
+.edp-finder__option--card.is-active .edp-finder__option-price { color: inherit; }
+
+.edp-configurator__subheading { font-size: 0.9375rem; font-weight: 600; margin: 0.5rem 0 0.75rem; width: 100%; }
+.edp-configurator__hint { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0.5rem 0 0; width: 100%; }
+.edp-configurator__products { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 0.5rem; width: 100%; }
+
+/* Configurator: summary ----------------------------------------------------- */
+.edp-configurator__summary-products {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-bottom: 1.5rem;
+}
+.edp-configurator__summary-card {
+  border: 1px solid var(--edp-payload-border);
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+.edp-configurator__summary-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 4px;
+}
 .edp-configurator__summary {
   white-space: pre-wrap;
   font-family: inherit;

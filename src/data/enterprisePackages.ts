@@ -973,6 +973,190 @@ export const ENTERPRISE_PACKAGES: EnterprisePackage[] = [
     seoDesc:
       "Dubbeldrönarpaket med DJI Inspire 3, Mavic 3 Pro, HDR-monitor och tio batterier. För produktionsbolag med storskaliga produktioner.",
   },
+  // -------------------------------------------------------- Bygg & Anläggning
+  {
+    slug: "bygg-markkartlaggning-bas",
+    name: "Markkartläggningspaket Bas",
+    level: "standard",
+    industrySlug: "bygg-anlaggning",
+    drone: "DJI Mavic 3 Enterprise",
+    droneSlugs: ["mavic-3-enterprise"],
+    payloadSlugs: [],
+    description: "Portabel kartläggning med RTK-precision — för mindre byggprojekt och löpande markkontroll.",
+    heroDesc:
+      "Mavic 3 Enterprise med RTK-modul och DJI Terra-licens. Kartlägg mark och beräkna volymer inför schakt utan att behöva boka in en mätfirma.",
+    longDesc:
+      "Markkartläggningspaket Bas är ingången till drönarbaserad markkartläggning för byggprojekt. Mavic 3 Enterprise med mekanisk slutare eliminerar den skevhet som annars uppstår vid fotogrammetri i rörelse, och RTK-modulen ger centimeterprecision utan markstöd. DJI Terra-licensen gör att ni bearbetar flygningarna till terrängmodeller och volymberäkningar själva, direkt efter fältdagen.",
+    components: [
+      "DJI Mavic 3 Enterprise",
+      "RTK-modul",
+      "DJI RC Pro Enterprise-kontroll",
+      "3 × Intelligent Flight Battery",
+      "Laddhubb",
+      "DJI Terra-licens (1 år)",
+    ],
+    idealFor: "Mindre entreprenörer och byggherrar som vill kartlägga mark och beräkna volymer i egen regi.",
+    outcomes: [
+      "Terrängmodell och volymberäkning inom en fältdag",
+      "Centimeterprecision utan att sätta ut markstöd",
+      "Underlag som går rakt in i projekteringen",
+      "Utrustning som ryms i en väska mellan projekt",
+    ],
+    faq: [
+      {
+        question: "Räcker paketet för att beräkna massor inför schakt?",
+        answer:
+          "Ja, för de flesta mindre och medelstora projekt. Kräver uppdraget löpande volymuppföljning under hela byggtiden eller högre noggrannhetskrav är Markkartläggningspaket Pro med Zenmuse P1 rätt nivå.",
+      },
+      {
+        question: "Behöver vi kunna bildbehandling själva?",
+        answer:
+          "Nej. DJI Terra bygger terrängmodeller och volymrapporter automatiskt från flygningen. Vi går igenom arbetsflödet vid uppstart.",
+      },
+    ],
+    seoTitle: "Markkartläggningspaket Bas — drönarpaket för bygg | EU Drone Company",
+    seoDesc:
+      "Paket med DJI Mavic 3 Enterprise, RTK-modul och DJI Terra-licens. Markkartläggning och volymberäkning inför schakt och grundläggning.",
+  },
+  {
+    slug: "bygg-markkartlaggning-pro",
+    name: "Markkartläggningspaket Pro",
+    level: "pro",
+    industrySlug: "bygg-anlaggning",
+    drone: "DJI Matrice 350 RTK",
+    droneSlugs: ["matrice-350-rtk"],
+    payloadSlugs: ["zenmuse-p1"],
+    description: "Professionell fotogrammetri för massabalans och volymberäkningar med dokumenterbar noggrannhet.",
+    heroDesc:
+      "Matrice 350 RTK med Zenmuse P1, egen basstation och Terra Pro-licens. För anläggningsprojekt där massabalansen ska kunna försvaras mot beställare och underentreprenörer.",
+    longDesc:
+      "Markkartläggningspaket Pro är byggt för projekt där volymberäkningen ligger till grund för fakturering och beslut. Zenmuse P1 är en fullformatskamera med mekanisk slutare framtagen för fotogrammetri, och tillsammans med D-RTK 2 basstationen får ni repeterbara flygningar med känd absolut noggrannhet — samma referens från schaktstart till slutbesiktning. Terra Pro-licensen bearbetar stora ytor och löpande uppföljningar utan att blockera en arbetsstation i timmar.",
+    components: [
+      "DJI Matrice 350 RTK",
+      "Zenmuse P1 (45MP full-frame fotogrammetri)",
+      "DJI D-RTK 2 basstation",
+      "4 × TB65 batterier",
+      "BS65 laddstation",
+      "DJI Terra Pro-licens (1 år)",
+      "Transportlåda",
+    ],
+    idealFor: "Anläggningsentreprenörer och mätningsfirmor med löpande massabalans genom hela byggtiden.",
+    outcomes: [
+      "Volymberäkningar med känd och dokumenterbar noggrannhet",
+      "Samma referenspunkter från schaktstart till slutbesiktning",
+      "Fakturaunderlag mot underentreprenörer som håller för granskning",
+      "Flygtid som räcker för stora ytor per fältdag",
+    ],
+    faq: [
+      {
+        question: "Kan volymrapporterna användas som fakturaunderlag?",
+        answer:
+          "Ja, det är precis vad Pro-nivån är byggd för. Med D-RTK 2 basstationen och Zenmuse P1 får ni en dokumenterbar noggrannhet som håller för granskning mellan beställare och entreprenör.",
+      },
+      {
+        question: "Kan vi använda SWEPOS i stället för egen basstation?",
+        answer:
+          "Ja, nätverks-RTK fungerar där täckningen är god. Den egna basstationen gör er oberoende av mobilnätet, vilket ofta avgör på stora anläggningsprojekt utanför tätort.",
+      },
+      {
+        question: "Ingår utbildning i mätflödet?",
+        answer:
+          "Pilotutbildning ingår på Pro-nivå, anpassad efter era projekt — flygplanering, markstöd och kvalitetskontroll av volymmodellen.",
+      },
+    ],
+    seoTitle: "Markkartläggningspaket Pro — Matrice 350 & P1 | EU Drone Company",
+    seoDesc:
+      "Fotogrammetripaket med DJI Matrice 350 RTK, Zenmuse P1, D-RTK 2 och Terra Pro. Massabalans och volymberäkning för anläggningsprojekt.",
+  },
+  {
+    slug: "bygg-uppfoljning-bas",
+    name: "Uppföljningspaket Bas",
+    level: "standard",
+    industrySlug: "bygg-anlaggning",
+    drone: "DJI Mavic 3 Enterprise",
+    droneSlugs: ["mavic-3-enterprise"],
+    payloadSlugs: [],
+    description: "Kompakt och flygklar på minuter — för regelbunden dokumentation och säkerhetsronder på byggarbetsplatsen.",
+    heroDesc:
+      "Mavic 3 Enterprise med batterier och väska — det kit en platschef eller arbetsmiljöansvarig kan ha redo för veckans skyddsrond och statusflygning.",
+    longDesc:
+      "Uppföljningspaket Bas är till för byggarbetsplatser som vill dokumentera framdriften och göra skyddsronder regelbundet utan att boka in extern hjälp varje gång. Mavic 3 Enterprise är flygklar på under en minut, tillräckligt kompakt för att platschefen själv kan ta upp den mellan möten, och ger både överblick av hela arbetsplatsen och zoom för att granska ställningar och upplag på höjd.",
+    components: [
+      "DJI Mavic 3 Enterprise",
+      "DJI RC Pro Enterprise-kontroll",
+      "3 × Intelligent Flight Battery",
+      "Laddhubb",
+      "DJI Fly More Kit",
+      "Transportväska",
+    ],
+    idealFor: "Platschefer, byggherrar och arbetsmiljöansvariga som vill dokumentera projektet löpande.",
+    outcomes: [
+      "Statusflygning och skyddsrond klar på under 15 minuter",
+      "Överblick av hela arbetsplatsen utan att gå hela rundan till fots",
+      "Zoom för att granska ställningar och upplag på höjd",
+      "Bildmaterial redo för rapporter och beställarmöten samma dag",
+    ],
+    faq: [
+      {
+        question: "Räcker Mavic 3 Enterprise för regelbunden projektdokumentation?",
+        answer:
+          "Ja, för de flesta byggprojekt. Behöver ni jämföra flygningar exakt över tid med termisk kontroll eller längre flygtid är Uppföljningspaket Pro med Matrice 350 RTK rätt nivå.",
+      },
+      {
+        question: "Kan samma drönare användas till både uppföljning och skyddsronder?",
+        answer:
+          "Ja, det är precis tanken. En och samma flygning kan täcka både framdriftsdokumentation och en visuell säkerhetsgenomgång av arbetsplatsen.",
+      },
+    ],
+    seoTitle: "Uppföljningspaket Bas — byggarbetsplats | EU Drone Company",
+    seoDesc:
+      "Paket med DJI Mavic 3 Enterprise för byggprojektuppföljning och skyddsronder. Flygklar på under en minut. Begär offert.",
+  },
+  {
+    slug: "bygg-uppfoljning-pro",
+    name: "Uppföljningspaket Pro",
+    level: "pro",
+    industrySlug: "bygg-anlaggning",
+    drone: "DJI Matrice 350 RTK",
+    droneSlugs: ["matrice-350-rtk"],
+    payloadSlugs: ["zenmuse-h20t"],
+    description: "Repeterbara flygningar med termisk zoom — för stora byggprojekt med krav på jämförbar dokumentation över tid.",
+    heroDesc:
+      "Matrice 350 RTK med Zenmuse H20T och egen basstation. Samma flygrutt vecka för vecka, med termisk kamera för fuktkontroll och isoleringsgranskning.",
+    longDesc:
+      "Uppföljningspaket Pro är byggt för stora anläggnings- och byggprojekt där dokumentationen ska gå att jämföra rakt av mellan flygningar. Med D-RTK 2 basstationen återbesöker ni exakt samma positioner varje gång, vilket gör tidslaps och avvikelseanalys mot tidplanen trovärdiga. Zenmuse H20T lägger till termisk kamera och lång zoom, så att fuktinträngning, isoleringsbrister och detaljer på höjd kan granskas utan att någon behöver kliva ut på ett tak eller en ställning.",
+    components: [
+      "DJI Matrice 350 RTK",
+      "Zenmuse H20T (termisk + 20 MP zoom + 12 MP vidvinkel + LRF)",
+      "DJI D-RTK 2 basstation",
+      "4 × TB65 batterier",
+      "BS65 laddstation",
+      "DJI RC Plus-kontroll",
+      "Transportlåda (IP67)",
+    ],
+    idealFor: "Stora byggentreprenörer och projektledningsfirmor med krav på jämförbar dokumentation.",
+    outcomes: [
+      "Repeterbara flygningar som gör tidslaps och jämförelser trovärdiga",
+      "Termisk kontroll av fukt och isolering under byggets gång",
+      "Zoom för detaljgranskning på höjd utan ställning eller lift",
+      "Dokumentation som håller för beställarmöten och slutbesiktning",
+    ],
+    faq: [
+      {
+        question: "Varför krävs en egen RTK-basstation för uppföljning?",
+        answer:
+          "Basstationen gör att ni kan återbesöka exakt samma positioner oberoende av mobiltäckning, vilket är förutsättningen för att jämföra flygningar rakt av över tid i stället för att uppskatta skillnaden.",
+      },
+      {
+        question: "Kan vi använda termisk kamera för fuktkontroll innan inflyttning?",
+        answer:
+          "Ja. Zenmuse H20T:s radiometriska termiska sensor visar temperaturskillnader som avslöjar fuktinträngning och isoleringsbrister innan de syns visuellt eller orsakar skador.",
+      },
+    ],
+    seoTitle: "Uppföljningspaket Pro — Matrice 350 RTK & H20T | EU Drone Company",
+    seoDesc:
+      "Uppföljningspaket med DJI Matrice 350 RTK, Zenmuse H20T och D-RTK 2. Repeterbar byggdokumentation med termisk kontroll. Begär offert.",
+  },
 ];
 
 export function getPackageBySlug(slug: string): EnterprisePackage | undefined {
