@@ -22,6 +22,8 @@ const CommercialDroneCameras = lazy(() => import("./pages/CommercialDroneCameras
 const CommercialDroneCamera = lazy(() => import("./pages/CommercialDroneCamera"));
 const CommercialDroneIndustry = lazy(() => import("./pages/CommercialDroneIndustry"));
 const CommercialDroneSolution = lazy(() => import("./pages/CommercialDroneSolution"));
+const IndustrySolutions = lazy(() => import("./pages/IndustrySolutions"));
+const IndustrySolution = lazy(() => import("./pages/IndustrySolution"));
 const DroneComparisons = lazy(() => import("./pages/DroneComparisons"));
 const DroneComparisonArticle = lazy(() => import("./pages/DroneComparisonArticle"));
 const DroneCameraComparison = lazy(() => import("./pages/DroneCameraComparison"));
@@ -76,6 +78,8 @@ export default function App() {
             <Route path="/kommersiella-dronare/regelverk/:categorySlug" element={<DroneRegulationCategory />} />
             <Route path="/kommersiella-dronare/utbildning/:trainingSlug" element={<DroneTrainingRequirement />} />
             <Route path="/kommersiella-dronare/konfiguration/:configSlug" element={<DroneConfiguration />} />
+            <Route path="/kommersiella-dronare/branschlosningar" element={<IndustrySolutions />} />
+            <Route path="/kommersiella-dronare/branschlosningar/:slug" element={<IndustrySolution />} />
             <Route path="/kommersiella-dronare/:slug" element={<CommercialDroneIndustry />} />
             <Route path="/kommersiella-dronare/:slug/:solutionSlug" element={<CommercialDroneSolution />} />
 
