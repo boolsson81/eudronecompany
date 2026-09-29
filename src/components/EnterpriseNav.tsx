@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Radio, ChevronDown, Menu, X, Camera, Cpu } from "lucide-react";
+import { Radio, ChevronDown, Menu, X, Camera, Cpu, Boxes } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { INDUSTRY_DATA } from "@/data/commercialDroneIndustries";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
@@ -76,6 +76,7 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       children: [
         { label: "Alla kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
         { label: "Jämför kameror", href: "/kommersiella-dronare/jamfor-kameror" },
+        { label: "Payloads & sensorer", href: "/kommersiella-dronare/payloads-sensorer", icon: Boxes },
         { label: "Tillbehör", href: "/kommersiella-dronare/dji-enterprise" },
       ],
     },

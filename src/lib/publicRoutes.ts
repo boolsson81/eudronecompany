@@ -35,6 +35,7 @@ export function getPublicRoutes(): string[] {
     `${base}/kameror`,
     ...ENTERPRISE_CAMERA_PRODUCTS.map((c) => `${base}/kameror/${c.slug}`),
     `${base}/jamfor-kameror`,
+    `${base}/payloads-sensorer`,
 
     `${base}/jamforelser`,
     ...DRONE_COMPARISONS.map((c) => `${base}/jamforelser/${c.slug}`),
