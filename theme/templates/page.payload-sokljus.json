@@ -6,15 +6,29 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "DT1K",
-            "text": "Termisk nattkamera byggd för långdistansdetektering och kartläggning av större områden på M300/M350."
+            "title": "Gimbalstyrda sökljus",
+            "text": "Riktbart ljus med egen gimbal som följer kameran eller styrs separat, i storlekar för både kompakta och stora plattformar."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "C30N",
-            "text": "Nattkamera för Matrice 300/350 RTK. Pris och tillgänglighet bekräftas på förfrågan."
+            "title": "Sökljus med strobe",
+            "text": "Blinkfunktion som gör drönaren synlig från marken och kan användas för att markera en plats."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Infraröda fill-in-ljus",
+            "text": "Osynlig belysning för nattkameror och spaning, där ljuset inte ska synas för blotta ögat."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Fast monterad arbetsbelysning",
+            "text": "Enklare ljus utan gimbal för belysning rakt under eller framför drönaren."
           }
         },
         "benefit_1": {
@@ -26,25 +40,27 @@
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Gränsövervakning och skydd"
+            "text": "Nattinspektion av infrastruktur"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Brandspaning och värmeläckage"
+            "text": "Polis och skyddsuppdrag"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Kartläggning av stora områden"
+            "text": "Spaning med osynligt IR-ljus"
           }
         }
       },
       "block_order": [
         "solution_1",
         "solution_2",
+        "solution_3",
+        "solution_4",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -52,12 +68,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI kameror",
-        "title": "CZI DT1K och C30N — nattkameror för DJI Matrice",
-        "text": "CZI:s nattkameror ger lång räckvidd för målsökning och områdeskartläggning på DJI Matrice 300 och 350 RTK. DT1K är den mest utbyggda modellen i sortimentet.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Sökljus",
+        "title": "Sökljus och IR-belysning för drönare",
+        "text": "Gimbalstyrda sökljus förlänger uppdraget in i mörkret. Modellerna skiljer sig i ljusstyrka, strobefunktion och om ljuset är synligt eller infrarött för spaning.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -67,8 +83,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Behöver ni en nattkamera?",
-        "text": "Vi går igenom uppdraget och jämför DT1K och C30N mot er plattform. Kamerorna offereras per uppdrag.",
+        "title": "Vilket sökljus passar din drönare?",
+        "text": "Berätta vilken drönarmodell ni flyger så bekräftar vi passform och rekommenderar rätt sökljus.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",
