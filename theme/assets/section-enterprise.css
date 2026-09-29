@@ -750,6 +750,12 @@
   background: rgba(var(--color-foreground-rgb), 0.02);
 }
 
+/* A card with an explicit non-default theme picks up that scheme's own colors instead of the section-wide dark tint. */
+.edp-enterprise__benefit-list .edp-enterprise__benefit-item:not(.color-scheme-edp) {
+  background: rgb(var(--color-background));
+  border-color: rgba(var(--color-shadow), 0.15);
+}
+
 .edp-enterprise__benefit-check {
   flex-shrink: 0;
   width: 2rem;
