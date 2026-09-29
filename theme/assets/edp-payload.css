@@ -78,6 +78,14 @@
 }
 .edp-payload__card:hover,
 .edp-payload__card:focus-visible { border-color: var(--edp-payload-fg); }
+.edp-payload__card-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--edp-payload-muted);
+  margin: 0;
+}
 .edp-payload__card-title { font-weight: 600; font-size: 0.9375rem; margin: 0; }
 .edp-payload__card-text { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; line-height: 1.45; }
 
