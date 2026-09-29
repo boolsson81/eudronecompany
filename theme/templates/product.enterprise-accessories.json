@@ -54,7 +54,7 @@
           "settings": {
             "heading": "Kompatibla modeller",
             "icon": "check_mark",
-            "content": "{% render 'product-compatibility', show_heading: false %}",
+            "content": "",
             "page": ""
           }
         },
