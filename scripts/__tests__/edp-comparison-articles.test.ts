@@ -34,8 +34,11 @@ describe("edpComparisonArticles", () => {
     }
   });
 
-  it("uses EDP blue accent in inline CSS", () => {
+  it("ties accent, text and background colors to the theme's color scheme instead of fixed hex values", () => {
     const html = renderEdpComparisonArticleHtml(EDP_COMPARISON_ARTICLES[0]);
-    expect(html).toContain("#0066cc");
+    expect(html).toContain("var(--color-link)");
+    expect(html).toContain("var(--color-foreground)");
+    expect(html).toContain("var(--color-button)");
+    expect(html).not.toMatch(/#[0-9a-fA-F]{3,6}/);
   });
 });

@@ -104,8 +104,8 @@ export function renderEdpComparisonArticleHtml(article: EdpComparisonArticle): s
     <h2>Behöver du hjälp att välja?</h2>
     <p>Kontakta vårt B2B-team för skräddarsydd rådgivning kring Zenmuse-kameror och payloads.</p>
     <div class="edp-comparison__cta-buttons">
-      <a href="/pages/b2b" class="edp-comparison__cta-primary">Begär offert</a>
-      <a href="/collections/dronar-kameror" class="edp-comparison__cta-secondary">Se alla drönarkameror</a>
+      <a href="/pages/request-a-quote" class="edp-comparison__cta-primary">Begär offert</a>
+      <a href="/collections/enterprise-sensors" class="edp-comparison__cta-secondary">Se alla drönarkameror</a>
     </div>
   </section>
 </div>`;
