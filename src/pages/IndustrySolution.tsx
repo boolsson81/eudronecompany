@@ -1,21 +1,28 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, Cpu } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
+import FaqSection, { faqJsonLd } from "@/components/FaqSection";
 import EnterpriseNav from "@/components/EnterpriseNav";
 import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getIndustrySolutionBySlug } from "@/data/industrySolutions";
+import { getDroneMedia } from "@/data/commercialDroneIndustries";
+import { getDroneProductPathByName } from "@/data/enterpriseDroneProducts";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
 /**
- * Mall för en enskild branschlösning. Fylls med egna sektioner (lösningar,
- * rekommenderade drönare, kundcase, FAQ) allt eftersom respektive bransch
- * får eget innehåll — se CommercialDroneIndustry.tsx för det utbyggda mönstret.
+ * Mall för en enskild branschlösning. Rendrerar de utbyggda sektionerna
+ * (lösningar, rekommenderade drönare, fördelar, FAQ) när branschen har
+ * eget innehåll — se "infrastruktur-bygg" i industrySolutions.ts för
+ * mönstret — annars bara hero + "Vad vi täcker"-chips tills branschen
+ * fylls i.
  */
 export default function IndustrySolution() {
   const { slug } = useParams<{ slug: string }>();
   const industry = slug ? getIndustrySolutionBySlug(slug) : undefined;
+  const faqJsonLdData = useMemo(() => (industry?.faq ? faqJsonLd(industry.faq) : null), [industry]);
 
   if (!industry) {
     return (
@@ -30,17 +37,23 @@ export default function IndustrySolution() {
     );
   }
 
+  const heroTitle = industry.heroTitle ?? `Drönarlösningar för ${industry.title.toLowerCase()}`;
+  const heroDesc =
+    industry.heroDesc ??
+    `Skräddarsydda drönarlösningar för ${industry.titleEn.toLowerCase()} — kontakta oss för att diskutera era behov.`;
+
   return (
     <>
       <SeoHead
         title={`${industry.title} — Drönarlösningar | EU Drone Company`}
-        description={`Drönarlösningar för ${industry.title.toLowerCase()}: ${industry.omfattar.join(", ").toLowerCase()}.`}
+        description={heroDesc}
         canonical={droneUrl(`/kommersiella-dronare/branschlosningar/${industry.slug}`)}
         breadcrumbs={[
           ...DRONE_BREADCRUMB_ROOT,
           { name: "Branschlösningar", url: droneUrl("/kommersiella-dronare/branschlosningar") },
           { name: industry.title, url: droneUrl(`/kommersiella-dronare/branschlosningar/${industry.slug}`) },
         ]}
+        jsonLd={faqJsonLdData || undefined}
       />
 
       <div className="min-h-screen bg-[#0a0a0a] text-white">
@@ -62,20 +75,16 @@ export default function IndustrySolution() {
                 {industry.title}
               </div>
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[0.95] mb-6">
-                Drönarlösningar för {industry.title.toLowerCase()}
+                {heroTitle}
               </h1>
-              <p className="text-lg md:text-xl text-white/60 max-w-xl leading-relaxed">
-                Skräddarsydda drönarlösningar för {industry.titleEn.toLowerCase()} — kontakta oss
-                för att diskutera era behov.
-              </p>
+              <p className="text-lg md:text-xl text-white/60 max-w-xl leading-relaxed">{heroDesc}</p>
             </motion.div>
           </div>
         </section>
 
         {/* Vad vi täcker */}
-        <section className="py-16 md:py-24">
+        <section className="pb-16 md:pb-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-10">Vad vi täcker</h2>
             <div className="flex flex-wrap gap-3">
               {industry.omfattar.map((item) => (
                 <span
@@ -88,6 +97,126 @@ export default function IndustrySolution() {
             </div>
           </div>
         </section>
+
+        {/* Solutions */}
+        {industry.solutions && industry.solutions.length > 0 && (
+          <section className="py-16 md:py-24 bg-white/[0.02]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-10">Lösningar</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {industry.solutions.map((s, i) => (
+                  <motion.div
+                    key={s.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 }}
+                    className="p-6 rounded-2xl bg-[#111] border border-white/10 h-full"
+                  >
+                    <h3 className="text-lg font-semibold mb-2">{s.title}</h3>
+                    <p className="text-sm text-white/50 leading-relaxed">{s.desc}</p>
+                    {s.useCases && s.useCases.length > 0 && (
+                      <ul className="mt-4 space-y-1.5">
+                        {s.useCases.map((uc) => (
+                          <li key={uc} className="flex items-start gap-2 text-xs text-white/50">
+                            <CheckCircle2 className="h-3.5 w-3.5 text-orange-500/70 mt-0.5 flex-shrink-0" />
+                            {uc}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Recommended drones */}
+        {industry.recommendedDrones && industry.recommendedDrones.length > 0 && (
+          <section className="py-16 md:py-24">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-10">Rekommenderade drönare</h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {industry.recommendedDrones.map((drone, i) => {
+                  const media = getDroneMedia(drone.name);
+                  const productPath = getDroneProductPathByName(drone.name);
+                  return (
+                    <motion.div
+                      key={drone.name}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.1 }}
+                      className="rounded-2xl bg-white/[0.03] border border-white/10 overflow-hidden"
+                    >
+                      {media ? (
+                        <img
+                          src={media.image}
+                          alt={drone.name}
+                          loading="lazy"
+                          width={800}
+                          height={600}
+                          className="w-full h-40 object-cover"
+                        />
+                      ) : (
+                        <div className="h-40 bg-gradient-to-br from-orange-500/10 to-transparent flex items-center justify-center">
+                          <Cpu className="h-14 w-14 text-orange-500/40" />
+                        </div>
+                      )}
+                      <div className="p-6">
+                        <div className="text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-2">{drone.tag}</div>
+                        <h3 className="text-xl font-bold mb-2">{drone.name}</h3>
+                        <p className="text-sm text-white/50 mb-4 leading-relaxed">{drone.desc}</p>
+                        <div className="flex flex-wrap gap-2">
+                          {drone.features.map((f) => (
+                            <span key={f} className="text-[11px] px-2.5 py-1 rounded-full bg-white/5 text-white/60 border border-white/10">{f}</span>
+                          ))}
+                        </div>
+                        {productPath && (
+                          <Link
+                            to={productPath}
+                            className="inline-flex items-center gap-1.5 text-sm font-medium text-orange-400 hover:text-orange-300 transition-colors mt-4"
+                          >
+                            Läs mer om {drone.name} <ArrowRight className="h-4 w-4" />
+                          </Link>
+                        )}
+                      </div>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* Benefits */}
+        {industry.benefits && industry.benefits.length > 0 && (
+          <section className="py-16 md:py-24 bg-white/[0.02]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+              <h2 className="text-2xl md:text-3xl font-bold mb-10">Fördelar</h2>
+              <div className="grid md:grid-cols-2 gap-4">
+                {industry.benefits.map((b, i) => (
+                  <motion.div
+                    key={i}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 }}
+                    className="flex items-start gap-3 p-4 rounded-xl bg-white/[0.03] border border-white/10"
+                  >
+                    <CheckCircle2 className="h-5 w-5 text-orange-500 mt-0.5 flex-shrink-0" />
+                    <span className="text-white/70">{b}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {industry.faq && industry.faq.length > 0 && (
+          <FaqSection items={industry.faq} variant="dark" heading={`Vanliga frågor om ${industry.title.toLowerCase()}`} />
+        )}
 
         {/* CTA */}
         <section id="contact-cta" className="py-16 md:py-24 bg-white/[0.02]">

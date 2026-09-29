@@ -5,6 +5,7 @@ import { INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
 import { ENTERPRISE_CAMERA_PRODUCTS } from "@/data/enterpriseCameraProducts";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { ENTERPRISE_PACKAGES } from "@/data/enterprisePackages";
+import { INDUSTRY_SOLUTIONS } from "@/data/industrySolutions";
 
 /**
  * Varje publik sökväg i drönarfrontenden, härledd ur samma datamoduler som
@@ -49,5 +50,8 @@ export function getPublicRoutes(): string[] {
       `${base}/${industry.slug}`,
       ...industry.solutions.map((s) => `${base}/${industry.slug}/${s.slug}`),
     ]),
+
+    `${base}/branschlosningar`,
+    ...INDUSTRY_SOLUTIONS.map((i) => `${base}/branschlosningar/${i.slug}`),
   ];
 }
