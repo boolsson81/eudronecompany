@@ -3,9 +3,11 @@
   Search & Discovery filter (custom.produkttyp) on this collection.
 
   New categories added in Shopify Admin (metafield choices) appear here
-  automatically — no theme edit needed. Each card links straight to the
+  automatically — no theme edit needed. By default each card links to the
   pre-filtered collection result for that category (Shopify's own filter
-  URL, not a hardcoded collection).
+  URL). Add a "Egen länk för kategori"-block matching the category's label
+  to point that specific card at a manually chosen page/collection/URL
+  instead — the rest keep the automatic filter link.
 {% endcomment %}
 
 {%- liquid
@@ -56,10 +58,18 @@
       <ul class="category-cards__grid list-unstyled" role="list">
         {%- for value in category_filter.values -%}
           {%- if value.count > 0 or value.active -%}
-            {%- if value.active -%}
-              {%- assign card_url = value.url_to_remove -%}
-            {%- else -%}
-              {%- assign card_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | url_encode -%}
+            {%- assign card_url = blank -%}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'category_link' and block.settings.category_label != blank and block.settings.category_label == value.label -%}
+                {%- assign card_url = block.settings.link -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {%- if card_url == blank -%}
+              {%- if value.active -%}
+                {%- assign card_url = value.url_to_remove -%}
+              {%- else -%}
+                {%- assign card_url = collection.url | append: '?' | append: value.param_name | append: '=' | append: value.value | url_encode -%}
+              {%- endif -%}
             {%- endif -%}
             <li>
               <a href="{{ card_url }}" class="category-cards__item{% if value.active %} category-cards__item--active{% endif %}">
@@ -127,6 +137,26 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category_link",
+      "name": "Egen länk för kategori",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category_label",
+          "label": "Kategorinamn (måste matcha filtrets etikett exakt)",
+          "info": "T.ex. \"Propellrar\". Måste stavas exakt som kategorin visas i listan nedan."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Länk",
+          "info": "Sida, kollektion eller valfri URL. Lämnas tomt fortsätter kortet länka till den filtrerade produktlistan som vanligt."
+        }
+      ]
     }
   ],
   "presets": [
