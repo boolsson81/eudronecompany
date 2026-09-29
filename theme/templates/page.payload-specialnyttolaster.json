@@ -6,56 +6,46 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "LP12 och LP20",
-            "text": "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD.",
-            "link": "/products/matrice-3d-sokarlampa-dji-matrice-3d-3dt-czi"
+            "title": "Vattensystem",
+            "text": "Högtrycksvattensystem för medelstora och stora multirotordrönare, avsett för bland annat skogsbrandbekämpning."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "LP35",
-            "text": "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK.",
-            "link": "/products/czi-lp35-sokarljus-m350-dji"
+            "title": "Röjningsverktyg",
+            "text": "Drönarmonterade verktyg för precis röjning av hinder och markvård."
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
-            "title": "MP130 V2 och MP130 Pro",
-            "text": "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS.",
-            "link": "/products/czi-mp130-v2-h-gtalare"
-          }
-        },
-        "solution_4": {
-          "type": "solution",
-          "settings": {
-            "title": "MP140, MP120 och PK10",
-            "text": "MP140 för stora områden på M300/M350, MP120 varningsljus och PK10 ljudupptagare."
+            "title": "Elektriska utlösare",
+            "text": "Utlösare för flera laster i samma nyttolast, med snabbmontering på plattformen."
           }
         },
         "benefit_1": {
           "type": "benefit",
           "settings": {
-            "text": "Utrop och varning vid räddningsinsatser"
+            "text": "Skogs- och markbrandbekämpning"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Sökning efter försvunna personer"
+            "text": "Röjning av hinder på svåråtkomlig mark"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Ordning och säkerhet vid stora evenemang"
+            "text": "Höghöjdsarbete utan personal i fara"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Kommunikation med personer utom räckhåll"
+            "text": "Myndighetsuppdrag med särskilda krav"
           }
         }
       },
@@ -63,7 +53,6 @@
         "solution_1",
         "solution_2",
         "solution_3",
-        "solution_4",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -71,12 +60,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI LP- och MP-serien",
-        "title": "CZI sökljus med högtalare — LP- och MP-serien",
-        "text": "LP-serien kombinerar sökljus och högtalare i en enhet, MP-serien är rena röst- och utropssystem. Drönaren blir en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Specialnyttolaster",
+        "title": "Specialnyttolaster — vatten, eld och lastutlösning",
+        "text": "För uppdrag som kräver mer än belysning och ljud: vattensystem för brandbekämpning, verktyg för hinderröjning och elektriska utlösare. Alla är avsedda för professionell användning.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -86,8 +75,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Behöver ni utrop från luften?",
-        "text": "Vi går igenom uppdraget och rekommenderar rätt kombination av sökljus och högtalare för er plattform.",
+        "title": "Särskilda krav på uppdraget?",
+        "text": "Dessa nyttolaster kan omfattas av tillstånds- och exportregler. Kontakta oss innan beställning så går vi igenom vad som gäller.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

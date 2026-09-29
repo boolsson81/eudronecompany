@@ -1,0 +1,62 @@
+[
+ {
+  "handle": "payload-sokljus",
+  "title": "Sökljus och IR-belysning för drönare",
+  "templateSuffix": "payload-sokljus",
+  "body": "<p>Gimbalstyrda sökljus förlänger uppdraget in i mörkret. Modellerna skiljer sig i ljusstyrka, strobefunktion och om ljuset är synligt eller infrarött för spaning.</p>",
+  "seo": {
+   "title": "Sökljus och IR-belysning för drönare | EU Drone Company",
+   "description": "Gimbalstyrda sökljus, strobe och infraröd belysning för professionella drönare. Offert och support på svenska."
+  }
+ },
+ {
+  "handle": "payload-sokljus-hogtalare",
+  "title": "Sökljus och högtalare för drönare",
+  "templateSuffix": "payload-sokljus-hogtalare",
+  "body": "<p>Kombinerade sökljus och högtalare samt rena röst- och utropssystem gör drönaren till en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.</p>",
+  "seo": {
+   "title": "Sökljus och högtalare för drönare | EU Drone Company",
+   "description": "Kombinerade sökljus och högtalare samt röstsystem för professionella drönare. Offert och support på svenska."
+  }
+ },
+ {
+  "handle": "payload-tjudrad-belysning",
+  "title": "Matrix-belysning och tjudrad belysning för drönare",
+  "templateSuffix": "payload-tjudrad-belysning",
+  "body": "<p>Bred arbetsbelysning från luften, och tjudrade system som matar drönaren med ström från marken så att belysningen kan stå uppe hela natten.</p>",
+  "seo": {
+   "title": "Matrix-belysning och tjudrad belysning för drönare | EU Drone Company",
+   "description": "Arbetsbelysning och tjudrade kraftsystem för professionella drönare. Offert på svenska."
+  }
+ },
+ {
+  "handle": "payload-lastslapp",
+  "title": "Lastsläpp och logistiknyttolaster för drönare",
+  "templateSuffix": "payload-lastslapp",
+  "body": "<p>Lastsläpp låter drönaren leverera utrustning på exakt plats. Kroksläpp passar räddnings- och materialuppdrag, logistiknyttolaster är byggda för leveranser med större transportdrönare.</p>",
+  "seo": {
+   "title": "Lastsläpp och logistiknyttolaster för drönare | EU Drone Company",
+   "description": "Kroksläpp, precisionssläpp och logistiknyttolaster för professionella drönare. Offert och support på svenska."
+  }
+ },
+ {
+  "handle": "payload-kameror",
+  "title": "Nattkameror och termiska kameror för drönare",
+  "templateSuffix": "payload-kameror",
+  "body": "<p>Nattkameror och termiska kameror ger lång räckvidd för målsökning och kartläggning av större områden på enterprise-plattformar.</p>",
+  "seo": {
+   "title": "Nattkameror och termiska kameror för drönare | EU Drone Company",
+   "description": "Nattkameror och termisk detektering på lång räckvidd för professionella drönare. Offert på svenska."
+  }
+ },
+ {
+  "handle": "payload-specialnyttolaster",
+  "title": "Specialnyttolaster — vatten, eld och lastutlösning",
+  "templateSuffix": "payload-specialnyttolaster",
+  "body": "<p>För uppdrag som kräver mer än belysning och ljud: vattensystem för brandbekämpning, verktyg för hinderröjning och elektriska utlösare. Alla är avsedda för professionell användning.</p>",
+  "seo": {
+   "title": "Specialnyttolaster för drönare — vatten, röjning och utlösning | EU Drone Company",
+   "description": "Vattensystem, röjningsverktyg och elektriska utlösare för professionella drönare. Offert efter genomgång av regelverk."
+  }
+ }
+]

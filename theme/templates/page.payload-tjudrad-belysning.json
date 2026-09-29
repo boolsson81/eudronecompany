@@ -6,30 +6,29 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "ML200 Matrix Light",
-            "text": "Belysningsset i flera effekter: 400 W, 800 W och 1500 W, för DJI M350/M300.",
-            "link": "/products/czi-ml200-800w-matrix-light-for-m350-300"
+            "title": "Matrix-belysning",
+            "text": "Belysningsset i flera effektsteg för bred ljussättning av större ytor, på fri flygning."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "TK3 och TK4",
-            "text": "Tjudrat kraftsystem som omvandlar 220 V AC till drönarens strömförsörjning. TK4 finns med 110 m lina."
+            "title": "Tjudrade kraftsystem",
+            "text": "Marken matar drönaren med ström via lina, så flygtiden begränsas inte av batterierna."
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
-            "title": "CZ10 Tethered Hover Light",
-            "text": "Portabelt, snabbt utplacerat luftburet ljus med hopfällbar konstruktion för utomhusbruk."
+            "title": "Portabelt tjudrat hoverljus",
+            "text": "Snabbt utplacerat och hopfällbart luftburet ljus för utomhusbruk."
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
-            "title": "CZ100 och CZ100V",
-            "text": "Tjudrade belysningssystem, CZ100V med zoom och värmekamera."
+            "title": "Tjudrade system med kamera",
+            "text": "Tjudrad plattform med zoom- och värmekamera för långvarig övervakning."
           }
         },
         "benefit_1": {
@@ -69,11 +68,11 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI ML, CZ och TK",
-        "title": "CZI Matrix Light och tjudrad belysning",
-        "text": "Matrix Light-serien ger bred arbetsbelysning från luften, och tjudrade system som TK3/TK4 och CZ10 matar drönaren med ström från marken så att belysningen kan stå uppe hela natten.",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Arbetsbelysning och tjudrade system",
+        "title": "Matrix-belysning och tjudrad belysning för drönare",
+        "text": "Bred arbetsbelysning från luften, och tjudrade system som matar drönaren med ström från marken så att belysningen kan stå uppe hela natten.",
         "solutions_heading": "System",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
@@ -85,7 +84,7 @@
       "type": "enterprise-contact",
       "settings": {
         "title": "Planerar ni långvarig belysning?",
-        "text": "Vi hjälper er välja mellan Matrix Light på fri flygning och tjudrade system med kontinuerlig ström.",
+        "text": "Vi hjälper er välja mellan belysning på fri flygning och tjudrade system med kontinuerlig ström.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

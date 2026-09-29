@@ -6,45 +6,61 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "DT1K",
-            "text": "Termisk nattkamera byggd för långdistansdetektering och kartläggning av större områden på M300/M350."
+            "title": "Sökljus och högtalare i en enhet",
+            "text": "Ljus och ljud i samma nyttolast, vilket sparar vikt och fäste på plattformen."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "C30N",
-            "text": "Nattkamera för Matrice 300/350 RTK. Pris och tillgänglighet bekräftas på förfrågan."
+            "title": "Röst- och utropssystem",
+            "text": "Digital röstsändning med realtidsutrop, inspelade meddelanden och text-till-tal."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Varningsljus",
+            "text": "Ljus som drar uppmärksamhet och förstärker ett utrop eller en varning."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Ljudupptagare",
+            "text": "Mikrofon för att höra vad som sägs på marken vid kommunikation åt två håll."
           }
         },
         "benefit_1": {
           "type": "benefit",
           "settings": {
-            "text": "Sök och räddning i mörker"
+            "text": "Utrop och varning vid räddningsinsatser"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Gränsövervakning och skydd"
+            "text": "Sökning efter försvunna personer"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Brandspaning och värmeläckage"
+            "text": "Ordning och säkerhet vid stora evenemang"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Kartläggning av stora områden"
+            "text": "Kommunikation med personer utom räckhåll"
           }
         }
       },
       "block_order": [
         "solution_1",
         "solution_2",
+        "solution_3",
+        "solution_4",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -52,12 +68,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI kameror",
-        "title": "CZI DT1K och C30N — nattkameror för DJI Matrice",
-        "text": "CZI:s nattkameror ger lång räckvidd för målsökning och områdeskartläggning på DJI Matrice 300 och 350 RTK. DT1K är den mest utbyggda modellen i sortimentet.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Sökljus och högtalare",
+        "title": "Sökljus och högtalare för drönare",
+        "text": "Kombinerade sökljus och högtalare samt rena röst- och utropssystem gör drönaren till en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -67,8 +83,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Behöver ni en nattkamera?",
-        "text": "Vi går igenom uppdraget och jämför DT1K och C30N mot er plattform. Kamerorna offereras per uppdrag.",
+        "title": "Behöver ni utrop från luften?",
+        "text": "Vi går igenom uppdraget och rekommenderar rätt kombination av sökljus och högtalare för er plattform.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",

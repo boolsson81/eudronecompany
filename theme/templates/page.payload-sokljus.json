@@ -6,46 +6,53 @@
         "solution_1": {
           "type": "solution",
           "settings": {
-            "title": "DH100",
-            "text": "Multifunktionellt högtrycksvattensystem för medelstora och stora multirotordrönare, avsett för bland annat skogsbrandbekämpning."
+            "title": "Gimbalstyrda sökljus",
+            "text": "Riktbart ljus med egen gimbal som följer kameran eller styrs separat, i storlekar för både kompakta och stora plattformar."
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
-            "title": "FT10 V2",
-            "text": "Drönarmonterad eldkastare för precis röjning av hinder och markvård."
+            "title": "Sökljus med strobe",
+            "text": "Blinkfunktion som gör drönaren synlig från marken och kan användas för att markera en plats."
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
-            "title": "ES638",
-            "text": "Elektrisk utlösare för M400/M350/M300 med 2, 6 eller 8 skott i en last för 38 mm/64 mm ammunition. Snabbmontering."
+            "title": "Infraröda fill-in-ljus",
+            "text": "Osynlig belysning för nattkameror och spaning, där ljuset inte ska synas för blotta ögat."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Fast monterad arbetsbelysning",
+            "text": "Enklare ljus utan gimbal för belysning rakt under eller framför drönaren."
           }
         },
         "benefit_1": {
           "type": "benefit",
           "settings": {
-            "text": "Skogs- och markbrandbekämpning"
+            "text": "Sök och räddning i mörker"
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
-            "text": "Röjning av hinder på svåråtkomlig mark"
+            "text": "Nattinspektion av infrastruktur"
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
-            "text": "Höghöjdsarbete utan personal i fara"
+            "text": "Polis och skyddsuppdrag"
           }
         },
         "benefit_4": {
           "type": "benefit",
           "settings": {
-            "text": "Myndighetsuppdrag med särskilda krav"
+            "text": "Spaning med osynligt IR-ljus"
           }
         }
       },
@@ -53,6 +60,7 @@
         "solution_1",
         "solution_2",
         "solution_3",
+        "solution_4",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -60,12 +68,12 @@
       ],
       "settings": {
         "show_breadcrumb": true,
-        "breadcrumb_label": "CZI",
-        "breadcrumb_link": "/pages/czi",
-        "eyebrow": "CZI specialnyttolaster",
-        "title": "CZI specialnyttolaster — vatten, eld och lastutlösning",
-        "text": "För uppdrag som kräver mer än belysning och ljud: DH100 vattensystem för brandbekämpning, FT10 V2 för hinderröjning och ES638 för elektrisk utlösning. Alla är avsedda för professionell användning.",
-        "solutions_heading": "Modeller",
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Sökljus",
+        "title": "Sökljus och IR-belysning för drönare",
+        "text": "Gimbalstyrda sökljus förlänger uppdraget in i mörkret. Modellerna skiljer sig i ljusstyrka, strobefunktion och om ljuset är synligt eller infrarött för spaning.",
+        "solutions_heading": "Typer",
         "benefits_heading": "Användningsområden",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
@@ -75,8 +83,8 @@
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
-        "title": "Särskilda krav på uppdraget?",
-        "text": "Dessa nyttolaster kan omfattas av tillstånds- och exportregler. Kontakta oss innan beställning så går vi igenom vad som gäller.",
+        "title": "Vilket sökljus passar din drönare?",
+        "text": "Berätta vilken drönarmodell ni flyger så bekräftar vi passform och rekommenderar rätt sökljus.",
         "button_label_1": "Skicka offertförfrågan",
         "button_link_1": "/pages/contact-quote",
         "button_label_2": "Ring oss",
