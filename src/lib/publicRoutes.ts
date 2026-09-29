@@ -40,6 +40,8 @@ export function getPublicRoutes(): string[] {
     ...DRONE_COMPARISONS.map((c) => `${base}/jamforelser/${c.slug}`),
 
     `${base}/regelverk`,
+    `${base}/regelverk/privatpersoner`,
+    `${base}/regelverk/foretag`,
     ...DRONE_CATEGORIES.map((c) => `${base}/regelverk/${c.slug}`),
     ...TRAINING_REQUIREMENTS.map((t) => `${base}/utbildning/${t.slug}`),
 
