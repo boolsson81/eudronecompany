@@ -5,7 +5,7 @@
       "settings": {
         "eyebrow": "Drönarkameror",
         "description": "Jämför Zenmuse-kameror och payloads för inspektion, termisk avbildning, LiDAR och fotogrammetri.",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 36
       }

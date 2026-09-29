@@ -3,7 +3,7 @@
     "main": {
       "type": "edp-comparison-article",
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 36
       }
