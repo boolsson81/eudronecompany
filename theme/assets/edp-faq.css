@@ -1,10 +1,13 @@
 .edp-faq-page {
   --edp-accent: #0066cc;
   --edp-accent-hover: #0052a3;
-  --edp-text: #1a1a1a;
-  --edp-muted: #5c5c5c;
-  --edp-border: #e5e7eb;
-  --edp-bg: #f8fafc;
+  /* Följer sektionens färgschema (Dawn --color-*), med ljus fallback */
+  --edp-fg: var(--color-foreground, 26, 26, 26);
+  --edp-text: rgb(var(--edp-fg));
+  --edp-muted: rgba(var(--edp-fg), 0.75);
+  --edp-border: rgba(var(--edp-fg), 0.15);
+  --edp-bg: rgba(var(--edp-fg), 0.05);
+  --edp-card-bg: rgba(var(--edp-fg), 0.06);
   --edp-radius: 12px;
   max-width: 800px;
   margin: 0 auto;
@@ -37,7 +40,7 @@
   border-radius: var(--edp-radius);
   margin-bottom: 0.5rem;
   padding: 0 1rem;
-  background: #fff;
+  background: var(--edp-card-bg);
 }
 .edp-faq__item summary {
   cursor: pointer;
@@ -71,7 +74,7 @@
   font-weight: 600;
   color: var(--edp-accent);
   text-decoration: none;
-  background: #fff;
+  background: var(--edp-card-bg);
 }
 .edp-faq__related-link:hover {
   border-color: var(--edp-accent);
@@ -103,7 +106,7 @@
 .edp-faq__cta-primary { background: var(--edp-accent); color: #fff; }
 .edp-faq__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }
 .edp-faq__cta-secondary {
-  background: #fff;
+  background: var(--edp-card-bg);
   color: var(--edp-text);
   border: 1px solid var(--edp-border);
 }
@@ -112,10 +115,13 @@
 /* Blog listing */
 .edp-faq-blog {
   --edp-accent: #0066cc;
-  --edp-text: #1a1a1a;
-  --edp-muted: #5c5c5c;
-  --edp-border: #e5e7eb;
-  --edp-bg: #f8fafc;
+  /* Följer sektionens färgschema (Dawn --color-*), med ljus fallback */
+  --edp-fg: var(--color-foreground, 26, 26, 26);
+  --edp-text: rgb(var(--edp-fg));
+  --edp-muted: rgba(var(--edp-fg), 0.75);
+  --edp-border: rgba(var(--edp-fg), 0.15);
+  --edp-bg: rgba(var(--edp-fg), 0.05);
+  --edp-card-bg: rgba(var(--edp-fg), 0.06);
   --edp-radius: 12px;
 }
 .edp-faq-blog__header { margin-bottom: 2rem; }
@@ -150,7 +156,7 @@
   flex-direction: column;
   border: 1px solid var(--edp-border);
   border-radius: var(--edp-radius);
-  background: #fff;
+  background: var(--edp-card-bg);
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -197,18 +203,18 @@
 .edp-faq-article__header {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--edp-border, #e5e7eb);
+  border-bottom: 1px solid var(--edp-border);
 }
 .edp-faq-article__title {
   font-size: clamp(1.5rem, 4vw, 2.25rem);
   font-weight: 700;
-  color: var(--edp-text, #1a1a1a);
+  color: var(--edp-text);
   margin: 0 0 0.75rem;
   line-height: 1.2;
 }
 .edp-faq-article__meta {
   font-size: 0.85rem;
-  color: var(--edp-muted, #5c5c5c);
+  color: var(--edp-muted);
 }
 .edp-faq-article__back {
   display: inline-flex;
@@ -217,7 +223,7 @@
   margin-top: 2.5rem;
   font-size: 0.9rem;
   font-weight: 600;
-  color: #0066cc;
+  color: var(--edp-accent, #0066cc);
   text-decoration: none;
 }
 .edp-faq-article__back:hover { text-decoration: underline; }
