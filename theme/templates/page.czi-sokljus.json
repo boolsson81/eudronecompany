@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "GL10 V2",
+            "text": "Dubbelaxlad gimbal-sökarlampa för DJI Mavic 3E och 3T."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "GL60 Mini och GL60 Plus",
+            "text": "Gimbalsökljus för Matrice 30-serien respektive avancerad belysning under svåra förhållanden."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "GL300 och SL60",
+            "text": "Kraftfullt sökljus för Matrice 200/300, samt SL60 med strobefunktion för M350/M300."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "IR3 och IR10",
+            "text": "Infraröda fill-in-ljus. IR10 är en 808 nm-laser med upp till 12 W, osynlig för blotta ögat."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sök och räddning i mörker"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Nattinspektion av infrastruktur"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Polis och skyddsuppdrag"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Spaning med osynligt IR-ljus"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "CZI",
+        "breadcrumb_link": "/pages/czi",
+        "eyebrow": "CZI sökljus",
+        "title": "CZI sökljus och IR-belysning för DJI-drönare",
+        "text": "CZI:s gimbalstyrda sökljus förlänger uppdraget in i mörkret. GL-serien passar allt från Mavic 3 Enterprise till Matrice 300 och 350, SL60 lägger till strobe och IR-modellerna ger osynlig belysning för spaning.",
+        "solutions_heading": "Modeller",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vilket sökljus passar din drönare?",
+        "text": "Berätta vilken DJI-modell ni flyger så bekräftar vi passform och rätt modell i GL-serien.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

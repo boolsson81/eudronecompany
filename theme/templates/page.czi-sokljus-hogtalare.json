@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "LP12 och LP20",
+            "text": "Sökljus och sändningssystem för DJI M30 respektive Matrice 3D/3TD."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "LP35",
+            "text": "Sökljus och högtalare i ett, upp till 90 W, ansluten via OSDK till DJI M350 RTK."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "MP130 V2 och MP130 Pro",
+            "text": "Digitalt röstsändningssystem för Matrice 400/350/300 med realtidsutrop, inspelade meddelanden och TTS."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "MP140, MP120 och PK10",
+            "text": "MP140 för stora områden på M300/M350, MP120 varningsljus och PK10 ljudupptagare."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Utrop och varning vid räddningsinsatser"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sökning efter försvunna personer"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Ordning och säkerhet vid stora evenemang"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kommunikation med personer utom räckhåll"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "CZI",
+        "breadcrumb_link": "/pages/czi",
+        "eyebrow": "CZI LP- och MP-serien",
+        "title": "CZI sökljus med högtalare — LP- och MP-serien",
+        "text": "LP-serien kombinerar sökljus och högtalare i en enhet, MP-serien är rena röst- och utropssystem. Drönaren blir en luftburen utropsenhet för myndigheter, räddningstjänst och säkerhetsuppdrag.",
+        "solutions_heading": "Modeller",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver ni utrop från luften?",
+        "text": "Vi går igenom uppdraget och rekommenderar rätt kombination av sökljus och högtalare för er plattform.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

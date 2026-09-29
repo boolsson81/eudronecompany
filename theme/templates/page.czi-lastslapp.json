@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "TH4 V2",
+            "text": "Kroksläpp på 320 g med 40 kg lastkapacitet. Genomför fyra uppdrag på en flygning. För Matrice 210 V2 och M300 RTK."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Throwing Hook för Matrice 4",
+            "text": "Kompakt släpp för DJI Matrice 4."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "TH6",
+            "text": "Precisionssläpp för FlyCart 100 och AGRAS T100 med laseravståndsmätning för meterprecis avlämning."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "FS32 och FS35",
+            "text": "Logistiknyttolaster för leveranser med DJI FlyCart-serien."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Leverans av nödutrustning och livlinor"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Materialtransport till svårtillgängliga platser"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Logistik i glesbygd och skärgård"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Precisionsavlämning på fasta punkter"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "CZI",
+        "breadcrumb_link": "/pages/czi",
+        "eyebrow": "CZI TH- och FS-serien",
+        "title": "CZI lastsläpp och logistiknyttolaster",
+        "text": "CZI:s lastsläpp låter drönaren leverera utrustning på exakt plats. TH-serien är kroksläpp för Matrice och FlyCart, FS-serien är logistiknyttolaster för leveransuppdrag.",
+        "solutions_heading": "Modeller",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vad ska drönaren leverera?",
+        "text": "Berätta om last, vikt och plattform så väljer vi rätt släpp.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

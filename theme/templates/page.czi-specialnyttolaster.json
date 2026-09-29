@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "DH100",
+            "text": "Multifunktionellt högtrycksvattensystem för medelstora och stora multirotordrönare, avsett för bland annat skogsbrandbekämpning."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "FT10 V2",
+            "text": "Drönarmonterad eldkastare för precis röjning av hinder och markvård."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "ES638",
+            "text": "Elektrisk utlösare för M400/M350/M300 med 2, 6 eller 8 skott i en last för 38 mm/64 mm ammunition. Snabbmontering."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Skogs- och markbrandbekämpning"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Röjning av hinder på svåråtkomlig mark"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Höghöjdsarbete utan personal i fara"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Myndighetsuppdrag med särskilda krav"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "CZI",
+        "breadcrumb_link": "/pages/czi",
+        "eyebrow": "CZI specialnyttolaster",
+        "title": "CZI specialnyttolaster — vatten, eld och lastutlösning",
+        "text": "För uppdrag som kräver mer än belysning och ljud: DH100 vattensystem för brandbekämpning, FT10 V2 för hinderröjning och ES638 för elektrisk utlösning. Alla är avsedda för professionell användning.",
+        "solutions_heading": "Modeller",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Särskilda krav på uppdraget?",
+        "text": "Dessa nyttolaster kan omfattas av tillstånds- och exportregler. Kontakta oss innan beställning så går vi igenom vad som gäller.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}
