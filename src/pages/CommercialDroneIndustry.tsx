@@ -11,7 +11,8 @@ import EnterpriseNav from "@/components/EnterpriseNav";
 import EnterpriseFooter from "@/components/EnterpriseFooter";
 import { getIndustryBySlug, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { getDroneProductPathByName } from "@/data/enterpriseDroneProducts";
-import { getPackagesForIndustry, PACKAGE_LEVELS } from "@/data/enterprisePackages";
+import { PACKAGE_LEVELS } from "@/data/enterprisePackages";
+import { getSeriesForIndustry, getPackagesForSeries } from "@/data/productSeries";
 import { droneUrl } from "@/lib/publicSite";
 
 export default function CommercialDroneIndustry() {
@@ -205,25 +206,33 @@ export default function CommercialDroneIndustry() {
           droneNames={industry.recommendedDrones.map(d => d.name)}
           heading={`Tillbehör för ${industry.title.toLowerCase()}`}
         />
-        {/* Färdiga paket för branschen */}
-        {getPackagesForIndustry(industry.slug).length > 0 && (
+        {/* Produktserier med färdiga paket för branschen */}
+        {getSeriesForIndustry(industry.slug).length > 0 && (
           <section className="py-16 md:py-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">Färdiga paket för {industry.title.toLowerCase()}</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Produktserier för {industry.title.toLowerCase()}</h2>
               <p className="text-white/50 mb-10 max-w-2xl">
-                Drönare, payload, ström, transport och mjukvara i en leverans — i tre nivåer.
+                Drönare, payload, ström, transport och mjukvara i en leverans — grupperat efter ändamål.
               </p>
-              <div className="grid md:grid-cols-3 gap-6">
-                {getPackagesForIndustry(industry.slug).map((pkg) => (
-                  <Link key={pkg.slug} to={`/kommersiella-dronare/paket/${pkg.slug}`}>
-                    <div className="p-6 rounded-2xl bg-[#111] border border-white/10 hover:border-orange-500/30 transition-colors group h-full">
-                      <div className="text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-2">
-                        {PACKAGE_LEVELS[pkg.level].label}
-                      </div>
-                      <h3 className="text-lg font-bold mb-2 group-hover:text-orange-400 transition-colors">{pkg.name}</h3>
-                      <p className="text-sm text-white/50">{pkg.description}</p>
+              <div className="space-y-14">
+                {getSeriesForIndustry(industry.slug).map((series) => (
+                  <div key={series.slug}>
+                    <h3 className="text-lg font-semibold text-orange-400 mb-1">{series.name}</h3>
+                    <p className="text-sm text-white/50 mb-6 max-w-2xl">{series.desc}</p>
+                    <div className="grid md:grid-cols-3 gap-6">
+                      {getPackagesForSeries(series).map((pkg) => (
+                        <Link key={pkg.slug} to={`/kommersiella-dronare/paket/${pkg.slug}`}>
+                          <div className="p-6 rounded-2xl bg-[#111] border border-white/10 hover:border-orange-500/30 transition-colors group h-full">
+                            <div className="text-[10px] uppercase tracking-widest text-orange-400 font-semibold mb-2">
+                              {PACKAGE_LEVELS[pkg.level].label}
+                            </div>
+                            <h3 className="text-lg font-bold mb-2 group-hover:text-orange-400 transition-colors">{pkg.name}</h3>
+                            <p className="text-sm text-white/50">{pkg.description}</p>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>

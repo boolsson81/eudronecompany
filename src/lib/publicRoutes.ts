@@ -5,6 +5,7 @@ import { INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
 import { ENTERPRISE_CAMERA_PRODUCTS } from "@/data/enterpriseCameraProducts";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { ENTERPRISE_PACKAGES } from "@/data/enterprisePackages";
+import { getAccessoriesForDrones } from "@/data/droneAccessories";
 
 /**
  * Varje publik sökväg i drönarfrontenden, härledd ur samma datamoduler som
@@ -27,6 +28,9 @@ export function getPublicRoutes(): string[] {
 
     `${base}/produkter`,
     ...ENTERPRISE_DRONE_PRODUCTS.map((p) => `${base}/produkter/${p.slug}`),
+    ...ENTERPRISE_DRONE_PRODUCTS.filter((p) => getAccessoriesForDrones([p.name]).length > 0).map(
+      (p) => `${base}/produkter/${p.slug}/tillbehor`,
+    ),
     `${base}/dji-enterprise`,
 
     `${base}/paket`,
