@@ -45,6 +45,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
 
   const navItems: NavItem[] = [
     {
+      key: "enterprise-solutions",
+      label: "Enterprise-lösningar",
+      href: "/kommersiella-dronare/enterprise-losningar",
+    },
+    {
       key: "industries",
       label: "Användningsområden",
       children: INDUSTRY_DATA.map((ind) => ({

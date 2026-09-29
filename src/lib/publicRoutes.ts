@@ -24,6 +24,7 @@ export function getPublicRoutes(): string[] {
     base,
     `${base}/kontakt`,
     `${base}/specialtillverkning`,
+    `${base}/enterprise-losningar`,
 
     `${base}/produkter`,
     ...ENTERPRISE_DRONE_PRODUCTS.map((p) => `${base}/produkter/${p.slug}`),
