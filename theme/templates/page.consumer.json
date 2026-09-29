@@ -94,6 +94,15 @@
             "link": "/pages/support"
           }
         },
+        "feature_4": {
+          "type": "feature",
+          "settings": {
+            "title": "Kom igång med drönare",
+            "text": "Guider, tips och färdiga paket för dig som vill börja flyga.",
+            "link_label": "Kom igång",
+            "link": "/pages/kom-igang"
+          }
+        },
         "heading_benefits": {
           "type": "heading",
           "settings": {
@@ -142,6 +151,7 @@
         "feature_1",
         "feature_2",
         "feature_3",
+        "feature_4",
         "heading_benefits",
         "benefit_1",
         "benefit_2",
