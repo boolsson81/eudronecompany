@@ -186,11 +186,88 @@
         "padding_top": 36,
         "padding_bottom": 48
       }
+    },
+    "range": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_1": {
+          "type": "column",
+          "settings": {
+            "title": "Sökljus",
+            "text": "<p>GL-serien, SL60 och IR-belysning för Mavic 3E, M30, M300 och M350.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-sokljus"
+          }
+        },
+        "column_2": {
+          "type": "column",
+          "settings": {
+            "title": "Sökljus och högtalare",
+            "text": "<p>LP-serien med sökljus och högtalare samt MP-serien för utrop.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-sokljus-hogtalare"
+          }
+        },
+        "column_3": {
+          "type": "column",
+          "settings": {
+            "title": "Matrix Light och tjudrat",
+            "text": "<p>ML200 Matrix Light och tjudrade kraftsystem för lång belysningstid.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-matrix-tether"
+          }
+        },
+        "column_4": {
+          "type": "column",
+          "settings": {
+            "title": "Lastsläpp",
+            "text": "<p>TH4 V2, TH6 och FS-serien för leverans och nödutrustning.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-lastslapp"
+          }
+        },
+        "column_5": {
+          "type": "column",
+          "settings": {
+            "title": "Nattkameror",
+            "text": "<p>DT1K och C30N nattkameror för Matrice 300/350 RTK.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-kameror"
+          }
+        },
+        "column_6": {
+          "type": "column",
+          "settings": {
+            "title": "Specialnyttolaster",
+            "text": "<p>DH100 vattensystem, FT10 V2 och ES638.</p>",
+            "link_label": "Läs mer",
+            "link": "/pages/czi-specialnyttolaster"
+          }
+        }
+      },
+      "block_order": [
+        "column_1",
+        "column_2",
+        "column_3",
+        "column_4",
+        "column_5",
+        "column_6"
+      ],
+      "settings": {
+        "title": "Sortiment",
+        "heading_size": "h2",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1"
+      }
     }
   },
   "order": [
     "hero",
     "trust_bar",
+    "range",
     "benefits",
     "faq",
     "cta"
