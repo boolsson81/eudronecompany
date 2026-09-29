@@ -242,7 +242,7 @@
 
 /* Section headings */
 .edp-enterprise__subhead {
-  margin: 0 0 2rem;
+  margin: 0 0 3.2rem;
   text-align: center;
 }
 
@@ -727,7 +727,7 @@
 .edp-enterprise__benefit-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: 1.6rem;
   margin: 0 0 3.2rem;
   padding: 0;
   list-style: none;
@@ -736,6 +736,7 @@
 @media screen and (min-width: 750px) {
   .edp-enterprise__benefit-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem 2rem;
   }
 }
 

@@ -79,7 +79,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-1",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 36,
         "padding_bottom": 24
       }
@@ -117,7 +117,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-2",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -144,7 +144,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-1",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
@@ -182,7 +182,7 @@
         "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "scheme-2",
-        "full_width": false,
+        "full_width": true,
         "padding_top": 24,
         "padding_bottom": 24
       }
