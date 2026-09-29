@@ -77,9 +77,10 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
     },
     {
       key: "cameras",
-      label: "Kameror",
+      label: "Payloads",
       children: [
-        { label: "Alla kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
+        { label: "Alla payloads", href: "/kommersiella-dronare/payloads", icon: Cpu },
+        { label: "Kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
         { label: "Jämför kameror", href: "/kommersiella-dronare/jamfor-kameror" },
         { label: "Tillbehör", href: "/kommersiella-dronare/dji-enterprise" },
       ],

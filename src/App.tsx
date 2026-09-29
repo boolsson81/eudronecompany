@@ -21,6 +21,7 @@ const EnterprisePackages = lazy(() => import("./pages/EnterprisePackages"));
 const EnterprisePackage = lazy(() => import("./pages/EnterprisePackage"));
 const CommercialDroneCameras = lazy(() => import("./pages/CommercialDroneCameras"));
 const CommercialDroneCamera = lazy(() => import("./pages/CommercialDroneCamera"));
+const CommercialDronePayloads = lazy(() => import("./pages/CommercialDronePayloads"));
 const CommercialDroneTools = lazy(() => import("./pages/CommercialDroneTools"));
 const CommercialDroneIndustry = lazy(() => import("./pages/CommercialDroneIndustry"));
 const CommercialDroneSolution = lazy(() => import("./pages/CommercialDroneSolution"));
@@ -71,6 +72,7 @@ export default function App() {
             <Route path="/kommersiella-dronare/paket/:packageSlug" element={<EnterprisePackage />} />
             <Route path="/kommersiella-dronare/kameror" element={<CommercialDroneCameras />} />
             <Route path="/kommersiella-dronare/kameror/:cameraSlug" element={<CommercialDroneCamera />} />
+            <Route path="/kommersiella-dronare/payloads" element={<CommercialDronePayloads />} />
             <Route path="/kommersiella-dronare/verktyg" element={<CommercialDroneTools />} />
             <Route path="/kommersiella-dronare/jamforelser" element={<DroneComparisons />} />
             <Route path="/kommersiella-dronare/jamforelser/:comparisonSlug" element={<DroneComparisonArticle />} />

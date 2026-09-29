@@ -128,7 +128,7 @@ export default function CommercialDronesProducts() {
               );
             })}
 
-            <div className="grid md:grid-cols-2 gap-6 mt-4">
+            <div className="grid md:grid-cols-3 gap-6 mt-4">
               <div className="p-8 rounded-2xl bg-[#111] border border-white/10">
                 <Package className="h-6 w-6 text-orange-500 mb-4" />
                 <h2 className="text-xl font-bold mb-3">Färdiga paket</h2>
@@ -151,6 +151,19 @@ export default function CommercialDronesProducts() {
                 <Link to="/kommersiella-dronare/kameror">
                   <Button variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
                     Se alla kameror <ArrowRight className="h-4 w-4 ml-2" />
+                  </Button>
+                </Link>
+              </div>
+
+              <div className="p-8 rounded-2xl bg-[#111] border border-white/10">
+                <Package className="h-6 w-6 text-orange-500 mb-4" />
+                <h2 className="text-xl font-bold mb-3">Alla payloads</h2>
+                <p className="text-white/50 mb-6">
+                  Kameror, sprutning & spridning, belysning & ljud, RTK-positionering och skräddarsydda tvätt-/spolsystem.
+                </p>
+                <Link to="/kommersiella-dronare/payloads">
+                  <Button variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/5">
+                    Se alla payloads <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
                 </Link>
               </div>
