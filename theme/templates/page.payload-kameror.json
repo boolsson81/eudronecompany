@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Termiska nattkameror",
+            "text": "Långdistansdetektering av värme, för spaning och kartläggning av större områden."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Nattkameror",
+            "text": "Kameror med bra ljuskänslighet för sök och övervakning i mörker."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Zoomkameror",
+            "text": "Optisk zoom för att identifiera mål på avstånd utan att närma sig."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sök och räddning i mörker"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Gränsövervakning och skydd"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Brandspaning och värmeläckage"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kartläggning av stora områden"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Kameror",
+        "title": "Nattkameror och termiska kameror för drönare",
+        "text": "Nattkameror och termiska kameror ger lång räckvidd för målsökning och kartläggning av större områden på enterprise-plattformar.",
+        "solutions_heading": "Typer",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Behöver ni en nattkamera?",
+        "text": "Vi går igenom uppdraget och jämför kameraalternativ mot er plattform. Kameror offereras per uppdrag.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

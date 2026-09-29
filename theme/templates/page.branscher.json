@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "hero": {
+      "type": "enterprise-hero",
+      "settings": {
+        "eyebrow": "Branscher",
+        "title": "Drönarlösningar för din bransch",
+        "text": "Här ser du alla branscher vi arbetar med. Välj din för att se lösningar, plattformar och nyttolaster anpassade efter era behov.",
+        "button_label_1": "Begär offert",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Boka rådgivning",
+        "button_link_2": "/pages/contact-quote",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "industries": {
+      "type": "enterprise-industries",
+      "blocks": {
+        "industry_1": {
+          "type": "industry",
+          "settings": {
+            "icon": "building",
+            "title": "Infrastruktur & Bygg",
+            "text": "Övervakning, dokumentation och besiktning av byggarbetsplatser och infrastruktur.",
+            "link_label": "Läs mer",
+            "link": "/pages/bygg-anlaggning"
+          }
+        },
+        "industry_2": {
+          "type": "industry",
+          "settings": {
+            "icon": "lightning",
+            "title": "Energi & Försörjning",
+            "text": "Inspektion av kraftledningar, vindkraft och anläggningar.",
+            "link_label": "Läs mer",
+            "link": "/pages/energi-infrastruktur"
+          }
+        },
+        "industry_3": {
+          "type": "industry",
+          "settings": {
+            "icon": "compass",
+            "title": "Industri & Tillverkning",
+            "text": "Inspektion av anläggningar, processer och områden där drönare ersätter risktagande manuellt arbete.",
+            "link_label": ""
+          }
+        },
+        "industry_4": {
+          "type": "industry",
+          "settings": {
+            "icon": "leaf",
+            "title": "Jord- & Skogsbruk",
+            "text": "Grödansalys, precisionsspridning, skogsinventering och fältövervakning.",
+            "link_label": "Läs mer",
+            "link": "/pages/jordbruk"
+          }
+        },
+        "industry_5": {
+          "type": "industry",
+          "settings": {
+            "icon": "shield-check",
+            "title": "Samhällsskydd & Säkerhet",
+            "text": "Sök- och räddningsinsatser, lägesbild och säkerhetsövervakning.",
+            "link_label": "Läs mer",
+            "link": "/pages/raddningstjanst"
+          }
+        },
+        "industry_6": {
+          "type": "industry",
+          "settings": {
+            "icon": "truck",
+            "title": "Logistik & Transport",
+            "text": "Hamnar, terminaler, lager och godsflöden med drönare.",
+            "link_label": "Läs mer",
+            "link": "/pages/hamnar-logistik"
+          }
+        },
+        "industry_7": {
+          "type": "industry",
+          "settings": {
+            "icon": "drop",
+            "title": "Maritim & Offshore",
+            "text": "Inspektion av fartyg, kajer och offshoreanläggningar.",
+            "link_label": ""
+          }
+        },
+        "industry_8": {
+          "type": "industry",
+          "settings": {
+            "icon": "radar",
+            "title": "Gruvor & Naturresurser",
+            "text": "Volymmätning, kartläggning och säkerhet i gruvor och täkter.",
+            "link_label": "Läs mer",
+            "link": "/pages/gruvindustri-bergtakt"
+          }
+        },
+        "industry_9": {
+          "type": "industry",
+          "settings": {
+            "icon": "compass",
+            "title": "Miljö & Forskning",
+            "text": "Kartläggning, miljöövervakning och datainsamling för forskning.",
+            "link_label": "Läs mer",
+            "link": "/pages/gis-kartlaggning"
+          }
+        },
+        "industry_10": {
+          "type": "industry",
+          "settings": {
+            "icon": "camera",
+            "title": "Media & Professionella tjänster",
+            "text": "Foto, film och specialtjänster med professionella nyttolaster.",
+            "link_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "industry_1",
+        "industry_2",
+        "industry_3",
+        "industry_4",
+        "industry_5",
+        "industry_6",
+        "industry_7",
+        "industry_8",
+        "industry_9",
+        "industry_10"
+      ],
+      "settings": {
+        "heading": "Alla branscher",
+        "text": "Effektivisera arbetsflöden med drönarteknik anpassad för din sektor.",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "industries",
+    "faq"
+  ]
+}

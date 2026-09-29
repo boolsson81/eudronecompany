@@ -1,14 +1,21 @@
-/** Shared CSS for EDP jämförer blog articles and comparison tables */
+/**
+ * Shared CSS for EDP jämförer blog articles and comparison tables.
+ *
+ * Colors resolve against the Shopify section's color scheme (--color-background,
+ * --color-foreground, --color-link, --color-button/-text) instead of fixed hex
+ * values, so a dark color scheme picked in the theme editor actually turns the
+ * whole article — table, verdict box, FAQ, CTA — black, not just the page shell.
+ */
 export const EDP_COMPARISON_CSS = `
 .edp-comparison-page {
-  --edp-accent: #0066cc;
-  --edp-accent-hover: #0052a3;
-  --edp-text: #1a1a1a;
-  --edp-muted: #5c5c5c;
-  --edp-border: #e5e7eb;
-  --edp-bg: #f8fafc;
+  --edp-accent: rgb(var(--color-link));
+  --edp-accent-hover: rgba(var(--color-link), 0.8);
+  --edp-text: rgb(var(--color-foreground));
+  --edp-muted: rgba(var(--color-foreground), 0.75);
+  --edp-border: rgba(var(--color-foreground), 0.15);
+  --edp-bg: rgba(var(--color-foreground), 0.05);
   --edp-radius: 12px;
-  --edp-highlight: rgba(0, 102, 204, 0.06);
+  --edp-highlight: rgba(var(--color-foreground), 0.08);
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 0 2rem;
@@ -44,7 +51,7 @@ export const EDP_COMPARISON_CSS = `
   margin: 1.5rem 0 2rem;
   border: 1px solid var(--edp-border);
   border-radius: var(--edp-radius);
-  background: #fff;
+  background: var(--edp-bg);
 }
 .edp-comparison__table {
   width: 100%;
@@ -60,7 +67,7 @@ export const EDP_COMPARISON_CSS = `
   border-bottom: 1px solid var(--edp-border);
 }
 .edp-comparison__table thead th {
-  background: var(--edp-bg);
+  background: rgba(var(--color-foreground), 0.08);
   font-weight: 600;
   color: var(--edp-text);
   font-size: 0.85rem;
@@ -69,14 +76,13 @@ export const EDP_COMPARISON_CSS = `
   font-weight: 600;
   color: var(--edp-muted);
   width: 28%;
-  background: #fff;
 }
 .edp-comparison__table tbody td { color: var(--edp-text); }
 .edp-comparison__table tr:last-child th,
 .edp-comparison__table tr:last-child td { border-bottom: 0; }
 .edp-comparison__row--diff { background: var(--edp-highlight); }
 .edp-comparison__row--diff td { font-weight: 500; }
-.edp-comparison__dash { color: #b0b0b0; }
+.edp-comparison__dash { color: rgba(var(--color-foreground), 0.35); }
 .edp-comparison__verdict {
   padding: 1.5rem;
   background: var(--edp-bg);
@@ -90,7 +96,7 @@ export const EDP_COMPARISON_CSS = `
   border-radius: var(--edp-radius);
   margin-bottom: 0.5rem;
   padding: 0 1rem;
-  background: #fff;
+  background: var(--edp-bg);
 }
 .edp-comparison__faq-item summary {
   cursor: pointer;
@@ -122,10 +128,10 @@ export const EDP_COMPARISON_CSS = `
   text-decoration: none;
   font-size: 0.95rem;
 }
-.edp-comparison__cta-primary { background: var(--edp-accent); color: #fff; }
-.edp-comparison__cta-primary:hover { background: var(--edp-accent-hover); color: #fff; }
+.edp-comparison__cta-primary { background: rgb(var(--color-button)); color: rgb(var(--color-button-text)); }
+.edp-comparison__cta-primary:hover { background: rgba(var(--color-button), 0.85); color: rgb(var(--color-button-text)); }
 .edp-comparison__cta-secondary {
-  background: #fff;
+  background: transparent;
   color: var(--edp-text);
   border: 1px solid var(--edp-border);
 }
@@ -145,7 +151,7 @@ export const EDP_COMPARISON_CSS = `
   font-weight: 600;
   color: var(--edp-accent);
   text-decoration: none;
-  background: #fff;
+  background: transparent;
 }
 .edp-comparison__product-link:hover {
   border-color: var(--edp-accent);
@@ -156,12 +162,12 @@ export const EDP_COMPARISON_CSS = `
 /** Blog listing page styles (Shopify section) */
 export const EDP_COMPARISON_BLOG_CSS = `
 .edp-jamforer-blog {
-  --edp-accent: #0066cc;
-  --edp-accent-hover: #0052a3;
-  --edp-text: #1a1a1a;
-  --edp-muted: #5c5c5c;
-  --edp-border: #e5e7eb;
-  --edp-bg: #f8fafc;
+  --edp-accent: rgb(var(--color-link));
+  --edp-accent-hover: rgba(var(--color-link), 0.8);
+  --edp-text: rgb(var(--color-foreground));
+  --edp-muted: rgba(var(--color-foreground), 0.75);
+  --edp-border: rgba(var(--color-foreground), 0.15);
+  --edp-bg: rgba(var(--color-foreground), 0.05);
   --edp-radius: 12px;
 }
 .edp-jamforer-blog__header { margin-bottom: 2rem; }
@@ -196,7 +202,7 @@ export const EDP_COMPARISON_BLOG_CSS = `
   flex-direction: column;
   border: 1px solid var(--edp-border);
   border-radius: var(--edp-radius);
-  background: #fff;
+  background: var(--edp-bg);
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -204,7 +210,7 @@ export const EDP_COMPARISON_BLOG_CSS = `
 }
 .edp-jamforer-blog__card:hover {
   border-color: var(--edp-accent);
-  box-shadow: 0 4px 16px rgba(0, 102, 204, 0.1);
+  box-shadow: 0 4px 16px rgba(var(--color-foreground), 0.15);
 }
 .edp-jamforer-blog__card-image {
   aspect-ratio: 16 / 9;

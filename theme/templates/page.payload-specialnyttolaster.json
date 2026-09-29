@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Vattensystem",
+            "text": "Högtrycksvattensystem för medelstora och stora multirotordrönare, avsett för bland annat skogsbrandbekämpning."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Röjningsverktyg",
+            "text": "Drönarmonterade verktyg för precis röjning av hinder och markvård."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Elektriska utlösare",
+            "text": "Utlösare för flera laster i samma nyttolast, med snabbmontering på plattformen."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Skogs- och markbrandbekämpning"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Röjning av hinder på svåråtkomlig mark"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Höghöjdsarbete utan personal i fara"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Myndighetsuppdrag med särskilda krav"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Specialnyttolaster",
+        "title": "Specialnyttolaster — vatten, eld och lastutlösning",
+        "text": "För uppdrag som kräver mer än belysning och ljud: vattensystem för brandbekämpning, verktyg för hinderröjning och elektriska utlösare. Alla är avsedda för professionell användning.",
+        "solutions_heading": "Typer",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Särskilda krav på uppdraget?",
+        "text": "Dessa nyttolaster kan omfattas av tillstånds- och exportregler. Kontakta oss innan beställning så går vi igenom vad som gäller.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

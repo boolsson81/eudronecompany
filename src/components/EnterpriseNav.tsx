@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Radio, ChevronDown, Menu, X, Camera, Cpu, Boxes } from "lucide-react";
+import { Radio, ChevronDown, Menu, X, Camera, Cpu } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { INDUSTRY_DATA } from "@/data/commercialDroneIndustries";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
@@ -45,6 +45,11 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
 
   const navItems: NavItem[] = [
     {
+      key: "enterprise-solutions",
+      label: "Enterprise-lösningar",
+      href: "/kommersiella-dronare/enterprise-losningar",
+    },
+    {
       key: "industries",
       label: "Användningsområden",
       children: INDUSTRY_DATA.map((ind) => ({
@@ -71,14 +76,24 @@ export default function EnterpriseNav({ onCtaClick }: EnterpriseNavProps) {
       href: "/kommersiella-dronare/paket",
     },
     {
+      key: "industry-solutions",
+      label: "Branschlösningar",
+      href: "/kommersiella-dronare/branschlosningar",
+    },
+    {
       key: "cameras",
-      label: "Kameror",
+      label: "Payloads",
       children: [
-        { label: "Alla kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
+        { label: "Alla payloads", href: "/kommersiella-dronare/payloads", icon: Cpu },
+        { label: "Kameror & sensorer", href: "/kommersiella-dronare/kameror", icon: Camera },
         { label: "Jämför kameror", href: "/kommersiella-dronare/jamfor-kameror" },
-        { label: "Payloads & sensorer", href: "/kommersiella-dronare/payloads-sensorer", icon: Boxes },
         { label: "Tillbehör", href: "/kommersiella-dronare/dji-enterprise" },
       ],
+    },
+    {
+      key: "tools",
+      label: "Verktyg",
+      href: "/kommersiella-dronare/verktyg",
     },
     {
       key: "comparisons",

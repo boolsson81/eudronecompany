@@ -1,0 +1,54 @@
+.collection-finder__wrap {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.collection-finder__heading {
+  margin: 0 0 1rem;
+}
+
+.collection-finder__intro {
+  max-width: 60rem;
+  margin: 0 auto 2rem;
+}
+
+.collection-finder__root {
+  max-width: 60rem;
+  margin: 0 auto;
+  min-height: 8rem;
+}
+
+.collection-finder__progress {
+  font-size: 1.2rem;
+  opacity: 0.65;
+  margin-bottom: 0.5rem;
+}
+
+.collection-finder__question {
+  margin: 0 0 2rem;
+}
+
+.collection-finder__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.collection-finder__option[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.collection-finder__back {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.collection-finder__empty {
+  opacity: 0.6;
+}
+
+[data-finder-root][aria-busy='true'] {
+  opacity: 0.6;
+}

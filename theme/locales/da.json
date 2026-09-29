@@ -55,6 +55,9 @@
       "next_slide": "Skub til højre",
       "previous_slide": "Skub til venstre",
       "name": "Diasshow"
+    },
+    "breadcrumbs": {
+      "home": "Forside"
     }
   },
   "newsletter": {
@@ -179,7 +182,14 @@
       "product_variants": "Produktvarianter",
       "taxes_included": "Inklusive skatter.",
       "duties_included": "Inklusive told.",
-      "duties_and_taxes_included": "Inklusive told og skatter."
+      "duties_and_taxes_included": "Inklusive told og skatter.",
+      "compatibility_fits_html": "Passer til {{ model }}",
+      "compatibility_heading": "Kompatibilitet",
+      "compatibility_label": "Passer til: ",
+      "compatibility_unsure": "Usikker på om den passer?",
+      "compatible_accessories_heading": "Kompatibelt tilbehør",
+      "compatible_accessories_heading_html": "Kompatibelt tilbehør til {{ model }}",
+      "series_label": "Serie: "
     },
     "modal": {
       "label": "Mediegalleri"
@@ -213,7 +223,45 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} filtre er valgt)",
       "show_more": "Vis mere",
       "show_less": "Vis mindre",
-      "filter_and_operator_subtitle": "Match alle"
+      "filter_and_operator_subtitle": "Match alle",
+      "fetch_error": "Filtrene kunne ikke opdateres lige nu. Prøv igen.",
+      "search_filter_no_matches": "Ingen matchende værdier.",
+      "search_filter_placeholder": "Søg {{ label }}…",
+      "show_products_count": {
+        "one": "Vis {{ count }} produkt",
+        "other": "Vis {{ count }} produkter"
+      }
+    },
+    "drone_finder": {
+      "active_heading_html": "Tilbehør til {{ model }}",
+      "change_drone": "Skift drone",
+      "clear_filter": "Ryd filter",
+      "no_results": "Der blev ikke fundet kompatible produkter til denne model endnu.",
+      "result_count": {
+        "one": "{{ count }} kompatibelt produkt",
+        "other": "{{ count }} kompatible produkter"
+      },
+      "search_placeholder": "Søg efter dronemodel...",
+      "select_label": "Vælg din drone",
+      "select_placeholder": "Vælg din drone"
+    },
+    "package": {
+      "addons_heading": "Anbefalet tilbehør",
+      "addons_hint": "Vælg det, du vil tilføje – tilvalgene lægges i kurven sammen med pakken.",
+      "addons_selected": {
+        "one": "1 tilvalg valgt · +{{ amount }}",
+        "other": "{{ count }} tilvalg valgt · +{{ amount }}"
+      },
+      "backorder": "Kan bestilles",
+      "contents_heading": "Denne pakke indeholder",
+      "in_stock": "På lager",
+      "in_stock_count": "{{ quantity }} på lager",
+      "package_price_label": "Pakkepris",
+      "savings_label": "Du sparer {{ amount }} med pakken",
+      "sold_out": "Udsolgt",
+      "total_with_addons": "Total med tilvalg: {{ amount }}",
+      "value_label": "Værdi hvis købt separat",
+      "view_product": "Se produkt"
     }
   },
   "templates": {
@@ -305,10 +353,29 @@
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Inklusive told. Skatter, rabatter og <a href=\"{{ link }}\">levering</a> beregnes ved betaling.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Inklusive told. Skatter, rabatter og levering beregnes ved betaling.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Skatter, rabatter og <a href=\"{{ link }}\">levering</a> beregnes ved betaling.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Skatter, rabatter og levering beregnes ved betaling."
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Skatter, rabatter og levering beregnes ved betaling.",
+      "compatibility_warning": {
+        "fits": "Passer til",
+        "title": "Din kurv indeholder dele til forskellige dronemodeller"
+      },
+      "complementary_products": {
+        "heading": "Fuldend din bestilling"
+      },
+      "discount_code": {
+        "apply": "Brug kode",
+        "label": "Har du en rabatkode?",
+        "placeholder": "Indtast rabatkode"
+      },
+      "free_shipping": {
+        "reached": "Du har fri fragt! 🎉",
+        "remaining_html": "Køb for {{ amount }} mere og få fri fragt!"
+      },
+      "low_stock_html": "Kun {{ count }} tilbage på lager",
+      "secure_checkout": "Sikker betaling"
     },
     "footer": {
-      "payment": "Betalingsmetoder"
+      "payment": "Betalingsmetoder",
+      "copyright_powered_by": "Drevet af EU Drone Company"
     },
     "featured_blog": {
       "view_all": "Se alle",
@@ -373,6 +440,43 @@
       "min_error": "Denne vare har en minimumsgrænse på {{ min }}",
       "max_error": "Denne vare har en maksimumgrænse på {{ max }}",
       "step_error": "Du kan kun tilføje denne vare i intervaller på {{ step }}"
+    },
+    "enterprise-quote-form": {
+      "company": "Virksomhed",
+      "consent": "Jeg accepterer, at EU Drone Company behandler mine oplysninger for at besvare min henvendelse.",
+      "consent_value": "Accepteret",
+      "email": "E-mailadresse",
+      "error_heading": "Ret venligst følgende:",
+      "industry": "Branche",
+      "industry_agriculture": "Landbrug",
+      "industry_construction": "Bygge & Anlæg",
+      "industry_energy": "Energi & Infrastruktur",
+      "industry_forestry": "Skovbrug",
+      "industry_gis": "Kortlægning & GIS",
+      "industry_other": "Andet",
+      "industry_rescue": "Redningstjeneste",
+      "message": "Besked",
+      "name": "Navn",
+      "need": "Behov",
+      "need_consulting": "Rådgivning / projektering",
+      "need_drone": "Enterprise-drone",
+      "need_package": "Komplet pakke",
+      "need_payload": "Kamera / nyttelast",
+      "need_support": "Service & support",
+      "need_training": "Uddannelse",
+      "phone": "Telefonnummer",
+      "request_type": "Type af henvendelse",
+      "select_placeholder": "Vælg...",
+      "submit": "Send tilbudsanmodning",
+      "success": "Tak for din henvendelse!",
+      "success_detail": "Vores enterprise-team vender tilbage inden for 24 timer.",
+      "type_advisory": "Rådgivning",
+      "type_demo": "Demo",
+      "type_info": "Information",
+      "type_quote": "Tilbud"
+    },
+    "main-list-collections": {
+      "no_groups": "Tilføj en gruppe, og vælg hvilke kollektioner der skal vises i den."
     }
   },
   "localization": {
@@ -525,6 +629,31 @@
       "send_on_label": "Send (valgfrit)",
       "expanded": "Formularen til modtager af gavekort er vist",
       "collapsed": "Formularen til modtager af gavekort er skjult"
+    }
+  },
+  "edp": {
+    "countdown": {
+      "days": "Dage",
+      "hours": "Timer",
+      "minutes": "Minutter",
+      "seconds": "Sekunder"
+    },
+    "image_comparison": {
+      "slider_label": "Sammenlign billeder, før og efter"
+    },
+    "sticky_bar": {
+      "nav_label": "Hurtigmenu"
+    },
+    "header": {
+      "announcement": "Meddelelse",
+      "call_us": "Ring til os",
+      "home": "Forside",
+      "main_nav": "Hovednavigation",
+      "quote": "Anmod om tilbud",
+      "segment_consumer": "Privat",
+      "segment_enterprise": "Erhverv",
+      "segment_label": "Butikssegment",
+      "support": "Support"
     }
   }
 }

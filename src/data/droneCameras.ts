@@ -58,7 +58,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
     category: "thermal",
     badge: "Ny",
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30t-dronarkamera",
-    edpUrl: "/collections/zenmuse-h30",
+    edpUrl: "/collections/enterprise-sensors",
     specs: [
       { label: "Typ", value: "Hybrid multi-sensor (vidvinkel + zoom + termisk + LRF)" },
       { label: "Användningsområde", value: "Inspektion, säkerhet, räddning, energi" },
@@ -81,7 +81,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
     category: "inspection",
     badge: "Ny",
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30-dronarkamera",
-    edpUrl: "/collections/zenmuse-h30",
+    edpUrl: "/collections/enterprise-sensors",
     specs: [
       { label: "Typ", value: "Hybrid multi-sensor (vidvinkel + zoom + LRF)" },
       { label: "Användningsområde", value: "Inspektion, kartläggning, säkerhet" },
@@ -148,7 +148,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
     category: "mapping",
     badge: "Populär",
     shopUrl: "https://actionking.se/search?q=zenmuse+p1",
-    edpUrl: "/collections/zenmuse-p1",
+    edpUrl: "/collections/enterprise-sensors",
     specs: [
       { label: "Typ", value: "Fullformats fotogrammetrikamera" },
       { label: "Användningsområde", value: "Fotogrammetri, 3D-modellering, GIS" },
@@ -171,7 +171,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
     category: "mapping",
     badge: "Populär",
     shopUrl: "https://actionking.se/search?q=zenmuse+l2",
-    edpUrl: "/collections/zenmuse-l2",
+    edpUrl: "/collections/enterprise-sensors",
     specs: [
       { label: "Typ", value: "LiDAR + RGB-kamera" },
       { label: "Användningsområde", value: "LiDAR-kartläggning, skog, infrastruktur" },
@@ -235,7 +235,7 @@ export const DRONE_CAMERAS: DroneCamera[] = [
     shortDesc: "Nästa generations LiDAR med 950 m räckvidd, 16 returer och dubbla 100 MP-kameror.",
     category: "mapping",
     badge: "Ny",
-    edpUrl: "/collections/zenmuse-l2",
+    edpUrl: "/collections/enterprise-sensors",
     specs: [
       { label: "Typ", value: "LiDAR + dubbla RGB-kameror" },
       { label: "Användningsområde", value: "Storskalig LiDAR-kartläggning, infrastruktur" },

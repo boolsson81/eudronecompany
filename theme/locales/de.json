@@ -55,6 +55,9 @@
       "next_slide": "Nach rechts schieben",
       "previous_slide": "Nach links schieben",
       "name": "Slider"
+    },
+    "breadcrumbs": {
+      "home": "Startseite"
     }
   },
   "newsletter": {
@@ -179,7 +182,14 @@
       "product_variants": "Produktvarianten",
       "taxes_included": "Inkl. Steuern.",
       "duties_included": "Inkl. Zollgebühren.",
-      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern."
+      "duties_and_taxes_included": "Inkl. Zollgebühren und Steuern.",
+      "compatibility_fits_html": "Passt zu {{ model }}",
+      "compatibility_heading": "Kompatibilität",
+      "compatibility_label": "Passt zu: ",
+      "compatibility_unsure": "Nicht sicher, ob es passt?",
+      "compatible_accessories_heading": "Passendes Zubehör",
+      "compatible_accessories_heading_html": "Passendes Zubehör für {{ model }}",
+      "series_label": "Serie: "
     },
     "modal": {
       "label": "Medien-Galerie"
@@ -213,7 +223,45 @@
       "filter_selected_accessibility": "{{ type }} ({{ count }} Filter ausgewählt)",
       "show_more": "Mehr anzeigen",
       "show_less": "Weniger anzeigen",
-      "filter_and_operator_subtitle": "Allen entsprechen"
+      "filter_and_operator_subtitle": "Allen entsprechen",
+      "fetch_error": "Die Filter konnten gerade nicht aktualisiert werden. Bitte versuchen Sie es erneut.",
+      "search_filter_no_matches": "Keine passenden Werte.",
+      "search_filter_placeholder": "{{ label }} durchsuchen …",
+      "show_products_count": {
+        "one": "{{ count }} Produkt anzeigen",
+        "other": "{{ count }} Produkte anzeigen"
+      }
+    },
+    "drone_finder": {
+      "active_heading_html": "Zubehör für {{ model }}",
+      "change_drone": "Drohne wechseln",
+      "clear_filter": "Filter zurücksetzen",
+      "no_results": "Für dieses Modell wurden noch keine passenden Produkte gefunden.",
+      "result_count": {
+        "one": "{{ count }} passendes Produkt",
+        "other": "{{ count }} passende Produkte"
+      },
+      "search_placeholder": "Nach Drohnenmodell suchen …",
+      "select_label": "Wählen Sie Ihre Drohne",
+      "select_placeholder": "Drohne auswählen"
+    },
+    "package": {
+      "addons_heading": "Empfohlenes Zubehör",
+      "addons_hint": "Wählen Sie aus, was Sie hinzufügen möchten – die Zusatzartikel landen zusammen mit dem Paket im Warenkorb.",
+      "addons_selected": {
+        "one": "1 Zusatzartikel ausgewählt · +{{ amount }}",
+        "other": "{{ count }} Zusatzartikel ausgewählt · +{{ amount }}"
+      },
+      "backorder": "Auf Bestellung erhältlich",
+      "contents_heading": "Dieses Paket enthält",
+      "in_stock": "Auf Lager",
+      "in_stock_count": "{{ quantity }} auf Lager",
+      "package_price_label": "Paketpreis",
+      "savings_label": "Mit dem Paket sparen Sie {{ amount }}",
+      "sold_out": "Ausverkauft",
+      "total_with_addons": "Gesamt mit Zusatzartikeln: {{ amount }}",
+      "value_label": "Wert bei separatem Kauf",
+      "view_product": "Produkt ansehen"
     }
   },
   "templates": {
@@ -305,10 +353,29 @@
       "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Inkl. Zollgebühren. Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
       "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Inkl. Zollgebühren. Steuern, Rabatte und Versand werden beim Checkout berechnet.",
       "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Steuern, Rabatte und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet.",
-      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet."
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Steuern, Rabatte und Versand werden beim Checkout berechnet.",
+      "compatibility_warning": {
+        "fits": "Passt zu",
+        "title": "Ihr Warenkorb enthält Teile für unterschiedliche Drohnenmodelle"
+      },
+      "complementary_products": {
+        "heading": "Ergänzen Sie Ihre Bestellung"
+      },
+      "discount_code": {
+        "apply": "Code einlösen",
+        "label": "Haben Sie einen Rabattcode?",
+        "placeholder": "Rabattcode eingeben"
+      },
+      "free_shipping": {
+        "reached": "Sie haben kostenlosen Versand! 🎉",
+        "remaining_html": "Geben Sie noch {{ amount }} aus für kostenlosen Versand!"
+      },
+      "low_stock_html": "Nur noch {{ count }} auf Lager",
+      "secure_checkout": "Sicherer Checkout"
     },
     "footer": {
-      "payment": "Zahlungsmethoden"
+      "payment": "Zahlungsmethoden",
+      "copyright_powered_by": "Bereitgestellt von EU Drone Company"
     },
     "featured_blog": {
       "view_all": "Alle anzeigen",
@@ -373,6 +440,43 @@
       "min_error": "Dieser Artikel hat ein Minimum von {{ min }}",
       "max_error": "Dieser Artikel hat ein Maximum von {{ max }}",
       "step_error": "Du kannst diesen Artikel nur in Abstufungen von {{ step }} hinzufügen."
+    },
+    "enterprise-quote-form": {
+      "company": "Unternehmen",
+      "consent": "Ich stimme zu, dass EU Drone Company meine Daten zur Bearbeitung meiner Anfrage verarbeiten darf.",
+      "consent_value": "Akzeptiert",
+      "email": "E-Mail-Adresse",
+      "error_heading": "Bitte korrigieren Sie Folgendes:",
+      "industry": "Branche",
+      "industry_agriculture": "Landwirtschaft",
+      "industry_construction": "Bau & Anlagenbau",
+      "industry_energy": "Energie & Infrastruktur",
+      "industry_forestry": "Forstwirtschaft",
+      "industry_gis": "Kartierung & GIS",
+      "industry_other": "Sonstiges",
+      "industry_rescue": "Rettungsdienste",
+      "message": "Nachricht",
+      "name": "Name",
+      "need": "Bedarf",
+      "need_consulting": "Beratung / Projektplanung",
+      "need_drone": "Enterprise-Drohne",
+      "need_package": "Komplettpaket",
+      "need_payload": "Kamera / Payload",
+      "need_support": "Service & Support",
+      "need_training": "Schulung",
+      "phone": "Telefonnummer",
+      "request_type": "Art der Anfrage",
+      "select_placeholder": "Bitte wählen …",
+      "submit": "Angebotsanfrage senden",
+      "success": "Vielen Dank für Ihre Anfrage!",
+      "success_detail": "Unser Enterprise-Team meldet sich innerhalb von 24 Stunden.",
+      "type_advisory": "Beratung",
+      "type_demo": "Demo",
+      "type_info": "Information",
+      "type_quote": "Angebot"
+    },
+    "main-list-collections": {
+      "no_groups": "Fügen Sie eine Gruppe hinzu und wählen Sie aus, welche Kollektionen darin angezeigt werden sollen."
     }
   },
   "localization": {
@@ -525,6 +629,31 @@
       "send_on_label": "Senden am (optional)",
       "expanded": "Formular für den Empfänger des Gutscheins erweitert",
       "collapsed": "Formular für den Empfänger des Gutscheins minimiert"
+    }
+  },
+  "edp": {
+    "countdown": {
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
+    "image_comparison": {
+      "slider_label": "Bilder vergleichen, vorher und nachher"
+    },
+    "sticky_bar": {
+      "nav_label": "Schnellmenü"
+    },
+    "header": {
+      "announcement": "Ankündigung",
+      "call_us": "Rufen Sie uns an",
+      "home": "Startseite",
+      "main_nav": "Hauptnavigation",
+      "quote": "Angebot anfordern",
+      "segment_consumer": "Privat",
+      "segment_enterprise": "Unternehmen",
+      "segment_label": "Shop-Bereich",
+      "support": "Support"
     }
   }
 }

@@ -34,8 +34,8 @@
 
 /* Trust bar */
 .edp-enterprise__trust-bar {
-  border-block: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
-  background: rgba(var(--color-foreground-rgb), 0.02);
+  border-block: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  background: rgba(var(--color-foreground), 0.02);
 }
 
 .edp-enterprise__trust-list {
@@ -144,7 +144,7 @@
   aspect-ratio: 4 / 3;
   border-radius: 0.8rem;
   overflow: hidden;
-  background: rgba(var(--color-foreground-rgb), 0.05);
+  background: rgba(var(--color-foreground), 0.05);
 }
 
 .edp-enterprise__hero-image {
@@ -159,7 +159,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: rgba(var(--color-foreground-rgb), 0.25);
+  color: rgba(var(--color-foreground), 0.25);
 }
 
 .edp-enterprise__hero-placeholder svg {
@@ -185,7 +185,7 @@
 .edp-enterprise__hero-text,
 .edp-enterprise__lead {
   margin: 0 0 2rem;
-  color: rgba(var(--color-foreground-rgb), 0.78);
+  color: rgba(var(--color-foreground), 0.78);
   font-size: 1.6rem;
   line-height: 1.6;
 }
@@ -236,13 +236,13 @@
 
 .edp-enterprise__btn--outline {
   background: transparent;
-  color: rgb(var(--color-foreground-rgb));
-  border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.2);
+  color: rgb(var(--color-foreground));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
 }
 
 /* Section headings */
 .edp-enterprise__subhead {
-  margin: 0 0 2rem;
+  margin: 0 0 3.2rem;
   text-align: center;
 }
 
@@ -253,7 +253,7 @@
 .edp-enterprise__subhead-text {
   margin: 0 auto;
   max-width: 60rem;
-  color: rgba(var(--color-foreground-rgb), 0.75);
+  color: rgba(var(--color-foreground), 0.75);
 }
 
 /* Card grids */
@@ -296,9 +296,9 @@
   flex-direction: column;
   height: 100%;
   padding: 1.6rem;
-  border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 0.8rem;
-  background: rgb(var(--color-background-rgb));
+  background: rgb(var(--color-background));
 }
 
 @media screen and (min-width: 750px) {
@@ -316,7 +316,7 @@
   margin-bottom: 1.2rem;
   border-radius: 0.4rem;
   overflow: hidden;
-  background: rgba(var(--color-foreground-rgb), 0.04);
+  background: rgba(var(--color-foreground), 0.04);
 }
 
 .edp-enterprise__card-image {
@@ -374,7 +374,7 @@
 .edp-enterprise__card-text {
   margin: 0 0 1.2rem;
   flex: 1;
-  color: rgba(var(--color-foreground-rgb), 0.78);
+  color: rgba(var(--color-foreground), 0.78);
 }
 
 .edp-enterprise__card--text-align-left .edp-enterprise__card-text {
@@ -391,6 +391,8 @@
 
 .edp-enterprise__card-link {
   display: block;
+  margin-top: auto;
+  padding-top: 1.2rem;
   font-weight: 600;
   color: rgb(var(--edp-accent));
   text-decoration: none;
@@ -424,7 +426,7 @@
 
 .edp-enterprise__series-item {
   padding: 2.4rem 0;
-  border-bottom: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.1);
 }
 
 .edp-enterprise__series-item:first-child {
@@ -440,7 +442,7 @@
   margin-bottom: 1.6rem;
   border-radius: 0.8rem;
   overflow: hidden;
-  background: rgba(var(--color-foreground-rgb), 0.04);
+  background: rgba(var(--color-foreground), 0.04);
 }
 
 .edp-enterprise__series-hero-image {
@@ -497,7 +499,7 @@
 
 .edp-enterprise__series-text {
   margin: 0 0 1rem;
-  color: rgba(var(--color-foreground-rgb), 0.78);
+  color: rgba(var(--color-foreground), 0.78);
   line-height: 1.55;
 }
 
@@ -523,9 +525,9 @@
 
   .edp-enterprise__series-item {
     padding: 2rem;
-    border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
+    border: 0.1rem solid rgba(var(--color-foreground), 0.1);
     border-radius: 0.8rem;
-    background: rgb(var(--color-background-rgb));
+    background: rgb(var(--color-background));
   }
 
   .edp-enterprise__series-item:first-child,
@@ -597,7 +599,7 @@
 
 .edp-enterprise__quote-intro-text {
   margin: 0 0 2rem;
-  color: rgba(var(--color-foreground-rgb), 0.78);
+  color: rgba(var(--color-foreground), 0.78);
   line-height: 1.6;
 }
 
@@ -611,7 +613,7 @@
 }
 
 .edp-enterprise__quote-contact a {
-  color: rgba(var(--color-foreground-rgb), 0.78);
+  color: rgba(var(--color-foreground), 0.78);
   text-decoration: none;
 }
 
@@ -621,9 +623,9 @@
 
 .edp-enterprise__quote-form-card {
   padding: 2rem;
-  border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 0.8rem;
-  background: rgb(var(--color-background-rgb));
+  background: rgb(var(--color-background));
 }
 
 @media screen and (min-width: 750px) {
@@ -680,7 +682,7 @@
 .edp-enterprise__quote-form .edp-enterprise__consent label {
   font-size: 1.2rem;
   line-height: 1.5;
-  color: rgba(var(--color-foreground-rgb), 0.75);
+  color: rgba(var(--color-foreground), 0.75);
   cursor: pointer;
 }
 
@@ -712,7 +714,7 @@
   gap: 0.4rem;
   margin-bottom: 1.6rem;
   font-size: 1.3rem;
-  color: rgba(var(--color-foreground-rgb), 0.55);
+  color: rgba(var(--color-foreground), 0.55);
   text-decoration: none;
 }
 
@@ -727,7 +729,7 @@
 .edp-enterprise__benefit-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.2rem;
+  gap: 1.6rem;
   margin: 0 0 3.2rem;
   padding: 0;
   list-style: none;
@@ -736,6 +738,7 @@
 @media screen and (min-width: 750px) {
   .edp-enterprise__benefit-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.6rem 2rem;
   }
 }
 
@@ -744,9 +747,15 @@
   align-items: flex-start;
   gap: 0.8rem;
   padding: 1.2rem 1.6rem;
-  border: 0.1rem solid rgba(var(--color-foreground-rgb), 0.1);
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 0.8rem;
-  background: rgba(var(--color-foreground-rgb), 0.02);
+  background: rgba(var(--color-foreground), 0.02);
+}
+
+/* A card with an explicit non-default theme picks up that scheme's own colors instead of the section-wide dark tint. */
+.edp-enterprise__benefit-list .edp-enterprise__benefit-item:not(.color-scheme-edp) {
+  background: rgb(var(--color-background));
+  border-color: rgba(var(--color-shadow), 0.15);
 }
 
 .edp-enterprise__benefit-check {

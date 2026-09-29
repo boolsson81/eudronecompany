@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Gimbalstyrda sökljus",
+            "text": "Riktbart ljus med egen gimbal som följer kameran eller styrs separat, i storlekar för både kompakta och stora plattformar."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Sökljus med strobe",
+            "text": "Blinkfunktion som gör drönaren synlig från marken och kan användas för att markera en plats."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Infraröda fill-in-ljus",
+            "text": "Osynlig belysning för nattkameror och spaning, där ljuset inte ska synas för blotta ögat."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Fast monterad arbetsbelysning",
+            "text": "Enklare ljus utan gimbal för belysning rakt under eller framför drönaren."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Sök och räddning i mörker"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Nattinspektion av infrastruktur"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Polis och skyddsuppdrag"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Spaning med osynligt IR-ljus"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Sökljus",
+        "title": "Sökljus och IR-belysning för drönare",
+        "text": "Gimbalstyrda sökljus förlänger uppdraget in i mörkret. Modellerna skiljer sig i ljusstyrka, strobefunktion och om ljuset är synligt eller infrarött för spaning.",
+        "solutions_heading": "Typer",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vilket sökljus passar din drönare?",
+        "text": "Berätta vilken drönarmodell ni flyger så bekräftar vi passform och rekommenderar rätt sökljus.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

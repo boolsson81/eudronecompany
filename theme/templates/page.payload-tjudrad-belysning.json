@@ -1,0 +1,111 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Matrix-belysning",
+            "text": "Belysningsset i flera effektsteg för bred ljussättning av större ytor, på fri flygning."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Tjudrade kraftsystem",
+            "text": "Marken matar drönaren med ström via lina, så flygtiden begränsas inte av batterierna."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Portabelt tjudrat hoverljus",
+            "text": "Snabbt utplacerat och hopfällbart luftburet ljus för utomhusbruk."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Tjudrade system med kamera",
+            "text": "Tjudrad plattform med zoom- och värmekamera för långvarig övervakning."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Belysning av olycks- och skadeplatser"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Långvariga nattarbeten utan batteribyte"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Byggplatser och evenemang"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Insatser vid strömavbrott och katastrofer"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Arbetsbelysning och tjudrade system",
+        "title": "Matrix-belysning och tjudrad belysning för drönare",
+        "text": "Bred arbetsbelysning från luften, och tjudrade system som matar drönaren med ström från marken så att belysningen kan stå uppe hela natten.",
+        "solutions_heading": "System",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Planerar ni långvarig belysning?",
+        "text": "Vi hjälper er välja mellan belysning på fri flygning och tjudrade system med kontinuerlig ström.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

@@ -382,7 +382,7 @@
     },
     "footer": {
       "payment": "Payment methods",
-      "copyright_powered_by": "Powered by European Drone Company"
+      "copyright_powered_by": "Powered by EU Drone Company"
     },
     "featured_blog": {
       "view_all": "View all",
@@ -453,7 +453,7 @@
       "need": "Need",
       "request_type": "Request type",
       "message": "Message",
-      "consent": "I agree that EuroDroneCompany may process my data to respond to my request.",
+      "consent": "I agree that EU Drone Company may process my data to respond to my request.",
       "consent_value": "Accepted",
       "submit": "Send quote request",
       "select_placeholder": "Select...",
@@ -642,6 +642,18 @@
       "quote": "Request a quote",
       "support": "Support",
       "call_us": "Call us"
+    },
+    "countdown": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "image_comparison": {
+      "slider_label": "Compare images, before and after"
+    },
+    "sticky_bar": {
+      "nav_label": "Quick menu"
     }
   }
 }

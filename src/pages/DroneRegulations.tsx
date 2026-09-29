@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Radio, BookOpen, Shield, GraduationCap } from "lucide-react";
+import { ArrowRight, Radio, BookOpen, Shield, GraduationCap, Users, Building2 } from "lucide-react";
 import SeoHead from "@/components/SeoHead";
 import RegulationSourceNote from "@/components/RegulationSourceNote";
 import EnterpriseFooter from "@/components/EnterpriseFooter";
@@ -56,6 +56,55 @@ export default function DroneRegulations() {
                 Komplett guide till EASA:s drönarkategorier, utbildningskrav och certifikat — anpassat per bransch och drönarmodell.
               </p>
             </motion.div>
+          </div>
+        </section>
+
+        {/* Audience picker */}
+        <section className="pb-16 md:pb-24">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link to="/kommersiella-dronare/regelverk/privatpersoner">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="p-8 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-orange-500/30 transition-colors group h-full"
+                >
+                  <div className="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-5">
+                    <Users className="h-6 w-6 text-orange-400" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-400 transition-colors">Flyger du privat?</h3>
+                  <p className="text-sm text-white/50 leading-relaxed mb-4">
+                    Registrering, drönarkort, försäkring, no-fly-zoner och GDPR — en komplett steg-för-steg-guide
+                    för hobbypiloter, med länkar till Transportstyrelsen, LFV och IMY.
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm text-orange-400 group-hover:gap-2 transition-all">
+                    Regler för privatpersoner <ArrowRight className="h-4 w-4" />
+                  </span>
+                </motion.div>
+              </Link>
+              <Link to="/kommersiella-dronare/regelverk/foretag">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.08 }}
+                  className="p-8 rounded-2xl bg-white/[0.03] border border-white/10 hover:border-orange-500/30 transition-colors group h-full"
+                >
+                  <div className="h-12 w-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-5">
+                    <Building2 className="h-6 w-6 text-orange-400" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-orange-400 transition-colors">Använder ni drönare i verksamheten?</h3>
+                  <p className="text-sm text-white/50 leading-relaxed mb-4">
+                    Registrering av bolaget, Specific-tillstånd (STS, PDRA, SORA, LUC), drifthandbok, försäkring
+                    och GDPR — allt ni behöver för att flyga lagligt i tjänst.
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm text-orange-400 group-hover:gap-2 transition-all">
+                    Regler för företag <ArrowRight className="h-4 w-4" />
+                  </span>
+                </motion.div>
+              </Link>
+            </div>
           </div>
         </section>
 

@@ -76,6 +76,9 @@
             {%- unless block.settings.text == blank -%}
               <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
             {%- endunless -%}
+            {%- unless block.settings.link == blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link }}">Se produkt &rarr;</a>
+            {%- endunless -%}
           </li>
         {%- endfor -%}
       </ul>
@@ -90,7 +93,7 @@
       {%- endunless -%}
       <ul class="edp-enterprise__benefit-list" role="list">
         {%- for block in benefit_blocks -%}
-          <li class="edp-enterprise__benefit-item" {{ block.shopify_attributes }}>
+          <li class="edp-enterprise__benefit-item color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
             <span class="edp-enterprise__benefit-check" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 6L9 17l-5-5"/>
@@ -229,6 +232,7 @@
           "default": ""
         },
         { "type": "textarea", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.solution.settings.text.label", "default": "Beskrivning av lösningen." },
+        { "type": "url", "id": "link", "label": "Produktlänk", "info": "Valfri. Visar länken \"Se produkt\" på kortet." },
         {
           "type": "select",
           "id": "text_alignment",
@@ -247,7 +251,8 @@
       "type": "benefit",
       "name": "t:sections.enterprise-industry-landing.blocks.benefit.name",
       "settings": [
-        { "type": "text", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.benefit.settings.text.label", "default": "Fördel med drönarteknik." }
+        { "type": "text", "id": "text", "label": "t:sections.enterprise-industry-landing.blocks.benefit.settings.text.label", "default": "Fördel med drönarteknik." },
+        { "type": "color_scheme", "id": "color_scheme", "label": "Färgtema", "default": "scheme-edp" }
       ]
     }
   ],

@@ -5,6 +5,8 @@ import { INDUSTRY_CONFIGS } from "@/data/droneConfigurations";
 import { ENTERPRISE_CAMERA_PRODUCTS } from "@/data/enterpriseCameraProducts";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
 import { ENTERPRISE_PACKAGES } from "@/data/enterprisePackages";
+import { getAccessoriesForDrones } from "@/data/droneAccessories";
+import { INDUSTRY_SOLUTIONS } from "@/data/industrySolutions";
 
 /**
  * Varje publik sökväg i drönarfrontenden, härledd ur samma datamoduler som
@@ -24,9 +26,13 @@ export function getPublicRoutes(): string[] {
     base,
     `${base}/kontakt`,
     `${base}/specialtillverkning`,
+    `${base}/enterprise-losningar`,
 
     `${base}/produkter`,
     ...ENTERPRISE_DRONE_PRODUCTS.map((p) => `${base}/produkter/${p.slug}`),
+    ...ENTERPRISE_DRONE_PRODUCTS.filter((p) => getAccessoriesForDrones([p.name]).length > 0).map(
+      (p) => `${base}/produkter/${p.slug}/tillbehor`,
+    ),
     `${base}/dji-enterprise`,
 
     `${base}/paket`,
@@ -35,12 +41,15 @@ export function getPublicRoutes(): string[] {
     `${base}/kameror`,
     ...ENTERPRISE_CAMERA_PRODUCTS.map((c) => `${base}/kameror/${c.slug}`),
     `${base}/jamfor-kameror`,
-    `${base}/payloads-sensorer`,
+    `${base}/payloads`,
+    `${base}/verktyg`,
 
     `${base}/jamforelser`,
     ...DRONE_COMPARISONS.map((c) => `${base}/jamforelser/${c.slug}`),
 
     `${base}/regelverk`,
+    `${base}/regelverk/privatpersoner`,
+    `${base}/regelverk/foretag`,
     ...DRONE_CATEGORIES.map((c) => `${base}/regelverk/${c.slug}`),
     ...TRAINING_REQUIREMENTS.map((t) => `${base}/utbildning/${t.slug}`),
 
@@ -50,5 +59,8 @@ export function getPublicRoutes(): string[] {
       `${base}/${industry.slug}`,
       ...industry.solutions.map((s) => `${base}/${industry.slug}/${s.slug}`),
     ]),
+
+    `${base}/branschlosningar`,
+    ...INDUSTRY_SOLUTIONS.map((i) => `${base}/branschlosningar/${i.slug}`),
   ];
 }

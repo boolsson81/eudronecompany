@@ -331,7 +331,7 @@ export default function ShopifyCloner() {
     setBusy("scan");
     const { data, error } = await supabase.functions.invoke("shopify-cloner-scan", { body: { migration_id: currentMigration.id } });
     setBusy(null);
-    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Scan failed"); return; }
+    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Scan misslyckades"); return; }
     toast.success(`Scan klar: ${Object.entries((data as any).stats || {}).map(([k, v]) => `${k}=${v}`).join(", ")}`);
     loadItemsAndLogs(currentMigration.id);
   };
@@ -344,7 +344,7 @@ export default function ShopifyCloner() {
     else body.limit = limit;
     const { data, error } = await supabase.functions.invoke("shopify-cloner-transform", { body });
     setBusy(null);
-    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Transform failed"); return; }
+    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Transformering misslyckades"); return; }
     toast.success(`Transformerade ${(data as any).ok}, fel: ${(data as any).fail}`);
     loadItemsAndLogs(currentMigration.id);
   };
@@ -377,7 +377,7 @@ export default function ShopifyCloner() {
           body: { migration_id: currentMigration.id, limit: batchSize },
         });
         if (error || (data as any)?.error) {
-          toast.error((data as any)?.error || error?.message || "Publish failed");
+          toast.error((data as any)?.error || error?.message || "Publicering misslyckades");
           break;
         }
         const r = data as any;
@@ -419,7 +419,7 @@ export default function ShopifyCloner() {
     });
     setBusy(null);
     if (error || (data as any)?.error) {
-      toast.error((data as any)?.error || error?.message || "Collection linking failed");
+      toast.error((data as any)?.error || error?.message || "Kollektionslänkning misslyckades");
       return;
     }
     const r = data as any;
@@ -479,7 +479,7 @@ export default function ShopifyCloner() {
     setBusy("publish");
     const { data, error } = await supabase.functions.invoke("shopify-cloner-publish", { body: { migration_id: currentMigration.id, remap_metafields: true, limit: 200 } });
     setBusy(null);
-    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Remap failed"); return; }
+    if (error || (data as any)?.error) { toast.error((data as any)?.error || error?.message || "Metafält-remap misslyckades"); return; }
     const r = data as any;
     toast.success(`Metafält‑remap klar: ${r.remap_items} objekt, ${r.remap_references} referenser, fel ${r.remap_failed}`);
     loadItemsAndLogs(currentMigration.id);
