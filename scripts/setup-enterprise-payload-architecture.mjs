@@ -61,6 +61,7 @@ const METAOBJECT_DEFS = [
       { key: "collection", name: "Kollektion", type: "collection_reference" },
       { key: "image", name: "Bild", type: "file_reference", validations: [{ name: "file_type_options", value: '["Image"]' }] },
       { key: "legacy_fits_value", name: "Motsvarande värde i custom.passsar_till", type: "single_line_text_field" },
+      { key: "legacy_fits_values", name: "Motsvarande värden i custom.passsar_till", type: "list.single_line_text_field", description: "Alla värden i custom.passsar_till som hör till plattformen. Ersätter legacy_fits_value (ett enda värde)." },
       { key: "description", name: "Beskrivning", type: "multi_line_text_field" },
       { key: "active", name: "Aktiv", type: "boolean" },
     ],
@@ -516,6 +517,7 @@ async function seedTaxonomy() {
       series: p.series || undefined,
       mount_interface: p.mount_interface?.length ? p.mount_interface : undefined,
       legacy_fits_value: p.legacy_fits_value || undefined,
+      legacy_fits_values: p.legacy_fits_values?.length ? p.legacy_fits_values : undefined,
       active: "true",
     });
   }

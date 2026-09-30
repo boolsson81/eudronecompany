@@ -59,7 +59,7 @@ Allvarlighet: Kritisk blockerar konfiguratorn, Hög ger fel eller svaga resultat
 | 4 | Drone Category | Finns inte. Bara `c_klass` (regelverk, 15 produkter) | Värden och ägare saknas | Hög |
 | 5 | Drone Capability | Finns inte för drönare. Payload-sidan har `sensor_type` och `technology` | Ingen gemensam förmåge-vokabulär; krav och utbud kan inte matchas | Kritisk |
 | 6 | Bransch och uppdrag | 4 oförenliga listor (`edp.industry`, taggstandarden, `mission.industry`, `mission_groups`) | Vokabulären måste slås ihop; inga produkter kopplade till uppdrag | Hög |
-| 7 | Kompatibilitetsmatris | `payload_compatibility` tom; `custom.passsar_till` täcker 1350 produkter med 78 modellvärden; `edp.compatible_uav` tom | Två system för samma sak, olika granularitet (16 grupper mot 78 modeller) | Kritisk |
+| 7 | Kompatibilitetsmatris | `payload_compatibility` tom; `custom.passsar_till` täcker 1350 produkter med 75 modellvärden (79 efter avsnitt 12); `edp.compatible_uav` tom | Två system för samma sak, olika granularitet (16 grupper mot 78 modeller) | Kritisk |
 | 8 | Datahygien | `passsar_till` har stavfel/mellanslag (`" DJI Avata O3"`, `"DJI Marvic 2S"`); `leverantor` har dubbletten "Also Sweden"/"Also Sweden AB" | Felen ärvs vid migrering | Medel |
 | 9 | Jämförbara specifikationer | 0 poster; specifika fält tomma | Jämförelsetabellen visar bara "Ej specificerat" | Hög |
 | 10 | Plattformsdata | `mount_interface` tomt för 8 av 16 plattformar; `max_payload_weight` ej verifierat ifyllt | Hårda regler (fäste, vikt) kan inte köras | Hög |
@@ -145,3 +145,290 @@ Observationer (bygger på tabellen, ej på gissningar):
 Alla nio är från tredje part: åtta från CZI (ML200, DT1K, GL10V2, GL60 Mini, GL60 Plus, LP35, MP130 V2,
 TH4 V2) och en från Wisson Robotics (Orion AP30-N1). Inga DJI-payloads är aktiva i denna produkttyp.
 Rader per övriga produkttyper är inte listade i denna bilaga.
+
+## 9. Bilaga: payloads i utkast, mjukvara och leverantörsfördelning (2026-09-30)
+
+Källa: Shopify Admin (läsning). Grupperingen är gjord på leverantörsfält och titel; inga fält har ändrats.
+
+### 9.1 Payloads i utkast (48 rader)
+
+| Leverantör (vendor-fältet) | Rader | Exempel ur titlarna |
+|---|--:|---|
+| CZI | 21 | Sökljus, högtalare/broadcast, matrix-ljus, termisk kamera (C30N), tryckvatten (DH100), airdrop/last (FS32, TH6), IR-laser (IR10) |
+| JLIDrone | 6 | Matrix-lampor, högtalare, zoom-spotlight för Matrice 400 och Matrice 4-serien/Dock 3 |
+| Wisson Robotics | 5 | Orion AP3-P1, AP3-P3, AP30-N1, AP30-P4, AP30-P4H (spruta, rengöring, manipulator) |
+| DJI | 4 | Zenmuse S1, V1, H30, H30T |
+| DJI Enterprise | 3 | AL1 sökarlampa, Matrice AS1 högtalare, Zenmuse X9 L-fäste |
+| Tundra | 4 | Modulärt payloadsystem (range finder, dropper, IR-ljus; IR-ljus finns två gånger) |
+| Solectric | 2 | DJI T25P spridar-/sprinklerpaket |
+| LKTOP | 2 | KL340, LK340 40 W söklampor |
+| JZ | 1 | T30 matrix-spotlight för Mavic 3E/3T |
+| **Summa** | **48** | |
+
+Observationer:
+
+1. DJI:s egna kärnpayloads (Zenmuse H30, H30T, S1, V1) är utkast, och deras vendor är "DJI", inte
+   "DJI Enterprise" som övriga DJI-enterprise-produkter. Samma tillverkare har alltså två vendor-värden.
+2. Wisson Orion AP30-N1 finns dels som aktiv (kopplad till DJI FC30), dels som utkast (manipulatorarm).
+   Ej verifierat om det är samma produkt.
+3. Kompatibilitet står i klartext i titlarna (M300/350, M30, M400, Mavic 3E/3T, Dock 3, FlyCart 100/Agras T100,
+   Matrice 4E/4T/4D/4TD). Det är ett möjligt underlag till kompatibilitetsmatrisen men måste verifieras mot
+   datablad före registrering.
+4. Titlarna innehåller M200/M210 och FlyCart 100/Agras T100, men `uav_platform` saknar plattformar för dessa.
+5. Titlar blandar svenska och engelska, versaler, och komma-prefix ("CZI, ML200 …").
+
+### 9.2 Mjukvara (28 rader, alla utkast)
+
+- 22 rader är CyberXHub (Solectric): licenser, förnyelser, utökningar, en testversion.
+- 6 rader är DJI FlightHub 2 (fyra via Solectric, två via DJI).
+- Flera rader är inte mjukvara utan tjänster: on-site- och remote-utbildning, custom development,
+  årligt underhåll. De hör till en egen roll (utbildning/service) i konfiguratorns steg 7.
+- Inga mjukvaruprodukter är kopplade till payload-kategorier, vilket gör att konfiguratorns mjukvarusteg
+  fortfarande är en generisk lista.
+
+### 9.3 Leverantörsfördelning i övriga enterprise-typer
+
+Räknat över de tio icke-drönartyperna (283 rader): DJI Enterprise 86, Solectric 37, CZI 34, Wisson Robotics 32.
+Tillsammans 189; resterande 94 rader fördelas på andra leverantörer som inte är uppdelade här.
+Av DJI Enterprise-raderna är 3 payloads, 24 tillbehör och 33 reservdelar (60 rader); övriga 26 ligger i
+batteri-, kamera-, propeller-, filter-, fjärrkontroll- och tillbehörstyperna.
+
+Raderna för tillbehör, reservdelar, batterier, kameror, propellrar, filter och fjärrkontroller är inte listade.
+
+## 10. Bilaga: täckning av `custom.passsar_till` i enterprise-utbudet (2026-09-30)
+
+Bakgrund: `custom.passsar_till` är den befintliga kompatibilitetskällan för tillbehör och reservdelar.
+Mätt med `productsCount` och filtret `metafields.custom.passsar_till:*` (fältet har något värde).
+
+### 10.1 Täckning per produkttyp (icke-drönartyper)
+
+| Produkttyp | Med värde | Totalt | Andel |
+|---|--:|--:|--:|
+| Enterprise Payload | 29 | 57 | 51 % |
+| Enterprise Accessories | 20 | 82 | 24 % |
+| Enterprise Spareparts | 29 | 59 | 49 % |
+| Enterprise Drone Filter | 13 | 16 | 81 % |
+| Enterprise Drone Batterys | 5 | 9 | 56 % |
+| Enterprise Drone Propellers | 5 | 8 | 63 % |
+| Enterprise Drone Camera | 1 | 14 | 7 % |
+| Enterprise Tillbehör | 1 | 7 | 14 % |
+| Enterprise Software | 0 | 28 | 0 % |
+| Fjärrkontroll Enterprise | 0 | 3 | 0 % |
+| **Summa** | **103** | **283** | **36 %** |
+
+- Drönarna själva (55) har inget värde, vilket är väntat.
+- Av aktiva tillbehör har 1 av 4 ett värde, och av aktiva reservdelar 3 av 6.
+- Hela katalogen har 1323 produkter med värde (definitionens räknare säger 1350; räknaren släpar).
+  Fältet täcker alltså mycket i konsumentsortimentet, men enterprise-utbudet är bara täckt till ungefär en tredjedel.
+
+### 10.2 Värden som används i enterprise-typerna
+
+Antal produkter per värde (en produkt kan ha flera värden, så summan är inte 103):
+
+| Värde | Produkter | Värde | Produkter |
+|---|--:|---|--:|
+| DJI Matrice 400 | 17 | DJI Inspire 3 | 8 |
+| DJI Matrice 350 | 15 | DJI Mavic 3T | 6 |
+| DJI Matrice 300 | 13 | DJI FlyCart 30 | 5 |
+| DJI Matrice 4D | 10 | DJI Matrice 30 | 5 |
+| DJI Matrice 350 RTK | 8 | DJI Matrice 4TD | 3 |
+| DJI Matrice 300 RTK | 8 | DJI Matrice 30T | 3 |
+| DJI Mavic 3E | 2 | DJI Matrice 600 | 2 |
+| DJI FlyCart 100 | 2 | DJI Matrice 3D / 3TD | 1 / 1 |
+| DJI Agras T50 / T100 | 1 / 1 | DJI Agras T25 | 0 |
+| DJI Dock 3 | 1 | | |
+
+### 10.3 Mappningsproblem mot `uav_platform`
+
+1. Valen i `passsar_till` innehåller varken "DJI Matrice 4", "4E" eller "4T", bara 4D och 4TD. Plattformen
+   "DJI Matrice 4E / 4T" har ändå `legacy_fits_value` "DJI Matrice 4T", ett värde som inte finns i fältets
+   valbara lista. Tillbehör och reservdelar till Matrice 4E/4T kan därför inte märkas i dag.
+2. Både "DJI Matrice 350" och "DJI Matrice 350 RTK" (samt 300 och 300 RTK) används, men plattformarna
+   har bara ett värde vardera. Värdena måste slås ihop till en plattform.
+3. Plattformar för Freefly, Inspired Flight, Autel och Wisson Orion har inget motsvarande värde i listan.
+4. Listan saknar M200/M210, som payload-titlarna nämner (se avsnitt 9.1).
+5. "DJI Agras T25" finns som valbart värde men används av 0 produkter i enterprise-typerna.
+
+### 10.4 Mätförbehåll
+
+- `product_type`-sökningen i Shopify matchar ord, inte exakt sträng: sökningen på "enterprise drone" fångar
+  även typer som börjar med "Enterprise Drone …". Totalsiffrorna per typ stämmer (summa 338), men en
+  enskild kombinerad sökning bör kontrolleras mot radlistan.
+- Filtret visar att fältet har ett värde, inte att värdet är rätt.
+
+## 11. Beslut och förslagslista för `custom.passsar_till` (2026-09-30)
+
+### 11.1 Beslut
+
+1. Matrice 4E och 4T läggs till som egna valbara värden i `custom.passsar_till` ("DJI Matrice 4E", "DJI Matrice 4T").
+   (Frågan var formulerad som ett val mellan detta och "DJI Matrice 4"; svaret "ja" har tolkats som det första alternativet.)
+2. Matrice 350 och 350 RTK räknas som samma plattform, likaså 300 och 300 RTK. Plattformens `legacy_fits_value`
+   måste därför kunna rymma flera värden (i dag ett enda).
+
+Inget av detta är genomfört i Shopify. Ändringen av valbara värden och plattformsfältet är nästa skrivsteg.
+
+### 11.2 Förslagslista
+
+Fil: `docs/reports/ENTERPRISE_PASSAR_TILL_FORSLAG_2026-09.csv` (152 rader, semikolonseparerad).
+Omfattar de enterprise-produkter utanför drönare och mjukvara som saknar `passsar_till` (62 tillbehör,
+30 reservdelar, 28 payloads, 32 övriga). Mjukvaran (28 rader) är utelämnad eftersom den saknar drönarkompatibilitet.
+
+Förslagen är utlästa ur titeln och bara satta när titeln uttryckligen anger modell. Flera värden separeras med `|`.
+
+| Utfall | Rader |
+|---|--:|
+| Förslag med hög säkerhet (titeln anger modellen) | 43 |
+| Förslag med medelsäkerhet (serie, ofullständig titel, eller värde saknas i listan) | 16 |
+| Inget förslag (titeln anger ingen modell) | 93 |
+
+Observationer:
+
+1. 10 rader gäller "Matrice 4" i allmänhet eller 4E/4T och kan först märkas när de två nya värdena finns.
+2. 9 rader är Zenmuse-delar (objektiv, motvikt, fäste, kablar) som hör till det separata fältet
+   `custom.kompatibla_dji_system`, inte till `passsar_till`. Kompatibilitet är alltså delad på två fält.
+3. 27 av raderna är Wisson-produkter. 26 av dem saknar förslag eftersom titeln inte anger en modell och
+   listan saknar ett värde för Wisson Orion. Ett nytt värde krävs innan de kan märkas.
+4. 17 rader refererar till modeller som inte finns i valbara värden: Agras T25P och T40, Ronin 4D, MG-1,
+   Zenmuse H4-3D, S1000/S900, DJI Power, Goggles RE, Mavic 2 Enterprise, Parrot. Att lägga till dem är ett beslut.
+5. 4 rader är sannolikt felplacerade i enterprise-typerna (Parrot, Phantom-ryggsäck, konsumentfilter).
+6. Tre dubblettpar (6 rader): två P3 VibrAbsorbBoard, två Tundra IR-ljus, och Zenmuse H30 i två poster (den andra, `dji-zenmuse-h30-1`, ligger i payload-typen).
+7. Många reservdelar gäller äldre konsumentmodeller (Phantom 2/3/4, Mavic 2) och hör troligen inte hemma i enterprise.
+8. En rad har motsägelse: en RC Plus-fjärrkontroll heter Matrice 3D/3TD men handle säger 4td.
+
+## 12. Genomfört i Shopify (2026-09-30)
+
+Beslut enligt avsnitt 11. Wisson Orion lades uttryckligen inte till.
+
+### 12.1 `custom.passsar_till` (produkt-metafält)
+
+Fyra valbara värden lades till; inget togs bort (kontrollerat: 75 gamla värden, 79 nya, inga dubbletter):
+
+- DJI Matrice 4E
+- DJI Matrice 4T
+- DJI Agras T25P
+- DJI Agras T40
+
+Fältets funktioner för smarta kollektioner och adminfilter är kvar påslagna. Den första uppdateringen
+avvisades av Shopify utan att något ändrades, eftersom fältet används som villkor i en smart kollektion och
+uppdateringen tolkades som att funktionen stängdes av; den lyckades när funktionen skickades med som påslagen.
+Gamla värden med stavfel (`" DJI Avata O3"`, `"DJI Marvic 2S"`, `"Dji Mavic pro platinum"`) är medvetet orörda.
+En valideringsjobb-körning mot befintliga värden startades av Shopify.
+
+### 12.2 `uav_platform` (metaobjekt)
+
+- Nytt fält `legacy_fits_values` (lista av text). Det gamla `legacy_fits_value` är kvar orört, eftersom Shopify
+  inte kan byta typ på ett befintligt fält och inget i temat läser det.
+- Fältet fylldes på åtta DJI-plattformar, härlett ur plattformarnas namn och besluten i avsnitt 11:
+
+| Plattform | `legacy_fits_values` |
+|---|---|
+| dji-matrice-400 | DJI Matrice 400 |
+| dji-matrice-350-rtk | DJI Matrice 350 RTK, DJI Matrice 350 |
+| dji-matrice-300-rtk | DJI Matrice 300 RTK, DJI Matrice 300 |
+| dji-matrice-30-series | DJI Matrice 30, DJI Matrice 30T |
+| dji-matrice-4-series | DJI Matrice 4E, DJI Matrice 4T |
+| dji-matrice-4d-series | DJI Matrice 4D, DJI Matrice 4TD |
+| dji-matrice-3d-series | DJI Matrice 3D, DJI Matrice 3TD |
+| dji-mavic-3-enterprise | DJI Mavic 3E, DJI Mavic 3T |
+
+- Övriga åtta plattformar (Freefly, Inspired Flight, Autel, Wisson Orion, Annan) har fortfarande tomt värde.
+- Publiceringsstatus (ACTIVE) och övriga fält är oförändrade (kontrollerat efteråt).
+- Mavic 3M ingår inte, eftersom "DJI Mavic 3M" inte finns bland de valbara värdena.
+
+### 12.3 Repot
+
+`data/edp-payload-taxonomy.json` och `scripts/setup-enterprise-payload-architecture.mjs` har synkats med
+ändringen så att en omkörning av setup-skriptet inte återställer den. Skriptet är syntaxkontrollerat och JSON-filen
+validerad; enhetstesterna kunde inte köras eftersom beroenden inte är installerade, men inga tester refererar
+till dessa filer.
+
+### 12.4 Kvarstår
+
+- Förslagslistan (avsnitt 11) är inte tillämpad: ingen produkt har fått nytt `passar till`-värde.
+- Övriga saknade värden i avsnitt 11.2 punkt 4 (Ronin 4D, MG-1, Mavic 2 Enterprise med flera) är inte tillagda.
+
+## 13. Tillämpade `passar till`-värden (2026-09-30)
+
+Källa: raderna med hög säkerhet i `ENTERPRISE_PASSAR_TILL_FORSLAG_2026-09.csv` (43 st).
+
+| Utfall | Antal | Kommentar |
+|---|--:|---|
+| Skrivna | 30 | Alla utkastprodukter. Kontrollerade direkt efteråt (värde och status). |
+| Redan ifyllda av annan | 2 | `dji-matrice-4d-4td-lktop-snabbladdare-uc363` och `svampantenn-dji-matrice-350rtk-m300rtk` hade fått värden efter att listan togs fram (samma innehåll som förslaget). Orörda. |
+| Aktiva, hållna tillbaka | 4 | `dji-matrice-4-series-carrying-case-strap`, `dji-dual-gimbal-connector-matrice-400`, `dji-props-for-mavic-3-enterprise`, `dji-phantom-4-gimbalmotor-y-axel`. Fältet är villkor i smarta kollektioner, så ett värde kan flytta en aktiv produkt in i en kollektion som syns för kunder. Kräver eget godkännande. |
+| Avvisade av Shopify | 7 | Se nedan. Inte skrivna. |
+
+### Avvisade: kategoribegränsning
+
+`custom.passsar_till` är begränsat till 20 produktkategorier (bl.a. "Delar och tillbehör till flygplan" och
+"Drönarbatterier"). Sju produkter matchar inte:
+
+- Saknar kategori (5): `dji-dock-3-vehicle-mounted-gimbal-mount`, `dji-m350-e-port-development-kit`,
+  `dji-manifold-3-accessorykit-matrice-4d`, `dji-power-sdc-to-matrice-30-series-fas`,
+  `water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller`.
+- Kategori "Drönare" (2), vilket är fel för en serviceplan och ett laddpaket: `dji-matrice-350-rtk-2-years-care-basic`,
+  `dji-matrice-4t-power-1000-paket`.
+
+Åtgärden är att sätta rätt produktkategori på dessa sju (eller ändra fältets begränsning). Inget av det är gjort.
+
+### Fördelning av de 30 skrivna
+
+Inspire 2 (4), Phantom 2/3/4/4 Pro (10), Matrice 400 (7), Matrice 4-serien (7), Matrice 350 (1), Matrice 300 RTK (1),
+Matrice 30 (2), Matrice 600 (1), Mavic 3E/3T (1). En produkt kan ha flera värden, så summan överstiger 30.
+
+### Mätförbehåll
+
+Sökräknaren för `passar till`-täckning visade 132 enterprise-produkter efteråt, medan 103 + 2 + 30 = 135 väntades.
+Alla 30 skrivna produkter är verifierade direkt på produktnivå, så avvikelsen bedöms vara sökindexets fördröjning.
+Räknaren bör mätas om senare.
+
+### Kvarstår
+
+- 7 avvisade produkter (kategori), 4 aktiva produkter (godkännande).
+- 16 rader med medelsäkerhet i förslagslistan.
+- Övriga 93 rader utan förslag samt modeller som saknas i valen (se avsnitt 11.2).
+
+## 14. Granskning av de 16 medelsäkra raderna (2026-09-30)
+
+Granskade mot produktbeskrivning, taggar och kategori i Shopify. Förslagslistan (CSV) är uppdaterad; inga värden är skrivna.
+
+### 14.1 Uppgraderade till hög säkerhet (5)
+
+| Produkt | Förslag | Grund |
+|---|---|---|
+| `avss-prs-m350ex` | DJI Matrice 350 RTK | Beskrivningen anger 350 RTK (tidigare förslag var "350") |
+| `dji-matrice-4d-series-low-noise-anti-lce` | DJI Matrice 4D, DJI Matrice 4TD | Beskrivningen anger Matrice 4D-serien |
+| `dji-relamodul-for-agras-t40-t20-global` | DJI Agras T20, DJI Agras T40 | Beskrivningen anger T40 och T20; T40 finns nu i valen |
+| `drone-gimbal-motor-y-axel-ny-version-for-dji-phant` | DJI Phantom 4 Pro | Beskrivningen anger Phantom 4 Pro (tidigare förslag var "Phantom") |
+| `pgytech-x4s-mrc-cpl-guld-kant-filters-dji-inspire-2` | DJI Inspire 2 | Beskrivningen anger Inspire 2 |
+
+Kategoribegränsningen (avsnitt 13) gäller även här: `avss-prs-m350ex` (Okategoriserat) och PGYTECH-filtret
+(Linsfilter) kan avvisas vid skrivning. De tre andra har kategorin "Delar och tillbehör till flygplan", som är tillåten.
+
+### 14.2 Nedgraderad (1)
+
+`dji-mavic-2-enterprise-protective-upper-shell`: förslaget "DJI Mavic 2" är missvisande. Skalet är till Mavic 2 Enterprise,
+som är en egen modell och saknas i valen. Inget värde föreslås förrän beslut tas om att lägga till "DJI Mavic 2 Enterprise".
+
+### 14.3 Kvarstår som medelsäkra (10)
+
+Ingen ytterligare evidens: beskrivning saknas eller är generisk.
+
+- Saknar beskrivning: `dji-manifold-3-accessory-kit-matrice-4-s`, `dji-sdc-fast-charging-cable-for-dji-matrice-4`,
+  `dji-e-port-v2-development-kit-matrice-4`, `quick-release-bracketm400`.
+- Generisk beskrivning: `dji-phantom-backpack-multipurpose-barvaska`, `gimbal-protection-dji-phantom`.
+- Osäker modellavgränsning: `dji-matrice-4-propellers-original` och `dji-matrice-4-propellers-low-sound-level` anger
+  "Matrice 4-serien", men 4D-serien har egna propellrar, så det är oklart om 4D/4TD ingår.
+  `gimbal-kamerakabel-dji-inspire-pro-zenmuse-x5` anger Inspire Pro (Inspire 1 Pro?) mot valet "DJI Inspire".
+  `dji-prossd-1tb-extern-solid-state-drive` anger bara Ronin 4D, som saknas i valen.
+
+Fem av dessa tio ligger dessutom i kategorier som troligen blockerar skrivning (Utvecklingskort, Kamerastabilisatorer och
+-stöd, Drönarfodral, ingen kategori).
+
+### 14.4 Resultat efter granskning
+
+| Säkerhet | Rader |
+|---|--:|
+| Hög | 48 |
+| Medel | 10 |
+| Inget förslag | 94 |
