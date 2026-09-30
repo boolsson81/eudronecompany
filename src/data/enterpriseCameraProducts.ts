@@ -22,6 +22,8 @@ export interface CameraSpec {
 export interface EnterpriseCameraProduct {
   slug: string;
   name: string;
+  /** Tillverkare, t.ex. "DJI". Sortimentet väntas omfatta fler märken framöver. */
+  brand: string;
   tag: string;
   category: CameraCategory;
   heroTitle: string;
@@ -44,6 +46,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-h30t",
     name: "Zenmuse H30T",
+    brand: "DJI",
     tag: "Flaggskepp hybrid",
     category: "hybrid",
     heroTitle: "Zenmuse H30T — Hybrid multi-sensor med termisk kamera",
@@ -101,6 +104,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-h30",
     name: "Zenmuse H30",
+    brand: "DJI",
     tag: "Hybrid utan termisk",
     category: "hybrid",
     heroTitle: "Zenmuse H30 — Avancerad hybridkamera utan termisk sensor",
@@ -157,6 +161,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-h20t",
     name: "Zenmuse H20T",
+    brand: "DJI",
     tag: "Quad-sensor",
     category: "thermal",
     heroTitle: "Zenmuse H20T — Termisk quad-sensor för professionell inspektion",
@@ -206,6 +211,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-h20n",
     name: "Zenmuse H20N",
+    brand: "DJI",
     tag: "Nattseende quad-sensor",
     category: "thermal",
     heroTitle: "Zenmuse H20N — Quad-sensor för nattoperationer",
@@ -258,6 +264,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-h20",
     name: "Zenmuse H20",
+    brand: "DJI",
     tag: "Triple-sensor",
     category: "hybrid",
     heroTitle: "Zenmuse H20 — Triple-sensor för visuell inspektion",
@@ -310,6 +317,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-l2",
     name: "Zenmuse L2",
+    brand: "DJI",
     tag: "LiDAR-sensor",
     category: "lidar",
     heroTitle: "Zenmuse L2 — LiDAR för högprecisionskartläggning",
@@ -365,6 +373,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-p1",
     name: "Zenmuse P1",
+    brand: "DJI",
     tag: "Fotogrammetri",
     category: "photogrammetry",
     heroTitle: "Zenmuse P1 — Fullformats-fotogrammetrikamera",
@@ -419,6 +428,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-l1",
     name: "Zenmuse L1",
+    brand: "DJI",
     tag: "LiDAR, första generationen",
     category: "lidar",
     heroTitle: "Zenmuse L1 — Integrerad LiDAR med RGB-kamera",
@@ -472,6 +482,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-l3",
     name: "Zenmuse L3",
+    brand: "DJI",
     tag: "Nästa generations LiDAR",
     category: "lidar",
     heroTitle: "Zenmuse L3 — LiDAR för storskalig kartläggning",
@@ -527,6 +538,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-s1",
     name: "Zenmuse S1",
+    brand: "DJI",
     tag: "Sökljus-payload",
     category: "utility",
     heroTitle: "Zenmuse S1 — Kraftfull sökljus för nattoperationer",
@@ -583,6 +595,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
   {
     slug: "zenmuse-v1",
     name: "Zenmuse V1",
+    brand: "DJI",
     tag: "Kommunikationspayload",
     category: "utility",
     heroTitle: "Zenmuse V1 — Röstförstärkare och kommunikation",

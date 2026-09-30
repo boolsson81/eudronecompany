@@ -19,8 +19,8 @@ export interface DroneComparisonArticle {
   date: string;
   readTime: string;
   category: string;
-  droneA: { name: string; tagline: string };
-  droneB: { name: string; tagline: string };
+  droneA: { name: string; brand: string; tagline: string };
+  droneB: { name: string; brand: string; tagline: string };
   intro: string;
   specs: ComparisonSpec[];
   useCaseWinners: UseCaseWinner[];
@@ -40,10 +40,12 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
     category: "Inspektion",
     droneA: {
       name: "DJI Mavic 3 Enterprise",
+      brand: "DJI",
       tagline: "Kompakt allround för snabba inspektioner",
     },
     droneB: {
       name: "DJI Matrice 350 RTK",
+      brand: "DJI",
       tagline: "Industriell plattform för krävande uppdrag",
     },
     intro:
@@ -135,10 +137,12 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
     category: "Lantbruk",
     droneA: {
       name: "DJI Agras T50",
+      brand: "DJI",
       tagline: "Automatiserad precisionsspruta",
     },
     droneB: {
       name: "DJI Mavic 3 Multispectral",
+      brand: "DJI",
       tagline: "Fältkartläggning och växtanalys",
     },
     intro:
@@ -228,10 +232,12 @@ export const DRONE_COMPARISONS: DroneComparisonArticle[] = [
     category: "Film & Foto",
     droneA: {
       name: "DJI Inspire 3",
+      brand: "DJI",
       tagline: "Cinema-drönare med fullformatssensor",
     },
     droneB: {
       name: "DJI Mavic 3 Pro",
+      brand: "DJI",
       tagline: "Trekamera-flaggskepp i fickformat",
     },
     intro:

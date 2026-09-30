@@ -1,5 +1,5 @@
 /**
- * DJI Enterprise accessories, payloads, and configurations.
+ * Enterprise accessories, payloads, and configurations.
  * Maps each drone model to its compatible accessories with categories.
  * shopUrl links to the actionking.se Shopify store.
  */
@@ -115,6 +115,15 @@ export const DRONE_ACCESSORIES: Record<string, DroneAccessory[]> = {
     { name: "Mavic 3 Pro Transportväska", category: "case", desc: "Kompakt väska med plats för drönare och alla tillbehör.", shopUrl: "https://actionking.se/search?q=mavic+3+pro+vaska" },
   ],
 };
+
+/**
+ * Tillverkare per drönarnamn (samma nycklar som DRONE_ACCESSORIES). Alla
+ * dagens drönare är DJI — kartan ger andra märken en plats när de läggs till,
+ * utan att drönarnamnets textsträng behöver tolkas.
+ */
+export const DRONE_ACCESSORY_BRAND: Record<string, string> = Object.fromEntries(
+  Object.keys(DRONE_ACCESSORIES).map((droneName) => [droneName, "DJI"]),
+);
 
 /**
  * Get accessories for a specific drone, grouped by category.

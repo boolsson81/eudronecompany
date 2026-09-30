@@ -52,6 +52,8 @@ export interface DroneProductSpec {
 export interface EnterpriseDroneProduct {
   slug: string;
   name: string;
+  /** Tillverkare, t.ex. "DJI". Sortimentet väntas omfatta fler märken framöver. */
+  brand: string;
   tag: string;
   category: DroneProductCategory;
   heroTitle: string;
@@ -79,6 +81,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-400",
     name: "DJI Matrice 400",
+    brand: "DJI",
     tag: "Tung plattform",
     category: "platform",
     heroTitle: "DJI Matrice 400 — plattformen för tunga sensorer och LiDAR",
@@ -136,6 +139,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-350-rtk",
     name: "DJI Matrice 350 RTK",
+    brand: "DJI",
     tag: "Industriell arbetsplattform",
     category: "platform",
     heroTitle: "DJI Matrice 350 RTK — den industriella arbetshästen",
@@ -210,6 +214,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "mavic-3-enterprise",
     name: "DJI Mavic 3 Enterprise",
+    brand: "DJI",
     tag: "Kompakt allround",
     category: "compact",
     heroTitle: "DJI Mavic 3 Enterprise — professionell inspektion i ryggsäcken",
@@ -273,6 +278,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "mavic-3-multispectral",
     name: "DJI Mavic 3 Multispectral",
+    brand: "DJI",
     tag: "Växtanalys & NDVI",
     category: "agriculture",
     heroTitle: "DJI Mavic 3 Multispectral — kartlägg grödornas hälsa",
@@ -334,6 +340,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "agras-t50",
     name: "DJI Agras T50",
+    brand: "DJI",
     tag: "Sprutning & spridning",
     category: "agriculture",
     heroTitle: "DJI Agras T50 — precisionssprutning i industriskala",
@@ -395,6 +402,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "inspire-3",
     name: "DJI Inspire 3",
+    brand: "DJI",
     tag: "Fullformat cinema",
     category: "cinema",
     heroTitle: "DJI Inspire 3 — fullformat 8K för filmproduktion",
@@ -457,6 +465,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "mavic-3-pro",
     name: "DJI Mavic 3 Pro",
+    brand: "DJI",
     tag: "Kompakt kameradrönare",
     category: "cinema",
     heroTitle: "DJI Mavic 3 Pro — tre objektiv i ryggsäcksformat",
