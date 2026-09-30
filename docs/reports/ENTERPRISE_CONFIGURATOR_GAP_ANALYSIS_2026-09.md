@@ -387,3 +387,48 @@ Räknaren bör mätas om senare.
 - 7 avvisade produkter (kategori), 4 aktiva produkter (godkännande).
 - 16 rader med medelsäkerhet i förslagslistan.
 - Övriga 93 rader utan förslag samt modeller som saknas i valen (se avsnitt 11.2).
+
+## 14. Granskning av de 16 medelsäkra raderna (2026-09-30)
+
+Granskade mot produktbeskrivning, taggar och kategori i Shopify. Förslagslistan (CSV) är uppdaterad; inga värden är skrivna.
+
+### 14.1 Uppgraderade till hög säkerhet (5)
+
+| Produkt | Förslag | Grund |
+|---|---|---|
+| `avss-prs-m350ex` | DJI Matrice 350 RTK | Beskrivningen anger 350 RTK (tidigare förslag var "350") |
+| `dji-matrice-4d-series-low-noise-anti-lce` | DJI Matrice 4D, DJI Matrice 4TD | Beskrivningen anger Matrice 4D-serien |
+| `dji-relamodul-for-agras-t40-t20-global` | DJI Agras T20, DJI Agras T40 | Beskrivningen anger T40 och T20; T40 finns nu i valen |
+| `drone-gimbal-motor-y-axel-ny-version-for-dji-phant` | DJI Phantom 4 Pro | Beskrivningen anger Phantom 4 Pro (tidigare förslag var "Phantom") |
+| `pgytech-x4s-mrc-cpl-guld-kant-filters-dji-inspire-2` | DJI Inspire 2 | Beskrivningen anger Inspire 2 |
+
+Kategoribegränsningen (avsnitt 13) gäller även här: `avss-prs-m350ex` (Okategoriserat) och PGYTECH-filtret
+(Linsfilter) kan avvisas vid skrivning. De tre andra har kategorin "Delar och tillbehör till flygplan", som är tillåten.
+
+### 14.2 Nedgraderad (1)
+
+`dji-mavic-2-enterprise-protective-upper-shell`: förslaget "DJI Mavic 2" är missvisande. Skalet är till Mavic 2 Enterprise,
+som är en egen modell och saknas i valen. Inget värde föreslås förrän beslut tas om att lägga till "DJI Mavic 2 Enterprise".
+
+### 14.3 Kvarstår som medelsäkra (10)
+
+Ingen ytterligare evidens: beskrivning saknas eller är generisk.
+
+- Saknar beskrivning: `dji-manifold-3-accessory-kit-matrice-4-s`, `dji-sdc-fast-charging-cable-for-dji-matrice-4`,
+  `dji-e-port-v2-development-kit-matrice-4`, `quick-release-bracketm400`.
+- Generisk beskrivning: `dji-phantom-backpack-multipurpose-barvaska`, `gimbal-protection-dji-phantom`.
+- Osäker modellavgränsning: `dji-matrice-4-propellers-original` och `dji-matrice-4-propellers-low-sound-level` anger
+  "Matrice 4-serien", men 4D-serien har egna propellrar, så det är oklart om 4D/4TD ingår.
+  `gimbal-kamerakabel-dji-inspire-pro-zenmuse-x5` anger Inspire Pro (Inspire 1 Pro?) mot valet "DJI Inspire".
+  `dji-prossd-1tb-extern-solid-state-drive` anger bara Ronin 4D, som saknas i valen.
+
+Fem av dessa tio ligger dessutom i kategorier som troligen blockerar skrivning (Utvecklingskort, Kamerastabilisatorer och
+-stöd, Drönarfodral, ingen kategori).
+
+### 14.4 Resultat efter granskning
+
+| Säkerhet | Rader |
+|---|--:|
+| Hög | 48 |
+| Medel | 10 |
+| Inget förslag | 94 |
