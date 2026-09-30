@@ -1,9 +1,10 @@
 {% comment %}
-  Payload types overview — lists every collection whose title starts with
-  "Payload -" (e.g. "Payload - Thermal & Infrared"). Those are smart
-  collections filtered on product metafield custom.payload_type, so a new
-  "Payload - <typ>" collection shows up here automatically.
-  The plain "Payload" parent collection is skipped.
+  Payload categories overview — lists every collection whose handle starts
+  with "payload-kategori-" (e.g. "Payload - Sök, räddning & belysning").
+  Those are smart collections filtered on product metafield
+  edp.payload_category, so a new "payload-kategori-<namn>" collection shows
+  up here automatically. The older "Payload - <typ>" collections (filtered
+  on custom.payload_type) are not listed.
 {% endcomment %}
 {{ 'edp-payload.css' | asset_url | stylesheet_tag }}
 
@@ -51,8 +52,8 @@
     {%- assign shown = 0 -%}
     <div class="edp-ptypes">
       {%- for c in collections -%}
-        {%- assign prefix = c.title | slice: 0, 9 | downcase -%}
-        {%- if prefix == 'payload -' and c.products_count > 0 -%}
+        {%- assign prefix = c.handle | slice: 0, 17 -%}
+        {%- if prefix == 'payload-kategori-' and c.products_count > 0 -%}
           {%- assign shown = shown | plus: 1 -%}
           {%- assign type_name = c.title | remove_first: 'Payload -' | strip -%}
           <div class="edp-payload__card edp-ptype">
@@ -127,7 +128,7 @@
     </div>
 
     {%- if shown == 0 and request.design_mode -%}
-      <p class="edp-ptype__count">Inga kollektioner med titel som börjar på "Payload -" och minst en produkt hittades.</p>
+      <p class="edp-ptype__count">Inga publicerade kollektioner med adress som börjar på "payload-kategori-" och minst en produkt hittades.</p>
     {%- endif -%}
 
   </div>
