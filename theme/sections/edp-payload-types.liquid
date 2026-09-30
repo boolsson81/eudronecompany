@@ -27,6 +27,9 @@
   #shopify-section-{{ section.id }} .edp-ptype__title { font-size: 1.25rem; font-weight: 600; margin: 0; }
   #shopify-section-{{ section.id }} .edp-ptype__media img { display: block; width: 100%; height: auto; border-radius: 4px; }
   #shopify-section-{{ section.id }} .edp-ptype__text { font-size: 0.9375rem; line-height: 1.55; margin: 0; color: var(--edp-payload-muted); }
+  #shopify-section-{{ section.id }} .edp-ptype__inds { display: grid; gap: 0.5rem; }
+  #shopify-section-{{ section.id }} .edp-ptype__ind { margin: 0; font-size: 0.8125rem; line-height: 1.4; display: grid; gap: 0.1rem; }
+  #shopify-section-{{ section.id }} .edp-ptype__ind span { color: var(--edp-payload-muted); }
   #shopify-section-{{ section.id }} .edp-ptype__count { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; }
   #shopify-section-{{ section.id }} .edp-ptype__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
   #shopify-section-{{ section.id }} .edp-ptype__item { display: flex; gap: 0.75rem; align-items: center; color: inherit; text-decoration: none; font-size: 0.875rem; line-height: 1.35; }
@@ -70,11 +73,29 @@
               {%- endfor -%}
               {%- assign ind_list = ind_all | split: '||' | uniq | sort -%}
               {%- if ind_list.size > 0 -%}
-                <ul class="edp-payload__pills">
-                  {%- for ind in ind_list -%}
-                    {%- if ind != blank -%}<li class="edp-payload__pill">{{ ind | escape }}</li>{%- endif -%}
-                  {%- endfor -%}
-                </ul>
+                {%- if section.settings.show_customer_types -%}
+                  {%- assign customer_types = shop.metaobjects.customer_type.values -%}
+                  <div class="edp-ptype__inds">
+                    {%- for ind in ind_list -%}
+                      {%- if ind != blank -%}
+                        {%- assign ct_names = '' -%}
+                        {%- for ct in customer_types -%}
+                          {%- if ct.industry.value == ind -%}
+                            {%- if ct_names != '' -%}{%- assign ct_names = ct_names | append: ', ' -%}{%- endif -%}
+                            {%- assign ct_names = ct_names | append: ct.name.value -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                        <p class="edp-ptype__ind"><strong>{{ ind | escape }}</strong>{%- if ct_names != '' -%}<span>{{ ct_names | escape }}</span>{%- endif -%}</p>
+                      {%- endif -%}
+                    {%- endfor -%}
+                  </div>
+                {%- else -%}
+                  <ul class="edp-payload__pills">
+                    {%- for ind in ind_list -%}
+                      {%- if ind != blank -%}<li class="edp-payload__pill">{{ ind | escape }}</li>{%- endif -%}
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
               {%- endif -%}
             {%- endif -%}
             {%- if section.settings.show_count -%}
@@ -119,6 +140,7 @@
     { "type": "text", "id": "link_label", "label": "Länktext på korten", "default": "Visa alla" },
     { "type": "checkbox", "id": "show_count", "label": "Visa antal produkter", "default": true },
     { "type": "checkbox", "id": "show_industries", "label": "Visa branscher", "info": "Hämtas från produkternas metafält custom.bransch (de första 50 produkterna i varje typ).", "default": true },
+    { "type": "checkbox", "id": "show_customer_types", "label": "Visa kundtyper under branscherna", "info": "Hämtas från metaobjekten Kundtyp, som hör till en bransch.", "default": true },
     { "type": "range", "id": "products_per_card", "min": 0, "max": 8, "step": 1, "label": "Produkter per kort", "info": "0 döljer produktlistan.", "default": 4 },
     { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
     { "type": "header", "content": "Avstånd" },
