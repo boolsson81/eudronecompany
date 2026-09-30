@@ -73,7 +73,7 @@
           <h2 class="edp-payload__section-heading">Underkategorier</h2>
           <div class="edp-payload__grid">
             {%- for sub in subcategories -%}
-              {%- if sub.parent_category.value.id == category.id -%}
+              {%- if sub.parent_category.value.system.id == category.system.id -%}
                 <div class="edp-payload__card">
                   <p class="edp-payload__card-title">{{ sub.name.value | escape }}</p>
                   {%- if sub.description.value != blank -%}
