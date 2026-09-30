@@ -25,6 +25,8 @@
   }
   #shopify-section-{{ section.id }} .edp-ptype { gap: 0.75rem; padding: 1.5rem; }
   #shopify-section-{{ section.id }} .edp-ptype__title { font-size: 1.25rem; font-weight: 600; margin: 0; }
+  #shopify-section-{{ section.id }} .edp-ptype__media img { display: block; width: 100%; height: auto; border-radius: 4px; }
+  #shopify-section-{{ section.id }} .edp-ptype__text { font-size: 0.9375rem; line-height: 1.55; margin: 0; color: var(--edp-payload-muted); }
   #shopify-section-{{ section.id }} .edp-ptype__count { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; }
   #shopify-section-{{ section.id }} .edp-ptype__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
   #shopify-section-{{ section.id }} .edp-ptype__item { display: flex; gap: 0.75rem; align-items: center; color: inherit; text-decoration: none; font-size: 0.875rem; line-height: 1.35; }
@@ -48,7 +50,15 @@
           {%- assign shown = shown | plus: 1 -%}
           {%- assign type_name = c.title | remove_first: 'Payload -' | strip -%}
           <div class="edp-payload__card edp-ptype">
+            {%- if c.image != blank -%}
+              <div class="edp-ptype__media">
+                {{ c.image | image_url: width: 600 | image_tag: loading: 'lazy', widths: '300,450,600' }}
+              </div>
+            {%- endif -%}
             <h3 class="edp-ptype__title">{{ type_name | escape }}</h3>
+            {%- if c.description != blank -%}
+              <p class="edp-ptype__text">{{ c.description | strip_html | truncate: 180 }}</p>
+            {%- endif -%}
             {%- if section.settings.show_count -%}
               <p class="edp-ptype__count">{{ c.products_count }} produkter</p>
             {%- endif -%}
