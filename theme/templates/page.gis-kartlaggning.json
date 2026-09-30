@@ -54,6 +54,36 @@
           "settings": {
             "text": "Sömlös integration med CAD och BIM-system"
           }
+        },
+        "setup_1": {
+          "type": "setup",
+          "settings": {
+            "role": "Plattform",
+            "title": "Enterprise-drönare",
+            "text": "Kartläggningsplattformar med RTK/PPK för centimeternoggrannhet.",
+            "collection": "enterprise-drones",
+            "link_label": "Se drönare"
+          }
+        },
+        "setup_2": {
+          "type": "setup",
+          "settings": {
+            "role": "Payload",
+            "title": "Kartläggningskamera och LiDAR",
+            "text": "Sensorer för ortofoto, terrängmodeller och punktmoln.",
+            "collection": "payload-sensorer",
+            "link_label": "Se payloads"
+          }
+        },
+        "setup_3": {
+          "type": "setup",
+          "settings": {
+            "role": "Service & utbildning",
+            "title": "Utbildning, support och service",
+            "text": "Stöd med flygplanering, bearbetningsprogramvara och utbildning för ditt team.",
+            "link": "/pages/contact-quote",
+            "link_label": "Begär offert"
+          }
         }
       },
       "block_order": [
@@ -61,6 +91,9 @@
         "solution_2",
         "solution_3",
         "solution_4",
+        "setup_1",
+        "setup_2",
+        "setup_3",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -77,7 +110,9 @@
         "benefits_heading": "Fördelar",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
-        "padding_bottom": 24
+        "padding_bottom": 24,
+        "setup_heading": "Rekommenderad konfiguration",
+        "setup_text": "Konfiguration för lantmäteri och GIS med hög noggrannhet från flygning till färdig karta."
       }
     },
     "enterprise_contact": {

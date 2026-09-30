@@ -230,7 +230,7 @@
         "feature_title": "Sprutning & fältkartläggning",
         "feature_text": "En komplett konfiguration för storskalig precisionssprutning och multispektral fältanalys — plattform, payload, mjukvara och service i ett paket.",
         "feature_button_label": "Se rekommenderad konfiguration",
-        "feature_button_link": "/pages/jordbruk",
+        "feature_button_link": "/pages/jordbruk#konfiguration",
         "color_scheme": "scheme-edp",
         "padding_top": 24,
         "padding_bottom": 48

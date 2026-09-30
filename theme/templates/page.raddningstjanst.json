@@ -54,6 +54,36 @@
           "settings": {
             "text": "Snabb deployment — flygklar på under 60 sekunder"
           }
+        },
+        "setup_1": {
+          "type": "setup",
+          "settings": {
+            "role": "Plattform",
+            "title": "Enterprise-drönare",
+            "text": "Robusta plattformar för flygning i krävande väder, dag som natt.",
+            "collection": "enterprise-drones",
+            "link_label": "Se drönare"
+          }
+        },
+        "setup_2": {
+          "type": "setup",
+          "settings": {
+            "role": "Payload",
+            "title": "Termisk kamera, sökljus och högtalare",
+            "text": "Termisk och optisk detektion kompletterad med sökljus och högtalare för insatser.",
+            "collection": "payload-sensorer",
+            "link_label": "Se payloads"
+          }
+        },
+        "setup_3": {
+          "type": "setup",
+          "settings": {
+            "role": "Service & utbildning",
+            "title": "Utbildning, support och service",
+            "text": "Vi bygger konfigurationen tillsammans med er organisation och utbildar operatörerna.",
+            "link": "/pages/contact-quote",
+            "link_label": "Begär offert"
+          }
         }
       },
       "block_order": [
@@ -61,6 +91,9 @@
         "solution_2",
         "solution_3",
         "solution_4",
+        "setup_1",
+        "setup_2",
+        "setup_3",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -77,7 +110,9 @@
         "benefits_heading": "Fördelar",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
-        "padding_bottom": 24
+        "padding_bottom": 24,
+        "setup_heading": "Rekommenderad konfiguration",
+        "setup_text": "Snabbt utplacerbar konfiguration för bevakning, sök och räddning med termisk och optisk detektion."
       }
     },
     "enterprise_contact": {

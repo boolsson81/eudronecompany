@@ -54,6 +54,36 @@
           "settings": {
             "text": "Kemikaliefritt, inget avrinningsavfall"
           }
+        },
+        "setup_1": {
+          "type": "setup",
+          "settings": {
+            "role": "Plattform",
+            "title": "DJI Matrice + Orion",
+            "text": "Enterprise-drönare i paket med Wisson Orion-tvättmodul.",
+            "collection": "enterprise-drones",
+            "link_label": "Se paket"
+          }
+        },
+        "setup_2": {
+          "type": "setup",
+          "settings": {
+            "role": "Payload",
+            "title": "Wisson Orion tvättmoduler",
+            "text": "Flygburna högtrycks- och sprutmoduler för fasad-, fönster- och takrengöring.",
+            "collection": "payload-sensorer",
+            "link_label": "Se moduler"
+          }
+        },
+        "setup_3": {
+          "type": "setup",
+          "settings": {
+            "role": "Service & utbildning",
+            "title": "Utbildning, support och service",
+            "text": "Utbildning i drift och underhåll samt service på tvättsystemet.",
+            "link": "/pages/contact-quote",
+            "link_label": "Begär offert"
+          }
         }
       },
       "block_order": [
@@ -61,6 +91,9 @@
         "solution_2",
         "solution_3",
         "solution_4",
+        "setup_1",
+        "setup_2",
+        "setup_3",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -77,7 +110,9 @@
         "benefits_heading": "Fördelar",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
-        "padding_bottom": 24
+        "padding_bottom": 24,
+        "setup_heading": "Rekommenderad konfiguration",
+        "setup_text": "Flygburen tvätt av fönster, tak och fasader utan byggnadsställning eller lift."
       }
     },
     "enterprise_contact": {

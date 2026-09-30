@@ -54,6 +54,36 @@
           "settings": {
             "text": "Exakt data för variabel giva och precisionsodling"
           }
+        },
+        "setup_1": {
+          "type": "setup",
+          "settings": {
+            "role": "Plattform",
+            "title": "Enterprise-drönare",
+            "text": "Sprut- och kartläggningsplattformar för storskalig precisionssprutning, bland annat DJI Agras.",
+            "collection": "enterprise-drones",
+            "link_label": "Se drönare"
+          }
+        },
+        "setup_2": {
+          "type": "setup",
+          "settings": {
+            "role": "Payload",
+            "title": "Sensorer och sprutmoduler",
+            "text": "Multispektral-, RGB- och sprutpayload för NDVI-kartor och exakt dosering.",
+            "collection": "payload-sensorer",
+            "link_label": "Se payloads"
+          }
+        },
+        "setup_3": {
+          "type": "setup",
+          "settings": {
+            "role": "Service & utbildning",
+            "title": "Utbildning, support och service",
+            "text": "Vi hjälper dig med certifiering, driftsättning och löpande service så att flottan är redo till säsongen.",
+            "link": "/pages/contact-quote",
+            "link_label": "Begär offert"
+          }
         }
       },
       "block_order": [
@@ -61,6 +91,9 @@
         "solution_2",
         "solution_3",
         "solution_4",
+        "setup_1",
+        "setup_2",
+        "setup_3",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -77,7 +110,9 @@
         "benefits_heading": "Fördelar",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
-        "padding_bottom": 24
+        "padding_bottom": 24,
+        "setup_heading": "Rekommenderad konfiguration",
+        "setup_text": "Sprutning och fältkartläggning i ett paket: plattform, payload och service anpassade efter din areal."
       }
     },
     "enterprise_contact": {
