@@ -1,0 +1,101 @@
+{% comment %}
+  Payload types overview — lists every collection whose title starts with
+  "Payload -" (e.g. "Payload - Thermal & Infrared"). Those are smart
+  collections filtered on product metafield custom.payload_type, so a new
+  "Payload - <typ>" collection shows up here automatically.
+  The plain "Payload" parent collection is skipped.
+{% endcomment %}
+{{ 'edp-payload.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  #shopify-section-{{ section.id }} .edp-ptypes {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  #shopify-section-{{ section.id }} .edp-ptype { gap: 0.75rem; padding: 1.5rem; }
+  #shopify-section-{{ section.id }} .edp-ptype__title { font-size: 1.25rem; font-weight: 600; margin: 0; }
+  #shopify-section-{{ section.id }} .edp-ptype__count { font-size: 0.8125rem; color: var(--edp-payload-muted); margin: 0; }
+  #shopify-section-{{ section.id }} .edp-ptype__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+  #shopify-section-{{ section.id }} .edp-ptype__item { display: flex; gap: 0.75rem; align-items: center; color: inherit; text-decoration: none; font-size: 0.875rem; line-height: 1.35; }
+  #shopify-section-{{ section.id }} .edp-ptype__item:hover { text-decoration: underline; }
+  #shopify-section-{{ section.id }} .edp-ptype__item img { width: 44px; height: 44px; object-fit: cover; border-radius: 4px; flex: none; }
+  #shopify-section-{{ section.id }} .edp-ptype__more { margin-top: auto; font-weight: 600; font-size: 0.9375rem; }
+{%- endstyle -%}
+
+<div class="edp-payload color-{{ section.settings.color_scheme }} gradient">
+  <div class="edp-payload__wrap section-{{ section.id }}-padding">
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="edp-payload__section-heading">{{ section.settings.heading | escape }}</h2>
+    {%- endif -%}
+
+    {%- assign shown = 0 -%}
+    <div class="edp-ptypes">
+      {%- for c in collections -%}
+        {%- assign prefix = c.title | slice: 0, 9 | downcase -%}
+        {%- if prefix == 'payload -' and c.products_count > 0 -%}
+          {%- assign shown = shown | plus: 1 -%}
+          {%- assign type_name = c.title | remove_first: 'Payload -' | strip -%}
+          <div class="edp-payload__card edp-ptype">
+            <h3 class="edp-ptype__title">{{ type_name | escape }}</h3>
+            {%- if section.settings.show_count -%}
+              <p class="edp-ptype__count">{{ c.products_count }} produkter</p>
+            {%- endif -%}
+
+            {%- if section.settings.products_per_card > 0 -%}
+              <ul class="edp-ptype__list">
+                {%- for product in c.products limit: section.settings.products_per_card -%}
+                  <li>
+                    <a class="edp-ptype__item" href="{{ product.url }}">
+                      {%- if product.featured_image != blank -%}
+                        {{ product.featured_image | image_url: width: 100 | image_tag: loading: 'lazy', widths: '50,100' }}
+                      {%- endif -%}
+                      <span>{{ product.title | escape }}</span>
+                    </a>
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+
+            <a class="edp-ptype__more" href="{{ c.url }}">{{ section.settings.link_label | escape }} &rarr;</a>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- if shown == 0 and request.design_mode -%}
+      <p class="edp-ptype__count">Inga kollektioner med titel som börjar på "Payload -" och minst en produkt hittades.</p>
+    {%- endif -%}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Payload-typer",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Rubrik", "default": "Payloads efter typ" },
+    { "type": "text", "id": "link_label", "label": "Länktext på korten", "default": "Visa alla" },
+    { "type": "checkbox", "id": "show_count", "label": "Visa antal produkter", "default": true },
+    { "type": "range", "id": "products_per_card", "min": 0, "max": 8, "step": 1, "label": "Produkter per kort", "info": "0 döljer produktlistan.", "default": 4 },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
+    { "type": "header", "content": "Avstånd" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding topp", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Padding botten", "default": 36 }
+  ],
+  "presets": [{ "name": "Payload-typer" }]
+}
+{% endschema %}
