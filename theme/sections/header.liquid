@@ -156,12 +156,7 @@
       assign logo_width = section.settings.logo_width
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if menu_consumer != blank or menu_enterprise != blank or section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
-    {%- liquid
-      if menu_consumer != blank or menu_enterprise != blank or section.settings.menu != blank
-        render 'edp-header-drawer'
-      endif
-
+  {%- liquid
       assign consumer_handle = section.settings.menu_consumer | default: menu_consumer.handle
       assign enterprise_handle = section.settings.menu_enterprise | default: menu_enterprise.handle
 
@@ -174,49 +169,56 @@
       if menu_enterprise != blank
         assign enterprise_link_count = menu_enterprise.links.size
       endif
+  -%}
+  {%- if request.design_mode -%}
+  <div class="edp-header-editor-panel page-width" role="region" aria-label="EuroDroneCompany-navigation i temaredigeraren">
+    <p class="edp-header-editor-panel__title">EuroDroneCompany-navigation</p>
+    <p class="edp-header-editor-panel__text">
+      Tryck på <strong>Privat</strong> eller <strong>Företag</strong> i verktygsraden ovan för att förhandsgranska rätt meny. Menyvalen konfigureras i inställningspanelen under <strong>EuroDroneCompany-navigation</strong>.
+    </p>
+    <ul class="edp-header-editor-panel__menus" aria-label="Menystatus">
+      <li>
+        <span class="edp-header-editor-panel__menu-label">Meny privat</span>
+        <code class="edp-header-editor-panel__menu-handle">{{ consumer_handle }}</code>
+        <span class="edp-header-editor-panel__menu-count">
+          {%- if consumer_link_count > 0 -%}
+            {{ consumer_link_count }} länkar
+          {%- else -%}
+            ingen meny hittad
+          {%- endif -%}
+        </span>
+      </li>
+      <li>
+        <span class="edp-header-editor-panel__menu-label">Meny företag</span>
+        <code class="edp-header-editor-panel__menu-handle">{{ enterprise_handle }}</code>
+        <span class="edp-header-editor-panel__menu-count">
+          {%- if enterprise_link_count > 0 -%}
+            {{ enterprise_link_count }} länkar
+          {%- else -%}
+            ingen meny hittad
+          {%- endif -%}
+        </span>
+      </li>
+    </ul>
+    {%- if consumer_link_count == 0 or enterprise_link_count == 0 -%}
+      <p class="edp-header-editor-panel__note">
+        Saknas en meny? Kontrollera handtagen under <strong>EuroDroneCompany-navigation</strong> i inställningspanelen.
+      </p>
+    {%- else -%}
+      <p class="edp-header-editor-panel__note">
+        Båda menyerna är kopplade — växla segment ovan för att granska navigationen.
+      </p>
+    {%- endif -%}
+  </div>
+  {%- endif -%}
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if menu_consumer != blank or menu_enterprise != blank or section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+    {%- liquid
+      if menu_consumer != blank or menu_enterprise != blank or section.settings.menu != blank
+        render 'edp-header-drawer'
+      endif
+
     -%}
 
-  {%- if request.design_mode -%}
-    <div class="edp-header-editor-panel" role="region" aria-label="EuroDroneCompany-navigation i temaredigeraren">
-      <p class="edp-header-editor-panel__title">EuroDroneCompany-navigation</p>
-      <p class="edp-header-editor-panel__text">
-        Tryck på <strong>Privat</strong> eller <strong>Företag</strong> i verktygsraden ovan för att förhandsgranska rätt meny. Menyvalen konfigureras i inställningspanelen under <strong>EuroDroneCompany-navigation</strong>.
-      </p>
-      <ul class="edp-header-editor-panel__menus" aria-label="Menystatus">
-        <li>
-          <span class="edp-header-editor-panel__menu-label">Meny privat</span>
-          <code class="edp-header-editor-panel__menu-handle">{{ consumer_handle }}</code>
-          <span class="edp-header-editor-panel__menu-count">
-            {%- if consumer_link_count > 0 -%}
-              {{ consumer_link_count }} länkar
-            {%- else -%}
-              ingen meny hittad
-            {%- endif -%}
-          </span>
-        </li>
-        <li>
-          <span class="edp-header-editor-panel__menu-label">Meny företag</span>
-          <code class="edp-header-editor-panel__menu-handle">{{ enterprise_handle }}</code>
-          <span class="edp-header-editor-panel__menu-count">
-            {%- if enterprise_link_count > 0 -%}
-              {{ enterprise_link_count }} länkar
-            {%- else -%}
-              ingen meny hittad
-            {%- endif -%}
-          </span>
-        </li>
-      </ul>
-      {%- if consumer_link_count == 0 or enterprise_link_count == 0 -%}
-        <p class="edp-header-editor-panel__note">
-          Saknas en meny? Kontrollera handtagen under <strong>EuroDroneCompany-navigation</strong> i inställningspanelen.
-        </p>
-      {%- else -%}
-        <p class="edp-header-editor-panel__note">
-          Båda menyerna är kopplade — växla segment ovan för att granska navigationen.
-        </p>
-      {%- endif -%}
-    </div>
-  {%- endif -%}
 
     {%- liquid
       if section.settings.logo_position == 'top-center' or menu_consumer == blank or menu_consumer.links.size == 0
