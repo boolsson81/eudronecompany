@@ -59,6 +59,24 @@
             {%- if c.description != blank -%}
               <p class="edp-ptype__text">{{ c.description | strip_html | truncate: 180 }}</p>
             {%- endif -%}
+            {%- if section.settings.show_industries -%}
+              {%- assign ind_all = '' -%}
+              {%- for product in c.products limit: 50 -%}
+                {%- for ind in product.metafields.custom.bransch.value -%}
+                  {%- if ind != blank -%}
+                    {%- assign ind_all = ind_all | append: ind | append: '||' -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endfor -%}
+              {%- assign ind_list = ind_all | split: '||' | uniq | sort -%}
+              {%- if ind_list.size > 0 -%}
+                <ul class="edp-payload__pills">
+                  {%- for ind in ind_list -%}
+                    {%- if ind != blank -%}<li class="edp-payload__pill">{{ ind | escape }}</li>{%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            {%- endif -%}
             {%- if section.settings.show_count -%}
               <p class="edp-ptype__count">{{ c.products_count }} produkter</p>
             {%- endif -%}
@@ -100,6 +118,7 @@
     { "type": "text", "id": "heading", "label": "Rubrik", "default": "Payloads efter typ" },
     { "type": "text", "id": "link_label", "label": "Länktext på korten", "default": "Visa alla" },
     { "type": "checkbox", "id": "show_count", "label": "Visa antal produkter", "default": true },
+    { "type": "checkbox", "id": "show_industries", "label": "Visa branscher", "info": "Hämtas från produkternas metafält custom.bransch (de första 50 produkterna i varje typ).", "default": true },
     { "type": "range", "id": "products_per_card", "min": 0, "max": 8, "step": 1, "label": "Produkter per kort", "info": "0 döljer produktlistan.", "default": 4 },
     { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
     { "type": "header", "content": "Avstånd" },
