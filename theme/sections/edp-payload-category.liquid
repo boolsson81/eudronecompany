@@ -2,8 +2,10 @@
   Payload category page — Shopify-native metaobject template for
   `payload_category` (onlineStore urlHandle: "payloads").
   Used as the `main` section in templates/metaobject.payload_category.json.
-  Renders from `closest.metaobject`, the payload_category entry Shopify
-  resolves automatically for the current URL.
+  Renders from the payload_category picked in the section settings
+  (lets the section be placed on any page, e.g. /pages/enterprise) and
+  falls back to `closest.metaobject`, the entry Shopify resolves
+  automatically for the current URL on the metaobject template.
 
   Self-contained: styles come from assets/edp-payload.css, no dependency
   on Dawn or Horizon component classes (see Phase 1 audit — the live
@@ -12,14 +14,18 @@
 {{ 'edp-payload.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-  assign category = closest.metaobject
+  assign category = section.settings.category | default: closest.metaobject
   assign quote_link = section.settings.quote_link | default: '/pages/contact-quote'
 -%}
 
 {%- if category == blank -%}
-  <div class="edp-payload__wrap edp-payload__section">
-    <p>Den här kategorin kunde inte hittas.</p>
-  </div>
+  {%- if request.design_mode -%}
+    <div class="edp-payload color-{{ section.settings.color_scheme }}">
+      <div class="edp-payload__wrap edp-payload__section">
+        <p>Välj en payload-kategori i sektionens inställningar.</p>
+      </div>
+    </div>
+  {%- endif -%}
 {%- else -%}
   <div class="edp-payload color-{{ section.settings.color_scheme }}">
     <div class="edp-payload__wrap">
@@ -170,6 +176,7 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    { "type": "metaobject", "id": "category", "label": "Payload-kategori", "metaobject_type": "payload_category", "info": "Lämna tomt på kategorisidorna (/payloads/...) – där används sidans egen kategori." },
     { "type": "color_scheme", "id": "color_scheme", "label": "Färgschema", "default": "scheme-edp" },
     { "type": "url", "id": "quote_link", "label": "Länk till offertformulär" },
     { "type": "url", "id": "finder_link", "label": "Länk till Payload Finder" }
