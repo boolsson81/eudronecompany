@@ -176,9 +176,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Populärt just nu",
+        "title": "Populära drönare",
         "heading_size": "h2",
-        "collection": "populart-just-nu",
+        "collection": "consumer-drones",
         "products_to_show": 8,
         "columns_desktop": 4,
         "color_scheme": "scheme-edp",
