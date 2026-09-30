@@ -4,6 +4,7 @@
       "type": "enterprise-hero",
       "settings": {
         "eyebrow": "Konsument, tävling & enterprise-UAV",
+        "image": "shopify://shop_images/Drone_Hero.jpg",
         "title": "DJI-drönare & UAV-lösningar för hela Europa",
         "heading_size": "h1",
         "text": "Från fritidsflygning till uppdragskritiska system. Vi kombinerar DJI:s plattformar med EU-lager, lokal support och komplett GPSR/CE-dokumentation.",
