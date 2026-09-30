@@ -114,6 +114,69 @@ export const DRONE_ACCESSORIES: Record<string, DroneAccessory[]> = {
     { name: "DJI RC Pro Controller", category: "other", desc: "Professionell fjärrkontroll med 5.5\" ljusstark skärm.", shopUrl: "https://actionking.se/search?q=rc+pro" },
     { name: "Mavic 3 Pro Transportväska", category: "case", desc: "Kompakt väska med plats för drönare och alla tillbehör.", shopUrl: "https://actionking.se/search?q=mavic+3+pro+vaska" },
   ],
+
+  "DJI Matrice 4E": [
+    { name: "Matrice 4-serien Intelligent Flight Battery", category: "battery", desc: "Snabbytbart batteri för Matrice 4-serien.", shopUrl: "https://actionking.se/search?q=matrice+4+batteri" },
+    { name: "Matrice 4-serien Battery Hub", category: "charger", desc: "Sekventiell laddning av flera Matrice 4-batterier.", shopUrl: "https://actionking.se/search?q=matrice+4+laddare" },
+    { name: "DJI RC Plus 2 Fjärrkontroll", category: "other", desc: "Ny fjärrkontroll för Matrice 4-serien med uppdaterad O4 Enterprise-länk.", badge: "Ny", shopUrl: "https://actionking.se/search?q=rc+plus+2" },
+    { name: "Matrice 4E Transportväska", category: "case", desc: "Skyddande väska för drönare, kontroll och batterier.", shopUrl: "https://actionking.se/search?q=matrice+4e+vaska" },
+    { name: "DJI FlightHub 2", category: "other", desc: "Molnbaserad flyghanteringslösning för flottövervakning och planering.", shopUrl: "https://actionking.se/search?q=flighthub" },
+  ],
+
+  "DJI Matrice 4T": [
+    { name: "Matrice 4-serien Intelligent Flight Battery", category: "battery", desc: "Snabbytbart batteri för Matrice 4-serien.", shopUrl: "https://actionking.se/search?q=matrice+4+batteri" },
+    { name: "Matrice 4-serien Battery Hub", category: "charger", desc: "Sekventiell laddning av flera Matrice 4-batterier.", shopUrl: "https://actionking.se/search?q=matrice+4+laddare" },
+    { name: "DJI RC Plus 2 Fjärrkontroll", category: "other", desc: "Ny fjärrkontroll för Matrice 4-serien med uppdaterad O4 Enterprise-länk.", badge: "Ny", shopUrl: "https://actionking.se/search?q=rc+plus+2" },
+    { name: "Matrice 4T Transportväska", category: "case", desc: "Skyddande väska för drönare, kontroll och batterier.", shopUrl: "https://actionking.se/search?q=matrice+4t+vaska" },
+    { name: "DJI FlightHub 2", category: "other", desc: "Molnbaserad flyghanteringslösning för flottövervakning och planering.", shopUrl: "https://actionking.se/search?q=flighthub" },
+  ],
+
+  "DJI Matrice 4D": [
+    { name: "DJI Dock 3", category: "dock", desc: "Dockningsstation för autonom drift av Matrice 4D — automatisk laddning och start.", badge: "Ny", shopUrl: "https://actionking.se/search?q=dji+dock+3" },
+    { name: "Matrice 4-serien Intelligent Flight Battery", category: "battery", desc: "Snabbytbart batteri för Matrice 4-serien.", shopUrl: "https://actionking.se/search?q=matrice+4+batteri" },
+    { name: "DJI RC Plus 2 Fjärrkontroll", category: "other", desc: "Fjärrkontroll för manuell flygning av Matrice 4D utanför dockningsläget.", shopUrl: "https://actionking.se/search?q=rc+plus+2" },
+    { name: "DJI FlightHub 2", category: "other", desc: "Molnbaserad flyghanteringslösning för flottövervakning och planering.", shopUrl: "https://actionking.se/search?q=flighthub" },
+  ],
+
+  "DJI Matrice 4TD": [
+    { name: "DJI Dock 3", category: "dock", desc: "Dockningsstation för autonom drift av Matrice 4TD — automatisk laddning och start.", badge: "Ny", shopUrl: "https://actionking.se/search?q=dji+dock+3" },
+    { name: "Matrice 4-serien Intelligent Flight Battery", category: "battery", desc: "Snabbytbart batteri för Matrice 4-serien.", shopUrl: "https://actionking.se/search?q=matrice+4+batteri" },
+    { name: "DJI RC Plus 2 Fjärrkontroll", category: "other", desc: "Fjärrkontroll för manuell flygning av Matrice 4TD utanför dockningsläget.", shopUrl: "https://actionking.se/search?q=rc+plus+2" },
+    { name: "DJI FlightHub 2", category: "other", desc: "Molnbaserad flyghanteringslösning för flottövervakning och planering.", shopUrl: "https://actionking.se/search?q=flighthub" },
+  ],
+
+  "DJI Agras T25": [
+    { name: "Agras T25 Spridartank", category: "other", desc: "Spruttank med terrängföljningssystem för T25.", shopUrl: "https://actionking.se/search?q=agras+t25+tank" },
+    { name: "Agras T25 Battery", category: "battery", desc: "Batteri för Agras T25 vid sprutning och spridning.", shopUrl: "https://actionking.se/search?q=agras+t25+batteri" },
+    { name: "Agras T25 Laddstation", category: "charger", desc: "Snabbladdare för Agras T25-batterier.", shopUrl: "https://actionking.se/search?q=agras+t25+laddare" },
+    { name: "DJI Agras D-RTK 2 Marksstation", category: "rtk", desc: "RTK-basstation för centimeterprecision vid sprut- och spridningsflygningar.", shopUrl: "https://actionking.se/search?q=agras+d-rtk" },
+  ],
+
+  "DJI Agras T100": [
+    { name: "Agras T100 Spridartank", category: "other", desc: "Storvolyms spruttank med terrängföljningssystem för T100.", shopUrl: "https://actionking.se/search?q=agras+t100+tank" },
+    { name: "Agras T100 Battery", category: "battery", desc: "Kraftfullt batteri för Agras T100 vid storskalig sprutning.", shopUrl: "https://actionking.se/search?q=agras+t100+batteri" },
+    { name: "Agras T100 Laddstation", category: "charger", desc: "Snabbladdare för Agras T100-batterier.", shopUrl: "https://actionking.se/search?q=agras+t100+laddare" },
+    { name: "DJI Agras D-RTK 2 Marksstation", category: "rtk", desc: "RTK-basstation för centimeterprecision vid sprut- och spridningsflygningar.", shopUrl: "https://actionking.se/search?q=agras+d-rtk" },
+  ],
+
+  "DJI Dock 2": [
+    { name: "DJI FlightHub 2-licens", category: "other", desc: "Molnbaserad flottstyrning för schemaläggning och fjärrövervakning av dockningsflygningar.", shopUrl: "https://actionking.se/search?q=flighthub" },
+    { name: "4G Dongle Kit (Dock 2)", category: "rtk", desc: "4G-modem för förbättrad uppkoppling där fast nätverk saknas.", shopUrl: "https://actionking.se/search?q=4g+dongle" },
+    { name: "Dock 2 Reservbatteri", category: "battery", desc: "Extra intelligent batteri för kontinuerlig drift mellan flygningar.", shopUrl: "https://actionking.se/search?q=dji+dock+2+batteri" },
+  ],
+
+  "DJI Dock 3": [
+    { name: "DJI FlightHub 2-licens", category: "other", desc: "Molnbaserad flottstyrning för schemaläggning och fjärrövervakning av dockningsflygningar.", shopUrl: "https://actionking.se/search?q=flighthub" },
+    { name: "4G Dongle Kit (Dock 3)", category: "rtk", desc: "4G-modem för förbättrad uppkoppling där fast nätverk saknas.", shopUrl: "https://actionking.se/search?q=4g+dongle" },
+    { name: "Dock 3 Reservbatteri", category: "battery", desc: "Extra intelligent batteri för kontinuerlig drift mellan flygningar.", shopUrl: "https://actionking.se/search?q=dji+dock+3+batteri" },
+  ],
+
+  "DJI FlyCart 30": [
+    { name: "FlyCart 30 Intelligent Battery", category: "battery", desc: "Batteri för FlyCart 30 — två krävs för dubbelbatteriläge.", shopUrl: "https://actionking.se/search?q=flycart+30+batteri" },
+    { name: "FlyCart 30 Laddstation", category: "charger", desc: "Snabbladdare för FlyCart 30-batterier.", shopUrl: "https://actionking.se/search?q=flycart+30+laddare" },
+    { name: "FlyCart 30 Vinschkabel-kit", category: "other", desc: "Reservdelskit för vinschsystemet vid leverans utan landning.", shopUrl: "https://actionking.se/search?q=flycart+30+vinsch" },
+    { name: "FlyCart 30 Lastbox", category: "other", desc: "Standardiserad lastbox för gods upp till maxlast.", shopUrl: "https://actionking.se/search?q=flycart+30+lastbox" },
+  ],
 };
 
 /**

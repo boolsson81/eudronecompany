@@ -20,7 +20,7 @@ import mavicProImg from "@/assets/dji-mavic-3-pro.jpg";
  * källa; skriv hellre ingen spec alls.
  */
 
-export type DroneProductCategory = "platform" | "compact" | "agriculture" | "cinema";
+export type DroneProductCategory = "platform" | "compact" | "agriculture" | "cinema" | "infrastructure";
 
 export const DRONE_PRODUCT_CATEGORIES: Record<
   DroneProductCategory,
@@ -41,6 +41,10 @@ export const DRONE_PRODUCT_CATEGORIES: Record<
   cinema: {
     label: "Film & media",
     description: "Cinemaplattformar och kompakta kameradrönare",
+  },
+  infrastructure: {
+    label: "Autonoma system & logistik",
+    description: "Dockningsstationer för obemannad drift och transportdrönare för lastleverans",
   },
 };
 
@@ -523,6 +527,469 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     seoTitle: "DJI Mavic 3 Pro — kompakt kameradrönare | EU Drone Company",
     seoDesc:
       "DJI Mavic 3 Pro med tre kameror, 5.1K-video och 43 min flygtid. Kompakt drönare för dokumentär, B-roll och fastighetsfoto. Begär offert.",
+  },
+  {
+    slug: "matrice-4e",
+    name: "DJI Matrice 4E",
+    tag: "Kompakt allround (RC Plus 2)",
+    category: "compact",
+    heroTitle: "DJI Matrice 4E — nästa generations kompakta inspektionsdrönare",
+    heroDesc:
+      "Uppdaterad kompaktserie med inbyggd dubbel RTK, ny O4 Enterprise-länk och integrerad vidvinkel- och telekamera. Efterträdare till Mavic 3 Enterprise.",
+    longDesc:
+      "Matrice 4E bygger vidare på Mavic 3 Enterprise-konceptet men med uppdaterad sensor, längre räckvidd och RTK inbyggt som standard — ingen tillvalsmodul krävs. Vidvinkelkameran ger hög upplösning för kartläggning och dokumentation, medan telekameran ger räckviddszoom för detaljgranskning utan att flyga nära objektet. Passar som uppgradering för verksamheter som redan kör Mavic 3 Enterprise.",
+    features: [
+      "Inbyggd dubbel RTK-positionering — inget tillval krävs",
+      "Uppdaterad O4 Enterprise-länk med längre räckvidd",
+      "Integrerad vidvinkel- och telekamera",
+      "IP55 väderskydd",
+      "Snabbytbart batteri",
+      "Flygklar på under en minut",
+    ],
+    specs: [
+      { label: "Typ", value: "Integrerad enterprise-kamera (ej utbytbar payload)" },
+      { label: "Segment", value: "Efterträdare till Mavic 3 Enterprise" },
+      { label: "Väderskydd", value: "IP55" },
+      { label: "Positionering", value: "Inbyggd dubbel RTK" },
+      { label: "Länk", value: "DJI O4 Enterprise-transmission" },
+      { label: "Styrenhet", value: "DJI RC Plus 2" },
+    ],
+    applications: [
+      "Tak- och fasadinspektion",
+      "Screening av solcellsanläggningar",
+      "Fotogrammetri och mindre kartläggningsuppdrag",
+      "Uppgradering för befintliga Mavic 3 Enterprise-flottor",
+    ],
+    compatiblePayloads: [],
+    industries: ["inspektion", "energi", "sakerhet"],
+    shopUrl: "https://actionking.se/search?q=dji+matrice+4e",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Är Matrice 4E samma sak som Mavic 3 Enterprise?",
+        answer:
+          "Nej, Matrice 4E är efterträdaren i samma kompakta segment, med bland annat inbyggd RTK och uppdaterad O4 Enterprise-länk. Mavic 3 Enterprise finns kvar i sortimentet så länge lager räcker.",
+      },
+      {
+        question: "Behöver jag en separat RTK-modul till Matrice 4E?",
+        answer:
+          "Nej. Till skillnad från Mavic 3 Enterprise har Matrice 4E dubbel RTK inbyggd som standard.",
+      },
+      {
+        question: "Vilken fjärrkontroll används till Matrice 4E?",
+        answer:
+          "DJI RC Plus 2, som är ny för Matrice 4-serien och inte kompatibel med tidigare Mavic 3 Enterprise-kontroller.",
+      },
+    ],
+    seoTitle: "DJI Matrice 4E — kompakt enterprise-drönare | EU Drone Company",
+    seoDesc:
+      "DJI Matrice 4E med inbyggd RTK, O4 Enterprise-länk och integrerad kamera. Efterträdare till Mavic 3 Enterprise. Begär offert.",
+  },
+  {
+    slug: "matrice-4t",
+    name: "DJI Matrice 4T",
+    tag: "Kompakt termisk (RC Plus 2)",
+    category: "compact",
+    heroTitle: "DJI Matrice 4T — kompakt termisk inspektion med inbyggd RTK",
+    heroDesc:
+      "Samma kompakta plattform som Matrice 4E men med termisk sensor integrerad — för inspektion, sök och räddning där temperaturdata behövs direkt.",
+    longDesc:
+      "Matrice 4T byter vidvinkelsensorn i Matrice 4E mot en radiometrisk termisk kamera, kompletterad med telekamera för visuell detaljgranskning. Med inbyggd dubbel RTK och samma robusta väderskydd passar den insatser där temperaturdata behöver kombineras med precisionspositionering, till exempel elnätsinspektion och sök- och räddningsuppdrag.",
+    features: [
+      "Radiometrisk termisk kamera integrerad",
+      "Telekamera för visuell detaljgranskning",
+      "Inbyggd dubbel RTK-positionering",
+      "IP55 väderskydd",
+      "Uppdaterad O4 Enterprise-länk",
+      "Flygklar på under en minut",
+    ],
+    specs: [
+      { label: "Typ", value: "Integrerad termisk- och telekamera (ej utbytbar payload)" },
+      { label: "Segment", value: "Termisk variant i Matrice 4-serien" },
+      { label: "Väderskydd", value: "IP55" },
+      { label: "Positionering", value: "Inbyggd dubbel RTK" },
+      { label: "Länk", value: "DJI O4 Enterprise-transmission" },
+      { label: "Styrenhet", value: "DJI RC Plus 2" },
+    ],
+    applications: [
+      "Elnäts- och transformatorinspektion",
+      "Sök och räddning med termisk detektion",
+      "Solpanels- och byggnadsinspektion",
+      "Nattinsatser för säkerhet och bevakning",
+    ],
+    compatiblePayloads: [],
+    industries: ["inspektion", "energi", "sakerhet"],
+    shopUrl: "https://actionking.se/search?q=dji+matrice+4t",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Vad skiljer Matrice 4T från Matrice 4E?",
+        answer:
+          "4T byter vidvinkelkameran mot en radiometrisk termisk sensor och behåller telekameran — valet när uppdraget kräver temperaturdata, till exempel elnätsinspektion eller sök och räddning.",
+      },
+      {
+        question: "Kan Matrice 4T mäta temperatur, inte bara visa värmebild?",
+        answer:
+          "Ja, den termiska kameran är radiometrisk, vilket innebär att varje bildpunkt bär temperaturdata — inte bara en färgkodad bild.",
+      },
+    ],
+    seoTitle: "DJI Matrice 4T — kompakt termisk enterprise-drönare | EU Drone Company",
+    seoDesc:
+      "DJI Matrice 4T med radiometrisk termisk kamera, inbyggd RTK och O4 Enterprise-länk. Kompakt inspektion och sök & räddning. Begär offert.",
+  },
+  {
+    slug: "matrice-4d",
+    name: "DJI Matrice 4D",
+    tag: "Dockningsbar (Dock 3)",
+    category: "compact",
+    heroTitle: "DJI Matrice 4D — för obemannad drift med DJI Dock 3",
+    heroDesc:
+      "Dockningskompatibel systervariant till Matrice 4E, byggd för automatiserade uppdrag från DJI Dock 3 utan pilot på plats.",
+    longDesc:
+      "Matrice 4D delar sensoruppsättning med Matrice 4E men är anpassad för att docka, laddas och starta automatiskt från DJI Dock 3. Tillsammans bildar de ett system för schemalagda eller händelsestyrda flygningar — perimeterbevakning, återkommande inspektion och kartläggning — utan att en pilot behöver vara på plats för varje flygning.",
+    features: [
+      "Dockningskompatibel med DJI Dock 3",
+      "Integrerad vidvinkel- och telekamera",
+      "Inbyggd dubbel RTK-positionering",
+      "IP55 väderskydd",
+      "Automatisk laddning och start via dock",
+      "Uppdaterad O4 Enterprise-länk",
+    ],
+    specs: [
+      { label: "Typ", value: "Dockningskompatibel enterprise-kamera" },
+      { label: "Kompatibel dock", value: "DJI Dock 3" },
+      { label: "Väderskydd", value: "IP55" },
+      { label: "Positionering", value: "Inbyggd dubbel RTK" },
+      { label: "Driftläge", value: "Autonom drift via dock eller manuell flygning" },
+      { label: "Länk", value: "DJI O4 Enterprise-transmission" },
+    ],
+    applications: [
+      "Automatiserad perimeterbevakning",
+      "Återkommande anläggningsinspektion utan pilot på plats",
+      "Schemalagd kartläggning av samma objekt över tid",
+      "Snabb första-insats vid larm",
+    ],
+    compatiblePayloads: [],
+    industries: ["sakerhet", "energi", "inspektion"],
+    shopUrl: "https://actionking.se/search?q=dji+matrice+4d",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Kan Matrice 4D flygas manuellt också?",
+        answer:
+          "Ja. Den fungerar både för manuell flygning med DJI RC Plus 2 och för autonom drift via DJI Dock 3 — samma drönare täcker båda driftlägena.",
+      },
+      {
+        question: "Måste jag ha DJI Dock 3 för att köpa Matrice 4D?",
+        answer:
+          "Nej, men dockningsfunktionen kräver DJI Dock 3 för att användas. Utan dock fungerar den som en vanlig manuellt styrd Matrice 4E-motsvarighet.",
+      },
+    ],
+    seoTitle: "DJI Matrice 4D — dockningskompatibel drönare | EU Drone Company",
+    seoDesc:
+      "DJI Matrice 4D för autonom drift med DJI Dock 3. Inbyggd RTK, IP55 och integrerad kamera. Obemannad bevakning och inspektion. Begär offert.",
+  },
+  {
+    slug: "matrice-4td",
+    name: "DJI Matrice 4TD",
+    tag: "Dockningsbar termisk (Dock 3)",
+    category: "compact",
+    heroTitle: "DJI Matrice 4TD — termisk dockningsdrönare för DJI Dock 3",
+    heroDesc:
+      "Termisk systervariant till Matrice 4D — kombinerar radiometrisk termisk avbildning med autonom drift från DJI Dock 3.",
+    longDesc:
+      "Matrice 4TD för samman termisk avbildning med dockningskompatibilitet: samma radiometriska sensor som Matrice 4T, men byggd för att starta, flyga och laddas automatiskt från DJI Dock 3. Passar verksamheter som vill ha kontinuerlig termisk övervakning — till exempel brandvakt, nattlig perimeterbevakning och återkommande energiinspektion — utan att skicka ut en pilot för varje flygning.",
+    features: [
+      "Radiometrisk termisk kamera integrerad",
+      "Dockningskompatibel med DJI Dock 3",
+      "Inbyggd dubbel RTK-positionering",
+      "IP55 väderskydd",
+      "Automatisk laddning och start via dock",
+      "Telekamera för visuell detaljgranskning",
+    ],
+    specs: [
+      { label: "Typ", value: "Dockningskompatibel termisk- och telekamera" },
+      { label: "Kompatibel dock", value: "DJI Dock 3" },
+      { label: "Väderskydd", value: "IP55" },
+      { label: "Positionering", value: "Inbyggd dubbel RTK" },
+      { label: "Driftläge", value: "Autonom drift via dock eller manuell flygning" },
+      { label: "Primärt användningsområde", value: "Kontinuerlig termisk bevakning" },
+    ],
+    applications: [
+      "Automatiserad brandvakt och tidig branddetektion",
+      "Nattlig perimeterbevakning",
+      "Återkommande termisk energiinspektion",
+      "Sök och räddning utan pilot på plats vid larm",
+    ],
+    compatiblePayloads: [],
+    industries: ["sakerhet", "energi", "inspektion"],
+    shopUrl: "https://actionking.se/search?q=dji+matrice+4td",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Vad skiljer Matrice 4TD från Matrice 4D?",
+        answer:
+          "4TD byter vidvinkelkameran mot en radiometrisk termisk sensor, precis som skillnaden mellan 4E och 4T. Båda är dockningskompatibla med DJI Dock 3.",
+      },
+      {
+        question: "Kan Matrice 4TD larma automatiskt vid avvikande temperatur?",
+        answer:
+          "Larmlogik och tröskelvärden konfigureras i DJI FlightHub 2, som stationen kopplas mot. Vi hjälper till att sätta upp bevakningsregler för din anläggning.",
+      },
+    ],
+    seoTitle: "DJI Matrice 4TD — termisk dockningsdrönare | EU Drone Company",
+    seoDesc:
+      "DJI Matrice 4TD med radiometrisk termisk kamera för autonom drift med DJI Dock 3. Kontinuerlig bevakning utan pilot på plats. Begär offert.",
+  },
+  {
+    slug: "agras-t25",
+    name: "DJI Agras T25",
+    tag: "Kompakt sprutning & spridning",
+    category: "agriculture",
+    heroTitle: "DJI Agras T25 — kompakt sprutdrönare för mindre och medelstora fält",
+    heroDesc:
+      "Den mindre modellen i Agras-serien — samma terrängföljning och RTK-precision som T50, i ett lättare format för gårdar som inte behöver full T50-kapacitet.",
+    longDesc:
+      "Agras T25 riktar sig till gårdar och entreprenörer med mindre eller mer svårtillgängliga fält än vad T50 är dimensionerad för. Den delar grundteknik med resten av Agras-serien — terrängföljning, RTK-precision och samma typ av spridarsystem — men i ett lättare och mer kompakt format som är enklare att transportera och hantera för en ensam operatör.",
+    features: [
+      "Kompakt format för en operatörs hantering",
+      "Terrängföljning i kuperad terräng",
+      "RTK-precision på centimeternivå",
+      "Sprutning och granulatspridning i samma plattform",
+      "Snabbare uppsättning och transport än T50",
+    ],
+    specs: [
+      { label: "Typ", value: "Spridnings- och sprutdrönare" },
+      { label: "Segment", value: "Kompakt modell i Agras-serien, under T50" },
+      { label: "Positionering", value: "RTK, centimeternivå" },
+      { label: "Terrängföljning", value: "Ja, för kuperade fält" },
+      { label: "Primärt användningsområde", value: "Sprutning och spridning på mindre fältstorlekar" },
+      { label: "Regelverk", value: "Kräver kemikaliehantering och särskild utbildning" },
+    ],
+    applications: [
+      "Växtskyddssprutning på mindre och medelstora gårdar",
+      "Fält med begränsad åtkomst för större maskiner",
+      "Kompletterande spridarkapacitet vid sidan av T50",
+      "Entreprenörer som servar flera mindre kunder",
+    ],
+    compatiblePayloads: [],
+    industries: ["lantbruk"],
+    shopUrl: "https://actionking.se/search?q=dji+agras+t25",
+    faq: [
+      {
+        question: "Vad skiljer Agras T25 från Agras T50?",
+        answer:
+          "T25 är den lättare och mer kompakta modellen i samma serie, riktad mot mindre eller mer svårtillgängliga fält. T50 har högre kapacitet och passar bättre för storskalig drift. Kontakta oss för att jämföra kapacitet mot din fältstorlek.",
+      },
+      {
+        question: "Kan Agras T25 spruta och sprida granulat?",
+        answer:
+          "Ja, precis som övriga Agras-modeller hanterar den både vätske- och granulatspridning med rätt tillbehör.",
+      },
+    ],
+    seoTitle: "DJI Agras T25 — kompakt sprutdrönare | EU Drone Company",
+    seoDesc:
+      "DJI Agras T25 för mindre och medelstora fält. RTK-precision och terrängföljning i ett lättare format än T50. Begär offert.",
+  },
+  {
+    slug: "agras-t100",
+    name: "DJI Agras T100",
+    tag: "Storskalig sprutning & spridning",
+    category: "agriculture",
+    heroTitle: "DJI Agras T100 — DJI:s mest kapacitetsstarka sprutdrönare",
+    heroDesc:
+      "Den största modellen i Agras-serien — högre tank- och spridarvolym än T50 för gårdar och entreprenörer med stora sammanhängande arealer.",
+    longDesc:
+      "Agras T100 är byggd för verksamheter som redan har vuxit ur T50:s kapacitet. Med större tank- och spridarvolym täcker den fler hektar per flygning, vilket minskar antalet återfyllnadsstopp på stora sammanhängande arealer. Den delar RTK-precision och terrängföljning med resten av Agras-serien, men är dimensionerad för hög beläggning snarare än kompakthet.",
+    features: [
+      "Högre tank- och spridarvolym än Agras T50",
+      "Terrängföljning i kuperad terräng",
+      "RTK-precision på centimeternivå",
+      "Färre återfyllnadsstopp på stora arealer",
+      "Sprutning och granulatspridning i samma plattform",
+    ],
+    specs: [
+      { label: "Typ", value: "Spridnings- och sprutdrönare" },
+      { label: "Segment", value: "Största modellen i Agras-serien, över T50" },
+      { label: "Positionering", value: "RTK, centimeternivå" },
+      { label: "Terrängföljning", value: "Ja, för kuperad terräng" },
+      { label: "Primärt användningsområde", value: "Storskalig sprutning och spridning" },
+      { label: "Regelverk", value: "Kräver kemikaliehantering och särskild utbildning" },
+    ],
+    applications: [
+      "Storskalig växtskyddssprutning på sammanhängande arealer",
+      "Entreprenörsdrift med hög årlig beläggning",
+      "Gödsel- och utsädesspridning över stora ytor",
+      "Verksamheter som vuxit ur Agras T50:s kapacitet",
+    ],
+    compatiblePayloads: [],
+    industries: ["lantbruk"],
+    shopUrl: "https://actionking.se/search?q=dji+agras+t100",
+    faq: [
+      {
+        question: "När passar Agras T100 bättre än T50?",
+        answer:
+          "När fältstorleken och den årliga beläggningen gör att antalet återfyllnadsstopp med T50 börjar kosta mer tid än den högre tank- och spridarvolymen på T100 sparar. Vi hjälper dig räkna på var brytpunkten ligger för din verksamhet.",
+      },
+      {
+        question: "Kräver Agras T100 samma utbildning som T50?",
+        answer:
+          "Ja, samma krav på operatörsbehörighet och kemikaliehantering gäller. Storleken påverkar hanteringsvana snarare än vilken utbildning som krävs.",
+      },
+    ],
+    seoTitle: "DJI Agras T100 — storskalig sprutdrönare | EU Drone Company",
+    seoDesc:
+      "DJI Agras T100, den mest kapacitetsstarka modellen i Agras-serien. Högre tankvolym än T50 för stora arealer. Begär offert.",
+  },
+  {
+    slug: "dji-dock-2",
+    name: "DJI Dock 2",
+    tag: "Autonom dockningsstation",
+    category: "infrastructure",
+    heroTitle: "DJI Dock 2 — dockningsstation för obemannad drönardrift",
+    heroDesc:
+      "Väderskyddad dockningsstation som laddar, skyddar och skickar upp din drönare automatiskt — för schemalagda eller händelsestyrda uppdrag utan pilot på plats.",
+    longDesc:
+      "DJI Dock 2 gör det möjligt att driva en drönare helt obemannat: stationen laddar drönaren mellan flygningar, skyddar den från väder och startar automatiskt enligt schema eller vid larm. Tillsammans med en dockningskompatibel drönare och DJI FlightHub 2 för flottstyrning bygger den ett system för återkommande inspektion, bevakning och kartläggning där en fjärroperatör kan hantera flera platser samtidigt.",
+    features: [
+      "Automatisk laddning och start av drönaren",
+      "Väderskyddad — tål utomhusdrift året runt",
+      "Schemalagda eller händelsestyrda flygningar",
+      "Integrerad med DJI FlightHub 2 för flottstyrning",
+      "Fjärrstyrning från valfri plats via mobilnät",
+    ],
+    specs: [
+      { label: "Typ", value: "Autonom dockningsstation, ej flygande enhet" },
+      { label: "Väderskydd", value: "Utomhusklassad, väderskyddad" },
+      { label: "Kompatibla drönare", value: "Dockningskompatibla Matrice-modeller" },
+      { label: "Styrning", value: "DJI FlightHub 2, fjärranslutet" },
+      { label: "Driftläge", value: "Schemalagd eller händelsestyrd autonom flygning" },
+    ],
+    applications: [
+      "Automatiserad perimeterbevakning av industriområden",
+      "Återkommande anläggnings- och energiinspektion",
+      "Snabb första-insats vid larm utan pilot på plats",
+      "Flottstyrning av flera platser från ett kontrollrum",
+    ],
+    compatiblePayloads: [],
+    industries: ["sakerhet", "energi", "inspektion"],
+    shopUrl: "https://actionking.se/search?q=dji+dock+2",
+    faq: [
+      {
+        question: "Vilken drönare används tillsammans med DJI Dock 2?",
+        answer:
+          "Dock 2 kräver en dockningskompatibel drönarmodell. Vi går igenom vilken kombination som passar din anläggning och ditt uppdrag innan beställning.",
+      },
+      {
+        question: "Behöver vi en pilot på plats när Dock 2 är installerad?",
+        answer:
+          "Nej, det är hela poängen med systemet — drönaren startar, flyger och landar automatiskt enligt schema eller larm, och en fjärroperatör kan ingripa manuellt vid behov.",
+      },
+    ],
+    seoTitle: "DJI Dock 2 — dockningsstation för obemannad drift | EU Drone Company",
+    seoDesc:
+      "DJI Dock 2 laddar, skyddar och startar din drönare automatiskt. Obemannad bevakning och inspektion via DJI FlightHub 2. Begär offert.",
+  },
+  {
+    slug: "dji-dock-3",
+    name: "DJI Dock 3",
+    tag: "Kompakt autonom dockningsstation",
+    category: "infrastructure",
+    heroTitle: "DJI Dock 3 — nästa generations dockningsstation, mer kompakt",
+    heroDesc:
+      "Uppdaterad, mer kompakt dockningsstation byggd för Matrice 4D/4TD — enklare installation och snabbare driftsättning än DJI Dock 2.",
+    longDesc:
+      "DJI Dock 3 är efterträdaren till Dock 2 — mindre och lättare att installera, med samma grundfunktion: automatisk laddning, väderskydd och start av en dockningskompatibel drönare enligt schema eller vid larm. Den är byggd tillsammans med Matrice 4D och Matrice 4TD och passar verksamheter som vill sätta upp obemannad drift på fler platser utan lika mycket installationsarbete som Dock 2 krävde.",
+    features: [
+      "Mer kompakt och lättare än DJI Dock 2",
+      "Automatisk laddning och start av drönaren",
+      "Väderskyddad — tål utomhusdrift året runt",
+      "Snabbare installation och driftsättning",
+      "Integrerad med DJI FlightHub 2 för flottstyrning",
+    ],
+    specs: [
+      { label: "Typ", value: "Autonom dockningsstation, ej flygande enhet" },
+      { label: "Segment", value: "Efterträdare till DJI Dock 2, mer kompakt" },
+      { label: "Väderskydd", value: "Utomhusklassad, väderskyddad" },
+      { label: "Kompatibla drönare", value: "Matrice 4D, Matrice 4TD" },
+      { label: "Styrning", value: "DJI FlightHub 2, fjärranslutet" },
+    ],
+    applications: [
+      "Snabb utrullning av obemannad drift på flera platser",
+      "Perimeterbevakning där installationsutrymme är begränsat",
+      "Återkommande inspektion utan pilot på plats",
+      "Komplement till befintliga Dock 2-installationer",
+    ],
+    compatiblePayloads: [],
+    industries: ["sakerhet", "energi", "inspektion"],
+    shopUrl: "https://actionking.se/search?q=dji+dock+3",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Kan DJI Dock 3 användas tillsammans med Dock 2 i samma flotta?",
+        answer:
+          "Ja, båda hanteras via DJI FlightHub 2, så en flotta kan blanda Dock 2- och Dock 3-installationer beroende på vad respektive plats kräver.",
+      },
+      {
+        question: "Vilka drönare fungerar med DJI Dock 3?",
+        answer:
+          "Matrice 4D och Matrice 4TD, som är byggda för att docka, laddas och starta automatiskt från Dock 3.",
+      },
+    ],
+    seoTitle: "DJI Dock 3 — kompakt dockningsstation | EU Drone Company",
+    seoDesc:
+      "DJI Dock 3, efterträdaren till Dock 2. Mer kompakt station för Matrice 4D/4TD och obemannad drönardrift. Begär offert.",
+  },
+  {
+    slug: "flycart-30",
+    name: "DJI FlyCart 30",
+    tag: "Transport & leverans",
+    category: "infrastructure",
+    heroTitle: "DJI FlyCart 30 — tung transportdrönare för last och leverans",
+    heroDesc:
+      "Industriell lastdrönare som bär upp till 40 kg i enkelbatteriläge eller 30 kg tur och retur i dubbelbatteriläge — för leverans till svårtillgängliga platser.",
+    longDesc:
+      "FlyCart 30 flyttar gods dit vägar och terräng gör markleverans långsam eller omöjlig — till otillgängliga byggarbetsplatser, mellan öar, upp till bergsstationer eller vid katastrofinsatser. I dubbelbatteriläge bär den upp till 30 kg tur och retur; i enkelbatteriläge, utan returflygning, ökar lastkapaciteten till 40 kg. En inbyggd vinsch kan sänka godset utan att drönaren behöver landa, vilket gör den användbar även där det inte finns en säker landningsyta.",
+    features: [
+      "Upp till 40 kg last i enkelbatteriläge",
+      "Upp till 30 kg last tur och retur i dubbelbatteriläge",
+      "Vinschsystem för leverans utan landning",
+      "IP55 väderskydd",
+      "Lång räckvidd för leverans till otillgängliga platser",
+    ],
+    specs: [
+      { label: "Typ", value: "Industriell transport- och leveransdrönare" },
+      { label: "Max last (enkelbatteri)", value: "40 kg" },
+      { label: "Max last (dubbelbatteri, tur och retur)", value: "30 kg" },
+      { label: "Väderskydd", value: "IP55" },
+      { label: "Leveransmetod", value: "Landning eller vinschning utan landning" },
+      { label: "Primärt användningsområde", value: "Godstransport till svårtillgängliga platser" },
+    ],
+    applications: [
+      "Materialtransport till otillgängliga byggarbetsplatser",
+      "Leverans mellan öar och till avlägsna anläggningar",
+      "Katastrof- och nödhjälpsleverans",
+      "Transport av tunga reservdelar till vindkraft- och energianläggningar",
+    ],
+    compatiblePayloads: [],
+    industries: ["bygg-anlaggning", "sakerhet"],
+    shopUrl: "https://actionking.se/search?q=dji+flycart+30",
+    badge: "Ny",
+    faq: [
+      {
+        question: "Hur mycket kan FlyCart 30 lyfta?",
+        answer:
+          "Upp till 40 kg i enkelbatteriläge (enkelriktad flygning) eller 30 kg tur och retur i dubbelbatteriläge, beroende på räckvidd och uppdrag.",
+      },
+      {
+        question: "Måste FlyCart 30 landa för att leverera lasten?",
+        answer:
+          "Nej. Den inbyggda vinschen kan sänka lasten till marken utan att drönaren landar, vilket är användbart där det saknas en säker landningsyta.",
+      },
+    ],
+    seoTitle: "DJI FlyCart 30 — transport- och leveransdrönare | EU Drone Company",
+    seoDesc:
+      "DJI FlyCart 30 bär upp till 40 kg last till svårtillgängliga platser, med vinsch för leverans utan landning. Begär offert.",
   },
 ];
 
