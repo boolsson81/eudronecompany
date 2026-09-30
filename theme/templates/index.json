@@ -104,6 +104,7 @@
         "cat_camera": {
           "type": "industry",
           "settings": {
+            "image": "shopify://shop_images/dji-air-3s-flymore-combo-01_9f8be1ba-587c-4d82-95fe-21ad0eae1ec7.webp",
             "icon": "camera",
             "title": "Kamera- & prosumerdrönare",
             "text": "Foto, film & kreativ produktion",
@@ -114,6 +115,7 @@
         "cat_agri": {
           "type": "industry",
           "settings": {
+            "image": "shopify://shop_images/DJI_AGRAS_1.webp_ubg.png",
             "icon": "leaf",
             "title": "Lantbruk & sprutdrönare",
             "text": "Precisionsjordbruk i stor skala",
@@ -124,6 +126,7 @@
         "cat_inspection": {
           "type": "industry",
           "settings": {
+            "image": "shopify://shop_images/DJI_Matrice_4T_1.webp_Redigerad.png",
             "icon": "compass",
             "title": "Inspektion & kartläggning",
             "text": "Mätning, LiDAR & besiktning",
@@ -144,6 +147,7 @@
         "cat_payload": {
           "type": "industry",
           "settings": {
+            "image": "shopify://shop_images/DJI_Zenmuse_L2_Lidar_7.svg",
             "icon": "radar",
             "title": "Payload & sensorer",
             "text": "Termisk, zoom & multispektral",
