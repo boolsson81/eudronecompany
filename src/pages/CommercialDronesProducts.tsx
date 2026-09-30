@@ -13,7 +13,13 @@ import {
 } from "@/data/enterpriseDroneProducts";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
-const CATEGORY_ORDER: DroneProductCategory[] = ["platform", "compact", "agriculture", "cinema"];
+const CATEGORY_ORDER: DroneProductCategory[] = [
+  "platform",
+  "compact",
+  "agriculture",
+  "cinema",
+  "infrastructure",
+];
 
 export default function CommercialDronesProducts() {
   return (

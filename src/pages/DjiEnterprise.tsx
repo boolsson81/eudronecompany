@@ -14,7 +14,13 @@ import {
 } from "@/data/enterpriseDroneProducts";
 import { droneUrl, DRONE_BREADCRUMB_ROOT } from "@/lib/publicSite";
 
-const CATEGORY_ORDER: DroneProductCategory[] = ["platform", "compact", "agriculture", "cinema"];
+const CATEGORY_ORDER: DroneProductCategory[] = [
+  "platform",
+  "compact",
+  "agriculture",
+  "cinema",
+  "infrastructure",
+];
 
 /** Namnen matchar nycklarna i DRONE_ACCESSORIES — hela det aktuella enterprise-sortimentet. */
 const ALL_ENTERPRISE_DRONE_NAMES = ENTERPRISE_DRONE_PRODUCTS.map((p) => p.name);
