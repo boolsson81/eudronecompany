@@ -101,3 +101,47 @@ Ingen dimension skapas i Shopify förrän dessa är besvarade. Inga värden hitt
 - `max_payload_weight` på plattformarna är inte kontrollerat.
 - Konfiguratorn är aldrig körd i webbläsare.
 - Räknare för `payload_specification` och `payload_compatibility` kan släpa.
+
+## 8. Bilaga: drönarprodukter (radnivå, 2026-09-30)
+
+Källa: alla produkter med `productType` "Enterprise Drones" (53) eller "enterprise drone" (2), 55 rader.
+Grupperingen är gjord på titeln; inga fält har ändrats.
+
+| Modell (utläst ur titel) | Rader | Aktiv | Utkast | Arkiverad | Kommentar |
+|---|--:|--:|--:|--:|---|
+| Mavic 3 Enterprise | 7 | 0 | 7 | 0 | Varianter: C1, C2, SP, Care Basic 1/2 år. En rad har vendor "DJI", övriga "DJI Enterprise" |
+| Mavic 3 Thermal | 6 | 0 | 6 | 0 | Inkl. Advanced C1, SP, Universal |
+| Mavic 3 Multispectral | 5 | 0 | 5 | 0 | Varianter C2 och Care Basic |
+| Mavic 3 Pro CINE Premium Combo | 1 | 0 | 1 | 0 | Bör bedömas: ser inte ut som enterprise-produkt (ej verifierat) |
+| Matrice 4TD | 7 | 1 | 6 | 0 | Aktiv: "(EU) w/o battery" (handle `-1`) |
+| Matrice 4D | 4 | 1 | 3 | 0 | Aktiv: "(EU) w/o battery" |
+| Matrice 4T | 3 | 0 | 3 | 0 | |
+| Matrice 4E | 2 | 0 | 2 | 0 | Två nästan identiska rader |
+| Matrice 400 | 4 | 0 | 4 | 0 | "SP Plus Combo" förekommer två gånger; en bundle med Orion AP3-P3 |
+| Matrice 350 | 1 | 0 | 1 | 0 | Endast som bundle med Orion AP3-P3 |
+| Matrice 30T | 3 | 0 | 2 | 1 | Inkl. dockningspaket |
+| Agras (T25, T25P, T30, T50, T70P) | 6 | 0 | 5 | 1 | T50 finns två gånger (en arkiverad) |
+| FlyCart | 2 | 0 | 1 | 1 | Handle `dji-flycart-100` men titeln säger FlyCart 30 |
+| Inspire (2 X7 Kit, 3) | 2 | 0 | 2 | 0 | |
+| Bambi Kit1 (bundle) | 1 | 0 | 1 | 0 | Oklart vad produkten är |
+| Laddhubb Matrice 4D (Solectric) | 1 | 0 | 1 | 0 | Felklassad: tillbehör med `productType` "enterprise drone" |
+| **Summa** | **55** | **2** | **50** | **3** | |
+
+Observationer (bygger på tabellen, ej på gissningar):
+
+1. 55 produktrader motsvarar cirka 16 modeller. Många rader är regionsvarianter (EU, C1, C2, SP) och
+   Care-paket som separata produkter. Om konfiguratorn ska välja "modell" krävs ett beslut om varianter
+   ska vara Shopify-varianter eller separata produkter.
+2. De två aktiva drönarna är båda "w/o battery". En konfiguration av dem kräver att batteri och laddare
+   läggs till via `required_accessories`.
+3. Handle och titel skiljer sig på flera rader (t.ex. `dji-flycart-100` som heter FlyCart 30), vilket är
+   en risk för `legacy_fits_value`-mappningen.
+4. Plattformar i `uav_platform` som saknar drönarprodukt i dessa två produkttyper: Matrice 300 RTK,
+   Matrice 3D, Freefly, Inspired Flight, Autel, Wisson Orion. Drönare som saknar plattform:
+   Agras, FlyCart, Inspire, Dock-paketen. Ej undersökt om produkterna ligger under andra produkttyper.
+
+### Aktiva payloads (9 av 57)
+
+Alla nio är från tredje part: åtta från CZI (ML200, DT1K, GL10V2, GL60 Mini, GL60 Plus, LP35, MP130 V2,
+TH4 V2) och en från Wisson Robotics (Orion AP30-N1). Inga DJI-payloads är aktiva i denna produkttyp.
+Rader per övriga produkttyper är inte listade i denna bilaga.
