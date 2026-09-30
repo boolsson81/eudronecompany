@@ -769,3 +769,26 @@
   width: 2rem;
   height: 2rem;
 }
+
+/* Rekommenderad konfiguration (branschsidor) */
+.edp-enterprise__setup {
+  scroll-margin-top: 6rem;
+}
+.edp-enterprise__setup-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edp-enterprise__setup-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.edp-enterprise__setup-media .edp-enterprise__hero-placeholder {
+  width: 100%;
+  height: 100%;
+}

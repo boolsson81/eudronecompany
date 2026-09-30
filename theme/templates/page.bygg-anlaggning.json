@@ -68,6 +68,36 @@
           "settings": {
             "text": "AI-assisterad analys och automatiserad rapportgenerering"
           }
+        },
+        "setup_1": {
+          "type": "setup",
+          "settings": {
+            "role": "Plattform",
+            "title": "Enterprise-drönare",
+            "text": "Stabila plattformar med RTK för exakt positionering och återkommande flygningar.",
+            "collection": "enterprise-drones",
+            "link_label": "Se drönare"
+          }
+        },
+        "setup_2": {
+          "type": "setup",
+          "settings": {
+            "role": "Payload",
+            "title": "Kameror och LiDAR",
+            "text": "Kartläggningskameror och LiDAR för ortomosaiker, volymer och 3D-modeller.",
+            "collection": "payload-sensorer",
+            "link_label": "Se payloads"
+          }
+        },
+        "setup_3": {
+          "type": "setup",
+          "settings": {
+            "role": "Service & utbildning",
+            "title": "Utbildning, support och service",
+            "text": "Utbildning i fotogrammetri och flygplanering samt support under hela projektet.",
+            "link": "/pages/contact-quote",
+            "link_label": "Begär offert"
+          }
         }
       },
       "block_order": [
@@ -77,6 +107,9 @@
         "solution_4",
         "solution_5",
         "solution_6",
+        "setup_1",
+        "setup_2",
+        "setup_3",
         "benefit_1",
         "benefit_2",
         "benefit_3",
@@ -93,7 +126,9 @@
         "benefits_heading": "Fördelar",
         "color_scheme": "scheme-edp",
         "padding_top": 36,
-        "padding_bottom": 24
+        "padding_bottom": 24,
+        "setup_heading": "Rekommenderad konfiguration",
+        "setup_text": "Kartläggning och inspektion av byggplatser med en sammansatt drönar- och sensorkonfiguration."
       }
     },
     "enterprise_contact": {
