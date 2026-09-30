@@ -55,6 +55,17 @@
         </section>
       {%- endif -%}
 
+      {%- if mission.customer_types.value != blank -%}
+        <section class="edp-payload__section">
+          <h2 class="edp-payload__section-heading">Vem passar det för?</h2>
+          <ul class="edp-payload__pills">
+            {%- for customer_type in mission.customer_types.value -%}
+              <li class="edp-payload__pill">{{ customer_type.name.value | escape }}</li>
+            {%- endfor -%}
+          </ul>
+        </section>
+      {%- endif -%}
+
       {%- if mission.tasks.value != blank or mission.technologies.value != blank or mission.environments.value != blank -%}
         <section class="edp-payload__section">
           <h2 class="edp-payload__section-heading">Arbetsflöde</h2>
