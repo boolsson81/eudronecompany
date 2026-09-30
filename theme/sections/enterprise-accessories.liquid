@@ -1,0 +1,119 @@
+{{ 'section-enterprise.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="edp-enterprise color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width section-{{ section.id }}-padding isolate">
+    {%- unless section.settings.heading == blank and section.settings.text == blank -%}
+      <div class="edp-enterprise__subhead">
+        {%- unless section.settings.heading == blank -%}
+          <h2 class="edp-enterprise__subhead-title {{ section.settings.heading_size }}">
+            {{ section.settings.heading | escape }}
+          </h2>
+        {%- endunless -%}
+        {%- unless section.settings.text == blank -%}
+          <p class="edp-enterprise__subhead-text">{{ section.settings.text | escape }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="edp-enterprise__grid edp-enterprise__grid--3" role="list">
+        {%- for block in section.blocks -%}
+          <li class="edp-enterprise__card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}
+              <div class="edp-enterprise__card-image-wrap">
+                {{
+                  block.settings.image
+                  | image_url: width: 600
+                  | image_tag: class: 'edp-enterprise__card-image', loading: 'lazy', widths: '300, 450, 600', alt: block.settings.title
+                }}
+              </div>
+            {%- endif -%}
+            {%- unless block.settings.title == blank -%}
+              <h3 class="edp-enterprise__card-title">{{ block.settings.title | escape }}</h3>
+            {%- endunless -%}
+            {%- unless block.settings.text == blank -%}
+              <p class="edp-enterprise__card-text">{{ block.settings.text | escape }}</p>
+            {%- endunless -%}
+            {%- if block.settings.link_label != blank -%}
+              <a class="edp-enterprise__card-link" href="{{ block.settings.link | default: '#' }}">
+                {{ block.settings.link_label | escape }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Enterprise-tillbehör",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": { "groups": ["header", "footer"] },
+  "settings": [
+    { "type": "inline_richtext", "id": "heading", "label": "Rubrik", "default": "Enterprise-tillbehör" },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Beskrivning",
+      "default": "Batterier, laddning, RTK, väskor och övrig utrustning som håller din Matrice- eller Mavic-flotta i luften."
+    },
+    { "type": "color_scheme", "id": "color_scheme", "label": "t:sections.all.colors.label", "default": "scheme-1" },
+    { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_top", "default": 36 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_bottom", "default": 36 }
+  ],
+  "blocks": [
+    {
+      "type": "accessory",
+      "name": "Tillbehörskategori",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Bild" },
+        { "type": "text", "id": "title", "label": "Titel", "default": "Batterier" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Intelligenta batterier för längre flygtid." },
+        { "type": "text", "id": "link_label", "label": "Länktext", "default": "Se batterier" },
+        { "type": "url", "id": "link", "label": "Länk" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Enterprise-tillbehör",
+      "blocks": [
+        { "type": "accessory", "settings": { "title": "Batterier", "text": "Intelligenta batterier för Matrice- och Mavic-serien med lång flygtid och många laddcykler.", "link_label": "Se batterier", "link": "/collections/batteries" } },
+        { "type": "accessory", "settings": { "title": "Laddare & stationer", "text": "Batteristationer som laddar och värmer flera batterier automatiskt inför uppdrag.", "link_label": "Se laddare", "link": "/collections/enterprise-accessories" } },
+        { "type": "accessory", "settings": { "title": "RTK & positionering", "text": "GNSS-moduler och basstationer för centimeterprecision utan nätverks-RTK.", "link_label": "Se RTK", "link": "/collections/enterprise-accessories" } },
+        { "type": "accessory", "settings": { "title": "Väskor & transport", "text": "Hårdväskor med skräddarsydd inredning för drönare, fjärrkontroll och batterier.", "link_label": "Se väskor", "link": "/collections/enterprise-accessories" } },
+        { "type": "accessory", "settings": { "title": "Fjärrkontroller & mjukvara", "text": "RC Plus, RC Pro Enterprise och FlightHub 2 för flottstyrning och planering.", "link_label": "Se fjärrkontroller", "link": "/collections/enterprise-accessories" } },
+        { "type": "accessory", "settings": { "title": "Hinderdetektering & övrigt", "text": "Radar, högtalare och spotlights som kompletterar enterprise-plattformen.", "link_label": "Se alla tillbehör", "link": "/collections/enterprise-accessories" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

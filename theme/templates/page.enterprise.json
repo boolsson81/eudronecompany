@@ -547,6 +547,26 @@
         "padding_bottom": 24
       }
     },
+    "enterprise_accessories": {
+      "type": "enterprise-accessories",
+      "settings": {
+        "heading": "Enterprise-tillbehör",
+        "heading_size": "h2",
+        "text": "Batterier, laddning, RTK, väskor och övrig utrustning som håller din Matrice- eller Mavic-flotta i luften.",
+        "color_scheme": "scheme-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": {
+        "acc_1": { "type": "accessory", "settings": { "title": "Batterier", "text": "Intelligenta batterier för Matrice- och Mavic-serien med lång flygtid och många laddcykler.", "link_label": "Se batterier", "link": "/collections/batteries" } },
+        "acc_2": { "type": "accessory", "settings": { "title": "Laddare & stationer", "text": "Batteristationer som laddar och värmer flera batterier automatiskt inför uppdrag.", "link_label": "Se laddare", "link": "/collections/enterprise-accessories" } },
+        "acc_3": { "type": "accessory", "settings": { "title": "RTK & positionering", "text": "GNSS-moduler och basstationer för centimeterprecision utan nätverks-RTK.", "link_label": "Se RTK", "link": "/collections/enterprise-accessories" } },
+        "acc_4": { "type": "accessory", "settings": { "title": "Väskor & transport", "text": "Hårdväskor med skräddarsydd inredning för drönare, fjärrkontroll och batterier.", "link_label": "Se väskor", "link": "/collections/enterprise-accessories" } },
+        "acc_5": { "type": "accessory", "settings": { "title": "Fjärrkontroller & mjukvara", "text": "RC Plus, RC Pro Enterprise och FlightHub 2 för flottstyrning och planering.", "link_label": "Se fjärrkontroller", "link": "/collections/enterprise-accessories" } },
+        "acc_6": { "type": "accessory", "settings": { "title": "Hinderdetektering & övrigt", "text": "Radar, högtalare och spotlights som kompletterar enterprise-plattformen.", "link_label": "Se alla tillbehör", "link": "/collections/enterprise-accessories" } }
+      },
+      "block_order": ["acc_1", "acc_2", "acc_3", "acc_4", "acc_5", "acc_6"]
+    },
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
@@ -580,6 +600,7 @@
     "enterprise_dock_models",
     "enterprise_products",
     "enterprise_payloads",
+    "enterprise_accessories",
     "enterprise_contact",
     "faq"
   ]
