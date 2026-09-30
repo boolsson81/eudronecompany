@@ -1,0 +1,153 @@
+handle;status;vendor;forslag_passar_till;konfidens;grund
+1-2-to-3-4-reducing-adapter;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+adapter;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+avss-prs-m350ex;DRAFT;Solectric;DJI Matrice 350;medel;titeln nämner M350 – EX-varianten ej kontrollerad
+czi-tk4-110-m;DRAFT;CZI;;;titeln anger ingen modell
+dji-battery-incubator-21-l;DRAFT;DJI;;;titeln anger ingen modell
+dji-dock-3;DRAFT;DJI Enterprise;;;är själv en dock, inte ett tillbehör – bör ha roll dock
+dji-dock-3-vehicle-mounted-gimbal-mount;DRAFT;Solectric;DJI Dock 3;hög;titeln
+dji-inspire-2-gps-module-for-rc;DRAFT;DJI;DJI Inspire 2;hög;titeln
+dji-inspire-2-handwheel-2-rc-stand;DRAFT;DJI;DJI Inspire 2;hög;titeln
+dji-inspire-2-support-rig-till-handkontroll;DRAFT;DJI;DJI Inspire 2;hög;titeln
+dji-inspire-2-tb50-insulation-sticker;DRAFT;DJI;DJI Inspire 2;hög;titeln
+dji-lidar-range-finder-focus-motor-cable;DRAFT;Europe Drone Company;;;titeln anger ingen modell
+dji-m350-e-port-development-kit;DRAFT;DJI Enterprise;DJI Matrice 350;hög;titeln
+dji-manifold-3-accessory-kit-matrice-4-s;DRAFT;DJI Enterprise;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "Matrice 4" (serien)
+dji-manifold-3-accessorykit-matrice-4d;DRAFT;DJI;DJI Matrice 4D;hög;titeln
+dji-matrice-300-rtk-smart-controller-monitor-mounting-kit;DRAFT;DJI;DJI Matrice 300 RTK;hög;titeln
+dji-matrice-350-rtk-2-years-care-basic;DRAFT;DJI Enterprise;DJI Matrice 350 RTK;hög;titeln – är en serviceplan, inte fysiskt tillbehör
+dji-matrice-4-series-carrying-case-strap;ACTIVE;DJI Enterprise;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;hög;titeln anger "Matrice 4 Series"
+dji-matrice-4d-4td-lktop-snabbladdare-uc363;DRAFT;LKTOP;DJI Matrice 4D|DJI Matrice 4TD;hög;titeln
+dji-matrice-4d-series-low-noise-anti-lce;DRAFT;DJI;DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "4D Series"
+dji-matrice-4t-power-1000-paket;DRAFT;DJI;DJI Matrice 4T;hög;titeln
+dji-matrice-4t-4e-lktop-uc342-200w-3-kanals-laddar;DRAFT;LKTOP;DJI Matrice 4T|DJI Matrice 4E;hög;titeln
+dji-phantom-4-160w-ac-kabel;DRAFT;DJI;DJI Phantom 4;hög;titeln
+dji-phantom-backpack-multipurpose-barvaska;DRAFT;EDC;DJI Phantom;medel;titeln anger bara "Phantom" – bör kontrolleras om den hör hemma i enterprise
+dji-power-sdc-fast-charging-cable-for-the-matrice-30;DRAFT;Europe Drone Company;DJI Matrice 30;hög;titeln
+dji-relamodul-for-agras-t40-t20-global;DRAFT;DJI;DJI Agras T20;medel;titeln anger T40/T20 – T40 saknas i listan (kräver beslut)
+dji-sdc-fast-charging-cable-for-dji-matrice-4;DRAFT;Europe Drone Company;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "Matrice 4"
+dji-power-sdc-to-matrice-30-series-fas;DRAFT;DJI Enterprise;DJI Matrice 30|DJI Matrice 30T;hög;titeln anger "Matrice 30 Series"
+dji-dual-gimbal-connector-matrice-400;ACTIVE;DJI;DJI Matrice 400;hög;titeln
+dji-e-port-v2-development-kit-matrice-4;DRAFT;DJI;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "Matrice 4"
+dji-rc-2-sub2g-sdr-module-matrice-400;DRAFT;DJI Enterprise;DJI Matrice 400;hög;titeln
+dji-rtk-dongle-kit-2-0;DRAFT;DJI;;;titeln anger ingen modell
+foam-nozzle;DRAFT;Europe Drone Company;;;titeln anger ingen modell
+hex-wrench;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+high-pressure-hose-70m;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+high-pressure-pipe-reel;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+high-pressure-nozzle;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+hoodman-landningsplatta-1-5m-5ft;DRAFT;Hoodman;;;generisk landningsplatta
+hose-connector;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+jlidrone-matrice-4d-4td-matrix-flash-s3-mini;DRAFT;JLIDrone;DJI Matrice 4D|DJI Matrice 4TD;hög;titeln
+metal-quick-connector;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+motor-power-adapter;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+dji-livox-hap-connector-original-spare-part;ACTIVE;DJI Enterprise;;;titeln anger ingen drönarmodell
+dji-expansionsbatteri-2000;DRAFT;DJI Enterprise;;;DJI Power finns inte i listan
+dji-prossd-1tb-extern-solid-state-drive;DRAFT;DJI Enterprise;DJI Inspire 3;medel;titeln anger Ronin 4D / Inspire 3 – Ronin 4D saknas i listan
+parrot-anafi-drone-bag-lattviktig-protective;DRAFT;YX;;;Parrot Anafi finns inte i listan – bör kontrolleras om den hör hemma i enterprise
+power-cable;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+ptfe-tape;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+quality-certificate;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+quick-release-bracketm400;DRAFT;Wisson Robotics;DJI Matrice 400;medel;titeln anger M400
+searchlight-broadcasting-system;ARCHIVED;CZI;;;titeln anger ingen modell
+socket-head-cap-screw;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+svampantenn-dji-matrice-350rtk-m300rtk;DRAFT;EDC;DJI Matrice 350 RTK|DJI Matrice 300 RTK;hög;titeln
+user-manual-pl-ap3-p3-standard;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+warranty-card;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller;DRAFT;EDC;DJI Phantom 3;hög;titeln
+ap-p-series-water-treatment-system;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+wisson-ap-p-series-hose-pack-slangvinsch;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+wisson-ap-p-series-rope-reel-sakerhetslinvinsch;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+wooden-case-c1;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+y-type-3-way-valve;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+dji-goggles-re-mmcx-for-sma-cable;DRAFT;DJI;;;DJI Goggles RE finns inte i listan
+dji-goggles-re-ocusync-rpm-cable-prt12;DRAFT;DJI;;;DJI Goggles RE finns inte i listan
+dji-matrice-4t-gimbalfaste-ovre-undre;DRAFT;DJI Enterprise;DJI Matrice 4T;hög;titeln
+dji-matrice-stotdampare-drones;DRAFT;DJI Enterprise;;;titeln anger "Matrice" utan modell
+dji-snail-racing-propulsion-system;DRAFT;DJI;;;titeln anger ingen enterprise-modell
+dji-zenmuse-x9-fokusmotor;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X9)
+dji-focus-motor-gear-model-0-8-part-16;DRAFT;DJI;;;titeln anger ingen modell
+dji-matrice-600-upperplatecentframe-43;DRAFT;DJI;DJI Matrice 600;hög;titeln
+dji-prop-mg-1-ccw-kit-wind-2-8-part-15;DRAFT;DJI;;;MG-1 finns inte i listan
+dji-prop-mg-1-cw-kit-wind-2-8-part-33;DRAFT;DJI;;;MG-1 finns inte i listan
+dji-props-2112-high-altitude-m350;DRAFT;DJI;DJI Matrice 350;hög;titeln
+dji-props-for-mavic-3-enterprise;ACTIVE;DJI;DJI Mavic 3E;hög;titeln
+dji-foldable-15propeller-cw-s1000-900;DRAFT;DJI;;;S1000/S900 finns inte i listan
+dji-gps-module-p3-part-1;DRAFT;DJI;DJI Phantom 3;hög;titeln
+dji-p3-camera-vibrabsorbboard-pro-adv-1;DRAFT;DJI;DJI Phantom 3;hög;titeln – dublett av nästa rad
+dji-p3-camera-vibrabsorbboard-pro-adv;DRAFT;DJI;DJI Phantom 3;hög;titeln – dublett av föregående rad
+dji-p4-aircarft-power-port-module-part3;DRAFT;DJI;DJI Phantom 4;hög;titeln
+dji-p4-pro-obsidian-gimbal-camera-pt125;DRAFT;DJI;DJI Phantom 4 Pro;hög;titeln
+dji-p4-pro-adv-gimbal-camera-part-63;DRAFT;DJI;DJI Phantom 4 Pro;hög;titeln
+dji-radio-controller-p2-p2v-p2v-5-8ghz;DRAFT;DJI;DJI Phantom 2;hög;titeln
+dji-zh4-3d-damping-rubber-part-3;DRAFT;DJI;;;Zenmuse H4-3D finns inte i listan
+dji-zh4-3d-damping-unit-upperbrct-part6;DRAFT;DJI;;;Zenmuse H4-3D finns inte i listan
+gimbal-camera-ribbon-flex-cable-replacement-for-dji-zenmuse-h3-3d;ACTIVE;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse H3-3D)
+gimbal-kamerakabel-dji-inspire-pro-zenmuse-x5;DRAFT;DJI Enterprise;DJI Inspire;medel;titeln anger Inspire Pro – Zenmuse X5 saknas i systemlistan
+gimbal-protection-dji-phantom;DRAFT;EDC;DJI Phantom;medel;titeln anger bara "Phantom"
+dji-phantom-4-gimbalmotor-y-axel;ACTIVE;DJI Enterprise;DJI Phantom 4|DJI Phantom 4 Pro;hög;titeln anger Phantom 4 / Pro-serien
+drone-gimbal-motor-y-axel-ny-version-for-dji-phant;DRAFT;DJI Enterprise;DJI Phantom;medel;titeln avkortad ("DJI") – handle anger phant
+parrot-central-cross-antenna-for-mambo;DRAFT;Parrot;;;Parrot Mambo finns inte i listan – bör kontrolleras om den hör hemma i enterprise
+phantom-3-se-camera-lens-spare-part;DRAFT;DJI Enterprise;DJI Phantom 3;hög;titeln
+dji-mavic-2-enterprise-protective-upper-shell;DRAFT;DJI Enterprise;DJI Mavic 2;medel;Mavic 2 Enterprise finns inte i listan (kräver beslut)
+czi-fs35-appearance;DRAFT;CZI;;;titeln anger ingen modell
+czi-mp10e-sound-boradcast-sound-pickup-s;DRAFT;CZI;;;titeln anger ingen modell
+czi-pk10-ljudupptagare;DRAFT;CZI;;;titeln anger ingen modell
+czi-cz10-tethered-hover-light;DRAFT;CZI;;;titeln anger ingen modell
+czi-mp120-broadcasting-light;DRAFT;CZI;;;titeln anger ingen modell
+dji-al1-spotlight-drones;DRAFT;DJI Enterprise;;;titeln anger ingen modell
+dji-matrice-as1-speaker;DRAFT;DJI Enterprise;;;titeln anger "Matrice" utan modell
+dji-t25p-centrifugal-atomizing-sprinkler-package;DRAFT;Solectric;;;T25P finns inte i listan (kräver beslut)
+dji-t25p-spreading-system;DRAFT;Solectric;;;T25P finns inte i listan (kräver beslut)
+dji-zenmuse-s1;DRAFT;DJI;;;payload – kompatibilitet anges via matrisen, inte i titeln
+dji-zenmuse-v1;DRAFT;DJI;;;payload – kompatibilitet anges via matrisen, inte i titeln
+dji-zenmuse-h30-1;DRAFT;DJI;;;payload – kompatibilitet anges via matrisen, inte i titeln
+dji-zenmuse-h30t;DRAFT;DJI;;;payload – kompatibilitet anges via matrisen, inte i titeln
+jlidrone-h150a-light-loudspeaker-for-dji-matrice-400;DRAFT;JLIDrone;DJI Matrice 400;hög;titeln
+jlidrone-matrice-400-matrix-lamp-t90;DRAFT;JLIDrone;DJI Matrice 400;hög;titeln
+jlidrone-matrice-400-multi-color-zoom-spotlight-t90v2;DRAFT;JLIDrone;DJI Matrice 400;hög;titeln
+jlidrone-matrice-4e-4t-4d-4td-matrix-lamp-t40-dji-dock-3;DRAFT;JLIDrone;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD|DJI Dock 3;hög;titeln
+jlidrone-matrice-4e-4t-4d-4td-matrix-lamp-t40l-dji-dock-3;DRAFT;JLIDrone;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD|DJI Dock 3;hög;titeln
+jlidrone-matrice-4e-4t-4d-4td-speaker-spotlight-system-t40s-dji-dock-3;DRAFT;JLIDrone;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD|DJI Dock 3;hög;titeln
+jz-t30-dji-mavic-3e-3t-30w-spotlight;DRAFT;JZ;DJI Mavic 3E|DJI Mavic 3T;hög;titeln
+lktop-kl340-40w-soklampa-drones;DRAFT;LKTOP;;;titeln anger ingen modell
+lktop-lk340-40w-dronarsoklampa;DRAFT;LKTOP;;;titeln anger ingen modell
+dji-zenmuse-x9-l-faste-original;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X9)
+tundra-modular-payloadsyst-range-finder;DRAFT;Tundra;;;titeln anger ingen modell
+tundra-modular-payloadsystem-dropper;DRAFT;Tundra;;;titeln anger ingen modell
+tundra-modular-payloadsystem-ir-light;DRAFT;Tundra;;;titeln anger ingen modell
+tundra-modular-payloadsystem-ir-light-1;DRAFT;Tundra;;;titeln anger ingen modell – dublett av föregående rad
+ap30-p4-atomized-sprayer;DRAFT;Wisson Robotics;;;titeln anger ingen modell
+dji-zenmuse-l3;DRAFT;DJI Enterprise;;;payload
+dji-c8000-intelligent-battery-station-ac-cable-x-2-bundle;DRAFT;Solectric;;;titeln anger ingen modell
+dl-24mm-f2-8-objektiv-dji-zenmuse;DRAFT;DJI Enterprise;;;Zenmuse-objektiv – systemet anges inte i titeln
+dji-zenmuse-x7-objektiv-dl-35mm-f2-8-ls-asph;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X7|DJI Zenmuse X9)
+dji-lidar-avstandsmatare-fokusmatare;DRAFT;DJI Enterprise;;;titeln anger ingen modell
+dji-matrice-30-bs30-akkuladestation-p03;DRAFT;Solectric;DJI Matrice 30;hög;titeln
+dji-rc-plus-2delivery;DRAFT;Solectric;;;titeln anger ingen modell
+dji-matrice-4td-rc-plus-2-remote-control;DRAFT;DJI Enterprise;;;titeln säger Matrice 3D/3TD men handle säger 4td – motsägelse, kräver kontroll
+dji-rc-pro-2-pro-your-ultimate-drone-controller;DRAFT;DJI;;;titeln anger ingen enterprise-modell
+dji-wb37-battery;DRAFT;DJI Enterprise;;;titeln anger ingen modell
+dji-zenmuse-h20;DRAFT;Solectric;;;payload
+dji-zenmuse-h20n;DRAFT;Solectric;;;payload
+dji-zenmuse-h20t;DRAFT;Solectric;;;payload
+dji-zenmuse-l3-eu-sp-plus-inkl-1-year-care-basic;DRAFT;Solectric;;;payload
+dji-zenmuse-h30;DRAFT;DJI Enterprise;;;payload – troligen dublett av dji-zenmuse-h30-1
+dji-zenmuse-x5r-ssd-reader-part-4;ARCHIVED;DJI;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X5R)
+dji-tb100-flight-battery-matrice-401;DRAFT;DJI;DJI Matrice 400;hög;titeln
+hd-dronarfilter-stjarn-effekt-6-punkt;DRAFT;EDC;;;titeln anger ingen modell
+infrarod-densitetsfilter-dji-zenmuse-h30t;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse H30T)
+junestar-filters-add-on-effect-filters-parrot-anafi;DRAFT;JSR;;;Parrot Anafi finns inte i listan – bör kontrolleras om den hör hemma i enterprise
+dji-charger-usb-c;ARCHIVED;DJI Enterprise;;;titeln anger ingen modell
+dji-2510f-drone-propeller;DRAFT;DJI Enterprise;;;titeln anger ingen modell
+dji-matrice-4-propellers-original;DRAFT;DJI Enterprise;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "Matrice 4"
+dji-zenmuse-x9-m-bajonett-original-objektivfaste;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X9)
+dji-zenmuse-x9-motvikt;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X9)
+dl-18mm-f2-8-asph-objektiv-dji-zenmuse-x9;DRAFT;DJI Enterprise;;;Zenmuse-del – hör till custom.kompatibla_dji_system (DJI Zenmuse X9)
+dji-matrice-4-propellers-low-sound-level;DRAFT;DJI Enterprise;DJI Matrice 4E|DJI Matrice 4T|DJI Matrice 4D|DJI Matrice 4TD;medel;titeln anger "Matrice 4"
+pgytech-x4s-mrc-cpl-guld-kant-filters-dji-inspire-2;DRAFT;PGYTECH;DJI Inspire 2;medel;endast handle anger Inspire 2, titeln gör det inte
+wisson-orion-ap3-p3-pro;ARCHIVED;Wisson Robotics;;;titeln anger ingen modell
+wisson-ap-p-series-curtain-wall-cleaning-agent-rengoringsmedel;ARCHIVED;Wisson Robotics;;;titeln anger ingen modell
+ap3-d1-contact-inspection-system;ARCHIVED;Wisson Robotics;;;titeln anger ingen modell
+ap30-g2-heavy-load-release;ARCHIVED;Wisson Robotics;;;titeln anger ingen modell

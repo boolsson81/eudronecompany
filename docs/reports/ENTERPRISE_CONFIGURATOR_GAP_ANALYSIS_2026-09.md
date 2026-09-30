@@ -255,3 +255,42 @@ Antal produkter per värde (en produkt kan ha flera värden, så summan är inte
   även typer som börjar med "Enterprise Drone …". Totalsiffrorna per typ stämmer (summa 338), men en
   enskild kombinerad sökning bör kontrolleras mot radlistan.
 - Filtret visar att fältet har ett värde, inte att värdet är rätt.
+
+## 11. Beslut och förslagslista för `custom.passsar_till` (2026-09-30)
+
+### 11.1 Beslut
+
+1. Matrice 4E och 4T läggs till som egna valbara värden i `custom.passsar_till` ("DJI Matrice 4E", "DJI Matrice 4T").
+   (Frågan var formulerad som ett val mellan detta och "DJI Matrice 4"; svaret "ja" har tolkats som det första alternativet.)
+2. Matrice 350 och 350 RTK räknas som samma plattform, likaså 300 och 300 RTK. Plattformens `legacy_fits_value`
+   måste därför kunna rymma flera värden (i dag ett enda).
+
+Inget av detta är genomfört i Shopify. Ändringen av valbara värden och plattformsfältet är nästa skrivsteg.
+
+### 11.2 Förslagslista
+
+Fil: `docs/reports/ENTERPRISE_PASSAR_TILL_FORSLAG_2026-09.csv` (152 rader, semikolonseparerad).
+Omfattar de enterprise-produkter utanför drönare och mjukvara som saknar `passsar_till` (62 tillbehör,
+30 reservdelar, 28 payloads, 32 övriga). Mjukvaran (28 rader) är utelämnad eftersom den saknar drönarkompatibilitet.
+
+Förslagen är utlästa ur titeln och bara satta när titeln uttryckligen anger modell. Flera värden separeras med `|`.
+
+| Utfall | Rader |
+|---|--:|
+| Förslag med hög säkerhet (titeln anger modellen) | 43 |
+| Förslag med medelsäkerhet (serie, ofullständig titel, eller värde saknas i listan) | 16 |
+| Inget förslag (titeln anger ingen modell) | 93 |
+
+Observationer:
+
+1. 10 rader gäller "Matrice 4" i allmänhet eller 4E/4T och kan först märkas när de två nya värdena finns.
+2. 9 rader är Zenmuse-delar (objektiv, motvikt, fäste, kablar) som hör till det separata fältet
+   `custom.kompatibla_dji_system`, inte till `passsar_till`. Kompatibilitet är alltså delad på två fält.
+3. 27 av raderna är Wisson-produkter. 26 av dem saknar förslag eftersom titeln inte anger en modell och
+   listan saknar ett värde för Wisson Orion. Ett nytt värde krävs innan de kan märkas.
+4. 17 rader refererar till modeller som inte finns i valbara värden: Agras T25P och T40, Ronin 4D, MG-1,
+   Zenmuse H4-3D, S1000/S900, DJI Power, Goggles RE, Mavic 2 Enterprise, Parrot. Att lägga till dem är ett beslut.
+5. 4 rader är sannolikt felplacerade i enterprise-typerna (Parrot, Phantom-ryggsäck, konsumentfilter).
+6. 4 rader är dubbletter: två P3 VibrAbsorbBoard, två Tundra IR-ljus, och Zenmuse H30 finns i två poster.
+7. Många reservdelar gäller äldre konsumentmodeller (Phantom 2/3/4, Mavic 2) och hör troligen inte hemma i enterprise.
+8. En rad har motsägelse: en RC Plus-fjärrkontroll heter Matrice 3D/3TD men handle säger 4td.
