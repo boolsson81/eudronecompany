@@ -291,6 +291,6 @@ Observationer:
 4. 17 rader refererar till modeller som inte finns i valbara värden: Agras T25P och T40, Ronin 4D, MG-1,
    Zenmuse H4-3D, S1000/S900, DJI Power, Goggles RE, Mavic 2 Enterprise, Parrot. Att lägga till dem är ett beslut.
 5. 4 rader är sannolikt felplacerade i enterprise-typerna (Parrot, Phantom-ryggsäck, konsumentfilter).
-6. 4 rader är dubbletter: två P3 VibrAbsorbBoard, två Tundra IR-ljus, och Zenmuse H30 finns i två poster.
+6. Tre dubblettpar (6 rader): två P3 VibrAbsorbBoard, två Tundra IR-ljus, och Zenmuse H30 i två poster (den andra, `dji-zenmuse-h30-1`, ligger i payload-typen).
 7. Många reservdelar gäller äldre konsumentmodeller (Phantom 2/3/4, Mavic 2) och hör troligen inte hemma i enterprise.
 8. En rad har motsägelse: en RC Plus-fjärrkontroll heter Matrice 3D/3TD men handle säger 4td.
