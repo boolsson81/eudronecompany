@@ -23,7 +23,9 @@
           "type": "card",
           "settings": {
             "card_type": "consumer",
-            "use_bundled_transparent_image": false,
+            "use_bundled_transparent_image": true,
+            "image": "shopify://shop_images/edp-home-user-type-consumer.webp",
+            "image_has_transparency": true,
             "title": "Konsumentdrönare",
             "description": "Drönare och tillbehör för privat bruk, foto, video och fritidsflygning.",
             "examples": "DJI Mini & Air-serien\nTillbehör & reservdelar\nKom igång-paket",
@@ -51,7 +53,9 @@
           "type": "card",
           "settings": {
             "card_type": "enterprise",
-            "use_bundled_transparent_image": false,
+            "use_bundled_transparent_image": true,
+            "image": "shopify://shop_images/edp-home-user-type-enterprise.webp",
+            "image_has_transparency": true,
             "title": "Enterprise & Företag",
             "description": "Professionella UAV-lösningar för mätning, inspektion, säkerhet och offentlig sektor.",
             "examples": "DJI Matrice & Dock\nBranschpaket & utbildning\nOffert & rådgivning",
