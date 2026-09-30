@@ -1,0 +1,103 @@
+# Gap-analys: enterprise-metadata mot en konfigurator
+
+Datum: 2026-09-30
+Gren: `claude/kind-wozniak-vox6pv`
+Omfattning: enbart läsning från repot och butiken Europe Drone Company. Inga Shopify-objekt ändrade.
+Skiljer sig från `ENTERPRISE_GAP_REPORT.md` (juni), som gäller kollektioner per plattform.
+
+## 1. Sammanfattning
+
+Datamodellen är byggd (fas 1–7), men det finns nästan ingen data i den. Gapet ligger i
+innehållet, inte i arkitekturen.
+
+| Mått | Läge |
+|---|---|
+| `edp.*`-produktfält definierade | 40 |
+| Produkter med minst ett `edp.*`-värde | 0 (stickprov + fas 4–7-rapporten) |
+| `payload_compatibility`-poster | 0 (räknaren släpar, seedningen skapar inga) |
+| `payload_specification`-poster | 0 (samma förbehåll) |
+| Seedade metaobjekt (verifierat via listning, inte räknare) | 16 UAV-plattformar, 12 payload-kategorier, 9 lösningspaket |
+| Produkter taggade `enterprise` | 82, varav 7 aktiva |
+| Leverantör "DJI Enterprise" | 146, varav 7 aktiva, 134 utkast, 5 arkiverade |
+
+`metaobjectsCount` i Shopify visade 1 för plattformar, kategorier och paket trots att listning
+gav 16, 12 och 9. Använd aldrig räknaren för verifiering.
+
+## 2. Baslinje: enterprise-produkter per produkttyp och status
+
+Källa: `productsCount` per `product_type` och `status`, 2026-09-30. Typerna kan innehålla
+produkter från andra leverantörer än DJI Enterprise, och taggen `enterprise` överlappar delvis.
+Summorna ska alltså inte jämföras med leverantörssiffrorna ovan.
+
+| Produkttyp | Aktiv | Utkast | Arkiverad | Totalt |
+|---|--:|--:|--:|--:|
+| Enterprise Drones | 2 | 48 | 3 | 53 |
+| enterprise drone (avvikande stavning) | 0 | 2 | 0 | 2 |
+| Enterprise Payload | 9 | 48 | 0 | 57 |
+| Enterprise Accessories | 4 | 77 | 1 | 82 |
+| Enterprise Tillbehör (svenska varianten) | 0 | 0 | 7 | 7 |
+| Enterprise Spareparts | 6 | 53 | 0 | 59 |
+| Enterprise Software | 0 | 28 | 0 | 28 |
+| Enterprise Drone Batterys | 1 | 8 | 0 | 9 |
+| Enterprise Drone Camera | 0 | 14 | 0 | 14 |
+| Enterprise Drone Propellers | 0 | 8 | 0 | 8 |
+| Enterprise Drone Filter | 0 | 16 | 0 | 16 |
+| Fjärrkontroll Enterprise | 0 | 3 | 0 | 3 |
+| **Summa** | **22** | **305** | **11** | **338** |
+
+Av 338 produkter i enterprise-typerna är 22 aktiva. En konfigurator kan bara erbjuda aktiva produkter.
+
+## 3. Gap per dimension
+
+Allvarlighet: Kritisk blockerar konfiguratorn, Hög ger fel eller svaga resultat, Medel försämrar kvaliteten.
+
+| # | Krav | Läge idag | Gap | Allv. |
+|---|---|---|---|---|
+| 1 | Säljbart utbud | 305 av 338 enterprise-produkter är utkast | Nästan hela utbudet är opublicerat; ingen beslutad lista över vad som ska upp | Kritisk |
+| 2 | Produktroll (drönare, payload, tillbehör, mjukvara, service) | ~25 splittrade `productType`-värden, ingen roll-dimension | Konfiguratorn kan inte pålitligt skilja drönare från reservdel | Hög |
+| 3 | Serie och modell | Serie är fri text på `uav_platform`; produkter refererar inte till serie | Ingen produkt kopplad till serie/modell via referens | Hög |
+| 4 | Drone Category | Finns inte. Bara `c_klass` (regelverk, 15 produkter) | Värden och ägare saknas | Hög |
+| 5 | Drone Capability | Finns inte för drönare. Payload-sidan har `sensor_type` och `technology` | Ingen gemensam förmåge-vokabulär; krav och utbud kan inte matchas | Kritisk |
+| 6 | Bransch och uppdrag | 4 oförenliga listor (`edp.industry`, taggstandarden, `mission.industry`, `mission_groups`) | Vokabulären måste slås ihop; inga produkter kopplade till uppdrag | Hög |
+| 7 | Kompatibilitetsmatris | `payload_compatibility` tom; `custom.passsar_till` täcker 1350 produkter med 78 modellvärden; `edp.compatible_uav` tom | Två system för samma sak, olika granularitet (16 grupper mot 78 modeller) | Kritisk |
+| 8 | Datahygien | `passsar_till` har stavfel/mellanslag (`" DJI Avata O3"`, `"DJI Marvic 2S"`); `leverantor` har dubbletten "Also Sweden"/"Also Sweden AB" | Felen ärvs vid migrering | Medel |
+| 9 | Jämförbara specifikationer | 0 poster; specifika fält tomma | Jämförelsetabellen visar bara "Ej specificerat" | Hög |
+| 10 | Plattformsdata | `mount_interface` tomt för 8 av 16 plattformar; `max_payload_weight` ej verifierat ifyllt | Hårda regler (fäste, vikt) kan inte köras | Hög |
+| 11 | Kommersiellt | Fält finns, inga värden | Pris/offertkrav/ledtid saknas | Medel |
+| 12 | Paket | 9 `solution_package`; tillbehörsreferenser tomma | Paketen saknar produktkopplingar | Hög |
+| 13 | Poänglogik | Kompatibilitet, prestanda och krav spärrade vid neutral baslinje | Inget resultat kan nå 90+ förrän data finns (avsiktlig spärr) | Medel |
+| 14 | UI och publicering | Finder, konfigurator, jämförelse ligger i repot; ingen browsertest; ej på live-tema | Okänd kvalitet, ingen live-effekt | Medel |
+| 15 | Kvalitetsgrind | `check-payload-data-quality.mjs` finns, körs på 0 klassificerade produkter | Kan inte skydda något förrän klassificering finns | Medel |
+| 16 | Analytics | Bryggan finns; `payload_filter_used` ej kopplad | Mätning kräver befintlig tag manager | Låg |
+
+## 4. Rotorsaker
+
+1. Arkitekturen byggdes före populeringen (uttalat beslut i fas 1–7). Populeringen återstår.
+2. Tre kompatibilitetssystem lever parallellt (`passsar_till`, `edp.compatible_uav`, föreslagna taggar) utan definierad källa.
+3. Drone Category och Capability har ingen definition eller ägare.
+
+## 5. Beslut som blockerar Shopify-bygget
+
+Ingen dimension skapas i Shopify förrän dessa är besvarade. Inga värden hittas på.
+
+1. Vilka enterprise-produkter ska vara aktiva? (Baslinjen i avsnitt 2 är underlaget.)
+2. Vilka värden ska Drone Category ha?
+3. Ska Capability täcka både drönare och payloads?
+4. Första steget: bara DJI Enterprise, eller alla 16 plattformar?
+5. Var ligger de egna fälten Serie/Category/Capability/Industry i dag (om utanför Shopify och repot)?
+
+## 6. Åtgärdsordning
+
+1. Besluta utbudet (punkt 1 ovan).
+2. Definiera Drone Category och Capability (punkt 2–3).
+3. Välj källa för kompatibilitet och rensa `custom.passsar_till`.
+4. Slå ihop branschlistorna.
+5. Klassificera aktiva produkter, fyll matrisen för plattformarna, kör kvalitetsskriptet.
+6. Testa i webbläsare och publicera konfiguratorn till live-temat (separat beslut).
+
+## 7. Ej verifierat
+
+- Endast 8 produkter stickprovades på innehåll, inte alla.
+- `max_payload_weight` på plattformarna är inte kontrollerat.
+- Konfiguratorn är aldrig körd i webbläsare.
+- Räknare för `payload_specification` och `payload_compatibility` kan släpa.
