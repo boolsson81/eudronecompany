@@ -59,7 +59,7 @@ Allvarlighet: Kritisk blockerar konfiguratorn, Hög ger fel eller svaga resultat
 | 4 | Drone Category | Finns inte. Bara `c_klass` (regelverk, 15 produkter) | Värden och ägare saknas | Hög |
 | 5 | Drone Capability | Finns inte för drönare. Payload-sidan har `sensor_type` och `technology` | Ingen gemensam förmåge-vokabulär; krav och utbud kan inte matchas | Kritisk |
 | 6 | Bransch och uppdrag | 4 oförenliga listor (`edp.industry`, taggstandarden, `mission.industry`, `mission_groups`) | Vokabulären måste slås ihop; inga produkter kopplade till uppdrag | Hög |
-| 7 | Kompatibilitetsmatris | `payload_compatibility` tom; `custom.passsar_till` täcker 1350 produkter med 78 modellvärden; `edp.compatible_uav` tom | Två system för samma sak, olika granularitet (16 grupper mot 78 modeller) | Kritisk |
+| 7 | Kompatibilitetsmatris | `payload_compatibility` tom; `custom.passsar_till` täcker 1350 produkter med 75 modellvärden (79 efter avsnitt 12); `edp.compatible_uav` tom | Två system för samma sak, olika granularitet (16 grupper mot 78 modeller) | Kritisk |
 | 8 | Datahygien | `passsar_till` har stavfel/mellanslag (`" DJI Avata O3"`, `"DJI Marvic 2S"`); `leverantor` har dubbletten "Also Sweden"/"Also Sweden AB" | Felen ärvs vid migrering | Medel |
 | 9 | Jämförbara specifikationer | 0 poster; specifika fält tomma | Jämförelsetabellen visar bara "Ej specificerat" | Hög |
 | 10 | Plattformsdata | `mount_interface` tomt för 8 av 16 plattformar; `max_payload_weight` ej verifierat ifyllt | Hårda regler (fäste, vikt) kan inte köras | Hög |
@@ -294,3 +294,55 @@ Observationer:
 6. Tre dubblettpar (6 rader): två P3 VibrAbsorbBoard, två Tundra IR-ljus, och Zenmuse H30 i två poster (den andra, `dji-zenmuse-h30-1`, ligger i payload-typen).
 7. Många reservdelar gäller äldre konsumentmodeller (Phantom 2/3/4, Mavic 2) och hör troligen inte hemma i enterprise.
 8. En rad har motsägelse: en RC Plus-fjärrkontroll heter Matrice 3D/3TD men handle säger 4td.
+
+## 12. Genomfört i Shopify (2026-09-30)
+
+Beslut enligt avsnitt 11. Wisson Orion lades uttryckligen inte till.
+
+### 12.1 `custom.passsar_till` (produkt-metafält)
+
+Fyra valbara värden lades till; inget togs bort (kontrollerat: 75 gamla värden, 79 nya, inga dubbletter):
+
+- DJI Matrice 4E
+- DJI Matrice 4T
+- DJI Agras T25P
+- DJI Agras T40
+
+Fältets funktioner för smarta kollektioner och adminfilter är kvar påslagna. Den första uppdateringen
+avvisades av Shopify utan att något ändrades, eftersom fältet används som villkor i en smart kollektion och
+uppdateringen tolkades som att funktionen stängdes av; den lyckades när funktionen skickades med som påslagen.
+Gamla värden med stavfel (`" DJI Avata O3"`, `"DJI Marvic 2S"`, `"Dji Mavic pro platinum"`) är medvetet orörda.
+En valideringsjobb-körning mot befintliga värden startades av Shopify.
+
+### 12.2 `uav_platform` (metaobjekt)
+
+- Nytt fält `legacy_fits_values` (lista av text). Det gamla `legacy_fits_value` är kvar orört, eftersom Shopify
+  inte kan byta typ på ett befintligt fält och inget i temat läser det.
+- Fältet fylldes på åtta DJI-plattformar, härlett ur plattformarnas namn och besluten i avsnitt 11:
+
+| Plattform | `legacy_fits_values` |
+|---|---|
+| dji-matrice-400 | DJI Matrice 400 |
+| dji-matrice-350-rtk | DJI Matrice 350 RTK, DJI Matrice 350 |
+| dji-matrice-300-rtk | DJI Matrice 300 RTK, DJI Matrice 300 |
+| dji-matrice-30-series | DJI Matrice 30, DJI Matrice 30T |
+| dji-matrice-4-series | DJI Matrice 4E, DJI Matrice 4T |
+| dji-matrice-4d-series | DJI Matrice 4D, DJI Matrice 4TD |
+| dji-matrice-3d-series | DJI Matrice 3D, DJI Matrice 3TD |
+| dji-mavic-3-enterprise | DJI Mavic 3E, DJI Mavic 3T |
+
+- Övriga åtta plattformar (Freefly, Inspired Flight, Autel, Wisson Orion, Annan) har fortfarande tomt värde.
+- Publiceringsstatus (ACTIVE) och övriga fält är oförändrade (kontrollerat efteråt).
+- Mavic 3M ingår inte, eftersom "DJI Mavic 3M" inte finns bland de valbara värdena.
+
+### 12.3 Repot
+
+`data/edp-payload-taxonomy.json` och `scripts/setup-enterprise-payload-architecture.mjs` har synkats med
+ändringen så att en omkörning av setup-skriptet inte återställer den. Skriptet är syntaxkontrollerat och JSON-filen
+validerad; enhetstesterna kunde inte köras eftersom beroenden inte är installerade, men inga tester refererar
+till dessa filer.
+
+### 12.4 Kvarstår
+
+- Förslagslistan (avsnitt 11) är inte tillämpad: ingen produkt har fått nytt `passar till`-värde.
+- Övriga saknade värden i avsnitt 11.2 punkt 4 (Ronin 4D, MG-1, Mavic 2 Enterprise med flera) är inte tillagda.
