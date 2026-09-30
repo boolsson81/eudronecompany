@@ -145,3 +145,52 @@ Observationer (bygger på tabellen, ej på gissningar):
 Alla nio är från tredje part: åtta från CZI (ML200, DT1K, GL10V2, GL60 Mini, GL60 Plus, LP35, MP130 V2,
 TH4 V2) och en från Wisson Robotics (Orion AP30-N1). Inga DJI-payloads är aktiva i denna produkttyp.
 Rader per övriga produkttyper är inte listade i denna bilaga.
+
+## 9. Bilaga: payloads i utkast, mjukvara och leverantörsfördelning (2026-09-30)
+
+Källa: Shopify Admin (läsning). Grupperingen är gjord på leverantörsfält och titel; inga fält har ändrats.
+
+### 9.1 Payloads i utkast (48 rader)
+
+| Leverantör (vendor-fältet) | Rader | Exempel ur titlarna |
+|---|--:|---|
+| CZI | 21 | Sökljus, högtalare/broadcast, matrix-ljus, termisk kamera (C30N), tryckvatten (DH100), airdrop/last (FS32, TH6), IR-laser (IR10) |
+| JLIDrone | 6 | Matrix-lampor, högtalare, zoom-spotlight för Matrice 400 och Matrice 4-serien/Dock 3 |
+| Wisson Robotics | 5 | Orion AP3-P1, AP3-P3, AP30-N1, AP30-P4, AP30-P4H (spruta, rengöring, manipulator) |
+| DJI | 4 | Zenmuse S1, V1, H30, H30T |
+| DJI Enterprise | 3 | AL1 sökarlampa, Matrice AS1 högtalare, Zenmuse X9 L-fäste |
+| Tundra | 4 | Modulärt payloadsystem (range finder, dropper, IR-ljus; IR-ljus finns två gånger) |
+| Solectric | 2 | DJI T25P spridar-/sprinklerpaket |
+| LKTOP | 2 | KL340, LK340 40 W söklampor |
+| JZ | 1 | T30 matrix-spotlight för Mavic 3E/3T |
+| **Summa** | **48** | |
+
+Observationer:
+
+1. DJI:s egna kärnpayloads (Zenmuse H30, H30T, S1, V1) är utkast, och deras vendor är "DJI", inte
+   "DJI Enterprise" som övriga DJI-enterprise-produkter. Samma tillverkare har alltså två vendor-värden.
+2. Wisson Orion AP30-N1 finns dels som aktiv (kopplad till DJI FC30), dels som utkast (manipulatorarm).
+   Ej verifierat om det är samma produkt.
+3. Kompatibilitet står i klartext i titlarna (M300/350, M30, M400, Mavic 3E/3T, Dock 3, FlyCart 100/Agras T100,
+   Matrice 4E/4T/4D/4TD). Det är ett möjligt underlag till kompatibilitetsmatrisen men måste verifieras mot
+   datablad före registrering.
+4. Titlarna innehåller M200/M210 och FlyCart 100/Agras T100, men `uav_platform` saknar plattformar för dessa.
+5. Titlar blandar svenska och engelska, versaler, och komma-prefix ("CZI, ML200 …").
+
+### 9.2 Mjukvara (28 rader, alla utkast)
+
+- 22 rader är CyberXHub (Solectric): licenser, förnyelser, utökningar, en testversion.
+- 6 rader är DJI FlightHub 2 (fyra via Solectric, två via DJI).
+- Flera rader är inte mjukvara utan tjänster: on-site- och remote-utbildning, custom development,
+  årligt underhåll. De hör till en egen roll (utbildning/service) i konfiguratorns steg 7.
+- Inga mjukvaruprodukter är kopplade till payload-kategorier, vilket gör att konfiguratorns mjukvarusteg
+  fortfarande är en generisk lista.
+
+### 9.3 Leverantörsfördelning i övriga enterprise-typer
+
+Räknat över de tio icke-drönartyperna (283 rader): DJI Enterprise 86, Solectric 37, CZI 34, Wisson Robotics 32.
+Tillsammans 189; resterande 94 rader fördelas på andra leverantörer som inte är uppdelade här.
+Av DJI Enterprise-raderna är 3 payloads, 24 tillbehör och 33 reservdelar (60 rader); övriga 26 ligger i
+batteri-, kamera-, propeller-, filter-, fjärrkontroll- och tillbehörstyperna.
+
+Raderna för tillbehör, reservdelar, batterier, kameror, propellrar, filter och fjärrkontroller är inte listade.
