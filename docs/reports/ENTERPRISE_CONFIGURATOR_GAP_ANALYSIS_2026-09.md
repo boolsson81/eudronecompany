@@ -346,3 +346,44 @@ till dessa filer.
 
 - Förslagslistan (avsnitt 11) är inte tillämpad: ingen produkt har fått nytt `passar till`-värde.
 - Övriga saknade värden i avsnitt 11.2 punkt 4 (Ronin 4D, MG-1, Mavic 2 Enterprise med flera) är inte tillagda.
+
+## 13. Tillämpade `passar till`-värden (2026-09-30)
+
+Källa: raderna med hög säkerhet i `ENTERPRISE_PASSAR_TILL_FORSLAG_2026-09.csv` (43 st).
+
+| Utfall | Antal | Kommentar |
+|---|--:|---|
+| Skrivna | 30 | Alla utkastprodukter. Kontrollerade direkt efteråt (värde och status). |
+| Redan ifyllda av annan | 2 | `dji-matrice-4d-4td-lktop-snabbladdare-uc363` och `svampantenn-dji-matrice-350rtk-m300rtk` hade fått värden efter att listan togs fram (samma innehåll som förslaget). Orörda. |
+| Aktiva, hållna tillbaka | 4 | `dji-matrice-4-series-carrying-case-strap`, `dji-dual-gimbal-connector-matrice-400`, `dji-props-for-mavic-3-enterprise`, `dji-phantom-4-gimbalmotor-y-axel`. Fältet är villkor i smarta kollektioner, så ett värde kan flytta en aktiv produkt in i en kollektion som syns för kunder. Kräver eget godkännande. |
+| Avvisade av Shopify | 7 | Se nedan. Inte skrivna. |
+
+### Avvisade: kategoribegränsning
+
+`custom.passsar_till` är begränsat till 20 produktkategorier (bl.a. "Delar och tillbehör till flygplan" och
+"Drönarbatterier"). Sju produkter matchar inte:
+
+- Saknar kategori (5): `dji-dock-3-vehicle-mounted-gimbal-mount`, `dji-m350-e-port-development-kit`,
+  `dji-manifold-3-accessorykit-matrice-4d`, `dji-power-sdc-to-matrice-30-series-fas`,
+  `water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller`.
+- Kategori "Drönare" (2), vilket är fel för en serviceplan och ett laddpaket: `dji-matrice-350-rtk-2-years-care-basic`,
+  `dji-matrice-4t-power-1000-paket`.
+
+Åtgärden är att sätta rätt produktkategori på dessa sju (eller ändra fältets begränsning). Inget av det är gjort.
+
+### Fördelning av de 30 skrivna
+
+Inspire 2 (4), Phantom 2/3/4/4 Pro (10), Matrice 400 (7), Matrice 4-serien (7), Matrice 350 (1), Matrice 300 RTK (1),
+Matrice 30 (2), Matrice 600 (1), Mavic 3E/3T (1). En produkt kan ha flera värden, så summan överstiger 30.
+
+### Mätförbehåll
+
+Sökräknaren för `passar till`-täckning visade 132 enterprise-produkter efteråt, medan 103 + 2 + 30 = 135 väntades.
+Alla 30 skrivna produkter är verifierade direkt på produktnivå, så avvikelsen bedöms vara sökindexets fördröjning.
+Räknaren bör mätas om senare.
+
+### Kvarstår
+
+- 7 avvisade produkter (kategori), 4 aktiva produkter (godkännande).
+- 16 rader med medelsäkerhet i förslagslistan.
+- Övriga 93 rader utan förslag samt modeller som saknas i valen (se avsnitt 11.2).
