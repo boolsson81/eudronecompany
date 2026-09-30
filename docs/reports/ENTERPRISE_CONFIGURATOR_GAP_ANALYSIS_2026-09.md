@@ -194,3 +194,64 @@ Av DJI Enterprise-raderna är 3 payloads, 24 tillbehör och 33 reservdelar (60 r
 batteri-, kamera-, propeller-, filter-, fjärrkontroll- och tillbehörstyperna.
 
 Raderna för tillbehör, reservdelar, batterier, kameror, propellrar, filter och fjärrkontroller är inte listade.
+
+## 10. Bilaga: täckning av `custom.passsar_till` i enterprise-utbudet (2026-09-30)
+
+Bakgrund: `custom.passsar_till` är den befintliga kompatibilitetskällan för tillbehör och reservdelar.
+Mätt med `productsCount` och filtret `metafields.custom.passsar_till:*` (fältet har något värde).
+
+### 10.1 Täckning per produkttyp (icke-drönartyper)
+
+| Produkttyp | Med värde | Totalt | Andel |
+|---|--:|--:|--:|
+| Enterprise Payload | 29 | 57 | 51 % |
+| Enterprise Accessories | 20 | 82 | 24 % |
+| Enterprise Spareparts | 29 | 59 | 49 % |
+| Enterprise Drone Filter | 13 | 16 | 81 % |
+| Enterprise Drone Batterys | 5 | 9 | 56 % |
+| Enterprise Drone Propellers | 5 | 8 | 63 % |
+| Enterprise Drone Camera | 1 | 14 | 7 % |
+| Enterprise Tillbehör | 1 | 7 | 14 % |
+| Enterprise Software | 0 | 28 | 0 % |
+| Fjärrkontroll Enterprise | 0 | 3 | 0 % |
+| **Summa** | **103** | **283** | **36 %** |
+
+- Drönarna själva (55) har inget värde, vilket är väntat.
+- Av aktiva tillbehör har 1 av 4 ett värde, och av aktiva reservdelar 3 av 6.
+- Hela katalogen har 1323 produkter med värde (definitionens räknare säger 1350; räknaren släpar).
+  Fältet täcker alltså mycket i konsumentsortimentet, men enterprise-utbudet är bara täckt till ungefär en tredjedel.
+
+### 10.2 Värden som används i enterprise-typerna
+
+Antal produkter per värde (en produkt kan ha flera värden, så summan är inte 103):
+
+| Värde | Produkter | Värde | Produkter |
+|---|--:|---|--:|
+| DJI Matrice 400 | 17 | DJI Inspire 3 | 8 |
+| DJI Matrice 350 | 15 | DJI Mavic 3T | 6 |
+| DJI Matrice 300 | 13 | DJI FlyCart 30 | 5 |
+| DJI Matrice 4D | 10 | DJI Matrice 30 | 5 |
+| DJI Matrice 350 RTK | 8 | DJI Matrice 4TD | 3 |
+| DJI Matrice 300 RTK | 8 | DJI Matrice 30T | 3 |
+| DJI Mavic 3E | 2 | DJI Matrice 600 | 2 |
+| DJI FlyCart 100 | 2 | DJI Matrice 3D / 3TD | 1 / 1 |
+| DJI Agras T50 / T100 | 1 / 1 | DJI Agras T25 | 0 |
+| DJI Dock 3 | 1 | | |
+
+### 10.3 Mappningsproblem mot `uav_platform`
+
+1. Valen i `passsar_till` innehåller varken "DJI Matrice 4", "4E" eller "4T", bara 4D och 4TD. Plattformen
+   "DJI Matrice 4E / 4T" har ändå `legacy_fits_value` "DJI Matrice 4T", ett värde som inte finns i fältets
+   valbara lista. Tillbehör och reservdelar till Matrice 4E/4T kan därför inte märkas i dag.
+2. Både "DJI Matrice 350" och "DJI Matrice 350 RTK" (samt 300 och 300 RTK) används, men plattformarna
+   har bara ett värde vardera. Värdena måste slås ihop till en plattform.
+3. Plattformar för Freefly, Inspired Flight, Autel och Wisson Orion har inget motsvarande värde i listan.
+4. Listan saknar M200/M210, som payload-titlarna nämner (se avsnitt 9.1).
+5. "DJI Agras T25" finns som valbart värde men används av 0 produkter i enterprise-typerna.
+
+### 10.4 Mätförbehåll
+
+- `product_type`-sökningen i Shopify matchar ord, inte exakt sträng: sökningen på "enterprise drone" fångar
+  även typer som börjar med "Enterprise Drone …". Totalsiffrorna per typ stämmer (summa 338), men en
+  enskild kombinerad sökning bör kontrolleras mot radlistan.
+- Filtret visar att fältet har ett värde, inte att värdet är rätt.
