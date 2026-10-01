@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "uppdaterad": "2026-09-24",
+  "uppdaterad": "2026-10-01",
   "dokumentation": "docs/INKOPSPROSPEKT.md",
   "noteringar": [
     "Leverantörer och produkter vi överväger att köpa in. Inget här är beställt.",
@@ -912,6 +912,36 @@
         "tetherad-strom"
       ],
       "anteckning": "110m-varianten (TK4) finns redan som draft i Shopify, men inte 200m-varianten. RRP ur Q3 2026 CZI-prislista."
+    },
+    {
+      "id": "drone-rescue-systems-gmbh-dronarfallskarmar-drs-5r-10r-15r-25r-v2-heavylift-13-fardiga-set-fts-mtd-och-geofencing",
+      "status": "ny",
+      "kalla": "egen",
+      "tillagd": "2026-10-01",
+      "uppdaterad": "2026-10-01",
+      "tillagd_av": "claude",
+      "leverantor": "Drone Rescue Systems GmbH",
+      "produkt": "Drönarfallskärmar DRS-5R/10R/15R/25R V2, HeavyLift, 13 färdiga set, FTS, MTD och Geofencing",
+      "kategori": "fallskarmar",
+      "land": "AT",
+      "url": "https://www.dronerescue.com/",
+      "kontakt": {
+        "namn": null,
+        "epost": "sales@dronerescue.com",
+        "telefon": "+43 660 140 80 28",
+        "webb": "https://www.dronerescue.com/"
+      },
+      "pris": null,
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "fallskarmar",
+        "flygsakerhet",
+        "easa-moc-2511",
+        "easa-moc-2512",
+        "astm-f3322"
+      ],
+      "anteckning": "Inget pris publicerat (endast 'Request now'), så basis okänd. Återförsäljarvillkor, MOQ, ledtid och rätt att använda produktbilder återstår att fråga om hos sales@dronerescue.com. 21 utkast ligger i Shopify (Europe Drone Company), pris 0 kr, inga bilder. Datakontroll behövs för H6 (systemvikt), Astro (MOC Q3 2026) och WingtraRay (ofullständig spec). Se kollektionen 'Drönarfallskärmar och flygsäkerhet'."
     }
   ]
 }
