@@ -89,6 +89,7 @@ const PAGES = [
   },
   {
     handle: "payload-tjudrad-belysning",
+    collection: "tjudrad-belysning",
     title: "Matrix-belysning och tjudrad belysning för drönare",
     eyebrow: "Arbetsbelysning och tjudrade system",
     intro:
@@ -119,6 +120,7 @@ const PAGES = [
   },
   {
     handle: "payload-lastslapp",
+    collection: "lastslapp",
     title: "Lastsläpp och logistiknyttolaster för drönare",
     eyebrow: "Lastsläpp och logistik",
     intro:

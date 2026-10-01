@@ -7,28 +7,32 @@
           "type": "solution",
           "settings": {
             "title": "Kroksläpp",
-            "text": "Släpp för krok eller lina, med olika lastkapacitet och möjlighet till flera avlämningar på en flygning."
+            "text": "Släpp för krok eller lina, med olika lastkapacitet och möjlighet till flera avlämningar på en flygning.",
+            "link": "/collections/lastslapp"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "Precisionssläpp",
-            "text": "Släpp med avståndsmätning för meterprecis avlämning från större plattformar."
+            "text": "Släpp med avståndsmätning för meterprecis avlämning från större plattformar.",
+            "link": "/collections/lastslapp"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "Kompakta släpp",
-            "text": "Lätta släpp för mindre enterprise-drönare där vikten är avgörande."
+            "text": "Lätta släpp för mindre enterprise-drönare där vikten är avgörande.",
+            "link": "/collections/lastslapp"
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
             "title": "Logistiknyttolaster",
-            "text": "Lådor och hållare för leveransuppdrag med transportdrönare."
+            "text": "Lådor och hållare för leveransuppdrag med transportdrönare.",
+            "link": "/collections/lastslapp"
           }
         },
         "benefit_1": {
