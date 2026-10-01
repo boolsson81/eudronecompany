@@ -432,3 +432,76 @@ Fem av dessa tio ligger dessutom i kategorier som troligen blockerar skrivning (
 | Hög | 48 |
 | Medel | 10 |
 | Inget förslag | 94 |
+
+## 15. Kategorier, värden och katalogstädning (2026-10-01)
+
+Genomfört i Shopify enligt punkt 5–7 i genomgången. Samtliga mutationer returnerade tomma `userErrors`.
+Utfallet är efterkontrollerat med en separat läsning (2026-10-01): alla 9 `passar till`-värden, 6 kategorier,
+16 produkttypsflyttar och arkiveringen av Tundra-dubbletten stämmer med det som beskrivs nedan. Alla berörda
+produkter är fortfarande utkast/arkiverade; inga aktiva produkter ändrades.
+
+### 15.1 Produktkategori satt (6 produkter)
+
+Alla satta till "Delar och tillbehör till flygplan" (`vp-1-1`), som är tillåten för `custom.passsar_till`.
+Fem saknade kategori, en stod som "Okategoriserat".
+
+| Produkt | Tidigare kategori |
+|---|---|
+| `dji-dock-3-vehicle-mounted-gimbal-mount` | saknades |
+| `dji-m350-e-port-development-kit` | saknades |
+| `dji-manifold-3-accessorykit-matrice-4d` | saknades |
+| `dji-power-sdc-to-matrice-30-series-fas` | saknades |
+| `water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller` | saknades |
+| `avss-prs-m350ex` | Okategoriserat |
+
+Inte ändrade (kräver beslut om rätt kategori): `dji-matrice-350-rtk-2-years-care-basic` (en serviceplan) och
+`dji-matrice-4t-power-1000-paket` (ett laddpaket). Båda ligger i "Drönare", vilket fältet inte tillåter, och
+"Delar och tillbehör" vore fel för en serviceplan.
+
+### 15.2 `passar till` skrivet (9 produkter)
+
+| Produkt | Värde |
+|---|---|
+| `dji-dock-3-vehicle-mounted-gimbal-mount` | DJI Dock 3 |
+| `dji-m350-e-port-development-kit` | DJI Matrice 350 |
+| `dji-manifold-3-accessorykit-matrice-4d` | DJI Matrice 4D |
+| `dji-power-sdc-to-matrice-30-series-fas` | DJI Matrice 30, DJI Matrice 30T |
+| `water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller` | DJI Phantom 3 |
+| `avss-prs-m350ex` | DJI Matrice 350 RTK |
+| `dji-matrice-4d-series-low-noise-anti-lce` | DJI Matrice 4D, DJI Matrice 4TD |
+| `dji-relamodul-for-agras-t40-t20-global` | DJI Agras T20, DJI Agras T40 |
+| `drone-gimbal-motor-y-axel-ny-version-for-dji-phant` | DJI Phantom 4 Pro |
+
+Totalt har nu 39 produkter fått värden genom dessa körningar (30 + 9). PGYTECH-filtret
+(`pgytech-x4s-mrc-cpl-guld-kant-filters-dji-inspire-2`) är fortfarande inte skrivet: kategorin Linsfilter är korrekt
+för produkten men ligger utanför fältets tillåtna kategorier.
+
+### 15.3 Felplacerade produkter flyttade ur enterprise-produkttyperna (16 st, alla utkast)
+
+Flyttade produkttyper kan återställas genom att sätta tillbaka tidigare typ.
+
+| Ny produkttyp | Tidigare typ | Produkter |
+|---|---|---|
+| Drone spareparts | Enterprise Spareparts | `dji-gps-module-p3-part-1`, `dji-p3-camera-vibrabsorbboard-pro-adv-1`, `dji-p3-camera-vibrabsorbboard-pro-adv`, `dji-p4-aircarft-power-port-module-part3`, `dji-p4-pro-obsidian-gimbal-camera-pt125`, `dji-p4-pro-adv-gimbal-camera-part-63`, `dji-radio-controller-p2-p2v-p2v-5-8ghz`, `phantom-3-se-camera-lens-spare-part`, `gimbal-protection-dji-phantom`, `drone-gimbal-motor-y-axel-ny-version-for-dji-phant`, `parrot-central-cross-antenna-for-mambo` |
+| Drone accessories | Enterprise Accessories | `dji-phantom-4-160w-ac-kabel`, `water-resistance-pvc-decal-skin-sticker-for-dji-phantom-3-quadcopter-remote-controller` |
+| Drone cases | Enterprise Accessories | `dji-phantom-backpack-multipurpose-barvaska`, `parrot-anafi-drone-bag-lattviktig-protective` |
+| Drone filters | Enterprise Drone Filter | `junestar-filters-add-on-effect-filters-parrot-anafi` |
+
+Medvetet inte flyttade: aktiva Phantom-/Zenmuse-delar (`dji-phantom-4-gimbalmotor-y-axel`,
+`gimbal-camera-ribbon-flex-cable-replacement-for-dji-zenmuse-h3-3d`), Mavic 2 Enterprise-skalet och Inspire 2-tillbehören.
+
+### 15.4 Dubbletter
+
+| Par | Utfall | Grund |
+|---|---|---|
+| `tundra-modular-payloadsystem-ir-light` / `-1` | `-1` **arkiverad** | Samma SKU (401480); `-1` har ingen beskrivning. Priset skiljer lite (69 312,50 mot 69 230,00), så kontrollera vilket som gäller. Kan återställas till utkast. |
+| `dji-p3-camera-vibrabsorbboard-pro-adv` / `-1` | Orörda | Olika SKU (CP.PT.000225 mot 481379) och pris (207,50 mot 205,00): troligen samma del från två leverantörer |
+| `dji-zenmuse-h30` / `dji-zenmuse-h30-1` | Orörda | Olika SKU (CB.202404230970 mot 489516), samma pris (86 225); olika leverantörsfält ("DJI Enterprise" mot "DJI") och produkttyp |
+| `ap30-n1-aerial-manipulator` / `wisson-orion-ap30-n1-pliabot-flygburen-manipulator-dji-fc30` | Orörda | Den aktiva har 5 bilder och pris 498 900; utkastet har 2 bilder och pris 0,00. Troligen en gammal importstub, men beslut krävs. |
+
+### 15.5 Kvarstår efter detta
+
+- Aktiva 4 produkter utan `passar till` (godkännande).
+- Care-planen och Power 1000-paketet (kategori), PGYTECH-filtret (kategoribegränsning).
+- 10 medelsäkra rader, 94 rader utan förslag, modeller som saknas i valen.
+- Beslut om de tre orörda dubblettparen.
