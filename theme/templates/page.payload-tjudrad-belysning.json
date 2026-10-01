@@ -7,28 +7,32 @@
           "type": "solution",
           "settings": {
             "title": "Matrix-belysning",
-            "text": "Belysningsset i flera effektsteg för bred ljussättning av större ytor, på fri flygning."
+            "text": "Belysningsset i flera effektsteg för bred ljussättning av större ytor, på fri flygning.",
+            "link": "/collections/tjudrad-belysning"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "Tjudrade kraftsystem",
-            "text": "Marken matar drönaren med ström via lina, så flygtiden begränsas inte av batterierna."
+            "text": "Marken matar drönaren med ström via lina, så flygtiden begränsas inte av batterierna.",
+            "link": "/collections/tjudrad-belysning"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "Portabelt tjudrat hoverljus",
-            "text": "Snabbt utplacerat och hopfällbart luftburet ljus för utomhusbruk."
+            "text": "Snabbt utplacerat och hopfällbart luftburet ljus för utomhusbruk.",
+            "link": "/collections/tjudrad-belysning"
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
             "title": "Tjudrade system med kamera",
-            "text": "Tjudrad plattform med zoom- och värmekamera för långvarig övervakning."
+            "text": "Tjudrad plattform med zoom- och värmekamera för långvarig övervakning.",
+            "link": "/collections/tjudrad-belysning"
           }
         },
         "benefit_1": {
