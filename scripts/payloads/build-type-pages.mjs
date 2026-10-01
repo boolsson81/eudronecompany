@@ -27,6 +27,7 @@ const CRUMB = { label: "Nyttolaster", link: "/pages/payloads" };
 const PAGES = [
   {
     handle: "payload-sokljus",
+    collection: "sokljus",
     title: "Sökljus och IR-belysning för drönare",
     eyebrow: "Sökljus",
     intro:
@@ -57,6 +58,7 @@ const PAGES = [
   },
   {
     handle: "payload-sokljus-hogtalare",
+    collection: "sokljus-hogtalare",
     title: "Sökljus och högtalare för drönare",
     eyebrow: "Sökljus och högtalare",
     intro:
@@ -147,6 +149,7 @@ const PAGES = [
   },
   {
     handle: "payload-kameror",
+    collection: "nattkameror",
     title: "Nattkameror och termiska kameror för drönare",
     eyebrow: "Kameror",
     intro:
@@ -210,7 +213,7 @@ function template(p) {
   const order = [];
   p.solutions.forEach((s, i) => {
     const k = `solution_${i + 1}`;
-    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text, ...(s.link ? { link: s.link } : {}) } };
+    blocks[k] = { type: "solution", settings: { title: s.title, text: s.text, ...((s.link || p.collection) ? { link: s.link || `/collections/${p.collection}` } : {}) } };
     order.push(k);
   });
   p.benefits.forEach((b, i) => {

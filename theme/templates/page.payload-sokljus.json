@@ -7,28 +7,32 @@
           "type": "solution",
           "settings": {
             "title": "Gimbalstyrda sökljus",
-            "text": "Riktbart ljus med egen gimbal som följer kameran eller styrs separat, i storlekar för både kompakta och stora plattformar."
+            "text": "Riktbart ljus med egen gimbal som följer kameran eller styrs separat, i storlekar för både kompakta och stora plattformar.",
+            "link": "/collections/sokljus"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "Sökljus med strobe",
-            "text": "Blinkfunktion som gör drönaren synlig från marken och kan användas för att markera en plats."
+            "text": "Blinkfunktion som gör drönaren synlig från marken och kan användas för att markera en plats.",
+            "link": "/collections/sokljus"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "Infraröda fill-in-ljus",
-            "text": "Osynlig belysning för nattkameror och spaning, där ljuset inte ska synas för blotta ögat."
+            "text": "Osynlig belysning för nattkameror och spaning, där ljuset inte ska synas för blotta ögat.",
+            "link": "/collections/sokljus"
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
             "title": "Fast monterad arbetsbelysning",
-            "text": "Enklare ljus utan gimbal för belysning rakt under eller framför drönaren."
+            "text": "Enklare ljus utan gimbal för belysning rakt under eller framför drönaren.",
+            "link": "/collections/sokljus"
           }
         },
         "benefit_1": {

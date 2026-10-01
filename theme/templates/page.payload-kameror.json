@@ -7,21 +7,24 @@
           "type": "solution",
           "settings": {
             "title": "Termiska nattkameror",
-            "text": "Långdistansdetektering av värme, för spaning och kartläggning av större områden."
+            "text": "Långdistansdetektering av värme, för spaning och kartläggning av större områden.",
+            "link": "/collections/nattkameror"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "Nattkameror",
-            "text": "Kameror med bra ljuskänslighet för sök och övervakning i mörker."
+            "text": "Kameror med bra ljuskänslighet för sök och övervakning i mörker.",
+            "link": "/collections/nattkameror"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "Zoomkameror",
-            "text": "Optisk zoom för att identifiera mål på avstånd utan att närma sig."
+            "text": "Optisk zoom för att identifiera mål på avstånd utan att närma sig.",
+            "link": "/collections/nattkameror"
           }
         },
         "benefit_1": {

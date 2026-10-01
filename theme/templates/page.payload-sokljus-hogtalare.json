@@ -7,28 +7,32 @@
           "type": "solution",
           "settings": {
             "title": "Sökljus och högtalare i en enhet",
-            "text": "Ljus och ljud i samma nyttolast, vilket sparar vikt och fäste på plattformen."
+            "text": "Ljus och ljud i samma nyttolast, vilket sparar vikt och fäste på plattformen.",
+            "link": "/collections/sokljus-hogtalare"
           }
         },
         "solution_2": {
           "type": "solution",
           "settings": {
             "title": "Röst- och utropssystem",
-            "text": "Digital röstsändning med realtidsutrop, inspelade meddelanden och text-till-tal."
+            "text": "Digital röstsändning med realtidsutrop, inspelade meddelanden och text-till-tal.",
+            "link": "/collections/sokljus-hogtalare"
           }
         },
         "solution_3": {
           "type": "solution",
           "settings": {
             "title": "Varningsljus",
-            "text": "Ljus som drar uppmärksamhet och förstärker ett utrop eller en varning."
+            "text": "Ljus som drar uppmärksamhet och förstärker ett utrop eller en varning.",
+            "link": "/collections/sokljus-hogtalare"
           }
         },
         "solution_4": {
           "type": "solution",
           "settings": {
             "title": "Ljudupptagare",
-            "text": "Mikrofon för att höra vad som sägs på marken vid kommunikation åt två håll."
+            "text": "Mikrofon för att höra vad som sägs på marken vid kommunikation åt två håll.",
+            "link": "/collections/sokljus-hogtalare"
           }
         },
         "benefit_1": {
