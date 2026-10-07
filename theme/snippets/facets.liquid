@@ -7,6 +7,8 @@
   - enable_sorting: {Boolean} Show sorting when true
   - filter_type: {String} Type of filter
   - paginate: {Object}
+  - visible_filters: {String} Optional. Kommaseparerad lista med filter.param_name som ska
+    visas. Tom = alla filter visas. Aktiva filter visas alltid.
   - filter_groups: {Array} Optional. Section blocks (type filter_group) with
     settings.heading and settings.params (comma-separated filter.param_name
     list). When present, desktop/horizontal filters render grouped under
@@ -31,6 +33,30 @@
   else
     assign terms = results.terms | escape
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  endif
+
+  # visible_filters (valfri): kommaseparerad lista med filterparametrar som ska visas.
+  # Tom = alla visas. Aktiva filter visas alltid så att ett valt filter aldrig blir osynligt.
+  assign hidden_keys = '|'
+  assign visible_list = visible_filters | remove: ' ' | split: ','
+  if visible_list.size > 0
+    for filter in results.filters
+      unless visible_list contains filter.param_name
+        assign has_active = false
+        if filter.active_values.size > 0
+          assign has_active = true
+        endif
+        if filter.type == 'price_range' and filter.min_value.value != null
+          assign has_active = true
+        endif
+        if filter.type == 'price_range' and filter.max_value.value != null
+          assign has_active = true
+        endif
+        unless has_active
+          assign hidden_keys = hidden_keys | append: filter.param_name | append: '|'
+        endunless
+      endunless
+    endfor
   endif
 -%}
 
@@ -125,14 +151,20 @@
             {%- endcomment -%}
             {%- liquid
               assign facet_item_index = 0
-              assign grouped_param_keys = '|'
+              comment
+                Dolda filter räknas som redan hanterade så att de inte hamnar under "Fler filter".
+              endcomment
+              assign grouped_param_keys = hidden_keys
             -%}
             {%- if filter_groups.size > 0 -%}
               {%- for group in filter_groups -%}
                 {%- assign group_params = group.settings.params | remove: ' ' | split: ',' -%}
                 {%- assign group_has_items = false -%}
                 {%- for filter in results.filters -%}
-                  {%- if group_params contains filter.param_name -%}
+                  {%- assign param_key = '|' | append: filter.param_name | append: '|' -%}
+                  {%- assign is_hidden = false -%}
+                  {%- if hidden_keys contains param_key -%}{%- assign is_hidden = true -%}{%- endif -%}
+                  {%- if group_params contains filter.param_name and is_hidden == false -%}
                     {%- assign group_has_items = true -%}
                     {%- break -%}
                   {%- endif -%}
@@ -147,7 +179,10 @@
                       <h3 class="facets__group-heading caption-large text-body">{{ group.settings.heading | escape }}</h3>
                     {%- endif -%}
                     {%- for filter in results.filters -%}
-                      {%- if group_params contains filter.param_name -%}
+                      {%- assign param_key = '|' | append: filter.param_name | append: '|' -%}
+                      {%- assign is_hidden = false -%}
+                      {%- if hidden_keys contains param_key -%}{%- assign is_hidden = true -%}{%- endif -%}
+                      {%- if group_params contains filter.param_name and is_hidden == false -%}
                         {%- assign facet_item_index = facet_item_index | plus: 1 -%}
                         {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                         {%- assign grouped_param_keys = grouped_param_keys | append: filter.param_name | append: '|' -%}
@@ -190,15 +225,20 @@
                 </div>
               {%- endif -%}
             {%- else -%}
+              {%- assign facet_item_index = 0 -%}
               {%- for filter in results.filters -%}
-                {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
-                {% render 'facets-filter-item',
-                  filter: filter,
-                  filter_type: filter_type,
-                  default_presentation: default_presentation,
-                  facet_search_threshold: facet_search_threshold,
-                  index: forloop.index
-                %}
+                {%- assign param_key = '|' | append: filter.param_name | append: '|' -%}
+                {%- unless hidden_keys contains param_key -%}
+                  {%- assign facet_item_index = facet_item_index | plus: 1 -%}
+                  {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                  {% render 'facets-filter-item',
+                    filter: filter,
+                    filter_type: filter_type,
+                    default_presentation: default_presentation,
+                    facet_search_threshold: facet_search_threshold,
+                    index: facet_item_index
+                  %}
+                {%- endunless -%}
               {%- endfor -%}
             {%- endif -%}
           </div>
@@ -376,6 +416,8 @@
             >
               {%- if enable_filtering -%}
                 {%- for filter in results.filters -%}
+                  {%- assign param_key = '|' | append: filter.param_name | append: '|' -%}
+                  {%- if hidden_keys contains param_key -%}{%- continue -%}{%- endif -%}
                   {% liquid
                     assign presentation = filter.presentation | default: default_presentation
                     if presentation == 'image'
