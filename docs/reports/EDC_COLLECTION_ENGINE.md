@@ -181,6 +181,21 @@ Grupperingen gäller idag desktop/horisontell sidopanel (den layout som visas
 i uppgiftens exempel #11). Mobil- och drawer-vyn visar fortfarande en platt
 lista (se begränsningar, avsnitt 14).
 
+### Välja vilka filter som visas (per mall och per kollektion)
+
+Sök & upptäckt-filter är gemensamma för hela butiken (ingen inbyggd inställning
+per kollektion har kunnat verifieras). Temat styr därför själv vad som visas:
+
+- **Per mall:** i Theme Editor, `product-grid`-sektionen → "Visa endast dessa
+  filter". Kommaseparerade `param_name`, t.ex.
+  `filter.p.m.custom.tillverkare,filter.p.m.custom.passsar_till,filter.v.price`.
+  Tomt = alla filter visas (som förut).
+- **Per kollektion:** skapa kollektionsmetafältet `custom.visible_filters`
+  (single_line_text) och fyll i samma lista. Det vinner över mallens inställning.
+- Aktiva filter (t.ex. förifyllda via `default_filter_query`) visas alltid.
+- Gäller desktop, mobil och drawer. `filter_group`-block grupperar bara de
+  filter som visas.
+
 ## 9. Hur samma filter återanvänds i flera collections
 
 Ett filter (t.ex. `edp.compatible_uav` eller `dji.series`) är en enda
