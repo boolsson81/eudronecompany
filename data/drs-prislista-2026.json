@@ -6,6 +6,12 @@
   "moms": "okant",
   "basis": "listpris",
   "basis_kommentar": "Bekräftat av DRS 2026-10-07: priserna är MSRP. Återförsäljarpriset beror på kvantitet enligt rabattlistan i återförsäljaravtalet, som vi ännu inte har.",
+  "shopify_priser": {
+    "satt": "2026-10-07",
+    "metod": "MSRP (EUR) x 11,25 SEK/EUR x 1,25 svensk moms, avrundat till närmaste 100 kr (10 kr under 1 000 kr). Butiken har taxesIncluded = true, så priserna i Shopify är inkl. moms.",
+    "forutsattning": "Förutsätter att DRS prislista är exkl. moms. DRS har frågats 2026-10-07 och svaret återstår. Om listan är inkl. moms måste priserna räknas om.",
+    "omfattar": "18 DRS-produkter och 21 reservdelar. DRS-35R och DRS-100 saknar pris."
+  },
   "aterforsaljarrabatt": {
     "kalla": "Uppgiven av Bo 2026-10-07 (rabattlista enligt återförsäljaravtalet). Avtalet självt har vi inte.",
     "avser": "Rabatt på MSRP per beställd kvantitet, antagligen per order. Bekräfta.",
