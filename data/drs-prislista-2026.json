@@ -6,6 +6,18 @@
   "moms": "okant",
   "basis": "listpris",
   "basis_kommentar": "Bekräftat av DRS 2026-10-07: priserna är MSRP. Återförsäljarpriset beror på kvantitet enligt rabattlistan i återförsäljaravtalet, som vi ännu inte har.",
+  "aterforsaljarrabatt": {
+    "kalla": "Uppgiven av Bo 2026-10-07 (rabattlista enligt återförsäljaravtalet). Avtalet självt har vi inte.",
+    "avser": "Rabatt på MSRP per beställd kvantitet, antagligen per order. Bekräfta.",
+    "nivaer": [
+      { "fran": 1, "till": 2, "rabatt_procent": 20 },
+      { "fran": 3, "till": 5, "rabatt_procent": 23 },
+      { "fran": 6, "till": 10, "rabatt_procent": 25 },
+      { "fran": 11, "till": 25, "rabatt_procent": 28 },
+      { "fran": 26, "till": null, "rabatt_procent": 30 }
+    ],
+    "anteckning": "Uppgiften löd '10 till 25', vilket överlappar 6–10. Tolkat som 11–25 och 25+ som 26+. Bekräfta gränserna."
+  },
   "villkor": {
     "mangdrabatt": "Bulkpriser finns från 3 enheter (gäller integrerade och generiska system). Nivåerna står inte i prislistan.",
     "minimiorder": "Tillägg på 29 EUR för order under 50 EUR (gäller reservdelar och tillbehör).",
