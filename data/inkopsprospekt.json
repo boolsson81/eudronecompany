@@ -915,10 +915,10 @@
     },
     {
       "id": "drone-rescue-systems-gmbh-dronarfallskarmar-drs-5r-10r-15r-25r-v2-heavylift-13-fardiga-set-fts-mtd-och-geofencing",
-      "status": "ny",
+      "status": "kontaktad",
       "kalla": "egen",
       "tillagd": "2026-10-01",
-      "uppdaterad": "2026-10-01",
+      "uppdaterad": "2026-10-07",
       "tillagd_av": "claude",
       "leverantor": "Drone Rescue Systems GmbH",
       "produkt": "Drönarfallskärmar DRS-5R/10R/15R/25R V2, HeavyLift, 13 färdiga set, FTS, MTD och Geofencing",
@@ -931,7 +931,13 @@
         "telefon": "+43 660 140 80 28",
         "webb": "https://www.dronerescue.com/"
       },
-      "pris": null,
+      "pris": {
+        "belopp": 2290,
+        "valuta": "EUR",
+        "basis": "listpris",
+        "moms": "okant",
+        "per": "styck (DRS-5R, instegsmodell)"
+      },
       "moq": null,
       "ledtid_dagar": null,
       "taggar": [
@@ -941,7 +947,7 @@
         "easa-moc-2512",
         "astm-f3322"
       ],
-      "anteckning": "Inget pris publicerat (endast 'Request now'), så basis okänd. Återförsäljarvillkor, MOQ, ledtid och rätt att använda produktbilder återstår att fråga om hos sales@dronerescue.com. 21 utkast ligger i Shopify (Europe Drone Company), pris 0 kr, inga bilder. Datakontroll behövs för H6 (systemvikt), Astro (MOC Q3 2026) och WingtraRay (ofullständig spec). Se kollektionen 'Drönarfallskärmar och flygsäkerhet'."
+      "anteckning": "Prislista 2026 (Customer, v1.1, EUR) mottagen 2026-10-07, hela listan i data/drs-prislista-2026.json. Spann: generiska DRS-5R 2 290 till DRS-100R 6 490 EUR, integrerade system 1 749–5 090 EUR, FTS V2 900 EUR, reservfallskärmar 290–1 150 EUR. Bulkpriser från 3 enheter, nivåerna står inte i listan. Moms och om detta är återförsäljarpris eller slutkundspris framgår inte, så basis är listpris tills det bekräftats. Villkoren (s. 7–9) förbjuder att dela prislistan med leverantörens konkurrenter, kräver produktutbildning av en säljare och förbjuder egen konkurrerande produkt, så de bör granskas före signering. Kvar att fråga: återförsäljarrabatt och bulknivåer, MOQ, ledtid, rätt att använda produktbilder. Fråga hos sales@dronerescue.com. 21 utkast ligger i Shopify (Europe Drone Company), pris 0 kr, inga bilder. Datakontroll behövs för H6 (systemvikt), Astro (MOC Q3 2026) och WingtraRay (ofullständig spec). Se kollektionen 'Drönarfallskärmar och flygsäkerhet'."
     }
   ]
 }
