@@ -129,12 +129,12 @@
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         {%- liquid
           assign filter_groups = section.blocks | where: 'type', 'filter_group'
-          # Vilka filter som visas: kollektionens eget metafält (custom.visible_filters)
-          # vinner över sektionsinställningen (som sätts per mall). Tomt = alla filter.
-          assign visible_filters = section.settings.visible_filters
-          assign collection_visible_filters = collection.metafields.custom.visible_filters.value
-          if collection_visible_filters != blank
-            assign visible_filters = collection_visible_filters
+          # Vilka filter som döljs: kollektionens eget metafält (custom.hidden_filters)
+          # vinner över sektionsinställningen (som sätts per mall). Tomt = alla filter visas.
+          assign hidden_filters = section.settings.hidden_filters
+          assign collection_hidden_filters = collection.metafields.custom.hidden_filters.value
+          if collection_hidden_filters != blank
+            assign hidden_filters = collection_hidden_filters
           endif
         -%}
         <aside
@@ -150,7 +150,7 @@
             filter_type: section.settings.filter_type,
             paginate: paginate,
             filter_groups: filter_groups,
-            visible_filters: visible_filters
+            hidden_filters: hidden_filters
           %}
         </aside>
       {%- endif -%}
@@ -437,9 +437,9 @@
     },
     {
       "type": "text",
-      "id": "visible_filters",
-      "label": "Visa endast dessa filter (kommaseparerade)",
-      "info": "Exakta parameternamn, t.ex. filter.p.m.custom.tillverkare,filter.p.m.custom.passsar_till,filter.v.price. Tomt = alla filter visas. Aktiva filter visas alltid. Kan skrivas över per kollektion med kollektionsmetafältet custom.visible_filters."
+      "id": "hidden_filters",
+      "label": "Dölj dessa filter (kommaseparerade)",
+      "info": "Alla filter från Sök & upptäckt visas som standard. Ange exakta parameternamn för de du vill släcka, t.ex. filter.p.m.custom.leverantor,filter.p.m.custom.typ_av_reservdel. Aktiva filter visas alltid. Kan skrivas över per kollektion med kollektionsmetafältet custom.hidden_filters."
     },
     {
       "type": "checkbox",

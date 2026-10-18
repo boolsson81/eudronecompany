@@ -7,8 +7,8 @@
   - enable_sorting: {Boolean} Show sorting when true
   - filter_type: {String} Type of filter
   - paginate: {Object}
-  - visible_filters: {String} Optional. Kommaseparerad lista med filter.param_name som ska
-    visas. Tom = alla filter visas. Aktiva filter visas alltid.
+  - hidden_filters: {String} Optional. Kommaseparerad lista med filter.param_name som ska
+    döljas. Tom = alla filter visas. Aktiva filter visas alltid.
   - filter_groups: {Array} Optional. Section blocks (type filter_group) with
     settings.heading and settings.params (comma-separated filter.param_name
     list). When present, desktop/horizontal filters render grouped under
@@ -35,13 +35,14 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 
-  # visible_filters (valfri): kommaseparerad lista med filterparametrar som ska visas.
-  # Tom = alla visas. Aktiva filter visas alltid så att ett valt filter aldrig blir osynligt.
+  # hidden_filters (valfri): kommaseparerad lista med filterparametrar som ska döljas.
+  # Tom = alla filter som finns i Sök & upptäckt visas. Aktiva filter visas alltid
+  # så att ett valt filter aldrig blir osynligt.
   assign hidden_keys = '|'
-  assign visible_list = visible_filters | remove: ' ' | split: ','
-  if visible_list.size > 0
+  assign hidden_list = hidden_filters | remove: ' ' | split: ','
+  if hidden_list.size > 0
     for filter in results.filters
-      unless visible_list contains filter.param_name
+      if hidden_list contains filter.param_name
         assign has_active = false
         if filter.active_values.size > 0
           assign has_active = true
@@ -55,7 +56,7 @@
         unless has_active
           assign hidden_keys = hidden_keys | append: filter.param_name | append: '|'
         endunless
-      endunless
+      endif
     endfor
   endif
 -%}
