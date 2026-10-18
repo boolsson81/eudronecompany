@@ -41,6 +41,7 @@
         "show_vendor": true,
         "show_rating": false,
         "enable_filtering": true,
+        "hidden_filters": "filter.p.m.custom.leverantor,filter.p.m.custom.leverantorens_artikelnummer",
         "filter_type": "vertical",
         "enable_sorting": true,
         "show_compatibility": true,

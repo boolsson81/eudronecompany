@@ -18,6 +18,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_filtering": true,
+        "hidden_filters": "filter.p.m.custom.leverantor,filter.p.m.custom.leverantorens_artikelnummer,filter.p.m.custom.passsar_till,filter.p.m.custom.typ_av_reservdel",
         "filter_type": "vertical",
         "enable_sorting": true,
         "show_compatibility": true,

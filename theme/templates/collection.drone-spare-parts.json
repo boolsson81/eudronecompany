@@ -23,6 +23,7 @@
         "show_compatibility": true,
         "quick_add": "standard",
         "enable_filtering": true,
+        "hidden_filters": "filter.p.m.custom.leverantor,filter.p.m.custom.leverantorens_artikelnummer",
         "filter_type": "vertical",
         "enable_sorting": true,
         "padding_top": 36,
