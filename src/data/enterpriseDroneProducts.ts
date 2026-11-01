@@ -5,6 +5,7 @@ import agrasImg from "@/assets/dji-agras-t50.jpg";
 import mavicMultiImg from "@/assets/dji-mavic-3-multispectral.jpg";
 import inspireImg from "@/assets/dji-inspire-3.jpg";
 import mavicProImg from "@/assets/dji-mavic-3-pro.jpg";
+import { videoId } from "@/data/productVideos";
 
 /**
  * Landningssidor för drönarplattformarna i Enterprise-sortimentet.
@@ -119,6 +120,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["energi", "kartlaggning", "sakerhet"],
     shopUrl: "https://actionking.se/search?q=dji+matrice+400",
     badge: "Flaggskepp",
+    youtubeId: videoId("dji-matrice-400"),
     faq: [
       {
         question: "Vad skiljer Matrice 400 från Matrice 350 RTK?",
@@ -192,7 +194,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "mavic-3-enterprise-vs-matrice-350-rtk",
     shopUrl: "https://actionking.se/search?q=dji+matrice+350+rtk",
     imageUrl: matriceImg,
-    youtubeId: "JPPHG5dSpwM",
+    youtubeId: videoId("dji-matrice-350-rtk"),
     badge: "Populär",
     faq: [
       {
@@ -256,7 +258,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "mavic-3-enterprise-vs-matrice-350-rtk",
     shopUrl: "https://actionking.se/search?q=dji+mavic+3+enterprise",
     imageUrl: mavicEntImg,
-    youtubeId: "KH-ZReRtoec",
+    youtubeId: videoId("dji-mavic-3-enterprise"),
     badge: "Populär",
     faq: [
       {
@@ -319,7 +321,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "agras-t50-vs-mavic-3-multispectral",
     shopUrl: "https://actionking.se/search?q=dji+mavic+3+multispectral",
     imageUrl: mavicMultiImg,
-    youtubeId: "4f8NiLApHLk",
+    youtubeId: videoId("dji-mavic-3-multispectral"),
     faq: [
       {
         question: "Behöver jag Mavic 3 Multispectral om jag redan har en Agras T50?",
@@ -381,7 +383,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "agras-t50-vs-mavic-3-multispectral",
     shopUrl: "https://actionking.se/search?q=dji+agras+t50",
     imageUrl: agrasImg,
-    youtubeId: "G8gjm2HALEM",
+    youtubeId: videoId("dji-agras-t50"),
     faq: [
       {
         question: "Vilken utbildning krävs för att spruta med drönare?",
@@ -444,7 +446,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "inspire-3-vs-mavic-3-pro",
     shopUrl: "https://actionking.se/search?q=dji+inspire+3",
     imageUrl: inspireImg,
-    youtubeId: "IwIoeaGim6Q",
+    youtubeId: videoId("dji-inspire-3"),
     faq: [
       {
         question: "Behöver jag två operatörer för Inspire 3?",
@@ -506,7 +508,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     comparisonSlug: "inspire-3-vs-mavic-3-pro",
     shopUrl: "https://actionking.se/search?q=dji+mavic+3+pro",
     imageUrl: mavicProImg,
-    youtubeId: "BNEmDcQr6hk",
+    youtubeId: videoId("dji-mavic-3-pro"),
     faq: [
       {
         question: "Räcker Mavic 3 Pro för kommersiella produktioner?",
@@ -564,6 +566,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["inspektion", "energi", "sakerhet"],
     shopUrl: "https://actionking.se/search?q=dji+matrice+4e",
     badge: "Ny",
+    youtubeId: videoId("dji-matrice-4-series"),
     faq: [
       {
         question: "Är Matrice 4E samma sak som Mavic 3 Enterprise?",
@@ -621,6 +624,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["inspektion", "energi", "sakerhet"],
     shopUrl: "https://actionking.se/search?q=dji+matrice+4t",
     badge: "Ny",
+    youtubeId: videoId("dji-matrice-4-series"),
     faq: [
       {
         question: "Vad skiljer Matrice 4T från Matrice 4E?",
@@ -673,6 +677,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["sakerhet", "energi", "inspektion"],
     shopUrl: "https://actionking.se/search?q=dji+matrice+4d",
     badge: "Ny",
+    youtubeId: videoId("dji-matrice-4d-series"),
     faq: [
       {
         question: "Kan Matrice 4D flygas manuellt också?",
@@ -725,6 +730,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["sakerhet", "energi", "inspektion"],
     shopUrl: "https://actionking.se/search?q=dji+matrice+4td",
     badge: "Ny",
+    youtubeId: videoId("dji-matrice-4d-series"),
     faq: [
       {
         question: "Vad skiljer Matrice 4TD från Matrice 4D?",
@@ -775,6 +781,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     compatiblePayloads: [],
     industries: ["lantbruk"],
     shopUrl: "https://actionking.se/search?q=dji+agras+t25",
+    youtubeId: videoId("dji-agras-t25"),
     faq: [
       {
         question: "Vad skiljer Agras T25 från Agras T50?",
@@ -874,6 +881,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     compatiblePayloads: [],
     industries: ["sakerhet", "energi", "inspektion"],
     shopUrl: "https://actionking.se/search?q=dji+dock+2",
+    youtubeId: videoId("dji-dock-2"),
     faq: [
       {
         question: "Vilken drönare används tillsammans med DJI Dock 2?",
@@ -924,6 +932,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
     industries: ["sakerhet", "energi", "inspektion"],
     shopUrl: "https://actionking.se/search?q=dji+dock+3",
     badge: "Ny",
+    youtubeId: videoId("dji-dock-3"),
     faq: [
       {
         question: "Kan DJI Dock 3 användas tillsammans med Dock 2 i samma flotta?",

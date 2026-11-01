@@ -6,15 +6,18 @@ import agrasImg from "@/assets/dji-agras-t50.jpg";
 import mavicMultiImg from "@/assets/dji-mavic-3-multispectral.jpg";
 import inspireImg from "@/assets/dji-inspire-3.jpg";
 import mavicProImg from "@/assets/dji-mavic-3-pro.jpg";
+import { videoId } from "@/data/productVideos";
 
-// Drone product image & video mapping
+// Bild och officiell produktfilm per drönare. Film-ID:n kommer från
+// product-videos.json så att samma verifierade film används på produkt-,
+// bransch- och jämförelsesidorna.
 const DRONE_MEDIA: Record<string, { youtubeId: string; image: string }> = {
-  "DJI Matrice 350 RTK": { youtubeId: "JPPHG5dSpwM", image: matriceImg },
-  "DJI Mavic 3 Enterprise": { youtubeId: "KH-ZReRtoec", image: mavicEntImg },
-  "DJI Agras T50": { youtubeId: "G8gjm2HALEM", image: agrasImg },
-  "DJI Mavic 3 Multispectral": { youtubeId: "4f8NiLApHLk", image: mavicMultiImg },
-  "DJI Inspire 3": { youtubeId: "IwIoeaGim6Q", image: inspireImg },
-  "DJI Mavic 3 Pro": { youtubeId: "BNEmDcQr6hk", image: mavicProImg },
+  "DJI Matrice 350 RTK": { youtubeId: videoId("dji-matrice-350-rtk"), image: matriceImg },
+  "DJI Mavic 3 Enterprise": { youtubeId: videoId("dji-mavic-3-enterprise"), image: mavicEntImg },
+  "DJI Agras T50": { youtubeId: videoId("dji-agras-t50"), image: agrasImg },
+  "DJI Mavic 3 Multispectral": { youtubeId: videoId("dji-mavic-3-multispectral"), image: mavicMultiImg },
+  "DJI Inspire 3": { youtubeId: videoId("dji-inspire-3"), image: inspireImg },
+  "DJI Mavic 3 Pro": { youtubeId: videoId("dji-mavic-3-pro"), image: mavicProImg },
 };
 
 export function getDroneMedia(name: string) {

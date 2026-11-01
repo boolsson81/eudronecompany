@@ -15,14 +15,9 @@ import {
 } from "lucide-react";
 import djiMini5ProImg from "@/assets/dji-mini-5-pro.webp";
 
-const SHOWCASE_VIDEOS = [
-  { id: "JPPHG5dSpwM", title: "DJI Matrice 350 RTK" },
-  { id: "KH-ZReRtoec", title: "DJI Mavic 3 Enterprise" },
-  { id: "OwUwgpqgcMA", title: "DJI Dock 3" },
-  { id: "TxthvIgwPPc", title: "DJI Zenmuse H30 Series" },
-];
 import { DRONE_COMPARISONS } from "@/data/droneComparisons";
 import { ENTERPRISE_DRONE_PRODUCTS } from "@/data/enterpriseDroneProducts";
+import { videoId } from "@/data/productVideos";
 import { INDUSTRY_DATA, getDroneMedia } from "@/data/commercialDroneIndustries";
 import { droneUrl } from "@/lib/publicSite";
 import {
@@ -30,6 +25,16 @@ import {
   COMPANY_ORG_IDENTIFIER,
   COMPANY_POSTAL_ADDRESS,
 } from "@/lib/companyContact";
+
+/** Officiella produktfilmer på hubben, i visningsordning. */
+const SHOWCASE_VIDEOS = [
+  { id: videoId("dji-matrice-400"), title: "DJI Matrice 400" },
+  { id: videoId("dji-matrice-4-series"), title: "DJI Matrice 4 Series" },
+  { id: videoId("dji-matrice-350-rtk"), title: "DJI Matrice 350 RTK" },
+  { id: videoId("dji-dock-3"), title: "DJI Dock 3" },
+  { id: videoId("dji-zenmuse-h30-series"), title: "DJI Zenmuse H30 Series" },
+  { id: videoId("dji-zenmuse-l3"), title: "DJI Zenmuse L3" },
+];
 
 const HUB_FAQ: FaqItem[] = [
   { question: "Vilka drönare säljer EU Drone Company?", answer: "Vi erbjuder ett brett Enterprise-sortiment, bland annat DJI:s Matrice 350 RTK, Mavic 3 Enterprise, Agras T50, Inspire 3 och alla tillbehör." },
@@ -39,10 +44,6 @@ const HUB_FAQ: FaqItem[] = [
   { question: "Erbjuder ni leasing eller finansiering?", answer: "Ja, vi erbjuder flera finansieringsalternativ inklusive leasing, avbetalning och hyra. Kontakta oss för ett upplägg som passar ert företag." },
   { question: "Vilken support ingår efter köpet?", answer: "Alla köp inkluderar minst 2 års tillverkargaranti, teknisk support och tillgång till vår serviceverkstad i Sverige. Vi erbjuder även utökade serviceavtal för extra skydd." },
 ];
-
-
-
-
 
 export default function CommercialDrones() {
 
@@ -480,7 +481,6 @@ export default function CommercialDrones() {
             </motion.div>
           </div>
         </section>
-
 
         <DroneAccessories
           droneNames={["DJI Matrice 350 RTK", "DJI Mavic 3 Enterprise", "DJI Agras T50", "DJI Inspire 3", "DJI Mavic 3 Pro"]}

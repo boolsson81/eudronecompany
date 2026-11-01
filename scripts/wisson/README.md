@@ -31,3 +31,17 @@ för resultatet av första körningen.
 - Sätt inte pris. Sortimentet offereras per uppdrag.
 - Tagga med `wisson-import` så att en körning går att spåra och ångra.
 - Specifikationer är tillverkarens uppgifter — produkttexten säger det uttryckligen.
+
+## Produktfilmer
+
+Verifierade filmer från Wissons och DJI:s YouTube-kanaler ligger i
+`src/data/product-videos.json` (titel, kanal, kontrolldatum per ID).
+
+| Fil | Vad |
+|---|---|
+| `build-pages.mjs` | Lägger sektionen `edp-video` på varje system- och lösningssida utifrån registret. |
+| `apply-product-videos.mjs` | Lägger filmerna som extern video (YouTube) på Wisson-produkterna i Shopify, styrt av `wissonProducts` i registret. Dry run utan `--execute`. |
+
+Lägg bara till filmer från tillverkarens egen kanal. Kontrollera ID:t mot
+`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=<id>&format=json`
+innan det skrivs in — svaret visar titel och kanal.

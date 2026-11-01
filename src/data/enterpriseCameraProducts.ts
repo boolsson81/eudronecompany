@@ -3,6 +3,7 @@ import zenmuseH30TImg from "@/assets/dji-zenmuse-h30t.png";
 import zenmuseH30Img from "@/assets/dji-zenmuse-h30.png";
 import zenmuseS1Img from "@/assets/dji-zenmuse-s1.png";
 import zenmuseV1Img from "@/assets/dji-zenmuse-v1.png";
+import { videoId } from "@/data/productVideos";
 
 export type CameraCategory = "hybrid" | "thermal" | "lidar" | "photogrammetry" | "utility";
 
@@ -83,7 +84,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK", "DJI Matrice 400"],
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30t-dronarkamera",
     imageUrl: zenmuseH30TImg,
-    youtubeId: "fKkR6D-UGq0",
+    youtubeId: videoId("dji-zenmuse-h30-series"),
     faq: [
       {
         question: "Vilka drönare är Zenmuse H30T kompatibel med?",
@@ -140,7 +141,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK", "DJI Matrice 400"],
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-h30-dronarkamera",
     imageUrl: zenmuseH30Img,
-    youtubeId: "fKkR6D-UGq0",
+    youtubeId: videoId("dji-zenmuse-h30-series"),
     faq: [
       {
         question: "När ska jag välja H30 framför H30T?",
@@ -195,6 +196,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+h20t",
+    youtubeId: videoId("dji-zenmuse-h20-series"),
     faq: [
       {
         question: "H20T eller H30T — vilken ska jag välja?",
@@ -244,6 +246,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+h20n",
+    youtubeId: videoId("dji-zenmuse-h20n"),
     faq: [
       {
         question: "H20N eller H20T — vad skiljer dem åt?",
@@ -297,6 +300,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+h20",
+    youtubeId: videoId("dji-zenmuse-h20-series"),
     faq: [
       {
         question: "Vad skiljer H20 från H20T?",
@@ -351,7 +355,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+l2",
-    youtubeId: "g1JmzqBGUKA",
+    youtubeId: videoId("dji-zenmuse-l2"),
     badge: "Populär",
     faq: [
       {
@@ -407,7 +411,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 400", "DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+p1",
-    youtubeId: "H_0cEpCdIjw",
+    youtubeId: videoId("dji-zenmuse-p1"),
     faq: [
       {
         question: "P1 eller L2 — vilken passar min kartläggning?",
@@ -462,6 +466,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     ],
     compatibleDrones: ["DJI Matrice 350 RTK", "DJI Matrice 300 RTK"],
     shopUrl: "https://actionking.se/search?q=zenmuse+l1",
+    youtubeId: videoId("dji-zenmuse-l1"),
     faq: [
       {
         question: "L1 eller L2 — vilken ska jag välja?",
@@ -518,6 +523,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     compatibleDrones: ["DJI Matrice 400"],
     shopUrl: "https://actionking.se/search?q=zenmuse+l3",
     badge: "Ny",
+    youtubeId: videoId("dji-zenmuse-l3"),
     faq: [
       {
         question: "Kan jag flyga L3 på min Matrice 350 RTK?",
@@ -575,6 +581,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-s1-dronarkamera",
     imageUrl: zenmuseS1Img,
     badge: "Ny",
+    youtubeId: videoId("dji-zenmuse-s1-v1"),
     faq: [
       {
         question: "Kan S1 användas tillsammans med H30T?",
@@ -630,6 +637,7 @@ export const ENTERPRISE_CAMERA_PRODUCTS: EnterpriseCameraProduct[] = [
     shopUrl: "https://www.actionking.se/products/dji-zenmuse-v1-kamerastabilisator",
     imageUrl: zenmuseV1Img,
     badge: "Ny",
+    youtubeId: videoId("dji-zenmuse-s1-v1"),
     faq: [
       {
         question: "Kan jag spela in egna meddelanden?",

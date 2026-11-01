@@ -4,12 +4,16 @@
  *
  * Mallarna följer samma mönster som page.jordbruk.json: sektionen
  * `enterprise-industry-landing` med solution-/benefit-block, följd av
- * `enterprise-contact`.
+ * `edp-video` (tillverkarens produktfilm), `enterprise-contact` och det
+ * metafältstyrda FAQ-blocket `edp-metafield-faq`.
+ *
+ * Filmerna pekas ut med nycklar i src/data/product-videos.json, som är samma
+ * register React-sajten använder. En okänd nyckel stoppar körningen.
  *
  * Kör:  node scripts/wisson/build-pages.mjs
  * Ut:   theme/templates/page.<suffix>.json  +  data/wisson-pages.json
  */
-import { writeFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -17,6 +21,17 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const BRAND = "EU Drone Company";
 const PHONE = "tel:+46762850065";
 const QUOTE = "/pages/contact-quote";
+const VIDEO_CREDIT = "Film: Wisson Robotics";
+
+const VIDEOS = JSON.parse(
+  readFileSync(join(ROOT, "src", "data", "product-videos.json"), "utf8")
+).videos;
+
+function youtubeId(key) {
+  const v = VIDEOS[key];
+  if (!v) throw new Error(`Okänd videonyckel "${key}" — lägg till den i src/data/product-videos.json`);
+  return v.youtubeId;
+}
 
 const PAGES = [
   {
@@ -43,6 +58,11 @@ const PAGES = [
     contact: {
       title: "Vill du veta om Orion passar er verksamhet?",
       text: "Vi går igenom uppdraget, plattformen ni redan flyger och vilken serie som är rätt. Systemen offereras per uppdrag.",
+    },
+    video: {
+      key: "wisson-pliabot-overview",
+      heading: "Pliabot-tekniken i praktiken",
+      text: "Wissons egen översikt av hur de mjuka robotlederna används i luften, på mark och i industrin — samma teknik som sitter i alla Orion-system.",
     },
     seo: {
       title: `Wisson Orion — flygburna robotsystem | ${BRAND}`,
@@ -75,6 +95,11 @@ const PAGES = [
       title: "Diskutera ett N-seriesystem",
       text: "AP30-N1 är byggd för DJI FlyCart 30, med anpassning till andra plattformar på beställning.",
     },
+    video: {
+      key: "wisson-ap30-n1",
+      heading: "AP30-N1 i luften",
+      text: "Wissons produktfilm för AP30-N1: armen böjer sig, teleskoperar och byter verktyg under flygning på DJI FlyCart 30.",
+    },
     seo: {
       title: `Wisson N-serien — flygburen manipulation | ${BRAND}`,
       description:
@@ -105,6 +130,11 @@ const PAGES = [
     contact: {
       title: "Vilken lastnivå behöver ni?",
       text: "AP3-G1 flyger på DJI Matrice 300 och 350, AP30-G2 på DJI FlyCart 30. Vi hjälper er välja.",
+    },
+    video: {
+      key: "wisson-pliabot-overview",
+      heading: "Så arbetar Pliabot-systemen",
+      text: "Wisson har ännu ingen egen film för gripdonen. Översiktsfilmen visar tekniken bakom greppet — mjuka leder som formar sig efter lasten och låser utan ström.",
     },
     seo: {
       title: `Wisson G-serien — flygburet lastsläpp | ${BRAND}`,
@@ -137,6 +167,11 @@ const PAGES = [
       title: "Sprutning eller tvätt?",
       text: "Valet styrs av yta, vätska och vilken drönare ni flyger. Vi går igenom uppdraget och offererar rätt konfiguration.",
     },
+    video: {
+      key: "wisson-ap3-p3-m400",
+      heading: "AP3-P3 på DJI Matrice 400",
+      text: "Wissons film från 2026 där fasadtvättsystemet flyger på Matrice 400: slangmatning från marken, Pliabot-skrapan mot glaset och tvätt utan ränder.",
+    },
     seo: {
       title: `Wisson P-serien — flygburen sprutning och tvätt | ${BRAND}`,
       description:
@@ -167,6 +202,11 @@ const PAGES = [
     contact: {
       title: "Vad ska mätas?",
       text: "AP3-D1 är integrerad med DJI Matrice 300 och 350. Berätta vilken givare uppdraget kräver.",
+    },
+    video: {
+      key: "wisson-power-grid",
+      heading: "Kontaktarbete i luften",
+      text: "Wissons film om Orion-system i kraftnätsmiljö visar principen bakom D-serien: drönaren håller position medan den mjuka modulen ligger an mot objektet.",
     },
     seo: {
       title: `Wisson D-serien — flygburen kontaktinspektion | ${BRAND}`,
@@ -199,6 +239,11 @@ const PAGES = [
       title: "Räkna på ett fasadobjekt",
       text: "Berätta om byggnaden och ytan, så återkommer vi med upplägg, utrustning och offert.",
     },
+    video: {
+      key: "wisson-ap3-p3",
+      heading: "Fasadtvätt med AP3-P3",
+      text: "Wissons senaste produktfilm för AP3-P3: renvatten, Pliabot-skrapa och tvätt av glasfasad från luften utan ställning eller lift.",
+    },
     seo: {
       title: `Fasadtvätt med drönare | ${BRAND}`,
       description:
@@ -229,6 +274,11 @@ const PAGES = [
     contact: {
       title: "Planera underhåll för er park",
       text: "Vi går igenom antal verk, åtgärder och tidsfönster, och föreslår utrustning och upplägg.",
+    },
+    video: {
+      key: "wisson-wind-turbine",
+      heading: "Rengöring av vindkraftverk",
+      text: "Wissons film från en vindkraftspark: torn och blad rengörs från luften utan att någon behöver klättra eller hänga i rep.",
     },
     seo: {
       title: `Vindkraftsunderhåll med drönare | ${BRAND}`,
@@ -272,6 +322,21 @@ function template(p) {
           padding_bottom: 24,
         },
       },
+      product_video: p.video
+        ? {
+            type: "edp-video",
+            settings: {
+              youtube_id: youtubeId(p.video.key),
+              eyebrow: "Film",
+              heading: p.video.heading,
+              text: p.video.text,
+              credit: VIDEO_CREDIT,
+              color_scheme: "scheme-edp",
+              padding_top: 24,
+              padding_bottom: 24,
+            },
+          }
+        : undefined,
       enterprise_contact: {
         type: "enterprise-contact",
         settings: {
@@ -286,8 +351,15 @@ function template(p) {
           padding_bottom: 48,
         },
       },
+      faq: {
+        type: "edp-metafield-faq",
+        settings: { color_scheme: "scheme-edp", padding_top: 36, padding_bottom: 36 },
+      },
     },
-    order: ["industry_landing", "enterprise_contact"],
+    // JSON.stringify utelämnar undefined, så product_video försvinner på sidor utan film.
+    order: p.video
+      ? ["industry_landing", "product_video", "enterprise_contact", "faq"]
+      : ["industry_landing", "enterprise_contact", "faq"],
   };
 }
 

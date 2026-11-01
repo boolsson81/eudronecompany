@@ -80,6 +80,19 @@
         "padding_bottom": 24
       }
     },
+    "product_video": {
+      "type": "edp-video",
+      "settings": {
+        "youtube_id": "fSmQKxxh148",
+        "eyebrow": "Film",
+        "heading": "Pliabot-tekniken i praktiken",
+        "text": "Wissons egen översikt av hur de mjuka robotlederna används i luften, på mark och i industrin — samma teknik som sitter i alla Orion-system.",
+        "credit": "Film: Wisson Robotics",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
@@ -105,6 +118,7 @@
   },
   "order": [
     "industry_landing",
+    "product_video",
     "enterprise_contact",
     "faq"
   ]
