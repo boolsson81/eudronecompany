@@ -60,8 +60,9 @@ Produktsidorna visar bild tills DJI publicerar en egen.
 
 Ny sektion `theme/sections/edp-video.liquid`: visar YouTubes miniatyr och spelar
 upp via `youtube-nocookie.com` först när besökaren klickar, så inga
-YouTube-cookies sätts av sidvisningen. Svenska och engelska etiketter i
-`theme/locales/*.schema.json`, stilar i `section-enterprise.css`.
+YouTube-cookies sätts av sidvisningen. Etiketterna ligger direkt i sektionens
+schema (svenska), så sektionen kan pushas utan att locale-filerna rörs. Stilar i
+`section-enterprise.css`.
 
 `scripts/wisson/build-pages.mjs` lägger sektionen på alla sju sidorna, mellan
 landningsblocket och kontaktrutan, och bevarar det metafältstyrda FAQ-blocket:

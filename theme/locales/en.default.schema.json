@@ -4300,31 +4300,6 @@
         "name": "Slideshow"
       }
     },
-    "edp-video": {
-      "name": "Product video",
-      "settings": {
-        "youtube_id": {
-          "label": "YouTube video ID",
-          "info": "The 11-character ID from the video URL, e.g. r3t5Rj9Lth8. Only use videos from the manufacturer's own channel."
-        },
-        "eyebrow": {
-          "label": "Eyebrow"
-        },
-        "heading": {
-          "label": "Heading"
-        },
-        "text": {
-          "label": "Text"
-        },
-        "credit": {
-          "label": "Credit",
-          "info": "Shown under the video, e.g. \"Video: Wisson Robotics\"."
-        }
-      },
-      "presets": {
-        "name": "Product video"
-      }
-    },
     "enterprise-contact": {
       "name": "Enterprise contact",
       "settings": {
