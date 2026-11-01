@@ -80,6 +80,19 @@
         "padding_bottom": 24
       }
     },
+    "product_video": {
+      "type": "edp-video",
+      "settings": {
+        "youtube_id": "7wde2_BgUL4",
+        "eyebrow": "Film",
+        "heading": "AP30-N1 i luften",
+        "text": "Wissons produktfilm för AP30-N1: armen böjer sig, teleskoperar och byter verktyg under flygning på DJI FlyCart 30.",
+        "credit": "Film: Wisson Robotics",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
@@ -105,6 +118,7 @@
   },
   "order": [
     "industry_landing",
+    "product_video",
     "enterprise_contact",
     "faq"
   ]

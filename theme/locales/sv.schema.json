@@ -1934,6 +1934,31 @@
         "name": "Enterprise nyttolaster"
       }
     },
+    "edp-video": {
+      "name": "Produktfilm",
+      "settings": {
+        "youtube_id": {
+          "label": "YouTube-ID",
+          "info": "Det 11 tecken långa ID:t i filmens webbadress, t.ex. r3t5Rj9Lth8. Använd bara filmer från tillverkarens egen kanal."
+        },
+        "eyebrow": {
+          "label": "Överrubrik"
+        },
+        "heading": {
+          "label": "Rubrik"
+        },
+        "text": {
+          "label": "Text"
+        },
+        "credit": {
+          "label": "Källa",
+          "info": "Visas under filmen, t.ex. \"Film: Wisson Robotics\"."
+        }
+      },
+      "presets": {
+        "name": "Produktfilm"
+      }
+    },
     "enterprise-contact": {
       "name": "Enterprise kontakt",
       "settings": {

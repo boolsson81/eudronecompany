@@ -792,3 +792,92 @@
   width: 100%;
   height: 100%;
 }
+
+/* Produktfilm (edp-video) */
+.edp-video {
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+.edp-video__intro {
+  margin-bottom: 2rem;
+}
+
+.edp-video__title {
+  margin: 0 0 0.8rem;
+}
+
+.edp-video__text {
+  margin: 0;
+  color: rgba(var(--color-foreground), 0.78);
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.edp-video__player {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: rgb(var(--edp-slate));
+}
+
+.edp-video__player iframe,
+.edp-video__poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edp-video__poster {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.edp-video__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.edp-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 7.2rem;
+  height: 7.2rem;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(var(--edp-accent));
+  color: #fff;
+  box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.edp-video__play svg {
+  margin-left: 0.4rem;
+}
+
+.edp-video__poster:hover .edp-video__play,
+.edp-video__poster:focus-visible .edp-video__play {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.edp-video__credit {
+  margin: 1.2rem 0 0;
+  font-size: 1.3rem;
+  color: rgba(var(--color-foreground), 0.6);
+}
+
+.edp-video__credit a {
+  color: inherit;
+}

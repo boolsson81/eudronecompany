@@ -1,0 +1,193 @@
+{
+  "_comment": "Verifierade produktfilmer från DJI och Wisson. Varje ID är slaget upp mot YouTubes oEmbed-svar (titel + kanal) på datumet i `verified`. Lägg bara till filmer från tillverkarens egna kanaler (DJI, DJI Enterprise, DJI Agriculture, DJI Tutorials, Wisson) — återförsäljares kopior försvinner och byter namn. Används av src/data/productVideos.ts (React), scripts/wisson/build-pages.mjs (temamallar) och scripts/wisson/apply-product-videos.mjs (Shopify-produktmedia).",
+  "updated": "2026-10-31",
+  "videos": {
+    "dji-matrice-400": {
+      "youtubeId": "3UrKq7xj7TI",
+      "title": "This Is DJI Matrice 400",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-matrice-350-rtk": {
+      "youtubeId": "JPPHG5dSpwM",
+      "title": "DJI Enterprise - Introducing Matrice 350 RTK",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-matrice-4-series": {
+      "youtubeId": "uov1c1c8DKA",
+      "title": "Introducing DJI Matrice 4 Series: The Age of Intelligent Flight",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-matrice-4d-series": {
+      "youtubeId": "mr3sdcQ2PzA",
+      "title": "Matrice 4D Series - DJI's First Compact Drone with IP55 Water Protection",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-mavic-3-enterprise": {
+      "youtubeId": "KH-ZReRtoec",
+      "title": "DJI Mavic 3 Enterprise Series: Everything You Need To Know",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-mavic-3-multispectral": {
+      "youtubeId": "4f8NiLApHLk",
+      "title": "Introducing DJI Mavic 3 Multispectral",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-agras-t50": {
+      "youtubeId": "G8gjm2HALEM",
+      "title": "Meet DJI Agras T50",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-agras-t25": {
+      "youtubeId": "XEIXXWxVDdw",
+      "title": "DJI Agras T25",
+      "channel": "DJI Agriculture",
+      "verified": "2026-10-31"
+    },
+    "dji-inspire-3": {
+      "youtubeId": "T5IgH__lL7I",
+      "title": "Introducing DJI Inspire 3 | DJI",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-mavic-3-pro": {
+      "youtubeId": "r5kukRMmZNI",
+      "title": "Introducing DJI Mavic 3 Pro",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-dock-2": {
+      "youtubeId": "SsXXf_7YrpI",
+      "title": "This Is DJI Dock 2",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-dock-3": {
+      "youtubeId": "OwUwgpqgcMA",
+      "title": "Introducing DJI Dock 3: Rise to Any Challenge",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-h30-series": {
+      "youtubeId": "a_ZEPqs_L-Y",
+      "title": "Introducing DJI Zenmuse H30 Series",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-h30-explained": {
+      "youtubeId": "TxthvIgwPPc",
+      "title": "DJI Zenmuse H30 Series: Everything You Need To Know",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-h20-series": {
+      "youtubeId": "V-4Om_4n998",
+      "title": "DJI Enterprise Matrice 300 RTK and Zenmuse H20 Series - Comprehensive Industrial Drone Platform",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-h20n": {
+      "youtubeId": "pjWf8N8XIeA",
+      "title": "DJI Enterprise Zenmuse H20N - Night Vision Hybrid Payload",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-l1": {
+      "youtubeId": "c0v-oCD8bX0",
+      "title": "DJI Enterprise Zenmuse L1 - Versatile LiDAR Solution",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-l2": {
+      "youtubeId": "mvKmmXewNIo",
+      "title": "This is DJI Zenmuse L2",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-l3": {
+      "youtubeId": "j4JBzGddVgQ",
+      "title": "This is DJI Zenmuse L3",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-p1": {
+      "youtubeId": "HsdnkkuCtV8",
+      "title": "DJI Enterprise Zenmuse P1 - Full-Frame Photogrammetry Solution",
+      "channel": "DJI",
+      "verified": "2026-10-31"
+    },
+    "dji-zenmuse-s1-v1": {
+      "youtubeId": "Xe8LVWFugTQ",
+      "title": "This is DJI Zenmuse S1 and V1 | Drone Spotlight and Speaker Payloads",
+      "channel": "DJI Enterprise",
+      "verified": "2026-10-31"
+    },
+    "wisson-pliabot-overview": {
+      "youtubeId": "fSmQKxxh148",
+      "title": "Wisson General-purpose Soft Robotics Industry Applications",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap30-n1": {
+      "youtubeId": "7wde2_BgUL4",
+      "title": "Orion AP30-N1 Pliable Aerial Operating Robot Platform",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap30-n1-beacon": {
+      "youtubeId": "RjSeuGAZPSw",
+      "title": "Orion AP30-N1 Pliabot Aerial Manipulator Channel Beaconlight Maintenance Solution",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap3-p1": {
+      "youtubeId": "gnoqexFdOtU",
+      "title": "Orion AP3-P1 Pliabot Aerial Sprayer",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap3-p3": {
+      "youtubeId": "r3t5Rj9Lth8",
+      "title": "WISSON ORION AP3-P3：Pliabot® Aerial Tethered Cleaning System",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap3-p3-m400": {
+      "youtubeId": "AGniMobXasY",
+      "title": "DJI M400 & WISSON AP3-P3：Pliabot® Aerial Tethered Cleaning System",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-ap3-p3-facade": {
+      "youtubeId": "fE9c3WfKW1I",
+      "title": "Wisson AP3-P3 Drone-Enabled High-Rise Facade Cleaning",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-wind-turbine": {
+      "youtubeId": "mEYQZVTUQKo",
+      "title": "Wisson's Robot-enabled Cleaning Solution Enhances Safety and Efficiency of Wind Turbine Maintenance",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    },
+    "wisson-power-grid": {
+      "youtubeId": "7nmVuk27bXQ",
+      "title": "Orion Power Grid Applications, Empower The Most Dangerous Job in the World",
+      "channel": "Wisson",
+      "verified": "2026-10-31"
+    }
+  },
+  "wissonProducts": {
+    "_comment": "Wisson-modell → nycklar i `videos`, i den ordning de ska ligga som produktmedia i Shopify. Produkten slås upp på taggen model:<modell>. Modeller som saknas här har ingen egen film på Wissons kanal (AP3-G1, AP30-G2, AP3-D1, AP30-P2, AP30-P4, AP30-P4H, AP3-P5).",
+    "AP30-N1": ["wisson-ap30-n1", "wisson-ap30-n1-beacon"],
+    "AP3-P1": ["wisson-ap3-p1"],
+    "AP3-P3": ["wisson-ap3-p3", "wisson-ap3-p3-m400"],
+    "AP3-S1": ["wisson-ap3-p3-m400", "wisson-ap3-p3-facade"]
+  }
+}

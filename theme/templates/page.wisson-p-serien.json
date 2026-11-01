@@ -80,6 +80,19 @@
         "padding_bottom": 24
       }
     },
+    "product_video": {
+      "type": "edp-video",
+      "settings": {
+        "youtube_id": "AGniMobXasY",
+        "eyebrow": "Film",
+        "heading": "AP3-P3 på DJI Matrice 400",
+        "text": "Wissons film från 2026 där fasadtvättsystemet flyger på Matrice 400: slangmatning från marken, Pliabot-skrapan mot glaset och tvätt utan ränder.",
+        "credit": "Film: Wisson Robotics",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
@@ -105,6 +118,7 @@
   },
   "order": [
     "industry_landing",
+    "product_video",
     "enterprise_contact",
     "faq"
   ]

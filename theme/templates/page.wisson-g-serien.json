@@ -80,6 +80,19 @@
         "padding_bottom": 24
       }
     },
+    "product_video": {
+      "type": "edp-video",
+      "settings": {
+        "youtube_id": "fSmQKxxh148",
+        "eyebrow": "Film",
+        "heading": "Så arbetar Pliabot-systemen",
+        "text": "Wisson har ännu ingen egen film för gripdonen. Översiktsfilmen visar tekniken bakom greppet — mjuka leder som formar sig efter lasten och låser utan ström.",
+        "credit": "Film: Wisson Robotics",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "enterprise_contact": {
       "type": "enterprise-contact",
       "settings": {
@@ -105,6 +118,7 @@
   },
   "order": [
     "industry_landing",
+    "product_video",
     "enterprise_contact",
     "faq"
   ]
