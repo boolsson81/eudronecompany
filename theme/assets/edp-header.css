@@ -445,6 +445,11 @@ html.shopify-design-mode body.edp-header-fixed #MainContent {
     padding-right: 0.9rem;
     white-space: nowrap;
   }
+
+  /* Dropdown items keep room for the absolutely positioned caret */
+  .header__inline-menu.edp-header-menu summary.header__menu-item {
+    padding-right: 2.7rem;
+  }
 }
 
 /* Mobile text logo — prevent "Europe / Drone / Parts" vertical stacking */
