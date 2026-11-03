@@ -50,6 +50,16 @@
   }
  },
  {
+  "handle": "wisson-ap3-s1",
+  "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
+  "templateSuffix": "wisson-ap3-s1",
+  "body": "<p>AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Kärnan är tre delar: tvättroboten AP3-P3, en flygplattform och AP-P-seriens DIC-vattenrening. Paketet finns komplett med drönare, eller utan drönare för den som redan flyger DJI Matrice 400 eller Matrice 350 RTK.</p>",
+  "seo": {
+   "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket | EU Drone Company",
+   "description": "AP3-S1 paketerar tvättroboten AP3-P3, flygplattform och DIC-vattenrening. Komplett med DJI Matrice 400 eller 350 RTK, eller utan drönare."
+  }
+ },
+ {
   "handle": "fasadtvatt-dronare",
   "title": "Fasadtvätt med drönare",
   "templateSuffix": "fasadtvatt-dronare",

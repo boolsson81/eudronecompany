@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "AP3-P3",
+            "text": "Tvättroboten med 40° solfjäderformad Pliabot-skrapa som ligger an mot ytan i stället för att spola på avstånd."
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Flygplattform",
+            "text": "Komplett med DJI Matrice 400 eller Matrice 350 RTK, eller utan drönare om ni redan flyger någon av dem."
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "DIC-vattenrening",
+            "text": "Dubbelpatenterad rening som ger medicinskt rent vatten. Ytan torkar utan ränder och inget hamnar i marken."
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Slangmatning",
+            "text": "Vattnet matas från marken, så passet begränsas inte av hur mycket drönaren kan bära."
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Fasadtvätt på glas och plåt"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Höghöjdsrengöring utan lift eller ställning"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Personal står kvar på marken"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kemikaliefritt, inget avrinningsavfall"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Wisson P-serien",
+        "breadcrumb_link": "/pages/wisson-p-serien",
+        "eyebrow": "Wisson AP3-S1",
+        "title": "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
+        "text": "AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Kärnan är tre delar: tvättroboten AP3-P3, en flygplattform och AP-P-seriens DIC-vattenrening. Paketet finns komplett med drönare, eller utan drönare för den som redan flyger DJI Matrice 400 eller Matrice 350 RTK.",
+        "solutions_heading": "Det här ingår",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "product_video": {
+      "type": "edp-video",
+      "settings": {
+        "youtube_id": "AGniMobXasY",
+        "eyebrow": "Film",
+        "heading": "Paketet i arbete på DJI Matrice 400",
+        "text": "Wissons film där AP3-P3 flyger på Matrice 400 — samma robot, plattform och vattenrening som ingår i AP3-S1.",
+        "credit": "Film: Wisson Robotics",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Komplett eller utan drönare?",
+        "text": "Berätta vilken plattform ni flyger i dag, så offererar vi rätt variant av paketet.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "product_video",
+    "enterprise_contact",
+    "faq"
+  ]
+}
