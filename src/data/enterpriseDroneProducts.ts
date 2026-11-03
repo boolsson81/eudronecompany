@@ -533,6 +533,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-4e",
     name: "DJI Matrice 4E",
+    brand: "DJI",
     tag: "Kompakt allround (RC Plus 2)",
     category: "compact",
     heroTitle: "DJI Matrice 4E — nästa generations kompakta inspektionsdrönare",
@@ -591,6 +592,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-4t",
     name: "DJI Matrice 4T",
+    brand: "DJI",
     tag: "Kompakt termisk (RC Plus 2)",
     category: "compact",
     heroTitle: "DJI Matrice 4T — kompakt termisk inspektion med inbyggd RTK",
@@ -644,6 +646,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-4d",
     name: "DJI Matrice 4D",
+    brand: "DJI",
     tag: "Dockningsbar (Dock 3)",
     category: "compact",
     heroTitle: "DJI Matrice 4D — för obemannad drift med DJI Dock 3",
@@ -697,6 +700,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "matrice-4td",
     name: "DJI Matrice 4TD",
+    brand: "DJI",
     tag: "Dockningsbar termisk (Dock 3)",
     category: "compact",
     heroTitle: "DJI Matrice 4TD — termisk dockningsdrönare för DJI Dock 3",
@@ -750,6 +754,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "agras-t25",
     name: "DJI Agras T25",
+    brand: "DJI",
     tag: "Kompakt sprutning & spridning",
     category: "agriculture",
     heroTitle: "DJI Agras T25 — kompakt sprutdrönare för mindre och medelstora fält",
@@ -801,6 +806,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "agras-t100",
     name: "DJI Agras T100",
+    brand: "DJI",
     tag: "Storskalig sprutning & spridning",
     category: "agriculture",
     heroTitle: "DJI Agras T100 — DJI:s mest kapacitetsstarka sprutdrönare",
@@ -851,6 +857,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "dji-dock-2",
     name: "DJI Dock 2",
+    brand: "DJI",
     tag: "Autonom dockningsstation",
     category: "infrastructure",
     heroTitle: "DJI Dock 2 — dockningsstation för obemannad drönardrift",
@@ -901,6 +908,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "dji-dock-3",
     name: "DJI Dock 3",
+    brand: "DJI",
     tag: "Kompakt autonom dockningsstation",
     category: "infrastructure",
     heroTitle: "DJI Dock 3 — nästa generations dockningsstation, mer kompakt",
@@ -952,6 +960,7 @@ export const ENTERPRISE_DRONE_PRODUCTS: EnterpriseDroneProduct[] = [
   {
     slug: "flycart-30",
     name: "DJI FlyCart 30",
+    brand: "DJI",
     tag: "Transport & leverans",
     category: "infrastructure",
     heroTitle: "DJI FlyCart 30 — tung transportdrönare för last och leverans",
