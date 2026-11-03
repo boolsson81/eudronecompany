@@ -110,9 +110,10 @@ ingen egen film på Wissons kanal och lämnades utan video.
 3. **AP3-P1 finns inte längre i butiken** (ingen produkt med `model:ap3-p1`).
    Mappningen ligger kvar i registret och skriptet hoppar över den.
    **AP3-S1** (`wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket`, DRAFT) finns
-   men har bara taggen `Fasadtvätt`, ingen `model:ap3-s1`, så
-   `apply-product-videos.mjs` hittar den inte. Filmerna AGniMobXasY och
-   fE9c3WfKW1I lades på produkten direkt via Shopify-kopplingen 2026-11-03.
+   och fick 2026-11-03 taggen `model:ap3-s1` så att `apply-product-videos.mjs`
+   hittar den. Filmerna AGniMobXasY och fE9c3WfKW1I lades på produkten via
+   Shopify-kopplingen samma dag; en körning av skriptet rapporterar dem som
+   redan på plats.
    Sidan `wisson-ap3-s1` saknade mall i både repo och tema; den byggs nu av
    `build-pages.mjs` som åttonde Wisson-sida, med samma film.
 4. **Cookie-samtycke.** Sektionen laddar inget från YouTube förrän klick, men
