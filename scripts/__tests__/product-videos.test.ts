@@ -123,7 +123,7 @@ describe("Wisson-temamallar", () => {
 
   it("har en produktfilm från registret på varje system- och lösningssida", () => {
     const ids = new Set(Object.values(registry.videos).map((v) => v.youtubeId));
-    expect(templates.length).toBe(7);
+    expect(templates.length).toBe(8);
     for (const file of templates) {
       const tpl = JSON.parse(readFileSync(join(ROOT, "theme", "templates", file), "utf8"));
       const video = tpl.sections.product_video;

@@ -76,6 +76,7 @@ landningsblocket och kontaktrutan, och bevarar det metafältstyrda FAQ-blocket:
 | `wisson-d-serien` | Orion Power Grid Applications — visar kontaktarbete, ingen egen D1-film |
 | `fasadtvatt-dronare` | WISSON ORION AP3-P3 Pliabot Aerial Tethered Cleaning System (2026) |
 | `vindkraftsunderhall-dronare` | Robot-enabled Cleaning Solution for Wind Turbine Maintenance |
+| `wisson-ap3-s1` (tillagd 2026-11-03) | DJI M400 & WISSON AP3-P3 (2026) |
 
 Wissons kanal (`@wisson`, 15 filmer i RSS-flödet) har bara egna filmer för
 AP30-N1, AP3-P1 och AP3-P3. G1, G2, D1, P2, P4, P4H och P5 saknar film.
@@ -106,9 +107,14 @@ ingen egen film på Wissons kanal och lämnades utan video.
 2. **Typecheck.** `npm run typecheck` har sedan tidigare 8 fel i
    `enterpriseDroneProducts.ts` (fältet `brand` saknas på Matrice 4-, Agras- och
    Dock-posterna). De fanns före den här ändringen och rör inte filmerna.
-3. **AP3-P1 och AP3-S1 finns inte längre i butiken** (ingen produkt med
-   `model:ap3-p1` eller `model:ap3-s1`). Mappningen ligger kvar i registret och
-   skriptet hoppar över dem tills produkterna finns.
+3. **AP3-P1 finns inte längre i butiken** (ingen produkt med `model:ap3-p1`).
+   Mappningen ligger kvar i registret och skriptet hoppar över den.
+   **AP3-S1** (`wisson-orion-ap3-s1-komplett-fasadtvattsystem-paket`, DRAFT) finns
+   men har bara taggen `Fasadtvätt`, ingen `model:ap3-s1`, så
+   `apply-product-videos.mjs` hittar den inte. Filmerna AGniMobXasY och
+   fE9c3WfKW1I lades på produkten direkt via Shopify-kopplingen 2026-11-03.
+   Sidan `wisson-ap3-s1` saknade mall i både repo och tema; den byggs nu av
+   `build-pages.mjs` som åttonde Wisson-sida, med samma film.
 4. **Cookie-samtycke.** Sektionen laddar inget från YouTube förrän klick, men
    själva uppspelningen sätter YouTubes cookies. Vill ni knyta den till
    samtyckesrutan behöver `edp-video.liquid` läsa samma consent-flagga som GA4.

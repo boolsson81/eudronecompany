@@ -215,6 +215,42 @@ const PAGES = [
     },
   },
   {
+    handle: "wisson-ap3-s1",
+    title: "Wisson Orion AP3-S1 — fasadtvättsystem i paket",
+    eyebrow: "Wisson AP3-S1",
+    breadcrumb: { label: "Wisson P-serien", link: "/pages/wisson-p-serien" },
+    intro:
+      "AP3-S1 är Wissons namn på hela tvättekipaget, inte en egen maskin. Kärnan är tre delar: tvättroboten AP3-P3, en flygplattform och AP-P-seriens DIC-vattenrening. Paketet finns komplett med drönare, eller utan drönare för den som redan flyger DJI Matrice 400 eller Matrice 350 RTK.",
+    solutionsHeading: "Det här ingår",
+    solutions: [
+      { title: "AP3-P3", text: "Tvättroboten med 40° solfjäderformad Pliabot-skrapa som ligger an mot ytan i stället för att spola på avstånd." },
+      { title: "Flygplattform", text: "Komplett med DJI Matrice 400 eller Matrice 350 RTK, eller utan drönare om ni redan flyger någon av dem." },
+      { title: "DIC-vattenrening", text: "Dubbelpatenterad rening som ger medicinskt rent vatten. Ytan torkar utan ränder och inget hamnar i marken." },
+      { title: "Slangmatning", text: "Vattnet matas från marken, så passet begränsas inte av hur mycket drönaren kan bära." },
+    ],
+    benefitsHeading: "Användningsområden",
+    benefits: [
+      "Fasadtvätt på glas och plåt",
+      "Höghöjdsrengöring utan lift eller ställning",
+      "Personal står kvar på marken",
+      "Kemikaliefritt, inget avrinningsavfall",
+    ],
+    contact: {
+      title: "Komplett eller utan drönare?",
+      text: "Berätta vilken plattform ni flyger i dag, så offererar vi rätt variant av paketet.",
+    },
+    video: {
+      key: "wisson-ap3-p3-m400",
+      heading: "Paketet i arbete på DJI Matrice 400",
+      text: "Wissons film där AP3-P3 flyger på Matrice 400 — samma robot, plattform och vattenrening som ingår i AP3-S1.",
+    },
+    seo: {
+      title: `Wisson Orion AP3-S1 — fasadtvättsystem i paket | ${BRAND}`,
+      description:
+        "AP3-S1 paketerar tvättroboten AP3-P3, flygplattform och DIC-vattenrening. Komplett med DJI Matrice 400 eller 350 RTK, eller utan drönare.",
+    },
+  },
+  {
     handle: "fasadtvatt-dronare",
     title: "Fasadtvätt med drönare",
     eyebrow: "Lösning",
