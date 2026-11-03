@@ -136,14 +136,15 @@ describe("Wisson-temamallar", () => {
     }
   });
 
-  it("har sektionen edp-video i temat med översättningar", () => {
+  it("har sektionen edp-video i temat med egna etiketter", () => {
     const section = readFileSync(join(ROOT, "theme", "sections", "edp-video.liquid"), "utf8");
     expect(section).toContain('"id": "youtube_id"');
     expect(section).toContain("youtube-nocookie.com/embed/");
-    for (const locale of ["en.default.schema.json", "sv.schema.json"]) {
-      const json = JSON.parse(readFileSync(join(ROOT, "theme", "locales", locale), "utf8"));
-      expect(json.sections["edp-video"]?.settings?.youtube_id?.label, locale).toBeTruthy();
-    }
+    // Etiketterna ligger i schemat, inte i locale-filerna, så sektionen kan
+    // pushas till ett tema utan att de stora locale-filerna skrivs över.
+    const schema = JSON.parse(section.match(/{% schema %}([\s\S]*?){% endschema %}/)![1]);
+    expect(schema.name).toBe("Produktfilm");
+    expect(section).not.toContain("t:sections.edp-video");
     const css = readFileSync(join(ROOT, "theme", "assets", "section-enterprise.css"), "utf8");
     expect(css).toContain(".edp-video__player");
   });
