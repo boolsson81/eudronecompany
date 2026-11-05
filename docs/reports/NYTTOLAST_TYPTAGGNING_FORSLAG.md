@@ -94,5 +94,6 @@ Oklara fall, inget gjort:
 - Kollektion: `lidar-kartlaggning`, smart kollektion på taggen `nyttolast:lidar`.
 - Taggade (9): `dji-zenmuse-l1`, `dji-zenmuse-l2-lidar`, `dji-zenmuse-l3`, `dji-zenmuse-l3-eu-sp-plus`, `dji-zenmuse-p1`, `livox-mid-360`, `livox-mid-360s`, `livox-mid-70-lidar`, `livox-avia`.
 - Utelämnade: Livox-kablar och kontakter (tillbehör), paketen M350/M400 + P1, `dji-care-enterprise-basic-zenmuse-p1`, `dji-lidar-avstandsmatare-fokusmatare` (fokushjälp, inte kartläggning) och `tundra-modular-payloadsyst-range-finder`.
-- Möjlig dubblett: `dji-zenmuse-p1-camera` (vendor DJI, tagg "Also") mot `dji-zenmuse-p1`. Otaggad tills det avgjorts.
+- Dubblett arkiverad: `dji-zenmuse-p1-camera` (0 bilder, ingen text, Also-leverantörens SKU) mot `dji-zenmuse-p1` (5 bilder). Skapades 2026-11-05 av en import och kan återskapas av nästa körning.
+- `dji-zenmuse-l3-eu-sp-plus` och `dji-zenmuse-l3` är kvar och taggade båda (olika SKU, troligen servicepaketvariant).
 - Den äldre engelska kollektionen `payload-lidar-mapping` finns kvar orörd.
