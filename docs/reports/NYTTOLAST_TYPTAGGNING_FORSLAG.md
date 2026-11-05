@@ -105,3 +105,5 @@ Beslut: behåll de nya egenskrivna produkterna, arkivera de gamla.
 - Arkiverade: `ap30-p4-atomized-sprayer` och `ap30-p4h-high-pressure-sprayer`. De hade fullständiga tillverkarspecifikationer (vikt, effekt, tryck, räckvidd) som nu bara finns i de arkiverade produkterna. Läs dem därifrån om specifikationerna ska läggas in i de nya efter verifiering.
 - Behållna och taggade `nyttolast:special`: `wisson-orion-ap30-p4-pliabot-flygburen-dimspruta` och `wisson-orion-ap30-p4h-pliabot-flygburen-hogtrycksspruta`.
 - FS32 var redan avgjort. MP130 Spreaker mot Pro är orörda: priserna skiljer (38 875 mot 17 599) och produkterna kan vara olika modeller. Kontrollera leverantörens artikelnummer.
+
+- `czi-mf30-m4-m30` (flödesmätare) taggad `nyttolast:special` 2026-11-05.
