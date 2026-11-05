@@ -83,4 +83,6 @@ Oklara fall, inget gjort:
 - Arkiverade ytterligare: `dji-mavic-3-stralkastare-czi-gl10` och `czi-fs32-fc30-payload-set`. Arkiverade tidigare i dag: `ap30-n1-aerial-manipulator`, `ap3-p3-tethered-cleaning-system`.
 - Taggade: sökljus 18, sökljus + högtalare 4, högtalare 10, tjudrad 1, lastsläpp 5, kamera 7, special 5. Inga fel från Shopify.
 - Ej taggade, väntar på beslut: lidar/kartläggning, `czi-mf30-m4-m30`, `tundra-modular-payloadsyst-range-finder`, oklara dubbletter enligt avsnitt 10.
-- Återstår: byt reglerna i kollektionerna `sokljus`, `sokljus-hogtalare`, `nattkameror`, `tjudrad-belysning`, `lastslapp` och `specialnyttolaster` till `tag = nyttolast:<typ>`.
+- Kollektionsreglerna är bytta 2026-11-05: alla sex styrs nu av en enda tagg `nyttolast:<typ>`. Tidigare regler (för återställning): `sokljus` = Searchlight ELLER Gimbal Searchlight, `sokljus-hogtalare` = Broadcasting, `nattkameror` = Thermal Camera ELLER Night Vision. De tre övriga hade redan `nyttolast:*`.
+- Resultat: sokljus 22, sokljus-hogtalare 14, nattkameror 7, tjudrad-belysning 4, lastslapp 6, specialnyttolaster 8 (efter att taggen togs bort från den arkiverade AP3-P3-dubbletten).
+- Nya produkter av typen läggs i rätt kollektion genom att de får taggen. Inget mer behöver ändras.
