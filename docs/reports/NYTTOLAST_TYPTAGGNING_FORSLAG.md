@@ -107,3 +107,13 @@ Beslut: behåll de nya egenskrivna produkterna, arkivera de gamla.
 - FS32 var redan avgjort. MP130 Spreaker mot Pro är orörda: priserna skiljer (38 875 mot 17 599) och produkterna kan vara olika modeller. Kontrollera leverantörens artikelnummer.
 
 - `czi-mf30-m4-m30` (flödesmätare) taggad `nyttolast:special` 2026-11-05.
+
+## 14. Deploy till tema och sidor (2026-11-05)
+
+Tema: **EDC Förhandsgranskning (Claude)** (`gid://shopify/OnlineStoreTheme/189631627592`, opublicerat utkast, enligt `AGENTS.md`). Inget publicerat tema är ändrat.
+
+- Mallar: de sex `page.payload-*` låg redan i temat med identiskt innehåll. Lades till: `page.payload-lidar-kartlaggning.json`. Sektionen `enterprise-industry-landing.liquid` är orörd (skiljer sig bara i en hjälptext).
+- Sidor (alla opublicerade): de sex gamla utkastsidorna `czi-*` byttes på plats till `payload-*` (handle, titel, text, mall), och `payload-lidar-kartlaggning` skapades. SEO-titel och beskrivning är satta för alla sju.
+- Orört: varumärkessidan `czi` (utkast) och dess mall `page.czi.json`.
+- Kvar i temat: de sex gamla mallarna `page.czi-*`. De används av ingen sida och kan tas bort.
+- Sidorna publiceras först när butiken lanseras. Navigationen (`/pages/payloads`) pekar ännu inte på de nya sidorna.
