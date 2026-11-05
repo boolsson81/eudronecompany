@@ -19,7 +19,7 @@ Alla berörda produkter är `DRAFT` (butiken är opublicerad), så taggningen sy
 
 ## 1. Redan taggade (ingen åtgärd)
 
-`czi-ml200-800w-matrix-light-for-m350-300`, `czi-cz10-tethered-hover-light`, `czi-tk4-110-m` (tjudrad) · `czi-th4-v2-airdrop-kit` (lastsläpp) · Wisson `ap30-p4h-high-pressure-sprayer`, `ap30-p4-atomized-sprayer`, `ap3-p3-tethered-cleaning-system`, `ap3-p1-aerial-sprayer` (special).
+`czi-ml200-800w-matrix-light-for-m350-300`, `czi-cz10-tethered-hover-light`, `czi-tk4-110-m` (tjudrad) · `czi-th4-v2-airdrop-kit` (lastsläpp) · Wisson `ap30-p4h-high-pressure-sprayer`, `ap30-p4-atomized-sprayer`, `ap3-p1-aerial-sprayer` (special).
 
 ## 2. Förslag: sökljus (`nyttolast:sokljus`)
 
@@ -49,7 +49,7 @@ CZI: `czi-gl10-v2-gimbal-searchlight`, `dubbelaxlad-gimbal-sokarlampa-for-dji-ma
 
 ## 8. Förslag: special (`nyttolast:special`)
 
-`czi-dh100-multi-function-high-pressure-water-system`, `czi-ft10-v2-flame-thrower`, `czi-ft10-v2-flame-thrower-1`, `czi-es638-for-m400-350-300-electronic-launcherhigh-loading-capacity-stable-firing-quick-mount-and-release`, `ap30-n1-aerial-manipulator`, `wisson-orion-ap30-n1-pliabot-flygburen-manipulator-dji-fc30`
+`czi-dh100-multi-function-high-pressure-water-system`, `czi-ft10-v2-flame-thrower`, `czi-ft10-v2-flame-thrower-1`, `czi-es638-for-m400-350-300-electronic-launcherhigh-loading-capacity-stable-firing-quick-mount-and-release`, `wisson-orion-ap30-n1-pliabot-flygburen-manipulator-dji-fc30`, `wisson-orion-ap3-p3-pro-pliabot®-fjarrstyrt-flygande-rengoringssystem` (flyttad tagg, se avsnitt 10)
 
 ## 9. Behöver ditt beslut
 
@@ -59,3 +59,21 @@ CZI: `czi-gl10-v2-gimbal-searchlight`, `dubbelaxlad-gimbal-sokarlampa-for-dji-ma
 - **`czi-mf30-m4-m30`** (flödesmätare, tillbehör till vattensystem) är utelämnad. Ska den tillhöra special?
 - **Wisson.** Övriga Wisson-produkter (`AP3-S1`, `AP3-P5`, `AP30-P2`) ligger inte i det jag hämtade. Jag kontrollerar dem vid taggningen.
 - **Byte av kollektionsregler** till `tag = nyttolast:<typ>` görs i Admin eller via API efter taggningen. Det gäller även specialnyttolaster, som i dag bara består av Wisson.
+
+## 10. Dubbletter: arkiverade 2026-11-05
+
+Regel: arkivera dubbletter som bara har lager hos Boston, eller som är minst kompletta i text och bilder. Arkivering går att ångra (sätt tillbaka status).
+
+- **Redan arkiverade tidigare:** de flesta CZI-dubbletter (`...-1`, SKU 471xxx, lager Boston_Nordic 1) var redan arkiverade. De bästa kopiorna med text och bilder är kvar som utkast.
+- **Arkiverade nu:** `ap30-n1-aerial-manipulator` (2 bilder, ersätts av `wisson-orion-ap30-n1-...` med 7) och `ap3-p3-tethered-cleaning-system` (2 bilder, ersätts av `wisson-orion-ap3-p3-pro-pliabot...` med 6). Den senare bar taggen `nyttolast:special`, som ska flyttas till den kvarvarande produkten vid taggningen.
+
+Oklara fall, inget gjort:
+
+| Par | Läge |
+|---|---|
+| `dubbelaxlad-gimbal-sokarlampa-for-dji-mavic-3e-3t` / `dji-mavic-3-stralkastare-czi-gl10` | Båda utkast med full text. 7 respektive 6 bilder. Förslag: arkivera `dji-mavic-3-stralkastare-czi-gl10`. |
+| `czi-mp130-pro-digital-voice-broadcasting` / `czi-mp130-spreaker-for-dji-m200-300` | Samma beskrivning (MP130 Pro), 5 bilder vardera. Den förra har lager Boston 1 och svensk text. |
+| `czi-fs32-logistic-payloads-kit` / `czi-fs32-fc30-payload-set` | Ingen text. 4 respektive 1 bild. Kan vara två olika kit. Förslag: arkivera `czi-fs32-fc30-payload-set` om det är samma. |
+| `wisson-orion-ap3-p3-pliabot-fasadtvattsystem-dji-m400` | Tredje versionen av AP3-P3 (4 bilder, utkast). |
+| `ap30-p4-atomized-sprayer` / `wisson-orion-ap30-p4-pliabot-flygburen-dimspruta` | Båda 2 bilder. Samma för P4H. Avgörs på textlängd. |
+| `tundra-modular-payloadsystem-ir-light` | Har text men inga bilder, lager Boston 1. Kopian `-1` är redan arkiverad. Behålls. |
