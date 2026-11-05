@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "industry_landing": {
+      "type": "enterprise-industry-landing",
+      "blocks": {
+        "solution_1": {
+          "type": "solution",
+          "settings": {
+            "title": "Lidar för drönare",
+            "text": "Laserskanner som mäter avstånd och bygger ett punktmoln, även genom vegetation och i dåligt ljus.",
+            "link": "/collections/lidar-kartlaggning"
+          }
+        },
+        "solution_2": {
+          "type": "solution",
+          "settings": {
+            "title": "Lidar med integrerad kamera",
+            "text": "Kombinerar punktmoln och färgbild i samma nyttolast, så modellen får både geometri och textur.",
+            "link": "/collections/lidar-kartlaggning"
+          }
+        },
+        "solution_3": {
+          "type": "solution",
+          "settings": {
+            "title": "Kartläggningskameror",
+            "text": "Helbildssensorer för fotogrammetri med hög geometrisk noggrannhet över stora ytor.",
+            "link": "/collections/lidar-kartlaggning"
+          }
+        },
+        "solution_4": {
+          "type": "solution",
+          "settings": {
+            "title": "Fristående lidar-moduler",
+            "text": "Kompakta sensorer för integration på egna plattformar och specialbyggda system.",
+            "link": "/collections/lidar-kartlaggning"
+          }
+        },
+        "benefit_1": {
+          "type": "benefit",
+          "settings": {
+            "text": "Lantmäteri och terrängmodeller"
+          }
+        },
+        "benefit_2": {
+          "type": "benefit",
+          "settings": {
+            "text": "Volymberäkning i grustag och upplag"
+          }
+        },
+        "benefit_3": {
+          "type": "benefit",
+          "settings": {
+            "text": "Inspektion av kraftledningar och infrastruktur"
+          }
+        },
+        "benefit_4": {
+          "type": "benefit",
+          "settings": {
+            "text": "Kartläggning av skogs- och byggområden"
+          }
+        }
+      },
+      "block_order": [
+        "solution_1",
+        "solution_2",
+        "solution_3",
+        "solution_4",
+        "benefit_1",
+        "benefit_2",
+        "benefit_3",
+        "benefit_4"
+      ],
+      "settings": {
+        "show_breadcrumb": true,
+        "breadcrumb_label": "Nyttolaster",
+        "breadcrumb_link": "/pages/payloads",
+        "eyebrow": "Lidar och kartläggning",
+        "title": "Lidar och kartläggning för drönare",
+        "text": "Lidar-sensorer och kartläggningskameror gör drönaren till ett mätinstrument. Punktmoln och högupplösta bilder ger underlag för terrängmodeller, volymberäkning och inspektion.",
+        "solutions_heading": "Typer",
+        "benefits_heading": "Användningsområden",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 24
+      }
+    },
+    "enterprise_contact": {
+      "type": "enterprise-contact",
+      "settings": {
+        "title": "Vad ska ni kartlägga?",
+        "text": "Berätta om yta, noggrannhetskrav och plattform så rekommenderar vi lidar eller kamera. Utrustningen offereras per uppdrag.",
+        "button_label_1": "Skicka offertförfrågan",
+        "button_link_1": "/pages/contact-quote",
+        "button_label_2": "Ring oss",
+        "button_link_2": "tel:+46762850065",
+        "color_scheme": "scheme-edp",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
+    "faq": {
+      "type": "edp-metafield-faq",
+      "settings": {
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "industry_landing",
+    "enterprise_contact",
+    "faq"
+  ]
+}

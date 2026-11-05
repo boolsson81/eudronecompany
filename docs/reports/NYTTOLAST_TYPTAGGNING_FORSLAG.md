@@ -12,6 +12,7 @@ Taggkonventionen finns redan i butiken: `nyttolast:<typ>`. Typer och sidor:
 | `nyttolast:lastslapp` | `payload-lastslapp` | `lastslapp` |
 | `nyttolast:kamera` | `payload-kameror` | `nattkameror` |
 | `nyttolast:special` | `payload-specialnyttolaster` | `specialnyttolaster` |
+| `nyttolast:lidar` | `payload-lidar-kartlaggning` | `lidar-kartlaggning` |
 
 Kombinerade enheter (sökljus + högtalare, LP-serien) får båda taggarna `nyttolast:sokljus` och `nyttolast:hogtalare`.
 
@@ -86,3 +87,12 @@ Oklara fall, inget gjort:
 - Kollektionsreglerna är bytta 2026-11-05: alla sex styrs nu av en enda tagg `nyttolast:<typ>`. Tidigare regler (för återställning): `sokljus` = Searchlight ELLER Gimbal Searchlight, `sokljus-hogtalare` = Broadcasting, `nattkameror` = Thermal Camera ELLER Night Vision. De tre övriga hade redan `nyttolast:*`.
 - Resultat: sokljus 22, sokljus-hogtalare 14, nattkameror 7, tjudrad-belysning 4, lastslapp 6, specialnyttolaster 8 (efter att taggen togs bort från den arkiverade AP3-P3-dubbletten).
 - Nya produkter av typen läggs i rätt kollektion genom att de får taggen. Inget mer behöver ändras.
+
+## 12. Ny typ: lidar och kartläggning (2026-11-05)
+
+- Sida: `payload-lidar-kartlaggning` (mall `page.payload-lidar-kartlaggning.json`, genererad av `scripts/payloads/build-type-pages.mjs`). Sidan är märkesneutral och länkar till kollektionen.
+- Kollektion: `lidar-kartlaggning`, smart kollektion på taggen `nyttolast:lidar`.
+- Taggade (9): `dji-zenmuse-l1`, `dji-zenmuse-l2-lidar`, `dji-zenmuse-l3`, `dji-zenmuse-l3-eu-sp-plus`, `dji-zenmuse-p1`, `livox-mid-360`, `livox-mid-360s`, `livox-mid-70-lidar`, `livox-avia`.
+- Utelämnade: Livox-kablar och kontakter (tillbehör), paketen M350/M400 + P1, `dji-care-enterprise-basic-zenmuse-p1`, `dji-lidar-avstandsmatare-fokusmatare` (fokushjälp, inte kartläggning) och `tundra-modular-payloadsyst-range-finder`.
+- Möjlig dubblett: `dji-zenmuse-p1-camera` (vendor DJI, tagg "Also") mot `dji-zenmuse-p1`. Otaggad tills det avgjorts.
+- Den äldre engelska kollektionen `payload-lidar-mapping` finns kvar orörd.

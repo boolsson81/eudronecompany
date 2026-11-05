@@ -58,5 +58,15 @@
    "title": "Specialnyttolaster för drönare — vatten, röjning och utlösning | EU Drone Company",
    "description": "Vattensystem, röjningsverktyg och elektriska utlösare för professionella drönare. Offert efter genomgång av regelverk."
   }
+ },
+ {
+  "handle": "payload-lidar-kartlaggning",
+  "title": "Lidar och kartläggning för drönare",
+  "templateSuffix": "payload-lidar-kartlaggning",
+  "body": "<p>Lidar-sensorer och kartläggningskameror gör drönaren till ett mätinstrument. Punktmoln och högupplösta bilder ger underlag för terrängmodeller, volymberäkning och inspektion.</p>",
+  "seo": {
+   "title": "Lidar och kartläggning för drönare | EU Drone Company",
+   "description": "Lidar-sensorer och kartläggningskameror för professionella drönare. Offert och support på svenska."
+  }
  }
 ]

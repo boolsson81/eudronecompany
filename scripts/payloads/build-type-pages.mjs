@@ -208,6 +208,37 @@ const PAGES = [
         "Vattensystem, röjningsverktyg och elektriska utlösare för professionella drönare. Offert efter genomgång av regelverk.",
     },
   },
+  {
+    handle: "payload-lidar-kartlaggning",
+    collection: "lidar-kartlaggning",
+    title: "Lidar och kartläggning för drönare",
+    eyebrow: "Lidar och kartläggning",
+    intro:
+      "Lidar-sensorer och kartläggningskameror gör drönaren till ett mätinstrument. Punktmoln och högupplösta bilder ger underlag för terrängmodeller, volymberäkning och inspektion.",
+    solutionsHeading: "Typer",
+    solutions: [
+      { title: "Lidar för drönare", text: "Laserskanner som mäter avstånd och bygger ett punktmoln, även genom vegetation och i dåligt ljus." },
+      { title: "Lidar med integrerad kamera", text: "Kombinerar punktmoln och färgbild i samma nyttolast, så modellen får både geometri och textur." },
+      { title: "Kartläggningskameror", text: "Helbildssensorer för fotogrammetri med hög geometrisk noggrannhet över stora ytor." },
+      { title: "Fristående lidar-moduler", text: "Kompakta sensorer för integration på egna plattformar och specialbyggda system." },
+    ],
+    benefitsHeading: "Användningsområden",
+    benefits: [
+      "Lantmäteri och terrängmodeller",
+      "Volymberäkning i grustag och upplag",
+      "Inspektion av kraftledningar och infrastruktur",
+      "Kartläggning av skogs- och byggområden",
+    ],
+    contact: {
+      title: "Vad ska ni kartlägga?",
+      text: "Berätta om yta, noggrannhetskrav och plattform så rekommenderar vi lidar eller kamera. Utrustningen offereras per uppdrag.",
+    },
+    seo: {
+      title: `Lidar och kartläggning för drönare | ${BRAND}`,
+      description:
+        "Lidar-sensorer och kartläggningskameror för professionella drönare. Offert och support på svenska.",
+    },
+  },
 ];
 
 function template(p) {
