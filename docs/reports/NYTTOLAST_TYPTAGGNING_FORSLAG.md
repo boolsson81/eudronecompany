@@ -1,6 +1,6 @@
 # Förslag: typtaggning av nyttolaster
 
-Status: **förslag, inget är skrivet i butiken.** Godkänn eller ändra listan, så taggar jag.
+Status: **genomförd 2026-11-05.** 54 produkter taggade med `nyttolast:<typ>`, 4 dubbletter arkiverade. Kollektionsreglerna är inte ändrade.
 
 Taggkonventionen finns redan i butiken: `nyttolast:<typ>`. Typer och sidor:
 
@@ -77,3 +77,10 @@ Oklara fall, inget gjort:
 | `wisson-orion-ap3-p3-pliabot-fasadtvattsystem-dji-m400` | Tredje versionen av AP3-P3 (4 bilder, utkast). |
 | `ap30-p4-atomized-sprayer` / `wisson-orion-ap30-p4-pliabot-flygburen-dimspruta` | Båda 2 bilder. Samma för P4H. Avgörs på textlängd. |
 | `tundra-modular-payloadsystem-ir-light` | Har text men inga bilder, lager Boston 1. Kopian `-1` är redan arkiverad. Behålls. |
+
+## 11. Utfört 2026-11-05
+
+- Arkiverade ytterligare: `dji-mavic-3-stralkastare-czi-gl10` och `czi-fs32-fc30-payload-set`. Arkiverade tidigare i dag: `ap30-n1-aerial-manipulator`, `ap3-p3-tethered-cleaning-system`.
+- Taggade: sökljus 18, sökljus + högtalare 4, högtalare 10, tjudrad 1, lastsläpp 5, kamera 7, special 5. Inga fel från Shopify.
+- Ej taggade, väntar på beslut: lidar/kartläggning, `czi-mf30-m4-m30`, `tundra-modular-payloadsyst-range-finder`, oklara dubbletter enligt avsnitt 10.
+- Återstår: byt reglerna i kollektionerna `sokljus`, `sokljus-hogtalare`, `nattkameror`, `tjudrad-belysning`, `lastslapp` och `specialnyttolaster` till `tag = nyttolast:<typ>`.
