@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "uppdaterad": "2026-10-01",
+  "uppdaterad": "2026-11-12",
   "dokumentation": "docs/INKOPSPROSPEKT.md",
   "noteringar": [
     "Leverantörer och produkter vi överväger att köpa in. Inget här är beställt.",
@@ -948,6 +948,244 @@
         "astm-f3322"
       ],
       "anteckning": "Prislista 2026 (Customer, v1.1, EUR) mottagen 2026-10-07, hela listan i data/drs-prislista-2026.json. Spann: generiska DRS-5R 2 290 till DRS-100R 6 490 EUR, integrerade system 1 749–5 090 EUR, FTS V2 900 EUR, reservfallskärmar 290–1 150 EUR. Bulkpriser från 3 enheter, nivåerna står inte i listan. DRS bekräftade 2026-10-07 att priserna är MSRP (listpris). Återförsäljarrabatt på MSRP: 1–2 st 20 %, 3–5 st 23 %, 6–10 st 25 %, 11–25 st 28 %, 26+ st 30 % (uppgiven av Bo, avtalet har vi inte, gränserna 10/25 ska bekräftas). Moms framgår inte. Villkoren (s. 7–9) förbjuder att dela prislistan med leverantörens konkurrenter, kräver produktutbildning av en säljare och förbjuder egen konkurrerande produkt, så de bör granskas före signering. Kvar: MOQ, ledtid, rätt att använda produktbilder. Fråga hos sales@dronerescue.com. 2026-10-07: 20 utkast i Shopify (Europe Drone Company), inga bilder; 18 har MSRP-pris i SEK (kurs 11,25, exkl. moms), DRS-35R och DRS-100 saknar pris. 21 reservdelar ligger som utkast på Eget Reservdelslager (endast internt). HeavyLift, AQ-200FP och WingtraRay saknas i prislistan, är OEM och togs bort ur Shopify. Datakontroll behövs för H6 (systemvikt) och Astro (MOC var planerad Q3 2026). Se kollektionen 'Drönarfallskärmar och flygsäkerhet'."
+    },
+    {
+      "id": "flyingbasket-batteriladdare-fb3-fb4",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "Batteriladdare FB3/FB4",
+      "kategori": "laddare",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 2500,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. Full laddning på 1 timme. Rek. försäljningspris 2 900 EUR."
+    },
+    {
+      "id": "flyingbasket-fb3-essential",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB3 Essential",
+      "kategori": "lyftdronare",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 40900,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. 1 batteriset, 1 laddare, 7\" handhållen GCS, hjälp med VLOS-tillstånd. Rek. försäljningspris 44 900 EUR."
+    },
+    {
+      "id": "flyingbasket-fb3-hogpresterande-batteriset",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB3 högpresterande batteriset",
+      "kategori": "batteri",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 10100,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. 4 batterier. Rek. försäljningspris 11 500 EUR."
+    },
+    {
+      "id": "flyingbasket-fb3-max",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB3 Max",
+      "kategori": "lyftdronare",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 67600,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. Heter FB3 Pro BVLOS i databladet. 1 batteriset, 1 laddare, BVLOS-GCS, hjälp med BVLOS-tillstånd. Rek. försäljningspris 76 900 EUR."
+    },
+    {
+      "id": "flyingbasket-fb3-standard",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB3 Standard",
+      "kategori": "lyftdronare",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 57900,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. 1 batteriset, 1 laddare, 10\" handhållen GCS, hjälp med BVLOS-tillstånd. Rek. försäljningspris 64 900 EUR."
+    },
+    {
+      "id": "flyingbasket-fb4",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB4",
+      "kategori": "lyftdronare",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 114500,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. 1 batteriset, 1 laddare, 1 GCS. Databladet beskriver FB4 som prototyp med planerad lansering 2025 – bekräfta leveransstatus. Rek. försäljningspris 130 000 EUR."
+    },
+    {
+      "id": "flyingbasket-fb4-hogpresterande-batteriset",
+      "status": "kontaktad",
+      "kalla": "egen",
+      "tillagd": "2026-11-12",
+      "uppdaterad": "2026-11-12",
+      "tillagd_av": "bo",
+      "leverantor": "FlyingBasket",
+      "produkt": "FB4 högpresterande batteriset",
+      "kategori": "batteri",
+      "land": "IT",
+      "url": "https://www.flyingbasket.com",
+      "kontakt": {
+        "namn": null,
+        "epost": "publicrelations@flyingbasket.com",
+        "telefon": null,
+        "webb": "https://www.flyingbasket.com"
+      },
+      "pris": {
+        "belopp": 20000,
+        "valuta": "EUR",
+        "basis": "dealerpris",
+        "moms": "okant",
+        "per": "styck"
+      },
+      "moq": null,
+      "ledtid_dagar": null,
+      "taggar": [
+        "cargo-drone",
+        "distribution",
+        "nordics"
+      ],
+      "anteckning": "Återförsäljarpris enligt mejl efter samtal 2026-11-04, inför distributionsavtal för Norden. 8 batterier. Rek. försäljningspris 23 000 EUR."
     }
   ]
 }
