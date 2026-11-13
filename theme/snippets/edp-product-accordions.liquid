@@ -6,7 +6,7 @@
     - seo.specification          -> "Tekniska specifikationer"
     - custom.tekniskbeskrivning  -> "Mått & vikt"
     - product-compatibility      -> "Kompatibla modeller" (custom.passsar_till)
-    - butikens fraktvillkor och returvillkor (Inställningar > Policyer) -> "Leverans & retur"
+    - leveranstexter per produktmall (se nedan) och butikens frakt- och returvillkor -> "Leverans & retur"
   Används via ett custom_liquid-block i produktmallarna.
 {%- endcomment -%}
 {%- liquid
@@ -77,7 +77,33 @@
   </div>
 {%- endif -%}
 
-{%- if shop.shipping_policy.body != blank or shop.refund_policy.body != blank -%}
+{%- comment -%}
+  Leveranstexter per produktmall. Varje rad är hämtad från text som redan finns på sajten för
+  just den kategorin (förtroendesektionerna i mallarna). Inga nya löften. Rader skiljs åt med |.
+  Mallar utan rad här (t.ex. service-plans och standardmallen) visar bara policylänkarna.
+{%- endcomment -%}
+{%- liquid
+  assign edp_delivery = ''
+  case template.suffix
+    when 'drones'
+      assign edp_delivery = 'Skickas från lager inom 1–2 vardagar med spårbar frakt.|Äkta drönare med full tillverkargaranti och svensk kundsupport.|Batterier fraktas enligt gällande regler.'
+    when 'drone-accessories'
+      assign edp_delivery = 'Skickas från lager inom 1–2 vardagar med spårbar frakt.|14 dagars öppet köp: osäker på om det passar din drönare? Byt eller returnera enkelt.|Äkta tillbehör med full tillverkargaranti.'
+    when 'drone-spare-parts'
+      assign edp_delivery = 'Skickas från lager inom 1–2 vardagar med spårbar frakt.|Äkta reservdelar med full tillverkargaranti.|Jämför din drönares modell mot kompatibilitetslistan innan du beställer, och hör av dig om du är osäker på vilken del du behöver.'
+    when 'batteries'
+      assign edp_delivery = 'Litiumbatterier skickas som farligt gods enligt gällande transportregler, alltid med spårbar frakt.|Vi säljer bara äkta batterier med tillverkargaranti.|Lämna in uttjänta batterier till oss för återvinning.'
+    when 'enterprise-drones', 'enterprise-accessories', 'enterprise-payload'
+      assign edp_delivery = 'Handla mot faktura med företagskonto, eller begär offert för större volymer.|Vårt enterprise-team hjälper dig välja rätt produkt och svarar på offertförfrågningar inom 24 timmar.'
+    when 'paket'
+      assign edp_delivery = 'Alla delar i paketet levereras som en helhet.|Handla mot faktura med företagskonto, leasa paketet eller begär offert för en anpassad konfiguration.|Vi hjälper er med driftsättning på plats.'
+    when 'software-licenses'
+      assign edp_delivery = 'Digital leverans: licensnyckel och aktiveringsinstruktioner skickas via e-post. Ingen fysisk frakt.'
+  endcase
+  assign edp_delivery_lines = edp_delivery | split: '|'
+-%}
+
+{%- if edp_delivery != blank or shop.shipping_policy.body != blank or shop.refund_policy.body != blank -%}
   <div class="product__accordion accordion quick-add-hidden">
     <details>
       <summary>
@@ -88,14 +114,24 @@
         {{- 'icon-caret.svg' | inline_asset_content -}}
       </summary>
       <div class="accordion__content rte">
-        <ul>
-          {%- if shop.shipping_policy.body != blank -%}
-            <li><a href="{{ shop.shipping_policy.url }}">Fraktvillkor</a></li>
-          {%- endif -%}
-          {%- if shop.refund_policy.body != blank -%}
-            <li><a href="{{ shop.refund_policy.url }}">Returvillkor</a></li>
-          {%- endif -%}
-        </ul>
+        {%- if edp_delivery != blank -%}
+          <ul>
+            {%- for line in edp_delivery_lines -%}
+              <li>{{ line | escape }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if shop.shipping_policy.body != blank or shop.refund_policy.body != blank -%}
+          <p>
+            {%- if shop.shipping_policy.body != blank -%}
+              <a href="{{ shop.shipping_policy.url }}">Fraktvillkor</a>
+            {%- endif -%}
+            {%- if shop.shipping_policy.body != blank and shop.refund_policy.body != blank %} · {% endif -%}
+            {%- if shop.refund_policy.body != blank -%}
+              <a href="{{ shop.refund_policy.url }}">Returvillkor</a>
+            {%- endif -%}
+          </p>
+        {%- endif -%}
       </div>
     </details>
   </div>
