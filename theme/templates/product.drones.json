@@ -13,6 +13,12 @@
         "title": {
           "type": "title"
         },
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -103,6 +109,7 @@
       "block_order": [
         "vendor",
         "title",
+        "short",
         "caption",
         "series",
         "price",
