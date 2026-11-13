@@ -13,6 +13,12 @@
         "title": {
           "type": "title"
         },
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -48,90 +54,66 @@
         "description": {
           "type": "description"
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Tekniska specifikationer",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Flygtid & räckvidd",
-            "icon": "stopwatch",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "I paketet ingår",
-            "icon": "box",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Regler, drönarkort & registrering",
-            "icon": "clipboard",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Leverans, garanti & retur",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Dela"
           }
         },
-        "edp-ai-answer": {
-          "type": "edp_ai_answer"
+        "payment": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-payment-icons' %}"
+          }
         },
-        "edp-ai-faq": {
-          "type": "edp_ai_faq"
+        "accordions": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-product-accordions' %}"
+          }
         },
-        "edp-ai-related": {
-          "type": "edp_ai_related"
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Auktoriserad DJI-återförsäljare",
+            "icon_2": "check_mark",
+            "heading_2": "Skickas från lager inom 1–2 vardagar",
+            "icon_3": "check_mark",
+            "heading_3": "Full tillverkargaranti"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
-        "edp-ai-answer",
-        "edp-ai-faq",
-        "edp-ai-related",
         "vendor",
         "title",
+        "short",
         "caption",
         "series",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
+        "payment",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "collapsible-row-4",
+        "accordions",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail",
+        "media_position": "left",
         "media_size": "large",
         "constrain_to_viewport": true,
         "mobile_thumbnails": "hide",
@@ -195,18 +177,10 @@
         "padding_bottom": 12
       }
     },
-    "product-relations": {
-      "type": "edp-product-relations",
-      "settings": {
-        "color_scheme": "scheme-edp",
-        "padding_top": 36,
-        "padding_bottom": 28
-      }
-    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "Tillbehör till din drönare",
+        "heading": "Du kanske också gillar",
         "heading_size": "h2",
         "columns_desktop": 4,
         "color_scheme": "scheme-edp",
@@ -226,13 +200,58 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "accessories": {
+      "type": "drone-compatible-products",
+      "settings": {
+        "collection_handle": "drone-accessories",
+        "heading": "Passande tillbehör",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "spare-parts": {
+      "type": "drone-compatible-products",
+      "settings": {
+        "collection_handle": "drone-spare-parts",
+        "heading": "Reservdelar",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "docs": {
+      "type": "edp-product-relations",
+      "settings": {
+        "show": "docs",
+        "docs_heading": "Dokumentation & manualer",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
     "main",
-    "trust-badges",
-    "product-relations",
+    "accessories",
+    "spare-parts",
+    "docs",
     "related-products",
-    "faq"
+    "faq",
+    "trust-badges",
+    "sticky-atc"
   ]
 }

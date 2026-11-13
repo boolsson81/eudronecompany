@@ -53,65 +53,66 @@
           "type": "description",
           "settings": {}
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Vad ingår",
-            "icon": "box",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Leverans, service & garanti",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dokumentation & nedladdningar",
-            "icon": "clipboard",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Dela"
           }
         },
-        "edp-ai-answer": {
-          "type": "edp_ai_answer"
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
         },
-        "edp-ai-faq": {
-          "type": "edp_ai_faq"
+        "payment": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-payment-icons' %}"
+          }
         },
-        "edp-ai-related": {
-          "type": "edp_ai_related"
+        "accordions": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-product-accordions' %}"
+          }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Auktoriserad DJI Enterprise-partner",
+            "icon_2": "check_mark",
+            "heading_2": "Fakturaköp för företag",
+            "icon_3": "check_mark",
+            "heading_3": "Offert inom 24 timmar"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
-        "edp-ai-answer",
-        "edp-ai-faq",
-        "edp-ai-related",
         "vendor",
         "title",
+        "short",
         "caption",
         "compatibility",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
+        "payment",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
+        "accordions",
         "share"
       ],
       "settings": {
@@ -167,6 +168,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
@@ -174,6 +181,7 @@
     "payload-details",
     "related-products",
     "enterprise-quote",
-    "faq"
+    "faq",
+    "sticky-atc"
   ]
 }

@@ -70,7 +70,10 @@ describe("product.paket.json", () => {
       if (block.type !== "custom_liquid") continue;
       for (const m of block.settings.custom_liquid.matchAll(/render '([^']+)'/g)) rendered.add(m[1]);
     }
-    expect([...rendered].sort()).toEqual([...PACKAGE_SNIPPETS].sort());
+    // Paketsnippetarna plus de generella produktsnippetarna (betalikoner och flikar) som alla
+    // produktmallar använder.
+    const GENERAL_SNIPPETS = ["edp-payment-icons", "edp-product-accordions"];
+    expect([...rendered].sort()).toEqual([...PACKAGE_SNIPPETS, ...GENERAL_SNIPPETS].sort());
     for (const name of rendered) {
       expect(existsSync(join(THEME, "snippets", `${name}.liquid`)), name).toBe(true);
     }

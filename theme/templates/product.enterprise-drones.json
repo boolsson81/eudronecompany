@@ -46,84 +46,65 @@
           "type": "description",
           "settings": {}
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Tekniska specifikationer",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Nyttolaster & sensorer",
-            "icon": "eye",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Regler, C-klass & operatörstillstånd",
-            "icon": "plane",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Leverans, service & garanti",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dokumentation & nedladdningar",
-            "icon": "clipboard",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Dela"
           }
         },
-        "edp-ai-answer": {
-          "type": "edp_ai_answer"
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
         },
-        "edp-ai-faq": {
-          "type": "edp_ai_faq"
+        "payment": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-payment-icons' %}"
+          }
         },
-        "edp-ai-related": {
-          "type": "edp_ai_related"
+        "accordions": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-product-accordions' %}"
+          }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Auktoriserad DJI Enterprise-partner",
+            "icon_2": "check_mark",
+            "heading_2": "Fakturaköp, leasing & offert",
+            "icon_3": "check_mark",
+            "heading_3": "Utbildning & driftsättning"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
-        "edp-ai-answer",
-        "edp-ai-faq",
-        "edp-ai-related",
         "vendor",
         "title",
+        "short",
         "caption",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
+        "payment",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "collapsible-row-4",
+        "accordions",
         "share"
       ],
       "settings": {
@@ -225,13 +206,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "accessories": {
+      "type": "drone-compatible-products",
+      "settings": {
+        "collection_handle": "drone-accessories",
+        "heading": "Passande tillbehör",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "spare-parts": {
+      "type": "drone-compatible-products",
+      "settings": {
+        "collection_handle": "drone-spare-parts",
+        "heading": "Reservdelar",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "docs": {
+      "type": "edp-product-relations",
+      "settings": {
+        "show": "docs",
+        "docs_heading": "Dokumentation & manualer",
+        "color_scheme": "scheme-edp",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
     "main",
+    "accessories",
+    "spare-parts",
+    "docs",
     "trust-badges",
     "related-products",
     "enterprise-quote",
-    "faq"
+    "faq",
+    "sticky-atc"
   ]
 }

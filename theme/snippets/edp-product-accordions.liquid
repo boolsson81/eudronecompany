@@ -1,0 +1,102 @@
+{%- comment -%}
+  Flikar på produktsidan som bara visas när det finns innehåll. Inga tomma platshållare.
+
+  Källor (alla finns redan på produkterna):
+    - custom.produktfakta        -> "Funktioner & fakta"
+    - seo.specification          -> "Tekniska specifikationer"
+    - custom.tekniskbeskrivning  -> "Mått & vikt"
+    - product-compatibility      -> "Kompatibla modeller" (custom.passsar_till)
+    - butikens fraktvillkor och returvillkor (Inställningar > Policyer) -> "Leverans & retur"
+  Används via ett custom_liquid-block i produktmallarna.
+{%- endcomment -%}
+{%- liquid
+  assign edp_facts = product.metafields.custom.produktfakta.value
+  assign edp_spec = product.metafields.seo.specification.value
+  assign edp_size = product.metafields.custom.tekniskbeskrivning.value
+-%}
+{%- capture edp_compat -%}{% render 'product-compatibility', show_heading: false %}{%- endcapture -%}
+{%- assign edp_compat = edp_compat | strip -%}
+
+{%- if edp_facts != blank -%}
+  <div class="product__accordion accordion quick-add-hidden">
+    <details>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: 'clipboard' %}
+          <h2 class="h4 accordion__title">Funktioner &amp; fakta</h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content rte">{{ edp_facts | escape | newline_to_br }}</div>
+    </details>
+  </div>
+{%- endif -%}
+
+{%- if edp_spec != blank -%}
+  <div class="product__accordion accordion quick-add-hidden">
+    <details>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: 'ruler' %}
+          <h2 class="h4 accordion__title">Tekniska specifikationer</h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content rte">{{ edp_spec | escape | newline_to_br }}</div>
+    </details>
+  </div>
+{%- endif -%}
+
+{%- if edp_size != blank -%}
+  <div class="product__accordion accordion quick-add-hidden">
+    <details>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: 'box' %}
+          <h2 class="h4 accordion__title">Mått &amp; vikt</h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content rte">{{ edp_size | escape | newline_to_br }}</div>
+    </details>
+  </div>
+{%- endif -%}
+
+{%- if edp_compat != blank -%}
+  <div class="product__accordion accordion quick-add-hidden">
+    <details>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: 'check_mark' %}
+          <h2 class="h4 accordion__title">Kompatibla modeller</h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content rte">{{ edp_compat }}</div>
+    </details>
+  </div>
+{%- endif -%}
+
+{%- if shop.shipping_policy.body != blank or shop.refund_policy.body != blank -%}
+  <div class="product__accordion accordion quick-add-hidden">
+    <details>
+      <summary>
+        <div class="summary__title">
+          {% render 'icon-accordion', icon: 'truck' %}
+          <h2 class="h4 accordion__title">Leverans &amp; retur</h2>
+        </div>
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </summary>
+      <div class="accordion__content rte">
+        <ul>
+          {%- if shop.shipping_policy.body != blank -%}
+            <li><a href="{{ shop.shipping_policy.url }}">Fraktvillkor</a></li>
+          {%- endif -%}
+          {%- if shop.refund_policy.body != blank -%}
+            <li><a href="{{ shop.refund_policy.url }}">Returvillkor</a></li>
+          {%- endif -%}
+        </ul>
+      </div>
+    </details>
+  </div>
+{%- endif -%}

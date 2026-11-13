@@ -52,85 +52,66 @@
           "type": "description",
           "settings": {}
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Kapacitet & specifikationer",
-            "icon": "lightning_bolt",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Kompatibla modeller",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Transport & flygregler",
-            "icon": "plane",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Säker användning & förvaring",
-            "icon": "fire",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-4": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Leverans, retur & återvinning",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Dela"
           }
         },
-        "edp-ai-answer": {
-          "type": "edp_ai_answer"
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
         },
-        "edp-ai-faq": {
-          "type": "edp_ai_faq"
+        "payment": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-payment-icons' %}"
+          }
         },
-        "edp-ai-related": {
-          "type": "edp_ai_related"
+        "accordions": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-product-accordions' %}"
+          }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Originalbatterier med tillverkargaranti",
+            "icon_2": "check_mark",
+            "heading_2": "Spårbar frakt enligt regelverket",
+            "icon_3": "check_mark",
+            "heading_3": "Vi tar hand om uttjänta batterier"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
-        "edp-ai-answer",
-        "edp-ai-faq",
-        "edp-ai-related",
         "vendor",
         "title",
+        "short",
         "caption",
         "compatibility",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
+        "payment",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "collapsible-row-4",
+        "accordions",
         "share"
       ],
       "settings": {
@@ -230,6 +211,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
@@ -237,6 +224,7 @@
     "trust-badges",
     "product-relations",
     "related-products",
-    "faq"
+    "faq",
+    "sticky-atc"
   ]
 }

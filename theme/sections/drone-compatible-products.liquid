@@ -1,0 +1,145 @@
+{% comment %}
+  Automatiska tillbehör/reservdelar på drönarsidor.
+
+  Visar produkter ur en kollektion (t.ex. drone-accessories eller drone-spare-parts) vars
+  "Passar till"-värde (custom.passsar_till) matchar drönarens modellnamn. Ingen manuell
+  koppling krävs. Modellnamnet läses från produktens titel, custom.modell och
+  seo.drone_tillbehor_modell. Se assets/drone-compatible-products.js.
+
+  Sektionen döljer sig själv om filtret "Passar till" inte är aktiverat i Search & Discovery,
+  om inget matchar eller om något går fel.
+{% endcomment %}
+{%- liquid
+  assign dcp_collection = collections[section.settings.collection_handle]
+  assign dcp_models = product.metafields.custom.modell.value
+  assign dcp_extra = product.metafields.seo.drone_tillbehor_modell.value
+  assign dcp_candidates = product.title
+  if dcp_models != blank
+    assign dcp_models_joined = dcp_models | join: '||'
+    assign dcp_candidates = dcp_candidates | append: '||' | append: dcp_models_joined
+  endif
+  if dcp_extra != blank
+    assign dcp_candidates = dcp_candidates | append: '||' | append: dcp_extra
+  endif
+-%}
+{%- if dcp_collection != blank -%}
+  {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+  {{ 'component-card.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'drone-compatible-products.js' | asset_url }}" defer="defer"></script>
+
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+    drone-compatible-products:not([data-loaded]) { display: none; }
+  {%- endstyle -%}
+
+  <div class="section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+    <div class="page-width">
+      <drone-compatible-products
+        data-collection-url="{{ dcp_collection.url }}"
+        data-candidates="{{ dcp_candidates | escape }}"
+        data-current-product-url="{{ product.url }}"
+        data-limit="{{ section.settings.max_products }}"
+      >
+        <h2 class="{{ section.settings.heading_size }}">{{ section.settings.heading }}</h2>
+        <ul class="drone-compatible-products__grid grid product-grid grid--2-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop"></ul>
+      </drone-compatible-products>
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Automatiska produkter",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "collection_handle",
+      "label": "Kollektionens handle",
+      "default": "drone-accessories",
+      "info": "Till exempel drone-accessories (tillbehör) eller drone-spare-parts (reservdelar)."
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Rubrik",
+      "default": "Passande tillbehör"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "label": "Rubrikstorlek",
+      "options": [
+        { "value": "h2", "label": "Medel" },
+        { "value": "h1", "label": "Stor" },
+        { "value": "h3", "label": "Liten" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "max_products",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "label": "Max antal produkter",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 2,
+      "max": 5,
+      "step": 1,
+      "label": "Kolumner på dator",
+      "default": 4
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 28
+    }
+  ],
+  "presets": [
+    {
+      "name": "Automatiska produkter"
+    }
+  ]
+}
+{% endschema %}

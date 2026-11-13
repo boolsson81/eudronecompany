@@ -1,0 +1,22 @@
+{%- comment -%}
+  Betalikoner under köpknappen. Visar de betalsätt som är aktiverade i butiken, inget påhittat.
+{%- endcomment -%}
+{%- if shop.enabled_payment_types.size > 0 -%}
+  <div class="edp-payment-icons">
+    <p class="edp-payment-icons__label caption-with-letter-spacing">Säker betalning</p>
+    <ul class="list-payment" role="list">
+      {%- for type in shop.enabled_payment_types -%}
+        <li class="list-payment__item">{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>
+      {%- endfor -%}
+    </ul>
+    {%- if shop.enabled_payment_types contains 'klarna' -%}
+      <p class="edp-payment-icons__note caption">Klarna finns som betalsätt i kassan.</p>
+    {%- endif -%}
+  </div>
+  {%- style -%}
+    .edp-payment-icons { margin: 0.8rem 0 1.2rem; }
+    .edp-payment-icons__label { margin: 0 0 0.6rem; }
+    .edp-payment-icons__note { margin: 0.6rem 0 0; }
+    .edp-payment-icons .list-payment { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0; padding: 0; list-style: none; }
+  {%- endstyle -%}
+{%- endif -%}

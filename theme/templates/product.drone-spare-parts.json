@@ -48,75 +48,66 @@
         "description": {
           "type": "description"
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Kompatibla modeller",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Tekniska specifikationer",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Montering & installation",
-            "icon": "clipboard",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Leverans, garanti & retur",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
             "share_label": "Dela"
           }
         },
-        "edp-ai-answer": {
-          "type": "edp_ai_answer"
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
         },
-        "edp-ai-faq": {
-          "type": "edp_ai_faq"
+        "payment": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-payment-icons' %}"
+          }
         },
-        "edp-ai-related": {
-          "type": "edp_ai_related"
+        "accordions": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'edp-product-accordions' %}"
+          }
+        },
+        "trust": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "Original reservdelar",
+            "icon_2": "check_mark",
+            "heading_2": "Skickas från lager inom 1–2 vardagar",
+            "icon_3": "check_mark",
+            "heading_3": "Full tillverkargaranti"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
-        "edp-ai-answer",
-        "edp-ai-faq",
-        "edp-ai-related",
         "vendor",
         "title",
+        "short",
         "caption",
         "compatibility",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "trust",
+        "payment",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
+        "accordions",
         "share"
       ],
       "settings": {
@@ -231,6 +222,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
@@ -239,6 +236,7 @@
     "product-relations",
     "compatible-accessories",
     "related-products",
-    "faq"
+    "faq",
+    "sticky-atc"
   ]
 }
