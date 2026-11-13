@@ -226,9 +226,9 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "product-relations",
     "related-products",
-    "faq"
+    "faq",
+    "trust-badges"
   ]
 }

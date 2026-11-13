@@ -33,7 +33,7 @@
         "short": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
           }
         },
         "compat": {
@@ -114,6 +114,7 @@
       },
       "block_order": [
         "title",
+        "short",
         "vendor",
         "sku",
         "price",

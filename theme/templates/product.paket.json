@@ -114,6 +114,12 @@
         },
         "edp-ai-related": {
           "type": "edp_ai_related"
+        },
+        "short": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- assign edc_short = product.metafields.seo.kort_text_150.value -%}{%- if edc_short != blank -%}<p class=\"product__text edc-short\">{{ edc_short | escape }}</p>{%- endif -%}"
+          }
         }
       },
       "block_order": [
@@ -123,6 +129,7 @@
         "package_badge",
         "vendor",
         "title",
+        "short",
         "caption",
         "price",
         "package_contents",
