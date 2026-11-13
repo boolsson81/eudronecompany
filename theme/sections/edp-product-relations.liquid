@@ -17,6 +17,18 @@
 {%- assign edp_manuals = product.metafields.custom.manual.value -%}
 {%- assign edp_pdf = product.metafields.custom.pdf.value -%}
 
+{%- assign edp_show = section.settings.show | default: 'all' -%}
+{%- if edp_show != 'all' and edp_show != 'accessories' -%}
+  {%- assign edp_accessories = nil -%}
+{%- endif -%}
+{%- if edp_show != 'all' and edp_show != 'spare_parts' -%}
+  {%- assign edp_spare_parts = nil -%}
+{%- endif -%}
+{%- if edp_show != 'all' and edp_show != 'docs' -%}
+  {%- assign edp_manuals = nil -%}
+  {%- assign edp_pdf = nil -%}
+{%- endif -%}
+
 {%- assign edp_has_docs = false -%}
 {%- if edp_manuals != blank or edp_pdf != blank -%}
   {%- assign edp_has_docs = true -%}
@@ -120,6 +132,18 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "select",
+      "id": "show",
+      "label": "Visa",
+      "options": [
+        { "value": "all", "label": "Allt" },
+        { "value": "accessories", "label": "Bara tillbehör" },
+        { "value": "spare_parts", "label": "Bara reservdelar" },
+        { "value": "docs", "label": "Bara dokumentation" }
+      ],
+      "default": "all"
+    },
     {
       "type": "text",
       "id": "accessories_heading",
