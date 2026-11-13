@@ -88,6 +88,14 @@
             "icon_3": "check_mark",
             "heading_3": "Offert inom 24 timmar"
           }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
         }
       },
       "block_order": [
@@ -97,6 +105,7 @@
         "caption",
         "compatibility",
         "price",
+        "inventory",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -159,6 +168,12 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
@@ -166,6 +181,7 @@
     "payload-details",
     "related-products",
     "enterprise-quote",
-    "faq"
+    "faq",
+    "sticky-atc"
   ]
 }

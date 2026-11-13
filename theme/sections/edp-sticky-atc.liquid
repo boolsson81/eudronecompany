@@ -1,0 +1,106 @@
+{% comment %}
+  Klistrig köpknapp på produktsidor. Visas när huvudköpknappen har scrollats förbi.
+  Knappen klickar på den riktiga köpknappen, se assets/edp-sticky-atc.js.
+{% endcomment %}
+{%- liquid
+  assign edp_variant = product.selected_or_first_available_variant
+  if edp_variant.available
+    assign edp_label = 'products.product.add_to_cart' | t
+  else
+    assign edp_label = 'products.product.sold_out' | t
+  endif
+-%}
+<edp-sticky-atc
+  class="edp-sticky-atc color-{{ section.settings.color_scheme }} gradient"
+  aria-hidden="true"
+  inert
+>
+  <div class="edp-sticky-atc__inner page-width">
+    <div class="edp-sticky-atc__info">
+      <p class="edp-sticky-atc__title">{{ product.title | escape }}</p>
+      <div class="edp-sticky-atc__price" data-price>
+        {{ edp_variant.price | money }}
+      </div>
+    </div>
+    <button type="button" class="edp-sticky-atc__button button button--primary" data-atc>
+      <span data-atc-label>{{ edp_label }}</span>
+    </button>
+  </div>
+</edp-sticky-atc>
+<script src="{{ 'edp-sticky-atc.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .edp-sticky-atc {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: var(--edp-sticky-atc-bottom, 0px);
+    z-index: 29;
+    border-top: 0.1rem solid rgba(var(--color-foreground), 0.12);
+    box-shadow: 0 -0.4rem 1.6rem rgba(0, 0, 0, 0.25);
+    padding-bottom: env(safe-area-inset-bottom, 0);
+    transform: translateY(110%);
+    transition: transform 0.2s ease;
+  }
+  .edp-sticky-atc.is-visible {
+    transform: translateY(0);
+  }
+  .edp-sticky-atc__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .edp-sticky-atc__info {
+    min-width: 0;
+  }
+  .edp-sticky-atc__title {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .edp-sticky-atc__price {
+    font-size: 1.4rem;
+  }
+  .edp-sticky-atc__button {
+    flex: none;
+    min-width: 16rem;
+  }
+  .edp-sticky-atc__button[aria-disabled='true'] {
+    opacity: 0.6;
+  }
+  @media screen and (max-width: 749px) {
+    .edp-sticky-atc__inner {
+      gap: 1rem;
+    }
+    .edp-sticky-atc__button {
+      min-width: 12rem;
+      padding-left: 1.2rem;
+      padding-right: 1.2rem;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .edp-sticky-atc {
+      transition: none;
+    }
+  }
+{%- endstyle -%}
+
+{% schema %}
+{
+  "name": "Klistrig köpknapp",
+  "tag": "div",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-edp"
+    }
+  ]
+}
+{% endschema %}

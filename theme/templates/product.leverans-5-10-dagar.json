@@ -146,9 +146,16 @@
         "padding_top": 20,
         "padding_bottom": 60
       }
+    },
+    "sticky-atc": {
+      "type": "edp-sticky-atc",
+      "settings": {
+        "color_scheme": "scheme-edp"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "sticky-atc"
   ]
 }
