@@ -114,11 +114,11 @@
       },
       "block_order": [
         "title",
-        "short",
         "vendor",
         "sku",
         "price",
         "inventory",
+        "short",
         "compat",
         "variant_picker",
         "quantity_selector",
