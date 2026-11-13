@@ -234,20 +234,26 @@
       }
     },
     "accessories": {
-      "type": "edp-product-relations",
+      "type": "drone-compatible-products",
       "settings": {
-        "show": "accessories",
-        "accessories_heading": "Passande tillbehör",
+        "collection_handle": "drone-accessories",
+        "heading": "Passande tillbehör",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
         "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 28
       }
     },
     "spare-parts": {
-      "type": "edp-product-relations",
+      "type": "drone-compatible-products",
       "settings": {
-        "show": "spare_parts",
-        "spare_parts_heading": "Reservdelar",
+        "collection_handle": "drone-spare-parts",
+        "heading": "Reservdelar",
+        "heading_size": "h2",
+        "max_products": 8,
+        "columns_desktop": 4,
         "color_scheme": "scheme-edp",
         "padding_top": 36,
         "padding_bottom": 28
