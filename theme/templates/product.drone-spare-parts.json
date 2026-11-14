@@ -232,11 +232,11 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "product-relations",
     "compatible-accessories",
     "related-products",
     "faq",
+    "trust-badges",
     "sticky-atc"
   ]
 }

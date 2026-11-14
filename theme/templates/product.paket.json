@@ -245,11 +245,11 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "product-relations",
     "related-products",
     "enterprise-quote",
     "faq",
+    "trust-badges",
     "sticky-atc"
   ]
 }

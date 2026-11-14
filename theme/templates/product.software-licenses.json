@@ -206,9 +206,9 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "related-products",
     "faq",
+    "trust-badges",
     "sticky-atc"
   ]
 }

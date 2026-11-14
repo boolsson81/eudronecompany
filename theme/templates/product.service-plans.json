@@ -221,10 +221,10 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "product-relations",
     "related-products",
     "faq",
+    "trust-badges",
     "sticky-atc"
   ]
 }

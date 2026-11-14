@@ -220,10 +220,10 @@
   },
   "order": [
     "main",
-    "trust-badges",
     "related-products",
     "enterprise-quote",
     "faq",
+    "trust-badges",
     "sticky-atc"
   ]
 }
